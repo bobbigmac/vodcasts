@@ -17,15 +17,6 @@ function run(cmd, args, opts) {
   });
 }
 
-function exists(p) {
-  try {
-    fs.accessSync(p);
-    return true;
-  } catch (_e) {
-    return false;
-  }
-}
-
 function normalize(p) {
   return p.split(path.sep).join("/");
 }
@@ -88,7 +79,7 @@ function feedProxyPlugin() {
           if (!req.url?.startsWith("/__feed")) return next();
           const u = new URL(req.url, "http://local/");
           const target = u.searchParams.get("url") || "";
-          if (!/^https?:\\/\\//i.test(target)) {
+          if (!/^https?:\/\//i.test(target)) {
             res.statusCode = 400;
             res.setHeader("Content-Type", "text/plain; charset=utf-8");
             res.end("missing/invalid url");
@@ -116,12 +107,16 @@ function feedProxyPlugin() {
 function devBuilderPlugin() {
   const projectRoot = process.cwd();
   const distRoot = path.join(projectRoot, "dist");
-  const assetsSrc = path.join(projectRoot, "site", "assets");
   const feedsConfig = process.env.VOD_FEEDS || "feeds/dev.md";
   const cacheDir = process.env.VOD_CACHE || "cache/dev";
 
   let running = false;
   let queued = null;
+  let serverRef = null;
+
+  function sendFullReload() {
+    serverRef?.ws?.send({ type: "full-reload" });
+  }
 
   async function buildSite({ alsoUpdateFeeds }) {
     if (running) {
@@ -141,6 +136,7 @@ function devBuilderPlugin() {
         ["-m", "scripts.build_site", "--feeds", feedsConfig, "--cache", cacheDir, "--base-path", "/", "--out", distRoot],
         { cwd: projectRoot }
       );
+      sendFullReload();
     } finally {
       running = false;
       const next = queued;
@@ -149,19 +145,10 @@ function devBuilderPlugin() {
     }
   }
 
-  function copyAsset(file) {
-    const rel = normalize(path.relative(assetsSrc, file));
-    if (rel.startsWith("..")) return false;
-    if (!exists(distRoot)) return false;
-    const outFile = path.join(distRoot, "assets", rel);
-    fs.mkdirSync(path.dirname(outFile), { recursive: true });
-    fs.copyFileSync(file, outFile);
-    return true;
-  }
-
   return {
     name: "vodcasts-dev-builder",
     configureServer(server) {
+      serverRef = server;
       const watch = [
         "site/assets/**",
         "site/templates/**",
@@ -173,9 +160,7 @@ function devBuilderPlugin() {
       ];
       server.watcher.add(watch);
 
-      buildSite({ alsoUpdateFeeds: false })
-        .then(() => server.ws.send({ type: "full-reload" }))
-        .catch((e) => server.config.logger.error(String(e?.message || e)));
+      buildSite({ alsoUpdateFeeds: false }).catch((e) => server.config.logger.error(String(e?.message || e)));
 
       server.watcher.on("all", async (event, file) => {
         if (!file) return;
@@ -184,14 +169,8 @@ function devBuilderPlugin() {
         if (rel.startsWith("dist/")) return;
         if (event !== "add" && event !== "change" && event !== "unlink") return;
 
-        if (rel.startsWith("site/assets/") && exists(f) && copyAsset(f)) {
-          server.ws.send({ type: "full-reload" });
-          return;
-        }
-
         const alsoUpdateFeeds = rel === normalize(feedsConfig);
         await buildSite({ alsoUpdateFeeds }).catch((e) => server.config.logger.error(String(e?.message || e)));
-        server.ws.send({ type: "full-reload" });
       });
     },
   };
@@ -201,7 +180,7 @@ export default defineConfig({
   root: "dist",
   plugins: [devBuilderPlugin(), feedProxyPlugin()],
   server: {
-    port: 8020,
+    port: 8000,
     strictPort: true,
     open: "/",
   },

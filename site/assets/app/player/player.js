@@ -108,7 +108,7 @@ export function createPlayer({ env, store, els, log, history }) {
 
   async function fetchText(url, fetchVia = "auto", { useCache = false } = {}) {
     const u = String(url || "");
-    const isRemote = /^https?:\\/\\//i.test(u);
+    const isRemote = /^https?:\/\//i.test(u);
     const via = fetchVia === "auto" ? (isRemote ? (env.isDev ? "proxy" : "direct") : "direct") : fetchVia;
     const finalUrl = via === "proxy" && isRemote ? FEED_PROXY + encodeURIComponent(u) : u;
     if (useCache && isRemote) return fetchCached(finalUrl);

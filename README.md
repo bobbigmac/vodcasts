@@ -4,9 +4,6 @@ A minimal “vodcast TV” player + static site builder. One codebase can ship m
 deployments (church sermons, university lectures, tech shows, fitness, etc.) just by
 swapping the feeds config.
 
-This project is a port of the original `video-podcasts/` prototype into a more
-structured, “actual-plays style” build + modular client app.
-
 ## What it ships
 
 - Channel guide (feed switching without losing place)
@@ -30,7 +27,7 @@ Run these from inside the `vodcasts/` folder:
 
 - `yarn update` — fetch + cache feeds into `cache/`
 - `yarn build` — build static site into `dist/`
-- `yarn dev:fast` — dev server on port `8020` (small feed set)
+- `yarn dev` — dev server on port `8000` (small feed set)
 
 ## Deployments
 
