@@ -7,10 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      VOD_FEEDS: feeds/dev.md
-      VOD_CACHE: cache/dev
-      VOD_OUT: dist
-      VOD_BASE_PATH: /
+      VOD_BASE_PATH: ${{ vars.VOD_BASE_PATH || '/' }}
       # Comments (optional)
       VOD_SUPABASE_URL: ${{ secrets.VOD_SUPABASE_URL }}
       VOD_SUPABASE_ANON_KEY: ${{ secrets.VOD_SUPABASE_ANON_KEY }}
@@ -19,6 +16,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Set feeds and cache
+        run: |
+          FEEDS="${{ vars.VOD_FEEDS || 'feeds/dev.md' }}"
+          echo "VOD_FEEDS=$FEEDS" >> $GITHUB_ENV
+          echo "VOD_CACHE=cache/$(basename "$FEEDS" .md)" >> $GITHUB_ENV
+          echo "VOD_OUT=dist" >> $GITHUB_ENV
 
       - name: Set up Python
         uses: actions/setup-python@v5
