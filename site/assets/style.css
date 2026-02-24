@@ -60,6 +60,31 @@ video {
 }
 .player:hover .progressFill { background: rgba(138,180,248,.8) }
 
+.statusToast {
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--edge);
+  background: rgba(0,0,0,.65);
+  backdrop-filter: blur(8px);
+  color: var(--text);
+  font-size: 13px;
+  max-width: min(900px, calc(100vw - 40px));
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease;
+  z-index: 140;
+}
+.statusToast.show { opacity: 1 }
+.statusToast.warn { border-color: color-mix(in srgb, #f1d093 45%, var(--edge)) }
+.statusToast.error { border-color: color-mix(in srgb, #ff8a8a 45%, var(--edge)) }
+
 .guideBar {
   position: absolute;
   left: 50%;
@@ -545,4 +570,3 @@ video {
 }
 .cornerBtnLeft { right: 70px }
 .cornerBtn:hover { background: rgba(0,0,0,.7) }
-

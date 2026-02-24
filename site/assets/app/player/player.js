@@ -120,6 +120,16 @@ export function createPlayerService({ env, log, history }) {
     } catch {}
   }
 
+  async function waitForHlsJs(timeoutMs = 2500) {
+    if (window.Hls && Hls.isSupported && Hls.isSupported()) return true;
+    const t0 = Date.now();
+    while (Date.now() - t0 < timeoutMs) {
+      if (window.Hls && Hls.isSupported && Hls.isSupported()) return true;
+      await new Promise((r) => setTimeout(r, 50));
+    }
+    return !!(window.Hls && Hls.isSupported && Hls.isSupported());
+  }
+
   async function fetchText(url, fetchVia = "auto", { useCache = false } = {}) {
     const u = String(url || "");
     const isRemote = /^https?:\/\//i.test(u);
@@ -209,6 +219,10 @@ export function createPlayerService({ env, log, history }) {
     const mediaType = ep.media.type || "";
     const shouldUseHls = isProbablyHls(mediaUrl, mediaType);
     const usingNative = shouldUseHls && isNativeHls();
+    if (shouldUseHls && !usingNative && !window.Hls) {
+      log.info("Waiting for hls.js…");
+      await waitForHlsJs(2500);
+    }
     const usingHlsJs = shouldUseHls && !usingNative && window.Hls && Hls.isSupported();
 
     if (shouldUseHls && !usingNative && !usingHlsJs) {
@@ -325,10 +339,13 @@ export function createPlayerService({ env, log, history }) {
     try {
       await videoEl.play();
     } catch {
+      let recovered = false;
       try {
         videoEl.muted = true;
         await videoEl.play();
+        recovered = true;
       } catch {}
+      if (!recovered) log.warn("Autoplay blocked (press Play)");
     }
   }
 
@@ -406,6 +423,10 @@ export function createPlayerService({ env, log, history }) {
   function attachVideo(el) {
     videoEl = el;
     if (!videoEl) return;
+    // Prefer muted until we have a user gesture (helps autoplay succeed).
+    try {
+      videoEl.muted = true;
+    } catch {}
 
     videoEl.addEventListener("timeupdate", () => {
       const now = Date.now();

@@ -20,12 +20,13 @@ export async function bootApp() {
   render(html`<${App} env=${env} log=${log} sources=${sources} player=${player} history=${history} />`, mount);
 
   try {
+    log.info("Loading sources…");
     const loaded = await loadSources(env);
     sources.value = loaded;
+    log.info(`Sources loaded: ${loaded.length}`);
     player.setSources(loaded);
   } catch (err) {
     log.error(String(err?.message || err || "sources load failed"));
     throw err;
   }
 }
-

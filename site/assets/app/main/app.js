@@ -1,19 +1,24 @@
-import { html, useEffect, useMemo, useRef, useSignal } from "../runtime/vendor.js";
+import { html, useEffect, useMemo, useRef, useSignal, useSignalEffect } from "../runtime/vendor.js";
 import { GuidePanel } from "../ui/guide.js";
 import { DetailsPanel } from "../ui/details.js";
 import { HistoryPanel } from "../ui/history.js";
+import { StatusToast } from "../ui/status_toast.js";
 
 export function App({ env, log, sources, player, history }) {
   const guideOpen = useSignal(false);
   const detailsOpen = useSignal(false);
   const historyOpen = useSignal(false);
   const sleepMenuOpen = useSignal(false);
+  const toast = useSignal({ show: false, msg: "", level: "info", ms: 2200 });
 
   const videoRef = useRef(null);
   const guideBarRef = useRef(null);
 
   useEffect(() => {
-    if (videoRef.current) player.attachVideo(videoRef.current);
+    if (videoRef.current) {
+      player.attachVideo(videoRef.current);
+      log.info("Video ready");
+    }
   }, []);
 
   // Theme
@@ -57,6 +62,14 @@ export function App({ env, log, sources, player, history }) {
     return () => document.removeEventListener("click", onClick);
   }, []);
 
+  // Brief status toast (mirrors the latest log entry).
+  useSignalEffect(() => {
+    const list = log.entries.value || [];
+    const last = list[list.length - 1];
+    if (!last) return;
+    toast.value = { show: true, msg: last.msg, level: last.level || "info", ms: 2200 };
+  });
+
   // Guide bar idle fade.
   useEffect(() => {
     const el = guideBarRef.current;
@@ -83,6 +96,13 @@ export function App({ env, log, sources, player, history }) {
   const cap = player.captions.value;
   const sleep = player.sleep.value;
 
+  useEffect(() => {
+    if (!cur?.source?.id) return;
+    const s = cur.source.title || cur.source.id;
+    const e = cur.episode?.title ? ` — ${cur.episode.title}` : "";
+    log.info(`Now: ${s}${e}`);
+  }, [cur?.source?.id, cur?.episode?.id]);
+
   const srcTitle = cur.source?.title || cur.source?.id || "—";
   const epTitle = cur.episode?.title || "—";
   const timeLabel = useMemo(() => {
@@ -106,7 +126,8 @@ export function App({ env, log, sources, player, history }) {
   };
 
   return html`
-    <div class="app">
+    <div>
+      <${StatusToast} toast=${toast} />
       <div class="player" id="player">
         <video id="video" playsinline ref=${videoRef}></video>
         <div class="progress" id="progress" title="Seek" onClick=${(e) => onSeekBarClick(e, e.currentTarget)}>
