@@ -548,6 +548,7 @@ video {
   text-align: left;
 }
 .guideNowBlock:hover { background: rgba(255,255,255,.08) }
+.guideNowBlock:focus-visible { outline: 2px solid color-mix(in srgb, var(--accent) 70%, transparent) }
 .guideNowBlock .guideChannel {
   font-weight: 650;
   font-size: 13px;
@@ -592,6 +593,9 @@ video {
 .guideBtn:hover { background: rgba(255,255,255,.08) }
 .guideBtn:active { transform: translateY(1px) }
 .guideBtn.active { background: rgba(138,180,248,.2); border-color: var(--accent) }
+.guideBtn:focus-visible { outline: 2px solid color-mix(in srgb, var(--accent) 70%, transparent); outline-offset: 2px }
+.speedBtn:focus-visible,
+.volumeBtn:focus-visible { outline: 2px solid color-mix(in srgb, var(--accent) 70%, transparent); outline-offset: 2px }
 .guideBtn.longpressing,
 .speedBtn.longpressing,
 .volumeBtn.longpressing {
@@ -756,6 +760,7 @@ video {
 .guideChannelRow:hover { background: rgba(255,255,255,.04) }
 .guideChannelRow.focused { outline: 2px solid color-mix(in srgb, var(--accent) 70%, transparent); background: rgba(255,255,255,.03) }
 .guideChannelRow.playing { background: rgba(138,180,248,.06) }
+.guideChannelRow:focus-visible { outline: 2px solid color-mix(in srgb, var(--accent) 70%, transparent); background: rgba(255,255,255,.03) }
 
 .guideChannelName {
   flex: 0 0 180px;

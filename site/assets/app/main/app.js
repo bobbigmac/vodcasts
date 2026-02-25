@@ -14,6 +14,7 @@ import { SpeedTakeover } from "../ui/takeover/speed_takeover.js";
 import { AudioTakeover } from "../ui/takeover/audio_takeover.js";
 import { MoonIcon } from "../ui/icons.js";
 import { useLongPress } from "../ui/long_press.js";
+import { installControls } from "./controls.js";
 
 export function App({ env, log, sources, player, history }) {
   const guideOpen = useSignal(false);
@@ -28,6 +29,11 @@ export function App({ env, log, sources, player, history }) {
   const guideBarRef = useRef(null);
   const progressRef = useRef(null);
   const durationRef = useRef(NaN);
+
+  useEffect(() => {
+    const cleanup = installControls();
+    return () => cleanup?.();
+  }, []);
 
   useEffect(() => {
     const el = progressRef.current;
@@ -399,6 +405,8 @@ export function App({ env, log, sources, player, history }) {
                     id="btnSeekBack"
                     class=${"guideBtn guideBtnSeek" + (seekBackLongPress.pressing.value ? " longpressing" : "")}
                     title=${`Back ${skip.back}s (long-press to configure)`}
+                    data-navitem="1"
+                    data-keyhint="J — Back"
                     style=${{ "--lp": `${Math.round(seekBackLongPress.progress.value * 100)}%` }}
                     onPointerDown=${seekBackLongPress.onPointerDown}
                     onPointerUp=${seekBackLongPress.onPointerUp}
@@ -414,6 +422,8 @@ export function App({ env, log, sources, player, history }) {
                     id="btnSeekFwd"
                     class=${"guideBtn guideBtnSeek" + (seekFwdLongPress.pressing.value ? " longpressing" : "")}
                     title=${`Forward ${skip.fwd}s (long-press to configure)`}
+                    data-navitem="1"
+                    data-keyhint="L — Fwd"
                     style=${{ "--lp": `${Math.round(seekFwdLongPress.progress.value * 100)}%` }}
                     onPointerDown=${seekFwdLongPress.onPointerDown}
                     onPointerUp=${seekFwdLongPress.onPointerUp}
@@ -425,22 +435,33 @@ export function App({ env, log, sources, player, history }) {
                   >
                     +${Math.round(skip.fwd || 30)}
                   </button>
-                  <div class="guideNowBlock" title="Channels" onClick=${() => (guideOpen.value = true)}>
+                  <div
+                    class="guideNowBlock"
+                    title="Channels"
+                    role="button"
+                    tabIndex=${0}
+                    data-navitem="1"
+                    data-keyhint="G — Guide"
+                    onKeyDown=${(e) => { if (e.key === "Enter") guideOpen.value = true; }}
+                    onClick=${() => (guideOpen.value = true)}
+                  >
                     <div class="guideChannel" id="guideChannel">${srcTitle}</div>
                     <div class="guideNow" id="guideNow">${epTitle}</div>
                   </div>
-                  <button id="btnPlay" class="guideBtn" title="Play/Pause" onClick=${() => player.togglePlay()}>
+                  <button id="btnPlay" class="guideBtn" title="Play/Pause" data-navitem="1" data-keyhint="K — Play" onClick=${() => player.togglePlay()}>
                     ${pb.paused ? "▶" : "❚❚"}
                   </button>
                   <div
                     class=${"volumeControl" + (audioBlocked ? " audioBlocked" : "") + (pb.muted && !audioBlocked ? " muted" : "")}
                     title=${audioBlocked ? "Click video or Play to enable sound (browser restriction)" : pb.muted ? "Muted" : "Volume"}
                   >
-                    <button class="volumeBtn volumeUp" title="Volume up" onClick=${() => player.volumeUp()}>+</button>
+                    <button class="volumeBtn volumeUp" title="Volume up" data-navitem="1" onClick=${() => player.volumeUp()}>+</button>
                     <button
                       class=${"volumeBtn volumeLevel" + (audioLongPress.pressing.value ? " longpressing" : "")}
                       data-state=${audioBlocked ? "blocked" : pb.muted ? "muted" : "on"}
                       title=${audioBlocked ? "Click video or Play to enable sound" : "Click to toggle mute (long-press: Audio settings)"}
+                      data-navitem="1"
+                      data-keyhint="M — Mute"
                       style=${{ "--lp": `${Math.round(audioLongPress.progress.value * 100)}%` }}
                       onPointerDown=${audioLongPress.onPointerDown}
                       onPointerUp=${audioLongPress.onPointerUp}
@@ -452,7 +473,7 @@ export function App({ env, log, sources, player, history }) {
                     >
                       ${audioBlocked ? "blocked" : pb.muted ? "M" : Math.round((pb.volume ?? 1) * 100)}
                     </button>
-                    <button class="volumeBtn volumeDown" title="Volume down" onClick=${() => player.volumeDown()}>−</button>
+                    <button class="volumeBtn volumeDown" title="Volume down" data-navitem="1" onClick=${() => player.volumeDown()}>−</button>
                     ${audioBlocked ? html`<span class="volumeHint">Tap to unmute</span>` : ""}
                   </div>
                 </div>
@@ -461,6 +482,8 @@ export function App({ env, log, sources, player, history }) {
                     id="btnRandom"
                     class=${"guideBtn" + (randomLongPress.pressing.value ? " longpressing" : "")}
                     title="Random (long-press for options)"
+                    data-navitem="1"
+                    data-keyhint="R — Random"
                     style=${{ "--lp": `${Math.round(randomLongPress.progress.value * 100)}%` }}
                     onPointerDown=${randomLongPress.onPointerDown}
                     onPointerUp=${randomLongPress.onPointerUp}
@@ -473,10 +496,12 @@ export function App({ env, log, sources, player, history }) {
                     Random
                   </button>
                   <div class="speedControl" title="Playback speed">
-                    <button class="speedBtn speedDown" title="Slower" onClick=${() => player.rateDown()}>−</button>
+                    <button class="speedBtn speedDown" title="Slower" data-navitem="1" onClick=${() => player.rateDown()}>−</button>
                     <button
                       class=${"speedBtn speedLevel" + (speedLongPress.pressing.value ? " longpressing" : "")}
                       title="Click to toggle 1× / last speed (long-press: edit steps)"
+                      data-navitem="1"
+                      data-keyhint="]/[ — Speed"
                       style=${{ "--lp": `${Math.round(speedLongPress.progress.value * 100)}%` }}
                       onPointerDown=${speedLongPress.onPointerDown}
                       onPointerUp=${speedLongPress.onPointerUp}
@@ -488,13 +513,15 @@ export function App({ env, log, sources, player, history }) {
                     >
                       ${rateLabel}
                     </button>
-                    <button class="speedBtn speedUp" title="Faster" onClick=${() => player.rateUp()}>+</button>
+                    <button class="speedBtn speedUp" title="Faster" data-navitem="1" onClick=${() => player.rateUp()}>+</button>
                   </div>
                   <div class="guideBar-sleep">
                     <button
                       id="btnSleep"
                       class=${"guideBtn guideBtnHasIcon" + (sleepLongPress.pressing.value ? " longpressing" : "")}
                       title="Sleep timer"
+                      data-navitem="1"
+                      data-keyhint="S — Sleep"
                       style=${{ "--lp": `${Math.round(sleepLongPress.progress.value * 100)}%` }}
                       onPointerDown=${sleepLongPress.onPointerDown}
                       onPointerUp=${sleepLongPress.onPointerUp}
@@ -521,6 +548,8 @@ export function App({ env, log, sources, player, history }) {
                     aria-label="Subtitles"
                     aria-disabled=${cap.available ? "false" : "true"}
                     disabled=${!cap.available}
+                    data-navitem="1"
+                    data-keyhint="C — CC"
                     style=${{ "--lp": `${Math.round(ccLongPress.progress.value * 100)}%` }}
                     onPointerDown=${ccLongPress.onPointerDown}
                     onPointerUp=${ccLongPress.onPointerUp}
@@ -540,6 +569,8 @@ export function App({ env, log, sources, player, history }) {
                     id="btnTheme"
                     class=${"guideBtn" + (themeLongPress.pressing.value ? " longpressing" : "")}
                     title="Theme (long-press for options)"
+                    data-navitem="1"
+                    data-keyhint="T — Theme"
                     style=${{ "--lp": `${Math.round(themeLongPress.progress.value * 100)}%` }}
                     onPointerDown=${themeLongPress.onPointerDown}
                     onPointerUp=${themeLongPress.onPointerUp}
@@ -560,10 +591,26 @@ export function App({ env, log, sources, player, history }) {
       <${HistoryPanel} isOpen=${historyOpen} history=${history} player=${player} />
       <${DetailsPanel} isOpen=${detailsOpen} env=${env} player=${player} log=${log} />
 
-      <button id="btnHistory" class="cornerBtn cornerBtnLeft" title="History" onClick=${() => (historyOpen.value = !historyOpen.value)}>
+      <button
+        id="btnHistory"
+        class="cornerBtn cornerBtnLeft"
+        title="History"
+        data-navitem="1"
+        data-keyhint="Y — History"
+        onClick=${() => (historyOpen.value = !historyOpen.value)}
+      >
         ☰
       </button>
-      <button id="btnDetails" class="cornerBtn" title="Details" onClick=${() => (detailsOpen.value = !detailsOpen.value)}>⋯</button>
+      <button
+        id="btnDetails"
+        class="cornerBtn"
+        title="Details"
+        data-navitem="1"
+        data-keyhint="D — Details"
+        onClick=${() => (detailsOpen.value = !detailsOpen.value)}
+      >
+        ⋯
+      </button>
     </div>
   `;
 }

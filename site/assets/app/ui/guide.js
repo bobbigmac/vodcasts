@@ -80,11 +80,21 @@ export function GuidePanel({ isOpen, sources, player }) {
                 class=${rowClass}
                 data-source-idx=${String(i)}
                 data-source-id=${src.id}
+                role="button"
+                tabIndex=${0}
+                data-navitem="1"
                 onClick=${(e) => {
                   if (e.target.closest(".guideEpBlock")) return;
                   focusSourceIdx.value = i;
                   focusEpIdx.value = 0;
                   if (!episodesBySource[src.id]) player.loadSourceEpisodes(src.id).catch(() => {});
+                }}
+                onKeyDown=${(e) => {
+                  if (e.key === "Enter") {
+                    focusSourceIdx.value = i;
+                    focusEpIdx.value = 0;
+                    if (!episodesBySource[src.id]) player.loadSourceEpisodes(src.id).catch(() => {});
+                  }
                 }}
               >
                 <div class="guideChannelName">
@@ -111,6 +121,7 @@ export function GuidePanel({ isOpen, sources, player }) {
                               data-ep-idx=${String(j)}
                               data-ep-id=${ep.id}
                               data-source-id=${src.id}
+                              data-navitem="1"
                               aria-label=${`${(ep.title || "Episode").slice(0, 40)}${epHasCc ? " (CC)" : ""}`}
                               onClick=${async () => {
                                 await player.selectSource(src.id, { preserveEpisode: false, skipAutoEpisode: true, autoplay: true });
@@ -149,7 +160,16 @@ export function GuidePanel({ isOpen, sources, player }) {
           </div>
         </div>
       </div>
-      <button id="btnCloseGuide" class="guidePanel-close" onClick=${() => (isOpen.value = false)}>✕</button>
+      <button
+        id="btnCloseGuide"
+        class="guidePanel-close"
+        title="Close"
+        data-navitem="1"
+        data-keyhint="G — Close"
+        onClick=${() => (isOpen.value = false)}
+      >
+        ✕
+      </button>
     </div>
   `;
 }

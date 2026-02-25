@@ -85,6 +85,7 @@ export function CaptionsTakeover({ player, takeover }) {
       class="guideBarTakeover"
       role="dialog"
       aria-label="Captions settings"
+      data-navmode="arrows"
       onPointerDownCapture=${() => takeover.bump()}
       onKeyDownCapture=${() => takeover.bump()}
     >
@@ -116,4 +117,3 @@ export function CaptionsTakeover({ player, takeover }) {
     </div>
   `;
 }
-
