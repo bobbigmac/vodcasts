@@ -1,0 +1,1540 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/" xmlns:podcast="https://podcastindex.org/namespace/1.0" version="2.0">
+	<channel>
+		<title>Windows Weekly (Video)</title>
+		<itunes:author>TWiT</itunes:author>
+		<link>https://twit.tv/shows/windows-weekly</link>
+		<generator>TWiT Feed Generator v4.10</generator>
+		<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+		<language>en-US</language>
+		<copyright>This work is licensed under a Creative Commons License - Attribution-NonCommercial-NoDerivatives 4.0 International - http://creativecommons.org/licenses/by-nc-nd/4.0/</copyright>
+		<creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+		<managingEditor>feedmail@twit.tv (TWiT Editors)</managingEditor>
+		<webMaster>feedmail@twit.tv (TWiT Engineering)</webMaster>
+		<ttl>720</ttl>
+		<sy:updatePeriod>weekly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+		<lastBuildDate>Fri, 20 Feb 2026 18:43:50 PST</lastBuildDate>
+		<pubDate>Fri, 20 Feb 2026 18:43:50 PST</pubDate>
+		<rawvoice:frequency>weekly</rawvoice:frequency>
+		<rawvoice:location>Petaluma, CA</rawvoice:location>
+		<itunes:type>episodic</itunes:type>
+		<itunes:subtitle>A look at all things Microsoft, including Windows, Office, Xbox, Enterprise, and more.</itunes:subtitle>
+		<itunes:summary>Windows Weekly is about more than Windows. Veteran Microsoft insiders Paul Thurrott and Richard Campbell join Leo for a deep dive into the most valuable company in the world. From consumer to enterprise, AI to Xbox, Windows Weekly is the only Microsoft podcast you'll ever need.
+
+Records live every Wednesday at 2:00pm Eastern / 11:00am Pacific / 19:00 UTC.</itunes:summary>
+		<description>Windows Weekly is about more than Windows. Veteran Microsoft insiders Paul Thurrott and Richard Campbell join Leo for a deep dive into the most valuable company in the world. From consumer to enterprise, AI to Xbox, Windows Weekly is the only Microsoft podcast you'll ever need.
+
+Records live every Wednesday at 2:00pm Eastern / 11:00am Pacific / 19:00 UTC.</description>
+		<itunes:keywords>TWiT, Technology, Paul Thurrott, Richard Campbell, Leo Laporte, Windows, Microsoft, Xbox</itunes:keywords>
+		<rawvoice:rating tv="tv-g">tv-g</rawvoice:rating>
+		<itunes:explicit>no</itunes:explicit>
+		<itunes:block>no</itunes:block>
+		<googleplay:block>No</googleplay:block>
+		<podcast:funding url="https://twit.tv/clubtwit">Become a Club TWiT member!</podcast:funding>
+		<itunes:owner>
+			<itunes:name>Leo Laporte</itunes:name>
+			<itunes:email>feedmail@twit.tv</itunes:email>
+		</itunes:owner>
+		<itunes:category text="News">
+			<itunes:category text="Tech News"/>
+		</itunes:category>
+		<itunes:category text="Technology" />
+		<category>Technology</category>
+		<image>
+			<title>Windows Weekly (Video)</title>
+			<url>https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/Windows%20Weekly/album_art/hd/WW_albumart_standard_video.jpg</url>
+			<link>https://twit.tv/shows/windows-weekly</link>
+		</image>
+		<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/Windows%20Weekly/album_art/hd/WW_albumart_standard_video.jpg" />
+		<itunes:new-feed-url>https://feeds.twit.tv/ww_video_hd.xml</itunes:new-feed-url>
+		<rawvoice:subscribe feed="https://feeds.twit.tv/ww_video_hd.xml" itunes="https://podcasts.apple.com/us/podcast/windows-weekly-video/id593054580" html="https://twit.tv/shows/windows-weekly"></rawvoice:subscribe>
+		<atom:link href="https://feeds.twit.tv/ww_video_hd.xml" type="application/rss+xml" rel="self"/>
+		<item>
+			<title>WW 971: Texas English - Where Does Xbox Go Next?</title>
+			<itunes:title>Texas English - Where Does Xbox Go Next?</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Wed, 18 Feb 2026 12:04:01 PST</pubDate>
+			<itunes:episode>971</itunes:episode>
+			<podcast:episode>971</podcast:episode>
+			<link>https://twit.tv/shows/windows-weekly/episodes/971</link>
+			<comments>https://twit.tv/shows/windows-weekly/episodes/971</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Where Does Xbox Go Next?</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/windows-weekly-951-transcript-0" type="text/html" />
+			<itunes:keywords>Microsoft, Windows, xbox, Windows Insider program, windows taskbar, lenovo revenues, google audio generation, Google I/O, android 17 beta, phil spencer, GDC 2026, kingdom come deliverance 2, Avowed, PS5, nvidia geforce now, amazon fire tv stick</itunes:keywords>
+			<description><![CDATA[
+<p>Microsoft might finally give power users what they've been demanding: the ability to move the Windows 11 taskbar wherever they want. Plus, 3 major new chapters in Paul's next book, and a strange pick that solves his big issue with Windows Spotlight.</p> 
+<p><br /> 
+Windows 11</p><ul> 
+<li>Potentially good news for the 13 people who want to move the Taskbar to a different screen side</li> 
+<li>Beta (but not Dev) with one new "feature"</li> 
+<li>Release Preview for 24H2/25H2 with emoji 16.0, QMR improvements, network speed test, pan and tilt controls for compatible cameras, widgets improvements, more</li> 
+<li>Lenovo revenues up 18% to $22.2 billion</li></ul> 
+<p>AI/Dev</p><ul> 
+<li>Google announces 30-second audio generation</li> 
+<li>Google sets a date for I/O 2026, but where in the Carmen Diego is Build 2026?</li> 
+<li>Android 17 Beta is here with an even shorter runway</li> 
+<li>With '26.3 out, Apple releases '26.4 Beta 1s</li></ul> 
+<p>Xbox and gaming</p><ul> 
+<li>Phil Spencer is always in the spotlight, but he's been on the down-low for months</li> 
+<li>Some hints for the future coming GDC 2026</li> 
+<li><em>Kingdom Come Deliverance II, Witcher 3</em>, more coming to Xbox Game Pass</li> 
+<li><em>Avowed </em>comes to the PlayStation 5 along with the Anniversary Update</li> 
+<li>Microsoft is retiring user-created Xbox social clubs</li> 
+<li>NVIDIA GeForce Now comes to Amazon Fire TV 4K Sticks</li></ul> 
+<p>Tips &amp; picks</p><ul> 
+<li>Tip of the week: Major progress on De-Enshittify Windows 11, the book</li> 
+<li>App pick of the week: Bing Wallpaper</li> 
+<li>RunAs Radio this week: Hacking using AI with Erica Burgess</li> 
+<li>Brown liquor pick of the week: Lot 40 100% Pot Still Rye</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Microsoft might finally give power users what they've been demanding: the ability to move the Windows 11 taskbar wherever they want. Plus, 3 major new chapters in Paul's next book, and a strange pick that solves his big issue with Windows Spotlight.</p> 
+<p><br /> 
+Windows 11</p><ul> 
+<li>Potentially good news for the 13 people who want to move the Taskbar to a different screen side</li> 
+<li>Beta (but not Dev) with one new "feature"</li> 
+<li>Release Preview for 24H2/25H2 with emoji 16.0, QMR improvements, network speed test, pan and tilt controls for compatible cameras, widgets improvements, more</li> 
+<li>Lenovo revenues up 18% to $22.2 billion</li></ul> 
+<p>AI/Dev</p><ul> 
+<li>Google announces 30-second audio generation</li> 
+<li>Google sets a date for I/O 2026, but where in the Carmen Diego is Build 2026?</li> 
+<li>Android 17 Beta is here with an even shorter runway</li> 
+<li>With '26.3 out, Apple releases '26.4 Beta 1s</li></ul> 
+<p>Xbox and gaming</p><ul> 
+<li>Phil Spencer is always in the spotlight, but he's been on the down-low for months</li> 
+<li>Some hints for the future coming GDC 2026</li> 
+<li><em>Kingdom Come Deliverance II, Witcher 3</em>, more coming to Xbox Game Pass</li> 
+<li><em>Avowed </em>comes to the PlayStation 5 along with the Anniversary Update</li> 
+<li>Microsoft is retiring user-created Xbox social clubs</li> 
+<li>NVIDIA GeForce Now comes to Amazon Fire TV 4K Sticks</li></ul> 
+<p>Tips &amp; picks</p><ul> 
+<li>Tip of the week: Major progress on De-Enshittify Windows 11, the book</li> 
+<li>App pick of the week: Bing Wallpaper</li> 
+<li>RunAs Radio this week: Hacking using AI with Erica Burgess</li> 
+<li>Brown liquor pick of the week: Lot 40 100% Pot Still Rye</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Microsoft might finally give power users what they've been demanding: the ability to move the Windows 11 taskbar wherever they want. Plus, 3 major new chapters in Paul's next book, and a strange pick that solves his big issue with Windows Spotlight.</p> 
+<p><br /> 
+Windows 11</p><ul> 
+<li>Potentially good news for the 13 people who want to move the Taskbar to a different screen side</li> 
+<li>Beta (but not Dev) with one new "feature"</li> 
+<li>Release Preview for 24H2/25H2 with emoji 16.0, QMR improvements, network speed test, pan and tilt controls for compatible cameras, widgets improvements, more</li> 
+<li>Lenovo revenues up 18% to $22.2 billion</li></ul> 
+<p>AI/Dev</p><ul> 
+<li>Google announces 30-second audio generation</li> 
+<li>Google sets a date for I/O 2026, but where in the Carmen Diego is Build 2026?</li> 
+<li>Android 17 Beta is here with an even shorter runway</li> 
+<li>With '26.3 out, Apple releases '26.4 Beta 1s</li></ul> 
+<p>Xbox and gaming</p><ul> 
+<li>Phil Spencer is always in the spotlight, but he's been on the down-low for months</li> 
+<li>Some hints for the future coming GDC 2026</li> 
+<li><em>Kingdom Come Deliverance II, Witcher 3</em>, more coming to Xbox Game Pass</li> 
+<li><em>Avowed </em>comes to the PlayStation 5 along with the Anniversary Update</li> 
+<li>Microsoft is retiring user-created Xbox social clubs</li> 
+<li>NVIDIA GeForce Now comes to Amazon Fire TV 4K Sticks</li></ul> 
+<p>Tips &amp; picks</p><ul> 
+<li>Tip of the week: Major progress on De-Enshittify Windows 11, the book</li> 
+<li>App pick of the week: Bing Wallpaper</li> 
+<li>RunAs Radio this week: Hacking using AI with Erica Burgess</li> 
+<li>Brown liquor pick of the week: Lot 40 100% Pot Still Rye</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860186/hero/WW0971_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0971/ww0971_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:03:32</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0971/ww0971_h264m_1920x1080.mp4" length="2174707462" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0971/ww0971_h264m_1920x1080.mp4" fileSize="2174707462" type="video/mp4" medium="video">
+				<media:title type="plain">WW 971: Texas English - Where Does Xbox Go Next?</media:title>
+				<media:description type="plain">Where Does Xbox Go Next?</media:description>
+				<media:keywords>Microsoft, Windows, xbox, Windows Insider program, windows taskbar, lenovo revenues, google audio generation, Google I/O, android 17 beta, phil spencer, GDC 2026, kingdom come deliverance 2, Avowed, PS5, nvidia geforce now, amazon fire tv stick</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860186/hero/WW0971_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Paul Thurrott</media:credit>
+				<media:credit role="host">Richard Campbell</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/richard-campbell" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/114471/pictures/rc_headshot_1600.jpg">Richard Campbell</podcast:person>
+		</item>
+		<item>
+			<title>WW 970: Token Kill! - What Version 26H1&#039;s Scoped Release Implies</title>
+			<itunes:title>Token Kill! - What Version 26H1&#039;s Scoped Release Implies</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Wed, 11 Feb 2026 16:36:36 PST</pubDate>
+			<itunes:episode>970</itunes:episode>
+			<podcast:episode>970</podcast:episode>
+			<link>https://twit.tv/shows/windows-weekly/episodes/970</link>
+			<comments>https://twit.tv/shows/windows-weekly/episodes/970</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>What Version 26H1&#039;s Scoped Release Implies</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/windows-weekly-970-transcript" type="text/html" />
+			<itunes:keywords>Microsoft, Windows, xbox, windows 11, windows 12, patch tuesday, Satya nadella, Security, quality, Windows Baseline Security Mode, user transparency, consent, ai agents, copilot, Windows Insider program, Qualcomm Snapdragon X2, secure boot, onedrive</itunes:keywords>
+			<description><![CDATA[
+<p>After years of ignoring and maligning Windows, Microsoft has finally woken up and is making some happy noises. Last week, we discussed how Microsoft plans to improve the quality of Windows and that there are already many signs of that work in various security features and new OneDrive Folder Backup changes - plus those two new direct reports to Nadella. Then, Microsoft announced its Windows Baseline Security Mode and User Transparency and Consent initiatives with questions about the timing. And now, Microsoft just explained Windows 11 version 26H1, and it's <strong>not</strong> like 24H2 at all despite being tied to Snapdragon X2 silicon.<p>Something happened ... and that something is tied to 26H1</p><ul> 
+<li>26H1: Only for Snapdragon X2, a &quot;scoped release,&quot; based on a &quot;different core&quot; from 24H2 and 25H2</li> 
+<li>You cannot upgrade 24H2 or 25H2 to 26H1</li> 
+<li>You cannot upgrade 26H1 to 26H2 (!) - instead, those on 26H1 &quot;will have a path to update in a future Windows release.&quot; - Is that future Windows release Windows 12? Probably</li> 
+<li>24H2, 25H2, and 26H1 will all have the same user-facing features, this has been the case with all support Windows (11) versions for 2+ years</li> 
+<li>(Remember, this is not what happened with 24H2. Shipped early on Snapdragon X1, but was made available to all Windows 11 PCs later that year)</li> 
+<li>So why is this happening now? Fortune 500/corporate customer pushback on AI is one guess</li> 
+<li>This is GOOD news, however it all unfolds</li></ul> 
+<p>More Windows 11</p><ul> 
+<li>Yesterday was Patch Tuesday, so get to work. Updates this month include: Agent in Settings (Copilot+ PCs only) improvements. Settings improvements, cross-device Resume improvements, Windows MIDI Services improvements, Narrator improvements, Smart App Control improvements, Windows Hello New ESS improvements, and File Explorer improvements</li> 
+<li>Somewhat related to the quality/security push noted above, Microsoft is rolling out new Secure Boot certificates this year for older (pre-2024/25) PCs</li> 
+<li>Microsoft announces a Store CLI that does (almost) nothing new compared to winget</li> 
+<li>New Dev and Beta builds with minor changes: Emoji 16.0, camera improvements, various fixes</li></ul> 
+<p>More earnings</p><ul> 
+<li>Amazon hits $213.4 billion in revenues, will spend $200 billion CAPEX/AI infrastructure this fiscal year, more than Google ($175/$185 billion) or Microsoft (estimated $150+ billion)</li> 
+<li>Qualcomm $12.25 billion in revenues, up 5 percent</li> 
+<li>Alphabet/Google - Up 18 percent (!) to $113.8 billion - 750 million MAUs on Gemini, 74 percent of revenues come from advertising</li> 
+<li>Spotify - somehow has over 750 million MAUs now</li></ul> 
+<p>AI and dev</p><ul> 
+<li>OpenAI and Anthropic release dueling agentic AI coding models that do more than agentic AI coding within minutes of each other</li> 
+<li>Ads appear in ChatGPT Free and Go as threatened</li> 
+<li>Duck.ai adds private, anonymous real-time AI voice chat</li> 
+<li>NET 11 Preview 1 arrives, but there's nothing major here</li></ul> 
+<p>Xbox &amp; games</p><ul> 
+<li>Microsoft announces the 2025 Xbox Excellence Awards</li> 
+<li>Celebrate 35 years of Id Software - <em>Castle Wolfenstein 3D</em> was a wake-up call for PC gaming, but <em>DOOM</em> was a miracle, and <em>Quake </em>was a real WTF moment</li> 
+<li>Sony sold 8 million PlayStation 5s (down 16 percent YOY) in the holiday quarter, 92 million (!) overall</li> 
+<li>Valve predictably delays the vaporware Steam Machine</li> 
+<li>Epic Games is having a winter sale - for example, <em>Silent Hill 2, GTA V Enhanced</em> are 50 percent<em>R</em></li></ul> 
+<p></p></p> 
+<p>These show notes have been truncated due to length. For the full show notes, visit <a href="https://twit.tv/shows/windows-weekly/episodes/970">https://twit.tv/shows/windows-weekly/episodes/970</a></p> <p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+<li><a href="http://helixsleep.com/windows" target="_blank" rel="sponsored">helixsleep.com/windows</a></li>
+<li><a href="http://trustedtech.team/windowsweekly365" target="_blank" rel="sponsored">trustedtech.team/windowsweekly365</a></li>
+<li><a href="https://cachefly.com/twit" target="_blank" rel="sponsored">cachefly.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>After years of ignoring and maligning Windows, Microsoft has finally woken up and is making some happy noises. Last week, we discussed how Microsoft plans to improve the quality of Windows and that there are already many signs of that work in various security features and new OneDrive Folder Backup changes - plus those two new direct reports to Nadella. Then, Microsoft announced its Windows Baseline Security Mode and User Transparency and Consent initiatives with questions about the timing. And now, Microsoft just explained Windows 11 version 26H1, and it's <strong>not</strong> like 24H2 at all despite being tied to Snapdragon X2 silicon.<p>Something happened ... and that something is tied to 26H1</p><ul> 
+<li>26H1: Only for Snapdragon X2, a &quot;scoped release,&quot; based on a &quot;different core&quot; from 24H2 and 25H2</li> 
+<li>You cannot upgrade 24H2 or 25H2 to 26H1</li> 
+<li>You cannot upgrade 26H1 to 26H2 (!) - instead, those on 26H1 &quot;will have a path to update in a future Windows release.&quot; - Is that future Windows release Windows 12? Probably</li> 
+<li>24H2, 25H2, and 26H1 will all have the same user-facing features, this has been the case with all support Windows (11) versions for 2+ years</li> 
+<li>(Remember, this is not what happened with 24H2. Shipped early on Snapdragon X1, but was made available to all Windows 11 PCs later that year)</li> 
+<li>So why is this happening now? Fortune 500/corporate customer pushback on AI is one guess</li> 
+<li>This is GOOD news, however it all unfolds</li></ul> 
+<p>More Windows 11</p><ul> 
+<li>Yesterday was Patch Tuesday, so get to work. Updates this month include: Agent in Settings (Copilot+ PCs only) improvements. Settings improvements, cross-device Resume improvements, Windows MIDI Services improvements, Narrator improvements, Smart App Control improvements, Windows Hello New ESS improvements, and File Explorer improvements</li> 
+<li>Somewhat related to the quality/security push noted above, Microsoft is rolling out new Secure Boot certificates this year for older (pre-2024/25) PCs</li> 
+<li>Microsoft announces a Store CLI that does (almost) nothing new compared to winget</li> 
+<li>New Dev and Beta builds with minor changes: Emoji 16.0, camera improvements, various fixes</li></ul> 
+<p>More earnings</p><ul> 
+<li>Amazon hits $213.4 billion in revenues, will spend $200 billion CAPEX/AI infrastructure this fiscal year, more than Google ($175/$185 billion) or Microsoft (estimated $150+ billion)</li> 
+<li>Qualcomm $12.25 billion in revenues, up 5 percent</li> 
+<li>Alphabet/Google - Up 18 percent (!) to $113.8 billion - 750 million MAUs on Gemini, 74 percent of revenues come from advertising</li> 
+<li>Spotify - somehow has over 750 million MAUs now</li></ul> 
+<p>AI and dev</p><ul> 
+<li>OpenAI and Anthropic release dueling agentic AI coding models that do more than agentic AI coding within minutes of each other</li> 
+<li>Ads appear in ChatGPT Free and Go as threatened</li> 
+<li>Duck.ai adds private, anonymous real-time AI voice chat</li> 
+<li>NET 11 Preview 1 arrives, but there's nothing major here</li></ul> 
+<p>Xbox &amp; games</p><ul> 
+<li>Microsoft announces the 2025 Xbox Excellence Awards</li> 
+<li>Celebrate 35 years of Id Software - <em>Castle Wolfenstein 3D</em> was a wake-up call for PC gaming, but <em>DOOM</em> was a miracle, and <em>Quake </em>was a real WTF moment</li> 
+<li>Sony sold 8 million PlayStation 5s (down 16 percent YOY) in the holiday quarter, 92 million (!) overall</li> 
+<li>Valve predictably delays the vaporware Steam Machine</li> 
+<li>Epic Games is having a winter sale - for example, <em>Silent Hill 2, GTA V Enhanced</em> are 50 percent<em>R</em></li></ul> 
+<p></p></p> 
+<p>These show notes have been truncated due to length. For the full show notes, visit <a href="https://twit.tv/shows/windows-weekly/episodes/970">https://twit.tv/shows/windows-weekly/episodes/970</a></p> <p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+<li><a href="http://helixsleep.com/windows" target="_blank" rel="sponsored">helixsleep.com/windows</a></li>
+<li><a href="http://trustedtech.team/windowsweekly365" target="_blank" rel="sponsored">trustedtech.team/windowsweekly365</a></li>
+<li><a href="https://cachefly.com/twit" target="_blank" rel="sponsored">cachefly.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>After years of ignoring and maligning Windows, Microsoft has finally woken up and is making some happy noises. Last week, we discussed how Microsoft plans to improve the quality of Windows and that there are already many signs of that work in various security features and new OneDrive Folder Backup changes - plus those two new direct reports to Nadella. Then, Microsoft announced its Windows Baseline Security Mode and User Transparency and Consent initiatives with questions about the timing. And now, Microsoft just explained Windows 11 version 26H1, and it's <strong>not</strong> like 24H2 at all despite being tied to Snapdragon X2 silicon.<p>Something happened ... and that something is tied to 26H1</p><ul> 
+<li>26H1: Only for Snapdragon X2, a &quot;scoped release,&quot; based on a &quot;different core&quot; from 24H2 and 25H2</li> 
+<li>You cannot upgrade 24H2 or 25H2 to 26H1</li> 
+<li>You cannot upgrade 26H1 to 26H2 (!) - instead, those on 26H1 &quot;will have a path to update in a future Windows release.&quot; - Is that future Windows release Windows 12? Probably</li> 
+<li>24H2, 25H2, and 26H1 will all have the same user-facing features, this has been the case with all support Windows (11) versions for 2+ years</li> 
+<li>(Remember, this is not what happened with 24H2. Shipped early on Snapdragon X1, but was made available to all Windows 11 PCs later that year)</li> 
+<li>So why is this happening now? Fortune 500/corporate customer pushback on AI is one guess</li> 
+<li>This is GOOD news, however it all unfolds</li></ul> 
+<p>More Windows 11</p><ul> 
+<li>Yesterday was Patch Tuesday, so get to work. Updates this month include: Agent in Settings (Copilot+ PCs only) improvements. Settings improvements, cross-device Resume improvements, Windows MIDI Services improvements, Narrator improvements, Smart App Control improvements, Windows Hello New ESS improvements, and File Explorer improvements</li> 
+<li>Somewhat related to the quality/security push noted above, Microsoft is rolling out new Secure Boot certificates this year for older (pre-2024/25) PCs</li> 
+<li>Microsoft announces a Store CLI that does (almost) nothing new compared to winget</li> 
+<li>New Dev and Beta builds with minor changes: Emoji 16.0, camera improvements, various fixes</li></ul> 
+<p>More earnings</p><ul> 
+<li>Amazon hits $213.4 billion in revenues, will spend $200 billion CAPEX/AI infrastructure this fiscal year, more than Google ($175/$185 billion) or Microsoft (estimated $150+ billion)</li> 
+<li>Qualcomm $12.25 billion in revenues, up 5 percent</li> 
+<li>Alphabet/Google - Up 18 percent (!) to $113.8 billion - 750 million MAUs on Gemini, 74 percent of revenues come from advertising</li> 
+<li>Spotify - somehow has over 750 million MAUs now</li></ul> 
+<p>AI and dev</p><ul> 
+<li>OpenAI and Anthropic release dueling agentic AI coding models that do more than agentic AI coding within minutes of each other</li> 
+<li>Ads appear in ChatGPT Free and Go as threatened</li> 
+<li>Duck.ai adds private, anonymous real-time AI voice chat</li> 
+<li>NET 11 Preview 1 arrives, but there's nothing major here</li></ul> 
+<p>Xbox &amp; games</p><ul> 
+<li>Microsoft announces the 2025 Xbox Excellence Awards</li> 
+<li>Celebrate 35 years of Id Software - <em>Castle Wolfenstein 3D</em> was a wake-up call for PC gaming, but <em>DOOM</em> was a miracle, and <em>Quake </em>was a real WTF moment</li> 
+<li>Sony sold 8 million PlayStation 5s (down 16 percent YOY) in the holiday quarter, 92 million (!) overall</li> 
+<li>Valve predictably delays the vaporware Steam Machine</li> 
+<li>Epic Games is having a winter sale - for example, <em>Silent Hill 2, GTA V Enhanced</em> are 50 percent<em>R</em></li></ul> 
+<p></p></p> 
+<p>These show notes have been truncated due to length. For the full show notes, visit <a href="https://twit.tv/shows/windows-weekly/episodes/970">https://twit.tv/shows/windows-weekly/episodes/970</a></p> <p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+<li><a href="http://helixsleep.com/windows" target="_blank" rel="sponsored">helixsleep.com/windows</a></li>
+<li><a href="http://trustedtech.team/windowsweekly365" target="_blank" rel="sponsored">trustedtech.team/windowsweekly365</a></li>
+<li><a href="https://cachefly.com/twit" target="_blank" rel="sponsored">cachefly.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860095/hero/WW0970_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0970/ww0970_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:33:12</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0970/ww0970_h264m_1920x1080.mp4" length="2692303193" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0970/ww0970_h264m_1920x1080.mp4" fileSize="2692303193" type="video/mp4" medium="video">
+				<media:title type="plain">WW 970: Token Kill! - What Version 26H1&#039;s Scoped Release Implies</media:title>
+				<media:description type="plain">What Version 26H1&#039;s Scoped Release Implies</media:description>
+				<media:keywords>Microsoft, Windows, xbox, windows 11, windows 12, patch tuesday, Satya nadella, Security, quality, Windows Baseline Security Mode, user transparency, consent, ai agents, copilot, Windows Insider program, Qualcomm Snapdragon X2, secure boot, onedrive</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860095/hero/WW0970_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Paul Thurrott</media:credit>
+				<media:credit role="host">Richard Campbell</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/richard-campbell" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/114471/pictures/rc_headshot_1600.jpg">Richard Campbell</podcast:person>
+		</item>
+		<item>
+			<title>WW 969: The Hidden Sweatshop - Windows 11 Reaches 1 Billion Users!</title>
+			<itunes:title>The Hidden Sweatshop - Windows 11 Reaches 1 Billion Users!</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Wed, 04 Feb 2026 18:21:55 PST</pubDate>
+			<itunes:episode>969</itunes:episode>
+			<podcast:episode>969</podcast:episode>
+			<link>https://twit.tv/shows/windows-weekly/episodes/969</link>
+			<comments>https://twit.tv/shows/windows-weekly/episodes/969</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Windows 11 Reaches 1 Billion Users!</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/windows-weekly-969-transcript" type="text/html" />
+			<itunes:keywords>Microsoft, Windows, xbox, windows 11, Microsoft earnings, AI Strategy, Windows inshitification, Copilot Plus PC, forced upgrades, OneDrive Folder Backup, default apps, Security, insider feedback, Satya nadella, Pavan Davaluri, ARM, Sysmon, BitWarden</itunes:keywords>
+			<description><![CDATA[
+<p>Microsoft is burning through billions on AI, but Wall Street is finally demanding to see where the payoff is. The earnings announcement triggered a $357 billion valuation wipe-out, the largest in Microsoft's history and the second-largest in history overall (Nvidia managed to lose $593 billion in value in the wake of DeepSeek in early 2025).<p>Windows</p><ul> 
+<li>Windows 11 has over one billion users - and, surprise, it got their faster than Windows 10 without any of the shenanigans</li> 
+<li>Microsoft to address the quality issues in Windows 11 in 2026</li> 
+<li>There is already evidence that Microsoft is trying to make Windows 11 suck less: Recent OneDrive changes that address a key ensh*ttification, and let's not forget all those security advances</li> 
+<li>What did Microsoft really promise? Not much</li> 
+<li>Microsoft has new EVPs for Security and Quality</li> 
+<li>Microsoft belatedly delivered the January Week D update last Thursday, a preview of this month's Patch Tuesday</li> 
+<li>Dev and Beta builds both deliver Mark Russinovich's sysmon tool</li></ul> 
+<p>Microsoft earnings deep dive</p><ul> 
+<li>Microsoft reported a net income of $38.5 billion on revenues of $81.3 billion in the quarter ending December 31. Those figures represent gains of 60 percent and 17 percent, respectively, year-over-year</li> 
+<li>Earnings analysis: All eyes are on AI and no one is happy</li> 
+<li>Microsoft spent $37.5 billion on AI infrastructure (capex) in the quarter, up 66 percent YOY, and it's on track to spend $150+ billion in the fiscal year</li> 
+<li>Every single question was about this and how it will ever recoup the costs</li> 
+<li>There are now 15 million paid Microsoft 365 Copilot seats out of 450+ million Microsoft 365 seats</li> 
+<li>OpenAI is Microsoft's biggest Azure customer, but it's unclear if there is any real money there because of accounting tricks</li> 
+<li>Windows, Edge, and Bing all &quot;gained share,&quot; PC maker revenues were up just 1 percent, the Windows 10 upgrade cycle was mostly a bust (it's likely that most of it was tied to RAM pricing fears, too)</li> 
+<li>Xbox fell off a cliff with content and services revenues down 5 percent in a holiday quarter somehow and Xbox hardware revenue declined an astonishing 32 percent YOY</li> 
+<li>Standalone Office 2025 suite was a surprise hit, Hood is curious if that continues</li> 
+<li>Microsoft 365 &quot;cost of business&quot; up 10 percent YOY because of AI costs</li> 
+<li>AMD revenues up 34 percent to $10.3 billion</li> 
+<li>Apple delivers record revenues of $143.8 billion; iPhone made more revenues by itself than all of Microsoft</li></ul> 
+<p>AI</p><ul> 
+<li>Microsoft is going to basically make an app store for content makers who wish to be paid for use by AI</li> 
+<li>Anthropic advertises that Claude will be advertising-free, unlike ChatGPT</li> 
+<li>The next Firefox will include the promised AI kill switch and Vivaldi &quot;extends the middle fingerˮ to AI</li></ul> 
+<p>Xbox and games</p><ul> 
+<li>AMD reveals next Xbox console in 2027</li> 
+<li>We're getting a solid collection of Xbox Game Pass titles for the beginning of February</li> 
+<li><em>Battlefield </em>6 was the best-selling shooter of 2025 and EA made $1.9 billion in Q4</li> 
+<li>Epic Games has big plans for its PC launcher/store</li> 
+<li>Nintendo has now sold 17 million Switch 2s as OG Switch hits 155 million units</li></ul> 
+<p>Tips and picks</p><ul> 
+<li>Tip of the week: Make OneDrive Folder Backup work for you</li> 
+<li>App pick of the week: Bitwarden (TWiT sponsor)</li> 
+<li>RunAs Radio this week: Getting Started using Purview with Erica Toelle</li> 
+<li>Brown liquor pick of the week: Glendronach Ode to</li></ul></p> 
+<p>These show notes have been truncated due to length. For the full show notes, visit <a href="https://twit.tv/shows/windows-weekly/episodes/969">https://twit.tv/shows/windows-weekly/episodes/969</a></p> <p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Microsoft is burning through billions on AI, but Wall Street is finally demanding to see where the payoff is. The earnings announcement triggered a $357 billion valuation wipe-out, the largest in Microsoft's history and the second-largest in history overall (Nvidia managed to lose $593 billion in value in the wake of DeepSeek in early 2025).<p>Windows</p><ul> 
+<li>Windows 11 has over one billion users - and, surprise, it got their faster than Windows 10 without any of the shenanigans</li> 
+<li>Microsoft to address the quality issues in Windows 11 in 2026</li> 
+<li>There is already evidence that Microsoft is trying to make Windows 11 suck less: Recent OneDrive changes that address a key ensh*ttification, and let's not forget all those security advances</li> 
+<li>What did Microsoft really promise? Not much</li> 
+<li>Microsoft has new EVPs for Security and Quality</li> 
+<li>Microsoft belatedly delivered the January Week D update last Thursday, a preview of this month's Patch Tuesday</li> 
+<li>Dev and Beta builds both deliver Mark Russinovich's sysmon tool</li></ul> 
+<p>Microsoft earnings deep dive</p><ul> 
+<li>Microsoft reported a net income of $38.5 billion on revenues of $81.3 billion in the quarter ending December 31. Those figures represent gains of 60 percent and 17 percent, respectively, year-over-year</li> 
+<li>Earnings analysis: All eyes are on AI and no one is happy</li> 
+<li>Microsoft spent $37.5 billion on AI infrastructure (capex) in the quarter, up 66 percent YOY, and it's on track to spend $150+ billion in the fiscal year</li> 
+<li>Every single question was about this and how it will ever recoup the costs</li> 
+<li>There are now 15 million paid Microsoft 365 Copilot seats out of 450+ million Microsoft 365 seats</li> 
+<li>OpenAI is Microsoft's biggest Azure customer, but it's unclear if there is any real money there because of accounting tricks</li> 
+<li>Windows, Edge, and Bing all &quot;gained share,&quot; PC maker revenues were up just 1 percent, the Windows 10 upgrade cycle was mostly a bust (it's likely that most of it was tied to RAM pricing fears, too)</li> 
+<li>Xbox fell off a cliff with content and services revenues down 5 percent in a holiday quarter somehow and Xbox hardware revenue declined an astonishing 32 percent YOY</li> 
+<li>Standalone Office 2025 suite was a surprise hit, Hood is curious if that continues</li> 
+<li>Microsoft 365 &quot;cost of business&quot; up 10 percent YOY because of AI costs</li> 
+<li>AMD revenues up 34 percent to $10.3 billion</li> 
+<li>Apple delivers record revenues of $143.8 billion; iPhone made more revenues by itself than all of Microsoft</li></ul> 
+<p>AI</p><ul> 
+<li>Microsoft is going to basically make an app store for content makers who wish to be paid for use by AI</li> 
+<li>Anthropic advertises that Claude will be advertising-free, unlike ChatGPT</li> 
+<li>The next Firefox will include the promised AI kill switch and Vivaldi &quot;extends the middle fingerˮ to AI</li></ul> 
+<p>Xbox and games</p><ul> 
+<li>AMD reveals next Xbox console in 2027</li> 
+<li>We're getting a solid collection of Xbox Game Pass titles for the beginning of February</li> 
+<li><em>Battlefield </em>6 was the best-selling shooter of 2025 and EA made $1.9 billion in Q4</li> 
+<li>Epic Games has big plans for its PC launcher/store</li> 
+<li>Nintendo has now sold 17 million Switch 2s as OG Switch hits 155 million units</li></ul> 
+<p>Tips and picks</p><ul> 
+<li>Tip of the week: Make OneDrive Folder Backup work for you</li> 
+<li>App pick of the week: Bitwarden (TWiT sponsor)</li> 
+<li>RunAs Radio this week: Getting Started using Purview with Erica Toelle</li> 
+<li>Brown liquor pick of the week: Glendronach Ode to</li></ul></p> 
+<p>These show notes have been truncated due to length. For the full show notes, visit <a href="https://twit.tv/shows/windows-weekly/episodes/969">https://twit.tv/shows/windows-weekly/episodes/969</a></p> <p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Microsoft is burning through billions on AI, but Wall Street is finally demanding to see where the payoff is. The earnings announcement triggered a $357 billion valuation wipe-out, the largest in Microsoft's history and the second-largest in history overall (Nvidia managed to lose $593 billion in value in the wake of DeepSeek in early 2025).<p>Windows</p><ul> 
+<li>Windows 11 has over one billion users - and, surprise, it got their faster than Windows 10 without any of the shenanigans</li> 
+<li>Microsoft to address the quality issues in Windows 11 in 2026</li> 
+<li>There is already evidence that Microsoft is trying to make Windows 11 suck less: Recent OneDrive changes that address a key ensh*ttification, and let's not forget all those security advances</li> 
+<li>What did Microsoft really promise? Not much</li> 
+<li>Microsoft has new EVPs for Security and Quality</li> 
+<li>Microsoft belatedly delivered the January Week D update last Thursday, a preview of this month's Patch Tuesday</li> 
+<li>Dev and Beta builds both deliver Mark Russinovich's sysmon tool</li></ul> 
+<p>Microsoft earnings deep dive</p><ul> 
+<li>Microsoft reported a net income of $38.5 billion on revenues of $81.3 billion in the quarter ending December 31. Those figures represent gains of 60 percent and 17 percent, respectively, year-over-year</li> 
+<li>Earnings analysis: All eyes are on AI and no one is happy</li> 
+<li>Microsoft spent $37.5 billion on AI infrastructure (capex) in the quarter, up 66 percent YOY, and it's on track to spend $150+ billion in the fiscal year</li> 
+<li>Every single question was about this and how it will ever recoup the costs</li> 
+<li>There are now 15 million paid Microsoft 365 Copilot seats out of 450+ million Microsoft 365 seats</li> 
+<li>OpenAI is Microsoft's biggest Azure customer, but it's unclear if there is any real money there because of accounting tricks</li> 
+<li>Windows, Edge, and Bing all &quot;gained share,&quot; PC maker revenues were up just 1 percent, the Windows 10 upgrade cycle was mostly a bust (it's likely that most of it was tied to RAM pricing fears, too)</li> 
+<li>Xbox fell off a cliff with content and services revenues down 5 percent in a holiday quarter somehow and Xbox hardware revenue declined an astonishing 32 percent YOY</li> 
+<li>Standalone Office 2025 suite was a surprise hit, Hood is curious if that continues</li> 
+<li>Microsoft 365 &quot;cost of business&quot; up 10 percent YOY because of AI costs</li> 
+<li>AMD revenues up 34 percent to $10.3 billion</li> 
+<li>Apple delivers record revenues of $143.8 billion; iPhone made more revenues by itself than all of Microsoft</li></ul> 
+<p>AI</p><ul> 
+<li>Microsoft is going to basically make an app store for content makers who wish to be paid for use by AI</li> 
+<li>Anthropic advertises that Claude will be advertising-free, unlike ChatGPT</li> 
+<li>The next Firefox will include the promised AI kill switch and Vivaldi &quot;extends the middle fingerˮ to AI</li></ul> 
+<p>Xbox and games</p><ul> 
+<li>AMD reveals next Xbox console in 2027</li> 
+<li>We're getting a solid collection of Xbox Game Pass titles for the beginning of February</li> 
+<li><em>Battlefield </em>6 was the best-selling shooter of 2025 and EA made $1.9 billion in Q4</li> 
+<li>Epic Games has big plans for its PC launcher/store</li> 
+<li>Nintendo has now sold 17 million Switch 2s as OG Switch hits 155 million units</li></ul> 
+<p>Tips and picks</p><ul> 
+<li>Tip of the week: Make OneDrive Folder Backup work for you</li> 
+<li>App pick of the week: Bitwarden (TWiT sponsor)</li> 
+<li>RunAs Radio this week: Getting Started using Purview with Erica Toelle</li> 
+<li>Brown liquor pick of the week: Glendronach Ode to</li></ul></p> 
+<p>These show notes have been truncated due to length. For the full show notes, visit <a href="https://twit.tv/shows/windows-weekly/episodes/969">https://twit.tv/shows/windows-weekly/episodes/969</a></p> <p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860015/hero/WW0969_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0969/ww0969_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:28:10</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0969/ww0969_h264m_1920x1080.mp4" length="2612674413" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0969/ww0969_h264m_1920x1080.mp4" fileSize="2612674413" type="video/mp4" medium="video">
+				<media:title type="plain">WW 969: The Hidden Sweatshop - Windows 11 Reaches 1 Billion Users!</media:title>
+				<media:description type="plain">Windows 11 Reaches 1 Billion Users!</media:description>
+				<media:keywords>Microsoft, Windows, xbox, windows 11, Microsoft earnings, AI Strategy, Windows inshitification, Copilot Plus PC, forced upgrades, OneDrive Folder Backup, default apps, Security, insider feedback, Satya nadella, Pavan Davaluri, ARM, Sysmon, BitWarden</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860015/hero/WW0969_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Paul Thurrott</media:credit>
+				<media:credit role="host">Richard Campbell</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/richard-campbell" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/114471/pictures/rc_headshot_1600.jpg">Richard Campbell</podcast:person>
+		</item>
+		<item>
+			<title>WW 968: Uncharted Territory - Big Changes in the Insider Program</title>
+			<itunes:title>Uncharted Territory - Big Changes in the Insider Program</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Wed, 28 Jan 2026 19:36:09 PST</pubDate>
+			<itunes:episode>968</itunes:episode>
+			<podcast:episode>968</podcast:episode>
+			<link>https://twit.tv/shows/windows-weekly/episodes/968</link>
+			<comments>https://twit.tv/shows/windows-weekly/episodes/968</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Big Changes in the Insider Program</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/windows-weekly-968-transcript" type="text/html" />
+			<itunes:keywords>Microsoft, Windows, xbox, windows 11, Patch Tuesday update, emergency fixes, Microsoft earnings, ai coding, Windows App Development CLI, WIN app, password managers, BitWarden, proton pass, smart app control, Windows Hello ESS, cross-device resume</itunes:keywords>
+			<description><![CDATA[
+<p>Microsoft's Patch Tuesday blunder triggers emergency fixes, surprise layoffs ripple through Amazon, and the crew debates whether rapid AI advances spell the end of traditional apps. Also, password managers do a lot more than manage passwords, so there's one thing everyone needs to get right.</p> 
+<p>Windows 11</p><ul> 
+<li>Dev splits from Beta, tests what will surely be 26H1 - After last week's show, Microsoft did issue that same Beta build in the Dev channel for some reason</li> 
+<li>Dev and Beta get same fixes in different builds, but no new features</li> 
+<li>24H2 and 25H2 Release Preview update(s) are a peek at the next Patch Tuesday, lots of changes</li> 
+<li>January Patch Tuesday update was so terrible it required two emergency fixes, the second of which went out late Sunday</li></ul> 
+<p>Earnings/industry</p><ul> 
+<li>Intel falls flat in Q4, full year 2025 despite U.S. "investment"</li> 
+<li>Amazon lays off 16,000 employees</li> 
+<li>Microsoft, Apple, earnings this week, Alphabet, Amazon are next week</li></ul> 
+<p>AI</p><ul> 
+<li>Microsoft announces Maia 200 AI datacenter processor</li> 
+<li>Like Baldric in Black Adder, Apple has a cunning plan for an AI Siri</li> 
+<li>With AI costs soaring, cheaper new AI plans appear somehow</li> 
+<li>OpenAI was last week with big expansion of ChatGPT Go</li> 
+<li>Google does the same this week with AI Plus plan</li> 
+<li>OpenAI, Anthropic (this week), others are adding "apps" to their chatbots</li> 
+<li>Microsoft is exposing app features as AI Actions in Windows 11</li> 
+<li>Paul opined that this semantic/programmatic capability was the end of apps</li> 
+<li>But we can now essentially vibe-code our own custom apps - this is vaguely reminiscent of the home computer/DIY era, but without the technical knowledge requirements</li> 
+<li>The age of native apps is over, at least on desktop. Will mobile fall next?</li></ul> 
+<p>Dev</p><ul> 
+<li>Microsoft introduces the Windows App Development (winapp) CLI. For some reason</li></ul> 
+<p>Xbox and gaming</p><ul> 
+<li>Microsoft refreshes the Xbox Cloud Gaming web experience — bigger changes coming?</li> 
+<li><em>Fable </em>is coming to Xbox, PC, PS5 in late 2026</li></ul> 
+<p>Tips and picks</p><ul> 
+<li>Tip of the week: Choose a single password manager, make your life easier</li> 
+<li>App pick of the week: Proton Pass</li> 
+<li>RunAs Radio this week: Business Process Automation in 2026 with Ian Cooper</li> 
+<li>Brown liquor pick of the week: Tullibardine 18<br /> 
+ </li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://trustedtech.team/windowsweeklyCSS" target="_blank" rel="sponsored">trustedtech.team/windowsweeklyCSS</a></li>
+<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Microsoft's Patch Tuesday blunder triggers emergency fixes, surprise layoffs ripple through Amazon, and the crew debates whether rapid AI advances spell the end of traditional apps. Also, password managers do a lot more than manage passwords, so there's one thing everyone needs to get right.</p> 
+<p>Windows 11</p><ul> 
+<li>Dev splits from Beta, tests what will surely be 26H1 - After last week's show, Microsoft did issue that same Beta build in the Dev channel for some reason</li> 
+<li>Dev and Beta get same fixes in different builds, but no new features</li> 
+<li>24H2 and 25H2 Release Preview update(s) are a peek at the next Patch Tuesday, lots of changes</li> 
+<li>January Patch Tuesday update was so terrible it required two emergency fixes, the second of which went out late Sunday</li></ul> 
+<p>Earnings/industry</p><ul> 
+<li>Intel falls flat in Q4, full year 2025 despite U.S. "investment"</li> 
+<li>Amazon lays off 16,000 employees</li> 
+<li>Microsoft, Apple, earnings this week, Alphabet, Amazon are next week</li></ul> 
+<p>AI</p><ul> 
+<li>Microsoft announces Maia 200 AI datacenter processor</li> 
+<li>Like Baldric in Black Adder, Apple has a cunning plan for an AI Siri</li> 
+<li>With AI costs soaring, cheaper new AI plans appear somehow</li> 
+<li>OpenAI was last week with big expansion of ChatGPT Go</li> 
+<li>Google does the same this week with AI Plus plan</li> 
+<li>OpenAI, Anthropic (this week), others are adding "apps" to their chatbots</li> 
+<li>Microsoft is exposing app features as AI Actions in Windows 11</li> 
+<li>Paul opined that this semantic/programmatic capability was the end of apps</li> 
+<li>But we can now essentially vibe-code our own custom apps - this is vaguely reminiscent of the home computer/DIY era, but without the technical knowledge requirements</li> 
+<li>The age of native apps is over, at least on desktop. Will mobile fall next?</li></ul> 
+<p>Dev</p><ul> 
+<li>Microsoft introduces the Windows App Development (winapp) CLI. For some reason</li></ul> 
+<p>Xbox and gaming</p><ul> 
+<li>Microsoft refreshes the Xbox Cloud Gaming web experience — bigger changes coming?</li> 
+<li><em>Fable </em>is coming to Xbox, PC, PS5 in late 2026</li></ul> 
+<p>Tips and picks</p><ul> 
+<li>Tip of the week: Choose a single password manager, make your life easier</li> 
+<li>App pick of the week: Proton Pass</li> 
+<li>RunAs Radio this week: Business Process Automation in 2026 with Ian Cooper</li> 
+<li>Brown liquor pick of the week: Tullibardine 18<br /> 
+ </li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://trustedtech.team/windowsweeklyCSS" target="_blank" rel="sponsored">trustedtech.team/windowsweeklyCSS</a></li>
+<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Microsoft's Patch Tuesday blunder triggers emergency fixes, surprise layoffs ripple through Amazon, and the crew debates whether rapid AI advances spell the end of traditional apps. Also, password managers do a lot more than manage passwords, so there's one thing everyone needs to get right.</p> 
+<p>Windows 11</p><ul> 
+<li>Dev splits from Beta, tests what will surely be 26H1 - After last week's show, Microsoft did issue that same Beta build in the Dev channel for some reason</li> 
+<li>Dev and Beta get same fixes in different builds, but no new features</li> 
+<li>24H2 and 25H2 Release Preview update(s) are a peek at the next Patch Tuesday, lots of changes</li> 
+<li>January Patch Tuesday update was so terrible it required two emergency fixes, the second of which went out late Sunday</li></ul> 
+<p>Earnings/industry</p><ul> 
+<li>Intel falls flat in Q4, full year 2025 despite U.S. "investment"</li> 
+<li>Amazon lays off 16,000 employees</li> 
+<li>Microsoft, Apple, earnings this week, Alphabet, Amazon are next week</li></ul> 
+<p>AI</p><ul> 
+<li>Microsoft announces Maia 200 AI datacenter processor</li> 
+<li>Like Baldric in Black Adder, Apple has a cunning plan for an AI Siri</li> 
+<li>With AI costs soaring, cheaper new AI plans appear somehow</li> 
+<li>OpenAI was last week with big expansion of ChatGPT Go</li> 
+<li>Google does the same this week with AI Plus plan</li> 
+<li>OpenAI, Anthropic (this week), others are adding "apps" to their chatbots</li> 
+<li>Microsoft is exposing app features as AI Actions in Windows 11</li> 
+<li>Paul opined that this semantic/programmatic capability was the end of apps</li> 
+<li>But we can now essentially vibe-code our own custom apps - this is vaguely reminiscent of the home computer/DIY era, but without the technical knowledge requirements</li> 
+<li>The age of native apps is over, at least on desktop. Will mobile fall next?</li></ul> 
+<p>Dev</p><ul> 
+<li>Microsoft introduces the Windows App Development (winapp) CLI. For some reason</li></ul> 
+<p>Xbox and gaming</p><ul> 
+<li>Microsoft refreshes the Xbox Cloud Gaming web experience — bigger changes coming?</li> 
+<li><em>Fable </em>is coming to Xbox, PC, PS5 in late 2026</li></ul> 
+<p>Tips and picks</p><ul> 
+<li>Tip of the week: Choose a single password manager, make your life easier</li> 
+<li>App pick of the week: Proton Pass</li> 
+<li>RunAs Radio this week: Business Process Automation in 2026 with Ian Cooper</li> 
+<li>Brown liquor pick of the week: Tullibardine 18<br /> 
+ </li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://trustedtech.team/windowsweeklyCSS" target="_blank" rel="sponsored">trustedtech.team/windowsweeklyCSS</a></li>
+<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859915/hero/WW0968_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0968/ww0968_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:25:30</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0968/ww0968_h264m_1920x1080.mp4" length="2559661072" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0968/ww0968_h264m_1920x1080.mp4" fileSize="2559661072" type="video/mp4" medium="video">
+				<media:title type="plain">WW 968: Uncharted Territory - Big Changes in the Insider Program</media:title>
+				<media:description type="plain">Big Changes in the Insider Program</media:description>
+				<media:keywords>Microsoft, Windows, xbox, windows 11, Patch Tuesday update, emergency fixes, Microsoft earnings, ai coding, Windows App Development CLI, WIN app, password managers, BitWarden, proton pass, smart app control, Windows Hello ESS, cross-device resume</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859915/hero/WW0968_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Paul Thurrott</media:credit>
+				<media:credit role="host">Richard Campbell</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/richard-campbell" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/114471/pictures/rc_headshot_1600.jpg">Richard Campbell</podcast:person>
+		</item>
+		<item>
+			<title>WW 967: 2nd-Generation Bonobos - Windows 11 Gets Emergency OOB Update!</title>
+			<itunes:title>2nd-Generation Bonobos - Windows 11 Gets Emergency OOB Update!</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Wed, 21 Jan 2026 12:03:22 PST</pubDate>
+			<itunes:episode>967</itunes:episode>
+			<podcast:episode>967</podcast:episode>
+			<link>https://twit.tv/shows/windows-weekly/episodes/967</link>
+			<comments>https://twit.tv/shows/windows-weekly/episodes/967</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Windows 11 Gets Emergency OOB Update!</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/windows-weekly-967-transcript" type="text/html" />
+			<itunes:keywords>Microsoft, Windows, xbox, Microsoft out of band patch, windows update issues, enterprise Windows problems, remote desktop bug, Windows 11 OneDrive backup, GPO security, education customers, Xbox Game Pass, ARM PCs, Copilot Plus PC, Notepad updates</itunes:keywords>
+			<description><![CDATA[
+<p>This week, the hosts go deep on out-of-band updates, unwanted "innovations," and the uneasy cost of tech's latest gold rush. Plus, securing a Microsoft account is not as hard as some think, and neither are passkeys once you get past the jargon. And for developers, AI Dev Gallery offers a fascinating glimpse at what you can do for free with AI used against a CPU, GPU, or NPU.</p> 
+<p>Windows 11</p><ul> 
+<li>Microsoft issues an emergency fix for a borked Windows Update. Right. A fix for a fix.</li> 
+<li>Hell freezes over, if only slightly: Microsoft quietly made some positive changes to forced OneDrive Folder Backup. Donʼt worry, itʼs still forced (and appears to be opt-in, but isnʼt). But you can back out more elegantly. So itʼs opt-out, not opt-in, but a step forward. Plus, a new behavior</li> 
+<li>Windows 11 on Arm PCs can now download games from the Xbox app (previously only through the Insider program)</li> 
+<li>Over 85 percent of Xbox games on PC work in WOA now</li> 
+<li>Prism emulator now supports AVX and AVX2 and Epic Anti-Cheat, and there is a new Windows Performance Fit feature offering guidance on which titles should play well.</li> 
+<li>Beta: New 25H2 build with account dialog modernization, Click to Do and desktop background improvements. Not for Dev, suggesting itʼs about to move to 26H1</li> 
+<li>Notepad and Paint get more features yet again. Notably, these updates are for Dev and Canary only, suggesting these might be 26Hx features (then again, versions don't matter, right?)</li></ul> 
+<p>AI</p><ul> 
+<li>Just say no: To AI, to Copilot, and to Satya Nadella</li> 
+<li>Our national nightmare is over: You can now (easily) hide Copilot in Microsoft Edge</li> 
+<li>ChatGPT Go is now available worldwide, ads are on the way because of course</li> 
+<li>Wikipedia partners with Amazon, Meta, Microsoft, more on AI</li></ul> 
+<p>Xbox &amp; gaming</p><ul> 
+<li>January Xbox Update brings Game Sync Indicator, more</li> 
+<li>Solid second half of January for Xbox Game Pass</li> 
+<li>Microsoft will likely introduce a free, ad-supported Xbox Cloud Gaming tier because of course</li></ul> 
+<p>Tips &amp; picks</p><ul> 
+<li>Tip of the week: Secure your Microsoft account</li> 
+<li>App pick of the week: AI Dev Gallery</li> 
+<li>RunAs Radio this week: Ideation to Implementation with Amber Vandenburg</li> 
+<li>Liquor pick of the week: Estancia Raicilla</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>This week, the hosts go deep on out-of-band updates, unwanted "innovations," and the uneasy cost of tech's latest gold rush. Plus, securing a Microsoft account is not as hard as some think, and neither are passkeys once you get past the jargon. And for developers, AI Dev Gallery offers a fascinating glimpse at what you can do for free with AI used against a CPU, GPU, or NPU.</p> 
+<p>Windows 11</p><ul> 
+<li>Microsoft issues an emergency fix for a borked Windows Update. Right. A fix for a fix.</li> 
+<li>Hell freezes over, if only slightly: Microsoft quietly made some positive changes to forced OneDrive Folder Backup. Donʼt worry, itʼs still forced (and appears to be opt-in, but isnʼt). But you can back out more elegantly. So itʼs opt-out, not opt-in, but a step forward. Plus, a new behavior</li> 
+<li>Windows 11 on Arm PCs can now download games from the Xbox app (previously only through the Insider program)</li> 
+<li>Over 85 percent of Xbox games on PC work in WOA now</li> 
+<li>Prism emulator now supports AVX and AVX2 and Epic Anti-Cheat, and there is a new Windows Performance Fit feature offering guidance on which titles should play well.</li> 
+<li>Beta: New 25H2 build with account dialog modernization, Click to Do and desktop background improvements. Not for Dev, suggesting itʼs about to move to 26H1</li> 
+<li>Notepad and Paint get more features yet again. Notably, these updates are for Dev and Canary only, suggesting these might be 26Hx features (then again, versions don't matter, right?)</li></ul> 
+<p>AI</p><ul> 
+<li>Just say no: To AI, to Copilot, and to Satya Nadella</li> 
+<li>Our national nightmare is over: You can now (easily) hide Copilot in Microsoft Edge</li> 
+<li>ChatGPT Go is now available worldwide, ads are on the way because of course</li> 
+<li>Wikipedia partners with Amazon, Meta, Microsoft, more on AI</li></ul> 
+<p>Xbox &amp; gaming</p><ul> 
+<li>January Xbox Update brings Game Sync Indicator, more</li> 
+<li>Solid second half of January for Xbox Game Pass</li> 
+<li>Microsoft will likely introduce a free, ad-supported Xbox Cloud Gaming tier because of course</li></ul> 
+<p>Tips &amp; picks</p><ul> 
+<li>Tip of the week: Secure your Microsoft account</li> 
+<li>App pick of the week: AI Dev Gallery</li> 
+<li>RunAs Radio this week: Ideation to Implementation with Amber Vandenburg</li> 
+<li>Liquor pick of the week: Estancia Raicilla</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>This week, the hosts go deep on out-of-band updates, unwanted "innovations," and the uneasy cost of tech's latest gold rush. Plus, securing a Microsoft account is not as hard as some think, and neither are passkeys once you get past the jargon. And for developers, AI Dev Gallery offers a fascinating glimpse at what you can do for free with AI used against a CPU, GPU, or NPU.</p> 
+<p>Windows 11</p><ul> 
+<li>Microsoft issues an emergency fix for a borked Windows Update. Right. A fix for a fix.</li> 
+<li>Hell freezes over, if only slightly: Microsoft quietly made some positive changes to forced OneDrive Folder Backup. Donʼt worry, itʼs still forced (and appears to be opt-in, but isnʼt). But you can back out more elegantly. So itʼs opt-out, not opt-in, but a step forward. Plus, a new behavior</li> 
+<li>Windows 11 on Arm PCs can now download games from the Xbox app (previously only through the Insider program)</li> 
+<li>Over 85 percent of Xbox games on PC work in WOA now</li> 
+<li>Prism emulator now supports AVX and AVX2 and Epic Anti-Cheat, and there is a new Windows Performance Fit feature offering guidance on which titles should play well.</li> 
+<li>Beta: New 25H2 build with account dialog modernization, Click to Do and desktop background improvements. Not for Dev, suggesting itʼs about to move to 26H1</li> 
+<li>Notepad and Paint get more features yet again. Notably, these updates are for Dev and Canary only, suggesting these might be 26Hx features (then again, versions don't matter, right?)</li></ul> 
+<p>AI</p><ul> 
+<li>Just say no: To AI, to Copilot, and to Satya Nadella</li> 
+<li>Our national nightmare is over: You can now (easily) hide Copilot in Microsoft Edge</li> 
+<li>ChatGPT Go is now available worldwide, ads are on the way because of course</li> 
+<li>Wikipedia partners with Amazon, Meta, Microsoft, more on AI</li></ul> 
+<p>Xbox &amp; gaming</p><ul> 
+<li>January Xbox Update brings Game Sync Indicator, more</li> 
+<li>Solid second half of January for Xbox Game Pass</li> 
+<li>Microsoft will likely introduce a free, ad-supported Xbox Cloud Gaming tier because of course</li></ul> 
+<p>Tips &amp; picks</p><ul> 
+<li>Tip of the week: Secure your Microsoft account</li> 
+<li>App pick of the week: AI Dev Gallery</li> 
+<li>RunAs Radio this week: Ideation to Implementation with Amber Vandenburg</li> 
+<li>Liquor pick of the week: Estancia Raicilla</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859825/hero/WW0967_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0967/ww0967_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:40:03</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0967/ww0967_h264m_1920x1080.mp4" length="2730906624" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0967/ww0967_h264m_1920x1080.mp4" fileSize="2730906624" type="video/mp4" medium="video">
+				<media:title type="plain">WW 967: 2nd-Generation Bonobos - Windows 11 Gets Emergency OOB Update!</media:title>
+				<media:description type="plain">Windows 11 Gets Emergency OOB Update!</media:description>
+				<media:keywords>Microsoft, Windows, xbox, Microsoft out of band patch, windows update issues, enterprise Windows problems, remote desktop bug, Windows 11 OneDrive backup, GPO security, education customers, Xbox Game Pass, ARM PCs, Copilot Plus PC, Notepad updates</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859825/hero/WW0967_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Paul Thurrott</media:credit>
+				<media:credit role="host">Richard Campbell</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/richard-campbell" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/114471/pictures/rc_headshot_1600.jpg">Richard Campbell</podcast:person>
+		</item>
+		<item>
+			<title>WW 966: You Can't Spell Gmail Without AI - Is Microsoft's AI Strategy Doomed to Burst?</title>
+			<itunes:title>You Can't Spell Gmail Without AI - Is Microsoft's AI Strategy Doomed to Burst?</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Wed, 14 Jan 2026 11:35:45 PST</pubDate>
+			<itunes:episode>966</itunes:episode>
+			<podcast:episode>966</podcast:episode>
+			<link>https://twit.tv/shows/windows-weekly/episodes/966</link>
+			<comments>https://twit.tv/shows/windows-weekly/episodes/966</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Is Microsoft's AI Strategy Doomed to Burst?</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/windows-weekly-966-transcript" type="text/html" />
+			<itunes:keywords>Microsoft, Windows, xbox, Satya nadella, Brad Smith, amy hood, ai, copilot, patch tuesday, iDC, pc sales, panther lake, HP OmniBook Ultra, intel core ultra, dell, microsoft lens app, Apple, Siri Gemini, samsung, ChatGPT Health, gmail, Google, Fable</itunes:keywords>
+			<description><![CDATA[
+<p>Satya Nadella gave up much of his CEO duties in 2025. Are we on the cusp of a new CEO? And does some money manager/political duo like Amy Hood and Brad Smith actually make more sense in this role than an engineer-type for the modern Microsoft?</p> 
+<p>Microsoft is trying to win our hearts and minds on AI</p><ul> 
+<li>After spending three years trying to jam AI down our collective throats, Microsoft has only met resistance. Now, the real marketing begins</li> 
+<li>Governments and regulators: Microsoft will build out its AI infrastructure by actually paying for it and respecting the communities in which this happens</li> 
+<li>Customers: Satya Nadella is blogging, and he wants us to stop complaining about AI. He's the wrong messenger</li></ul> 
+<p>Windows 11</p><ul> 
+<li>First Patch Tuesday of 2026 brings security and bug fixes but no new features</li> 
+<li>First update of 2026 brings Copilot-powered image descriptions in Narrator, new IT policies for Copilot, other changes to Dev &amp; Beta</li> 
+<li>Dev is about to switch to 26H1</li> 
+<li>IDC says that PC sales rose 8.1 percent in 2025, warns again about 2026</li> 
+<li>The good &amp; bad of Paul's Panther Lake laptop</li> 
+<li>Dell doesn't sell any PCs to consumers so it obviously has opinions about why consumers don't buy PCs for AI</li> 
+<li>Microsoft will soon retire its Lens mobile app</li></ul> 
+<p>AI</p><ul> 
+<li>Apple predictably partners with Google to bring Gemini to Siri</li> 
+<li>Samsung correctly points out we're all using AI already so there's no reason to complain about it</li> 
+<li>We can't trust AI, so Microsoft is letting Copilot go shopping with our credit cards</li> 
+<li>We can't trust AI, so OpenAI is giving ChatGPT access to our private health data</li> 
+<li>Gmail is getting more AI because email is the low-hanging fruit of data collection</li></ul> 
+<p>Xbox and gaming</p><ul> 
+<li>Developer Direct returns on January 22 with <em>Fable </em>and <em>Forza</em> 6 gameplay</li> 
+<li>Microsoft to bring <em>Avowed </em>to PS5 in February</li></ul> 
+<p>Tips and picks</p><ul> 
+<li>Tip of the week: Kick off 2026 with a security checkup</li> 
+<li>App pick of the week: Microsoft Local Foundry</li> 
+<li>RunAs Radio this week: Azure in 2026 with Jeremy Winter</li> 
+<li>Brown liquor pick of the week: Don Julio 70</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+<li><a href="http://helixsleep.com/windows" target="_blank" rel="sponsored">helixsleep.com/windows</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Satya Nadella gave up much of his CEO duties in 2025. Are we on the cusp of a new CEO? And does some money manager/political duo like Amy Hood and Brad Smith actually make more sense in this role than an engineer-type for the modern Microsoft?</p> 
+<p>Microsoft is trying to win our hearts and minds on AI</p><ul> 
+<li>After spending three years trying to jam AI down our collective throats, Microsoft has only met resistance. Now, the real marketing begins</li> 
+<li>Governments and regulators: Microsoft will build out its AI infrastructure by actually paying for it and respecting the communities in which this happens</li> 
+<li>Customers: Satya Nadella is blogging, and he wants us to stop complaining about AI. He's the wrong messenger</li></ul> 
+<p>Windows 11</p><ul> 
+<li>First Patch Tuesday of 2026 brings security and bug fixes but no new features</li> 
+<li>First update of 2026 brings Copilot-powered image descriptions in Narrator, new IT policies for Copilot, other changes to Dev &amp; Beta</li> 
+<li>Dev is about to switch to 26H1</li> 
+<li>IDC says that PC sales rose 8.1 percent in 2025, warns again about 2026</li> 
+<li>The good &amp; bad of Paul's Panther Lake laptop</li> 
+<li>Dell doesn't sell any PCs to consumers so it obviously has opinions about why consumers don't buy PCs for AI</li> 
+<li>Microsoft will soon retire its Lens mobile app</li></ul> 
+<p>AI</p><ul> 
+<li>Apple predictably partners with Google to bring Gemini to Siri</li> 
+<li>Samsung correctly points out we're all using AI already so there's no reason to complain about it</li> 
+<li>We can't trust AI, so Microsoft is letting Copilot go shopping with our credit cards</li> 
+<li>We can't trust AI, so OpenAI is giving ChatGPT access to our private health data</li> 
+<li>Gmail is getting more AI because email is the low-hanging fruit of data collection</li></ul> 
+<p>Xbox and gaming</p><ul> 
+<li>Developer Direct returns on January 22 with <em>Fable </em>and <em>Forza</em> 6 gameplay</li> 
+<li>Microsoft to bring <em>Avowed </em>to PS5 in February</li></ul> 
+<p>Tips and picks</p><ul> 
+<li>Tip of the week: Kick off 2026 with a security checkup</li> 
+<li>App pick of the week: Microsoft Local Foundry</li> 
+<li>RunAs Radio this week: Azure in 2026 with Jeremy Winter</li> 
+<li>Brown liquor pick of the week: Don Julio 70</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+<li><a href="http://helixsleep.com/windows" target="_blank" rel="sponsored">helixsleep.com/windows</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Satya Nadella gave up much of his CEO duties in 2025. Are we on the cusp of a new CEO? And does some money manager/political duo like Amy Hood and Brad Smith actually make more sense in this role than an engineer-type for the modern Microsoft?</p> 
+<p>Microsoft is trying to win our hearts and minds on AI</p><ul> 
+<li>After spending three years trying to jam AI down our collective throats, Microsoft has only met resistance. Now, the real marketing begins</li> 
+<li>Governments and regulators: Microsoft will build out its AI infrastructure by actually paying for it and respecting the communities in which this happens</li> 
+<li>Customers: Satya Nadella is blogging, and he wants us to stop complaining about AI. He's the wrong messenger</li></ul> 
+<p>Windows 11</p><ul> 
+<li>First Patch Tuesday of 2026 brings security and bug fixes but no new features</li> 
+<li>First update of 2026 brings Copilot-powered image descriptions in Narrator, new IT policies for Copilot, other changes to Dev &amp; Beta</li> 
+<li>Dev is about to switch to 26H1</li> 
+<li>IDC says that PC sales rose 8.1 percent in 2025, warns again about 2026</li> 
+<li>The good &amp; bad of Paul's Panther Lake laptop</li> 
+<li>Dell doesn't sell any PCs to consumers so it obviously has opinions about why consumers don't buy PCs for AI</li> 
+<li>Microsoft will soon retire its Lens mobile app</li></ul> 
+<p>AI</p><ul> 
+<li>Apple predictably partners with Google to bring Gemini to Siri</li> 
+<li>Samsung correctly points out we're all using AI already so there's no reason to complain about it</li> 
+<li>We can't trust AI, so Microsoft is letting Copilot go shopping with our credit cards</li> 
+<li>We can't trust AI, so OpenAI is giving ChatGPT access to our private health data</li> 
+<li>Gmail is getting more AI because email is the low-hanging fruit of data collection</li></ul> 
+<p>Xbox and gaming</p><ul> 
+<li>Developer Direct returns on January 22 with <em>Fable </em>and <em>Forza</em> 6 gameplay</li> 
+<li>Microsoft to bring <em>Avowed </em>to PS5 in February</li></ul> 
+<p>Tips and picks</p><ul> 
+<li>Tip of the week: Kick off 2026 with a security checkup</li> 
+<li>App pick of the week: Microsoft Local Foundry</li> 
+<li>RunAs Radio this week: Azure in 2026 with Jeremy Winter</li> 
+<li>Brown liquor pick of the week: Don Julio 70</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+<li><a href="http://helixsleep.com/windows" target="_blank" rel="sponsored">helixsleep.com/windows</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859720/hero/WW0966_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0966/ww0966_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:28:51</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0966/ww0966_h264m_1920x1080.mp4" length="2525131417" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0966/ww0966_h264m_1920x1080.mp4" fileSize="2525131417" type="video/mp4" medium="video">
+				<media:title type="plain">WW 966: You Can't Spell Gmail Without AI - Is Microsoft's AI Strategy Doomed to Burst?</media:title>
+				<media:description type="plain">Is Microsoft's AI Strategy Doomed to Burst?</media:description>
+				<media:keywords>Microsoft, Windows, xbox, Satya nadella, Brad Smith, amy hood, ai, copilot, patch tuesday, iDC, pc sales, panther lake, HP OmniBook Ultra, intel core ultra, dell, microsoft lens app, Apple, Siri Gemini, samsung, ChatGPT Health, gmail, Google, Fable</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859720/hero/WW0966_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Paul Thurrott</media:credit>
+				<media:credit role="host">Richard Campbell</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/richard-campbell" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/114471/pictures/rc_headshot_1600.jpg">Richard Campbell</podcast:person>
+		</item>
+		<item>
+			<title>WW 965: Almost Meat - CES 2026 Laptops, Processors, AI, &amp; Robots!</title>
+			<itunes:title>Almost Meat - CES 2026 Laptops, Processors, AI, &amp; Robots!</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Wed, 07 Jan 2026 11:36:15 PST</pubDate>
+			<itunes:episode>965</itunes:episode>
+			<podcast:episode>965</podcast:episode>
+			<link>https://twit.tv/shows/windows-weekly/episodes/965</link>
+			<comments>https://twit.tv/shows/windows-weekly/episodes/965</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>CES 2026 Laptops, Processors, AI, &amp; Robots!</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/windows-weekly-965-transcript" type="text/html" />
+			<itunes:keywords>Microsoft, Windows, xbox, CES 2026, windows 11, windows kernel, rust programming, Copilot Plus PC, intel panther lake, AMD Zen 5, Snapdragon X2, AI on local devices, AI laptops, hardware accelerated BitLocker, repairable laptops, LG Gram aromanium</itunes:keywords>
+			<description><![CDATA[
+<p>PC makers are shaking up CES with wild designs and next-gen chips, but the real story is Microsoft's bold software moves, AI's hardware hunger, and a candid debate over whether any tech company still puts users first. Come for the Windows updates, stay for the whisky warnings and robot bathroom assistants.</p> 
+<p>CES 2026 is here with the 4K hummingbird feeder of your dreams</p><ul> 
+<li>New PCs and more from HP consumers/commercial, HP gamers, Lenovo, others</li> 
+<li>The first official Copilot+ PC desktops</li> 
+<li>Snapdragon X2 Plus joins X2 Elite and X2 Elite Extreme</li> 
+<li>Intel Panther Lake has meaningful CPU and graphics performance gains, but predictable reliability issues</li> 
+<li>AMD Ryzen AI 400 series is a minor bump</li></ul> 
+<p>Windows</p><ul> 
+<li>Paul was the first to report that Microsoft is refactoring it all with Rust</li> 
+<li>A Microsoft distinguished engineer wrote about his desire to refactor all C/C++ code in the company with Rust by 2030</li> 
+<li>Some mistook this to mean "rewriting Windows with Rust,ˮ so he had to issue a clarification. But I never wrote that.</li> 
+<li>Heads-up: That will happen, but this is really about Azure first and the core underlying code in Microsoftʼs most important platforms</li> 
+<li>Microsoft released hardware-accelerated BitLocker in late 2025 and never told anyone. It requires the latest PC CPUs</li> 
+<li>Copilot app update that adds text editing actions to Copilot Vision across channels</li> 
+<li>Dev and Beta got first previews of AI agents on the Taskbar, starting with the Researcher agent, plus underlying Agent Launchers experience</li> 
+<li>IDC says the global memory shortage (thanks, AI!) could screw up PC and smartphone growth this year</li></ul> 
+<p>AI</p><ul> 
+<li>ChatGPT now has an app store, but it has a ways to go</li> 
+<li>Mozilla Firefox will have a "killswitchˮ for AI</li> 
+<li>Our national nightmare will soon be over, LG will let users remove Copilot app from their smart TVs</li></ul> 
+<p>Xbox and gaming</p><ul> 
+<li>First Xbox Game Pass releases of 2026 include <em>Resident Evil Village </em>and <em>Star Wars Outlaws</em></li> 
+<li>Xbox Cloud Gaming is coming to Hisense smart TVs and to the latest Fire TV smart TVs</li> 
+<li>GOG goes independent, will continue DRM-free push</li> 
+<li>"Have a blastˮ and other FPS throwbacks from the 1990s</li> 
+<li>Valve quietly killed the LCD Steam Deck model</li></ul> 
+<p>Tips and picks</p><ul> 
+<li>Tip of the week: Itʼs time to give Little AI a look</li> 
+<li>App pick of the week: Bonjourr</li> 
+<li>RunAs Radio this week: What AI can do for SysAdmins in 2026 with Cecilia Wiren</li> 
+<li>Brown liquor pick of the week: The Singleton of Dufftown 12</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+<li><a href="https://cachefly.com/twit" target="_blank" rel="sponsored">cachefly.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>PC makers are shaking up CES with wild designs and next-gen chips, but the real story is Microsoft's bold software moves, AI's hardware hunger, and a candid debate over whether any tech company still puts users first. Come for the Windows updates, stay for the whisky warnings and robot bathroom assistants.</p> 
+<p>CES 2026 is here with the 4K hummingbird feeder of your dreams</p><ul> 
+<li>New PCs and more from HP consumers/commercial, HP gamers, Lenovo, others</li> 
+<li>The first official Copilot+ PC desktops</li> 
+<li>Snapdragon X2 Plus joins X2 Elite and X2 Elite Extreme</li> 
+<li>Intel Panther Lake has meaningful CPU and graphics performance gains, but predictable reliability issues</li> 
+<li>AMD Ryzen AI 400 series is a minor bump</li></ul> 
+<p>Windows</p><ul> 
+<li>Paul was the first to report that Microsoft is refactoring it all with Rust</li> 
+<li>A Microsoft distinguished engineer wrote about his desire to refactor all C/C++ code in the company with Rust by 2030</li> 
+<li>Some mistook this to mean "rewriting Windows with Rust,ˮ so he had to issue a clarification. But I never wrote that.</li> 
+<li>Heads-up: That will happen, but this is really about Azure first and the core underlying code in Microsoftʼs most important platforms</li> 
+<li>Microsoft released hardware-accelerated BitLocker in late 2025 and never told anyone. It requires the latest PC CPUs</li> 
+<li>Copilot app update that adds text editing actions to Copilot Vision across channels</li> 
+<li>Dev and Beta got first previews of AI agents on the Taskbar, starting with the Researcher agent, plus underlying Agent Launchers experience</li> 
+<li>IDC says the global memory shortage (thanks, AI!) could screw up PC and smartphone growth this year</li></ul> 
+<p>AI</p><ul> 
+<li>ChatGPT now has an app store, but it has a ways to go</li> 
+<li>Mozilla Firefox will have a "killswitchˮ for AI</li> 
+<li>Our national nightmare will soon be over, LG will let users remove Copilot app from their smart TVs</li></ul> 
+<p>Xbox and gaming</p><ul> 
+<li>First Xbox Game Pass releases of 2026 include <em>Resident Evil Village </em>and <em>Star Wars Outlaws</em></li> 
+<li>Xbox Cloud Gaming is coming to Hisense smart TVs and to the latest Fire TV smart TVs</li> 
+<li>GOG goes independent, will continue DRM-free push</li> 
+<li>"Have a blastˮ and other FPS throwbacks from the 1990s</li> 
+<li>Valve quietly killed the LCD Steam Deck model</li></ul> 
+<p>Tips and picks</p><ul> 
+<li>Tip of the week: Itʼs time to give Little AI a look</li> 
+<li>App pick of the week: Bonjourr</li> 
+<li>RunAs Radio this week: What AI can do for SysAdmins in 2026 with Cecilia Wiren</li> 
+<li>Brown liquor pick of the week: The Singleton of Dufftown 12</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+<li><a href="https://cachefly.com/twit" target="_blank" rel="sponsored">cachefly.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>PC makers are shaking up CES with wild designs and next-gen chips, but the real story is Microsoft's bold software moves, AI's hardware hunger, and a candid debate over whether any tech company still puts users first. Come for the Windows updates, stay for the whisky warnings and robot bathroom assistants.</p> 
+<p>CES 2026 is here with the 4K hummingbird feeder of your dreams</p><ul> 
+<li>New PCs and more from HP consumers/commercial, HP gamers, Lenovo, others</li> 
+<li>The first official Copilot+ PC desktops</li> 
+<li>Snapdragon X2 Plus joins X2 Elite and X2 Elite Extreme</li> 
+<li>Intel Panther Lake has meaningful CPU and graphics performance gains, but predictable reliability issues</li> 
+<li>AMD Ryzen AI 400 series is a minor bump</li></ul> 
+<p>Windows</p><ul> 
+<li>Paul was the first to report that Microsoft is refactoring it all with Rust</li> 
+<li>A Microsoft distinguished engineer wrote about his desire to refactor all C/C++ code in the company with Rust by 2030</li> 
+<li>Some mistook this to mean "rewriting Windows with Rust,ˮ so he had to issue a clarification. But I never wrote that.</li> 
+<li>Heads-up: That will happen, but this is really about Azure first and the core underlying code in Microsoftʼs most important platforms</li> 
+<li>Microsoft released hardware-accelerated BitLocker in late 2025 and never told anyone. It requires the latest PC CPUs</li> 
+<li>Copilot app update that adds text editing actions to Copilot Vision across channels</li> 
+<li>Dev and Beta got first previews of AI agents on the Taskbar, starting with the Researcher agent, plus underlying Agent Launchers experience</li> 
+<li>IDC says the global memory shortage (thanks, AI!) could screw up PC and smartphone growth this year</li></ul> 
+<p>AI</p><ul> 
+<li>ChatGPT now has an app store, but it has a ways to go</li> 
+<li>Mozilla Firefox will have a "killswitchˮ for AI</li> 
+<li>Our national nightmare will soon be over, LG will let users remove Copilot app from their smart TVs</li></ul> 
+<p>Xbox and gaming</p><ul> 
+<li>First Xbox Game Pass releases of 2026 include <em>Resident Evil Village </em>and <em>Star Wars Outlaws</em></li> 
+<li>Xbox Cloud Gaming is coming to Hisense smart TVs and to the latest Fire TV smart TVs</li> 
+<li>GOG goes independent, will continue DRM-free push</li> 
+<li>"Have a blastˮ and other FPS throwbacks from the 1990s</li> 
+<li>Valve quietly killed the LCD Steam Deck model</li></ul> 
+<p>Tips and picks</p><ul> 
+<li>Tip of the week: Itʼs time to give Little AI a look</li> 
+<li>App pick of the week: Bonjourr</li> 
+<li>RunAs Radio this week: What AI can do for SysAdmins in 2026 with Cecilia Wiren</li> 
+<li>Brown liquor pick of the week: The Singleton of Dufftown 12</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+<li><a href="https://cachefly.com/twit" target="_blank" rel="sponsored">cachefly.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859647/hero/WW0965_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0965/ww0965_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:26:16</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0965/ww0965_h264m_1920x1080.mp4" length="2480996483" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0965/ww0965_h264m_1920x1080.mp4" fileSize="2480996483" type="video/mp4" medium="video">
+				<media:title type="plain">WW 965: Almost Meat - CES 2026 Laptops, Processors, AI, &amp; Robots!</media:title>
+				<media:description type="plain">CES 2026 Laptops, Processors, AI, &amp; Robots!</media:description>
+				<media:keywords>Microsoft, Windows, xbox, CES 2026, windows 11, windows kernel, rust programming, Copilot Plus PC, intel panther lake, AMD Zen 5, Snapdragon X2, AI on local devices, AI laptops, hardware accelerated BitLocker, repairable laptops, LG Gram aromanium</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859647/hero/WW0965_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Paul Thurrott</media:credit>
+				<media:credit role="host">Richard Campbell</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/richard-campbell" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/114471/pictures/rc_headshot_1600.jpg">Richard Campbell</podcast:person>
+		</item>
+		<item>
+			<title>WW 964: Happy New Year! - Paul &amp; Richard Get Toasty by the Fire</title>
+			<itunes:title>Happy New Year! - Paul &amp; Richard Get Toasty by the Fire</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 28 Dec 2025 12:00:00 PST</pubDate>
+			<itunes:episode>964</itunes:episode>
+			<podcast:episode>964</podcast:episode>
+			<link>https://twit.tv/shows/windows-weekly/episodes/964</link>
+			<comments>https://twit.tv/shows/windows-weekly/episodes/964</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Paul &amp; Richard Get Toasty by the Fire</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/windows-weekly-964-transcript" type="text/html" />
+			<itunes:keywords>Microsoft, Windows, xbox, Windows Weekly, Surface Studio 2, HP Omnibook 5, Snapdragon laptop, Microsoft sweaters, Old Farm Pennsylvania whiskey, technology nostalgia, intellivision, Amiga 1000, North Star Advantage, S100 bus, electronic cash register</itunes:keywords>
+			<description><![CDATA[
+<p>This isn't your usual Windows Weekly. Pour a glass and settle in as Leo Laporte, Paul Thurrott, and Richard Campbell ditch the headlines for whisky-soaked tech stories, behind-the-scenes Microsoft confessions, and the unexpected joys (and disasters) of vintage hardware. These are the tales you only hear when the mics are (almost) off.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>This isn't your usual Windows Weekly. Pour a glass and settle in as Leo Laporte, Paul Thurrott, and Richard Campbell ditch the headlines for whisky-soaked tech stories, behind-the-scenes Microsoft confessions, and the unexpected joys (and disasters) of vintage hardware. These are the tales you only hear when the mics are (almost) off.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>This isn't your usual Windows Weekly. Pour a glass and settle in as Leo Laporte, Paul Thurrott, and Richard Campbell ditch the headlines for whisky-soaked tech stories, behind-the-scenes Microsoft confessions, and the unexpected joys (and disasters) of vintage hardware. These are the tales you only hear when the mics are (almost) off.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2025/12/859494/hero/WW0964_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0964/ww0964_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:28:43</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0964/ww0964_h264m_1920x1080.mp4" length="1504832465" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0964/ww0964_h264m_1920x1080.mp4" fileSize="1504832465" type="video/mp4" medium="video">
+				<media:title type="plain">WW 964: Happy New Year! - Paul &amp; Richard Get Toasty by the Fire</media:title>
+				<media:description type="plain">Paul &amp; Richard Get Toasty by the Fire</media:description>
+				<media:keywords>Microsoft, Windows, xbox, Windows Weekly, Surface Studio 2, HP Omnibook 5, Snapdragon laptop, Microsoft sweaters, Old Farm Pennsylvania whiskey, technology nostalgia, intellivision, Amiga 1000, North Star Advantage, S100 bus, electronic cash register</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2025/12/859494/hero/WW0964_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Paul Thurrott</media:credit>
+				<media:credit role="host">Richard Campbell</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/richard-campbell" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/114471/pictures/rc_headshot_1600.jpg">Richard Campbell</podcast:person>
+		</item>
+		<item>
+			<title>WW 963: I've Got an Apple Guy - Windows 11&#039;s Best Updates of 2025!</title>
+			<itunes:title>I've Got an Apple Guy - Windows 11&#039;s Best Updates of 2025!</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Wed, 17 Dec 2025 13:32:42 PST</pubDate>
+			<itunes:episode>963</itunes:episode>
+			<podcast:episode>963</podcast:episode>
+			<link>https://twit.tv/shows/windows-weekly/episodes/963</link>
+			<comments>https://twit.tv/shows/windows-weekly/episodes/963</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Windows 11&#039;s Best Updates of 2025!</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/windows-weekly-963-transcript" type="text/html" />
+			<itunes:keywords>Microsoft, Windows, xbox, Windows 11 updates, AI features in Windows, Copilot Plus PC, OLED laptop reviews, Snapdragon X Elite, gaming on Windows ARM, RAM prices, fingerprint readers, windows security, smart app control, copilot key, Recall feature</itunes:keywords>
+			<description><![CDATA[
+<p>We were inundated with new Windows features in 2025, but which ones actually moved the needle? <em>Fortnite </em>isn't just back on iPhone and Android, it's available on Windows 11 on Arm, and it works great! Plus, 2 big mobile wins for Epic Games and some thoughts on the &quot;right&quot; way to roll out AI features.<p>Windows 11</p><ul> 
+<li>Best Windows 11 updates of 2025, in no particular order...</li> 
+<li>Dark mode improvements to File Explorer</li> 
+<li>Widgets major overhaul with separate widgets and Discovery feed</li> 
+<li>Xbox Full Screen experience - especially good on handhelds, of course, but also any PC you use for gaming with a controller</li> 
+<li>Click to Do (Copilot+ PC only)</li> 
+<li>External fingerprint reader support for Windows Hello ESS <br /> 
+</br>-External/USB webcams supported by Windows Studio Effects (Copilot+ PC only)</li> 
+<li>Quick Machine Recovery is the tip of a wave of new foundational features like Admin Protection, Smart App Control (updates), and more that go beyond surface-level look and feel</li> 
+<li>Redesigned Start menu isn't perfect but it's a nice improvement</li> 
+<li>Copilot Vision, though this type of thing may make more sense on phones</li> 
+<li>AI features in Paint, Photos, Notepad, and Snipping Tool</li> 
+<li>Natural language interactions like the agent in Settings, file search, and more (mostly Copilot+ PC only, but you can do this in Copilot as well)</li> 
+<li>Bluetooth LE support for improved audio quality in game chat, voice calls</li> 
+<li>Gaming on Windows 11 on Arm and Snapdragon X: Major steps forward, but the same issue as always</li> 
+<li>Looking ahead to 2026: 26H1, Agentic features that work, potential Windows 12, and AI PCs</li></ul> 
+<p>AI</p><ul> 
+<li>An extensive new interview with Mustafa Suleyman confirms why this guy is special and how confusing it is that Copilot is so disrespected</li> 
+<li>Microsoft Copilot is auto-installing on LG smart TVs and there's no way to remove it</li> 
+<li>GPT-5.2 is OpenAI's answer to Gemini 3</li> 
+<li>ChatGPT Images is OpenAI's answer to Nano Banana Pro</li> 
+<li>Disney invests $1 billion OpenAI, sues Google</li> 
+<li>Opera Neon is now generally available for $20 per month</li> 
+<li>AI is moving quick as we all know but the bigger issue may be the incessant marketing about features like agents that don't even work now</li> 
+<li>Microsoft is getting pushback on forced Copilot usage, price hikes</li> 
+<li>Google is expanding its use of &quot;experiments&quot; outside of mainstream products with things like NotebookLM, Mixboard, CC, and much more. Maybe this is the better approach: Test separately and then integrate it into existing products</li> 
+<li>Oddly enough, Microsoft does have a Windows AI Lab for this kind of experimentation</li> 
+<li>Many small models vs. one big LLM in the cloud</li></ul> 
+<p>Mobile</p><ul> 
+<li><em>Fortnite </em>is back in the Google Play Store in the U.S. as Google plays nice</li> 
+<li>Apple loses its contempt appeal, the end of &quot;junk fees&quot; (Apple Tax) is in sight</li></ul> 
+<p>Xbox and gaming</p><ul> 
+<li>Xbox December Update has one big update for the mobile app and one big update for Xbox Wireless Headphones</li> 
+<li>There's a new Xbox Developer Direct coming in January</li> 
+<li><em>Half-Life 3</em> may really be happening, but it will be a Steam Machine launch title so it could be a while</li></ul> 
+<p>Tips &amp; picks</p><ul> 
+<li>Tip of the year: De-enshittify Windows 11</li> 
+<li>App pick of the year: <em>Fortnite</em></li> 
+<li>RunAs Radio this week: Zero Trust in 2026 with Michele Bustamante</li> 
+<li>Brown liquor pick of the week: Lark Symphony No. 1</li></ul></p> 
+<p>These show notes have been truncated due to length. For the full show notes, visit <a href="https://twit.tv/shows/windows-weekly/episodes/963">https://twit.tv/shows/windows-weekly/episodes/963</a></p> <p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+
+<p><strong>Sponsors:</strong><ul>
+<li><a href="https://auraframes.com/ink?utm_source=podcast&utm_medium=audio&utm_campaign=windowsweeklytwit" target="_blank" rel="sponsored">auraframes.com/ink</a></li>
+<li><a href="http://framer.com/design" target="_blank" rel="sponsored">framer.com/design promo code WW</a></li>
+<li><a href="http://outsystems.com/twit" target="_blank" rel="sponsored">outsystems.com/twit</a></li>
+<li><a href="https://cachefly.com/twit" target="_blank" rel="sponsored">cachefly.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>We were inundated with new Windows features in 2025, but which ones actually moved the needle? <em>Fortnite </em>isn't just back on iPhone and Android, it's available on Windows 11 on Arm, and it works great! Plus, 2 big mobile wins for Epic Games and some thoughts on the &quot;right&quot; way to roll out AI features.<p>Windows 11</p><ul> 
+<li>Best Windows 11 updates of 2025, in no particular order...</li> 
+<li>Dark mode improvements to File Explorer</li> 
+<li>Widgets major overhaul with separate widgets and Discovery feed</li> 
+<li>Xbox Full Screen experience - especially good on handhelds, of course, but also any PC you use for gaming with a controller</li> 
+<li>Click to Do (Copilot+ PC only)</li> 
+<li>External fingerprint reader support for Windows Hello ESS <br /> 
+</br>-External/USB webcams supported by Windows Studio Effects (Copilot+ PC only)</li> 
+<li>Quick Machine Recovery is the tip of a wave of new foundational features like Admin Protection, Smart App Control (updates), and more that go beyond surface-level look and feel</li> 
+<li>Redesigned Start menu isn't perfect but it's a nice improvement</li> 
+<li>Copilot Vision, though this type of thing may make more sense on phones</li> 
+<li>AI features in Paint, Photos, Notepad, and Snipping Tool</li> 
+<li>Natural language interactions like the agent in Settings, file search, and more (mostly Copilot+ PC only, but you can do this in Copilot as well)</li> 
+<li>Bluetooth LE support for improved audio quality in game chat, voice calls</li> 
+<li>Gaming on Windows 11 on Arm and Snapdragon X: Major steps forward, but the same issue as always</li> 
+<li>Looking ahead to 2026: 26H1, Agentic features that work, potential Windows 12, and AI PCs</li></ul> 
+<p>AI</p><ul> 
+<li>An extensive new interview with Mustafa Suleyman confirms why this guy is special and how confusing it is that Copilot is so disrespected</li> 
+<li>Microsoft Copilot is auto-installing on LG smart TVs and there's no way to remove it</li> 
+<li>GPT-5.2 is OpenAI's answer to Gemini 3</li> 
+<li>ChatGPT Images is OpenAI's answer to Nano Banana Pro</li> 
+<li>Disney invests $1 billion OpenAI, sues Google</li> 
+<li>Opera Neon is now generally available for $20 per month</li> 
+<li>AI is moving quick as we all know but the bigger issue may be the incessant marketing about features like agents that don't even work now</li> 
+<li>Microsoft is getting pushback on forced Copilot usage, price hikes</li> 
+<li>Google is expanding its use of &quot;experiments&quot; outside of mainstream products with things like NotebookLM, Mixboard, CC, and much more. Maybe this is the better approach: Test separately and then integrate it into existing products</li> 
+<li>Oddly enough, Microsoft does have a Windows AI Lab for this kind of experimentation</li> 
+<li>Many small models vs. one big LLM in the cloud</li></ul> 
+<p>Mobile</p><ul> 
+<li><em>Fortnite </em>is back in the Google Play Store in the U.S. as Google plays nice</li> 
+<li>Apple loses its contempt appeal, the end of &quot;junk fees&quot; (Apple Tax) is in sight</li></ul> 
+<p>Xbox and gaming</p><ul> 
+<li>Xbox December Update has one big update for the mobile app and one big update for Xbox Wireless Headphones</li> 
+<li>There's a new Xbox Developer Direct coming in January</li> 
+<li><em>Half-Life 3</em> may really be happening, but it will be a Steam Machine launch title so it could be a while</li></ul> 
+<p>Tips &amp; picks</p><ul> 
+<li>Tip of the year: De-enshittify Windows 11</li> 
+<li>App pick of the year: <em>Fortnite</em></li> 
+<li>RunAs Radio this week: Zero Trust in 2026 with Michele Bustamante</li> 
+<li>Brown liquor pick of the week: Lark Symphony No. 1</li></ul></p> 
+<p>These show notes have been truncated due to length. For the full show notes, visit <a href="https://twit.tv/shows/windows-weekly/episodes/963">https://twit.tv/shows/windows-weekly/episodes/963</a></p> <p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+
+<p><strong>Sponsors:</strong><ul>
+<li><a href="https://auraframes.com/ink?utm_source=podcast&utm_medium=audio&utm_campaign=windowsweeklytwit" target="_blank" rel="sponsored">auraframes.com/ink</a></li>
+<li><a href="http://framer.com/design" target="_blank" rel="sponsored">framer.com/design promo code WW</a></li>
+<li><a href="http://outsystems.com/twit" target="_blank" rel="sponsored">outsystems.com/twit</a></li>
+<li><a href="https://cachefly.com/twit" target="_blank" rel="sponsored">cachefly.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>We were inundated with new Windows features in 2025, but which ones actually moved the needle? <em>Fortnite </em>isn't just back on iPhone and Android, it's available on Windows 11 on Arm, and it works great! Plus, 2 big mobile wins for Epic Games and some thoughts on the &quot;right&quot; way to roll out AI features.<p>Windows 11</p><ul> 
+<li>Best Windows 11 updates of 2025, in no particular order...</li> 
+<li>Dark mode improvements to File Explorer</li> 
+<li>Widgets major overhaul with separate widgets and Discovery feed</li> 
+<li>Xbox Full Screen experience - especially good on handhelds, of course, but also any PC you use for gaming with a controller</li> 
+<li>Click to Do (Copilot+ PC only)</li> 
+<li>External fingerprint reader support for Windows Hello ESS <br /> 
+</br>-External/USB webcams supported by Windows Studio Effects (Copilot+ PC only)</li> 
+<li>Quick Machine Recovery is the tip of a wave of new foundational features like Admin Protection, Smart App Control (updates), and more that go beyond surface-level look and feel</li> 
+<li>Redesigned Start menu isn't perfect but it's a nice improvement</li> 
+<li>Copilot Vision, though this type of thing may make more sense on phones</li> 
+<li>AI features in Paint, Photos, Notepad, and Snipping Tool</li> 
+<li>Natural language interactions like the agent in Settings, file search, and more (mostly Copilot+ PC only, but you can do this in Copilot as well)</li> 
+<li>Bluetooth LE support for improved audio quality in game chat, voice calls</li> 
+<li>Gaming on Windows 11 on Arm and Snapdragon X: Major steps forward, but the same issue as always</li> 
+<li>Looking ahead to 2026: 26H1, Agentic features that work, potential Windows 12, and AI PCs</li></ul> 
+<p>AI</p><ul> 
+<li>An extensive new interview with Mustafa Suleyman confirms why this guy is special and how confusing it is that Copilot is so disrespected</li> 
+<li>Microsoft Copilot is auto-installing on LG smart TVs and there's no way to remove it</li> 
+<li>GPT-5.2 is OpenAI's answer to Gemini 3</li> 
+<li>ChatGPT Images is OpenAI's answer to Nano Banana Pro</li> 
+<li>Disney invests $1 billion OpenAI, sues Google</li> 
+<li>Opera Neon is now generally available for $20 per month</li> 
+<li>AI is moving quick as we all know but the bigger issue may be the incessant marketing about features like agents that don't even work now</li> 
+<li>Microsoft is getting pushback on forced Copilot usage, price hikes</li> 
+<li>Google is expanding its use of &quot;experiments&quot; outside of mainstream products with things like NotebookLM, Mixboard, CC, and much more. Maybe this is the better approach: Test separately and then integrate it into existing products</li> 
+<li>Oddly enough, Microsoft does have a Windows AI Lab for this kind of experimentation</li> 
+<li>Many small models vs. one big LLM in the cloud</li></ul> 
+<p>Mobile</p><ul> 
+<li><em>Fortnite </em>is back in the Google Play Store in the U.S. as Google plays nice</li> 
+<li>Apple loses its contempt appeal, the end of &quot;junk fees&quot; (Apple Tax) is in sight</li></ul> 
+<p>Xbox and gaming</p><ul> 
+<li>Xbox December Update has one big update for the mobile app and one big update for Xbox Wireless Headphones</li> 
+<li>There's a new Xbox Developer Direct coming in January</li> 
+<li><em>Half-Life 3</em> may really be happening, but it will be a Steam Machine launch title so it could be a while</li></ul> 
+<p>Tips &amp; picks</p><ul> 
+<li>Tip of the year: De-enshittify Windows 11</li> 
+<li>App pick of the year: <em>Fortnite</em></li> 
+<li>RunAs Radio this week: Zero Trust in 2026 with Michele Bustamante</li> 
+<li>Brown liquor pick of the week: Lark Symphony No. 1</li></ul></p> 
+<p>These show notes have been truncated due to length. For the full show notes, visit <a href="https://twit.tv/shows/windows-weekly/episodes/963">https://twit.tv/shows/windows-weekly/episodes/963</a></p> <p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+
+<p><strong>Sponsors:</strong><ul>
+<li><a href="https://auraframes.com/ink?utm_source=podcast&utm_medium=audio&utm_campaign=windowsweeklytwit" target="_blank" rel="sponsored">auraframes.com/ink</a></li>
+<li><a href="http://framer.com/design" target="_blank" rel="sponsored">framer.com/design promo code WW</a></li>
+<li><a href="http://outsystems.com/twit" target="_blank" rel="sponsored">outsystems.com/twit</a></li>
+<li><a href="https://cachefly.com/twit" target="_blank" rel="sponsored">cachefly.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2025/12/859415/hero/WW0963_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0963/ww0963_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:36:27</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0963/ww0963_h264m_1920x1080.mp4" length="2654015107" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0963/ww0963_h264m_1920x1080.mp4" fileSize="2654015107" type="video/mp4" medium="video">
+				<media:title type="plain">WW 963: I've Got an Apple Guy - Windows 11&#039;s Best Updates of 2025!</media:title>
+				<media:description type="plain">Windows 11&#039;s Best Updates of 2025!</media:description>
+				<media:keywords>Microsoft, Windows, xbox, Windows 11 updates, AI features in Windows, Copilot Plus PC, OLED laptop reviews, Snapdragon X Elite, gaming on Windows ARM, RAM prices, fingerprint readers, windows security, smart app control, copilot key, Recall feature</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2025/12/859415/hero/WW0963_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Paul Thurrott</media:credit>
+				<media:credit role="host">Richard Campbell</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/richard-campbell" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/114471/pictures/rc_headshot_1600.jpg">Richard Campbell</podcast:person>
+		</item>
+		<item>
+			<title>WW 962: Peak Bloat - The Last Patch Tuesday of 2025</title>
+			<itunes:title>Peak Bloat - The Last Patch Tuesday of 2025</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Wed, 10 Dec 2025 12:21:37 PST</pubDate>
+			<itunes:episode>962</itunes:episode>
+			<podcast:episode>962</podcast:episode>
+			<link>https://twit.tv/shows/windows-weekly/episodes/962</link>
+			<comments>https://twit.tv/shows/windows-weekly/episodes/962</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>The Last Patch Tuesday of 2025</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/windows-weekly-962-transcript" type="text/html" />
+			<itunes:keywords>Microsoft, Windows, xbox, Windows 11 de-bloat, tiny11 builder, Win11 Debloat PowerShell script, Edge redirect, Explorer Patcher, Microsoft 365 price increase, Copilot Plus PCs, AI security risks, Patch Tuesday updates, File Explorer dark mode</itunes:keywords>
+			<description><![CDATA[
+<p>December 2025's Patch Tuesday brought major shifts, but the real action is in Microsoft's pricing, privacy battles, and the arms race to control AI-enabled browsers. Plus, Paul recommends <a href="https://github.com/ntdevlabs/tiny11builder">Tiny11 Builder</a> for a clean install, or <a href="https://www.thurrott.com/windows/windows-11/330573/de-enshittifing-windows-11-version-25h2-win11debloat">Win11Debloat </a>for an existing install. Then, <a href="https://rufus.ie/">Rufus</a> to create installation media without the forced Microsoft account (MSA) sign-in or hardware requirement checks. Use <a href="https://github.com/rcmaehl/MSEdgeRedirect">MSEdgeDirect</a> to use the default web browser for stories from Widgets, web-based search results, etc. And <a href="https://www.thurrott.com/windows/windows-11/330547/what-i-use-explorerpatcher">ExplorerPatcher</a> can fix the performance and reliability issues in File Explorer.</p> 
+<p>It's the final Patch Tuesday of 2025</p><ul> 
+<li>Major dark mode updates (with a fix for the "flashbang" problem)</li> 
+<li>AI Agent in Settings, Click to Do, Windows Studio Effects, and Search improvements for Copilot+ PCs</li> 
+<li>Many other improvements: FSE, Share, Settings, Widgets, more</li></ul> 
+<p>More Windows 11</p><ul> 
+<li>New 25H2 preview build on Beta/Dev adds MCP public preview, Quick Machine Recovery auto-enabled, Unified Update Orchestration Platform, Windows MIDI services</li></ul> 
+<p>Microsoft 365</p><ul> 
+<li>Microsoft 365 is getting a lot more expensive in mid-2026. You didn't think all those free AI updates were free, did you?</li></ul> 
+<p>AI </p><ul> 
+<li>Paul has been talking about "programmatic" apps and services because he wasn't sure of a term for this type of interaction. But there is a term for this: Semantic. As in semantic web. And there you go</li> 
+<li>Microsoft one of 1,000 companies partnering on Agentic AI Foundation because you're getting agents whether they work or not</li> 
+<li>Gartner says NO to AI web browsers</li> 
+<li>The New York Times is suing Perplexity for all the obvious reasons</li> 
+<li>After a big win in the legal battle with OpenAI</li> 
+<li>Opera for Android gets a big AI update</li> 
+<li>Google Workspace Studio brings code-free agent creation to business users - automation is a solid AI use case</li></ul> 
+<p>Xbox</p><ul> 
+<li>Xbox Series X|S notably absent during Black Friday sales</li> 
+<li><em>Call of Duty</em> won't repeat the mistakes of the past anymore since it didn't work out twice now</li> 
+<li><em>MS Flight Simulator 2024</em> is now available on PS5</li> 
+<li><em>Red Dead Redemption</em> comes to mobile for the first time, free with a Netflix account</li></ul> 
+<p>Tips &amp; Picks</p><ul> 
+<li>Tip and app(s) of the week: De-enshittify Windows 11</li> 
+<li>RunAs Radio this week: Incident Management and the Crowdstrike Event with Liam Westley</li> 
+<li>Brown liquor pick of the week: Old Farm Pennsylvania Straight Rye Whiskey</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://1password.com/windowsweekly" target="_blank" rel="sponsored">1password.com/windowsweekly</a></li>
+<li><a href="https://auraframes.com/ink?utm_source=podcast&utm_medium=audio&utm_campaign=windowsweeklytwit" target="_blank" rel="sponsored">auraframes.com/ink</a></li>
+<li><a href="http://helixsleep.com/windows" target="_blank" rel="sponsored">helixsleep.com/windows</a></li>
+<li><a href="http://ventionteams.com/twit" target="_blank" rel="sponsored">ventionteams.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>December 2025's Patch Tuesday brought major shifts, but the real action is in Microsoft's pricing, privacy battles, and the arms race to control AI-enabled browsers. Plus, Paul recommends <a href="https://github.com/ntdevlabs/tiny11builder">Tiny11 Builder</a> for a clean install, or <a href="https://www.thurrott.com/windows/windows-11/330573/de-enshittifing-windows-11-version-25h2-win11debloat">Win11Debloat </a>for an existing install. Then, <a href="https://rufus.ie/">Rufus</a> to create installation media without the forced Microsoft account (MSA) sign-in or hardware requirement checks. Use <a href="https://github.com/rcmaehl/MSEdgeRedirect">MSEdgeDirect</a> to use the default web browser for stories from Widgets, web-based search results, etc. And <a href="https://www.thurrott.com/windows/windows-11/330547/what-i-use-explorerpatcher">ExplorerPatcher</a> can fix the performance and reliability issues in File Explorer.</p> 
+<p>It's the final Patch Tuesday of 2025</p><ul> 
+<li>Major dark mode updates (with a fix for the "flashbang" problem)</li> 
+<li>AI Agent in Settings, Click to Do, Windows Studio Effects, and Search improvements for Copilot+ PCs</li> 
+<li>Many other improvements: FSE, Share, Settings, Widgets, more</li></ul> 
+<p>More Windows 11</p><ul> 
+<li>New 25H2 preview build on Beta/Dev adds MCP public preview, Quick Machine Recovery auto-enabled, Unified Update Orchestration Platform, Windows MIDI services</li></ul> 
+<p>Microsoft 365</p><ul> 
+<li>Microsoft 365 is getting a lot more expensive in mid-2026. You didn't think all those free AI updates were free, did you?</li></ul> 
+<p>AI </p><ul> 
+<li>Paul has been talking about "programmatic" apps and services because he wasn't sure of a term for this type of interaction. But there is a term for this: Semantic. As in semantic web. And there you go</li> 
+<li>Microsoft one of 1,000 companies partnering on Agentic AI Foundation because you're getting agents whether they work or not</li> 
+<li>Gartner says NO to AI web browsers</li> 
+<li>The New York Times is suing Perplexity for all the obvious reasons</li> 
+<li>After a big win in the legal battle with OpenAI</li> 
+<li>Opera for Android gets a big AI update</li> 
+<li>Google Workspace Studio brings code-free agent creation to business users - automation is a solid AI use case</li></ul> 
+<p>Xbox</p><ul> 
+<li>Xbox Series X|S notably absent during Black Friday sales</li> 
+<li><em>Call of Duty</em> won't repeat the mistakes of the past anymore since it didn't work out twice now</li> 
+<li><em>MS Flight Simulator 2024</em> is now available on PS5</li> 
+<li><em>Red Dead Redemption</em> comes to mobile for the first time, free with a Netflix account</li></ul> 
+<p>Tips &amp; Picks</p><ul> 
+<li>Tip and app(s) of the week: De-enshittify Windows 11</li> 
+<li>RunAs Radio this week: Incident Management and the Crowdstrike Event with Liam Westley</li> 
+<li>Brown liquor pick of the week: Old Farm Pennsylvania Straight Rye Whiskey</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://1password.com/windowsweekly" target="_blank" rel="sponsored">1password.com/windowsweekly</a></li>
+<li><a href="https://auraframes.com/ink?utm_source=podcast&utm_medium=audio&utm_campaign=windowsweeklytwit" target="_blank" rel="sponsored">auraframes.com/ink</a></li>
+<li><a href="http://helixsleep.com/windows" target="_blank" rel="sponsored">helixsleep.com/windows</a></li>
+<li><a href="http://ventionteams.com/twit" target="_blank" rel="sponsored">ventionteams.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>December 2025's Patch Tuesday brought major shifts, but the real action is in Microsoft's pricing, privacy battles, and the arms race to control AI-enabled browsers. Plus, Paul recommends <a href="https://github.com/ntdevlabs/tiny11builder">Tiny11 Builder</a> for a clean install, or <a href="https://www.thurrott.com/windows/windows-11/330573/de-enshittifing-windows-11-version-25h2-win11debloat">Win11Debloat </a>for an existing install. Then, <a href="https://rufus.ie/">Rufus</a> to create installation media without the forced Microsoft account (MSA) sign-in or hardware requirement checks. Use <a href="https://github.com/rcmaehl/MSEdgeRedirect">MSEdgeDirect</a> to use the default web browser for stories from Widgets, web-based search results, etc. And <a href="https://www.thurrott.com/windows/windows-11/330547/what-i-use-explorerpatcher">ExplorerPatcher</a> can fix the performance and reliability issues in File Explorer.</p> 
+<p>It's the final Patch Tuesday of 2025</p><ul> 
+<li>Major dark mode updates (with a fix for the "flashbang" problem)</li> 
+<li>AI Agent in Settings, Click to Do, Windows Studio Effects, and Search improvements for Copilot+ PCs</li> 
+<li>Many other improvements: FSE, Share, Settings, Widgets, more</li></ul> 
+<p>More Windows 11</p><ul> 
+<li>New 25H2 preview build on Beta/Dev adds MCP public preview, Quick Machine Recovery auto-enabled, Unified Update Orchestration Platform, Windows MIDI services</li></ul> 
+<p>Microsoft 365</p><ul> 
+<li>Microsoft 365 is getting a lot more expensive in mid-2026. You didn't think all those free AI updates were free, did you?</li></ul> 
+<p>AI </p><ul> 
+<li>Paul has been talking about "programmatic" apps and services because he wasn't sure of a term for this type of interaction. But there is a term for this: Semantic. As in semantic web. And there you go</li> 
+<li>Microsoft one of 1,000 companies partnering on Agentic AI Foundation because you're getting agents whether they work or not</li> 
+<li>Gartner says NO to AI web browsers</li> 
+<li>The New York Times is suing Perplexity for all the obvious reasons</li> 
+<li>After a big win in the legal battle with OpenAI</li> 
+<li>Opera for Android gets a big AI update</li> 
+<li>Google Workspace Studio brings code-free agent creation to business users - automation is a solid AI use case</li></ul> 
+<p>Xbox</p><ul> 
+<li>Xbox Series X|S notably absent during Black Friday sales</li> 
+<li><em>Call of Duty</em> won't repeat the mistakes of the past anymore since it didn't work out twice now</li> 
+<li><em>MS Flight Simulator 2024</em> is now available on PS5</li> 
+<li><em>Red Dead Redemption</em> comes to mobile for the first time, free with a Netflix account</li></ul> 
+<p>Tips &amp; Picks</p><ul> 
+<li>Tip and app(s) of the week: De-enshittify Windows 11</li> 
+<li>RunAs Radio this week: Incident Management and the Crowdstrike Event with Liam Westley</li> 
+<li>Brown liquor pick of the week: Old Farm Pennsylvania Straight Rye Whiskey</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://1password.com/windowsweekly" target="_blank" rel="sponsored">1password.com/windowsweekly</a></li>
+<li><a href="https://auraframes.com/ink?utm_source=podcast&utm_medium=audio&utm_campaign=windowsweeklytwit" target="_blank" rel="sponsored">auraframes.com/ink</a></li>
+<li><a href="http://helixsleep.com/windows" target="_blank" rel="sponsored">helixsleep.com/windows</a></li>
+<li><a href="http://ventionteams.com/twit" target="_blank" rel="sponsored">ventionteams.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2025/12/859328/hero/WW0962_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0962/ww0962_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:43:19</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0962/ww0962_h264m_1920x1080.mp4" length="2770262766" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0962/ww0962_h264m_1920x1080.mp4" fileSize="2770262766" type="video/mp4" medium="video">
+				<media:title type="plain">WW 962: Peak Bloat - The Last Patch Tuesday of 2025</media:title>
+				<media:description type="plain">The Last Patch Tuesday of 2025</media:description>
+				<media:keywords>Microsoft, Windows, xbox, Windows 11 de-bloat, tiny11 builder, Win11 Debloat PowerShell script, Edge redirect, Explorer Patcher, Microsoft 365 price increase, Copilot Plus PCs, AI security risks, Patch Tuesday updates, File Explorer dark mode</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2025/12/859328/hero/WW0962_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Paul Thurrott</media:credit>
+				<media:credit role="host">Richard Campbell</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/richard-campbell" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/114471/pictures/rc_headshot_1600.jpg">Richard Campbell</podcast:person>
+		</item>
+	</channel>
+</rss>

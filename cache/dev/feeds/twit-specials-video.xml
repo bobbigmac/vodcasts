@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/" xmlns:podcast="https://podcastindex.org/namespace/1.0" version="2.0">
+	<channel>
+		<title>TWiT News (Video)</title>
+		<itunes:author>TWiT</itunes:author>
+		<link>https://twit.tv/shows/twit-news</link>
+		<generator>TWiT Feed Generator v4.10</generator>
+		<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+		<language>en-US</language>
+		<copyright>This work is licensed under a Creative Commons License - Attribution-NonCommercial-NoDerivatives 4.0 International - http://creativecommons.org/licenses/by-nc-nd/4.0/</copyright>
+		<creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+		<managingEditor>feedmail@twit.tv (TWiT Editors)</managingEditor>
+		<webMaster>feedmail@twit.tv (TWiT Engineering)</webMaster>
+		<ttl>720</ttl>
+		<sy:updatePeriod>weekly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+		<lastBuildDate>Tue, 23 Dec 2025 20:40:50 PST</lastBuildDate>
+		<pubDate>Tue, 23 Dec 2025 20:40:50 PST</pubDate>
+		<rawvoice:frequency>weekly</rawvoice:frequency>
+		<rawvoice:location>Petaluma, CA</rawvoice:location>
+		<itunes:type>episodic</itunes:type>
+		<itunes:subtitle>Get the latest product announcements from all the tech giants, plus breaking tech news as it happens.</itunes:subtitle>
+		<itunes:summary>When tech news breaks, we cover it. On this podcast, you'll get the latest product announcements from all the tech giants, plus breaking tech news as it happens. Join Leo Laporte, Mikah Sargent, and other experts on the TWiT News podcast.
+
+New episodes are available whenever news breaks</itunes:summary>
+		<description>When tech news breaks, we cover it. On this podcast, you'll get the latest product announcements from all the tech giants, plus breaking tech news as it happens. Join Leo Laporte, Mikah Sargent, and other experts on the TWiT News podcast.
+
+New episodes are available whenever news breaks</description>
+		<itunes:keywords>TWiT, Technology, Tech News, breaking news</itunes:keywords>
+		<rawvoice:rating tv="tv-g">tv-g</rawvoice:rating>
+		<itunes:explicit>no</itunes:explicit>
+		<itunes:block>no</itunes:block>
+		<googleplay:block>No</googleplay:block>
+		<podcast:funding url="https://twit.tv/clubtwit">Become a Club TWiT member!</podcast:funding>
+		<itunes:owner>
+			<itunes:name>Leo Laporte</itunes:name>
+			<itunes:email>feedmail@twit.tv</itunes:email>
+		</itunes:owner>
+		<itunes:category text="News">
+			<itunes:category text="Tech News"/>
+		</itunes:category>
+		<category>Technology</category>
+		<category>Special</category>
+		<category>Breaking News</category>
+		<image>
+			<title>TWiT News (Video)</title>
+			<url>https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/TWiT%20News/album_art/hd/TWITnews_albumart_standard_video.jpg</url>
+			<link>https://twit.tv/shows/twit-news</link>
+		</image>
+		<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/TWiT%20News/album_art/hd/TWITnews_albumart_standard_video.jpg" />
+		<itunes:new-feed-url>https://feeds.twit.tv/specials_video_hd.xml</itunes:new-feed-url>
+		<rawvoice:subscribe feed="https://feeds.twit.tv/specials_video_hd.xml" itunes="https://podcasts.apple.com/us/podcast/twit-specials-video-hd/id593369492?uo=10" html="https://twit.tv/shows/twit-news"></rawvoice:subscribe>
+		<atom:link href="https://feeds.twit.tv/specials_video_hd.xml" type="application/rss+xml" rel="self"/>
+		<item>
+			<title>News 407: Meta Connect 2024 - Meta Orion AR Glasses, Meta AI, Meta Quest 3S</title>
+			<itunes:title>Meta Connect 2024 - Meta Orion AR Glasses, Meta AI, Meta Quest 3S</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Wed, 25 Sep 2024 12:30:00 PDT</pubDate>
+			<itunes:episode>407</itunes:episode>
+			<podcast:episode>407</podcast:episode>
+			<link>https://twit.tv/shows/twit-news/episodes/407</link>
+			<comments>https://twit.tv/shows/twit-news/episodes/407</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Breaking News</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Meta Orion AR Glasses, Meta AI, Meta Quest 3S</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/twit-news-407-transcript" type="text/html" />
+			<itunes:keywords>TWiT, Leo Laporte, Mikah Sargent, Meta Quest 3S, meta ai, Meta AI Voice, AI Studio, Meta AI translation, Llama 3.2, ray-ban meta smart glasses, Meta Orion AR Glasses, Meta Connect 2024</itunes:keywords>
+			<description><![CDATA[
+<p>Join Leo Laporte and Mikah Sargent as they commentate on Mark Zuckerberg's keynote at Meta Connect 2024 and discuss some of the things that debuted at the keynote, such as the Meta Quest 3S, Llama 3.2, and the prototype Meta Orion AR Glasses.<br /> 
+<br /> 
+Meta Connect 2024 - <a href="https://www.facebook.com/MetaforDevelopers/videos/449444780818091">https://www.facebook.com/MetaforDevelopers/videos/449444780818091</a></p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Join Leo Laporte and Mikah Sargent as they commentate on Mark Zuckerberg's keynote at Meta Connect 2024 and discuss some of the things that debuted at the keynote, such as the Meta Quest 3S, Llama 3.2, and the prototype Meta Orion AR Glasses.<br /> 
+<br /> 
+Meta Connect 2024 - <a href="https://www.facebook.com/MetaforDevelopers/videos/449444780818091">https://www.facebook.com/MetaforDevelopers/videos/449444780818091</a></p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Join Leo Laporte and Mikah Sargent as they commentate on Mark Zuckerberg's keynote at Meta Connect 2024 and discuss some of the things that debuted at the keynote, such as the Meta Quest 3S, Llama 3.2, and the prototype Meta Orion AR Glasses.<br /> 
+<br /> 
+Meta Connect 2024 - <a href="https://www.facebook.com/MetaforDevelopers/videos/449444780818091">https://www.facebook.com/MetaforDevelopers/videos/449444780818091</a></p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2024/09/853411/hero/TWITnews0407_thumbnail-v2.jpg"/>
+			<guid isPermaLink="false">https://cdn.twit.tv/video/specials/specials0407/specials0407_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:14:12</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/specials/specials0407/specials0407_h264m_1920x1080.mp4" length="1258501804" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/specials/specials0407/specials0407_h264m_1920x1080.mp4" fileSize="1258501804" type="video/mp4" medium="video">
+				<media:title type="plain">News 407: Meta Connect 2024 - Meta Orion AR Glasses, Meta AI, Meta Quest 3S</media:title>
+				<media:description type="plain">Meta Orion AR Glasses, Meta AI, Meta Quest 3S</media:description>
+				<media:keywords>TWiT, Leo Laporte, Mikah Sargent, Meta Quest 3S, meta ai, Meta AI Voice, AI Studio, Meta AI translation, Llama 3.2, ray-ban meta smart glasses, Meta Orion AR Glasses, Meta Connect 2024</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2024/09/853411/hero/TWITnews0407_thumbnail-v2.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/leo_1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>News 406: Apple's "It's Glowtime" Event - iPhone 16, Apple Watch Series 10, AirPods 4</title>
+			<itunes:title>Apple's "It's Glowtime" Event - iPhone 16, Apple Watch Series 10, AirPods 4</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Mon, 09 Sep 2024 11:54:20 PDT</pubDate>
+			<itunes:episode>406</itunes:episode>
+			<podcast:episode>406</podcast:episode>
+			<link>https://twit.tv/shows/twit-news/episodes/406</link>
+			<comments>https://twit.tv/shows/twit-news/episodes/406</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Breaking News</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>iPhone 16, Apple Watch Series 10, AirPods 4</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/twit-news-406-transcript" type="text/html" />
+			<itunes:keywords>Breaking News, TWiT, it's glowtime, apple september 2024 event, iphone 16, iphone 16 pro, apple intelligence, A18 chip, A18 Pro chip, 48MP Fusion camera, Camera Control, apple watch series 10, apple watch ultra 2, sleep apnea detection, watchos 11</itunes:keywords>
+			<description><![CDATA[
+<p>Apple's September 2024 event unveiled updates across their iPhone, Apple Watch, and AirPods lineups. The iPhone 16 and iPhone 16 Pro feature Apple Intelligence, Apple's new personal intelligence system, along with the powerful A18 and A18 Pro chips, respectively. Both models include improvements to the camera system, such as a 48MP Fusion camera and the new Camera Control. Apple Watch Series 10 sports redesigned hardware with a larger display, thinner profile, and new aluminum finishes, while both Series 10 and Ultra 2 introduce sleep apnea detection and new watchOS 11 features. AirPods 4 received updates to its design, audio performance, and charging, while AirPods Pro 2 gain the ability to function as a hearing aid.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Apple's September 2024 event unveiled updates across their iPhone, Apple Watch, and AirPods lineups. The iPhone 16 and iPhone 16 Pro feature Apple Intelligence, Apple's new personal intelligence system, along with the powerful A18 and A18 Pro chips, respectively. Both models include improvements to the camera system, such as a 48MP Fusion camera and the new Camera Control. Apple Watch Series 10 sports redesigned hardware with a larger display, thinner profile, and new aluminum finishes, while both Series 10 and Ultra 2 introduce sleep apnea detection and new watchOS 11 features. AirPods 4 received updates to its design, audio performance, and charging, while AirPods Pro 2 gain the ability to function as a hearing aid.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Apple's September 2024 event unveiled updates across their iPhone, Apple Watch, and AirPods lineups. The iPhone 16 and iPhone 16 Pro feature Apple Intelligence, Apple's new personal intelligence system, along with the powerful A18 and A18 Pro chips, respectively. Both models include improvements to the camera system, such as a 48MP Fusion camera and the new Camera Control. Apple Watch Series 10 sports redesigned hardware with a larger display, thinner profile, and new aluminum finishes, while both Series 10 and Ultra 2 introduce sleep apnea detection and new watchOS 11 features. AirPods 4 received updates to its design, audio performance, and charging, while AirPods Pro 2 gain the ability to function as a hearing aid.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2024/09/853201/hero/TWITnews0406_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://cdn.twit.tv/video/specials/specials0406/specials0406_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:58:59</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/specials/specials0406/specials0406_h264m_1920x1080.mp4" length="2018409795" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/specials/specials0406/specials0406_h264m_1920x1080.mp4" fileSize="2018409795" type="video/mp4" medium="video">
+				<media:title type="plain">News 406: Apple's "It's Glowtime" Event - iPhone 16, Apple Watch Series 10, AirPods 4</media:title>
+				<media:description type="plain">iPhone 16, Apple Watch Series 10, AirPods 4</media:description>
+				<media:keywords>Breaking News, TWiT, it's glowtime, apple september 2024 event, iphone 16, iphone 16 pro, apple intelligence, A18 chip, A18 Pro chip, 48MP Fusion camera, Camera Control, apple watch series 10, apple watch ultra 2, sleep apnea detection, watchos 11</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2024/09/853201/hero/TWITnews0406_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+				<media:credit role="host">Rosemary Orchard</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/rosemary-orchard" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/771751/pictures/rosemary.jpg">Rosemary Orchard</podcast:person>
+		</item>
+		<item>
+			<title>News 405: Made by Google 2024 - Pixel 9, Pixel 9 Pro Fold, Pixel Watch 3, and Pixel Buds Pro 2</title>
+			<itunes:title>Made by Google 2024 - Pixel 9, Pixel 9 Pro Fold, Pixel Watch 3, and Pixel Buds Pro 2</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Tue, 13 Aug 2024 15:40:00 PDT</pubDate>
+			<itunes:episode>405</itunes:episode>
+			<podcast:episode>405</podcast:episode>
+			<link>https://twit.tv/shows/twit-news/episodes/405</link>
+			<comments>https://twit.tv/shows/twit-news/episodes/405</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Breaking News</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Pixel 9, Pixel 9 Pro Fold, Pixel Watch 3, and Pixel Buds Pro 2</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/made-google-2024" type="text/html" />
+			<itunes:keywords>Google, gemini ai, Made by Google 2024, pixel 9, Pixel 9 Pro, Pixel 9 Pro Fold, Pixel Watch 3, Google Tensor G4, Android, AI assistant, computational photography, smartphone, smartwatch, pixel features, AI innovation, foldable phone, fitness tracking</itunes:keywords>
+			<description><![CDATA[
+<p>Leo Laporte and Jeff Jarvis provide live commentary on Google's "Made by Google 2024" event. The event primarily focused on Google's advancements in AI with their Gemini AI assistant and new hardware with Pixel 9, Pixel 9 Pro, the foldable Pixel 9 Pro Fold, and Pixel Watch 3.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guest:</strong> <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Leo Laporte and Jeff Jarvis provide live commentary on Google's "Made by Google 2024" event. The event primarily focused on Google's advancements in AI with their Gemini AI assistant and new hardware with Pixel 9, Pixel 9 Pro, the foldable Pixel 9 Pro Fold, and Pixel Watch 3.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guest:</strong> <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Leo Laporte and Jeff Jarvis provide live commentary on Google's "Made by Google 2024" event. The event primarily focused on Google's advancements in AI with their Gemini AI assistant and new hardware with Pixel 9, Pixel 9 Pro, the foldable Pixel 9 Pro Fold, and Pixel Watch 3.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guest:</strong> <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2024/08/852875/hero/TWITnews0405_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://cdn.twit.tv/video/specials/specials0405/specials0405_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:36:19</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/specials/specials0405/specials0405_h264m_1920x1080.mp4" length="1692542803" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/specials/specials0405/specials0405_h264m_1920x1080.mp4" fileSize="1692542803" type="video/mp4" medium="video">
+				<media:title type="plain">News 405: Made by Google 2024 - Pixel 9, Pixel 9 Pro Fold, Pixel Watch 3, and Pixel Buds Pro 2</media:title>
+				<media:description type="plain">Pixel 9, Pixel 9 Pro Fold, Pixel Watch 3, and Pixel Buds Pro 2</media:description>
+				<media:keywords>Google, gemini ai, Made by Google 2024, pixel 9, Pixel 9 Pro, Pixel 9 Pro Fold, Pixel Watch 3, Google Tensor G4, Android, AI assistant, computational photography, smartphone, smartwatch, pixel features, AI innovation, foldable phone, fitness tracking</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2024/08/852875/hero/TWITnews0405_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="guest">Jeff Jarvis</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/leo_1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="guest" href="https://twit.tv/people/jeff-jarvis" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/29/pictures/jeff-jarvis_0.png">Jeff Jarvis</podcast:person>
+		</item>
+		<item>
+			<title>News 404: Apple WWDC 2024 - Apple Intelligence, visionOS 2, macOS Sequoia</title>
+			<itunes:title>Apple WWDC 2024 - Apple Intelligence, visionOS 2, macOS Sequoia</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Mon, 10 Jun 2024 12:12:14 PDT</pubDate>
+			<itunes:episode>404</itunes:episode>
+			<podcast:episode>404</podcast:episode>
+			<link>https://twit.tv/shows/twit-news/episodes/404</link>
+			<comments>https://twit.tv/shows/twit-news/episodes/404</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Breaking News</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Apple Intelligence, visionOS 2, macOS Sequoia</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/wwdc-2024-apples-intelligent-move-make-ai-its-own" type="text/html" />
+			<itunes:keywords>Breaking News, Apple, WWDC, wwdc24, apple intelligence, ai, personal intelligence, ios 18, ipados 18, macos Sequoia, mac, iPad, iPhone, visionOS 2, Vision Pro, apple passwords app, Genmoji</itunes:keywords>
+			<description><![CDATA[
+<p>Apple's Worldwide Developers Conference (WWDC) 2024 opened with a content-rich keynote showcasing significant updates to Apple's ecosystem. From enhancements to operating systems to the introduction of Apple Intelligence, the event set the stage for the next generation of Apple products and experiences.</p> 
+<p><strong>Entertainment</strong></p><ul> 
+<li>Apple TV+ enters its 5th year with a strong lineup of originals and upcoming shows and movies</li> 
+<li>Gaming experiences on Apple devices are enhanced by the unified gaming platform, leveraging Metal and Apple silico- Notable upcoming games include Frostpunk 2, Control, and Assassin's Creed: Shadows for both Mac and iPad</li></ul> 
+<p><strong>Operating System Updates</strong></p><ul> 
+<li>visionOS 2 for Apple Vision Pro introduces enhanced gestures, improved Mac Virtual Display, and expanded developer APIs</li> 
+<li>iOS 18 brings deeper customization for the Home Screen and Control Center, privacy improvements, and a major Photos app redesign</li> 
+<li>iPadOS 18 features a new floating tab bar for apps, Smart Script handwriting recognition, and the new Calculator app with Math Notes integration for Apple Pencil</li> 
+<li>macOS Sequoia introduces iPhone Mirroring for wireless phone control from your Mac, improved window tiling, presenter preview for video calls, and the Passwords app</li> 
+<li>watchOS 11 includes Training Load for workout impact analysis, the Vitals app for health metric insights, and an updated Photos watch face</li></ul> 
+<p><strong>Apple Intelligence</strong></p><ul> 
+<li>Personal AI capabilities for iPhone, iPad, and Mac</li> 
+<li>Siri receives significant upgrades with more natural interactions, personal context understanding, and cross-app actions</li> 
+<li>Systemwide Writing Tools assist with rewriting, proofreading, and summarizing text across apps</li> 
+<li>Genmoji and the Image Playground allow for playful image creation using simple descriptions</li> 
+<li>Integration with ChatGPT brings powerful external AI models to Apple devices</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Apple's Worldwide Developers Conference (WWDC) 2024 opened with a content-rich keynote showcasing significant updates to Apple's ecosystem. From enhancements to operating systems to the introduction of Apple Intelligence, the event set the stage for the next generation of Apple products and experiences.</p> 
+<p><strong>Entertainment</strong></p><ul> 
+<li>Apple TV+ enters its 5th year with a strong lineup of originals and upcoming shows and movies</li> 
+<li>Gaming experiences on Apple devices are enhanced by the unified gaming platform, leveraging Metal and Apple silico- Notable upcoming games include Frostpunk 2, Control, and Assassin's Creed: Shadows for both Mac and iPad</li></ul> 
+<p><strong>Operating System Updates</strong></p><ul> 
+<li>visionOS 2 for Apple Vision Pro introduces enhanced gestures, improved Mac Virtual Display, and expanded developer APIs</li> 
+<li>iOS 18 brings deeper customization for the Home Screen and Control Center, privacy improvements, and a major Photos app redesign</li> 
+<li>iPadOS 18 features a new floating tab bar for apps, Smart Script handwriting recognition, and the new Calculator app with Math Notes integration for Apple Pencil</li> 
+<li>macOS Sequoia introduces iPhone Mirroring for wireless phone control from your Mac, improved window tiling, presenter preview for video calls, and the Passwords app</li> 
+<li>watchOS 11 includes Training Load for workout impact analysis, the Vitals app for health metric insights, and an updated Photos watch face</li></ul> 
+<p><strong>Apple Intelligence</strong></p><ul> 
+<li>Personal AI capabilities for iPhone, iPad, and Mac</li> 
+<li>Siri receives significant upgrades with more natural interactions, personal context understanding, and cross-app actions</li> 
+<li>Systemwide Writing Tools assist with rewriting, proofreading, and summarizing text across apps</li> 
+<li>Genmoji and the Image Playground allow for playful image creation using simple descriptions</li> 
+<li>Integration with ChatGPT brings powerful external AI models to Apple devices</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Apple's Worldwide Developers Conference (WWDC) 2024 opened with a content-rich keynote showcasing significant updates to Apple's ecosystem. From enhancements to operating systems to the introduction of Apple Intelligence, the event set the stage for the next generation of Apple products and experiences.</p> 
+<p><strong>Entertainment</strong></p><ul> 
+<li>Apple TV+ enters its 5th year with a strong lineup of originals and upcoming shows and movies</li> 
+<li>Gaming experiences on Apple devices are enhanced by the unified gaming platform, leveraging Metal and Apple silico- Notable upcoming games include Frostpunk 2, Control, and Assassin's Creed: Shadows for both Mac and iPad</li></ul> 
+<p><strong>Operating System Updates</strong></p><ul> 
+<li>visionOS 2 for Apple Vision Pro introduces enhanced gestures, improved Mac Virtual Display, and expanded developer APIs</li> 
+<li>iOS 18 brings deeper customization for the Home Screen and Control Center, privacy improvements, and a major Photos app redesign</li> 
+<li>iPadOS 18 features a new floating tab bar for apps, Smart Script handwriting recognition, and the new Calculator app with Math Notes integration for Apple Pencil</li> 
+<li>macOS Sequoia introduces iPhone Mirroring for wireless phone control from your Mac, improved window tiling, presenter preview for video calls, and the Passwords app</li> 
+<li>watchOS 11 includes Training Load for workout impact analysis, the Vitals app for health metric insights, and an updated Photos watch face</li></ul> 
+<p><strong>Apple Intelligence</strong></p><ul> 
+<li>Personal AI capabilities for iPhone, iPad, and Mac</li> 
+<li>Siri receives significant upgrades with more natural interactions, personal context understanding, and cross-app actions</li> 
+<li>Systemwide Writing Tools assist with rewriting, proofreading, and summarizing text across apps</li> 
+<li>Genmoji and the Image Playground allow for playful image creation using simple descriptions</li> 
+<li>Integration with ChatGPT brings powerful external AI models to Apple devices</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2024/06/851903/hero/TWITnews0404_thumbnail_0.jpg"/>
+			<guid isPermaLink="false">https://cdn.twit.tv/video/specials/specials0404/specials0404_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:00:11</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/specials/specials0404/specials0404_h264m_1920x1080.mp4" length="1664731131" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/specials/specials0404/specials0404_h264m_1920x1080.mp4" fileSize="1664731131" type="video/mp4" medium="video">
+				<media:title type="plain">News 404: Apple WWDC 2024 - Apple Intelligence, visionOS 2, macOS Sequoia</media:title>
+				<media:description type="plain">Apple Intelligence, visionOS 2, macOS Sequoia</media:description>
+				<media:keywords>Breaking News, Apple, WWDC, wwdc24, apple intelligence, ai, personal intelligence, ios 18, ipados 18, macos Sequoia, mac, iPad, iPhone, visionOS 2, Vision Pro, apple passwords app, Genmoji</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2024/06/851903/hero/TWITnews0404_thumbnail_0.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/leo_1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>News 403: OpenAI Spring 2024 Update - OpenAI&#039;s Spring Event</title>
+			<itunes:title>OpenAI Spring 2024 Update - OpenAI&#039;s Spring Event</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Mon, 13 May 2024 11:30:00 PDT</pubDate>
+			<itunes:episode>403</itunes:episode>
+			<podcast:episode>403</podcast:episode>
+			<link>https://twit.tv/shows/twit-news/episodes/403</link>
+			<comments>https://twit.tv/shows/twit-news/episodes/403</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Breaking News</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>OpenAI&#039;s Spring Event</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/chatgpt-4o-model-unveiled-openais-spring-2024-update" type="text/html" />
+			<itunes:keywords>TWiT, Leo Laporte, Jeff Jarvis, chatgpt, gpt-4, gpt-4o, chatgpt-4o, omnimodel, gptstore, gpt-4o desktop, gpt-4o ui, her movie, her, real live translation, chatgpt live translation, chatgpt paid model, chatgpt free model, mira murtai, mark chen</itunes:keywords>
+			<description><![CDATA[
+<p>Leo Laporte and Jeff Jarvis watch OpenAI's Spring 2024 Update as the company unveils the latest update to its ChatGPT system, GPT-4o, and demos its AI system's new capabilities as it interacts with text, voice, and photos.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Leo Laporte and Jeff Jarvis watch OpenAI's Spring 2024 Update as the company unveils the latest update to its ChatGPT system, GPT-4o, and demos its AI system's new capabilities as it interacts with text, voice, and photos.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Leo Laporte and Jeff Jarvis watch OpenAI's Spring 2024 Update as the company unveils the latest update to its ChatGPT system, GPT-4o, and demos its AI system's new capabilities as it interacts with text, voice, and photos.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2024/05/851531/hero/TWITnews0403_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://cdn.twit.tv/video/specials/specials0403/specials0403_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>46:39</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/specials/specials0403/specials0403_h264m_1920x1080.mp4" length="644377617" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/specials/specials0403/specials0403_h264m_1920x1080.mp4" fileSize="644377617" type="video/mp4" medium="video">
+				<media:title type="plain">News 403: OpenAI Spring 2024 Update - OpenAI&#039;s Spring Event</media:title>
+				<media:description type="plain">OpenAI&#039;s Spring Event</media:description>
+				<media:keywords>TWiT, Leo Laporte, Jeff Jarvis, chatgpt, gpt-4, gpt-4o, chatgpt-4o, omnimodel, gptstore, gpt-4o desktop, gpt-4o ui, her movie, her, real live translation, chatgpt live translation, chatgpt paid model, chatgpt free model, mira murtai, mark chen</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2024/05/851531/hero/TWITnews0403_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Jeff Jarvis</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/leo_1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/jeff-jarvis" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/29/pictures/jeff-jarvis_0.png">Jeff Jarvis</podcast:person>
+		</item>
+		<item>
+			<title>News 402: Apple May 2024 Event - iPad Air M2, iPad Pro M4, Apple Pencil Pro</title>
+			<itunes:title>Apple May 2024 Event - iPad Air M2, iPad Pro M4, Apple Pencil Pro</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Tue, 07 May 2024 08:44:04 PDT</pubDate>
+			<itunes:episode>402</itunes:episode>
+			<podcast:episode>402</podcast:episode>
+			<link>https://twit.tv/shows/twit-news/episodes/402</link>
+			<comments>https://twit.tv/shows/twit-news/episodes/402</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Breaking News</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>iPad Air M2, iPad Pro M4, Apple Pencil Pro</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/chatgpt-4o-model-unveiled-openais-spring-2024-update" type="text/html" />
+			<itunes:keywords>TWiT, Leo Laporte, Mikah Sargent, Apple May 2024 event, iPad lineup, iPad Air, ipad pro, M4 chip, Ultra Retina XDR display, Apple vision pro, macbook air, M3 chip, final cut pro, logic pro, Apple Pencil Pro, magic keyboard, iPad accessories</itunes:keywords>
+			<description><![CDATA[
+<p>Apple unveiled a series of updates to its iPad lineup, introducing new models, features, and accessories.</p><ul> 
+<li>Redesigned iPad Air: The new iPad Air, available in 11-inch and 13-inch models, features the M2 chip, an updated camera layout, improved connectivity, and increased storage options.</li> 
+<li>Next-Generation iPad Pro: The all-new iPad Pro boasts an ultra-thin design, advanced Ultra Retina XDR display, and the powerful M4 chip. It comes in 11-inch and 13-inch models.</li> 
+<li>Introduction of the M4 Chip: Apple's latest silicon, the M4 chip, enables the iPad Pro's sleek design and impressive display capabilities while delivering significant performance improvements.</li> 
+<li>Updates to Pro-Level Apps: Final Cut Pro and Logic Pro receive substantial updates, with new features like Live Multicam, Final Cut Camera, Session Players, ChromaGlow, and Stem Splitter.</li> 
+<li>Debut of Apple Pencil Pro: The new Apple Pencil Pro offers an enhanced user experience with pressure sensitivity, haptic feedback, gyroscope-based control, and Find My integration.</li> 
+<li>Redesigned Magic Keyboard: The updated Magic Keyboard for iPad Pro is thinner, lighter, and includes a function row, aluminum palm rest, larger trackpad, and haptic feedback.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Apple unveiled a series of updates to its iPad lineup, introducing new models, features, and accessories.</p><ul> 
+<li>Redesigned iPad Air: The new iPad Air, available in 11-inch and 13-inch models, features the M2 chip, an updated camera layout, improved connectivity, and increased storage options.</li> 
+<li>Next-Generation iPad Pro: The all-new iPad Pro boasts an ultra-thin design, advanced Ultra Retina XDR display, and the powerful M4 chip. It comes in 11-inch and 13-inch models.</li> 
+<li>Introduction of the M4 Chip: Apple's latest silicon, the M4 chip, enables the iPad Pro's sleek design and impressive display capabilities while delivering significant performance improvements.</li> 
+<li>Updates to Pro-Level Apps: Final Cut Pro and Logic Pro receive substantial updates, with new features like Live Multicam, Final Cut Camera, Session Players, ChromaGlow, and Stem Splitter.</li> 
+<li>Debut of Apple Pencil Pro: The new Apple Pencil Pro offers an enhanced user experience with pressure sensitivity, haptic feedback, gyroscope-based control, and Find My integration.</li> 
+<li>Redesigned Magic Keyboard: The updated Magic Keyboard for iPad Pro is thinner, lighter, and includes a function row, aluminum palm rest, larger trackpad, and haptic feedback.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Apple unveiled a series of updates to its iPad lineup, introducing new models, features, and accessories.</p><ul> 
+<li>Redesigned iPad Air: The new iPad Air, available in 11-inch and 13-inch models, features the M2 chip, an updated camera layout, improved connectivity, and increased storage options.</li> 
+<li>Next-Generation iPad Pro: The all-new iPad Pro boasts an ultra-thin design, advanced Ultra Retina XDR display, and the powerful M4 chip. It comes in 11-inch and 13-inch models.</li> 
+<li>Introduction of the M4 Chip: Apple's latest silicon, the M4 chip, enables the iPad Pro's sleek design and impressive display capabilities while delivering significant performance improvements.</li> 
+<li>Updates to Pro-Level Apps: Final Cut Pro and Logic Pro receive substantial updates, with new features like Live Multicam, Final Cut Camera, Session Players, ChromaGlow, and Stem Splitter.</li> 
+<li>Debut of Apple Pencil Pro: The new Apple Pencil Pro offers an enhanced user experience with pressure sensitivity, haptic feedback, gyroscope-based control, and Find My integration.</li> 
+<li>Redesigned Magic Keyboard: The updated Magic Keyboard for iPad Pro is thinner, lighter, and includes a function row, aluminum palm rest, larger trackpad, and haptic feedback.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2024/05/851433/hero/TWITnews0402_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://cdn.twit.tv/video/specials/specials0402/specials0402_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>56:01</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/specials/specials0402/specials0402_h264m_1920x1080.mp4" length="777334309" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/specials/specials0402/specials0402_h264m_1920x1080.mp4" fileSize="777334309" type="video/mp4" medium="video">
+				<media:title type="plain">News 402: Apple May 2024 Event - iPad Air M2, iPad Pro M4, Apple Pencil Pro</media:title>
+				<media:description type="plain">iPad Air M2, iPad Pro M4, Apple Pencil Pro</media:description>
+				<media:keywords>TWiT, Leo Laporte, Mikah Sargent, Apple May 2024 event, iPad lineup, iPad Air, ipad pro, M4 chip, Ultra Retina XDR display, Apple vision pro, macbook air, M3 chip, final cut pro, logic pro, Apple Pencil Pro, magic keyboard, iPad accessories</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2024/05/851433/hero/TWITnews0402_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/leo_1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>News 401: NVIDIA GTC Keynote 2024 - Blackwell, NVLink Switch, NIM, Project GROOT</title>
+			<itunes:title>NVIDIA GTC Keynote 2024 - Blackwell, NVLink Switch, NIM, Project GROOT</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Mon, 18 Mar 2024 16:07:57 PDT</pubDate>
+			<itunes:episode>401</itunes:episode>
+			<podcast:episode>401</podcast:episode>
+			<link>https://twit.tv/shows/twit-news/episodes/401</link>
+			<comments>https://twit.tv/shows/twit-news/episodes/401</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Breaking News</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Blackwell, NVLink Switch, NIM, Project GROOT</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/twit-news-401-transcript" type="text/html" />
+			<itunes:keywords>Breaking News, nvidia, jensen huang, GTC 2024, GTC Keynote, ai, NIM, inference microservice, blackwell gpu, NVLink Switch chip, Artificial Intelligence, Project GROOT, humanoid robots, Grace Hopper, bionemo, nvidia omniverse, infiniband supernic</itunes:keywords>
+			<description><![CDATA[
+<p>Mikah Sargent and Jeff Jarvis watch Jensen Huang's highly technical keynote for NVIDIA's GTC 2024, which showed off the powerful Blackwell platform, NVIDIA Inference Microservices, the NVLink Switch Chip, Project GROOT, and several business partnerships revolving around AI.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Mikah Sargent and Jeff Jarvis watch Jensen Huang's highly technical keynote for NVIDIA's GTC 2024, which showed off the powerful Blackwell platform, NVIDIA Inference Microservices, the NVLink Switch Chip, Project GROOT, and several business partnerships revolving around AI.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Mikah Sargent and Jeff Jarvis watch Jensen Huang's highly technical keynote for NVIDIA's GTC 2024, which showed off the powerful Blackwell platform, NVIDIA Inference Microservices, the NVLink Switch Chip, Project GROOT, and several business partnerships revolving around AI.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2024/03/850844/hero/TWITnews0401_thumb.jpg"/>
+			<guid isPermaLink="false">https://cdn.twit.tv/video/specials/specials0401/specials0401_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:32:06</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/specials/specials0401/specials0401_h264m_1920x1080.mp4" length="2110461783" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/specials/specials0401/specials0401_h264m_1920x1080.mp4" fileSize="2110461783" type="video/mp4" medium="video">
+				<media:title type="plain">News 401: NVIDIA GTC Keynote 2024 - Blackwell, NVLink Switch, NIM, Project GROOT</media:title>
+				<media:description type="plain">Blackwell, NVLink Switch, NIM, Project GROOT</media:description>
+				<media:keywords>Breaking News, nvidia, jensen huang, GTC 2024, GTC Keynote, ai, NIM, inference microservice, blackwell gpu, NVLink Switch chip, Artificial Intelligence, Project GROOT, humanoid robots, Grace Hopper, bionemo, nvidia omniverse, infiniband supernic</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2024/03/850844/hero/TWITnews0401_thumb.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+				<media:credit role="host">Jeff Jarvis</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/jeff-jarvis" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/29/pictures/jeff-jarvis_0.png">Jeff Jarvis</podcast:person>
+		</item>
+		<item>
+			<title>News 400: Samsung Galaxy Unpacked 2024 - Galaxy AI, S24 Ultra, Galaxy Ring</title>
+			<itunes:title>Samsung Galaxy Unpacked 2024 - Galaxy AI, S24 Ultra, Galaxy Ring</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Wed, 17 Jan 2024 13:00:00 PST</pubDate>
+			<itunes:episode>400</itunes:episode>
+			<podcast:episode>400</podcast:episode>
+			<link>https://twit.tv/shows/twit-news/episodes/400</link>
+			<comments>https://twit.tv/shows/twit-news/episodes/400</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Breaking News</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Galaxy AI, S24 Ultra, Galaxy Ring</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/what-was-announced-samsung-galaxy-unpacked-2024-event" type="text/html" />
+			<itunes:keywords>TWiT, Leo Laporte, Mikah Sargent, samsung, galaxy unpacked 2024, galaxy ai, s24, s24+, s24 ultra, chat assist, ai transcription, google ai, ai bard, google gemini, android circle search, google cirlce search, nightography, hdr smartphone, quick share</itunes:keywords>
+			<description><![CDATA[
+<p>Samsung holds their Unpacked 2024 event by talking about the use of AI in their devices, unveiling the S24, S24+, and S24 Ultra phones, and announces the Galaxy Ring.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Samsung holds their Unpacked 2024 event by talking about the use of AI in their devices, unveiling the S24, S24+, and S24 Ultra phones, and announces the Galaxy Ring.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Samsung holds their Unpacked 2024 event by talking about the use of AI in their devices, unveiling the S24, S24+, and S24 Ultra phones, and announces the Galaxy Ring.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2024/01/849992/hero/twitnews0400_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://cdn.twit.tv/video/specials/specials0400/specials0400_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:22:02</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/specials/specials0400/specials0400_h264m_1920x1080.mp4" length="1131941071" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/specials/specials0400/specials0400_h264m_1920x1080.mp4" fileSize="1131941071" type="video/mp4" medium="video">
+				<media:title type="plain">News 400: Samsung Galaxy Unpacked 2024 - Galaxy AI, S24 Ultra, Galaxy Ring</media:title>
+				<media:description type="plain">Galaxy AI, S24 Ultra, Galaxy Ring</media:description>
+				<media:keywords>TWiT, Leo Laporte, Mikah Sargent, samsung, galaxy unpacked 2024, galaxy ai, s24, s24+, s24 ultra, chat assist, ai transcription, google ai, ai bard, google gemini, android circle search, google cirlce search, nightography, hdr smartphone, quick share</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2024/01/849992/hero/twitnews0400_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/leo_1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>News 399: OpenAI DevDay Keynote 2023 - GPT-4 Turbo, Assistants API, GPTs, GTP Store</title>
+			<itunes:title>OpenAI DevDay Keynote 2023 - GPT-4 Turbo, Assistants API, GPTs, GTP Store</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Mon, 06 Nov 2023 11:50:27 PST</pubDate>
+			<itunes:episode>399</itunes:episode>
+			<podcast:episode>399</podcast:episode>
+			<link>https://twit.tv/shows/twit-news/episodes/399</link>
+			<comments>https://twit.tv/shows/twit-news/episodes/399</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Breaking News</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>GPT-4 Turbo, Assistants API, GPTs, GTP Store</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/what-was-announced-samsung-galaxy-unpacked-2024-event" type="text/html" />
+			<itunes:keywords>TWiT, Jason Howell, Jeff Jarvis, openAI, OpenAI DevDay, OpenAI Keynote, sam altman, GPT4 Turbo, GPT-4 Turbo, 128K context window, Assistants API, DALLE 3, JSON mode, Code Interpreter, Turbo with vision, dall-e-3, text-to-speech, tts, Custom models</itunes:keywords>
+			<description><![CDATA[
+<p>At its inaugural developer conference DevDay, OpenAI unveiled major upgrades like GPT-4 Turbo, a more advanced AI model that's 3x cheaper than GPT-4 and a 128k token context window that can handle much longer prompts. They also launched new multimodal capabilities so developers can integrate vision, speech, and image generation into apps. Key highlights include the Assistants API for building AI agents, the ability to create custom versions of ChatGPT called GPTs and share them publicly on the GPT Store, and Copyright Shield to protect customers. Overall, OpenAI aims to make AI more affordable, capable, and safe for developers to build next-gen apps.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a> and <a href="https://twit.tv/people/jason-howell">Jason Howell</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://info.acilearning.com/twit" target="_blank" rel="sponsored">INFO.ACILEARNING.COM/TWIT - code TWIT100</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>At its inaugural developer conference DevDay, OpenAI unveiled major upgrades like GPT-4 Turbo, a more advanced AI model that's 3x cheaper than GPT-4 and a 128k token context window that can handle much longer prompts. They also launched new multimodal capabilities so developers can integrate vision, speech, and image generation into apps. Key highlights include the Assistants API for building AI agents, the ability to create custom versions of ChatGPT called GPTs and share them publicly on the GPT Store, and Copyright Shield to protect customers. Overall, OpenAI aims to make AI more affordable, capable, and safe for developers to build next-gen apps.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a> and <a href="https://twit.tv/people/jason-howell">Jason Howell</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://info.acilearning.com/twit" target="_blank" rel="sponsored">INFO.ACILEARNING.COM/TWIT - code TWIT100</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>At its inaugural developer conference DevDay, OpenAI unveiled major upgrades like GPT-4 Turbo, a more advanced AI model that's 3x cheaper than GPT-4 and a 128k token context window that can handle much longer prompts. They also launched new multimodal capabilities so developers can integrate vision, speech, and image generation into apps. Key highlights include the Assistants API for building AI agents, the ability to create custom versions of ChatGPT called GPTs and share them publicly on the GPT Store, and Copyright Shield to protect customers. Overall, OpenAI aims to make AI more affordable, capable, and safe for developers to build next-gen apps.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a> and <a href="https://twit.tv/people/jason-howell">Jason Howell</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://info.acilearning.com/twit" target="_blank" rel="sponsored">INFO.ACILEARNING.COM/TWIT - code TWIT100</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2023/11/848860/hero/twitnews0399_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://cdn.twit.tv/video/specials/specials0399/specials0399_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:07:46</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/specials/specials0399/specials0399_h264m_1920x1080.mp4" length="939881686" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/specials/specials0399/specials0399_h264m_1920x1080.mp4" fileSize="939881686" type="video/mp4" medium="video">
+				<media:title type="plain">News 399: OpenAI DevDay Keynote 2023 - GPT-4 Turbo, Assistants API, GPTs, GTP Store</media:title>
+				<media:description type="plain">GPT-4 Turbo, Assistants API, GPTs, GTP Store</media:description>
+				<media:keywords>TWiT, Jason Howell, Jeff Jarvis, openAI, OpenAI DevDay, OpenAI Keynote, sam altman, GPT4 Turbo, GPT-4 Turbo, 128K context window, Assistants API, DALLE 3, JSON mode, Code Interpreter, Turbo with vision, dall-e-3, text-to-speech, tts, Custom models</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2023/11/848860/hero/twitnews0399_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Jeff Jarvis</media:credit>
+				<media:credit role="host">Jason Howell</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/jeff-jarvis" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/29/pictures/jeff-jarvis_0.png">Jeff Jarvis</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/jason-howell" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/22/pictures/jason-howell.png">Jason Howell</podcast:person>
+		</item>
+		<item>
+			<title>News 398: Apple 'Scary Fast' Event - M3 MacBook Pro &amp; iMac</title>
+			<itunes:title>Apple 'Scary Fast' Event - M3 MacBook Pro &amp; iMac</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Mon, 30 Oct 2023 18:05:10 PDT</pubDate>
+			<itunes:episode>398</itunes:episode>
+			<podcast:episode>398</podcast:episode>
+			<link>https://twit.tv/shows/twit-news/episodes/398</link>
+			<comments>https://twit.tv/shows/twit-news/episodes/398</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Breaking News</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>M3 MacBook Pro &amp; iMac</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/what-was-announced-samsung-galaxy-unpacked-2024-event" type="text/html" />
+			<itunes:keywords>TWiT, Leo Laporte, Mikah Sargent, Alex Lindsay, Apple Event, scary fast, Apple event October 2023, Apple M3 chip, M3 Pro, M3 Max, 3nm processor, MacBook Pro with M3, iMac with M3, M3 iMac, m3 macbook pro, Space Black</itunes:keywords>
+			<description><![CDATA[
+<p>At its October 'Scary Fast' event, Apple unveiled new MacBook Pro laptops featuring the powerful new M3 family of chips, as well as a refreshed 24-inch iMac desktop with the M3 chip. The M3, M3 Pro, and M3 Max chips offer dramatic leaps in performance and efficiency thanks to a new 3-nanometer manufacturing process. Apple also highlighted new GPU architecture in the M3 chips, enabling advanced graphics capabilities like hardware-accelerated ray tracing. The MacBook Pro and iMac retain the same form factor, but the MacBook Pro now comes in a new Space Black color option.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a>, and <a href="https://twit.tv/people/alex-lindsay">Alex Lindsay</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://INFO.ACILEARNING.COM/TWIT" target="_blank" rel="sponsored">INFO.ACILEARNING.COM/TWIT code SN100</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>At its October 'Scary Fast' event, Apple unveiled new MacBook Pro laptops featuring the powerful new M3 family of chips, as well as a refreshed 24-inch iMac desktop with the M3 chip. The M3, M3 Pro, and M3 Max chips offer dramatic leaps in performance and efficiency thanks to a new 3-nanometer manufacturing process. Apple also highlighted new GPU architecture in the M3 chips, enabling advanced graphics capabilities like hardware-accelerated ray tracing. The MacBook Pro and iMac retain the same form factor, but the MacBook Pro now comes in a new Space Black color option.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a>, and <a href="https://twit.tv/people/alex-lindsay">Alex Lindsay</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://INFO.ACILEARNING.COM/TWIT" target="_blank" rel="sponsored">INFO.ACILEARNING.COM/TWIT code SN100</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>At its October 'Scary Fast' event, Apple unveiled new MacBook Pro laptops featuring the powerful new M3 family of chips, as well as a refreshed 24-inch iMac desktop with the M3 chip. The M3, M3 Pro, and M3 Max chips offer dramatic leaps in performance and efficiency thanks to a new 3-nanometer manufacturing process. Apple also highlighted new GPU architecture in the M3 chips, enabling advanced graphics capabilities like hardware-accelerated ray tracing. The MacBook Pro and iMac retain the same form factor, but the MacBook Pro now comes in a new Space Black color option.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a>, and <a href="https://twit.tv/people/alex-lindsay">Alex Lindsay</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-news">https://twit.tv/shows/twit-news</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://INFO.ACILEARNING.COM/TWIT" target="_blank" rel="sponsored">INFO.ACILEARNING.COM/TWIT code SN100</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2023/10/848476/hero/twitnews0398_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://cdn.twit.tv/video/specials/specials0398/specials0398_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>59:41</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/specials/specials0398/specials0398_h264m_1920x1080.mp4" length="822225493" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/specials/specials0398/specials0398_h264m_1920x1080.mp4" fileSize="822225493" type="video/mp4" medium="video">
+				<media:title type="plain">News 398: Apple 'Scary Fast' Event - M3 MacBook Pro &amp; iMac</media:title>
+				<media:description type="plain">M3 MacBook Pro &amp; iMac</media:description>
+				<media:keywords>TWiT, Leo Laporte, Mikah Sargent, Alex Lindsay, Apple Event, scary fast, Apple event October 2023, Apple M3 chip, M3 Pro, M3 Max, 3nm processor, MacBook Pro with M3, iMac with M3, M3 iMac, m3 macbook pro, Space Black</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2023/10/848476/hero/twitnews0398_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Mikah Sargent</media:credit>
+				<media:credit role="host">Alex Lindsay</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/leo_1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/alex-lindsay" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/26/pictures/alex_profile_color_square.jpg">Alex Lindsay</podcast:person>
+		</item>
+	</channel>
+</rss>

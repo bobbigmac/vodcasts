@@ -1,0 +1,1371 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/" xmlns:podcast="https://podcastindex.org/namespace/1.0" version="2.0">
+	<channel>
+		<title>Intelligent Machines (Video)</title>
+		<itunes:author>TWiT</itunes:author>
+		<link>https://twit.tv/shows/intelligent-machines</link>
+		<generator>TWiT Feed Generator v4.10</generator>
+		<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+		<language>en-US</language>
+		<copyright>This work is licensed under a Creative Commons License - Attribution-NonCommercial-NoDerivatives 4.0 International - http://creativecommons.org/licenses/by-nc-nd/4.0/</copyright>
+		<creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+		<managingEditor>feedmail@twit.tv (TWiT Editors)</managingEditor>
+		<webMaster>feedmail@twit.tv (TWiT Engineering)</webMaster>
+		<ttl>720</ttl>
+		<sy:updatePeriod>weekly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+		<lastBuildDate>Fri, 20 Feb 2026 18:42:57 PST</lastBuildDate>
+		<pubDate>Fri, 20 Feb 2026 18:42:57 PST</pubDate>
+		<rawvoice:frequency>weekly</rawvoice:frequency>
+		<rawvoice:location>Petaluma, CA</rawvoice:location>
+		<itunes:type>episodic</itunes:type>
+		<itunes:subtitle>Meet the AI pioneers, inventors, and innovators who are about to disrupt every aspect of modern life.</itunes:subtitle>
+		<itunes:summary>The 21st Century began with the rise of the Internet and social media. The next decade will mark the rise of the Intelligent Machines. AI will inhabit all our devices from cars and appliances to smart phones and robots. The Intelligent Machines podcast explores the most exciting revolution humanity has ever seen, filled with promise and peril. More than ever we need to understand what these new devices will bring to our lives and how to make best use of them as the 21st century unfolds. On this show you'll meet the AI pioneers, inventors, and innovators who are about to disrupt every aspect of modern life. You'll learn what's real and what's hype, and you'll come away with a deep understanding of the intelligent future that awaits us all.
+
+Records live every Wednesday at 5:00pm Eastern / 2:00pm Pacific / 22:00 UTC.</itunes:summary>
+		<description>The 21st Century began with the rise of the Internet and social media. The next decade will mark the rise of the Intelligent Machines. AI will inhabit all our devices from cars and appliances to smart phones and robots. The Intelligent Machines podcast explores the most exciting revolution humanity has ever seen, filled with promise and peril. More than ever we need to understand what these new devices will bring to our lives and how to make best use of them as the 21st century unfolds. On this show you'll meet the AI pioneers, inventors, and innovators who are about to disrupt every aspect of modern life. You'll learn what's real and what's hype, and you'll come away with a deep understanding of the intelligent future that awaits us all.
+
+Records live every Wednesday at 5:00pm Eastern / 2:00pm Pacific / 22:00 UTC.</description>
+		<itunes:keywords>TWiT, Technology, Artificial Intelligence, AI</itunes:keywords>
+		<rawvoice:rating tv="tv-g">tv-g</rawvoice:rating>
+		<itunes:explicit>no</itunes:explicit>
+		<itunes:block>no</itunes:block>
+		<googleplay:block>No</googleplay:block>
+		<podcast:funding url="https://twit.tv/clubtwit">Become a Club TWiT member!</podcast:funding>
+		<itunes:owner>
+			<itunes:name>Leo Laporte</itunes:name>
+			<itunes:email>feedmail@twit.tv</itunes:email>
+		</itunes:owner>
+		<itunes:category text="Technology" />
+		<category>Technology</category>
+		<category>AI</category>
+		<category>Artificial Intelligence</category>
+		<image>
+			<title>Intelligent Machines (Video)</title>
+			<url>https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/Intelligent%20Machines/album_art/hd/IM_albumart_standard_video.jpg</url>
+			<link>https://twit.tv/shows/intelligent-machines</link>
+		</image>
+		<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/Intelligent%20Machines/album_art/hd/IM_albumart_standard_video.jpg" />
+		<itunes:new-feed-url>https://feeds.twit.tv/twig_video_hd.xml</itunes:new-feed-url>
+		<rawvoice:subscribe feed="https://feeds.twit.tv/twig_video_hd.xml" itunes="https://podcasts.apple.com/us/podcast/intelligent-machines-video/id593120919" html="https://twit.tv/shows/intelligent-machines"></rawvoice:subscribe>
+		<atom:link href="https://feeds.twit.tv/twig_video_hd.xml" type="application/rss+xml" rel="self"/>
+		<item>
+			<title>IM 858: The Itinerant Salt Miner from Buffalo - Silicon Valley's Military Dilemma</title>
+			<itunes:title>The Itinerant Salt Miner from Buffalo - Silicon Valley's Military Dilemma</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Wed, 18 Feb 2026 19:56:37 PST</pubDate>
+			<itunes:episode>858</itunes:episode>
+			<podcast:episode>858</podcast:episode>
+			<link>https://twit.tv/shows/intelligent-machines/episodes/858</link>
+			<comments>https://twit.tv/shows/intelligent-machines/episodes/858</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>AI</category>
+			<category>Artificial Intelligence</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Silicon Valley's Military Dilemma</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/will-agentic-ai-openclaw-become-your-next-digital-assistant" type="text/html" />
+			<itunes:keywords>TWiT, Intelligent Machines, Leo Laporte, Jeff Jarvis, emily forlini, OpenClaw, Anthropic Claude, agentic ai, Claude Code, openAI, AI coding tools, Mac Mini, chatgpt, venture capital, Apple Glasses, AI earbuds, pendant pin, B2B AI, Excel plugin</itunes:keywords>
+			<description><![CDATA[
+<p>OpenClaw's creator makes headlines by joining OpenAI after GitHub fame and a whirlwind of VC and big tech offers, redefining what's possible for independent developers in the AI arms race. Is this the year agentic AI goes mainstream, and are the big players ready for that disruption?</p><ul> 
+<li>OpenClaw, OpenAI and the future | Peter Steinberger</li> 
+<li>OpenAI disbands mission alignment team</li> 
+<li>Opinion | I Left My Job at OpenAI. Putting Ads on ChatGPT Was the Last Straw. - The New York Times</li> 
+<li>Introducing GPT‑5.3‑Codex‑Spark</li> 
+<li>Anthropic releases Sonnet 4.6</li> 
+<li>Exclusive: Pentagon threatens to cut off Anthropic in AI safeguards dispute</li> 
+<li>Google's Pixel 10a Launches on March 5 for $499</li> 
+<li>Google's AI drug discovery spinoff Isomorphic Labs claims major leap beyond AlphaFold 3</li> 
+<li>Gemini 3 Deep Think: AI model update designed for science</li> 
+<li>Radio host David Greene says Google's NotebookLM tool stole his voice</li> 
+<li>A new way to express yourself: Gemini can now create music</li> 
+<li>Why an A.I. Video of Tom Cruise Battling Brad Pitt Spooked Hollywood</li> 
+<li>GPT-5 outperforms federal judges 100% to 52% in legal reasoning experiment</li> 
+<li>An AI project is creating videos to go with Supreme Court justices' real words</li> 
+<li>I used Claude to negotiate $163,000 off a hospital bill. In a complex healthcare system, AI is giving patients power.</li> 
+<li>Sony Tech Can Identify Original Music in AI-Generated Songs</li> 
+<li>AI Pioneer Fei-Fei Li's Startup World Labs Raises $1 Billion</li> 
+<li>Yann v. Yoshua on directed systems</li> 
+<li>Dr. Oz pushes AI avatars as a fix for rural health care. Not so fast, critics say</li> 
+<li>An AI Agent Published a Hit Piece on Me</li> 
+<li>An Ars Technica Reporter Blamed A.I. Tools for Fabricating Quotes in a Bizarre A.I. Story</li> 
+<li>Plain Dealer using AI to write reporters' stories</li> 
+<li>Mediahuis trials use of AI agents to carry out 'first-line' news reporting</li> 
+<li>DJI's first robovac is an autonomous cleaning drone you can't trust</li> 
+<li>Leaked Email Suggests Ring Plans to Expand 'Search Party' Surveillance Beyond Dogs</li> 
+<li>ai;dr</li> 
+<li>I hate my AI pet with every fiber of my being</li> 
+<li>Thanks a lot, AI: Hard drives are sold out for the year, says WD</li> 
+<li>Students Are Being Treated Like Guinea Pigs:' Inside an AI-Powered Private School</li> 
+<li>peon-ping — Stop babysitting your terminal</li> 
+<li>Hugo Barra makes a to-do agent</li> 
+<li>Raspberry Pi soars 40% as CEO buys stock, AI chatter builds</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/emily-forlini">Emily Forlini</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="https://monarch.com" target="_blank" rel="sponsored">monarch.com with code IM</a></li>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+<li><a href="http://preview.modulate.ai" target="_blank" rel="sponsored">preview.modulate.ai</a></li>
+<li><a href="http://spaceship.com/twit" target="_blank" rel="sponsored">spaceship.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>OpenClaw's creator makes headlines by joining OpenAI after GitHub fame and a whirlwind of VC and big tech offers, redefining what's possible for independent developers in the AI arms race. Is this the year agentic AI goes mainstream, and are the big players ready for that disruption?</p><ul> 
+<li>OpenClaw, OpenAI and the future | Peter Steinberger</li> 
+<li>OpenAI disbands mission alignment team</li> 
+<li>Opinion | I Left My Job at OpenAI. Putting Ads on ChatGPT Was the Last Straw. - The New York Times</li> 
+<li>Introducing GPT‑5.3‑Codex‑Spark</li> 
+<li>Anthropic releases Sonnet 4.6</li> 
+<li>Exclusive: Pentagon threatens to cut off Anthropic in AI safeguards dispute</li> 
+<li>Google's Pixel 10a Launches on March 5 for $499</li> 
+<li>Google's AI drug discovery spinoff Isomorphic Labs claims major leap beyond AlphaFold 3</li> 
+<li>Gemini 3 Deep Think: AI model update designed for science</li> 
+<li>Radio host David Greene says Google's NotebookLM tool stole his voice</li> 
+<li>A new way to express yourself: Gemini can now create music</li> 
+<li>Why an A.I. Video of Tom Cruise Battling Brad Pitt Spooked Hollywood</li> 
+<li>GPT-5 outperforms federal judges 100% to 52% in legal reasoning experiment</li> 
+<li>An AI project is creating videos to go with Supreme Court justices' real words</li> 
+<li>I used Claude to negotiate $163,000 off a hospital bill. In a complex healthcare system, AI is giving patients power.</li> 
+<li>Sony Tech Can Identify Original Music in AI-Generated Songs</li> 
+<li>AI Pioneer Fei-Fei Li's Startup World Labs Raises $1 Billion</li> 
+<li>Yann v. Yoshua on directed systems</li> 
+<li>Dr. Oz pushes AI avatars as a fix for rural health care. Not so fast, critics say</li> 
+<li>An AI Agent Published a Hit Piece on Me</li> 
+<li>An Ars Technica Reporter Blamed A.I. Tools for Fabricating Quotes in a Bizarre A.I. Story</li> 
+<li>Plain Dealer using AI to write reporters' stories</li> 
+<li>Mediahuis trials use of AI agents to carry out 'first-line' news reporting</li> 
+<li>DJI's first robovac is an autonomous cleaning drone you can't trust</li> 
+<li>Leaked Email Suggests Ring Plans to Expand 'Search Party' Surveillance Beyond Dogs</li> 
+<li>ai;dr</li> 
+<li>I hate my AI pet with every fiber of my being</li> 
+<li>Thanks a lot, AI: Hard drives are sold out for the year, says WD</li> 
+<li>Students Are Being Treated Like Guinea Pigs:' Inside an AI-Powered Private School</li> 
+<li>peon-ping — Stop babysitting your terminal</li> 
+<li>Hugo Barra makes a to-do agent</li> 
+<li>Raspberry Pi soars 40% as CEO buys stock, AI chatter builds</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/emily-forlini">Emily Forlini</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="https://monarch.com" target="_blank" rel="sponsored">monarch.com with code IM</a></li>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+<li><a href="http://preview.modulate.ai" target="_blank" rel="sponsored">preview.modulate.ai</a></li>
+<li><a href="http://spaceship.com/twit" target="_blank" rel="sponsored">spaceship.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>OpenClaw's creator makes headlines by joining OpenAI after GitHub fame and a whirlwind of VC and big tech offers, redefining what's possible for independent developers in the AI arms race. Is this the year agentic AI goes mainstream, and are the big players ready for that disruption?</p><ul> 
+<li>OpenClaw, OpenAI and the future | Peter Steinberger</li> 
+<li>OpenAI disbands mission alignment team</li> 
+<li>Opinion | I Left My Job at OpenAI. Putting Ads on ChatGPT Was the Last Straw. - The New York Times</li> 
+<li>Introducing GPT‑5.3‑Codex‑Spark</li> 
+<li>Anthropic releases Sonnet 4.6</li> 
+<li>Exclusive: Pentagon threatens to cut off Anthropic in AI safeguards dispute</li> 
+<li>Google's Pixel 10a Launches on March 5 for $499</li> 
+<li>Google's AI drug discovery spinoff Isomorphic Labs claims major leap beyond AlphaFold 3</li> 
+<li>Gemini 3 Deep Think: AI model update designed for science</li> 
+<li>Radio host David Greene says Google's NotebookLM tool stole his voice</li> 
+<li>A new way to express yourself: Gemini can now create music</li> 
+<li>Why an A.I. Video of Tom Cruise Battling Brad Pitt Spooked Hollywood</li> 
+<li>GPT-5 outperforms federal judges 100% to 52% in legal reasoning experiment</li> 
+<li>An AI project is creating videos to go with Supreme Court justices' real words</li> 
+<li>I used Claude to negotiate $163,000 off a hospital bill. In a complex healthcare system, AI is giving patients power.</li> 
+<li>Sony Tech Can Identify Original Music in AI-Generated Songs</li> 
+<li>AI Pioneer Fei-Fei Li's Startup World Labs Raises $1 Billion</li> 
+<li>Yann v. Yoshua on directed systems</li> 
+<li>Dr. Oz pushes AI avatars as a fix for rural health care. Not so fast, critics say</li> 
+<li>An AI Agent Published a Hit Piece on Me</li> 
+<li>An Ars Technica Reporter Blamed A.I. Tools for Fabricating Quotes in a Bizarre A.I. Story</li> 
+<li>Plain Dealer using AI to write reporters' stories</li> 
+<li>Mediahuis trials use of AI agents to carry out 'first-line' news reporting</li> 
+<li>DJI's first robovac is an autonomous cleaning drone you can't trust</li> 
+<li>Leaked Email Suggests Ring Plans to Expand 'Search Party' Surveillance Beyond Dogs</li> 
+<li>ai;dr</li> 
+<li>I hate my AI pet with every fiber of my being</li> 
+<li>Thanks a lot, AI: Hard drives are sold out for the year, says WD</li> 
+<li>Students Are Being Treated Like Guinea Pigs:' Inside an AI-Powered Private School</li> 
+<li>peon-ping — Stop babysitting your terminal</li> 
+<li>Hugo Barra makes a to-do agent</li> 
+<li>Raspberry Pi soars 40% as CEO buys stock, AI chatter builds</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/emily-forlini">Emily Forlini</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="https://monarch.com" target="_blank" rel="sponsored">monarch.com with code IM</a></li>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+<li><a href="http://preview.modulate.ai" target="_blank" rel="sponsored">preview.modulate.ai</a></li>
+<li><a href="http://spaceship.com/twit" target="_blank" rel="sponsored">spaceship.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860199/hero/IM0858_Thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0858/twig0858_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:51:57</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0858/twig0858_h264m_1920x1080.mp4" length="2920392089" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0858/twig0858_h264m_1920x1080.mp4" fileSize="2920392089" type="video/mp4" medium="video">
+				<media:title type="plain">IM 858: The Itinerant Salt Miner from Buffalo - Silicon Valley's Military Dilemma</media:title>
+				<media:description type="plain">Silicon Valley's Military Dilemma</media:description>
+				<media:keywords>TWiT, Intelligent Machines, Leo Laporte, Jeff Jarvis, emily forlini, OpenClaw, Anthropic Claude, agentic ai, Claude Code, openAI, AI coding tools, Mac Mini, chatgpt, venture capital, Apple Glasses, AI earbuds, pendant pin, B2B AI, Excel plugin</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860199/hero/IM0858_Thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Jeff Jarvis</media:credit>
+				<media:credit role="host">Emily Forlini</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/jeff-jarvis" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/29/pictures/jeff-jarvis_0.png">Jeff Jarvis</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/emily-forlini" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/843193/pictures/Emily.jpg">Emily Forlini</podcast:person>
+		</item>
+		<item>
+			<title>IM 857: Taskrabbit Arbitrage - Disposable Code and Automation</title>
+			<itunes:title>Taskrabbit Arbitrage - Disposable Code and Automation</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Wed, 11 Feb 2026 19:23:17 PST</pubDate>
+			<itunes:episode>857</itunes:episode>
+			<podcast:episode>857</podcast:episode>
+			<link>https://twit.tv/shows/intelligent-machines/episodes/857</link>
+			<comments>https://twit.tv/shows/intelligent-machines/episodes/857</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>AI</category>
+			<category>Artificial Intelligence</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Disposable Code and Automation</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/claude-code-opus-46-next-big-shift-ai" type="text/html" />
+			<itunes:keywords>TWiT, Intelligent Machines, Leo Laporte, Jeff Jarvis, Paris Martineau, Claude Code, Opus 4.6, AI acceleration, white-collar job automation, TaskRabbit arbitrage, Anthropic, openAI, chatgpt, gemini, coding tools, large language models, AI benchmarks</itunes:keywords>
+			<description><![CDATA[
+<p>Leo Laporte and Paris Martineau go head-to-head over whether today's AI breakthroughs are truly unprecedented or history repeating itself. Hear what happens when the show's hosts use cutting-edge tools to challenge each other's optimism, skepticism, and predictions for the future of work.</p><ul> 
+<li>Something Big Is Happening</li> 
+<li>Building a C compiler with a team of parallel Claudes</li> 
+<li>Amazon's $8 billion Anthropic investment balloons to $61 billion</li> 
+<li>Google is going for the jugular — by doubling capex and outspending the rest of Big Tech</li> 
+<li>Google's Gemini app has surpassed 750M monthly active users</li> 
+<li>OpenAI's Meta makeover</li> 
+<li>ChatGPT's deep research tool adds a built-in document viewer so you can read its reports</li> 
+<li>Alexa+, Amazon's AI assistant, is now available to everyone in the U.S.</li> 
+<li>Amazon Plans To Use AI To Speed Up TV and Film Production</li> 
+<li>AI didn't kill customer support. It's rebuilding it</li> 
+<li>Worried about AI taking jobs? Ex-Microsoft exec tells parents what kind of education matters <br /> 
+most for their kids.</li> 
+<li>A new bill in New York would require disclaimers on AI-generated news content</li> 
+<li>AI Bots Are Now a Signifigant Source of Web Traffic</li> 
+<li>Crypto.com places $70M bet on AI.com domain ahead of Super Bowl</li> 
+<li>Frontier AI agents violate ethical constraints 30–50% of time, pressured by KPIs</li> 
+<li>How To Think About AI: Is It The Tool, Or Are You?</li> 
+<li>LEO! Reliability of LLMs as medical assistants for the general public: a randomized preregistered study</li> 
+<li>HBR: AI Doesn't Reduce Work—It Intensifies It</li> 
+<li>As AI enters the operating room, reports arise of botched surgeries and misidentified body parts</li> 
+<li>Waymo Exec Admits Remote Operators in Philippines Help Guide US Robotaxis</li> 
+<li>Medicare's new pilot program taps AI to review claims. Here's why it's risky</li> 
+<li>Section 230 Turns 30; Both Parties Want It Gone—For Contradictory Reasons</li> 
+<li>Meet Gizmo: A TikTok for interactive, vibe-coded mini apps</li> 
+<li>The Evolution of Bengt Betjänt</li> 
+<li>Uber Eats adds AI assistant to help with grocery shopping</li> 
+<li>Is having AI ghostwrite your Valentine's Day messages a good idea?</li> 
+<li>As Saudi Arabia's 100-Mile Skyscraper Crumbles, They're Replacing It With the Most Desperate Thing Imaginable</li> 
+<li>YouTube Argues It Isn't Social Media in Landmark Tech Addiction Trial</li> 
+<li>'Man down:' Watch Amazon delivery drone crash in North Texas</li> 
+<li>Understanding Neural Network, Visually</li> 
+<li>Leo's AI Journey</li> 
+<li>The TIMELINE</li> 
+<li>TWiT x 2 in Super Bowl commercials</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://preview.modulate.ai" target="_blank" rel="sponsored">preview.modulate.ai</a></li>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+<li><a href="http://spaceship.com/twit" target="_blank" rel="sponsored">spaceship.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Leo Laporte and Paris Martineau go head-to-head over whether today's AI breakthroughs are truly unprecedented or history repeating itself. Hear what happens when the show's hosts use cutting-edge tools to challenge each other's optimism, skepticism, and predictions for the future of work.</p><ul> 
+<li>Something Big Is Happening</li> 
+<li>Building a C compiler with a team of parallel Claudes</li> 
+<li>Amazon's $8 billion Anthropic investment balloons to $61 billion</li> 
+<li>Google is going for the jugular — by doubling capex and outspending the rest of Big Tech</li> 
+<li>Google's Gemini app has surpassed 750M monthly active users</li> 
+<li>OpenAI's Meta makeover</li> 
+<li>ChatGPT's deep research tool adds a built-in document viewer so you can read its reports</li> 
+<li>Alexa+, Amazon's AI assistant, is now available to everyone in the U.S.</li> 
+<li>Amazon Plans To Use AI To Speed Up TV and Film Production</li> 
+<li>AI didn't kill customer support. It's rebuilding it</li> 
+<li>Worried about AI taking jobs? Ex-Microsoft exec tells parents what kind of education matters <br /> 
+most for their kids.</li> 
+<li>A new bill in New York would require disclaimers on AI-generated news content</li> 
+<li>AI Bots Are Now a Signifigant Source of Web Traffic</li> 
+<li>Crypto.com places $70M bet on AI.com domain ahead of Super Bowl</li> 
+<li>Frontier AI agents violate ethical constraints 30–50% of time, pressured by KPIs</li> 
+<li>How To Think About AI: Is It The Tool, Or Are You?</li> 
+<li>LEO! Reliability of LLMs as medical assistants for the general public: a randomized preregistered study</li> 
+<li>HBR: AI Doesn't Reduce Work—It Intensifies It</li> 
+<li>As AI enters the operating room, reports arise of botched surgeries and misidentified body parts</li> 
+<li>Waymo Exec Admits Remote Operators in Philippines Help Guide US Robotaxis</li> 
+<li>Medicare's new pilot program taps AI to review claims. Here's why it's risky</li> 
+<li>Section 230 Turns 30; Both Parties Want It Gone—For Contradictory Reasons</li> 
+<li>Meet Gizmo: A TikTok for interactive, vibe-coded mini apps</li> 
+<li>The Evolution of Bengt Betjänt</li> 
+<li>Uber Eats adds AI assistant to help with grocery shopping</li> 
+<li>Is having AI ghostwrite your Valentine's Day messages a good idea?</li> 
+<li>As Saudi Arabia's 100-Mile Skyscraper Crumbles, They're Replacing It With the Most Desperate Thing Imaginable</li> 
+<li>YouTube Argues It Isn't Social Media in Landmark Tech Addiction Trial</li> 
+<li>'Man down:' Watch Amazon delivery drone crash in North Texas</li> 
+<li>Understanding Neural Network, Visually</li> 
+<li>Leo's AI Journey</li> 
+<li>The TIMELINE</li> 
+<li>TWiT x 2 in Super Bowl commercials</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://preview.modulate.ai" target="_blank" rel="sponsored">preview.modulate.ai</a></li>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+<li><a href="http://spaceship.com/twit" target="_blank" rel="sponsored">spaceship.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Leo Laporte and Paris Martineau go head-to-head over whether today's AI breakthroughs are truly unprecedented or history repeating itself. Hear what happens when the show's hosts use cutting-edge tools to challenge each other's optimism, skepticism, and predictions for the future of work.</p><ul> 
+<li>Something Big Is Happening</li> 
+<li>Building a C compiler with a team of parallel Claudes</li> 
+<li>Amazon's $8 billion Anthropic investment balloons to $61 billion</li> 
+<li>Google is going for the jugular — by doubling capex and outspending the rest of Big Tech</li> 
+<li>Google's Gemini app has surpassed 750M monthly active users</li> 
+<li>OpenAI's Meta makeover</li> 
+<li>ChatGPT's deep research tool adds a built-in document viewer so you can read its reports</li> 
+<li>Alexa+, Amazon's AI assistant, is now available to everyone in the U.S.</li> 
+<li>Amazon Plans To Use AI To Speed Up TV and Film Production</li> 
+<li>AI didn't kill customer support. It's rebuilding it</li> 
+<li>Worried about AI taking jobs? Ex-Microsoft exec tells parents what kind of education matters <br /> 
+most for their kids.</li> 
+<li>A new bill in New York would require disclaimers on AI-generated news content</li> 
+<li>AI Bots Are Now a Signifigant Source of Web Traffic</li> 
+<li>Crypto.com places $70M bet on AI.com domain ahead of Super Bowl</li> 
+<li>Frontier AI agents violate ethical constraints 30–50% of time, pressured by KPIs</li> 
+<li>How To Think About AI: Is It The Tool, Or Are You?</li> 
+<li>LEO! Reliability of LLMs as medical assistants for the general public: a randomized preregistered study</li> 
+<li>HBR: AI Doesn't Reduce Work—It Intensifies It</li> 
+<li>As AI enters the operating room, reports arise of botched surgeries and misidentified body parts</li> 
+<li>Waymo Exec Admits Remote Operators in Philippines Help Guide US Robotaxis</li> 
+<li>Medicare's new pilot program taps AI to review claims. Here's why it's risky</li> 
+<li>Section 230 Turns 30; Both Parties Want It Gone—For Contradictory Reasons</li> 
+<li>Meet Gizmo: A TikTok for interactive, vibe-coded mini apps</li> 
+<li>The Evolution of Bengt Betjänt</li> 
+<li>Uber Eats adds AI assistant to help with grocery shopping</li> 
+<li>Is having AI ghostwrite your Valentine's Day messages a good idea?</li> 
+<li>As Saudi Arabia's 100-Mile Skyscraper Crumbles, They're Replacing It With the Most Desperate Thing Imaginable</li> 
+<li>YouTube Argues It Isn't Social Media in Landmark Tech Addiction Trial</li> 
+<li>'Man down:' Watch Amazon delivery drone crash in North Texas</li> 
+<li>Understanding Neural Network, Visually</li> 
+<li>Leo's AI Journey</li> 
+<li>The TIMELINE</li> 
+<li>TWiT x 2 in Super Bowl commercials</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://preview.modulate.ai" target="_blank" rel="sponsored">preview.modulate.ai</a></li>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+<li><a href="http://spaceship.com/twit" target="_blank" rel="sponsored">spaceship.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860101/hero/IM0857_Thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0857/twig0857_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:46:16</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0857/twig0857_h264m_1920x1080.mp4" length="2823409884" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0857/twig0857_h264m_1920x1080.mp4" fileSize="2823409884" type="video/mp4" medium="video">
+				<media:title type="plain">IM 857: Taskrabbit Arbitrage - Disposable Code and Automation</media:title>
+				<media:description type="plain">Disposable Code and Automation</media:description>
+				<media:keywords>TWiT, Intelligent Machines, Leo Laporte, Jeff Jarvis, Paris Martineau, Claude Code, Opus 4.6, AI acceleration, white-collar job automation, TaskRabbit arbitrage, Anthropic, openAI, chatgpt, gemini, coding tools, large language models, AI benchmarks</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860101/hero/IM0857_Thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Jeff Jarvis</media:credit>
+				<media:credit role="host">Paris Martineau</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/jeff-jarvis" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/29/pictures/jeff-jarvis_0.png">Jeff Jarvis</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/paris-martineau" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/663891/pictures/profpic-keyb.jpg">Paris Martineau</podcast:person>
+		</item>
+		<item>
+			<title>IM 856: SecretlyBriti.sh - From Humans to Hive Minds</title>
+			<itunes:title>SecretlyBriti.sh - From Humans to Hive Minds</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Wed, 04 Feb 2026 19:36:37 PST</pubDate>
+			<itunes:episode>856</itunes:episode>
+			<podcast:episode>856</podcast:episode>
+			<link>https://twit.tv/shows/intelligent-machines/episodes/856</link>
+			<comments>https://twit.tv/shows/intelligent-machines/episodes/856</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>AI</category>
+			<category>Artificial Intelligence</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>From Humans to Hive Minds</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/what-gastown-how-steve-yegges-ai-coding-agents-are-changing-software-development" type="text/html" />
+			<itunes:keywords>TWiT, Intelligent Machines, Leo Laporte, Jeff Jarvis, Paris Martineau, Steve Yegge, Gastown, Claude Code, AI memory, coding agents, OpenClaw, vibe coding, AI orchestrators, Beads, Knowledge Graph, Anthropic, Opus 4.5, tmux, Emacs, amazon, Google, devops, </itunes:keywords>
+			<description><![CDATA[
+<p>The podcast dives into the explosive advances in agentic AI, where developers and even Fortune 100 companies are racing to use powerful tools like Gastown, despite their unfinished and sometimes dangerous edges. If you thought ChatGPT was a revolution, wait until you hear how developers are orchestrating armies of AIs with real-world impact.</p><ul> 
+<li>Anthropic's Move Into Legal Is Sinking Data Services Stocks</li> 
+<li>Data centers in space makes no sense</li> 
+<li>The hitchhiker's guide to Musk's SpaceX memo</li> 
+<li>Two kinds of AI users are emerging. The gap between them is astonishing.</li> 
+<li>Does AI already have human-level intelligence? The evidence is clear - Nature</li> 
+<li>OpenAI will retire several models, including GPT-4o, from ChatGPT next month</li> 
+<li>Jensen Huang says Nvidia would love to back an OpenAI IPO, and there's 'no drama' with Sam Altman</li> 
+<li>Firefox will soon let you block all of its generative AI features</li> 
+<li>Salesforce signs $5.6B deal to inject agentic AI into the US Army</li> 
+<li>HHS Is Making an AI Tool to Create Hypotheses About Vaccine Injury Claims</li> 
+<li>French office of Elon Musk's X raided by Paris prosecutor's cybercrime unit</li> 
+<li>An AI Toy Exposed 50K Logs of Its Chats With Kids To Anyone With a Gmail Account</li> 
+<li>Darren Aronofsky's AI Studio Used Artificial Intelligence Tools for Revolutionary War Animated Series — but Hired Human Actors to Voice Founding Fathers</li> 
+<li>Forget Hinge or Bumble. This App Promises a Personal AI Matchmaker</li> 
+<li>Scientists Launch AI DinoTracker App That Identifies Dinosaur Footprints</li> 
+<li>Project Genie: Experimenting with infinite, interactive worlds</li> 
+<li>Anthropic Takes Aim at OpenAI's ChatGPT in Super Bowl Ad Debut</li> 
+<li>Move to Ban Social Media for Kids Gains Traction in Europe</li> 
+<li>The Matrix Resurrections Is a Messy, Imperfect Triumph</li> 
+<li>The Thatcher Effect and other Optical Toys</li> 
+<li>Fascinating Research: AIs are highly inconsistent [i.e., random] when recommending brands or products</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a></p> 
+<p><strong>Guest:</strong> <a href="https://steve-yegge.medium.com/" target="_blank">Steve Yegge</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
+<li><a href="https://monarch.com" target="_blank" rel="sponsored">monarch.com with code IM</a></li>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+<li><a href="http://helixsleep.com/machines" target="_blank" rel="sponsored">helixsleep.com/machines</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>The podcast dives into the explosive advances in agentic AI, where developers and even Fortune 100 companies are racing to use powerful tools like Gastown, despite their unfinished and sometimes dangerous edges. If you thought ChatGPT was a revolution, wait until you hear how developers are orchestrating armies of AIs with real-world impact.</p><ul> 
+<li>Anthropic's Move Into Legal Is Sinking Data Services Stocks</li> 
+<li>Data centers in space makes no sense</li> 
+<li>The hitchhiker's guide to Musk's SpaceX memo</li> 
+<li>Two kinds of AI users are emerging. The gap between them is astonishing.</li> 
+<li>Does AI already have human-level intelligence? The evidence is clear - Nature</li> 
+<li>OpenAI will retire several models, including GPT-4o, from ChatGPT next month</li> 
+<li>Jensen Huang says Nvidia would love to back an OpenAI IPO, and there's 'no drama' with Sam Altman</li> 
+<li>Firefox will soon let you block all of its generative AI features</li> 
+<li>Salesforce signs $5.6B deal to inject agentic AI into the US Army</li> 
+<li>HHS Is Making an AI Tool to Create Hypotheses About Vaccine Injury Claims</li> 
+<li>French office of Elon Musk's X raided by Paris prosecutor's cybercrime unit</li> 
+<li>An AI Toy Exposed 50K Logs of Its Chats With Kids To Anyone With a Gmail Account</li> 
+<li>Darren Aronofsky's AI Studio Used Artificial Intelligence Tools for Revolutionary War Animated Series — but Hired Human Actors to Voice Founding Fathers</li> 
+<li>Forget Hinge or Bumble. This App Promises a Personal AI Matchmaker</li> 
+<li>Scientists Launch AI DinoTracker App That Identifies Dinosaur Footprints</li> 
+<li>Project Genie: Experimenting with infinite, interactive worlds</li> 
+<li>Anthropic Takes Aim at OpenAI's ChatGPT in Super Bowl Ad Debut</li> 
+<li>Move to Ban Social Media for Kids Gains Traction in Europe</li> 
+<li>The Matrix Resurrections Is a Messy, Imperfect Triumph</li> 
+<li>The Thatcher Effect and other Optical Toys</li> 
+<li>Fascinating Research: AIs are highly inconsistent [i.e., random] when recommending brands or products</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a></p> 
+<p><strong>Guest:</strong> <a href="https://steve-yegge.medium.com/" target="_blank">Steve Yegge</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
+<li><a href="https://monarch.com" target="_blank" rel="sponsored">monarch.com with code IM</a></li>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+<li><a href="http://helixsleep.com/machines" target="_blank" rel="sponsored">helixsleep.com/machines</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>The podcast dives into the explosive advances in agentic AI, where developers and even Fortune 100 companies are racing to use powerful tools like Gastown, despite their unfinished and sometimes dangerous edges. If you thought ChatGPT was a revolution, wait until you hear how developers are orchestrating armies of AIs with real-world impact.</p><ul> 
+<li>Anthropic's Move Into Legal Is Sinking Data Services Stocks</li> 
+<li>Data centers in space makes no sense</li> 
+<li>The hitchhiker's guide to Musk's SpaceX memo</li> 
+<li>Two kinds of AI users are emerging. The gap between them is astonishing.</li> 
+<li>Does AI already have human-level intelligence? The evidence is clear - Nature</li> 
+<li>OpenAI will retire several models, including GPT-4o, from ChatGPT next month</li> 
+<li>Jensen Huang says Nvidia would love to back an OpenAI IPO, and there's 'no drama' with Sam Altman</li> 
+<li>Firefox will soon let you block all of its generative AI features</li> 
+<li>Salesforce signs $5.6B deal to inject agentic AI into the US Army</li> 
+<li>HHS Is Making an AI Tool to Create Hypotheses About Vaccine Injury Claims</li> 
+<li>French office of Elon Musk's X raided by Paris prosecutor's cybercrime unit</li> 
+<li>An AI Toy Exposed 50K Logs of Its Chats With Kids To Anyone With a Gmail Account</li> 
+<li>Darren Aronofsky's AI Studio Used Artificial Intelligence Tools for Revolutionary War Animated Series — but Hired Human Actors to Voice Founding Fathers</li> 
+<li>Forget Hinge or Bumble. This App Promises a Personal AI Matchmaker</li> 
+<li>Scientists Launch AI DinoTracker App That Identifies Dinosaur Footprints</li> 
+<li>Project Genie: Experimenting with infinite, interactive worlds</li> 
+<li>Anthropic Takes Aim at OpenAI's ChatGPT in Super Bowl Ad Debut</li> 
+<li>Move to Ban Social Media for Kids Gains Traction in Europe</li> 
+<li>The Matrix Resurrections Is a Messy, Imperfect Triumph</li> 
+<li>The Thatcher Effect and other Optical Toys</li> 
+<li>Fascinating Research: AIs are highly inconsistent [i.e., random] when recommending brands or products</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a></p> 
+<p><strong>Guest:</strong> <a href="https://steve-yegge.medium.com/" target="_blank">Steve Yegge</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
+<li><a href="https://monarch.com" target="_blank" rel="sponsored">monarch.com with code IM</a></li>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+<li><a href="http://helixsleep.com/machines" target="_blank" rel="sponsored">helixsleep.com/machines</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860019/hero/IM0856_Thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0856/twig0856_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:45:19</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0856/twig0856_h264m_1920x1080.mp4" length="2807066760" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0856/twig0856_h264m_1920x1080.mp4" fileSize="2807066760" type="video/mp4" medium="video">
+				<media:title type="plain">IM 856: SecretlyBriti.sh - From Humans to Hive Minds</media:title>
+				<media:description type="plain">From Humans to Hive Minds</media:description>
+				<media:keywords>TWiT, Intelligent Machines, Leo Laporte, Jeff Jarvis, Paris Martineau, Steve Yegge, Gastown, Claude Code, AI memory, coding agents, OpenClaw, vibe coding, AI orchestrators, Beads, Knowledge Graph, Anthropic, Opus 4.5, tmux, Emacs, amazon, Google, devops, </media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860019/hero/IM0856_Thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Jeff Jarvis</media:credit>
+				<media:credit role="host">Paris Martineau</media:credit>
+				<media:credit role="guest">Steve Yegge</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/jeff-jarvis" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/29/pictures/jeff-jarvis_0.png">Jeff Jarvis</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/paris-martineau" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/663891/pictures/profpic-keyb.jpg">Paris Martineau</podcast:person>
+				<podcast:person role="guest" href="https://steve-yegge.medium.com/">Steve Yegge</podcast:person>
+		</item>
+		<item>
+			<title>IM 855: When You're Right, You're Right - Why Firefox Still Matters</title>
+			<itunes:title>When You're Right, You're Right - Why Firefox Still Matters</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Wed, 28 Jan 2026 18:27:00 PST</pubDate>
+			<itunes:episode>855</itunes:episode>
+			<podcast:episode>855</podcast:episode>
+			<link>https://twit.tv/shows/intelligent-machines/episodes/855</link>
+			<comments>https://twit.tv/shows/intelligent-machines/episodes/855</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>AI</category>
+			<category>Artificial Intelligence</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Why Firefox Still Matters</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/mozillas-new-ai-manifesto-can-open-source-challenge-big-tech" type="text/html" />
+			<itunes:keywords>TWiT, Intelligent Machines, Leo Laporte, Jeff Jarvis, Paris Martineau, Mozilla AI manifesto, Mark Sermon, open source AI, Firefox browser, AI monoculture, Claude Code, gemini, chatgpt, cloudbot, Moltbot, virtual machine security, AI agentic tools</itunes:keywords>
+			<description><![CDATA[
+<p>Can AI stay open, ethical, and for the people? Mozilla's president joins the show to reveal their game plan—and $650 million war chest—for taking on Big Tech's monoculture with a "Rebel Alliance" approach to AI.</p><ul> 
+<li>State of Mozilla 2025/26</li> 
+<li>Codeless: From idea to software - Anil Dash</li> 
+<li>Clawdbot is the new AI techies are buzzing about &amp;mdash; and it's renewing interest in the Mac Mini</li> 
+<li>Qwen3-TTS Demo - a Hugging Face Space by Qwen</li> 
+<li>I Let AI Analyze My Davos Reporting Trip. Here's What It Missed</li> 
+<li>Dario Amodei — The Adolescence of Technology</li> 
+<li>Proof of Corn</li> 
+<li>Trump admin reportedly plans to use AI to write federal regulations</li> 
+<li>Wikipedia volunteers spent years cataloging AI tells. Now there's a plugin to avoid them.</li> 
+<li>China Lagging in AI Is a 'Fairy Tale,' Mistral CEO Says</li> 
+<li>How Playing Pokémon Became the Ultimate Test of AI's Intelligence</li> 
+<li>Sir Demis Hassabis becomes the latest to say that ChatGPT is a dead-end and that we must turn our focus to world models</li> 
+<li>Claude's new constitution</li> 
+<li>"Infinite Jest" Has Turned Thirty. Have We Forgotten How to Read It?</li> 
+<li>Sony's TV business is being taken over by TCL</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a></p> 
+<p><strong>Guest:</strong> <a href="https://mozilla.org/" target="_blank">Mark Surman</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://trustedtech.team/intelligent365" target="_blank" rel="sponsored">trustedtech.team/intelligent365</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Can AI stay open, ethical, and for the people? Mozilla's president joins the show to reveal their game plan—and $650 million war chest—for taking on Big Tech's monoculture with a "Rebel Alliance" approach to AI.</p><ul> 
+<li>State of Mozilla 2025/26</li> 
+<li>Codeless: From idea to software - Anil Dash</li> 
+<li>Clawdbot is the new AI techies are buzzing about &amp;mdash; and it's renewing interest in the Mac Mini</li> 
+<li>Qwen3-TTS Demo - a Hugging Face Space by Qwen</li> 
+<li>I Let AI Analyze My Davos Reporting Trip. Here's What It Missed</li> 
+<li>Dario Amodei — The Adolescence of Technology</li> 
+<li>Proof of Corn</li> 
+<li>Trump admin reportedly plans to use AI to write federal regulations</li> 
+<li>Wikipedia volunteers spent years cataloging AI tells. Now there's a plugin to avoid them.</li> 
+<li>China Lagging in AI Is a 'Fairy Tale,' Mistral CEO Says</li> 
+<li>How Playing Pokémon Became the Ultimate Test of AI's Intelligence</li> 
+<li>Sir Demis Hassabis becomes the latest to say that ChatGPT is a dead-end and that we must turn our focus to world models</li> 
+<li>Claude's new constitution</li> 
+<li>"Infinite Jest" Has Turned Thirty. Have We Forgotten How to Read It?</li> 
+<li>Sony's TV business is being taken over by TCL</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a></p> 
+<p><strong>Guest:</strong> <a href="https://mozilla.org/" target="_blank">Mark Surman</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://trustedtech.team/intelligent365" target="_blank" rel="sponsored">trustedtech.team/intelligent365</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Can AI stay open, ethical, and for the people? Mozilla's president joins the show to reveal their game plan—and $650 million war chest—for taking on Big Tech's monoculture with a "Rebel Alliance" approach to AI.</p><ul> 
+<li>State of Mozilla 2025/26</li> 
+<li>Codeless: From idea to software - Anil Dash</li> 
+<li>Clawdbot is the new AI techies are buzzing about &amp;mdash; and it's renewing interest in the Mac Mini</li> 
+<li>Qwen3-TTS Demo - a Hugging Face Space by Qwen</li> 
+<li>I Let AI Analyze My Davos Reporting Trip. Here's What It Missed</li> 
+<li>Dario Amodei — The Adolescence of Technology</li> 
+<li>Proof of Corn</li> 
+<li>Trump admin reportedly plans to use AI to write federal regulations</li> 
+<li>Wikipedia volunteers spent years cataloging AI tells. Now there's a plugin to avoid them.</li> 
+<li>China Lagging in AI Is a 'Fairy Tale,' Mistral CEO Says</li> 
+<li>How Playing Pokémon Became the Ultimate Test of AI's Intelligence</li> 
+<li>Sir Demis Hassabis becomes the latest to say that ChatGPT is a dead-end and that we must turn our focus to world models</li> 
+<li>Claude's new constitution</li> 
+<li>"Infinite Jest" Has Turned Thirty. Have We Forgotten How to Read It?</li> 
+<li>Sony's TV business is being taken over by TCL</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a></p> 
+<p><strong>Guest:</strong> <a href="https://mozilla.org/" target="_blank">Mark Surman</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://trustedtech.team/intelligent365" target="_blank" rel="sponsored">trustedtech.team/intelligent365</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859910/hero/IM0855_Thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0855/twig0855_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:30:44</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0855/twig0855_h264m_1920x1080.mp4" length="2559660617" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0855/twig0855_h264m_1920x1080.mp4" fileSize="2559660617" type="video/mp4" medium="video">
+				<media:title type="plain">IM 855: When You're Right, You're Right - Why Firefox Still Matters</media:title>
+				<media:description type="plain">Why Firefox Still Matters</media:description>
+				<media:keywords>TWiT, Intelligent Machines, Leo Laporte, Jeff Jarvis, Paris Martineau, Mozilla AI manifesto, Mark Sermon, open source AI, Firefox browser, AI monoculture, Claude Code, gemini, chatgpt, cloudbot, Moltbot, virtual machine security, AI agentic tools</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859910/hero/IM0855_Thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Jeff Jarvis</media:credit>
+				<media:credit role="host">Paris Martineau</media:credit>
+				<media:credit role="guest">Mark Surman</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/jeff-jarvis" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/29/pictures/jeff-jarvis_0.png">Jeff Jarvis</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/paris-martineau" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/663891/pictures/profpic-keyb.jpg">Paris Martineau</podcast:person>
+				<podcast:person role="guest" href="https://mozilla.org/">Mark Surman</podcast:person>
+		</item>
+		<item>
+			<title>IM 854: Welcome to the Pitt - AI: A Brand or a Breakthrough?</title>
+			<itunes:title>Welcome to the Pitt - AI: A Brand or a Breakthrough?</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Wed, 21 Jan 2026 18:52:57 PST</pubDate>
+			<itunes:episode>854</itunes:episode>
+			<podcast:episode>854</podcast:episode>
+			<link>https://twit.tv/shows/intelligent-machines/episodes/854</link>
+			<comments>https://twit.tv/shows/intelligent-machines/episodes/854</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>AI</category>
+			<category>Artificial Intelligence</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>AI: A Brand or a Breakthrough?</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/why-artificial-intelligence-mostly-marketing-term-insights-thomas-haigh" type="text/html" />
+			<itunes:keywords>TWiT, Intelligent Machines, Leo Laporte, Jeff Jarvis, Paris Martineau, Artificial Intelligence, Thomas Haig, history of AI, AI Winter, expert systems, John McCarthy, symbolic AI, neural networks, generative ai, ai hype, Claude Code, prompt injection</itunes:keywords>
+			<description><![CDATA[
+<p>Think you know the story of AI's rise and fall? This episode upends conventional wisdom with guest historian Thomas Haigh, who reveals why the infamous "AI winter" might just be a myth and why the field's biggest failures fueled today's breakthroughs.</p><ul> 
+<li>Two Thinking Machines Lab Cofounders Are Leaving to Rejoin OpenAI</li> 
+<li>NVDA, GOOGL, META: AI Spending Forecast to Hit $2.53 Trillion This Year</li> 
+<li>Nvidia, Eli Lilly just say yes to making drugs together, using Vera Rubin GPUs</li> 
+<li>Claude Cowork Exfiltrates Files</li> 
+<li>We put Claude Code in Rollercoaster Tycoon</li> 
+<li>How Generative AI is destroying society - by Gary Marcus</li> 
+<li>Anthropic rewrites Claude's guiding principles—and entertains the idea that its AI might have 'some kind of consciousness or moral status'</li> 
+<li>Claude's new constitution</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a></p> 
+<p><strong>Guest:</strong> <a href="https://tomandmaria.com/Tom/" target="_blank">Thomas Haigh</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+<li><a href="https://monarch.com" target="_blank" rel="sponsored">monarch.com with code IM</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Think you know the story of AI's rise and fall? This episode upends conventional wisdom with guest historian Thomas Haigh, who reveals why the infamous "AI winter" might just be a myth and why the field's biggest failures fueled today's breakthroughs.</p><ul> 
+<li>Two Thinking Machines Lab Cofounders Are Leaving to Rejoin OpenAI</li> 
+<li>NVDA, GOOGL, META: AI Spending Forecast to Hit $2.53 Trillion This Year</li> 
+<li>Nvidia, Eli Lilly just say yes to making drugs together, using Vera Rubin GPUs</li> 
+<li>Claude Cowork Exfiltrates Files</li> 
+<li>We put Claude Code in Rollercoaster Tycoon</li> 
+<li>How Generative AI is destroying society - by Gary Marcus</li> 
+<li>Anthropic rewrites Claude's guiding principles—and entertains the idea that its AI might have 'some kind of consciousness or moral status'</li> 
+<li>Claude's new constitution</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a></p> 
+<p><strong>Guest:</strong> <a href="https://tomandmaria.com/Tom/" target="_blank">Thomas Haigh</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+<li><a href="https://monarch.com" target="_blank" rel="sponsored">monarch.com with code IM</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Think you know the story of AI's rise and fall? This episode upends conventional wisdom with guest historian Thomas Haigh, who reveals why the infamous "AI winter" might just be a myth and why the field's biggest failures fueled today's breakthroughs.</p><ul> 
+<li>Two Thinking Machines Lab Cofounders Are Leaving to Rejoin OpenAI</li> 
+<li>NVDA, GOOGL, META: AI Spending Forecast to Hit $2.53 Trillion This Year</li> 
+<li>Nvidia, Eli Lilly just say yes to making drugs together, using Vera Rubin GPUs</li> 
+<li>Claude Cowork Exfiltrates Files</li> 
+<li>We put Claude Code in Rollercoaster Tycoon</li> 
+<li>How Generative AI is destroying society - by Gary Marcus</li> 
+<li>Anthropic rewrites Claude's guiding principles—and entertains the idea that its AI might have 'some kind of consciousness or moral status'</li> 
+<li>Claude's new constitution</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a></p> 
+<p><strong>Guest:</strong> <a href="https://tomandmaria.com/Tom/" target="_blank">Thomas Haigh</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+<li><a href="https://monarch.com" target="_blank" rel="sponsored">monarch.com with code IM</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859835/hero/IM0853_Thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0854/twig0854_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:17:49</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0854/twig0854_h264m_1920x1080.mp4" length="2339555236" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0854/twig0854_h264m_1920x1080.mp4" fileSize="2339555236" type="video/mp4" medium="video">
+				<media:title type="plain">IM 854: Welcome to the Pitt - AI: A Brand or a Breakthrough?</media:title>
+				<media:description type="plain">AI: A Brand or a Breakthrough?</media:description>
+				<media:keywords>TWiT, Intelligent Machines, Leo Laporte, Jeff Jarvis, Paris Martineau, Artificial Intelligence, Thomas Haig, history of AI, AI Winter, expert systems, John McCarthy, symbolic AI, neural networks, generative ai, ai hype, Claude Code, prompt injection</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859835/hero/IM0853_Thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Jeff Jarvis</media:credit>
+				<media:credit role="host">Paris Martineau</media:credit>
+				<media:credit role="guest">Thomas Haigh</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/jeff-jarvis" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/29/pictures/jeff-jarvis_0.png">Jeff Jarvis</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/paris-martineau" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/663891/pictures/profpic-keyb.jpg">Paris Martineau</podcast:person>
+				<podcast:person role="guest" href="https://tomandmaria.com/Tom/">Thomas Haigh</podcast:person>
+		</item>
+		<item>
+			<title>IM 853: All The Clocks Were Wrong - The Rise and Fall of Fact-Checking</title>
+			<itunes:title>All The Clocks Were Wrong - The Rise and Fall of Fact-Checking</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Wed, 14 Jan 2026 18:50:36 PST</pubDate>
+			<itunes:episode>853</itunes:episode>
+			<podcast:episode>853</podcast:episode>
+			<link>https://twit.tv/shows/intelligent-machines/episodes/853</link>
+			<comments>https://twit.tv/shows/intelligent-machines/episodes/853</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>AI</category>
+			<category>Artificial Intelligence</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>The Rise and Fall of Fact-Checking</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/can-you-outsmart-ai-generated-fake-news-expert-tips-craig-silverman" type="text/html" />
+			<itunes:keywords>TWiT, Intelligent Machines, Leo Laporte, Jeff Jarvis, Paris Martineau, Craig Silverman, disinformation, fake news, AI-generated Content, Indicator Media, journalism errors, AI image detection, gemini, metadata, reverse image search, OSINT tools</itunes:keywords>
+			<description><![CDATA[
+<p>Disinformation expert Craig Silverman joins the crew to break down why AI makes scams and fake news easier, faster, and nearly impossible to spot—while Big Tech quietly profits. If you think spotting digital deception is tough now, wait until you hear how deep the rabbit hole goes.</p><ul> 
+<li>Claude Code</li> 
+<li>Indonesia and Malaysia block Grok over non-consensual, sexualized deepfakes</li> 
+<li>Apple taps Google to power a new Siri and future AI tools</li> 
+<li>Introducing Cowork</li> 
+<li>"In China, driverless delivery vans have become a total meme, they plow through crumbling roads, fresh concrete, motorcycles, anything. Nothing stops them." : r/SelfDrivingCars</li> 
+<li>Meta refocuses on AI hardware as metaverse layoffs begin</li> 
+<li>Creepy Link</li> 
+<li>Matthew McConaughey has secured eight trademarks of himself from the USPTO in the past several months to protect his likeness and voice from unauthorized AI use</li> 
+<li>Senate Passes a Bill That Would Let Nonconsensual Deepfake Victims Sue</li> 
+<li>X says Grok will no longer edit images of real people into bikinis</li> 
+<li>Newsom Vows to Stop Proposed Billionaire Tax in California</li> 
+<li>J.R.R. Tolkien, Using a Tape Recorder for the First Time, Reads from The Hobbit for 30 Minutes (1952) | Open Culture</li> 
+<li>Digg launches its new Reddit rival to the public</li> 
+<li>Postal Arbitrage</li> 
+<li>New protein tests</li> 
+<li>The Traitors Season 4</li> 
+<li>WikiFlix</li> 
+<li>MTV REWIND - 33,000+ Music Videos • Zero Ads • Zero Algorithms</li> 
+<li>'A bombshell': doubt cast on discovery of microplastics throughout human body</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a></p> 
+<p><strong>Guest:</strong> <a href="https://buzzfeed.com" target="_blank">Craig Silverman</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Disinformation expert Craig Silverman joins the crew to break down why AI makes scams and fake news easier, faster, and nearly impossible to spot—while Big Tech quietly profits. If you think spotting digital deception is tough now, wait until you hear how deep the rabbit hole goes.</p><ul> 
+<li>Claude Code</li> 
+<li>Indonesia and Malaysia block Grok over non-consensual, sexualized deepfakes</li> 
+<li>Apple taps Google to power a new Siri and future AI tools</li> 
+<li>Introducing Cowork</li> 
+<li>"In China, driverless delivery vans have become a total meme, they plow through crumbling roads, fresh concrete, motorcycles, anything. Nothing stops them." : r/SelfDrivingCars</li> 
+<li>Meta refocuses on AI hardware as metaverse layoffs begin</li> 
+<li>Creepy Link</li> 
+<li>Matthew McConaughey has secured eight trademarks of himself from the USPTO in the past several months to protect his likeness and voice from unauthorized AI use</li> 
+<li>Senate Passes a Bill That Would Let Nonconsensual Deepfake Victims Sue</li> 
+<li>X says Grok will no longer edit images of real people into bikinis</li> 
+<li>Newsom Vows to Stop Proposed Billionaire Tax in California</li> 
+<li>J.R.R. Tolkien, Using a Tape Recorder for the First Time, Reads from The Hobbit for 30 Minutes (1952) | Open Culture</li> 
+<li>Digg launches its new Reddit rival to the public</li> 
+<li>Postal Arbitrage</li> 
+<li>New protein tests</li> 
+<li>The Traitors Season 4</li> 
+<li>WikiFlix</li> 
+<li>MTV REWIND - 33,000+ Music Videos • Zero Ads • Zero Algorithms</li> 
+<li>'A bombshell': doubt cast on discovery of microplastics throughout human body</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a></p> 
+<p><strong>Guest:</strong> <a href="https://buzzfeed.com" target="_blank">Craig Silverman</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Disinformation expert Craig Silverman joins the crew to break down why AI makes scams and fake news easier, faster, and nearly impossible to spot—while Big Tech quietly profits. If you think spotting digital deception is tough now, wait until you hear how deep the rabbit hole goes.</p><ul> 
+<li>Claude Code</li> 
+<li>Indonesia and Malaysia block Grok over non-consensual, sexualized deepfakes</li> 
+<li>Apple taps Google to power a new Siri and future AI tools</li> 
+<li>Introducing Cowork</li> 
+<li>"In China, driverless delivery vans have become a total meme, they plow through crumbling roads, fresh concrete, motorcycles, anything. Nothing stops them." : r/SelfDrivingCars</li> 
+<li>Meta refocuses on AI hardware as metaverse layoffs begin</li> 
+<li>Creepy Link</li> 
+<li>Matthew McConaughey has secured eight trademarks of himself from the USPTO in the past several months to protect his likeness and voice from unauthorized AI use</li> 
+<li>Senate Passes a Bill That Would Let Nonconsensual Deepfake Victims Sue</li> 
+<li>X says Grok will no longer edit images of real people into bikinis</li> 
+<li>Newsom Vows to Stop Proposed Billionaire Tax in California</li> 
+<li>J.R.R. Tolkien, Using a Tape Recorder for the First Time, Reads from The Hobbit for 30 Minutes (1952) | Open Culture</li> 
+<li>Digg launches its new Reddit rival to the public</li> 
+<li>Postal Arbitrage</li> 
+<li>New protein tests</li> 
+<li>The Traitors Season 4</li> 
+<li>WikiFlix</li> 
+<li>MTV REWIND - 33,000+ Music Videos • Zero Ads • Zero Algorithms</li> 
+<li>'A bombshell': doubt cast on discovery of microplastics throughout human body</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a></p> 
+<p><strong>Guest:</strong> <a href="https://buzzfeed.com" target="_blank">Craig Silverman</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859733/hero/IM0853_Thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0853/twig0853_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:54:20</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0853/twig0853_h264m_1920x1080.mp4" length="2960636665" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0853/twig0853_h264m_1920x1080.mp4" fileSize="2960636665" type="video/mp4" medium="video">
+				<media:title type="plain">IM 853: All The Clocks Were Wrong - The Rise and Fall of Fact-Checking</media:title>
+				<media:description type="plain">The Rise and Fall of Fact-Checking</media:description>
+				<media:keywords>TWiT, Intelligent Machines, Leo Laporte, Jeff Jarvis, Paris Martineau, Craig Silverman, disinformation, fake news, AI-generated Content, Indicator Media, journalism errors, AI image detection, gemini, metadata, reverse image search, OSINT tools</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859733/hero/IM0853_Thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Jeff Jarvis</media:credit>
+				<media:credit role="host">Paris Martineau</media:credit>
+				<media:credit role="guest">Craig Silverman</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/jeff-jarvis" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/29/pictures/jeff-jarvis_0.png">Jeff Jarvis</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/paris-martineau" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/663891/pictures/profpic-keyb.jpg">Paris Martineau</podcast:person>
+				<podcast:person role="guest" href="https://buzzfeed.com">Craig Silverman</podcast:person>
+		</item>
+		<item>
+			<title>IM 852: Gluten-free Slop - AI at CES 2026</title>
+			<itunes:title>Gluten-free Slop - AI at CES 2026</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Wed, 07 Jan 2026 19:02:12 PST</pubDate>
+			<itunes:episode>852</itunes:episode>
+			<podcast:episode>852</podcast:episode>
+			<link>https://twit.tv/shows/intelligent-machines/episodes/852</link>
+			<comments>https://twit.tv/shows/intelligent-machines/episodes/852</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>AI</category>
+			<category>Artificial Intelligence</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>AI at CES 2026</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/intelligent-machines-852-transcript" type="text/html" />
+			<itunes:keywords>TWiT, Intelligent Machines, Leo Laporte, Jeff Jarvis, Paris Martineau, jason hiner, AI at CES, consumer electronics show, Nvidia Vera Rubin, Jensen Huang keynote, Copilot Plus PCs, lenovo, Blackwell chip, Siemens partnership, digital twins, world models, </itunes:keywords>
+			<description><![CDATA[
+<p>Jason Hiner gives us a look at the AI products at CES 2026, as big tech and chip makers blurred the lines between consumer gadgets and enterprise innovation, leaving even veteran insiders wondering: will this tech boom actually benefit everyday users?</p><ul> 
+<li>NVIDIA's Christmas Eve 'Hackquisition' Miracle</li> 
+<li>No, Grok can't really "apologize" for posting non-consensual sexual images</li> 
+<li>Introducing ChatGPT Health</li> 
+<li>'We have to reject that with every fiber of our being': DeSantis emerges as a chief AI skeptic</li> 
+<li>Waymo Updates Vehicles to Better Handle Power Outages - But Still Faces Criticism</li> 
+<li>The most exciting AI wearable at CES 2026 might not be smart glasses after all</li> 
+<li>2025's AI-fueled scientific breakthroughs</li> 
+<li>Google engineer says Claude Code built in one hour what her team spent a year on</li> 
+<li>Microsoft CEO Begs Users to Stop Calling It "Slop"</li> 
+<li>Stanford's AI class on YouTube</li> 
+<li>Tamiflu</li> 
+<li>Babka from Zabar's (or elsewhere)</li> 
+<li>Happy birthday Nic Cage</li> 
+<li>Floor796</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a></p> 
+<p><strong>Guest:</strong> <a href="https://x.com/jasonhiner" target="_blank">Jason Hiner</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="https://monarch.com" target="_blank" rel="sponsored">monarch.com with code IM</a></li>
+<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
+<li><a href="http://helixsleep.com/machines" target="_blank" rel="sponsored">helixsleep.com/machines</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Jason Hiner gives us a look at the AI products at CES 2026, as big tech and chip makers blurred the lines between consumer gadgets and enterprise innovation, leaving even veteran insiders wondering: will this tech boom actually benefit everyday users?</p><ul> 
+<li>NVIDIA's Christmas Eve 'Hackquisition' Miracle</li> 
+<li>No, Grok can't really "apologize" for posting non-consensual sexual images</li> 
+<li>Introducing ChatGPT Health</li> 
+<li>'We have to reject that with every fiber of our being': DeSantis emerges as a chief AI skeptic</li> 
+<li>Waymo Updates Vehicles to Better Handle Power Outages - But Still Faces Criticism</li> 
+<li>The most exciting AI wearable at CES 2026 might not be smart glasses after all</li> 
+<li>2025's AI-fueled scientific breakthroughs</li> 
+<li>Google engineer says Claude Code built in one hour what her team spent a year on</li> 
+<li>Microsoft CEO Begs Users to Stop Calling It "Slop"</li> 
+<li>Stanford's AI class on YouTube</li> 
+<li>Tamiflu</li> 
+<li>Babka from Zabar's (or elsewhere)</li> 
+<li>Happy birthday Nic Cage</li> 
+<li>Floor796</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a></p> 
+<p><strong>Guest:</strong> <a href="https://x.com/jasonhiner" target="_blank">Jason Hiner</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="https://monarch.com" target="_blank" rel="sponsored">monarch.com with code IM</a></li>
+<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
+<li><a href="http://helixsleep.com/machines" target="_blank" rel="sponsored">helixsleep.com/machines</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Jason Hiner gives us a look at the AI products at CES 2026, as big tech and chip makers blurred the lines between consumer gadgets and enterprise innovation, leaving even veteran insiders wondering: will this tech boom actually benefit everyday users?</p><ul> 
+<li>NVIDIA's Christmas Eve 'Hackquisition' Miracle</li> 
+<li>No, Grok can't really "apologize" for posting non-consensual sexual images</li> 
+<li>Introducing ChatGPT Health</li> 
+<li>'We have to reject that with every fiber of our being': DeSantis emerges as a chief AI skeptic</li> 
+<li>Waymo Updates Vehicles to Better Handle Power Outages - But Still Faces Criticism</li> 
+<li>The most exciting AI wearable at CES 2026 might not be smart glasses after all</li> 
+<li>2025's AI-fueled scientific breakthroughs</li> 
+<li>Google engineer says Claude Code built in one hour what her team spent a year on</li> 
+<li>Microsoft CEO Begs Users to Stop Calling It "Slop"</li> 
+<li>Stanford's AI class on YouTube</li> 
+<li>Tamiflu</li> 
+<li>Babka from Zabar's (or elsewhere)</li> 
+<li>Happy birthday Nic Cage</li> 
+<li>Floor796</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a></p> 
+<p><strong>Guest:</strong> <a href="https://x.com/jasonhiner" target="_blank">Jason Hiner</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="https://monarch.com" target="_blank" rel="sponsored">monarch.com with code IM</a></li>
+<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
+<li><a href="http://helixsleep.com/machines" target="_blank" rel="sponsored">helixsleep.com/machines</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859657/hero/IM0852_Thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0852/twig0852_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:39:15</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0852/twig0852_h264m_1920x1080.mp4" length="2704860340" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0852/twig0852_h264m_1920x1080.mp4" fileSize="2704860340" type="video/mp4" medium="video">
+				<media:title type="plain">IM 852: Gluten-free Slop - AI at CES 2026</media:title>
+				<media:description type="plain">AI at CES 2026</media:description>
+				<media:keywords>TWiT, Intelligent Machines, Leo Laporte, Jeff Jarvis, Paris Martineau, jason hiner, AI at CES, consumer electronics show, Nvidia Vera Rubin, Jensen Huang keynote, Copilot Plus PCs, lenovo, Blackwell chip, Siemens partnership, digital twins, world models, </media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859657/hero/IM0852_Thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Jeff Jarvis</media:credit>
+				<media:credit role="host">Paris Martineau</media:credit>
+				<media:credit role="guest">Jason Hiner</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/jeff-jarvis" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/29/pictures/jeff-jarvis_0.png">Jeff Jarvis</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/paris-martineau" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/663891/pictures/profpic-keyb.jpg">Paris Martineau</podcast:person>
+				<podcast:person role="guest" href="https://x.com/jasonhiner" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/59771/pictures/jason-hiner-headshot.png">Jason Hiner</podcast:person>
+		</item>
+		<item>
+			<title>IM 851: Intelligent Machines Best of 2025 - Our Favorite Interviews from 2025</title>
+			<itunes:title>Intelligent Machines Best of 2025 - Our Favorite Interviews from 2025</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 28 Dec 2025 12:30:00 PST</pubDate>
+			<itunes:episode>851</itunes:episode>
+			<podcast:episode>851</podcast:episode>
+			<link>https://twit.tv/shows/intelligent-machines/episodes/851</link>
+			<comments>https://twit.tv/shows/intelligent-machines/episodes/851</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>AI</category>
+			<category>Artificial Intelligence</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Our Favorite Interviews from 2025</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/intelligent-machines-851-transcript" type="text/html" />
+			<itunes:keywords>Best of 2025 Best of 2025 100% 10 B31 Ray Kurzweil, Artificial Intelligence, AGI predictions, singularity, AI safety, exponential growth, large language models, AI job disruption, merging with AI, neuralink, AI Regulation, digital immortality, longevity, </itunes:keywords>
+			<description><![CDATA[
+<p>Our interviews with:</p><ul> 
+<li>Ray Kurzweil</li> 
+<li>Alex Hanna</li> 
+<li>Emily Bender</li> 
+<li>Mike Masnick</li> 
+<li>Pliny the Liberator</li> 
+<li>Kevin Kelly</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Our interviews with:</p><ul> 
+<li>Ray Kurzweil</li> 
+<li>Alex Hanna</li> 
+<li>Emily Bender</li> 
+<li>Mike Masnick</li> 
+<li>Pliny the Liberator</li> 
+<li>Kevin Kelly</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Our interviews with:</p><ul> 
+<li>Ray Kurzweil</li> 
+<li>Alex Hanna</li> 
+<li>Emily Bender</li> 
+<li>Mike Masnick</li> 
+<li>Pliny the Liberator</li> 
+<li>Kevin Kelly</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2025/12/859580/hero/IM0851_Thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0851/twig0851_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>3:56:39</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0851/twig0851_h264m_1920x1080.mp4" length="4018307453" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0851/twig0851_h264m_1920x1080.mp4" fileSize="4018307453" type="video/mp4" medium="video">
+				<media:title type="plain">IM 851: Intelligent Machines Best of 2025 - Our Favorite Interviews from 2025</media:title>
+				<media:description type="plain">Our Favorite Interviews from 2025</media:description>
+				<media:keywords>Best of 2025 Best of 2025 100% 10 B31 Ray Kurzweil, Artificial Intelligence, AGI predictions, singularity, AI safety, exponential growth, large language models, AI job disruption, merging with AI, neuralink, AI Regulation, digital immortality, longevity, </media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2025/12/859580/hero/IM0851_Thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+		</item>
+		<item>
+			<title>IM 850: Bagel Rats - Open Source AI Rising</title>
+			<itunes:title>Bagel Rats - Open Source AI Rising</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Wed, 17 Dec 2025 18:31:00 PST</pubDate>
+			<itunes:episode>850</itunes:episode>
+			<podcast:episode>850</podcast:episode>
+			<link>https://twit.tv/shows/intelligent-machines/episodes/850</link>
+			<comments>https://twit.tv/shows/intelligent-machines/episodes/850</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>AI</category>
+			<category>Artificial Intelligence</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Open Source AI Rising</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/intelligent-machines-850-transcript" type="text/html" />
+			<itunes:keywords>TWiT, Intelligent Machines, Leo Laporte, Jeff Jarvis, Paris Martineau, CJ Trowbridge, ethical AI, open source AI, sustainability in AI, generative ai, data centers, small AI models, local AI, open source projects, chatgpt, nvidia, hugging face</itunes:keywords>
+			<description><![CDATA[
+<p>Forget the "AI is killing the planet" panic—this episode unpacks what's actually driving tech's power grab, the financial bubble no one wants to talk about, and why the big models are starting to look eerily similar.</p> 
+<p>CJ Trowbridge - cjtrowbridge.com - https://www.tiktok.com/@cjtrowbridge</p><ul> 
+<li>Gemini 3 Flash: frontier intelligence built for speed</li> 
+<li>The new ChatGPT Images is here | OpenAI</li> 
+<li>Last Week on My Mac: How good is AI at solving Mac problems?</li> 
+<li>Time Magazine's 'Person of the Year': the Architects of AI - Slashdot</li> 
+<li>OpenAI are quietly adopting skills, now available in ChatGPT and Codex CLI</li> 
+<li>"I was forced to use AI until the day I was laid off." Copywriters reveal how AI has decimated their industry</li> 
+<li>Roomba Maker iRobot Files for Bankruptcy, With Chinese Supplier Taking Control</li> 
+<li>Coursera to buy Udemy, creating $2.5 billion firm to target AI training</li> 
+<li>Purdue University Approves New AI Requirement For All Undergrads</li> 
+<li>It's beginning to look a lot like (AI) Christmas</li> 
+<li>Trump Pretends To Block State AI Laws; Media Pretends That's Legal</li> 
+<li>This major cruise line just banned Meta Ray-Ban and other smart glasses — is this category already doomed?</li> 
+<li>Woman Hailed as Hero for Smashing Man's Meta Smart Glasses on Subway</li> 
+<li>Oscars Bolts from ABC to YouTube Starting in 2029</li> 
+<li>When AI Takes the Couch: Psychometric Jailbreaks Reveal Internal Conflict in Frontier Models</li> 
+<li>Simulating Life Paths with Digital Twins: AI-Generated Future Selves Influence Decision-Making and Expand Human Choice</li> 
+<li>The worst person in tech bracket</li> 
+<li>Banned fonts</li> 
+<li>Subway bagel rats</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a></p> 
+<p><strong>Guest:</strong> <a href="https://cjtrowbridge.com/" target="_blank">CJ Trowbridge</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://agntcy.org" target="_blank" rel="sponsored">agntcy.org</a></li>
+<li><a href="https://auraframes.com/ink?utm_source=podcast&utm_medium=audio&utm_campaign=intelligentmachinestwit" target="_blank" rel="sponsored">auraframes.com/ink</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Forget the "AI is killing the planet" panic—this episode unpacks what's actually driving tech's power grab, the financial bubble no one wants to talk about, and why the big models are starting to look eerily similar.</p> 
+<p>CJ Trowbridge - cjtrowbridge.com - https://www.tiktok.com/@cjtrowbridge</p><ul> 
+<li>Gemini 3 Flash: frontier intelligence built for speed</li> 
+<li>The new ChatGPT Images is here | OpenAI</li> 
+<li>Last Week on My Mac: How good is AI at solving Mac problems?</li> 
+<li>Time Magazine's 'Person of the Year': the Architects of AI - Slashdot</li> 
+<li>OpenAI are quietly adopting skills, now available in ChatGPT and Codex CLI</li> 
+<li>"I was forced to use AI until the day I was laid off." Copywriters reveal how AI has decimated their industry</li> 
+<li>Roomba Maker iRobot Files for Bankruptcy, With Chinese Supplier Taking Control</li> 
+<li>Coursera to buy Udemy, creating $2.5 billion firm to target AI training</li> 
+<li>Purdue University Approves New AI Requirement For All Undergrads</li> 
+<li>It's beginning to look a lot like (AI) Christmas</li> 
+<li>Trump Pretends To Block State AI Laws; Media Pretends That's Legal</li> 
+<li>This major cruise line just banned Meta Ray-Ban and other smart glasses — is this category already doomed?</li> 
+<li>Woman Hailed as Hero for Smashing Man's Meta Smart Glasses on Subway</li> 
+<li>Oscars Bolts from ABC to YouTube Starting in 2029</li> 
+<li>When AI Takes the Couch: Psychometric Jailbreaks Reveal Internal Conflict in Frontier Models</li> 
+<li>Simulating Life Paths with Digital Twins: AI-Generated Future Selves Influence Decision-Making and Expand Human Choice</li> 
+<li>The worst person in tech bracket</li> 
+<li>Banned fonts</li> 
+<li>Subway bagel rats</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a></p> 
+<p><strong>Guest:</strong> <a href="https://cjtrowbridge.com/" target="_blank">CJ Trowbridge</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://agntcy.org" target="_blank" rel="sponsored">agntcy.org</a></li>
+<li><a href="https://auraframes.com/ink?utm_source=podcast&utm_medium=audio&utm_campaign=intelligentmachinestwit" target="_blank" rel="sponsored">auraframes.com/ink</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Forget the "AI is killing the planet" panic—this episode unpacks what's actually driving tech's power grab, the financial bubble no one wants to talk about, and why the big models are starting to look eerily similar.</p> 
+<p>CJ Trowbridge - cjtrowbridge.com - https://www.tiktok.com/@cjtrowbridge</p><ul> 
+<li>Gemini 3 Flash: frontier intelligence built for speed</li> 
+<li>The new ChatGPT Images is here | OpenAI</li> 
+<li>Last Week on My Mac: How good is AI at solving Mac problems?</li> 
+<li>Time Magazine's 'Person of the Year': the Architects of AI - Slashdot</li> 
+<li>OpenAI are quietly adopting skills, now available in ChatGPT and Codex CLI</li> 
+<li>"I was forced to use AI until the day I was laid off." Copywriters reveal how AI has decimated their industry</li> 
+<li>Roomba Maker iRobot Files for Bankruptcy, With Chinese Supplier Taking Control</li> 
+<li>Coursera to buy Udemy, creating $2.5 billion firm to target AI training</li> 
+<li>Purdue University Approves New AI Requirement For All Undergrads</li> 
+<li>It's beginning to look a lot like (AI) Christmas</li> 
+<li>Trump Pretends To Block State AI Laws; Media Pretends That's Legal</li> 
+<li>This major cruise line just banned Meta Ray-Ban and other smart glasses — is this category already doomed?</li> 
+<li>Woman Hailed as Hero for Smashing Man's Meta Smart Glasses on Subway</li> 
+<li>Oscars Bolts from ABC to YouTube Starting in 2029</li> 
+<li>When AI Takes the Couch: Psychometric Jailbreaks Reveal Internal Conflict in Frontier Models</li> 
+<li>Simulating Life Paths with Digital Twins: AI-Generated Future Selves Influence Decision-Making and Expand Human Choice</li> 
+<li>The worst person in tech bracket</li> 
+<li>Banned fonts</li> 
+<li>Subway bagel rats</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a></p> 
+<p><strong>Guest:</strong> <a href="https://cjtrowbridge.com/" target="_blank">CJ Trowbridge</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://agntcy.org" target="_blank" rel="sponsored">agntcy.org</a></li>
+<li><a href="https://auraframes.com/ink?utm_source=podcast&utm_medium=audio&utm_campaign=intelligentmachinestwit" target="_blank" rel="sponsored">auraframes.com/ink</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2025/12/859425/hero/IM0850_Thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0850/twig0850_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:15:57</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0850/twig0850_h264m_1920x1080.mp4" length="2309350185" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0850/twig0850_h264m_1920x1080.mp4" fileSize="2309350185" type="video/mp4" medium="video">
+				<media:title type="plain">IM 850: Bagel Rats - Open Source AI Rising</media:title>
+				<media:description type="plain">Open Source AI Rising</media:description>
+				<media:keywords>TWiT, Intelligent Machines, Leo Laporte, Jeff Jarvis, Paris Martineau, CJ Trowbridge, ethical AI, open source AI, sustainability in AI, generative ai, data centers, small AI models, local AI, open source projects, chatgpt, nvidia, hugging face</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2025/12/859425/hero/IM0850_Thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Jeff Jarvis</media:credit>
+				<media:credit role="host">Paris Martineau</media:credit>
+				<media:credit role="guest">CJ Trowbridge</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/jeff-jarvis" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/29/pictures/jeff-jarvis_0.png">Jeff Jarvis</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/paris-martineau" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/663891/pictures/profpic-keyb.jpg">Paris Martineau</podcast:person>
+				<podcast:person role="guest" href="https://cjtrowbridge.com/">CJ Trowbridge</podcast:person>
+		</item>
+		<item>
+			<title>IM 849: AI Cricket Sorting - Cracking Chatbots and AGI for All</title>
+			<itunes:title>AI Cricket Sorting - Cracking Chatbots and AGI for All</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Wed, 10 Dec 2025 19:05:21 PST</pubDate>
+			<itunes:episode>849</itunes:episode>
+			<podcast:episode>849</podcast:episode>
+			<link>https://twit.tv/shows/intelligent-machines/episodes/849</link>
+			<comments>https://twit.tv/shows/intelligent-machines/episodes/849</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>AI</category>
+			<category>Artificial Intelligence</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Cracking Chatbots and AGI for All</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/truth-about-ai-guardrails-safe-ai-myth" type="text/html" />
+			<itunes:keywords>TWiT, Intelligent Machines, Leo Laporte, Jeff Jarvis, Mike Elgan, AI safety, AI jailbreak, Pliny the Liberator, prompt engineering, red teaming, Claritas, open source AI models, LLMs, chatgpt, gemini, google deepmind, ai guardrails, claude, Anthropic</itunes:keywords>
+			<description><![CDATA[
+<p>What happens when every major AI model gets jailbroken within days? This week, the world's most prolific AI red teamer lifts the curtain on how and why "safe" AI might be an impossible promise.</p> 
+<p>Pliny the Liberator | pliny.gg - discord.gg/basi</p><ul> 
+<li>ChatGPT Nears 900 Million Weekly Active Users But Gemini is Catching Up</li> 
+<li>From Llamas to Avocados: Meta's shifting AI strategy is causing internal confusion</li> 
+<li>Google Tells Advertisers It'll Bring Ads to Gemini in 2026</li> 
+<li>Meta Acquires Limiteless, an A.I. Pendant Company Backed by Sam Altman</li> 
+<li>Here's how Google is laying the foundation for our mixed reality future</li> 
+<li>OpenAI, Anthropic, and Block Are Teaming Up to Make AI Agents Play Nice</li> 
+<li>Svedka's First Super Bowl Ad Will Be Made Primarily With AI</li> 
+<li>AI Slop Is Ruining Reddit for Everyone</li> 
+<li>TESCREALers paying journalists at major outlets to cover AI</li> 
+<li>The Resonant Computing Manifesto (from Masnick)</li> 
+<li>Techdirt fundraiser</li> 
+<li>From Sam Lessin: Tech bros head to etiquette camp as Silicon Valley levels up its style</li> 
+<li>Bare Metal Email</li> 
+<li>Jeff in Austria</li> 
+<li>Golden Globes enter the world of podcasts and tread carefully, avoiding controversy</li> 
+<li>Who says AI isn't useful? Real-time Cricket Sorting By Sex</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://mikeelgan.substack.com/" target="_blank">Mike Elgan</a></p> 
+<p><strong>Guest:</strong> <a href="https://pliny.gg/" target="_blank">Pliny the Liberator</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="https://auraframes.com/ink?utm_source=podcast&utm_medium=audio&utm_campaign=intelligentmachinestwit" target="_blank" rel="sponsored">auraframes.com/ink</a></li>
+<li><a href="http://ventionteams.com/twit" target="_blank" rel="sponsored">ventionteams.com/twit</a></li>
+<li><a href="http://agntcy.org" target="_blank" rel="sponsored">agntcy.org</a></li>
+<li><a href="http://outsystems.com/twit" target="_blank" rel="sponsored">outsystems.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>What happens when every major AI model gets jailbroken within days? This week, the world's most prolific AI red teamer lifts the curtain on how and why "safe" AI might be an impossible promise.</p> 
+<p>Pliny the Liberator | pliny.gg - discord.gg/basi</p><ul> 
+<li>ChatGPT Nears 900 Million Weekly Active Users But Gemini is Catching Up</li> 
+<li>From Llamas to Avocados: Meta's shifting AI strategy is causing internal confusion</li> 
+<li>Google Tells Advertisers It'll Bring Ads to Gemini in 2026</li> 
+<li>Meta Acquires Limiteless, an A.I. Pendant Company Backed by Sam Altman</li> 
+<li>Here's how Google is laying the foundation for our mixed reality future</li> 
+<li>OpenAI, Anthropic, and Block Are Teaming Up to Make AI Agents Play Nice</li> 
+<li>Svedka's First Super Bowl Ad Will Be Made Primarily With AI</li> 
+<li>AI Slop Is Ruining Reddit for Everyone</li> 
+<li>TESCREALers paying journalists at major outlets to cover AI</li> 
+<li>The Resonant Computing Manifesto (from Masnick)</li> 
+<li>Techdirt fundraiser</li> 
+<li>From Sam Lessin: Tech bros head to etiquette camp as Silicon Valley levels up its style</li> 
+<li>Bare Metal Email</li> 
+<li>Jeff in Austria</li> 
+<li>Golden Globes enter the world of podcasts and tread carefully, avoiding controversy</li> 
+<li>Who says AI isn't useful? Real-time Cricket Sorting By Sex</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://mikeelgan.substack.com/" target="_blank">Mike Elgan</a></p> 
+<p><strong>Guest:</strong> <a href="https://pliny.gg/" target="_blank">Pliny the Liberator</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="https://auraframes.com/ink?utm_source=podcast&utm_medium=audio&utm_campaign=intelligentmachinestwit" target="_blank" rel="sponsored">auraframes.com/ink</a></li>
+<li><a href="http://ventionteams.com/twit" target="_blank" rel="sponsored">ventionteams.com/twit</a></li>
+<li><a href="http://agntcy.org" target="_blank" rel="sponsored">agntcy.org</a></li>
+<li><a href="http://outsystems.com/twit" target="_blank" rel="sponsored">outsystems.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>What happens when every major AI model gets jailbroken within days? This week, the world's most prolific AI red teamer lifts the curtain on how and why "safe" AI might be an impossible promise.</p> 
+<p>Pliny the Liberator | pliny.gg - discord.gg/basi</p><ul> 
+<li>ChatGPT Nears 900 Million Weekly Active Users But Gemini is Catching Up</li> 
+<li>From Llamas to Avocados: Meta's shifting AI strategy is causing internal confusion</li> 
+<li>Google Tells Advertisers It'll Bring Ads to Gemini in 2026</li> 
+<li>Meta Acquires Limiteless, an A.I. Pendant Company Backed by Sam Altman</li> 
+<li>Here's how Google is laying the foundation for our mixed reality future</li> 
+<li>OpenAI, Anthropic, and Block Are Teaming Up to Make AI Agents Play Nice</li> 
+<li>Svedka's First Super Bowl Ad Will Be Made Primarily With AI</li> 
+<li>AI Slop Is Ruining Reddit for Everyone</li> 
+<li>TESCREALers paying journalists at major outlets to cover AI</li> 
+<li>The Resonant Computing Manifesto (from Masnick)</li> 
+<li>Techdirt fundraiser</li> 
+<li>From Sam Lessin: Tech bros head to etiquette camp as Silicon Valley levels up its style</li> 
+<li>Bare Metal Email</li> 
+<li>Jeff in Austria</li> 
+<li>Golden Globes enter the world of podcasts and tread carefully, avoiding controversy</li> 
+<li>Who says AI isn't useful? Real-time Cricket Sorting By Sex</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://mikeelgan.substack.com/" target="_blank">Mike Elgan</a></p> 
+<p><strong>Guest:</strong> <a href="https://pliny.gg/" target="_blank">Pliny the Liberator</a></p> 
+<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="https://auraframes.com/ink?utm_source=podcast&utm_medium=audio&utm_campaign=intelligentmachinestwit" target="_blank" rel="sponsored">auraframes.com/ink</a></li>
+<li><a href="http://ventionteams.com/twit" target="_blank" rel="sponsored">ventionteams.com/twit</a></li>
+<li><a href="http://agntcy.org" target="_blank" rel="sponsored">agntcy.org</a></li>
+<li><a href="http://outsystems.com/twit" target="_blank" rel="sponsored">outsystems.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2025/12/859338/hero/IM0849_Thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0849/twig0849_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:31:05</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0849/twig0849_h264m_1920x1080.mp4" length="2565784672" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0849/twig0849_h264m_1920x1080.mp4" fileSize="2565784672" type="video/mp4" medium="video">
+				<media:title type="plain">IM 849: AI Cricket Sorting - Cracking Chatbots and AGI for All</media:title>
+				<media:description type="plain">Cracking Chatbots and AGI for All</media:description>
+				<media:keywords>TWiT, Intelligent Machines, Leo Laporte, Jeff Jarvis, Mike Elgan, AI safety, AI jailbreak, Pliny the Liberator, prompt engineering, red teaming, Claritas, open source AI models, LLMs, chatgpt, gemini, google deepmind, ai guardrails, claude, Anthropic</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2025/12/859338/hero/IM0849_Thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Jeff Jarvis</media:credit>
+				<media:credit role="host">Mike Elgan</media:credit>
+				<media:credit role="guest">Pliny the Liberator</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/jeff-jarvis" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/29/pictures/jeff-jarvis_0.png">Jeff Jarvis</podcast:person>
+				<podcast:person role="host" href="https://mikeelgan.substack.com/" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/61/pictures/mike-elgan_0.png">Mike Elgan</podcast:person>
+				<podcast:person role="guest" href="https://pliny.gg/">Pliny the Liberator</podcast:person>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,1417 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/" xmlns:podcast="https://podcastindex.org/namespace/1.0" version="2.0">
+	<channel>
+		<title>TWiT Events (Video)</title>
+		<itunes:author>TWiT</itunes:author>
+		<link>https://twit.tv/shows/twit-events</link>
+		<generator>TWiT Feed Generator v4.10</generator>
+		<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+		<language>en-US</language>
+		<copyright>This work is licensed under a Creative Commons License - Attribution-NonCommercial-NoDerivatives 4.0 International - http://creativecommons.org/licenses/by-nc-nd/4.0/</copyright>
+		<creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+		<managingEditor>feedmail@twit.tv (TWiT Editors)</managingEditor>
+		<webMaster>feedmail@twit.tv (TWiT Engineering)</webMaster>
+		<ttl>720</ttl>
+		<sy:updatePeriod>weekly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+		<lastBuildDate>Tue, 23 Dec 2025 20:40:36 PST</lastBuildDate>
+		<pubDate>Tue, 23 Dec 2025 20:40:36 PST</pubDate>
+		<rawvoice:frequency>weekly</rawvoice:frequency>
+		<rawvoice:location>Petaluma, CA</rawvoice:location>
+		<itunes:type>episodic</itunes:type>
+		<itunes:subtitle>TWiT Events is your window to the best tech events in the world.</itunes:subtitle>
+		<itunes:summary>TWiT Events is your window to the best tech events in the world. Whether it's the hottest announcements from CES or the latest security tech, TWiT Events is there.
+
+</itunes:summary>
+		<description>TWiT Events is your window to the best tech events in the world. Whether it's the hottest announcements from CES or the latest security tech, TWiT Events is there.
+
+</description>
+		<itunes:keywords>TWiT, Technology, Event</itunes:keywords>
+		<rawvoice:rating tv="tv-g">tv-g</rawvoice:rating>
+		<itunes:explicit>no</itunes:explicit>
+		<itunes:block>no</itunes:block>
+		<googleplay:block>No</googleplay:block>
+		<podcast:funding url="https://twit.tv/clubtwit">Become a Club TWiT member!</podcast:funding>
+		<itunes:owner>
+			<itunes:name>Leo Laporte</itunes:name>
+			<itunes:email>feedmail@twit.tv</itunes:email>
+		</itunes:owner>
+		<itunes:category text="News">
+			<itunes:category text="Tech News"/>
+		</itunes:category>
+		<itunes:category text="Technology" />
+		<category>Technology</category>
+		<category>Special</category>
+		<category>Event</category>
+		<image>
+			<title>TWiT Events (Video)</title>
+			<url>https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/TWiT%20Events/album_art/hd/TWITevents_albumart_standard_video.jpg</url>
+			<link>https://twit.tv/shows/twit-events</link>
+		</image>
+		<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/TWiT%20Events/album_art/hd/TWITevents_albumart_standard_video.jpg" />
+		<itunes:new-feed-url>https://feeds.twit.tv/events_video_hd.xml</itunes:new-feed-url>
+		<rawvoice:subscribe feed="https://feeds.twit.tv/events_video_hd.xml" itunes="https://podcasts.apple.com/us/podcast/id1489022728" html="https://twit.tv/shows/twit-events"></rawvoice:subscribe>
+		<atom:link href="https://feeds.twit.tv/events_video_hd.xml" type="application/rss+xml" rel="self"/>
+		<item>
+			<title>Event 18: CES 2024: Gadgets - Innovations in cables, speakers, and more at CES 2024 with Father Robert Ballecer</title>
+			<itunes:title>CES 2024: Gadgets - Innovations in cables, speakers, and more at CES 2024 with Father Robert Ballecer</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Mon, 29 Jan 2024 11:25:13 PST</pubDate>
+			<itunes:episode>18</itunes:episode>
+			<podcast:episode>18</podcast:episode>
+			<link>https://twit.tv/shows/twit-events/episodes/18</link>
+			<comments>https://twit.tv/shows/twit-events/episodes/18</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Event</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Innovations in cables, speakers, and more at CES 2024 with Father Robert Ballecer</itunes:subtitle>
+			<itunes:keywords>Special Event, Special, ces 2024, consumer electronics show, RCA smart bird feeder, ai, Govee AI sync box, amazfit helio, rolling square incharge, rocksteady stadium, neakasa nomo n3, runhood 1200 pro, HP poly voyager free, targus KVM</itunes:keywords>
+			<description><![CDATA[
+<p>Father Robert Ballecer provides an entertaining rundown of his favorite gadgets from CES 2024. In part 2 of his Las Vegas trip, he showcases 10 cool and unique devices that caught his eye at the show.</p><ul> 
+<li>The RCA smart bird feeder uses AI to identify bird species and provides HD video footage that you can access via an app.</li> 
+<li>The Govee AI sync box 2 (#9) uses lighting effects that match what's on your TV or monitor for an immersive viewing experience.</li> 
+<li>The Amazfit Helio ring (#8) is a fitness tracker packed into a titanium ring that monitors health stats like heart rate and blood oxygen levels.</li> 
+<li>The Rolling Square inCharge M (#7) is a coilable magnetic cable that always returns to its original coiled shape.</li> 
+<li>The Rocksteady Stadium (#6) is a modular wireless speaker system that lets you network multiple speakers for seamless 360° audio.</li> 
+<li>The Neakasa NoMo N3 Robot Vacuum (#5) is a feature-packed premium robotic vacuum with smart mapping and google/amazon assistant support for $250.</li> 
+<li>The Runhood 1200 Pro (#4) is a robust 1200+ watt hour modular power station perfect for RV and van life.</li> 
+<li>The HP Poly Voyager Free 60 (#3) are UC-optimized wireless earbuds with great sound and battery life for an affordable price.</li> 
+<li>The Targus Dual Host KVM Dock750 (#2) lets you control two computers (Mac, Windows, Linux) from one keyboard, mouse, and set of ports seamlessly.</li> 
+<li>Timekettle (#1) impressed with their X1 Interpreter Hub that enables real-time translation across languages using AI.</li></ul> 
+<p><strong>Host:</strong> <a href="https://bsky.app/profile/padresj.bsky.social" target="_blank">Fr. Robert Ballecer, SJ</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Father Robert Ballecer provides an entertaining rundown of his favorite gadgets from CES 2024. In part 2 of his Las Vegas trip, he showcases 10 cool and unique devices that caught his eye at the show.</p><ul> 
+<li>The RCA smart bird feeder uses AI to identify bird species and provides HD video footage that you can access via an app.</li> 
+<li>The Govee AI sync box 2 (#9) uses lighting effects that match what's on your TV or monitor for an immersive viewing experience.</li> 
+<li>The Amazfit Helio ring (#8) is a fitness tracker packed into a titanium ring that monitors health stats like heart rate and blood oxygen levels.</li> 
+<li>The Rolling Square inCharge M (#7) is a coilable magnetic cable that always returns to its original coiled shape.</li> 
+<li>The Rocksteady Stadium (#6) is a modular wireless speaker system that lets you network multiple speakers for seamless 360° audio.</li> 
+<li>The Neakasa NoMo N3 Robot Vacuum (#5) is a feature-packed premium robotic vacuum with smart mapping and google/amazon assistant support for $250.</li> 
+<li>The Runhood 1200 Pro (#4) is a robust 1200+ watt hour modular power station perfect for RV and van life.</li> 
+<li>The HP Poly Voyager Free 60 (#3) are UC-optimized wireless earbuds with great sound and battery life for an affordable price.</li> 
+<li>The Targus Dual Host KVM Dock750 (#2) lets you control two computers (Mac, Windows, Linux) from one keyboard, mouse, and set of ports seamlessly.</li> 
+<li>Timekettle (#1) impressed with their X1 Interpreter Hub that enables real-time translation across languages using AI.</li></ul> 
+<p><strong>Host:</strong> <a href="https://bsky.app/profile/padresj.bsky.social" target="_blank">Fr. Robert Ballecer, SJ</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Father Robert Ballecer provides an entertaining rundown of his favorite gadgets from CES 2024. In part 2 of his Las Vegas trip, he showcases 10 cool and unique devices that caught his eye at the show.</p><ul> 
+<li>The RCA smart bird feeder uses AI to identify bird species and provides HD video footage that you can access via an app.</li> 
+<li>The Govee AI sync box 2 (#9) uses lighting effects that match what's on your TV or monitor for an immersive viewing experience.</li> 
+<li>The Amazfit Helio ring (#8) is a fitness tracker packed into a titanium ring that monitors health stats like heart rate and blood oxygen levels.</li> 
+<li>The Rolling Square inCharge M (#7) is a coilable magnetic cable that always returns to its original coiled shape.</li> 
+<li>The Rocksteady Stadium (#6) is a modular wireless speaker system that lets you network multiple speakers for seamless 360° audio.</li> 
+<li>The Neakasa NoMo N3 Robot Vacuum (#5) is a feature-packed premium robotic vacuum with smart mapping and google/amazon assistant support for $250.</li> 
+<li>The Runhood 1200 Pro (#4) is a robust 1200+ watt hour modular power station perfect for RV and van life.</li> 
+<li>The HP Poly Voyager Free 60 (#3) are UC-optimized wireless earbuds with great sound and battery life for an affordable price.</li> 
+<li>The Targus Dual Host KVM Dock750 (#2) lets you control two computers (Mac, Windows, Linux) from one keyboard, mouse, and set of ports seamlessly.</li> 
+<li>Timekettle (#1) impressed with their X1 Interpreter Hub that enables real-time translation across languages using AI.</li></ul> 
+<p><strong>Host:</strong> <a href="https://bsky.app/profile/padresj.bsky.social" target="_blank">Fr. Robert Ballecer, SJ</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2024/01/850211/hero/twitevents0018_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://cdn.twit.tv/video/events/events0018/events0018_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>10:40</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/events/events0018/events0018_h264m_1920x1080.mp4" length="148009937" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/events/events0018/events0018_h264m_1920x1080.mp4" fileSize="148009937" type="video/mp4" medium="video">
+				<media:title type="plain">Event 18: CES 2024: Gadgets - Innovations in cables, speakers, and more at CES 2024 with Father Robert Ballecer</media:title>
+				<media:description type="plain">Innovations in cables, speakers, and more at CES 2024 with Father Robert Ballecer</media:description>
+				<media:keywords>Special Event, Special, ces 2024, consumer electronics show, RCA smart bird feeder, ai, Govee AI sync box, amazfit helio, rolling square incharge, rocksteady stadium, neakasa nomo n3, runhood 1200 pro, HP poly voyager free, targus KVM</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2024/01/850211/hero/twitevents0018_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Fr. Robert Ballecer, SJ</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://bsky.app/profile/padresj.bsky.social" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/59/pictures/robert-ballecer.png">Fr. Robert Ballecer, SJ</podcast:person>
+		</item>
+		<item>
+			<title>Event 17: CES 2024: Tech Trends - Energy and AI Innovations Ignite at CES 2024 with Father Robert Ballecer</title>
+			<itunes:title>CES 2024: Tech Trends - Energy and AI Innovations Ignite at CES 2024 with Father Robert Ballecer</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sat, 13 Jan 2024 08:00:00 PST</pubDate>
+			<itunes:episode>17</itunes:episode>
+			<podcast:episode>17</podcast:episode>
+			<link>https://twit.tv/shows/twit-events/episodes/17</link>
+			<comments>https://twit.tv/shows/twit-events/episodes/17</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Event</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Energy and AI Innovations Ignite at CES 2024 with Father Robert Ballecer</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/electrification-ai-and-autonomy-tech-takeaways-ces-2024" type="text/html" />
+			<itunes:keywords>Special Event, Special, ces 2024, Tech Wonders, Energy Solutions, transportation, Artificial Intelligence, AI-powered Shoes, silicon valley, innovation, Progress, Breakthroughs, Affordable Energy, Flexible Energy, Electrified Vans, Electrified Boats</itunes:keywords>
+			<description><![CDATA[
+<p>Father Robert Ballecer reports live from CES 2024, giving an overview of the major technology trends and themes on display at the massive electronics and technology trade show, including the proliferation of off-grid and portable power solutions, the ubiquity of electric vehicles, the explosion of AI integrations, and the concept of autonomous resource extraction ecosystems. </p><ul> 
+<li>The first big trend is the explosion of off-grid, portable, and hybrid power solutions, from suitcase-sized inverters to whole-home solar+storage systems to portable power banks for appliances and tools. Fr. Robert highlights Runhood's modular battery packs as an affordable and flexible home energy storage solution. </li> 
+<li>Electrified vehicles of all kinds—cars, trucks, boats, bikes, scooters, etc.—are becoming ubiquitous across the entire CES show floor. Fr. Robert calls out Kia's modular, customizable PBV electric van concept with interlinking capabilities between vehicles. </li> 
+<li>AI integrations are everywhere at CES 2024, from questionable examples like smart trash cans to truly useful ones like shoes that analyze gait with insole sensors and give personalized feedback through AI. </li> 
+<li>Autonomous resource extraction combines remote operation, AI, electrification, and self-sufficiency. Hyundai's vision shows AI robots generating power, mining hydrogen, and transporting materials autonomously. </li> 
+<li>While many tech trends fade away, the trajectories of electrification and AI look strong. The future promises continued innovation in green energy, autonomy, and automation.</li></ul> 
+<p><strong>Host:</strong> <a href="https://bsky.app/profile/padresj.bsky.social" target="_blank">Fr. Robert Ballecer, SJ</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Father Robert Ballecer reports live from CES 2024, giving an overview of the major technology trends and themes on display at the massive electronics and technology trade show, including the proliferation of off-grid and portable power solutions, the ubiquity of electric vehicles, the explosion of AI integrations, and the concept of autonomous resource extraction ecosystems. </p><ul> 
+<li>The first big trend is the explosion of off-grid, portable, and hybrid power solutions, from suitcase-sized inverters to whole-home solar+storage systems to portable power banks for appliances and tools. Fr. Robert highlights Runhood's modular battery packs as an affordable and flexible home energy storage solution. </li> 
+<li>Electrified vehicles of all kinds—cars, trucks, boats, bikes, scooters, etc.—are becoming ubiquitous across the entire CES show floor. Fr. Robert calls out Kia's modular, customizable PBV electric van concept with interlinking capabilities between vehicles. </li> 
+<li>AI integrations are everywhere at CES 2024, from questionable examples like smart trash cans to truly useful ones like shoes that analyze gait with insole sensors and give personalized feedback through AI. </li> 
+<li>Autonomous resource extraction combines remote operation, AI, electrification, and self-sufficiency. Hyundai's vision shows AI robots generating power, mining hydrogen, and transporting materials autonomously. </li> 
+<li>While many tech trends fade away, the trajectories of electrification and AI look strong. The future promises continued innovation in green energy, autonomy, and automation.</li></ul> 
+<p><strong>Host:</strong> <a href="https://bsky.app/profile/padresj.bsky.social" target="_blank">Fr. Robert Ballecer, SJ</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Father Robert Ballecer reports live from CES 2024, giving an overview of the major technology trends and themes on display at the massive electronics and technology trade show, including the proliferation of off-grid and portable power solutions, the ubiquity of electric vehicles, the explosion of AI integrations, and the concept of autonomous resource extraction ecosystems. </p><ul> 
+<li>The first big trend is the explosion of off-grid, portable, and hybrid power solutions, from suitcase-sized inverters to whole-home solar+storage systems to portable power banks for appliances and tools. Fr. Robert highlights Runhood's modular battery packs as an affordable and flexible home energy storage solution. </li> 
+<li>Electrified vehicles of all kinds—cars, trucks, boats, bikes, scooters, etc.—are becoming ubiquitous across the entire CES show floor. Fr. Robert calls out Kia's modular, customizable PBV electric van concept with interlinking capabilities between vehicles. </li> 
+<li>AI integrations are everywhere at CES 2024, from questionable examples like smart trash cans to truly useful ones like shoes that analyze gait with insole sensors and give personalized feedback through AI. </li> 
+<li>Autonomous resource extraction combines remote operation, AI, electrification, and self-sufficiency. Hyundai's vision shows AI robots generating power, mining hydrogen, and transporting materials autonomously. </li> 
+<li>While many tech trends fade away, the trajectories of electrification and AI look strong. The future promises continued innovation in green energy, autonomy, and automation.</li></ul> 
+<p><strong>Host:</strong> <a href="https://bsky.app/profile/padresj.bsky.social" target="_blank">Fr. Robert Ballecer, SJ</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2024/01/849947/hero/twitevents0017_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://cdn.twit.tv/video/events/events0017/events0017_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>8:03</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/events/events0017/events0017_h264m_1920x1080.mp4" length="272726046" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/events/events0017/events0017_h264m_1920x1080.mp4" fileSize="272726046" type="video/mp4" medium="video">
+				<media:title type="plain">Event 17: CES 2024: Tech Trends - Energy and AI Innovations Ignite at CES 2024 with Father Robert Ballecer</media:title>
+				<media:description type="plain">Energy and AI Innovations Ignite at CES 2024 with Father Robert Ballecer</media:description>
+				<media:keywords>Special Event, Special, ces 2024, Tech Wonders, Energy Solutions, transportation, Artificial Intelligence, AI-powered Shoes, silicon valley, innovation, Progress, Breakthroughs, Affordable Energy, Flexible Energy, Electrified Vans, Electrified Boats</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2024/01/849947/hero/twitevents0017_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Fr. Robert Ballecer, SJ</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://bsky.app/profile/padresj.bsky.social" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/59/pictures/robert-ballecer.png">Fr. Robert Ballecer, SJ</podcast:person>
+		</item>
+		<item>
+			<title>Event 16: Podcast Movement 2023: It Pays to Podcast - How TWiT launched Club TWiT with Memberful</title>
+			<itunes:title>Podcast Movement 2023: It Pays to Podcast - How TWiT launched Club TWiT with Memberful</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 14 Sep 2023 15:57:17 PDT</pubDate>
+			<itunes:episode>16</itunes:episode>
+			<podcast:episode>16</podcast:episode>
+			<link>https://twit.tv/shows/twit-events/episodes/16</link>
+			<comments>https://twit.tv/shows/twit-events/episodes/16</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Event</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>How TWiT launched Club TWiT with Memberful</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/inside-twit/power-membership-how-twittv-grew-their-podcast-community-memberful" type="text/html" />
+			<itunes:keywords>Special Event, Special, Podcast Movement 2023, TWiT, Club TWiT, Lisa Laporte, Jen Matichuk, Podcast Community, Memberful, Subscription Platform, Ad-Supported Network, Promoting Podcast, Subscription-Based Podcasting, Loyal Community, New Features</itunes:keywords>
+			<description><![CDATA[
+<p>At Podcast Movement 2023, Jen Matichuk of Memberful and Lisa Laporte of TWiT.tv give creators an inside look at how the long-running tech podcast network TWiT grew its community and revenue by partnering with Memberful.</p><ul> 
+<li>Lisa goes into the hesitations and benefits of launching a paid membership for an established podcast network and how losing 60% of advertisers in the pandemic led TWiT to try subscriptions to diversify revenue</li> 
+<li>Launching simply with ad-free content and a Discord community avoids disrupting their ad-supported audience and starting with 1-2 membership tiers, focusing on delivering promised perks before expanding offerings</li> 
+<li>She shares how their community loves interacting with hosts in Discord, getting ad-free shows, and supporting TWiT's growth</li> 
+<li>TWiT also promotes Club TWiT organically in show ads, social posts, newsletters - without overwhelming non-members</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://memberful.com/" target="_blank">Jen Matichuk</a> and <a href="https://twit.tv/people/lisa-laporte">Lisa Laporte</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>At Podcast Movement 2023, Jen Matichuk of Memberful and Lisa Laporte of TWiT.tv give creators an inside look at how the long-running tech podcast network TWiT grew its community and revenue by partnering with Memberful.</p><ul> 
+<li>Lisa goes into the hesitations and benefits of launching a paid membership for an established podcast network and how losing 60% of advertisers in the pandemic led TWiT to try subscriptions to diversify revenue</li> 
+<li>Launching simply with ad-free content and a Discord community avoids disrupting their ad-supported audience and starting with 1-2 membership tiers, focusing on delivering promised perks before expanding offerings</li> 
+<li>She shares how their community loves interacting with hosts in Discord, getting ad-free shows, and supporting TWiT's growth</li> 
+<li>TWiT also promotes Club TWiT organically in show ads, social posts, newsletters - without overwhelming non-members</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://memberful.com/" target="_blank">Jen Matichuk</a> and <a href="https://twit.tv/people/lisa-laporte">Lisa Laporte</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>At Podcast Movement 2023, Jen Matichuk of Memberful and Lisa Laporte of TWiT.tv give creators an inside look at how the long-running tech podcast network TWiT grew its community and revenue by partnering with Memberful.</p><ul> 
+<li>Lisa goes into the hesitations and benefits of launching a paid membership for an established podcast network and how losing 60% of advertisers in the pandemic led TWiT to try subscriptions to diversify revenue</li> 
+<li>Launching simply with ad-free content and a Discord community avoids disrupting their ad-supported audience and starting with 1-2 membership tiers, focusing on delivering promised perks before expanding offerings</li> 
+<li>She shares how their community loves interacting with hosts in Discord, getting ad-free shows, and supporting TWiT's growth</li> 
+<li>TWiT also promotes Club TWiT organically in show ads, social posts, newsletters - without overwhelming non-members</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://memberful.com/" target="_blank">Jen Matichuk</a> and <a href="https://twit.tv/people/lisa-laporte">Lisa Laporte</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2023/09/847581/hero/twitevents0016_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://cdn.twit.tv/video/events/events0016/events0016_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>25:24</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/events/events0016/events0016_h264m_1920x1080.mp4" length="348964819" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/events/events0016/events0016_h264m_1920x1080.mp4" fileSize="348964819" type="video/mp4" medium="video">
+				<media:title type="plain">Event 16: Podcast Movement 2023: It Pays to Podcast - How TWiT launched Club TWiT with Memberful</media:title>
+				<media:description type="plain">How TWiT launched Club TWiT with Memberful</media:description>
+				<media:keywords>Special Event, Special, Podcast Movement 2023, TWiT, Club TWiT, Lisa Laporte, Jen Matichuk, Podcast Community, Memberful, Subscription Platform, Ad-Supported Network, Promoting Podcast, Subscription-Based Podcasting, Loyal Community, New Features</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2023/09/847581/hero/twitevents0016_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Jen Matichuk</media:credit>
+				<media:credit role="host">Lisa Laporte</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://memberful.com/" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/847579/pictures/p1000499.jpg">Jen Matichuk</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/lisa-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/49/pictures/lisa-laporte1.jpg">Lisa Laporte</podcast:person>
+		</item>
+		<item>
+			<title>Event 15: The Father of Modern Genomics - George Church</title>
+			<itunes:title>The Father of Modern Genomics - George Church</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Fri, 03 Mar 2023 12:07:50 PST</pubDate>
+			<itunes:episode>15</itunes:episode>
+			<podcast:episode>15</podcast:episode>
+			<link>https://twit.tv/shows/twit-events/episodes/15</link>
+			<comments>https://twit.tv/shows/twit-events/episodes/15</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Event</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>George Church</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/inside-twit/power-membership-how-twittv-grew-their-podcast-community-memberful" type="text/html" />
+			<itunes:keywords>TWiT, Leo Laporte, Dr. George M. Church, CRISPR, Nebula, Veritas, gene sequencing, gene therapy, anti-aging, cold-resistant elephants, Mammoth</itunes:keywords>
+			<description><![CDATA[
+<p>In a wide-ranging conversation, Leo Laporte talks with Dr. George Church about the history and future of genome sequencing. Dr. Church explains why he is very excited about how they made an organism resistant to all viruses- both known and unknown. </p> 
+<p>They also talk about: </p><ul> 
+<li>How Dr. Church made sequencing affordable (from $3BN to $600)</li> 
+<li>Where are we on sequencing the entire human genome, and why would we even want to?</li> 
+<li>How close are we to reversing aging? </li> 
+<li>Should we use gene therapy to double the human lifespan?</li> 
+<li>Why genetically engineering cold-resistant elephants could be important for climate change, and what about ultimately bringing back the Mammoth?</li> 
+<li>He explains the difference between the hype and reality of CRISPR</li> 
+<li>sequencing, synthesis, and delivery</li> 
+<li>What are the privacy concerns about companies sharing your genome?</li> 
+<li>They discuss the controversy and benefit of reconstructing old viruses like the 1918 flu and even inventing new viruses.</li></ul> 
+<p>Dr. Church is a professor of genetics at Harvard Medical School and a pioneer in personal genetics. He is credited with developing the first methods for sequencing the first genome and also the CRISPR technology. He created several companies, including Nebula Genomics and Veritas Genetics.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guest:</strong> <a href="http://arep.med.harvard.edu/gmc/" target="_blank">Dr. George Church</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>In a wide-ranging conversation, Leo Laporte talks with Dr. George Church about the history and future of genome sequencing. Dr. Church explains why he is very excited about how they made an organism resistant to all viruses- both known and unknown. </p> 
+<p>They also talk about: </p><ul> 
+<li>How Dr. Church made sequencing affordable (from $3BN to $600)</li> 
+<li>Where are we on sequencing the entire human genome, and why would we even want to?</li> 
+<li>How close are we to reversing aging? </li> 
+<li>Should we use gene therapy to double the human lifespan?</li> 
+<li>Why genetically engineering cold-resistant elephants could be important for climate change, and what about ultimately bringing back the Mammoth?</li> 
+<li>He explains the difference between the hype and reality of CRISPR</li> 
+<li>sequencing, synthesis, and delivery</li> 
+<li>What are the privacy concerns about companies sharing your genome?</li> 
+<li>They discuss the controversy and benefit of reconstructing old viruses like the 1918 flu and even inventing new viruses.</li></ul> 
+<p>Dr. Church is a professor of genetics at Harvard Medical School and a pioneer in personal genetics. He is credited with developing the first methods for sequencing the first genome and also the CRISPR technology. He created several companies, including Nebula Genomics and Veritas Genetics.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guest:</strong> <a href="http://arep.med.harvard.edu/gmc/" target="_blank">Dr. George Church</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>In a wide-ranging conversation, Leo Laporte talks with Dr. George Church about the history and future of genome sequencing. Dr. Church explains why he is very excited about how they made an organism resistant to all viruses- both known and unknown. </p> 
+<p>They also talk about: </p><ul> 
+<li>How Dr. Church made sequencing affordable (from $3BN to $600)</li> 
+<li>Where are we on sequencing the entire human genome, and why would we even want to?</li> 
+<li>How close are we to reversing aging? </li> 
+<li>Should we use gene therapy to double the human lifespan?</li> 
+<li>Why genetically engineering cold-resistant elephants could be important for climate change, and what about ultimately bringing back the Mammoth?</li> 
+<li>He explains the difference between the hype and reality of CRISPR</li> 
+<li>sequencing, synthesis, and delivery</li> 
+<li>What are the privacy concerns about companies sharing your genome?</li> 
+<li>They discuss the controversy and benefit of reconstructing old viruses like the 1918 flu and even inventing new viruses.</li></ul> 
+<p>Dr. Church is a professor of genetics at Harvard Medical School and a pioneer in personal genetics. He is credited with developing the first methods for sequencing the first genome and also the CRISPR technology. He created several companies, including Nebula Genomics and Veritas Genetics.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guest:</strong> <a href="http://arep.med.harvard.edu/gmc/" target="_blank">Dr. George Church</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2023/03/843036/hero/twitevents0015_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://cdn.twit.tv/video/events/events0015/events0015_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:00:24</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/events/events0015/events0015_h264m_1920x1080.mp4" length="837552378" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/events/events0015/events0015_h264m_1920x1080.mp4" fileSize="837552378" type="video/mp4" medium="video">
+				<media:title type="plain">Event 15: The Father of Modern Genomics - George Church</media:title>
+				<media:description type="plain">George Church</media:description>
+				<media:keywords>TWiT, Leo Laporte, Dr. George M. Church, CRISPR, Nebula, Veritas, gene sequencing, gene therapy, anti-aging, cold-resistant elephants, Mammoth</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2023/03/843036/hero/twitevents0015_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="guest">Dr. George Church</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/leo_1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="guest" href="http://arep.med.harvard.edu/gmc/">Dr. George Church</podcast:person>
+		</item>
+		<item>
+			<title>Event 14: Daniel Suarez: Critical Mass - Daniel Suarez on his latest book &#039;Critical Mass&#039;</title>
+			<itunes:title>Daniel Suarez: Critical Mass - Daniel Suarez on his latest book &#039;Critical Mass&#039;</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Fri, 10 Feb 2023 15:33:05 PST</pubDate>
+			<itunes:episode>14</itunes:episode>
+			<podcast:episode>14</podcast:episode>
+			<link>https://twit.tv/shows/twit-events/episodes/14</link>
+			<comments>https://twit.tv/shows/twit-events/episodes/14</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Event</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Daniel Suarez on his latest book &#039;Critical Mass&#039;</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/inside-twit/power-membership-how-twittv-grew-their-podcast-community-memberful" type="text/html" />
+			<itunes:keywords>Special Event, Special, TWiT, Triangulation, Interview, fireside chat, Leo Laporte, Critical Mass novel, Critical Mass Delta-v, delta v, Daemon, Freedom TM, Kill Decision, Influx, Change Agent, Daniel Suarez, sci fi, science fiction, Technology, tech</itunes:keywords>
+			<description><![CDATA[
+<p>New York Times bestselling author Daniel Suarez returns to talk with Leo Laporte about the second book in his 'Delta-v' novel series, 'Critical Mass,' where a group of pioneering astropreneurs must overcome never-before-attempted engineering challenges to rescue colleagues stranded at a distant asteroid—kicking off a new space race in which Earth's climate crisis could well hang in the balance. </p> 
+<p>Get 'Critical Mass': <a href="https://amzn.to/3Yjb9xu" target="_blank">https://amzn.to/3Yjb9xu</a></p><p style="font-size: 13.008px;"> </p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guest:</strong> <a href="https://daniel-suarez.com/" target="_blank">Daniel Suarez</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>New York Times bestselling author Daniel Suarez returns to talk with Leo Laporte about the second book in his 'Delta-v' novel series, 'Critical Mass,' where a group of pioneering astropreneurs must overcome never-before-attempted engineering challenges to rescue colleagues stranded at a distant asteroid—kicking off a new space race in which Earth's climate crisis could well hang in the balance. </p> 
+<p>Get 'Critical Mass': <a href="https://amzn.to/3Yjb9xu" target="_blank">https://amzn.to/3Yjb9xu</a></p><p style="font-size: 13.008px;"> </p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guest:</strong> <a href="https://daniel-suarez.com/" target="_blank">Daniel Suarez</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>New York Times bestselling author Daniel Suarez returns to talk with Leo Laporte about the second book in his 'Delta-v' novel series, 'Critical Mass,' where a group of pioneering astropreneurs must overcome never-before-attempted engineering challenges to rescue colleagues stranded at a distant asteroid—kicking off a new space race in which Earth's climate crisis could well hang in the balance. </p> 
+<p>Get 'Critical Mass': <a href="https://amzn.to/3Yjb9xu" target="_blank">https://amzn.to/3Yjb9xu</a></p><p style="font-size: 13.008px;"> </p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guest:</strong> <a href="https://daniel-suarez.com/" target="_blank">Daniel Suarez</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2023/02/842506/hero/twitevents0014_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://cdn.twit.tv/video/events/events0014/events0014_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:18:33</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/events/events0014/events0014_h264m_1920x1080.mp4" length="1087837078" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/events/events0014/events0014_h264m_1920x1080.mp4" fileSize="1087837078" type="video/mp4" medium="video">
+				<media:title type="plain">Event 14: Daniel Suarez: Critical Mass - Daniel Suarez on his latest book &#039;Critical Mass&#039;</media:title>
+				<media:description type="plain">Daniel Suarez on his latest book &#039;Critical Mass&#039;</media:description>
+				<media:keywords>Special Event, Special, TWiT, Triangulation, Interview, fireside chat, Leo Laporte, Critical Mass novel, Critical Mass Delta-v, delta v, Daemon, Freedom TM, Kill Decision, Influx, Change Agent, Daniel Suarez, sci fi, science fiction, Technology, tech</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2023/02/842506/hero/twitevents0014_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="guest">Daniel Suarez</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/leo_1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="guest" href="https://daniel-suarez.com/" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/465781/pictures/ds-201728323_1.2mb.jpg">Daniel Suarez</podcast:person>
+		</item>
+		<item>
+			<title>Event 13: Cory Doctorow and Rebecca Giblin: Chokepoint Capitalism - How Big Tech and Big Content Captured Creative Labor Markets and How We&#039;ll Win Them Back</title>
+			<itunes:title>Cory Doctorow and Rebecca Giblin: Chokepoint Capitalism - How Big Tech and Big Content Captured Creative Labor Markets and How We&#039;ll Win Them Back</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 29 Sep 2022 17:59:34 PDT</pubDate>
+			<itunes:episode>13</itunes:episode>
+			<podcast:episode>13</podcast:episode>
+			<link>https://twit.tv/shows/twit-events/episodes/13</link>
+			<comments>https://twit.tv/shows/twit-events/episodes/13</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Event</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>How Big Tech and Big Content Captured Creative Labor Markets and How We&#039;ll Win Them Back</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/inside-twit/power-membership-how-twittv-grew-their-podcast-community-memberful" type="text/html" />
+			<itunes:keywords>Special Event, Special, TWiT, Leo Laporte, Cory Doctorow, Rebecca Giblin, chokepoint capitalism, capitalism, monopolies, monopsony, big tech, Big Content, Interview, Triangulation, Economic Policy, amazon, Apple, Google</itunes:keywords>
+			<description><![CDATA[
+<p>Writer/activist Cory Doctorow and scholar Rebecca Giblin join Leo Laporte to talk about their latest book<em> <a href="https://chokepointcapitalism.com" target="_blank">Chokepoint Capitalism: How Big Tech and Big Content Captured Creative Labor Markets and How We'll Win Them Back</a></em>. They argue that we're in a new era of "chokepoint capitalism," with exploitative businesses creating insurmountable barriers to competition that enable them to capture value that should rightfully go to others.</p> 
+<p>Get "Chokepoint Capitalism": <a href="https://chokepointcapitalism.com" target="_blank">https://chokepointcapitalism.com</a></p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guests:</strong> <a href="http://craphound.com/" target="_blank">Cory Doctorow</a> and <a href="https://twitter.com/rgibli" target="_blank">Rebecca Giblin</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Writer/activist Cory Doctorow and scholar Rebecca Giblin join Leo Laporte to talk about their latest book<em> <a href="https://chokepointcapitalism.com" target="_blank">Chokepoint Capitalism: How Big Tech and Big Content Captured Creative Labor Markets and How We'll Win Them Back</a></em>. They argue that we're in a new era of "chokepoint capitalism," with exploitative businesses creating insurmountable barriers to competition that enable them to capture value that should rightfully go to others.</p> 
+<p>Get "Chokepoint Capitalism": <a href="https://chokepointcapitalism.com" target="_blank">https://chokepointcapitalism.com</a></p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guests:</strong> <a href="http://craphound.com/" target="_blank">Cory Doctorow</a> and <a href="https://twitter.com/rgibli" target="_blank">Rebecca Giblin</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Writer/activist Cory Doctorow and scholar Rebecca Giblin join Leo Laporte to talk about their latest book<em> <a href="https://chokepointcapitalism.com" target="_blank">Chokepoint Capitalism: How Big Tech and Big Content Captured Creative Labor Markets and How We'll Win Them Back</a></em>. They argue that we're in a new era of "chokepoint capitalism," with exploitative businesses creating insurmountable barriers to competition that enable them to capture value that should rightfully go to others.</p> 
+<p>Get "Chokepoint Capitalism": <a href="https://chokepointcapitalism.com" target="_blank">https://chokepointcapitalism.com</a></p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guests:</strong> <a href="http://craphound.com/" target="_blank">Cory Doctorow</a> and <a href="https://twitter.com/rgibli" target="_blank">Rebecca Giblin</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2022/09/839265/hero/twitevents0013_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://cdn.twit.tv/video/events/events0013/events0013_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:04:19</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/events/events0013/events0013_h264m_1920x1080.mp4" length="887429959" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/events/events0013/events0013_h264m_1920x1080.mp4" fileSize="887429959" type="video/mp4" medium="video">
+				<media:title type="plain">Event 13: Cory Doctorow and Rebecca Giblin: Chokepoint Capitalism - How Big Tech and Big Content Captured Creative Labor Markets and How We&#039;ll Win Them Back</media:title>
+				<media:description type="plain">How Big Tech and Big Content Captured Creative Labor Markets and How We&#039;ll Win Them Back</media:description>
+				<media:keywords>Special Event, Special, TWiT, Leo Laporte, Cory Doctorow, Rebecca Giblin, chokepoint capitalism, capitalism, monopolies, monopsony, big tech, Big Content, Interview, Triangulation, Economic Policy, amazon, Apple, Google</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2022/09/839265/hero/twitevents0013_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="guest">Cory Doctorow</media:credit>
+				<media:credit role="guest">Rebecca Giblin</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/leo_1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="guest" href="http://craphound.com/">Cory Doctorow</podcast:person>
+				<podcast:person role="guest" href="https://twitter.com/rgibli">Rebecca Giblin</podcast:person>
+		</item>
+		<item>
+			<title>Event 12: Tripp Mickle: After Steve - A Conversation with Tripp Mickle</title>
+			<itunes:title>Tripp Mickle: After Steve - A Conversation with Tripp Mickle</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 19 May 2022 17:11:15 PDT</pubDate>
+			<itunes:episode>12</itunes:episode>
+			<podcast:episode>12</podcast:episode>
+			<link>https://twit.tv/shows/twit-events/episodes/12</link>
+			<comments>https://twit.tv/shows/twit-events/episodes/12</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Event</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>A Conversation with Tripp Mickle</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/inside-twit/power-membership-how-twittv-grew-their-podcast-community-memberful" type="text/html" />
+			<itunes:keywords>Special Event, Special, TWiT, Leo Laporte, Tripp Mickle, Apple, After Steve, Jony Ive, tim cook, Steve Jobs, Johnny Srouji, apple design, steve jobs successor, apple engineers, steve jobs death, apple leadership, apple changes</itunes:keywords>
+			<description><![CDATA[
+<p>Tripp Mickle joins Leo Laporte to discuss his new book, "After Steve: How Apple Became a Trillion-Dollar Company and Lost Its Soul". They discuss the shift in Apple's dynamic and approach to products after the passing of Steve Jobs from a company of innovation with Jony Ive, to a company of efficiency under Tim Cook.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guest:</strong> <a href="https://bit.ly/aftersteve" target="_blank">Tripp Mickle</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Tripp Mickle joins Leo Laporte to discuss his new book, "After Steve: How Apple Became a Trillion-Dollar Company and Lost Its Soul". They discuss the shift in Apple's dynamic and approach to products after the passing of Steve Jobs from a company of innovation with Jony Ive, to a company of efficiency under Tim Cook.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guest:</strong> <a href="https://bit.ly/aftersteve" target="_blank">Tripp Mickle</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Tripp Mickle joins Leo Laporte to discuss his new book, "After Steve: How Apple Became a Trillion-Dollar Company and Lost Its Soul". They discuss the shift in Apple's dynamic and approach to products after the passing of Steve Jobs from a company of innovation with Jony Ive, to a company of efficiency under Tim Cook.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guest:</strong> <a href="https://bit.ly/aftersteve" target="_blank">Tripp Mickle</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2022/05/835851/hero/tri0430.jpg"/>
+			<guid isPermaLink="false">https://cdn.twit.tv/video/events/events0012/events0012_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>57:31</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/events/events0012/events0012_h264m_1920x1080.mp4" length="990510157" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/events/events0012/events0012_h264m_1920x1080.mp4" fileSize="990510157" type="video/mp4" medium="video">
+				<media:title type="plain">Event 12: Tripp Mickle: After Steve - A Conversation with Tripp Mickle</media:title>
+				<media:description type="plain">A Conversation with Tripp Mickle</media:description>
+				<media:keywords>Special Event, Special, TWiT, Leo Laporte, Tripp Mickle, Apple, After Steve, Jony Ive, tim cook, Steve Jobs, Johnny Srouji, apple design, steve jobs successor, apple engineers, steve jobs death, apple leadership, apple changes</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2022/05/835851/hero/tri0430.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="guest">Tripp Mickle</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/leo_1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="guest" href="https://bit.ly/aftersteve">Tripp Mickle</podcast:person>
+		</item>
+		<item>
+			<title>Event 11: Amy Webb: The Genesis Machine - Looking to the future through the lens of synthetic biology.</title>
+			<itunes:title>Amy Webb: The Genesis Machine - Looking to the future through the lens of synthetic biology.</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sat, 19 Feb 2022 19:47:34 PST</pubDate>
+			<itunes:episode>11</itunes:episode>
+			<podcast:episode>11</podcast:episode>
+			<link>https://twit.tv/shows/twit-events/episodes/11</link>
+			<comments>https://twit.tv/shows/twit-events/episodes/11</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Event</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Looking to the future through the lens of synthetic biology.</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/inside-twit/power-membership-how-twittv-grew-their-podcast-community-memberful" type="text/html" />
+			<itunes:keywords>TWiT, Leo Laporte, Amy Webb, The Genesis Machine, golden rice, gmos, synthetic biology, biotech, gene synthesis, dna synthesis, gene editing, genetically modified organism, bioeconomy, dna editing, programming dna</itunes:keywords>
+			<description><![CDATA[
+<p>Amy Webb joins Leo Laporte to discuss her new book, "The Genesis Machine." Webb explains synthetic biology, tells the story of golden rice, and shares a glimpse of the future and the changes we can expect.</p> 
+<p>Get "The Genesis Machine": <a href="https://amzn.to/3BC7K2t" target="_blank">https://amzn.to/3BC7K2t</a></p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guest:</strong> <a href="https://twit.tv/people/amy-webb">Amy Webb</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Amy Webb joins Leo Laporte to discuss her new book, "The Genesis Machine." Webb explains synthetic biology, tells the story of golden rice, and shares a glimpse of the future and the changes we can expect.</p> 
+<p>Get "The Genesis Machine": <a href="https://amzn.to/3BC7K2t" target="_blank">https://amzn.to/3BC7K2t</a></p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guest:</strong> <a href="https://twit.tv/people/amy-webb">Amy Webb</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Amy Webb joins Leo Laporte to discuss her new book, "The Genesis Machine." Webb explains synthetic biology, tells the story of golden rice, and shares a glimpse of the future and the changes we can expect.</p> 
+<p>Get "The Genesis Machine": <a href="https://amzn.to/3BC7K2t" target="_blank">https://amzn.to/3BC7K2t</a></p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guest:</strong> <a href="https://twit.tv/people/amy-webb">Amy Webb</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2022/02/833615/hero/twitevents0011_amywebb.jpg"/>
+			<guid isPermaLink="false">https://chtbl.com/track/E91833/cdn.twit.tv/video/events/events0011/events0011_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:03:16</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/events/events0011/events0011_h264m_1920x1080.mp4" length="854639371" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/events/events0011/events0011_h264m_1920x1080.mp4" fileSize="854639371" type="video/mp4" medium="video">
+				<media:title type="plain">Event 11: Amy Webb: The Genesis Machine - Looking to the future through the lens of synthetic biology.</media:title>
+				<media:description type="plain">Looking to the future through the lens of synthetic biology.</media:description>
+				<media:keywords>TWiT, Leo Laporte, Amy Webb, The Genesis Machine, golden rice, gmos, synthetic biology, biotech, gene synthesis, dna synthesis, gene editing, genetically modified organism, bioeconomy, dna editing, programming dna</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2022/02/833615/hero/twitevents0011_amywebb.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="guest">Amy Webb</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/leo_1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="guest" href="https://twit.tv/people/amy-webb" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/443821/pictures/AmyWebb2.jpg">Amy Webb</podcast:person>
+		</item>
+		<item>
+			<title>Event 10: Andy Weir's "Project Hail Mary" - A conversation with science-fiction author, Andy Weir</title>
+			<itunes:title>Andy Weir's "Project Hail Mary" - A conversation with science-fiction author, Andy Weir</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Fri, 21 May 2021 19:23:27 PDT</pubDate>
+			<itunes:episode>10</itunes:episode>
+			<podcast:episode>10</podcast:episode>
+			<link>https://twit.tv/shows/twit-events/episodes/10</link>
+			<comments>https://twit.tv/shows/twit-events/episodes/10</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Event</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>A conversation with science-fiction author, Andy Weir</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/inside-twit/power-membership-how-twittv-grew-their-podcast-community-memberful" type="text/html" />
+			<itunes:keywords>TWiT, Leo Laporte, andy weir, the martian, project hail mary, hail mary movie, ryan gosling hail mary, the martian author, project hail mary author, drew goddard, hail mary science, ryland grace</itunes:keywords>
+			<description><![CDATA[
+<p>Leo Laporte interviews Andy Weir, author of "<a href="https://amzn.to/3v9LUiU" target="_blank">The Martian</a>," about his new book, "<a href="https://amzn.to/3hLcStp" target="_blank">Project Hail Mary</a>." The discussion starts out spoiler-free with a chat about making the book into a film, how Andy Weir approached writing this book, and the time he confused Ryan Reynolds and Ryan Gosling. After a loud and apparent spoiler warning (at 32:04), the two continue their chat by discussing "Project Hail Mary" in depth. Weir shares a bit about the science behind the book, the characters he's created, and other stories he's working on.</p> 
+<p>Project Hail Mary: <a href="https://amzn.to/3hLcStp" target="_blank">https://amzn.to/3hLcStp</a><br /> 
+The Martian: <a href="https://amzn.to/3v9LUiU" target="_blank">https://amzn.to/3v9LUiU</a><br /> 
+Artemis: <a href="https://amzn.to/3v9LUiU" target="_blank">https://amzn.to/3vahYDf</a></p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guest:</strong> <a href="http://www.andyweirauthor.com/" target="_blank">Andy Weir</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Leo Laporte interviews Andy Weir, author of "<a href="https://amzn.to/3v9LUiU" target="_blank">The Martian</a>," about his new book, "<a href="https://amzn.to/3hLcStp" target="_blank">Project Hail Mary</a>." The discussion starts out spoiler-free with a chat about making the book into a film, how Andy Weir approached writing this book, and the time he confused Ryan Reynolds and Ryan Gosling. After a loud and apparent spoiler warning (at 32:04), the two continue their chat by discussing "Project Hail Mary" in depth. Weir shares a bit about the science behind the book, the characters he's created, and other stories he's working on.</p> 
+<p>Project Hail Mary: <a href="https://amzn.to/3hLcStp" target="_blank">https://amzn.to/3hLcStp</a><br /> 
+The Martian: <a href="https://amzn.to/3v9LUiU" target="_blank">https://amzn.to/3v9LUiU</a><br /> 
+Artemis: <a href="https://amzn.to/3v9LUiU" target="_blank">https://amzn.to/3vahYDf</a></p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guest:</strong> <a href="http://www.andyweirauthor.com/" target="_blank">Andy Weir</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Leo Laporte interviews Andy Weir, author of "<a href="https://amzn.to/3v9LUiU" target="_blank">The Martian</a>," about his new book, "<a href="https://amzn.to/3hLcStp" target="_blank">Project Hail Mary</a>." The discussion starts out spoiler-free with a chat about making the book into a film, how Andy Weir approached writing this book, and the time he confused Ryan Reynolds and Ryan Gosling. After a loud and apparent spoiler warning (at 32:04), the two continue their chat by discussing "Project Hail Mary" in depth. Weir shares a bit about the science behind the book, the characters he's created, and other stories he's working on.</p> 
+<p>Project Hail Mary: <a href="https://amzn.to/3hLcStp" target="_blank">https://amzn.to/3hLcStp</a><br /> 
+The Martian: <a href="https://amzn.to/3v9LUiU" target="_blank">https://amzn.to/3v9LUiU</a><br /> 
+Artemis: <a href="https://amzn.to/3v9LUiU" target="_blank">https://amzn.to/3vahYDf</a></p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guest:</strong> <a href="http://www.andyweirauthor.com/" target="_blank">Andy Weir</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p> 
+<p>Get episodes ad-free with Club TWiT at <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2021/05/826493/hero/events10_andyweir.jpg"/>
+			<guid isPermaLink="false">https://chtbl.com/track/E91833/cdn.twit.tv/video/events/events0010/events0010_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:10:41</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/events/events0010/events0010_h264m_1920x1080.mp4" length="1063565124" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/events/events0010/events0010_h264m_1920x1080.mp4" fileSize="1063565124" type="video/mp4" medium="video">
+				<media:title type="plain">Event 10: Andy Weir's "Project Hail Mary" - A conversation with science-fiction author, Andy Weir</media:title>
+				<media:description type="plain">A conversation with science-fiction author, Andy Weir</media:description>
+				<media:keywords>TWiT, Leo Laporte, andy weir, the martian, project hail mary, hail mary movie, ryan gosling hail mary, the martian author, project hail mary author, drew goddard, hail mary science, ryland grace</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2021/05/826493/hero/events10_andyweir.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="guest">Andy Weir</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/leo_1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="guest" href="http://www.andyweirauthor.com/">Andy Weir</podcast:person>
+		</item>
+		<item>
+			<title>Event 9: Attack &amp; Defense - Cybersecurity, Ransomware, Social Engineering, AI Attacks</title>
+			<itunes:title>Attack &amp; Defense - Cybersecurity, Ransomware, Social Engineering, AI Attacks</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 08 Oct 2020 15:19:43 PDT</pubDate>
+			<itunes:episode>9</itunes:episode>
+			<podcast:episode>9</podcast:episode>
+			<link>https://twit.tv/shows/twit-events/episodes/9</link>
+			<comments>https://twit.tv/shows/twit-events/episodes/9</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Event</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Cybersecurity, Ransomware, Social Engineering, AI Attacks</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/inside-twit/power-membership-how-twittv-grew-their-podcast-community-memberful" type="text/html" />
+			<itunes:keywords>WFH, ransomware, remote work, new security threats, Blue team, Red Team, phishing, malware, IT Networks, mfa, cybersecurity, APT, DDoS, Cybersecurity Awareness Month, Social Engineering, AI Attacks, Cybersecurity Defense, Cybersecurity attacks</itunes:keywords>
+			<description><![CDATA[
+<p>Get insight into attack scenarios that are gaining in popularity and how you can protect your employees and your organization from falling victim. This Special TWiT Event will bring together top security experts and IT professionals to discuss cyber threats from two perspectives - Attackers and Defenders. Sponsored by LastPass and hosted by Leo Laporte, with panelists Bruce Schneier, Brian Chee, Gerry Beuchelt, and Robert Ballecer, SJ.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guests:</strong> <a href="https://twitter.com/schneierblog" target="_blank">Bruce Schneier</a>, <a href="https://twitter.com/beuchelt" target="_blank">Gerald Beuchelt</a>, <a href="https://twitter.com/advnetlab" target="_blank">Brian Chee</a>, and <a href="https://bsky.app/profile/padresj.bsky.social" target="_blank">Fr. Robert Ballecer, SJ</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://LastPass.com/twit" target="_blank" rel="sponsored">LastPass.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Get insight into attack scenarios that are gaining in popularity and how you can protect your employees and your organization from falling victim. This Special TWiT Event will bring together top security experts and IT professionals to discuss cyber threats from two perspectives - Attackers and Defenders. Sponsored by LastPass and hosted by Leo Laporte, with panelists Bruce Schneier, Brian Chee, Gerry Beuchelt, and Robert Ballecer, SJ.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guests:</strong> <a href="https://twitter.com/schneierblog" target="_blank">Bruce Schneier</a>, <a href="https://twitter.com/beuchelt" target="_blank">Gerald Beuchelt</a>, <a href="https://twitter.com/advnetlab" target="_blank">Brian Chee</a>, and <a href="https://bsky.app/profile/padresj.bsky.social" target="_blank">Fr. Robert Ballecer, SJ</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://LastPass.com/twit" target="_blank" rel="sponsored">LastPass.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Get insight into attack scenarios that are gaining in popularity and how you can protect your employees and your organization from falling victim. This Special TWiT Event will bring together top security experts and IT professionals to discuss cyber threats from two perspectives - Attackers and Defenders. Sponsored by LastPass and hosted by Leo Laporte, with panelists Bruce Schneier, Brian Chee, Gerry Beuchelt, and Robert Ballecer, SJ.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guests:</strong> <a href="https://twitter.com/schneierblog" target="_blank">Bruce Schneier</a>, <a href="https://twitter.com/beuchelt" target="_blank">Gerald Beuchelt</a>, <a href="https://twitter.com/advnetlab" target="_blank">Brian Chee</a>, and <a href="https://bsky.app/profile/padresj.bsky.social" target="_blank">Fr. Robert Ballecer, SJ</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://LastPass.com/twit" target="_blank" rel="sponsored">LastPass.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2020/10/821152/hero/lastpass-attackdefense-thumb.jpg"/>
+			<guid isPermaLink="false">https://chtbl.com/track/E91833/cdn.twit.tv/video/events/events0009/events0009_h264m_1280x720_1872.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:03:42</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/events/events0009/events0009_h264m_1280x720_1872.mp4" length="669892830" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/events/events0009/events0009_h264m_1280x720_1872.mp4" fileSize="669892830" type="video/mp4" medium="video">
+				<media:title type="plain">Event 9: Attack &amp; Defense - Cybersecurity, Ransomware, Social Engineering, AI Attacks</media:title>
+				<media:description type="plain">Cybersecurity, Ransomware, Social Engineering, AI Attacks</media:description>
+				<media:keywords>WFH, ransomware, remote work, new security threats, Blue team, Red Team, phishing, malware, IT Networks, mfa, cybersecurity, APT, DDoS, Cybersecurity Awareness Month, Social Engineering, AI Attacks, Cybersecurity Defense, Cybersecurity attacks</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2020/10/821152/hero/lastpass-attackdefense-thumb.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="guest">Bruce Schneier</media:credit>
+				<media:credit role="guest">Gerald Beuchelt</media:credit>
+				<media:credit role="guest">Brian Chee</media:credit>
+				<media:credit role="guest">Fr. Robert Ballecer, SJ</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/leo_1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="guest" href="https://twitter.com/schneierblog">Bruce Schneier</podcast:person>
+				<podcast:person role="guest" href="https://twitter.com/beuchelt">Gerald Beuchelt</podcast:person>
+				<podcast:person role="guest" href="https://twitter.com/advnetlab" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/58/pictures/brian-chee.png">Brian Chee</podcast:person>
+				<podcast:person role="guest" href="https://bsky.app/profile/padresj.bsky.social" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/59/pictures/robert-ballecer.png">Fr. Robert Ballecer, SJ</podcast:person>
+		</item>
+		<item>
+			<title>Event 8: The Hangover: Enterprise IT Post-Covid - New Habits, Security Threats, Remote Work</title>
+			<itunes:title>The Hangover: Enterprise IT Post-Covid - New Habits, Security Threats, Remote Work</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 01 Oct 2020 17:18:36 PDT</pubDate>
+			<itunes:episode>8</itunes:episode>
+			<podcast:episode>8</podcast:episode>
+			<link>https://twit.tv/shows/twit-events/episodes/8</link>
+			<comments>https://twit.tv/shows/twit-events/episodes/8</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Event</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>New Habits, Security Threats, Remote Work</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/inside-twit/power-membership-how-twittv-grew-their-podcast-community-memberful" type="text/html" />
+			<itunes:keywords>WFH, ransomware, Biometric Privacy, remote work, IT Professionals, Enterprise IT, Futurist, productivity, COVID19, Company culture, BYOD, IT training, new security threats, APTs, New Infrastructure</itunes:keywords>
+			<description><![CDATA[
+<p>A look at how business will change when the world gets back to normal. Customers will have formed new habits. New brands will rise; others will fall. The ways we work and play will be fundamentally different. This TWiT Event, sponsored by ITProTV and hosted by Leo Laporte, with panelists Amy Webb, Steve Gibson, and Don Pezet, will help listeners better understand what to expect and how to prepare for the new normal after COVID-19.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guests:</strong> <a href="https://twit.tv/people/amy-webb">Amy Webb</a>, <a href="https://twitter.com/DonPezet" target="_blank">Don Pezet</a>, and <a href="https://twit.tv/people/steve-gibson">Steve Gibson</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://itpro.tv/twit" target="_blank" rel="sponsored">itpro.tv/twit promo code TWIT30</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>A look at how business will change when the world gets back to normal. Customers will have formed new habits. New brands will rise; others will fall. The ways we work and play will be fundamentally different. This TWiT Event, sponsored by ITProTV and hosted by Leo Laporte, with panelists Amy Webb, Steve Gibson, and Don Pezet, will help listeners better understand what to expect and how to prepare for the new normal after COVID-19.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guests:</strong> <a href="https://twit.tv/people/amy-webb">Amy Webb</a>, <a href="https://twitter.com/DonPezet" target="_blank">Don Pezet</a>, and <a href="https://twit.tv/people/steve-gibson">Steve Gibson</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://itpro.tv/twit" target="_blank" rel="sponsored">itpro.tv/twit promo code TWIT30</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>A look at how business will change when the world gets back to normal. Customers will have formed new habits. New brands will rise; others will fall. The ways we work and play will be fundamentally different. This TWiT Event, sponsored by ITProTV and hosted by Leo Laporte, with panelists Amy Webb, Steve Gibson, and Don Pezet, will help listeners better understand what to expect and how to prepare for the new normal after COVID-19.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guests:</strong> <a href="https://twit.tv/people/amy-webb">Amy Webb</a>, <a href="https://twitter.com/DonPezet" target="_blank">Don Pezet</a>, and <a href="https://twit.tv/people/steve-gibson">Steve Gibson</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://itpro.tv/twit" target="_blank" rel="sponsored">itpro.tv/twit promo code TWIT30</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2020/10/820961/hero/itprotv-hangover-event-thumbnail.jpg"/>
+			<guid isPermaLink="false">https://chtbl.com/track/E91833/cdn.twit.tv/video/events/events0008/events0008_h264m_1280x720_1872.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:31:34</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/events/events0008/events0008_h264m_1280x720_1872.mp4" length="1131850007" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/events/events0008/events0008_h264m_1280x720_1872.mp4" fileSize="1131850007" type="video/mp4" medium="video">
+				<media:title type="plain">Event 8: The Hangover: Enterprise IT Post-Covid - New Habits, Security Threats, Remote Work</media:title>
+				<media:description type="plain">New Habits, Security Threats, Remote Work</media:description>
+				<media:keywords>WFH, ransomware, Biometric Privacy, remote work, IT Professionals, Enterprise IT, Futurist, productivity, COVID19, Company culture, BYOD, IT training, new security threats, APTs, New Infrastructure</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2020/10/820961/hero/itprotv-hangover-event-thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="guest">Amy Webb</media:credit>
+				<media:credit role="guest">Don Pezet</media:credit>
+				<media:credit role="guest">Steve Gibson</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/leo_1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="guest" href="https://twit.tv/people/amy-webb" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/443821/pictures/AmyWebb2.jpg">Amy Webb</podcast:person>
+				<podcast:person role="guest" href="https://twitter.com/DonPezet">Don Pezet</podcast:person>
+				<podcast:person role="guest" href="https://twit.tv/people/steve-gibson" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/34/pictures/smilingsteveheadshot.jpg">Steve Gibson</podcast:person>
+		</item>
+		<item>
+			<title>Event 7: The Future of Securing Digital Identity - New threat vectors, contact tracing, and digital identity.</title>
+			<itunes:title>The Future of Securing Digital Identity - New threat vectors, contact tracing, and digital identity.</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 14 May 2020 16:11:50 PDT</pubDate>
+			<itunes:episode>7</itunes:episode>
+			<podcast:episode>7</podcast:episode>
+			<link>https://twit.tv/shows/twit-events/episodes/7</link>
+			<comments>https://twit.tv/shows/twit-events/episodes/7</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Event</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>New threat vectors, contact tracing, and digital identity.</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/inside-twit/power-membership-how-twittv-grew-their-podcast-community-memberful" type="text/html" />
+			<itunes:keywords>Covid19 security, Contact Tracing, online voting, digital id, lastpass, digital security, consumer digital security, Passwordless, voting fraud</itunes:keywords>
+			<description><![CDATA[
+<p>New threat vectors, contact tracing, and digital identity.</p> 
+<p>The new decade, along with Covid19, brings new risk in digital security. Digital identity is among the highest concerns for thought leaders in the cybersecurity world. On this special live event, our panelists dive deep into how these new risks will impact digital identity for businesses and individuals alike. They discuss new threat vectors and how to prevent them, how the role of remote work affects security, and what we can expect next.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Co-Hosts:</strong> <a href="https://twit.tv/people/steve-gibson">Steve Gibson</a>, <a href="https://twitter.com/beuchelt" target="_blank">Gerald Beuchelt</a>, and <a href="http://www.ajkeen.com/" target="_blank">Andrew Keen</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://LastPass.com/twit" target="_blank" rel="sponsored">LastPass.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>New threat vectors, contact tracing, and digital identity.</p> 
+<p>The new decade, along with Covid19, brings new risk in digital security. Digital identity is among the highest concerns for thought leaders in the cybersecurity world. On this special live event, our panelists dive deep into how these new risks will impact digital identity for businesses and individuals alike. They discuss new threat vectors and how to prevent them, how the role of remote work affects security, and what we can expect next.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Co-Hosts:</strong> <a href="https://twit.tv/people/steve-gibson">Steve Gibson</a>, <a href="https://twitter.com/beuchelt" target="_blank">Gerald Beuchelt</a>, and <a href="http://www.ajkeen.com/" target="_blank">Andrew Keen</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://LastPass.com/twit" target="_blank" rel="sponsored">LastPass.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>New threat vectors, contact tracing, and digital identity.</p> 
+<p>The new decade, along with Covid19, brings new risk in digital security. Digital identity is among the highest concerns for thought leaders in the cybersecurity world. On this special live event, our panelists dive deep into how these new risks will impact digital identity for businesses and individuals alike. They discuss new threat vectors and how to prevent them, how the role of remote work affects security, and what we can expect next.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Co-Hosts:</strong> <a href="https://twit.tv/people/steve-gibson">Steve Gibson</a>, <a href="https://twitter.com/beuchelt" target="_blank">Gerald Beuchelt</a>, and <a href="http://www.ajkeen.com/" target="_blank">Andrew Keen</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://LastPass.com/twit" target="_blank" rel="sponsored">LastPass.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2020/05/816771/hero/twitevents0007_v2.jpg"/>
+			<guid isPermaLink="false">https://chtbl.com/track/E91833/cdn.twit.tv/video/events/events0007/events0007_h264m_1280x720_1872.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:30:50</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/events/events0007/events0007_h264m_1280x720_1872.mp4" length="1048686184" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/events/events0007/events0007_h264m_1280x720_1872.mp4" fileSize="1048686184" type="video/mp4" medium="video">
+				<media:title type="plain">Event 7: The Future of Securing Digital Identity - New threat vectors, contact tracing, and digital identity.</media:title>
+				<media:description type="plain">New threat vectors, contact tracing, and digital identity.</media:description>
+				<media:keywords>Covid19 security, Contact Tracing, online voting, digital id, lastpass, digital security, consumer digital security, Passwordless, voting fraud</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2020/05/816771/hero/twitevents0007_v2.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="co-host">Steve Gibson</media:credit>
+				<media:credit role="co-host">Gerald Beuchelt</media:credit>
+				<media:credit role="co-host">Andrew Keen</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/leo_1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="co-host" href="https://twit.tv/people/steve-gibson" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/34/pictures/smilingsteveheadshot.jpg">Steve Gibson</podcast:person>
+				<podcast:person role="co-host" href="https://twitter.com/beuchelt">Gerald Beuchelt</podcast:person>
+				<podcast:person role="co-host" href="http://www.ajkeen.com/">Andrew Keen</podcast:person>
+		</item>
+		<item>
+			<title>Event 6: Future of Tech in the Cloud Panel Hosted at WWT</title>
+			<itunes:title>Future of Tech in the Cloud Panel Hosted at WWT</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sat, 07 Mar 2020 16:34:25 PST</pubDate>
+			<itunes:episode>6</itunes:episode>
+			<podcast:episode>6</podcast:episode>
+			<link>https://twit.tv/shows/twit-events/episodes/6</link>
+			<comments>https://twit.tv/shows/twit-events/episodes/6</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Event</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Future of Tech in the Cloud Panel Hosted at WWT</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/inside-twit/power-membership-how-twittv-grew-their-podcast-community-memberful" type="text/html" />
+			<itunes:keywords>Cloudtech, LeoLaporte, WWT Livepodcast, datastorage, Microsoft, Google, amazon, AWS, ai, Global Impact, liveevents, gartner, future of cloud, cloud cloud computing, google cloud, IMB, Cloud computing service, salesforce, streaming, microsoft azure</itunes:keywords>
+			<description><![CDATA[
+<p>Leo Laporte and three veterans in the tech industry take part in a panel discussion hosted by World Wide Technology. They discuss the future of the cloud and each panelist brings their own unique knowledge. This panel answers all your questions about data storage, streaming, and redundancy in the cloud. They dive deep discussing the difference between cloud solutions and answer how to build teams to support the evolution of the cloud as well as how to make sure that we make a positive global impact with the new cloud tech that is inevitable.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twitter.com/maryjofoley" target="_blank">Mary Jo Foley</a>, <a href="https://twit.tv/people/alex-lindsay">Alex Lindsay</a>, and <a href="https://www.gartner.com/analyst/53511/Mike-Dorosh" target="_blank">Mike Dorosh</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="https://wwt.com/twit" target="_blank" rel="sponsored">wwt.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Leo Laporte and three veterans in the tech industry take part in a panel discussion hosted by World Wide Technology. They discuss the future of the cloud and each panelist brings their own unique knowledge. This panel answers all your questions about data storage, streaming, and redundancy in the cloud. They dive deep discussing the difference between cloud solutions and answer how to build teams to support the evolution of the cloud as well as how to make sure that we make a positive global impact with the new cloud tech that is inevitable.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twitter.com/maryjofoley" target="_blank">Mary Jo Foley</a>, <a href="https://twit.tv/people/alex-lindsay">Alex Lindsay</a>, and <a href="https://www.gartner.com/analyst/53511/Mike-Dorosh" target="_blank">Mike Dorosh</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="https://wwt.com/twit" target="_blank" rel="sponsored">wwt.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Leo Laporte and three veterans in the tech industry take part in a panel discussion hosted by World Wide Technology. They discuss the future of the cloud and each panelist brings their own unique knowledge. This panel answers all your questions about data storage, streaming, and redundancy in the cloud. They dive deep discussing the difference between cloud solutions and answer how to build teams to support the evolution of the cloud as well as how to make sure that we make a positive global impact with the new cloud tech that is inevitable.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twitter.com/maryjofoley" target="_blank">Mary Jo Foley</a>, <a href="https://twit.tv/people/alex-lindsay">Alex Lindsay</a>, and <a href="https://www.gartner.com/analyst/53511/Mike-Dorosh" target="_blank">Mike Dorosh</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="https://wwt.com/twit" target="_blank" rel="sponsored">wwt.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2020/03/814285/hero/twitevents0006_h264.00_48_28_15.still004.jpg"/>
+			<guid isPermaLink="false">https://media.blubrry.com/twit_events_video_hd/cdn.twit.tv/video/events/events0006/events0006_h264m_1280x720_1872.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:33:25</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/events/events0006/events0006_h264m_1280x720_1872.mp4" length="1496531788" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/events/events0006/events0006_h264m_1280x720_1872.mp4" fileSize="1496531788" type="video/mp4" medium="video">
+				<media:title type="plain">Event 6: Future of Tech in the Cloud Panel Hosted at WWT</media:title>
+				<media:description type="plain">Future of Tech in the Cloud Panel Hosted at WWT</media:description>
+				<media:keywords>Cloudtech, LeoLaporte, WWT Livepodcast, datastorage, Microsoft, Google, amazon, AWS, ai, Global Impact, liveevents, gartner, future of cloud, cloud cloud computing, google cloud, IMB, Cloud computing service, salesforce, streaming, microsoft azure</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2020/03/814285/hero/twitevents0006_h264.00_48_28_15.still004.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Mary Jo Foley</media:credit>
+				<media:credit role="host">Alex Lindsay</media:credit>
+				<media:credit role="host">Mike Dorosh</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/leo_1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twitter.com/maryjofoley" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/36/pictures/mary-jo-foley.png">Mary Jo Foley</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/alex-lindsay" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/26/pictures/alex_profile_color_square.jpg">Alex Lindsay</podcast:person>
+				<podcast:person role="host" href="https://www.gartner.com/analyst/53511/Mike-Dorosh">Mike Dorosh</podcast:person>
+		</item>
+		<item>
+			<title>Event 5: CES 2020 - On the Floor Part 2 - Ant &amp; Leo&#039;s Excellent CES Adventure: TVs with Scott Wilkinson</title>
+			<itunes:title>CES 2020 - On the Floor Part 2 - Ant &amp; Leo&#039;s Excellent CES Adventure: TVs with Scott Wilkinson</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Fri, 10 Jan 2020 17:07:56 PST</pubDate>
+			<itunes:episode>5</itunes:episode>
+			<podcast:episode>5</podcast:episode>
+			<link>https://twit.tv/shows/twit-events/episodes/5</link>
+			<comments>https://twit.tv/shows/twit-events/episodes/5</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Event</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Ant &amp; Leo&#039;s Excellent CES Adventure: TVs with Scott Wilkinson</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/inside-twit/power-membership-how-twittv-grew-their-podcast-community-memberful" type="text/html" />
+			<itunes:keywords>ces 2020, ces 2020 highlights, tech, gadgets, CES, consumer tech, scott wilkinson, ces2020, consumer electronics show, 2020, Leo Laporte, Ant Pruit</itunes:keywords>
+			<description><![CDATA[
+<p>Ant Pruitt &amp; Leo Laporte's Excellent CES Adventure continues:</p><ul> 
+<li>Canon's EOS 1DX Mark III an EOS M200</li> 
+<li>Latest TVs from LG, TCL, Hisense, Tonka, and Samsung</li> 
+<li>Sony's eye-sensing light field display and VISION-S prototype EV</li> 
+<li>LG's Indoor Gardening Home Appliance</li> 
+<li>Samsung's NEON Artificial Humans</li> 
+<li>Delta's Sarcos Guardian XO exoskeleton</li> 
+<li>SmartyKit's DIY Apple I no-solder replica kit</li> 
+<li>Fresco's 'Keurig' for Olive Oil, the EVA mini</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/ant-pruitt">Ant Pruitt</a></p> 
+<p><strong>Guest:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Ant Pruitt &amp; Leo Laporte's Excellent CES Adventure continues:</p><ul> 
+<li>Canon's EOS 1DX Mark III an EOS M200</li> 
+<li>Latest TVs from LG, TCL, Hisense, Tonka, and Samsung</li> 
+<li>Sony's eye-sensing light field display and VISION-S prototype EV</li> 
+<li>LG's Indoor Gardening Home Appliance</li> 
+<li>Samsung's NEON Artificial Humans</li> 
+<li>Delta's Sarcos Guardian XO exoskeleton</li> 
+<li>SmartyKit's DIY Apple I no-solder replica kit</li> 
+<li>Fresco's 'Keurig' for Olive Oil, the EVA mini</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/ant-pruitt">Ant Pruitt</a></p> 
+<p><strong>Guest:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Ant Pruitt &amp; Leo Laporte's Excellent CES Adventure continues:</p><ul> 
+<li>Canon's EOS 1DX Mark III an EOS M200</li> 
+<li>Latest TVs from LG, TCL, Hisense, Tonka, and Samsung</li> 
+<li>Sony's eye-sensing light field display and VISION-S prototype EV</li> 
+<li>LG's Indoor Gardening Home Appliance</li> 
+<li>Samsung's NEON Artificial Humans</li> 
+<li>Delta's Sarcos Guardian XO exoskeleton</li> 
+<li>SmartyKit's DIY Apple I no-solder replica kit</li> 
+<li>Fresco's 'Keurig' for Olive Oil, the EVA mini</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/ant-pruitt">Ant Pruitt</a></p> 
+<p><strong>Guest:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2020/01/812336/hero/twitevents0005-ces_day2_and_day3_h264_copy_01.00_41_21_11.still006.jpg"/>
+			<guid isPermaLink="false">https://media.blubrry.com/twit_events_video_hd/cdn.twit.tv/video/events/events0005/events0005_h264m_1280x720_1872.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:00:40</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/events/events0005/events0005_h264m_1280x720_1872.mp4" length="3288709588" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/events/events0005/events0005_h264m_1280x720_1872.mp4" fileSize="3288709588" type="video/mp4" medium="video">
+				<media:title type="plain">Event 5: CES 2020 - On the Floor Part 2 - Ant &amp; Leo&#039;s Excellent CES Adventure: TVs with Scott Wilkinson</media:title>
+				<media:description type="plain">Ant &amp; Leo&#039;s Excellent CES Adventure: TVs with Scott Wilkinson</media:description>
+				<media:keywords>ces 2020, ces 2020 highlights, tech, gadgets, CES, consumer tech, scott wilkinson, ces2020, consumer electronics show, 2020, Leo Laporte, Ant Pruit</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2020/01/812336/hero/twitevents0005-ces_day2_and_day3_h264_copy_01.00_41_21_11.still006.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Ant Pruitt</media:credit>
+				<media:credit role="guest">Scott Wilkinson</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/leo_1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/ant-pruitt" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/520241/pictures/antpruitt.jpg">Ant Pruitt</podcast:person>
+				<podcast:person role="guest" href="https://twit.tv/people/scott-wilkinson" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/52/pictures/scottwilkinson1600-fez.jpg">Scott Wilkinson</podcast:person>
+		</item>
+		<item>
+			<title>Event 4: CES 2020 - On the Floor Part 1 - Ant &amp; Leo&#039;s Excellent CES Adventure: Auto tech with Sam Abuelsamid</title>
+			<itunes:title>CES 2020 - On the Floor Part 1 - Ant &amp; Leo&#039;s Excellent CES Adventure: Auto tech with Sam Abuelsamid</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Fri, 10 Jan 2020 14:36:16 PST</pubDate>
+			<itunes:episode>4</itunes:episode>
+			<podcast:episode>4</podcast:episode>
+			<link>https://twit.tv/shows/twit-events/episodes/4</link>
+			<comments>https://twit.tv/shows/twit-events/episodes/4</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Event</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Ant &amp; Leo&#039;s Excellent CES Adventure: Auto tech with Sam Abuelsamid</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/inside-twit/power-membership-how-twittv-grew-their-podcast-community-memberful" type="text/html" />
+			<itunes:keywords>ces 2020, ces 2020 highlights, tech, gadgets, CES, consumer tech, ces2020, consumer electronics show, 2020, Leo Laporte, Ant Pruit</itunes:keywords>
+			<description><![CDATA[
+<p>Ant Pruitt &amp; Leo Laporte's Excellent CES Adventure continues:</p><ul> 
+<li>Folding Phones: Mate X/Galaxy Fold/FlexPai</li> 
+<li>Panasonic's Lumix S1H mirrorless Camera &amp; AG-CX10 4K streaming camcorder</li> 
+<li>Robots from Pudu, Varram, Hobot, Unitree, Promobot, Cabot, Omron, Torooc</li> 
+<li>Autel's Evo II 8K drone</li> 
+<li>NXP Semiconductors' IoT and automotive tech</li> 
+<li>AEye's artificial perception system for autonomous vehicles</li> 
+<li>Audi's E-Tron Sportback and future tech</li> 
+<li>Ford Mustang Mach-E SUV</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/ant-pruitt">Ant Pruitt</a></p> 
+<p><strong>Guest:</strong> <a href="https://twit.tv/people/sam-abuelsamid">Sam Abuelsamid</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Ant Pruitt &amp; Leo Laporte's Excellent CES Adventure continues:</p><ul> 
+<li>Folding Phones: Mate X/Galaxy Fold/FlexPai</li> 
+<li>Panasonic's Lumix S1H mirrorless Camera &amp; AG-CX10 4K streaming camcorder</li> 
+<li>Robots from Pudu, Varram, Hobot, Unitree, Promobot, Cabot, Omron, Torooc</li> 
+<li>Autel's Evo II 8K drone</li> 
+<li>NXP Semiconductors' IoT and automotive tech</li> 
+<li>AEye's artificial perception system for autonomous vehicles</li> 
+<li>Audi's E-Tron Sportback and future tech</li> 
+<li>Ford Mustang Mach-E SUV</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/ant-pruitt">Ant Pruitt</a></p> 
+<p><strong>Guest:</strong> <a href="https://twit.tv/people/sam-abuelsamid">Sam Abuelsamid</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Ant Pruitt &amp; Leo Laporte's Excellent CES Adventure continues:</p><ul> 
+<li>Folding Phones: Mate X/Galaxy Fold/FlexPai</li> 
+<li>Panasonic's Lumix S1H mirrorless Camera &amp; AG-CX10 4K streaming camcorder</li> 
+<li>Robots from Pudu, Varram, Hobot, Unitree, Promobot, Cabot, Omron, Torooc</li> 
+<li>Autel's Evo II 8K drone</li> 
+<li>NXP Semiconductors' IoT and automotive tech</li> 
+<li>AEye's artificial perception system for autonomous vehicles</li> 
+<li>Audi's E-Tron Sportback and future tech</li> 
+<li>Ford Mustang Mach-E SUV</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/ant-pruitt">Ant Pruitt</a></p> 
+<p><strong>Guest:</strong> <a href="https://twit.tv/people/sam-abuelsamid">Sam Abuelsamid</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2020/01/812329/hero/twitevents0004-ces-part1_h264.00_36_33_14.still005.jpg"/>
+			<guid isPermaLink="false">https://media.blubrry.com/twit_events_video_hd/cdn.twit.tv/video/events/events0004/events0004_h264m_1280x720_1872.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>48:52</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/events/events0004/events0004_h264m_1280x720_1872.mp4" length="1237880881" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/events/events0004/events0004_h264m_1280x720_1872.mp4" fileSize="1237880881" type="video/mp4" medium="video">
+				<media:title type="plain">Event 4: CES 2020 - On the Floor Part 1 - Ant &amp; Leo&#039;s Excellent CES Adventure: Auto tech with Sam Abuelsamid</media:title>
+				<media:description type="plain">Ant &amp; Leo&#039;s Excellent CES Adventure: Auto tech with Sam Abuelsamid</media:description>
+				<media:keywords>ces 2020, ces 2020 highlights, tech, gadgets, CES, consumer tech, ces2020, consumer electronics show, 2020, Leo Laporte, Ant Pruit</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2020/01/812329/hero/twitevents0004-ces-part1_h264.00_36_33_14.still005.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Ant Pruitt</media:credit>
+				<media:credit role="guest">Sam Abuelsamid</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/leo_1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/ant-pruitt" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/520241/pictures/antpruitt.jpg">Ant Pruitt</podcast:person>
+				<podcast:person role="guest" href="https://twit.tv/people/sam-abuelsamid" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/147111/pictures/sam.jpg">Sam Abuelsamid</podcast:person>
+		</item>
+		<item>
+			<title>Event 3: CES 2020 - Showstoppers - Ant &amp; Leo&#039;s Excellent CES Adventure at Showstoppers.</title>
+			<itunes:title>CES 2020 - Showstoppers - Ant &amp; Leo&#039;s Excellent CES Adventure at Showstoppers.</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Wed, 08 Jan 2020 16:09:52 PST</pubDate>
+			<itunes:episode>3</itunes:episode>
+			<podcast:episode>3</podcast:episode>
+			<link>https://twit.tv/shows/twit-events/episodes/3</link>
+			<comments>https://twit.tv/shows/twit-events/episodes/3</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Event</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Ant &amp; Leo&#039;s Excellent CES Adventure at Showstoppers.</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/inside-twit/power-membership-how-twittv-grew-their-podcast-community-memberful" type="text/html" />
+			<itunes:keywords>ces 2020, ces 2020 samsung, ces 2020 highlights, tech, gadgets, CES, consumer tech, Engadget, ces2020, consumer electronics show, 2020, showstoppers, showstoppers ces, showstoppers 2020, pix Stealth, HP Elite Dragonfly, HP spectre x360 15</itunes:keywords>
+			<description><![CDATA[
+<p>Ant Pruitt &amp; Leo Laporte's Excellent Adventure at CES continues exploring showstoppers an invitation-only media reception with day of releases and off-market products. Experience the best of 2020 CES with Showstoppers.</p> 
+<p>Products Seen:</p><ul> 
+<li>Pix Backpack</li> 
+<li>HP Elite Dragonfly</li> 
+<li>HP Envy 32 All-in-One</li> 
+<li>HP S430c Curved Ultrawide Monitor</li> 
+<li>HP Spectre X360 15</li> 
+<li>MysteryVibe</li> 
+<li>Wacom One</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/ant-pruitt">Ant Pruitt</a></p> 
+<p><strong>Guest:</strong> <a href="https://gizwiz.tv/" target="_blank">Dick DeBartolo</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Ant Pruitt &amp; Leo Laporte's Excellent Adventure at CES continues exploring showstoppers an invitation-only media reception with day of releases and off-market products. Experience the best of 2020 CES with Showstoppers.</p> 
+<p>Products Seen:</p><ul> 
+<li>Pix Backpack</li> 
+<li>HP Elite Dragonfly</li> 
+<li>HP Envy 32 All-in-One</li> 
+<li>HP S430c Curved Ultrawide Monitor</li> 
+<li>HP Spectre X360 15</li> 
+<li>MysteryVibe</li> 
+<li>Wacom One</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/ant-pruitt">Ant Pruitt</a></p> 
+<p><strong>Guest:</strong> <a href="https://gizwiz.tv/" target="_blank">Dick DeBartolo</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Ant Pruitt &amp; Leo Laporte's Excellent Adventure at CES continues exploring showstoppers an invitation-only media reception with day of releases and off-market products. Experience the best of 2020 CES with Showstoppers.</p> 
+<p>Products Seen:</p><ul> 
+<li>Pix Backpack</li> 
+<li>HP Elite Dragonfly</li> 
+<li>HP Envy 32 All-in-One</li> 
+<li>HP S430c Curved Ultrawide Monitor</li> 
+<li>HP Spectre X360 15</li> 
+<li>MysteryVibe</li> 
+<li>Wacom One</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/ant-pruitt">Ant Pruitt</a></p> 
+<p><strong>Guest:</strong> <a href="https://gizwiz.tv/" target="_blank">Dick DeBartolo</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2020/01/812249/hero/twitevents0004_ces_showstoppers_h264.00_00_59_07.still003.jpg"/>
+			<guid isPermaLink="false">https://media.blubrry.com/twit_events_video_hd/cdn.twit.tv/video/events/events0003/events0003_h264m_1280x720_1872.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>21:35</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/events/events0003/events0003_h264m_1280x720_1872.mp4" length="557133731" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/events/events0003/events0003_h264m_1280x720_1872.mp4" fileSize="557133731" type="video/mp4" medium="video">
+				<media:title type="plain">Event 3: CES 2020 - Showstoppers - Ant &amp; Leo&#039;s Excellent CES Adventure at Showstoppers.</media:title>
+				<media:description type="plain">Ant &amp; Leo&#039;s Excellent CES Adventure at Showstoppers.</media:description>
+				<media:keywords>ces 2020, ces 2020 samsung, ces 2020 highlights, tech, gadgets, CES, consumer tech, Engadget, ces2020, consumer electronics show, 2020, showstoppers, showstoppers ces, showstoppers 2020, pix Stealth, HP Elite Dragonfly, HP spectre x360 15</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2020/01/812249/hero/twitevents0004_ces_showstoppers_h264.00_00_59_07.still003.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Ant Pruitt</media:credit>
+				<media:credit role="guest">Dick DeBartolo</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/leo_1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/ant-pruitt" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/520241/pictures/antpruitt.jpg">Ant Pruitt</podcast:person>
+				<podcast:person role="guest" href="https://gizwiz.tv/" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/39/pictures/dick-debartolo.png">Dick DeBartolo</podcast:person>
+		</item>
+		<item>
+			<title>Event 2: CES 2020 - Pepcom's Digital Experience! - Ant &amp; Leo&#039;s Excellent CES Adventure begins.</title>
+			<itunes:title>CES 2020 - Pepcom's Digital Experience! - Ant &amp; Leo&#039;s Excellent CES Adventure begins.</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Tue, 07 Jan 2020 18:56:22 PST</pubDate>
+			<itunes:episode>2</itunes:episode>
+			<podcast:episode>2</podcast:episode>
+			<link>https://twit.tv/shows/twit-events/episodes/2</link>
+			<comments>https://twit.tv/shows/twit-events/episodes/2</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Event</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Ant &amp; Leo&#039;s Excellent CES Adventure begins.</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/inside-twit/power-membership-how-twittv-grew-their-podcast-community-memberful" type="text/html" />
+			<itunes:keywords>CES, 2020, consumer electronics show, pepcom, gadgets, Leo Laporte, Ant Pruit, Charmin, Rollbot, Zagg Brands, Flye Sport Rush, Segway Ninebot, Nikon Z6, Beddr, Sleep Tuner, Nurvv Run, U by Moen Smart Faucet, Flo by Moen Smart Water Detector, Sentons</itunes:keywords>
+			<description><![CDATA[
+<p>Ant Puritt &amp; Leo Laporte's Excellent CES Adventure kicks off with a showcase of the newest tech gadgets at Pepcom's Digital Experience! 2020 in Las Vegas.</p> 
+<p>Products:</p><ul> 
+<li>Charmin: Rollbot</li> 
+<li>Zagg Brands: Flye Sport Rush</li> 
+<li>Segway: Ninebot</li> 
+<li>Nikon: Nikon Z6</li> 
+<li>Beddr: Sleep Tuner</li> 
+<li>Nurvv Run</li> 
+<li>Flo by Moen </li> 
+<li>U by Moen Smart Faucet</li> 
+<li>Sentons: SurfaceWave Mobile</li> 
+<li>Niu: Mopsport</li> 
+<li>Matrix: Juno Chiller</li> 
+<li>Neofect: Smart Glove, Smart Balance</li> 
+<li>ForwardX: Ovis</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/ant-pruitt">Ant Pruitt</a></p> 
+<p><strong>Guests:</strong> <a href="https://gizwiz.tv/" target="_blank">Dick DeBartolo</a>, <a href="https://linktr.ee/omgchad" target="_blank">Chad Johnson</a>, <a href="https://x.com/jasonhiner" target="_blank">Jason Hiner</a>, <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a>, <a href="https://x.com/acedtect" target="_blank">Tom Merritt</a>, <a href="https://x.com/sarahlane" target="_blank">Sarah Lane</a>, <a href="https://bsky.app/profile/padresj.bsky.social" target="_blank">Fr. Robert Ballecer, SJ</a>, <a href="https://twitter.com/appaholik" target="_blank">Lory Gil</a>, and <a href="https://twitter.com/jollyroger" target="_blank">Roger Chang</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Ant Puritt &amp; Leo Laporte's Excellent CES Adventure kicks off with a showcase of the newest tech gadgets at Pepcom's Digital Experience! 2020 in Las Vegas.</p> 
+<p>Products:</p><ul> 
+<li>Charmin: Rollbot</li> 
+<li>Zagg Brands: Flye Sport Rush</li> 
+<li>Segway: Ninebot</li> 
+<li>Nikon: Nikon Z6</li> 
+<li>Beddr: Sleep Tuner</li> 
+<li>Nurvv Run</li> 
+<li>Flo by Moen </li> 
+<li>U by Moen Smart Faucet</li> 
+<li>Sentons: SurfaceWave Mobile</li> 
+<li>Niu: Mopsport</li> 
+<li>Matrix: Juno Chiller</li> 
+<li>Neofect: Smart Glove, Smart Balance</li> 
+<li>ForwardX: Ovis</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/ant-pruitt">Ant Pruitt</a></p> 
+<p><strong>Guests:</strong> <a href="https://gizwiz.tv/" target="_blank">Dick DeBartolo</a>, <a href="https://linktr.ee/omgchad" target="_blank">Chad Johnson</a>, <a href="https://x.com/jasonhiner" target="_blank">Jason Hiner</a>, <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a>, <a href="https://x.com/acedtect" target="_blank">Tom Merritt</a>, <a href="https://x.com/sarahlane" target="_blank">Sarah Lane</a>, <a href="https://bsky.app/profile/padresj.bsky.social" target="_blank">Fr. Robert Ballecer, SJ</a>, <a href="https://twitter.com/appaholik" target="_blank">Lory Gil</a>, and <a href="https://twitter.com/jollyroger" target="_blank">Roger Chang</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Ant Puritt &amp; Leo Laporte's Excellent CES Adventure kicks off with a showcase of the newest tech gadgets at Pepcom's Digital Experience! 2020 in Las Vegas.</p> 
+<p>Products:</p><ul> 
+<li>Charmin: Rollbot</li> 
+<li>Zagg Brands: Flye Sport Rush</li> 
+<li>Segway: Ninebot</li> 
+<li>Nikon: Nikon Z6</li> 
+<li>Beddr: Sleep Tuner</li> 
+<li>Nurvv Run</li> 
+<li>Flo by Moen </li> 
+<li>U by Moen Smart Faucet</li> 
+<li>Sentons: SurfaceWave Mobile</li> 
+<li>Niu: Mopsport</li> 
+<li>Matrix: Juno Chiller</li> 
+<li>Neofect: Smart Glove, Smart Balance</li> 
+<li>ForwardX: Ovis</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/ant-pruitt">Ant Pruitt</a></p> 
+<p><strong>Guests:</strong> <a href="https://gizwiz.tv/" target="_blank">Dick DeBartolo</a>, <a href="https://linktr.ee/omgchad" target="_blank">Chad Johnson</a>, <a href="https://x.com/jasonhiner" target="_blank">Jason Hiner</a>, <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a>, <a href="https://x.com/acedtect" target="_blank">Tom Merritt</a>, <a href="https://x.com/sarahlane" target="_blank">Sarah Lane</a>, <a href="https://bsky.app/profile/padresj.bsky.social" target="_blank">Fr. Robert Ballecer, SJ</a>, <a href="https://twitter.com/appaholik" target="_blank">Lory Gil</a>, and <a href="https://twitter.com/jollyroger" target="_blank">Roger Chang</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2020/01/812205/hero/pepcomthumb.jpg"/>
+			<guid isPermaLink="false">https://media.blubrry.com/twit_events_video_hd/cdn.twit.tv/video/events/events0002/events0002_h264m_1280x720_1872.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>37:19</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/events/events0002/events0002_h264m_1280x720_1872.mp4" length="1035922179" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/events/events0002/events0002_h264m_1280x720_1872.mp4" fileSize="1035922179" type="video/mp4" medium="video">
+				<media:title type="plain">Event 2: CES 2020 - Pepcom's Digital Experience! - Ant &amp; Leo&#039;s Excellent CES Adventure begins.</media:title>
+				<media:description type="plain">Ant &amp; Leo&#039;s Excellent CES Adventure begins.</media:description>
+				<media:keywords>CES, 2020, consumer electronics show, pepcom, gadgets, Leo Laporte, Ant Pruit, Charmin, Rollbot, Zagg Brands, Flye Sport Rush, Segway Ninebot, Nikon Z6, Beddr, Sleep Tuner, Nurvv Run, U by Moen Smart Faucet, Flo by Moen Smart Water Detector, Sentons</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2020/01/812205/hero/pepcomthumb.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Ant Pruitt</media:credit>
+				<media:credit role="guest">Dick DeBartolo</media:credit>
+				<media:credit role="guest">Chad Johnson</media:credit>
+				<media:credit role="guest">Jason Hiner</media:credit>
+				<media:credit role="guest">Scott Wilkinson</media:credit>
+				<media:credit role="guest">Tom Merritt</media:credit>
+				<media:credit role="guest">Sarah Lane</media:credit>
+				<media:credit role="guest">Fr. Robert Ballecer, SJ</media:credit>
+				<media:credit role="guest">Lory Gil</media:credit>
+				<media:credit role="guest">Roger Chang</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/leo_1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/ant-pruitt" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/520241/pictures/antpruitt.jpg">Ant Pruitt</podcast:person>
+				<podcast:person role="guest" href="https://gizwiz.tv/" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/39/pictures/dick-debartolo.png">Dick DeBartolo</podcast:person>
+				<podcast:person role="guest" href="https://linktr.ee/omgchad" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/27/pictures/omgchad_0.jpg">Chad Johnson</podcast:person>
+				<podcast:person role="guest" href="https://x.com/jasonhiner" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/59771/pictures/jason-hiner-headshot.png">Jason Hiner</podcast:person>
+				<podcast:person role="guest" href="https://twit.tv/people/scott-wilkinson" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/52/pictures/scottwilkinson1600-fez.jpg">Scott Wilkinson</podcast:person>
+				<podcast:person role="guest" href="https://x.com/acedtect" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/82/pictures/tommerritt.jpg">Tom Merritt</podcast:person>
+				<podcast:person role="guest" href="https://x.com/sarahlane" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/24/pictures/sarah-lane.png">Sarah Lane</podcast:person>
+				<podcast:person role="guest" href="https://bsky.app/profile/padresj.bsky.social" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/59/pictures/robert-ballecer.png">Fr. Robert Ballecer, SJ</podcast:person>
+				<podcast:person role="guest" href="https://twitter.com/appaholik" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/611191/pictures/lory.jpg">Lory Gil</podcast:person>
+				<podcast:person role="guest" href="https://twitter.com/jollyroger" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/56661/pictures/roger_revision3.jpg">Roger Chang</podcast:person>
+		</item>
+		<item>
+			<title>Event 1: The SQRL Story - SQRL: Secure, Quick, Reliable Login</title>
+			<itunes:title>The SQRL Story - SQRL: Secure, Quick, Reliable Login</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sat, 30 Nov 2019 20:06:44 PST</pubDate>
+			<itunes:episode>1</itunes:episode>
+			<podcast:episode>1</podcast:episode>
+			<link>https://twit.tv/shows/twit-events/episodes/1</link>
+			<comments>https://twit.tv/shows/twit-events/episodes/1</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Event</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>SQRL: Secure, Quick, Reliable Login</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/inside-twit/power-membership-how-twittv-grew-their-podcast-community-memberful" type="text/html" />
+			<itunes:keywords>Security, passwords, Public and Private Keys, 2 factor, Crytogrphics, Prime Numbers, Random Number Generator, SQRL</itunes:keywords>
+			<description><![CDATA[
+<p>Steve Gibson discusses the history of online identity authentication, and what lead him to develop SQRL: Simple, Quick, Reliable Login. SQRL is a straightforward and elegant solution to the problems and challenges related to online identity authentication.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/steve-gibson">Steve Gibson</a> and <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://LastPass.com/twit" target="_blank" rel="sponsored">LastPass.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Steve Gibson discusses the history of online identity authentication, and what lead him to develop SQRL: Simple, Quick, Reliable Login. SQRL is a straightforward and elegant solution to the problems and challenges related to online identity authentication.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/steve-gibson">Steve Gibson</a> and <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://LastPass.com/twit" target="_blank" rel="sponsored">LastPass.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Steve Gibson discusses the history of online identity authentication, and what lead him to develop SQRL: Simple, Quick, Reliable Login. SQRL is a straightforward and elegant solution to the problems and challenges related to online identity authentication.</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/steve-gibson">Steve Gibson</a> and <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://LastPass.com/twit" target="_blank" rel="sponsored">LastPass.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2019/11/811146/hero/twitevents01.jpg"/>
+			<guid isPermaLink="false">https://media.blubrry.com/twit_events_video_hd/cdn.twit.tv/video/events/events0001/events0001_h264m_1280x720_1872.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:09:11</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/events/events0001/events0001_h264m_1280x720_1872.mp4" length="1792501372" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/events/events0001/events0001_h264m_1280x720_1872.mp4" fileSize="1792501372" type="video/mp4" medium="video">
+				<media:title type="plain">Event 1: The SQRL Story - SQRL: Secure, Quick, Reliable Login</media:title>
+				<media:description type="plain">SQRL: Secure, Quick, Reliable Login</media:description>
+				<media:keywords>Security, passwords, Public and Private Keys, 2 factor, Crytogrphics, Prime Numbers, Random Number Generator, SQRL</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2019/11/811146/hero/twitevents01.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Steve Gibson</media:credit>
+				<media:credit role="host">Leo Laporte</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/steve-gibson" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/34/pictures/smilingsteveheadshot.jpg">Steve Gibson</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/leo_1.jpg">Leo Laporte</podcast:person>
+		</item>
+		<item>
+			<title>Welcome to TWiT Events</title>
+			<itunes:title>Welcome to TWiT Events</itunes:title>
+			<itunes:episodeType>trailer</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Fri, 22 Nov 2019 20:00:00 PST</pubDate>
+			<itunes:episode>0</itunes:episode>
+			<podcast:episode>0</podcast:episode>
+			<link>https://twit.tv/shows/twit-events/episodes/0</link>
+			<comments>https://twit.tv/shows/twit-events/episodes/0</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Special</category>
+			<category>Event</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>TWiT Events is your window to the best tech events in the world.</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/inside-twit/power-membership-how-twittv-grew-their-podcast-community-memberful" type="text/html" />
+			<itunes:keywords>New Podcast, Events</itunes:keywords>
+			<description><![CDATA[
+<p>TWiT Events is your window to the best tech events in the world. Whether it's the hottest announcements from CES or the latest security tech, TWiT Events is there.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>TWiT Events is your window to the best tech events in the world. Whether it's the hottest announcements from CES or the latest security tech, TWiT Events is there.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>TWiT Events is your window to the best tech events in the world. Whether it's the hottest announcements from CES or the latest security tech, TWiT Events is there.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p>Download or subscribe to this show at <a href="https://twit.tv/shows/twit-events">https://twit.tv/shows/twit-events</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2019/11/810955/hero/twitevents_16x9_title.jpg"/>
+			<guid isPermaLink="false">https://media.blubrry.com/twit_events_video_hd/cdn.twit.tv/video/events/events0000/events0000_h264m_1280x720_1872.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:12</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/events/events0000/events0000_h264m_1280x720_1872.mp4" length="19328434" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/events/events0000/events0000_h264m_1280x720_1872.mp4" fileSize="19328434" type="video/mp4" medium="video">
+				<media:title type="plain">Welcome to TWiT Events</media:title>
+				<media:description type="plain">TWiT Events is your window to the best tech events in the world.</media:description>
+				<media:keywords>New Podcast, Events</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2019/11/810955/hero/twitevents_16x9_title.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/leo_1.jpg">Leo Laporte</podcast:person>
+		</item>
+	</channel>
+</rss>

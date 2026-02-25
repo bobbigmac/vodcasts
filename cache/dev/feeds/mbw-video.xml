@@ -1,0 +1,1297 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/" xmlns:podcast="https://podcastindex.org/namespace/1.0" version="2.0">
+	<channel>
+		<title>MacBreak Weekly (Video)</title>
+		<itunes:author>TWiT</itunes:author>
+		<link>https://twit.tv/shows/macbreak-weekly</link>
+		<generator>TWiT Feed Generator v4.10</generator>
+		<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+		<language>en-US</language>
+		<copyright>This work is licensed under a Creative Commons License - Attribution-NonCommercial-NoDerivatives 4.0 International - http://creativecommons.org/licenses/by-nc-nd/4.0/</copyright>
+		<creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+		<managingEditor>feedmail@twit.tv (TWiT Editors)</managingEditor>
+		<webMaster>feedmail@twit.tv (TWiT Engineering)</webMaster>
+		<ttl>720</ttl>
+		<sy:updatePeriod>weekly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+		<lastBuildDate>Tue, 24 Feb 2026 21:32:00 PST</lastBuildDate>
+		<pubDate>Tue, 24 Feb 2026 21:32:00 PST</pubDate>
+		<rawvoice:frequency>weekly</rawvoice:frequency>
+		<rawvoice:location>Petaluma, CA</rawvoice:location>
+		<itunes:type>episodic</itunes:type>
+		<itunes:subtitle>Get expert Apple news, analysis, and insights from top tech journalists and gurus.</itunes:subtitle>
+		<itunes:summary>MacBreak Weekly covers all things Apple: Leo, Andy Ihnatko, Jason Snell, and Christina Warren analyze every bit of news from the most interesting company in tech. From AI to Vision Pro, iPad to iPhone, these Apple experts know-all and tell-all.
+
+Records live every Tuesday at 2:00pm Eastern / 11:00am Pacific / 19:00 UTC.</itunes:summary>
+		<description>MacBreak Weekly covers all things Apple: Leo, Andy Ihnatko, Jason Snell, and Christina Warren analyze every bit of news from the most interesting company in tech. From AI to Vision Pro, iPad to iPhone, these Apple experts know-all and tell-all.
+
+Records live every Tuesday at 2:00pm Eastern / 11:00am Pacific / 19:00 UTC.</description>
+		<itunes:keywords>TWiT, Technology, Macintosh, Apple, Mac OS X, iPhone, iPad, iOS, iMac</itunes:keywords>
+		<rawvoice:rating tv="tv-g">tv-g</rawvoice:rating>
+		<itunes:explicit>no</itunes:explicit>
+		<itunes:block>no</itunes:block>
+		<googleplay:block>No</googleplay:block>
+		<podcast:funding url="https://twit.tv/clubtwit">Become a Club TWiT member!</podcast:funding>
+		<itunes:owner>
+			<itunes:name>Leo Laporte</itunes:name>
+			<itunes:email>feedmail@twit.tv</itunes:email>
+		</itunes:owner>
+		<itunes:category text="Technology" />
+		<category>Technology</category>
+		<category>Apple</category>
+		<category>Mac</category>
+		<image>
+			<title>MacBreak Weekly (Video)</title>
+			<url>https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/MacBreak%20Weekly/album_art/hd/MBW_albumart_standard_video.jpg</url>
+			<link>https://twit.tv/shows/macbreak-weekly</link>
+		</image>
+		<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/MacBreak%20Weekly/album_art/hd/MBW_albumart_standard_video.jpg" />
+		<itunes:new-feed-url>https://feeds.twit.tv/mbw_video_hd.xml</itunes:new-feed-url>
+		<rawvoice:subscribe feed="https://feeds.twit.tv/mbw_video_hd.xml" itunes="https://podcasts.apple.com/us/podcast/macbreak-weekly-video/id553604212" html="https://twit.tv/shows/macbreak-weekly"></rawvoice:subscribe>
+		<atom:link href="https://feeds.twit.tv/mbw_video_hd.xml" type="application/rss+xml" rel="self"/>
+		<item>
+			<title>MBW 1013: Boopgate - Steve Jobs&#039; 71st Birthday</title>
+			<itunes:title>Boopgate - Steve Jobs&#039; 71st Birthday</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Tue, 24 Feb 2026 16:45:00 PST</pubDate>
+			<itunes:episode>1013</itunes:episode>
+			<podcast:episode>1013</podcast:episode>
+			<link>https://twit.tv/shows/macbreak-weekly/episodes/1013</link>
+			<comments>https://twit.tv/shows/macbreak-weekly/episodes/1013</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Apple</category>
+			<category>Mac</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Steve Jobs&#039; 71st Birthday</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/macbreak-weekly-1013-transcript" type="text/html" />
+			<itunes:keywords>MacBreak Weekly, Leo Laporte, Andy Ihnatko, Jason Snell, Christina Warren, Apple, Steve Jobs, steve jobs birthday, steve jobs archive, tim cook, Jony Ive, David Pogue, Artificial Intelligence, ai, apple ai, six colors, six colors report card</itunes:keywords>
+			<description><![CDATA[
+<p>Welcome, Christina Warren, to the MacBreak Weekly panel! Looking back at Steve Jobs and what would have been his 71st birthday. Jason Snell unveils the Six Colors report card. And Apple plans to manufacture Mac Minis in Houston.</p><ul> 
+<li>Remembering Steve Jobs on his 71st birthday.</li> 
+<li>Steve Jobs Archive releases 'Letters to a Young Creator' featuring Tim Cook, Jony Ive, and more.</li> 
+<li>David Pogue shares first look at upcoming 'Apple: The First 50 Years' book.</li> 
+<li>Apple's next big thing is a push into visual artificial intelligence.</li> 
+<li>The Six Colors report card.</li> 
+<li>The evil LeapFrog tablet in Toy Story 5 appears to be running the macOS window manager.</li> 
+<li>Disneyland's "MuppetVision 3D" will be released on the Apple Vision Pro. Here's why Brian Henson is okay with it.</li> 
+<li>Apple plans to manufacture Mac Mini in Houston.</li> 
+<li>iPhone satellite features helped Lake Tahoe avalanche survivors get rescued.</li> 
+<li>Apple and Google employees customized their own Tudor watches. Now they're up for sale.</li> 
+<li>PageMaker pioneer Paul Brainerd, 1947-2026: Aldus founder devoted his second chapter to the planet.</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Christina's Pick: Updatest</li> 
+<li>Andy's Pick: Acme Weather</li> 
+<li>Jason's Pick: macOS 26 Tahoe</li> 
+<li>Leo's Pick: Thaw</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, <a href="https://twit.tv/people/jason-snell">Jason Snell</a>, and <a href="https://bsky.app/profile/filmgirl.bsky.social" target="_blank">Christina Warren</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://hipebl.ai" target="_blank" rel="sponsored">hipebl.ai</a></li>
+<li><a href="https://cachefly.com/twit" target="_blank" rel="sponsored">cachefly.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Welcome, Christina Warren, to the MacBreak Weekly panel! Looking back at Steve Jobs and what would have been his 71st birthday. Jason Snell unveils the Six Colors report card. And Apple plans to manufacture Mac Minis in Houston.</p><ul> 
+<li>Remembering Steve Jobs on his 71st birthday.</li> 
+<li>Steve Jobs Archive releases 'Letters to a Young Creator' featuring Tim Cook, Jony Ive, and more.</li> 
+<li>David Pogue shares first look at upcoming 'Apple: The First 50 Years' book.</li> 
+<li>Apple's next big thing is a push into visual artificial intelligence.</li> 
+<li>The Six Colors report card.</li> 
+<li>The evil LeapFrog tablet in Toy Story 5 appears to be running the macOS window manager.</li> 
+<li>Disneyland's "MuppetVision 3D" will be released on the Apple Vision Pro. Here's why Brian Henson is okay with it.</li> 
+<li>Apple plans to manufacture Mac Mini in Houston.</li> 
+<li>iPhone satellite features helped Lake Tahoe avalanche survivors get rescued.</li> 
+<li>Apple and Google employees customized their own Tudor watches. Now they're up for sale.</li> 
+<li>PageMaker pioneer Paul Brainerd, 1947-2026: Aldus founder devoted his second chapter to the planet.</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Christina's Pick: Updatest</li> 
+<li>Andy's Pick: Acme Weather</li> 
+<li>Jason's Pick: macOS 26 Tahoe</li> 
+<li>Leo's Pick: Thaw</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, <a href="https://twit.tv/people/jason-snell">Jason Snell</a>, and <a href="https://bsky.app/profile/filmgirl.bsky.social" target="_blank">Christina Warren</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://hipebl.ai" target="_blank" rel="sponsored">hipebl.ai</a></li>
+<li><a href="https://cachefly.com/twit" target="_blank" rel="sponsored">cachefly.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Welcome, Christina Warren, to the MacBreak Weekly panel! Looking back at Steve Jobs and what would have been his 71st birthday. Jason Snell unveils the Six Colors report card. And Apple plans to manufacture Mac Minis in Houston.</p><ul> 
+<li>Remembering Steve Jobs on his 71st birthday.</li> 
+<li>Steve Jobs Archive releases 'Letters to a Young Creator' featuring Tim Cook, Jony Ive, and more.</li> 
+<li>David Pogue shares first look at upcoming 'Apple: The First 50 Years' book.</li> 
+<li>Apple's next big thing is a push into visual artificial intelligence.</li> 
+<li>The Six Colors report card.</li> 
+<li>The evil LeapFrog tablet in Toy Story 5 appears to be running the macOS window manager.</li> 
+<li>Disneyland's "MuppetVision 3D" will be released on the Apple Vision Pro. Here's why Brian Henson is okay with it.</li> 
+<li>Apple plans to manufacture Mac Mini in Houston.</li> 
+<li>iPhone satellite features helped Lake Tahoe avalanche survivors get rescued.</li> 
+<li>Apple and Google employees customized their own Tudor watches. Now they're up for sale.</li> 
+<li>PageMaker pioneer Paul Brainerd, 1947-2026: Aldus founder devoted his second chapter to the planet.</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Christina's Pick: Updatest</li> 
+<li>Andy's Pick: Acme Weather</li> 
+<li>Jason's Pick: macOS 26 Tahoe</li> 
+<li>Leo's Pick: Thaw</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, <a href="https://twit.tv/people/jason-snell">Jason Snell</a>, and <a href="https://bsky.app/profile/filmgirl.bsky.social" target="_blank">Christina Warren</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://hipebl.ai" target="_blank" rel="sponsored">hipebl.ai</a></li>
+<li><a href="https://cachefly.com/twit" target="_blank" rel="sponsored">cachefly.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860268/hero/MBW1013_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1013/mbw1013_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:43:31</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1013/mbw1013_h264m_1920x1080.mp4" length="2878496813" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1013/mbw1013_h264m_1920x1080.mp4" fileSize="2878496813" type="video/mp4" medium="video">
+				<media:title type="plain">MBW 1013: Boopgate - Steve Jobs&#039; 71st Birthday</media:title>
+				<media:description type="plain">Steve Jobs&#039; 71st Birthday</media:description>
+				<media:keywords>MacBreak Weekly, Leo Laporte, Andy Ihnatko, Jason Snell, Christina Warren, Apple, Steve Jobs, steve jobs birthday, steve jobs archive, tim cook, Jony Ive, David Pogue, Artificial Intelligence, ai, apple ai, six colors, six colors report card</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860268/hero/MBW1013_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Andy Ihnatko</media:credit>
+				<media:credit role="host">Jason Snell</media:credit>
+				<media:credit role="host">Christina Warren</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/andy-ihnatko" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/30/pictures/andyatmetopera.jpg">Andy Ihnatko</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/jason-snell" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/73/pictures/jason-snell.png">Jason Snell</podcast:person>
+				<podcast:person role="host" href="https://bsky.app/profile/filmgirl.bsky.social" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/50093/pictures/christina-warren.png">Christina Warren</podcast:person>
+		</item>
+		<item>
+			<title>MBW 1012: Joining the YOLO Club - Apple&#039;s Special Experience Event on March 4th</title>
+			<itunes:title>Joining the YOLO Club - Apple&#039;s Special Experience Event on March 4th</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Tue, 17 Feb 2026 18:00:00 PST</pubDate>
+			<itunes:episode>1012</itunes:episode>
+			<podcast:episode>1012</podcast:episode>
+			<link>https://twit.tv/shows/macbreak-weekly/episodes/1012</link>
+			<comments>https://twit.tv/shows/macbreak-weekly/episodes/1012</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Apple</category>
+			<category>Mac</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Apple&#039;s Special Experience Event on March 4th</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/apples-march-4th-special-experience-event" type="text/html" />
+			<itunes:keywords>MacBreak Weekly, Leo Laporte, Andy Ihnatko, Jason Snell, Dave Hamilton, macgeekgab, Apple, Apple Event, optis, 4g patents, apple podcasts, apple video podcasts, tesla, carplay, icloud issues, apple creator studio, iphone 18 pro, c2 chip, folding iPhone</itunes:keywords>
+			<description><![CDATA[
+<p>Apple has announced a special experience event occurring in New York, London, and Shanghai. Apple Podcasts is launching new video features. iOS 26.3 is out now. And Apple acquires the rights to the show, Severance, for $70 million!</p><ul> 
+<li>Apple's doing something on March 4th.</li> 
+<li>Apple wins long-running court battle against Optis over 4G patents in the US.</li> 
+<li>Apple makes four promises to developers about fairer treatment.</li> 
+<li>Apple Podcasts is launching new video features, looking to keep pace with YouTube and Spotify.</li> 
+<li>Apple updates its own iOS version figures.</li> 
+<li>Tesla CarPlay held back by need for wider adoption of Apple's iOS 26.</li> 
+<li>Find My outage &amp; iCloud issues hit users once again Tuesday evening.</li> 
+<li>Apple Creator Studio AI usage limits seem dramatically lower than promised.</li> 
+<li>iPhone 18 Pro's new C2 chip will bring three advantages over iPhone 17.</li> 
+<li>Apple testing, but still undecided about clamshell folding iPhone.</li> 
+<li>iOS 27 'Rave' update to clean up code, could boost battery life.</li> 
+<li>Resizing windows on macOS Tahoe – the saga continues.</li> 
+<li>iOS 26.3 adds unique new privacy feature, and it's Apple at its best.</li> 
+<li>Apple releases iOS 26.3 with updates that mainly benefit non-Apple devices.</li> 
+<li>iOS 26.3 and macOS 26.3 Fix Dozens of Vulnerabilities, Including Zero-Day.</li> 
+<li>Apple patches decade-old iOS zero-day, possibly exploited by commercial spyware.</li> 
+<li>A code snippet in iOS 26.4 shows Apple TV is coming to CarPlay.</li> 
+<li>macOS Tahoe 26.4 adds a charge limit slider to preserve your MacBook battery.</li> 
+<li>iOS 26.4 has iPhone Stolen Device Protection on by default.</li> 
+<li>macOS Tahoe 26.4 warns if your apps won't work when Rosetta 2 dies.</li> 
+<li>It took two years, but Google released a YouTube app on Vision Pro.</li> 
+<li>visionOS 26.4 unlocks new 'foveated streaming' feature for apps and games.</li> 
+<li>The new F1 channel has appeared in the Apple TV app ahead of first race.</li> 
+<li>Severance' acquired by Apple for $70 million, expect a 4-season run and spinoffs.</li> 
+<li>Apple TV is adding MLS for free starting this week, here's the new promo.</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Dave's Pick: Neo Network Utility 2.0</li> 
+<li>Leo's Pick: NetNewsWire and freeflow</li> 
+<li>Andy's Pick: Wordgrinder</li> 
+<li>Jason's Pick: Indigo</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, and <a href="https://twit.tv/people/jason-snell">Jason Snell</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.davethenerd.com/" target="_blank">Dave Hamilton</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Apple has announced a special experience event occurring in New York, London, and Shanghai. Apple Podcasts is launching new video features. iOS 26.3 is out now. And Apple acquires the rights to the show, Severance, for $70 million!</p><ul> 
+<li>Apple's doing something on March 4th.</li> 
+<li>Apple wins long-running court battle against Optis over 4G patents in the US.</li> 
+<li>Apple makes four promises to developers about fairer treatment.</li> 
+<li>Apple Podcasts is launching new video features, looking to keep pace with YouTube and Spotify.</li> 
+<li>Apple updates its own iOS version figures.</li> 
+<li>Tesla CarPlay held back by need for wider adoption of Apple's iOS 26.</li> 
+<li>Find My outage &amp; iCloud issues hit users once again Tuesday evening.</li> 
+<li>Apple Creator Studio AI usage limits seem dramatically lower than promised.</li> 
+<li>iPhone 18 Pro's new C2 chip will bring three advantages over iPhone 17.</li> 
+<li>Apple testing, but still undecided about clamshell folding iPhone.</li> 
+<li>iOS 27 'Rave' update to clean up code, could boost battery life.</li> 
+<li>Resizing windows on macOS Tahoe – the saga continues.</li> 
+<li>iOS 26.3 adds unique new privacy feature, and it's Apple at its best.</li> 
+<li>Apple releases iOS 26.3 with updates that mainly benefit non-Apple devices.</li> 
+<li>iOS 26.3 and macOS 26.3 Fix Dozens of Vulnerabilities, Including Zero-Day.</li> 
+<li>Apple patches decade-old iOS zero-day, possibly exploited by commercial spyware.</li> 
+<li>A code snippet in iOS 26.4 shows Apple TV is coming to CarPlay.</li> 
+<li>macOS Tahoe 26.4 adds a charge limit slider to preserve your MacBook battery.</li> 
+<li>iOS 26.4 has iPhone Stolen Device Protection on by default.</li> 
+<li>macOS Tahoe 26.4 warns if your apps won't work when Rosetta 2 dies.</li> 
+<li>It took two years, but Google released a YouTube app on Vision Pro.</li> 
+<li>visionOS 26.4 unlocks new 'foveated streaming' feature for apps and games.</li> 
+<li>The new F1 channel has appeared in the Apple TV app ahead of first race.</li> 
+<li>Severance' acquired by Apple for $70 million, expect a 4-season run and spinoffs.</li> 
+<li>Apple TV is adding MLS for free starting this week, here's the new promo.</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Dave's Pick: Neo Network Utility 2.0</li> 
+<li>Leo's Pick: NetNewsWire and freeflow</li> 
+<li>Andy's Pick: Wordgrinder</li> 
+<li>Jason's Pick: Indigo</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, and <a href="https://twit.tv/people/jason-snell">Jason Snell</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.davethenerd.com/" target="_blank">Dave Hamilton</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Apple has announced a special experience event occurring in New York, London, and Shanghai. Apple Podcasts is launching new video features. iOS 26.3 is out now. And Apple acquires the rights to the show, Severance, for $70 million!</p><ul> 
+<li>Apple's doing something on March 4th.</li> 
+<li>Apple wins long-running court battle against Optis over 4G patents in the US.</li> 
+<li>Apple makes four promises to developers about fairer treatment.</li> 
+<li>Apple Podcasts is launching new video features, looking to keep pace with YouTube and Spotify.</li> 
+<li>Apple updates its own iOS version figures.</li> 
+<li>Tesla CarPlay held back by need for wider adoption of Apple's iOS 26.</li> 
+<li>Find My outage &amp; iCloud issues hit users once again Tuesday evening.</li> 
+<li>Apple Creator Studio AI usage limits seem dramatically lower than promised.</li> 
+<li>iPhone 18 Pro's new C2 chip will bring three advantages over iPhone 17.</li> 
+<li>Apple testing, but still undecided about clamshell folding iPhone.</li> 
+<li>iOS 27 'Rave' update to clean up code, could boost battery life.</li> 
+<li>Resizing windows on macOS Tahoe – the saga continues.</li> 
+<li>iOS 26.3 adds unique new privacy feature, and it's Apple at its best.</li> 
+<li>Apple releases iOS 26.3 with updates that mainly benefit non-Apple devices.</li> 
+<li>iOS 26.3 and macOS 26.3 Fix Dozens of Vulnerabilities, Including Zero-Day.</li> 
+<li>Apple patches decade-old iOS zero-day, possibly exploited by commercial spyware.</li> 
+<li>A code snippet in iOS 26.4 shows Apple TV is coming to CarPlay.</li> 
+<li>macOS Tahoe 26.4 adds a charge limit slider to preserve your MacBook battery.</li> 
+<li>iOS 26.4 has iPhone Stolen Device Protection on by default.</li> 
+<li>macOS Tahoe 26.4 warns if your apps won't work when Rosetta 2 dies.</li> 
+<li>It took two years, but Google released a YouTube app on Vision Pro.</li> 
+<li>visionOS 26.4 unlocks new 'foveated streaming' feature for apps and games.</li> 
+<li>The new F1 channel has appeared in the Apple TV app ahead of first race.</li> 
+<li>Severance' acquired by Apple for $70 million, expect a 4-season run and spinoffs.</li> 
+<li>Apple TV is adding MLS for free starting this week, here's the new promo.</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Dave's Pick: Neo Network Utility 2.0</li> 
+<li>Leo's Pick: NetNewsWire and freeflow</li> 
+<li>Andy's Pick: Wordgrinder</li> 
+<li>Jason's Pick: Indigo</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, and <a href="https://twit.tv/people/jason-snell">Jason Snell</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.davethenerd.com/" target="_blank">Dave Hamilton</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860176/hero/MBW1012_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1012/mbw1012_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:42:14</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1012/mbw1012_h264m_1920x1080.mp4" length="2850523938" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1012/mbw1012_h264m_1920x1080.mp4" fileSize="2850523938" type="video/mp4" medium="video">
+				<media:title type="plain">MBW 1012: Joining the YOLO Club - Apple&#039;s Special Experience Event on March 4th</media:title>
+				<media:description type="plain">Apple&#039;s Special Experience Event on March 4th</media:description>
+				<media:keywords>MacBreak Weekly, Leo Laporte, Andy Ihnatko, Jason Snell, Dave Hamilton, macgeekgab, Apple, Apple Event, optis, 4g patents, apple podcasts, apple video podcasts, tesla, carplay, icloud issues, apple creator studio, iphone 18 pro, c2 chip, folding iPhone</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860176/hero/MBW1012_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Andy Ihnatko</media:credit>
+				<media:credit role="host">Jason Snell</media:credit>
+				<media:credit role="guest">Dave Hamilton</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/andy-ihnatko" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/30/pictures/andyatmetopera.jpg">Andy Ihnatko</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/jason-snell" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/73/pictures/jason-snell.png">Jason Snell</podcast:person>
+				<podcast:person role="guest" href="https://www.davethenerd.com/">Dave Hamilton</podcast:person>
+		</item>
+		<item>
+			<title>MBW 1011: Oy and Whoop! - iPhones to the Moon!</title>
+			<itunes:title>Oy and Whoop! - iPhones to the Moon!</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Tue, 10 Feb 2026 17:30:00 PST</pubDate>
+			<itunes:episode>1011</itunes:episode>
+			<podcast:episode>1011</podcast:episode>
+			<link>https://twit.tv/shows/macbreak-weekly/episodes/1011</link>
+			<comments>https://twit.tv/shows/macbreak-weekly/episodes/1011</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Apple</category>
+			<category>Mac</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>iPhones to the Moon!</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/apples-pullback-health-ai-service-what-it-means-users" type="text/html" />
+			<itunes:keywords>MacBreak Weekly, Leo Laporte, Andy Ihnatko, Jason Snell, Dan Moren, sixcolors.com, Apple, ai, ai health care, apple health, AirPods Pro, airpods pro camera, m5 pro, m5 max, Apple Silicon, nasa, Artemis, iPhone, Google, ai apple model, iPhone 17 Pro Max</itunes:keywords>
+			<description><![CDATA[
+<p>Apple is scaling back its plans for its AI-based health coach service. Could Apple's next AirPods Pro come with cameras in them? The iPhone 17 Pro Max has the best battery life out of a plethora of other smartphones! And Apple's Lockdown Mode helped prevent the FBI from accessing a WaPo reporter's iPhone.</p><ul> 
+<li>Apple is scaling back plans for new AI-based health coach service.</li> 
+<li>Apple's next AirPods Pro will come with cameras, says leaker.</li> 
+<li>Leak suggests Apple's M5 Pro and M5 Max may be the same chip.</li> 
+<li>NASA changes its mind, will allow Artemis astronauts to take iPhones to the Moon.</li> 
+<li>Google &amp; Apple CEOs offer seemingly contradictory statements regarding AI partnership.</li> 
+<li>New Alexa's issues are already making some users return to old Siri.</li> 
+<li>New Apple-backed AI model can generate sound and speech from silent videos.</li> 
+<li>iPhone 17 Pro Max has the best battery life of 35 smartphones tested.</li> 
+<li>Last week on my Mac: Why E cores make Apple silicon fast.</li> 
+<li>FBI couldn't get into WaPo reporter's iPhone because it had Lockdown Mode enabled.</li> 
+<li>Oura's FDA lobbying benefits Apple Watch, if everyone's smart about the risks.</li> 
+<li>Apple Music Replay 2026 now live, here's how to find it.</li> 
+<li>Ferrari's new Jony Ive–designed EV is swathed in glass and aluminum.</li> 
+<li>Applications are now open for the 2026 Swift Student Challenge -- but hurry.</li> 
+<li>Apple Arcade's 'Civilization VII' is good, but falls short of greatness</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Dan's Pick: Ponies on Peacock</li> 
+<li>Leo's Pick: Moody</li> 
+<li>Andy's Pick: Hourly Comic Day 2026</li> 
+<li>Jason's Pick: Curling</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, and <a href="https://twit.tv/people/jason-snell">Jason Snell</a></p> 
+<p><strong>Guest:</strong> <a href="https://dmoren.com/" target="_blank">Dan Moren</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://zocdoc.com/macbreak" target="_blank" rel="sponsored">zocdoc.com/macbreak</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Apple is scaling back its plans for its AI-based health coach service. Could Apple's next AirPods Pro come with cameras in them? The iPhone 17 Pro Max has the best battery life out of a plethora of other smartphones! And Apple's Lockdown Mode helped prevent the FBI from accessing a WaPo reporter's iPhone.</p><ul> 
+<li>Apple is scaling back plans for new AI-based health coach service.</li> 
+<li>Apple's next AirPods Pro will come with cameras, says leaker.</li> 
+<li>Leak suggests Apple's M5 Pro and M5 Max may be the same chip.</li> 
+<li>NASA changes its mind, will allow Artemis astronauts to take iPhones to the Moon.</li> 
+<li>Google &amp; Apple CEOs offer seemingly contradictory statements regarding AI partnership.</li> 
+<li>New Alexa's issues are already making some users return to old Siri.</li> 
+<li>New Apple-backed AI model can generate sound and speech from silent videos.</li> 
+<li>iPhone 17 Pro Max has the best battery life of 35 smartphones tested.</li> 
+<li>Last week on my Mac: Why E cores make Apple silicon fast.</li> 
+<li>FBI couldn't get into WaPo reporter's iPhone because it had Lockdown Mode enabled.</li> 
+<li>Oura's FDA lobbying benefits Apple Watch, if everyone's smart about the risks.</li> 
+<li>Apple Music Replay 2026 now live, here's how to find it.</li> 
+<li>Ferrari's new Jony Ive–designed EV is swathed in glass and aluminum.</li> 
+<li>Applications are now open for the 2026 Swift Student Challenge -- but hurry.</li> 
+<li>Apple Arcade's 'Civilization VII' is good, but falls short of greatness</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Dan's Pick: Ponies on Peacock</li> 
+<li>Leo's Pick: Moody</li> 
+<li>Andy's Pick: Hourly Comic Day 2026</li> 
+<li>Jason's Pick: Curling</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, and <a href="https://twit.tv/people/jason-snell">Jason Snell</a></p> 
+<p><strong>Guest:</strong> <a href="https://dmoren.com/" target="_blank">Dan Moren</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://zocdoc.com/macbreak" target="_blank" rel="sponsored">zocdoc.com/macbreak</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Apple is scaling back its plans for its AI-based health coach service. Could Apple's next AirPods Pro come with cameras in them? The iPhone 17 Pro Max has the best battery life out of a plethora of other smartphones! And Apple's Lockdown Mode helped prevent the FBI from accessing a WaPo reporter's iPhone.</p><ul> 
+<li>Apple is scaling back plans for new AI-based health coach service.</li> 
+<li>Apple's next AirPods Pro will come with cameras, says leaker.</li> 
+<li>Leak suggests Apple's M5 Pro and M5 Max may be the same chip.</li> 
+<li>NASA changes its mind, will allow Artemis astronauts to take iPhones to the Moon.</li> 
+<li>Google &amp; Apple CEOs offer seemingly contradictory statements regarding AI partnership.</li> 
+<li>New Alexa's issues are already making some users return to old Siri.</li> 
+<li>New Apple-backed AI model can generate sound and speech from silent videos.</li> 
+<li>iPhone 17 Pro Max has the best battery life of 35 smartphones tested.</li> 
+<li>Last week on my Mac: Why E cores make Apple silicon fast.</li> 
+<li>FBI couldn't get into WaPo reporter's iPhone because it had Lockdown Mode enabled.</li> 
+<li>Oura's FDA lobbying benefits Apple Watch, if everyone's smart about the risks.</li> 
+<li>Apple Music Replay 2026 now live, here's how to find it.</li> 
+<li>Ferrari's new Jony Ive–designed EV is swathed in glass and aluminum.</li> 
+<li>Applications are now open for the 2026 Swift Student Challenge -- but hurry.</li> 
+<li>Apple Arcade's 'Civilization VII' is good, but falls short of greatness</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Dan's Pick: Ponies on Peacock</li> 
+<li>Leo's Pick: Moody</li> 
+<li>Andy's Pick: Hourly Comic Day 2026</li> 
+<li>Jason's Pick: Curling</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, and <a href="https://twit.tv/people/jason-snell">Jason Snell</a></p> 
+<p><strong>Guest:</strong> <a href="https://dmoren.com/" target="_blank">Dan Moren</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://zocdoc.com/macbreak" target="_blank" rel="sponsored">zocdoc.com/macbreak</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860079/hero/MBW1011_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1011/mbw1011_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:16:43</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1011/mbw1011_h264m_1920x1080.mp4" length="2408480911" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1011/mbw1011_h264m_1920x1080.mp4" fileSize="2408480911" type="video/mp4" medium="video">
+				<media:title type="plain">MBW 1011: Oy and Whoop! - iPhones to the Moon!</media:title>
+				<media:description type="plain">iPhones to the Moon!</media:description>
+				<media:keywords>MacBreak Weekly, Leo Laporte, Andy Ihnatko, Jason Snell, Dan Moren, sixcolors.com, Apple, ai, ai health care, apple health, AirPods Pro, airpods pro camera, m5 pro, m5 max, Apple Silicon, nasa, Artemis, iPhone, Google, ai apple model, iPhone 17 Pro Max</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860079/hero/MBW1011_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Andy Ihnatko</media:credit>
+				<media:credit role="host">Jason Snell</media:credit>
+				<media:credit role="guest">Dan Moren</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/andy-ihnatko" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/30/pictures/andyatmetopera.jpg">Andy Ihnatko</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/jason-snell" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/73/pictures/jason-snell.png">Jason Snell</podcast:person>
+				<podcast:person role="guest" href="https://dmoren.com/" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/713041/pictures/dan.jpg">Dan Moren</podcast:person>
+		</item>
+		<item>
+			<title>MBW 1010: A Strand of Woz's Beard Hair - Apple&#039;s Record Quarter</title>
+			<itunes:title>A Strand of Woz's Beard Hair - Apple&#039;s Record Quarter</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Tue, 03 Feb 2026 17:50:00 PST</pubDate>
+			<itunes:episode>1010</itunes:episode>
+			<podcast:episode>1010</podcast:episode>
+			<link>https://twit.tv/shows/macbreak-weekly/episodes/1010</link>
+			<comments>https://twit.tv/shows/macbreak-weekly/episodes/1010</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Apple</category>
+			<category>Mac</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Apple&#039;s Record Quarter</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/apples-record-earnings-what-it-reveals-about-their-ai-strategy-and-shift-subscriptions" type="text/html" />
+			<itunes:keywords>MacBreak Weekly, Leo Laporte, Andy Ihnatko, Mikah Sargent, Shelly Brisbin, Apple, q1 2026, Apple quarterly results, apple devices, mac, Q.ai, ai companies, Halide, Sebastiaan de With, Patreon, continuity camera, apple-1 computer, Steve Jobs, iphone fold, </itunes:keywords>
+			<description><![CDATA[
+<p>Apple had a very strong Q1 2026, thanks to iPhone 17 sales. Apple acquires an AI company, its second-largest acquisition behind Beats by Dre. An Apple-1 computer prototype board #0 sold for $ 2.75 million. And new tech spec leaks of Apple's potential iPhone Fold hit the web!</p><ul> 
+<li>Apple's record quarter: Is this what a hit iPhone looks like?.</li> 
+<li>Apple reveals it has 2.5 billion active devices around the world.</li> 
+<li>Apple's historic quarter doesn't change the need for AI reckoning.</li> 
+<li>Apple revamps how you buy a Mac online, removes preconfigured options.</li> 
+<li>Apple's second biggest acquisition ever is an AI company that listens to 'silent speech'.</li> 
+<li>Apple Design Team gains Halide co-founder, but the pro camera app isn't going anywhere.</li> 
+<li>Apple to soon take up to 30% cut from all Patreon creators in iOS app.</li> 
+<li>Apple was fined a total of $851M last year for privacy and antitrust violations.</li> 
+<li>Continuity Camera lands Apple in legal trouble for 'Sherlocking' Camo.</li> 
+<li>Apple-1 computer prototype board #0 sold for $2.75M.</li> 
+<li>Very first Apple check &amp; early Apple-1 motherboard sold for $5 million combined.</li> 
+<li>New iPhone Fold specs revealed, including design, cameras, more.</li> 
+<li>Report: Apple 'exploring' clamshell foldable iPhone as potential follow-up model.</li> 
+<li>New MacBook Pro release date: Here's when M5 Pro and M5 Max might debut.</li> 
+<li>Agentic coding comes to Xcode.</li> 
+<li>Auto-resizing columns in Finder.</li> 
+<li>iOS 26's Passwords app has a new feature that can save you a headache.</li> 
+<li>Apple Maps gets a 'Drops of God' wine guide curated by actor Tomohisa Yamashita.</li> 
+<li>Apple C-series modem enables new privacy-focused limit precise location feature.</li> 
+<li>Today's Apple TV press day.</li> 
+<li>New 'Humans of Apple TV' video debuts, watch it here.</li> 
+<li>Apple TV launches F1 programming in app ahead of season kickoff.</li> 
+<li>Two years after release, Apple still hasn't decided what to do with Apple Vision Pro.</li> 
+<li>More Accessibility for Winter Olympics.</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Shelly's Pick: Transit App</li> 
+<li>Leo's Picks: AppleUnsold and Bugs Apple Loves</li> 
+<li>Andy's Pick: ReelGood</li> 
+<li>Mikah's Pick: Picky Pad</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a></p> 
+<p><strong>Guests:</strong> <a href="https://bsky.app/profile/shelly.brisbin.net" target="_blank">Shelly Brisbin</a> and <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Apple had a very strong Q1 2026, thanks to iPhone 17 sales. Apple acquires an AI company, its second-largest acquisition behind Beats by Dre. An Apple-1 computer prototype board #0 sold for $ 2.75 million. And new tech spec leaks of Apple's potential iPhone Fold hit the web!</p><ul> 
+<li>Apple's record quarter: Is this what a hit iPhone looks like?.</li> 
+<li>Apple reveals it has 2.5 billion active devices around the world.</li> 
+<li>Apple's historic quarter doesn't change the need for AI reckoning.</li> 
+<li>Apple revamps how you buy a Mac online, removes preconfigured options.</li> 
+<li>Apple's second biggest acquisition ever is an AI company that listens to 'silent speech'.</li> 
+<li>Apple Design Team gains Halide co-founder, but the pro camera app isn't going anywhere.</li> 
+<li>Apple to soon take up to 30% cut from all Patreon creators in iOS app.</li> 
+<li>Apple was fined a total of $851M last year for privacy and antitrust violations.</li> 
+<li>Continuity Camera lands Apple in legal trouble for 'Sherlocking' Camo.</li> 
+<li>Apple-1 computer prototype board #0 sold for $2.75M.</li> 
+<li>Very first Apple check &amp; early Apple-1 motherboard sold for $5 million combined.</li> 
+<li>New iPhone Fold specs revealed, including design, cameras, more.</li> 
+<li>Report: Apple 'exploring' clamshell foldable iPhone as potential follow-up model.</li> 
+<li>New MacBook Pro release date: Here's when M5 Pro and M5 Max might debut.</li> 
+<li>Agentic coding comes to Xcode.</li> 
+<li>Auto-resizing columns in Finder.</li> 
+<li>iOS 26's Passwords app has a new feature that can save you a headache.</li> 
+<li>Apple Maps gets a 'Drops of God' wine guide curated by actor Tomohisa Yamashita.</li> 
+<li>Apple C-series modem enables new privacy-focused limit precise location feature.</li> 
+<li>Today's Apple TV press day.</li> 
+<li>New 'Humans of Apple TV' video debuts, watch it here.</li> 
+<li>Apple TV launches F1 programming in app ahead of season kickoff.</li> 
+<li>Two years after release, Apple still hasn't decided what to do with Apple Vision Pro.</li> 
+<li>More Accessibility for Winter Olympics.</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Shelly's Pick: Transit App</li> 
+<li>Leo's Picks: AppleUnsold and Bugs Apple Loves</li> 
+<li>Andy's Pick: ReelGood</li> 
+<li>Mikah's Pick: Picky Pad</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a></p> 
+<p><strong>Guests:</strong> <a href="https://bsky.app/profile/shelly.brisbin.net" target="_blank">Shelly Brisbin</a> and <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Apple had a very strong Q1 2026, thanks to iPhone 17 sales. Apple acquires an AI company, its second-largest acquisition behind Beats by Dre. An Apple-1 computer prototype board #0 sold for $ 2.75 million. And new tech spec leaks of Apple's potential iPhone Fold hit the web!</p><ul> 
+<li>Apple's record quarter: Is this what a hit iPhone looks like?.</li> 
+<li>Apple reveals it has 2.5 billion active devices around the world.</li> 
+<li>Apple's historic quarter doesn't change the need for AI reckoning.</li> 
+<li>Apple revamps how you buy a Mac online, removes preconfigured options.</li> 
+<li>Apple's second biggest acquisition ever is an AI company that listens to 'silent speech'.</li> 
+<li>Apple Design Team gains Halide co-founder, but the pro camera app isn't going anywhere.</li> 
+<li>Apple to soon take up to 30% cut from all Patreon creators in iOS app.</li> 
+<li>Apple was fined a total of $851M last year for privacy and antitrust violations.</li> 
+<li>Continuity Camera lands Apple in legal trouble for 'Sherlocking' Camo.</li> 
+<li>Apple-1 computer prototype board #0 sold for $2.75M.</li> 
+<li>Very first Apple check &amp; early Apple-1 motherboard sold for $5 million combined.</li> 
+<li>New iPhone Fold specs revealed, including design, cameras, more.</li> 
+<li>Report: Apple 'exploring' clamshell foldable iPhone as potential follow-up model.</li> 
+<li>New MacBook Pro release date: Here's when M5 Pro and M5 Max might debut.</li> 
+<li>Agentic coding comes to Xcode.</li> 
+<li>Auto-resizing columns in Finder.</li> 
+<li>iOS 26's Passwords app has a new feature that can save you a headache.</li> 
+<li>Apple Maps gets a 'Drops of God' wine guide curated by actor Tomohisa Yamashita.</li> 
+<li>Apple C-series modem enables new privacy-focused limit precise location feature.</li> 
+<li>Today's Apple TV press day.</li> 
+<li>New 'Humans of Apple TV' video debuts, watch it here.</li> 
+<li>Apple TV launches F1 programming in app ahead of season kickoff.</li> 
+<li>Two years after release, Apple still hasn't decided what to do with Apple Vision Pro.</li> 
+<li>More Accessibility for Winter Olympics.</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Shelly's Pick: Transit App</li> 
+<li>Leo's Picks: AppleUnsold and Bugs Apple Loves</li> 
+<li>Andy's Pick: ReelGood</li> 
+<li>Mikah's Pick: Picky Pad</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a> and <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a></p> 
+<p><strong>Guests:</strong> <a href="https://bsky.app/profile/shelly.brisbin.net" target="_blank">Shelly Brisbin</a> and <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/859993/hero/MBW1010_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1010/mbw1010_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:19:09</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1010/mbw1010_h264m_1920x1080.mp4" length="2360231237" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1010/mbw1010_h264m_1920x1080.mp4" fileSize="2360231237" type="video/mp4" medium="video">
+				<media:title type="plain">MBW 1010: A Strand of Woz's Beard Hair - Apple&#039;s Record Quarter</media:title>
+				<media:description type="plain">Apple&#039;s Record Quarter</media:description>
+				<media:keywords>MacBreak Weekly, Leo Laporte, Andy Ihnatko, Mikah Sargent, Shelly Brisbin, Apple, q1 2026, Apple quarterly results, apple devices, mac, Q.ai, ai companies, Halide, Sebastiaan de With, Patreon, continuity camera, apple-1 computer, Steve Jobs, iphone fold, </media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/859993/hero/MBW1010_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Andy Ihnatko</media:credit>
+				<media:credit role="guest">Shelly Brisbin</media:credit>
+				<media:credit role="guest">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/andy-ihnatko" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/30/pictures/andyatmetopera.jpg">Andy Ihnatko</podcast:person>
+				<podcast:person role="guest" href="https://bsky.app/profile/shelly.brisbin.net">Shelly Brisbin</podcast:person>
+				<podcast:person role="guest" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>MBW 1009: We Don't Have Room for Bryan - Apple Unveils the Newest AirTags!</title>
+			<itunes:title>We Don't Have Room for Bryan - Apple Unveils the Newest AirTags!</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Tue, 27 Jan 2026 18:15:00 PST</pubDate>
+			<itunes:episode>1009</itunes:episode>
+			<podcast:episode>1009</podcast:episode>
+			<link>https://twit.tv/shows/macbreak-weekly/episodes/1009</link>
+			<comments>https://twit.tv/shows/macbreak-weekly/episodes/1009</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Apple</category>
+			<category>Mac</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Apple Unveils the Newest AirTags!</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/new-apple-airtag-worth-upgrading" type="text/html" />
+			<itunes:keywords>MacBreak Weekly, Leo Laporte, Andy Ihnatko, Jason Snell, Dave Hamilton, Apple, airtags, AirTags 2, new airtags, ios 26.2.1, ipados 26.2.1, Artificial Intelligence, ai pin, macbook pro, macbook, macbook pro upgrades, Mark Gurman, tim cook, melania</itunes:keywords>
+			<description><![CDATA[
+<p>Apple launches the next generation of its AirTags. Is Apple developing its own take on an AI wearable pin? Apple is holding an event in LA for creators: could this coincide with an announcement of the next MacBook Pro? And Apple snags a Best Picture nomination for 'F1: The Movie'.</p><ul> 
+<li>Apple launches AirTag 2 with improved range, louder speaker, more.</li> 
+<li>Incremental iOS 26.2.1, iPadOS 26.2.1, watchOS 26.2.1 updates support the new AirTag.</li> 
+<li>Apple developing AI wearable pin.</li> 
+<li>Apple hosting LA event for creators on January 27-29 that could coincide with MacBook Pro announcement.</li> 
+<li>Apple reportedly aiming to upgrade the MacBook Pro twice this year.</li> 
+<li>Tim Cook slammed for attending 'Melania' screening on night of Alex Pretti killing.</li> 
+<li>Apple TV earns Best Picture nomination for 'F1: The Movie' in 2026 Oscars.</li> 
+<li>I let ChatGPT analyze a decade of my Apple Watch data. Then I called my doctor.</li> 
+<li>Ongoing RAM supply and cost crisis isn't an issue for Apple's iPhone — right now.</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Dave's Pick: Anker Prime Foldable Wireless Charging Station (Feb 2026)</li> 
+<li>Andy's Pick: Mermaid</li> 
+<li>Jason's Pick: ChapterPod</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, and <a href="https://twit.tv/people/jason-snell">Jason Snell</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.davethenerd.com/" target="_blank">Dave Hamilton</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="https://cachefly.com/twit" target="_blank" rel="sponsored">cachefly.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Apple launches the next generation of its AirTags. Is Apple developing its own take on an AI wearable pin? Apple is holding an event in LA for creators: could this coincide with an announcement of the next MacBook Pro? And Apple snags a Best Picture nomination for 'F1: The Movie'.</p><ul> 
+<li>Apple launches AirTag 2 with improved range, louder speaker, more.</li> 
+<li>Incremental iOS 26.2.1, iPadOS 26.2.1, watchOS 26.2.1 updates support the new AirTag.</li> 
+<li>Apple developing AI wearable pin.</li> 
+<li>Apple hosting LA event for creators on January 27-29 that could coincide with MacBook Pro announcement.</li> 
+<li>Apple reportedly aiming to upgrade the MacBook Pro twice this year.</li> 
+<li>Tim Cook slammed for attending 'Melania' screening on night of Alex Pretti killing.</li> 
+<li>Apple TV earns Best Picture nomination for 'F1: The Movie' in 2026 Oscars.</li> 
+<li>I let ChatGPT analyze a decade of my Apple Watch data. Then I called my doctor.</li> 
+<li>Ongoing RAM supply and cost crisis isn't an issue for Apple's iPhone — right now.</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Dave's Pick: Anker Prime Foldable Wireless Charging Station (Feb 2026)</li> 
+<li>Andy's Pick: Mermaid</li> 
+<li>Jason's Pick: ChapterPod</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, and <a href="https://twit.tv/people/jason-snell">Jason Snell</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.davethenerd.com/" target="_blank">Dave Hamilton</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="https://cachefly.com/twit" target="_blank" rel="sponsored">cachefly.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Apple launches the next generation of its AirTags. Is Apple developing its own take on an AI wearable pin? Apple is holding an event in LA for creators: could this coincide with an announcement of the next MacBook Pro? And Apple snags a Best Picture nomination for 'F1: The Movie'.</p><ul> 
+<li>Apple launches AirTag 2 with improved range, louder speaker, more.</li> 
+<li>Incremental iOS 26.2.1, iPadOS 26.2.1, watchOS 26.2.1 updates support the new AirTag.</li> 
+<li>Apple developing AI wearable pin.</li> 
+<li>Apple hosting LA event for creators on January 27-29 that could coincide with MacBook Pro announcement.</li> 
+<li>Apple reportedly aiming to upgrade the MacBook Pro twice this year.</li> 
+<li>Tim Cook slammed for attending 'Melania' screening on night of Alex Pretti killing.</li> 
+<li>Apple TV earns Best Picture nomination for 'F1: The Movie' in 2026 Oscars.</li> 
+<li>I let ChatGPT analyze a decade of my Apple Watch data. Then I called my doctor.</li> 
+<li>Ongoing RAM supply and cost crisis isn't an issue for Apple's iPhone — right now.</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Dave's Pick: Anker Prime Foldable Wireless Charging Station (Feb 2026)</li> 
+<li>Andy's Pick: Mermaid</li> 
+<li>Jason's Pick: ChapterPod</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, and <a href="https://twit.tv/people/jason-snell">Jason Snell</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.davethenerd.com/" target="_blank">Dave Hamilton</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="https://cachefly.com/twit" target="_blank" rel="sponsored">cachefly.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859884/hero/MBW1009_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1009/mbw1009_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:16:06</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1009/mbw1009_h264m_1920x1080.mp4" length="2308549743" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1009/mbw1009_h264m_1920x1080.mp4" fileSize="2308549743" type="video/mp4" medium="video">
+				<media:title type="plain">MBW 1009: We Don't Have Room for Bryan - Apple Unveils the Newest AirTags!</media:title>
+				<media:description type="plain">Apple Unveils the Newest AirTags!</media:description>
+				<media:keywords>MacBreak Weekly, Leo Laporte, Andy Ihnatko, Jason Snell, Dave Hamilton, Apple, airtags, AirTags 2, new airtags, ios 26.2.1, ipados 26.2.1, Artificial Intelligence, ai pin, macbook pro, macbook, macbook pro upgrades, Mark Gurman, tim cook, melania</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859884/hero/MBW1009_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Andy Ihnatko</media:credit>
+				<media:credit role="host">Jason Snell</media:credit>
+				<media:credit role="guest">Dave Hamilton</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/andy-ihnatko" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/30/pictures/andyatmetopera.jpg">Andy Ihnatko</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/jason-snell" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/73/pictures/jason-snell.png">Jason Snell</podcast:person>
+				<podcast:person role="guest" href="https://www.davethenerd.com/">Dave Hamilton</podcast:person>
+		</item>
+		<item>
+			<title>MBW 1008: Check the Stains - Will the Dynamic Island Move on the iPhone?</title>
+			<itunes:title>Check the Stains - Will the Dynamic Island Move on the iPhone?</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Tue, 20 Jan 2026 17:25:00 PST</pubDate>
+			<itunes:episode>1008</itunes:episode>
+			<podcast:episode>1008</podcast:episode>
+			<link>https://twit.tv/shows/macbreak-weekly/episodes/1008</link>
+			<comments>https://twit.tv/shows/macbreak-weekly/episodes/1008</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Apple</category>
+			<category>Mac</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Will the Dynamic Island Move on the iPhone?</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/macbreak-weekly-1008-transcript" type="text/html" />
+			<itunes:keywords>MacBreak Weekly, Leo Laporte, Andy Ihnatko, Jason Snell, stephen robles, Apple, iphone 18, iphone 18 pro, dynamic island, iphone hole punch, macbook pro, m5, m5 macbook pro, apple icons, Apple software, studio display, Pro Display XDR, siri</itunes:keywords>
+			<description><![CDATA[
+<p>Rumors are starting to pick up in 2026, with more information emerging about the upcoming iPhone 18 and M5 MacBook Pros. Could we finally see new Studio Displays this year? And end-to-end encryption for RCS messages could finally be coming to iOS.</p><ul> 
+<li>iPhone 18 Pro: Dynamic Island may move to top-left screen corner.</li> 
+<li>Some MacBook Pro configurations see up to a two-month delay ahead of possible next-gen M5 MacBook Pro release.</li> 
+<li>The icon history of various Apple software.</li> 
+<li>New Studio Display or Pro Display XDR spotted in regulatory database.</li> 
+<li>Google Gemini-Powered Siri will reportedly have these 7 new features.</li> 
+<li>Apple Watch blood sugar monitoring a step closer as new tech launches.</li> 
+<li>The Smartlet dual watch band is the most ridiculous Apple Watch accessory yet.</li> 
+<li>Apple Vision Pro owners will get a great assortment of classic arcade games in VR soon.</li> 
+<li>Red Bull's 2026 Formula 1 launch puts Apple hardware front and center.</li> 
+<li>Civilization VII is coming to Apple Arcade.</li> 
+<li>As pressure mounts for Apple to pull the X app, xAI says Grok will stop undressing people.</li> 
+<li>In case you ever doubted it, Apple Car was real -- reveals Airbnb.</li> 
+<li>End-to-end encryption for RCS messages surfaces in iOS 26.3 beta.</li> 
+<li>Apple is fighting for TSMC capacity as Nvidia takes center stage.</li> 
+<li>Apple testing new App Store design that blurs the line between ads and search results</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Andy's Pick: Dolly Parton &amp; Trio, with Emmylou Harris and Linda Ronstadt</li> 
+<li>Stephen's Pick: Aqara U400 Smart Lock UWB</li> 
+<li>Jason's Pick: Also the Aqara U400 Smart Lock, but UWB locks in general.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, and <a href="https://twit.tv/people/jason-snell">Jason Snell</a></p> 
+<p><strong>Guest:</strong> <a href="https://twitter.com/stephenrobles" target="_blank">Stephen Robles</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Rumors are starting to pick up in 2026, with more information emerging about the upcoming iPhone 18 and M5 MacBook Pros. Could we finally see new Studio Displays this year? And end-to-end encryption for RCS messages could finally be coming to iOS.</p><ul> 
+<li>iPhone 18 Pro: Dynamic Island may move to top-left screen corner.</li> 
+<li>Some MacBook Pro configurations see up to a two-month delay ahead of possible next-gen M5 MacBook Pro release.</li> 
+<li>The icon history of various Apple software.</li> 
+<li>New Studio Display or Pro Display XDR spotted in regulatory database.</li> 
+<li>Google Gemini-Powered Siri will reportedly have these 7 new features.</li> 
+<li>Apple Watch blood sugar monitoring a step closer as new tech launches.</li> 
+<li>The Smartlet dual watch band is the most ridiculous Apple Watch accessory yet.</li> 
+<li>Apple Vision Pro owners will get a great assortment of classic arcade games in VR soon.</li> 
+<li>Red Bull's 2026 Formula 1 launch puts Apple hardware front and center.</li> 
+<li>Civilization VII is coming to Apple Arcade.</li> 
+<li>As pressure mounts for Apple to pull the X app, xAI says Grok will stop undressing people.</li> 
+<li>In case you ever doubted it, Apple Car was real -- reveals Airbnb.</li> 
+<li>End-to-end encryption for RCS messages surfaces in iOS 26.3 beta.</li> 
+<li>Apple is fighting for TSMC capacity as Nvidia takes center stage.</li> 
+<li>Apple testing new App Store design that blurs the line between ads and search results</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Andy's Pick: Dolly Parton &amp; Trio, with Emmylou Harris and Linda Ronstadt</li> 
+<li>Stephen's Pick: Aqara U400 Smart Lock UWB</li> 
+<li>Jason's Pick: Also the Aqara U400 Smart Lock, but UWB locks in general.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, and <a href="https://twit.tv/people/jason-snell">Jason Snell</a></p> 
+<p><strong>Guest:</strong> <a href="https://twitter.com/stephenrobles" target="_blank">Stephen Robles</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Rumors are starting to pick up in 2026, with more information emerging about the upcoming iPhone 18 and M5 MacBook Pros. Could we finally see new Studio Displays this year? And end-to-end encryption for RCS messages could finally be coming to iOS.</p><ul> 
+<li>iPhone 18 Pro: Dynamic Island may move to top-left screen corner.</li> 
+<li>Some MacBook Pro configurations see up to a two-month delay ahead of possible next-gen M5 MacBook Pro release.</li> 
+<li>The icon history of various Apple software.</li> 
+<li>New Studio Display or Pro Display XDR spotted in regulatory database.</li> 
+<li>Google Gemini-Powered Siri will reportedly have these 7 new features.</li> 
+<li>Apple Watch blood sugar monitoring a step closer as new tech launches.</li> 
+<li>The Smartlet dual watch band is the most ridiculous Apple Watch accessory yet.</li> 
+<li>Apple Vision Pro owners will get a great assortment of classic arcade games in VR soon.</li> 
+<li>Red Bull's 2026 Formula 1 launch puts Apple hardware front and center.</li> 
+<li>Civilization VII is coming to Apple Arcade.</li> 
+<li>As pressure mounts for Apple to pull the X app, xAI says Grok will stop undressing people.</li> 
+<li>In case you ever doubted it, Apple Car was real -- reveals Airbnb.</li> 
+<li>End-to-end encryption for RCS messages surfaces in iOS 26.3 beta.</li> 
+<li>Apple is fighting for TSMC capacity as Nvidia takes center stage.</li> 
+<li>Apple testing new App Store design that blurs the line between ads and search results</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Andy's Pick: Dolly Parton &amp; Trio, with Emmylou Harris and Linda Ronstadt</li> 
+<li>Stephen's Pick: Aqara U400 Smart Lock UWB</li> 
+<li>Jason's Pick: Also the Aqara U400 Smart Lock, but UWB locks in general.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, and <a href="https://twit.tv/people/jason-snell">Jason Snell</a></p> 
+<p><strong>Guest:</strong> <a href="https://twitter.com/stephenrobles" target="_blank">Stephen Robles</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859808/hero/MBW1008_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1008/mbw1008_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:32:30</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1008/mbw1008_h264m_1920x1080.mp4" length="2586811269" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1008/mbw1008_h264m_1920x1080.mp4" fileSize="2586811269" type="video/mp4" medium="video">
+				<media:title type="plain">MBW 1008: Check the Stains - Will the Dynamic Island Move on the iPhone?</media:title>
+				<media:description type="plain">Will the Dynamic Island Move on the iPhone?</media:description>
+				<media:keywords>MacBreak Weekly, Leo Laporte, Andy Ihnatko, Jason Snell, stephen robles, Apple, iphone 18, iphone 18 pro, dynamic island, iphone hole punch, macbook pro, m5, m5 macbook pro, apple icons, Apple software, studio display, Pro Display XDR, siri</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859808/hero/MBW1008_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Andy Ihnatko</media:credit>
+				<media:credit role="host">Jason Snell</media:credit>
+				<media:credit role="guest">Stephen Robles</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/andy-ihnatko" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/30/pictures/andyatmetopera.jpg">Andy Ihnatko</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/jason-snell" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/73/pictures/jason-snell.png">Jason Snell</podcast:person>
+				<podcast:person role="guest" href="https://twitter.com/stephenrobles">Stephen Robles</podcast:person>
+		</item>
+		<item>
+			<title>MBW 1007: They Plump When They Cook - Apple&#039;s AI to Use Google&#039;s Gemini</title>
+			<itunes:title>They Plump When They Cook - Apple&#039;s AI to Use Google&#039;s Gemini</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Tue, 13 Jan 2026 17:30:00 PST</pubDate>
+			<itunes:episode>1007</itunes:episode>
+			<podcast:episode>1007</podcast:episode>
+			<link>https://twit.tv/shows/macbreak-weekly/episodes/1007</link>
+			<comments>https://twit.tv/shows/macbreak-weekly/episodes/1007</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Apple</category>
+			<category>Mac</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Apple&#039;s AI to Use Google&#039;s Gemini</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/how-apples-google-gemini-deal-will-shape-siri-and-ai-iphone" type="text/html" />
+			<itunes:keywords>MacBreak Weekly, Leo Laporte, Andy Ihnatko, Jason Snell, Doc Rock, Apple, Google, google gemini, apple intelligence, apple creator studio, final cut pro, Pixelmator Pro, logic pro, apple vr, Vision Pro, immersive video basketball</itunes:keywords>
+			<description><![CDATA[
+<p>Apple &amp; Google enter a multi-year collaboration to integrate Apple's AI with Google's Gemini model. Apple unveils its Apple Creator Studio app collection. And JPMorganChase will become the new issuer of the Apple Card.</p><ul> 
+<li>Joint statement from Google and Apple.</li> 
+<li>Introducing Apple Creator Studio, an inspiring collection of creative apps.</li> 
+<li>Some first thoughts about live immersive basketball.</li> 
+<li>Apple: You (still) don't understand the Vision Pro.</li> 
+<li>Chase is taking over Apple's credit card.</li> 
+<li>Apple loses Safari lead designer to The Browser Company.</li> 
+<li>Removing Tahoe's unwanted menu icons.</li> 
+<li>iOS 26 shows unusually slow adoption months after release [updated].</li> 
+<li>Global smartphone shipments grew 2% YoY in 2025; Apple emerged as market leader.</li> 
+<li>Exclusive: India proposes forcing smartphone makers to give source code in security overhaul.</li> 
+<li>Verizon no longer needs to unlock phones after 60 days, thanks to FCC.</li> 
+<li>Apple scores at the 83rd annual Golden Globe Awards with Best Comedy and Best Actor wins for record-breaking hit "The Studio," alongside a Best Actress win for "Pluribus".</li> 
+<li>Legendary classic Macintosh game 'Dark Castle' is coming back to the Mac.</li> 
+<li>Texas man discovers 2.09-carat brown diamond at Arkansas State Park after asking Siri for mining tips.</li> 
+<li>Lego iMac G3 clears key hurdle, moves closer to release.</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Doc's Pick: Corsair Xeneon Edge 14.5" LCD Touchscreen</li> 
+<li>Leo's Pick: Insta360 Link 2 &amp; 2CPro</li> 
+<li>Jason's Pick: xteink x4</li> 
+<li>Andy's Pick: Dark Castle on Internet Archive</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, and <a href="https://twit.tv/people/jason-snell">Jason Snell</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.createbetter.life/" target="_blank">Doc Rock</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Apple &amp; Google enter a multi-year collaboration to integrate Apple's AI with Google's Gemini model. Apple unveils its Apple Creator Studio app collection. And JPMorganChase will become the new issuer of the Apple Card.</p><ul> 
+<li>Joint statement from Google and Apple.</li> 
+<li>Introducing Apple Creator Studio, an inspiring collection of creative apps.</li> 
+<li>Some first thoughts about live immersive basketball.</li> 
+<li>Apple: You (still) don't understand the Vision Pro.</li> 
+<li>Chase is taking over Apple's credit card.</li> 
+<li>Apple loses Safari lead designer to The Browser Company.</li> 
+<li>Removing Tahoe's unwanted menu icons.</li> 
+<li>iOS 26 shows unusually slow adoption months after release [updated].</li> 
+<li>Global smartphone shipments grew 2% YoY in 2025; Apple emerged as market leader.</li> 
+<li>Exclusive: India proposes forcing smartphone makers to give source code in security overhaul.</li> 
+<li>Verizon no longer needs to unlock phones after 60 days, thanks to FCC.</li> 
+<li>Apple scores at the 83rd annual Golden Globe Awards with Best Comedy and Best Actor wins for record-breaking hit "The Studio," alongside a Best Actress win for "Pluribus".</li> 
+<li>Legendary classic Macintosh game 'Dark Castle' is coming back to the Mac.</li> 
+<li>Texas man discovers 2.09-carat brown diamond at Arkansas State Park after asking Siri for mining tips.</li> 
+<li>Lego iMac G3 clears key hurdle, moves closer to release.</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Doc's Pick: Corsair Xeneon Edge 14.5" LCD Touchscreen</li> 
+<li>Leo's Pick: Insta360 Link 2 &amp; 2CPro</li> 
+<li>Jason's Pick: xteink x4</li> 
+<li>Andy's Pick: Dark Castle on Internet Archive</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, and <a href="https://twit.tv/people/jason-snell">Jason Snell</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.createbetter.life/" target="_blank">Doc Rock</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Apple &amp; Google enter a multi-year collaboration to integrate Apple's AI with Google's Gemini model. Apple unveils its Apple Creator Studio app collection. And JPMorganChase will become the new issuer of the Apple Card.</p><ul> 
+<li>Joint statement from Google and Apple.</li> 
+<li>Introducing Apple Creator Studio, an inspiring collection of creative apps.</li> 
+<li>Some first thoughts about live immersive basketball.</li> 
+<li>Apple: You (still) don't understand the Vision Pro.</li> 
+<li>Chase is taking over Apple's credit card.</li> 
+<li>Apple loses Safari lead designer to The Browser Company.</li> 
+<li>Removing Tahoe's unwanted menu icons.</li> 
+<li>iOS 26 shows unusually slow adoption months after release [updated].</li> 
+<li>Global smartphone shipments grew 2% YoY in 2025; Apple emerged as market leader.</li> 
+<li>Exclusive: India proposes forcing smartphone makers to give source code in security overhaul.</li> 
+<li>Verizon no longer needs to unlock phones after 60 days, thanks to FCC.</li> 
+<li>Apple scores at the 83rd annual Golden Globe Awards with Best Comedy and Best Actor wins for record-breaking hit "The Studio," alongside a Best Actress win for "Pluribus".</li> 
+<li>Legendary classic Macintosh game 'Dark Castle' is coming back to the Mac.</li> 
+<li>Texas man discovers 2.09-carat brown diamond at Arkansas State Park after asking Siri for mining tips.</li> 
+<li>Lego iMac G3 clears key hurdle, moves closer to release.</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Doc's Pick: Corsair Xeneon Edge 14.5" LCD Touchscreen</li> 
+<li>Leo's Pick: Insta360 Link 2 &amp; 2CPro</li> 
+<li>Jason's Pick: xteink x4</li> 
+<li>Andy's Pick: Dark Castle on Internet Archive</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, and <a href="https://twit.tv/people/jason-snell">Jason Snell</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.createbetter.life/" target="_blank">Doc Rock</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859710/hero/MBW1007_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1007/mbw1007_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:41:38</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1007/mbw1007_h264m_1920x1080.mp4" length="2741919536" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1007/mbw1007_h264m_1920x1080.mp4" fileSize="2741919536" type="video/mp4" medium="video">
+				<media:title type="plain">MBW 1007: They Plump When They Cook - Apple&#039;s AI to Use Google&#039;s Gemini</media:title>
+				<media:description type="plain">Apple&#039;s AI to Use Google&#039;s Gemini</media:description>
+				<media:keywords>MacBreak Weekly, Leo Laporte, Andy Ihnatko, Jason Snell, Doc Rock, Apple, Google, google gemini, apple intelligence, apple creator studio, final cut pro, Pixelmator Pro, logic pro, apple vr, Vision Pro, immersive video basketball</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859710/hero/MBW1007_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Andy Ihnatko</media:credit>
+				<media:credit role="host">Jason Snell</media:credit>
+				<media:credit role="guest">Doc Rock</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/andy-ihnatko" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/30/pictures/andyatmetopera.jpg">Andy Ihnatko</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/jason-snell" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/73/pictures/jason-snell.png">Jason Snell</podcast:person>
+				<podcast:person role="guest" href="https://www.createbetter.life/">Doc Rock</podcast:person>
+		</item>
+		<item>
+			<title>MBW 1006: Unemployable - Apple&#039;s Plans in 2026</title>
+			<itunes:title>Unemployable - Apple&#039;s Plans in 2026</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Tue, 06 Jan 2026 17:45:00 PST</pubDate>
+			<itunes:episode>1006</itunes:episode>
+			<podcast:episode>1006</podcast:episode>
+			<link>https://twit.tv/shows/macbreak-weekly/episodes/1006</link>
+			<comments>https://twit.tv/shows/macbreak-weekly/episodes/1006</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Apple</category>
+			<category>Mac</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Apple&#039;s Plans in 2026</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/macbreak-weekly-1006-transcript" type="text/html" />
+			<itunes:keywords>MacBreak Weekly, Leo Laporte, Andy Ihnatko, Jason Snell, Shelly Brisbin, Apple, apple 2025 products, apple 2025 promises, apple intelligence, alan dye, apple design, Meta, facebok, macos tahoe, tahoe icons, apple pro display, Apple display, applevis</itunes:keywords>
+			<description><![CDATA[
+<p>A look back at what Apple did, and did not deliver in 2025. What will Apple do in 2026? Could Apple benefit from Alan Dye, former design lead for Apple, leaving the company? And you can watch an upcoming NBA game, live, in the Vision Pro!</p><ul> 
+<li>2025 will be remembered for what Apple didn't deliver.</li> 
+<li>And Stay Out!</li> 
+<li>It's hard to justify Tahoe icons.</li> 
+<li>Wish List: A more flexible Apple display strategy.</li> 
+<li>AppleVis announces winners of the 2025 Golden Apple Awards.</li> 
+<li>Los Angeles Lakers games on Spectrum Front Row in Apple Immersive tip off January 9.</li> 
+<li>Apple scores at the Critics Choice Awards with top wins for global hit feature "F1" and Best Comedy Series "The Studio".</li> 
+<li>Pluribus season 2 isn't happening for a while, says Vince Gilligan: 'We're working on it'.</li> 
+<li>Steve Jobs' Desk, Bow Ties, 8-Track tapes, and other personal ephemera featured in Apple 50th Anniversary auction</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Shelly's Pick: PiccyBot</li> 
+<li>Andy's Pick: Bounce</li> 
+<li>Jason's Pick: LosslessCut</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, and <a href="https://twit.tv/people/jason-snell">Jason Snell</a></p> 
+<p><strong>Guest:</strong> <a href="https://bsky.app/profile/shelly.brisbin.net" target="_blank">Shelly Brisbin</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="https://material.security" target="_blank" rel="sponsored">material.security</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>A look back at what Apple did, and did not deliver in 2025. What will Apple do in 2026? Could Apple benefit from Alan Dye, former design lead for Apple, leaving the company? And you can watch an upcoming NBA game, live, in the Vision Pro!</p><ul> 
+<li>2025 will be remembered for what Apple didn't deliver.</li> 
+<li>And Stay Out!</li> 
+<li>It's hard to justify Tahoe icons.</li> 
+<li>Wish List: A more flexible Apple display strategy.</li> 
+<li>AppleVis announces winners of the 2025 Golden Apple Awards.</li> 
+<li>Los Angeles Lakers games on Spectrum Front Row in Apple Immersive tip off January 9.</li> 
+<li>Apple scores at the Critics Choice Awards with top wins for global hit feature "F1" and Best Comedy Series "The Studio".</li> 
+<li>Pluribus season 2 isn't happening for a while, says Vince Gilligan: 'We're working on it'.</li> 
+<li>Steve Jobs' Desk, Bow Ties, 8-Track tapes, and other personal ephemera featured in Apple 50th Anniversary auction</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Shelly's Pick: PiccyBot</li> 
+<li>Andy's Pick: Bounce</li> 
+<li>Jason's Pick: LosslessCut</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, and <a href="https://twit.tv/people/jason-snell">Jason Snell</a></p> 
+<p><strong>Guest:</strong> <a href="https://bsky.app/profile/shelly.brisbin.net" target="_blank">Shelly Brisbin</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="https://material.security" target="_blank" rel="sponsored">material.security</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>A look back at what Apple did, and did not deliver in 2025. What will Apple do in 2026? Could Apple benefit from Alan Dye, former design lead for Apple, leaving the company? And you can watch an upcoming NBA game, live, in the Vision Pro!</p><ul> 
+<li>2025 will be remembered for what Apple didn't deliver.</li> 
+<li>And Stay Out!</li> 
+<li>It's hard to justify Tahoe icons.</li> 
+<li>Wish List: A more flexible Apple display strategy.</li> 
+<li>AppleVis announces winners of the 2025 Golden Apple Awards.</li> 
+<li>Los Angeles Lakers games on Spectrum Front Row in Apple Immersive tip off January 9.</li> 
+<li>Apple scores at the Critics Choice Awards with top wins for global hit feature "F1" and Best Comedy Series "The Studio".</li> 
+<li>Pluribus season 2 isn't happening for a while, says Vince Gilligan: 'We're working on it'.</li> 
+<li>Steve Jobs' Desk, Bow Ties, 8-Track tapes, and other personal ephemera featured in Apple 50th Anniversary auction</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Shelly's Pick: PiccyBot</li> 
+<li>Andy's Pick: Bounce</li> 
+<li>Jason's Pick: LosslessCut</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, and <a href="https://twit.tv/people/jason-snell">Jason Snell</a></p> 
+<p><strong>Guest:</strong> <a href="https://bsky.app/profile/shelly.brisbin.net" target="_blank">Shelly Brisbin</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="https://material.security" target="_blank" rel="sponsored">material.security</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859637/hero/MBW1006_thumbnail-v2.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1006/mbw1006_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:35:11</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1006/mbw1006_h264m_1920x1080.mp4" length="2632171129" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1006/mbw1006_h264m_1920x1080.mp4" fileSize="2632171129" type="video/mp4" medium="video">
+				<media:title type="plain">MBW 1006: Unemployable - Apple&#039;s Plans in 2026</media:title>
+				<media:description type="plain">Apple&#039;s Plans in 2026</media:description>
+				<media:keywords>MacBreak Weekly, Leo Laporte, Andy Ihnatko, Jason Snell, Shelly Brisbin, Apple, apple 2025 products, apple 2025 promises, apple intelligence, alan dye, apple design, Meta, facebok, macos tahoe, tahoe icons, apple pro display, Apple display, applevis</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859637/hero/MBW1006_thumbnail-v2.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Andy Ihnatko</media:credit>
+				<media:credit role="host">Jason Snell</media:credit>
+				<media:credit role="guest">Shelly Brisbin</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/andy-ihnatko" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/30/pictures/andyatmetopera.jpg">Andy Ihnatko</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/jason-snell" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/73/pictures/jason-snell.png">Jason Snell</podcast:person>
+				<podcast:person role="guest" href="https://bsky.app/profile/shelly.brisbin.net">Shelly Brisbin</podcast:person>
+		</item>
+		<item>
+			<title>MBW 1005: Best of 2025 - MacBreak Weekly&#039;s Favorite Highlights from 2025</title>
+			<itunes:title>Best of 2025 - MacBreak Weekly&#039;s Favorite Highlights from 2025</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 28 Dec 2025 11:00:00 PST</pubDate>
+			<itunes:episode>1005</itunes:episode>
+			<podcast:episode>1005</podcast:episode>
+			<link>https://twit.tv/shows/macbreak-weekly/episodes/1005</link>
+			<comments>https://twit.tv/shows/macbreak-weekly/episodes/1005</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Apple</category>
+			<category>Mac</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>MacBreak Weekly&#039;s Favorite Highlights from 2025</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/macbreak-weekly-1005-transcript" type="text/html" />
+			<itunes:keywords>TWiT, best of 2025, Apple, Leo Laporte, Andy Ihnatko, Jason Snell, Alex Lindsay, Shelly Brisbin, stephen robles, iPhone, iPhone 16E, apple encryption, uk apple encryption, WHITE HOUSE, signal scandal, iphone auto-correct contact, apple website</itunes:keywords>
+			<description><![CDATA[
+<p>Join us again as we take a look back at some of MacBreak Weekly's favorite stories and moments from 2025:</p><ul> 
+<li>The unveiling of the iPhone 16e.</li> 
+<li>The UK's effort to keep Apple Encryption fight secret is block &amp; White House blames iPhone's auto-correct contact for Signal scandal.</li> 
+<li>Apple's fairly underwhelming, and hilarious, 'Celebrity Snapshot' page.</li> 
+<li>Another new product announcement from Apple: the iPhone Air!</li> 
+<li>MacBreak Weekly celebrates its 1000th episode!</li> 
+<li>And the departure of one of the original panelists of MacBreak Weekly...</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Join us again as we take a look back at some of MacBreak Weekly's favorite stories and moments from 2025:</p><ul> 
+<li>The unveiling of the iPhone 16e.</li> 
+<li>The UK's effort to keep Apple Encryption fight secret is block &amp; White House blames iPhone's auto-correct contact for Signal scandal.</li> 
+<li>Apple's fairly underwhelming, and hilarious, 'Celebrity Snapshot' page.</li> 
+<li>Another new product announcement from Apple: the iPhone Air!</li> 
+<li>MacBreak Weekly celebrates its 1000th episode!</li> 
+<li>And the departure of one of the original panelists of MacBreak Weekly...</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Join us again as we take a look back at some of MacBreak Weekly's favorite stories and moments from 2025:</p><ul> 
+<li>The unveiling of the iPhone 16e.</li> 
+<li>The UK's effort to keep Apple Encryption fight secret is block &amp; White House blames iPhone's auto-correct contact for Signal scandal.</li> 
+<li>Apple's fairly underwhelming, and hilarious, 'Celebrity Snapshot' page.</li> 
+<li>Another new product announcement from Apple: the iPhone Air!</li> 
+<li>MacBreak Weekly celebrates its 1000th episode!</li> 
+<li>And the departure of one of the original panelists of MacBreak Weekly...</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2025/12/859554/hero/MBW1005-bestof_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1005/mbw1005_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:08:51</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1005/mbw1005_h264m_1920x1080.mp4" length="1168042313" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1005/mbw1005_h264m_1920x1080.mp4" fileSize="1168042313" type="video/mp4" medium="video">
+				<media:title type="plain">MBW 1005: Best of 2025 - MacBreak Weekly&#039;s Favorite Highlights from 2025</media:title>
+				<media:description type="plain">MacBreak Weekly&#039;s Favorite Highlights from 2025</media:description>
+				<media:keywords>TWiT, best of 2025, Apple, Leo Laporte, Andy Ihnatko, Jason Snell, Alex Lindsay, Shelly Brisbin, stephen robles, iPhone, iPhone 16E, apple encryption, uk apple encryption, WHITE HOUSE, signal scandal, iphone auto-correct contact, apple website</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2025/12/859554/hero/MBW1005-bestof_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+		</item>
+		<item>
+			<title>MBW 1004: A Sad Farewell - Into the Cupertino Mists</title>
+			<itunes:title>A Sad Farewell - Into the Cupertino Mists</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Tue, 23 Dec 2025 17:45:00 PST</pubDate>
+			<itunes:episode>1004</itunes:episode>
+			<podcast:episode>1004</podcast:episode>
+			<link>https://twit.tv/shows/macbreak-weekly/episodes/1004</link>
+			<comments>https://twit.tv/shows/macbreak-weekly/episodes/1004</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Apple</category>
+			<category>Mac</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Into the Cupertino Mists</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/macbreak-weekly-1004-transcript" type="text/html" />
+			<itunes:keywords>MacBreak Weekly, Leo Laporte, Andy Ihnatko, Jason Snell, Alex Lindsay, Apple, Apple ID, apple id restoration, apple gift card, gift cards, apple watch, hypertension detection feature, Australia, third-party app store brazil, ios 26.23, proximity pairing, </itunes:keywords>
+			<description><![CDATA[
+<p>An update on the story about an Apple developer who lost access to their Apple ID. Apple receives clearance to activate the Apple Watch hypertension detection feature in Australia. Italy fines Apple $115 million over App Tracking Transparency. And we say goodbye to one of the original <em>MacBreak Weekly</em> panelists.</p><ul> 
+<li>Apple developer's account restored after compromised gift card incident.</li> 
+<li>Apple receives clearance to activate Apple Watch hypertension detection/notification feature in Australia.</li> 
+<li>Apple agrees to third-party App Store alternatives in Brazil.</li> 
+<li>Apple's iOS 26.3 will introduce proximity pairing to third-party devices in the EU.</li> 
+<li>Free two-hour delivery from Apple Stores now available for a limited time.</li> 
+<li>1.5 TB of VRAM on Mac Studio - RDMA over Thunderbolt 5.</li> 
+<li>Italy fines Apple $115 million over App Tracking Transparency.</li> 
+<li>Apple announces more ads are coming to App Store search results</li> 
+<li>Apple quietly discontinued flyover city tours in Apple Maps.</li> 
+<li>Why Apple's foldable iPhone may be smaller than expected.</li> 
+<li>Apple TV releasing Pluribus season finale early.</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Alex's Pick: Homey Pro</li> 
+<li>Andy's Pick: Ella Wishes You A Swinging Christmas &amp; Patrick Stewart's 'A Christmas Carol'</li> 
+<li>Jason's Pick: Some of his favorite books, TV shows, and podcasts from the past year.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/alex-lindsay">Alex Lindsay</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, and <a href="https://twit.tv/people/jason-snell">Jason Snell</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="https://auraframes.com/ink?utm_source=podcast&utm_medium=audio&utm_campaign=macbreakweeklytwit" target="_blank" rel="sponsored">auraframes.com/ink</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>An update on the story about an Apple developer who lost access to their Apple ID. Apple receives clearance to activate the Apple Watch hypertension detection feature in Australia. Italy fines Apple $115 million over App Tracking Transparency. And we say goodbye to one of the original <em>MacBreak Weekly</em> panelists.</p><ul> 
+<li>Apple developer's account restored after compromised gift card incident.</li> 
+<li>Apple receives clearance to activate Apple Watch hypertension detection/notification feature in Australia.</li> 
+<li>Apple agrees to third-party App Store alternatives in Brazil.</li> 
+<li>Apple's iOS 26.3 will introduce proximity pairing to third-party devices in the EU.</li> 
+<li>Free two-hour delivery from Apple Stores now available for a limited time.</li> 
+<li>1.5 TB of VRAM on Mac Studio - RDMA over Thunderbolt 5.</li> 
+<li>Italy fines Apple $115 million over App Tracking Transparency.</li> 
+<li>Apple announces more ads are coming to App Store search results</li> 
+<li>Apple quietly discontinued flyover city tours in Apple Maps.</li> 
+<li>Why Apple's foldable iPhone may be smaller than expected.</li> 
+<li>Apple TV releasing Pluribus season finale early.</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Alex's Pick: Homey Pro</li> 
+<li>Andy's Pick: Ella Wishes You A Swinging Christmas &amp; Patrick Stewart's 'A Christmas Carol'</li> 
+<li>Jason's Pick: Some of his favorite books, TV shows, and podcasts from the past year.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/alex-lindsay">Alex Lindsay</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, and <a href="https://twit.tv/people/jason-snell">Jason Snell</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="https://auraframes.com/ink?utm_source=podcast&utm_medium=audio&utm_campaign=macbreakweeklytwit" target="_blank" rel="sponsored">auraframes.com/ink</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>An update on the story about an Apple developer who lost access to their Apple ID. Apple receives clearance to activate the Apple Watch hypertension detection feature in Australia. Italy fines Apple $115 million over App Tracking Transparency. And we say goodbye to one of the original <em>MacBreak Weekly</em> panelists.</p><ul> 
+<li>Apple developer's account restored after compromised gift card incident.</li> 
+<li>Apple receives clearance to activate Apple Watch hypertension detection/notification feature in Australia.</li> 
+<li>Apple agrees to third-party App Store alternatives in Brazil.</li> 
+<li>Apple's iOS 26.3 will introduce proximity pairing to third-party devices in the EU.</li> 
+<li>Free two-hour delivery from Apple Stores now available for a limited time.</li> 
+<li>1.5 TB of VRAM on Mac Studio - RDMA over Thunderbolt 5.</li> 
+<li>Italy fines Apple $115 million over App Tracking Transparency.</li> 
+<li>Apple announces more ads are coming to App Store search results</li> 
+<li>Apple quietly discontinued flyover city tours in Apple Maps.</li> 
+<li>Why Apple's foldable iPhone may be smaller than expected.</li> 
+<li>Apple TV releasing Pluribus season finale early.</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Alex's Pick: Homey Pro</li> 
+<li>Andy's Pick: Ella Wishes You A Swinging Christmas &amp; Patrick Stewart's 'A Christmas Carol'</li> 
+<li>Jason's Pick: Some of his favorite books, TV shows, and podcasts from the past year.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/alex-lindsay">Alex Lindsay</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, and <a href="https://twit.tv/people/jason-snell">Jason Snell</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="https://auraframes.com/ink?utm_source=podcast&utm_medium=audio&utm_campaign=macbreakweeklytwit" target="_blank" rel="sponsored">auraframes.com/ink</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2025/12/859549/hero/MBW1004_thumbnail_0.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1004/mbw1004_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:24:20</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1004/mbw1004_h264m_1920x1080.mp4" length="2448329784" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1004/mbw1004_h264m_1920x1080.mp4" fileSize="2448329784" type="video/mp4" medium="video">
+				<media:title type="plain">MBW 1004: A Sad Farewell - Into the Cupertino Mists</media:title>
+				<media:description type="plain">Into the Cupertino Mists</media:description>
+				<media:keywords>MacBreak Weekly, Leo Laporte, Andy Ihnatko, Jason Snell, Alex Lindsay, Apple, Apple ID, apple id restoration, apple gift card, gift cards, apple watch, hypertension detection feature, Australia, third-party app store brazil, ios 26.23, proximity pairing, </media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2025/12/859549/hero/MBW1004_thumbnail_0.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Alex Lindsay</media:credit>
+				<media:credit role="host">Andy Ihnatko</media:credit>
+				<media:credit role="host">Jason Snell</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/alex-lindsay" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/26/pictures/alex_profile_color_square.jpg">Alex Lindsay</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/andy-ihnatko" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/30/pictures/andyatmetopera.jpg">Andy Ihnatko</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/jason-snell" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/73/pictures/jason-snell.png">Jason Snell</podcast:person>
+		</item>
+	</channel>
+</rss>

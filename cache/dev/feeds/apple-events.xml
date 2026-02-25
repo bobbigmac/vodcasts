@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:podcast="https://podcastindex.org/namespace/1.0" version="2.0">
+    <channel>
+        <title>Apple Events (video)</title>
+        <itunes:author>Apple</itunes:author>
+        <link>http://www.apple.com/</link>
+        <language>en-us</language>
+        <copyright>Copyright © 2021 Apple</copyright>
+        <itunes:owner>
+            <itunes:name>Apple</itunes:name>
+            <itunes:email>podcasts@apple.com</itunes:email>
+        </itunes:owner>
+        <description>The Apple Events podcast is home to the latest keynote addresses. Watch announcements of new products and services and browse the archive of past events to relive revolutionary moments in the history of personal technology.</description>
+        <itunes:subtitle>The Apple Events podcast is home to the latest keynote addresses. Watch announcements of new products and services and browse the archive of past events to relive revolutionary moments in the history of personal technology.</itunes:subtitle>
+        <itunes:summary>The Apple Events podcast is home to the latest keynote addresses. Watch announcements of new products and services and browse the archive of past events to relive revolutionary moments in the history of personal technology.</itunes:summary>
+        <itunes:keywords>keynote, mac, macintosh, osx, appletv, steve, ipod, iphone, presentation, sdk, xcode, ipad</itunes:keywords>
+        <itunes:image href="https://applehosted.podcasts.apple.com/apple_keynotes/images/AppleEvents_Video2025.png"/>
+        <category>Technology</category>
+        <itunes:category text="Technology">
+            <itunes:category text="Tech News"/>
+        </itunes:category>
+        <itunes:explicit>no</itunes:explicit>
+        <item>
+            <title>Introducing Apple Events (video)</title>
+            <itunes:isClosedCaptioned>no</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <description>The Apple Special Events podcast is home to the latest keynote addresses, hosted at the Steve Jobs Theater and other special venues. Watch announcements of new products and services and browse the archive of past events to relive revolutionary moments in the history of personal technology. Tap on the episode notes to find transcripts, translations, and more. Subscribe for free to be the first to receive new episodes from future events.
+            </description>
+            <itunes:summary>The Apple Special Events podcast is home to the latest keynote addresses, hosted at the Steve Jobs Theater and other special venues. Watch announcements of new products and services and browse the archive of past events to relive revolutionary moments in the history of personal technology. Tap on the episode notes to find transcripts, translations, and more. Subscribe for free to be the first to receive new episodes from future events.</itunes:summary>
+            <content:encoded>The Apple Special Events podcast is home to the latest keynote addresses, hosted at the Steve Jobs Theater and other special venues. Watch announcements of new products and services and browse the archive of past events to relive revolutionary moments in the history of personal technology. Tap on the episode notes to find transcripts, translations, and more. Subscribe for free to be the first to receive new episodes from future events.</content:encoded>
+            <enclosure length="942838" type="audio/mpeg" url="https://applehosted.podcasts.apple.com/apple_keynotes/2020/Apple%20Special%20Events%20Podcast%20Promo%20-%20WATCH-1.m4a"/>
+            <itunes:episodeType>trailer</itunes:episodeType>
+            <guid>06212020</guid>
+            <pubDate>Sun, 21 June 2020 10:00:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>00:28</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event — September 9</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <description>
+                <![CDATA[<p>Watch to learn about iPhone 17, iPhone Air, and iPhone 17 Pro. And, you’ll get a look at an all-new Apple Watch lineup, AirPods, and more.</p>]]>
+            </description>
+            <itunes:summary>Watch to learn about iPhone 17, iPhone Air, and iPhone 17 Pro. And, you’ll get a look at an all-new Apple Watch lineup, AirPods, and more.</itunes:summary>
+            <enclosure length="3070990074" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes/2025/250909_v2.mp4"/>
+            <podcast:transcript type="text/vtt" url="https://applehosted.podcasts.apple.com/apple_keynotes/2025/250909_v1.vtt"/>
+            <link>https://www.apple.com/apple-events/</link>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:image href="https://applehosted.podcasts.apple.com/apple_keynotes/images/9-2025-CA.png"/>
+            <guid>09092025</guid>
+            <pubDate>Tue, 09 Sept 2025 10:00:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:11:56</itunes:duration>
+        </item>
+        <item>
+            <title>WWDC25 Keynote</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <description>
+                <![CDATA[<p>Watch the WWDC25 keynote introducing our broadest design update ever and a more helpful Apple Intelligence. You’ll also learn about exciting features coming with iOS 26, iPadOS 26, macOS 26, watchOS 26, visionOS 26, and tvOS 26.</p>]]>
+            </description>
+            <itunes:summary>Watch the WWDC25 keynote introducing our broadest design update ever and a more helpful Apple Intelligence. You’ll also learn about exciting features coming with iOS 26, iPadOS 26, macOS 26, watchOS 26, visionOS 26, and tvOS 26.</itunes:summary>
+            <enclosure length="1901136918" type="video/mp4" url="https://applehosted.podcasts.apple.com/apple_keynotes/2024/WWDC_Video25_en_1.mp4"/>
+            <link>https://www.apple.com/apple-events/</link>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:image href="https://content.production.cdn.art19.com/images/e3/7e/0e/d5/e37e0ed5-914e-4859-92df-e622fb26655c/171b0c7fe7877e2c6347e2924e53ddbdc783b7cbb626a6d29568e2d59d498238c7c47fb41b6bec82e193db1e5b49de379b983cefc50b6561a475dcdf9310e4c5.jpeg"/>
+            <guid>06092025</guid>
+            <pubDate>Mon, 09 June 2025 12:30:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:32:26</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event — September 9</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <description>
+                <![CDATA[<p>Watch the special Apple Event to learn about the next generation of iPhone, designed for Apple Intelligence. Plus Apple Watch, AirPods, and so much more.</p>]]>
+            </description>
+            <itunes:summary>Watch the special Apple Event to learn about the next generation of iPhone, designed for Apple Intelligence. Plus Apple Watch, AirPods, and so much more.</itunes:summary>
+            <enclosure length="4040731392" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes/2024/240909_Event.mp4"/>
+            <podcast:transcript type="text/vtt" url="https://applehosted.podcasts.apple.com/apple_keynotes/2024/240909_Event_3.vtt"/>
+            <link>https://www.apple.com/apple-events/</link>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:image href="https://applehosted.podcasts.apple.com/apple_keynotes/images/CA_9_9_24.png"/>
+            <guid>09092024</guid>
+            <pubDate>Mon, 09 Sept 2024 12:30:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:38:49</itunes:duration>
+        </item>
+        <item>
+            <title>WWDC24 Keynote</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <description>
+                <![CDATA[<p>Watch the WWDC24 keynote introducing Apple Intelligence, personal intelligence designed to be helpful and relevant to you. Other exciting updates are coming with iOS 18, iPadOS 18, macOS Sequoia, watchOS 11, and visionOS 2.</p>]]>
+            </description>
+            <itunes:summary>Watch the WWDC24 keynote introducing Apple Intelligence, personal intelligence designed to be helpful and relevant to you. Other exciting updates are coming with iOS 18, iPadOS 18, macOS Sequoia, watchOS 11, and visionOS 2.</itunes:summary>
+            <content:encoded>
+                <![CDATA[<p>Watch the WWDC24 keynote introducing Apple Intelligence, personal intelligence designed to be helpful and relevant to you. Other exciting updates are coming with iOS 18, iPadOS 18, macOS Sequoia, watchOS 11, and visionOS 2.</p>]]>
+            </content:encoded>
+            <enclosure length="1886905720" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes/2024/240610_WWDC24.mp4"/>
+            <link>https://developer.apple.com/wwdc24/</link>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:image href="https://applehosted.podcasts.apple.com/apple_keynotes/images/WWDC24.png"/>
+            <guid>06102024</guid>
+            <pubDate>Mon, 10 June 2024 10:00:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:44:04</itunes:duration>
+            <podcast:transcript type="text/vtt" url="https://applehosted.podcasts.apple.com/apple_keynotes/2024/240610_WWDC24_en.vtt"/>
+        </item>
+        <item>
+            <title>Apple Event — May 7</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <description>
+                <![CDATA[<p>Watch the special Apple Event to learn about the newest iPad Air and iPad Pro, and the first-ever Apple Pencil Pro.</p>]]>
+            </description>
+            <itunes:summary>Watch the special Apple Event to learn about the newest iPad Air and iPad Pro, and the first-ever Apple Pencil Pro.</itunes:summary>
+            <content:encoded>
+                <![CDATA[<p>Watch the special Apple Event to learn about the newest iPad Air and iPad Pro, and the first-ever Apple Pencil Pro.</p>]]>
+            </content:encoded>
+            <enclosure length="743920195" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes/2024/240507.mp4"/>
+            <link>https://www.apple.com/ipad</link>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:image href="https://applehosted.podcasts.apple.com/apple_keynotes/images/EA_5_7_2024.png"/>
+            <guid>05072024</guid>
+            <pubDate>Tue, 07 May 2024 07:00:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>00:38:32</itunes:duration>
+            <podcast:transcript type="text/vtt" url="https://applehosted.podcasts.apple.com/apple_keynotes/2024/240507.vtt"/>
+        </item>
+        <item>
+            <title>Apple Event — October 30</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <description>
+                <![CDATA[<p>Watch the special Apple Event to learn about the new MacBook Pro and iMac with the M3 family of chips.</p>]]>
+            </description>
+            <itunes:summary>Watch the special Apple Event to learn about the new MacBook Pro and iMac with the M3 family of chips.</itunes:summary>
+            <content:encoded>
+                <![CDATA[<p>Watch the special Apple Event to learn about the new MacBook Pro and iMac with the M3 family of chips.</p>]]>
+            </content:encoded>
+            <enclosure length="541751091" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes/2023/231030_1080p.mp4"/>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:image href="https://applehosted.podcasts.apple.com/apple_keynotes/images/Episode_Artwork-10-2023.png"/>
+            <guid>10302023</guid>
+            <pubDate>Mon, 30 October 2023 17:00:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>00:30:31</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event — September 12</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <description>
+                <![CDATA[<p>Watch the special Apple Event to learn about iPhone 15, iPhone 15 Pro, Apple Watch Series 9, Apple Watch Ultra 2, and more.</p>]]>
+            </description>
+            <itunes:summary>Watch the special Apple Event to learn about iPhone 15, iPhone 15 Pro, Apple Watch Series 9, Apple Watch Ultra 2, and more.</itunes:summary>
+            <content:encoded>
+                <![CDATA[<p>Watch the special Apple Event to learn about iPhone 15, iPhone 15 Pro, Apple Watch Series 9, Apple Watch Ultra 2, and more.</p>]]>
+            </content:encoded>
+            <enclosure length="2039783099" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes/2023/230912_1080p.mp4"/>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:image href="https://applehosted.podcasts.apple.com/apple_keynotes/images/Episode_Artwork-2023.png"/>
+            <guid>09122023</guid>
+            <pubDate>Tue, 12 September 2023 11:30:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:22:55</itunes:duration>
+        </item>
+        <item>
+            <title>WWDC23 Keynote</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <description>
+                <![CDATA[<p>Watch the WWDC23 Apple Keynote announcing the latest Apple Vision Pro, MacBook Air 15", software, services, and operating systems.</p>]]>
+            </description>
+            <itunes:summary>Watch the WWDC23 Apple Keynote announcing the latest Apple Vision Pro, MacBook Air 15", software, services, and operating systems.</itunes:summary>
+            <content:encoded>
+                <![CDATA[<p>Watch the WWDC23 Apple Keynote announcing the latest Apple Vision Pro, MacBook Air 15", software, services, and operating systems.</p>]]>
+            </content:encoded>
+            <enclosure length="2628465799" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes/2023/230605_WWDC23_Video.mp4"/>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:image href="https://applehosted.podcasts.apple.com/apple_keynotes/images/WWDC23.png"/>
+            <guid>06052023</guid>
+            <pubDate>Mon, 05 June 2023 10:00:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>02:06:10</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, September 2022</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <description>
+                <![CDATA[<p>Watch the special Apple Event to learn about iPhone 14, iPhone 14 Pro, Apple Fitness+, Apple Watch Ultra, Apple Watch Series 8, AirPods Pro, and more.</p>]]>
+            </description>
+            <itunes:summary>Watch the special Apple Event to learn about iPhone 14, iPhone 14 Pro, Apple Fitness+, Apple Watch Ultra, Apple Watch Series 8, AirPods Pro, and more.</itunes:summary>
+            <content:encoded>
+                <![CDATA[<p>Watch the special Apple Event to learn about iPhone 14, iPhone 14 Pro, Apple Fitness+, Apple Watch Ultra, Apple Watch Series 8, AirPods Pro, and more.</p>]]>
+            </content:encoded>
+            <enclosure length="2287960660" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes/2022/220907_1080p.mp4"/>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:image href="https://applehosted.podcasts.apple.com/apple_keynotes/images/09-07-CA.png"/>
+            <guid>09072022</guid>
+            <pubDate>Wed, 07 September 2022 10:00:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:34:59</itunes:duration>
+        </item>
+        <item>
+            <title>WWDC22 Keynote</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <description>Watch the WWDC22 Apple Keynote announcing the latest software, hardware, services, and operating systems. For more on the Apple Worldwide Developers Conference, click here: https://developer.apple.com/wwdc22
+            </description>
+            <itunes:summary>Watch the WWDC22 Apple Keynote announcing the latest software, hardware, services, and operating systems. For more on the Apple Worldwide Developers Conference, click here: https://developer.apple.com/wwdc22</itunes:summary>
+            <content:encoded>Watch the WWDC22 Apple Keynote announcing the latest software, hardware, services, and operating systems. For more on the Apple Worldwide Developers Conference, click here: https://developer.apple.com/wwdc22</content:encoded>
+            <enclosure length="1836804520" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes/2022/220606_WWDC22_ID301-VOD_emV3_h264_1080p29_8500_CC_ALL_V2.mp4"/>
+            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:image href="https://applehosted.podcasts.apple.com/apple_keynotes/images/WWDC22_CA.png"/>
+            <guid>06062022</guid>
+            <pubDate>Mon, 06 June 2022 11:00:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:48:53</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, March 2022</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <description><![CDATA[<p>Watch the special Apple Event to learn about the all-new Mac Studio and Studio Display, new iPad Air, new iPhone SE, and iPhone 13 Pro and iPhone 13 in two new shades of green.</p>]]>
+            </description>
+            <itunes:summary>Watch the special Apple Event to learn about the all-new Mac Studio and Studio Display, new iPad Air, new iPhone SE, and iPhone 13 Pro and iPhone 13 in two new shades of green.</itunes:summary>
+            <content:encoded><![CDATA[<p>Watch the special Apple Event to learn about the all-new Mac Studio and Studio Display, new iPad Air, new iPhone SE, and iPhone 13 Pro and iPhone 13 in two new shades of green.</p>]]></content:encoded>
+            <enclosure length="1163699646" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes/2022/220308_1080p29.mp4"/>
+            <itunes:image href="https://applehosted.podcasts.apple.com/apple_keynotes/images/03-08-22.png"/>
+            <guid>03082022</guid>
+            <pubDate>Tue, 08 March 2022 11:00:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>0:58:47</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, October 2021</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <description><![CDATA[<p>Watch the special Apple Event to learn about the new MacBook Pro, all-new AirPods, HomePod mini, and more.</p>]]>
+            </description>
+            <itunes:summary>Watch the special Apple Event to learn about the new MacBook Pro, all-new AirPods, HomePod mini, and more.</itunes:summary>
+            <content:encoded><![CDATA[<p>Watch the special Apple Event to learn about the new MacBook Pro, all-new AirPods, HomePod mini, and more.</p>]]></content:encoded>
+            <enclosure length="1163699646" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes/2021/211018_1080p29.mp4"/>
+            <itunes:image href="https://applehosted.podcasts.apple.com/apple_keynotes/images/10-18-21.png"/>
+            <guid>10182021</guid>
+            <pubDate>Mon, 18 October 2021 11:00:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>0:50:18</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, September 2021</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <description><![CDATA[<p>Watch the special Apple Event to learn about the new iPhone 13 Pro, iPhone 13, Apple Watch Series 7, iPad mini, iPad, and more.</p>]]>
+            </description>
+            <itunes:summary>Watch the special Apple Event to learn about the new iPhone 13 Pro, iPhone 13, Apple Watch Series 7, iPad mini, iPad, and more.</itunes:summary>
+            <content:encoded><![CDATA[<p>Watch the special Apple Event to learn about the new iPhone 13 Pro, iPhone 13, Apple Watch Series 7, iPad mini, iPad, and more.</p>]]></content:encoded>
+            <enclosure length="1953704319" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes/2021/210914_h264_1080p29_8500_CC_ALL.mp4"/>
+            <itunes:image href="https://applehosted.podcasts.apple.com/apple_keynotes/images/9-2021-CA.png"/>
+            <guid>09142021</guid>
+            <pubDate>Tue, 14 September 2021 11:30:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:18:47</itunes:duration>
+        </item>
+        <item>
+            <title>WWDC21 Keynote</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <description><![CDATA[<p>Watch the WWDC21 Apple Keynote announcing the latest software, hardware, services, and operating systems.</p>]]>
+            </description>
+            <itunes:summary>Watch the WWDC21 Apple Keynote announcing the latest software, hardware, services, and operating systems.</itunes:summary>
+            <content:encoded><![CDATA[<p>Watch the WWDC21 Apple Keynote announcing the latest software, hardware, services, and operating systems.</p>]]></content:encoded>
+            <enclosure length="6554818760" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes/2021/WWDC_2021_1080p29_8500_CC_ALL_V5.mp4"/>
+            <itunes:image href="https://applehosted.podcasts.apple.com/apple_keynotes/images/WWDC21_Podcasts_VOD_3000_3000.png"/>
+            <guid>06072021</guid>
+            <pubDate>Mon, 07 June 2021 11:00:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:46:49</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, April 2021</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <description><![CDATA[<p>Watch the special Apple Event and learn about the latest updates for iMac, iPad Pro, and more.</p>]]>
+            </description>
+            <itunes:summary>Watch the special Apple Event and learn about the latest updates for iMac, iPad Pro, and more.</itunes:summary>
+            <content:encoded><![CDATA[<p>Watch the special Apple Event and learn about the latest updates for iMac, iPad Pro, and more.</p>]]></content:encoded>
+            <enclosure length="3942286065" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes/2021/210420_720p29_8500_CC_ALL_V3.mp4"/>
+            <itunes:image href="https://applehosted.podcasts.apple.com/apple_keynotes/images/Apple_Event_April2021.png"/>
+            <guid>04202021</guid>
+            <pubDate>Tue, 20 April 2021 11:00:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:01:03</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, November 2020</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <description><![CDATA[<p>Watch the special Apple Event and learn about the next generation of Mac. With the Apple M1 chip, the new MacBook Air, 13-inch MacBook Pro, and Mac mini each take a huge leap forward.</p>]]>
+            </description>
+            <itunes:summary>Watch the special Apple Event and learn about the next generation of Mac. With the Apple M1 chip, the new MacBook Air, 13-inch MacBook Pro, and Mac mini each take a huge leap forward.</itunes:summary>
+            <content:encoded><![CDATA[<p>Watch the special Apple Event and learn about the next generation of Mac. With the Apple M1 chip, the new MacBook Air, 13-inch MacBook Pro, and Mac mini each take a huge leap forward.</p>]]></content:encoded>
+            <enclosure length="2617516361" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes/2020/201110_KN-VOD_emV3_h264_720p29_8500_CC_ALL.mp4"/>
+            <itunes:image href="https://applehosted.podcasts.apple.com/apple_keynotes/images/AppleEvents_Nov2020.jpg"/>
+            <guid>11102020</guid>
+            <pubDate>Tue, 10 November 2020 11:00:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>00:48:59</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, October 2020</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <description><![CDATA[<p>Watch the special Apple Event and learn about the latest updates for HomePod mini, iPhone, and more.</p>]]>
+            </description>
+            <itunes:summary>Watch the special Apple Event and learn about the latest updates for HomePod mini, iPhone, and more.</itunes:summary>
+            <content:encoded><![CDATA[<p>Watch the special Apple Event and learn about the latest updates for HomePod mini, iPhone, and more.</p>]]></content:encoded>
+            <enclosure length="3921953707" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes/2020/201013_KN-VOD_emV1_h264_720p29_8500_CC_All.mp4"/>
+            <itunes:image href="https://applehosted.podcasts.apple.com/apple_keynotes/images/AppleEvents_Oct2020.png"/>
+            <guid>10132020</guid>
+            <pubDate>Tue, 13 October 2020 11:30:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:10:58</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, September 2020</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <description><![CDATA[<p>Watch the special Apple Event and learn about the latest updates for Apple Watch, iPad Air, and more.</p>]]>
+            </description>
+            <itunes:summary>Watch the special Apple Event and learn about the latest updates for Apple Watch, iPad Air, and more.</itunes:summary>
+            <content:encoded><![CDATA[<p>Watch the special Apple Event and learn about the latest updates for Apple Watch, iPad Air, and more.</p>]]></content:encoded>
+            <enclosure length="2194146495" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes/2020/200915_720p29_All.mp4"/>
+            <itunes:image href="https://applehosted.podcasts.apple.com/apple_keynotes/images/AppleEvents_Sep2020.png"/>
+            <guid>09152020</guid>
+            <pubDate>Tue, 15 September 2020 11:00:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:04:12</itunes:duration>
+        </item>
+        <item>
+            <title>WWDC20 Keynote</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <description><![CDATA[<p>The things you do every day just got easier than ever with <a href="https://www.apple.com/newsroom/2020/06/apple-reimagines-the-iphone-experience-with-ios-14/" target="_blank">iOS&nbsp;14</a>. Redesigned widgets put more information on an all-new Home Screen. App&nbsp;Clips help you handle tasks quickly. And the App&nbsp;Library automatically organizes your apps, so you can find them even&nbsp;faster.</p><p><br></p><p>Unlock the unique capabilities of iPad with <a href="https://www.apple.com/newsroom/2020/06/ipados-14-introduces-new-features-designed-specifically-for-ipad/" target="_blank">iPadOS&nbsp;14</a>. Use handwriting as easily as typed text in Notes. Access more app functions in a single view with enhanced app designs. And write in any text field with&nbsp;Scribble.</p><p><br></p><p><a href="https://www.apple.com/newsroom/2020/06/apple-introduces-macos-big-sur-with-a-beautiful-new-design/" target="_blank">macOS Big Sur</a> brings a stunning new design that makes Mac even more powerful. The biggest Safari update ever delivers a more personal and private browsing experience, while updates to Messages and Maps let you express and explore like never&nbsp;before.</p><p><br></p><p>With <a href="https://www.apple.com/newsroom/2020/06/watchos-7-adds-significant-personalization-health-and-fitness-features-to-apple-watch/" target="_blank">watchOS&nbsp;7</a>, you can now discover custom watch faces on websites and social media and share faces with friends. You’ll also meet the Sleep app of your dreams, track fitness metrics with four new workouts, and create healthier habits with the new Handwashing&nbsp;feature.</p>]]>
+            </description>
+            <itunes:summary>Introducing the all-new iOS 14, iPadOS 14, and watchOS 7 and the entirely reimagined macOS Big Sur. Each massive update transforms the experience of using your favorite devices, giving you the power to do more of the things you love like never before.</itunes:summary>
+            <content:encoded><![CDATA[<p>The things you do every day just got easier than ever with <a href="https://www.apple.com/newsroom/2020/06/apple-reimagines-the-iphone-experience-with-ios-14/" target="_blank">iOS&nbsp;14</a>. Redesigned widgets put more information on an all-new Home Screen. App&nbsp;Clips help you handle tasks quickly. And the App&nbsp;Library automatically organizes your apps, so you can find them even&nbsp;faster.</p><p><br></p><p>Unlock the unique capabilities of iPad with <a href="https://www.apple.com/newsroom/2020/06/ipados-14-introduces-new-features-designed-specifically-for-ipad/" target="_blank">iPadOS&nbsp;14</a>. Use handwriting as easily as typed text in Notes. Access more app functions in a single view with enhanced app designs. And write in any text field with&nbsp;Scribble.</p><p><br></p><p><a href="https://www.apple.com/newsroom/2020/06/apple-introduces-macos-big-sur-with-a-beautiful-new-design/" target="_blank">macOS Big Sur</a> brings a stunning new design that makes Mac even more powerful. The biggest Safari update ever delivers a more personal and private browsing experience, while updates to Messages and Maps let you express and explore like never&nbsp;before.</p><p><br></p><p>With <a href="https://www.apple.com/newsroom/2020/06/watchos-7-adds-significant-personalization-health-and-fitness-features-to-apple-watch/" target="_blank">watchOS&nbsp;7</a>, you can now discover custom watch faces on websites and social media and share faces with friends. You’ll also meet the Sleep app of your dreams, track fitness metrics with four new workouts, and create healthier habits with the new Handwashing&nbsp;feature.</p>]]></content:encoded>
+            <enclosure length="8249186222" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes/2020/200622.mp4"/>
+            <itunes:image href="https://applehosted.podcasts.apple.com/apple_keynotes/images/AppleEvents2020.png"/>
+            <guid>06222020</guid>
+            <pubDate>Mon, 22 June 2020 10:00:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:48:51</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, September 2019</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>Apple TV+, Apple Arcade, seventh-generation iPad, Apple Watch Series 5, iPhone 11, iPhone 11 Pro, and iPhone 11 Pro Max</itunes:subtitle>
+            <itunes:summary>See Apple CEO Tim Cook and team introduce Apple TV+, Apple Arcade, seventh-generation iPad, Apple Watch Series 5, iPhone 11, iPhone 11 Pro, and iPhone 11 Pro Max.</itunes:summary>
+            <enclosure length="6567585329" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes_1080p/2019/09102019_1080p.mp4"/>
+            <guid>https://applehosted.podcasts.apple.com/apple_keynotes/2019/09102019_SD.mp4</guid>
+            <pubDate>Tue, 10 Sep 2019 10:00:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:49:19</itunes:duration>
+        </item>
+        <item>
+            <title>WWDC19 Keynote</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>iOS 13, iPadOS, watchOS 6, macOS Catalina, and new Mac Pro and Pro Display XDR</itunes:subtitle>
+            <itunes:summary>See Apple CEO Tim Cook and team unveil new operating systems for iPhone, Apple Watch, and Mac — and a brand new OS for iPad. Also introducing the new Mac Pro and Pro Display XDR.</itunes:summary>
+            <enclosure length="4149965568" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes_1080p/2019/190603_1080pCC.mov"/>
+            <guid>https://applehosted.podcasts.apple.com/apple_keynotes/2019/190603_SD.mp4</guid>
+            <pubDate>Mon, 03 Jun 2019 10:00:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>02:17:32</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, March 2019</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>Apple News+, Apple Card, Apple Arcade, Apple TV+</itunes:subtitle>
+            <itunes:summary>See Apple CEO Tim Cook and team introduce Apple News+, Apple Card, Apple Arcade and Apple TV+.</itunes:summary>
+            <enclosure length="6573579499" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes_1080p/2019/190325_1080pCC.m4v"/>
+            <itunes:image href="https://applehosted.podcasts.apple.com/apple_keynotes/images/Apple_Event_March2019.png"/>
+            <guid>https://applehosted.podcasts.apple.com/apple_keynotes/2019/190325_SD.m4v</guid>
+            <pubDate>Mon, 25 Mar 2019 10:00:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:49:22</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, October 2018</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>Mac mini, MacBook Air, iPad Pro, Apple Pencil</itunes:subtitle>
+            <itunes:summary>See Apple CEO Tim Cook and team introduce the new Mac mini, MacBook Air, iPad Pro with all-screen design, and second-generation Apple Pencil.</itunes:summary>
+            <enclosure length="5517749463" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes_1080p/2018/october2018_1080.m4v"/>
+            <itunes:image href="https://applehosted.podcasts.apple.com/apple_keynotes/images/Apple_Event_Oct2018.png"/>
+            <guid>https://applehosted.podcasts.apple.com/apple_keynotes/2018/october2018_sd.m4v</guid>
+            <pubDate>Tue, 30 Oct 2018 09:00:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:31:22</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, September 2018</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>iPhone Xs, iPhone Xs Max, iPhone XR, Apple Watch Series 4, HomePod</itunes:subtitle>
+            <itunes:summary>See Apple CEO Tim Cook and team introduce iPhone Xs, iPhone Xs Max, iPhone XR, Apple Watch Series 4, and the new HomePod features.</itunes:summary>
+            <enclosure length="6410615495" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes_1080p/2018/sept2018_hd_CC.m4v"/>
+            <guid>https://applehosted.podcasts.apple.com/apple_keynotes/2018/sept2018_sd.m4v</guid>
+            <pubDate>Wed, 12 Sep 2018 13:00:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:47:13</itunes:duration>
+        </item>
+        <item>
+            <title>WWDC18 Keynote</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>iOS 12, ARKit2, Apple TV 4K with tvOS 12, watchOS 5, and macOS Mojave with a completely redesigned Mac App Store</itunes:subtitle>
+            <itunes:summary>See Apple CEO Tim Cook and team unveil upgraded operating systems for iPhone and iPad, Mac, Apple Watch, and Apple TV.</itunes:summary>
+            <enclosure length="8210639959" type="video/m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes_1080p/2018/wwdc2018_1080_CC.m4v"/>
+            <guid>https://applehosted.podcasts.apple.com/apple_keynotes/2018/wwdc2018_sd.m4v</guid>
+            <pubDate>Mon, 4 Jun 2018 12:00:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>02:19:05</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, March 2018</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>New 9.7-inch iPad with Apple Pencil support, Everyone Can Create curriculum, new app Schoolwork, Apple ConnectED initiatives</itunes:subtitle>
+            <itunes:summary>See Apple’s keynote at Lane Tech College Prep that highlights creativity in education.</itunes:summary>
+            <enclosure length="411965889" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes_1080p/2018/march_2018_1080.m4v"/>
+            <guid>https://applehosted.podcasts.apple.com/apple_keynotes/2018/march_2018_sd.mp4</guid>
+            <pubDate>Tue, 27 Mar 2018 10:00:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:08:00</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, September 2017</title>
+            <itunes:isClosedCaptioned>no</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle> iPhone X, iPhone 8, Apple Watch Series 3, Apple TV 4K</itunes:subtitle>
+            <itunes:summary>See Apple CEO Tim Cook and team unveil iPhone X, iPhone 8, Apple Watch Series 3, watchOS 4 and Apple TV 4K.</itunes:summary>
+            <enclosure length="1353286432" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes_1080p/2017/Sept_2017_1080.m4v"/>
+            <guid>https://applehosted.podcasts.apple.com/apple_keynotes/2017/Sept_2017_SD.m4v</guid>
+            <pubDate>Thu, 14 Sep 2017 10:00:00 PDT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:56:10</itunes:duration>
+        </item>
+        <item>
+            <title>WWDC17 Keynote</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>iPad Pro, iOS 11, iMac Pro, macOS High Sierra, watchOS 4, HomePod and all-new App Store</itunes:subtitle>
+            <itunes:summary>See Apple CEO Tim Cook and team unveil iPad Pro, iOS 11, iMac, iMac Pro, MacBook Pro and MacBook, macOS High Sierra, watchOS 4, HomePod and all-new App Store.</itunes:summary>
+            <enclosure length="8448165925" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes_1080p/2017/wwdc_2017_1080_cc.m4v"/>
+            <guid>https://applehosted.podcasts.apple.com/apple_keynotes/2017/wwdc_2017_sd_cc.m4v</guid>
+            <pubDate>Mon, 5 Jun 2017 12:00:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>02:19:05</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, October 2016</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>MacBook Pro, Final Cut Pro X update, TV app for Apple TV, iPhone and iPad</itunes:subtitle>
+            <itunes:summary>See Apple CEO Tim Cook and team unveil the groundbreaking new MacBook Pro, Final Cut Pro X update and the new TV app for Apple TV, iPhone and iPad.</itunes:summary>
+            <enclosure length="5000000000" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes_1080p/2016/Oct_2016_1080.m4v"/>
+            <guid>https://applehosted.podcasts.apple.com/apple_keynotes/2016/oct_2016_sd.m4v</guid>
+            <pubDate>Thu, 27 Oct 2016 12:00:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:23:00</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, September 2016</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>iPhone 7, iPhone 7 Plus, AirPods, Apple Watch Series 2, Apple Watch Hermès and Apple Watch Nike+</itunes:subtitle>
+            <itunes:summary>See Apple CEO Tim Cook and team introduce the iPhone 7, iPhone 7 Plus, AirPods, Apple Watch Series 2, Apple Watch Hermès and Apple Watch Nike+.</itunes:summary>
+            <enclosure length="6830000000" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes_1080p/2016/Sept_2016_1920_CC.m4v"/>
+            <guid>https://applehosted.podcasts.apple.com/apple_keynotes/2016/Sept_2016_640_CC.m4v</guid>
+            <pubDate>Fri, 09 Sep 2016 12:00:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>02:00:00</itunes:duration>
+        </item>
+        <item>
+            <title>WWDC16 Keynote</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>iOS 10, macOS Sierra, watchOS 3 and Swift Playgrounds app</itunes:subtitle>
+            <itunes:summary>See Apple CEO Tim Cook and team present previews of iOS 10, macOS Sierra, watchOS 3, new Apple TV Siri capabilities and single sign-on as well as the new Swift Playgrounds app.</itunes:summary>
+            <enclosure length="7470000000" type="video/mp4" url="https://applehosted.podcasts.apple.com/apple_keynotes_1080p/2016/wwdc2016_1080_CC.mp4"/>
+            <guid>https://applehosted.podcasts.apple.com/apple_keynotes/2016/wwdc2016_sdCC_CC.mp4</guid>
+            <pubDate>Mon, 13 Jun 2016 12:00:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>02:03:00</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, March 2016</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>9.7-inch iPad Pro, iPhone SE, Apple Watch and tvOS updates</itunes:subtitle>
+            <itunes:summary>See Apple CEO Tim Cook and team introduce the 9.7-inch iPad Pro, iPhone SE, CareKit and updates to Apple Watch, HealthKit, ResearchKit and tvOS.</itunes:summary>
+            <enclosure length="3650000000" type="video/quicktime" url="https://applehosted.podcasts.apple.com/apple_keynotes_1080p/2016/032116_keynote_1080CC.mov"/>
+            <guid>https://applehosted.podcasts.apple.com/apple_keynotes/2016/032116_keynote_sdCC.mov</guid>
+            <pubDate>Mon, 21 Mar 2016 12:00:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:03:24</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, September 2015</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>iPhone 6s &amp; iPhone 6s Plus, the all-new Apple TV with tvOS, iPad Pro, WatchOS 2 and iOS 9</itunes:subtitle>
+            <itunes:summary>See Apple CEO Tim Cook and team introduce iPhone 6s &amp; iPhone 6s Plus, the all-new Apple TV with tvOS, iPad Pro, WatchOS 2 and iOS 9.</itunes:summary>
+            <enclosure length="8504851024" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes_1080p/2015/Sept_2015_1920_CC3.m4v"/>
+            <guid>https://applehosted.podcasts.apple.com/apple_keynotes/2015/Sept_2015_640_CC3.m4v</guid>
+            <pubDate>Wed, 09 Sep 2015 12:00:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>02:19:45</itunes:duration>
+        </item>
+        <item>
+            <title>WWDC15 Keynote</title>
+            <itunes:isClosedCaptioned>no</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>Apple Music, OS X El Capitan, watchOS 2, iOS 9, News app, updates to Apple Pay</itunes:subtitle>
+            <itunes:summary>See Apple CEO Tim Cook and team present Apple Music, OS X El Capitan, watchOS 2, iOS 9, News app and updates to Apple Pay.</itunes:summary>
+            <enclosure length="8518709799" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes_1080p/2015/wwdc_2015_CC_1080p_edited.m4v"/>
+            <guid>https://applehosted.podcasts.apple.com/apple_keynotes/2015/wwdc_2015_640.m4v</guid>
+            <pubDate>Mon, 08 Jun 2015 14:01:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>02:24:41</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, March 2015</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>Apple Watch, MacBook, ResearchKit, HBO NOW</itunes:subtitle>
+            <itunes:summary>See Apple CEO Tim Cook and team present Apple Watch and unveil the all-new MacBook, ResearchKit and HBO NOW.</itunes:summary>
+            <enclosure length="6083965352" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes_1080p/2015/2015_mar_1080_cc.m4v"/>
+            <guid>https://applehosted.podcasts.apple.com/apple_keynotes/2015/2015_mar_ipod.m4v</guid>
+            <pubDate>Mon, 09 Mar 2015 14:01:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:34:45</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, October 2014</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>iPad Air 2, 27-inch iMac with Retina 5K Display</itunes:subtitle>
+            <itunes:summary>See Apple CEO Tim Cook and team unveil iPad Air 2 and 27-inch iMac with Retina 5K Display.</itunes:summary>
+            <enclosure length="4248743693" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes_1080p/2014/2014_oct_1080_cc.m4v"/>
+            <guid>https://applehosted.podcasts.apple.com/apple_keynotes/2014/2014_oct_ipod.m4v</guid>
+            <pubDate>Thu, 16 Oct 2014 14:01:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:19:08</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, September 2014</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>iPhone 6 &amp; iPhone 6 Plus, Apple Pay, Apple Watch</itunes:subtitle>
+            <itunes:summary>See Apple CEO Tim Cook and team unveil iPhone 6 &amp; iPhone 6 Plus, Apple Pay, and Apple Watch.</itunes:summary>
+            <enclosure length="6076367814" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes_1080p/2014/2014_sep_1080_cc.m4v"/>
+            <guid>https://applehosted.podcasts.apple.com/apple_keynotes/2014/2014_sep_ipod_cc.m4v</guid>
+            <pubDate>Tue, 09 Sep 2014 14:01:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>02:03:26</itunes:duration>
+        </item>
+        <item>
+            <title>WWDC14 Keynote</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>OS X Yosemite with continuity features, iOS 8 with iCloud Photo Library, HealthKit, HomeKit, Swift</itunes:subtitle>
+            <itunes:summary>See Apple CEO Tim Cook and team unveil OS X Yosemite, iOS 8 with iCloud Photo Library, new Messages features, the new Health app, and more.</itunes:summary>
+            <enclosure length="5902007856" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes_1080p/2014/2014_jun_1080_cc.m4v"/>
+            <guid>https://applehosted.podcasts.apple.com/apple_keynotes/2014/2014_jun_ipod_cc.m4v</guid>
+            <pubDate>Mon, 02 Jun 2014 14:01:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:57:58</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, October 2013</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>iPad Air, iPad mini with Retina display, MacBook Pro with Retina display, OS X Mavericks, Mac Pro, iWork, iLife</itunes:subtitle>
+            <itunes:summary>Apple CEO Tim Cook and team unveiled the new iPad Air, iPad mini with Retina display, updated MacBook Pro with Retina display and next generation iWork and iLife Apps for OS X and iOS.</itunes:summary>
+            <enclosure length="6083965352" type="video/x-m4v" url="https://applehosted.podcasts.apple.com/apple_keynotes_1080p/2013/2013_oct_1080_cc.m4v"/>
+            <guid>https://applehosted.podcasts.apple.com/apple_keynotes/2013/2013_oct_ipod_cc.m4v</guid>
+            <pubDate>Tue, 22 Oct 2013 14:01:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:23:44</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, September 2013</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>iOS 7, iPhone 5c, iPhone 5s</itunes:subtitle>
+            <itunes:summary>Apple CEO Tim Cook and team unveiled the new iPhone 5c and iPhone 5s.</itunes:summary>
+            <enclosure length="2775886452" type="video/x-m4v" url="http://itstreaming.apple.com/podcasts/apple_keynotes_hd/2013_sep_720_CC.m4v"/>
+            <guid>http://itstreaming.apple.com/podcasts/apple_keynotes/2013_sep_ipod_CC.m4v</guid>
+            <pubDate>Tue, 10 Sep 2013 14:01:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:08:46</itunes:duration>
+        </item>
+        <item>
+            <title>WWDC13 Keynote</title>
+            <itunes:isClosedCaptioned>no</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>iOS 7, iTunes Radio, next generation Mac Pro and updated MacBook Air.</itunes:subtitle>
+            <itunes:summary>Apple CEO Tim Cook and team present iTunes Radio, iOS 7, next generation Mac Pro and updated MacBook Air.</itunes:summary>
+            <enclosure length="2775886452" type="video/x-m4v" url="http://itstreaming.apple.com/podcasts/apple_keynotes_hd/wwdc2013_atv.m4v"/>
+            <guid>http://itstreaming.apple.com/podcasts/apple_keynotes/wwdc2013_ipod.m4v</guid>
+            <pubDate>Mon, 10 Jun 2013 14:01:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:58:37</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, October 2012</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>The new iPad mini, iPad with Retina display, new iMac, and 13-inch MacBook Pro with Retina display</itunes:subtitle>
+            <itunes:summary>On October 23, Apple CEO Tim Cook and team unveiled the new iPad mini, fourth generation iPad with Retina display, new iMac, and the 13-inch MacBook Pro with Retina display.</itunes:summary>
+            <enclosure length="2775886452" type="video/x-m4v" url="http://itstreaming.apple.com/podcasts/apple_keynotes_hd/2012_oct_ATV_CC.m4v"/>
+            <guid>http://itstreaming.apple.com/podcasts/apple_keynotes/2012_oct_iPod_CC.m4v</guid>
+            <pubDate>Tue, 23 Oct 2012 14:01:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:12:37</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, September 2012</title>
+            <itunes:author>Apple</itunes:author>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:subtitle>iPhone 5, iOS 6, iPod touch, iPod nano, and iTunes</itunes:subtitle>
+            <itunes:summary>Apple CEO Tim Cook and team present iPhone 5, iOS 6, iTunes, iPod touch, and iPod nano.</itunes:summary>
+            <enclosure length="2775886452" type="video/x-m4v" url="http://itstreaming.apple.com/podcasts/apple_keynotes_hd/2012_sept_ATV_CC_V2.m4v"/>
+            <guid>http://itstreaming.apple.com/podcasts/apple_keynotes/2012_sept_iPod_CC_V2.m4v</guid>
+            <pubDate>Wed, 12 Sep 2012 14:01:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:57:45</itunes:duration>
+        </item>
+        <item>
+            <title>WWDC12 Keynote</title>
+            <itunes:isClosedCaptioned>yes</itunes:isClosedCaptioned>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>Mac OS X Mountain Lion, iOS 6, MacBook Pro with Retina display</itunes:subtitle>
+            <itunes:summary>Watch Apple CEO Tim Cook and team unveil Mac OS X Mountain Lion, iOS 6, and the all-new MacBook Pro with Retina display.</itunes:summary>
+            <enclosure length="2775886452" type="video/quicktime" url="http://itstreaming.apple.com/podcasts/apple_keynotes_hd/wwdc2012_hdcc.mov"/>
+            <guid>http://itstreaming.apple.com/podcasts/apple_keynotes/wwdc2012_ipodcc.mov</guid>
+            <pubDate>Mon, 11 Jun 2012 14:01:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:54:01</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, March 2012</title>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>The new iPad and new Apple TV</itunes:subtitle>
+            <itunes:summary>On March 7, Apple CEO Tim Cook and team debuted the third generation iPad which features a stunning new Retina display, A5X Chip, 5 Megapixel iSight Camera and Ultrafast 4G LTE. The new Apple TV features 1080p programming including iTunes movies and TV shows, Netflix, Vimeo, photos and more in HD.</itunes:summary>
+            <enclosure length="2341099691" type="video/x-m4v" url="http://itstreaming.apple.com/podcasts/apple_keynotes_hd/4_march_2012_atv.m4v"/>
+            <guid>http://itstreaming.apple.com/podcasts/apple_keynotes/20_march_2012_ipod.m4v</guid>
+            <pubDate>Wed, 07 Mar 2012 10:10:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:25:22</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Education Event, January 2012</title>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>iBooks 2, iBooks textbooks, iBooks Author, and iTunes U app</itunes:subtitle>
+            <itunes:summary>On January 19, Phil Schiller, Senior Vice President of Worldwide Product Marketing, and team revealed iBooks 2 for iPad featuring iBooks textbooks, along with iBooks Author, and iTunes U app.</itunes:summary>
+            <enclosure length="4370545203" type="video/x-m4v" url="http://itstreaming.apple.com/podcasts/apple_keynotes_hd/3_jan2012appletv.m4v"/>
+            <guid>http://movies.apple.com/datapub/us/newpodcasts/apple_keynotes/19_jan2012_ipod.m4v</guid>
+            <pubDate>Thu, 19 Jan 2012 10:10:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:00:27</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, October 2011</title>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>iPhone 4S and iOS 5</itunes:subtitle>
+            <itunes:summary>Watch as Apple CEO Tim Cook and team debut iPhone 4S, iOS 5 and iCloud.</itunes:summary>
+            <enclosure length="2768446157" type="video/x-m4v" url="http://itstreaming.apple.com/podcasts/apple_keynotes/oct2011_appletv.m4v"/>
+            <guid>http://movies.apple.com/datapub/us/newpodcasts/apple_keynotes/oct2011_ipod.m4v</guid>
+            <pubDate>Tue, 4 Oct 2011 10:10:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:36:37</itunes:duration>
+        </item>
+        <item>
+            <title>WWDC11 Keynote</title>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>Mac OS X Lion, iOS 5, iCloud</itunes:subtitle>
+            <itunes:summary>On June 6, Apple CEO Steve Jobs and team unveiled the forthcoming Mac OS X Lion, iOS 5, and iCloud.</itunes:summary>
+            <enclosure length="2768446157" type="video/x-m4v" url="http://itstreaming.apple.com/podcasts/apple_keynotes/wwdc2011appletv.m4v"/>
+            <guid>http://movies.apple.com/datapub/us/podcasts/apple_keynotes2/wwdc2011_ipod.m4v</guid>
+            <pubDate>Mon, 6 Jun 2011 14:01:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:58:37</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, March 2011</title>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>iPad 2 and iOS 4.3</itunes:subtitle>
+            <itunes:summary>On March 2, Apple CEO Steve Jobs unveiled the forthcoming iPad 2 as well as the release of i0S 4.3.</itunes:summary>
+            <enclosure length="999" type="video/x-m4v" url="http://itstreaming.apple.com/podcasts/apple_keynotes/16_march2011.m4v"/>
+            <guid>http://itstreaming.apple.com/podcasts/apple_keynotes/mar2011.m4v</guid>
+            <pubDate>Wed, 2 Mar 2011 14:00:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:13:37</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, October 2010</title>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>New MacBook Air, Mac OS X Lion, and iLife '11</itunes:subtitle>
+            <itunes:summary>On October 20, Apple CEO Steve Jobs revealed the new MacBook Air, Mac OS X Lion, and iLife '11.</itunes:summary>
+            <enclosure length="999" type="video/x-m4v" url="http://itstreaming.apple.com/podcasts/apple_keynotes/15_october2010.m4v"/>
+            <guid>http://itstreaming.apple.com/podcasts/apple_keynotes/oct2010keynote.m4v</guid>
+            <pubDate>Wed, 20 Oct 2010 14:00:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:31:27</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, September 2010</title>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>New iPod lineup, iTunes 10, iTunes Ping, TV show rentals, AirPlay and Apple TV</itunes:subtitle>
+            <itunes:summary>On September 1, Apple CEO Steve Jobs unveiled the new iPod lineup, Apple TV, and iTunes 10.</itunes:summary>
+            <enclosure length="999" type="video/x-m4v" url="http://itstreaming.apple.com/podcasts/apple_keynotes/14_september2010.m4v"/>
+            <guid>1009oiubqherbfoteg_1_650.m4v</guid>
+            <pubDate>Wed, 1 Sep 2010 15:00:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:10:52</itunes:duration>
+        </item>
+        <item>
+            <title>WWDC10 Keynote</title>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>Introducing iPhone 4</itunes:subtitle>
+            <itunes:summary>Apple today presented the new iPhone 4 featuring FaceTime, which makes the dream of video calling a reality, and Apple's stunning new Retina display, the highest resolution display ever built into a phone, resulting in super crisp text, images and video.</itunes:summary>
+            <enclosure length="999" type="video/x-m4v" url="http://itstreaming.apple.com/podcasts/apple_keynotes/13_wwdc2010.m4v"/>
+            <guid>wwdc10_keynote.m4v</guid>
+            <pubDate>Mon, 7 Jun 2010 15:00:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:52:46</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, April 2010</title>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>Get a sneak peak into the future of iPhone OS.</itunes:subtitle>
+            <itunes:summary>On April 8, Apple unveiled plans for the biggest and most exciting iPhone software update yet. iPhone OS 4 will include over 100 new user features for iPhone and iPod touch owners to enjoy. And for developers, a new software development kit (SDK) offers over 1500 new APIs to create apps that are even more powerful, innovative, and amazing.</itunes:summary>
+            <enclosure length="999" type="video/x-m4v" url="http://itstreaming.apple.com/podcasts/apple_keynotes/12_april2010.m4v"/>
+            <guid>apr2010_evt</guid>
+            <pubDate>Thu, 8 Apr 2010 15:00:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>59:56</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Announces iPad</title>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>Magical &amp; Revolutionary Device at an Unbelievable Price</itunes:subtitle>
+            <itunes:summary>Apple today announced iPad, a revolutionary device for browsing the web, reading and sending email, enjoying photos, watching videos, listening to music, playing games, reading e-books and much more.</itunes:summary>
+            <enclosure length="999" type="video/x-m4v" url="http://itstreaming.apple.com/podcasts/apple_keynotes/11_ipad.m4v"/>
+            <guid>ipad</guid>
+            <pubDate>Wed, 27 Jan 2010 19:00:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>1:33:03</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, September 2009</title>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>See the latest innovations in music.</itunes:subtitle>
+            <itunes:summary>Steve Jobs and Phil Schiller announce the new iPod touch lineup, the new iPod nano with built-in video camera, and iTunes 9, the world's most popular software application for purchasing, managing and playing media.</itunes:summary>
+            <enclosure length="999" type="video/x-m4v" url="http://itstreaming.apple.com/podcasts/apple_keynotes/10_september2009.m4v"/>
+            <guid>sept2009_event</guid>
+            <pubDate>Wed, 9 Sep 2009 19:00:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:14:19</itunes:duration>
+        </item>
+        <item>
+            <title>WWDC09 Keynote</title>
+            <itunes:author>Apple</itunes:author>
+            <itunes:subtitle>The new iPhone 3G S, the new MacBook Pro family, and Mac OS X Snow Leopard.</itunes:subtitle>
+            <itunes:summary>Watch Phil Schiller, Senior Vice President of Worldwide Product Marketing, unveil the new iPhone 3G S, the new MacBook Pro family, and Mac OS X Snow Leopard.</itunes:summary>
+            <enclosure length="999" type="video/x-m4v" url="http://itstreaming.apple.com/podcasts/apple_keynotes/9_wwdc2009.m4v"/>
+            <guid>wwdc2009</guid>
+            <pubDate>Tue, 9 Jun 2009 19:00:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>02:01:22</itunes:duration>
+        </item>
+        <item>
+            <title>iPhone OS 3.0 Software Sneak Peak</title>
+            <itunes:author>Apple</itunes:author>
+            <description>Learn about the new SDK and get a sneak peek at iPhone OS 3.0 software. </description>
+            <itunes:subtitle>Learn about the new SDK and get a sneak peek at iPhone OS 3.0 software. </itunes:subtitle>
+            <itunes:summary>Learn about the new SDK and get a sneak peek at iPhone OS 3.0 software. </itunes:summary>
+            <enclosure length="999" type="video/x-m4v" url="http://itstreaming.apple.com/podcasts/apple_keynotes/8_iphone2009.m4v"/>
+            <guid>iphone-os-3-preview-event-20090317</guid>
+            <pubDate>Tue, 17 Mar 2009 19:00:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:17:20</itunes:duration>
+        </item>
+        <item>
+            <title>Macworld San Francisco 2009 Keynote Address</title>
+            <itunes:author>Apple</itunes:author>
+            <description>Watch Philip Schiller, Senior Vice President of Worldwide Product Marketing, unveil Apple’s latest innovations at Macworld 2009.</description>
+            <itunes:subtitle>Watch Philip Schiller, Senior Vice President of Worldwide Product Marketing, unveil Apple’s latest innovations at Macworld 2009.</itunes:subtitle>
+            <itunes:summary>Watch Philip Schiller, Senior Vice President of Worldwide Product Marketing, unveil Apple’s latest innovations at Macworld 2009.</itunes:summary>
+            <enclosure length="1150286746" type="video/x-m4v" url="http://itstreaming.apple.com/podcasts/apple_keynotes/7_macworld2009.m4v"/>
+            <guid>macworld2009keynote</guid>
+            <pubDate>Tue, 6 Jan 2009 19:00:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>01:34:59</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, October 2008</title>
+            <itunes:author>Apple</itunes:author>
+            <description>Watch Apple CEO Steve Jobs reveal what's new in Mac.</description>
+            <itunes:subtitle>Watch Apple CEO Steve Jobs reveal what's new in Mac.</itunes:subtitle>
+            <itunes:summary>Watch Apple CEO Steve Jobs reveal what's new in Mac.</itunes:summary>
+            <enclosure length="598065773" type="video/x-m4v" url="http://itstreaming.apple.com/podcasts/apple_keynotes/6_october2008.m4v"/>
+            <guid>sj-keynote-20081014</guid>
+            <pubDate>Tue, 14 Oct 2008 19:00:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>52:37</itunes:duration>
+        </item>
+        <item>
+            <title>Apple Event, September 2008</title>
+            <itunes:author>Apple</itunes:author>
+            <description>Watch Apple CEO Steve Jobs reveal what's new in music.</description>
+            <itunes:subtitle>Watch Apple CEO Steve Jobs reveal what's new in music.</itunes:subtitle>
+            <itunes:summary>Watch Apple CEO Steve Jobs reveal what's new in music.</itunes:summary>
+            <enclosure length="781908424" type="video/x-m4v" url="http://itstreaming.apple.com/podcasts/apple_keynotes/5_september2008.m4v"/>
+            <guid>sj-keynote-20080909</guid>
+            <pubDate>Tue, 9 Sep 2008 19:00:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>1:04:29</itunes:duration>
+        </item>
+        <item>
+            <title>WWDC08 Keynote</title>
+            <itunes:author>Apple</itunes:author>
+            <description>Apple CEO Steve Jobs kicks off WWDC08 in San Francisco with a keynote that announces the iPhone 3G and the new MobileMe Internet service.</description>
+            <itunes:subtitle>Apple CEO Steve Jobs kicks off WWDC08 in San Francisco with a keynote that announces the iPhone 3G and the new MobileMe Internet service.</itunes:subtitle>
+            <itunes:summary>Apple CEO Steve Jobs kicks off WWDC08 in San Francisco with a keynote that announces the iPhone 3G and the new MobileMe Internet service.</itunes:summary>
+            <enclosure length="1263094852" type="video/x-m4v" url="http://itstreaming.apple.com/podcasts/apple_keynotes/4_wwdc2008.m4v"/>
+            <guid>wwdc2008.m4v</guid>
+            <pubDate>Mon, 9 Jun 2008 19:00:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>1:43:58</itunes:duration>
+        </item>
+        <item>
+            <title>Apple March 6 Event: iPhone Software Roadmap</title>
+            <itunes:author>Apple</itunes:author>
+            <description>On March 6, Apple CEO Steve Jobs unveiled the iPhone Software Roadmap. The iPhone Enterprise Beta Program gives IT professionals the opportunity to try iPhone 2.0 software and provide Apple with feedback before general release. Upcoming iPhone support for Microsoft Exchange ActiveSync and industry-standard corporate security standards will allow IT professionals to seamlessly integrate iPhone into their enterprise environments. The iPhone Developer Program provides a complete and integrated process for developing, debugging, and distributing your free, commercial or in-house applications for iPhone and iPod touch.</description>
+            <itunes:subtitle>On March 6, Apple CEO Steve Jobs unveiled the iPhone Software Roadmap.</itunes:subtitle>
+            <itunes:summary>On March 6, Apple CEO Steve Jobs unveiled the iPhone Software Roadmap. The iPhone Enterprise Beta Program gives IT professionals the opportunity to try iPhone 2.0 software and provide Apple with feedback before general release. Upcoming iPhone support for Microsoft Exchange ActiveSync and industry-standard corporate security standards will allow IT professionals to seamlessly integrate iPhone into their enterprise environments. The iPhone Developer Program provides a complete and integrated process for developing, debugging, and distributing your free, commercial or in-house applications for iPhone and iPod touch.</itunes:summary>
+            <enclosure length="835173101" type="video/x-m4v" url="http://itstreaming.apple.com/podcasts/apple_keynotes/3_iphone_software.m4v"/>
+            <guid>http://movies.apple.com/movies/us/podcast/iphoneroadmap/march_2008_IPOD.m4v</guid>
+            <pubDate>Thu, 6 Mar 2008 19:00:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>1:18:21</itunes:duration>
+        </item>
+        <item>
+            <title>Macworld San Francisco 2008 Keynote Address</title>
+            <itunes:author>Apple</itunes:author>
+            <description>Watch Apple CEO Steve Jobs kick off the Macworld Conference &amp; Expo 2008 with a keynote address that covers exciting developments at Apple, including the MacBook Air and the addition of movie rentals to iTunes and on Apple TV.</description>
+            <itunes:subtitle>Steve Jobs kicks off Macworld 2008.</itunes:subtitle>
+            <itunes:summary>Watch Apple CEO Steve Jobs kick off the Macworld Conference &amp; Expo 2008 with a keynote address that covers exciting developments at Apple, including the MacBook Air and the addition of movie rentals to iTunes and on Apple TV.</itunes:summary>
+            <enclosure length="932996575" type="video/quicktime" url="http://itstreaming.apple.com/podcasts/apple_keynotes/2_macworld2008.mov"/>
+            <guid>macworld2008keynote.mov</guid>
+            <pubDate>Wed, 16 Jan 2008 19:00:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>1:16:22</itunes:duration>
+        </item>
+        <item>
+            <title>Macworld San Francisco 2007 Keynote Address</title>
+            <itunes:author>Apple</itunes:author>
+            <description>Watch Apple CEO Steve Jobs kick off the Macworld Conference &amp; Expo 2007 with a keynote address from San Francisco's Moscone West. Check out the exciting new developments at Apple, which include the addition of Paramount movies to iTunes, Apple TV, which allows you to wirelessly play all of your iTunes content from your Mac or PC on your television, and the pioneering iPhone. This revolutionary product is a widescreen iPod with touch controls, a mobile phone, and an Internet communications device all in one.</description>
+            <itunes:subtitle>Steve Jobs kicks off Macworld 2007.</itunes:subtitle>
+            <itunes:summary>Watch Apple CEO Steve Jobs kick off the Macworld Conference &amp; Expo 2007 with a keynote address from San Francisco's Moscone West. Check out the exciting new developments at Apple, which include the addition of Paramount movies to iTunes, Apple TV, which allows you to wirelessly play all of your iTunes content from your Mac or PC on your television, and the pioneering iPhone. This revolutionary product is a widescreen iPod with touch controls, a mobile phone, and an Internet communications device all in one.</itunes:summary>
+            <enclosure length="6325000" type="video/x-m4v" url="http://itstreaming.apple.com/podcasts/apple_keynotes/1_macworld2007.m4v"/>
+            <guid>MacworldSFKeynote2007.m4v</guid>
+            <pubDate>Tue, 9 Jan 2007 19:00:00 GMT</pubDate>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>1:45:25</itunes:duration>
+        </item>
+    </channel>
+</rss>

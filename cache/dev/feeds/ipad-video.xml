@@ -1,0 +1,1013 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/" xmlns:podcast="https://podcastindex.org/namespace/1.0" version="2.0">
+	<channel>
+		<title>iOS Today (Video)</title>
+		<itunes:author>TWiT</itunes:author>
+		<link>https://twit.tv/shows/ios-today</link>
+		<generator>TWiT Feed Generator v4.10</generator>
+		<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+		<language>en-US</language>
+		<copyright>This work is licensed under a Creative Commons License - Attribution-NonCommercial-NoDerivatives 4.0 International - http://creativecommons.org/licenses/by-nc-nd/4.0/</copyright>
+		<creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+		<managingEditor>feedmail@twit.tv (TWiT Editors)</managingEditor>
+		<webMaster>feedmail@twit.tv (TWiT Engineering)</webMaster>
+		<ttl>720</ttl>
+		<sy:updatePeriod>weekly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+		<lastBuildDate>Fri, 20 Feb 2026 18:42:50 PST</lastBuildDate>
+		<pubDate>Fri, 20 Feb 2026 18:42:50 PST</pubDate>
+		<rawvoice:frequency>weekly</rawvoice:frequency>
+		<rawvoice:location>Petaluma, CA</rawvoice:location>
+		<itunes:type>episodic</itunes:type>
+		<itunes:subtitle>iPhone, iPad, Apple Watch, or Apple TV... If it's iOS, Mikah and Rosemary show you what's new and what's cool.</itunes:subtitle>
+		<itunes:summary>Join Rosemary Orchard and Mikah Sargent for iOS Today, TWiT.tv's podcast for all things iPhone, iPad, Apple Watch, Apple TV, and more! From app reviews to helpful tips and tricks, from the latest news to the coolest accessories, Rosemary and Mikah will help you make the most of all your iOS devices. Submit your Apple device and shortcut queries through email at iOSToday@twit.tv or via TWiT's social media. You might hear your question answered on the show! You can join Club TWiT for $10 per month and get ad-free audio and video feeds for all our shows plus everything else the club offers...or get just this podcast ad-free for $5 per month.
+
+New episodes every Thursday.</itunes:summary>
+		<description>Join Rosemary Orchard and Mikah Sargent for iOS Today, TWiT.tv's podcast for all things iPhone, iPad, Apple Watch, Apple TV, and more! From app reviews to helpful tips and tricks, from the latest news to the coolest accessories, Rosemary and Mikah will help you make the most of all your iOS devices. Submit your Apple device and shortcut queries through email at iOSToday@twit.tv or via TWiT's social media. You might hear your question answered on the show! You can join Club TWiT for $10 per month and get ad-free audio and video feeds for all our shows plus everything else the club offers...or get just this podcast ad-free for $5 per month.
+
+New episodes every Thursday.</description>
+		<itunes:keywords>TWiT, Mikah Sargent, Rosemary Orchard, Apple, iOS, iPhone, iPad, Apple Watch, apps</itunes:keywords>
+		<rawvoice:rating tv="tv-g">tv-g</rawvoice:rating>
+		<itunes:explicit>no</itunes:explicit>
+		<itunes:block>no</itunes:block>
+		<googleplay:block>No</googleplay:block>
+		<podcast:funding url="https://twit.tv/clubtwit">Become a Club TWiT member!</podcast:funding>
+		<itunes:owner>
+			<itunes:name>Leo Laporte</itunes:name>
+			<itunes:email>feedmail@twit.tv</itunes:email>
+		</itunes:owner>
+		<itunes:category text="Technology" />
+		<category>Technology</category>
+		<category>iOS</category>
+		<image>
+			<title>iOS Today (Video)</title>
+			<url>https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/iOS%20Today/album_art/hd/IOS_albumart_standard_video.jpg</url>
+			<link>https://twit.tv/shows/ios-today</link>
+		</image>
+		<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/iOS%20Today/album_art/hd/IOS_albumart_standard_video.jpg" />
+		<itunes:new-feed-url>https://feeds.twit.tv/ipad_video_hd.xml</itunes:new-feed-url>
+		<rawvoice:subscribe feed="https://feeds.twit.tv/ipad_video_hd.xml" itunes="https://podcasts.apple.com/us/podcast/ios-today-video/id553611167" html="https://twit.tv/shows/ios-today"></rawvoice:subscribe>
+		<atom:link href="https://feeds.twit.tv/ipad_video_hd.xml" type="application/rss+xml" rel="self"/>
+		<item>
+			<title>iOS 790: Party Games - Liven up Your Social Gatherings With These Apps</title>
+			<itunes:title>Party Games - Liven up Your Social Gatherings With These Apps</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 19 Feb 2026 12:00:00 PST</pubDate>
+			<itunes:episode>790</itunes:episode>
+			<podcast:episode>790</podcast:episode>
+			<link>https://twit.tv/shows/ios-today/episodes/790</link>
+			<comments>https://twit.tv/shows/ios-today/episodes/790</comments>
+			<category>Reviews</category>
+			<category>Technology</category>
+			<category>iOS</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Liven up Your Social Gatherings With These Apps</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/ios-today-790-transcript" type="text/html" />
+			<itunes:keywords>iOS, party games iOS, iPhone party apps, ipad games, Heads Up app, charades digital, Keep Talking and Nobody Explodes, Space Team cooperative game, Wavelength app, board game adaptation, Go Go Go party game, Apple Podcasts video update, HLS streaming</itunes:keywords>
+			<description><![CDATA[
+<p>Classic board games or digital apps? The hosts dive into what happens when you bring iPhone party games to a crowd, including the upside of phone-based play. This episode spotlights iOS and iPadOS party games that transform your device into a social machine for in-person gatherings.</p><ul> 
+<li>Discussing Hits and Misses: <em>Jackbox, Heads Up</em>, and classic charades</li> 
+<li>Asymmetrical gameplay magic: <em>Keep Talking and Nobody Explodes</em></li> 
+<li>Cooperative chaos with <em>Spaceteam</em> and local multiplayer tech</li> 
+<li><em>Wavelength</em>: Mind-reading board game turns into a must-try app</li> 
+<li><em>Gogogo</em>! is a new party game that mixes physical and mobile play</li> 
+<li>New: Apple Podcasts video updates—streaming, HLS, and YouTube competition</li> 
+<li>Feedback: Why can't you view Siri request history?</li> 
+<li>App Caps: Classic Mac iPhone case from Spigen and a pro-level podcast editing with Ferrite</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://dmoren.com/" target="_blank">Dan Moren</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Classic board games or digital apps? The hosts dive into what happens when you bring iPhone party games to a crowd, including the upside of phone-based play. This episode spotlights iOS and iPadOS party games that transform your device into a social machine for in-person gatherings.</p><ul> 
+<li>Discussing Hits and Misses: <em>Jackbox, Heads Up</em>, and classic charades</li> 
+<li>Asymmetrical gameplay magic: <em>Keep Talking and Nobody Explodes</em></li> 
+<li>Cooperative chaos with <em>Spaceteam</em> and local multiplayer tech</li> 
+<li><em>Wavelength</em>: Mind-reading board game turns into a must-try app</li> 
+<li><em>Gogogo</em>! is a new party game that mixes physical and mobile play</li> 
+<li>New: Apple Podcasts video updates—streaming, HLS, and YouTube competition</li> 
+<li>Feedback: Why can't you view Siri request history?</li> 
+<li>App Caps: Classic Mac iPhone case from Spigen and a pro-level podcast editing with Ferrite</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://dmoren.com/" target="_blank">Dan Moren</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Classic board games or digital apps? The hosts dive into what happens when you bring iPhone party games to a crowd, including the upside of phone-based play. This episode spotlights iOS and iPadOS party games that transform your device into a social machine for in-person gatherings.</p><ul> 
+<li>Discussing Hits and Misses: <em>Jackbox, Heads Up</em>, and classic charades</li> 
+<li>Asymmetrical gameplay magic: <em>Keep Talking and Nobody Explodes</em></li> 
+<li>Cooperative chaos with <em>Spaceteam</em> and local multiplayer tech</li> 
+<li><em>Wavelength</em>: Mind-reading board game turns into a must-try app</li> 
+<li><em>Gogogo</em>! is a new party game that mixes physical and mobile play</li> 
+<li>New: Apple Podcasts video updates—streaming, HLS, and YouTube competition</li> 
+<li>Feedback: Why can't you view Siri request history?</li> 
+<li>App Caps: Classic Mac iPhone case from Spigen and a pro-level podcast editing with Ferrite</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://dmoren.com/" target="_blank">Dan Moren</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860168/hero/IOS0790_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0790/ipad0790_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>38:32</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0790/ipad0790_h264m_1920x1080.mp4" length="686453225" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0790/ipad0790_h264m_1920x1080.mp4" fileSize="686453225" type="video/mp4" medium="video">
+				<media:title type="plain">iOS 790: Party Games - Liven up Your Social Gatherings With These Apps</media:title>
+				<media:description type="plain">Liven up Your Social Gatherings With These Apps</media:description>
+				<media:keywords>iOS, party games iOS, iPhone party apps, ipad games, Heads Up app, charades digital, Keep Talking and Nobody Explodes, Space Team cooperative game, Wavelength app, board game adaptation, Go Go Go party game, Apple Podcasts video update, HLS streaming</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860168/hero/IOS0790_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+				<media:credit role="host">Dan Moren</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+				<podcast:person role="host" href="https://dmoren.com/" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/713041/pictures/dan.jpg">Dan Moren</podcast:person>
+		</item>
+		<item>
+			<title>iOS 789: Our Favorite Safari Extensions - Maximize Your Browser Power!</title>
+			<itunes:title>Our Favorite Safari Extensions - Maximize Your Browser Power!</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 12 Feb 2026 14:00:00 PST</pubDate>
+			<itunes:episode>789</itunes:episode>
+			<podcast:episode>789</podcast:episode>
+			<link>https://twit.tv/shows/ios-today/episodes/789</link>
+			<comments>https://twit.tv/shows/ios-today/episodes/789</comments>
+			<category>Reviews</category>
+			<category>Technology</category>
+			<category>iOS</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Maximize Your Browser Power!</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/ios-today-789-transcript" type="text/html" />
+			<itunes:keywords>iOS, safari extensions, iPadOS, watchOS, HomePodOS, ad blocker, Wipr2, OneBlocker, noir, Dark Mode, stop the madness, Keyword Search, amplosion, Achoo, christian selig, picture-in-picture, pipifier, privacy, app store, full-screen timer</itunes:keywords>
+			<description><![CDATA[
+<p>If you thought Safari extensions were just for desktop power users, this episode demonstrates the game-changing tools and side hustles available right on your iPhone!</p><ul> 
+<li>Managing Safari extensions on iOS: Settings, permissions, and cross-device syncing</li> 
+<li>Efficiently disabling and enabling Safari extensions using the webpage menu</li> 
+<li>Privacy concerns when installing Safari extensions and reviewing permissions</li> 
+<li>Favorite Safari extensions: Wipr 2 for ad blocking</li> 
+<li>Noir extension for customizable dark mode and theme creation in Safari</li> 
+<li>StopTheMadness Pro fixes annoying web behaviors and context menu issues</li> 
+<li>Keyword Search adds custom search shortcuts for Amazon, Apple Support, Google Drive</li> 
+<li>Amplosion redirects Google AMP pages to original sources; Achoo inspects page HTML</li> 
+<li>Pipifier makes web video picture-in-picture; reliability compared to other solutions</li> 
+<li>App Caps: Picks include Xteink X4 e-ink reader and Fullscreen Clock for timers</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://dmoren.com/" target="_blank">Dan Moren</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://shopify.com/ios" target="_blank" rel="sponsored">shopify.com/ios</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>If you thought Safari extensions were just for desktop power users, this episode demonstrates the game-changing tools and side hustles available right on your iPhone!</p><ul> 
+<li>Managing Safari extensions on iOS: Settings, permissions, and cross-device syncing</li> 
+<li>Efficiently disabling and enabling Safari extensions using the webpage menu</li> 
+<li>Privacy concerns when installing Safari extensions and reviewing permissions</li> 
+<li>Favorite Safari extensions: Wipr 2 for ad blocking</li> 
+<li>Noir extension for customizable dark mode and theme creation in Safari</li> 
+<li>StopTheMadness Pro fixes annoying web behaviors and context menu issues</li> 
+<li>Keyword Search adds custom search shortcuts for Amazon, Apple Support, Google Drive</li> 
+<li>Amplosion redirects Google AMP pages to original sources; Achoo inspects page HTML</li> 
+<li>Pipifier makes web video picture-in-picture; reliability compared to other solutions</li> 
+<li>App Caps: Picks include Xteink X4 e-ink reader and Fullscreen Clock for timers</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://dmoren.com/" target="_blank">Dan Moren</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://shopify.com/ios" target="_blank" rel="sponsored">shopify.com/ios</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>If you thought Safari extensions were just for desktop power users, this episode demonstrates the game-changing tools and side hustles available right on your iPhone!</p><ul> 
+<li>Managing Safari extensions on iOS: Settings, permissions, and cross-device syncing</li> 
+<li>Efficiently disabling and enabling Safari extensions using the webpage menu</li> 
+<li>Privacy concerns when installing Safari extensions and reviewing permissions</li> 
+<li>Favorite Safari extensions: Wipr 2 for ad blocking</li> 
+<li>Noir extension for customizable dark mode and theme creation in Safari</li> 
+<li>StopTheMadness Pro fixes annoying web behaviors and context menu issues</li> 
+<li>Keyword Search adds custom search shortcuts for Amazon, Apple Support, Google Drive</li> 
+<li>Amplosion redirects Google AMP pages to original sources; Achoo inspects page HTML</li> 
+<li>Pipifier makes web video picture-in-picture; reliability compared to other solutions</li> 
+<li>App Caps: Picks include Xteink X4 e-ink reader and Fullscreen Clock for timers</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://dmoren.com/" target="_blank">Dan Moren</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://shopify.com/ios" target="_blank" rel="sponsored">shopify.com/ios</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860083/hero/IOS0789_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0789/ipad0789_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>45:33</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0789/ipad0789_h264m_1920x1080.mp4" length="802066507" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0789/ipad0789_h264m_1920x1080.mp4" fileSize="802066507" type="video/mp4" medium="video">
+				<media:title type="plain">iOS 789: Our Favorite Safari Extensions - Maximize Your Browser Power!</media:title>
+				<media:description type="plain">Maximize Your Browser Power!</media:description>
+				<media:keywords>iOS, safari extensions, iPadOS, watchOS, HomePodOS, ad blocker, Wipr2, OneBlocker, noir, Dark Mode, stop the madness, Keyword Search, amplosion, Achoo, christian selig, picture-in-picture, pipifier, privacy, app store, full-screen timer</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860083/hero/IOS0789_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+				<media:credit role="host">Dan Moren</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+				<podcast:person role="host" href="https://dmoren.com/" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/713041/pictures/dan.jpg">Dan Moren</podcast:person>
+		</item>
+		<item>
+			<title>iOS 788: iPad Multitasking - Pro Tips for Stage Manager, Slide Over, &amp; More</title>
+			<itunes:title>iPad Multitasking - Pro Tips for Stage Manager, Slide Over, &amp; More</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 05 Feb 2026 13:00:00 PST</pubDate>
+			<itunes:episode>788</itunes:episode>
+			<podcast:episode>788</podcast:episode>
+			<link>https://twit.tv/shows/ios-today/episodes/788</link>
+			<comments>https://twit.tv/shows/ios-today/episodes/788</comments>
+			<category>Reviews</category>
+			<category>Technology</category>
+			<category>iOS</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Pro Tips for Stage Manager, Slide Over, &amp; More</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/ipad-multitasking-2026" type="text/html" />
+			<itunes:keywords>iOS, ipad multitasking, iPadOS 26, stage manager, shortcuts automation, external display automation, ferrite, podcast editing on iPad, apple pencil, magic keyboard, Split View, Slide Over, Pushcut notifications, battery level automation</itunes:keywords>
+			<description><![CDATA[
+<p>Can the iPad finally become your main productivity machine? Rosemary Orchard and Stephen Robles get honest about the quirks, hacks, and must-know shortcuts that make iPad multitasking actually work for power users.</p><ul> 
+<li>iPad multitasking upgrades: Stage Manager, windowing, and device setups</li> 
+<li>Productivity workflows: Magic Keyboard, trackpad, and app layout tips</li> 
+<li>Stage Manager quirks vs. Mac window management workarounds</li> 
+<li>Split View and Slide Over return to iPad multitasking with iPadOS 26</li> 
+<li>Shortcuts automations for Stage Manager, external displays, and Ferrite</li> 
+<li>Pushcut battery notifications: Automatically track device charge across iPad and Mac</li> 
+<li>Travel routers for creators, hotel wi-fi hacks, and networking tricks</li> 
+<li>Feedback: Creator Studio value, pricing, and one-time purchase alternatives</li> 
+<li>Shortcuts Corner: Programmatically opening reminders lists in new windows</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p><strong>Guest:</strong> <a href="https://twitter.com/stephenrobles" target="_blank">Stephen Robles</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://NetSuite.com/ios" target="_blank" rel="sponsored">NetSuite.com/ios</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Can the iPad finally become your main productivity machine? Rosemary Orchard and Stephen Robles get honest about the quirks, hacks, and must-know shortcuts that make iPad multitasking actually work for power users.</p><ul> 
+<li>iPad multitasking upgrades: Stage Manager, windowing, and device setups</li> 
+<li>Productivity workflows: Magic Keyboard, trackpad, and app layout tips</li> 
+<li>Stage Manager quirks vs. Mac window management workarounds</li> 
+<li>Split View and Slide Over return to iPad multitasking with iPadOS 26</li> 
+<li>Shortcuts automations for Stage Manager, external displays, and Ferrite</li> 
+<li>Pushcut battery notifications: Automatically track device charge across iPad and Mac</li> 
+<li>Travel routers for creators, hotel wi-fi hacks, and networking tricks</li> 
+<li>Feedback: Creator Studio value, pricing, and one-time purchase alternatives</li> 
+<li>Shortcuts Corner: Programmatically opening reminders lists in new windows</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p><strong>Guest:</strong> <a href="https://twitter.com/stephenrobles" target="_blank">Stephen Robles</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://NetSuite.com/ios" target="_blank" rel="sponsored">NetSuite.com/ios</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Can the iPad finally become your main productivity machine? Rosemary Orchard and Stephen Robles get honest about the quirks, hacks, and must-know shortcuts that make iPad multitasking actually work for power users.</p><ul> 
+<li>iPad multitasking upgrades: Stage Manager, windowing, and device setups</li> 
+<li>Productivity workflows: Magic Keyboard, trackpad, and app layout tips</li> 
+<li>Stage Manager quirks vs. Mac window management workarounds</li> 
+<li>Split View and Slide Over return to iPad multitasking with iPadOS 26</li> 
+<li>Shortcuts automations for Stage Manager, external displays, and Ferrite</li> 
+<li>Pushcut battery notifications: Automatically track device charge across iPad and Mac</li> 
+<li>Travel routers for creators, hotel wi-fi hacks, and networking tricks</li> 
+<li>Feedback: Creator Studio value, pricing, and one-time purchase alternatives</li> 
+<li>Shortcuts Corner: Programmatically opening reminders lists in new windows</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p><strong>Guest:</strong> <a href="https://twitter.com/stephenrobles" target="_blank">Stephen Robles</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://NetSuite.com/ios" target="_blank" rel="sponsored">NetSuite.com/ios</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/859984/hero/IOS0788_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0788/ipad0788_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>33:44</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0788/ipad0788_h264m_1920x1080.mp4" length="624507661" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0788/ipad0788_h264m_1920x1080.mp4" fileSize="624507661" type="video/mp4" medium="video">
+				<media:title type="plain">iOS 788: iPad Multitasking - Pro Tips for Stage Manager, Slide Over, &amp; More</media:title>
+				<media:description type="plain">Pro Tips for Stage Manager, Slide Over, &amp; More</media:description>
+				<media:keywords>iOS, ipad multitasking, iPadOS 26, stage manager, shortcuts automation, external display automation, ferrite, podcast editing on iPad, apple pencil, magic keyboard, Split View, Slide Over, Pushcut notifications, battery level automation</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/859984/hero/IOS0788_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Rosemary Orchard</media:credit>
+				<media:credit role="guest">Stephen Robles</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/rosemary-orchard" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/771751/pictures/rosemary.jpg">Rosemary Orchard</podcast:person>
+				<podcast:person role="guest" href="https://twitter.com/stephenrobles">Stephen Robles</podcast:person>
+		</item>
+		<item>
+			<title>iOS 787: The Latest in Smart Tech - CES 2026 Devices With Stephen Robles!</title>
+			<itunes:title>The Latest in Smart Tech - CES 2026 Devices With Stephen Robles!</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 29 Jan 2026 12:00:00 PST</pubDate>
+			<itunes:episode>787</itunes:episode>
+			<podcast:episode>787</podcast:episode>
+			<link>https://twit.tv/shows/ios-today/episodes/787</link>
+			<comments>https://twit.tv/shows/ios-today/episodes/787</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>iOS</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>CES 2026 Devices With Stephen Robles!</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/ios-today-787-transcript" type="text/html" />
+			<itunes:keywords>iOS, CES 2026, smart home tech, apple homekit, Matter standard, thread, Akara U400 smart lock, ultra wideband, Home Assistant, Switchbot, Govee, Roborock robot vacuum, occupancy sensor, Hue Pro Bridge, Moft Find My MagSafe wallet, airtag 2</itunes:keywords>
+			<description><![CDATA[
+<p>Learn about the coolest smart tech from CES 2026, including automated wood blinds, an ultra-wideband smart lock, and a shift toward Matter-powered devices. Will Apple step up and finally deliver the smart home features we've been waiting for?</p><ul> 
+<li>CES 2026 roundup: HomeKit, smart locks, robot vacuums, and more</li> 
+<li>Ultra-wideband smart locks improve HomeKit proximity unlocking</li> 
+<li>Matter standard reshapes smart home device compatibility and branding</li> 
+<li>Aqara's Matter devices and integrated smart home ecosystem</li> 
+<li>Fragmentation in smart home platforms driven by proprietary features</li> 
+<li>Occupancy sensors versus motion sensors for smarter lighting automation</li> 
+<li>Lutron's new smart blinds and humidity-sensing switches</li> 
+<li>MOFT launches Find My-enabled MagSafe wallet and smart accessories</li></ul> 
+<p>News</p><ul> 
+<li>Apple launches AirTag 2 with louder speaker and better range</li> 
+<li><em>Civilization VII</em> announced for Apple Arcade alongside other upcoming games</li></ul> 
+<p>Shortcuts Corner</p><ul> 
+<li>Automating complex phone workflows medical education credits</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p><strong>Guest:</strong> <a href="https://twitter.com/stephenrobles" target="_blank">Stephen Robles</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://shopify.com/ios" target="_blank" rel="sponsored">shopify.com/ios</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Learn about the coolest smart tech from CES 2026, including automated wood blinds, an ultra-wideband smart lock, and a shift toward Matter-powered devices. Will Apple step up and finally deliver the smart home features we've been waiting for?</p><ul> 
+<li>CES 2026 roundup: HomeKit, smart locks, robot vacuums, and more</li> 
+<li>Ultra-wideband smart locks improve HomeKit proximity unlocking</li> 
+<li>Matter standard reshapes smart home device compatibility and branding</li> 
+<li>Aqara's Matter devices and integrated smart home ecosystem</li> 
+<li>Fragmentation in smart home platforms driven by proprietary features</li> 
+<li>Occupancy sensors versus motion sensors for smarter lighting automation</li> 
+<li>Lutron's new smart blinds and humidity-sensing switches</li> 
+<li>MOFT launches Find My-enabled MagSafe wallet and smart accessories</li></ul> 
+<p>News</p><ul> 
+<li>Apple launches AirTag 2 with louder speaker and better range</li> 
+<li><em>Civilization VII</em> announced for Apple Arcade alongside other upcoming games</li></ul> 
+<p>Shortcuts Corner</p><ul> 
+<li>Automating complex phone workflows medical education credits</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p><strong>Guest:</strong> <a href="https://twitter.com/stephenrobles" target="_blank">Stephen Robles</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://shopify.com/ios" target="_blank" rel="sponsored">shopify.com/ios</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Learn about the coolest smart tech from CES 2026, including automated wood blinds, an ultra-wideband smart lock, and a shift toward Matter-powered devices. Will Apple step up and finally deliver the smart home features we've been waiting for?</p><ul> 
+<li>CES 2026 roundup: HomeKit, smart locks, robot vacuums, and more</li> 
+<li>Ultra-wideband smart locks improve HomeKit proximity unlocking</li> 
+<li>Matter standard reshapes smart home device compatibility and branding</li> 
+<li>Aqara's Matter devices and integrated smart home ecosystem</li> 
+<li>Fragmentation in smart home platforms driven by proprietary features</li> 
+<li>Occupancy sensors versus motion sensors for smarter lighting automation</li> 
+<li>Lutron's new smart blinds and humidity-sensing switches</li> 
+<li>MOFT launches Find My-enabled MagSafe wallet and smart accessories</li></ul> 
+<p>News</p><ul> 
+<li>Apple launches AirTag 2 with louder speaker and better range</li> 
+<li><em>Civilization VII</em> announced for Apple Arcade alongside other upcoming games</li></ul> 
+<p>Shortcuts Corner</p><ul> 
+<li>Automating complex phone workflows medical education credits</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p><strong>Guest:</strong> <a href="https://twitter.com/stephenrobles" target="_blank">Stephen Robles</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://shopify.com/ios" target="_blank" rel="sponsored">shopify.com/ios</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859888/hero/IOS0787_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0787/ipad0787_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>47:18</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0787/ipad0787_h264m_1920x1080.mp4" length="879365455" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0787/ipad0787_h264m_1920x1080.mp4" fileSize="879365455" type="video/mp4" medium="video">
+				<media:title type="plain">iOS 787: The Latest in Smart Tech - CES 2026 Devices With Stephen Robles!</media:title>
+				<media:description type="plain">CES 2026 Devices With Stephen Robles!</media:description>
+				<media:keywords>iOS, CES 2026, smart home tech, apple homekit, Matter standard, thread, Akara U400 smart lock, ultra wideband, Home Assistant, Switchbot, Govee, Roborock robot vacuum, occupancy sensor, Hue Pro Bridge, Moft Find My MagSafe wallet, airtag 2</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859888/hero/IOS0787_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Rosemary Orchard</media:credit>
+				<media:credit role="guest">Stephen Robles</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/rosemary-orchard" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/771751/pictures/rosemary.jpg">Rosemary Orchard</podcast:person>
+				<podcast:person role="guest" href="https://twitter.com/stephenrobles">Stephen Robles</podcast:person>
+		</item>
+		<item>
+			<title>iOS 786: Apple's Creator Studio - What It Means for Final Cut, Logic, &amp; Pixelmator Fans</title>
+			<itunes:title>Apple's Creator Studio - What It Means for Final Cut, Logic, &amp; Pixelmator Fans</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 22 Jan 2026 09:30:00 PST</pubDate>
+			<itunes:episode>786</itunes:episode>
+			<podcast:episode>786</podcast:episode>
+			<link>https://twit.tv/shows/ios-today/episodes/786</link>
+			<comments>https://twit.tv/shows/ios-today/episodes/786</comments>
+			<category>Reviews</category>
+			<category>Technology</category>
+			<category>iOS</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>What It Means for Final Cut, Logic, &amp; Pixelmator Fans</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/whats-included-apple-creator-studio-and-how-does-it-compare-buying-apps-outright" type="text/html" />
+			<itunes:keywords>iOS, apple creator studio, final cut pro, logic pro, Pixelmator Pro, Keynote, Pages, numbers, Freeform, AI features, apple intelligence, Apple Creative Suite, motion, Compressor, Mainstage, apple subscriptions, student pricing, ipad pro, ipad mini</itunes:keywords>
+			<description><![CDATA[
+<p>Apple is shaking up creative workflows with its Creator Studio subscription, bundling pro apps and unleashing new AI-powered features that could change how students, artists, and power users work. But does this shift mark a new era or just another subscription headache?</p><ul> 
+<li>Creator Studio pricing, student and educator discounts, and included apps</li> 
+<li>Paid features vs. existing free and owned apps clarified</li> 
+<li>Subscriptions vs. 1-time purchases</li> 
+<li>Family Sharing option extends Creator Studio to up to five users</li> 
+<li>Student and educator benefits</li> 
+<li>Freeform's role, delayed features, and real-world usefulness</li> 
+<li>Pages, Numbers, and Keynote gain premium templates and content hub</li> 
+<li>Keynote to auto-generate presentations from outlines using AI</li> 
+<li>Final Cut Pro: new AI tools, transcript search, beat detection, montage maker</li> 
+<li>Logic Pro: AI-assisted music creation, chord ID, royalty-free packs, smart search</li> 
+<li>Motion, Compressor, and Mainstage overview and macOS exclusivity</li> 
+<li>Pixelmator and Photomator transition concerns addressed</li> 
+<li>Creator Studio lowers pro app entry barriers but keeps 1-time purchases</li> 
+<li>News: Setapp's EU iOS app store to shut down due to business model issues</li> 
+<li>Feedback: switching from iPad Pro to iPad Mini experience</li> 
+<li>Shortcuts Corner: shortcut for HAM radio contact location logging</li> 
+<li>App Caps: Spigen Classic LS case and CANSHN magnetic case</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Apple is shaking up creative workflows with its Creator Studio subscription, bundling pro apps and unleashing new AI-powered features that could change how students, artists, and power users work. But does this shift mark a new era or just another subscription headache?</p><ul> 
+<li>Creator Studio pricing, student and educator discounts, and included apps</li> 
+<li>Paid features vs. existing free and owned apps clarified</li> 
+<li>Subscriptions vs. 1-time purchases</li> 
+<li>Family Sharing option extends Creator Studio to up to five users</li> 
+<li>Student and educator benefits</li> 
+<li>Freeform's role, delayed features, and real-world usefulness</li> 
+<li>Pages, Numbers, and Keynote gain premium templates and content hub</li> 
+<li>Keynote to auto-generate presentations from outlines using AI</li> 
+<li>Final Cut Pro: new AI tools, transcript search, beat detection, montage maker</li> 
+<li>Logic Pro: AI-assisted music creation, chord ID, royalty-free packs, smart search</li> 
+<li>Motion, Compressor, and Mainstage overview and macOS exclusivity</li> 
+<li>Pixelmator and Photomator transition concerns addressed</li> 
+<li>Creator Studio lowers pro app entry barriers but keeps 1-time purchases</li> 
+<li>News: Setapp's EU iOS app store to shut down due to business model issues</li> 
+<li>Feedback: switching from iPad Pro to iPad Mini experience</li> 
+<li>Shortcuts Corner: shortcut for HAM radio contact location logging</li> 
+<li>App Caps: Spigen Classic LS case and CANSHN magnetic case</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Apple is shaking up creative workflows with its Creator Studio subscription, bundling pro apps and unleashing new AI-powered features that could change how students, artists, and power users work. But does this shift mark a new era or just another subscription headache?</p><ul> 
+<li>Creator Studio pricing, student and educator discounts, and included apps</li> 
+<li>Paid features vs. existing free and owned apps clarified</li> 
+<li>Subscriptions vs. 1-time purchases</li> 
+<li>Family Sharing option extends Creator Studio to up to five users</li> 
+<li>Student and educator benefits</li> 
+<li>Freeform's role, delayed features, and real-world usefulness</li> 
+<li>Pages, Numbers, and Keynote gain premium templates and content hub</li> 
+<li>Keynote to auto-generate presentations from outlines using AI</li> 
+<li>Final Cut Pro: new AI tools, transcript search, beat detection, montage maker</li> 
+<li>Logic Pro: AI-assisted music creation, chord ID, royalty-free packs, smart search</li> 
+<li>Motion, Compressor, and Mainstage overview and macOS exclusivity</li> 
+<li>Pixelmator and Photomator transition concerns addressed</li> 
+<li>Creator Studio lowers pro app entry barriers but keeps 1-time purchases</li> 
+<li>News: Setapp's EU iOS app store to shut down due to business model issues</li> 
+<li>Feedback: switching from iPad Pro to iPad Mini experience</li> 
+<li>Shortcuts Corner: shortcut for HAM radio contact location logging</li> 
+<li>App Caps: Spigen Classic LS case and CANSHN magnetic case</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859812/hero/IOS0786_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0786/ipad0786_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:01:09</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0786/ipad0786_h264m_1920x1080.mp4" length="1080868672" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0786/ipad0786_h264m_1920x1080.mp4" fileSize="1080868672" type="video/mp4" medium="video">
+				<media:title type="plain">iOS 786: Apple's Creator Studio - What It Means for Final Cut, Logic, &amp; Pixelmator Fans</media:title>
+				<media:description type="plain">What It Means for Final Cut, Logic, &amp; Pixelmator Fans</media:description>
+				<media:keywords>iOS, apple creator studio, final cut pro, logic pro, Pixelmator Pro, Keynote, Pages, numbers, Freeform, AI features, apple intelligence, Apple Creative Suite, motion, Compressor, Mainstage, apple subscriptions, student pricing, ipad pro, ipad mini</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859812/hero/IOS0786_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+				<media:credit role="host">Rosemary Orchard</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/rosemary-orchard" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/771751/pictures/rosemary.jpg">Rosemary Orchard</podcast:person>
+		</item>
+		<item>
+			<title>iOS 785: Hacking Into Your Habits - Build a Better 2026 For Yourself!</title>
+			<itunes:title>Hacking Into Your Habits - Build a Better 2026 For Yourself!</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 15 Jan 2026 14:00:00 PST</pubDate>
+			<itunes:episode>785</itunes:episode>
+			<podcast:episode>785</podcast:episode>
+			<link>https://twit.tv/shows/ios-today/episodes/785</link>
+			<comments>https://twit.tv/shows/ios-today/episodes/785</comments>
+			<category>Reviews</category>
+			<category>Technology</category>
+			<category>iOS</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Build a Better 2026 For Yourself!</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/ios-today-785-transcript" type="text/html" />
+			<itunes:keywords>iOS, iOS habit tracking, Apple Screen Time, focus modes, gentler streak, streaks app, habitica, Habit Kit, iOS productivity apps, apple health, iOS accessibility, apple watch, fitness plus, building habits on iPhone, app limits, mindfulness</itunes:keywords>
+			<description><![CDATA[
+<p>From automating habit streaks to taming endless Safari tabs, this episode is loaded with hands-on tricks and fresh app recommendations that even the nerdiest Apple fans might have missed! Try these smart habit trackers, focus modes, and clever shortcuts that make the iPhone your personal accountability partner.</p><ul> 
+<li>Using Apple Screen Time for digital mindfulness and device usage tracking</li> 
+<li>Focus Modes and custom home screens to reduce distractions</li> 
+<li>Comparing top iOS habit-tracking apps: Habitica, Streaks, Gentler Streak, and Habit Kit</li> 
+<li>Building better health and fitness habits without self-judgment</li> 
+<li>News: Apple Fitness+ updates aim to beat "Quitters Day" drop-off</li> 
+<li>Feedback: Apple's accessibility features and life-changing tech</li> 
+<li>Shortcuts Corner: Automating YouTube links for accessibility and simplicity</li> 
+<li>App Caps: Divoom Tiivoo-2 pixel Bluetooth speaker and Satechi USB-C lanyard cable</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>From automating habit streaks to taming endless Safari tabs, this episode is loaded with hands-on tricks and fresh app recommendations that even the nerdiest Apple fans might have missed! Try these smart habit trackers, focus modes, and clever shortcuts that make the iPhone your personal accountability partner.</p><ul> 
+<li>Using Apple Screen Time for digital mindfulness and device usage tracking</li> 
+<li>Focus Modes and custom home screens to reduce distractions</li> 
+<li>Comparing top iOS habit-tracking apps: Habitica, Streaks, Gentler Streak, and Habit Kit</li> 
+<li>Building better health and fitness habits without self-judgment</li> 
+<li>News: Apple Fitness+ updates aim to beat "Quitters Day" drop-off</li> 
+<li>Feedback: Apple's accessibility features and life-changing tech</li> 
+<li>Shortcuts Corner: Automating YouTube links for accessibility and simplicity</li> 
+<li>App Caps: Divoom Tiivoo-2 pixel Bluetooth speaker and Satechi USB-C lanyard cable</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>From automating habit streaks to taming endless Safari tabs, this episode is loaded with hands-on tricks and fresh app recommendations that even the nerdiest Apple fans might have missed! Try these smart habit trackers, focus modes, and clever shortcuts that make the iPhone your personal accountability partner.</p><ul> 
+<li>Using Apple Screen Time for digital mindfulness and device usage tracking</li> 
+<li>Focus Modes and custom home screens to reduce distractions</li> 
+<li>Comparing top iOS habit-tracking apps: Habitica, Streaks, Gentler Streak, and Habit Kit</li> 
+<li>Building better health and fitness habits without self-judgment</li> 
+<li>News: Apple Fitness+ updates aim to beat "Quitters Day" drop-off</li> 
+<li>Feedback: Apple's accessibility features and life-changing tech</li> 
+<li>Shortcuts Corner: Automating YouTube links for accessibility and simplicity</li> 
+<li>App Caps: Divoom Tiivoo-2 pixel Bluetooth speaker and Satechi USB-C lanyard cable</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859706/hero/IOS0785_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0785/ipad0785_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>52:31</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0785/ipad0785_h264m_1920x1080.mp4" length="931744616" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0785/ipad0785_h264m_1920x1080.mp4" fileSize="931744616" type="video/mp4" medium="video">
+				<media:title type="plain">iOS 785: Hacking Into Your Habits - Build a Better 2026 For Yourself!</media:title>
+				<media:description type="plain">Build a Better 2026 For Yourself!</media:description>
+				<media:keywords>iOS, iOS habit tracking, Apple Screen Time, focus modes, gentler streak, streaks app, habitica, Habit Kit, iOS productivity apps, apple health, iOS accessibility, apple watch, fitness plus, building habits on iPhone, app limits, mindfulness</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859706/hero/IOS0785_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+				<media:credit role="host">Rosemary Orchard</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/rosemary-orchard" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/771751/pictures/rosemary.jpg">Rosemary Orchard</podcast:person>
+		</item>
+		<item>
+			<title>iOS 784: App Store Awards: Games - Apple Recognizes 2025&#039;s Best App Store Games</title>
+			<itunes:title>App Store Awards: Games - Apple Recognizes 2025&#039;s Best App Store Games</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 08 Jan 2026 16:00:00 PST</pubDate>
+			<itunes:episode>784</itunes:episode>
+			<podcast:episode>784</podcast:episode>
+			<link>https://twit.tv/shows/ios-today/episodes/784</link>
+			<comments>https://twit.tv/shows/ios-today/episodes/784</comments>
+			<category>Reviews</category>
+			<category>Technology</category>
+			<category>iOS</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Apple Recognizes 2025&#039;s Best App Store Games</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/ios-today-784-transcript" type="text/html" />
+			<itunes:keywords>iOS, app store awards, best iOS games, Pokemon TCG Pocket, Dredge game, Cyberpunk 2077 Ultimate Edition, Apple Vision Pro Games, Porta Newbie puzzle, Apple Arcade, What the Clash, accessibility in games, art of fauna, Chants of Senar, Despalote</itunes:keywords>
+			<description><![CDATA[
+<p>The App Store Awards are in, and this year's breakout games are shaking up what we expect on iOS, iPad, and even Apple Vision Pro. See which titles are worthy of the hype, who's pushing boundaries, and why the winners really matter for Apple device owners.</p><ul> 
+<li><em>Pokémon Trading Card Game Pocket </em>Wins iPhone Game of the Year</li> 
+<li><em>Dredge </em>Named iPad Game of the Year: Sinister Fishing Adventure</li> 
+<li><em>Cyberpunk 2077</em> Ultimate Edition Takes Mac Game of the Year</li> 
+<li>Apple Vision Pro Game Spotlight: Portals and Puzzle-Solving in <em>Porta Newbie</em></li> 
+<li><em>What the Clash </em>Tops Apple Arcade Picks for Multiplayer Fun</li> 
+<li>Cultural Impact Winners: <em>Art of Fauna, Chants of Senar, Despalote</em></li> 
+<li>iFixit Launches FixBot App for DIY Repairs and Battery Tracking</li> 
+<li>Shortcuts Corner: How to Backup and Restore Apple Shortcuts</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://NetSuite.com/ios" target="_blank" rel="sponsored">NetSuite.com/ios</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>The App Store Awards are in, and this year's breakout games are shaking up what we expect on iOS, iPad, and even Apple Vision Pro. See which titles are worthy of the hype, who's pushing boundaries, and why the winners really matter for Apple device owners.</p><ul> 
+<li><em>Pokémon Trading Card Game Pocket </em>Wins iPhone Game of the Year</li> 
+<li><em>Dredge </em>Named iPad Game of the Year: Sinister Fishing Adventure</li> 
+<li><em>Cyberpunk 2077</em> Ultimate Edition Takes Mac Game of the Year</li> 
+<li>Apple Vision Pro Game Spotlight: Portals and Puzzle-Solving in <em>Porta Newbie</em></li> 
+<li><em>What the Clash </em>Tops Apple Arcade Picks for Multiplayer Fun</li> 
+<li>Cultural Impact Winners: <em>Art of Fauna, Chants of Senar, Despalote</em></li> 
+<li>iFixit Launches FixBot App for DIY Repairs and Battery Tracking</li> 
+<li>Shortcuts Corner: How to Backup and Restore Apple Shortcuts</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://NetSuite.com/ios" target="_blank" rel="sponsored">NetSuite.com/ios</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>The App Store Awards are in, and this year's breakout games are shaking up what we expect on iOS, iPad, and even Apple Vision Pro. See which titles are worthy of the hype, who's pushing boundaries, and why the winners really matter for Apple device owners.</p><ul> 
+<li><em>Pokémon Trading Card Game Pocket </em>Wins iPhone Game of the Year</li> 
+<li><em>Dredge </em>Named iPad Game of the Year: Sinister Fishing Adventure</li> 
+<li><em>Cyberpunk 2077</em> Ultimate Edition Takes Mac Game of the Year</li> 
+<li>Apple Vision Pro Game Spotlight: Portals and Puzzle-Solving in <em>Porta Newbie</em></li> 
+<li><em>What the Clash </em>Tops Apple Arcade Picks for Multiplayer Fun</li> 
+<li>Cultural Impact Winners: <em>Art of Fauna, Chants of Senar, Despalote</em></li> 
+<li>iFixit Launches FixBot App for DIY Repairs and Battery Tracking</li> 
+<li>Shortcuts Corner: How to Backup and Restore Apple Shortcuts</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://NetSuite.com/ios" target="_blank" rel="sponsored">NetSuite.com/ios</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859627/hero/IOS0784_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0784/ipad0784_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>41:38</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0784/ipad0784_h264m_1920x1080.mp4" length="751828657" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0784/ipad0784_h264m_1920x1080.mp4" fileSize="751828657" type="video/mp4" medium="video">
+				<media:title type="plain">iOS 784: App Store Awards: Games - Apple Recognizes 2025&#039;s Best App Store Games</media:title>
+				<media:description type="plain">Apple Recognizes 2025&#039;s Best App Store Games</media:description>
+				<media:keywords>iOS, app store awards, best iOS games, Pokemon TCG Pocket, Dredge game, Cyberpunk 2077 Ultimate Edition, Apple Vision Pro Games, Porta Newbie puzzle, Apple Arcade, What the Clash, accessibility in games, art of fauna, Chants of Senar, Despalote</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859627/hero/IOS0784_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+				<media:credit role="host">Rosemary Orchard</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/rosemary-orchard" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/771751/pictures/rosemary.jpg">Rosemary Orchard</podcast:person>
+		</item>
+		<item>
+			<title>iOS 783: Best of 2025 - Choosing the New Models Worth Your Money</title>
+			<itunes:title>Best of 2025 - Choosing the New Models Worth Your Money</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 28 Dec 2025 13:30:00 PST</pubDate>
+			<itunes:episode>783</itunes:episode>
+			<podcast:episode>783</podcast:episode>
+			<link>https://twit.tv/shows/ios-today/episodes/783</link>
+			<comments>https://twit.tv/shows/ios-today/episodes/783</comments>
+			<category>Reviews</category>
+			<category>Technology</category>
+			<category>iOS</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Choosing the New Models Worth Your Money</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/ios-today-783-transcript" type="text/html" />
+			<itunes:keywords>Apple Watch SE3, Apple Watch Series 11, apple watch ultra 3, Apple Watch comparison, iPhone 17, iphone 17 pro, iPhone 17 Pro Max, iPhone Air, iPhone pre order tips, Apple Watch features, Apple Watch battery life, Apple Watch case sizes, blood oxygen app, </itunes:keywords>
+			<description><![CDATA[
+<p>Apple shook up its device family with new models this past year, but not all the changes were obvious. If you missed these pair of episodes, find out what actually made the 2025 Apple Watch and iPhone lineup different—and why picking the wrong one could mean missing out on must-have features (or overpaying for ones you'll never use).</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Apple shook up its device family with new models this past year, but not all the changes were obvious. If you missed these pair of episodes, find out what actually made the 2025 Apple Watch and iPhone lineup different—and why picking the wrong one could mean missing out on must-have features (or overpaying for ones you'll never use).</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Apple shook up its device family with new models this past year, but not all the changes were obvious. If you missed these pair of episodes, find out what actually made the 2025 Apple Watch and iPhone lineup different—and why picking the wrong one could mean missing out on must-have features (or overpaying for ones you'll never use).</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2025/12/859499/hero/IOS0783_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0783/ipad0783_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:06:12</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0783/ipad0783_h264m_1920x1080.mp4" length="1123140985" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0783/ipad0783_h264m_1920x1080.mp4" fileSize="1123140985" type="video/mp4" medium="video">
+				<media:title type="plain">iOS 783: Best of 2025 - Choosing the New Models Worth Your Money</media:title>
+				<media:description type="plain">Choosing the New Models Worth Your Money</media:description>
+				<media:keywords>Apple Watch SE3, Apple Watch Series 11, apple watch ultra 3, Apple Watch comparison, iPhone 17, iphone 17 pro, iPhone 17 Pro Max, iPhone Air, iPhone pre order tips, Apple Watch features, Apple Watch battery life, Apple Watch case sizes, blood oxygen app, </media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2025/12/859499/hero/IOS0783_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>iOS 782: App Store Awards: Apps - Winners for All Your Apple Devices!</title>
+			<itunes:title>App Store Awards: Apps - Winners for All Your Apple Devices!</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 18 Dec 2025 15:47:17 PST</pubDate>
+			<itunes:episode>782</itunes:episode>
+			<podcast:episode>782</podcast:episode>
+			<link>https://twit.tv/shows/ios-today/episodes/782</link>
+			<comments>https://twit.tv/shows/ios-today/episodes/782</comments>
+			<category>Reviews</category>
+			<category>Technology</category>
+			<category>iOS</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Winners for All Your Apple Devices!</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/how-tiimo-makes-task-and-time-management-easier-neurodiverse-users" type="text/html" />
+			<itunes:keywords>iOS, app store awards, iOS apps, iPad apps, Mac apps, Apple vision pro, apple watch, Apple TV, Timo app, Detail app, Essayist app, Explore POV, strava, HBO Max app, Be My Eyes, Focus Friend, Storygraph, neurodivergent apps, AI planner, HomeKit automation,</itunes:keywords>
+			<description><![CDATA[
+<p>This year's App Store Awards are shaking things up, spotlighting indie apps and clever tools for neurodivergent users, rather than corporate giants. Mikah and Rosemary break down which surprising winners deserve a spot on your home screen.</p><ul> 
+<li>Timo: Neurodivergent-friendly AI planner wins iPhone App of the Year</li> 
+<li>Detail: Auto-editing video app takes iPad App of the Year</li> 
+<li>Essayist: Citation-powered writing app honored for Mac</li> 
+<li>Explore POV: Immersive video app wins Apple Vision Pro App of the Year</li> 
+<li>Strava: Fitness tracking app crowned Apple Watch App of the Year</li> 
+<li>HBO Max: Redesigned streaming app lands Apple TV App of the Year</li> 
+<li>Cultural Impact Awards: Be My Eyes, Focus Friend, Storygraph recognized</li> 
+<li>News: Apple leadership shakeups as key execs retire and Apple Fitness+ expands to 28 new markets</li> 
+<li>Shortcuts Corner: Automating HomeKit switch notifications and safety cutoffs</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>This year's App Store Awards are shaking things up, spotlighting indie apps and clever tools for neurodivergent users, rather than corporate giants. Mikah and Rosemary break down which surprising winners deserve a spot on your home screen.</p><ul> 
+<li>Timo: Neurodivergent-friendly AI planner wins iPhone App of the Year</li> 
+<li>Detail: Auto-editing video app takes iPad App of the Year</li> 
+<li>Essayist: Citation-powered writing app honored for Mac</li> 
+<li>Explore POV: Immersive video app wins Apple Vision Pro App of the Year</li> 
+<li>Strava: Fitness tracking app crowned Apple Watch App of the Year</li> 
+<li>HBO Max: Redesigned streaming app lands Apple TV App of the Year</li> 
+<li>Cultural Impact Awards: Be My Eyes, Focus Friend, Storygraph recognized</li> 
+<li>News: Apple leadership shakeups as key execs retire and Apple Fitness+ expands to 28 new markets</li> 
+<li>Shortcuts Corner: Automating HomeKit switch notifications and safety cutoffs</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>This year's App Store Awards are shaking things up, spotlighting indie apps and clever tools for neurodivergent users, rather than corporate giants. Mikah and Rosemary break down which surprising winners deserve a spot on your home screen.</p><ul> 
+<li>Timo: Neurodivergent-friendly AI planner wins iPhone App of the Year</li> 
+<li>Detail: Auto-editing video app takes iPad App of the Year</li> 
+<li>Essayist: Citation-powered writing app honored for Mac</li> 
+<li>Explore POV: Immersive video app wins Apple Vision Pro App of the Year</li> 
+<li>Strava: Fitness tracking app crowned Apple Watch App of the Year</li> 
+<li>HBO Max: Redesigned streaming app lands Apple TV App of the Year</li> 
+<li>Cultural Impact Awards: Be My Eyes, Focus Friend, Storygraph recognized</li> 
+<li>News: Apple leadership shakeups as key execs retire and Apple Fitness+ expands to 28 new markets</li> 
+<li>Shortcuts Corner: Automating HomeKit switch notifications and safety cutoffs</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2025/12/859392/hero/IOS0782_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0782/ipad0782_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>41:50</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0782/ipad0782_h264m_1920x1080.mp4" length="767392164" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0782/ipad0782_h264m_1920x1080.mp4" fileSize="767392164" type="video/mp4" medium="video">
+				<media:title type="plain">iOS 782: App Store Awards: Apps - Winners for All Your Apple Devices!</media:title>
+				<media:description type="plain">Winners for All Your Apple Devices!</media:description>
+				<media:keywords>iOS, app store awards, iOS apps, iPad apps, Mac apps, Apple vision pro, apple watch, Apple TV, Timo app, Detail app, Essayist app, Explore POV, strava, HBO Max app, Be My Eyes, Focus Friend, Storygraph, neurodivergent apps, AI planner, HomeKit automation,</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2025/12/859392/hero/IOS0782_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+				<media:credit role="host">Rosemary Orchard</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/rosemary-orchard" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/771751/pictures/rosemary.jpg">Rosemary Orchard</podcast:person>
+		</item>
+		<item>
+			<title>iOS 781: What &amp; Where to Watch - Track Your Shows, Film Ratings, &amp; What's Next</title>
+			<itunes:title>What &amp; Where to Watch - Track Your Shows, Film Ratings, &amp; What's Next</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 11 Dec 2025 14:00:00 PST</pubDate>
+			<itunes:episode>781</itunes:episode>
+			<podcast:episode>781</podcast:episode>
+			<link>https://twit.tv/shows/ios-today/episodes/781</link>
+			<comments>https://twit.tv/shows/ios-today/episodes/781</comments>
+			<category>Reviews</category>
+			<category>Technology</category>
+			<category>iOS</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Track Your Shows, Film Ratings, &amp; What's Next</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/justwatch-letterboxd-trakt-which-app-should-you-use-manage-your-watchlist" type="text/html" />
+			<itunes:keywords>iOS, Apple TV tracking apps, streaming services, JustWatch, letterboxd, Trakt, Apple TV Up Next, managing watchlists, digital media purchases, streaming subscriptions, apple tv app, Netflix integration, roku, google tv, media recommendations</itunes:keywords>
+			<description><![CDATA[
+<p>Tired of losing track of shows or playing hide-and-seek with your next binge-watch? Discover unexpected tricks, overlooked apps, and candid talk about making sense of the ever-messy world of streaming from the comfort of your Apple device.</p><ul> 
+<li>Tracking what you watch using Apple TV's Up Next queue</li> 
+<li>Apple TV integration tips, Netflix limitations, and notification quirks</li> 
+<li>iPhone vs. iPad vs. Mac Apple TV app differences and channel management</li> 
+<li>Using JustWatch to find where content is streaming</li> 
+<li>Sharing watch lists and managing subscriptions in JustWatch</li> 
+<li>Pros and cons of digital media purchases versus streaming</li> 
+<li>The rise of Letterboxd for movie tracking, reviews, and social sharing</li> 
+<li>Trakt for custom watchlists, Plex integration, and episode calendars</li> 
+<li>Apple TV "Insight" feature compared to Amazon X-Ray for cast and music info</li> 
+<li>Tips for finding movies across services as content moves</li> 
+<li>Feedback segment: Transloader app utility for Mac downloads</li> 
+<li>App Caps: SwitchBot candle warmer and Festivitas Mac/iOS decoration app</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Tired of losing track of shows or playing hide-and-seek with your next binge-watch? Discover unexpected tricks, overlooked apps, and candid talk about making sense of the ever-messy world of streaming from the comfort of your Apple device.</p><ul> 
+<li>Tracking what you watch using Apple TV's Up Next queue</li> 
+<li>Apple TV integration tips, Netflix limitations, and notification quirks</li> 
+<li>iPhone vs. iPad vs. Mac Apple TV app differences and channel management</li> 
+<li>Using JustWatch to find where content is streaming</li> 
+<li>Sharing watch lists and managing subscriptions in JustWatch</li> 
+<li>Pros and cons of digital media purchases versus streaming</li> 
+<li>The rise of Letterboxd for movie tracking, reviews, and social sharing</li> 
+<li>Trakt for custom watchlists, Plex integration, and episode calendars</li> 
+<li>Apple TV "Insight" feature compared to Amazon X-Ray for cast and music info</li> 
+<li>Tips for finding movies across services as content moves</li> 
+<li>Feedback segment: Transloader app utility for Mac downloads</li> 
+<li>App Caps: SwitchBot candle warmer and Festivitas Mac/iOS decoration app</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Tired of losing track of shows or playing hide-and-seek with your next binge-watch? Discover unexpected tricks, overlooked apps, and candid talk about making sense of the ever-messy world of streaming from the comfort of your Apple device.</p><ul> 
+<li>Tracking what you watch using Apple TV's Up Next queue</li> 
+<li>Apple TV integration tips, Netflix limitations, and notification quirks</li> 
+<li>iPhone vs. iPad vs. Mac Apple TV app differences and channel management</li> 
+<li>Using JustWatch to find where content is streaming</li> 
+<li>Sharing watch lists and managing subscriptions in JustWatch</li> 
+<li>Pros and cons of digital media purchases versus streaming</li> 
+<li>The rise of Letterboxd for movie tracking, reviews, and social sharing</li> 
+<li>Trakt for custom watchlists, Plex integration, and episode calendars</li> 
+<li>Apple TV "Insight" feature compared to Amazon X-Ray for cast and music info</li> 
+<li>Tips for finding movies across services as content moves</li> 
+<li>Feedback segment: Transloader app utility for Mac downloads</li> 
+<li>App Caps: SwitchBot candle warmer and Festivitas Mac/iOS decoration app</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2025/12/859306/hero/IOS0781_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://cdn.twit.tv/video/ipad/ipad0781/ipad0781_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>43:47</itunes:duration>
+			<enclosure url="https://cdn.twit.tv/video/ipad/ipad0781/ipad0781_h264m_1920x1080.mp4" length="786235040" type="video/mp4"/>
+			<media:content url="https://cdn.twit.tv/video/ipad/ipad0781/ipad0781_h264m_1920x1080.mp4" fileSize="786235040" type="video/mp4" medium="video">
+				<media:title type="plain">iOS 781: What &amp; Where to Watch - Track Your Shows, Film Ratings, &amp; What's Next</media:title>
+				<media:description type="plain">Track Your Shows, Film Ratings, &amp; What's Next</media:description>
+				<media:keywords>iOS, Apple TV tracking apps, streaming services, JustWatch, letterboxd, Trakt, Apple TV Up Next, managing watchlists, digital media purchases, streaming subscriptions, apple tv app, Netflix integration, roku, google tv, media recommendations</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2025/12/859306/hero/IOS0781_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+				<media:credit role="host">Rosemary Orchard</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/rosemary-orchard" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/771751/pictures/rosemary.jpg">Rosemary Orchard</podcast:person>
+		</item>
+	</channel>
+</rss>
