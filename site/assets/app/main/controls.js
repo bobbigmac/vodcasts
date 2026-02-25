@@ -187,11 +187,34 @@ function normalizeKey(e) {
   return k;
 }
 
+function keyCodeOf(e) {
+  const kc = e?.keyCode ?? e?.which;
+  return Number.isFinite(Number(kc)) ? Number(kc) : 0;
+}
+
+function isKey(e, keys = [], codes = [], keyCodes = []) {
+  const k = String(e?.key || "");
+  const c = String(e?.code || "");
+  const kc = keyCodeOf(e);
+  if (keys.includes(k)) return true;
+  if (codes.includes(c)) return true;
+  if (keyCodes.includes(kc)) return true;
+  return false;
+}
+
 function isMediaKey(e) {
   const k = String(e?.key || "");
+  const kc = keyCodeOf(e);
   return (
     k.startsWith("Media") ||
     k.startsWith("AudioVolume") ||
+    kc === 179 || // Play/Pause
+    kc === 178 || // Stop
+    kc === 176 || // Next
+    kc === 177 || // Previous
+    kc === 173 || // Mute
+    kc === 174 || // Volume down
+    kc === 175 || // Volume up
     k === "Play" ||
     k === "Pause" ||
     k === "Stop" ||
@@ -393,13 +416,17 @@ export function installControls() {
   ensureStyle();
 
   let altHeld = false;
+  let hintMode = null; // "alt" | "temp" | null
   let hints = [];
   let hintRaf = null;
+  let hintTo = null;
   const cleanupMediaSession = setupMediaSession();
 
   const stopHints = () => {
     if (hintRaf) cancelAnimationFrame(hintRaf);
     hintRaf = null;
+    if (hintTo) clearTimeout(hintTo);
+    hintTo = null;
     for (const h of hints) {
       try {
         h.bubble.remove();
@@ -419,6 +446,19 @@ export function installControls() {
     tick();
   };
 
+  const showHintsTemporarily = (ms = 2500) => {
+    altHeld = true;
+    hintMode = "temp";
+    startHints();
+    if (hintTo) clearTimeout(hintTo);
+    hintTo = setTimeout(() => {
+      if (hintMode !== "temp") return;
+      altHeld = false;
+      hintMode = null;
+      stopHints();
+    }, Math.max(250, Number(ms) || 2500));
+  };
+
   const onKeyDown = (e) => {
     const k = normalizeKey(e);
 
@@ -426,6 +466,7 @@ export function installControls() {
     if (e.key === "Alt") {
       if (!altHeld) {
         altHeld = true;
+        hintMode = "alt";
         startHints();
       }
       e.preventDefault();
@@ -434,6 +475,61 @@ export function installControls() {
 
     const typingComments = isTypingInComments();
     if (typingComments && !isMediaKey(e) && e.key !== "Escape") return;
+
+    // Common TV/remote keys we might see (Roku/WebView/SmartTV variants).
+    // Prefer semantics over UI visibility; app may be faded/backgrounded.
+    const isBack =
+      isKey(e, ["BrowserBack", "GoBack", "Back", "Exit", "Cancel"], [], [461, 10009]) || // 461/10009 show up on some TV browsers
+      (e.key === "Backspace" && !typingComments);
+    const isHome = isKey(e, ["Home", "BrowserHome", "GoHome"], [], [36]);
+    const isMenu = isKey(e, ["ContextMenu", "Menu", "Options"], [], [93]);
+    const isInfo = isKey(e, ["Info", "Guide", "TVGuide"], [], []);
+
+    if (isMenu) {
+      if (!typingComments) {
+        showHintsTemporarily(2800);
+        e.preventDefault();
+      }
+      return;
+    }
+
+    if (isHome) {
+      if (typingComments) return;
+      // "Home" should get the UI back to a sane state.
+      // Best-effort: trigger the app's Escape handler.
+      try {
+        document.dispatchEvent(new KeyboardEvent("keydown", { key: "Escape", bubbles: true }));
+      } catch {}
+      focusFirstNavItem();
+      e.preventDefault();
+      return;
+    }
+
+    if (isInfo) {
+      if (typingComments) return;
+      if (clickIfPresent("#btnDetails")) {
+        e.preventDefault();
+      }
+      return;
+    }
+
+    if (isBack) {
+      if (typingComments) return;
+      // Try close buttons first, then toggle panels, then fall back to Escape.
+      const closed =
+        clickIfVisible("#btnCloseGuide") ||
+        clickIfVisible("#btnCloseDetails") ||
+        clickIfVisible(".historyBtnClose") ||
+        clickIfVisible("#btnDetails") ||
+        clickIfVisible("#btnHistory");
+      if (!closed) {
+        try {
+          document.dispatchEvent(new KeyboardEvent("keydown", { key: "Escape", bubbles: true }));
+        } catch {}
+      }
+      e.preventDefault();
+      return;
+    }
 
     // Remote-style activation.
     if (e.key === "Enter" || e.key === "NumpadEnter" || e.key === "Select" || e.key === "Accept") {
@@ -481,10 +577,35 @@ export function installControls() {
     }
 
     // Media keys (hardware buttons).
-    if (e.key === "MediaPlayPause" || e.key === "Play" || e.key === "Pause") {
+    if (isKey(e, ["MediaPlayPause", "Play", "Pause", "MediaPlay", "MediaPause"], ["MediaPlayPause"], [179])) {
       if (clickIfPresent("#btnPlay")) {
         e.preventDefault();
       }
+      return;
+    }
+    if (isKey(e, ["MediaStop", "Stop"], ["MediaStop"], [178])) {
+      // Stop is effectively Pause for us.
+      const v = document.getElementById("video") || document.querySelector("video");
+      if (v && !v.paused) {
+        try {
+          v.pause();
+          e.preventDefault();
+          return;
+        } catch {}
+      }
+      if (clickIfPresent("#btnPlay")) e.preventDefault();
+      return;
+    }
+    if (isKey(e, ["MediaRewind", "Rewind"], ["MediaRewind"], [])) {
+      if (clickIfPresent("#btnSeekBack")) e.preventDefault();
+      return;
+    }
+    if (isKey(e, ["MediaFastForward", "FastForward"], ["MediaFastForward"], [])) {
+      if (clickIfPresent("#btnSeekFwd")) e.preventDefault();
+      return;
+    }
+    if (isKey(e, ["MediaReplay", "Replay", "InstantReplay"], [], [])) {
+      if (clickIfPresent("#btnSeekBack")) e.preventDefault();
       return;
     }
     if (e.key === "MediaTrackPrevious" || e.key === "PreviousTrack") {
@@ -624,15 +745,19 @@ export function installControls() {
 
   const onKeyUp = (e) => {
     if (e.key === "Alt") {
-      altHeld = false;
-      stopHints();
-      e.preventDefault();
+      if (hintMode === "alt") {
+        altHeld = false;
+        hintMode = null;
+        stopHints();
+        e.preventDefault();
+      }
       return;
     }
   };
 
   const onBlur = () => {
     altHeld = false;
+    hintMode = null;
     stopHints();
   };
 
