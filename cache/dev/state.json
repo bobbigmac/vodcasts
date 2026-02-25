@@ -4,103 +4,106 @@
     "twit_twit": {
       "status": "not_modified",
       "url": "https://feeds.twit.tv/twit_video_hd.xml",
-      "last_checked_unix": 1772027136,
+      "last_checked_unix": 1772037362,
       "etag": "\"699bdc88-2085b\"",
       "last_modified": "Mon, 23 Feb 2026 04:50:16 GMT"
     },
     "eaglebrook": {
       "status": "not_modified",
       "url": "https://www.eaglebrookchurch.com/mediafiles/eagle-brook-church-videocast.xml",
-      "last_checked_unix": 1772027136,
+      "last_checked_unix": 1772037362,
       "etag": null,
       "last_modified": "Sun, 22 Feb 2026 19:13:57 GMT"
     },
     "geek-news-central-podcast-video": {
       "status": "not_modified",
       "url": "https://geeknewscentral.com/feed/video/",
-      "last_checked_unix": 1772027136,
+      "last_checked_unix": 1772037362,
       "etag": "\"cbb7f1dbad57cebfa25b9ffb17e61693\"",
       "last_modified": "Mon, 16 Feb 2026 17:46:28 GMT"
     },
     "apple-events": {
       "status": "not_modified",
       "url": "https://applehosted.podcasts.apple.com/apple_keynotes/apple_keynotes.xml",
-      "last_checked_unix": 1772027136,
+      "last_checked_unix": 1772037362,
       "etag": "\"46cbdb00f4af02d42de912f837241b10:1758936926.445644\"",
       "last_modified": "Sat, 27 Sep 2025 01:35:26 GMT"
     },
     "mbw-video": {
       "status": "not_modified",
       "url": "https://feeds.twit.tv/mbw_video_hd.xml",
-      "last_checked_unix": 1772027136,
+      "last_checked_unix": 1772037362,
       "etag": "\"699e8956-1c55b\"",
       "last_modified": "Wed, 25 Feb 2026 05:32:06 GMT"
     },
     "ipad-video": {
       "status": "not_modified",
       "url": "https://feeds.twit.tv/ipad_video_hd.xml",
-      "last_checked_unix": 1772027136,
+      "last_checked_unix": 1772037362,
       "etag": "\"69991bb1-17a3d\"",
       "last_modified": "Sat, 21 Feb 2026 02:42:57 GMT"
     },
     "twig-video": {
       "status": "not_modified",
       "url": "https://feeds.twit.tv/twig_video_hd.xml",
-      "last_checked_unix": 1772027136,
+      "last_checked_unix": 1772037362,
       "etag": "\"69991bbc-1dc54\"",
       "last_modified": "Sat, 21 Feb 2026 02:43:08 GMT"
     },
     "podcasting-tech": {
       "status": "not_modified",
       "url": "https://feeds.captivate.fm/podcasting-tech/",
-      "last_checked_unix": 1772027136,
+      "last_checked_unix": 1772037362,
       "etag": "\"b119d-64afb3fa7d8b3\"",
       "last_modified": "Tue, 17 Feb 2026 01:47:05 GMT"
     },
     "ww-video": {
       "status": "not_modified",
       "url": "https://feeds.twit.tv/ww_video_hd.xml",
-      "last_checked_unix": 1772027136,
+      "last_checked_unix": 1772037362,
       "etag": "\"69991bf6-24edf\"",
       "last_modified": "Sat, 21 Feb 2026 02:44:06 GMT"
     },
     "a-couple-of-rad-techs": {
       "status": "not_modified",
       "url": "https://feeds.captivate.fm/a-couple-of-rad-techs/",
-      "last_checked_unix": 1772027136,
+      "last_checked_unix": 1772037362,
       "etag": "\"d1524-64a1d4a631300\"",
       "last_modified": "Fri, 06 Feb 2026 00:58:42 GMT"
     },
     "twit-specials-video": {
       "status": "not_modified",
       "url": "https://feeds.twit.tv/specials_video_hd.xml",
-      "last_checked_unix": 1772027136,
+      "last_checked_unix": 1772037362,
       "etag": "\"694b6ed9-11dff\"",
       "last_modified": "Wed, 24 Dec 2025 04:40:57 GMT"
     },
     "sn-video": {
       "status": "not_modified",
       "url": "https://feeds.twit.tv/sn_video_hd.xml",
-      "last_checked_unix": 1772027136,
+      "last_checked_unix": 1772037362,
       "etag": "\"699e8a14-1b018\"",
       "last_modified": "Wed, 25 Feb 2026 05:35:16 GMT"
     },
     "twit-events-video": {
       "status": "not_modified",
       "url": "https://feeds.twit.tv/events_video_hd.xml",
-      "last_checked_unix": 1772027136,
+      "last_checked_unix": 1772037362,
       "etag": "\"694b6ece-2281d\"",
       "last_modified": "Wed, 24 Dec 2025 04:40:46 GMT"
     },
     "transcripted-ai-video": {
-      "status": "not_modified",
+      "status": "ok",
       "url": "https://transcripted.ai/api/rss/consolidated/video",
-      "last_checked_unix": 1772027136,
+      "fetched_url": "https://transcripted.ai/api/rss/consolidated/video",
+      "last_checked_unix": 1772037362,
+      "last_ok_unix": 1772037362,
       "etag": null,
-      "last_modified": "Wed, 25 Feb 2026 09:16:40 GMT"
+      "last_modified": "Wed, 25 Feb 2026 15:16:36 GMT",
+      "bytes": 7431131
     }
   },
-  "updated_at_unix": 1772027136,
+  "updated_at_unix": 1772037362,
   "site": {
     "id": "vodcasts-dev",
     "title": "VODcasts (Dev)",
