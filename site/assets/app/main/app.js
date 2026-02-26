@@ -18,7 +18,7 @@ import { ShuffleTakeover } from "../ui/takeover/shuffle_takeover.js";
 import { ExitFullscreenIcon, FullscreenIcon, MoonIcon, MuteIcon, PauseIcon, PlayIcon, ShareIcon, ShuffleIcon } from "../ui/icons.js";
 import { useLongPress } from "../ui/long_press.js";
 import { installControls } from "./controls.js";
-import { setRouteInUrl } from "./route.js";
+import { getRouteFromUrl, setRouteInUrl } from "./route.js";
 import { trackEvent } from "../runtime/analytics.js";
 
 function chapterIndexAt(chapters, tSec) {
@@ -68,6 +68,9 @@ export function App({ env, log, sources, player, history }) {
     detailsOpen: null,
     historyOpen: null,
   });
+  const lastRouteKeyRef = useRef("");
+  const lastUserIntentAtRef = useRef(0);
+  const suppressNextRoutePushRef = useRef(0);
 
   const UI_IDLE_MS = 3200;
   const setUiIdle = (next) => {
@@ -572,12 +575,68 @@ export function App({ env, log, sources, player, history }) {
     };
   }, []);
 
-  // Keep the URL shareable (feed + episode) as playback changes.
+  // Back/forward support: apply route changes from the address bar.
+  useEffect(() => {
+    let token = 0;
+    const onNav = () => {
+      const route = getRouteFromUrl();
+      const autoplay = !player.playback.value?.paused;
+      const t = ++token;
+      suppressNextRoutePushRef.current = t;
+      player
+        .applyRoute(route, { autoplay })
+        .catch(() => {})
+        .finally(() => {
+          if (suppressNextRoutePushRef.current === t) suppressNextRoutePushRef.current = 0;
+        });
+    };
+    window.addEventListener("popstate", onNav);
+    window.addEventListener("hashchange", onNav);
+    return () => {
+      try {
+        window.removeEventListener("popstate", onNav);
+      } catch {}
+      try {
+        window.removeEventListener("hashchange", onNav);
+      } catch {}
+    };
+  }, []);
+
+  // Detect likely user-initiated selections (so we can push a history entry).
+  useEffect(() => {
+    const mark = (e) => {
+      if (!e) return;
+      // Only count explicit activation keys; arrows should not create history.
+      if (e.type === "keydown") {
+        const k = String(e.key || "");
+        const isActivate = k === "Enter" || k === " " || k === "OK" || k === "Select";
+        if (!isActivate) return;
+      }
+      lastUserIntentAtRef.current = Date.now();
+    };
+    document.addEventListener("pointerdown", mark, { passive: true });
+    document.addEventListener("keydown", mark, { passive: true });
+    return () => {
+      try {
+        document.removeEventListener("pointerdown", mark);
+      } catch {}
+      try {
+        document.removeEventListener("keydown", mark);
+      } catch {}
+    };
+  }, []);
+
+  // Keep the URL shareable (feed + episode) as playback changes, and push entries for user selections.
   useSignalEffect(() => {
     const s = player.current.value.source?.id;
     const e = player.current.value.episode?.slug;
     if (!s) return;
-    setRouteInUrl({ feed: s, ep: e }, { replace: true });
+    const routeKey = `${String(s)}::${String(e || "")}`;
+    const recentUser = Date.now() - (Number(lastUserIntentAtRef.current) || 0) < 1200;
+    const fromHistory = !!suppressNextRoutePushRef.current;
+    const shouldPush = !fromHistory && recentUser && !!e && routeKey !== lastRouteKeyRef.current;
+    setRouteInUrl({ feed: s, ep: e }, { replace: !shouldPush });
+    lastRouteKeyRef.current = routeKey;
   });
 
   const cur = player.current.value;
