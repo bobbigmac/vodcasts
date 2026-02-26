@@ -70,30 +70,54 @@ export function GuidePanel({ isOpen, sources, player }) {
   const guideStartTs = useSignal(roundToHalfHour(Date.now()));
   const scrollRef = useRef(null);
 
-  const PX_PER_MIN = 6;
-  const HORIZON_HOURS = 6;
-  const HORIZON_SEC = HORIZON_HOURS * 3600;
-  const HORIZON_PX = Math.round((HORIZON_SEC / 60) * PX_PER_MIN);
+  const PX_PER_MIN_BASE = 6;
+  const MAX_HORIZON_PX = 14000;
   const DEFAULT_EP_SEC = 30 * 60;
-  const MIN_BLOCK_PX = Math.round(8 * PX_PER_MIN);
+  const MAX_EP_SEC = 6 * 3600;
 
   const playableFor = (sourceId) => {
     const eps = sourceId ? episodesBySource[sourceId] || null : null;
     return (eps || []).filter((ep) => ep.media?.url);
   };
 
-  const horizonBlocksFor = (playable) => {
-    let curSec = 0;
-    let count = 0;
-    for (let j = 0; j < (playable || []).length; j++) {
-      const ep = playable[j];
-      const durSec = Number(ep?.durationSec) > 0 ? Number(ep.durationSec) : DEFAULT_EP_SEC;
-      if (curSec >= HORIZON_SEC) break;
-      curSec += durSec;
-      count++;
-    }
-    return count;
+  const estimateDurSec = (sourceId, ep) => {
+    const ds = Number(ep?.durationSec);
+    if (Number.isFinite(ds) && ds > 0) return Math.min(MAX_EP_SEC, ds);
+    const known = typeof player.getKnownDurationSec === "function" ? player.getKnownDurationSec(sourceId, ep?.id) : null;
+    const kd = Number(known);
+    if (Number.isFinite(kd) && kd > 0) return Math.min(MAX_EP_SEC, kd);
+    const maxSec =
+      typeof player.getProgressMaxSec === "function"
+        ? player.getProgressMaxSec(sourceId, ep?.id)
+        : typeof player.getProgressSec === "function"
+          ? player.getProgressSec(sourceId, ep?.id)
+          : 0;
+    if (Number.isFinite(maxSec) && maxSec > 0) return Math.min(MAX_EP_SEC, Math.max(DEFAULT_EP_SEC, Math.ceil(maxSec) + 60));
+    return DEFAULT_EP_SEC;
   };
+
+  const guideMetrics = useMemo(() => {
+    let maxSec = 0;
+    const totals = new Map();
+    for (const src of sourcesFlat) {
+      const playable = playableFor(src.id);
+      let sum = 0;
+      for (const ep of playable) sum += estimateDurSec(src.id, ep);
+      totals.set(src.id, sum);
+      if (sum > maxSec) maxSec = sum;
+    }
+    const horizonSec = Math.max(2 * 3600, maxSec || 0);
+    const minutes = Math.max(1, horizonSec / 60);
+    const pxPerMin = clamp(MAX_HORIZON_PX / minutes, 2, PX_PER_MIN_BASE);
+    const horizonPx = Math.round(minutes * pxPerMin);
+
+    // Tick density: aim for <= ~140 ticks.
+    let tickStepMin = 30;
+    while ((minutes / tickStepMin) > 140) tickStepMin *= 2;
+
+    const minBlockPx = Math.round(Math.max(6, pxPerMin * 10)); // ~10 minutes minimum
+    return { horizonSec, horizonPx, pxPerMin, tickStepMin, minBlockPx };
+  }, [sourcesFlat.length, Object.keys(episodesBySource).length]);
 
   useEffect(() => {
     if (!isOpen.value) return;
@@ -102,7 +126,7 @@ export function GuidePanel({ isOpen, sources, player }) {
     const srcId = sourcesFlat[focusSourceIdx.value]?.id;
     const playable0 = playableFor(srcId);
     const curIdx = currentEpisodeId ? playable0.findIndex((ep) => ep.id === currentEpisodeId) : -1;
-    focusEpIdx.value = Math.max(0, Math.min(horizonBlocksFor(playable0) - 1, curIdx >= 0 ? curIdx : 0));
+    focusEpIdx.value = Math.max(0, Math.min(playable0.length - 1, curIdx >= 0 ? curIdx : 0));
     if (currentSourceId && !episodesBySource[currentSourceId]) {
       player.loadSourceEpisodes(currentSourceId).catch(() => {});
     }
@@ -114,7 +138,7 @@ export function GuidePanel({ isOpen, sources, player }) {
     const src = sourcesFlat[focusSourceIdx.value];
     if (src && !episodesBySource[src.id]) player.loadSourceEpisodes(src.id).catch(() => {});
     const playable = playableFor(src?.id);
-    const maxIdx = Math.max(0, horizonBlocksFor(playable) - 1);
+    const maxIdx = Math.max(0, playable.length - 1);
     if (focusEpIdx.value > maxIdx) focusEpIdx.value = maxIdx;
   }, [isOpen.value, focusSourceIdx.value, sourcesFlat.length]);
 
@@ -147,7 +171,7 @@ export function GuidePanel({ isOpen, sources, player }) {
 
       const src = sourcesFlat[focusSourceIdx.value];
       const playable = playableFor(src?.id);
-      const maxIdx = Math.max(0, horizonBlocksFor(playable) - 1);
+      const maxIdx = Math.max(0, playable.length - 1);
       if (k === "ArrowLeft") {
         focusEpIdx.value = Math.max(0, focusEpIdx.value - 1);
         return;
@@ -245,24 +269,24 @@ export function GuidePanel({ isOpen, sources, player }) {
     for (let i = 0; i < Math.max(0, focusEpIdx.value); i++) {
       const ep = focusedPlayable[i];
       if (!ep) break;
-      const durSec = Number(ep.durationSec) > 0 ? Number(ep.durationSec) : DEFAULT_EP_SEC;
-      startSec += durSec;
+      startSec += estimateDurSec(focusedSource?.id, ep);
     }
-    const durSec = Number(focusedEp.durationSec) > 0 ? Number(focusedEp.durationSec) : DEFAULT_EP_SEC;
+    const durSec = estimateDurSec(focusedSource?.id, focusedEp);
     const a = fmtClock(guideStartTs.value + startSec * 1000);
     const b = fmtClock(guideStartTs.value + (startSec + durSec) * 1000);
     return `${a} – ${b}`;
-  }, [focusedEp?.id, focusEpIdx.value, focusedPlayable.length, guideStartTs.value]);
+  }, [focusedEp?.id, focusEpIdx.value, focusedPlayable.length, guideStartTs.value, focusedSource?.id]);
 
   const timeTicks = useMemo(() => {
     const out = [];
     const start = guideStartTs.value;
-    for (let m = 0; m <= HORIZON_HOURS * 60; m += 30) {
-      const x = Math.round(m * PX_PER_MIN);
+    const mins = Math.ceil(guideMetrics.horizonSec / 60);
+    for (let m = 0; m <= mins; m += guideMetrics.tickStepMin) {
+      const x = Math.round(m * guideMetrics.pxPerMin);
       out.push({ m, x, label: fmtClock(start + m * 60 * 1000) });
     }
     return out;
-  }, [guideStartTs.value]);
+  }, [guideStartTs.value, guideMetrics.horizonSec, guideMetrics.tickStepMin, guideMetrics.pxPerMin]);
 
   return html`
     <div id="guidePanel" class="guidePanel" aria-hidden=${isOpen.value ? "false" : "true"}>
@@ -271,7 +295,7 @@ export function GuidePanel({ isOpen, sources, player }) {
           class="guideGridScroll"
           id="guideGrid"
           ref=${scrollRef}
-          style=${{ "--guide-horizon": `${HORIZON_PX}px` }}
+          style=${{ "--guide-horizon": `${guideMetrics.horizonPx}px` }}
           role="application"
           aria-label="TV guide"
         >
@@ -280,7 +304,7 @@ export function GuidePanel({ isOpen, sources, player }) {
               <div class="guideGridCornerTop">All Channels</div>
               <div class="guideGridCornerSub">Today ${fmtClock(guideStartTs.value)}</div>
             </div>
-            <div class="guideGridTimeAxis" style=${{ width: `${HORIZON_PX}px` }}>
+            <div class="guideGridTimeAxis" style=${{ width: `${guideMetrics.horizonPx}px` }}>
               ${timeTicks.map((t) => {
                 return html`
                   <div class="guideGridTick" style=${{ left: `${t.x}px` }}>
@@ -302,27 +326,11 @@ export function GuidePanel({ isOpen, sources, player }) {
               const blocks = [];
               for (let j = 0; j < playable.length; j++) {
                 const ep = playable[j];
-                if (curSec >= HORIZON_SEC) break;
+                const durSec = estimateDurSec(src.id, ep);
 
-                const durSecRaw = Number(ep.durationSec);
-                const maxSec =
-                  typeof player.getProgressMaxSec === "function"
-                    ? player.getProgressMaxSec(src.id, ep.id)
-                    : typeof player.getProgressSec === "function"
-                      ? player.getProgressSec(src.id, ep.id)
-                      : 0;
-                const knownDur =
-                  typeof player.getKnownDurationSec === "function" ? player.getKnownDurationSec(src.id, ep.id) : null;
-                const durSec =
-                  Number.isFinite(durSecRaw) && durSecRaw > 0
-                    ? durSecRaw
-                    : Number.isFinite(Number(knownDur)) && Number(knownDur) > 0
-                      ? Number(knownDur)
-                      : Math.max(DEFAULT_EP_SEC, Number.isFinite(maxSec) && maxSec > 0 ? Math.ceil(maxSec) + 60 : DEFAULT_EP_SEC);
-
-                const x = Math.round((curSec / 60) * PX_PER_MIN);
-                const w0 = Math.round((durSec / 60) * PX_PER_MIN);
-                const w = Math.max(MIN_BLOCK_PX, Math.min(w0, Math.max(32, HORIZON_PX - x)));
+                const x = Math.round((curSec / 60) * guideMetrics.pxPerMin);
+                const w0 = Math.round((durSec / 60) * guideMetrics.pxPerMin);
+                const w = Math.max(guideMetrics.minBlockPx, Math.min(w0, Math.max(32, guideMetrics.horizonPx - x)));
                 const endX = x + w;
                 blocks.push({ ep, j, x, w, endX, durSec });
                 curSec += durSec;
@@ -361,7 +369,7 @@ export function GuidePanel({ isOpen, sources, player }) {
                       </div>
                     </div>
                   </div>
-                  <div class="guideGridTrack" style=${{ width: `${HORIZON_PX}px` }}>
+                  <div class="guideGridTrack" style=${{ width: `${guideMetrics.horizonPx}px` }}>
                     ${eps
                       ? blocks.map((b) => {
                           const ep = b.ep;

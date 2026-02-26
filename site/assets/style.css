@@ -1106,7 +1106,7 @@ video {
 
 /* Guide grid: keep CC indicators subtle (present but not shouty). */
 .guideGridScroll .guideBadge-cc {
-  opacity: 0.38;
+  opacity: 0.22;
   border-color: color-mix(in srgb, var(--muted) 50%, var(--edge));
   background: rgba(255,255,255,.02);
   color: var(--muted);
@@ -1115,6 +1115,8 @@ video {
   padding: 2px 5px;
   font-size: 9px;
 }
+.guideGridRow.focused .guideBadge-cc,
+.guideGridEp.focused .guideBadge-cc { opacity: 0.36 }
 
 .guideGridScroll {
   flex: 1;
