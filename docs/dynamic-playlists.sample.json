@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "input": {
+    "file": "dist/feed-manifest.json",
+    "feedKeys": ["id", "title", "url", "features", "episodes"],
+    "episodeKeys": [
+      "id",
+      "slug",
+      "title",
+      "link",
+      "dateText",
+      "channelTitle",
+      "durationSec",
+      "media",
+      "chaptersExternal",
+      "transcripts",
+      "transcriptsAll"
+    ]
+  },
+  "notes": [
+    "These are example client-side 'virtual channel' definitions (dynamic playlists) to be implemented.",
+    "Assumes a search index/haystack similar to `episodeSearchHaystack(source, ep)` (title/id/category + tags like cc/chapters/hls + duration tags like 1h0m).",
+    "Suggested grouping keys: `feed.id` (aka channel/source id) and/or `episode.channelTitle`."
+  ],
+  "playlists": [
+    {
+      "id": "christmas-festive",
+      "title": "Christmas / Festive",
+      "query": "christmas xmas advent nativity noel carol candlelight",
+      "excludeQuery": "easter",
+      "duration": { "minSec": 300 },
+      "groupBy": "feed.id",
+      "maxPerGroup": 2,
+      "sort": "date_desc",
+      "limit": 250
+    },
+    {
+      "id": "spiritual-support",
+      "title": "Spiritual Support (Anxiety / Grief / Hope)",
+      "query": "anxiety anxious grief grieving depression hope encouragement healing comfort peace prayer pray",
+      "duration": { "minSec": 180, "maxSec": 5400 },
+      "groupBy": "feed.id",
+      "maxPerGroup": 3,
+      "sort": "date_desc",
+      "limit": 300
+    },
+    {
+      "id": "long-sermons",
+      "title": "Long Sermons (≥ 1 hour)",
+      "query": "sermon message preaching homily khutbah talk lecture",
+      "duration": { "minSec": 3600 },
+      "groupBy": "feed.id",
+      "maxPerGroup": 2,
+      "sort": "date_desc",
+      "limit": 200
+    },
+    {
+      "id": "short-daily",
+      "title": "Short Daily (≤ 15 minutes)",
+      "query": "daily devotional devotion prayer pray reflection",
+      "duration": { "maxSec": 900 },
+      "groupBy": "feed.id",
+      "maxPerGroup": 2,
+      "sort": "date_desc",
+      "limit": 220
+    },
+    {
+      "id": "worship-music",
+      "title": "Worship / Praise Music",
+      "query": "worship praise live concert music band choir hymn hymns",
+      "excludeQuery": "podcast trailer teaser",
+      "duration": { "minSec": 240 },
+      "groupBy": "feed.id",
+      "maxPerGroup": 3,
+      "sort": "date_desc",
+      "limit": 260
+    },
+    {
+      "id": "christian-rock",
+      "title": "Christian Rock / Metal / Punk",
+      "query": "christian rock metal punk hardcore live concert",
+      "duration": { "minSec": 240 },
+      "groupBy": "feed.id",
+      "maxPerGroup": 3,
+      "sort": "date_desc",
+      "limit": 220
+    },
+    {
+      "id": "cc-available",
+      "title": "Captions Available (CC)",
+      "query": "cc",
+      "duration": { "minSec": 120 },
+      "groupBy": "feed.id",
+      "maxPerGroup": 3,
+      "sort": "date_desc",
+      "limit": 250
+    },
+    {
+      "id": "live-hls",
+      "title": "HLS / Streaming Sources",
+      "query": "hls m3u8",
+      "duration": { "minSec": 120 },
+      "groupBy": "feed.id",
+      "maxPerGroup": 2,
+      "sort": "date_desc",
+      "limit": 200
+    },
+    {
+      "id": "first-per-channel-sampler",
+      "title": "Sampler (1 per channel)",
+      "query": "",
+      "duration": { "minSec": 120, "maxSec": 7200 },
+      "groupBy": "feed.id",
+      "maxPerGroup": 1,
+      "sort": "date_desc",
+      "limit": 400
+    }
+  ]
+}
+
