@@ -722,6 +722,13 @@ export function installControls() {
       }
       return;
     }
+    if (k === "h") {
+      if (typingComments) return;
+      if (clickIfPresent("#btnShuffle")) {
+        e.preventDefault();
+      }
+      return;
+    }
     if (k === "n") {
       if (typingComments) return;
       if (clickIfPresent("#btnNav")) {

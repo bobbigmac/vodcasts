@@ -26,12 +26,29 @@ export function createPlayerService({ env, log, history }) {
   let sleepEndAt = null;
   let sleepTickId = null;
 
+  let shuffleTickId = null;
+  let shuffleBusy = false;
+
   const persisted = loadState();
 
   const current = signal({ source: null, episode: null });
   const chapters = signal([]);
   const VOLUME_STEP = 0.1;
   const DEFAULT_RATE_STEPS = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.5, 3, 3.5, 4, 4.5, 5, 7, 12];
+  const SHUFFLE_INTERVALS = [
+    { label: "10s", ms: 10 * 1000 },
+    { label: "30s", ms: 30 * 1000 },
+    { label: "1m", ms: 60 * 1000 },
+    { label: "2m", ms: 2 * 60 * 1000 },
+    { label: "5m", ms: 5 * 60 * 1000 },
+    { label: "10m", ms: 10 * 60 * 1000 },
+    { label: "20m", ms: 20 * 60 * 1000 },
+    { label: "30m", ms: 30 * 60 * 1000 },
+    { label: "1hr", ms: 60 * 60 * 1000 },
+    { label: "2hr", ms: 2 * 60 * 60 * 1000 },
+    { label: "3hr", ms: 3 * 60 * 60 * 1000 },
+  ];
+  const DEFAULT_SHUFFLE = { active: false, nextAt: null, intervalIdx: 4, changeFeed: true, changeEpisode: true, changeTime: true };
   const playback = signal({
     paused: true,
     muted: true,
@@ -51,6 +68,7 @@ export function createPlayerService({ env, log, history }) {
   const subtitleCue = signal(null);
   const skip = signal(normalizeSkip(persisted.skip));
   const rateSteps = signal(normalizeRateSteps(persisted.rateSteps) || DEFAULT_RATE_STEPS.slice());
+  const shuffle = signal({ ...normalizeShuffle(persisted.shuffle), label: "" });
 
   const currentSourceId = computed(() => current.value.source?.id || null);
   const currentEpisodeId = computed(() => current.value.episode?.id || null);
@@ -101,6 +119,27 @@ export function createPlayerService({ env, log, history }) {
     return out.length ? out : null;
   }
 
+  function normalizeShuffle(input) {
+    const s = input && typeof input === "object" ? input : {};
+    const intervalIdx0 = Number.isFinite(Number(s.intervalIdx)) ? Math.round(Number(s.intervalIdx)) : DEFAULT_SHUFFLE.intervalIdx;
+    const intervalIdx = clamp(intervalIdx0, 0, SHUFFLE_INTERVALS.length - 1);
+
+    const changeFeed = s.changeFeed !== false;
+    const changeEpisode = s.changeEpisode !== false;
+    const changeTime = s.changeTime !== false;
+    const hasAny = changeFeed || changeEpisode || changeTime;
+
+    const nextAt = Number.isFinite(Number(s.nextAt)) ? Number(s.nextAt) : null;
+    return {
+      active: !!s.active,
+      nextAt,
+      intervalIdx,
+      changeFeed: hasAny ? changeFeed : DEFAULT_SHUFFLE.changeFeed,
+      changeEpisode: hasAny ? changeEpisode : DEFAULT_SHUFFLE.changeEpisode,
+      changeTime: hasAny ? changeTime : DEFAULT_SHUFFLE.changeTime,
+    };
+  }
+
   function normalizeRate(v, steps = DEFAULT_RATE_STEPS) {
     if (!Number.isFinite(v) || v <= 0) return 1;
     const arr = steps && steps.length ? steps : DEFAULT_RATE_STEPS;
@@ -124,6 +163,187 @@ export function createPlayerService({ env, log, history }) {
     const ss = Math.floor(s % 60);
     if (hh > 0) return `${String(hh).padStart(2, "0")}:${String(mm).padStart(2, "0")}:${String(ss).padStart(2, "0")}`;
     return `${String(mm).padStart(2, "0")}:${String(ss).padStart(2, "0")}`;
+  }
+
+  function shuffleLeftLabel(nextAt) {
+    if (!Number.isFinite(nextAt)) return "";
+    const leftMs = nextAt - Date.now();
+    const leftSec = Math.max(0, Math.ceil(leftMs / 1000));
+    return fmtTime(leftSec);
+  }
+
+  function persistShuffle(next) {
+    const s = next && typeof next === "object" ? next : shuffle.value;
+    persisted.shuffle = {
+      active: !!s.active,
+      nextAt: Number.isFinite(Number(s.nextAt)) ? Number(s.nextAt) : null,
+      intervalIdx: clamp(Math.round(Number(s.intervalIdx) || 0), 0, SHUFFLE_INTERVALS.length - 1),
+      changeFeed: s.changeFeed !== false,
+      changeEpisode: s.changeEpisode !== false,
+      changeTime: s.changeTime !== false,
+    };
+    saveState();
+  }
+
+  function ensureShuffleTick() {
+    if (!shuffle.value.active) {
+      if (shuffleTickId) clearInterval(shuffleTickId);
+      shuffleTickId = null;
+      shuffleBusy = false;
+      return;
+    }
+    if (shuffleTickId) return;
+    shuffleTickId = setInterval(() => shuffleTick(), 400);
+  }
+
+  function setShuffleSettings(nextPartial, { resetNextAt = false } = {}) {
+    const cur = shuffle.value;
+    const next = { ...cur, ...(nextPartial && typeof nextPartial === "object" ? nextPartial : {}) };
+    const any = !!next.changeFeed || !!next.changeEpisode || !!next.changeTime;
+    if (!any) {
+      next.changeFeed = cur.changeFeed;
+      next.changeEpisode = cur.changeEpisode;
+      next.changeTime = cur.changeTime;
+    }
+    next.intervalIdx = clamp(Math.round(Number(next.intervalIdx) || 0), 0, SHUFFLE_INTERVALS.length - 1);
+    if (resetNextAt && next.active) next.nextAt = Date.now() + SHUFFLE_INTERVALS[next.intervalIdx].ms;
+    next.label = next.active ? shuffleLeftLabel(next.nextAt) : "";
+    shuffle.value = next;
+    persistShuffle(next);
+    ensureShuffleTick();
+  }
+
+  function startShuffle() {
+    const cur = shuffle.value;
+    const intervalIdx = clamp(Math.round(Number(cur.intervalIdx) || DEFAULT_SHUFFLE.intervalIdx), 0, SHUFFLE_INTERVALS.length - 1);
+    const now = Date.now();
+    const nextAt0 = Number.isFinite(Number(cur.nextAt)) ? Number(cur.nextAt) : null;
+    const nextAt = nextAt0 && nextAt0 > now ? nextAt0 : now + SHUFFLE_INTERVALS[intervalIdx].ms;
+    setShuffleSettings({ active: true, intervalIdx, nextAt }, { resetNextAt: false });
+  }
+
+  function stopShuffle() {
+    const next = { ...shuffle.value, active: false, nextAt: null, label: "" };
+    shuffle.value = next;
+    persistShuffle(next);
+    ensureShuffleTick();
+  }
+
+  function toggleShuffle() {
+    if (shuffle.value.active) stopShuffle();
+    else startShuffle();
+  }
+
+  function pickRandomId(list, { exclude } = {}) {
+    const arr = Array.isArray(list) ? list : [];
+    if (!arr.length) return null;
+    if (arr.length === 1) return arr[0];
+    for (let i = 0; i < 6; i++) {
+      const v = arr[Math.floor(Math.random() * arr.length)];
+      if (exclude == null || v !== exclude) return v;
+    }
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+
+  function scheduleShuffleSoon(ms = 15000) {
+    const intervalIdx = clamp(Math.round(Number(shuffle.value.intervalIdx) || 0), 0, SHUFFLE_INTERVALS.length - 1);
+    const nextAt = Date.now() + Math.max(1000, Math.min(ms, SHUFFLE_INTERVALS[intervalIdx].ms));
+    setShuffleSettings({ nextAt }, { resetNextAt: false });
+  }
+
+  function scheduleNextShuffle() {
+    const intervalIdx = clamp(Math.round(Number(shuffle.value.intervalIdx) || 0), 0, SHUFFLE_INTERVALS.length - 1);
+    const nextAt = Date.now() + SHUFFLE_INTERVALS[intervalIdx].ms;
+    setShuffleSettings({ nextAt }, { resetNextAt: false });
+  }
+
+  function seekRandomTimeSoon() {
+    if (!videoEl) return;
+    const apply = () => {
+      if (!videoEl) return;
+      const dur = videoEl.duration;
+      if (!Number.isFinite(dur) || dur <= 2) return;
+      const max = Math.max(0, dur - 20);
+      if (max <= 1) return;
+      const t = Math.random() * max;
+      if (t > 0.25) videoEl.currentTime = t;
+    };
+    if (Number.isFinite(videoEl.duration) && videoEl.duration > 0) apply();
+    else videoEl.addEventListener("loadedmetadata", apply, { once: true });
+  }
+
+  async function doShuffleNow() {
+    if (!shuffle.value.active) return;
+    if (!sources.length) return;
+    if (!videoEl) return;
+    if (loading.value) return;
+
+    const pb = playback.value;
+    if (pb.paused || pb.ended) return;
+
+    const cfg = shuffle.value;
+    const doFeed = !!cfg.changeFeed;
+    const doEp = !!cfg.changeEpisode;
+    const doTime = !!cfg.changeTime;
+
+    if (doFeed) {
+      const ids = sources.map((s) => s.id).filter(Boolean);
+      const nextSourceId = pickRandomId(ids, { exclude: currentSource?.id || null }) || currentSource?.id || ids[0];
+      const pickRandomEpisode = !!doEp;
+      await selectSource(nextSourceId, {
+        preserveEpisode: false,
+        pickRandomEpisode,
+        autoplay: true,
+        ignoreLastBySource: true,
+      });
+      if (doTime) seekRandomTimeSoon();
+      return;
+    }
+
+    if (doEp) {
+      const playable = episodes.filter((e) => e.media?.url);
+      const ids = playable.map((e) => e.id).filter(Boolean);
+      const nextEpId = pickRandomId(ids, { exclude: currentEp?.id || null }) || currentEp?.id || ids[0];
+      if (nextEpId) await selectEpisode(nextEpId, { autoplay: true });
+      if (doTime) seekRandomTimeSoon();
+      return;
+    }
+
+    if (doTime) {
+      seekRandomTimeSoon();
+    }
+  }
+
+  function shuffleTick() {
+    if (!shuffle.value.active) {
+      ensureShuffleTick();
+      return;
+    }
+    const nextAt = shuffle.value.nextAt;
+    if (!Number.isFinite(nextAt)) {
+      scheduleNextShuffle();
+      return;
+    }
+    const leftMs = nextAt - Date.now();
+    if (leftMs <= 0) {
+      if (shuffleBusy) return;
+      shuffleBusy = true;
+      Promise.resolve()
+        .then(async () => {
+          if (!videoEl || loading.value || playback.value.paused || playback.value.ended || !sources.length) {
+            scheduleShuffleSoon(15000);
+            return;
+          }
+          await doShuffleNow();
+          scheduleNextShuffle();
+        })
+        .finally(() => {
+          shuffleBusy = false;
+        });
+      return;
+    }
+    const label = shuffleLeftLabel(nextAt);
+    if (label !== shuffle.value.label) shuffle.value = { ...shuffle.value, label };
   }
 
   function episodeKey(sourceId, episodeId) {
@@ -838,6 +1058,8 @@ export function createPlayerService({ env, log, history }) {
     // Init configurable skip + speed steps from persisted state.
     skip.value = normalizeSkip(persisted.skip);
     rateSteps.value = normalizeRateSteps(persisted.rateSteps) || DEFAULT_RATE_STEPS.slice();
+    shuffle.value = { ...normalizeShuffle(persisted.shuffle), label: "" };
+    if (shuffle.value.active) ensureShuffleTick();
 
     const rate = normalizeRate(Number(persisted.rate) || 1, rateSteps.value);
     try {
@@ -948,6 +1170,8 @@ export function createPlayerService({ env, log, history }) {
     transcriptsLoadError,
     playback,
     sleep,
+    shuffle,
+    shuffleIntervals: SHUFFLE_INTERVALS,
     sourceEpisodes,
     setSources,
     attachVideo,
@@ -984,6 +1208,8 @@ export function createPlayerService({ env, log, history }) {
     setSleepTimerMins,
     clearSleepTimer,
     playRandom,
+    toggleShuffle,
+    setShuffleSettings,
     getProgressSec,
   };
 }

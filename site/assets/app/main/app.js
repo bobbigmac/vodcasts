@@ -14,7 +14,8 @@ import { SpeedTakeover } from "../ui/takeover/speed_takeover.js";
 import { AudioTakeover } from "../ui/takeover/audio_takeover.js";
 import { ChaptersNavSettingsTakeover, ChaptersNavTakeover } from "../ui/takeover/chapters_nav_takeover.js";
 import { ShareTakeover } from "../ui/takeover/share_takeover.js";
-import { ExitFullscreenIcon, FullscreenIcon, MoonIcon, MuteIcon, PauseIcon, PlayIcon, ShareIcon } from "../ui/icons.js";
+import { ShuffleTakeover } from "../ui/takeover/shuffle_takeover.js";
+import { ExitFullscreenIcon, FullscreenIcon, MoonIcon, MuteIcon, PauseIcon, PlayIcon, ShareIcon, ShuffleIcon } from "../ui/icons.js";
 import { useLongPress } from "../ui/long_press.js";
 import { installControls } from "./controls.js";
 import { setRouteInUrl } from "./route.js";
@@ -565,6 +566,7 @@ export function App({ env, log, sources, player, history }) {
   const cap = player.captions.value;
   const loading = player.loading.value;
   const sleep = player.sleep.value;
+  const shuffle = player.shuffle?.value || { active: false, label: "", intervalIdx: 4, changeFeed: true, changeEpisode: true, changeTime: true };
   const audioBlocked = player.audioBlocked.value;
   const skip = player.skip?.value || { back: 10, fwd: 30 };
   const chaptersRaw = player.chapters?.value || [];
@@ -630,6 +632,18 @@ export function App({ env, log, sources, player, history }) {
         id: "random",
         idleMs: 7000,
         render: (takeover) => html`<${RandomTakeover} player=${player} takeover=${takeover} />`,
+      });
+    },
+  });
+
+  const shuffleLongPress = useLongPress({
+    ms: 500,
+    enabled: true,
+    onLongPress: () => {
+      panelTakeover.open({
+        id: "shuffle",
+        idleMs: 9000,
+        render: (takeover) => html`<${ShuffleTakeover} player=${player} takeover=${takeover} />`,
       });
     },
   });
@@ -939,6 +953,24 @@ export function App({ env, log, sources, player, history }) {
                     }}
                   >
                     Random
+                  </button>
+                  <button
+                    id="btnShuffle"
+                    class=${"guideBtn guideBtnHasIcon guideBtnShuffle" + (shuffle.active ? " active" : "") + (shuffleLongPress.pressing.value ? " longpressing" : "")}
+                    title=${shuffle.active ? `Shuffle on (next in ${shuffle.label || "soon"})` : "Shuffle (long-press: settings)"}
+                    data-navitem="1"
+                    data-keyhint="H — Shuffle"
+                    style=${{ "--lp": `${Math.round(shuffleLongPress.progress.value * 100)}%` }}
+                    onPointerDown=${shuffleLongPress.onPointerDown}
+                    onPointerUp=${shuffleLongPress.onPointerUp}
+                    onPointerCancel=${shuffleLongPress.onPointerCancel}
+                    onClick=${() => {
+                      if (shuffleLongPress.consumeClick()) return;
+                      player.toggleShuffle?.();
+                    }}
+                  >
+                    <span class="guideBtnIcon"><${ShuffleIcon} size=${16} /></span>
+                    ${shuffle.active && shuffle.label ? html`<span class="guideBtnLabel">${shuffle.label}</span>` : ""}
                   </button>
                   <button
                     id="btnNav"

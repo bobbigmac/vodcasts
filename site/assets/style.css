@@ -926,6 +926,11 @@ video {
 .guideBtnLabel {
   font-variant-numeric: tabular-nums;
 }
+.guideBtnShuffle .guideBtnLabel {
+  display: inline-block;
+  min-width: 58px;
+  text-align: right;
+}
 .guideBtn:hover { background: rgba(255,255,255,.08) }
 .guideBtn:active { transform: translateY(1px) }
 .guideBtn.active { background: rgba(138,180,248,.2); border-color: var(--accent) }
