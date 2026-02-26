@@ -6,4 +6,4 @@ cache.*
 .env.*
 __pycache__/
 *.pyc
-
+.vodcasts-env
