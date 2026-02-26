@@ -1104,7 +1104,8 @@ video {
 }
 
 /* Guide grid: keep CC indicators subtle (present but not shouty). */
-.guideGridScroll .guideBadge-cc {
+.guideGridChannelsScroll .guideBadge-cc,
+.guideGridTracksScroll .guideBadge-cc {
   opacity: 0.22;
   border-color: color-mix(in srgb, var(--muted) 50%, var(--edge));
   background: rgba(255,255,255,.02);
@@ -1114,10 +1115,20 @@ video {
   padding: 2px 5px;
   font-size: 9px;
 }
-.guideGridRow.focused .guideBadge-cc,
+.guideGridChanRow.focused .guideBadge-cc,
+.guideGridTrackRow.focused .guideBadge-cc,
 .guideGridEp.focused .guideBadge-cc { opacity: 0.36 }
 
-.guideGridScroll {
+.guideGridShell {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--guide-grid-bg, rgba(0,0,0,.12));
+}
+
+.guideGridTracksScroll {
   flex: 1;
   min-height: 0;
   overflow: auto;
@@ -1129,26 +1140,37 @@ video {
   user-select: none;
   -webkit-user-select: none;
 }
-.guideGridScroll.dragging { cursor: grabbing }
-.guideGridScroll::-webkit-scrollbar { width: 10px; height: 10px }
-.guideGridScroll::-webkit-scrollbar-track { background: transparent }
-.guideGridScroll::-webkit-scrollbar-thumb { background: var(--edge); border-radius: 6px }
-.guideGridScroll::-webkit-scrollbar-thumb:hover { background: var(--muted) }
+.guideGridTracksScroll.dragging { cursor: grabbing }
+.guideGridTracksScroll::-webkit-scrollbar { width: 10px; height: 10px }
+.guideGridTracksScroll::-webkit-scrollbar-track { background: transparent }
+.guideGridTracksScroll::-webkit-scrollbar-thumb { background: var(--edge); border-radius: 6px }
+.guideGridTracksScroll::-webkit-scrollbar-thumb:hover { background: var(--muted) }
+
+.guideGridChannelsScroll {
+  width: 240px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--edge) transparent;
+  background: var(--guide-grid-bg, rgba(0,0,0,.12));
+}
+.guideGridChannelsScroll::-webkit-scrollbar { width: 10px }
+.guideGridChannelsScroll::-webkit-scrollbar-track { background: transparent }
+.guideGridChannelsScroll::-webkit-scrollbar-thumb { background: var(--edge); border-radius: 6px }
+.guideGridChannelsScroll::-webkit-scrollbar-thumb:hover { background: var(--muted) }
 
 .guideGridHeaderRow {
-  position: sticky;
-  top: 0;
   z-index: 10;
-  display: grid;
-  grid-template-columns: 240px var(--guide-horizon, 1800px);
+  display: flex;
+  align-items: stretch;
   border-bottom: 1px solid var(--edge);
   background: var(--guide-head-bg, color-mix(in srgb, var(--panel) 92%, rgba(0,0,0,.2)));
   backdrop-filter: blur(10px);
 }
 .guideGridCorner {
-  position: sticky;
-  left: 0;
   z-index: 11;
+  width: 240px;
   padding: 10px 12px;
   border-right: 1px solid var(--edge);
   background: var(--guide-corner-bg, inherit);
@@ -1178,25 +1200,41 @@ video {
   white-space: nowrap;
 }
 
-.guideGridBody {
-  display: flex;
-  flex-direction: column;
+.guideGridHeaderScroll {
+  flex: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--edge) transparent;
 }
+.guideGridHeaderScroll::-webkit-scrollbar { height: 10px }
+.guideGridHeaderScroll::-webkit-scrollbar-track { background: transparent }
+.guideGridHeaderScroll::-webkit-scrollbar-thumb { background: var(--edge); border-radius: 6px }
+.guideGridHeaderScroll::-webkit-scrollbar-thumb:hover { background: var(--muted) }
+
+.guideGridBodyRow {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
 .guideGridSpacer { flex: 0 0 auto }
-.guideGridRow {
-  display: grid;
-  grid-template-columns: 240px var(--guide-horizon, 1800px);
+.guideGridChanRow,
+.guideGridTrackRow {
   height: var(--guide-row-h, 56px);
   min-height: var(--guide-row-h, 56px);
   border-bottom: 1px solid rgba(255,255,255,.04);
 }
-.guideGridRow.focused { background: rgba(255,255,255,.03) }
-.guideGridRow.playing { background: rgba(138,180,248,.06) }
+.guideGridChanRow.focused,
+.guideGridTrackRow.focused { background: rgba(255,255,255,.03) }
+.guideGridChanRow.playing,
+.guideGridTrackRow.playing { background: rgba(138,180,248,.06) }
 
 .guideGridChannelCell {
-  position: sticky;
-  left: 0;
-  z-index: 6;
+  position: relative;
+  z-index: 2;
   display: grid;
   grid-template-columns: 54px 1fr;
   gap: 10px;
@@ -1206,9 +1244,10 @@ video {
   background: var(--guide-cell-bg, color-mix(in srgb, var(--panel) 86%, rgba(0,0,0,.2)));
   cursor: pointer;
   text-align: left;
+  height: 100%;
 }
 
-.guideGridRow.focused .guideGridChannelCell { outline: 2px solid color-mix(in srgb, var(--accent) 55%, transparent); outline-offset: -2px }
+.guideGridChanRow.focused .guideGridChannelCell { outline: 2px solid color-mix(in srgb, var(--accent) 55%, transparent); outline-offset: -2px }
 .guideGridChanNo { font-weight: 750; color: var(--muted); font-size: 13px }
 .guideGridChanMeta { min-width: 0 }
 .guideGridChanName {
@@ -1223,6 +1262,7 @@ video {
 
 .guideGridTrack {
   position: relative;
+  height: 100%;
   min-height: 56px;
   padding: 6px 8px;
   background: var(--guide-track-bg, rgba(0,0,0,.08));

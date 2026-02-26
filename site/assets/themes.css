@@ -12,7 +12,7 @@
   background: color-mix(in srgb, #1a1d26 94%, transparent);
   border-color: #3d4558;
 }
-[data-theme="modern"] .guideGridScroll {
+[data-theme="modern"] .guideGridShell {
   --guide-grid-bg: rgba(0,0,0,.16);
   --guide-track-bg: rgba(0,0,0,.10);
   --guide-head-bg: color-mix(in srgb, #1a1d26 92%, rgba(0,0,0,.25));
@@ -38,7 +38,7 @@
   background: color-mix(in srgb, #0000aa 90%, transparent);
   border-color: #0055ff;
 }
-[data-theme="dos"] .guideGridScroll {
+[data-theme="dos"] .guideGridShell {
   --guide-grid-bg: #0000aa;
   --guide-track-bg: rgba(0,0,0,.08);
   --guide-head-bg: #00008b;
@@ -115,7 +115,8 @@
 [data-theme="dos"] .guideGridChannelCell {
   border-right-color: #0055ff;
 }
-[data-theme="dos"] .guideGridRow { border-bottom-color: rgba(0,255,255,.14) }
+[data-theme="dos"] .guideGridChanRow,
+[data-theme="dos"] .guideGridTrackRow { border-bottom-color: rgba(0,255,255,.14) }
 [data-theme="dos"] .guideGridTick { border-left-color: rgba(255,255,255,.28) }
 [data-theme="dos"] .guideGridTickLabel { color: #fff; opacity: 0.85 }
 
@@ -125,7 +126,8 @@
   color: #fff;
 }
 
-[data-theme="dos"] .guideGridScroll .guideBadge-cc {
+[data-theme="dos"] .guideGridChannelsScroll .guideBadge-cc,
+[data-theme="dos"] .guideGridTracksScroll .guideBadge-cc {
   opacity: 0.35;
   border-color: rgba(255,255,255,.55);
   background: rgba(0,0,0,.10);
