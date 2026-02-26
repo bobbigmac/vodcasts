@@ -566,7 +566,16 @@ export function App({ env, log, sources, player, history }) {
   const cap = player.captions.value;
   const loading = player.loading.value;
   const sleep = player.sleep.value;
-  const shuffle = player.shuffle?.value || { active: false, label: "", intervalIdx: 4, changeFeed: true, changeEpisode: true, changeTime: true };
+  const shuffle = player.shuffle?.value || {
+    active: false,
+    label: "",
+    intervalIdx: 4,
+    changeFeed: true,
+    changeEpisode: true,
+    changeTime: true,
+    sameCategory: false,
+    baseCategory: null,
+  };
   const audioBlocked = player.audioBlocked.value;
   const skip = player.skip?.value || { back: 10, fwd: 30 };
   const chaptersRaw = player.chapters?.value || [];

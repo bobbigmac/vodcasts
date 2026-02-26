@@ -48,9 +48,19 @@ export function createPlayerService({ env, log, history }) {
     { label: "2hr", ms: 2 * 60 * 60 * 1000 },
     { label: "3hr", ms: 3 * 60 * 60 * 1000 },
   ];
-  const DEFAULT_SHUFFLE = { active: false, nextAt: null, intervalIdx: 4, changeFeed: true, changeEpisode: true, changeTime: true };
+  const DEFAULT_SHUFFLE = {
+    active: false,
+    nextAt: null,
+    intervalIdx: 4,
+    changeFeed: true,
+    changeEpisode: true,
+    changeTime: true,
+    sameCategory: false,
+    baseCategory: null,
+  };
   const playback = signal({
     paused: true,
+    ended: false,
     muted: true,
     volume: Number(persisted.volume) >= 0 ? clamp(Number(persisted.volume), 0, 1) : 1,
     rate: 1,
@@ -137,6 +147,8 @@ export function createPlayerService({ env, log, history }) {
       changeFeed: hasAny ? changeFeed : DEFAULT_SHUFFLE.changeFeed,
       changeEpisode: hasAny ? changeEpisode : DEFAULT_SHUFFLE.changeEpisode,
       changeTime: hasAny ? changeTime : DEFAULT_SHUFFLE.changeTime,
+      sameCategory: s.sameCategory === true,
+      baseCategory: typeof s.baseCategory === "string" && s.baseCategory.trim() ? s.baseCategory.trim() : null,
     };
   }
 
@@ -181,6 +193,8 @@ export function createPlayerService({ env, log, history }) {
       changeFeed: s.changeFeed !== false,
       changeEpisode: s.changeEpisode !== false,
       changeTime: s.changeTime !== false,
+      sameCategory: s.sameCategory === true,
+      baseCategory: typeof s.baseCategory === "string" && s.baseCategory.trim() ? s.baseCategory.trim() : null,
     };
     saveState();
   }
@@ -205,8 +219,11 @@ export function createPlayerService({ env, log, history }) {
       next.changeEpisode = cur.changeEpisode;
       next.changeTime = cur.changeTime;
     }
+    const hadInterval = nextPartial && typeof nextPartial === "object" && Object.prototype.hasOwnProperty.call(nextPartial, "intervalIdx");
     next.intervalIdx = clamp(Math.round(Number(next.intervalIdx) || 0), 0, SHUFFLE_INTERVALS.length - 1);
-    if (resetNextAt && next.active) next.nextAt = Date.now() + SHUFFLE_INTERVALS[next.intervalIdx].ms;
+    if (next.sameCategory && !next.baseCategory && currentSource?.category) next.baseCategory = String(currentSource.category);
+    const intervalChanged = hadInterval && next.intervalIdx !== cur.intervalIdx;
+    if ((resetNextAt || intervalChanged) && next.active) next.nextAt = Date.now() + SHUFFLE_INTERVALS[next.intervalIdx].ms;
     next.label = next.active ? shuffleLeftLabel(next.nextAt) : "";
     shuffle.value = next;
     persistShuffle(next);
@@ -219,7 +236,8 @@ export function createPlayerService({ env, log, history }) {
     const now = Date.now();
     const nextAt0 = Number.isFinite(Number(cur.nextAt)) ? Number(cur.nextAt) : null;
     const nextAt = nextAt0 && nextAt0 > now ? nextAt0 : now + SHUFFLE_INTERVALS[intervalIdx].ms;
-    setShuffleSettings({ active: true, intervalIdx, nextAt }, { resetNextAt: false });
+    const baseCategory = currentSource?.category ? String(currentSource.category) : null;
+    setShuffleSettings({ active: true, intervalIdx, nextAt, baseCategory }, { resetNextAt: false });
   }
 
   function stopShuffle() {
@@ -272,14 +290,14 @@ export function createPlayerService({ env, log, history }) {
     else videoEl.addEventListener("loadedmetadata", apply, { once: true });
   }
 
-  async function doShuffleNow() {
+  async function doShuffleNow({ force = false } = {}) {
     if (!shuffle.value.active) return;
     if (!sources.length) return;
     if (!videoEl) return;
     if (loading.value) return;
 
     const pb = playback.value;
-    if (pb.paused || pb.ended) return;
+    if (!force && (pb.paused || pb.ended)) return;
 
     const cfg = shuffle.value;
     const doFeed = !!cfg.changeFeed;
@@ -287,7 +305,9 @@ export function createPlayerService({ env, log, history }) {
     const doTime = !!cfg.changeTime;
 
     if (doFeed) {
-      const ids = sources.map((s) => s.id).filter(Boolean);
+      const baseCat = cfg.sameCategory && cfg.baseCategory ? String(cfg.baseCategory) : "";
+      const pool = baseCat ? sources.filter((s) => (s.category || "") === baseCat) : sources;
+      const ids = pool.map((s) => s.id).filter(Boolean);
       const nextSourceId = pickRandomId(ids, { exclude: currentSource?.id || null }) || currentSource?.id || ids[0];
       const pickRandomEpisode = !!doEp;
       await selectSource(nextSourceId, {
@@ -355,9 +375,22 @@ export function createPlayerService({ env, log, history }) {
     return Number.isFinite(v) ? v : 0;
   }
 
+  function getProgressMaxSec(sourceId, episodeId) {
+    const k = episodeKey(sourceId, episodeId);
+    const v = persisted.progressMax?.[k];
+    if (Number.isFinite(v)) return v;
+    return getProgressSec(sourceId, episodeId);
+  }
+
   function setProgressSec(sourceId, episodeId, t) {
+    const k = episodeKey(sourceId, episodeId);
     persisted.progress ||= {};
-    persisted.progress[episodeKey(sourceId, episodeId)] = Math.max(0, t || 0);
+    const cur = Math.max(0, t || 0);
+    persisted.progress[k] = cur;
+    persisted.progressMax ||= {};
+    const prevMax = persisted.progressMax[k];
+    const nextMax = Number.isFinite(prevMax) ? Math.max(prevMax, cur) : cur;
+    persisted.progressMax[k] = nextMax;
     persisted.last = { sourceId, episodeId, at: Date.now() };
     saveState();
   }
@@ -807,6 +840,17 @@ export function createPlayerService({ env, log, history }) {
     setRateSteps(DEFAULT_RATE_STEPS.slice());
   }
 
+  async function playNextInFeed({ autoplay = true } = {}) {
+    if (!currentSource || !currentEp) return false;
+    const playable = (episodes || []).filter((e) => e.media?.url);
+    if (!playable.length) return false;
+    const idx = playable.findIndex((e) => e.id === currentEp.id);
+    const next = idx >= 0 && idx < playable.length - 1 ? playable[idx + 1] : playable[0];
+    if (!next?.id) return false;
+    await selectEpisode(next.id, { autoplay, startAt: 0 });
+    return true;
+  }
+
   async function play({ userGesture = true } = {}) {
     if (!videoEl) return;
     userPaused = false;
@@ -1068,7 +1112,7 @@ export function createPlayerService({ env, log, history }) {
     try {
       videoEl.muted = muted;
     } catch {}
-    playback.value = { ...playback.value, volume: vol, muted, rate };
+    playback.value = { ...playback.value, volume: vol, muted, rate, ended: !!videoEl.ended };
 
     if (persisted.subtitleBox) setSubtitleBox(persisted.subtitleBox);
 
@@ -1095,6 +1139,7 @@ export function createPlayerService({ env, log, history }) {
       const cur = videoEl.currentTime;
       playback.value = {
         paused: videoEl.paused,
+        ended: !!videoEl.ended,
         muted: !!videoEl.muted,
         volume: Number.isFinite(videoEl.volume) ? videoEl.volume : playback.value.volume ?? 1,
         rate: normalizeRate(videoEl.playbackRate || playback.value.rate || 1),
@@ -1103,7 +1148,7 @@ export function createPlayerService({ env, log, history }) {
       };
 
       if (!currentSource || !currentEp) return;
-      history.updateEnd(videoEl.currentTime || 0);
+      history.updateEnd(videoEl.currentTime || 0, videoEl.duration);
       if (now - lastPersistMs > 2000) {
         lastPersistMs = now;
         setProgressSec(currentSource.id, currentEp.id, videoEl.currentTime || 0);
@@ -1112,12 +1157,30 @@ export function createPlayerService({ env, log, history }) {
 
     videoEl.addEventListener("pause", () => {
       userPaused = true;
-      playback.value = { ...playback.value, paused: true };
+      playback.value = { ...playback.value, paused: true, ended: !!videoEl.ended };
     });
 
     videoEl.addEventListener("play", () => {
       userPaused = false;
-      playback.value = { ...playback.value, paused: false };
+      playback.value = { ...playback.value, paused: false, ended: !!videoEl.ended };
+    });
+
+    videoEl.addEventListener("ended", () => {
+      playback.value = { ...playback.value, paused: true, ended: true };
+      if (shuffle.value.active) {
+        if (shuffleBusy) return;
+        shuffleBusy = true;
+        Promise.resolve()
+          .then(async () => {
+            await doShuffleNow({ force: true });
+            scheduleNextShuffle();
+          })
+          .finally(() => {
+            shuffleBusy = false;
+          });
+        return;
+      }
+      Promise.resolve().then(() => playNextInFeed({ autoplay: true })).catch(() => {});
     });
 
     videoEl.addEventListener("loadstart", () => { loading.value = true; });
@@ -1211,5 +1274,6 @@ export function createPlayerService({ env, log, history }) {
     toggleShuffle,
     setShuffleSettings,
     getProgressSec,
+    getProgressMaxSec,
   };
 }

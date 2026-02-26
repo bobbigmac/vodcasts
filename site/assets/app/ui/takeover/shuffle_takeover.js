@@ -9,6 +9,9 @@ export function ShuffleTakeover({ player, takeover }) {
   const intervals = player.shuffleIntervals || [];
   const idx = clamp(Math.round(Number(cfg.intervalIdx) || 0), 0, Math.max(0, intervals.length - 1));
   const cur = intervals[idx] || { label: "5m", ms: 5 * 60 * 1000 };
+  const curCat = player.current?.value?.source?.category ? String(player.current.value.source.category) : "";
+  const baseCat = cfg.baseCategory ? String(cfg.baseCategory) : "";
+  const catEnabled = !!cfg.sameCategory;
 
   const setIdx = (nextIdx) => {
     const n = clamp(nextIdx, 0, Math.max(0, intervals.length - 1));
@@ -20,6 +23,17 @@ export function ShuffleTakeover({ player, takeover }) {
     const any = !!next.changeFeed || !!next.changeEpisode || !!next.changeTime;
     if (!any) return;
     player.setShuffleSettings?.({ [k]: !cfg[k] }, { resetNextAt: true });
+  };
+
+  const toggleCategory = () => {
+    const next = !cfg.sameCategory;
+    if (next) {
+      const cat = baseCat || curCat;
+      if (!cat) return;
+      player.setShuffleSettings?.({ sameCategory: true, baseCategory: cat }, { resetNextAt: true });
+      return;
+    }
+    player.setShuffleSettings?.({ sameCategory: false }, { resetNextAt: true });
   };
 
   return html`
@@ -57,6 +71,24 @@ export function ShuffleTakeover({ player, takeover }) {
           </div>
         </div>
 
+        <div class="takeoverRow" title="Restrict feed selection">
+          <span class="takeoverRowLabel">Restrict</span>
+          <div class="takeoverOpts">
+            <button
+              class=${"guideBtn" + (catEnabled ? " active" : "")}
+              disabled=${!baseCat && !curCat}
+              aria-disabled=${!baseCat && !curCat ? "true" : "false"}
+              title=${baseCat || curCat ? `Only channels in category: ${baseCat || curCat}` : "No category for current channel"}
+              onClick=${toggleCategory}
+            >
+              Category
+            </button>
+            ${catEnabled && (baseCat || curCat)
+              ? html`<span class="takeoverHint" style=${{ marginLeft: "4px" }}>${baseCat || curCat}</span>`
+              : ""}
+          </div>
+        </div>
+
         <button
           class=${"guideBtn" + (cfg.active ? " active" : "")}
           title=${cfg.active ? "Turn shuffle off" : "Turn shuffle on"}
@@ -70,4 +102,3 @@ export function ShuffleTakeover({ player, takeover }) {
     </div>
   `;
 }
-

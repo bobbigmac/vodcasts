@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" id="htmlRoot" data-theme="modern">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{page_title}}</title>
+  <meta name="theme-color" content="#0b0c10" />
+  <script>
+    // GitHub Pages SPA redirect: capture the deep path and bounce to index.html,
+    // passing the path via `?p=` so the app can restore `/feed/episode/` canonically.
+    (function () {
+      var base = {{base_path_json}}; // always `/…/`
+      var l = window.location;
+      var path = String(l.pathname || "/");
+      var rel = path.indexOf(base) === 0 ? path.slice(base.length) : path.replace(/^\/+/, "");
+      // Keep the hash (e.g. #t=180).
+      var hash = String(l.hash || "");
+      // Avoid redirect loops.
+      if (!rel || rel === "404.html") {
+        window.location.replace(base + hash);
+        return;
+      }
+      window.location.replace(base + "?p=" + encodeURIComponent(rel) + hash);
+    })();
+  </script>
+</head>
+<body></body>
+</html>
+

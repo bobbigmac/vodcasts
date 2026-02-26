@@ -38,14 +38,17 @@ export function createHistoryStore({ storageKey }) {
       channelTitle: channelTitle || "",
       start: startTime ?? 0,
       end: startTime ?? 0,
+      dur: NaN,
       at: Date.now(),
     };
   }
 
-  function updateEnd(time) {
+  function updateEnd(time, duration) {
     const cur = current.value;
     if (!cur || !Number.isFinite(time)) return;
-    current.value = { ...cur, end: Math.max(cur.start, time) };
+    const end = Math.max(cur.start, time);
+    const dur = Number.isFinite(duration) && duration > 0 ? duration : cur.dur;
+    current.value = { ...cur, end, dur };
   }
 
   function markCurrentHadSleep() {
@@ -81,6 +84,9 @@ export function createHistoryStore({ storageKey }) {
       if (run && videoKey(run.sourceId, run.episodeId) === key) {
         run.start = Math.min(run.start, e.start);
         run.end = Math.max(run.end, e.end);
+        const a = Number(run.dur);
+        const b = Number(e.dur);
+        if (Number.isFinite(b) && b > 0) run.dur = Number.isFinite(a) && a > 0 ? Math.max(a, b) : b;
         if (e.hadSleep) run.hadSleep = true;
       } else {
         run = { ...e };
@@ -111,4 +117,3 @@ export function createHistoryStore({ storageKey }) {
     combine,
   };
 }
-

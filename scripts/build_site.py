@@ -45,7 +45,9 @@ def _load_cached_feed_path(cache_dir: Path, source_id: str) -> Path:
 
 def _source_to_public(source: Source, *, cache_dir: Path, base_path: str) -> dict[str, Any]:
     cached = _load_cached_feed_path(cache_dir, source.id)
-    local_url = f"data/feeds/{source.id}.xml"
+    # Must be root-relative because the app uses client-side routing (e.g. /feed/episode/),
+    # and relative URLs would otherwise resolve under that path.
+    local_url = f"{base_path}data/feeds/{source.id}.xml"
     use_local = cached.exists()
     features = {}
     if use_local:
@@ -178,6 +180,21 @@ def main() -> None:
         },
     )
     (out_dir / "index.html").write_text(html, encoding="utf-8")
+
+    # 404.html (GitHub Pages SPA redirect shim)
+    template_404_path = VODCASTS_ROOT / "site" / "templates" / "404.html"
+    if template_404_path.exists():
+        template_404 = template_404_path.read_text(encoding="utf-8", errors="replace")
+        html_404 = _template_sub(
+            template_404,
+            {
+                "base_path": base_path,
+                "base_path_json": json.dumps(base_path),
+                "site_json": json.dumps(site_json, ensure_ascii=False),
+                "page_title": cfg.site.title,
+            },
+        )
+        (out_dir / "404.html").write_text(html_404, encoding="utf-8")
 
     _log(f"build complete ({time.perf_counter() - t0:.1f}s total)")
 

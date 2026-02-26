@@ -12,6 +12,16 @@
   background: color-mix(in srgb, #1a1d26 94%, transparent);
   border-color: #3d4558;
 }
+[data-theme="modern"] .guideGridScroll {
+  --guide-grid-bg: rgba(0,0,0,.16);
+  --guide-track-bg: rgba(0,0,0,.10);
+  --guide-head-bg: color-mix(in srgb, #1a1d26 92%, rgba(0,0,0,.25));
+  --guide-corner-bg: color-mix(in srgb, #1a1d26 92%, rgba(0,0,0,.25));
+  --guide-cell-bg: color-mix(in srgb, #121521 92%, rgba(0,0,0,.25));
+  --guide-ep-bg: rgba(255,255,255,.03);
+  --guide-ep-hover-bg: rgba(255,255,255,.07);
+  --guide-ep-active-bg: rgba(138,180,248,.12);
+}
 
 /* Theme: dos – classic cable TV / DOS harsh blue, big letters */
 [data-theme="dos"] {
@@ -27,6 +37,16 @@
 [data-theme="dos"] .guidePanel {
   background: color-mix(in srgb, #0000aa 90%, transparent);
   border-color: #0055ff;
+}
+[data-theme="dos"] .guideGridScroll {
+  --guide-grid-bg: #0000aa;
+  --guide-track-bg: rgba(0,0,0,.08);
+  --guide-head-bg: #00008b;
+  --guide-corner-bg: #00008b;
+  --guide-cell-bg: #00008b;
+  --guide-ep-bg: rgba(0,0,0,.10);
+  --guide-ep-hover-bg: rgba(0,255,255,.14);
+  --guide-ep-active-bg: rgba(0,255,255,.25);
 }
 
 [data-theme="dos"] .guideBar,
@@ -65,32 +85,44 @@
 }
 
 /* DOS: bigger fonts, less padding – old-people TV */
-[data-theme="dos"] .guideChannelRow {
-  padding: 4px 6px;
-  min-height: 52px;
+[data-theme="dos"] .guideGridCornerTop {
+  font-size: 14px;
+  letter-spacing: 0.12em;
 }
-[data-theme="dos"] .guideChannelName {
-  font-size: 18px;
-  font-weight: 700;
-  flex: 0 0 200px;
-}
-[data-theme="dos"] .guideEpBlock {
-  padding: 4px 8px;
-  font-size: 15px;
-  max-width: 220px;
-}
-[data-theme="dos"] .guideEpBlockTitle { font-size: 15px; font-weight: 600 }
-[data-theme="dos"] .guideEpBlockMeta { font-size: 13px }
+[data-theme="dos"] .guideGridCornerSub { font-size: 13px }
+[data-theme="dos"] .guideGridChanNo { font-size: 15px; color: #fff }
+[data-theme="dos"] .guideGridChanName { font-size: 16px }
+[data-theme="dos"] .guideGridEpTitle { font-size: 15px; font-weight: 650 }
+[data-theme="dos"] .guideGridEpMeta { font-size: 13px }
 [data-theme="dos"] .guideNowLabel { font-size: 13px }
 [data-theme="dos"] .guideNowEp { font-size: 16px; font-weight: 600 }
 
-[data-theme="dos"] .guideEpBlock.active,
-[data-theme="dos"] .guideEpBlock.now {
-  background: rgba(0,255,255,.25);
-  border-color: var(--accent);
+[data-theme="dos"] .guideGridHeaderRow {
+  border-bottom-color: #0055ff;
+  backdrop-filter: none;
 }
-[data-theme="dos"] .guideEpBlockProgress {
-  background: color-mix(in srgb, var(--accent) 30%, transparent);
+[data-theme="dos"] .guideGridCorner,
+[data-theme="dos"] .guideGridChannelCell {
+  border-right-color: #0055ff;
+}
+[data-theme="dos"] .guideGridRow { border-bottom-color: rgba(0,255,255,.14) }
+[data-theme="dos"] .guideGridTick { border-left-color: rgba(255,255,255,.28) }
+[data-theme="dos"] .guideGridTickLabel { color: #fff; opacity: 0.85 }
+
+[data-theme="dos"] .guideGridEp {
+  border-radius: 0;
+  border-width: 2px;
+  color: #fff;
+}
+[data-theme="dos"] .guideGridEp.active {
+  border-color: #fff;
+}
+[data-theme="dos"] .guideGridEp.focused {
+  outline: 2px solid #fff;
+  outline-offset: -2px;
+}
+[data-theme="dos"] .guideGridEpProgress {
+  background: linear-gradient(90deg, rgba(255,255,255,.22), rgba(0,255,255,.18));
 }
 
 [data-theme="dos"] .historyEntryCurrent {
