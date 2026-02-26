@@ -6,6 +6,7 @@ import { loadChaptersForEpisode } from "../ui/chapters.js";
 export function createPlayerService({ env, log, history }) {
   const STORAGE_KEY = "vodcasts_state_v1";
   const FEED_PROXY = env.feedProxy;
+  const FEED_MANIFEST_URL = env.feedManifestUrl;
 
   let videoEl = null;
   let hls = null;
@@ -474,6 +475,32 @@ export function createPlayerService({ env, log, history }) {
     return await res.text();
   }
 
+  async function preloadFeedManifest() {
+    if (!FEED_MANIFEST_URL) return false;
+    try {
+      const res = await fetch(FEED_MANIFEST_URL, { cache: "no-store" });
+      if (!res.ok) return false;
+      const json = await res.json();
+      const feeds = Array.isArray(json?.feeds) ? json.feeds : [];
+      if (!feeds.length) return false;
+
+      let added = 0;
+      for (const f of feeds) {
+        const id = String(f?.id || "").trim();
+        if (!id) continue;
+        const eps = Array.isArray(f?.episodes) ? f.episodes : null;
+        if (!eps) continue;
+        episodesBySource[id] = eps;
+        added++;
+      }
+      if (added) sourceEpisodes.value = { ...episodesBySource };
+      return added > 0;
+    } catch (e) {
+      log.warn(`Manifest preload failed: ${String(e?.message || e)}`);
+      return false;
+    }
+  }
+
   async function preloadCachedFeeds() {
     const cached = sources.filter((s) => s.has_cached_xml && s.feed_url);
     if (!cached.length) return;
@@ -496,14 +523,19 @@ export function createPlayerService({ env, log, history }) {
   }
 
   async function loadSourceEpisodes(sourceId) {
-    if (episodesBySource[sourceId]) return episodesBySource[sourceId];
+    const existing = episodesBySource[sourceId];
+    if (existing && Array.isArray(existing) && existing.some((e) => e?.media?.url)) return existing;
     const src = sources.find((s) => s.id === sourceId);
-    if (!src) return [];
-    const xmlText = await fetchText(src.feed_url, src.fetch_via || "auto", { useCache: true });
-    const parsed = parseFeedXml(xmlText, src);
-    episodesBySource[sourceId] = parsed.episodes;
-    sourceEpisodes.value = { ...episodesBySource };
-    return parsed.episodes;
+    if (!src) return Array.isArray(existing) ? existing : [];
+    try {
+      const xmlText = await fetchText(src.feed_url, src.fetch_via || "auto", { useCache: true });
+      const parsed = parseFeedXml(xmlText, src);
+      episodesBySource[sourceId] = parsed.episodes;
+      sourceEpisodes.value = { ...episodesBySource };
+      return parsed.episodes;
+    } catch {
+      return Array.isArray(existing) ? existing : [];
+    }
   }
 
   async function selectSource(
@@ -524,15 +556,21 @@ export function createPlayerService({ env, log, history }) {
     current.value = { source: currentSource, episode: null };
 
     try {
-      log.info(`Fetching feed: ${src.title || src.id}`);
-      const xmlText = await fetchText(src.feed_url, src.fetch_via || "auto", { useCache: true });
-      const parsed = parseFeedXml(xmlText, src);
-      episodes = parsed.episodes;
+      const existing = episodesBySource[src.id];
+      const existingPlayable = Array.isArray(existing) && existing.some((e) => e?.media?.url);
+      if (existingPlayable) {
+        episodes = existing;
+      } else {
+        log.info(`Fetching feed: ${src.title || src.id}`);
+        const xmlText = await fetchText(src.feed_url, src.fetch_via || "auto", { useCache: true });
+        const parsed = parseFeedXml(xmlText, src);
+        episodes = parsed.episodes;
+      }
       episodesBySource[src.id] = episodes;
       sourceEpisodes.value = { ...episodesBySource };
 
       const playable = episodes.filter((e) => e.media?.url);
-      log.info(`${parsed.channelTitle}: ${playable.length} media (of ${episodes.length})`);
+      log.info(`${src.title || src.id}: ${playable.length} media (of ${episodes.length})`);
 
       let wanted = null;
       if (!skipAutoEpisode) {
@@ -1062,7 +1100,12 @@ export function createPlayerService({ env, log, history }) {
 
   let preloadPromise = null;
   function ensurePreload() {
-    if (!preloadPromise && sources.length) preloadPromise = preloadCachedFeeds();
+    if (!preloadPromise && sources.length) {
+      preloadPromise = (async () => {
+        const ok = await preloadFeedManifest();
+        if (!ok) await preloadCachedFeeds();
+      })();
+    }
     return preloadPromise || Promise.resolve();
   }
 

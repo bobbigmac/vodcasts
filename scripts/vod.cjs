@@ -104,6 +104,7 @@ switch (cmd) {
         cwd: ROOT,
       });
       const basePath = process.env.VOD_BASE_PATH || "/";
+      const extraBuildArgs = rest.includes("--fetch-missing-feeds") ? [] : ["--fetch-missing-feeds"];
       const r = spawnSync(
         PY,
         [
@@ -117,6 +118,7 @@ switch (cmd) {
           path.join(ROOT, "dist"),
           "--base-path",
           basePath,
+          ...extraBuildArgs,
           ...rest,
         ],
         { stdio: "inherit", cwd: ROOT }

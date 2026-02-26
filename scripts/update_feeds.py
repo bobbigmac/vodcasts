@@ -34,6 +34,20 @@ def _read_state(path: Path) -> dict:
     except Exception:
         return {"version": 1, "feeds": {}}
 
+def _looks_like_feed_xml(content: bytes | None) -> bool:
+    if not content:
+        return False
+    s = content[:128 * 1024].decode("utf-8", errors="replace").lstrip().lower()
+    if not s:
+        return False
+    if s.startswith("<!doctype html") or s.startswith("<html"):
+        return False
+    if "<rss" in s or "<feed" in s or "<rdf:rdf" in s:
+        return True
+    if "<channel" in s and ("<item" in s or "<enclosure" in s):
+        return True
+    return False
+
 
 def main() -> None:
     args = _parse_args()
@@ -94,6 +108,10 @@ def main() -> None:
                 }
             if not res.content:
                 raise ValueError(f"empty response (status {res.status})")
+            if res.status < 200 or res.status >= 300:
+                raise ValueError(f"http {res.status}")
+            if not _looks_like_feed_xml(res.content):
+                raise ValueError("not-a-feed-xml (refusing to overwrite cache)")
             feeds_out_dir.mkdir(parents=True, exist_ok=True)
             (feeds_out_dir / f"{sid}.xml").write_bytes(res.content)
             return sid, {
@@ -102,8 +120,8 @@ def main() -> None:
                 "fetched_url": res.url,
                 "last_checked_unix": now,
                 "last_ok_unix": now,
-                "etag": res.etag,
-                "last_modified": res.last_modified,
+                "etag": res.etag or etag,
+                "last_modified": res.last_modified or last_mod,
                 "bytes": len(res.content),
             }
         except Exception as e:

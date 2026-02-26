@@ -13,6 +13,7 @@ export function getEnv() {
     basePath,
     site,
     sourcesUrl: basePath + "video-sources.json",
+    feedManifestUrl: basePath + "feed-manifest.json",
     isDev: !!(import.meta && import.meta.hot),
     // Dev-only feed proxy (Vite); in prod this is typically absent.
     feedProxy: basePath + "__feed?url=",

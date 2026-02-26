@@ -2,7 +2,7 @@ function normalizeWhitespace(s) {
   return String(s ?? "").replace(/\\s+\\n/g, "\\n").replace(/\\n{3,}/g, "\\n\\n").trim();
 }
 
-function sanitizeHtml(html) {
+export function sanitizeHtml(html) {
   const doc = new DOMParser().parseFromString(String(html || ""), "text/html");
   doc.querySelectorAll("script,style,iframe,object,embed,link,meta").forEach((n) => n.remove());
   doc.querySelectorAll("*").forEach((el) => {

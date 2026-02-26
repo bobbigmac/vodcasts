@@ -1,10 +1,12 @@
 import { html } from "../runtime/vendor.js";
 import { TimedComments } from "../vod/timed_comments.js";
+import { sanitizeHtml } from "../vod/feed_parse.js";
 import { LogPanel } from "./log.js";
 
 export function DetailsPanel({ isOpen, env, player, log }) {
   const cur = player.current.value;
   const ep = cur.episode;
+  const safeDescHtml = ep?.descriptionHtml ? sanitizeHtml(ep.descriptionHtml) : "";
   const chapters = player.chapters.value || [];
   const chaptersErr = player.chaptersLoadError?.value ?? null;
   const transcriptsErr = player.transcriptsLoadError?.value ?? null;
@@ -36,7 +38,7 @@ export function DetailsPanel({ isOpen, env, player, log }) {
               </div>
             `
           : ""}
-        <div id="epDesc" class="detailsDesc" dangerouslySetInnerHTML=${{ __html: ep?.descriptionHtml || "" }}></div>
+        <div id="epDesc" class="detailsDesc" dangerouslySetInnerHTML=${{ __html: safeDescHtml }}></div>
 
         <div class="detailsSplit">
           <div class="detailsChapters">
