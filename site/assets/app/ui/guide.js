@@ -125,6 +125,12 @@ export function GuidePanel({ isOpen, sources, player }) {
   }, [sourcesFlatAll, sourcesById, filterKey, episodesBySource]);
 
   const focusSourceIdx = useSignal(Math.max(0, sourcesFlat.findIndex((s) => s.id === currentSourceId)));
+  const sourcesFlatRef = useRef([]);
+  const sourcesByIdRef = useRef(new Map());
+  const filterTokensRef = useRef([]);
+  sourcesFlatRef.current = sourcesFlat;
+  sourcesByIdRef.current = sourcesById;
+  filterTokensRef.current = filterTokens;
   const focusTs = useSignal(Date.now());
   // Guide "epoch" for schedules; stays fixed while the panel is open.
   const guideZeroTs = useSignal(roundToHalfHour(Date.now()));
@@ -171,9 +177,14 @@ export function GuidePanel({ isOpen, sources, player }) {
     const last = Number(lastScrollAtRef.current) || 0;
     const scrolling = Date.now() - last < 140;
     const dragging = !!tracksRef.current?.classList?.contains?.("dragging");
+    const lastKeys = Number(keyNavAtRef.current) || 0;
+    // If the user just used keyboard nav, don't let hover immediately steal focus.
+    if (Date.now() - lastKeys < 900) return false;
     // Pointer-enter can fire when content moves under a stationary cursor during programmatic scroll,
     // which can create a focus/scroll feedback loop. Require recent mouse movement to accept hover focus.
     const pm = Number(lastPointerMoveAtRef.current) || 0;
+    // Also require that the mouse moved after the last keyboard nav action.
+    if (pm <= lastKeys) return false;
     const pointerMovedRecently = Date.now() - pm < 250;
     return !scrolling && !dragging && pointerMovedRecently;
   };
@@ -244,17 +255,18 @@ export function GuidePanel({ isOpen, sources, player }) {
   const scheduleCacheRef = useRef(new Map());
   const getSchedule = (sourceId) => {
     if (!sourceId) return null;
+    const tokens = filterTokensRef.current || [];
     const epsMap = player.sourceEpisodes.value || {};
     const epsRef = epsMap[sourceId] || null;
     if (!epsRef) return null;
-    const cacheKey = `${sourceId}::${filterTokens.join(" ")}`;
+    const cacheKey = `${sourceId}::${tokens.join(" ")}`;
     const prev = scheduleCacheRef.current.get(cacheKey) || null;
     if (prev && prev.epsRef === epsRef) return prev.schedule;
 
-    const srcObj = sourcesById.get(sourceId) || null;
+    const srcObj = sourcesByIdRef.current.get(sourceId) || null;
     const playable0 = (epsRef || []).filter((ep) => ep.media?.url);
-    const playable = filterTokens.length
-      ? playable0.filter((ep) => matchesAllTokens(filterTokens, episodeSearchHaystack(srcObj, ep)))
+    const playable = tokens.length
+      ? playable0.filter((ep) => matchesAllTokens(tokens, episodeSearchHaystack(srcObj, ep)))
       : playable0;
     if (!playable.length) {
       scheduleCacheRef.current.set(cacheKey, { epsRef, schedule: null });
@@ -452,6 +464,8 @@ export function GuidePanel({ isOpen, sources, player }) {
       }
       if (e.altKey || e.ctrlKey || e.metaKey) return;
 
+      const sourcesNow = sourcesFlatRef.current || [];
+
       const k = String(e.key || "");
       const isArrow = k === "ArrowUp" || k === "ArrowDown" || k === "ArrowLeft" || k === "ArrowRight";
       const isSelect = k === "Enter" || k === "OK" || k === "Select";
@@ -465,16 +479,18 @@ export function GuidePanel({ isOpen, sources, player }) {
       keyNavAtRef.current = Date.now();
 
       if (k === "ArrowUp") {
-        const curSrc = sourcesFlat[focusSourceIdx.value] || null;
+        if (!sourcesNow.length) return;
+        const curSrc = sourcesNow[focusSourceIdx.value] || null;
         const curSchedule = getSchedule(curSrc?.id);
         const curProg = curSchedule ? programAt(curSchedule, focusTs.value) : null;
         const refA = curProg?.startTs ?? (focusTs.value - 15 * MS_PER_MIN);
         const refB = curProg?.endTs ?? (focusTs.value + 15 * MS_PER_MIN);
 
-        const nextIdx = Math.max(0, focusSourceIdx.value - 1);
+        const lastIdx = Math.max(0, sourcesNow.length - 1);
+        const nextIdx = focusSourceIdx.value <= 0 ? lastIdx : Math.max(0, focusSourceIdx.value - 1);
         focusSourceIdx.value = nextIdx;
 
-        const nextSrc = sourcesFlat[nextIdx] || null;
+        const nextSrc = sourcesNow[nextIdx] || null;
         const nextSchedule = getSchedule(nextSrc?.id);
         if (nextSchedule) {
           const p = pickBestProgForRange(nextSchedule, refA, refB);
@@ -490,16 +506,18 @@ export function GuidePanel({ isOpen, sources, player }) {
         return;
       }
       if (k === "ArrowDown") {
-        const curSrc = sourcesFlat[focusSourceIdx.value] || null;
+        if (!sourcesNow.length) return;
+        const curSrc = sourcesNow[focusSourceIdx.value] || null;
         const curSchedule = getSchedule(curSrc?.id);
         const curProg = curSchedule ? programAt(curSchedule, focusTs.value) : null;
         const refA = curProg?.startTs ?? (focusTs.value - 15 * MS_PER_MIN);
         const refB = curProg?.endTs ?? (focusTs.value + 15 * MS_PER_MIN);
 
-        const nextIdx = Math.min(Math.max(0, sourcesFlat.length - 1), focusSourceIdx.value + 1);
+        const lastIdx = Math.max(0, sourcesNow.length - 1);
+        const nextIdx = focusSourceIdx.value >= lastIdx ? 0 : Math.min(lastIdx, focusSourceIdx.value + 1);
         focusSourceIdx.value = nextIdx;
 
-        const nextSrc = sourcesFlat[nextIdx] || null;
+        const nextSrc = sourcesNow[nextIdx] || null;
         const nextSchedule = getSchedule(nextSrc?.id);
         if (nextSchedule) {
           const p = pickBestProgForRange(nextSchedule, refA, refB);
@@ -516,7 +534,7 @@ export function GuidePanel({ isOpen, sources, player }) {
       }
 
       if (k === "ArrowLeft") {
-        const src = sourcesFlat[focusSourceIdx.value];
+        const src = sourcesNow[focusSourceIdx.value];
         const schedule = getSchedule(src?.id);
         if (!schedule) {
           focusTs.value = focusTs.value - 30 * MS_PER_MIN;
@@ -527,7 +545,7 @@ export function GuidePanel({ isOpen, sources, player }) {
         return;
       }
       if (k === "ArrowRight") {
-        const src = sourcesFlat[focusSourceIdx.value];
+        const src = sourcesNow[focusSourceIdx.value];
         const schedule = getSchedule(src?.id);
         if (!schedule) {
           focusTs.value = focusTs.value + 30 * MS_PER_MIN;
@@ -539,7 +557,7 @@ export function GuidePanel({ isOpen, sources, player }) {
       }
 
       if (isSelect) {
-        const src = sourcesFlat[focusSourceIdx.value];
+        const src = sourcesNow[focusSourceIdx.value];
         if (!src) return;
         const schedule = getSchedule(src.id);
         const prog = schedule ? programAt(schedule, focusTs.value) : null;
@@ -725,6 +743,13 @@ export function GuidePanel({ isOpen, sources, player }) {
       scrollTopPx.value = tracksEl.scrollTop || 0;
     });
   }, [filterKey, sourcesFlat.length]);
+
+  useEffect(() => {
+    return () => {
+      if (keyScrollRafRef.current) cancelAnimationFrame(keyScrollRafRef.current);
+      keyScrollRafRef.current = 0;
+    };
+  }, []);
 
   // Lazy-load episodes for channels as they come into view (slow/steady).
   useEffect(() => {

@@ -69,3 +69,5 @@ Schema notes live in `docs/supabase-comments.md`.
 - [ ] Build step: optionally parse + precompute chapters/transcripts JSON
 - [ ] PWA/offline: cache app shell + cached feed XML + (optional) user-selected media
 - [ ] Guide: category filter (toggle/selector to show only channels in a category; keep keyboard/remote navigation working)
+- [ ] Dynamic “virtual channels”: client-side playlists built from filters/search across other feeds (e.g. Christmas/festive, spiritual support, christian rock)
+ - custom feeds made up of live-collections of videos from other feeds, determined as filters, searches, so the site can keep them up to date on the client-side, like dynamic playlists, so we can add a christmas feed that gets christmas/festive/etc by a few filters. some combos like spirtual support or christian rock can then be used to continually form dynamic collections/channels, without having the server determine them all in advance, we can instead code them up in our codebase.
