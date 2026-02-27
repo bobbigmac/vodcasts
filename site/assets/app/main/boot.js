@@ -1,6 +1,7 @@
 import { render, html, signal } from "../runtime/vendor.js";
 import { getEnv } from "../runtime/env.js";
 import { createLogger } from "../runtime/log.js";
+import { initPwa } from "../runtime/pwa.js";
 import { loadSources } from "../vod/sources.js";
 import { createHistoryStore } from "../state/history.js";
 import { createPlayerService } from "../player/player.js";
@@ -11,6 +12,7 @@ import { trackPageView } from "../runtime/analytics.js";
 export async function bootApp() {
   const env = getEnv();
   const log = createLogger();
+  initPwa(env, log);
   const sources = signal([]);
   const initialRoute = getRouteFromUrl();
   trackPageView(window.location.pathname);

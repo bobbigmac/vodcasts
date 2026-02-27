@@ -1102,6 +1102,11 @@ video {
   background: color-mix(in srgb, var(--accent) 12%, rgba(255,255,255,.03));
   color: color-mix(in srgb, var(--accent) 60%, var(--text));
 }
+.guideBadge-new {
+  border-color: color-mix(in srgb, #ffd166 55%, var(--edge));
+  background: color-mix(in srgb, #ffd166 14%, rgba(255,255,255,.03));
+  color: color-mix(in srgb, #ffd166 65%, var(--text));
+}
 
 /* Guide grid: keep CC indicators subtle (present but not shouty). */
 .guideGridChannelsScroll .guideBadge-cc,
@@ -1118,6 +1123,22 @@ video {
 .guideGridChanRow.focused .guideBadge-cc,
 .guideGridTrackRow.focused .guideBadge-cc,
 .guideGridEp.focused .guideBadge-cc { opacity: 0.36 }
+
+/* Guide grid: "New" is more visible than CC, but still subtle. */
+.guideGridChannelsScroll .guideBadge-new,
+.guideGridTracksScroll .guideBadge-new {
+  opacity: 0.42;
+  border-color: color-mix(in srgb, #ffd166 35%, var(--edge));
+  background: rgba(255,255,255,.02);
+  color: color-mix(in srgb, #ffd166 55%, var(--muted));
+  font-weight: 750;
+  letter-spacing: 0.06em;
+  padding: 2px 5px;
+  font-size: 9px;
+}
+.guideGridChanRow.focused .guideBadge-new,
+.guideGridTrackRow.focused .guideBadge-new,
+.guideGridEp.focused .guideBadge-new { opacity: 0.56 }
 
 .guideGridShell {
   flex: 1;
@@ -1330,6 +1351,12 @@ video {
   justify-content: space-between;
   gap: 10px;
   z-index: 1;
+}
+.guideGridEpBadges {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex: 0 0 auto;
 }
 .guideGridEpTitle {
   font-weight: 700;

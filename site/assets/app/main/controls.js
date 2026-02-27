@@ -392,6 +392,26 @@ function setupMediaSession({ getVideoEl } = {}) {
   };
 }
 
+export function setMediaSessionMetadata({ title = "", artist = "", album = "", artwork = [] } = {}) {
+  try {
+    if (!("mediaSession" in navigator)) return;
+    if (typeof MediaMetadata !== "function") return;
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: String(title || ""),
+      artist: String(artist || ""),
+      album: String(album || ""),
+      artwork: Array.isArray(artwork) ? artwork : [],
+    });
+  } catch {}
+}
+
+export function clearMediaSessionMetadata() {
+  try {
+    if (!("mediaSession" in navigator)) return;
+    navigator.mediaSession.metadata = null;
+  } catch {}
+}
+
 function buildHints() {
   const els = [...document.querySelectorAll("[data-keyhint]")].filter(isVisible);
   return els.map((target) => {

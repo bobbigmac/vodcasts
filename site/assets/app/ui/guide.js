@@ -3,6 +3,8 @@ import { episodeSearchHaystack, matchesAllTokens, splitQuery } from "./search.js
 
 const CATEGORY_ORDER = ["church", "university", "fitness", "bible", "twit", "podcastindex", "other", "needs-rss"];
 const MS_PER_MIN = 60 * 1000;
+const MS_PER_DAY = 24 * 60 * 60 * 1000;
+const NEW_WITHIN_DAYS = 30;
 
 // Fixed guide scale (no compression).
 const PX_PER_MIN = 6;
@@ -21,6 +23,30 @@ function fmtDuration(sec) {
   if (h > 0) return `${h}h${m}m`;
   if (m > 0) return `${m}m`;
   return `${Math.floor(sec)}s`;
+}
+
+function episodeDateMs(ep) {
+  const d = ep?.date;
+  if (d instanceof Date && !Number.isNaN(d.valueOf())) return d.getTime();
+  if (typeof d === "number" && Number.isFinite(d)) return d;
+  if (typeof d === "string" && d) {
+    const t = Date.parse(d);
+    if (Number.isFinite(t)) return t;
+  }
+  const dt = String(ep?.dateText || "").trim();
+  if (dt) {
+    const t = Date.parse(dt);
+    if (Number.isFinite(t)) return t;
+  }
+  return null;
+}
+
+function isEpisodeNew(ep, nowMs) {
+  const t = episodeDateMs(ep);
+  if (!Number.isFinite(t)) return false;
+  const age = nowMs - t;
+  if (age < 0) return false;
+  return age <= NEW_WITHIN_DAYS * MS_PER_DAY;
 }
 
 function buildSourcesFlat(sources) {
@@ -905,6 +931,8 @@ export function GuidePanel({ isOpen, sources, player }) {
                 const eps = episodesBySource[src.id] || null;
                 const schedule = getSchedule(src.id);
                 const blocks = schedule ? blocksForRange(schedule, renderStartTs, renderEndTs) : [];
+                let newBadgesShown = 0;
+                const nowMs = Date.now();
 
                 const rowClass =
                   "guideGridTrackRow" +
@@ -924,6 +952,8 @@ export function GuidePanel({ isOpen, sources, player }) {
                               const w = Math.max(28, w0);
                               const active = currentSourceId === src.id && currentEpisodeId === ep.id;
                               const epHasCc = (ep.transcripts || []).length > 0;
+                              const showNew = newBadgesShown < 2 && isEpisodeNew(ep, nowMs);
+                              if (showNew) newBadgesShown += 1;
                               const maxSec =
                                 typeof player.getProgressMaxSec === "function"
                                   ? player.getProgressMaxSec(src.id, ep.id)
@@ -945,7 +975,7 @@ export function GuidePanel({ isOpen, sources, player }) {
                                   data-prog-start=${String(b.startTs)}
                                   data-source-id=${src.id}
                                   data-navitem="1"
-                                  aria-label=${`${ep.title || "Episode"}${epHasCc ? " (CC)" : ""}`}
+                                  aria-label=${`${ep.title || "Episode"}${epHasCc ? " (CC)" : ""}${showNew ? " (New)" : ""}`}
                                   onPointerEnter=${() => {
                                     if (!shouldAllowHoverFocus()) return;
                                     focusModeRef.current = "hover";
@@ -962,7 +992,10 @@ export function GuidePanel({ isOpen, sources, player }) {
                                   <div class="guideGridEpProgress" style=${{ width: `${pct}%` }} aria-hidden="true"></div>
                                   <div class="guideGridEpTop">
                                     <span class="guideGridEpTitle">${ep.title || "Episode"}</span>
-                                    ${epHasCc ? html`<span class="guideGridEpBadge guideBadge guideBadge-cc" title="Captions available">CC</span>` : ""}
+                                    <span class="guideGridEpBadges">
+                                      ${epHasCc ? html`<span class="guideGridEpBadge guideBadge guideBadge-cc" title="Captions available">CC</span>` : ""}
+                                      ${showNew ? html`<span class="guideGridEpBadge guideBadge guideBadge-new" title="New (released within the last 30 days)">New</span>` : ""}
+                                    </span>
                                   </div>
                                   <div class="guideGridEpMeta">
                                     <span class="guideGridEpDur">${dur}</span>

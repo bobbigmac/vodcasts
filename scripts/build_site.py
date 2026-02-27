@@ -341,6 +341,37 @@ def main() -> None:
     }
     write_json(out_dir / "site.json", site_json)
 
+    # PWA: manifest + service worker.
+    manifest = {
+        "name": cfg.site.title,
+        "short_name": cfg.site.title,
+        "description": cfg.site.description or cfg.site.subtitle or "",
+        "start_url": base_path,
+        "scope": base_path,
+        "display": "standalone",
+        "background_color": "#0b0c10",
+        "theme_color": "#0b0c10",
+        "icons": [
+            {
+                "src": f"{base_path}assets/icon-192.png",
+                "sizes": "192x192",
+                "type": "image/png",
+                "purpose": "any maskable",
+            },
+            {
+                "src": f"{base_path}assets/icon-512.png",
+                "sizes": "512x512",
+                "type": "image/png",
+                "purpose": "any maskable",
+            },
+        ],
+    }
+    write_json(out_dir / "manifest.webmanifest", manifest)
+
+    sw_src = VODCASTS_ROOT / "site" / "pwa" / "sw.js"
+    if sw_src.exists():
+        shutil.copy2(sw_src, out_dir / "sw.js")
+
     # video-sources.json (client consumption).
     _log("build video-sources…")
     t = time.perf_counter()

@@ -133,6 +133,13 @@
   background: rgba(0,0,0,.10);
   color: rgba(255,255,255,.9);
 }
+[data-theme="dos"] .guideGridChannelsScroll .guideBadge-new,
+[data-theme="dos"] .guideGridTracksScroll .guideBadge-new {
+  opacity: 0.55;
+  border-color: rgba(255,255,255,.72);
+  background: rgba(0,0,0,.10);
+  color: rgba(255,255,255,.95);
+}
 [data-theme="dos"] .guideGridEp.active {
   border-color: #fff;
 }

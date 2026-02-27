@@ -17,7 +17,7 @@ import { ShareTakeover } from "../ui/takeover/share_takeover.js";
 import { ShuffleTakeover } from "../ui/takeover/shuffle_takeover.js";
 import { ExitFullscreenIcon, FullscreenIcon, MoonIcon, MuteIcon, PauseIcon, PlayIcon, ShareIcon, ShuffleIcon } from "../ui/icons.js";
 import { useLongPress } from "../ui/long_press.js";
-import { installControls } from "./controls.js";
+import { clearMediaSessionMetadata, installControls, setMediaSessionMetadata } from "./controls.js";
 import { getRouteFromUrl, setRouteInUrl } from "./route.js";
 import { trackEvent } from "../runtime/analytics.js";
 
@@ -139,6 +139,36 @@ export function App({ env, log, sources, player, history }) {
     const cleanup = installControls();
     return () => cleanup?.();
   }, []);
+
+  // MediaSession metadata (lock screen / notification controls).
+  useSignalEffect(() => {
+    const cur = player.current.value || {};
+    const src = cur.source || null;
+    const ep = cur.episode || null;
+    const siteTitle = String(env?.site?.title || "Vodcasts");
+    const basePath = String(env?.basePath || "/");
+
+    if (!ep?.title) {
+      try {
+        document.title = siteTitle;
+      } catch {}
+      clearMediaSessionMetadata();
+      return;
+    }
+
+    const title = String(ep.title || siteTitle);
+    const artist = String(src?.title || ep.channelTitle || "");
+    const album = siteTitle;
+    const artwork = [
+      { src: basePath + "assets/icon-192.png", sizes: "192x192", type: "image/png" },
+      { src: basePath + "assets/icon-512.png", sizes: "512x512", type: "image/png" },
+    ];
+
+    try {
+      document.title = artist ? `${title} — ${artist}` : title;
+    } catch {}
+    setMediaSessionMetadata({ title, artist, album, artwork });
+  });
 
   // Analytics: guide opens.
   useSignalEffect(() => {

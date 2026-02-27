@@ -7,6 +7,9 @@
   <meta name="theme-color" content="#0b0c10" />
   <link rel="stylesheet" href="{{base_path}}assets/style.css">
   <link rel="stylesheet" href="{{base_path}}assets/themes.css">
+  <link rel="manifest" href="{{base_path}}manifest.webmanifest" />
+  <link rel="icon" href="{{base_path}}assets/icon-192.png" />
+  <link rel="apple-touch-icon" href="{{base_path}}assets/apple-touch-icon.png" />
   <script>
     window.__VODCASTS__ = {
       basePath: {{base_path_json}},
@@ -31,7 +34,7 @@
       } catch {}
     })();
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
+  <script src="{{base_path}}assets/vendor/hls.min.js" defer></script>
 </head>
 <body>
   <div id="app" class="app"></div>
