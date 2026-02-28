@@ -979,7 +979,9 @@ export function createPlayerService({ env, log, history }) {
   async function play({ userGesture = true } = {}) {
     if (!videoEl) return;
     userPaused = false;
-    const wantsMuted = userGesture ? false : persisted.muted === true;
+    const hasMutedPref = Object.prototype.hasOwnProperty.call(persisted, "muted");
+    const userChoseMuted = hasMutedPref && persisted.muted === true;
+    const wantsMuted = userChoseMuted ? true : userGesture ? false : persisted.muted === true;
     if (wantsMuted) {
       try {
         videoEl.muted = true;
@@ -1020,6 +1022,8 @@ export function createPlayerService({ env, log, history }) {
 
   function unmuteOnGesture() {
     if (!videoEl || !videoEl.muted) return;
+    const hasMutedPref = Object.prototype.hasOwnProperty.call(persisted, "muted");
+    if (hasMutedPref && persisted.muted === true) return;
     try {
       videoEl.muted = false;
       playback.value = { ...playback.value, muted: false };
@@ -1041,6 +1045,11 @@ export function createPlayerService({ env, log, history }) {
       play({ userGesture: true });
     } else if (videoEl.muted) {
       // Playing but muted: unmute on user gesture instead of pausing
+      const hasMutedPref = Object.prototype.hasOwnProperty.call(persisted, "muted");
+      if (hasMutedPref && persisted.muted === true) {
+        pause();
+        return;
+      }
       try {
         videoEl.muted = false;
         playback.value = { ...playback.value, muted: false };
