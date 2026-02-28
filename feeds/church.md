@@ -146,9 +146,9 @@
 - category: news
 - tags: news, cbn, politics, midday
 
-## cbn-com-cbn-news-morning-midday-and-tonight
+## cbn-com-cbn-news-updates
 - url: http://podcast.cbn.com/CBN_Video_CBN_News_Updates.aspx
-- title: CBN.com - CBN News Morning, Midday and Tonight
+- title: CBN.com - CBN News Updates
 - category: news
 - tags: news, cbn, politics, daily-updates
 

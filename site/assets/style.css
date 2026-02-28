@@ -516,7 +516,7 @@ video {
 .guideBar {
   position: absolute;
   left: 50%;
-  bottom: 24px;
+  bottom: 48px;
   transform: translateX(-50%);
   display: flex;
   align-items: center;
@@ -565,6 +565,7 @@ video {
   justify-content: flex-start;
   flex-wrap: nowrap;
   overflow-x: auto;
+  overflow-y: hidden;
   max-width: 100%;
   -webkit-overflow-scrolling: touch;
 }
@@ -575,6 +576,7 @@ video {
   flex-wrap: nowrap;
   justify-content: flex-start;
   overflow-x: auto;
+  overflow-y: hidden;
   max-width: 100%;
   -webkit-overflow-scrolling: touch;
 }
@@ -790,6 +792,7 @@ video {
   justify-content: flex-start;
   flex-wrap: nowrap;
   overflow-x: auto;
+  overflow-y: hidden;
   max-width: 100%;
   -webkit-overflow-scrolling: touch;
 }
@@ -879,8 +882,10 @@ video {
   display: flex;
   flex-direction: column;
   gap: 2px;
-  min-width: 120px;
-  max-width: 220px;
+  flex: 1 1 0;
+  min-width: 140px;
+  max-width: none;
+  min-inline-size: 0;
   padding: 6px 12px;
   background: rgba(255,255,255,.03);
   border: 1px solid var(--edge);
@@ -1006,8 +1011,11 @@ video {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  inline-size: 44px;
+  inline-size: 54px;
+  block-size: 54px;
+  border-radius: 999px;
   padding-inline: 0;
+  padding-block: 0;
 }
 
 .volumeControl {

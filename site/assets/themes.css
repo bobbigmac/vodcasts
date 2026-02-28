@@ -26,6 +26,16 @@
 
 [data-theme="modern"] .guideGridEp.repeat { border-style: dashed }
 
+[data-theme="modern"] #btnPlay.guideBtn {
+  border-color: color-mix(in srgb, var(--accent) 70%, var(--edge));
+  background: radial-gradient(circle at 30% 25%, color-mix(in srgb, var(--accent) 22%, rgba(255,255,255,.02)) 0%, rgba(0,0,0,.18) 55%, rgba(0,0,0,.10) 100%);
+  box-shadow: 0 10px 24px rgba(0,0,0,.35), 0 0 0 1px rgba(0,0,0,.2) inset;
+}
+[data-theme="modern"] #btnPlay.guideBtn:hover {
+  border-color: color-mix(in srgb, var(--accent) 85%, var(--edge));
+  box-shadow: 0 10px 26px rgba(0,0,0,.38), 0 0 0 1px rgba(0,0,0,.22) inset, 0 0 0 3px color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
 /* Theme: dos – classic cable TV / DOS harsh blue, big letters */
 [data-theme="dos"] {
   --bg: #000080;

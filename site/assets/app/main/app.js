@@ -1016,7 +1016,7 @@ export function App({ env, log, sources, player, history }) {
                     data-keyhint="K — Play"
                     onClick=${() => player.togglePlay()}
                   >
-                    <span class="guideBtnIcon">${pb.paused ? html`<${PlayIcon} size=${18} />` : html`<${PauseIcon} size=${18} />`}</span>
+                    <span class="guideBtnIcon">${pb.paused ? html`<${PlayIcon} size=${22} />` : html`<${PauseIcon} size=${22} />`}</span>
                   </button>
                   <button
                     id="btnSeekBack"
