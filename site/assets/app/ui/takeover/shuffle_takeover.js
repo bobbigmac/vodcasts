@@ -4,6 +4,16 @@ function clamp(v, a, b) {
   return Math.min(b, Math.max(a, v));
 }
 
+function loadFaveCount() {
+  try {
+    const raw = JSON.parse(localStorage.getItem("vodcasts_guide_prefs_v1") || "{}");
+    const list = Array.isArray(raw?.faves) ? raw.faves : [];
+    return list.filter((x) => typeof x === "string" && x).length;
+  } catch {
+    return 0;
+  }
+}
+
 export function ShuffleTakeover({ player, takeover }) {
   const cfg = player.shuffle?.value || { active: false, intervalIdx: 4, changeFeed: true, changeEpisode: true, changeTime: true };
   const intervals = player.shuffleIntervals || [];
@@ -12,6 +22,8 @@ export function ShuffleTakeover({ player, takeover }) {
   const curCat = player.current?.value?.source?.category ? String(player.current.value.source.category) : "";
   const baseCat = cfg.baseCategory ? String(cfg.baseCategory) : "";
   const catEnabled = !!cfg.sameCategory;
+  const faveCount = loadFaveCount();
+  const faveEnabled = !!cfg.favesOnly;
 
   const setIdx = (nextIdx) => {
     const n = clamp(nextIdx, 0, Math.max(0, intervals.length - 1));
@@ -34,6 +46,11 @@ export function ShuffleTakeover({ player, takeover }) {
       return;
     }
     player.setShuffleSettings?.({ sameCategory: false }, { resetNextAt: true });
+  };
+
+  const toggleFaves = () => {
+    if (faveCount <= 0 && !faveEnabled) return;
+    player.setShuffleSettings?.({ favesOnly: !faveEnabled }, { resetNextAt: true });
   };
 
   return html`
@@ -74,6 +91,15 @@ export function ShuffleTakeover({ player, takeover }) {
         <div class="takeoverRow" title="Restrict feed selection">
           <span class="takeoverRowLabel">Restrict</span>
           <div class="takeoverOpts">
+            <button
+              class=${"guideBtn" + (faveEnabled ? " active" : "")}
+              disabled=${faveCount <= 0 && !faveEnabled}
+              aria-disabled=${faveCount <= 0 && !faveEnabled ? "true" : "false"}
+              title=${faveCount > 0 ? "Only favorite channels" : faveEnabled ? "No favorite channels left (turn off to clear)" : "No favorite channels yet"}
+              onClick=${toggleFaves}
+            >
+              Faves
+            </button>
             <button
               class=${"guideBtn" + (catEnabled ? " active" : "")}
               disabled=${!baseCat && !curCat}

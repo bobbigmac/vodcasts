@@ -19,9 +19,12 @@
   --guide-corner-bg: color-mix(in srgb, #1a1d26 92%, rgba(0,0,0,.25));
   --guide-cell-bg: color-mix(in srgb, #121521 92%, rgba(0,0,0,.25));
   --guide-ep-bg: rgba(255,255,255,.03);
+  --guide-ep-repeat-bg: rgba(255,255,255,.018);
   --guide-ep-hover-bg: rgba(255,255,255,.07);
   --guide-ep-active-bg: rgba(138,180,248,.12);
 }
+
+[data-theme="modern"] .guideGridEp.repeat { border-style: dashed }
 
 /* Theme: dos – classic cable TV / DOS harsh blue, big letters */
 [data-theme="dos"] {
@@ -45,6 +48,7 @@
   --guide-corner-bg: #00008b;
   --guide-cell-bg: #00008b;
   --guide-ep-bg: rgba(0,0,0,.10);
+  --guide-ep-repeat-bg: rgba(0,0,0,.18);
   --guide-ep-hover-bg: rgba(0,255,255,.14);
   --guide-ep-active-bg: rgba(0,255,255,.25);
 }
@@ -66,6 +70,9 @@
 [data-theme="dos"] .speedControl,
 [data-theme="dos"] .speedBtn,
 [data-theme="dos"] .guideEpBlock,
+[data-theme="dos"] .guideGridHeaderBtn,
+[data-theme="dos"] .guideGridChanFave,
+[data-theme="dos"] .guideNowBack,
 [data-theme="dos"] .sleepOpt,
 [data-theme="dos"] .historyBtn,
 [data-theme="dos"] .cornerBtn,

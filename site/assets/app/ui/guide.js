@@ -15,6 +15,26 @@ const HORIZON_PX = VIRTUAL_MIN * PX_PER_MIN;
 const GUIDE_ROW_H_PX = 56;
 const ROW_OVERSCAN = 6;
 const TIME_BUFFER_MIN = 90;
+const NARROW_GUIDE_MAX_W_PX = 720;
+const GUIDE_PREFS_KEY = "vodcasts_guide_prefs_v1";
+
+function loadGuidePrefs() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(GUIDE_PREFS_KEY) || "{}");
+    const fav = Array.isArray(raw?.faves) ? raw.faves.filter((x) => typeof x === "string" && x) : [];
+    const favesOnly = raw?.favesOnly === true;
+    return { faves: new Set(fav), favesOnly };
+  } catch {
+    return { faves: new Set(), favesOnly: false };
+  }
+}
+
+function saveGuidePrefs({ faves, favesOnly }) {
+  try {
+    const list = [...(faves instanceof Set ? faves : new Set())].filter((x) => typeof x === "string" && x).slice(0, 5000);
+    localStorage.setItem(GUIDE_PREFS_KEY, JSON.stringify({ faves: list, favesOnly: !!favesOnly }));
+  } catch {}
+}
 
 function fmtDuration(sec) {
   if (!Number.isFinite(sec) || sec < 0) return null;
@@ -47,6 +67,39 @@ function isEpisodeNew(ep, nowMs) {
   const age = nowMs - t;
   if (age < 0) return false;
   return age <= NEW_WITHIN_DAYS * MS_PER_DAY;
+}
+
+function isPlayableVideoEp(ep) {
+  const m = ep?.media || null;
+  const url = String(m?.url || "").trim();
+  if (!url) return false;
+  if (m?.pickedIsVideo === true) return true;
+  const t = String(m?.type || "").toLowerCase();
+  const u = url.toLowerCase();
+  if (t.startsWith("video/")) return true;
+  if (u.includes(".m3u8")) return true;
+  if (u.match(/\.(mp4|m4v|mov|webm)(\?|$)/)) return true;
+  return false;
+}
+
+function fmtPubDateShort(ep, nowMs = Date.now()) {
+  const t = episodeDateMs(ep);
+  if (!Number.isFinite(t)) return "";
+  const d = new Date(t);
+  const now = new Date(nowMs);
+  const sameYear = d.getFullYear() === now.getFullYear();
+  try {
+    const fmt = new Intl.DateTimeFormat(
+      undefined,
+      sameYear ? { month: "short", day: "numeric" } : { month: "short", day: "numeric", year: "2-digit" }
+    );
+    return fmt.format(d);
+  } catch {
+    const m = d.getMonth() + 1;
+    const day = d.getDate();
+    const y = String(d.getFullYear()).slice(-2);
+    return sameYear ? `${m}/${day}` : `${m}/${day}/${y}`;
+  }
 }
 
 function buildSourcesFlat(sources) {
@@ -132,23 +185,69 @@ export function GuidePanel({ isOpen, sources, player }) {
     return m;
   }, [sources.value]);
 
+  const prefsInitRef = useRef(null);
+  if (!prefsInitRef.current) prefsInitRef.current = loadGuidePrefs();
+  const faveIds = useSignal(prefsInitRef.current.faves);
+  const favesOnly = useSignal(!!prefsInitRef.current.favesOnly);
+
+  const faveCount = useMemo(() => {
+    const set = faveIds.value instanceof Set ? faveIds.value : new Set();
+    let n = 0;
+    for (const s of sources.value || []) if (set.has(s.id)) n += 1;
+    return n;
+  }, [sources.value, faveIds.value]);
+
+  useEffect(() => {
+    if (faveCount > 0) return;
+    if (!favesOnly.value) return;
+    favesOnly.value = false;
+    saveGuidePrefs({ faves: faveIds.value, favesOnly: false });
+  }, [faveCount, favesOnly.value]);
+
   const filterText = useSignal("");
   const filterKey = useMemo(() => String(filterText.value || "").trim(), [filterText.value]);
   const filterTokens = useMemo(() => splitQuery(filterKey), [filterKey]);
 
-  const sourcesFlat = useMemo(() => {
+  const sourcesFlatFiltered = useMemo(() => {
     if (!filterTokens.length) return sourcesFlatAll;
     const out = [];
     for (const s of sourcesFlatAll) {
       const eps = episodesBySource[s.id];
       if (!Array.isArray(eps) || !eps.length) continue;
-      const playable = eps.filter((ep) => ep.media?.url);
+      const playable = eps.filter((ep) => isPlayableVideoEp(ep));
       if (!playable.length) continue;
       const srcObj = sourcesById.get(s.id) || s;
       if (playable.some((ep) => matchesAllTokens(filterTokens, episodeSearchHaystack(srcObj, ep)))) out.push(s);
     }
     return out;
   }, [sourcesFlatAll, sourcesById, filterKey, episodesBySource]);
+
+  // Exclude feeds once we know they have no playable videos.
+  // (If a feed isn't loaded yet, keep it around so it can be lazy-loaded.)
+  const sourcesFlat0 = useMemo(() => {
+    const out = [];
+    for (const s of sourcesFlatFiltered) {
+      const eps = episodesBySource[s.id];
+      if (!Array.isArray(eps)) {
+        out.push(s);
+        continue;
+      }
+      if (eps.some((ep) => isPlayableVideoEp(ep))) out.push(s);
+    }
+    return out;
+  }, [sourcesFlatFiltered, episodesBySource]);
+
+  const sourcesFlat = useMemo(() => {
+    if (!favesOnly.value || faveCount <= 0) return sourcesFlat0;
+    const set = faveIds.value instanceof Set ? faveIds.value : new Set();
+    return sourcesFlat0.filter((s) => set.has(s.id));
+  }, [sourcesFlat0, favesOnly.value, faveCount, faveIds.value]);
+
+  const chanNoById = useMemo(() => {
+    const m = new Map();
+    for (let i = 0; i < sourcesFlatAll.length; i++) m.set(sourcesFlatAll[i].id, i);
+    return m;
+  }, [sourcesFlatAll]);
 
   const focusSourceIdx = useSignal(Math.max(0, sourcesFlat.findIndex((s) => s.id === currentSourceId)));
   const sourcesFlatRef = useRef([]);
@@ -169,6 +268,21 @@ export function GuidePanel({ isOpen, sources, player }) {
   const focusSourceIdRef = useRef(null);
   const keyNavAtRef = useRef(0);
   const keyScrollRafRef = useRef(0);
+  const sidebarHidden = useSignal(false);
+  const sidebarHideOnNextScrollRef = useRef(false);
+  const sidebarLastUserIntentAtRef = useRef(0);
+  const marqueeRef = useRef({ el: null, anim: null, key: "" });
+  const chanMarqueeRef = useRef({ el: null, anim: null, key: "" });
+
+  const isNarrowGuide = () => {
+    try {
+      if (globalThis.matchMedia) return !!globalThis.matchMedia(`(max-width: ${NARROW_GUIDE_MAX_W_PX}px)`)?.matches;
+    } catch {}
+    try {
+      return (globalThis.innerWidth || 0) <= NARROW_GUIDE_MAX_W_PX;
+    } catch {}
+    return false;
+  };
 
   const isEditableEl = (el) => {
     if (!el) return false;
@@ -266,7 +380,9 @@ export function GuidePanel({ isOpen, sources, player }) {
   };
 
   const DEFAULT_EP_SEC = 30 * 60;
-  const MIN_EP_SEC = 5 * 60;
+  // For timeline readability: even very short videos should occupy a useful width.
+  // Treat anything shorter than 20 minutes as 20 minutes when rendering the guide.
+  const MIN_EP_SEC = 20 * 60;
   const MAX_EP_SEC = 9 * 3600;
 
   const estimateDurSec = (sourceId, ep) => {
@@ -290,7 +406,7 @@ export function GuidePanel({ isOpen, sources, player }) {
     if (prev && prev.epsRef === epsRef) return prev.schedule;
 
     const srcObj = sourcesByIdRef.current.get(sourceId) || null;
-    const playable0 = (epsRef || []).filter((ep) => ep.media?.url);
+    const playable0 = (epsRef || []).filter((ep) => isPlayableVideoEp(ep));
     const playable = tokens.length
       ? playable0.filter((ep) => matchesAllTokens(tokens, episodeSearchHaystack(srcObj, ep)))
       : playable0;
@@ -473,6 +589,68 @@ export function GuidePanel({ isOpen, sources, player }) {
     }
   }, [isOpen.value, currentSourceId, sourcesFlat.length]);
 
+  useEffect(() => {
+    if (isOpen.value) return;
+    sidebarHidden.value = false;
+    sidebarHideOnNextScrollRef.current = false;
+    sidebarLastUserIntentAtRef.current = 0;
+    const prev = marqueeRef.current || null;
+    if (prev?.anim) {
+      try {
+        prev.anim.cancel();
+      } catch {}
+    }
+    if (prev?.el) {
+      try {
+        prev.el.style.transform = "";
+      } catch {}
+    }
+    marqueeRef.current = { el: null, anim: null, key: "" };
+    const prevChan = chanMarqueeRef.current || null;
+    if (prevChan?.anim) {
+      try {
+        prevChan.anim.cancel();
+      } catch {}
+    }
+    if (prevChan?.el) {
+      try {
+        prevChan.el.style.transform = "";
+      } catch {}
+    }
+    chanMarqueeRef.current = { el: null, anim: null, key: "" };
+  }, [isOpen.value]);
+
+  const toggleFave = (sourceId) => {
+    const id = String(sourceId || "");
+    if (!id) return;
+    const cur = faveIds.value instanceof Set ? faveIds.value : new Set();
+    const next = new Set(cur);
+    if (next.has(id)) next.delete(id);
+    else next.add(id);
+    faveIds.value = next;
+    saveGuidePrefs({ faves: next, favesOnly: favesOnly.value });
+  };
+
+  const toggleFavesOnly = () => {
+    if (faveCount <= 0 && !favesOnly.value) return;
+    const next = !favesOnly.value;
+    favesOnly.value = next;
+    saveGuidePrefs({ faves: faveIds.value, favesOnly: next });
+  };
+
+  useEffect(() => {
+    if (!isOpen.value) return;
+    const onResize = () => {
+      if (!isNarrowGuide()) sidebarHidden.value = false;
+    };
+    window.addEventListener("resize", onResize, { passive: true });
+    return () => {
+      try {
+        window.removeEventListener("resize", onResize);
+      } catch {}
+    };
+  }, [isOpen.value]);
+
   // Ensure focused row is loaded (lazy load as the user navigates).
   useEffect(() => {
     if (!isOpen.value) return;
@@ -653,6 +831,48 @@ export function GuidePanel({ isOpen, sources, player }) {
     };
   }, []);
 
+  // Narrow viewports: hide the channels sidebar when the user starts scrolling the schedule panel.
+  useEffect(() => {
+    const el = tracksRef.current;
+    if (!el) return;
+    const onPointerDown = (e) => {
+      if (!isOpen.value) return;
+      if (!isNarrowGuide()) return;
+      if (sidebarHidden.value) return;
+      if (e?.target?.closest?.(".guideGridEp")) return;
+      if (e?.target?.closest?.(".guideSidebarToggle")) return;
+      sidebarHideOnNextScrollRef.current = true;
+      sidebarLastUserIntentAtRef.current = Date.now();
+    };
+    const onWheel = (e) => {
+      if (!isOpen.value) return;
+      if (!isNarrowGuide()) return;
+      if (sidebarHidden.value) return;
+      const dx = Number(e?.deltaX || 0);
+      const dy = Number(e?.deltaY || 0);
+      if (!dx && !dy) return;
+      sidebarHideOnNextScrollRef.current = true;
+      sidebarLastUserIntentAtRef.current = Date.now();
+    };
+    const onTouchStart = (e) => {
+      if (!isOpen.value) return;
+      if (!isNarrowGuide()) return;
+      if (sidebarHidden.value) return;
+      if (e?.target?.closest?.(".guideGridEp")) return;
+      if (e?.target?.closest?.(".guideSidebarToggle")) return;
+      sidebarHideOnNextScrollRef.current = true;
+      sidebarLastUserIntentAtRef.current = Date.now();
+    };
+    el.addEventListener("pointerdown", onPointerDown, { passive: true });
+    el.addEventListener("wheel", onWheel, { passive: true });
+    el.addEventListener("touchstart", onTouchStart, { passive: true });
+    return () => {
+      el.removeEventListener("pointerdown", onPointerDown);
+      el.removeEventListener("wheel", onWheel);
+      el.removeEventListener("touchstart", onTouchStart);
+    };
+  }, [isOpen.value]);
+
   // Track real mouse movement so hover focus doesn't trigger from programmatic scrolling.
   useEffect(() => {
     if (!isOpen.value) return;
@@ -728,6 +948,17 @@ export function GuidePanel({ isOpen, sources, player }) {
 
     const onScroll = () => {
       lastScrollAtRef.current = Date.now();
+      if (isOpen.value && isNarrowGuide() && !sidebarHidden.value) {
+        const pending = !!sidebarHideOnNextScrollRef.current;
+        const intentAt = Number(sidebarLastUserIntentAtRef.current) || 0;
+        const recentIntent = Date.now() - intentAt < 1500;
+        const lastKeys = Number(keyNavAtRef.current) || 0;
+        const recentKeys = Date.now() - lastKeys < 700;
+        if (pending && recentIntent && !recentKeys) {
+          sidebarHidden.value = true;
+          sidebarHideOnNextScrollRef.current = false;
+        }
+      }
       update();
     };
 
@@ -777,6 +1008,131 @@ export function GuidePanel({ isOpen, sources, player }) {
     };
   }, []);
 
+  // Focused episode title: marquee shortly after highlight (E.P.G. style).
+  useEffect(() => {
+    if (!isOpen.value) return;
+    const key = `${focusSourceIdx.value}::${Math.round((Number(focusTs.value) || 0) / 1000)}`;
+    const prev = marqueeRef.current || null;
+    if (prev?.key === key) return;
+
+    if (prev?.anim) {
+      try {
+        prev.anim.cancel();
+      } catch {}
+    }
+    if (prev?.el) {
+      try {
+        prev.el.style.transform = "";
+      } catch {}
+    }
+    marqueeRef.current = { el: null, anim: null, key };
+
+    const t = setTimeout(() => {
+      try {
+        const titleEl = document.querySelector(".guideGridEp.focused .guideGridEpTitle");
+        const textEl = document.querySelector(".guideGridEp.focused .guideGridEpTitleText");
+        if (!titleEl || !textEl) return;
+        const overflow = Math.max(0, (textEl.scrollWidth || 0) - (titleEl.clientWidth || 0));
+        if (!Number.isFinite(overflow) || overflow < 18) return;
+        if (typeof textEl.animate !== "function") return;
+
+        const pxPerMs = 0.045;
+        const moveMs = clamp(Math.round(overflow / pxPerMs), 1800, 11000);
+        const totalMs = clamp(moveMs + 1700, 3200, 14000);
+        const anim = textEl.animate(
+          [
+            { transform: "translateX(0px)", offset: 0 },
+            { transform: "translateX(0px)", offset: 0.18 },
+            { transform: `translateX(${-overflow}px)`, offset: 0.82 },
+            { transform: `translateX(${-overflow}px)`, offset: 1 },
+          ],
+          { duration: totalMs, delay: 650, iterations: Infinity, easing: "linear" }
+        );
+        marqueeRef.current = { el: textEl, anim, key };
+      } catch {}
+    }, 0);
+
+    return () => {
+      clearTimeout(t);
+      const cur = marqueeRef.current || null;
+      if (cur?.key !== key) return;
+      if (cur?.anim) {
+        try {
+          cur.anim.cancel();
+        } catch {}
+      }
+      if (cur?.el) {
+        try {
+          cur.el.style.transform = "";
+        } catch {}
+      }
+      marqueeRef.current = { el: null, anim: null, key: "" };
+    };
+  }, [isOpen.value, focusSourceIdx.value, focusTs.value]);
+
+  // Focused channel title: marquee shortly after highlight.
+  useEffect(() => {
+    if (!isOpen.value) return;
+    const src = sourcesFlat[focusSourceIdx.value] || null;
+    const key = String(src?.id || focusSourceIdx.value);
+    const prev = chanMarqueeRef.current || null;
+    if (prev?.key === key) return;
+
+    if (prev?.anim) {
+      try {
+        prev.anim.cancel();
+      } catch {}
+    }
+    if (prev?.el) {
+      try {
+        prev.el.style.transform = "";
+      } catch {}
+    }
+    chanMarqueeRef.current = { el: null, anim: null, key };
+
+    const t = setTimeout(() => {
+      try {
+        const nameEl = document.querySelector(".guideGridChanRow.focused .guideGridChanName");
+        const textEl = document.querySelector(".guideGridChanRow.focused .guideGridChanNameText");
+        if (!nameEl || !textEl) return;
+        const overflow = Math.max(0, (textEl.scrollWidth || 0) - (nameEl.clientWidth || 0));
+        if (!Number.isFinite(overflow) || overflow < 18) return;
+        if (typeof textEl.animate !== "function") return;
+
+        const pxPerMs = 0.045;
+        const moveMs = clamp(Math.round(overflow / pxPerMs), 1600, 9000);
+        const totalMs = clamp(moveMs + 1600, 3000, 12000);
+        const anim = textEl.animate(
+          [
+            { transform: "translateX(0px)", offset: 0 },
+            { transform: "translateX(0px)", offset: 0.18 },
+            { transform: `translateX(${-overflow}px)`, offset: 0.82 },
+            { transform: `translateX(${-overflow}px)`, offset: 1 },
+          ],
+          { duration: totalMs, delay: 650, iterations: Infinity, easing: "linear" }
+        );
+        chanMarqueeRef.current = { el: textEl, anim, key };
+      } catch {}
+    }, 0);
+
+    return () => {
+      clearTimeout(t);
+      const cur = chanMarqueeRef.current || null;
+      if (cur?.key !== key) return;
+      if (cur?.anim) {
+        try {
+          cur.anim.cancel();
+        } catch {}
+      }
+      if (cur?.el) {
+        try {
+          cur.el.style.transform = "";
+        } catch {}
+      }
+      chanMarqueeRef.current = { el: null, anim: null, key: "" };
+    };
+  }, [isOpen.value, focusSourceIdx.value, sourcesFlat.length, filterKey]);
+
   // Lazy-load episodes for channels as they come into view (slow/steady).
   useEffect(() => {
     if (!isOpen.value) return;
@@ -812,7 +1168,21 @@ export function GuidePanel({ isOpen, sources, player }) {
   return html`
     <div id="guidePanel" class="guidePanel" aria-hidden=${isOpen.value ? "false" : "true"}>
       <div class="guidePanel-inner">
-        <div class="guideGridShell" style=${{ "--guide-row-h": `${GUIDE_ROW_H_PX}px` }} role="application" aria-label="TV guide">
+        <div
+          class=${"guideGridShell" + (sidebarHidden.value ? " sidebarHidden" : "")}
+          style=${{ "--guide-row-h": `${GUIDE_ROW_H_PX}px` }}
+          role="application"
+          aria-label="TV guide"
+        >
+          <button
+            class="guideSidebarToggle"
+            title="Show channels"
+            aria-label="Show channels"
+            onClick=${() => (sidebarHidden.value = false)}
+            onPointerDown=${(e) => e.stopPropagation()}
+          >
+            Channels
+          </button>
           <div class="guideGridHeaderRow">
             <div
               class="guideGridCorner"
@@ -863,6 +1233,42 @@ export function GuidePanel({ isOpen, sources, player }) {
                 })}
               </div>
             </div>
+            <div class="guideGridHeaderActions">
+              <button
+                class=${"guideGridHeaderBtn" + (favesOnly.value ? " active" : "")}
+                disabled=${faveCount <= 0 && !favesOnly.value}
+                aria-disabled=${faveCount <= 0 && !favesOnly.value ? "true" : "false"}
+                title=${faveCount > 0
+                  ? favesOnly.value
+                    ? "Show all channels"
+                    : "Show favorites only"
+                  : favesOnly.value
+                    ? "No favorite channels left (turn off to clear)"
+                    : "No favorite channels yet"}
+                aria-pressed=${favesOnly.value ? "true" : "false"}
+                data-navitem="1"
+                onClick=${(e) => {
+                  e.stopPropagation?.();
+                  toggleFavesOnly();
+                }}
+                onPointerDown=${(e) => e.stopPropagation()}
+              >
+                ${favesOnly.value ? "Show All" : "Faves Only"}
+              </button>
+              <button
+                class="guideGridHeaderBtn guideGridHeaderBtnClose"
+                title="Close guide"
+                aria-label="Close guide"
+                data-navitem="1"
+                onClick=${(e) => {
+                  e.stopPropagation?.();
+                  isOpen.value = false;
+                }}
+                onPointerDown=${(e) => e.stopPropagation()}
+              >
+                ✕
+              </button>
+            </div>
           </div>
 
           <div class="guideGridBodyRow">
@@ -879,7 +1285,9 @@ export function GuidePanel({ isOpen, sources, player }) {
                     "guideGridChanRow" +
                     (i === focusSourceIdx.value ? " focused" : "") +
                     (currentSourceId === src.id ? " playing" : "");
-                  const chanNo = String(101 + i).padStart(3, "0");
+                  const chanIdx = chanNoById.get(src.id) ?? i;
+                  const chanNo = String(101 + chanIdx).padStart(3, "0");
+                  const isFave = faveIds.value instanceof Set ? faveIds.value.has(src.id) : false;
                   return html`
                     <div class=${rowClass} data-source-id=${src.id}>
                       <div
@@ -905,11 +1313,32 @@ export function GuidePanel({ isOpen, sources, player }) {
                           }
                         }}
                       >
-                        <div class="guideGridChanNo mono">${chanNo}</div>
+                        <button
+                          class=${"guideGridChanFave" + (isFave ? " on" : "")}
+                          title=${isFave ? "Unfavorite channel" : "Favorite channel"}
+                          aria-label=${isFave ? "Unfavorite channel" : "Favorite channel"}
+                          aria-pressed=${isFave ? "true" : "false"}
+                          onClick=${(e) => {
+                            e.preventDefault?.();
+                            e.stopPropagation?.();
+                            toggleFave(src.id);
+                          }}
+                          onPointerDown=${(e) => {
+                            e.preventDefault?.();
+                            e.stopPropagation?.();
+                          }}
+                        >
+                          ${isFave ? "★" : "☆"}
+                        </button>
                         <div class="guideGridChanMeta">
-                          <div class="guideGridChanName">${src.title || src.id}</div>
-                          <div class="guideGridChanBadges">
-                            ${ccLikely ? html`<span class="guideBadge guideBadge-cc" title="Captions likely available">CC</span>` : ""}
+                          <div class="guideGridChanName">
+                            <span class="guideGridChanNameText">${src.title || src.id}</span>
+                          </div>
+                          <div class="guideGridChanSub">
+                            <span class="guideGridChanBadges">
+                              ${ccLikely ? html`<span class="guideBadge guideBadge-cc" title="Captions likely available">CC</span>` : ""}
+                            </span>
+                            <span class="guideGridChanNo mono" aria-hidden="true">${chanNo}</span>
                           </div>
                         </div>
                       </div>
@@ -933,6 +1362,10 @@ export function GuidePanel({ isOpen, sources, player }) {
                 const blocks = schedule ? blocksForRange(schedule, renderStartTs, renderEndTs) : [];
                 let newBadgesShown = 0;
                 const nowMs = Date.now();
+                const baseCycleNo =
+                  schedule?.cycleSec
+                    ? Math.floor(((Number(viewStartTs) - guideZeroTs.value) / 1000) / schedule.cycleSec)
+                    : 0;
 
                 const rowClass =
                   "guideGridTrackRow" +
@@ -951,6 +1384,10 @@ export function GuidePanel({ isOpen, sources, player }) {
                               const w0 = Math.round((durSec / 60) * PX_PER_MIN);
                               const w = Math.max(28, w0);
                               const active = currentSourceId === src.id && currentEpisodeId === ep.id;
+                              const relSec = (Number(b.startTs) - guideZeroTs.value) / 1000;
+                              const cycleNo =
+                                schedule?.cycleSec && Number.isFinite(relSec) ? Math.floor(relSec / schedule.cycleSec) : 0;
+                              const isRepeat = cycleNo !== baseCycleNo;
                               const epHasCc = (ep.transcripts || []).length > 0;
                               const showNew = newBadgesShown < 2 && isEpisodeNew(ep, nowMs);
                               if (showNew) newBadgesShown += 1;
@@ -966,16 +1403,17 @@ export function GuidePanel({ isOpen, sources, player }) {
                                 focusedProg &&
                                 Math.abs(Number(focusedProg.startTs) - Number(b.startTs)) < 500 &&
                                 focusedProg.ep?.id === ep.id;
-                              const dur = fmtDuration(Number(ep.durationSec) > 0 ? Number(ep.durationSec) : durSec) || (ep.dateText || "");
+                              const dur = fmtDuration(Number(ep.durationSec) > 0 ? Number(ep.durationSec) : durSec) || "";
+                              const pub = fmtPubDateShort(ep, nowMs);
                               return html`
                                 <button
-                                  class=${"guideGridEp" + (active ? " active" : "") + (isFocused ? " focused" : "")}
+                                  class=${"guideGridEp" + (active ? " active" : "") + (isFocused ? " focused" : "") + (isRepeat ? " repeat" : "")}
                                   style=${{ left: `${x}px`, width: `${w}px` }}
                                   data-ep-id=${ep.id}
                                   data-prog-start=${String(b.startTs)}
                                   data-source-id=${src.id}
                                   data-navitem="1"
-                                  aria-label=${`${ep.title || "Episode"}${epHasCc ? " (CC)" : ""}${showNew ? " (New)" : ""}`}
+                                  aria-label=${`${ep.title || "Episode"}${epHasCc ? " (CC)" : ""}${showNew ? " (New)" : ""}${isRepeat ? " (Repeat)" : ""}`}
                                   onPointerEnter=${() => {
                                     if (!shouldAllowHoverFocus()) return;
                                     focusModeRef.current = "hover";
@@ -986,19 +1424,26 @@ export function GuidePanel({ isOpen, sources, player }) {
                                     focusModeRef.current = "keys";
                                     await player.selectSource(src.id, { preserveEpisode: false, skipAutoEpisode: true, autoplay: true });
                                     await player.selectEpisode(ep.id, { autoplay: true });
-                                    isOpen.value = false;
+                                  isOpen.value = false;
                                   }}
                                 >
                                   <div class="guideGridEpProgress" style=${{ width: `${pct}%` }} aria-hidden="true"></div>
                                   <div class="guideGridEpTop">
-                                    <span class="guideGridEpTitle">${ep.title || "Episode"}</span>
-                                    <span class="guideGridEpBadges">
-                                      ${epHasCc ? html`<span class="guideGridEpBadge guideBadge guideBadge-cc" title="Captions available">CC</span>` : ""}
-                                      ${showNew ? html`<span class="guideGridEpBadge guideBadge guideBadge-new" title="New (released within the last 30 days)">New</span>` : ""}
-                                    </span>
+                                    <span class="guideGridEpTitle"><span class="guideGridEpTitleText">${ep.title || "Episode"}</span></span>
                                   </div>
                                   <div class="guideGridEpMeta">
-                                    <span class="guideGridEpDur">${dur}</span>
+                                    <span class="guideGridEpMetaLeft">
+                                      <span class="guideGridEpDur">${dur}</span>
+                                      ${pub ? html`<span class="guideGridEpPub">• ${pub}</span>` : ""}
+                                    </span>
+                                    <span class="guideGridEpMetaRight">
+                                      ${showNew
+                                        ? html`<span class="guideGridEpBadge guideBadge guideBadge-new guideGridEpMiniBadge" title="New (released within the last 30 days)">!</span>`
+                                        : ""}
+                                      ${epHasCc
+                                        ? html`<span class="guideGridEpBadge guideBadge guideBadge-cc guideGridEpMiniBadge" title="Captions available">CC</span>`
+                                        : ""}
+                                    </span>
                                   </div>
                                 </button>
                               `;
@@ -1032,24 +1477,26 @@ export function GuidePanel({ isOpen, sources, player }) {
           </div>
         </div>
         <div class="guidePanel-episodes" id="guideEpisodes">
-          <div class="guideNowLabel">
-            ${focusedSource ? focusedSource.title || focusedSource.id : "—"} ${focusedTimeRange ? html`<span class="guideNowSep">•</span>` : ""}
-            ${focusedTimeRange}
+          <button
+            class="guideNowBack"
+            title="Close guide"
+            aria-label="Close guide"
+            data-navitem="1"
+            data-keyhint="Esc — Close"
+            onClick=${() => (isOpen.value = false)}
+          >
+            ←
+          </button>
+          <div class="guideNowContent">
+            <div class="guideNowLabel">
+              ${focusedSource ? focusedSource.title || focusedSource.id : "—"} ${focusedTimeRange ? html`<span class="guideNowSep">•</span>` : ""}
+              ${focusedTimeRange}
+            </div>
+            <div class="guideNowEp">${focusedEp ? focusedEp.title || "—" : "—"}</div>
+            <div class="guideNowSub">${currentSource ? `Playing: ${currentEpTitle}` : ""}</div>
           </div>
-          <div class="guideNowEp">${focusedEp ? focusedEp.title || "—" : "—"}</div>
-          <div class="guideNowSub">${currentSource ? `Playing: ${currentEpTitle}` : ""}</div>
         </div>
       </div>
-      <button
-        id="btnCloseGuide"
-        class="guidePanel-close"
-        title="Close"
-        data-navitem="1"
-        data-keyhint="G — Close"
-        onClick=${() => (isOpen.value = false)}
-      >
-        ✕
-      </button>
     </div>
   `;
 }

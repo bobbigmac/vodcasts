@@ -6,6 +6,7 @@ import { trackEvent } from "../runtime/analytics.js";
 
 export function createPlayerService({ env, log, history }) {
   const STORAGE_KEY = "vodcasts_state_v1";
+  const GUIDE_PREFS_KEY = "vodcasts_guide_prefs_v1";
   const FEED_PROXY = env.feedProxy;
   const FEED_MANIFEST_URL = env.feedManifestUrl;
 
@@ -59,7 +60,9 @@ export function createPlayerService({ env, log, history }) {
     changeTime: true,
     sameCategory: false,
     baseCategory: null,
+    favesOnly: false,
   };
+  const DEFAULT_RANDOM = { favesOnly: false };
   const playback = signal({
     paused: true,
     ended: false,
@@ -81,6 +84,7 @@ export function createPlayerService({ env, log, history }) {
   const skip = signal(normalizeSkip(persisted.skip));
   const rateSteps = signal(normalizeRateSteps(persisted.rateSteps) || DEFAULT_RATE_STEPS.slice());
   const shuffle = signal({ ...normalizeShuffle(persisted.shuffle), label: "" });
+  const randomPrefs = signal(normalizeRandom(persisted.random));
 
   const currentSourceId = computed(() => current.value.source?.id || null);
   const currentEpisodeId = computed(() => current.value.episode?.id || null);
@@ -151,7 +155,23 @@ export function createPlayerService({ env, log, history }) {
       changeTime: hasAny ? changeTime : DEFAULT_SHUFFLE.changeTime,
       sameCategory: s.sameCategory === true,
       baseCategory: typeof s.baseCategory === "string" && s.baseCategory.trim() ? s.baseCategory.trim() : null,
+      favesOnly: s.favesOnly === true,
     };
+  }
+
+  function normalizeRandom(input) {
+    const s = input && typeof input === "object" ? input : {};
+    return { favesOnly: s.favesOnly === true };
+  }
+
+  function loadGuideFavesSet() {
+    try {
+      const raw = JSON.parse(localStorage.getItem(GUIDE_PREFS_KEY) || "{}");
+      const list = Array.isArray(raw?.faves) ? raw.faves : [];
+      return new Set(list.filter((x) => typeof x === "string" && x));
+    } catch {
+      return new Set();
+    }
   }
 
   function normalizeRate(v, steps = DEFAULT_RATE_STEPS) {
@@ -197,8 +217,23 @@ export function createPlayerService({ env, log, history }) {
       changeTime: s.changeTime !== false,
       sameCategory: s.sameCategory === true,
       baseCategory: typeof s.baseCategory === "string" && s.baseCategory.trim() ? s.baseCategory.trim() : null,
+      favesOnly: s.favesOnly === true,
     };
     saveState();
+  }
+
+  function persistRandom(next) {
+    const s = next && typeof next === "object" ? next : randomPrefs.value;
+    persisted.random = { favesOnly: s.favesOnly === true };
+    saveState();
+  }
+
+  function setRandomSettings(nextPartial) {
+    const cur = randomPrefs.value;
+    const next = { ...cur, ...(nextPartial && typeof nextPartial === "object" ? nextPartial : {}) };
+    next.favesOnly = next.favesOnly === true;
+    randomPrefs.value = next;
+    persistRandom(next);
   }
 
   function ensureShuffleTick() {
@@ -313,9 +348,13 @@ export function createPlayerService({ env, log, history }) {
 
     if (doFeed) {
       const baseCat = cfg.sameCategory && cfg.baseCategory ? String(cfg.baseCategory) : "";
-      const pool = baseCat ? sources.filter((s) => (s.category || "") === baseCat) : sources;
+      const pool0 = baseCat ? sources.filter((s) => (s.category || "") === baseCat) : sources;
+      const faves = cfg.favesOnly ? loadGuideFavesSet() : null;
+      const pool = faves && faves.size ? pool0.filter((s) => faves.has(s.id)) : pool0;
+      const ids0 = pool0.map((s) => s.id).filter(Boolean);
       const ids = pool.map((s) => s.id).filter(Boolean);
-      const nextSourceId = pickRandomId(ids, { exclude: currentSource?.id || null }) || currentSource?.id || ids[0];
+      const idsUse = ids.length ? ids : ids0;
+      const nextSourceId = pickRandomId(idsUse, { exclude: currentSource?.id || null }) || currentSource?.id || idsUse[0];
       const pickRandomEpisode = !!doEp;
       await selectSource(nextSourceId, {
         preserveEpisode: false,
@@ -1298,7 +1337,11 @@ export function createPlayerService({ env, log, history }) {
 
   async function playRandom() {
     if (!sources.length) return;
-    const src = sources[Math.floor(Math.random() * sources.length)];
+    const faves = randomPrefs.value.favesOnly ? loadGuideFavesSet() : null;
+    const favPool = faves && faves.size ? sources.filter((s) => faves.has(s.id)) : [];
+    const pool = favPool.length ? favPool : sources;
+    if (!pool.length) return;
+    const src = pool[Math.floor(Math.random() * pool.length)];
     await selectSource(src.id, { preserveEpisode: false, pickRandomEpisode: true, autoplay: true });
   }
 
@@ -1326,6 +1369,8 @@ export function createPlayerService({ env, log, history }) {
     sleep,
     shuffle,
     shuffleIntervals: SHUFFLE_INTERVALS,
+    randomPrefs,
+    setRandomSettings,
     sourceEpisodes,
     setSources,
     attachVideo,
