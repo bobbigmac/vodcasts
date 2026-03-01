@@ -446,3 +446,75 @@
 - url: https://feeds.twit.tv/throwback_video_large.xml
 - title: TWiT Throwback
 - category: twit
+
+## pbs-nova-video
+- url: http://feeds.pbs.org/pbs/wgbh/nova-video
+- title: PBS NOVA Video
+- category: science
+- tags: science, documentary, video
+
+## ted-talks-video
+- url: http://feeds.feedburner.com/TEDTalks_video
+- title: TED Talks Video
+- category: talks
+- tags: talks, ideas, video
+
+## democracy-now-video
+- url: https://www.democracynow.org/podcast-video.xml
+- title: Democracy Now! Video
+- category: news
+- tags: news, video, progressive
+
+## msnbc-rachel-maddow-video
+- url: http://podcastfeeds.nbcnews.com/nbcnews/video/podcast/MSNBC-MADDOW-NETCAST-M4V.xml
+- title: MSNBC Rachel Maddow (Video)
+- category: news
+- tags: news, video, msnbc, politics
+
+## tech-news-weekly-video
+- url: https://feeds.twit.tv/tnw_video_hd.xml
+- title: Tech News Weekly (Video)
+- category: tech
+- tags: tech, news, video, twit
+
+## daily-tech-news-show-video
+- url: http://feeds.feedburner.com/daily_tech_news_show
+- title: Daily Tech News Show (Video)
+- category: tech
+- tags: tech, news, video
+
+## geek-news-central-video
+- url: https://geeknewscentral.com/feed/video/
+- title: Geek News Central Podcast (Video)
+- category: tech
+- tags: tech, news, video
+
+## twit-news-video
+- url: https://feeds.twit.tv/specials_video_hd.xml
+- title: TWiT News (Video)
+- category: tech
+- tags: tech, news, video, twit
+
+## cbn-christian-world-news
+- url: http://podcast.cbn.com/CWN.aspx
+- title: CBN Christian World News
+- category: news
+- tags: news, video, cbn, international
+
+## nasa-odysee
+- url: https://odysee.com/$/rss/@NASA:88
+- title: NASA on Odysee
+- category: science
+- tags: science, space, video, nasa
+
+## linux-action-news-video
+- url: https://feedpress.me/lanvideo
+- title: Linux Action News Video
+- category: tech
+- tags: tech, linux, news, video
+
+## security-weekly-news-video
+- url: https://hntvvideo.libsyn.com/rss
+- title: Security Weekly News (Video)
+- category: tech
+- tags: tech, security, news, video

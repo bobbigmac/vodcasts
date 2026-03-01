@@ -3,123 +3,146 @@
     "title": "Reuters — Most Recent Video",
     "url": "http://feeds.reuters.com/reuters/USVideoLatest",
     "tags": ["news", "video", "neutral-ish"],
-    "region": "global/US"
+    "region": "global/US",
+    "status": "unavailable",
+    "note": "feeds.reuters.com returns DNS/502; Reuters video RSS requires Reuters Connect auth"
   },
   {
     "title": "Reuters — Top News Video",
     "url": "http://feeds.reuters.com/reuters/USVideoTopNews",
     "tags": ["news", "video", "neutral-ish"],
-    "region": "global/US"
+    "region": "global/US",
+    "status": "unavailable"
   },
   {
     "title": "Reuters — World News Video",
     "url": "http://feeds.reuters.com/reuters/USVideoWorldNews",
     "tags": ["news", "video", "neutral-ish"],
-    "region": "global"
+    "region": "global",
+    "status": "unavailable"
   },
   {
     "title": "Reuters — Politics Video",
     "url": "http://feeds.reuters.com/reuters/USVideoPolitics",
     "tags": ["news", "video", "neutral-ish"],
-    "region": "US"
+    "region": "US",
+    "status": "unavailable"
   },
   {
     "title": "Reuters — Breakingviews Video",
     "url": "http://feeds.reuters.com/reuters/USVideoBreakingviews",
     "tags": ["news", "video", "markets/opinion"],
-    "region": "global"
+    "region": "global",
+    "status": "unavailable"
   },
   {
     "title": "Reuters — Business Video",
     "url": "http://feeds.reuters.com/reuters/USVideoBusiness",
     "tags": ["news", "video", "business"],
-    "region": "global/US"
+    "region": "global/US",
+    "status": "unavailable"
   },
   {
     "title": "Reuters — Technology Video",
     "url": "http://feeds.reuters.com/reuters/USVideoTechnology",
     "tags": ["news", "video", "tech"],
-    "region": "global/US"
+    "region": "global/US",
+    "status": "unavailable"
   },
   {
     "title": "Reuters — Environment Video",
     "url": "http://feeds.reuters.com/reuters/USVideoEnvironment",
     "tags": ["news", "video", "environment"],
-    "region": "global/US"
+    "region": "global/US",
+    "status": "unavailable"
   },
   {
     "title": "Reuters — Rough Cuts",
     "url": "http://feeds.reuters.com/reuters/USVideoRoughCuts",
     "tags": ["news", "video"],
-    "region": "global/US"
+    "region": "global/US",
+    "status": "unavailable"
   },
   {
     "title": "Reuters — Oddly Enough Video",
     "url": "http://feeds.reuters.com/reuters/USVideoOddlyEnough",
     "tags": ["news", "video", "lighter"],
-    "region": "global/US"
+    "region": "global/US",
+    "status": "unavailable"
   },
-
   {
     "title": "NASA — This Week @NASA (Vodcast)",
     "url": "https://www.nasa.gov/rss/dyn/TWAN_vodcast.rss",
     "tags": ["science", "video"],
-    "region": "US/global"
+    "region": "US/global",
+    "status": "unavailable",
+    "note": "404; show discontinued. NASA now uses Megaphone for podcasts (audio). Video: NASA on Odysee works."
   },
   {
     "title": "NASA — NASA 360 (Vodcast)",
     "url": "https://www.nasa.gov/rss/dyn/nasa360_vodcast.rss",
     "tags": ["science", "video"],
-    "region": "US/global"
+    "region": "US/global",
+    "status": "unavailable",
+    "note": "404"
   },
   {
     "title": "JPL — Podcast Feed",
     "url": "https://www.jpl.nasa.gov/multimedia/podcast/podfeed.xml",
     "tags": ["science", "space", "video"],
-    "region": "US/global"
+    "region": "US/global",
+    "status": "unavailable",
+    "note": "404; JPL podcasts moved. Try https://www.jpl.nasa.gov/podcasts/"
   },
   {
     "title": "PBS — NOVA Video",
     "url": "http://feeds.pbs.org/pbs/wgbh/nova-video",
     "tags": ["science", "documentary", "video"],
-    "region": "US"
+    "region": "US",
+    "status": "working"
   },
   {
     "title": "TED Talks — Video",
     "url": "http://feeds.feedburner.com/TEDTalks_video",
     "tags": ["talks", "ideas", "video"],
-    "region": "global"
+    "region": "global",
+    "status": "working"
   },
   {
     "title": "CNET — HD Podcast Feed",
     "url": "http://feed.cnet.com/feed/podcast/all/hd.xml",
     "tags": ["tech", "video"],
-    "region": "US"
+    "region": "US",
+    "status": "unavailable",
+    "note": "410 Gone. CNET video now on Podbean but feed.cnet.com redirects to 410. Podbean lists same URL."
   },
-
   {
     "title": "ABC News — World News (Video Podcast)",
     "url": "http://feeds.abcnews.com/abcnews/worldnewsvideopodcast",
     "tags": ["news", "video", "mainstream"],
-    "region": "US"
+    "region": "US",
+    "status": "unavailable",
+    "note": "Feed returns HTML, no video enclosures. Audio version: https://feeds.megaphone.fm/ESP4140596756"
   },
   {
     "title": "ABC News — Nightline (Video Podcast)",
     "url": "http://feeds.abcnews.com/abcnews/nightlinevideopodcast",
     "tags": ["news", "video", "mainstream"],
-    "region": "US"
+    "region": "US",
+    "status": "unavailable"
   },
   {
     "title": "ABC News — 20/20 In Touch (Video Podcast)",
     "url": "http://feeds.abcnews.com/abcnews/2020intouchvideopodcast",
     "tags": ["news", "video", "mainstream"],
-    "region": "US"
+    "region": "US",
+    "status": "unavailable"
   },
-
   {
     "title": "Democracy Now! — Video Podcast (progressive)",
     "url": "https://www.democracynow.org/podcast-video.xml",
     "tags": ["news", "video", "progressive"],
-    "region": "US/global"
+    "region": "US/global",
+    "status": "working"
   }
 ]
