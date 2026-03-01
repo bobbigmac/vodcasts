@@ -208,6 +208,374 @@
 - category: teaching
 - tags: orthodox, bible-study
 
+## daily-orthodox-scriptures
+- url: http://feeds.ancientfaith.com/DailyOrthodoxScriptures
+- title: Daily Orthodox Scriptures
+- category: devotional
+- tags: orthodox, daily, bible-reading
+
+## whole-counsel-of-god
+- url: http://feeds.ancientfaith.com/WholeCounselOfGod
+- title: The Whole Counsel of God
+- category: teaching
+- tags: orthodox, bible-study
+
+## ancient-faith-today-live
+- url: http://feeds.ancientfaith.com/AncientFaithTodayLive
+- title: Ancient Faith Today Live
+- category: teaching
+- tags: orthodox, call-in, live
+
+## orthodoxy-live
+- url: http://feeds.ancientfaith.com/OrthodoxyLive
+- title: Orthodoxy Live
+- category: teaching
+- tags: orthodox, call-in
+
+## lord-of-spirits
+- url: http://feeds.ancientfaith.com/TheLordOfSpirits
+- title: The Lord of Spirits
+- category: teaching
+- tags: orthodox, theology, angels-demons
+
+## made-to-be-a-kingdom
+- url: https://feeds.ancientfaith.com/MadeToBeAKingdom
+- title: Made to Be a Kingdom
+- category: teaching
+- tags: orthodox, spiritual-formation
+
+## paul-washer-sermons
+- url: https://feeds.feedburner.com/PaulWasherSermons
+- title: Paul Washer Sermons
+- category: sermons
+- tags: sermons, paul-washer, reformed-baptist
+
+## focus-on-the-family-weekend
+- url: https://www.omnycontent.com/d/playlist/6b62b447-e557-44a9-ae88-af6300da5440/77455e7a-5455-43c9-821e-af88014d8ee7/d7777495-b988-417c-862c-af88014d8ef0/podcast.rss
+- title: Focus on the Family Weekend
+- category: radio
+- tags: focus-on-the-family, family, weekend
+
+## focus-equipping-parents
+- url: https://www.omnycontent.com/d/playlist/6b62b447-e557-44a9-ae88-af6300da5440/7cb9a9ac-1278-4e09-8fbc-af88014d8ebd/ea400406-69c1-404e-b75b-af88014d8ecb/podcast.rss
+- title: Focus on the Family — Equipping Parents
+- category: radio
+- tags: focus-on-the-family, parenting
+
+## help-me-teach-the-bible
+- url: https://feeds.simplecast.com/TtKQNBCJ
+- title: Help Me Teach The Bible — Nancy Guthrie
+- category: teaching
+- tags: bible-teaching, nancy-guthrie, expositional, weekly
+
+## reality-la-bible-teaching
+- url: https://realityla.libsyn.com/rss
+- title: Reality LA — Bible Teaching
+- category: sermons
+- tags: sermons, bible-teaching, los-angeles
+
+## verse-by-verse-chris-white
+- url: http://feeds.feedburner.com/VerseByVerseBibleTeachingPodcasts
+- title: Verse by Verse Bible Teaching — Chris White
+- category: teaching
+- tags: expositional, verse-by-verse
+
+## reformed-brotherhood
+- url: https://reformedbrotherhood.libsyn.com/rss
+- title: Reformed Brotherhood
+- category: teaching
+- tags: reformed, theology, brotherly-love
+
+## reformed-forum
+- url: http://feeds.feedburner.com/ReformedForumWestminsterTheologicalSeminaryFaculty
+- title: Reformed Forum — Westminster Theological Seminary
+- category: teaching
+- tags: reformed, westminster, seminary, theology
+
+## doctrine-at-work
+- url: https://feeds.transistor.fm/doctrine-at-work
+- title: Doctrine at Work
+- category: teaching
+- tags: reformed, theology, practical
+
+## crossway-milford-sermons
+- url: https://podcasts.subsplash.com/x4r4sqf/podcast.rss
+- title: Crossway Milford — Sermons
+- category: sermons
+- tags: sermons, multi-site
+
+## richwoods-christian-church
+- url: https://richwoods.libsyn.com/rss
+- title: Richwoods Christian Church — Sermons
+- category: sermons
+- tags: sermons, illinois
+
+## mlj-trust-sermons
+- url: https://www.mljtrust.org/sermons/podcast/
+- title: Sermons of Dr. Martyn Lloyd-Jones
+- category: sermons
+- tags: sermons, lloyd-jones, reformed, classic
+
+## timothy-keller-sermons
+- url: https://podcast.gospelinlife.com/feed.xml
+- title: Timothy Keller Sermons — Gospel in Life
+- category: sermons
+- tags: sermons, timothy-keller, reformed, new-york
+
+## bishop-barron-sermons
+- url: https://wordonfire.podbean.com/feed.xml
+- title: Bishop Barron's Sunday Sermons
+- category: sermons
+- tags: catholic, homilies, word-on-fire
+
+## harvest-baptist-ga
+- url: https://feeds.transistor.fm/harvest-baptist-church-ga-sermons
+- title: Harvest Baptist Church Georgia — Sermons
+- category: sermons
+- tags: sermons, baptist, georgia
+
+## saint-andrews-presbyterian-yakima
+- url: https://feed.podbean.com/saintandrewsyakima/feed.xml
+- title: Saint Andrew's Presbyterian Church Yakima
+- category: sermons
+- tags: sermons, presbyterian, washington
+
+## redeemer-presbyterian
+- url: https://rss.buzzsprout.com/3182.rss
+- title: Redeemer Presbyterian Church
+- category: sermons
+- tags: sermons, presbyterian, pca
+
+## south-run-baptist
+- url: https://southrun.org/sermons?format=rss
+- title: South Run Baptist Church — Sermons
+- category: sermons
+- tags: sermons, baptist, virginia
+
+## cbcaiken-sermons
+- url: https://www.cbcaiken.com/podcast?format=rss
+- title: CBC Aiken — Sermons
+- category: sermons
+- tags: sermons, baptist, south-carolina
+
+## amazing-grace-baptist-mount-airy
+- url: https://feeds.simplecast.com/fuQTFue_
+- title: Amazing Grace Baptist Church Mount Airy
+- category: sermons
+- tags: sermons, baptist, north-carolina
+
+## first-baptist-columbia-wf
+- url: https://media.rss.com/fbcwf/feed.xml
+- title: First Baptist Columbia WF
+- category: sermons
+- tags: sermons, baptist, texas
+
+## perdido-bay-methodist
+- url: https://pbumc.libsyn.com/rss
+- title: Perdido Bay Methodist Church
+- category: sermons
+- tags: sermons, methodist, florida
+
+## st-matthews-methodist
+- url: https://rss.buzzsprout.com/17559.rss
+- title: St. Matthew's United Methodist Church
+- category: sermons
+- tags: sermons, methodist
+
+## first-church-warsaw-methodist
+- url: https://feeds.feedburner.com/FirstChurchWarsaw
+- title: First United Methodist Church Warsaw
+- category: sermons
+- tags: sermons, methodist, indiana
+
+## godspeak-calvary
+- url: https://rss.buzzsprout.com/6238.rss
+- title: Godspeak Calvary Chapel
+- category: sermons
+- tags: sermons, calvary-chapel, california
+
+## word-for-today-daily
+- url: https://feeds.feedburner.com/TheWordForTodaydaily
+- title: The Word For Today — Daily
+- category: devotional
+- tags: devotional, daily, chuck-smith
+
+## moira-pentecostal
+- url: https://feeds.feedburner.com/MoiraPentecostalChurch
+- title: Moira Pentecostal Church — Sermons
+- category: sermons
+- tags: sermons, pentecostal, northern-ireland
+
+## mount-calvary-lutheran-sa
+- url: https://podcasts.subsplash.com/4htwzgq/podcast.rss
+- title: Mount Calvary Lutheran — San Antonio
+- category: sermons
+- tags: sermons, lutheran, texas
+
+## issues-etc
+- url: https://issuesetc.org/feed/podcast/
+- title: Issues, Etc.
+- category: teaching
+- tags: lutheran, theology, apologetics, lcms
+
+## word-of-the-lord-endures
+- url: https://thewordendures.org/feed/podcast/
+- title: The Word of the Lord Endures Forever
+- category: teaching
+- tags: lutheran, bible-study
+
+## lutheran-witness
+- url: https://kfuo-rss.streamguys1.com/lutheran-witness-podcast/lutheranwitness-itunes.xml
+- title: The Lutheran Witness Podcast
+- category: teaching
+- tags: lutheran, lcms
+
+## luther-for-the-busy-man
+- url: https://feeds.simplecast.com/ebnkvvQI
+- title: Luther for the Busy Man
+- category: teaching
+- tags: lutheran, martin-luther, reformed
+
+## orthodox-christian-fellowship
+- url: https://feeds.feedburner.com/OrthodoxChristianFellowship
+- title: OCF Campus Ministry — Orthodox Christian Fellowship
+- category: teaching
+- tags: orthodox, campus, college
+
+## fourth-antiphon
+- url: https://feeds.feedburner.com/FourthAntiphon
+- title: Fourth Antiphon
+- category: teaching
+- tags: orthodox, liturgy
+
+## orthodox-christian-parenting
+- url: https://feeds.transistor.fm/orthodox-christian-parenting
+- title: Orthodox Christian Parenting
+- category: teaching
+- tags: orthodox, family, parenting
+
+## aldersgate-umc-children
+- url: http://feeds.feedburner.com/AldersgateUmcChildrensSermonsAndDailyDevotionals
+- title: Aldersgate UMC — Children's Sermons & Devotionals
+- category: family
+- tags: methodist, children, devotional
+
+## morning-evening-spurgeon
+- url: https://feeds.megaphone.fm/morningandevening
+- title: Morning and Evening with Charles Spurgeon
+- category: devotional
+- tags: devotional, daily, spurgeon
+
+## heart-of-spurgeon
+- url: https://feed.podbean.com/heartofspurgeon/feed.xml
+- title: From the Heart of Spurgeon
+- category: teaching
+- tags: spurgeon, classic, reformed
+
+## engaging-spurgeon
+- url: https://feeds.transistor.fm/engaging-spurgeon
+- title: Engaging Spurgeon
+- category: teaching
+- tags: spurgeon, reformed
+
+## spurgeon-sermons-official
+- url: https://pcr-rss.streamguys1.com/Spurgeon/spurgeon-sermons.xml
+- title: Spurgeon Sermons — Official Podcast
+- category: sermons
+- tags: sermons, spurgeon, classic
+
+## in-the-market-janet-parshall
+- url: https://www.omnycontent.com/d/playlist/a8cdbf10-d816-4c77-9e79-aa1c012547e1/2c4fab5d-5afc-4430-852c-aa3801443b07/8dc5bee8-e8d4-4095-9c13-aa3801443b07/podcast.rss
+- title: In the Market with Janet Parshall
+- category: radio
+- tags: moody, interviews, cultural-commentary
+
+## eric-walsh-sermons
+- url: https://www.audioverse.org/en/presenters/4/feed.xml
+- title: Sermons by Eric Walsh
+- category: sermons
+- tags: sermons, seventh-day-adventist
+
+## sabbath-school-study-hour
+- url: https://feeds.feedburner.com/centralstudyhour
+- title: Sabbath School Study Hour
+- category: teaching
+- tags: seventh-day-adventist, bible-study
+
+## unshackled-audio-dramas
+- url: https://podcasts.subsplash.com/9sgs2hm/podcast.rss
+- title: UNSHACKLED! Audio Dramas
+- category: family
+- tags: pacific-garden-mission, audio-drama, testimonies
+
+## shiloh-instrumental-hymns
+- url: http://www.shilohworshipmusic.com/ShilohWorshipMusic/Free_Instrumental_Hymns_and_Songs/rss.xml
+- title: Free Instrumental Hymns and Songs
+- category: gospel-music
+- tags: hymns, instrumental, worship
+
+## shiloh-bluegrass-gospel-2
+- url: http://www.shilohworshipmusic.com/ShilohWorshipMusic/Free_Bluegrass_Gospel_Hymns_Songs_2/rss.xml
+- title: Free Bluegrass Gospel Hymns Songs 2
+- category: gospel-music
+- tags: bluegrass, gospel, hymns
+
+## southern-branch-bluegrass-gospel
+- url: https://feeds.soundcloud.com/users/soundcloud:users:134294018/sounds.rss
+- title: Southern Branch Bluegrass & Gospel Music Radio
+- category: gospel-music
+- tags: bluegrass, gospel, music
+
+## insight-for-living-daily
+- url: http://feeds.feedburner.com/InsightForLivingDailyBroadcast
+- title: Insight for Living — Chuck Swindoll
+- category: teaching
+- tags: chuck-swindoll, daily, expositional
+
+## david-jeremiah-turning-point
+- url: https://www.davidjeremiah.org/rss/radio/wkja-fm
+- title: Turning Point — David Jeremiah
+- category: teaching
+- tags: david-jeremiah, daily
+
+## grace-to-you-oneplace
+- url: https://www.oneplace.com/ministries/grace-to-you/subscribe/podcast.xml
+- title: Grace to You — John MacArthur
+- category: teaching
+- tags: john-macarthur, expositional, gty
+
+## ten-commandments-ep
+- url: https://www.epchurch.org.au/feed/podcast/the-ten-commandments/index.php/
+- title: The Ten Commandments — Evangelical Presbyterian
+- category: teaching
+- tags: epc, ten-commandments, australia
+
+# === Apologetics ===
+
+## apologetics-com-radio
+- url: https://apologetics.com/podcast/Apologetics.comWeeklyRadioShow.xml
+- title: Apologetics.com Radio Show
+- category: teaching
+- tags: apologetics, weekly, radio
+
+## adherent-apologetics
+- url: https://feed.podbean.com/adherentapologetics/feed.xml
+- title: Adherent Apologetics
+- category: teaching
+- tags: apologetics, defense-of-faith
+
+## cave-to-the-cross
+- url: https://cavetothecross.com/feed/podcast/
+- title: Cave to the Cross Apologetics
+- category: teaching
+- tags: apologetics
+
+## mama-bear-apologetics
+- url: https://mamabearapologetics.com/category/mama-bear-podcast/feed/
+- title: Mama Bear Apologetics
+- category: teaching
+- tags: apologetics, parenting, family
+
 # === Catholic ===
 
 ## catholic-sermons-station-of-the-cross
@@ -236,6 +604,18 @@
 - category: gospel-music
 - tags: southern-gospel, quartet, interviews
 
+## songs-of-hope-gospel
+- url: http://feeds.feedburner.com/SongsOfHopeGospelMusic
+- title: Songs of Hope Gospel Music
+- category: gospel-music
+- tags: gospel, music, hymns
+
+## greatest-gospel-music
+- url: https://media.rss.com/greatest-gospel-music-of-all-time/feed.xml
+- title: Greatest Gospel Music Of All Time
+- category: gospel-music
+- tags: gospel, music, classic
+
 # === Old-time radio & archives ===
 
 ## old-time-radio-hour
@@ -255,6 +635,24 @@
 - title: Living on the Edge — Chip Ingram
 - category: teaching
 - tags: chip-ingram, daily, practical
+
+## my-devotional-leading-the-way
+- url: https://feeds.simplecast.com/Yzqhsql7
+- title: MY Devotional — Leading The Way
+- category: devotional
+- tags: devotional, daily, michael-youssef
+
+## unshackled-daily
+- url: https://podcasts.subsplash.com/w7xj2kw/podcast.rss
+- title: UNSHACKLED! Daily Devotionals
+- category: devotional
+- tags: devotional, daily, pacific-garden-mission
+
+## wels-daily-devotions
+- url: https://feeds.feedburner.com/WELSEvangelismDailyDevotions
+- title: WELS Daily Devotions
+- category: devotional
+- tags: devotional, daily, lutheran, wels
 
 # === Public radio & Americana ===
 

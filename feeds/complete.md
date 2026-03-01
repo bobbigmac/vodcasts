@@ -459,29 +459,11 @@
 - category: talks
 - tags: talks, ideas, video
 
-## democracy-now-video
-- url: https://www.democracynow.org/podcast-video.xml
-- title: Democracy Now! Video
-- category: news
-- tags: news, video, progressive
-
 ## msnbc-rachel-maddow-video
 - url: http://podcastfeeds.nbcnews.com/nbcnews/video/podcast/MSNBC-MADDOW-NETCAST-M4V.xml
 - title: MSNBC Rachel Maddow (Video)
 - category: news
 - tags: news, video, msnbc, politics
-
-## tech-news-weekly-video
-- url: https://feeds.twit.tv/tnw_video_hd.xml
-- title: Tech News Weekly (Video)
-- category: tech
-- tags: tech, news, video, twit
-
-## daily-tech-news-show-video
-- url: http://feeds.feedburner.com/daily_tech_news_show
-- title: Daily Tech News Show (Video)
-- category: tech
-- tags: tech, news, video
 
 ## geek-news-central-video
 - url: https://geeknewscentral.com/feed/video/
@@ -518,3 +500,45 @@
 - title: Security Weekly News (Video)
 - category: tech
 - tags: tech, security, news, video
+
+## peerview-neurology
+- url: https://c.peerview.com/podcast/xml/neurology_video.xml
+- title: PeerView Neuroscience & Psychiatry (CME Video)
+- category: education
+- tags: education, medical, cme, neurology, psychiatry
+
+## peerview-internal-medicine
+- url: https://c.peerview.com/podcast/xml/internalmedicine_video.xml
+- title: PeerView Internal Medicine (CME Video)
+- category: education
+- tags: education, medical, cme, internal-medicine
+
+## peerview-oncology
+- url: https://c.peerview.com/podcast/xml/oncology_video.xml
+- title: PeerView Oncology & Hematology (CME Video)
+- category: education
+- tags: education, medical, cme, oncology
+
+## better-business-coach-video
+- url: https://matthewpollard.com/feed/better-business-coach-video-podcast/
+- title: Better Business Coach Video Podcast
+- category: business
+- tags: business, sales, education, actionable
+
+## you-can-read-the-bible-video
+- url: https://youcanreadthebible.com/feed/podcast.php?which=sghvideo
+- title: You Can Read the Bible Christian Education (Video)
+- category: education
+- tags: education, bible, christian
+
+## denver-education-video
+- url: https://denver.granicus.com/VPodcast.php?view_id=73
+- title: Denver Education Video Podcast
+- category: education
+- tags: education, government, denver
+
+## wgbh-science-city
+- url: http://streams.wgbh.org/online/science/video2007/podcast.xml
+- title: WGBH Science City Video (archival)
+- category: education
+- tags: education, science, mit, cambridge, archival
