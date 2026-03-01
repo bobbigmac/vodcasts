@@ -296,6 +296,13 @@
 - category: tv-ministry
 - tags: devotional, copeland, faith, daily
 
+## democracy-now-video
+- url: https://www.democracynow.org/podcast-video.xml
+- title: Democracy Now! Video
+- category: podcastindex
+- category: news
+- tags: news, international, democracy, freedom
+
 ## discovering-the-jewish-jesus
 - url: https://djjvideo.podbean.com/feed.xml
 - title: Discovering The Jewish Jesus

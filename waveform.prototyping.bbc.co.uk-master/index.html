@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Web Media Waveforms — BBC Research and Development</title>
+  <meta name="Author" content="Chris Finch">
+  <link href="vendor/house-style.min.css" rel="stylesheet" type="text/css">
+  <link href="vendor/peaks.css" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body class="home">
+
+    <header class="masthead">
+      <div class="grid">
+        <div class="grid-col grid-12">
+          <span class="masterbrand">BBC</span>
+          <span class="dept">Research &amp; Development</span>
+        </div>
+      </div><!-- .grid -->
+    </header>
+
+    <div class="grid">
+
+      <div class="grid-row clearfix">
+        <div class="project-header with-border ph-with-toolbar grid-col grid-12 clearfix">
+          <div>
+            <h1>Peaks.js</h1>
+          </div>
+          <!--
+            <div class="ph-toolbar">
+            (toolbar items)
+            </div>
+          -->
+        </div>
+      </div>
+
+      <div class="grid-row clearfix panel-full-height">
+        <div class="panel grid-col grid-8 introduction">
+          <h1 class="hd">Browser-based audio waveform visualisation</h1>
+          <p class="intro">Peaks.js encompasses a suite of software tools designed to allow users to view and interact with audio waveform material in the browser.</p>
+          <p>Peaks.js uses the HTML5 <b>&lt;canvas&gt;</b> element to display waveform data at different zoom levels, and synchronise the display to playback of an associated <b>&lt;audio&gt;</b> element. The component provides some basic convenience methods for interacting with waveforms and regions of time in the audio, e.g., for distinguishing music from speech, or identifying different music tracks.</p>
+          <p> For more information on this project, please read <a href="http://www.bbc.co.uk/rd/blog/2013/10/audio-waveforms">this article</a> on the BBC R&amp;D blog.</a></p>
+
+          <div class="workflow">
+            <h2 class="hd">Workflow</h2>
+            <img src="waveform_workflow.png" alt="waveform workflow" />
+          </div>
+        </div><!-- .grid-8 -->
+
+        <div class="grid-col grid-4 ecosystem panel control-panel">
+          <h2 class="hd">Source Code</h2>
+          <ul>
+            <li>
+              <h3><a href="https://github.com/bbc/audiowaveform">audiowaveform</a></h3>
+              <span class="desc">C++ program that generates waveform data files from MP3 or WAV format audio.</span>
+            </li>
+            <li>
+              <h3><a href="https://github.com/bbc/audio_waveform-ruby">audio_waveform-ruby</a></h3>
+              <span class="desc">A Ruby gem that can read and write waveform data files.</span>
+            </li>
+            <li>
+              <h3><a href="https://github.com/bbc/waveform-data.js">waveform-data.js</a></h3>
+              <span class="desc">JavaScript library that provides access to precomputed waveform data files, or can generate waveform data using the Web Audio API.</span>
+            </li>
+            <li>
+              <h3><a href="https://github.com/bbc/peaks.js">peaks.js</a></h3>
+              <span class="desc">JavaScript UI component for interacting with waveforms.</span>
+            </li>
+          </ul>
+          <h2 class="hd">Project Team</h2>
+          <p>Software design and development by
+          <a href="http://www.bbc.co.uk/rd/people/chris-finch">Chris Finch</a>,
+          <a href="http://www.bbc.co.uk/rd/people/thomas-parisot">Thomas Parisot</a>,
+          and <a href="http://www.bbc.co.uk/rd/people/chris-needham">Chris Needham</a>.</p>
+          <h2 class="hd">Contact Us</h2>
+          <p>If you have questions, comments or suggestions, please get in touch:
+            <a href="mailto:irfs@bbc.co.uk">irfs@bbc.co.uk</a>.
+          </p>
+        </div><!-- .grid-4 -->
+      </div><!-- .grid-row -->
+
+      <div class="grid-row clearfix" id="waveform">
+        <div class="grid-col grid-12">
+          <h2>Example Demo</h2>
+          <div id="peaks-container">
+            <div class="waveform">
+              <div class="overview-container"></div>
+              <div class="zoom-container"></div>
+            </div>
+          </div>
+          <div class="peaks-control">
+            <div class="peaks-audio">
+              <audio id="peaks-audio" controls>
+                <source src="data/sample.mp3" type="audio/mpeg">
+                <source src="data/sample.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+
+            <div class="combined-buttons">
+              <button id="zoomIn" class="button">Zoom In</button>
+              <button id="zoomOut" class="button">Zoom Out</button>
+            </div>
+            <button id="add-segment" class="button">Create Segment</button>
+            <button id="add-point" class="button">Create Point</button>
+          </div>
+        </div><!-- .grid-12 -->
+      </div><!-- .grid-row -->
+
+      <div class="grid-row" id="make-your-own">
+        <div class="grid-col grid-12">
+          <h2>Make your own</h2>
+
+          <p>
+            <em>Drag</em> or <em>select</em> an audio file in order to update the waveform accordingly.
+            <br>
+            The files can be either in MP3, WAV or OGG format.
+          </p>
+
+          <p>
+            <strong>Notice</strong>: the waveform processing is performed by your browser, thus none of your audio file will be uploaded on the Internet.
+          </p>
+        </div>
+
+        <div class="grid-col grid-6" data-droppable>
+          Drop an audio file here to update the waveform …
+        </div>
+
+        <div class="grid-col grid-6 file-upload">
+          … or select a file <input type="file" accept="audio/*" data-uploadable>
+        </div>
+      </div>
+
+    </div><!-- .grid -->
+
+    <footer class="masthead">
+      <div class="grid">
+        <span>&copy; Copyright 2015 BBC Research and Development</span>
+        <span class="audio_licence"><img src="cc-logo.png" alt="" height="36">The audio in this demo is taken from the <a href="http://en.wikipedia.org/wiki/File:Alice_walker_bbc_radio4_desert_island_discs_19_05_2013.flac">radio show Desert Island</a>, used under the terms of the <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons 3.0 Unported license</a>.</span>
+      </div>
+    </footer>
+
+    <script src="bundle.js" async></script>
+</body>
+</html>
