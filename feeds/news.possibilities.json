@@ -1,0 +1,125 @@
+[
+  {
+    "title": "Reuters — Most Recent Video",
+    "url": "http://feeds.reuters.com/reuters/USVideoLatest",
+    "tags": ["news", "video", "neutral-ish"],
+    "region": "global/US"
+  },
+  {
+    "title": "Reuters — Top News Video",
+    "url": "http://feeds.reuters.com/reuters/USVideoTopNews",
+    "tags": ["news", "video", "neutral-ish"],
+    "region": "global/US"
+  },
+  {
+    "title": "Reuters — World News Video",
+    "url": "http://feeds.reuters.com/reuters/USVideoWorldNews",
+    "tags": ["news", "video", "neutral-ish"],
+    "region": "global"
+  },
+  {
+    "title": "Reuters — Politics Video",
+    "url": "http://feeds.reuters.com/reuters/USVideoPolitics",
+    "tags": ["news", "video", "neutral-ish"],
+    "region": "US"
+  },
+  {
+    "title": "Reuters — Breakingviews Video",
+    "url": "http://feeds.reuters.com/reuters/USVideoBreakingviews",
+    "tags": ["news", "video", "markets/opinion"],
+    "region": "global"
+  },
+  {
+    "title": "Reuters — Business Video",
+    "url": "http://feeds.reuters.com/reuters/USVideoBusiness",
+    "tags": ["news", "video", "business"],
+    "region": "global/US"
+  },
+  {
+    "title": "Reuters — Technology Video",
+    "url": "http://feeds.reuters.com/reuters/USVideoTechnology",
+    "tags": ["news", "video", "tech"],
+    "region": "global/US"
+  },
+  {
+    "title": "Reuters — Environment Video",
+    "url": "http://feeds.reuters.com/reuters/USVideoEnvironment",
+    "tags": ["news", "video", "environment"],
+    "region": "global/US"
+  },
+  {
+    "title": "Reuters — Rough Cuts",
+    "url": "http://feeds.reuters.com/reuters/USVideoRoughCuts",
+    "tags": ["news", "video"],
+    "region": "global/US"
+  },
+  {
+    "title": "Reuters — Oddly Enough Video",
+    "url": "http://feeds.reuters.com/reuters/USVideoOddlyEnough",
+    "tags": ["news", "video", "lighter"],
+    "region": "global/US"
+  },
+
+  {
+    "title": "NASA — This Week @NASA (Vodcast)",
+    "url": "https://www.nasa.gov/rss/dyn/TWAN_vodcast.rss",
+    "tags": ["science", "video"],
+    "region": "US/global"
+  },
+  {
+    "title": "NASA — NASA 360 (Vodcast)",
+    "url": "https://www.nasa.gov/rss/dyn/nasa360_vodcast.rss",
+    "tags": ["science", "video"],
+    "region": "US/global"
+  },
+  {
+    "title": "JPL — Podcast Feed",
+    "url": "https://www.jpl.nasa.gov/multimedia/podcast/podfeed.xml",
+    "tags": ["science", "space", "video"],
+    "region": "US/global"
+  },
+  {
+    "title": "PBS — NOVA Video",
+    "url": "http://feeds.pbs.org/pbs/wgbh/nova-video",
+    "tags": ["science", "documentary", "video"],
+    "region": "US"
+  },
+  {
+    "title": "TED Talks — Video",
+    "url": "http://feeds.feedburner.com/TEDTalks_video",
+    "tags": ["talks", "ideas", "video"],
+    "region": "global"
+  },
+  {
+    "title": "CNET — HD Podcast Feed",
+    "url": "http://feed.cnet.com/feed/podcast/all/hd.xml",
+    "tags": ["tech", "video"],
+    "region": "US"
+  },
+
+  {
+    "title": "ABC News — World News (Video Podcast)",
+    "url": "http://feeds.abcnews.com/abcnews/worldnewsvideopodcast",
+    "tags": ["news", "video", "mainstream"],
+    "region": "US"
+  },
+  {
+    "title": "ABC News — Nightline (Video Podcast)",
+    "url": "http://feeds.abcnews.com/abcnews/nightlinevideopodcast",
+    "tags": ["news", "video", "mainstream"],
+    "region": "US"
+  },
+  {
+    "title": "ABC News — 20/20 In Touch (Video Podcast)",
+    "url": "http://feeds.abcnews.com/abcnews/2020intouchvideopodcast",
+    "tags": ["news", "video", "mainstream"],
+    "region": "US"
+  },
+
+  {
+    "title": "Democracy Now! — Video Podcast (progressive)",
+    "url": "https://www.democracynow.org/podcast-video.xml",
+    "tags": ["news", "video", "progressive"],
+    "region": "US/global"
+  }
+]

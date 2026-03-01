@@ -1,0 +1,22 @@
+/**
+ * Corner overlay buttons (back, share, etc.).
+ */
+.cornerBtn {
+  position: absolute;
+  top: 18px;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid var(--edge);
+  background: rgba(0,0,0,.55);
+  backdrop-filter: blur(8px);
+  color: var(--text);
+  cursor: pointer;
+  z-index: 90;
+  transition: opacity 0.35s ease, background 0.15s ease;
+}
+.cornerBtnLeft { left: 18px }
+.cornerBtn:not(.cornerBtnLeft) { right: 18px }
+.cornerBtn.cornerBtnMid { right: 72px }
+.cornerBtn.cornerBtnShare { right: 126px }
+.cornerBtn:hover { background: rgba(0,0,0,.7) }

@@ -1,0 +1,531 @@
+/**
+ * Guide panel (slide-up) and schedule grid.
+ */
+.guidePanel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-height: 70vh;
+  background: color-mix(in srgb, var(--panel) 92%, transparent);
+  border: 1px solid var(--edge);
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 8px 32px rgba(0,0,0,.5);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 100;
+  transition: bottom 0.25s ease, opacity 0.2s ease;
+  backdrop-filter: blur(12px);
+}
+.guidePanel[aria-hidden="false"] { bottom: 0; opacity: 1 }
+.guidePanel[aria-hidden="true"] { bottom: -72vh; opacity: 0; pointer-events: none }
+
+.guidePanel-inner {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.guideBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 6px;
+  font-size: 10px;
+  line-height: 1;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  font-variant-numeric: tabular-nums;
+  text-transform: uppercase;
+  border: 1px solid var(--edge);
+  border-radius: 999px;
+  background: rgba(255,255,255,.03);
+  color: var(--muted);
+}
+.guideBadge-cc {
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--edge));
+  background: color-mix(in srgb, var(--accent) 12%, rgba(255,255,255,.03));
+  color: color-mix(in srgb, var(--accent) 60%, var(--text));
+}
+.guideBadge-new {
+  border-color: color-mix(in srgb, #ffd166 55%, var(--edge));
+  background: color-mix(in srgb, #ffd166 14%, rgba(255,255,255,.03));
+  color: color-mix(in srgb, #ffd166 65%, var(--text));
+}
+
+.guideGridChannelsScroll .guideBadge-cc,
+.guideGridTracksScroll .guideBadge-cc {
+  opacity: 0.22;
+  border-color: color-mix(in srgb, var(--muted) 50%, var(--edge));
+  background: rgba(255,255,255,.02);
+  color: var(--muted);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 2px 5px;
+  font-size: 9px;
+}
+.guideGridChanRow.focused .guideBadge-cc,
+.guideGridTrackRow.focused .guideBadge-cc,
+.guideGridEp.focused .guideBadge-cc { opacity: 0.36 }
+
+.guideGridChannelsScroll .guideBadge-new,
+.guideGridTracksScroll .guideBadge-new {
+  opacity: 0.42;
+  border-color: color-mix(in srgb, #ffd166 35%, var(--edge));
+  background: rgba(255,255,255,.02);
+  color: color-mix(in srgb, #ffd166 55%, var(--muted));
+  font-weight: 750;
+  letter-spacing: 0.06em;
+  padding: 2px 5px;
+  font-size: 9px;
+}
+.guideGridChanRow.focused .guideBadge-new,
+.guideGridTrackRow.focused .guideBadge-new,
+.guideGridEp.focused .guideBadge-new { opacity: 0.56 }
+
+.guideGridShell {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--guide-grid-bg, rgba(0,0,0,.12));
+}
+
+.guideSidebarToggle {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--edge);
+  background: rgba(0,0,0,.55);
+  backdrop-filter: blur(8px);
+  color: var(--text);
+  font: 700 12px/1 var(--sans, system-ui);
+  cursor: pointer;
+  z-index: 12;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-4px);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+.guideSidebarToggle:hover { background: rgba(0,0,0,.7) }
+
+.guideGridTracksScroll {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--edge) transparent;
+  background: var(--guide-grid-bg, rgba(0,0,0,.12));
+  touch-action: pan-x pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.guideGridTracksScroll.dragging { cursor: grabbing }
+.guideGridTracksScroll::-webkit-scrollbar { width: 10px; height: 10px }
+.guideGridTracksScroll::-webkit-scrollbar-track { background: transparent }
+.guideGridTracksScroll::-webkit-scrollbar-thumb { background: var(--edge); border-radius: 6px }
+.guideGridTracksScroll::-webkit-scrollbar-thumb:hover { background: var(--muted) }
+
+.guideGridChannelsScroll {
+  width: 240px;
+  flex: 0 0 240px;
+  overflow: hidden;
+  position: relative;
+  background: var(--guide-grid-bg, rgba(0,0,0,.12));
+}
+.guideGridChannelsInner { will-change: transform }
+.guideGridChannelsScroll::-webkit-scrollbar { width: 10px }
+.guideGridChannelsScroll::-webkit-scrollbar-track { background: transparent }
+.guideGridChannelsScroll::-webkit-scrollbar-thumb { background: var(--edge); border-radius: 6px }
+.guideGridChannelsScroll::-webkit-scrollbar-thumb:hover { background: var(--muted) }
+
+.guideGridHeaderRow {
+  z-index: 10;
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid var(--edge);
+  background: var(--guide-head-bg, color-mix(in srgb, var(--panel) 92%, rgba(0,0,0,.2)));
+  backdrop-filter: blur(10px);
+}
+.guideGridCorner {
+  z-index: 11;
+  width: 240px;
+  flex: 0 0 240px;
+  padding: 10px 12px;
+  border-right: 1px solid var(--edge);
+  background: var(--guide-corner-bg, inherit);
+  cursor: pointer;
+}
+.guideGridCornerTop { font-size: 12px; font-weight: 750; letter-spacing: 0.06em; text-transform: uppercase; display: flex; gap: 8px; align-items: baseline }
+.guideGridCornerTopCount { font-size: 11px; letter-spacing: 0.02em; color: color-mix(in srgb, var(--muted) 80%, var(--text)) }
+.guideGridCornerSub { font-size: 11px; color: var(--muted); margin-top: 6px; display: flex; flex-direction: column; gap: 6px; align-items: stretch }
+.guideGridCornerCount { font-variant-numeric: tabular-nums; opacity: 0.9 }
+.guideGridFilterRow { display: flex; gap: 8px; align-items: center }
+
+.guideFilterInput {
+  flex: 1;
+  min-width: 0;
+  height: 28px;
+  padding: 0 10px;
+  border-radius: 10px;
+  border: 1px solid var(--edge);
+  background: rgba(0,0,0,.22);
+  color: var(--text);
+  font: 600 12px/28px var(--sans, system-ui);
+  outline: none;
+}
+.guideFilterInput::placeholder { color: color-mix(in srgb, var(--muted) 75%, transparent) }
+.guideFilterInput:focus { border-color: color-mix(in srgb, var(--accent) 55%, var(--edge)); box-shadow: 0 0 0 2px rgba(0,0,0,.25) inset }
+
+.guideFilterClear {
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  border-radius: 10px;
+  border: 1px solid var(--edge);
+  background: rgba(0,0,0,.22);
+  color: var(--muted);
+  cursor: pointer;
+}
+.guideFilterClear:hover { color: var(--text); border-color: color-mix(in srgb, var(--edge) 55%, var(--muted)) }
+
+.guideGridTimeAxis {
+  position: relative;
+  height: 46px;
+  will-change: transform;
+}
+.guideGridTick {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  border-left: 1px solid color-mix(in srgb, var(--edge) 85%, transparent);
+}
+.guideGridTickLabel {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 11px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.guideGridHeaderScroll {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+.guideGridHeaderScroll::-webkit-scrollbar { height: 10px }
+.guideGridHeaderScroll::-webkit-scrollbar-track { background: transparent }
+.guideGridHeaderScroll::-webkit-scrollbar-thumb { background: var(--edge); border-radius: 6px }
+.guideGridHeaderScroll::-webkit-scrollbar-thumb:hover { background: var(--muted) }
+
+.guideGridHeaderActions {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 0 10px;
+  border-left: 1px solid var(--edge);
+  background: var(--guide-head-bg, color-mix(in srgb, var(--panel) 92%, rgba(0,0,0,.2)));
+}
+.guideGridHeaderBtn {
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--edge);
+  background: rgba(0,0,0,.22);
+  color: var(--muted);
+  cursor: pointer;
+  font: 750 12px/1 var(--sans, system-ui);
+  letter-spacing: 0.04em;
+}
+.guideGridHeaderBtn:hover { color: var(--text); background: rgba(0,0,0,.3) }
+.guideGridHeaderBtn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  background: rgba(255,255,255,.02);
+  border-color: color-mix(in srgb, var(--edge) 75%, transparent);
+}
+.guideGridHeaderBtn:disabled:hover { color: var(--muted); background: rgba(255,255,255,.02) }
+.guideGridHeaderBtnFaves.active {
+  animation: guideFavesOnlyPulse 8.5s ease-in-out infinite;
+}
+@keyframes guideFavesOnlyPulse {
+  0%, 78%, 100% { box-shadow: none }
+  84% { box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 18%, transparent) }
+  90% { box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 28%, transparent) }
+}
+@media (prefers-reduced-motion: reduce) {
+  .guideGridHeaderBtnFaves.active { animation: none }
+}
+.guideGridHeaderBtn.active {
+  color: color-mix(in srgb, var(--accent) 85%, var(--text));
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--edge));
+  background: color-mix(in srgb, var(--accent) 12%, rgba(0,0,0,.22));
+}
+.guideGridHeaderBtnClose {
+  min-width: 38px;
+  padding: 6px 10px;
+  letter-spacing: 0;
+}
+
+.guideGridBodyRow {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.guideGridSpacer { flex: 0 0 auto }
+.guideGridChanRow,
+.guideGridTrackRow {
+  height: var(--guide-row-h, 56px);
+  min-height: var(--guide-row-h, 56px);
+  border-bottom: 1px solid rgba(255,255,255,.04);
+}
+.guideGridChanRow.focused,
+.guideGridTrackRow.focused { background: rgba(255,255,255,.03) }
+.guideGridChanRow.playing,
+.guideGridTrackRow.playing { background: rgba(138,180,248,.06) }
+
+.guideGridChannelCell {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 10px;
+  align-items: center;
+  padding: 6px 10px;
+  border-right: 1px solid var(--edge);
+  background: var(--guide-cell-bg, color-mix(in srgb, var(--panel) 86%, rgba(0,0,0,.2)));
+  cursor: pointer;
+  text-align: left;
+  height: 100%;
+}
+
+.guideGridChanRow.focused .guideGridChannelCell { outline: 2px solid color-mix(in srgb, var(--accent) 55%, transparent); outline-offset: -2px }
+.guideGridChanFave {
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid color-mix(in srgb, var(--edge) 85%, transparent);
+  border-radius: 10px;
+  background: rgba(0,0,0,.18);
+  color: color-mix(in srgb, var(--muted) 85%, var(--text));
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1;
+  opacity: 0.72;
+}
+.guideGridChanFave:hover { opacity: 0.95; background: rgba(0,0,0,.26) }
+.guideGridChanFave.on {
+  opacity: 0.98;
+  color: color-mix(in srgb, var(--accent) 92%, var(--text));
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--edge));
+  background: color-mix(in srgb, var(--accent) 10%, rgba(0,0,0,.18));
+}
+.guideGridChanMeta { min-width: 0; display: flex; flex-direction: column; gap: 2px }
+.guideGridChanName {
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.guideGridChanNameText { display: inline-block }
+.guideGridChanRow.focused .guideGridChanName { text-overflow: clip }
+.guideGridChanSub {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-width: 0;
+}
+.guideGridChanBadges { display: inline-flex; gap: 6px; flex-wrap: wrap; min-width: 0 }
+.guideGridChanNo {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 750;
+  font-size: 11px;
+  color: color-mix(in srgb, var(--muted) 80%, var(--text));
+  opacity: 0.55;
+  font-variant-numeric: tabular-nums;
+}
+.guideGridChanAudioIcon {
+  display: inline-flex;
+  opacity: 0.7;
+}
+
+.guideGridTrack {
+  position: relative;
+  height: 100%;
+  min-height: 56px;
+  padding: 6px 8px;
+  background: var(--guide-track-bg, rgba(0,0,0,.08));
+}
+
+.guideGridEp {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  padding: 6px 4px;
+  border-radius: 10px;
+  border: 1px solid var(--edge);
+  background: var(--guide-ep-bg, rgba(255,255,255,.03));
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  touch-action: manipulation;
+}
+.guideGridEp:hover { background: var(--guide-ep-hover-bg, rgba(255,255,255,.07)) }
+.guideGridEp.active { border-color: var(--accent); background: var(--guide-ep-active-bg, rgba(138,180,248,.12)) }
+.guideGridEp.repeat:not(.active) { background: var(--guide-ep-repeat-bg, var(--guide-ep-bg, rgba(255,255,255,.03))) }
+.guideGridEp.focused { outline: 2px solid color-mix(in srgb, var(--accent) 70%, transparent) }
+.guideGridEpLoad { justify-content: center; align-items: center; text-align: center; color: var(--muted) }
+
+.guideGridEpProgress {
+  position: absolute;
+  inset: 0;
+  width: 0%;
+  background: color-mix(in srgb, var(--accent) 24%, transparent);
+  pointer-events: none;
+}
+.guideGridEpTop {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  z-index: 1;
+}
+.guideGridEpBadges {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex: 0 0 auto;
+}
+.guideGridEpTitle {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-weight: 700;
+  font-size: 12.5px;
+  line-height: 1.15;
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.guideGridEpTitleText { display: inline-block }
+.guideGridEp.focused .guideGridEpTitle {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.guideGridEpBadge { flex: 0 0 auto }
+.guideGridEpMiniBadge {
+  padding: 2px 4px;
+  font-size: 9px;
+  letter-spacing: 0.08em;
+  opacity: 0.22;
+  border-color: color-mix(in srgb, var(--muted) 50%, var(--edge));
+  background: rgba(255,255,255,.02);
+  color: var(--muted);
+  font-weight: 700;
+}
+.guideGridEp.focused .guideGridEpMiniBadge { opacity: 0.36 }
+.guideGridEpMeta {
+  margin-top: auto;
+  position: relative;
+  z-index: 1;
+  font-size: 11px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 10px;
+}
+.guideGridEpMetaLeft { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.guideGridEpMetaRight { flex: 0 0 auto; display: inline-flex; align-items: center; gap: 6px }
+
+@media (max-width: 720px) {
+  .guideGridShell.sidebarHidden .guideSidebarToggle {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+  }
+
+  .guideGridCorner,
+  .guideGridChannelsScroll {
+    transition: width 0.22s ease, flex-basis 0.22s ease, padding 0.22s ease, transform 0.22s ease, opacity 0.22s ease;
+    will-change: width, transform;
+  }
+
+  .guideGridShell.sidebarHidden .guideGridCorner,
+  .guideGridShell.sidebarHidden .guideGridChannelsScroll {
+    width: 0;
+    flex: 0 0 0;
+    opacity: 0;
+    transform: translateX(-260px);
+    pointer-events: none;
+  }
+
+  .guideGridShell.sidebarHidden .guideGridCorner {
+    padding: 0;
+    border-right: 0;
+  }
+}
+
+.guidePanel-episodes {
+  padding: 10px 14px;
+  border-top: 1px solid var(--edge);
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 12px;
+}
+.guideNowContent { display: flex; flex-direction: column; gap: 4px; min-width: 0; flex: 1 }
+.guideNowBack {
+  flex: 0 0 auto;
+  width: 46px;
+  padding: 0;
+  border-radius: 10px;
+  border: 1px solid var(--edge);
+  background: rgba(0,0,0,.22);
+  color: var(--muted);
+  cursor: pointer;
+  font: 800 18px/1 var(--sans, system-ui);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+}
+.guideNowBack:hover { color: var(--text); background: rgba(0,0,0,.3) }
+.guideNowBack:active { transform: translateY(1px) }
+.guideNowLabel { font-size: 12px; color: var(--muted) }
+.guideNowEp { font-size: 14px; font-weight: 650; white-space: nowrap; overflow: hidden; text-overflow: ellipsis }
+.guideNowSep { padding: 0 6px; opacity: 0.7 }
+.guideNowSub { font-size: 12px; color: color-mix(in srgb, var(--muted) 80%, var(--text)); opacity: 0.9 }

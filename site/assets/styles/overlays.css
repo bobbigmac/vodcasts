@@ -1,0 +1,219 @@
+/**
+ * Play/pause overlay, mute indicator, seek-tap FX, status toast.
+ */
+.playPauseOverlay {
+  position: absolute;
+  inset: 0 0 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  z-index: 10;
+  user-select: none;
+}
+.playPauseOverlay.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+.playPauseIcon {
+  width: 88px;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 44px;
+  color: rgba(255,255,255,.95);
+  background: rgba(0,0,0,.45);
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,.25);
+  transition: transform 0.2s ease, background 0.2s ease;
+  box-shadow: 0 4px 24px rgba(0,0,0,.4);
+  line-height: 1;
+}
+.playPauseIcon .iconPause,
+.playPauseIcon .iconPlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.playPauseLoading {
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+}
+.loadingSpinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid rgba(255,255,255,.2);
+  border-top-color: rgba(255,255,255,.9);
+  border-radius: 50%;
+  animation: loadingSpin 0.9s linear infinite;
+}
+.loadingLabel {
+  font-size: 13px;
+  color: rgba(255,255,255,.9);
+  font-weight: 500;
+}
+@keyframes loadingSpin {
+  to { transform: rotate(360deg) }
+}
+.playPauseIcon .iconPlay { display: none }
+.playPauseOverlay.visible .playPauseIcon .iconPause { display: flex }
+.playPauseOverlay.visible .playPauseIcon .iconPlay { display: none }
+.playPauseOverlay.visible:hover .playPauseIcon .iconPause { display: none }
+.playPauseOverlay.visible:hover .playPauseIcon .iconPlay { display: flex }
+.playPauseIcon .iconPlay {
+  padding-left: 4px;
+}
+.playPauseOverlay:hover .playPauseIcon {
+  transform: scale(1.08);
+  background: rgba(0,0,0,.55);
+}
+.playPauseOverlay.visible .playPauseIcon {
+  animation: playPausePop 0.35s ease-out;
+}
+@keyframes playPausePop {
+  0% { transform: scale(0.85); opacity: 0.7 }
+  70% { transform: scale(1.05); opacity: 1 }
+  100% { transform: scale(1); opacity: 1 }
+}
+
+.muteIndicator {
+  position: absolute;
+  right: calc(18px + env(safe-area-inset-right, 0px));
+  bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+  z-index: 54;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.22s ease, transform 0.22s ease;
+  pointer-events: none;
+  user-select: none;
+}
+.muteIndicator.show {
+  opacity: 0.55;
+  transform: translateY(0);
+}
+.muteIndicatorIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(0,0,0,.22);
+  backdrop-filter: blur(6px);
+  color: rgba(255,255,255,.92);
+}
+
+.seekTapFx {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 12;
+}
+.seekTapFxSide {
+  position: absolute;
+  top: 46%;
+  transform: translateY(-50%);
+  width: min(42vw, 260px);
+  height: 120px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  filter: drop-shadow(0 8px 22px rgba(0,0,0,.55));
+}
+.seekTapFxLeft { left: 6%; justify-content: flex-start }
+.seekTapFxRight { right: 6%; justify-content: flex-end }
+
+.seekTapFxChevrons {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 18px;
+  background: radial-gradient(circle at 30% 50%, rgba(255,255,255,.08), rgba(0,0,0,.0) 62%),
+    linear-gradient(180deg, rgba(0,0,0,.32), rgba(0,0,0,.05));
+  border: 1px solid rgba(255,255,255,.12);
+  backdrop-filter: blur(6px);
+}
+.seekTapChevron {
+  width: 22px;
+  height: 22px;
+  border-top: 3px solid rgba(255,255,255,.85);
+  border-right: 3px solid rgba(255,255,255,.85);
+  opacity: 0;
+}
+.seekTapFxLeft .seekTapChevron { transform: rotate(225deg) translateX(0) }
+.seekTapFxRight .seekTapChevron { transform: rotate(45deg) translateX(0) }
+
+.seekTapFxLabel {
+  padding: 6px 10px;
+  border-radius: 12px;
+  font: 700 12px/1 var(--sans);
+  letter-spacing: 0.02em;
+  color: rgba(255,255,255,.92);
+  background: rgba(0,0,0,.28);
+  border: 1px solid rgba(255,255,255,.12);
+  opacity: 0;
+  transform: translateY(2px);
+}
+
+.seekTapFxSide.show { opacity: 1 }
+.seekTapFxLeft.show .seekTapChevron {
+  animation: seekTapChevronLeft 0.42s ease-out forwards;
+}
+.seekTapFxRight.show .seekTapChevron {
+  animation: seekTapChevronRight 0.42s ease-out forwards;
+}
+.seekTapFxSide.show .seekTapChevron:nth-child(2) { animation-delay: 0.06s }
+.seekTapFxSide.show .seekTapFxLabel {
+  animation: seekTapLabel 0.42s ease-out forwards;
+}
+
+@keyframes seekTapChevronRight {
+  0% { opacity: 0; transform: rotate(45deg) translateX(-10px) scale(0.96) }
+  35% { opacity: .95 }
+  100% { opacity: 0; transform: rotate(45deg) translateX(14px) scale(1) }
+}
+@keyframes seekTapChevronLeft {
+  0% { opacity: 0; transform: rotate(225deg) translateX(10px) scale(0.96) }
+  35% { opacity: .95 }
+  100% { opacity: 0; transform: rotate(225deg) translateX(-14px) scale(1) }
+}
+@keyframes seekTapLabel {
+  0% { opacity: 0; transform: translateY(4px) }
+  35% { opacity: .95; transform: translateY(0) }
+  100% { opacity: 0; transform: translateY(-2px) }
+}
+
+.statusToast {
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid var(--edge);
+  background: rgba(0,0,0,.65);
+  backdrop-filter: blur(8px);
+  color: var(--text);
+  font-size: 13px;
+  max-width: min(900px, calc(100vw - 40px));
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease;
+  z-index: 140;
+}
+.statusToast.show { opacity: 1 }
+.statusToast.warn { border-color: color-mix(in srgb, #f1d093 45%, var(--edge)) }
+.statusToast.error { border-color: color-mix(in srgb, #ff8a8a 45%, var(--edge)) }

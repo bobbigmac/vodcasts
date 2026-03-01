@@ -1,0 +1,616 @@
+/**
+ * Floating guide bar, takeover menus, controls (speed, volume, sleep).
+ */
+.guideBar {
+  position: absolute;
+  left: 50%;
+  bottom: 48px;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  background: rgba(0,0,0,.75);
+  border: 1px solid var(--edge);
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  transition: opacity 0.4s ease;
+  z-index: 50;
+}
+.guideBar.idle {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.guideBar-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: fit-content;
+  max-width: min(760px, calc(100vw - 40px));
+}
+
+.guideBarTakeover {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.guideBarTakeoverHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.guideBarTakeoverHeaderViz {
+  flex-shrink: 0;
+}
+.guideBarTakeoverHeaderViz > *:not(.guideBarTakeoverTitle):not(.guideBtn[title="Done"]) {
+  display: none;
+}
+.guideBarTakeoverTitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+}
+.guideBarTakeoverBody {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+.takeoverOpts {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+.guideBarTakeoverSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--edge);
+}
+.guideBarTakeoverSubtitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+}
+.guideBarTakeoverEmpty {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0;
+}
+.pluginSettings input[type="range"] {
+  width: 120px;
+  margin-top: 4px;
+}
+.pluginSettings {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pluginSettingsLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--text);
+  cursor: pointer;
+}
+.pluginSettingsInput {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--edge);
+  background: rgba(255,255,255,.04);
+  color: var(--text);
+  font-size: 13px;
+}
+.pluginSettingsInput::placeholder { color: var(--muted) }
+.pluginSettingsLabel:has(input[type="checkbox"]) {
+  flex-direction: row;
+  align-items: center;
+}
+.pluginSettingsLabel input[type="checkbox"] {
+  margin-right: 8px;
+}
+.takeoverGrid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+}
+.takeoverRow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.takeoverRowLabel {
+  font-size: 12px;
+  color: var(--muted);
+  min-width: 34px;
+}
+.takeoverHint {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.chapNavBrowser {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  max-width: min(560px, calc(100vw - 40px));
+  margin-inline: auto;
+}
+.chapNavCard {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--edge);
+  background: rgba(255,255,255,.03);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  outline: none;
+}
+.chapNavCard:hover { background: rgba(255,255,255,.07) }
+.chapNavCard:active { transform: translateY(1px) }
+.chapNavCardDim { opacity: 0.62; cursor: default }
+.chapNavCardDim:hover { background: rgba(255,255,255,.03) }
+.chapNavCardCurrent {
+  border-color: color-mix(in srgb, var(--accent) 70%, var(--edge));
+  background: rgba(138,180,248,.10);
+}
+.chapNavCardCurrent .chapNavCardTitle { font-weight: 750 }
+.chapNavCardCurrent {
+  background: linear-gradient(180deg, rgba(138,180,248,.12), rgba(255,255,255,.03));
+}
+.chapNavCardTop {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.chapNavCardLabel {
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  flex: 0 0 auto;
+}
+.chapNavCardIdx {
+  font-size: 11px;
+  color: color-mix(in srgb, var(--muted) 80%, var(--text));
+  font-variant-numeric: tabular-nums;
+  flex: 0 0 auto;
+}
+.chapNavCardTime {
+  margin-left: auto;
+  font-size: 11px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  flex: 0 0 auto;
+}
+.chapNavCardTitle {
+  font-size: 13px;
+  font-weight: 650;
+  color: var(--text);
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.chapNavCardMeta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.chapNavPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(0,0,0,.22);
+  font-size: 11px;
+  color: rgba(255,255,255,.86);
+  font-variant-numeric: tabular-nums;
+}
+.chapNavPillDim { color: rgba(255,255,255,.62) }
+
+.chapNav-detailed .chapNavBrowser {
+  max-width: min(660px, calc(100vw - 40px));
+  gap: 10px;
+}
+.chapNav-detailed .chapNavCard {
+  padding: 12px 14px;
+  border-radius: 12px;
+}
+.chapNav-detailed .chapNavCardTitle {
+  font-size: 14px;
+}
+
+@media (max-width: 520px) {
+  .takeoverGrid { grid-template-columns: repeat(3, minmax(0, 1fr)) }
+}
+
+.padControl {
+  display: grid;
+  grid-template-columns: 32px 32px 32px;
+  grid-template-rows: 30px 30px 30px;
+  gap: 6px;
+  align-items: stretch;
+}
+.padSpacer {
+  grid-column: 2;
+  grid-row: 2;
+}
+.padBtn {
+  padding: 6px 8px;
+  font: inherit;
+  font-size: 14px;
+  color: var(--text);
+  background: rgba(255,255,255,.03);
+  border: 1px solid var(--edge);
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+.padBtn:hover { background: rgba(255,255,255,.08) }
+.padBtn:active { transform: translateY(1px) }
+.padUp { grid-column: 2; grid-row: 1 }
+.padLeft { grid-column: 1; grid-row: 2 }
+.padRight { grid-column: 3; grid-row: 2 }
+.padDown { grid-column: 2; grid-row: 3 }
+.padVal {
+  grid-column: 2;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 6px;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+  background: rgba(255,255,255,.03);
+  border: 1px solid var(--edge);
+  border-radius: 8px;
+  user-select: none;
+}
+
+.scaleControl {
+  display: grid;
+  grid-template-rows: 30px 30px 30px;
+  border: 1px solid var(--edge);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.scaleBtn {
+  padding: 6px 10px;
+  font: inherit;
+  font-size: 14px;
+  color: var(--text);
+  background: rgba(255,255,255,.03);
+  border: none;
+  border-bottom: 1px solid var(--edge);
+  cursor: pointer;
+  user-select: none;
+}
+.scaleBtn:hover { background: rgba(255,255,255,.08) }
+.scaleBtn:active { transform: translateY(1px) }
+.scaleVal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 10px;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+  background: rgba(255,255,255,.03);
+  border-bottom: 1px solid var(--edge);
+  user-select: none;
+}
+
+.guideBar-row1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.guideBar-row2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.speedControl {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--edge);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.speedBtn {
+  padding: 8px 10px;
+  font: inherit;
+  font-size: 14px;
+  color: var(--text);
+  background: rgba(255,255,255,.03);
+  border: none;
+  border-right: 1px solid var(--edge);
+  cursor: pointer;
+  flex-shrink: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+.speedBtn:last-of-type { border-right: none; border-left: 1px solid var(--edge) }
+.speedBtn:hover { background: rgba(255,255,255,.08) }
+.speedBtn:active { transform: translateY(1px) }
+.speedBtn.speedLevel {
+  min-width: 44px;
+  padding: 8px 8px;
+  font-size: 12px;
+  color: var(--muted);
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  cursor: default;
+}
+
+@media (max-width: 520px) {
+  .guideBar-row1 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .guideNowBlock {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .volumeHint { display: none }
+}
+
+.guideBtnSeek {
+  padding: 4px 8px;
+  font-size: 12px;
+  min-width: 36px;
+}
+
+.guideBar-sleep { position: relative }
+
+.sleepMenu {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  margin-bottom: 6px;
+  padding: 6px;
+  background: var(--panel);
+  border: 1px solid var(--edge);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 10;
+}
+.sleepMenu[aria-hidden="true"] { display: none }
+.sleepOpt {
+  padding: 8px 14px;
+  font: inherit;
+  color: var(--text);
+  background: rgba(255,255,255,.03);
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+}
+.sleepOpt:hover { background: rgba(255,255,255,.08) }
+
+.guideNowBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1 1 0;
+  min-width: 140px;
+  max-width: none;
+  min-inline-size: 0;
+  padding: 6px 12px;
+  background: rgba(255,255,255,.03);
+  border: 1px solid var(--edge);
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: left;
+}
+.guideNowBlock:hover { background: rgba(255,255,255,.08) }
+.guideNowBlock .guideChannel {
+  font-weight: 650;
+  font-size: 13px;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.guideNowBlock .guideChannel::after { content: " ▼"; font-size: 0.7em; opacity: .7 }
+.guideNowBlock .guideNow {
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.guideBtn {
+  padding: 8px 12px;
+  font: inherit;
+  color: var(--text);
+  background: rgba(255,255,255,.03);
+  border: 1px solid var(--edge);
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+.guideBtnHasIcon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.guideBtnIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.guideBtnIcon svg { display: block }
+.guideBtnLabel {
+  font-variant-numeric: tabular-nums;
+}
+.guideBtnShuffle .guideBtnLabel {
+  display: inline-block;
+  min-width: 58px;
+  text-align: right;
+}
+.guideBtn:hover { background: rgba(255,255,255,.08) }
+.guideBtn:active { transform: translateY(1px) }
+.guideBtn.active { background: rgba(138,180,248,.2); border-color: var(--accent) }
+.guideBtn.longpressing,
+.speedBtn.longpressing,
+.volumeBtn.longpressing {
+  border-color: var(--accent);
+}
+.guideBtn.longpressing::before,
+.speedBtn.longpressing::before,
+.volumeBtn.longpressing::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: var(--lp, 0%);
+  background: color-mix(in srgb, var(--accent) 28%, transparent);
+  pointer-events: none;
+}
+.guideBtn.longpressing::after,
+.speedBtn.longpressing::after,
+.volumeBtn.longpressing::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0.28;
+  mix-blend-mode: screen;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0 10px,
+    color-mix(in srgb, var(--accent) 55%, transparent) 10px 14px,
+    transparent 14px 22px
+  );
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  padding: 1px;
+  animation: guideBtnLongPressBorder 0.65s linear infinite;
+}
+@keyframes guideBtnLongPressBorder {
+  from { background-position: 0 0 }
+  to { background-position: 36px 0 }
+}
+.guideBtn:disabled,
+.guideBtn.disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+  background: rgba(255,255,255,.02);
+  border-color: color-mix(in srgb, var(--edge) 75%, transparent);
+}
+.guideBtn:disabled:hover,
+.guideBtn.disabled:hover { background: rgba(255,255,255,.02) }
+.guideBtn:disabled:active,
+.guideBtn.disabled:active { transform: none }
+
+#btnPlay.guideBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 54px;
+  block-size: 54px;
+  border-radius: 999px;
+  padding-inline: 0;
+  padding-block: 0;
+}
+
+.volumeControl {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--edge);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.volumeControl.audioBlocked {
+  border-color: #f1d093;
+  background: rgba(241, 208, 147, 0.08);
+}
+.volumeBtn {
+  padding: 8px 10px;
+  font: inherit;
+  font-size: 14px;
+  color: var(--text);
+  background: rgba(255,255,255,.03);
+  border: none;
+  border-right: 1px solid var(--edge);
+  cursor: pointer;
+  flex-shrink: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+.volumeBtn:last-of-type { border-right: none; border-left: 1px solid var(--edge) }
+.volumeBtn:hover { background: rgba(255,255,255,.08) }
+.volumeBtn:active { transform: translateY(1px) }
+.volumeBtn.volumeLevel {
+  min-width: 28px;
+  padding: 8px 8px;
+  font-size: 12px;
+  color: var(--muted);
+  text-align: center;
+}
+.volumeControl.muted .volumeLevel { color: var(--muted) }
+.volumeControl.audioBlocked .volumeLevel {
+  color: var(--accent);
+  font-weight: 600;
+}
+.volumeControl.audioBlocked .volumeLevel[data-state="blocked"] {
+  color: #f1d093;
+}
+.volumeHint {
+  padding: 0 8px;
+  font-size: 11px;
+  color: var(--accent);
+  white-space: nowrap;
+}

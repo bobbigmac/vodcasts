@@ -1,0 +1,25 @@
+/**
+ * Design tokens and base reset.
+ */
+:root {
+  --bg: #0b0c10;
+  --panel: #11131a;
+  --text: #e8eaed;
+  --muted: #a7adb7;
+  --edge: #242a3d;
+  --accent: #8ab4f8;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+}
+
+* { box-sizing: border-box }
+html, body { height: 100%; margin: 0; overflow-x: hidden }
+:root { color-scheme: dark }
+.mono { font-family: var(--mono) }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  overflow: hidden;
+}

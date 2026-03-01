@@ -46,7 +46,7 @@ relative to this folder, not the parent repo.
 ### Static site
 
 - `site/templates/index.html` — single-page UI shell; includes details sidebar w/ comments panel.
-- `site/assets/style.css` — main UI styles.
+- `site/assets/style.css` — main stylesheet; @imports partials from `site/assets/styles/` (variables, layout, player, audio-viz, progress, captions, overlays, guide-bar, guide-panel, panels, corner, idle).
 - `site/assets/themes.css` — theme overrides (modern/dos).
 - `site/assets/app.js` — stable loader that imports `assets/app/index.js` as a module.
 
