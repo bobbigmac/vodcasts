@@ -442,12 +442,6 @@
 - category: teaching
 - tags: orthodox, campus, college
 
-## fourth-antiphon
-- url: https://feeds.feedburner.com/FourthAntiphon
-- title: Fourth Antiphon
-- category: teaching
-- tags: orthodox, liturgy
-
 ## orthodox-christian-parenting
 - url: https://feeds.transistor.fm/orthodox-christian-parenting
 - title: Orthodox Christian Parenting
