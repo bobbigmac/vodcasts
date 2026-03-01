@@ -66,6 +66,7 @@ Schema notes live in `docs/supabase-comments.md`.
 
 - [ ] **Real page content per page** — TBD: monkey-patch `404.html` vs build dedicated landing page per feed (hotswap, faking multipage). Need to decide approach before implementing.
   - Probably want to make some ability to browse channel episodes like a profile page, since our episode guide is a little tricky on small devices (needs to scale/react better) and for users unfamiliar with sky/cable/tv browsing.
+    - Netflix/AmazonPrimeVideo/Disney+/iPlayer ALL use that same format, let's bucket known episodes into 'shows' that are browsable like Netflix.
 
 ## Discoverability + accessibility
 

@@ -15,7 +15,6 @@ export function SkipTakeover({ player, takeover }) {
     <div class="guideBarTakeover" role="dialog" aria-label="Skip buttons" onPointerDownCapture=${() => takeover.bump()} onKeyDownCapture=${() => takeover.bump()}>
       <div class="guideBarTakeoverHeader">
         <div class="guideBarTakeoverTitle">Skip</div>
-        <button class="guideBtn" title="Done" onClick=${() => takeover.close()}>Done</button>
       </div>
       <div class="guideBarTakeoverBody">
         <div class="takeoverRow" title="Back skip">

@@ -6,6 +6,10 @@ from dataclasses import dataclass
 from typing import Any
 from xml.etree import ElementTree as ET
 
+# Strip HTML tags and truncate for manifest short description.
+_HTML_TAG_RE = re.compile(r"<[^>]+>")
+_WHITESPACE_RE = re.compile(r"\s+")
+
 
 PODCAST_NS = "https://podcastindex.org/namespace/1.0"
 ITUNES_NS = "http://www.itunes.com/dtds/podcast-1.0.dtd"
@@ -91,6 +95,17 @@ def base36(n: int) -> str:
         n, r = divmod(n, 36)
         out.append(chars[r])
     return "".join(reversed(out))
+
+
+def short_description(html: str, max_chars: int = 150) -> str:
+    """Strip HTML and truncate for manifest; full text fetched at display time."""
+    if not html or not isinstance(html, str):
+        return ""
+    text = _HTML_TAG_RE.sub(" ", html)
+    text = _WHITESPACE_RE.sub(" ", text).strip()
+    if len(text) <= max_chars:
+        return text
+    return text[: max_chars - 1].rsplit(" ", 1)[0] + "…"
 
 
 def _make_episode_slug(*, title: str, date_text: str, ep_id: str) -> str:

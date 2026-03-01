@@ -1,12 +1,33 @@
 import { html } from "../runtime/vendor.js";
+import { useEffect } from "../runtime/vendor.js";
 import { TimedComments } from "../vod/timed_comments.js";
 import { sanitizeHtml } from "../vod/feed_parse.js";
 import { LogPanel } from "./log.js";
 
+function escapeHtml(s) {
+  if (!s) return "";
+  return String(s)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 export function DetailsPanel({ isOpen, env, player, log }) {
   const cur = player.current.value;
   const ep = cur.episode;
-  const safeDescHtml = ep?.descriptionHtml ? sanitizeHtml(ep.descriptionHtml) : "";
+  const cache = player.fullDescriptionCache?.value || {};
+  const epKey = cur.source?.id && ep?.id ? `${cur.source.id}::${ep.id}` : "";
+  const fullHtml = epKey ? cache[epKey] : "";
+  const descHtml = ep?.descriptionHtml || fullHtml;
+  const safeDescHtml = descHtml ? sanitizeHtml(descHtml) : ep?.descriptionShort ? escapeHtml(ep.descriptionShort) : "";
+
+  useEffect(() => {
+    if (isOpen.value && ep?.id && cur.source?.id && ep.descriptionShort && !ep.descriptionHtml && !fullHtml) {
+      player.loadFullDescription?.(cur.source.id, ep.id);
+    }
+  }, [isOpen.value, ep?.id, cur.source?.id, ep?.descriptionShort, ep?.descriptionHtml, fullHtml]);
   const chapters = player.chapters.value || [];
   const chaptersErr = player.chaptersLoadError?.value ?? null;
   const transcriptsErr = player.transcriptsLoadError?.value ?? null;

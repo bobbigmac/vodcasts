@@ -1,5 +1,6 @@
 import { html, useEffect, useMemo, useRef, useSignal } from "../runtime/vendor.js";
 import { episodeSearchHaystack, matchesAllTokens, splitQuery } from "./search.js";
+import { HeadphonesIcon } from "./icons.js";
 
 const CATEGORY_ORDER = ["church", "university", "fitness", "bible", "twit", "podcastindex", "other", "needs-rss"];
 const MS_PER_MIN = 60 * 1000;
@@ -77,8 +78,11 @@ function isPlayableVideoEp(ep) {
   const t = String(m?.type || "").toLowerCase();
   const u = url.toLowerCase();
   if (t.startsWith("video/")) return true;
+  if (t.startsWith("audio/")) return true;
+  if (m?.pickedIsVideo === false) return true;
   if (u.includes(".m3u8")) return true;
   if (u.match(/\.(mp4|m4v|mov|webm)(\?|$)/)) return true;
+  if (u.match(/\.(mp3|m4a|aac|ogg|opus)(\?|$)/)) return true;
   return false;
 }
 
@@ -1301,6 +1305,11 @@ export function GuidePanel({ isOpen, sources, player }) {
                   const eps = episodesBySource[src.id] || null;
                   const feat = src.features || {};
                   const ccLikely = !!feat.hasPlayableTranscript || (!!eps && eps.some((ep) => (ep.transcripts || []).length));
+                  const isAudioOnly =
+                    feat.hasVideo === false ||
+                    (!!eps &&
+                      eps.length > 0 &&
+                      eps.filter(isPlayableVideoEp).every((ep) => ep?.media?.pickedIsVideo === false));
 
                   const rowClass =
                     "guideGridChanRow" +
@@ -1359,7 +1368,10 @@ export function GuidePanel({ isOpen, sources, player }) {
                             <span class="guideGridChanBadges">
                               ${ccLikely ? html`<span class="guideBadge guideBadge-cc" title="Captions likely available">CC</span>` : ""}
                             </span>
-                            <span class="guideGridChanNo mono" aria-hidden="true">${chanNo}</span>
+                            <span class="guideGridChanNo mono" aria-hidden="true">
+                              ${chanNo}
+                              ${isAudioOnly ? html`<span class="guideGridChanAudioIcon" title="Audio only"><${HeadphonesIcon} size=${12} /></span>` : ""}
+                            </span>
                           </div>
                         </div>
                       </div>

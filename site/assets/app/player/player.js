@@ -3,6 +3,7 @@ import { fetchCached } from "../vod/feed_cache.js";
 import { parseFeedXml } from "../vod/feed_parse.js";
 import { loadChaptersForEpisode } from "../ui/chapters.js";
 import { trackEvent } from "../runtime/analytics.js";
+import { createAudioViz } from "./audio_viz.js";
 
 export function createPlayerService({ env, log, history }) {
   const STORAGE_KEY = "vodcasts_state_v1";
@@ -79,6 +80,7 @@ export function createPlayerService({ env, log, history }) {
   const loading = signal(false);
   const chaptersLoadError = signal(null);
   const transcriptsLoadError = signal(null);
+  const fullDescriptionCache = signal({});
   const subtitleBox = signal(null);
   const subtitleCue = signal(null);
   const skip = signal(normalizeSkip(persisted.skip));
@@ -88,6 +90,7 @@ export function createPlayerService({ env, log, history }) {
 
   const currentSourceId = computed(() => current.value.source?.id || null);
   const currentEpisodeId = computed(() => current.value.episode?.id || null);
+  const isAudioOnly = computed(() => current.value.episode?.media?.pickedIsVideo === false);
 
   const DEFAULT_SUBTITLE_PREFS = { x: 50, y: 78, w: 92, opacity: 1, scale: 1 };
 
@@ -473,7 +476,19 @@ export function createPlayerService({ env, log, history }) {
     return can === "probably" || can === "maybe";
   }
 
+  let audioVizInstance = null;
+
+  function destroyAudioViz() {
+    if (audioVizInstance) {
+      try {
+        audioVizInstance.destroy();
+      } catch {}
+      audioVizInstance = null;
+    }
+  }
+
   function teardownPlayer() {
+    destroyAudioViz();
     transcriptBlobUrls.forEach((u) => URL.revokeObjectURL(u));
     transcriptBlobUrls = [];
     [...(videoEl?.querySelectorAll?.("track") || [])].forEach((t) => t.remove());
@@ -524,17 +539,42 @@ export function createPlayerService({ env, log, history }) {
       const feeds = Array.isArray(json?.feeds) ? json.feeds : [];
       if (!feeds.length) return false;
 
-      let added = 0;
-      for (const f of feeds) {
-        const id = String(f?.id || "").trim();
-        if (!id) continue;
-        // Ensure every feed gets a stable entry so the guide doesn't stay stuck on "Loading…".
-        const eps = Array.isArray(f?.episodes) ? f.episodes : [];
-        episodesBySource[id] = eps;
-        added++;
+      const chunks = Array.isArray(json?.chunks) ? json.chunks : [];
+      const isChunked = json?.version >= 3 && chunks.length > 0;
+
+      if (isChunked) {
+        // v3: feed meta in index; episodes in chunks. Merge episodes per feed.
+        for (const f of feeds) {
+          const id = String(f?.id || "").trim();
+          if (id) episodesBySource[id] = [];
+        }
+        const chunkUrls = chunks.map((c) => c?.url).filter(Boolean);
+        const results = await Promise.all(chunkUrls.map((u) => fetch(u, { cache: "default" }).then((r) => (r.ok ? r.json() : null)).catch(() => null)));
+        for (const chunk of results) {
+          if (!chunk?.feeds) continue;
+          for (const f of chunk.feeds) {
+            const id = String(f?.id || "").trim();
+            if (!id) continue;
+            const eps = Array.isArray(f?.episodes) ? f.episodes : [];
+            const existing = episodesBySource[id] || [];
+            episodesBySource[id] = [...existing, ...eps].sort((a, b) => {
+              const da = (a?.dateText || "").trim();
+              const db = (b?.dateText || "").trim();
+              return db.localeCompare(da);
+            });
+          }
+        }
+      } else {
+        // v2 legacy: feeds include episodes
+        for (const f of feeds) {
+          const id = String(f?.id || "").trim();
+          if (!id) continue;
+          const eps = Array.isArray(f?.episodes) ? f.episodes : [];
+          episodesBySource[id] = eps;
+        }
       }
-      if (added) sourceEpisodes.value = { ...episodesBySource };
-      return added > 0;
+      sourceEpisodes.value = { ...episodesBySource };
+      return Object.keys(episodesBySource).length > 0;
     } catch (e) {
       log.warn(`Manifest preload failed: ${String(e?.message || e)}`);
       return false;
@@ -560,6 +600,25 @@ export function createPlayerService({ env, log, history }) {
       episodesBySource[sourceId] = episodes;
     }
     sourceEpisodes.value = { ...episodesBySource };
+  }
+
+  async function loadFullDescription(sourceId, episodeId) {
+    const key = episodeKey(sourceId, episodeId);
+    if (fullDescriptionCache.value[key]) return fullDescriptionCache.value[key];
+    const src = sources.find((s) => s.id === sourceId);
+    if (!src?.feed_url) return "";
+    try {
+      const xmlText = await fetchText(src.feed_url, src.fetch_via || "auto", { useCache: true });
+      const parsed = parseFeedXml(xmlText, src);
+      const ep = parsed.episodes?.find((e) => e.id === episodeId);
+      const html = ep?.descriptionHtml || "";
+      if (html) {
+        fullDescriptionCache.value = { ...fullDescriptionCache.value, [key]: html };
+      }
+      return html;
+    } catch {
+      return "";
+    }
   }
 
   async function loadSourceEpisodes(sourceId) {
@@ -1282,6 +1341,24 @@ export function createPlayerService({ env, log, history }) {
     sleep.value = { active: false, label: "" };
   }
 
+  function attachAudioViz(container) {
+    if (!container) {
+      destroyAudioViz();
+      return;
+    }
+    if (!videoEl || !isAudioOnly.value) return;
+    destroyAudioViz();
+    try {
+      const ep = current.value.episode;
+      const src = current.value.source;
+      audioVizInstance = createAudioViz(videoEl, container, { episode: ep, source: src });
+      audioVizInstance.start();
+    } catch (e) {
+      log.warn(`Audio viz failed: ${String(e?.message || e)}`);
+      audioVizInstance = null;
+    }
+  }
+
   function attachVideo(el) {
     videoEl = el;
     if (!videoEl) return;
@@ -1420,6 +1497,8 @@ export function createPlayerService({ env, log, history }) {
     current,
     currentSourceId,
     currentEpisodeId,
+    isAudioOnly,
+    attachAudioViz,
     chapters,
     chaptersLoadError,
     captions,
@@ -1435,6 +1514,8 @@ export function createPlayerService({ env, log, history }) {
     attachVideo,
     teardownPlayer,
     fetchText,
+    loadFullDescription,
+    fullDescriptionCache,
     loadSourceEpisodes,
     selectSource,
     selectEpisode,

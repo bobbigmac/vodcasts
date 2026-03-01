@@ -10,7 +10,7 @@ import time
 from pathlib import Path
 from typing import Any
 
-from scripts.feed_manifest import parse_feed_for_manifest
+from scripts.feed_manifest import parse_feed_for_manifest, short_description
 from scripts.media_probe import (
     MediaMeta,
     get_cached_meta,
@@ -326,8 +326,9 @@ def _enrich_episode_media(
     return ep
 
 
-def _episode_min_for_manifest(ep: dict[str, Any]) -> dict[str, Any]:
+def _episode_min_for_manifest(ep: dict[str, Any], *, short_desc_chars: int = 150) -> dict[str, Any]:
     media = ep.get("media") if isinstance(ep, dict) else None
+    desc_html = ep.get("descriptionHtml") or ""
     out = {
         "id": ep.get("id"),
         "slug": ep.get("slug"),
@@ -342,6 +343,8 @@ def _episode_min_for_manifest(ep: dict[str, Any]) -> dict[str, Any]:
         "transcripts": ep.get("transcripts") or [],
         "transcriptsAll": ep.get("transcriptsAll") or [],
     }
+    if desc_html:
+        out["descriptionShort"] = short_description(desc_html, max_chars=short_desc_chars)
     return out
 
 
@@ -470,11 +473,40 @@ def main() -> None:
     write_json(out_dir / "video-sources.json", {"version": 1, "site": site_json, "sources": public_sources})
     _log(f"  done ({time.perf_counter() - t:.1f}s)")
 
-    # feed-manifest.json: all feeds + episode list (client bootstrap; avoids per-feed fetches).
+    # feed-manifest: chunked by date-window for cacheability; short descriptions; full text at display-time.
     _log("build feed-manifest…")
     t = time.perf_counter()
+    MANIFEST_CHUNK_BYTES_CAP = 400_000  # ~400KB; split further if exceeded
     manifest_feeds = []
     media_meta_doc = load_media_meta_cache(cache_dir) if args.enrich_media else {"version": 1, "updated_at_unix": 0, "by_url": {}}
+    from datetime import datetime
+    now_year = datetime.now().year
+
+    def _year_quarter_from_date_text(dt: str) -> tuple[int, int]:
+        """(year, quarter 1-4). No date -> current year."""
+        if not dt or not isinstance(dt, str):
+            return now_year, 1
+        try:
+            y = int(dt[:4])
+            if len(dt) >= 7:
+                m = int(dt[5:7])
+                q = (m - 1) // 3 + 1
+                return y, q
+            return y, 1
+        except (ValueError, IndexError):
+            return now_year, 1
+
+    def _year_month_from_date_text(dt: str) -> tuple[int, int]:
+        """(year, month 1-12). No date -> current year, month 1."""
+        if not dt or not isinstance(dt, str):
+            return now_year, 1
+        try:
+            y = int(dt[:4])
+            m = int(dt[5:7]) if len(dt) >= 7 else 1
+            return y, max(1, min(12, m))
+        except (ValueError, IndexError):
+            return now_year, 1
+
     for src in public_sources:
         cached = _load_cached_feed_path(cache_dir, src["id"])
         episodes = []
@@ -502,8 +534,66 @@ def main() -> None:
             "features": feats,
             "episodes": episodes,
         })
-    write_json(out_dir / "feed-manifest.json", {"version": 2, "base_path": base_path, "feeds": manifest_feeds})
-    _log(f"  done ({time.perf_counter() - t:.1f}s)")
+
+    # Chunk by date-window (year, or year-quarter if over cap).
+    def _chunk_key(y: int, q: int | None) -> str:
+        return f"{y}-q{q}" if q else str(y)
+
+    # Group episodes by feed id -> list of (ep, year, quarter, month)
+    episodes_by_feed: dict[str, list[tuple[dict, int, int, int]]] = {}
+    for mf in manifest_feeds:
+        fid = mf["id"]
+        eps = mf.get("episodes") or []
+        episodes_by_feed[fid] = []
+        for ep in eps:
+            y, q = _year_quarter_from_date_text(ep.get("dateText") or "")
+            ym, mm = _year_month_from_date_text(ep.get("dateText") or "")
+            episodes_by_feed[fid].append((ep, y, q, mm))
+
+    def _size_of_chunk(chunk_eps: dict[str, list[dict]]) -> int:
+        c = {fid: eps for fid, eps in chunk_eps.items() if eps}
+        s = json.dumps({"feeds": [{"id": fid, "episodes": eps} for fid, eps in c.items()]}, ensure_ascii=False, indent=2)
+        return len((s + "\n").encode("utf-8"))
+
+    def _emit_chunk(filename: str, chunk_eps: dict[str, list[dict]]) -> None:
+        c = {fid: eps for fid, eps in chunk_eps.items() if eps}
+        if c:
+            write_json(out_dir / filename, {"feeds": [{"id": fid, "episodes": eps} for fid, eps in c.items()]})
+            chunk_specs.append(filename)
+
+    chunk_specs: list[str] = []
+    years = sorted({y for lst in episodes_by_feed.values() for _, y, _, _ in lst}, reverse=True)
+    if not years:
+        years = [now_year]
+
+    for y in years:
+        # Try full year first
+        chunk_eps = {fid: [ep for ep, ey, _, _ in lst if ey == y] for fid, lst in episodes_by_feed.items()}
+        if _size_of_chunk(chunk_eps) <= MANIFEST_CHUNK_BYTES_CAP:
+            _emit_chunk(f"feed-manifest-{y}.json", chunk_eps)
+            continue
+        # Split by quarter
+        for q in range(1, 5):
+            q_eps = {fid: [ep for ep, ey, eq, _ in lst if ey == y and eq == q] for fid, lst in episodes_by_feed.items()}
+            if not any(q_eps.values()):
+                continue
+            if _size_of_chunk(q_eps) <= MANIFEST_CHUNK_BYTES_CAP:
+                _emit_chunk(f"feed-manifest-{y}-q{q}.json", q_eps)
+            else:
+                # Split quarter by month
+                for m in range(1, 13):
+                    m1, m2 = (q - 1) * 3 + 1, q * 3
+                    if not (m1 <= m <= m2):
+                        continue
+                    m_eps = {fid: [ep for ep, ey, eq, em in lst if ey == y and eq == q and em == m] for fid, lst in episodes_by_feed.items()}
+                    if any(m_eps.values()):
+                        _emit_chunk(f"feed-manifest-{y}-{m:02d}.json", m_eps)
+
+    # Index: feed metadata (no episodes) + chunk list
+    feed_meta = [{"id": mf["id"], "title": mf["title"], "url": mf.get("url") or "", "features": mf.get("features") or {}} for mf in manifest_feeds]
+    chunks_list = [{"url": base_path + fn} for fn in chunk_specs]
+    write_json(out_dir / "feed-manifest.json", {"version": 3, "base_path": base_path, "feeds": feed_meta, "chunks": chunks_list})
+    _log(f"  done ({len(chunk_specs)} chunks, {time.perf_counter() - t:.1f}s)")
     if args.enrich_media:
         try:
             save_media_meta_cache(cache_dir, media_meta_doc)

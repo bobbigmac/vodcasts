@@ -5,7 +5,6 @@ export function ThemeTakeover({ theme, setTheme, takeover }) {
     <div class="guideBarTakeover" role="dialog" aria-label="Theme" onPointerDownCapture=${() => takeover.bump()} onKeyDownCapture=${() => takeover.bump()}>
       <div class="guideBarTakeoverHeader">
         <div class="guideBarTakeoverTitle">Theme</div>
-        <button class="guideBtn" title="Done" onClick=${() => takeover.close()}>Done</button>
       </div>
       <div class="guideBarTakeoverBody">
         <button

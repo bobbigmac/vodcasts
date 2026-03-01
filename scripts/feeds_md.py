@@ -234,6 +234,12 @@ def parse_feeds_markdown(text: str) -> dict[str, Any]:
                 site["further_search_names"] = items
             continue
 
+        if key_l == "include":
+            items = _split_list(val_raw, seps=",;")
+            if current_top == "defaults" and target is not None:
+                target["include"] = items
+            continue
+
         if key_l in ("owners", "owner", "common_speakers", "exclude_speakers", "categories", "category", "tags"):
             items = _split_list(val_raw, seps=",;")
             if key_l in ("owner",):

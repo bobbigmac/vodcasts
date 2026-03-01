@@ -11,6 +11,7 @@
 - min_hours_between_checks: 2
 - request_timeout_seconds: 25
 - user_agent: actual-plays/vodcasts (+https://github.com/)
+- include: church-audio-only.md
 
 # Feeds
 
@@ -704,3 +705,38 @@
 - title: Praise and Worship Music Live — Without Walls International Church
 - category: worship
 - tags: worship, music, florida, pentecostal, concert, live-music
+
+## white-horse-inn
+- url: https://feeds.feedburner.com/WhiteHorseInn
+- title: White Horse Inn
+- category: teaching
+- tags: theology, reformed, conversational, weekly
+
+## ultimately-rc-sproul
+- url: https://ultimately.ligonier.org/rss
+- title: Ultimately — R.C. Sproul
+- category: teaching
+- tags: ligonier, reformed, short, mwf
+
+
+- tags: chip-ingram, daily, practical
+
+# === Public radio & Americana ===
+
+## npr-news-now
+- url: https://feeds.npr.org/1001/rss.xml
+- title: NPR News Now
+- category: news
+- tags: npr, news, headlines
+
+## wait-wait-dont-tell-me
+- url: https://feeds.npr.org/344098539/podcast.xml
+- title: Wait Wait... Don't Tell Me!
+- category: radio
+- tags: npr, comedy, news-quiz, weekly
+
+## this-american-life
+- url: https://feeds.thisamericanlife.org/talpodcast
+- title: This American Life
+- category: radio
+- tags: npr, storytelling, weekly

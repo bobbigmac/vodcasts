@@ -12,6 +12,8 @@ import { RandomTakeover } from "../ui/takeover/random_takeover.js";
 import { SkipTakeover } from "../ui/takeover/skip_takeover.js";
 import { SpeedTakeover } from "../ui/takeover/speed_takeover.js";
 import { AudioTakeover } from "../ui/takeover/audio_takeover.js";
+import { AudioDisplayTakeover } from "../ui/takeover/audio_display_takeover.js";
+import { getNextPluginId, getPreferredPlugin, setPreferredPlugin } from "../player/audio_viz.js";
 import { ChaptersNavSettingsTakeover, ChaptersNavTakeover } from "../ui/takeover/chapters_nav_takeover.js";
 import { ShareTakeover } from "../ui/takeover/share_takeover.js";
 import { ShuffleTakeover } from "../ui/takeover/shuffle_takeover.js";
@@ -50,6 +52,8 @@ export function App({ env, log, sources, player, history }) {
   const guideWasOpenRef = useRef(false);
 
   const videoRef = useRef(null);
+  const audioVizRef = useRef(null);
+  const audioVizVisRef = useRef(null);
   const playerFrameRef = useRef(null);
   const guideBarRef = useRef(null);
   const progressRef = useRef(null);
@@ -475,6 +479,33 @@ export function App({ env, log, sources, player, history }) {
     };
   }, []);
 
+  // Audio-only: attach viz when container exists. Defer so refs are populated after DOM commit.
+  useSignalEffect(() => {
+    const audioOnly = !!player.isAudioOnly?.value;
+    if (!audioOnly) {
+      player.attachAudioViz(null);
+      return;
+    }
+    let cancelled = false;
+    let attempts = 0;
+    const maxAttempts = 60; // ~1s at 60fps
+    const tryAttach = () => {
+      if (cancelled || attempts++ >= maxAttempts) return;
+      const container = audioVizVisRef.current;
+      if (container && audioVizRef.current && videoRef.current) {
+        player.attachAudioViz(container);
+        return;
+      }
+      requestAnimationFrame(tryAttach);
+    };
+    const id = requestAnimationFrame(tryAttach);
+    return () => {
+      cancelled = true;
+      cancelAnimationFrame(id);
+      player.attachAudioViz?.(null);
+    };
+  });
+
   // Theme
   useEffect(() => {
     const THEME_KEY = "vodcasts_theme_v1";
@@ -670,6 +701,7 @@ export function App({ env, log, sources, player, history }) {
   });
 
   const cur = player.current.value;
+  const isAudioOnly = !!player.isAudioOnly?.value;
   const pb = player.playback.value;
   const cap = player.captions.value;
   const loading = player.loading.value;
@@ -777,6 +809,18 @@ export function App({ env, log, sources, player, history }) {
     },
   });
 
+  const audioDisplayLongPress = useLongPress({
+    ms: 500,
+    enabled: isAudioOnly,
+    onLongPress: () => {
+      panelTakeover.open({
+        id: "audio-display",
+        idleMs: 6000,
+        render: (takeover) => html`<${AudioDisplayTakeover} player=${player} takeover=${takeover} />`,
+      });
+    },
+  });
+
   const speedLongPress = useLongPress({
     ms: 500,
     enabled: true,
@@ -868,8 +912,21 @@ export function App({ env, log, sources, player, history }) {
   return html`
     <div class="app-inner">
       <${StatusToast} toast=${toast} />
-      <div class="player ${cap.showing ? "custom-captions" : ""}" id="player" ref=${playerFrameRef}>
+      <div class="player ${cap.showing ? "custom-captions" : ""} ${isAudioOnly ? "audioOnly" : ""}" id="player" ref=${playerFrameRef}>
         <video id="video" playsinline ref=${videoRef}></video>
+        ${isAudioOnly
+          ? html`
+              <div class="audioViz" ref=${audioVizRef}>
+                <div class="audioViz-bg"></div>
+                <div class="audioViz-vis" ref=${audioVizVisRef} aria-hidden="true"></div>
+                <div class="audioViz-info">
+                  <div class="audioViz-episode">${cur.episode?.title || "—"}</div>
+                  <div class="audioViz-channel">${cur.source?.title || cur.episode?.channelTitle || "—"}</div>
+                  ${currentChapter ? html`<div class="audioViz-chapter">${currentChapter}</div>` : ""}
+                </div>
+              </div>
+            `
+          : ""}
         <div
           class=${"playPauseOverlay" + (pb.paused || loading ? " visible" : "")}
           onClick=${(e) => { e.stopPropagation(); if (!loading) player.togglePlay(); }}
@@ -1202,6 +1259,30 @@ export function App({ env, log, sources, player, history }) {
                   >
                     Theme
                   </button>
+                  ${isAudioOnly
+                    ? html`
+                        <button
+                          id="btnAudioDisplay"
+                          class=${"guideBtn" + (audioDisplayLongPress.pressing.value ? " longpressing" : "")}
+                          title="Viz (click to rotate, long-press for settings)"
+                          data-navitem="1"
+                          style=${{ "--lp": `${Math.round(audioDisplayLongPress.progress.value * 100)}%` }}
+                          onPointerDown=${audioDisplayLongPress.onPointerDown}
+                          onPointerUp=${audioDisplayLongPress.onPointerUp}
+                          onPointerCancel=${audioDisplayLongPress.onPointerCancel}
+                          onClick=${() => {
+                            if (audioDisplayLongPress.consumeClick()) return;
+                            const next = getNextPluginId(getPreferredPlugin() || "wave");
+                            setPreferredPlugin(next);
+                            player.attachAudioViz?.(null);
+                            const visRef = document.querySelector(".audioViz-vis");
+                            if (visRef) player.attachAudioViz?.(visRef);
+                          }}
+                        >
+                          Viz
+                        </button>
+                      `
+                    : ""}
                 </div>
               `}
         </div>

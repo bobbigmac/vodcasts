@@ -24,16 +24,52 @@ def write_json(path: Path, data: Any) -> None:
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def read_feeds_config(path: Path) -> dict[str, Any]:
+def _read_feeds_config_impl(path: Path, _seen: set[str] | None = None) -> dict[str, Any]:
+    path = path.resolve()
     if not path.exists():
         raise ValueError(f"Feeds config not found: {path}")
     if path.suffix.lower() != ".md":
         raise ValueError(f"Feeds config must be Markdown (.md). Got: {path}")
+    seen = _seen or set()
+    key = str(path)
+    if key in seen:
+        raise ValueError(f"Circular include in feeds config: {path}")
+    seen.add(key)
+
     text = path.read_text(encoding="utf-8", errors="replace")
     cfg = parse_feeds_markdown(text)
     if not isinstance(cfg, dict):
         raise ValueError(f"Invalid markdown feeds config: {path}")
+
+    # Merge feeds from included files (skip slugs already present).
+    defaults = cfg.get("defaults") or {}
+    include = defaults.get("include")
+    if include:
+        if isinstance(include, str):
+            include = [include]
+        base_dir = path.parent
+        all_feeds = list(cfg.get("feeds") or [])
+        seen_slugs = {str(f.get("slug") or "").strip() for f in all_feeds if isinstance(f, dict)}
+        for name in include:
+            name = str(name).strip()
+            if not name:
+                continue
+            inc_path = (base_dir / name).resolve()
+            inc_cfg = _read_feeds_config_impl(inc_path, seen)
+            for f in inc_cfg.get("feeds") or []:
+                if not isinstance(f, dict):
+                    continue
+                slug = str(f.get("slug") or "").strip()
+                if slug and slug not in seen_slugs:
+                    seen_slugs.add(slug)
+                    all_feeds.append(f)
+        cfg = {**cfg, "feeds": all_feeds}
+
     return cfg
+
+
+def read_feeds_config(path: Path) -> dict[str, Any]:
+    return _read_feeds_config_impl(path)
 
 
 def normalize_ws(text: str) -> str:

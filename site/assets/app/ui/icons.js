@@ -154,6 +154,30 @@ export function ShareIcon({ size = 18, strokeWidth = 2, className = "" } = {}) {
   `;
 }
 
+export function HeadphonesIcon({ size = 14, strokeWidth = 2, className = "" } = {}) {
+  const s = Number(size) > 0 ? Number(size) : 14;
+  const sw = Number(strokeWidth) > 0 ? Number(strokeWidth) : 2;
+  return html`
+    <svg
+      class=${className}
+      width=${s}
+      height=${s}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width=${sw}
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+      <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"></path>
+      <path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3Z"></path>
+    </svg>
+  `;
+}
+
 export function ShuffleIcon({ size = 18, strokeWidth = 2, className = "" } = {}) {
   const s = Number(size) > 0 ? Number(size) : 18;
   const sw = Number(strokeWidth) > 0 ? Number(strokeWidth) : 2;

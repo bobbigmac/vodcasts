@@ -59,6 +59,8 @@ relative to this folder, not the parent repo.
 - `site/assets/app/runtime/store.js` — minimal `getState/update/subscribe`.
 - `site/assets/app/runtime/log.js` — log panel writer.
 - `site/assets/app/player/player.js` — video element controller (HLS via `hls.js`, progress persistence, chapters/subtitles, sleep timer).
+- `site/assets/app/player/audio_viz.js` — audio-only display: uses preferred plugin from registry.
+- `site/assets/app/player/audio_plugins/` — built-in plugins: wave, starfield, clock, weather, calendar, aquarium. Preference via Audio options (◐) when playing audio-only.
 - `site/assets/app/ui/guide.js` — channel guide renderer (lazy loads episodes per feed).
 - `site/assets/app/ui/details.js` — details sidebar coordinator (binds comments to current episode when open).
 - `site/assets/app/ui/chapters.js` — chapters loader + renderer.
