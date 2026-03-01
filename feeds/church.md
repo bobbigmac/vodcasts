@@ -691,3 +691,9 @@
 - title: Church of the Highlands — Weekend Service
 - category: sermons
 - tags: sermons, weekend, multi-site, alabama, weekly
+
+## wwic-music-video
+- url: http://feeds.feedburner.com/WWIC-music-video
+- title: Praise and Worship Music Live — Without Walls International Church
+- category: worship
+- tags: worship, music, florida, pentecostal, concert, live-music
