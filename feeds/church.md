@@ -334,6 +334,48 @@
 - category: sermons
 - tags: sermons, uk, video
 
+## life-church-video
+- url: https://feedpress.me/lifechurchipod
+- title: Life.Church with Craig Groeschel (Video)
+- category: sermons
+- tags: sermons, multi-site, oklahoma, video
+
+## sandals-church-video
+- url: https://sandalschurch.com/feeds/podcast_video_hd.xml
+- title: Sandals Church Sermon Video
+- category: sermons
+- tags: sermons, california, video
+
+## scottsdale-bible-church-video
+- url: http://feeds.feedburner.com/scottsdale-bible-hd-video
+- title: Scottsdale Bible Church Sermon HD
+- category: sermons
+- tags: sermons, arizona, video
+
+## reality-la-video
+- url: https://realityla.com/VideoPodcast
+- title: Reality LA — Bible Teaching (Video)
+- category: sermons
+- tags: sermons, bible-teaching, los-angeles, video
+
+## between-sermons-video
+- url: https://www.betweensermons.com/feed.xml
+- title: Between Sermons (Video)
+- category: sermons
+- tags: sermons, video
+
+## the-well-video
+- url: https://thewellcommunity.org/podcasts/sermons/rss/video
+- title: The Well — Sermon Video
+- category: sermons
+- tags: sermons, dallas, video
+
+## sanctus-church-video
+- url: https://sanctusvideo.podbean.com/feed.xml
+- title: Sanctus Church Video Sermons
+- category: sermons
+- tags: sermons, video
+
 ## discovery-church-orlando-fl
 - url: http://feeds.feedburner.com/discoveryvideo
 - title: Discovery Church Orlando FL

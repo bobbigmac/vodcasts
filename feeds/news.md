@@ -65,3 +65,33 @@
 - title: TED Talks Daily (Video)
 - category: news
 - tags: ted, video, talks
+
+## ted-talks-hd
+- url: https://feeds.feedburner.com/TedtalksHD
+- title: TED Talks Daily (HD)
+- category: news
+- tags: ted, video, hd
+
+## science-friday-video
+- url: https://www.sciencefriday.com/feed/podcast/podcast-video/
+- title: Science Friday Videos
+- category: news
+- tags: science, pbs, video
+
+## uctv-science-video
+- url: https://podcast.uctv.tv/uctv_video_science.rss
+- title: UCTV Science (Video)
+- category: news
+- tags: science, uctv, university-california, video
+
+## tech-news-weekly-video
+- url: https://feeds.twit.tv/tnw_video_hd.xml
+- title: Tech News Weekly (Video)
+- category: news
+- tags: tech, twit, video
+
+## geek-news-central-video
+- url: https://geeknewscentral.com/feed/video/
+- title: Geek News Central (Video)
+- category: news
+- tags: tech, geek, video

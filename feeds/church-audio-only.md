@@ -760,6 +760,12 @@
 - category: teaching
 - tags: islam, muslim, wisdom, spirituality
 
+## sikh-history-sakhi
+- url: https://rss.buzzsprout.com/1650244.rss
+- title: Sikh History Sakhi
+- category: teaching
+- tags: sikh, history, stories
+
 ## parsha-podcast
 - url: http://rabbiwolbe.com/feed/parsha/
 - title: The Parsha Podcast — Rabbi Yaakov Wolbe
