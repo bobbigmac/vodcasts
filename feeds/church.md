@@ -27,12 +27,6 @@
 - category: sermons
 - tags: sermons, pentecostal, multi-site, sunday, concert, live-music
 
-## fresh-life
-- url: https://feeds.blubrry.com/feeds/fresh_life.xml
-- title: Fresh Life Church
-- category: sermons
-- tags: sermons, bible-teaching, montana, sunday, concert, live-music
-
 ## jerry-savelle
 - url: https://www.jerrysavelle.org/rssfeeds/tvvideo.xml
 - title: Jerry Savelle Ministries

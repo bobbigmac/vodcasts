@@ -356,6 +356,14 @@
   gap: 10px;
   min-width: 0;
 }
+.guideGridChanEpCount {
+  flex: 0 0 auto;
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--muted);
+  opacity: 0.28;
+  font-variant-numeric: tabular-nums;
+}
 .guideGridChanBadges { display: inline-flex; gap: 6px; flex-wrap: wrap; min-width: 0 }
 .guideGridChanNo {
   flex: 0 0 auto;

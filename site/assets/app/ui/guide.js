@@ -3,6 +3,7 @@ import { episodeSearchHaystack, matchesAllTokens, splitQuery } from "./search.js
 import { HeadphonesIcon } from "./icons.js";
 
 const CATEGORY_ORDER = ["church", "university", "fitness", "bible", "twit", "podcastindex", "other", "needs-rss"];
+const EPISODE_LOOP_ENABLED = false; // When false, episodes render once; no wrap/cycle. Set true to restore TV-style looping.
 const MS_PER_MIN = 60 * 1000;
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
 const NEW_WITHIN_DAYS = 30;
@@ -449,7 +450,8 @@ export function GuidePanel({ isOpen, sources, player }) {
     const cycleSec = schedule.cycleSec;
     if (!Number.isFinite(cycleSec) || cycleSec <= 0) return null;
     const relSec = (ts - guideZeroTs.value) / 1000;
-    const off = mod(relSec, cycleSec);
+    if (!EPISODE_LOOP_ENABLED && relSec >= cycleSec) return null;
+    const off = EPISODE_LOOP_ENABLED ? mod(relSec, cycleSec) : Math.min(relSec, cycleSec - 0.001);
     const cycleBaseSec = relSec - off;
     const idx = bsearchCum(schedule.cum, off);
     const startRelSec = cycleBaseSec + schedule.cum[idx];
@@ -513,14 +515,15 @@ export function GuidePanel({ isOpen, sources, player }) {
     let idx = first.idx;
     let curTs = first.startTs;
     let guard = 0;
-    // Safety: avoid pathological rows generating massive DOM.
+    const n = schedule.playable.length;
     while (curTs < endTs && guard < 800) {
+      if (!EPISODE_LOOP_ENABLED && idx >= n) break;
       const ep = schedule.playable[idx];
       const durSec = schedule.dursSec[idx];
       const nextTs = curTs + durSec * 1000;
       out.push({ idx, ep, durSec, startTs: curTs, endTs: nextTs });
       curTs = nextTs;
-      idx = (idx + 1) % schedule.playable.length;
+      idx = EPISODE_LOOP_ENABLED ? (idx + 1) % n : idx + 1;
       guard++;
     }
     return out;
@@ -1365,6 +1368,15 @@ export function GuidePanel({ isOpen, sources, player }) {
                             <span class="guideGridChanNameText">${src.title || src.id}</span>
                           </div>
                           <div class="guideGridChanSub">
+                            <span class="guideGridChanEpCount">
+                              ${(() => {
+                                const sched = getSchedule(src.id);
+                                if (sched) return sched.playable.length;
+                                const eps = episodesBySource[src.id];
+                                if (Array.isArray(eps)) return eps.filter(isPlayableVideoEp).length;
+                                return "—";
+                              })()}
+                            </span>
                             <span class="guideGridChanBadges">
                               ${ccLikely ? html`<span class="guideBadge guideBadge-cc" title="Captions likely available">CC</span>` : ""}
                             </span>
