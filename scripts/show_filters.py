@@ -174,8 +174,8 @@ def build_shows_for_feed(
 
     def _leftovers_dict(eps: list) -> dict[str, Any]:
         return {
-            "id": f"{feed_id}-leftovers",
-            "slug": _slugify(f"{feed_id}-leftovers"),
+            "id": f"{feed_id}-show",
+            "slug": _slugify(f"{feed_id}"),
             "title": leftovers_label,
             "title_full": leftovers_full,
             "description": leftovers_desc,
