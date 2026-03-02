@@ -2,123 +2,63 @@
   "version": 1,
   "feeds": {
     "twit_twit": {
-      "status": "not_modified",
-      "url": "https://feeds.twit.tv/twit_video_hd.xml",
-      "last_checked_unix": 1772421155,
-      "etag": "\"699bdc88-2085b\"",
-      "last_modified": "Mon, 23 Feb 2026 04:50:16 GMT"
+      "status": "skip",
+      "reason": "cooldown"
     },
     "eaglebrook": {
-      "status": "ok",
-      "url": "https://www.eaglebrookchurch.com/mediafiles/eagle-brook-church-videocast.xml",
-      "fetched_url": "https://www.eaglebrookchurch.com/mediafiles/eagle-brook-church-videocast.xml",
-      "last_checked_unix": 1772421155,
-      "last_ok_unix": 1772421155,
-      "etag": null,
-      "last_modified": "Sun, 01 Mar 2026 21:47:44 GMT",
-      "bytes": 1222885
+      "status": "skip",
+      "reason": "cooldown"
     },
     "geek-news-central-podcast-video": {
-      "status": "not_modified",
-      "url": "https://geeknewscentral.com/feed/video/",
-      "last_checked_unix": 1772421155,
-      "etag": "\"55a0e9a20a44f9f7d9e367c3a7c44c99\"",
-      "last_modified": "Sun, 01 Mar 2026 06:00:56 GMT"
+      "status": "skip",
+      "reason": "cooldown"
     },
     "apple-events": {
-      "status": "not_modified",
-      "url": "https://applehosted.podcasts.apple.com/apple_keynotes/apple_keynotes.xml",
-      "last_checked_unix": 1772421155,
-      "etag": "\"46cbdb00f4af02d42de912f837241b10:1758936926.445644\"",
-      "last_modified": "Sat, 27 Sep 2025 01:35:26 GMT"
+      "status": "skip",
+      "reason": "cooldown"
     },
     "mbw-video": {
-      "status": "ok",
-      "url": "https://feeds.twit.tv/mbw_video_hd.xml",
-      "fetched_url": "https://feeds.twit.tv/mbw_video_hd.xml",
-      "last_checked_unix": 1772421155,
-      "last_ok_unix": 1772421155,
-      "etag": "\"69a4f30a-1c56e\"",
-      "last_modified": "Mon, 02 Mar 2026 02:16:42 GMT",
-      "bytes": 116078
+      "status": "skip",
+      "reason": "cooldown"
     },
     "ipad-video": {
-      "status": "ok",
-      "url": "https://feeds.twit.tv/ipad_video_hd.xml",
-      "fetched_url": "https://feeds.twit.tv/ipad_video_hd.xml",
-      "last_checked_unix": 1772421155,
-      "last_ok_unix": 1772421155,
-      "etag": "\"69a4f30c-1774a\"",
-      "last_modified": "Mon, 02 Mar 2026 02:16:44 GMT",
-      "bytes": 96074
+      "status": "skip",
+      "reason": "cooldown"
     },
     "twig-video": {
-      "status": "ok",
-      "url": "https://feeds.twit.tv/twig_video_hd.xml",
-      "fetched_url": "https://feeds.twit.tv/twig_video_hd.xml",
-      "last_checked_unix": 1772421155,
-      "last_ok_unix": 1772421155,
-      "etag": "\"69a4f314-1eb6d\"",
-      "last_modified": "Mon, 02 Mar 2026 02:16:52 GMT",
-      "bytes": 125805
+      "status": "skip",
+      "reason": "cooldown"
     },
     "podcasting-tech": {
-      "status": "not_modified",
-      "url": "https://feeds.captivate.fm/podcasting-tech/",
-      "last_checked_unix": 1772421155,
-      "etag": "\"b119d-64afb3fa7d8b3\"",
-      "last_modified": "Tue, 17 Feb 2026 01:47:05 GMT"
+      "status": "skip",
+      "reason": "cooldown"
     },
     "ww-video": {
-      "status": "ok",
-      "url": "https://feeds.twit.tv/ww_video_hd.xml",
-      "fetched_url": "https://feeds.twit.tv/ww_video_hd.xml",
-      "last_checked_unix": 1772421155,
-      "last_ok_unix": 1772421155,
-      "etag": "\"69a4f2e8-249c9\"",
-      "last_modified": "Mon, 02 Mar 2026 02:16:08 GMT",
-      "bytes": 149961
+      "status": "skip",
+      "reason": "cooldown"
     },
     "a-couple-of-rad-techs": {
-      "status": "not_modified",
-      "url": "https://feeds.captivate.fm/a-couple-of-rad-techs/",
-      "last_checked_unix": 1772421155,
-      "etag": "\"d1524-64a1d4a631300\"",
-      "last_modified": "Fri, 06 Feb 2026 00:58:42 GMT"
+      "status": "skip",
+      "reason": "cooldown"
     },
     "twit-specials-video": {
-      "status": "not_modified",
-      "url": "https://feeds.twit.tv/specials_video_hd.xml",
-      "last_checked_unix": 1772421155,
-      "etag": "\"694b6ed9-11dff\"",
-      "last_modified": "Wed, 24 Dec 2025 04:40:57 GMT"
+      "status": "skip",
+      "reason": "cooldown"
     },
     "sn-video": {
-      "status": "ok",
-      "url": "https://feeds.twit.tv/sn_video_hd.xml",
-      "fetched_url": "https://feeds.twit.tv/sn_video_hd.xml",
-      "last_checked_unix": 1772421155,
-      "last_ok_unix": 1772421155,
-      "etag": "\"69a4f305-1b018\"",
-      "last_modified": "Mon, 02 Mar 2026 02:16:37 GMT",
-      "bytes": 110616
+      "status": "skip",
+      "reason": "cooldown"
     },
     "twit-events-video": {
-      "status": "not_modified",
-      "url": "https://feeds.twit.tv/events_video_hd.xml",
-      "last_checked_unix": 1772421155,
-      "etag": "\"694b6ece-2281d\"",
-      "last_modified": "Wed, 24 Dec 2025 04:40:46 GMT"
+      "status": "skip",
+      "reason": "cooldown"
     },
     "transcripted-ai-video": {
-      "status": "not_modified",
-      "url": "https://transcripted.ai/api/rss/consolidated/video",
-      "last_checked_unix": 1772421155,
-      "etag": null,
-      "last_modified": "Sun, 01 Mar 2026 20:16:28 GMT"
+      "status": "skip",
+      "reason": "cooldown"
     }
   },
-  "updated_at_unix": 1772421155,
+  "updated_at_unix": 1772427588,
   "site": {
     "id": "vodcasts-dev",
     "title": "VODcasts (Dev)",
