@@ -14,8 +14,8 @@
 		<ttl>720</ttl>
 		<sy:updatePeriod>weekly</sy:updatePeriod>
 		<sy:updateFrequency>1</sy:updateFrequency>
-		<lastBuildDate>Thu, 26 Feb 2026 14:25:02 PST</lastBuildDate>
-		<pubDate>Thu, 26 Feb 2026 14:25:02 PST</pubDate>
+		<lastBuildDate>Sun, 01 Mar 2026 18:16:38 PST</lastBuildDate>
+		<pubDate>Sun, 01 Mar 2026 18:16:38 PST</pubDate>
 		<rawvoice:frequency>weekly</rawvoice:frequency>
 		<rawvoice:location>Petaluma, CA</rawvoice:location>
 		<itunes:type>episodic</itunes:type>
@@ -63,19 +63,19 @@ New episodes every Thursday.</description>
 			<category>iOS</category>
 			<itunes:explicit>no</itunes:explicit>
 			<itunes:subtitle>Spotlighting the App Store&#039;s Hidden Gems</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/ios-today-791-transcript" type="text/html" />
 			<itunes:keywords>iOS, indie iOS apps, Tapbots Ivory, Mastodon app, Screens VNC client, remote desktop iOS, NeatPass Apple Wallet, PDF to pass, Dice by P-Calc, TV tracking app, Television Time, Apple special event, Creator Studio, final cut pro ipad, logic pro ipad</itunes:keywords>
 			<description><![CDATA[
-<p>Hosts Mikah and Dan are revealing the off-the-radar apps they actually use and the creative ways they make Apple devices work smarter every day. Find out which overlooked tools help them (and maybe you) solve real-life digital annoyances.</p> 
-<p><br /> 
-• Spotlight on Ivory by Tapbots as a top Mastodon client<br /> 
-• NeatPass: Creating Apple Wallet passes from PDFs on-device<br /> 
-• Screens app enables remote access and control across devices<br /> 
-• Dice by PCalc delivers customizable, fun dice-rolling features<br /> 
-• Television Time helps users track shows, episodes, and release dates<br /> 
-• News: Apple's rumored special event and speculation on possible product launches<br /> 
-• Feedback: Apple Creator Studio subscription benefits<br /> 
-• App Cap segment: Belkin AirPods Cleaning Kit for device maintenance, and the Zephy app for identifying overhead airplanes in real time</p> 
-<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Hosts Mikah and Dan are revealing the off-the-radar apps they actually use and the creative ways they make Apple devices work smarter every day. Find out which overlooked tools help them (and maybe you) solve real-life digital annoyances.</p><ul> 
+<li>Spotlight on Ivory by Tapbots as a top Mastodon client</li> 
+<li>NeatPass: Creating Apple Wallet passes from PDFs on-device</li> 
+<li>Screens app enables remote access and control across devices</li> 
+<li>Dice by PCalc delivers customizable, fun dice-rolling features</li> 
+<li>Television Time helps users track shows, episodes, and release dates</li> 
+<li>News: Apple's rumored special event and speculation on possible product launches</li> 
+<li>Feedback: Apple Creator Studio subscription benefits</li> 
+<li>App Cap segment: Belkin AirPods Cleaning Kit for device maintenance, and the Zephy app for identifying overhead airplanes in real time</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://dmoren.com/" target="_blank">Dan Moren</a></p> 
 <p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
 <p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
 <p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
@@ -83,17 +83,16 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 <p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
 ]]></description>
 			<itunes:summary><![CDATA[
-<p>Hosts Mikah and Dan are revealing the off-the-radar apps they actually use and the creative ways they make Apple devices work smarter every day. Find out which overlooked tools help them (and maybe you) solve real-life digital annoyances.</p> 
-<p><br /> 
-• Spotlight on Ivory by Tapbots as a top Mastodon client<br /> 
-• NeatPass: Creating Apple Wallet passes from PDFs on-device<br /> 
-• Screens app enables remote access and control across devices<br /> 
-• Dice by PCalc delivers customizable, fun dice-rolling features<br /> 
-• Television Time helps users track shows, episodes, and release dates<br /> 
-• News: Apple's rumored special event and speculation on possible product launches<br /> 
-• Feedback: Apple Creator Studio subscription benefits<br /> 
-• App Cap segment: Belkin AirPods Cleaning Kit for device maintenance, and the Zephy app for identifying overhead airplanes in real time</p> 
-<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Hosts Mikah and Dan are revealing the off-the-radar apps they actually use and the creative ways they make Apple devices work smarter every day. Find out which overlooked tools help them (and maybe you) solve real-life digital annoyances.</p><ul> 
+<li>Spotlight on Ivory by Tapbots as a top Mastodon client</li> 
+<li>NeatPass: Creating Apple Wallet passes from PDFs on-device</li> 
+<li>Screens app enables remote access and control across devices</li> 
+<li>Dice by PCalc delivers customizable, fun dice-rolling features</li> 
+<li>Television Time helps users track shows, episodes, and release dates</li> 
+<li>News: Apple's rumored special event and speculation on possible product launches</li> 
+<li>Feedback: Apple Creator Studio subscription benefits</li> 
+<li>App Cap segment: Belkin AirPods Cleaning Kit for device maintenance, and the Zephy app for identifying overhead airplanes in real time</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://dmoren.com/" target="_blank">Dan Moren</a></p> 
 <p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
 <p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
 <p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
@@ -101,17 +100,16 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 <p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
 ]]></itunes:summary>
 			<content:encoded><![CDATA[
-<p>Hosts Mikah and Dan are revealing the off-the-radar apps they actually use and the creative ways they make Apple devices work smarter every day. Find out which overlooked tools help them (and maybe you) solve real-life digital annoyances.</p> 
-<p><br /> 
-• Spotlight on Ivory by Tapbots as a top Mastodon client<br /> 
-• NeatPass: Creating Apple Wallet passes from PDFs on-device<br /> 
-• Screens app enables remote access and control across devices<br /> 
-• Dice by PCalc delivers customizable, fun dice-rolling features<br /> 
-• Television Time helps users track shows, episodes, and release dates<br /> 
-• News: Apple's rumored special event and speculation on possible product launches<br /> 
-• Feedback: Apple Creator Studio subscription benefits<br /> 
-• App Cap segment: Belkin AirPods Cleaning Kit for device maintenance, and the Zephy app for identifying overhead airplanes in real time</p> 
-<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Hosts Mikah and Dan are revealing the off-the-radar apps they actually use and the creative ways they make Apple devices work smarter every day. Find out which overlooked tools help them (and maybe you) solve real-life digital annoyances.</p><ul> 
+<li>Spotlight on Ivory by Tapbots as a top Mastodon client</li> 
+<li>NeatPass: Creating Apple Wallet passes from PDFs on-device</li> 
+<li>Screens app enables remote access and control across devices</li> 
+<li>Dice by PCalc delivers customizable, fun dice-rolling features</li> 
+<li>Television Time helps users track shows, episodes, and release dates</li> 
+<li>News: Apple's rumored special event and speculation on possible product launches</li> 
+<li>Feedback: Apple Creator Studio subscription benefits</li> 
+<li>App Cap segment: Belkin AirPods Cleaning Kit for device maintenance, and the Zephy app for identifying overhead airplanes in real time</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://dmoren.com/" target="_blank">Dan Moren</a></p> 
 <p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
 <p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
 <p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
@@ -132,10 +130,10 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 				<media:rating scheme="urn:v-chip">tv-g</media:rating>
 				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
 				<media:credit role="host">Mikah Sargent</media:credit>
-				<media:credit role="host">Rosemary Orchard</media:credit>
+				<media:credit role="host">Dan Moren</media:credit>
 			</media:content>
 				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
-				<podcast:person role="host" href="https://twit.tv/people/rosemary-orchard" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/771751/pictures/rosemary.jpg">Rosemary Orchard</podcast:person>
+				<podcast:person role="host" href="https://dmoren.com/" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/713041/pictures/dan.jpg">Dan Moren</podcast:person>
 		</item>
 		<item>
 			<title>iOS 790: Party Games - Liven up Your Social Gatherings With These Apps</title>

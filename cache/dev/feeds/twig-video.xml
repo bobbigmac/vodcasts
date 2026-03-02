@@ -14,8 +14,8 @@
 		<ttl>720</ttl>
 		<sy:updatePeriod>weekly</sy:updatePeriod>
 		<sy:updateFrequency>1</sy:updateFrequency>
-		<lastBuildDate>Wed, 25 Feb 2026 20:50:02 PST</lastBuildDate>
-		<pubDate>Wed, 25 Feb 2026 20:50:02 PST</pubDate>
+		<lastBuildDate>Sun, 01 Mar 2026 18:16:41 PST</lastBuildDate>
+		<pubDate>Sun, 01 Mar 2026 18:16:41 PST</pubDate>
 		<rawvoice:frequency>weekly</rawvoice:frequency>
 		<rawvoice:location>Petaluma, CA</rawvoice:location>
 		<itunes:type>episodic</itunes:type>
@@ -65,6 +65,7 @@ Records live every Wednesday at 5:00pm Eastern / 2:00pm Pacific / 22:00 UTC.</de
 			<category>Artificial Intelligence</category>
 			<itunes:explicit>no</itunes:explicit>
 			<itunes:subtitle>Tech&#039;s Gilded Age</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/intelligent-machines-859-transcript" type="text/html" />
 			<itunes:keywords>TWiT, Intelligent Machines, Leo Laporte, Jeff Jarvis, Paris Martineau, Jeff Atwood, stack overflow, discourse, Rural Guaranteed Minimum Income Initiative, RGMI, Universal Basic Income, UBI, ai tools, Claude Code, openAI, Anthropic, chatgpt, coding horror,</itunes:keywords>
 			<description><![CDATA[
 <p>What happens when the creator of Stack Overflow decides he's going to take on rural poverty with a guaranteed minimum income—and bankrolls it himself? Find out why Jeff Atwood believes AI and philanthropy might matter more to the American dream than any new software ever could.</p><ul> 
@@ -213,7 +214,7 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860286/hero/IM0859_Thumbnail.jpg"/>
 			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0859/twig0859_h264m_1920x1080.mp4</guid>
 			<rawvoice:isHd>yes</rawvoice:isHd>
-			<itunes:duration>0:00</itunes:duration>
+			<itunes:duration>3:05:22</itunes:duration>
 			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0859/twig0859_h264m_1920x1080.mp4" length="3147766354" type="video/mp4"/>
 			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0859/twig0859_h264m_1920x1080.mp4" fileSize="3147766354" type="video/mp4" medium="video">
 				<media:title type="plain">IM 859: What's Behind the Fox? - Tech&#039;s Gilded Age</media:title>

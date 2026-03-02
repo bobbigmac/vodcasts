@@ -14,8 +14,8 @@
 		<ttl>720</ttl>
 		<sy:updatePeriod>weekly</sy:updatePeriod>
 		<sy:updateFrequency>1</sy:updateFrequency>
-		<lastBuildDate>Wed, 25 Feb 2026 09:40:03 PST</lastBuildDate>
-		<pubDate>Wed, 25 Feb 2026 09:40:03 PST</pubDate>
+		<lastBuildDate>Sun, 01 Mar 2026 18:16:33 PST</lastBuildDate>
+		<pubDate>Sun, 01 Mar 2026 18:16:33 PST</pubDate>
 		<rawvoice:frequency>weekly</rawvoice:frequency>
 		<rawvoice:location>Petaluma, CA</rawvoice:location>
 		<itunes:type>episodic</itunes:type>
@@ -65,13 +65,13 @@ Records live every Tuesday at 2:00pm Eastern / 11:00am Pacific / 19:00 UTC.</des
 			<category>Mac</category>
 			<itunes:explicit>no</itunes:explicit>
 			<itunes:subtitle>Steve Jobs&#039; 71st Birthday</itunes:subtitle>
-			<podcast:transcript url="http://twit.tv/posts/transcripts/macbreak-weekly-1013-transcript" type="text/html" />
+			<podcast:transcript url="http://twit.tv/posts/tech/apple-losing-its-edge-software" type="text/html" />
 			<itunes:keywords>MacBreak Weekly, Leo Laporte, Andy Ihnatko, Jason Snell, Christina Warren, Apple, Steve Jobs, steve jobs birthday, steve jobs archive, tim cook, Jony Ive, David Pogue, Artificial Intelligence, ai, apple ai, six colors, six colors report card</itunes:keywords>
 			<description><![CDATA[
-<p>Welcome, Christina Warren, to the MacBreak Weekly panel! Looking back at Steve Jobs and what would have been his 71st birthday. Jason Snell unveils the Six Colors report card. And Apple plans to manufacture Mac Minis in Houston.</p><ul> 
+<p>Welcome, Christina Warren, to the <em>MacBreak Weekly</em> panel! Looking back at Steve Jobs and what would have been his 71st birthday. Jason Snell unveils the Six Colors report card. And Apple plans to manufacture Mac Minis in Houston.</p><ul> 
 <li>Remembering Steve Jobs on his 71st birthday.</li> 
-<li>Steve Jobs Archive releases 'Letters to a Young Creator' featuring Tim Cook, Jony Ive, and more.</li> 
-<li>David Pogue shares first look at upcoming 'Apple: The First 50 Years' book.</li> 
+<li>Steve Jobs Archive releases "Letters to a Young Creator" featuring Tim Cook, Jony Ive, and more.</li> 
+<li>David Pogue shares first look at upcoming "Apple: The First 50 Years" book.</li> 
 <li>Apple's next big thing is a push into visual artificial intelligence.</li> 
 <li>The Six Colors report card.</li> 
 <li>The evil LeapFrog tablet in Toy Story 5 appears to be running the macOS window manager.</li> 
@@ -95,10 +95,10 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 </ul></p>
 ]]></description>
 			<itunes:summary><![CDATA[
-<p>Welcome, Christina Warren, to the MacBreak Weekly panel! Looking back at Steve Jobs and what would have been his 71st birthday. Jason Snell unveils the Six Colors report card. And Apple plans to manufacture Mac Minis in Houston.</p><ul> 
+<p>Welcome, Christina Warren, to the <em>MacBreak Weekly</em> panel! Looking back at Steve Jobs and what would have been his 71st birthday. Jason Snell unveils the Six Colors report card. And Apple plans to manufacture Mac Minis in Houston.</p><ul> 
 <li>Remembering Steve Jobs on his 71st birthday.</li> 
-<li>Steve Jobs Archive releases 'Letters to a Young Creator' featuring Tim Cook, Jony Ive, and more.</li> 
-<li>David Pogue shares first look at upcoming 'Apple: The First 50 Years' book.</li> 
+<li>Steve Jobs Archive releases "Letters to a Young Creator" featuring Tim Cook, Jony Ive, and more.</li> 
+<li>David Pogue shares first look at upcoming "Apple: The First 50 Years" book.</li> 
 <li>Apple's next big thing is a push into visual artificial intelligence.</li> 
 <li>The Six Colors report card.</li> 
 <li>The evil LeapFrog tablet in Toy Story 5 appears to be running the macOS window manager.</li> 
@@ -122,10 +122,10 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 </ul></p>
 ]]></itunes:summary>
 			<content:encoded><![CDATA[
-<p>Welcome, Christina Warren, to the MacBreak Weekly panel! Looking back at Steve Jobs and what would have been his 71st birthday. Jason Snell unveils the Six Colors report card. And Apple plans to manufacture Mac Minis in Houston.</p><ul> 
+<p>Welcome, Christina Warren, to the <em>MacBreak Weekly</em> panel! Looking back at Steve Jobs and what would have been his 71st birthday. Jason Snell unveils the Six Colors report card. And Apple plans to manufacture Mac Minis in Houston.</p><ul> 
 <li>Remembering Steve Jobs on his 71st birthday.</li> 
-<li>Steve Jobs Archive releases 'Letters to a Young Creator' featuring Tim Cook, Jony Ive, and more.</li> 
-<li>David Pogue shares first look at upcoming 'Apple: The First 50 Years' book.</li> 
+<li>Steve Jobs Archive releases "Letters to a Young Creator" featuring Tim Cook, Jony Ive, and more.</li> 
+<li>David Pogue shares first look at upcoming "Apple: The First 50 Years" book.</li> 
 <li>Apple's next big thing is a push into visual artificial intelligence.</li> 
 <li>The Six Colors report card.</li> 
 <li>The evil LeapFrog tablet in Toy Story 5 appears to be running the macOS window manager.</li> 

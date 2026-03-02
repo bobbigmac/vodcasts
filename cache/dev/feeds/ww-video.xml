@@ -14,8 +14,8 @@
 		<ttl>720</ttl>
 		<sy:updatePeriod>weekly</sy:updatePeriod>
 		<sy:updateFrequency>1</sy:updateFrequency>
-		<lastBuildDate>Wed, 25 Feb 2026 17:35:03 PST</lastBuildDate>
-		<pubDate>Wed, 25 Feb 2026 17:35:03 PST</pubDate>
+		<lastBuildDate>Sun, 01 Mar 2026 18:16:01 PST</lastBuildDate>
+		<pubDate>Sun, 01 Mar 2026 18:16:01 PST</pubDate>
 		<rawvoice:frequency>weekly</rawvoice:frequency>
 		<rawvoice:location>Petaluma, CA</rawvoice:location>
 		<itunes:type>episodic</itunes:type>
@@ -64,11 +64,11 @@ Records live every Wednesday at 2:00pm Eastern / 11:00am Pacific / 19:00 UTC.</d
 			<category>Technology</category>
 			<itunes:explicit>no</itunes:explicit>
 			<itunes:subtitle>Phil Spencer &amp; Sarah Bond Depart Xbox</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/windows-weekly-972-transcript" type="text/html" />
 			<itunes:keywords>Microsoft, Windows, xbox, Xbox leadership changes, Phil Spencer retirement, Sarah Bond departure, Asha Sharma Microsoft Gaming, Instacart executive, Core AI, gaming industry, Xbox hardware strategy, activision blizzard acquisition, console exclusives</itunes:keywords>
 			<description><![CDATA[
 <p>Just last week, we asked about Phil Spencer and why he's been so quiet lately. Now we know why! Also, OneDrive for the Mac is finally going to look like it belongs on the Mac. And Google Chrome finally picks up a split view like the rest of the planet, plus a few other new features.</p> 
-<p><br /> 
-PHIL SPENCER OUT AT XBOX</p><ul> 
+<p>PHIL SPENCER OUT AT XBOX</p><ul> 
 <li>Phil Spencer has retired from Microsoft and his heir-apparent, Sarah Bond, left Microsoft as well</li> 
 <li>Report details the Xbox reorg</li> 
 <li>Ex-Xbox executive issues an old guy shouting at sky assessment</li> 
@@ -80,8 +80,8 @@ PHIL SPENCER OUT AT XBOX</p><ul>
 <li>Week D arrived on time this month</li> 
 <li>Preview of March Patch Tuesday updates</li> 
 <li>Network speed test, pan and tilt in Camera settings, sysmon, RSAT improvements, Quick Machine Recovery improvements, WEBP background image support, Emoji 16.0</li> 
-<li>And you thought the Canary channel was weird already<br /> 
--New builds for Canary, Dev, and Beta. Canary gets features we already saw elsewhere, Dev and Beta get context menu, settings, and Taskbar improvements </li> 
+<li>And you thought the Canary channel was weird already</li> 
+<li>New builds for Canary, Dev, and Beta. Canary gets features we already saw elsewhere, Dev and Beta get context menu, settings, and Taskbar improvements </li> 
 <li>Paul has published (an incomplete version of) De-Enshittify Windows 11</li> 
 <li>De-enshittifying Copilot and AI is doable but not yet automated</li> 
 <li>What about the alternatives?</li> 
@@ -110,8 +110,7 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 ]]></description>
 			<itunes:summary><![CDATA[
 <p>Just last week, we asked about Phil Spencer and why he's been so quiet lately. Now we know why! Also, OneDrive for the Mac is finally going to look like it belongs on the Mac. And Google Chrome finally picks up a split view like the rest of the planet, plus a few other new features.</p> 
-<p><br /> 
-PHIL SPENCER OUT AT XBOX</p><ul> 
+<p>PHIL SPENCER OUT AT XBOX</p><ul> 
 <li>Phil Spencer has retired from Microsoft and his heir-apparent, Sarah Bond, left Microsoft as well</li> 
 <li>Report details the Xbox reorg</li> 
 <li>Ex-Xbox executive issues an old guy shouting at sky assessment</li> 
@@ -123,8 +122,8 @@ PHIL SPENCER OUT AT XBOX</p><ul>
 <li>Week D arrived on time this month</li> 
 <li>Preview of March Patch Tuesday updates</li> 
 <li>Network speed test, pan and tilt in Camera settings, sysmon, RSAT improvements, Quick Machine Recovery improvements, WEBP background image support, Emoji 16.0</li> 
-<li>And you thought the Canary channel was weird already<br /> 
--New builds for Canary, Dev, and Beta. Canary gets features we already saw elsewhere, Dev and Beta get context menu, settings, and Taskbar improvements </li> 
+<li>And you thought the Canary channel was weird already</li> 
+<li>New builds for Canary, Dev, and Beta. Canary gets features we already saw elsewhere, Dev and Beta get context menu, settings, and Taskbar improvements </li> 
 <li>Paul has published (an incomplete version of) De-Enshittify Windows 11</li> 
 <li>De-enshittifying Copilot and AI is doable but not yet automated</li> 
 <li>What about the alternatives?</li> 
@@ -153,8 +152,7 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 ]]></itunes:summary>
 			<content:encoded><![CDATA[
 <p>Just last week, we asked about Phil Spencer and why he's been so quiet lately. Now we know why! Also, OneDrive for the Mac is finally going to look like it belongs on the Mac. And Google Chrome finally picks up a split view like the rest of the planet, plus a few other new features.</p> 
-<p><br /> 
-PHIL SPENCER OUT AT XBOX</p><ul> 
+<p>PHIL SPENCER OUT AT XBOX</p><ul> 
 <li>Phil Spencer has retired from Microsoft and his heir-apparent, Sarah Bond, left Microsoft as well</li> 
 <li>Report details the Xbox reorg</li> 
 <li>Ex-Xbox executive issues an old guy shouting at sky assessment</li> 
@@ -166,8 +164,8 @@ PHIL SPENCER OUT AT XBOX</p><ul>
 <li>Week D arrived on time this month</li> 
 <li>Preview of March Patch Tuesday updates</li> 
 <li>Network speed test, pan and tilt in Camera settings, sysmon, RSAT improvements, Quick Machine Recovery improvements, WEBP background image support, Emoji 16.0</li> 
-<li>And you thought the Canary channel was weird already<br /> 
--New builds for Canary, Dev, and Beta. Canary gets features we already saw elsewhere, Dev and Beta get context menu, settings, and Taskbar improvements </li> 
+<li>And you thought the Canary channel was weird already</li> 
+<li>New builds for Canary, Dev, and Beta. Canary gets features we already saw elsewhere, Dev and Beta get context menu, settings, and Taskbar improvements </li> 
 <li>Paul has published (an incomplete version of) De-Enshittify Windows 11</li> 
 <li>De-enshittifying Copilot and AI is doable but not yet automated</li> 
 <li>What about the alternatives?</li> 
@@ -197,7 +195,7 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860280/hero/WW0972_thumbnail_0.jpg"/>
 			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0972/ww0972_h264m_1920x1080.mp4</guid>
 			<rawvoice:isHd>yes</rawvoice:isHd>
-			<itunes:duration>0:00</itunes:duration>
+			<itunes:duration>2:27:57</itunes:duration>
 			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0972/ww0972_h264m_1920x1080.mp4" length="2604649350" type="video/mp4"/>
 			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0972/ww0972_h264m_1920x1080.mp4" fileSize="2604649350" type="video/mp4" medium="video">
 				<media:title type="plain">WW 972: I'm A Tolkien Scholar - Phil Spencer &amp; Sarah Bond Depart Xbox</media:title>
