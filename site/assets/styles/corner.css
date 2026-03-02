@@ -12,11 +12,13 @@
   backdrop-filter: blur(8px);
   color: var(--text);
   cursor: pointer;
-  z-index: 90;
+  z-index: 130;
   transition: opacity 0.35s ease, background 0.15s ease;
 }
 .cornerBtnLeft { left: 18px }
-.cornerBtn:not(.cornerBtnLeft) { right: 18px }
+.cornerBtn.cornerBtnBrowse { left: 18px }
+.cornerBtn.cornerBtnHistory { left: 72px }
+.cornerBtn:not(.cornerBtnLeft):not(.cornerBtnBrowse):not(.cornerBtnHistory) { right: 18px }
 .cornerBtn.cornerBtnMid { right: 72px }
 .cornerBtn.cornerBtnShare { right: 126px }
 .cornerBtn:hover { background: rgba(0,0,0,.7) }

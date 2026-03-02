@@ -60,18 +60,25 @@ Schema notes live in `docs/supabase-comments.md`.
 - Optional build-time enrichment (precompute chapters/transcripts JSON)
 - PWA/offline media caching (app shell + cached feeds + optional user-selected media)
 
+## Per-feed landing pages + Netflix-style browse
+
+- Feed landing pages: `/feed/<slug>/` — real HTML files with pre-filled browse view
+- Shows: JSON filters per feed turn episodes into show rows (Netflix-style)
+- Show RSS: `/feed/<slug>/show/<show-slug>.xml` — subscribable per-show feeds
+- Config: `shows_path: shows/<slug>.json` or `feeds/shows/<slug>.json` (auto-loaded by slug). No "all episodes" filter — only named shows; unmatched episodes go to channel-named leftovers.
+
+Filter types: `title_contains`, `title_contains_any`, `title_regex`, `title_prefix`, `title_suffix`, `description_contains`. Use `leftovers_title` in the JSON to name the leftovers row (e.g. "Standalone sermons").
+
 # VODcasts TODO
 
 ## Priority: real page content
 
-- [ ] **Real page content per page** — TBD: monkey-patch `404.html` vs build dedicated landing page per feed (hotswap, faking multipage). Need to decide approach before implementing.
-  - Probably want to make some ability to browse channel episodes like a profile page, since our episode guide is a little tricky on small devices (needs to scale/react better) and for users unfamiliar with sky/cable/tv browsing.
-    - Netflix/AmazonPrimeVideo/Disney+/iPlayer ALL use that same format, let's bucket known episodes into 'shows' that are browsable like Netflix.
+- [x] **Real page content per page** — Per-feed landing pages at `/feed/<slug>/` with Netflix-style browse.
 
 ## Discoverability + accessibility
 
 - [ ] Bake real text into homepage: what it is, what “video RSS” means, what you don’t do (no recommendations/comments), example categories (Services, Sermons, Prayer, Kids, Study)
-- [ ] Give every feed its own page with stable URL, plain description, tiny episode list (for indexing + sharing)
+- [x] Give every feed its own page with stable URL, plain description, tiny episode list (for indexing + sharing)
 - [ ] Optional audio/radio feeds, what about visuals?
 - [ ] OpenGraph/Twitter cards so shared links preview as “watchable”
 - [ ] Sitemap + sensible canonical URLs; 

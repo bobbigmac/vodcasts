@@ -1,0 +1,147 @@
+{
+  "leftovers_title": "Discover more",
+  "leftovers_title_full": "Discover more from Transcripted.ai",
+  "leftovers_description": "AI video summaries from hundreds of popular podcasts.",
+  "shows": [
+    {
+      "id": "breaking-points",
+      "title": "Breaking Points",
+      "title_full": "Breaking Points summaries from Transcripted.ai",
+      "description": "AI video summaries of Breaking Points.",
+      "filter": { "type": "title_contains", "value": " — Breaking Points" }
+    },
+    {
+      "id": "joe-rogan",
+      "title": "The Joe Rogan Experience",
+      "title_full": "Joe Rogan Experience summaries from Transcripted.ai",
+      "description": "AI video summaries of The Joe Rogan Experience.",
+      "filter": { "type": "title_contains", "value": " — The Joe Rogan Experience" }
+    },
+    {
+      "id": "megyn-kelly",
+      "title": "The Megyn Kelly Show",
+      "title_full": "Megyn Kelly Show summaries from Transcripted.ai",
+      "description": "AI video summaries of The Megyn Kelly Show.",
+      "filter": { "type": "title_contains", "value": " — The Megyn Kelly Show" }
+    },
+    {
+      "id": "rubin-report",
+      "title": "The Rubin Report",
+      "title_full": "Rubin Report summaries from Transcripted.ai",
+      "description": "AI video summaries of The Rubin Report.",
+      "filter": { "type": "title_contains", "value": " — The Rubin Report" }
+    },
+    {
+      "id": "huberman",
+      "title": "Huberman Lab",
+      "title_full": "Huberman Lab summaries from Transcripted.ai",
+      "description": "AI video summaries of Huberman Lab.",
+      "filter": { "type": "title_contains", "value": " — Huberman Lab" }
+    },
+    {
+      "id": "philion",
+      "title": "Philion",
+      "title_full": "Philion summaries from Transcripted.ai",
+      "description": "AI video summaries of Philion.",
+      "filter": { "type": "title_contains", "value": " — Philion" }
+    },
+    {
+      "id": "mind-pump",
+      "title": "Mind Pump Show",
+      "title_full": "Mind Pump Show summaries from Transcripted.ai",
+      "description": "AI video summaries of Mind Pump Show.",
+      "filter": { "type": "title_contains", "value": " — Mind Pump Show" }
+    },
+    {
+      "id": "pbd",
+      "title": "PBD Podcast",
+      "title_full": "PBD Podcast summaries from Transcripted.ai",
+      "description": "AI video summaries of PBD Podcast.",
+      "filter": { "type": "title_contains", "value": " — PBD Podcast" }
+    },
+    {
+      "id": "my-first-million",
+      "title": "My First Million",
+      "title_full": "My First Million summaries from Transcripted.ai",
+      "description": "AI video summaries of My First Million.",
+      "filter": { "type": "title_contains", "value": " — My First Million" }
+    },
+    {
+      "id": "modern-wisdom",
+      "title": "Modern Wisdom",
+      "title_full": "Modern Wisdom summaries from Transcripted.ai",
+      "description": "AI video summaries of Modern Wisdom.",
+      "filter": { "type": "title_contains", "value": " — Modern Wisdom" }
+    },
+    {
+      "id": "armchair-expert",
+      "title": "Armchair Expert",
+      "title_full": "Armchair Expert summaries from Transcripted.ai",
+      "description": "AI video summaries of Armchair Expert.",
+      "filter": { "type": "title_contains", "value": " — Armchair Expert" }
+    },
+    {
+      "id": "diary-of-a-ceo",
+      "title": "The Diary of a CEO",
+      "title_full": "Diary of a CEO summaries from Transcripted.ai",
+      "description": "AI video summaries of The Diary of a CEO.",
+      "filter": { "type": "title_contains", "value": " — The Diary of a CEO" }
+    },
+    {
+      "id": "a16z",
+      "title": "a16z Podcast",
+      "title_full": "a16z Podcast summaries from Transcripted.ai",
+      "description": "AI video summaries of a16z Podcast.",
+      "filter": { "type": "title_contains", "value": " — a16z Podcast" }
+    },
+    {
+      "id": "pomp",
+      "title": "The Pomp Podcast",
+      "title_full": "Pomp Podcast summaries from Transcripted.ai",
+      "description": "AI video summaries of The Pomp Podcast.",
+      "filter": { "type": "title_contains", "value": " — The Pomp Podcast" }
+    },
+    {
+      "id": "tucker",
+      "title": "Tucker Carlson",
+      "title_full": "Tucker Carlson summaries from Transcripted.ai",
+      "description": "AI video summaries of Tucker Carlson.",
+      "filter": { "type": "title_contains", "value": " — Tucker Carlson" }
+    },
+    {
+      "id": "rich-roll",
+      "title": "The Rich Roll Podcast",
+      "title_full": "Rich Roll Podcast summaries from Transcripted.ai",
+      "description": "AI video summaries of The Rich Roll Podcast.",
+      "filter": { "type": "title_contains", "value": " — The Rich Roll Podcast" }
+    },
+    {
+      "id": "tim-ferriss",
+      "title": "The Tim Ferriss Show",
+      "title_full": "Tim Ferriss Show summaries from Transcripted.ai",
+      "description": "AI video summaries of The Tim Ferriss Show.",
+      "filter": { "type": "title_contains", "value": " — The Tim Ferriss Show" }
+    },
+    {
+      "id": "why-files",
+      "title": "The Why Files",
+      "title_full": "Why Files summaries from Transcripted.ai",
+      "description": "AI video summaries of The Why Files.",
+      "filter": { "type": "title_contains", "value": " — The Why Files" }
+    },
+    {
+      "id": "cheeky-pint",
+      "title": "Cheeky Pint",
+      "title_full": "Cheeky Pint summaries from Transcripted.ai",
+      "description": "AI video summaries of Cheeky Pint.",
+      "filter": { "type": "title_contains", "value": " — Cheeky Pint" }
+    },
+    {
+      "id": "shawn-ryan",
+      "title": "Shawn Ryan Show",
+      "title_full": "Shawn Ryan Show summaries from Transcripted.ai",
+      "description": "AI video summaries of Shawn Ryan Show.",
+      "filter": { "type": "title_contains", "value": " — Shawn Ryan Show" }
+    }
+  ]
+}

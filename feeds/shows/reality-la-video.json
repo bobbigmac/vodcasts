@@ -1,0 +1,14 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from Reality LA",
+  "leftovers_description": "Episodes not in a named show.",
+  "shows": [
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Bible teaching from Reality LA",
+      "description": "Expository Bible teaching.",
+      "filter": { "type": "all" }
+    }
+  ]
+}

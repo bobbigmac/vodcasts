@@ -1,0 +1,580 @@
+/**
+ * Netflix-style browse panel: shows as primary, episodes behind expand.
+ */
+.browsePanel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-height: 75vh;
+  background: color-mix(in srgb, var(--panel) 92%, transparent);
+  border: 1px solid var(--edge);
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 100;
+  transition: bottom 0.25s ease, opacity 0.2s ease;
+  backdrop-filter: blur(12px);
+}
+.browsePanel[aria-hidden="false"] {
+  bottom: 0;
+  opacity: 1;
+}
+.browsePanel[aria-hidden="true"] {
+  bottom: -75vh;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.browsePanel-inner {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.browseHeader {
+  padding: 14px 12px 10px;
+  border-bottom: 1px solid var(--edge);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.browseBackBtn {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.browseBackBtn:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.browseTitle {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 650;
+  color: var(--text);
+  flex: 1;
+  min-width: 0;
+}
+
+.browseShowGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+  padding: 12px;
+}
+
+.browseShowCard {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--edge);
+}
+
+.browseShowCardBtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  width: 100%;
+}
+.browseShowCardBtn:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.browseShowCardThumb {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.browseShowCardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.browseShowCardOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+.browseShowCardOverlayBar {
+  background: rgba(0, 0, 0, 0.78);
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  text-align: center;
+  padding: 4px 8px;
+  border-radius: 6px;
+  line-height: 1.2;
+  max-width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.browseShowCardPlaceholder {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.browseShowCardInfo {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.browseShowCardTitle {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.25;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.browseShowCardMeta {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.browseShowCardProgress {
+  height: 4px;
+  margin-top: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.browseShowCardProgressFill {
+  height: 100%;
+  background: var(--accent, #0a84ff);
+  border-radius: 2px;
+  transition: width 0.2s ease;
+}
+
+.browseShowCardExpand {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.browseShowExpand {
+  padding: 0 10px 12px;
+  border-top: 1px solid var(--edge);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.browseShowDesc {
+  margin: 8px 0 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+.browseShowActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.browseResumeBtn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent, #0a84ff);
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.browseResumeBtn:hover {
+  background: color-mix(in srgb, var(--accent, #0a84ff) 85%, white);
+}
+
+.browsePlayBtn {
+  padding: 8px 14px;
+  border: 1px solid var(--edge);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.browsePlayBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+
+.browsePanel-empty {
+  padding: 24px 12px;
+  text-align: center;
+  color: var(--muted);
+}
+
+/* Episodes-only view (feeds without custom shows) */
+.browseEpActions {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--edge);
+}
+.browseEpList {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+}
+.browseEpItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  padding: 10px 12px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  width: 100%;
+  transition: background 0.15s ease;
+}
+.browseEpItem:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+.browseEpItemTitle {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.browseEpItemMeta {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* Browse All (all shows page) */
+.browseAllPanel {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: color-mix(in srgb, var(--panel) 96%, transparent);
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+.browseAllPanel[aria-hidden="true"] {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.browseAllPanel-inner {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.browseAllHeader {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--edge);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.browseAllTitle {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 650;
+  color: var(--text);
+}
+.browseAllClose {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.browseAllClose:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+.browseAllEmpty {
+  padding: 24px;
+  text-align: center;
+  color: var(--muted);
+}
+.browseAllContent {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 0;
+}
+.browseAllRow {
+  margin-bottom: 24px;
+}
+.browseAllRow:last-child {
+  margin-bottom: 0;
+}
+.browseAllRowTitle {
+  margin: 0 0 10px 16px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+}
+.browseAllRowStrip {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 0;
+  scrollbar-width: thin;
+}
+.browseAllRowStrip::-webkit-scrollbar {
+  height: 6px;
+}
+.browseAllRowStrip-inner {
+  display: flex;
+  gap: 12px;
+  padding: 0 16px;
+  min-width: min-content;
+}
+.browseAllShowCard {
+  flex-shrink: 0;
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--edge);
+}
+.browseAllShowCardClickable {
+  cursor: pointer;
+}
+.browseAllShowCardClickable:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: color-mix(in srgb, var(--edge) 80%, var(--accent, #0a84ff));
+}
+.browseAllShowCardPoster {
+  aspect-ratio: 2/3;
+  background: rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.browseAllShowCardPoster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.browseAllShowCardOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+.browseAllShowCardOverlayBar {
+  background: rgba(0, 0, 0, 0.78);
+  color: white;
+  font-size: 9px;
+  font-weight: 600;
+  text-align: center;
+  padding: 2px 6px;
+  border-radius: 4px;
+  line-height: 1.1;
+  max-width: 100%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+.browseAllShowCardPlaceholder {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.3);
+}
+.browseAllShowCardInfo {
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.browseAllShowCardTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.browseAllShowCardMeta {
+  font-size: 11px;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.browseAllShowCardActions {
+  display: flex;
+  gap: 6px;
+  padding: 0 10px 10px;
+  flex-wrap: wrap;
+}
+.browseAllShowCardActions .browseAllPlayBtn {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+.browseAllList {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.browseAllItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--edge);
+  border-radius: 10px;
+}
+.browseAllItemClickable {
+  cursor: pointer;
+}
+.browseAllItemClickable:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.browseAllItemThumb {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.browseAllItemThumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.browseAllItemOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+.browseAllItemOverlayBar {
+  background: rgba(0, 0, 0, 0.78);
+  color: white;
+  font-size: 9px;
+  font-weight: 600;
+  text-align: center;
+  padding: 2px 6px;
+  border-radius: 4px;
+  line-height: 1.1;
+  max-width: 100%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+.browseAllItemInfo {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.browseAllItemTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+.browseAllItemMeta {
+  font-size: 12px;
+  color: var(--muted);
+}
+.browseAllItemActions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.browseAllPlayBtn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent, #0a84ff);
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.browseAllPlayBtn:hover {
+  background: color-mix(in srgb, var(--accent, #0a84ff) 85%, white);
+}

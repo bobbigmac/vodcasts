@@ -44,8 +44,20 @@ export function getRouteFromUrl() {
   const relPath = relPath0 != null ? relPath0.replace(/^\/+/, "") : u.pathname.startsWith(bp) ? u.pathname.slice(bp.length) : u.pathname.replace(/^\/+/, "");
   const segs = relPath.split("/").filter(Boolean).map(decodeSeg);
 
-  const feed = segs[0] || sp.get("feed") || sp.get("channel") || sp.get("c") || "";
-  const ep = segs[1] || sp.get("ep") || sp.get("episode") || sp.get("e") || "";
+  // Support /<feed>/, /<feed>/shows/<show>/, /<feed>/<ep>/; /browse/ for browse-all. Legacy: /feed/<feed>/...
+  let feed = "";
+  let ep = "";
+  let show = "";
+  const browse = segs[0] === "browse";
+  if (segs[0] === "feed" && segs.length >= 2) {
+    feed = segs[1] || "";
+    if (segs[2] === "shows" && segs[3]) show = segs[3] || "";
+    else ep = segs[2] || "";
+  } else if (!browse && segs[0]) {
+    feed = segs[0] || sp.get("feed") || sp.get("channel") || sp.get("c") || "";
+    if (segs[1] === "shows" && segs[2]) show = segs[2] || "";
+    else ep = segs[1] || sp.get("ep") || sp.get("episode") || sp.get("e") || "";
+  }
 
   const hp = new URLSearchParams(String(u.hash || "").replace(/^#/, ""));
   const t = parseTimeParam(hp.get("t") || hp.get("time") || sp.get("t") || sp.get("time"));
@@ -63,7 +75,9 @@ export function getRouteFromUrl() {
   return {
     feed: feed || null,
     ep: ep || null,
+    show: show || null,
     t: Number.isFinite(t) ? t : null,
+    browse: browse || null,
   };
 }
 
@@ -72,15 +86,18 @@ function shouldTrackPageView({ feed, ep } = {}) {
   return !!(feed && ep);
 }
 
-export function setRouteInUrl({ feed, ep } = {}, { replace = true } = {}) {
+export function setRouteInUrl({ feed, ep, show } = {}, { replace = true } = {}) {
   const u = new URL(window.location.href);
   const bp = basePath();
   u.search = "";
   u.hash = "";
 
   let path = bp;
-  if (feed) path += encodeURIComponent(String(feed)) + "/";
-  if (feed && ep) path += encodeURIComponent(String(ep)) + "/";
+  if (feed) {
+    if (show) path += encodeURIComponent(String(feed)) + "/shows/" + encodeURIComponent(String(show)) + "/";
+    else if (ep) path += encodeURIComponent(String(feed)) + "/" + encodeURIComponent(String(ep)) + "/";
+    else path += encodeURIComponent(String(feed)) + "/";
+  }
   u.pathname = path;
 
   const next = u.pathname;
@@ -97,15 +114,18 @@ export function setRouteInUrl({ feed, ep } = {}, { replace = true } = {}) {
   }
 }
 
-export function buildShareUrl({ feed, ep, t } = {}) {
+export function buildShareUrl({ feed, ep, show, t } = {}) {
   const u = new URL(window.location.href);
   const bp = basePath();
   u.search = "";
   u.hash = "";
 
   let path = bp;
-  if (feed) path += encodeURIComponent(String(feed)) + "/";
-  if (feed && ep) path += encodeURIComponent(String(ep)) + "/";
+  if (feed) {
+    if (show) path += encodeURIComponent(String(feed)) + "/shows/" + encodeURIComponent(String(show)) + "/";
+    else if (ep) path += encodeURIComponent(String(feed)) + "/" + encodeURIComponent(String(ep)) + "/";
+    else path += encodeURIComponent(String(feed)) + "/";
+  }
   u.pathname = path;
 
   if (t != null && Number.isFinite(Number(t))) u.hash = `t=${String(Math.max(0, Math.floor(Number(t))))}`;

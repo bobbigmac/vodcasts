@@ -14,6 +14,7 @@ export async function bootApp() {
   const log = createLogger();
   initPwa(env, log);
   const sources = signal([]);
+  const showsConfig = signal(null);
   const initialRoute = getRouteFromUrl();
   trackPageView(window.location.pathname);
 
@@ -23,7 +24,17 @@ export async function bootApp() {
   const mount = document.getElementById("app");
   if (!mount) throw new Error("Missing #app");
 
-  render(html`<${App} env=${env} log=${log} sources=${sources} player=${player} history=${history} />`, mount);
+  render(
+    html`<${App}
+      env=${env}
+      log=${log}
+      sources=${sources}
+      showsConfig=${showsConfig}
+      player=${player}
+      history=${history}
+    />`,
+    mount
+  );
 
   try {
     log.info("Loading sources…");
@@ -31,6 +42,18 @@ export async function bootApp() {
     sources.value = loaded;
     log.info(`Sources loaded: ${loaded.length}`);
     player.setSources(loaded, { initialRoute });
+
+    if (env.showsConfigUrl) {
+      try {
+        const res = await fetch(env.showsConfigUrl);
+        if (res.ok) {
+          const data = await res.json();
+          showsConfig.value = data;
+        }
+      } catch (e) {
+        log.error("Failed to load shows config: " + String(e?.message || e));
+      }
+    }
   } catch (err) {
     log.error(String(err?.message || err || "sources load failed"));
     throw err;

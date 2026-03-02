@@ -1,0 +1,14 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from Desiring God",
+  "leftovers_description": "Episodes not in a named show.",
+  "shows": [
+    {
+      "id": "messages",
+      "title": "Messages",
+      "title_full": "Messages from Desiring God",
+      "description": "Preaching and conference messages.",
+      "filter": { "type": "all" }
+    }
+  ]
+}

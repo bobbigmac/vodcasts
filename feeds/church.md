@@ -15,7 +15,7 @@
 
 # Feeds
 
-## eagle-brook
+## eaglebrook
 - url: https://www.eaglebrookchurch.com/mediafiles/eagle-brook-church-videocast.xml
 - title: Eagle Brook Church
 - category: sermons

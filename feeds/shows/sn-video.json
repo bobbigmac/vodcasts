@@ -1,0 +1,14 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from Security Now",
+  "leftovers_description": "Episodes not in a named show.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Security Now episodes",
+      "description": "Security and privacy news and deep dives.",
+      "filter": { "type": "all" }
+    }
+  ]
+}

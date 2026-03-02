@@ -1,0 +1,14 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from A Couple of Rad Techs",
+  "leftovers_description": "Episodes not in a named show.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "A Couple of Rad Techs episodes",
+      "description": "Tech talk and podcasting.",
+      "filter": { "type": "all" }
+    }
+  ]
+}

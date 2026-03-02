@@ -1,0 +1,21 @@
+{
+  "leftovers_title": "Sermons",
+  "leftovers_title_full": "Sermons from Bridgetown",
+  "leftovers_description": "Sermons and teachings on faith and life.",
+  "shows": [
+    {
+      "id": "seven-deadly-sins",
+      "title": "7 Deadly Sins",
+      "title_full": "7 Deadly Sins from Bridgetown",
+      "description": "Series on the seven deadly sins.",
+      "filter": { "type": "title_prefix", "value": "7 Deadly Sins:" }
+    },
+    {
+      "id": "first-light",
+      "title": "First Light (Advent)",
+      "title_full": "First Light Advent from Bridgetown",
+      "description": "Advent series.",
+      "filter": { "type": "title_contains", "value": "First Light:" }
+    }
+  ]
+}

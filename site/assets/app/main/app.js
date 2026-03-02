@@ -1,5 +1,7 @@
 import { html, useEffect, useMemo, useRef, useSignal, useSignalEffect } from "../runtime/vendor.js";
 import { GuidePanel } from "../ui/guide.js";
+import { BrowsePanel } from "../ui/browse.js";
+import { BrowseAllPanel } from "../ui/browse_all.js";
 import { DetailsPanel } from "../ui/details.js";
 import { HistoryPanel } from "../ui/history.js";
 import { StatusToast } from "../ui/status_toast.js";
@@ -40,10 +42,27 @@ function chapterNameAt(chapters, tSec) {
   return ch?.name ? String(ch.name) : "";
 }
 
-export function App({ env, log, sources, player, history }) {
+export function App({ env, log, sources, showsConfig, player, history }) {
   const guideOpen = useSignal(false);
+  const guideBrowseFeedId = useSignal(null);
+  const guideBrowseShowSlug = useSignal(null);
+  const isBrowseMode = !!(
+    env?.initialView === "browse" &&
+    env?.initialFeed &&
+    (showsConfig?.value?.feeds?.[env.initialFeed] || []).length > 0
+  );
+  const browseShows = useMemo(
+    () => (env?.initialFeed && showsConfig?.value?.feeds?.[env.initialFeed]) || [],
+    [env?.initialFeed, showsConfig?.value]
+  );
+  const hotswapFeedId = guideBrowseFeedId.value;
+  const hotswapShows = useMemo(
+    () => (hotswapFeedId && showsConfig?.value?.feeds?.[hotswapFeedId]) || [],
+    [hotswapFeedId, showsConfig?.value]
+  );
   const detailsOpen = useSignal(false);
   const historyOpen = useSignal(false);
+  const browseAllOpen = useSignal(false);
   const isFullscreen = useSignal(false);
   const toast = useSignal({ show: false, msg: "", level: "info", ms: 2200 });
   const panelTakeover = usePanelTakeover({ defaultIdleMs: 5000 });
@@ -109,7 +128,7 @@ export function App({ env, log, sources, player, history }) {
     const loading = !!player.loading.value;
     const playing = !loading && !pb.paused && !pb.ended;
     if (!playing) return false;
-    if (guideOpen.value || detailsOpen.value || historyOpen.value) return false;
+    if (guideOpen.value || detailsOpen.value || historyOpen.value || browseAllOpen.value) return false;
     if (progressRef.current?.classList?.contains("scrubbing")) return false;
     return true;
   };
@@ -143,6 +162,7 @@ export function App({ env, log, sources, player, history }) {
     const cleanup = installControls();
     return () => cleanup?.();
   }, []);
+
 
   // MediaSession metadata (lock screen / notification controls).
   useSignalEffect(() => {
@@ -182,6 +202,12 @@ export function App({ env, log, sources, player, history }) {
     guideWasOpenRef.current = nowOpen;
   });
 
+  // Clear hotswap browse when guide closes.
+  useSignalEffect(() => {
+    if (!guideOpen.value) guideBrowseFeedId.value = null;
+  });
+
+
   // Global UI idle: while playing, hide chrome (except mute + thin progress bar) after a short delay.
   useEffect(() => {
     appRootRef.current = document.getElementById("app");
@@ -220,6 +246,7 @@ export function App({ env, log, sources, player, history }) {
       guideOpen: !!guideOpen.value,
       detailsOpen: !!detailsOpen.value,
       historyOpen: !!historyOpen.value,
+      browseAllOpen: !!browseAllOpen.value,
     };
     const prev = uiIdleDepsRef.current;
     const changed =
@@ -228,7 +255,8 @@ export function App({ env, log, sources, player, history }) {
       next.loading !== prev.loading ||
       next.guideOpen !== prev.guideOpen ||
       next.detailsOpen !== prev.detailsOpen ||
-      next.historyOpen !== prev.historyOpen;
+      next.historyOpen !== prev.historyOpen ||
+      next.browseAllOpen !== prev.browseAllOpen;
     if (!changed) return;
     uiIdleDepsRef.current = next;
     scheduleUiIdle();
@@ -544,6 +572,7 @@ export function App({ env, log, sources, player, history }) {
       if (guideOpen.value) guideOpen.value = false;
       if (detailsOpen.value) detailsOpen.value = false;
       if (historyOpen.value) historyOpen.value = false;
+      if (browseAllOpen.value) browseAllOpen.value = false;
       if (panelTakeover.active.value) panelTakeover.close();
     };
     document.addEventListener("keydown", onKey);
@@ -554,7 +583,7 @@ export function App({ env, log, sources, player, history }) {
   const PANEL_IDLE_MS = 7000;
   const panelIds = ["guidePanel", "detailsPanel", "historyPanel"];
   useSignalEffect(() => {
-    const anyOpen = guideOpen.value || detailsOpen.value || historyOpen.value;
+    const anyOpen = guideOpen.value || detailsOpen.value || historyOpen.value || browseAllOpen.value;
     if (!anyOpen) return;
     let t = setTimeout(() => {
       if (guideOpen.value) guideOpen.value = false;
@@ -572,6 +601,7 @@ export function App({ env, log, sources, player, history }) {
           if (guideOpen.value) guideOpen.value = false;
           if (detailsOpen.value) detailsOpen.value = false;
           if (historyOpen.value) historyOpen.value = false;
+          if (browseAllOpen.value) browseAllOpen.value = false;
         }, PANEL_IDLE_MS);
       }
     };
@@ -636,11 +666,40 @@ export function App({ env, log, sources, player, history }) {
     };
   }, []);
 
+  // Sync UI to route on load: only /browse/ opens Browse All; /X/shows/Y opens guide with show.
+  useEffect(() => {
+    const route = getRouteFromUrl();
+    browseAllOpen.value = !!route.browse;
+    if (route.feed && route.show) {
+      guideBrowseFeedId.value = route.feed;
+      guideBrowseShowSlug.value = route.show;
+      guideOpen.value = true;
+    }
+  }, []);
+
   // Back/forward support: apply route changes from the address bar.
   useEffect(() => {
     let token = 0;
     const onNav = () => {
       const route = getRouteFromUrl();
+      if (route.browse) {
+        browseAllOpen.value = true;
+        guideBrowseShowSlug.value = null;
+        return;
+      }
+      browseAllOpen.value = false;
+      if (route.feed && route.show) {
+        guideBrowseFeedId.value = route.feed;
+        guideBrowseShowSlug.value = route.show;
+        guideOpen.value = true;
+        const t = ++token;
+        suppressNextRoutePushRef.current = t;
+        player.applyRoute({ feed: route.feed }, { autoplay: false }).catch(() => {}).finally(() => {
+          if (suppressNextRoutePushRef.current === t) suppressNextRoutePushRef.current = 0;
+        });
+        return;
+      }
+      guideBrowseShowSlug.value = null;
       const autoplay = !player.playback.value?.paused;
       const t = ++token;
       suppressNextRoutePushRef.current = t;
@@ -687,17 +746,26 @@ export function App({ env, log, sources, player, history }) {
     };
   }, []);
 
-  // Keep the URL shareable (feed + episode) as playback changes, and push entries for user selections.
+  // Keep the URL shareable. When in show context (playlist with showSlug), use /feed/X/shows/Y; else use episode URL.
   useSignalEffect(() => {
     const s = player.current.value.source?.id;
     const e = player.current.value.episode?.slug;
     if (!s) return;
-    const routeKey = `${String(s)}::${String(e || "")}`;
+    const pl = player.playlist?.value;
+    const showSlug = pl?.showSlug || null;
     const recentUser = Date.now() - (Number(lastUserIntentAtRef.current) || 0) < 1200;
     const fromHistory = !!suppressNextRoutePushRef.current;
-    const shouldPush = !fromHistory && recentUser && !!e && routeKey !== lastRouteKeyRef.current;
-    setRouteInUrl({ feed: s, ep: e }, { replace: !shouldPush });
-    lastRouteKeyRef.current = routeKey;
+    if (showSlug) {
+      const routeKey = `${String(s)}::show:${String(showSlug)}`;
+      const shouldPush = !fromHistory && recentUser && routeKey !== lastRouteKeyRef.current;
+      setRouteInUrl({ feed: s, show: showSlug }, { replace: !shouldPush });
+      lastRouteKeyRef.current = routeKey;
+    } else {
+      const routeKey = `${String(s)}::${String(e || "")}`;
+      const shouldPush = !fromHistory && recentUser && !!e && routeKey !== lastRouteKeyRef.current;
+      setRouteInUrl({ feed: s, ep: e }, { replace: !shouldPush });
+      lastRouteKeyRef.current = routeKey;
+    }
   });
 
   const cur = player.current.value;
@@ -1288,13 +1356,87 @@ export function App({ env, log, sources, player, history }) {
         </div>
       </div>
 
-      <${GuidePanel} isOpen=${guideOpen} sources=${sources} player=${player} />
+      ${isBrowseMode || guideBrowseFeedId.value
+        ? html`<${BrowsePanel}
+            isOpen=${guideOpen}
+            feedId=${guideBrowseFeedId.value || env.initialFeed}
+            feedTitle=${(sources.value || []).find((s) => s.id === (guideBrowseFeedId.value || env.initialFeed))?.title ||
+              showsConfig?.value?.feedTitles?.[guideBrowseFeedId.value || env.initialFeed] ||
+              (guideBrowseFeedId.value || env.initialFeed)}
+            shows=${guideBrowseFeedId.value ? hotswapShows : browseShows}
+            hasCustomShows=${(showsConfig?.value?.feedsWithCustomShows || []).includes(guideBrowseFeedId.value || env.initialFeed)}
+            initialExpandShowSlug=${guideBrowseShowSlug.value}
+            player=${player}
+            history=${history}
+            onBack=${guideBrowseFeedId.value ? () => {
+              guideBrowseFeedId.value = null;
+              guideBrowseShowSlug.value = null;
+            } : undefined}
+            onExpandShow=${(feedId, showSlug) => {
+              guideBrowseShowSlug.value = showSlug;
+              setRouteInUrl({ feed: feedId, show: showSlug }, { replace: false });
+            }}
+            onCollapseShow=${() => {
+              guideBrowseShowSlug.value = null;
+              setRouteInUrl({ feed: guideBrowseFeedId.value || env.initialFeed }, { replace: true });
+            }}
+          />`
+        : html`<${GuidePanel}
+            isOpen=${guideOpen}
+            sources=${sources}
+            player=${player}
+            showsConfig=${showsConfig}
+            onFeedClick=${(feedId) => {
+              guideBrowseFeedId.value = feedId;
+            }}
+          />`}
+      <${BrowseAllPanel}
+        isOpen=${browseAllOpen.value}
+        showsConfig=${showsConfig?.value}
+        feedTitles=${showsConfig?.value?.feedTitles}
+        player=${player}
+        history=${history}
+        onClose=${() => {
+          browseAllOpen.value = false;
+          if (getRouteFromUrl().browse) {
+            try {
+              window.history.back();
+            } catch {}
+          }
+        }}
+        onShowClick=${(feedId, show) => {
+          browseAllOpen.value = false;
+          guideBrowseFeedId.value = feedId;
+          guideBrowseShowSlug.value = show.slug || show.id;
+          guideOpen.value = true;
+          setRouteInUrl({ feed: feedId, show: show.slug || show.id }, { replace: false });
+        }}
+      />
       <${HistoryPanel} isOpen=${historyOpen} history=${history} player=${player} />
       <${DetailsPanel} isOpen=${detailsOpen} env=${env} player=${player} log=${log} />
 
       <button
+        id="btnBrowse"
+        class="cornerBtn cornerBtnBrowse"
+        title="Browse all shows"
+        data-navitem="1"
+        data-keyhint="B — Browse"
+        onClick=${() => {
+          const next = !browseAllOpen.value;
+          browseAllOpen.value = next;
+          if (next) {
+            const bp = String(env?.basePath || "/").replace(/\/?$/, "/");
+            try {
+              history.pushState({}, "", bp + "browse/");
+            } catch {}
+          }
+        }}
+      >
+        📋
+      </button>
+      <button
         id="btnHistory"
-        class="cornerBtn cornerBtnLeft"
+        class="cornerBtn cornerBtnHistory"
         title="History"
         data-navitem="1"
         data-keyhint="Y — History"

@@ -249,6 +249,23 @@ def parse_feeds_markdown(text: str) -> dict[str, Any]:
             target[key] = items
             continue
 
+        # shows: JSON array of {id, title, filter} per feed. Enables Netflix-style browse.
+        if current_top == "feeds" and current_feed is not None and key_l == "shows":
+            val = val_raw.strip()
+            # Strip outer quotes (YAML may preserve them)
+            if (val.startswith("'") and val.endswith("'")) or (val.startswith('"') and val.endswith('"')):
+                val = val[1:-1]
+            if val.startswith("[") or val.startswith("{"):
+                try:
+                    import json
+                    target["shows"] = json.loads(val)
+                except Exception:
+                    target["shows"] = []
+            elif val:
+                # Path to JSON file (relative to feeds dir)
+                target["shows_path"] = val
+            continue
+
         if key_l in ("footer_links", "footer_link"):
             # footer_links: Label=https://...; Label2=https://...
             # Use semicolons only (URLs can legally contain commas).

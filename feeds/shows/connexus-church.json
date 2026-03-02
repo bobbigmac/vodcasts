@@ -1,0 +1,28 @@
+{
+  "leftovers_title": "Sermons",
+  "leftovers_title_full": "Sermons from Connexus Church",
+  "leftovers_description": "Practical teaching for everyday faith.",
+  "shows": [
+    {
+      "id": "prayer",
+      "title": "Prayer",
+      "title_full": "Prayer series from Connexus Church",
+      "description": "Teaching on prayer.",
+      "filter": { "type": "title_contains", "value": " // Prayer" }
+    },
+    {
+      "id": "christmas",
+      "title": "Christmas",
+      "title_full": "Christmas at Connexus Church",
+      "description": "Christmas and Advent messages.",
+      "filter": { "type": "title_contains_any", "values": [" // Christmas", "Christmas", "Advent"] }
+    },
+    {
+      "id": "algorithm",
+      "title": "Algorithm / Formation",
+      "title_full": "Algorithm & Formation from Connexus Church",
+      "description": "Series on technology, algorithms, and spiritual formation.",
+      "filter": { "type": "title_contains_any", "values": ["Algorithm", "Forming You", "Phone"] }
+    }
+  ]
+}

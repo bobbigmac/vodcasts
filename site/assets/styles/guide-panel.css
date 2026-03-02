@@ -348,6 +348,22 @@
   text-overflow: ellipsis;
 }
 .guideGridChanNameText { display: inline-block }
+.guideGridChanNameBtn {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: transparent;
+  font: inherit;
+  font-weight: 700;
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+.guideGridChanNameBtn:hover { color: var(--accent, #0a84ff); text-decoration: underline }
 .guideGridChanRow.focused .guideGridChanName { text-overflow: clip }
 .guideGridChanSub {
   display: flex;

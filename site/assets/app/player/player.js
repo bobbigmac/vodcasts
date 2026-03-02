@@ -62,6 +62,7 @@ export function createPlayerService({ env, log, history }) {
     sameCategory: false,
     baseCategory: null,
     favesOnly: false,
+    sameShow: false,
   };
   const DEFAULT_RANDOM = { favesOnly: false };
   const playback = signal({
@@ -87,6 +88,8 @@ export function createPlayerService({ env, log, history }) {
   const rateSteps = signal(normalizeRateSteps(persisted.rateSteps) || DEFAULT_RATE_STEPS.slice());
   const shuffle = signal({ ...normalizeShuffle(persisted.shuffle), label: "" });
   const randomPrefs = signal(normalizeRandom(persisted.random));
+  /** Active playlist: { feedId, episodes: [{id, ...}, ...] }. When set, playNextInFeed advances through this list. */
+  const playlist = signal(null);
 
   const currentSourceId = computed(() => current.value.source?.id || null);
   const currentEpisodeId = computed(() => current.value.episode?.id || null);
@@ -159,6 +162,7 @@ export function createPlayerService({ env, log, history }) {
       sameCategory: s.sameCategory === true,
       baseCategory: typeof s.baseCategory === "string" && s.baseCategory.trim() ? s.baseCategory.trim() : null,
       favesOnly: s.favesOnly === true,
+      sameShow: s.sameShow === true,
     };
   }
 
@@ -221,6 +225,7 @@ export function createPlayerService({ env, log, history }) {
       sameCategory: s.sameCategory === true,
       baseCategory: typeof s.baseCategory === "string" && s.baseCategory.trim() ? s.baseCategory.trim() : null,
       favesOnly: s.favesOnly === true,
+      sameShow: s.sameShow === true,
     };
     saveState();
   }
@@ -348,6 +353,21 @@ export function createPlayerService({ env, log, history }) {
     const doFeed = !!cfg.changeFeed;
     const doEp = !!cfg.changeEpisode;
     const doTime = !!cfg.changeTime;
+    const pl = playlist.value;
+    const useShow = !!cfg.sameShow && pl?.feedId && pl.episodes?.length;
+
+    if (useShow && (doFeed || doEp)) {
+      const playable = pl.episodes.filter((e) => e?.id);
+      if (playable.length) {
+        if (currentSource?.id !== pl.feedId) {
+          await selectSource(pl.feedId, { preserveEpisode: false, skipAutoEpisode: true, autoplay: false });
+        }
+        const nextEp = playable[Math.floor(Math.random() * playable.length)];
+        if (nextEp?.id) await selectEpisode(nextEp.id, { autoplay: true });
+        if (doTime) seekRandomTimeSoon();
+      }
+      return;
+    }
 
     if (doFeed) {
       const baseCat = cfg.sameCategory && cfg.baseCategory ? String(cfg.baseCategory) : "";
@@ -1076,6 +1096,18 @@ export function createPlayerService({ env, log, history }) {
 
   async function playNextInFeed({ autoplay = true } = {}) {
     if (!currentSource || !currentEp) return false;
+    const pl = playlist.value;
+    if (pl?.feedId === currentSource?.id && pl?.episodes?.length) {
+      const playable = pl.episodes.filter((e) => e?.id);
+      if (playable.length) {
+        const idx = playable.findIndex((e) => e.id === currentEp.id);
+        const next = idx >= 0 && idx < playable.length - 1 ? playable[idx + 1] : playable[0];
+        if (next?.id) {
+          await selectEpisode(next.id, { autoplay, startAt: 0 });
+          return true;
+        }
+      }
+    }
     const playable = (episodes || []).filter((e) => e.media?.url);
     if (!playable.length) return false;
     const idx = playable.findIndex((e) => e.id === currentEp.id);
@@ -1083,6 +1115,22 @@ export function createPlayerService({ env, log, history }) {
     if (!next?.id) return false;
     await selectEpisode(next.id, { autoplay, startAt: 0 });
     return true;
+  }
+
+  function setPlaylist(next) {
+    if (!next?.feedId || !Array.isArray(next.episodes)) {
+      playlist.value = null;
+      return;
+    }
+    playlist.value = {
+      feedId: next.feedId,
+      episodes: next.episodes,
+      showSlug: next.showSlug || null,
+    };
+  }
+
+  function clearPlaylist() {
+    playlist.value = null;
   }
 
   async function play({ userGesture = true } = {}) {
@@ -1481,7 +1529,21 @@ export function createPlayerService({ env, log, history }) {
     await selectSource(src.id, { preserveEpisode: false, pickRandomEpisode: true, autoplay: true });
   }
 
-  async function selectSourceAndEpisode(sourceId, episodeId, { autoplay = true, startAt } = {}) {
+  async function playRandomFromShow() {
+    const pl = playlist.value;
+    if (!pl?.feedId || !pl.episodes?.length) return;
+    if (currentSource?.id !== pl.feedId) {
+      await selectSource(pl.feedId, { preserveEpisode: false, skipAutoEpisode: true, autoplay: false });
+    }
+    const playable = pl.episodes.filter((e) => e?.id);
+    if (!playable.length) return;
+    const ep = playable[Math.floor(Math.random() * playable.length)];
+    await selectEpisode(ep.id, { autoplay: true, startAt: 0 });
+  }
+
+  async function selectSourceAndEpisode(sourceId, episodeId, { autoplay = true, startAt, playlist: pl } = {}) {
+    if (pl?.feedId && pl?.episodes?.length) setPlaylist(pl);
+    else if (!pl) setPlaylist(null);
     await selectSource(sourceId, { preserveEpisode: false, skipAutoEpisode: true, autoplay });
     await selectEpisode(episodeId, { autoplay, startAt });
   }
@@ -1547,10 +1609,14 @@ export function createPlayerService({ env, log, history }) {
     setSleepTimerMins,
     clearSleepTimer,
     playRandom,
+    playRandomFromShow,
     toggleShuffle,
     setShuffleSettings,
     getProgressSec,
     getProgressMaxSec,
     getKnownDurationSec,
+    playlist,
+    setPlaylist,
+    clearPlaylist,
   };
 }

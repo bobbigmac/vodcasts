@@ -179,7 +179,7 @@ function bsearchCum(cum, off) {
   return clamp(lo, 0, Math.max(0, cum.length - 2));
 }
 
-export function GuidePanel({ isOpen, sources, player }) {
+export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }) {
   const currentSourceId = player.currentSourceId.value;
   const currentEpisodeId = player.currentEpisodeId.value;
   const episodesBySource = player.sourceEpisodes.value || {};
@@ -1117,7 +1117,7 @@ export function GuidePanel({ isOpen, sources, player }) {
     const t = setTimeout(() => {
       try {
         const nameEl = document.querySelector(".guideGridChanRow.focused .guideGridChanName");
-        const textEl = document.querySelector(".guideGridChanRow.focused .guideGridChanNameText");
+        const textEl = document.querySelector(".guideGridChanRow.focused .guideGridChanNameText, .guideGridChanRow.focused .guideGridChanNameBtn");
         if (!nameEl || !textEl) return;
         const overflow = Math.max(0, (textEl.scrollWidth || 0) - (nameEl.clientWidth || 0));
         if (!Number.isFinite(overflow) || overflow < 18) return;
@@ -1365,7 +1365,20 @@ export function GuidePanel({ isOpen, sources, player }) {
                         </button>
                         <div class="guideGridChanMeta">
                           <div class="guideGridChanName">
-                            <span class="guideGridChanNameText">${src.title || src.id}</span>
+                            ${onFeedClick
+                              ? html`
+                                  <button
+                                    class="guideGridChanNameBtn"
+                                    type="button"
+                                    onClick=${(e) => {
+                                      e.stopPropagation?.();
+                                      onFeedClick(src.id);
+                                    }}
+                                  >
+                                    ${src.title || src.id}
+                                  </button>
+                                `
+                              : html`<span class="guideGridChanNameText">${src.title || src.id}</span>`}
                           </div>
                           <div class="guideGridChanSub">
                             <span class="guideGridChanEpCount">

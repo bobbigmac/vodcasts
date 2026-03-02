@@ -1,0 +1,42 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from TRBC",
+  "leftovers_description": "Episodes not in a named series.",
+  "shows": [
+    {
+      "id": "invitations",
+      "title": "Invitations",
+      "title_full": "Invitations from TRBC",
+      "description": "Series on following Jesus.",
+      "filter": { "type": "title_prefix", "value": "Invitations" }
+    },
+    {
+      "id": "extraordinary-faith",
+      "title": "Extraordinary Faith",
+      "title_full": "Extraordinary Faith from TRBC",
+      "description": "Series on walking with God in faith.",
+      "filter": { "type": "title_prefix", "value": "Extraordinary Faith" }
+    },
+    {
+      "id": "gloria",
+      "title": "Gloria",
+      "title_full": "Gloria from TRBC",
+      "description": "Christmas and worship series.",
+      "filter": { "type": "title_prefix", "value": "Gloria" }
+    },
+    {
+      "id": "cultivate",
+      "title": "Cultivate",
+      "title_full": "Cultivate from TRBC",
+      "description": "Series on spiritual growth.",
+      "filter": { "type": "title_prefix", "value": "Cultivate" }
+    },
+    {
+      "id": "acts",
+      "title": "Acts",
+      "title_full": "Acts from TRBC",
+      "description": "Teaching through Acts.",
+      "filter": { "type": "title_prefix", "value": "Acts" }
+    }
+  ]
+}

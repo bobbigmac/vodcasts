@@ -1,0 +1,16 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from Sandals Church",
+  "leftovers_description": "Episodes not in a named show.",
+  "shows": [
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Sermons from Sandals Church",
+      "description": "Teaching and worship.",
+      "categories": ["sermons", "faith"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}

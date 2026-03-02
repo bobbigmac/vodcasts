@@ -1,0 +1,135 @@
+{
+  "leftovers_title": "Sermons & teachings",
+  "leftovers_title_full": "Sermons & teachings from Eagle Brook Church",
+  "leftovers_description": "Sermons and teachings on faith, life, and Scripture.",
+  "shows": [
+    {
+      "id": "cabin-envy",
+      "title": "Cabin Envy",
+      "title_full": "Cabin Envy from Eagle Brook Church",
+      "description": "Series on comparison and contentment.",
+      "categories": ["sermons", "faith"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Cabin Envy" }
+    },
+    {
+      "id": "get-cozy",
+      "title": "Get Cozy",
+      "title_full": "Get Cozy from Eagle Brook Church",
+      "description": "Series on marriage and relationships.",
+      "filter": { "type": "title_contains", "value": "Get Cozy" }
+    },
+    {
+      "id": "stoke-the-flame",
+      "title": "Stoke the Flame",
+      "title_full": "Stoke the Flame from Eagle Brook Church",
+      "description": "Series on intimacy and sexuality.",
+      "filter": { "type": "title_contains", "value": "Stoke the Flame" }
+    },
+    {
+      "id": "logs-on-the-fire",
+      "title": "Logs on the Fire",
+      "title_full": "Logs on the Fire from Eagle Brook Church",
+      "description": "Series on dating and singleness.",
+      "filter": { "type": "title_contains", "value": "Logs on the Fire" }
+    },
+    {
+      "id": "vision-weekend",
+      "title": "Vision Weekend",
+      "title_full": "Vision Weekend from Eagle Brook Church",
+      "description": "Annual vision and direction weekend.",
+      "filter": { "type": "title_contains", "value": "Vision Weekend" }
+    },
+    {
+      "id": "christmas",
+      "title": "Christmas",
+      "title_full": "Christmas at Eagle Brook Church",
+      "description": "Christmas services and special messages.",
+      "filter": { "type": "title_regex", "value": "Christmas\\s+\\d{4}" }
+    },
+    {
+      "id": "free-from",
+      "title": "Free From",
+      "title_full": "Free From series from Eagle Brook Church",
+      "description": "Series on freedom from anxiety, despair, and other struggles.",
+      "filter": { "type": "title_prefix", "value": "Free From" }
+    },
+    {
+      "id": "when-im",
+      "title": "When I'm",
+      "title_full": "When I'm series from Eagle Brook Church",
+      "description": "Series on navigating difficult emotions.",
+      "filter": { "type": "title_prefix", "value": "When I'm" }
+    },
+    {
+      "id": "when-i-feel",
+      "title": "When I Feel",
+      "title_full": "When I Feel series from Eagle Brook Church",
+      "description": "Series on emotional honesty and faith.",
+      "filter": { "type": "title_prefix", "value": "When I Feel" }
+    },
+    {
+      "id": "what-god",
+      "title": "What God",
+      "title_full": "What God series from Eagle Brook Church",
+      "description": "Series on God's character and will.",
+      "filter": { "type": "title_prefix", "value": "What God" }
+    },
+    {
+      "id": "gentle-lowly",
+      "title": "Gentle & Lowly",
+      "title_full": "Gentle & Lowly from Eagle Brook Church",
+      "description": "Series on Christ's heart for sinners and sufferers.",
+      "filter": { "type": "title_contains", "value": "Gentle" }
+    },
+    {
+      "id": "make-a-difference",
+      "title": "Make A Difference",
+      "title_full": "Make A Difference from Eagle Brook Church",
+      "description": "Annual outreach and mission emphasis.",
+      "filter": { "type": "title_contains", "value": "Make A Difference" }
+    },
+    {
+      "id": "loss-of",
+      "title": "Loss Of",
+      "title_full": "Loss Of series from Eagle Brook Church",
+      "description": "Series on grief, loss, and hope.",
+      "filter": { "type": "title_prefix", "value": "Loss of" }
+    },
+    {
+      "id": "but-i",
+      "title": "But I",
+      "title_full": "But I series from Eagle Brook Church",
+      "description": "Series on common excuses and barriers to faith.",
+      "filter": { "type": "title_prefix", "value": "But I" }
+    },
+    {
+      "id": "go-deeper",
+      "title": "Go Deeper / Get Started",
+      "title_full": "Go Deeper & Get Started from Eagle Brook Church",
+      "description": "Foundational discipleship series.",
+      "filter": { "type": "title_contains_any", "values": ["Go Deeper", "Get Started"] }
+    },
+    {
+      "id": "revelation",
+      "title": "Revelation / End Times",
+      "title_full": "Revelation & End Times from Eagle Brook Church",
+      "description": "Teaching on Revelation and end-times prophecy.",
+      "filter": { "type": "title_contains_any", "values": ["Revelation", "end times", "Seven Churches", "Tribulation", "Rapture"] }
+    },
+    {
+      "id": "easter",
+      "title": "Easter",
+      "title_full": "Easter at Eagle Brook Church",
+      "description": "Easter services and resurrection messages.",
+      "filter": { "type": "title_regex", "value": "Easter\\s+\\d{4}" }
+    },
+    {
+      "id": "sabbath-soul-care",
+      "title": "Sabbath & Soul Care",
+      "title_full": "Sabbath & Soul Care from Eagle Brook Church",
+      "description": "Teaching on rest, Sabbath, and spiritual care.",
+      "filter": { "type": "title_contains_any", "values": ["Sabbath", "Soul Care"] }
+    }
+  ]
+}

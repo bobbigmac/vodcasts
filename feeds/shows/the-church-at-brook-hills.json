@@ -1,0 +1,14 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from The Church at Brook Hills",
+  "leftovers_description": "Episodes not in a named show.",
+  "shows": [
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Sermons from The Church at Brook Hills",
+      "description": "Expository preaching and teaching.",
+      "filter": { "type": "all" }
+    }
+  ]
+}

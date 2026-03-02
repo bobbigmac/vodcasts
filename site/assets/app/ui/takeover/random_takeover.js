@@ -64,6 +64,19 @@ export function RandomTakeover({ player, takeover }) {
         >
           This channel
         </button>
+        <button
+          class="guideBtn"
+          disabled=${!player.playlist?.value?.episodes?.length}
+          aria-disabled=${player.playlist?.value?.episodes?.length ? "false" : "true"}
+          title=${player.playlist?.value?.episodes?.length ? "Random episode from current show" : "Play from a show first"}
+          onClick=${async () => {
+            if (!player.playlist?.value?.episodes?.length) return;
+            await player.playRandomFromShow?.();
+            takeover.close();
+          }}
+        >
+          This show
+        </button>
       </div>
     </div>
   `;

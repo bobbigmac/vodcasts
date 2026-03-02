@@ -1,0 +1,21 @@
+{
+  "leftovers_title": "Sermons",
+  "leftovers_title_full": "Sermons from Lancaster Baptist Church",
+  "leftovers_description": "Bible teaching and preaching.",
+  "shows": [
+    {
+      "id": "reaching-forth",
+      "title": "Reaching Forth",
+      "title_full": "Reaching Forth from Lancaster Baptist",
+      "description": "Vision and outreach series.",
+      "filter": { "type": "title_contains", "value": "Reaching Forth" }
+    },
+    {
+      "id": "obadiah",
+      "title": "Obadiah",
+      "title_full": "Obadiah from Lancaster Baptist",
+      "description": "Teaching through Obadiah.",
+      "filter": { "type": "title_contains", "value": "Obadiah" }
+    }
+  ]
+}

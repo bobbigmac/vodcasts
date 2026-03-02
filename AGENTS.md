@@ -19,7 +19,7 @@ relative to this folder, not the parent repo.
 ## Client architecture
 
 - HTML loads `site/assets/app.js`, which bootstraps the ESM app at `site/assets/app/index.js`.
-- The app reads config from `window.__VODCASTS__` (injected by the build into `index.html`).
+- The app reads config from `window.__VODCASTS__` (injected by the build into `index.html`). Feed landing pages inject `initialFeed` + `initialView: "browse"`. Routes: `/` homepage; `/feed/<slug>/` feed landing; `/feed/<slug>/<ep>/` episode; `/<feed>/<ep>/` legacy.
 - The app loads `video-sources.json` (built artifact) which points each source’s `feed_url` at either:
   - `data/feeds/<slug>.xml` when cached, or
   - the original remote RSS URL as a fallback (likely CORS-blocked in prod).
@@ -31,6 +31,7 @@ relative to this folder, not the parent repo.
 - `feeds/church.md` — church-only deployment feeds config.
 - `feeds/tech.md` — tech/edu-ish deployment feeds config.
 - `feeds/dev.md` — tiny dev feed set for quick local iteration.
+- `feeds/shows/<slug>.json` — per-feed show filters (auto-loaded by slug); or `shows_path` in feed.
 - `feeds/video-sources.json` — legacy JSON sources list (reference copy; not required by the build).
 - `vite.config.js` — Vite dev server rooted at `dist/` + dev rebuild plugin + `/__feed` proxy.
 
@@ -38,7 +39,9 @@ relative to this folder, not the parent repo.
 
 - `scripts/update_feeds.py` — fetches feed XML into `cache*/feeds/` with cooldown + ETag/Last-Modified support.
 - `scripts/find-feeds.js` — find video podcasts via PodcastIndex API; add to feeds config (requires .env with PODCASTINDEX_KEY/SECRET). Caches API + RSS in `cache/find-feeds/`.
-- `scripts/build_site.py` — copies assets + cached feeds into `dist/`, writes `site.json`, `video-sources.json` (with per-feed features), `feed-manifest.json` (all feeds + episodes brief), renders `index.html`.
+- `scripts/build_site.py` — copies assets + cached feeds into `dist/`, writes `site.json`, `video-sources.json` (with per-feed features), `feed-manifest.json` (all feeds + episodes brief), `shows-config.json` (Netflix-style shows per feed), per-feed landing pages at `dist/feed/<slug>/index.html`, show RSS at `dist/feed/<slug>/show/<show-slug>.xml`, renders `index.html`.
+- `scripts/show_filters.py` — smart filters: map feed episodes into shows (title_contains, title_prefix, title_regex, all, etc.); leftovers go to feed-level row.
+- `scripts/scan_feed_titles.py` — scan cached feeds for episode title patterns; use before writing `feeds/shows/<id>.json` to derive filters from actual content.
 - `scripts/sources.py` — loads sources from feeds markdown and normalizes categories + titles.
 - `scripts/shared.py` — markdown config loader + `curl`-based fetch helper with hard timeouts.
 - `scripts/feeds_md.py` — markdown feeds parser (copied from the parent project; keep compatible).
@@ -62,6 +65,7 @@ relative to this folder, not the parent repo.
 - `site/assets/app/player/audio_viz.js` — audio-only display: uses preferred plugin from registry.
 - `site/assets/app/player/audio_plugins/` — built-in plugins: wave, starfield, clock, weather, calendar, aquarium. Preference via Audio options (◐) when playing audio-only.
 - `site/assets/app/ui/guide.js` — channel guide renderer (lazy loads episodes per feed).
+- `site/assets/app/ui/browse.js` — Netflix-style browse panel (show rows, episode cards); used on feed landing pages.
 - `site/assets/app/ui/details.js` — details sidebar coordinator (binds comments to current episode when open).
 - `site/assets/app/ui/chapters.js` — chapters loader + renderer.
 - `site/assets/app/state/history.js` — session history store + renderer.

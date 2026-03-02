@@ -1,0 +1,21 @@
+{
+  "leftovers_title": "Topical teachings",
+  "leftovers_title_full": "Topical teachings from Athey Creek",
+  "leftovers_description": "Topical teachings on practical faith and doctrine.",
+  "shows": [
+    {
+      "id": "through-the-bible",
+      "title": "Through the Bible",
+      "title_full": "Through the Bible from Athey Creek",
+      "description": "Expositional book-by-book teaching through Scripture.",
+      "filter": { "type": "title_contains", "value": "Through the Bible" }
+    },
+    {
+      "id": "prophecy-update",
+      "title": "Prophecy Update",
+      "title_full": "Prophecy Update from Athey Creek",
+      "description": "Monthly prophetic and current-events teaching.",
+      "filter": { "type": "title_contains", "value": "Prophecy Update" }
+    }
+  ]
+}

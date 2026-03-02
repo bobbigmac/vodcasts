@@ -1,0 +1,14 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from TWiT News",
+  "leftovers_description": "Episodes not in a named show.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "TWiT News episodes",
+      "description": "Tech news and special coverage.",
+      "filter": { "type": "all" }
+    }
+  ]
+}

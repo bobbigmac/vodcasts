@@ -1,0 +1,28 @@
+{
+  "leftovers_title": "Daily faith",
+  "leftovers_title_full": "Daily faith from Believer's Voice of Victory",
+  "leftovers_description": "Daily teaching on faith, healing, and God's Word.",
+  "shows": [
+    {
+      "id": "legacy-of-faith",
+      "title": "Legacy of Faith",
+      "title_full": "Legacy of Faith from BVOV",
+      "description": "Series on passing faith to the next generation.",
+      "filter": { "type": "title_contains", "value": "Legacy" }
+    },
+    {
+      "id": "faith-forward",
+      "title": "Faith Forward",
+      "title_full": "Faith Forward from BVOV",
+      "description": "Series on the future of faith and ministry.",
+      "filter": { "type": "title_contains", "value": "Faith Forward" }
+    },
+    {
+      "id": "generational",
+      "title": "Generational",
+      "title_full": "Generational series from BVOV",
+      "description": "Teaching on generations and reconciliation.",
+      "filter": { "type": "title_contains_any", "values": ["Generational", "Generations", "Reconciliation"] }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "leftovers_title": "Sermons",
+  "leftovers_title_full": "Sermons from James River Church",
+  "leftovers_description": "Sermons and teachings for your faith journey.",
+  "shows": [
+    {
+      "id": "kingdom-impact",
+      "title": "Kingdom Impact",
+      "title_full": "Kingdom Impact from James River Church",
+      "description": "Kingdom Impact Sunday and related messages.",
+      "filter": { "type": "title_contains", "value": "Kingdom Impact" }
+    }
+  ]
+}

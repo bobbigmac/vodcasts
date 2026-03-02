@@ -23,6 +23,7 @@ from scripts.media_probe import (
 )
 from scripts.shared import VODCASTS_ROOT, fetch_url, read_feeds_config, read_json, write_json
 from scripts.sources import Source, load_sources_config
+from scripts.show_filters import build_shows_for_feed
 
 
 def _parse_args() -> argparse.Namespace:
@@ -89,7 +90,7 @@ def _source_to_public(source: Source, *, cache_dir: Path, base_path: str) -> dic
     if use_local:
         try:
             xml = cached.read_text(encoding="utf-8", errors="replace")
-            f, _, _ = parse_feed_for_manifest(xml, source_id=source.id, source_title=source.title)
+            f, _, _, _ = parse_feed_for_manifest(xml, source_id=source.id, source_title=source.title)
             features = {
                 "hasTranscript": f.has_transcript,
                 "hasPlayableTranscript": f.has_playable_transcript,
@@ -342,6 +343,7 @@ def _episode_min_for_manifest(ep: dict[str, Any], *, short_desc_chars: int = 150
         "chaptersExternal": ep.get("chaptersExternal"),
         "transcripts": ep.get("transcripts") or [],
         "transcriptsAll": ep.get("transcriptsAll") or [],
+        "imageUrl": ep.get("imageUrl") or None,
     }
     if desc_html:
         out["descriptionShort"] = short_description(desc_html, max_chars=short_desc_chars)
@@ -511,10 +513,11 @@ def main() -> None:
         cached = _load_cached_feed_path(cache_dir, src["id"])
         episodes = []
         feats = src.get("features") or {}
+        channel_image_url = None
         if cached.exists():
             try:
                 xml = cached.read_text(encoding="utf-8", errors="replace")
-                f, _, eps = parse_feed_for_manifest(xml, source_id=src["id"], source_title=src.get("title") or src["id"])
+                f, _, eps, channel_image_url = parse_feed_for_manifest(xml, source_id=src["id"], source_title=src.get("title") or src["id"])
                 feats = {
                     "hasTranscript": f.has_transcript,
                     "hasPlayableTranscript": f.has_playable_transcript,
@@ -533,6 +536,7 @@ def main() -> None:
             "url": src.get("feed_url") or src.get("feed_url_remote", ""),
             "features": feats,
             "episodes": episodes,
+            "channelImageUrl": channel_image_url,
         })
 
     # Chunk by date-window (year, or year-quarter if over cap).
@@ -600,20 +604,216 @@ def main() -> None:
         except Exception:
             pass
 
-    # index.html
     template_path = VODCASTS_ROOT / "site" / "templates" / "index.html"
     template = template_path.read_text(encoding="utf-8", errors="replace")
+    vodcasts_config = {"basePath": base_path, "site": site_json}
+
+    # Shows + feed landing pages + show RSS feeds
+    _log("build shows + feed landings…")
+    t = time.perf_counter()
+    raw_cfg = read_feeds_config(feeds_path)
+    raw_feeds_by_slug = {str(f.get("slug") or "").strip(): f for f in (raw_cfg.get("feeds") or []) if isinstance(f, dict)}
+    feeds_dir = feeds_path.parent
+    shows_config_all: dict[str, list[dict[str, Any]]] = {}
+    feed_landing_paths: list[str] = []
+    feeds_with_custom_shows: list[str] = []
+
+    def _get_shows_for_feed(feed_id: str) -> tuple[dict[str, Any], bool]:
+        raw = raw_feeds_by_slug.get(feed_id, {})
+        shows = raw.get("shows")
+        if isinstance(shows, list):
+            return {"shows": shows}, True
+        path_val = str(raw.get("shows_path") or "").strip()
+        candidates: list[Path] = []
+        if path_val:
+            candidates.append(feeds_dir / path_val)
+        candidates.append(feeds_dir / "shows" / f"{feed_id}.json")
+        for p in candidates:
+            p = p.resolve()
+            if p.exists():
+                try:
+                    data = read_json(p)
+                    if isinstance(data, dict) and "shows" in data:
+                        return data, True
+                    if isinstance(data, list):
+                        return {"shows": data}, True
+                except Exception:
+                    pass
+        return {}, False
+
+    def _ep_to_rss_item(ep: dict[str, Any], *, feed_title: str, base_url: str) -> str:
+        title = _escape_xml(str(ep.get("title") or "Untitled"))
+        link = _escape_xml(str(ep.get("link") or ""))
+        desc = _escape_xml(str(ep.get("descriptionShort") or ep.get("descriptionHtml") or "")[:500])
+        date = str(ep.get("dateText") or "")
+        media = ep.get("media") or {}
+        url = str(media.get("url") or "")
+        typ = str(media.get("type") or "video/mp4")
+        length = media.get("bytes") or ""
+        enc = f'<enclosure url="{_escape_xml(url)}" type="{_escape_xml(typ)}" length="{length}"/>' if url else ""
+        return f"""  <item>
+    <title>{title}</title>
+    <link>{link}</link>
+    <description>{desc}</description>
+    <pubDate>{date}</pubDate>
+    <guid isPermaLink="false">{_escape_xml(str(ep.get("id") or ""))}</guid>
+    {enc}
+  </item>"""
+
+    def _escape_xml(s: str) -> str:
+        return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+
+    feed_categories = {s.id: (s.category or "other") for s in cfg.sources}
+    for mf in manifest_feeds:
+        fid = mf["id"]
+        feed_title = mf.get("title") or fid
+        episodes = mf.get("episodes") or []
+        raw_cfg, has_custom_shows = _get_shows_for_feed(fid)
+        if has_custom_shows:
+            feeds_with_custom_shows.append(fid)
+        if isinstance(raw_cfg, dict):
+            shows_list = raw_cfg.get("shows") or []
+            leftovers_title = raw_cfg.get("leftovers_title")
+            leftovers_title_full = raw_cfg.get("leftovers_title_full")
+            leftovers_description = raw_cfg.get("leftovers_description")
+        else:
+            shows_list = raw_cfg if isinstance(raw_cfg, list) else []
+            leftovers_title = leftovers_title_full = leftovers_description = None
+        shows = build_shows_for_feed(
+            episodes,
+            shows_list if shows_list else None,
+            feed_id=fid,
+            feed_title=feed_title,
+            feed_category=feed_categories.get(fid, "other"),
+            leftovers_title=leftovers_title,
+            leftovers_title_full=leftovers_title_full,
+            leftovers_description=leftovers_description,
+        )
+        def _ep_min(ep: dict[str, Any]) -> dict[str, Any]:
+            m = ep.get("media") or {}
+            return {
+                "id": ep.get("id"),
+                "slug": ep.get("slug"),
+                "title": ep.get("title"),
+                "dateText": ep.get("dateText"),
+                "durationSec": ep.get("durationSec"),
+                "media": {"url": m.get("url"), "pickedIsVideo": m.get("pickedIsVideo")} if m else None,
+            }
+
+        channel_image_url = mf.get("channelImageUrl") or None
+
+        def _show_artwork(show_eps: list[dict], show_title: str) -> tuple[str | None, str | None]:
+            """(artworkUrl, overlayText). Use first image from newest episode; else channel + overlay."""
+            for ep in show_eps:
+                img = ep.get("imageUrl") if isinstance(ep, dict) else None
+                if img and str(img).strip():
+                    return (str(img).strip(), None)
+            if channel_image_url:
+                return (channel_image_url, show_title or None)
+            return (None, show_title or None)
+
+        show_configs = []
+        for s in shows:
+            aw_url, aw_overlay = _show_artwork(s.get("episodes") or [], s.get("title") or "")
+            show_configs.append({
+                "id": s["id"],
+                "slug": s["slug"],
+                "title": s["title"],
+                "title_full": s.get("title_full") or s["title"],
+                "description": s.get("description"),
+                "categories": s.get("categories") or [],
+                "featured": s.get("featured", False),
+                "isLeftovers": s.get("isLeftovers", False),
+                "episodeCount": len(s.get("episodes") or []),
+                "rssUrl": f"{base_path}feed/{fid}/show/{s['slug']}.xml",
+                "episodes": [_ep_min(ep) for ep in (s.get("episodes") or [])[:100]],
+                "artworkUrl": aw_url,
+                "artworkOverlay": aw_overlay,
+            })
+        shows_config_all[fid] = show_configs
+
+        # Feed landing page
+        feed_dir = out_dir / "feed" / fid
+        feed_dir.mkdir(parents=True, exist_ok=True)
+        feed_vodcasts = {**vodcasts_config, "initialFeed": fid, "initialView": "browse"}
+        feed_html = _template_sub(
+            template,
+            {
+                "base_path": base_path,
+                "base_path_json": json.dumps(base_path),
+                "site_json": json.dumps(site_json, ensure_ascii=False),
+                "vodcasts_config": json.dumps(feed_vodcasts, ensure_ascii=False),
+                "page_title": f"{feed_title} — {cfg.site.title}",
+                "favicon_head_html": _build_favicon_head_html(base_path=base_path, feeds_path=feeds_path),
+            },
+        )
+        (feed_dir / "index.html").write_text(feed_html, encoding="utf-8")
+        feed_landing_paths.append(f"feed/{fid}/")
+
+        # Show RSS feeds
+        show_dir = feed_dir / "show"
+        show_dir.mkdir(parents=True, exist_ok=True)
+        for s in shows:
+            eps = s.get("episodes") or []
+            if not eps:
+                continue
+            rss_items = "\n".join(_ep_to_rss_item(ep, feed_title=feed_title, base_url=base_path) for ep in eps[:100])
+            rss = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>{_escape_xml(s['title'])}</title>
+    <link>{base_path}feed/{fid}/</link>
+    <description>{_escape_xml(feed_title)} — {_escape_xml(s['title'])}</description>
+    <language>en</language>
+{rss_items}
+  </channel>
+</rss>"""
+            (show_dir / f"{s['slug']}.xml").write_text(rss, encoding="utf-8")
+
+    feed_titles = {fid: (mf.get("title") or fid) for mf in manifest_feeds for fid in [mf["id"]]}
+    write_json(
+        out_dir / "shows-config.json",
+        {
+            "version": 1,
+            "base_path": base_path,
+            "feeds": shows_config_all,
+            "feedTitles": feed_titles,
+            "feedLandingPaths": feed_landing_paths,
+            "feedsWithCustomShows": feeds_with_custom_shows,
+        },
+    )
+    _log(f"  {len(feed_landing_paths)} feed landings, {sum(len(s) for s in shows_config_all.values())} shows ({time.perf_counter() - t:.1f}s)")
+
+    # index.html
     html = _template_sub(
         template,
         {
             "base_path": base_path,
             "base_path_json": json.dumps(base_path),
             "site_json": json.dumps(site_json, ensure_ascii=False),
+            "vodcasts_config": json.dumps(vodcasts_config, ensure_ascii=False),
             "page_title": cfg.site.title,
             "favicon_head_html": _build_favicon_head_html(base_path=base_path, feeds_path=feeds_path),
         },
     )
     (out_dir / "index.html").write_text(html, encoding="utf-8")
+
+    # Browse page: /browse/ — same shell, client opens browse panel
+    browse_dir = out_dir / "browse"
+    browse_dir.mkdir(parents=True, exist_ok=True)
+    browse_vodcasts = {**vodcasts_config, "initialView": "browseAll"}
+    browse_html = _template_sub(
+        template,
+        {
+            "base_path": base_path,
+            "base_path_json": json.dumps(base_path),
+            "site_json": json.dumps(site_json, ensure_ascii=False),
+            "vodcasts_config": json.dumps(browse_vodcasts, ensure_ascii=False),
+            "page_title": f"Browse Shows — {cfg.site.title}",
+            "favicon_head_html": _build_favicon_head_html(base_path=base_path, feeds_path=feeds_path),
+        },
+    )
+    (browse_dir / "index.html").write_text(browse_html, encoding="utf-8")
 
     # 404.html (GitHub Pages SPA redirect shim)
     template_404_path = VODCASTS_ROOT / "site" / "templates" / "404.html"

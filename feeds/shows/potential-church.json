@@ -1,0 +1,28 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from Potential Church",
+  "leftovers_description": "Episodes not in a named series.",
+  "shows": [
+    {
+      "id": "nightmare-before-christmas",
+      "title": "Nightmare Before Christmas",
+      "title_full": "Nightmare Before Christmas from Potential Church",
+      "description": "Christmas series based on Whoville.",
+      "filter": { "type": "title_contains", "value": "Whoville" }
+    },
+    {
+      "id": "tattooed",
+      "title": "Tattooed",
+      "title_full": "Tattooed series from Potential Church",
+      "description": "Series on character and decisions.",
+      "filter": { "type": "title_contains", "value": "Tattooed" }
+    },
+    {
+      "id": "christmas",
+      "title": "Christmas",
+      "title_full": "Christmas from Potential Church",
+      "description": "Christmas sermons and specials.",
+      "filter": { "type": "title_contains", "value": "Christmas" }
+    }
+  ]
+}

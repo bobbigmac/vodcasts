@@ -24,6 +24,13 @@ export function ShuffleTakeover({ player, takeover }) {
   const catEnabled = !!cfg.sameCategory;
   const faveCount = loadFaveCount();
   const faveEnabled = !!cfg.favesOnly;
+  const hasPlaylist = !!(player.playlist?.value?.episodes?.length);
+  const showEnabled = !!cfg.sameShow;
+
+  const toggleShow = () => {
+    if (!hasPlaylist && !showEnabled) return;
+    player.setShuffleSettings?.({ sameShow: !showEnabled }, { resetNextAt: true });
+  };
 
   const setIdx = (nextIdx) => {
     const n = clamp(nextIdx, 0, Math.max(0, intervals.length - 1));
@@ -108,6 +115,15 @@ export function ShuffleTakeover({ player, takeover }) {
               onClick=${toggleCategory}
             >
               Category
+            </button>
+            <button
+              class=${"guideBtn" + (showEnabled ? " active" : "")}
+              disabled=${!hasPlaylist && !showEnabled}
+              aria-disabled=${!hasPlaylist && !showEnabled ? "true" : "false"}
+              title=${hasPlaylist ? "Only episodes in current show" : showEnabled ? "No show playlist (turn off to clear)" : "Play from a show first"}
+              onClick=${toggleShow}
+            >
+              Show
             </button>
             ${catEnabled && (baseCat || curCat)
               ? html`<span class="takeoverHint" style=${{ marginLeft: "4px" }}>${baseCat || curCat}</span>`

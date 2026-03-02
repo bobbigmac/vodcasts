@@ -317,6 +317,22 @@ def parse_feed_for_manifest(xml_text: str, *, source_id: str, source_title: str)
                 break
         duration_sec = _parse_time_to_seconds(duration_raw) if duration_raw else None
 
+        # Episode image: itunes:image (href), media:thumbnail (url)
+        image_url = ""
+        for c in list(item):
+            if _local(c.tag).lower() == "image":
+                ns = _ns(c.tag)
+                if ns == ITUNES_NS or "itunes" in (ns or "").lower():
+                    image_url = _attr(c, "href") or _text(c) or ""
+                    break
+        if not image_url:
+            for c in item.iter() if hasattr(item, "iter") else list(item):
+                if _local(c.tag).lower() == "thumbnail":
+                    if _ns(c.tag) == MEDIA_NS or "media" in str(c.tag).lower():
+                        image_url = _attr(c, "url") or ""
+                        if image_url:
+                            break
+
         # Enclosures
         enclosures: list[dict[str, Any]] = []
         # Some feeds (especially MRSS) nest enclosure-like elements inside groups; scan descendants.
@@ -427,8 +443,32 @@ def parse_feed_for_manifest(xml_text: str, *, source_id: str, source_title: str)
                 "chaptersExternal": {"url": podcast_chapters_url, "type": podcast_chapters_type} if podcast_chapters_url else None,
                 "transcripts": transcripts,
                 "transcriptsAll": transcripts_all,
+                "imageUrl": image_url.strip() or None,
             }
         )
+
+    # Channel image (fallback when episodes have no artwork)
+    channel_image_url = ""
+    if channel is not None:
+        for c in list(channel):
+            if _local(c.tag).lower() == "image":
+                ns = _ns(c.tag)
+                if ns == ITUNES_NS or "itunes" in (ns or "").lower():
+                    channel_image_url = _attr(c, "href") or _text(c) or ""
+                    break
+    if not channel_image_url and channel is not None:
+        img = next((c for c in list(channel) if _local(c.tag).lower() == "image"), None)
+        if img is not None:
+            url_el = next((c for c in list(img) if _local(c.tag).lower() == "url"), None)
+            if url_el is not None:
+                channel_image_url = _text(url_el) or ""
+    if not channel_image_url and is_atom:
+        for tag in ("logo", "icon"):
+            el = next((c for c in list(root) if _local(c.tag).lower() == tag), None)
+            if el is not None:
+                channel_image_url = _text(el) or _attr(el, "href") or ""
+                if channel_image_url:
+                    break
 
     features = FeedFeatures(
         has_transcript=bool(has_transcript),
@@ -436,4 +476,4 @@ def parse_feed_for_manifest(xml_text: str, *, source_id: str, source_title: str)
         has_chapters=bool(has_chapters),
         has_video=bool(has_video),
     )
-    return features, channel_title, episodes
+    return features, channel_title, episodes, (channel_image_url or "").strip() or None

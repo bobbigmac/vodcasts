@@ -1,0 +1,14 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from Church of the Highlands",
+  "leftovers_description": "Episodes not in a named show.",
+  "shows": [
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Weekend sermons from Church of the Highlands",
+      "description": "Weekend teaching and worship.",
+      "filter": { "type": "all" }
+    }
+  ]
+}

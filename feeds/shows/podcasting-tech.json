@@ -1,0 +1,14 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from Podcasting Tech",
+  "leftovers_description": "Episodes not in a named show.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Podcasting Tech episodes",
+      "description": "Podcasting gear and techniques.",
+      "filter": { "type": "all" }
+    }
+  ]
+}

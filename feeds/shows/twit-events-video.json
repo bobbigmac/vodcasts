@@ -1,0 +1,21 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from TWiT Events",
+  "leftovers_description": "Episodes not in a named category.",
+  "shows": [
+    {
+      "id": "ces",
+      "title": "CES",
+      "title_full": "CES coverage from TWiT Events",
+      "description": "Consumer Electronics Show coverage.",
+      "filter": { "type": "title_contains", "value": "CES" }
+    },
+    {
+      "id": "podcast-movement",
+      "title": "Podcast Movement",
+      "title_full": "Podcast Movement from TWiT Events",
+      "description": "Podcast Movement conference coverage.",
+      "filter": { "type": "title_contains", "value": "Podcast Movement" }
+    }
+  ]
+}

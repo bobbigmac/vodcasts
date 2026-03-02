@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from Transformation Church",
+  "leftovers_description": "Episodes not in a named series.",
+  "shows": [
+    {
+      "id": "new",
+      "title": "New",
+      "title_full": "New series from Transformation Church",
+      "description": "Series on love, marriage, sexuality, relationships.",
+      "filter": { "type": "title_prefix", "value": "New:" }
+    },
+    {
+      "id": "echoes-of-christmas",
+      "title": "Echoes of Christmas",
+      "title_full": "Echoes of Christmas from Transformation Church",
+      "description": "Christmas series.",
+      "filter": { "type": "title_prefix", "value": "Echoes Of Christmas" }
+    },
+    {
+      "id": "new-song",
+      "title": "New Song",
+      "title_full": "New Song from Transformation Church",
+      "description": "Worship and praise series.",
+      "filter": { "type": "title_prefix", "value": "New Song:" }
+    },
+    {
+      "id": "roots",
+      "title": "Roots",
+      "title_full": "Roots from Transformation Church",
+      "description": "Series on redemption and community.",
+      "filter": { "type": "title_prefix", "value": "Roots:" }
+    }
+  ]
+}

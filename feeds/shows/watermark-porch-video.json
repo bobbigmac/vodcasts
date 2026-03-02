@@ -1,0 +1,14 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from The Porch",
+  "leftovers_description": "Episodes not in a named show.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "The Porch episodes",
+      "description": "Young adult ministry teaching.",
+      "filter": { "type": "all" }
+    }
+  ]
+}

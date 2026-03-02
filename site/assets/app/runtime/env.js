@@ -14,6 +14,9 @@ export function getEnv() {
     site,
     sourcesUrl: basePath + "video-sources.json",
     feedManifestUrl: basePath + "feed-manifest.json",
+    showsConfigUrl: basePath + "shows-config.json",
+    initialFeed: typeof cfg.initialFeed === "string" && cfg.initialFeed ? cfg.initialFeed : null,
+    initialView: typeof cfg.initialView === "string" && cfg.initialView ? cfg.initialView : null,
     isDev: !!(import.meta && import.meta.hot),
     // Dev-only feed proxy (Vite); in prod this is typically absent.
     feedProxy: basePath + "__feed?url=",

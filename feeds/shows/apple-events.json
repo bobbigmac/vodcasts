@@ -1,0 +1,28 @@
+{
+  "leftovers_title": "Special events & keynotes",
+  "leftovers_title_full": "Special events & keynotes from Apple",
+  "leftovers_description": "Product launches, iPhone reveals, and special announcements.",
+  "shows": [
+    {
+      "id": "wwdc",
+      "title": "WWDC Keynotes",
+      "title_full": "WWDC Keynotes from Apple",
+      "description": "Apple's Worldwide Developers Conference keynotes.",
+      "filter": { "type": "title_contains", "value": "WWDC" }
+    },
+    {
+      "id": "apple-event",
+      "title": "Apple Events",
+      "title_full": "Apple Events",
+      "description": "Product launch events and special announcements.",
+      "filter": { "type": "title_contains", "value": "Apple Event" }
+    },
+    {
+      "id": "macworld",
+      "title": "Macworld",
+      "title_full": "Macworld keynotes from Apple",
+      "description": "Historic Macworld Expo keynotes.",
+      "filter": { "type": "title_contains", "value": "Macworld" }
+    }
+  ]
+}
