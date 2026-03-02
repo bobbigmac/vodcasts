@@ -310,6 +310,30 @@
 - category: bible-study
 - tags: jewish-jesus, messianic, rabbi-schneider, bible-teaching
 
+## dag-heward-mills-video
+- url: https://feed.podbean.com/daghewardmillsvideo/feed.xml
+- title: Dag Heward-Mills Video
+- category: sermons
+- tags: sermons, ghana, black-ministry, video
+
+## dungeness-community-church
+- url: https://feed.podbean.com/DungenessCommunityChurch/feed.xml
+- title: Dungeness Community Church
+- category: sermons
+- tags: sermons, washington, video
+
+## potential-church
+- url: https://feed.podbean.com/potentialvideo/feed.xml
+- title: Potential Church — Pastor Troy Gramling
+- category: sermons
+- tags: sermons, florida, video
+
+## first-love-church-uk
+- url: https://feed.podbean.com/firstlovechurchuk/feed.xml
+- title: First Love Church UK
+- category: sermons
+- tags: sermons, uk, video
+
 ## discovery-church-orlando-fl
 - url: http://feeds.feedburner.com/discoveryvideo
 - title: Discovery Church Orlando FL

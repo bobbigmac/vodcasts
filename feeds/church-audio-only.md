@@ -648,6 +648,74 @@
 - category: devotional
 - tags: devotional, daily, lutheran, wels
 
+# === UK / global churches (audio) ===
+
+## soul-church-uk
+- url: https://feed.podbean.com/soulchurchuk/feed.xml
+- title: SOUL Church UK
+- category: sermons
+- tags: sermons, uk
+
+## skylark-church
+- url: https://feed.podbean.com/skylarkchurch/feed.xml
+- title: Skylark Church
+- category: sermons
+- tags: sermons, uk
+
+## life-vineyard-church
+- url: https://feed.podbean.com/lifevineyardchurch/feed.xml
+- title: Life Vineyard Church
+- category: sermons
+- tags: sermons, uk, vineyard
+
+## lifechurch-warrington
+- url: https://feed.podbean.com/lifewarrington/feed.xml
+- title: LifeChurch Warrington
+- category: sermons
+- tags: sermons, uk
+
+## city-chapel-church
+- url: https://feed.podbean.com/citychapelchurch/feed.xml
+- title: City Chapel Sermons
+- category: sermons
+- tags: sermons, uk
+
+## pastors-academy
+- url: https://feed.podbean.com/pastorsacademy/feed.xml
+- title: London Seminary & the Pastors' Academy
+- category: teaching
+- tags: teaching, uk, seminary
+
+## affinity-xtra
+- url: https://feed.podbean.com/affinityxtra/feed.xml
+- title: Affinity Xtra On Demand
+- category: radio
+- tags: black-gospel, radio
+
+## crossccc
+- url: https://feed.podbean.com/crossccc/feed.xml
+- title: CCCC
+- category: sermons
+- tags: sermons, chinese
+
+## bamboo-pastors
+- url: https://feed.podbean.com/bamboopastors/feed.xml
+- title: The Bamboo Pastors Podcast
+- category: teaching
+- tags: teaching, chinese
+
+## chinese-bible-church
+- url: https://feed.podbean.com/sfcbc/feed.xml
+- title: The Chinese Bible Church Podcast
+- category: sermons
+- tags: sermons, chinese
+
+## chinese-community-church-sacramento
+- url: https://feed.podbean.com/chichurch/feed.xml
+- title: Chinese Community Church, Sacramento
+- category: sermons
+- tags: sermons, chinese
+
 # === Interfaith & world religions (broaden understanding) ===
 
 ## voices-of-interfaith-america
