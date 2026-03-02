@@ -8,7 +8,14 @@
       "title": "Kingdom Impact",
       "title_full": "Kingdom Impact from James River Church",
       "description": "Kingdom Impact Sunday and related messages.",
-      "filter": { "type": "title_contains", "value": "Kingdom Impact" }
+      "filter": {
+        "type": "title_contains",
+        "value": "Kingdom Impact"
+      },
+      "categories": [
+        "sermons",
+        "faith"
+      ]
     }
   ]
 }

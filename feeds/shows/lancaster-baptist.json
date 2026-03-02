@@ -8,14 +8,28 @@
       "title": "Reaching Forth",
       "title_full": "Reaching Forth from Lancaster Baptist",
       "description": "Vision and outreach series.",
-      "filter": { "type": "title_contains", "value": "Reaching Forth" }
+      "filter": {
+        "type": "title_contains",
+        "value": "Reaching Forth"
+      },
+      "categories": [
+        "sermons",
+        "faith"
+      ]
     },
     {
       "id": "obadiah",
       "title": "Obadiah",
       "title_full": "Obadiah from Lancaster Baptist",
       "description": "Teaching through Obadiah.",
-      "filter": { "type": "title_contains", "value": "Obadiah" }
+      "filter": {
+        "type": "title_contains",
+        "value": "Obadiah"
+      },
+      "categories": [
+        "sermons",
+        "faith"
+      ]
     }
   ]
 }

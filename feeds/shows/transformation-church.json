@@ -8,28 +8,56 @@
       "title": "New",
       "title_full": "New series from Transformation Church",
       "description": "Series on love, marriage, sexuality, relationships.",
-      "filter": { "type": "title_prefix", "value": "New:" }
+      "filter": {
+        "type": "title_prefix",
+        "value": "New:"
+      },
+      "categories": [
+        "sermons",
+        "faith"
+      ]
     },
     {
       "id": "echoes-of-christmas",
       "title": "Echoes of Christmas",
       "title_full": "Echoes of Christmas from Transformation Church",
       "description": "Christmas series.",
-      "filter": { "type": "title_prefix", "value": "Echoes Of Christmas" }
+      "filter": {
+        "type": "title_prefix",
+        "value": "Echoes Of Christmas"
+      },
+      "categories": [
+        "sermons",
+        "faith"
+      ]
     },
     {
       "id": "new-song",
       "title": "New Song",
       "title_full": "New Song from Transformation Church",
       "description": "Worship and praise series.",
-      "filter": { "type": "title_prefix", "value": "New Song:" }
+      "filter": {
+        "type": "title_prefix",
+        "value": "New Song:"
+      },
+      "categories": [
+        "sermons",
+        "faith"
+      ]
     },
     {
       "id": "roots",
       "title": "Roots",
       "title_full": "Roots from Transformation Church",
       "description": "Series on redemption and community.",
-      "filter": { "type": "title_prefix", "value": "Roots:" }
+      "filter": {
+        "type": "title_prefix",
+        "value": "Roots:"
+      },
+      "categories": [
+        "sermons",
+        "faith"
+      ]
     }
   ]
 }

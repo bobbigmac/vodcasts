@@ -8,21 +8,50 @@
       "title": "Prayer",
       "title_full": "Prayer series from Connexus Church",
       "description": "Teaching on prayer.",
-      "filter": { "type": "title_contains", "value": " // Prayer" }
+      "filter": {
+        "type": "title_contains",
+        "value": " // Prayer"
+      },
+      "categories": [
+        "sermons",
+        "faith"
+      ]
     },
     {
       "id": "christmas",
       "title": "Christmas",
       "title_full": "Christmas at Connexus Church",
       "description": "Christmas and Advent messages.",
-      "filter": { "type": "title_contains_any", "values": [" // Christmas", "Christmas", "Advent"] }
+      "filter": {
+        "type": "title_contains_any",
+        "values": [
+          " // Christmas",
+          "Christmas",
+          "Advent"
+        ]
+      },
+      "categories": [
+        "sermons",
+        "faith"
+      ]
     },
     {
       "id": "algorithm",
       "title": "Algorithm / Formation",
       "title_full": "Algorithm & Formation from Connexus Church",
       "description": "Series on technology, algorithms, and spiritual formation.",
-      "filter": { "type": "title_contains_any", "values": ["Algorithm", "Forming You", "Phone"] }
+      "filter": {
+        "type": "title_contains_any",
+        "values": [
+          "Algorithm",
+          "Forming You",
+          "Phone"
+        ]
+      },
+      "categories": [
+        "sermons",
+        "faith"
+      ]
     }
   ]
 }

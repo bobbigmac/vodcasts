@@ -8,7 +8,13 @@
       "title": "Episodes",
       "title_full": "Security Now episodes",
       "description": "Security and privacy news and deep dives.",
-      "filter": { "type": "all" }
+      "filter": {
+        "type": "all"
+      },
+      "categories": [
+        "tech",
+        "news"
+      ]
     }
   ]
 }

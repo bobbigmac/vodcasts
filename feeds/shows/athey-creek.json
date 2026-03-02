@@ -8,14 +8,28 @@
       "title": "Through the Bible",
       "title_full": "Through the Bible from Athey Creek",
       "description": "Expositional book-by-book teaching through Scripture.",
-      "filter": { "type": "title_contains", "value": "Through the Bible" }
+      "filter": {
+        "type": "title_contains",
+        "value": "Through the Bible"
+      },
+      "categories": [
+        "sermons",
+        "faith"
+      ]
     },
     {
       "id": "prophecy-update",
       "title": "Prophecy Update",
       "title_full": "Prophecy Update from Athey Creek",
       "description": "Monthly prophetic and current-events teaching.",
-      "filter": { "type": "title_contains", "value": "Prophecy Update" }
+      "filter": {
+        "type": "title_contains",
+        "value": "Prophecy Update"
+      },
+      "categories": [
+        "sermons",
+        "faith"
+      ]
     }
   ]
 }

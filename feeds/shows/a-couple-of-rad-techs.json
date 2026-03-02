@@ -8,7 +8,12 @@
       "title": "Episodes",
       "title_full": "A Couple of Rad Techs episodes",
       "description": "Tech talk and podcasting.",
-      "filter": { "type": "all" }
+      "filter": {
+        "type": "all"
+      },
+      "categories": [
+        "tech"
+      ]
     }
   ]
 }

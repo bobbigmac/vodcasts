@@ -8,7 +8,12 @@
       "title": "Episodes",
       "title_full": "Intelligent Machines episodes",
       "description": "AI and machine learning discussion.",
-      "filter": { "type": "all" }
+      "filter": {
+        "type": "all"
+      },
+      "categories": [
+        "tech"
+      ]
     }
   ]
 }

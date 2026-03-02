@@ -8,7 +8,13 @@
       "title": "Episodes",
       "title_full": "This Week in Tech episodes",
       "description": "Weekly tech news and discussion.",
-      "filter": { "type": "all" }
+      "filter": {
+        "type": "all"
+      },
+      "categories": [
+        "tech",
+        "news"
+      ]
     }
   ]
 }

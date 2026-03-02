@@ -158,7 +158,6 @@ def build_shows_for_feed(
     *,
     feed_id: str,
     feed_title: str,
-    feed_category: str = "other",
     leftovers_title: str | None = None,
     leftovers_title_full: str | None = None,
     leftovers_description: str | None = None,
@@ -209,8 +208,6 @@ def build_shows_for_feed(
         slug = _slugify(sid)
         raw_cats = show.get("categories")
         categories = [str(c).strip() for c in raw_cats] if isinstance(raw_cats, list) else []
-        if not categories:
-            categories = [feed_category] if feed_category else []
         featured = bool(show.get("featured"))
         out.append({
             "id": sid,

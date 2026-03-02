@@ -8,21 +8,42 @@
       "title": "WWDC Keynotes",
       "title_full": "WWDC Keynotes from Apple",
       "description": "Apple's Worldwide Developers Conference keynotes.",
-      "filter": { "type": "title_contains", "value": "WWDC" }
+      "filter": {
+        "type": "title_contains",
+        "value": "WWDC"
+      },
+      "categories": [
+        "tech",
+        "keynotes"
+      ]
     },
     {
       "id": "apple-event",
       "title": "Apple Events",
       "title_full": "Apple Events",
       "description": "Product launch events and special announcements.",
-      "filter": { "type": "title_contains", "value": "Apple Event" }
+      "filter": {
+        "type": "title_contains",
+        "value": "Apple Event"
+      },
+      "categories": [
+        "tech",
+        "keynotes"
+      ]
     },
     {
       "id": "macworld",
       "title": "Macworld",
       "title_full": "Macworld keynotes from Apple",
       "description": "Historic Macworld Expo keynotes.",
-      "filter": { "type": "title_contains", "value": "Macworld" }
+      "filter": {
+        "type": "title_contains",
+        "value": "Macworld"
+      },
+      "categories": [
+        "tech",
+        "keynotes"
+      ]
     }
   ]
 }

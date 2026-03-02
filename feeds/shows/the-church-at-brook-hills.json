@@ -8,7 +8,13 @@
       "title": "Sermons",
       "title_full": "Sermons from The Church at Brook Hills",
       "description": "Expository preaching and teaching.",
-      "filter": { "type": "all" }
+      "filter": {
+        "type": "all"
+      },
+      "categories": [
+        "sermons",
+        "faith"
+      ]
     }
   ]
 }

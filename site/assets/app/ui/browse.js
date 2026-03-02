@@ -77,6 +77,65 @@ export function BrowsePanel({ isOpen, feedId, feedTitle, shows, hasCustomShows, 
   const episodesOnly = !hasCustomShows && shows.length === 1 && shows[0]?.isLeftovers;
   const episodes = episodesOnly ? (shows[0]?.episodes || []) : [];
 
+  const focusedShow = initialExpandShowSlug && shows.length > 1
+    ? shows.find((x) => String(x?.slug || "").toLowerCase() === String(initialExpandShowSlug).toLowerCase())
+    : null;
+
+  if (focusedShow) {
+    const episodes = focusedShow.episodes || [];
+    const progress = getShowProgress(focusedShow, feedId, history, player);
+    const showTitle = focusedShow.title_full || focusedShow.title;
+    return html`
+      <div class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
+        <div class="browsePanel-inner">
+          <header class="browseHeader">
+            ${onBack
+              ? html`
+                  <button class="browseBackBtn" type="button" onClick=${onBack} aria-label="Back to shows">
+                    ←
+                  </button>
+                `
+              : ""}
+            <h2 class="browseTitle">${showTitle}</h2>
+          </header>
+          ${episodes.length
+            ? html`
+                <div class="browseEpActions">
+                  ${progress.resumeEpisode
+                    ? html`
+                        <button class="browseResumeBtn" type="button" onClick=${() => playEpisode(progress.resumeEpisode, episodes, focusedShow?.slug)}>
+                          Resume
+                        </button>
+                      `
+                    : ""}
+                  <button class="browsePlayBtn" type="button" onClick=${() => playEpisode(episodes[0], episodes, focusedShow?.slug)}>
+                    ${progress.resumeEpisode ? "Play from start" : "Play"}
+                  </button>
+                </div>
+              `
+            : ""}
+          <div class="browseEpList">
+            ${episodes.map(
+              (ep) => html`
+                <button
+                  class="browseEpItem"
+                  type="button"
+                  onClick=${() => playEpisode(ep, episodes, focusedShow?.slug)}
+                  aria-label=${ep.title || "Episode"}
+                >
+                  <span class="browseEpItemTitle">${ep.title || "Episode"}</span>
+                  <span class="browseEpItemMeta">
+                    ${ep.dateText || ""} ${ep.durationSec ? fmtDuration(ep.durationSec) : ""}
+                  </span>
+                </button>
+              `
+            )}
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
   if (episodesOnly) {
     const progress = getShowProgress(shows[0], feedId, history, player);
     return html`

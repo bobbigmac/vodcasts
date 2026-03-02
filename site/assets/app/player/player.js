@@ -678,8 +678,11 @@ export function createPlayerService({ env, log, history }) {
       preferEpisodeId = null,
     } = {}
   ) {
-    const src = sources.find((s) => s.id === sourceId) || sources[0];
-    if (!src) return;
+    const src = sources.find((s) => s.id === sourceId);
+    if (!src) {
+      log.warn(`Source not found: "${sourceId}" (available: ${sources.map((s) => s.id).join(", ")})`);
+      return false;
+    }
     currentSource = src;
     currentEp = null;
     current.value = { source: currentSource, episode: null };
@@ -719,6 +722,7 @@ export function createPlayerService({ env, log, history }) {
       }
 
       if (wanted) await selectEpisode(wanted, { autoplay: autoplay && !userPaused });
+      return true;
     } catch (e) {
       episodes = [];
       try {
@@ -726,6 +730,7 @@ export function createPlayerService({ env, log, history }) {
         sourceEpisodes.value = { ...episodesBySource };
       } catch {}
       log.error(`Feed error: ${String(e?.message || e)} — ${src.feed_url}`);
+      return false;
     }
   }
 
@@ -1544,7 +1549,11 @@ export function createPlayerService({ env, log, history }) {
   async function selectSourceAndEpisode(sourceId, episodeId, { autoplay = true, startAt, playlist: pl } = {}) {
     if (pl?.feedId && pl?.episodes?.length) setPlaylist(pl);
     else if (!pl) setPlaylist(null);
-    await selectSource(sourceId, { preserveEpisode: false, skipAutoEpisode: true, autoplay });
+    const ok = await selectSource(sourceId, { preserveEpisode: false, skipAutoEpisode: true, autoplay });
+    if (!ok) {
+      setPlaylist(null);
+      return;
+    }
     await selectEpisode(episodeId, { autoplay, startAt });
   }
 

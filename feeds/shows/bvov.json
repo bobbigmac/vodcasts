@@ -8,21 +8,43 @@
       "title": "Legacy of Faith",
       "title_full": "Legacy of Faith from BVOV",
       "description": "Series on passing faith to the next generation.",
-      "filter": { "type": "title_contains", "value": "Legacy" }
+      "filter": {
+        "type": "title_contains",
+        "value": "Legacy"
+      },
+      "categories": [
+        "faith"
+      ]
     },
     {
       "id": "faith-forward",
       "title": "Faith Forward",
       "title_full": "Faith Forward from BVOV",
       "description": "Series on the future of faith and ministry.",
-      "filter": { "type": "title_contains", "value": "Faith Forward" }
+      "filter": {
+        "type": "title_contains",
+        "value": "Faith Forward"
+      },
+      "categories": [
+        "faith"
+      ]
     },
     {
       "id": "generational",
       "title": "Generational",
       "title_full": "Generational series from BVOV",
       "description": "Teaching on generations and reconciliation.",
-      "filter": { "type": "title_contains_any", "values": ["Generational", "Generations", "Reconciliation"] }
+      "filter": {
+        "type": "title_contains_any",
+        "values": [
+          "Generational",
+          "Generations",
+          "Reconciliation"
+        ]
+      },
+      "categories": [
+        "faith"
+      ]
     }
   ]
 }

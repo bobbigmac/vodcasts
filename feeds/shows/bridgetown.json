@@ -8,14 +8,28 @@
       "title": "7 Deadly Sins",
       "title_full": "7 Deadly Sins from Bridgetown",
       "description": "Series on the seven deadly sins.",
-      "filter": { "type": "title_prefix", "value": "7 Deadly Sins:" }
+      "filter": {
+        "type": "title_prefix",
+        "value": "7 Deadly Sins:"
+      },
+      "categories": [
+        "sermons",
+        "faith"
+      ]
     },
     {
       "id": "first-light",
       "title": "First Light (Advent)",
       "title_full": "First Light Advent from Bridgetown",
       "description": "Advent series.",
-      "filter": { "type": "title_contains", "value": "First Light:" }
+      "filter": {
+        "type": "title_contains",
+        "value": "First Light:"
+      },
+      "categories": [
+        "sermons",
+        "faith"
+      ]
     }
   ]
 }

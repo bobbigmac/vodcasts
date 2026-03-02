@@ -8,35 +8,70 @@
       "title": "Heal Your Hurting Mind",
       "title_full": "Heal Your Hurting Mind from Life.Church",
       "description": "Series on mental health and God's healing.",
-      "filter": { "type": "title_prefix", "value": "Heal Your Hurting Mind" }
+      "filter": {
+        "type": "title_prefix",
+        "value": "Heal Your Hurting Mind"
+      },
+      "categories": [
+        "sermons",
+        "faith"
+      ]
     },
     {
       "id": "a-church-that-pleases-god",
       "title": "A Church That Pleases God",
       "title_full": "A Church That Pleases God from Life.Church",
       "description": "Series on what God wants from the church.",
-      "filter": { "type": "title_prefix", "value": "A Church That Pleases God" }
+      "filter": {
+        "type": "title_prefix",
+        "value": "A Church That Pleases God"
+      },
+      "categories": [
+        "sermons",
+        "faith"
+      ]
     },
     {
       "id": "he-will-be-called",
       "title": "He Will Be Called",
       "title_full": "He Will Be Called from Life.Church",
       "description": "Advent series on Jesus.",
-      "filter": { "type": "title_prefix", "value": "He Will Be Called" }
+      "filter": {
+        "type": "title_prefix",
+        "value": "He Will Be Called"
+      },
+      "categories": [
+        "sermons",
+        "faith"
+      ]
     },
     {
       "id": "the-connected-life",
       "title": "The Connected Life",
       "title_full": "The Connected Life from Life.Church",
       "description": "Series on community and digital life.",
-      "filter": { "type": "title_prefix", "value": "The Connected Life" }
+      "filter": {
+        "type": "title_prefix",
+        "value": "The Connected Life"
+      },
+      "categories": [
+        "sermons",
+        "faith"
+      ]
     },
     {
       "id": "book-club",
       "title": "Book Club",
       "title_full": "Book Club from Life.Church",
       "description": "Book study series.",
-      "filter": { "type": "title_prefix", "value": "Book Club" }
+      "filter": {
+        "type": "title_prefix",
+        "value": "Book Club"
+      },
+      "categories": [
+        "sermons",
+        "faith"
+      ]
     }
   ]
 }

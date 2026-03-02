@@ -8,14 +8,28 @@
       "title": "CES",
       "title_full": "CES coverage from TWiT Events",
       "description": "Consumer Electronics Show coverage.",
-      "filter": { "type": "title_contains", "value": "CES" }
+      "filter": {
+        "type": "title_contains",
+        "value": "CES"
+      },
+      "categories": [
+        "tech",
+        "conferences"
+      ]
     },
     {
       "id": "podcast-movement",
       "title": "Podcast Movement",
       "title_full": "Podcast Movement from TWiT Events",
       "description": "Podcast Movement conference coverage.",
-      "filter": { "type": "title_contains", "value": "Podcast Movement" }
+      "filter": {
+        "type": "title_contains",
+        "value": "Podcast Movement"
+      },
+      "categories": [
+        "tech",
+        "conferences"
+      ]
     }
   ]
 }

@@ -748,11 +748,11 @@ export function App({ env, log, sources, showsConfig, player, history }) {
 
   // Keep the URL shareable. When in show context (playlist with showSlug), use /feed/X/shows/Y; else use episode URL.
   useSignalEffect(() => {
-    const s = player.current.value.source?.id;
-    const e = player.current.value.episode?.slug;
-    if (!s) return;
     const pl = player.playlist?.value;
     const showSlug = pl?.showSlug || null;
+    const s = (showSlug && pl?.feedId ? pl.feedId : null) || player.current.value.source?.id;
+    const e = player.current.value.episode?.slug;
+    if (!s) return;
     const recentUser = Date.now() - (Number(lastUserIntentAtRef.current) || 0) < 1200;
     const fromHistory = !!suppressNextRoutePushRef.current;
     if (showSlug) {
@@ -1369,8 +1369,23 @@ export function App({ env, log, sources, showsConfig, player, history }) {
             player=${player}
             history=${history}
             onBack=${guideBrowseFeedId.value ? () => {
-              guideBrowseFeedId.value = null;
-              guideBrowseShowSlug.value = null;
+              if (guideBrowseShowSlug.value) {
+                guideBrowseShowSlug.value = null;
+                setRouteInUrl({ feed: guideBrowseFeedId.value }, { replace: true });
+              } else {
+                guideBrowseFeedId.value = null;
+                guideBrowseShowSlug.value = null;
+                if (env?.initialView === "browse") {
+                  browseAllOpen.value = true;
+                  guideOpen.value = false;
+                  try {
+                    const bp = String(env?.basePath || "/").replace(/\/?$/, "/");
+                    window.history.pushState({}, "", bp + "browse/");
+                  } catch {}
+                } else {
+                  setRouteInUrl({ feed: null }, { replace: true });
+                }
+              }
             } : undefined}
             onExpandShow=${(feedId, showSlug) => {
               guideBrowseShowSlug.value = showSlug;

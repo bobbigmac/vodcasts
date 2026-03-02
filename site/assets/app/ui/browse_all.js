@@ -35,7 +35,15 @@ function getShowProgress(show, feedId, history, player) {
   return { watchedCount, resumeEpisode, totalEpisodes: total };
 }
 
-/** Seeded shuffle for stable daily category order */
+/** Day-of-year seed (1–366) for daily-varying order */
+function dayOfYearSeed() {
+  const d = new Date();
+  const start = new Date(d.getFullYear(), 0, 0);
+  const diff = d - start;
+  return Math.floor(diff / (1000 * 60 * 60 * 24)) + 1;
+}
+
+/** Seeded shuffle for stable daily order */
 function shuffledWithSeed(arr, seed) {
   const a = [...arr];
   let s = seed;
@@ -88,17 +96,16 @@ function buildCategoryRows(allShows, history, player) {
     }
   }
   const otherCategories = [...categoryToShows.keys()];
-  const today = new Date();
-  const seed = today.getFullYear() * 10000 + today.getMonth() * 100 + today.getDate();
-  const shuffledCats = shuffledWithSeed(otherCategories, seed);
+  const daySeed = dayOfYearSeed();
+  const shuffledCats = shuffledWithSeed(otherCategories, daySeed);
 
   const titleCase = (s) => String(s || "").replace(/\b\w/g, (c) => c.toUpperCase());
   const rows = [];
-  if (featured.length) rows.push({ id: "featured", label: "Featured", shows: featured });
+  if (featured.length) rows.push({ id: "featured", label: "Featured", shows: shuffledWithSeed(featured, daySeed + 1) });
   if (continueWatching.length) rows.push({ id: "continue", label: "Continue Watching", shows: continueWatching });
   for (const cat of shuffledCats) {
     const shows = categoryToShows.get(cat) || [];
-    if (shows.length) rows.push({ id: `cat-${cat}`, label: titleCase(cat), shows });
+    if (shows.length) rows.push({ id: `cat-${cat}`, label: titleCase(cat), shows: shuffledWithSeed(shows, daySeed + cat.length) });
   }
   return rows;
 }

@@ -8,21 +8,42 @@
       "title": "Nightmare Before Christmas",
       "title_full": "Nightmare Before Christmas from Potential Church",
       "description": "Christmas series based on Whoville.",
-      "filter": { "type": "title_contains", "value": "Whoville" }
+      "filter": {
+        "type": "title_contains",
+        "value": "Whoville"
+      },
+      "categories": [
+        "sermons",
+        "faith"
+      ]
     },
     {
       "id": "tattooed",
       "title": "Tattooed",
       "title_full": "Tattooed series from Potential Church",
       "description": "Series on character and decisions.",
-      "filter": { "type": "title_contains", "value": "Tattooed" }
+      "filter": {
+        "type": "title_contains",
+        "value": "Tattooed"
+      },
+      "categories": [
+        "sermons",
+        "faith"
+      ]
     },
     {
       "id": "christmas",
       "title": "Christmas",
       "title_full": "Christmas from Potential Church",
       "description": "Christmas sermons and specials.",
-      "filter": { "type": "title_contains", "value": "Christmas" }
+      "filter": {
+        "type": "title_contains",
+        "value": "Christmas"
+      },
+      "categories": [
+        "sermons",
+        "faith"
+      ]
     }
   ]
 }

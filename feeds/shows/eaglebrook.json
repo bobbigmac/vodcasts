@@ -17,6 +17,7 @@
       "title": "Get Cozy",
       "title_full": "Get Cozy from Eagle Brook Church",
       "description": "Series on marriage and relationships.",
+      "categories": ["sermons", "faith", "relationships"],
       "filter": { "type": "title_contains", "value": "Get Cozy" }
     },
     {
@@ -24,6 +25,7 @@
       "title": "Stoke the Flame",
       "title_full": "Stoke the Flame from Eagle Brook Church",
       "description": "Series on intimacy and sexuality.",
+      "categories": ["sermons", "faith", "relationships"],
       "filter": { "type": "title_contains", "value": "Stoke the Flame" }
     },
     {
@@ -31,6 +33,7 @@
       "title": "Logs on the Fire",
       "title_full": "Logs on the Fire from Eagle Brook Church",
       "description": "Series on dating and singleness.",
+      "categories": ["sermons", "faith", "relationships"],
       "filter": { "type": "title_contains", "value": "Logs on the Fire" }
     },
     {
@@ -38,6 +41,7 @@
       "title": "Vision Weekend",
       "title_full": "Vision Weekend from Eagle Brook Church",
       "description": "Annual vision and direction weekend.",
+      "categories": ["sermons", "faith"],
       "filter": { "type": "title_contains", "value": "Vision Weekend" }
     },
     {
@@ -45,6 +49,7 @@
       "title": "Christmas",
       "title_full": "Christmas at Eagle Brook Church",
       "description": "Christmas services and special messages.",
+      "categories": ["sermons", "faith", "seasonal"],
       "filter": { "type": "title_regex", "value": "Christmas\\s+\\d{4}" }
     },
     {
@@ -52,6 +57,7 @@
       "title": "Free From",
       "title_full": "Free From series from Eagle Brook Church",
       "description": "Series on freedom from anxiety, despair, and other struggles.",
+      "categories": ["sermons", "faith"],
       "filter": { "type": "title_prefix", "value": "Free From" }
     },
     {
@@ -59,6 +65,7 @@
       "title": "When I'm",
       "title_full": "When I'm series from Eagle Brook Church",
       "description": "Series on navigating difficult emotions.",
+      "categories": ["sermons", "faith"],
       "filter": { "type": "title_prefix", "value": "When I'm" }
     },
     {
@@ -66,6 +73,7 @@
       "title": "When I Feel",
       "title_full": "When I Feel series from Eagle Brook Church",
       "description": "Series on emotional honesty and faith.",
+      "categories": ["sermons", "faith"],
       "filter": { "type": "title_prefix", "value": "When I Feel" }
     },
     {
@@ -73,6 +81,7 @@
       "title": "What God",
       "title_full": "What God series from Eagle Brook Church",
       "description": "Series on God's character and will.",
+      "categories": ["sermons", "faith"],
       "filter": { "type": "title_prefix", "value": "What God" }
     },
     {
@@ -80,6 +89,7 @@
       "title": "Gentle & Lowly",
       "title_full": "Gentle & Lowly from Eagle Brook Church",
       "description": "Series on Christ's heart for sinners and sufferers.",
+      "categories": ["sermons", "faith"],
       "filter": { "type": "title_contains", "value": "Gentle" }
     },
     {
@@ -87,6 +97,7 @@
       "title": "Make A Difference",
       "title_full": "Make A Difference from Eagle Brook Church",
       "description": "Annual outreach and mission emphasis.",
+      "categories": ["sermons", "faith", "outreach"],
       "filter": { "type": "title_contains", "value": "Make A Difference" }
     },
     {
@@ -94,6 +105,7 @@
       "title": "Loss Of",
       "title_full": "Loss Of series from Eagle Brook Church",
       "description": "Series on grief, loss, and hope.",
+      "categories": ["sermons", "faith"],
       "filter": { "type": "title_prefix", "value": "Loss of" }
     },
     {
@@ -101,6 +113,7 @@
       "title": "But I",
       "title_full": "But I series from Eagle Brook Church",
       "description": "Series on common excuses and barriers to faith.",
+      "categories": ["sermons", "faith", "discipleship"],
       "filter": { "type": "title_prefix", "value": "But I" }
     },
     {
@@ -108,6 +121,7 @@
       "title": "Go Deeper / Get Started",
       "title_full": "Go Deeper & Get Started from Eagle Brook Church",
       "description": "Foundational discipleship series.",
+      "categories": ["sermons", "faith", "discipleship"],
       "filter": { "type": "title_contains_any", "values": ["Go Deeper", "Get Started"] }
     },
     {
@@ -115,6 +129,7 @@
       "title": "Revelation / End Times",
       "title_full": "Revelation & End Times from Eagle Brook Church",
       "description": "Teaching on Revelation and end-times prophecy.",
+      "categories": ["sermons", "faith"],
       "filter": { "type": "title_contains_any", "values": ["Revelation", "end times", "Seven Churches", "Tribulation", "Rapture"] }
     },
     {
@@ -122,6 +137,7 @@
       "title": "Easter",
       "title_full": "Easter at Eagle Brook Church",
       "description": "Easter services and resurrection messages.",
+      "categories": ["sermons", "faith", "seasonal"],
       "filter": { "type": "title_regex", "value": "Easter\\s+\\d{4}" }
     },
     {
@@ -129,6 +145,7 @@
       "title": "Sabbath & Soul Care",
       "title_full": "Sabbath & Soul Care from Eagle Brook Church",
       "description": "Teaching on rest, Sabbath, and spiritual care.",
+      "categories": ["sermons", "faith"],
       "filter": { "type": "title_contains_any", "values": ["Sabbath", "Soul Care"] }
     }
   ]

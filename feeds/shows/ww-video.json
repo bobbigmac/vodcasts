@@ -8,7 +8,13 @@
       "title": "Episodes",
       "title_full": "Windows Weekly episodes",
       "description": "Windows and Microsoft news and discussion.",
-      "filter": { "type": "all" }
+      "filter": {
+        "type": "all"
+      },
+      "categories": [
+        "tech",
+        "news"
+      ]
     }
   ]
 }

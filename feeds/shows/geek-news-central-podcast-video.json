@@ -8,7 +8,13 @@
       "title": "Episodes",
       "title_full": "Geek News Central episodes",
       "description": "Tech news and podcasting discussion.",
-      "filter": { "type": "all" }
+      "filter": {
+        "type": "all"
+      },
+      "categories": [
+        "tech",
+        "news"
+      ]
     }
   ]
 }

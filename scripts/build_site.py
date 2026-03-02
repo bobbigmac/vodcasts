@@ -663,7 +663,6 @@ def main() -> None:
     def _escape_xml(s: str) -> str:
         return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
 
-    feed_categories = {s.id: (s.category or "other") for s in cfg.sources}
     for mf in manifest_feeds:
         fid = mf["id"]
         feed_title = mf.get("title") or fid
@@ -684,7 +683,6 @@ def main() -> None:
             shows_list if shows_list else None,
             feed_id=fid,
             feed_title=feed_title,
-            feed_category=feed_categories.get(fid, "other"),
             leftovers_title=leftovers_title,
             leftovers_title_full=leftovers_title_full,
             leftovers_description=leftovers_description,

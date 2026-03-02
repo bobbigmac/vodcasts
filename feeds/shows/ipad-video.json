@@ -8,7 +8,12 @@
       "title": "Episodes",
       "title_full": "iOS Today episodes",
       "description": "iOS tips, apps, and news.",
-      "filter": { "type": "all" }
+      "filter": {
+        "type": "all"
+      },
+      "categories": [
+        "tech"
+      ]
     }
   ]
 }

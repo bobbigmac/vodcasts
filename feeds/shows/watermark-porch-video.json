@@ -8,7 +8,13 @@
       "title": "Episodes",
       "title_full": "The Porch episodes",
       "description": "Young adult ministry teaching.",
-      "filter": { "type": "all" }
+      "filter": {
+        "type": "all"
+      },
+      "categories": [
+        "sermons",
+        "faith"
+      ]
     }
   ]
 }

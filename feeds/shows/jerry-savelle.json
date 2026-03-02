@@ -8,21 +8,39 @@
       "title": "Reign in Life",
       "title_full": "Reign in Life from Jerry Savelle",
       "description": "Series on reigning in life through Christ.",
-      "filter": { "type": "title_suffix", "value": ", Reign in Life" }
+      "filter": {
+        "type": "title_suffix",
+        "value": ", Reign in Life"
+      },
+      "categories": [
+        "faith"
+      ]
     },
     {
       "id": "life-of-faith",
       "title": "Life of Faith",
       "title_full": "Life of Faith from Jerry Savelle",
       "description": "Series on living by faith.",
-      "filter": { "type": "title_suffix", "value": ", Life of Faith" }
+      "filter": {
+        "type": "title_suffix",
+        "value": ", Life of Faith"
+      },
+      "categories": [
+        "faith"
+      ]
     },
     {
       "id": "fullness-of-the-blessing",
       "title": "Living in the Fullness of the Blessing",
       "title_full": "Living in the Fullness of the Blessing from Jerry Savelle",
       "description": "Series on the Abrahamic blessing.",
-      "filter": { "type": "title_contains", "value": "Living in the Fullness of the Blessing" }
+      "filter": {
+        "type": "title_contains",
+        "value": "Living in the Fullness of the Blessing"
+      },
+      "categories": [
+        "faith"
+      ]
     }
   ]
 }
