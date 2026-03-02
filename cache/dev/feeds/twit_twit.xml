@@ -14,8 +14,8 @@
 		<ttl>720</ttl>
 		<sy:updatePeriod>weekly</sy:updatePeriod>
 		<sy:updateFrequency>1</sy:updateFrequency>
-		<lastBuildDate>Sun, 22 Feb 2026 20:50:05 PST</lastBuildDate>
-		<pubDate>Sun, 22 Feb 2026 20:50:05 PST</pubDate>
+		<lastBuildDate>Sun, 01 Mar 2026 21:55:03 PST</lastBuildDate>
+		<pubDate>Sun, 01 Mar 2026 21:55:03 PST</pubDate>
 		<rawvoice:frequency>weekly</rawvoice:frequency>
 		<rawvoice:location>Petaluma, CA</rawvoice:location>
 		<itunes:type>episodic</itunes:type>
@@ -47,6 +47,164 @@ Records live every Sunday at 5:15pm Eastern / 2:15pm Pacific / 22:15 UTC.</descr
 		<itunes:new-feed-url>https://feeds.twit.tv/twit_video_hd.xml</itunes:new-feed-url>
 		<rawvoice:subscribe feed="https://feeds.twit.tv/twit_video_hd.xml" itunes="https://podcasts.apple.com/us/podcast/this-week-in-tech-video/id478840375" html="https://twit.tv/shows/this-week-in-tech"></rawvoice:subscribe>
 		<atom:link href="https://feeds.twit.tv/twit_video_hd.xml" type="application/rss+xml" rel="self"/>
+		<item>
+			<title>TWiT 1073: Broetry in Motion - Anthropic Stands Up to The Pentagon</title>
+			<itunes:title>Broetry in Motion - Anthropic Stands Up to The Pentagon</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 01 Mar 2026 17:26:49 PST</pubDate>
+			<itunes:episode>1073</itunes:episode>
+			<podcast:episode>1073</podcast:episode>
+			<link>https://twit.tv/shows/this-week-in-tech/episodes/1073</link>
+			<comments>https://twit.tv/shows/this-week-in-tech/episodes/1073</comments>
+			<category>News</category>
+			<category>Tech News</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Anthropic Stands Up to The Pentagon</itunes:subtitle>
+			<itunes:keywords>Technology, Anthropic, openAI, claude, sam altman, department of defense, Pentagon AI, supply chain risk, mass surveillance, autonomous weapons, layoffs, block, jack dorsey, AI job loss, netflix, Warner Brothers Discovery, Paramount merger, CNN, CBS News,</itunes:keywords>
+			<description><![CDATA[
+<p>Anthropic's clash with the Pentagon pits tech ethics against government demands, raising explosive questions about AI's role in surveillance and weaponry. If you care about who controls the future of artificial intelligence, this episode is a must-listen.</p><ul> 
+<li>Sam Altman says OpenAI shares Anthropic's red lines in Pentagon fight</li> 
+<li>The whole thing was a scam</li> 
+<li>OpenAI allows NSA to use GPT for surveilling Americans</li> 
+<li>Anthropic's Claude hits No. 1 on Apple's top free apps list after Pentagon rejection</li> 
+<li>Layoffs at Block</li> 
+<li>Crypto exchange Gemini plans to lay off up to 200 staff, exit Europe, and Australia</li> 
+<li>Netflix Backs Out of Bid for Warner Bros., Paving Way for Paramount Takeover</li> 
+<li>An update on our model deprecation commitments for Claude Opus 3 \ Anthropic</li> 
+<li>Keep Android Open</li> 
+<li>Colorado moves age checks from websites to operating systems | Biometric Update</li> 
+<li>Open source calculator firmware DB48X forbids CA/CO use due to age verification</li> 
+<li>New Apple product launch starts Monday, Tim Cook confirms</li> 
+<li>Everything announced at Samsung Unpacked: The Galaxy S26 Ultra, Galaxy Buds 4 and more</li> 
+<li>Here's how the new Samsung Galaxy S26 compares with last year's S25</li> 
+<li>Hacked Prayer App Sends 'Surrender' Messages to Iranians Amid Israeli and US Strikes</li> 
+<li>The Big One: The cyberattack scenarios that keep officials up at night</li> 
+<li>CISA replaces acting director after a bumbling year on the job</li> 
+<li>New AirSnitch attack bypasses Wi-Fi encryption in homes, offices, and enterprises</li> 
+<li>Victory! Tenth Circuit Finds Fourth Amendment Doesn't Support Broad Search of Protesters' Devices and Digital Data </li> 
+<li>Enthusiasts used their home computers to search for ET—scientists are homing in on 100 signals they found</li> 
+<li>Americans now listen to podcasts more often than talk radio, study shows | TechCrunch</li> 
+<li>Burger King Will Use AI To Check If Employees Say 'Please' and 'Thank You'</li> 
+<li>Uber Previews Its Dubai Air Taxi Service - Slashdot</li> 
+<li>Rob Grant, creator of Red Dwarf, has died</li> 
+<li>Dan Simmons, author of Hyperion, Song of Kali, dead at 77</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guests:</strong> <a href="https://www.mollywhite.net/" target="_blank">Molly White</a>, <a href="https://x.com/owenthomas" target="_blank">Owen Thomas</a>, and <a href="https://bsky.app/profile/harrymccracken.com" target="_blank">Harry McCracken</a></p> 
+<p>Download or subscribe to <em>This Week in Tech</em> at <a href="https://twit.tv/shows/this-week-in-tech">https://twit.tv/shows/this-week-in-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+<li><a href="http://expressvpn.com/twit" target="_blank" rel="sponsored">expressvpn.com/twit</a></li>
+<li><a href="http://canary.tools/twit" target="_blank" rel="sponsored">canary.tools/twit - use code: TWIT</a></li>
+<li><a href="http://ZipRecruiter.com/twit" target="_blank" rel="sponsored">ZipRecruiter.com/twit</a></li>
+<li><a href="http://helixsleep.com/twit" target="_blank" rel="sponsored">helixsleep.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Anthropic's clash with the Pentagon pits tech ethics against government demands, raising explosive questions about AI's role in surveillance and weaponry. If you care about who controls the future of artificial intelligence, this episode is a must-listen.</p><ul> 
+<li>Sam Altman says OpenAI shares Anthropic's red lines in Pentagon fight</li> 
+<li>The whole thing was a scam</li> 
+<li>OpenAI allows NSA to use GPT for surveilling Americans</li> 
+<li>Anthropic's Claude hits No. 1 on Apple's top free apps list after Pentagon rejection</li> 
+<li>Layoffs at Block</li> 
+<li>Crypto exchange Gemini plans to lay off up to 200 staff, exit Europe, and Australia</li> 
+<li>Netflix Backs Out of Bid for Warner Bros., Paving Way for Paramount Takeover</li> 
+<li>An update on our model deprecation commitments for Claude Opus 3 \ Anthropic</li> 
+<li>Keep Android Open</li> 
+<li>Colorado moves age checks from websites to operating systems | Biometric Update</li> 
+<li>Open source calculator firmware DB48X forbids CA/CO use due to age verification</li> 
+<li>New Apple product launch starts Monday, Tim Cook confirms</li> 
+<li>Everything announced at Samsung Unpacked: The Galaxy S26 Ultra, Galaxy Buds 4 and more</li> 
+<li>Here's how the new Samsung Galaxy S26 compares with last year's S25</li> 
+<li>Hacked Prayer App Sends 'Surrender' Messages to Iranians Amid Israeli and US Strikes</li> 
+<li>The Big One: The cyberattack scenarios that keep officials up at night</li> 
+<li>CISA replaces acting director after a bumbling year on the job</li> 
+<li>New AirSnitch attack bypasses Wi-Fi encryption in homes, offices, and enterprises</li> 
+<li>Victory! Tenth Circuit Finds Fourth Amendment Doesn't Support Broad Search of Protesters' Devices and Digital Data </li> 
+<li>Enthusiasts used their home computers to search for ET—scientists are homing in on 100 signals they found</li> 
+<li>Americans now listen to podcasts more often than talk radio, study shows | TechCrunch</li> 
+<li>Burger King Will Use AI To Check If Employees Say 'Please' and 'Thank You'</li> 
+<li>Uber Previews Its Dubai Air Taxi Service - Slashdot</li> 
+<li>Rob Grant, creator of Red Dwarf, has died</li> 
+<li>Dan Simmons, author of Hyperion, Song of Kali, dead at 77</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guests:</strong> <a href="https://www.mollywhite.net/" target="_blank">Molly White</a>, <a href="https://x.com/owenthomas" target="_blank">Owen Thomas</a>, and <a href="https://bsky.app/profile/harrymccracken.com" target="_blank">Harry McCracken</a></p> 
+<p>Download or subscribe to <em>This Week in Tech</em> at <a href="https://twit.tv/shows/this-week-in-tech">https://twit.tv/shows/this-week-in-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+<li><a href="http://expressvpn.com/twit" target="_blank" rel="sponsored">expressvpn.com/twit</a></li>
+<li><a href="http://canary.tools/twit" target="_blank" rel="sponsored">canary.tools/twit - use code: TWIT</a></li>
+<li><a href="http://ZipRecruiter.com/twit" target="_blank" rel="sponsored">ZipRecruiter.com/twit</a></li>
+<li><a href="http://helixsleep.com/twit" target="_blank" rel="sponsored">helixsleep.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Anthropic's clash with the Pentagon pits tech ethics against government demands, raising explosive questions about AI's role in surveillance and weaponry. If you care about who controls the future of artificial intelligence, this episode is a must-listen.</p><ul> 
+<li>Sam Altman says OpenAI shares Anthropic's red lines in Pentagon fight</li> 
+<li>The whole thing was a scam</li> 
+<li>OpenAI allows NSA to use GPT for surveilling Americans</li> 
+<li>Anthropic's Claude hits No. 1 on Apple's top free apps list after Pentagon rejection</li> 
+<li>Layoffs at Block</li> 
+<li>Crypto exchange Gemini plans to lay off up to 200 staff, exit Europe, and Australia</li> 
+<li>Netflix Backs Out of Bid for Warner Bros., Paving Way for Paramount Takeover</li> 
+<li>An update on our model deprecation commitments for Claude Opus 3 \ Anthropic</li> 
+<li>Keep Android Open</li> 
+<li>Colorado moves age checks from websites to operating systems | Biometric Update</li> 
+<li>Open source calculator firmware DB48X forbids CA/CO use due to age verification</li> 
+<li>New Apple product launch starts Monday, Tim Cook confirms</li> 
+<li>Everything announced at Samsung Unpacked: The Galaxy S26 Ultra, Galaxy Buds 4 and more</li> 
+<li>Here's how the new Samsung Galaxy S26 compares with last year's S25</li> 
+<li>Hacked Prayer App Sends 'Surrender' Messages to Iranians Amid Israeli and US Strikes</li> 
+<li>The Big One: The cyberattack scenarios that keep officials up at night</li> 
+<li>CISA replaces acting director after a bumbling year on the job</li> 
+<li>New AirSnitch attack bypasses Wi-Fi encryption in homes, offices, and enterprises</li> 
+<li>Victory! Tenth Circuit Finds Fourth Amendment Doesn't Support Broad Search of Protesters' Devices and Digital Data </li> 
+<li>Enthusiasts used their home computers to search for ET—scientists are homing in on 100 signals they found</li> 
+<li>Americans now listen to podcasts more often than talk radio, study shows | TechCrunch</li> 
+<li>Burger King Will Use AI To Check If Employees Say 'Please' and 'Thank You'</li> 
+<li>Uber Previews Its Dubai Air Taxi Service - Slashdot</li> 
+<li>Rob Grant, creator of Red Dwarf, has died</li> 
+<li>Dan Simmons, author of Hyperion, Song of Kali, dead at 77</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p><strong>Guests:</strong> <a href="https://www.mollywhite.net/" target="_blank">Molly White</a>, <a href="https://x.com/owenthomas" target="_blank">Owen Thomas</a>, and <a href="https://bsky.app/profile/harrymccracken.com" target="_blank">Harry McCracken</a></p> 
+<p>Download or subscribe to <em>This Week in Tech</em> at <a href="https://twit.tv/shows/this-week-in-tech">https://twit.tv/shows/this-week-in-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+<li><a href="http://expressvpn.com/twit" target="_blank" rel="sponsored">expressvpn.com/twit</a></li>
+<li><a href="http://canary.tools/twit" target="_blank" rel="sponsored">canary.tools/twit - use code: TWIT</a></li>
+<li><a href="http://ZipRecruiter.com/twit" target="_blank" rel="sponsored">ZipRecruiter.com/twit</a></li>
+<li><a href="http://helixsleep.com/twit" target="_blank" rel="sponsored">helixsleep.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860331/hero/TWIT1073_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twit/twit1073/twit1073_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>0:00</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twit/twit1073/twit1073_h264m_1920x1080.mp4" length="3072086962" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twit/twit1073/twit1073_h264m_1920x1080.mp4" fileSize="3072086962" type="video/mp4" medium="video">
+				<media:title type="plain">TWiT 1073: Broetry in Motion - Anthropic Stands Up to The Pentagon</media:title>
+				<media:description type="plain">Anthropic Stands Up to The Pentagon</media:description>
+				<media:keywords>Technology, Anthropic, openAI, claude, sam altman, department of defense, Pentagon AI, supply chain risk, mass surveillance, autonomous weapons, layoffs, block, jack dorsey, AI job loss, netflix, Warner Brothers Discovery, Paramount merger, CNN, CBS News,</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/03/860331/hero/TWIT1073_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="guest">Molly White</media:credit>
+				<media:credit role="guest">Owen Thomas</media:credit>
+				<media:credit role="guest">Harry McCracken</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="guest" href="https://www.mollywhite.net/">Molly White</podcast:person>
+				<podcast:person role="guest" href="https://x.com/owenthomas">Owen Thomas</podcast:person>
+				<podcast:person role="guest" href="https://bsky.app/profile/harrymccracken.com" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/63631/pictures/38B04AE4-4728-4D64-8134-B355948F4228-280x300_0.jpeg">Harry McCracken</podcast:person>
+		</item>
 		<item>
 			<title>TWiT 1072: The Devil's Advocate - Jailbreaking Fighter Jets, Social Media Addiction, and Self-Driving Snafus</title>
 			<itunes:title>The Devil's Advocate - Jailbreaking Fighter Jets, Social Media Addiction, and Self-Driving Snafus</itunes:title>
@@ -1281,168 +1439,6 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 				<media:credit role="host">Leo Laporte</media:credit>
 			</media:content>
 				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
-		</item>
-		<item>
-			<title>TWiT 1063: The Year's End - Top Stories of 2025</title>
-			<itunes:title>The Year's End - Top Stories of 2025</itunes:title>
-			<itunes:episodeType>full</itunes:episodeType>
-			<itunes:author>TWiT</itunes:author>
-			<pubDate>Sun, 21 Dec 2025 20:53:14 PST</pubDate>
-			<itunes:episode>1063</itunes:episode>
-			<podcast:episode>1063</podcast:episode>
-			<link>https://twit.tv/shows/this-week-in-tech/episodes/1063</link>
-			<comments>https://twit.tv/shows/this-week-in-tech/episodes/1063</comments>
-			<category>News</category>
-			<category>Tech News</category>
-			<itunes:explicit>no</itunes:explicit>
-			<itunes:subtitle>Top Stories of 2025</itunes:subtitle>
-			<podcast:transcript url="http://twit.tv/posts/transcripts/week-tech-1063-transcript" type="text/html" />
-			<itunes:keywords>Technology, ai, chatgpt, openAI, TikTok ban, Security, privacy, government regulation, age verification, Microsoft, Chinese technology, iot devices, vpn, ExpressVPN, Zscaler, digital identity, data centers, RAM pricing, Google, chrome, UBlock Origin</itunes:keywords>
-			<description><![CDATA[
-<p>After a year tangled in political drama, AI hype, and regulation battles, the TWiT crew explains how many of tech's "biggest stories" simply fizzled into nothing or left us with new headaches by year's end.</p><ul> 
-<li>Year-end tech trends: AI, politics, and security dominated 2025</li> 
-<li>Major stories faded fast: TikTok saga, political tech drama, DOGE scandal</li> 
-<li>TikTok's ownership battle—Oracle, Trump donors, and US-China tensions</li> 
-<li>China tech fears: banned drones, IoT vulnerabilities, secret radios in buses</li> 
-<li>Rising political pressure for internet privacy and media literacy reform</li> 
-<li>Surveillance and kill switch concerns in US grid and port infrastructure</li> 
-<li>Convenience vs. privacy: Americans trade data for discounts and ease</li> 
-<li>Age verification, surveillance, and flawed facial recognition across countries</li> 
-<li>Discord's ID leak highlights risks of rushed compliance with privacy laws</li> 
-<li>Social media's impact on kids pushes age-gating and verification laws</li> 
-<li>ISPs monetize customer data, VPNs pitched for personal privacy</li> 
-<li>Global government crackdowns: UK bans VPN advertising, mandates age checks</li> 
-<li>The illusion of absolute privacy: flawed age gates and persistent tracking</li> 
-<li>AI takes over: explosive growth, but profits elusive for big players</li> 
-<li>Arms race in LLMs: DeepSeek's breakthrough, OpenAI/Meta talent bidding war</li> 
-<li>Ad-driven models still rule; Amazon's playbook repeated in AI</li> 
-<li>Humanoid robots and AGI hype: skepticism vs. Silicon Valley optimism</li> 
-<li>AI-generated art, media, and the challenge of deepfake detection</li> 
-<li>Social platforms falter: Instagram and X swamped by fake or low-value content</li> 
-<li>Google's legal, regulatory, and technical woes: ad tech trial, Manifest V3 backlash</li> 
-<li>RAM price spikes and hardware shortages blamed on AI data center demand</li> 
-<li>YouTube overtakes mobile for podcast and video viewing, Oscars move online</li> 
-<li>The internet's growth: Cloudflare stats, X vs. Reddit, spam domain trends</li> 
-<li>Weird tech stories: hacked crosswalks, Nintendo Switch 2 Staplegate, LEGO theft ring</li> 
-<li>Sad farewell: Lamar Wilson's passing and mental health awareness in tech</li> 
-<li>Reflections on the year's turbulence and hopes for a better 2026</li></ul> 
-<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
-<p><strong>Guests:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a>, <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a>, and <a href="https://twit.tv/people/steve-gibson">Steve Gibson</a></p> 
-<p>Download or subscribe to <em>This Week in Tech</em> at <a href="https://twit.tv/shows/this-week-in-tech">https://twit.tv/shows/this-week-in-tech</a></p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
-<p><strong>Sponsors:</strong><ul>
-<li><a href="http://expressvpn.com/twit" target="_blank" rel="sponsored">expressvpn.com/twit</a></li>
-<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
-<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
-<li><a href="http://ventionteams.com/twit" target="_blank" rel="sponsored">ventionteams.com/twit</a></li>
-<li><a href="https://auraframes.com/ink?utm_source=podcast&utm_medium=audio&utm_campaign=thisweekintechtwit" target="_blank" rel="sponsored">auraframes.com/ink</a></li>
-</ul></p>
-]]></description>
-			<itunes:summary><![CDATA[
-<p>After a year tangled in political drama, AI hype, and regulation battles, the TWiT crew explains how many of tech's "biggest stories" simply fizzled into nothing or left us with new headaches by year's end.</p><ul> 
-<li>Year-end tech trends: AI, politics, and security dominated 2025</li> 
-<li>Major stories faded fast: TikTok saga, political tech drama, DOGE scandal</li> 
-<li>TikTok's ownership battle—Oracle, Trump donors, and US-China tensions</li> 
-<li>China tech fears: banned drones, IoT vulnerabilities, secret radios in buses</li> 
-<li>Rising political pressure for internet privacy and media literacy reform</li> 
-<li>Surveillance and kill switch concerns in US grid and port infrastructure</li> 
-<li>Convenience vs. privacy: Americans trade data for discounts and ease</li> 
-<li>Age verification, surveillance, and flawed facial recognition across countries</li> 
-<li>Discord's ID leak highlights risks of rushed compliance with privacy laws</li> 
-<li>Social media's impact on kids pushes age-gating and verification laws</li> 
-<li>ISPs monetize customer data, VPNs pitched for personal privacy</li> 
-<li>Global government crackdowns: UK bans VPN advertising, mandates age checks</li> 
-<li>The illusion of absolute privacy: flawed age gates and persistent tracking</li> 
-<li>AI takes over: explosive growth, but profits elusive for big players</li> 
-<li>Arms race in LLMs: DeepSeek's breakthrough, OpenAI/Meta talent bidding war</li> 
-<li>Ad-driven models still rule; Amazon's playbook repeated in AI</li> 
-<li>Humanoid robots and AGI hype: skepticism vs. Silicon Valley optimism</li> 
-<li>AI-generated art, media, and the challenge of deepfake detection</li> 
-<li>Social platforms falter: Instagram and X swamped by fake or low-value content</li> 
-<li>Google's legal, regulatory, and technical woes: ad tech trial, Manifest V3 backlash</li> 
-<li>RAM price spikes and hardware shortages blamed on AI data center demand</li> 
-<li>YouTube overtakes mobile for podcast and video viewing, Oscars move online</li> 
-<li>The internet's growth: Cloudflare stats, X vs. Reddit, spam domain trends</li> 
-<li>Weird tech stories: hacked crosswalks, Nintendo Switch 2 Staplegate, LEGO theft ring</li> 
-<li>Sad farewell: Lamar Wilson's passing and mental health awareness in tech</li> 
-<li>Reflections on the year's turbulence and hopes for a better 2026</li></ul> 
-<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
-<p><strong>Guests:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a>, <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a>, and <a href="https://twit.tv/people/steve-gibson">Steve Gibson</a></p> 
-<p>Download or subscribe to <em>This Week in Tech</em> at <a href="https://twit.tv/shows/this-week-in-tech">https://twit.tv/shows/this-week-in-tech</a></p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
-<p><strong>Sponsors:</strong><ul>
-<li><a href="http://expressvpn.com/twit" target="_blank" rel="sponsored">expressvpn.com/twit</a></li>
-<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
-<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
-<li><a href="http://ventionteams.com/twit" target="_blank" rel="sponsored">ventionteams.com/twit</a></li>
-<li><a href="https://auraframes.com/ink?utm_source=podcast&utm_medium=audio&utm_campaign=thisweekintechtwit" target="_blank" rel="sponsored">auraframes.com/ink</a></li>
-</ul></p>
-]]></itunes:summary>
-			<content:encoded><![CDATA[
-<p>After a year tangled in political drama, AI hype, and regulation battles, the TWiT crew explains how many of tech's "biggest stories" simply fizzled into nothing or left us with new headaches by year's end.</p><ul> 
-<li>Year-end tech trends: AI, politics, and security dominated 2025</li> 
-<li>Major stories faded fast: TikTok saga, political tech drama, DOGE scandal</li> 
-<li>TikTok's ownership battle—Oracle, Trump donors, and US-China tensions</li> 
-<li>China tech fears: banned drones, IoT vulnerabilities, secret radios in buses</li> 
-<li>Rising political pressure for internet privacy and media literacy reform</li> 
-<li>Surveillance and kill switch concerns in US grid and port infrastructure</li> 
-<li>Convenience vs. privacy: Americans trade data for discounts and ease</li> 
-<li>Age verification, surveillance, and flawed facial recognition across countries</li> 
-<li>Discord's ID leak highlights risks of rushed compliance with privacy laws</li> 
-<li>Social media's impact on kids pushes age-gating and verification laws</li> 
-<li>ISPs monetize customer data, VPNs pitched for personal privacy</li> 
-<li>Global government crackdowns: UK bans VPN advertising, mandates age checks</li> 
-<li>The illusion of absolute privacy: flawed age gates and persistent tracking</li> 
-<li>AI takes over: explosive growth, but profits elusive for big players</li> 
-<li>Arms race in LLMs: DeepSeek's breakthrough, OpenAI/Meta talent bidding war</li> 
-<li>Ad-driven models still rule; Amazon's playbook repeated in AI</li> 
-<li>Humanoid robots and AGI hype: skepticism vs. Silicon Valley optimism</li> 
-<li>AI-generated art, media, and the challenge of deepfake detection</li> 
-<li>Social platforms falter: Instagram and X swamped by fake or low-value content</li> 
-<li>Google's legal, regulatory, and technical woes: ad tech trial, Manifest V3 backlash</li> 
-<li>RAM price spikes and hardware shortages blamed on AI data center demand</li> 
-<li>YouTube overtakes mobile for podcast and video viewing, Oscars move online</li> 
-<li>The internet's growth: Cloudflare stats, X vs. Reddit, spam domain trends</li> 
-<li>Weird tech stories: hacked crosswalks, Nintendo Switch 2 Staplegate, LEGO theft ring</li> 
-<li>Sad farewell: Lamar Wilson's passing and mental health awareness in tech</li> 
-<li>Reflections on the year's turbulence and hopes for a better 2026</li></ul> 
-<p><strong>Host:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
-<p><strong>Guests:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a>, <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a>, and <a href="https://twit.tv/people/steve-gibson">Steve Gibson</a></p> 
-<p>Download or subscribe to <em>This Week in Tech</em> at <a href="https://twit.tv/shows/this-week-in-tech">https://twit.tv/shows/this-week-in-tech</a></p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
-<p><strong>Sponsors:</strong><ul>
-<li><a href="http://expressvpn.com/twit" target="_blank" rel="sponsored">expressvpn.com/twit</a></li>
-<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
-<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
-<li><a href="http://ventionteams.com/twit" target="_blank" rel="sponsored">ventionteams.com/twit</a></li>
-<li><a href="https://auraframes.com/ink?utm_source=podcast&utm_medium=audio&utm_campaign=thisweekintechtwit" target="_blank" rel="sponsored">auraframes.com/ink</a></li>
-</ul></p>
-]]></content:encoded>
-			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2025/12/859484/hero/TWIT1063_thumbnail.jpg"/>
-			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twit/twit1063/twit1063_h264m_1920x1080.mp4</guid>
-			<rawvoice:isHd>yes</rawvoice:isHd>
-			<itunes:duration>3:03:30</itunes:duration>
-			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twit/twit1063/twit1063_h264m_1920x1080.mp4" length="3112528608" type="video/mp4"/>
-			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twit/twit1063/twit1063_h264m_1920x1080.mp4" fileSize="3112528608" type="video/mp4" medium="video">
-				<media:title type="plain">TWiT 1063: The Year's End - Top Stories of 2025</media:title>
-				<media:description type="plain">Top Stories of 2025</media:description>
-				<media:keywords>Technology, ai, chatgpt, openAI, TikTok ban, Security, privacy, government regulation, age verification, Microsoft, Chinese technology, iot devices, vpn, ExpressVPN, Zscaler, digital identity, data centers, RAM pricing, Google, chrome, UBlock Origin</media:keywords>
-				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2025/12/859484/hero/TWIT1063_thumbnail.jpg" width="400" height="225" />
-				<media:rating scheme="urn:simple">nonadult</media:rating>
-				<media:rating scheme="urn:v-chip">tv-g</media:rating>
-				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
-				<media:credit role="host">Leo Laporte</media:credit>
-				<media:credit role="guest">Mikah Sargent</media:credit>
-				<media:credit role="guest">Paris Martineau</media:credit>
-				<media:credit role="guest">Steve Gibson</media:credit>
-			</media:content>
-				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
-				<podcast:person role="guest" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
-				<podcast:person role="guest" href="https://twit.tv/people/paris-martineau" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/663891/pictures/profpic-keyb.jpg">Paris Martineau</podcast:person>
-				<podcast:person role="guest" href="https://twit.tv/people/steve-gibson" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/34/pictures/Steve_v1.jpg">Steve Gibson</podcast:person>
 		</item>
 	</channel>
 </rss>
