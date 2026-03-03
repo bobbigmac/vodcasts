@@ -212,14 +212,16 @@ def _pick_best_enclosure(cands: list[dict[str, Any]]) -> dict[str, Any] | None:
     return out
 
 
-def parse_feed_for_manifest(xml_text: str, *, source_id: str, source_title: str) -> tuple[FeedFeatures, str, list[dict[str, Any]]]:
+def parse_feed_for_manifest(
+    xml_text: str, *, source_id: str, source_title: str
+) -> tuple[FeedFeatures, str, list[dict[str, Any]], str | None]:
     """
     Parse RSS/Atom XML into a client-friendly episode list matching the app’s shape.
-    Returns (features, channel_title, episodes).
+    Returns (features, channel_title, episodes, channel_image_url).
     """
     xml = (xml_text or "").strip()
     if not xml:
-        return FeedFeatures(False, False, False, False), (source_title or source_id), []
+        return FeedFeatures(False, False, False, False), (source_title or source_id), [], None
 
     try:
         if LET is not None:
@@ -228,7 +230,7 @@ def parse_feed_for_manifest(xml_text: str, *, source_id: str, source_title: str)
         else:
             root = ET.fromstring(xml)
     except Exception:
-        return FeedFeatures(False, False, False, False), (source_title or source_id), []
+        return FeedFeatures(False, False, False, False), (source_title or source_id), [], None
 
     channel_title = source_title or source_id
     channel = None

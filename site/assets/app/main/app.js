@@ -43,6 +43,7 @@ function chapterNameAt(chapters, tSec) {
 }
 
 export function App({ env, log, sources, showsConfig, player, history }) {
+  const bp = String(env?.basePath || "/").replace(/\/?$/, "/");
   const guideOpen = useSignal(false);
   const guideBrowseFeedId = useSignal(null);
   const guideBrowseShowSlug = useSignal(null);
@@ -1379,7 +1380,6 @@ export function App({ env, log, sources, showsConfig, player, history }) {
                   browseAllOpen.value = true;
                   guideOpen.value = false;
                   try {
-                    const bp = String(env?.basePath || "/").replace(/\/?$/, "/");
                     window.history.pushState({}, "", bp + "browse/");
                   } catch {}
                 } else {
@@ -1433,21 +1433,21 @@ export function App({ env, log, sources, showsConfig, player, history }) {
       <button
         id="btnBrowse"
         class="cornerBtn cornerBtnBrowse"
-        title="Browse all shows"
+        title="Browse Shows"
+        aria-label="Browse Shows"
         data-navitem="1"
         data-keyhint="B — Browse"
         onClick=${() => {
           const next = !browseAllOpen.value;
           browseAllOpen.value = next;
           if (next) {
-            const bp = String(env?.basePath || "/").replace(/\/?$/, "/");
             try {
               history.pushState({}, "", bp + "browse/");
             } catch {}
           }
         }}
       >
-        📋
+        Browse
       </button>
       <button
         id="btnHistory"

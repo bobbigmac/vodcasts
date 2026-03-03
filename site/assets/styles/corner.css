@@ -16,8 +16,18 @@
   transition: opacity 0.35s ease, background 0.15s ease;
 }
 .cornerBtnLeft { left: 18px }
-.cornerBtn.cornerBtnBrowse { left: 18px }
-.cornerBtn.cornerBtnHistory { left: 72px }
+.cornerBtn.cornerBtnBrowse {
+  left: 18px;
+  width: 108px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 750;
+  letter-spacing: 0.02em;
+}
+.cornerBtn.cornerBtnHistory { left: calc(18px + 108px + 10px) }
 .cornerBtn:not(.cornerBtnLeft):not(.cornerBtnBrowse):not(.cornerBtnHistory) { right: 18px }
 .cornerBtn.cornerBtnMid { right: 72px }
 .cornerBtn.cornerBtnShare { right: 126px }

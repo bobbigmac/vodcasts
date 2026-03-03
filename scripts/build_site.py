@@ -32,6 +32,18 @@ def _parse_args() -> argparse.Namespace:
     p.add_argument("--cache", default=str(VODCASTS_ROOT / "cache" / "dev"), help="Cache directory.")
     p.add_argument("--out", default=str(VODCASTS_ROOT / "dist"), help="Output directory.")
     p.add_argument("--base-path", default="/", help="Base path the site is hosted under (e.g. /vodcasts/).")
+    clean_g = p.add_mutually_exclusive_group()
+    clean_g.add_argument("--clean", dest="clean", action="store_true", help="Delete output dir before building (default).")
+    clean_g.add_argument("--no-clean", dest="clean", action="store_false", help="Do not delete output dir before building.")
+    p.set_defaults(clean=True)
+    assets_g = p.add_mutually_exclusive_group()
+    assets_g.add_argument("--copy-assets", dest="copy_assets", action="store_true", help="Copy site/assets into output (default).")
+    assets_g.add_argument("--no-copy-assets", dest="copy_assets", action="store_false", help="Do not copy site/assets into output.")
+    p.set_defaults(copy_assets=True)
+    feeds_g = p.add_mutually_exclusive_group()
+    feeds_g.add_argument("--copy-feeds", dest="copy_feeds", action="store_true", help="Copy cache_dir/feeds into output (default).")
+    feeds_g.add_argument("--no-copy-feeds", dest="copy_feeds", action="store_false", help="Do not copy cache_dir/feeds into output.")
+    p.set_defaults(copy_feeds=True)
     g = p.add_mutually_exclusive_group()
     g.add_argument(
         "--fetch-missing-feeds",
@@ -86,19 +98,8 @@ def _source_to_public(source: Source, *, cache_dir: Path, base_path: str) -> dic
     # and relative URLs would otherwise resolve under that path.
     local_url = f"{base_path}data/feeds/{source.id}.xml"
     use_local = cached.exists()
-    features = {}
-    if use_local:
-        try:
-            xml = cached.read_text(encoding="utf-8", errors="replace")
-            f, _, _, _ = parse_feed_for_manifest(xml, source_id=source.id, source_title=source.title)
-            features = {
-                "hasTranscript": f.has_transcript,
-                "hasPlayableTranscript": f.has_playable_transcript,
-                "hasChapters": f.has_chapters,
-                "hasVideo": f.has_video,
-            }
-        except Exception:
-            pass
+    # Note: features are populated during feed-manifest build (single parse pass).
+    features: dict[str, Any] = {}
     out: dict[str, Any] = {
         "id": source.id,
         "title": source.title,
@@ -407,22 +408,24 @@ def main() -> None:
     hcaptcha_sitekey = os.getenv("VOD_HCAPTCHA_SITEKEY", "").strip()
 
     # Clean output.
-    _log("clean output…")
-    if out_dir.exists():
-        shutil.rmtree(out_dir)
+    if args.clean:
+        _log("clean output…")
+        if out_dir.exists():
+            shutil.rmtree(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
     # Copy assets.
-    _log("copy assets…")
-    t = time.perf_counter()
-    assets_src = VODCASTS_ROOT / "site" / "assets"
-    assets_out = out_dir / "assets"
-    shutil.copytree(assets_src, assets_out, dirs_exist_ok=True)
-    _log(f"  done ({time.perf_counter() - t:.1f}s)")
+    if args.copy_assets:
+        _log("copy assets…")
+        t = time.perf_counter()
+        assets_src = VODCASTS_ROOT / "site" / "assets"
+        assets_out = out_dir / "assets"
+        shutil.copytree(assets_src, assets_out, dirs_exist_ok=True)
+        _log(f"  done ({time.perf_counter() - t:.1f}s)")
 
     # Copy cached feeds (if any) so the client can fetch same-origin XML.
     feeds_cache_dir = cache_dir / "feeds"
-    if feeds_cache_dir.exists():
+    if args.copy_feeds and feeds_cache_dir.exists():
         _log("copy cached feeds…")
         t = time.perf_counter()
         out_feeds_dir = out_dir / "data" / "feeds"
@@ -468,12 +471,7 @@ def main() -> None:
     if sw_src.exists():
         shutil.copy2(sw_src, out_dir / "sw.js")
 
-    # video-sources.json (client consumption).
-    _log("build video-sources…")
-    t = time.perf_counter()
     public_sources = [_source_to_public(s, cache_dir=cache_dir, base_path=base_path) for s in cfg.sources]
-    write_json(out_dir / "video-sources.json", {"version": 1, "site": site_json, "sources": public_sources})
-    _log(f"  done ({time.perf_counter() - t:.1f}s)")
 
     # feed-manifest: chunked by date-window for cacheability; short descriptions; full text at display-time.
     _log("build feed-manifest…")
@@ -524,6 +522,7 @@ def main() -> None:
                     "hasChapters": f.has_chapters,
                     "hasVideo": f.has_video,
                 }
+                src["features"] = feats
                 if args.enrich_media and enrich_items_per_feed > 0:
                     for ep in eps[:enrich_items_per_feed]:
                         _enrich_episode_media(ep, media_meta_doc=media_meta_doc, timeout_seconds=timeout_seconds, user_agent=user_agent)
@@ -603,6 +602,12 @@ def main() -> None:
             save_media_meta_cache(cache_dir, media_meta_doc)
         except Exception:
             pass
+
+    # video-sources.json (client consumption). Fill features from manifest parse (single pass).
+    _log("build video-sources…")
+    t = time.perf_counter()
+    write_json(out_dir / "video-sources.json", {"version": 1, "site": site_json, "sources": public_sources})
+    _log(f"  done ({time.perf_counter() - t:.1f}s)")
 
     template_path = VODCASTS_ROOT / "site" / "templates" / "index.html"
     template = template_path.read_text(encoding="utf-8", errors="replace")

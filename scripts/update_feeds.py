@@ -16,7 +16,7 @@ def _parse_args() -> argparse.Namespace:
     p.add_argument("--feeds", default=str(VODCASTS_ROOT / "feeds" / "dev.md"), help="Feeds config (.md or .json).")
     p.add_argument("--cache", default=str(VODCASTS_ROOT / "cache" / "dev"), help="Cache directory.")
     p.add_argument("--force", action="store_true", help="Ignore cooldown and refetch all feeds.")
-    p.add_argument("--concurrency", type=int, default=3, help="Number of feeds to fetch concurrently (default: 3).")
+    p.add_argument("--concurrency", type=int, default=5, help="Number of feeds to fetch concurrently (default: 5).")
     p.add_argument("--quiet", action="store_true", help="Less logging (still prints errors).")
     return p.parse_args()
 

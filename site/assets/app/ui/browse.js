@@ -1,8 +1,8 @@
 /**
- * Netflix-style browse panel: shows as primary, summary + count only.
- * Episodes are in the guide, not dumped on the channel page.
+ * Netflix-style browse panel: carousels for shows/episodes (not the guide/EPG).
  */
-import { html, useEffect, useSignal } from "../runtime/vendor.js";
+import { html } from "../runtime/vendor.js";
+import { fallbackInitials, thumbFallbackStyle, titlePosClass, VodCarouselRow } from "./vod_carousel.js";
 
 /** Compute show progress: { watchedCount, resumeEpisode, totalEpisodes } */
 function getShowProgress(show, feedId, history, player) {
@@ -49,21 +49,37 @@ function fmtDuration(sec) {
   return `${Math.floor(sec)}s`;
 }
 
-export function BrowsePanel({ isOpen, feedId, feedTitle, shows, hasCustomShows, initialExpandShowSlug, player, history, onBack, onExpandShow, onCollapseShow }) {
-  const expandedShowId = useSignal(null);
+function playEpisode({ player, feedId, ep, showEpisodes = null, showSlug = null }) {
+  if (!feedId || !ep?.id) return;
+  const pl = showEpisodes?.length ? { feedId, episodes: showEpisodes, showSlug: showSlug || undefined } : null;
+  player.selectSourceAndEpisode(feedId, ep.id, { autoplay: true, playlist: pl });
+}
 
-  useEffect(() => {
-    if (!initialExpandShowSlug || !shows?.length) return;
-    const s = shows.find((x) => String(x?.slug || "").toLowerCase() === String(initialExpandShowSlug).toLowerCase());
-    if (s?.id) expandedShowId.value = s.id;
-  }, [initialExpandShowSlug, shows]);
+function ensureFocusedThumbInView(e) {
+  try {
+    e.currentTarget.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+  } catch {}
+}
 
-  const playEpisode = (ep, showEpisodes = null, showSlug = null) => {
-    if (!feedId || !ep?.id) return;
-    const pl = showEpisodes?.length ? { feedId, episodes: showEpisodes, showSlug: showSlug || undefined } : null;
-    player.selectSourceAndEpisode(feedId, ep.id, { autoplay: true, playlist: pl });
-  };
+function onThumbImgError(e) {
+  try {
+    const img = e.currentTarget;
+    img.style.display = "none";
+  } catch {}
+}
 
+export function BrowsePanel({
+  isOpen,
+  feedId,
+  feedTitle,
+  shows,
+  hasCustomShows,
+  initialExpandShowSlug,
+  player,
+  history,
+  onBack,
+  onExpandShow,
+}) {
   if (!shows?.length) {
     return html`
       <div class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
@@ -77,201 +93,194 @@ export function BrowsePanel({ isOpen, feedId, feedTitle, shows, hasCustomShows, 
   const episodesOnly = !hasCustomShows && shows.length === 1 && shows[0]?.isLeftovers;
   const episodes = episodesOnly ? (shows[0]?.episodes || []) : [];
 
-  const focusedShow = initialExpandShowSlug && shows.length > 1
-    ? shows.find((x) => String(x?.slug || "").toLowerCase() === String(initialExpandShowSlug).toLowerCase())
-    : null;
+  const focusedShow =
+    initialExpandShowSlug && shows.length > 1
+      ? shows.find((x) => String(x?.slug || "").toLowerCase() === String(initialExpandShowSlug).toLowerCase())
+      : null;
 
+  const showHeaderTitle = focusedShow
+    ? focusedShow.title_full || focusedShow.title
+    : (feedTitle || feedId);
+
+  const headerBackLabel = focusedShow ? "Back to shows" : "Back";
+
+  const header = html`
+    <header class="browseHeader">
+      ${onBack
+        ? html`
+            <button class="browseBackBtn" type="button" onClick=${onBack} aria-label=${headerBackLabel}>
+              ←
+            </button>
+          `
+        : ""}
+      <h2 class="browseTitle">${showHeaderTitle}</h2>
+    </header>
+  `;
+
+  // Show episodes view.
   if (focusedShow) {
-    const episodes = focusedShow.episodes || [];
+    const eps = focusedShow.episodes || [];
     const progress = getShowProgress(focusedShow, feedId, history, player);
-    const showTitle = focusedShow.title_full || focusedShow.title;
+    const resumeId = progress.resumeEpisode?.id || null;
+    const artSeed = `${feedId}:${focusedShow.slug || focusedShow.id}`;
+
     return html`
       <div class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
-        <div class="browsePanel-inner">
-          <header class="browseHeader">
-            ${onBack
-              ? html`
-                  <button class="browseBackBtn" type="button" onClick=${onBack} aria-label="Back to shows">
-                    ←
-                  </button>
-                `
-              : ""}
-            <h2 class="browseTitle">${showTitle}</h2>
-          </header>
-          ${episodes.length
-            ? html`
-                <div class="browseEpActions">
-                  ${progress.resumeEpisode
-                    ? html`
-                        <button class="browseResumeBtn" type="button" onClick=${() => playEpisode(progress.resumeEpisode, episodes, focusedShow?.slug)}>
-                          Resume
-                        </button>
-                      `
-                    : ""}
-                  <button class="browsePlayBtn" type="button" onClick=${() => playEpisode(episodes[0], episodes, focusedShow?.slug)}>
-                    ${progress.resumeEpisode ? "Play from start" : "Play"}
-                  </button>
-                </div>
-              `
-            : ""}
-          <div class="browseEpList">
-            ${episodes.map(
-              (ep) => html`
-                <button
-                  class="browseEpItem"
-                  type="button"
-                  onClick=${() => playEpisode(ep, episodes, focusedShow?.slug)}
-                  aria-label=${ep.title || "Episode"}
-                >
-                  <span class="browseEpItemTitle">${ep.title || "Episode"}</span>
-                  <span class="browseEpItemMeta">
-                    ${ep.dateText || ""} ${ep.durationSec ? fmtDuration(ep.durationSec) : ""}
-                  </span>
-                </button>
-              `
-            )}
-          </div>
-        </div>
-      </div>
-    `;
-  }
+        <div class="browsePanel-inner" data-carousel-group="browseFeed">
+          ${header}
+          ${focusedShow.description ? html`<p class="browseShowDesc browseShowDescTop">${focusedShow.description}</p>` : ""}
 
-  if (episodesOnly) {
-    const progress = getShowProgress(shows[0], feedId, history, player);
-    return html`
-      <div class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
-        <div class="browsePanel-inner">
-          <header class="browseHeader">
-            ${onBack
-              ? html`
-                  <button class="browseBackBtn" type="button" onClick=${onBack} aria-label="Back to guide">
-                    ←
-                  </button>
-                `
-              : ""}
-            <h2 class="browseTitle">${feedTitle || feedId}</h2>
-          </header>
-          ${progress.resumeEpisode
-            ? html`
-                <div class="browseEpActions">
-                  <button class="browseResumeBtn" type="button" onClick=${() => playEpisode(progress.resumeEpisode, episodes, shows[0]?.slug)}>
-                    Resume
-                  </button>
-                </div>
-              `
-            : ""}
-          <div class="browseEpList">
-            ${episodes.map(
-              (ep) => html`
-                <button
-                  class="browseEpItem"
-                  type="button"
-                  onClick=${() => playEpisode(ep, episodes, shows[0]?.slug)}
-                  aria-label=${ep.title || "Episode"}
-                >
-                  <span class="browseEpItemTitle">${ep.title || "Episode"}</span>
-                  <span class="browseEpItemMeta">
-                    ${ep.dateText || ""} ${ep.durationSec ? fmtDuration(ep.durationSec) : ""}
-                  </span>
-                </button>
-              `
-            )}
-          </div>
-        </div>
-      </div>
-    `;
-  }
-
-  return html`
-    <div class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
-      <div class="browsePanel-inner">
-        <header class="browseHeader">
-          ${onBack
-            ? html`
-                <button class="browseBackBtn" type="button" onClick=${onBack} aria-label="Back to guide">
-                  ←
-                </button>
-              `
-            : ""}
-          <h2 class="browseTitle">${feedTitle || feedId}</h2>
-        </header>
-        <div class="browseShowGrid">
-          ${shows.map(
-            (show) => {
-              const isExpanded = expandedShowId.value === show.id;
-              const progress = getShowProgress(show, feedId, history, player);
-              const showTitle = show.title_full || show.title;
+          <${VodCarouselRow} rowId=${`eps-${feedId}-${focusedShow.id}`} title="Episodes" className="browseEpRow">
+            ${eps.map((ep, idx) => {
+              const meta = `${ep.dateText || ""}${ep.durationSec ? ` · ${fmtDuration(ep.durationSec)}` : ""}`.trim();
+              const isResume = resumeId && ep?.id === resumeId;
               return html`
-                <div class="browseShowCard" key=${show.id}>
-                  <button
-                    class="browseShowCardBtn"
-                    type="button"
-                    onClick=${() => {
-                      const next = isExpanded ? null : show.id;
-                      expandedShowId.value = next;
-                      if (next) onExpandShow?.(feedId, show.slug || show.id);
-                      else onCollapseShow?.();
-                    }}
-                  >
-                    <div class="browseShowCardThumb">
-                      ${show.artworkUrl
-                        ? html`
-                            <img class="browseShowCardImg" src=${show.artworkUrl} alt="" loading="lazy" />
-                            ${(show.artworkOverlay || showTitle) ? html`
-                              <span class="browseShowCardOverlay">
-                                <span class="browseShowCardOverlayBar">${show.artworkOverlay || showTitle}</span>
-                              </span>
-                            ` : ""}
-                          `
-                        : html`<span class="browseShowCardPlaceholder">${show.episodeCount || 0}</span>`}
-                    </div>
-                    <div class="browseShowCardInfo">
-                      <span class="browseShowCardTitle">${showTitle}</span>
-                      <span class="browseShowCardMeta">
-                        ${progress.totalEpisodes} episodes
-                        ${progress.watchedCount > 0 ? ` · ${progress.watchedCount} watched` : ""}
-                      </span>
-                      ${progress.watchedCount > 0 || progress.resumeEpisode
-                        ? html`
-                            <div class="browseShowCardProgress" role="progressbar" aria-valuenow=${progress.watchedCount} aria-valuemin=${0} aria-valuemax=${progress.totalEpisodes}>
-                              <div
-                                class="browseShowCardProgressFill"
-                                style=${{ width: `${(progress.watchedCount / progress.totalEpisodes) * 100}%` }}
-                              ></div>
-                            </div>
-                          `
-                        : ""}
-                    </div>
-                    <span class="browseShowCardExpand">${isExpanded ? "−" : "+"}</span>
-                  </button>
-                  ${isExpanded
-                    ? html`
-                        <div class="browseShowExpand">
-                          ${show.description ? html`<p class="browseShowDesc">${show.description}</p>` : ""}
-                          <div class="browseShowActions">
-                            ${progress.resumeEpisode
-                              ? html`
-                                  <button class="browseResumeBtn" type="button" onClick=${() => playEpisode(progress.resumeEpisode, show.episodes, show.slug)}>
-                                    Resume
-                                  </button>
-                                `
-                              : ""}
-                            ${(show.episodes || []).length
-                              ? html`
-                                  <button class="browsePlayBtn" type="button" onClick=${() => playEpisode(show.episodes[0], show.episodes, show.slug)}>
-                                    ${progress.resumeEpisode ? "Play from start" : "Play"}
-                                  </button>
-                                `
-                              : ""}
-                          </div>
-                        </div>
-                      `
-                    : ""}
+                <div class="vodCarouselItem vodCarouselItemEpisode" data-carousel-idx=${idx} key=${ep.id || idx}>
+                  <div class=${"vodThumbWrap vodThumbWrapEpisode " + titlePosClass(`${feedId}:${ep.slug || ep.id}`)}>
+                    <button
+                      class="vodThumbBtn"
+                      type="button"
+                      data-navitem="1"
+                      aria-label=${isResume ? `Resume: ${ep.title || "Episode"}` : (ep.title || "Episode")}
+                      onClick=${() => playEpisode({ player, feedId, ep, showEpisodes: eps, showSlug: focusedShow.slug || focusedShow.id })}
+                      onFocus=${ensureFocusedThumbInView}
+                    >
+                      <div class="vodThumb" style=${thumbFallbackStyle(artSeed)}>
+                        <span class="vodThumbPlaceholder">▶</span>
+                        ${focusedShow.artworkUrl
+                          ? html`<img class="vodThumbImg" src=${focusedShow.artworkUrl} alt="" loading="lazy" onError=${onThumbImgError} />`
+                          : ""}
+                        ${isResume ? html`<span class="vodThumbBadge" aria-hidden="true">Resume</span>` : ""}
+                        <span class="vodThumbTitle">
+                          <span class="vodThumbTitleBar">${ep.title || "Episode"}</span>
+                        </span>
+                        ${meta ? html`<span class="vodThumbSub">${meta}</span>` : ""}
+                      </div>
+                    </button>
+                  </div>
                 </div>
               `;
-            }
-          )}
+            })}
+          </${VodCarouselRow}>
         </div>
+      </div>
+    `;
+  }
+
+  // Episodes-only feeds (no custom shows).
+  if (episodesOnly) {
+    const artSeed = `${feedId}:${shows[0]?.slug || shows[0]?.id || "feed"}`;
+    return html`
+      <div class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
+        <div class="browsePanel-inner" data-carousel-group="browseFeed">
+          ${header}
+          <${VodCarouselRow} rowId=${`feed-eps-${feedId}`} title="Episodes" className="browseEpRow">
+            ${episodes.map((ep, idx) => {
+              const meta = `${ep.dateText || ""}${ep.durationSec ? ` · ${fmtDuration(ep.durationSec)}` : ""}`.trim();
+              return html`
+                <div class="vodCarouselItem vodCarouselItemEpisode" data-carousel-idx=${idx} key=${ep.id || idx}>
+                  <div class=${"vodThumbWrap vodThumbWrapEpisode " + titlePosClass(`${feedId}:${ep.slug || ep.id}`)}>
+                    <button
+                      class="vodThumbBtn"
+                      type="button"
+                      data-navitem="1"
+                      aria-label=${ep.title || "Episode"}
+                      onClick=${() => playEpisode({ player, feedId, ep, showEpisodes: episodes, showSlug: shows[0]?.slug || shows[0]?.id })}
+                      onFocus=${ensureFocusedThumbInView}
+                    >
+                      <div class="vodThumb" style=${thumbFallbackStyle(artSeed)}>
+                        <span class="vodThumbPlaceholder">▶</span>
+                        ${shows[0]?.artworkUrl
+                          ? html`<img class="vodThumbImg" src=${shows[0].artworkUrl} alt="" loading="lazy" onError=${onThumbImgError} />`
+                          : ""}
+                        <span class="vodThumbTitle">
+                          <span class="vodThumbTitleBar">${ep.title || "Episode"}</span>
+                        </span>
+                        ${meta ? html`<span class="vodThumbSub">${meta}</span>` : ""}
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              `;
+            })}
+          </${VodCarouselRow}>
+        </div>
+      </div>
+    `;
+  }
+
+  // Shows carousel view.
+  return html`
+    <div class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
+      <div class="browsePanel-inner" data-carousel-group="browseFeed">
+        ${header}
+        <${VodCarouselRow} rowId=${`shows-${feedId}`} title="Shows" className="browseShowsRow">
+          ${shows.map((show, idx) => {
+            const progress = getShowProgress(show, feedId, history, player);
+            const showTitle = show.title_full || show.title;
+            const posClass = titlePosClass(`${feedId}:${show.slug || show.id}`);
+            const eps = show.episodes || [];
+            const total = progress.totalEpisodes || (show.episodeCount || 0);
+            const watched = progress.watchedCount || 0;
+            const resumeLabel = progress.resumeEpisode ? "Resume" : "Play";
+            const watchedPct = total > 0 ? Math.round((watched / total) * 100) : 0;
+            const thumbSeed = `${feedId}:${show.slug || show.id}`;
+            const initials = fallbackInitials(showTitle) || "TV";
+
+            return html`
+              <div class="vodCarouselItem vodCarouselItemShow" key=${show.id} data-carousel-idx=${idx}>
+                <div class=${"vodThumbWrap " + posClass}>
+                  <button
+                    class="vodThumbBtn"
+                    type="button"
+                    data-navitem="1"
+                    aria-label=${showTitle || "Show"}
+                    onClick=${() => {
+                      const ep = progress.resumeEpisode || eps[0];
+                      playEpisode({ player, feedId, ep, showEpisodes: eps, showSlug: show.slug || show.id });
+                    }}
+                    onFocus=${ensureFocusedThumbInView}
+                  >
+                    <div class="vodThumb" style=${thumbFallbackStyle(thumbSeed)}>
+                      <span class="vodThumbPlaceholder">${initials}</span>
+                      ${show.artworkUrl
+                        ? html`<img class="vodThumbImg" src=${show.artworkUrl} alt="" loading="lazy" onError=${onThumbImgError} />`
+                        : ""}
+                      ${(show.artworkOverlay || showTitle)
+                        ? html`
+                            <span class="vodThumbTitle">
+                              <span class="vodThumbTitleBar">${show.artworkOverlay || showTitle}</span>
+                            </span>
+                          `
+                        : ""}
+                      <span class="vodThumbMeta" aria-hidden="true">
+                        <span class="vodThumbMetaTop">${resumeLabel}</span>
+                        <span class="vodThumbMetaMid">${total} eps${watched ? ` · ${watched} watched` : ""}</span>
+                        ${watchedPct > 0
+                          ? html`
+                              <span class="vodThumbMetaBar">
+                                <span class="vodThumbMetaBarFill" style=${{ width: `${watchedPct}%` }}></span>
+                              </span>
+                            `
+                          : ""}
+                      </span>
+                    </div>
+                  </button>
+                  <button
+                    class="vodThumbIcon"
+                    type="button"
+                    data-navitem="1"
+                    aria-label="View episodes"
+                    title="Episodes"
+                    onClick=${() => onExpandShow?.(feedId, show.slug || show.id)}
+                  >
+                    ≡
+                  </button>
+                </div>
+              </div>
+            `;
+          })}
+        </${VodCarouselRow}>
       </div>
     </div>
   `;

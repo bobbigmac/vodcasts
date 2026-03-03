@@ -110,6 +110,80 @@ function getNavItems() {
   return [...out];
 }
 
+function closestCarouselRoot(el) {
+  return el?.closest?.("[data-carousel-rowroot]") || null;
+}
+
+function closestCarouselItem(el) {
+  return el?.closest?.("[data-carousel-idx]") || null;
+}
+
+function focusCarouselItem(rowRoot, idx) {
+  if (!rowRoot) return false;
+  const item = rowRoot.querySelector?.(`[data-carousel-idx="${String(idx)}"]`) || null;
+  if (!item) return false;
+  const btn =
+    item.querySelector?.(".vodThumbBtn") ||
+    item.querySelector?.("button, [role='button'][tabindex]") ||
+    null;
+  if (!btn || typeof btn.focus !== "function") return false;
+  try {
+    btn.focus();
+  } catch {}
+  try {
+    btn.scrollIntoView?.({ behavior: "smooth", block: "nearest", inline: "start" });
+  } catch {}
+  return true;
+}
+
+function tryCarouselNav(dir) {
+  const a = document.activeElement;
+  if (!a || a === document.body) return false;
+  const rowRoot = closestCarouselRoot(a);
+  const item = closestCarouselItem(a);
+  if (!rowRoot || !item) return false;
+
+  const rawIdx = item.getAttribute("data-carousel-idx");
+  const idx = Number.isFinite(Number(rawIdx)) ? Math.max(0, Math.floor(Number(rawIdx))) : null;
+  if (idx == null) return false;
+
+  if (dir === "left" || dir === "right") {
+    const delta = dir === "left" ? -1 : 1;
+    const nextIdx = idx + delta;
+    if (focusCarouselItem(rowRoot, nextIdx)) return true;
+    // Fall back to arrow buttons (mouse/scroll affordance).
+    const arrowSel = dir === "left" ? ".vodCarouselArrowLeft:not(:disabled)" : ".vodCarouselArrowRight:not(:disabled)";
+    const arrow = rowRoot.querySelector?.(arrowSel) || null;
+    if (arrow && typeof arrow.focus === "function") {
+      try {
+        arrow.focus();
+      } catch {}
+      return true;
+    }
+    return false;
+  }
+
+  if (dir === "up" || dir === "down") {
+    const group = rowRoot.closest?.("[data-carousel-group]") || null;
+    const scope = group || document;
+    const roots = [...(scope.querySelectorAll?.("[data-carousel-rowroot]") || [])].filter(isVisible);
+    const curIdx = roots.indexOf(rowRoot);
+    if (curIdx < 0) return false;
+    const nextRoot = roots[curIdx + (dir === "up" ? -1 : 1)] || null;
+    if (!nextRoot) return false;
+    const items = [...(nextRoot.querySelectorAll?.("[data-carousel-idx]") || [])];
+    if (!items.length) return false;
+    const maxIdx = items.reduce((m, el) => {
+      const n = Number(el.getAttribute("data-carousel-idx"));
+      return Number.isFinite(n) ? Math.max(m, n) : m;
+    }, 0);
+    const targetIdx = Math.max(0, Math.min(idx, maxIdx));
+    return focusCarouselItem(nextRoot, targetIdx);
+  }
+
+  return false;
+}
+
 function focusFirstNavItem() {
   const items = getNavItems();
   const first = items[0];
@@ -619,10 +693,14 @@ export function installControls() {
       if (takeover && isVisible(takeover) && takeover.getAttribute("data-navmode") === "arrows") {
         return; // allow takeover (e.g. captions) to use arrows for adjustments
       }
+      const dir = e.key === "ArrowLeft" ? "left" : e.key === "ArrowRight" ? "right" : e.key === "ArrowUp" ? "up" : "down";
+      if (tryCarouselNav(dir)) {
+        e.preventDefault();
+        return;
+      }
       const items = getNavItems();
       if (!items.length) return;
       const cur = items.includes(document.activeElement) ? document.activeElement : null;
-      const dir = e.key === "ArrowLeft" ? "left" : e.key === "ArrowRight" ? "right" : e.key === "ArrowUp" ? "up" : "down";
       const from = cur || items[0];
       const next = pickNextByDirection(items, from, dir) || null;
       if (next && typeof next.focus === "function") {

@@ -3,6 +3,14 @@
  * Featured (manual), Continue Watching (in-progress), then randomized category rows.
  */
 import { html, useMemo } from "../runtime/vendor.js";
+import { fallbackInitials, thumbFallbackStyle, titlePosClass, VodCarouselRow } from "./vod_carousel.js";
+
+function onThumbImgError(e) {
+  try {
+    const img = e.currentTarget;
+    img.style.display = "none";
+  } catch {}
+}
 
 function getShowProgress(show, feedId, history, player) {
   const episodes = show.episodes || [];
@@ -55,6 +63,16 @@ function shuffledWithSeed(arr, seed) {
   return a;
 }
 
+function fnv1a32(s) {
+  const str = String(s || "");
+  let h = 2166136261;
+  for (let i = 0; i < str.length; i++) {
+    h ^= str.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  return h >>> 0;
+}
+
 /** Build category rows: Featured, Continue Watching, then shuffled other categories */
 function buildCategoryRows(allShows, history, player) {
   const historyAll = history?.all?.value || [];
@@ -103,9 +121,106 @@ function buildCategoryRows(allShows, history, player) {
   const rows = [];
   if (featured.length) rows.push({ id: "featured", label: "Featured", shows: shuffledWithSeed(featured, daySeed + 1) });
   if (continueWatching.length) rows.push({ id: "continue", label: "Continue Watching", shows: continueWatching });
+
+  // Fluidify: assign each show to ONE of its categories to balance row sizes.
+  const normCats = (cats) =>
+    (Array.isArray(cats) ? cats : [])
+      .map((c) => String(c || "").trim())
+      .filter(Boolean);
+
+  const showKeyOf = (item) => byShowKey(item.feedId, item.show.id);
+  const allKeys = new Map();
+  for (const item of allShows) allKeys.set(showKeyOf(item), item);
+
+  const counts = new Map();
+  for (const c of otherCategories) counts.set(c, 0);
+
+  const assigned = new Map(); // showKey -> category
+  const itemsShuffled = shuffledWithSeed(allShows, daySeed + 17);
+  for (const item of itemsShuffled) {
+    const cats = normCats(item.show.categories);
+    if (!cats.length) continue;
+    let best = cats[0];
+    let bestCount = counts.get(best) || 0;
+    let bestTie = fnv1a32(`${daySeed}:${item.feedId}:${item.show.id}:${best}`);
+    for (let i = 1; i < cats.length; i++) {
+      const cat = cats[i];
+      const c = counts.get(cat) || 0;
+      const tie = fnv1a32(`${daySeed}:${item.feedId}:${item.show.id}:${cat}`);
+      if (c < bestCount || (c === bestCount && tie < bestTie)) {
+        best = cat;
+        bestCount = c;
+        bestTie = tie;
+      }
+    }
+    assigned.set(showKeyOf(item), best);
+    counts.set(best, (counts.get(best) || 0) + 1);
+  }
+
+  // Rebalance underfull categories by moving multi-category shows out of overfull ones.
+  const totalAssigned = [...assigned.keys()].length;
+  const MIN_ITEMS = Math.min(12, Math.max(6, Math.floor(Math.sqrt(Math.max(1, totalAssigned))) + 2));
+  const catKeysByAsc = [...otherCategories].sort((a, b) => (counts.get(a) || 0) - (counts.get(b) || 0));
+
+  const itemCatsCache = new Map();
+  const getCats = (item) => {
+    const k = showKeyOf(item);
+    if (itemCatsCache.has(k)) return itemCatsCache.get(k);
+    const v = normCats(item.show.categories);
+    itemCatsCache.set(k, v);
+    return v;
+  };
+
+  for (const underCat of catKeysByAsc) {
+    let underCount = counts.get(underCat) || 0;
+    if (underCount >= MIN_ITEMS) continue;
+
+    // Find candidates currently assigned elsewhere that also have underCat as a category.
+    const candidates = [];
+    const pool = categoryToShows.get(underCat) || [];
+    for (const it of pool) {
+      const key = showKeyOf(it);
+      const curCat = assigned.get(key);
+      if (!curCat || curCat === underCat) continue;
+      candidates.push({ key, it, curCat });
+    }
+    if (!candidates.length) continue;
+
+    // Move from the most overfull categories first.
+    candidates.sort((a, b) => {
+      const ca = counts.get(a.curCat) || 0;
+      const cb = counts.get(b.curCat) || 0;
+      if (cb !== ca) return cb - ca;
+      return fnv1a32(`${daySeed}:${a.key}:${underCat}`) - fnv1a32(`${daySeed}:${b.key}:${underCat}`);
+    });
+
+    for (const c of candidates) {
+      if (underCount >= MIN_ITEMS) break;
+      const donorCount = counts.get(c.curCat) || 0;
+      if (donorCount <= MIN_ITEMS) continue;
+      // Ensure the show actually has underCat (and not just stale mapping).
+      if (!getCats(c.it).includes(underCat)) continue;
+      assigned.set(c.key, underCat);
+      counts.set(c.curCat, Math.max(0, donorCount - 1));
+      underCount++;
+      counts.set(underCat, underCount);
+    }
+  }
+
+  const byCat = new Map();
+  for (const [key, cat] of assigned.entries()) {
+    if (!cat) continue;
+    if (!byCat.has(cat)) byCat.set(cat, []);
+    const item = allKeys.get(key);
+    if (item) byCat.get(cat).push(item);
+  }
+
   for (const cat of shuffledCats) {
-    const shows = categoryToShows.get(cat) || [];
-    if (shows.length) rows.push({ id: `cat-${cat}`, label: titleCase(cat), shows: shuffledWithSeed(shows, daySeed + cat.length) });
+    const shows = byCat.get(cat) || [];
+    if (shows.length) {
+      const safeId = String(cat).replace(/[^a-z0-9_-]+/gi, "_");
+      rows.push({ id: `cat-${safeId}`, label: titleCase(cat), shows: shuffledWithSeed(shows, daySeed + cat.length) });
+    }
   }
   return rows;
 }
@@ -166,61 +281,80 @@ export function BrowseAllPanel({ isOpen, showsConfig, feedTitles, player, histor
           <h2 class="browseAllTitle">Browse Shows</h2>
           <button class="browseAllClose" type="button" onClick=${onClose} aria-label="Close">×</button>
         </header>
-        <div class="browseAllContent">
+        <div class="browseAllContent" data-carousel-group="browseAll">
           ${categoryRows.map(
             (row) => html`
-              <section class="browseAllRow" key=${row.id}>
-                <h3 class="browseAllRowTitle">${row.label}</h3>
-                <div class="browseAllRowStrip">
-                  <div class="browseAllRowStrip-inner">
-                    ${row.shows.map(
-                      ({ feedId, feedTitle, show }) => {
-                        const progress = getShowProgress(show, feedId, history, player);
-                        const showTitle = show.title_full || show.title;
-                        return html`
-                          <div
-                            class="browseAllShowCard${onShowClick ? " browseAllShowCardClickable" : ""}"
-                            key=${feedId + ":" + show.id}
-                            role=${onShowClick ? "button" : undefined}
-                            tabIndex=${onShowClick ? 0 : undefined}
-                            onClick=${onShowClick ? (e) => { if (!e.target.closest(".browseAllShowCardActions")) onShowClick(feedId, show); } : undefined}
-                            onKeyDown=${onShowClick ? (e) => { if (e.key === "Enter" && !e.target.closest(".browseAllShowCardActions")) onShowClick(feedId, show); } : undefined}
-                          >
-                            <div class="browseAllShowCardPoster">
-                              ${show.artworkUrl
+              <${VodCarouselRow} rowId=${row.id} title=${row.label} className="browseAllRow" key=${row.id}>
+                ${row.shows.map(({ feedId, feedTitle, show }, idx) => {
+                  const progress = getShowProgress(show, feedId, history, player);
+                  const showTitle = show.title_full || show.title;
+                  const posClass = titlePosClass(`${feedId}:${show.slug || show.id}`);
+                  const total = progress.totalEpisodes || (show.episodeCount || 0);
+                  const watched = progress.watchedCount || 0;
+                  const resumeLabel = progress.resumeEpisode ? "Resume" : "Play";
+                  const watchedPct = total > 0 ? Math.round((watched / total) * 100) : 0;
+                  const thumbSeed = `${feedId}:${show.slug || show.id}`;
+                  const initials = fallbackInitials(showTitle) || "TV";
+
+                  return html`
+                    <div class="vodCarouselItem vodCarouselItemShow" key=${feedId + ":" + show.id} data-carousel-idx=${idx}>
+                      <div class=${"vodThumbWrap " + posClass}>
+                        <button
+                          class="vodThumbBtn"
+                          type="button"
+                          data-navitem="1"
+                          aria-label=${showTitle || "Show"}
+                          onClick=${() => playShow(feedId, show)}
+                          onFocus=${(e) => {
+                            try {
+                              e.currentTarget.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+                            } catch {}
+                          }}
+                        >
+                          <div class="vodThumb" style=${thumbFallbackStyle(thumbSeed)}>
+                            <span class="vodThumbPlaceholder">${initials}</span>
+                            ${show.artworkUrl
+                              ? html`<img class="vodThumbImg" src=${show.artworkUrl} alt="" loading="lazy" onError=${onThumbImgError} />`
+                              : ""}
+                            ${(show.artworkOverlay || showTitle)
+                              ? html`
+                                  <span class="vodThumbTitle">
+                                    <span class="vodThumbTitleBar">${show.artworkOverlay || showTitle}</span>
+                                  </span>
+                                `
+                              : ""}
+                            <span class="vodThumbMeta" aria-hidden="true">
+                              <span class="vodThumbMetaTop">${feedTitle}</span>
+                              <span class="vodThumbMetaMid">${resumeLabel} · ${total} eps${watched ? ` · ${watched} watched` : ""}</span>
+                              ${watchedPct > 0
                                 ? html`
-                                    <img src=${show.artworkUrl} alt="" loading="lazy" />
-                                    ${(show.artworkOverlay || showTitle) ? html`
-                                      <span class="browseAllShowCardOverlay">
-                                        <span class="browseAllShowCardOverlayBar">${show.artworkOverlay || showTitle}</span>
-                                      </span>
-                                    ` : ""}
-                                  `
-                                : html`<span class="browseAllShowCardPlaceholder">${show.episodeCount || 0}</span>`}
-                            </div>
-                            <div class="browseAllShowCardInfo">
-                              <span class="browseAllShowCardTitle">${showTitle}</span>
-                              <span class="browseAllShowCardMeta">${feedTitle} · ${progress.totalEpisodes} episodes</span>
-                            </div>
-                            <div class="browseAllShowCardActions">
-                              ${progress.resumeEpisode
-                                ? html`
-                                    <button class="browseAllPlayBtn" type="button" onClick=${(e) => { e.stopPropagation(); playShow(feedId, show, progress.resumeEpisode); }}>
-                                      Resume
-                                    </button>
+                                    <span class="vodThumbMetaBar">
+                                      <span class="vodThumbMetaBarFill" style=${{ width: `${watchedPct}%` }}></span>
+                                    </span>
                                   `
                                 : ""}
-                              <button class="browseAllPlayBtn" type="button" onClick=${(e) => { e.stopPropagation(); playShow(feedId, show); }}>
-                                Play
-                              </button>
-                            </div>
+                            </span>
                           </div>
-                        `;
-                      }
-                    )}
-                  </div>
-                </div>
-              </section>
+                        </button>
+                        ${onShowClick
+                          ? html`
+                              <button
+                                class="vodThumbIcon"
+                                type="button"
+                                data-navitem="1"
+                                aria-label="View episodes"
+                                title="Episodes"
+                                onClick=${() => onShowClick?.(feedId, show)}
+                              >
+                                ≡
+                              </button>
+                            `
+                          : ""}
+                      </div>
+                    </div>
+                  `;
+                })}
+              </${VodCarouselRow}>
             `
           )}
         </div>

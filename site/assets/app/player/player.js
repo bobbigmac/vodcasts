@@ -751,7 +751,9 @@ export function createPlayerService({ env, log, history }) {
   async function applyRoute(route, { autoplay = true } = {}) {
     const feed = route?.feed ? String(route.feed) : "";
     const ep = route?.ep ? String(route.ep) : "";
-    const t = Number(route?.t);
+    // Important: `route.t` is either a number or null. Avoid `Number(null) === 0`,
+    // which would incorrectly override resume time to 0 (start over) on refresh.
+    const t = typeof route?.t === "number" ? route.t : null;
     if (!feed) return false;
     if (!sources.some((s) => s.id === feed)) return false;
 
@@ -763,14 +765,19 @@ export function createPlayerService({ env, log, history }) {
       return true;
     }
 
-    // Feed-only routes should not depend on local "last watched" state.
-    await selectSource(feed, { preserveEpisode: false, skipAutoEpisode: false, autoplay, ignoreLastBySource: true });
+    // Feed-only routes are browse-first: select the feed, but don't auto-play anything.
+    await selectSource(feed, { preserveEpisode: true, skipAutoEpisode: true, autoplay: false, ignoreLastBySource: false });
     return true;
   }
 
   async function selectEpisode(episodeId, { autoplay = true, startAt: overrideStartAt } = {}) {
-    const ep = episodes.find((e) => e.id === episodeId) || episodes.find((e) => e.media?.url);
-    if (!ep || !currentSource) return;
+    if (!currentSource) return;
+    const wantedId = resolveEpisodeIdBySlugOrId(episodeId) || (episodes.some((e) => e.id === episodeId) ? episodeId : null);
+    const ep = wantedId ? episodes.find((e) => e.id === wantedId) : null;
+    if (!ep) {
+      log.warn(`Episode not found: "${String(episodeId || "")}"`);
+      return;
+    }
     if (!ep.media?.url) return log.warn(`Episode "${(ep.title || "").slice(0, 40)}…": no media URL`);
     if (!videoEl) return log.error("Player: no <video> element attached");
 
@@ -1554,7 +1561,8 @@ export function createPlayerService({ env, log, history }) {
       setPlaylist(null);
       return;
     }
-    await selectEpisode(episodeId, { autoplay, startAt });
+    const wanted = resolveEpisodeIdBySlugOrId(episodeId) || episodeId;
+    await selectEpisode(wanted, { autoplay, startAt });
   }
 
   effect(() => {
