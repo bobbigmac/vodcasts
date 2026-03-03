@@ -12,7 +12,7 @@
   backdrop-filter: blur(8px);
   color: var(--text);
   cursor: pointer;
-  z-index: 130;
+  z-index: 90;
   transition: opacity 0.35s ease, background 0.15s ease;
 }
 .cornerBtnLeft { left: 18px }
@@ -32,3 +32,9 @@
 .cornerBtn.cornerBtnMid { right: 72px }
 .cornerBtn.cornerBtnShare { right: 126px }
 .cornerBtn:hover { background: rgba(0,0,0,.7) }
+
+/* Hide corner chrome when the global UI idles. */
+.uiIdle .cornerBtn {
+  opacity: 0;
+  pointer-events: none;
+}

@@ -178,6 +178,56 @@ export function HeadphonesIcon({ size = 14, strokeWidth = 2, className = "" } = 
   `;
 }
 
+export function TvIcon({ size = 14, strokeWidth = 2, className = "" } = {}) {
+  const s = Number(size) > 0 ? Number(size) : 14;
+  const sw = Number(strokeWidth) > 0 ? Number(strokeWidth) : 2;
+  return html`
+    <svg
+      class=${className}
+      width=${s}
+      height=${s}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width=${sw}
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <rect x="3" y="7" width="18" height="12" rx="2"></rect>
+      <path d="M7 21h10"></path>
+      <path d="M12 19v2"></path>
+      <path d="M9 3l3 4 3-4"></path>
+    </svg>
+  `;
+}
+
+export function RadioIcon({ size = 14, strokeWidth = 2, className = "" } = {}) {
+  const s = Number(size) > 0 ? Number(size) : 14;
+  const sw = Number(strokeWidth) > 0 ? Number(strokeWidth) : 2;
+  return html`
+    <svg
+      class=${className}
+      width=${s}
+      height=${s}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width=${sw}
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path d="M4.5 15.5a7.5 7.5 0 0 1 15 0"></path>
+      <path d="M7.5 15.5a4.5 4.5 0 0 1 9 0"></path>
+      <path d="M10.5 15.5a1.5 1.5 0 0 1 3 0"></path>
+      <path d="M12 18.5v2"></path>
+    </svg>
+  `;
+}
+
 export function ShuffleIcon({ size = 18, strokeWidth = 2, className = "" } = {}) {
   const s = Number(size) > 0 ? Number(size) : 18;
   const sw = Number(strokeWidth) > 0 ? Number(strokeWidth) : 2;

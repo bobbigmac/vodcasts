@@ -581,8 +581,9 @@ export function App({ env, log, sources, showsConfig, player, history }) {
   }, []);
 
   // Side panels auto-close after a short period of non-usage (no interaction within the panel).
-  const PANEL_IDLE_MS = 7000;
-  const panelIds = ["guidePanel", "detailsPanel", "historyPanel"];
+  // Browsing shows/episodes needs longer than quick takeovers.
+  const PANEL_IDLE_MS = 14000;
+  const panelIds = ["guidePanel", "browsePanel", "browseAllPanel", "detailsPanel", "historyPanel"];
   useSignalEffect(() => {
     const anyOpen = guideOpen.value || detailsOpen.value || historyOpen.value || browseAllOpen.value;
     if (!anyOpen) return;
@@ -590,6 +591,7 @@ export function App({ env, log, sources, showsConfig, player, history }) {
       if (guideOpen.value) guideOpen.value = false;
       if (detailsOpen.value) detailsOpen.value = false;
       if (historyOpen.value) historyOpen.value = false;
+      if (browseAllOpen.value) browseAllOpen.value = false;
     }, PANEL_IDLE_MS);
     const reset = (e) => {
       const inside = panelIds.some((id) => {

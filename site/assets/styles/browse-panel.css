@@ -670,14 +670,14 @@
   --vod-thumb-aspect: 1.7777778; /* 16/9 */
 }
 
-/* Episodes: keep landscape, slightly smaller */
+/* Episodes: match show selection style (portrait -> wide on focus/hover) */
 .vodCarouselItemEpisode {
-  --vod-thumb-h: clamp(132px, 20vw, 180px);
-  --vod-thumb-aspect: 1.7777778; /* 16/9 */
+  --vod-thumb-h: clamp(170px, 26vw, 240px);
+  --vod-thumb-aspect: 0.5625; /* 9/16 */
 }
 .vodCarouselItemEpisode:focus-within,
 .vodCarouselItemEpisode:hover {
-  --vod-thumb-h: clamp(138px, 21vw, 190px);
+  --vod-thumb-aspect: 1.7777778; /* 16/9 */
 }
 
 .vodThumbWrap {
@@ -704,7 +704,7 @@
   overflow: hidden;
   position: relative;
   box-shadow: 0 10px 34px rgba(0, 0, 0, 0.34);
-  transition: width 0.24s ease, height 0.24s ease, border-color 0.18s ease, transform 0.18s ease;
+  transition: width 0.12s ease, height 0.12s ease, border-color 0.09s ease, transform 0.09s ease;
   transform: translateZ(0);
 }
 
@@ -718,6 +718,13 @@
 .vodCarouselItem:hover .vodThumb {
   border-color: color-mix(in srgb, var(--edge) 60%, var(--accent, #0a84ff));
   transform: translateY(-1px);
+}
+
+.vodCarouselItem.playing .vodThumb {
+  border-color: color-mix(in srgb, var(--edge) 45%, var(--accent, #0a84ff));
+  box-shadow:
+    0 10px 34px rgba(0, 0, 0, 0.34),
+    0 0 0 2px color-mix(in srgb, var(--accent, #0a84ff) 40%, transparent);
 }
 
 .vodThumbImg {
@@ -756,28 +763,31 @@
   z-index: 4;
 }
 .vodThumbTitleBar {
-  background: color-mix(in srgb, rgba(0, 0, 0, 0.84) 92%, transparent);
-  color: white;
-  font-size: 12px;
-  font-weight: 750;
-  padding: 6px 10px;
+  background: color-mix(in srgb, rgba(0, 0, 0, 0.52) 80%, transparent);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  color: rgba(255, 255, 255, 0.94);
+  font-size: 14px;
+  font-weight: 800;
+  padding: 7px 11px;
   border-radius: 10px;
   line-height: 1.15;
   max-width: 92%;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
   letter-spacing: 0.01em;
-  transition: font-size 0.22s ease, padding 0.22s ease;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.65);
+  transition: font-size 0.11s ease, padding 0.11s ease;
 }
 .vodCarouselItem:focus-within .vodThumbTitleBar,
 .vodCarouselItem:hover .vodThumbTitleBar {
-  font-size: 16px;
-  padding: 8px 12px;
+  font-size: 18px;
+  padding: 9px 13px;
 }
 /* Hero uses the same title/meta affordances without being a carousel item */
 .vodThumbWrapHero:focus-within .vodThumbTitleBar,
 .vodThumbWrapHero:hover .vodThumbTitleBar {
-  font-size: 16px;
-  padding: 8px 12px;
+  font-size: 18px;
+  padding: 9px 13px;
 }
 
 /* 8 deterministic title placement configs */
@@ -796,14 +806,14 @@
   right: 10px;
   bottom: 10px;
   color: rgba(255, 255, 255, 0.9);
-  font-size: 11px;
-  font-weight: 600;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  font-weight: 650;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
   pointer-events: none;
   z-index: 4;
   opacity: 0;
   transform: translateY(6px);
-  transition: opacity 0.18s ease, transform 0.18s ease;
+  transition: opacity 0.09s ease, transform 0.09s ease;
 }
 
 .vodThumbBadge {
@@ -823,6 +833,32 @@
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
   z-index: 4;
 }
+
+.vodThumbAudio {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid color-mix(in srgb, var(--edge) 60%, transparent);
+  border-radius: 10px;
+  background: color-mix(in srgb, rgba(0, 0, 0, 0.6) 70%, transparent);
+  color: rgba(255, 255, 255, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.55;
+  pointer-events: none;
+  z-index: 6;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.24);
+}
+.vodThumbBadge + .vodThumbAudio {
+  top: 44px;
+}
+.vodCarouselItem:focus-within .vodThumbAudio,
+.vodCarouselItem:hover .vodThumbAudio {
+  opacity: 1;
+}
 .vodCarouselItemEpisode:focus-within .vodThumbSub,
 .vodCarouselItemEpisode:hover .vodThumbSub {
   opacity: 1;
@@ -834,16 +870,16 @@
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 10px 10px 10px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.05));
-  color: rgba(255, 255, 255, 0.95);
+  padding: 8px 10px 10px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.0));
+  color: rgba(255, 255, 255, 0.92);
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 3px;
   z-index: 4;
   opacity: 0;
   transform: translateY(10px);
-  transition: opacity 0.18s ease, transform 0.18s ease;
+  transition: opacity 0.09s ease, transform 0.09s ease;
   pointer-events: none;
 }
 .vodCarouselItem:focus-within .vodThumbMeta,
@@ -857,15 +893,15 @@
   transform: translateY(0);
 }
 .vodThumbMetaTop {
-  font-size: 11px;
-  font-weight: 800;
+  font-size: 12px;
+  font-weight: 850;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   opacity: 0.9;
 }
 .vodThumbMetaMid {
-  font-size: 12px;
-  font-weight: 650;
+  font-size: 13px;
+  font-weight: 700;
   color: rgba(255, 255, 255, 0.92);
 }
 .vodThumbMetaBar {
@@ -900,8 +936,8 @@
   align-items: center;
   justify-content: center;
   opacity: 0.32;
-  transition: opacity 0.15s ease, transform 0.15s ease, background 0.15s ease;
-  z-index: 3;
+  transition: opacity 0.075s ease, transform 0.075s ease, background 0.075s ease;
+  z-index: 6;
 }
 .vodCarouselItem:focus-within .vodThumbIcon,
 .vodCarouselItem:hover .vodThumbIcon {
@@ -934,4 +970,27 @@
 .vodThumbWrapHero .vodThumb {
   --vod-thumb-h: 176px;
   --vod-thumb-aspect: 1.7777778;
+}
+
+/* Avoid title/meta overlap: when the title is bottom-aligned, float the meta to the top. */
+.vodThumbWrap.vodTitlePos-0 .vodThumbMeta,
+.vodThumbWrap.vodTitlePos-1 .vodThumbMeta,
+.vodThumbWrap.vodTitlePos-4 .vodThumbMeta {
+  top: 0;
+  bottom: auto;
+  transform: translateY(-10px);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.0));
+}
+.vodCarouselItem:focus-within .vodThumbWrap.vodTitlePos-0 .vodThumbMeta,
+.vodCarouselItem:hover .vodThumbWrap.vodTitlePos-0 .vodThumbMeta,
+.vodCarouselItem:focus-within .vodThumbWrap.vodTitlePos-1 .vodThumbMeta,
+.vodCarouselItem:hover .vodThumbWrap.vodTitlePos-1 .vodThumbMeta,
+.vodCarouselItem:focus-within .vodThumbWrap.vodTitlePos-4 .vodThumbMeta,
+.vodCarouselItem:hover .vodThumbWrap.vodTitlePos-4 .vodThumbMeta {
+  transform: translateY(0);
+}
+
+/* Episodes: keep the subtitle clear of bottom-aligned titles. */
+.vodCarouselItemEpisode .vodThumbSub {
+  bottom: 54px;
 }

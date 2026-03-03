@@ -2,14 +2,36 @@
  * Browse All: Netflix-style rows by category.
  * Featured (manual), Continue Watching (in-progress), then randomized category rows.
  */
-import { html, useMemo } from "../runtime/vendor.js";
+import { html, useEffect, useMemo } from "../runtime/vendor.js";
 import { fallbackInitials, thumbFallbackStyle, titlePosClass, VodCarouselRow } from "./vod_carousel.js";
+import { HeadphonesIcon } from "./icons.js";
 
 function onThumbImgError(e) {
   try {
     const img = e.currentTarget;
     img.style.display = "none";
   } catch {}
+}
+
+function isVideoEpisode(ep) {
+  const m = ep?.media || null;
+  if (!m) return false;
+  if (m.pickedIsVideo === true) return true;
+  if (m.pickedIsVideo === false) return false;
+  const t = String(m.type || "").toLowerCase();
+  if (t.startsWith("video/")) return true;
+  if (t.startsWith("audio/")) return false;
+  const u = String(m.url || "").toLowerCase();
+  if (u.includes(".m3u8")) return true;
+  if (u.match(/\.(mp4|m4v|mov|webm)(\?|$)/)) return true;
+  if (u.match(/\.(mp3|m4a|aac|ogg|opus)(\?|$)/)) return false;
+  return false;
+}
+
+function isAudioOnlyShow(show) {
+  const eps = show?.episodes || [];
+  if (!Array.isArray(eps) || !eps.length) return false;
+  return !eps.some((e) => isVideoEpisode(e));
 }
 
 function getShowProgress(show, feedId, history, player) {
@@ -226,6 +248,9 @@ function buildCategoryRows(allShows, history, player) {
 }
 
 export function BrowseAllPanel({ isOpen, showsConfig, feedTitles, player, history, onClose, onShowClick }) {
+  const curSourceId = player?.currentSourceId?.value || null;
+  const curEpId = player?.currentEpisodeId?.value || null;
+
   const feeds = showsConfig?.feeds || {};
   const titles = feedTitles || {};
   const allShows = useMemo(() => {
@@ -246,6 +271,25 @@ export function BrowseAllPanel({ isOpen, showsConfig, feedTitles, player, histor
     () => buildCategoryRows(allShows, history, player),
     [allShows, history?.all?.value, player]
   );
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const panel = document.getElementById("browseAllPanel");
+    if (!panel) return;
+    const a = document.activeElement;
+    if (a && panel.contains(a)) return;
+    const playingBtn =
+      panel.querySelector(".vodCarouselItem.playing .vodThumbBtn[data-navitem='1']") ||
+      panel.querySelector(".vodCarouselItem.playing [data-navitem='1']");
+    if (playingBtn && typeof playingBtn.focus === "function") {
+      try {
+        playingBtn.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+      } catch {}
+      try {
+        playingBtn.focus();
+      } catch {}
+    }
+  }, [isOpen, curSourceId, curEpId, categoryRows.length]);
 
   const playShow = (feedId, show, startEp = null) => {
     const episodes = show.episodes || [];
@@ -289,6 +333,9 @@ export function BrowseAllPanel({ isOpen, showsConfig, feedTitles, player, histor
                   const progress = getShowProgress(show, feedId, history, player);
                   const showTitle = show.title_full || show.title;
                   const posClass = titlePosClass(`${feedId}:${show.slug || show.id}`);
+                  const eps = show.episodes || [];
+                  const isPlayingShow = curSourceId === feedId && curEpId && eps.some((e) => e?.id === curEpId);
+                  const audioOnly = isAudioOnlyShow(show);
                   const total = progress.totalEpisodes || (show.episodeCount || 0);
                   const watched = progress.watchedCount || 0;
                   const resumeLabel = progress.resumeEpisode ? "Resume" : "Play";
@@ -297,7 +344,7 @@ export function BrowseAllPanel({ isOpen, showsConfig, feedTitles, player, histor
                   const initials = fallbackInitials(showTitle) || "TV";
 
                   return html`
-                    <div class="vodCarouselItem vodCarouselItemShow" key=${feedId + ":" + show.id} data-carousel-idx=${idx}>
+                    <div class=${"vodCarouselItem vodCarouselItemShow" + (isPlayingShow ? " playing" : "")} key=${feedId + ":" + show.id} data-carousel-idx=${idx}>
                       <div class=${"vodThumbWrap " + posClass}>
                         <button
                           class="vodThumbBtn"
@@ -315,6 +362,10 @@ export function BrowseAllPanel({ isOpen, showsConfig, feedTitles, player, histor
                             <span class="vodThumbPlaceholder">${initials}</span>
                             ${show.artworkUrl
                               ? html`<img class="vodThumbImg" src=${show.artworkUrl} alt="" loading="lazy" onError=${onThumbImgError} />`
+                              : ""}
+                            ${isPlayingShow ? html`<span class="vodThumbBadge" aria-hidden="true">Playing</span>` : ""}
+                            ${audioOnly
+                              ? html`<span class="vodThumbAudio" aria-hidden="true" title="Audio only"><${HeadphonesIcon} size=${16} /></span>`
                               : ""}
                             ${(show.artworkOverlay || showTitle)
                               ? html`

@@ -1,8 +1,9 @@
 /**
  * Netflix-style browse panel: carousels for shows/episodes (not the guide/EPG).
  */
-import { html } from "../runtime/vendor.js";
+import { html, useEffect } from "../runtime/vendor.js";
 import { fallbackInitials, thumbFallbackStyle, titlePosClass, VodCarouselRow } from "./vod_carousel.js";
+import { HeadphonesIcon } from "./icons.js";
 
 /** Compute show progress: { watchedCount, resumeEpisode, totalEpisodes } */
 function getShowProgress(show, feedId, history, player) {
@@ -68,6 +69,27 @@ function onThumbImgError(e) {
   } catch {}
 }
 
+function isVideoEpisode(ep) {
+  const m = ep?.media || null;
+  if (!m) return false;
+  if (m.pickedIsVideo === true) return true;
+  if (m.pickedIsVideo === false) return false;
+  const t = String(m.type || "").toLowerCase();
+  if (t.startsWith("video/")) return true;
+  if (t.startsWith("audio/")) return false;
+  const u = String(m.url || "").toLowerCase();
+  if (u.includes(".m3u8")) return true;
+  if (u.match(/\.(mp4|m4v|mov|webm)(\?|$)/)) return true;
+  if (u.match(/\.(mp3|m4a|aac|ogg|opus)(\?|$)/)) return false;
+  return false;
+}
+
+function isAudioOnlyShow(show) {
+  const eps = show?.episodes || [];
+  if (!Array.isArray(eps) || !eps.length) return false;
+  return !eps.some((e) => isVideoEpisode(e));
+}
+
 export function BrowsePanel({
   isOpen,
   feedId,
@@ -80,9 +102,33 @@ export function BrowsePanel({
   onBack,
   onExpandShow,
 }) {
+  const curSourceId = player?.currentSourceId?.value || null;
+  const curEpId = player?.currentEpisodeId?.value || null;
+  const open = !!isOpen?.value;
+
+  useEffect(() => {
+    if (!open) return;
+    const panel = document.getElementById("browsePanel");
+    if (!panel) return;
+    // If the user already focused something inside, don't steal it.
+    const a = document.activeElement;
+    if (a && panel.contains(a)) return;
+    const playingBtn =
+      panel.querySelector(".vodCarouselItem.playing .vodThumbBtn[data-navitem='1']") ||
+      panel.querySelector(".vodCarouselItem.playing [data-navitem='1']");
+    if (playingBtn && typeof playingBtn.focus === "function") {
+      try {
+        playingBtn.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+      } catch {}
+      try {
+        playingBtn.focus();
+      } catch {}
+    }
+  }, [open, feedId, initialExpandShowSlug, curSourceId, curEpId]);
+
   if (!shows?.length) {
     return html`
-      <div class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
+      <div id="browsePanel" class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
         <div class="browsePanel-inner">
           <div class="browsePanel-empty">No shows for this feed.</div>
         </div>
@@ -125,7 +171,7 @@ export function BrowsePanel({
     const artSeed = `${feedId}:${focusedShow.slug || focusedShow.id}`;
 
     return html`
-      <div class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
+      <div id="browsePanel" class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
         <div class="browsePanel-inner" data-carousel-group="browseFeed">
           ${header}
           ${focusedShow.description ? html`<p class="browseShowDesc browseShowDescTop">${focusedShow.description}</p>` : ""}
@@ -134,8 +180,10 @@ export function BrowsePanel({
             ${eps.map((ep, idx) => {
               const meta = `${ep.dateText || ""}${ep.durationSec ? ` · ${fmtDuration(ep.durationSec)}` : ""}`.trim();
               const isResume = resumeId && ep?.id === resumeId;
+              const isPlaying = curSourceId === feedId && curEpId && ep?.id === curEpId;
+              const badge = isPlaying ? "Playing" : isResume ? "Resume" : null;
               return html`
-                <div class="vodCarouselItem vodCarouselItemEpisode" data-carousel-idx=${idx} key=${ep.id || idx}>
+                <div class=${"vodCarouselItem vodCarouselItemEpisode" + (isPlaying ? " playing" : "")} data-carousel-idx=${idx} key=${ep.id || idx}>
                   <div class=${"vodThumbWrap vodThumbWrapEpisode " + titlePosClass(`${feedId}:${ep.slug || ep.id}`)}>
                     <button
                       class="vodThumbBtn"
@@ -150,7 +198,7 @@ export function BrowsePanel({
                         ${focusedShow.artworkUrl
                           ? html`<img class="vodThumbImg" src=${focusedShow.artworkUrl} alt="" loading="lazy" onError=${onThumbImgError} />`
                           : ""}
-                        ${isResume ? html`<span class="vodThumbBadge" aria-hidden="true">Resume</span>` : ""}
+                        ${badge ? html`<span class="vodThumbBadge" aria-hidden="true">${badge}</span>` : ""}
                         <span class="vodThumbTitle">
                           <span class="vodThumbTitleBar">${ep.title || "Episode"}</span>
                         </span>
@@ -171,14 +219,15 @@ export function BrowsePanel({
   if (episodesOnly) {
     const artSeed = `${feedId}:${shows[0]?.slug || shows[0]?.id || "feed"}`;
     return html`
-      <div class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
+      <div id="browsePanel" class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
         <div class="browsePanel-inner" data-carousel-group="browseFeed">
           ${header}
           <${VodCarouselRow} rowId=${`feed-eps-${feedId}`} title="Episodes" className="browseEpRow">
             ${episodes.map((ep, idx) => {
               const meta = `${ep.dateText || ""}${ep.durationSec ? ` · ${fmtDuration(ep.durationSec)}` : ""}`.trim();
+              const isPlaying = curSourceId === feedId && curEpId && ep?.id === curEpId;
               return html`
-                <div class="vodCarouselItem vodCarouselItemEpisode" data-carousel-idx=${idx} key=${ep.id || idx}>
+                <div class=${"vodCarouselItem vodCarouselItemEpisode" + (isPlaying ? " playing" : "")} data-carousel-idx=${idx} key=${ep.id || idx}>
                   <div class=${"vodThumbWrap vodThumbWrapEpisode " + titlePosClass(`${feedId}:${ep.slug || ep.id}`)}>
                     <button
                       class="vodThumbBtn"
@@ -193,6 +242,7 @@ export function BrowsePanel({
                         ${shows[0]?.artworkUrl
                           ? html`<img class="vodThumbImg" src=${shows[0].artworkUrl} alt="" loading="lazy" onError=${onThumbImgError} />`
                           : ""}
+                        ${isPlaying ? html`<span class="vodThumbBadge" aria-hidden="true">Playing</span>` : ""}
                         <span class="vodThumbTitle">
                           <span class="vodThumbTitleBar">${ep.title || "Episode"}</span>
                         </span>
@@ -211,7 +261,7 @@ export function BrowsePanel({
 
   // Shows carousel view.
   return html`
-    <div class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
+    <div id="browsePanel" class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
       <div class="browsePanel-inner" data-carousel-group="browseFeed">
         ${header}
         <${VodCarouselRow} rowId=${`shows-${feedId}`} title="Shows" className="browseShowsRow">
@@ -220,6 +270,8 @@ export function BrowsePanel({
             const showTitle = show.title_full || show.title;
             const posClass = titlePosClass(`${feedId}:${show.slug || show.id}`);
             const eps = show.episodes || [];
+            const isPlayingShow = curSourceId === feedId && curEpId && eps.some((e) => e?.id === curEpId);
+            const audioOnly = isAudioOnlyShow(show);
             const total = progress.totalEpisodes || (show.episodeCount || 0);
             const watched = progress.watchedCount || 0;
             const resumeLabel = progress.resumeEpisode ? "Resume" : "Play";
@@ -228,7 +280,7 @@ export function BrowsePanel({
             const initials = fallbackInitials(showTitle) || "TV";
 
             return html`
-              <div class="vodCarouselItem vodCarouselItemShow" key=${show.id} data-carousel-idx=${idx}>
+              <div class=${"vodCarouselItem vodCarouselItemShow" + (isPlayingShow ? " playing" : "")} key=${show.id} data-carousel-idx=${idx}>
                 <div class=${"vodThumbWrap " + posClass}>
                   <button
                     class="vodThumbBtn"
@@ -245,6 +297,10 @@ export function BrowsePanel({
                       <span class="vodThumbPlaceholder">${initials}</span>
                       ${show.artworkUrl
                         ? html`<img class="vodThumbImg" src=${show.artworkUrl} alt="" loading="lazy" onError=${onThumbImgError} />`
+                        : ""}
+                      ${isPlayingShow ? html`<span class="vodThumbBadge" aria-hidden="true">Playing</span>` : ""}
+                      ${audioOnly
+                        ? html`<span class="vodThumbAudio" aria-hidden="true" title="Audio only"><${HeadphonesIcon} size=${16} /></span>`
                         : ""}
                       ${(show.artworkOverlay || showTitle)
                         ? html`

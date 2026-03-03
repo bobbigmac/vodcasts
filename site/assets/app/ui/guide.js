@@ -1,6 +1,6 @@
 import { html, useEffect, useMemo, useRef, useSignal } from "../runtime/vendor.js";
 import { episodeSearchHaystack, matchesAllTokens, splitQuery } from "./search.js";
-import { HeadphonesIcon } from "./icons.js";
+import { HeadphonesIcon, RadioIcon, TvIcon } from "./icons.js";
 
 const CATEGORY_ORDER = ["church", "university", "fitness", "bible", "twit", "podcastindex", "other", "needs-rss"];
 const EPISODE_LOOP_ENABLED = false; // When false, episodes render once; no wrap/cycle. Set true to restore TV-style looping.
@@ -25,16 +25,20 @@ function loadGuidePrefs() {
     const raw = JSON.parse(localStorage.getItem(GUIDE_PREFS_KEY) || "{}");
     const fav = Array.isArray(raw?.faves) ? raw.faves.filter((x) => typeof x === "string" && x) : [];
     const favesOnly = raw?.favesOnly === true;
-    return { faves: new Set(fav), favesOnly };
+    const showAudioOnly = raw?.showAudioOnly !== false;
+    return { faves: new Set(fav), favesOnly, showAudioOnly };
   } catch {
-    return { faves: new Set(), favesOnly: false };
+    return { faves: new Set(), favesOnly: false, showAudioOnly: true };
   }
 }
 
-function saveGuidePrefs({ faves, favesOnly }) {
+function saveGuidePrefs({ faves, favesOnly, showAudioOnly }) {
   try {
     const list = [...(faves instanceof Set ? faves : new Set())].filter((x) => typeof x === "string" && x).slice(0, 5000);
-    localStorage.setItem(GUIDE_PREFS_KEY, JSON.stringify({ faves: list, favesOnly: !!favesOnly }));
+    localStorage.setItem(
+      GUIDE_PREFS_KEY,
+      JSON.stringify({ faves: list, favesOnly: !!favesOnly, showAudioOnly: showAudioOnly !== false })
+    );
   } catch {}
 }
 
@@ -194,6 +198,7 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
   if (!prefsInitRef.current) prefsInitRef.current = loadGuidePrefs();
   const faveIds = useSignal(prefsInitRef.current.faves);
   const favesOnly = useSignal(!!prefsInitRef.current.favesOnly);
+  const showAudioOnly = useSignal(prefsInitRef.current.showAudioOnly !== false);
 
   const faveCount = useMemo(() => {
     const set = faveIds.value instanceof Set ? faveIds.value : new Set();
@@ -206,7 +211,7 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
     if (faveCount > 0) return;
     if (!favesOnly.value) return;
     favesOnly.value = false;
-    saveGuidePrefs({ faves: faveIds.value, favesOnly: false });
+    saveGuidePrefs({ faves: faveIds.value, favesOnly: false, showAudioOnly: showAudioOnly.value });
   }, [faveCount, favesOnly.value]);
 
   const filterText = useSignal("");
@@ -227,11 +232,18 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
     return out;
   }, [sourcesFlatAll, sourcesById, filterKey, episodesBySource]);
 
+  const includeAudioOnly = !!showAudioOnly.value;
+  const isAudioOnlyChannel = (s) => {
+    const srcObj = sourcesById.get(s?.id) || s;
+    return srcObj?.features?.hasVideo === false;
+  };
+
   // Exclude feeds once we know they have no playable videos.
   // (If a feed isn't loaded yet, keep it around so it can be lazy-loaded.)
   const sourcesFlat0 = useMemo(() => {
     const out = [];
     for (const s of sourcesFlatFiltered) {
+      if (!includeAudioOnly && isAudioOnlyChannel(s)) continue;
       const eps = episodesBySource[s.id];
       if (!Array.isArray(eps)) {
         out.push(s);
@@ -240,11 +252,12 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
       if (eps.some((ep) => isPlayableVideoEp(ep))) out.push(s);
     }
     return out;
-  }, [sourcesFlatFiltered, episodesBySource]);
+  }, [sourcesFlatFiltered, episodesBySource, includeAudioOnly]);
 
   const sourcesFlatPlayable = useMemo(() => {
     const out = [];
     for (const s of sourcesFlatAll) {
+      if (!includeAudioOnly && isAudioOnlyChannel(s)) continue;
       const eps = episodesBySource[s.id];
       if (!Array.isArray(eps)) {
         out.push(s);
@@ -253,7 +266,7 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
       if (eps.some((ep) => isPlayableVideoEp(ep))) out.push(s);
     }
     return out;
-  }, [sourcesFlatAll, episodesBySource]);
+  }, [sourcesFlatAll, episodesBySource, includeAudioOnly]);
 
   const sourcesFlat = useMemo(() => {
     if (!favesOnly.value || faveCount <= 0) return sourcesFlat0;
@@ -269,7 +282,8 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
 
   const totalChanCount = sourcesFlatPlayable.length;
   const selectedChanCount = sourcesFlat.length;
-  const cornerTitle = favesOnly.value ? "Faves Only" : "All Channels";
+  const cornerTitle =
+    (includeAudioOnly ? "" : "TV Only • ") + (favesOnly.value ? "Faves Only" : "All Channels");
 
   const focusSourceIdx = useSignal(Math.max(0, sourcesFlat.findIndex((s) => s.id === currentSourceId)));
   const sourcesFlatRef = useRef([]);
@@ -295,6 +309,7 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
   const sidebarLastUserIntentAtRef = useRef(0);
   const marqueeRef = useRef({ el: null, anim: null, key: "" });
   const chanMarqueeRef = useRef({ el: null, anim: null, key: "" });
+  const openJumpRef = useRef({ at: 0, done: false });
 
   const isNarrowGuide = () => {
     try {
@@ -602,15 +617,32 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
   };
 
   useEffect(() => {
-    if (!isOpen.value) return;
-    // Start "at" what is currently playing (doesn't need to live-update).
+    if (!isOpen.value) {
+      openJumpRef.current = { at: 0, done: false };
+      return;
+    }
+    if (openJumpRef.current.at <= 0) openJumpRef.current = { at: Date.now(), done: false };
+    if (openJumpRef.current.done) return;
+
+    // When the guide opens, jump to the currently playing source so it's visible + selected.
+    // If sources aren't loaded yet, retry briefly while the panel is open.
+    const openedMs = Date.now() - (Number(openJumpRef.current.at) || Date.now());
+    if (openedMs > 1600) openJumpRef.current = { ...openJumpRef.current, done: true };
+
+    const srcId = player.current.value.source?.id || currentSourceId || null;
+    const inList = srcId ? sourcesFlat.some((s) => s.id === srcId) : false;
+    if (srcId && inList) {
+      openJumpRef.current = { ...openJumpRef.current, done: true };
+      jumpToPlaying({ alignNow: true }).catch(() => {});
+      return;
+    }
+
+    // Fallback: initialize the grid near "now" with a reasonable channel focus.
+    if (sourcesFlat.length) openJumpRef.current = { ...openJumpRef.current, done: true };
     guideZeroTs.value = roundToHalfHour(Date.now());
     trackStartTs.value = guideZeroTs.value;
     focusSourceIdx.value = Math.max(0, sourcesFlat.findIndex((s) => s.id === currentSourceId));
     focusTs.value = Date.now();
-    if (currentSourceId && !episodesBySource[currentSourceId]) {
-      player.loadSourceEpisodes(currentSourceId).catch(() => {});
-    }
   }, [isOpen.value, currentSourceId, sourcesFlat.length]);
 
   useEffect(() => {
@@ -652,14 +684,20 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
     if (next.has(id)) next.delete(id);
     else next.add(id);
     faveIds.value = next;
-    saveGuidePrefs({ faves: next, favesOnly: favesOnly.value });
+    saveGuidePrefs({ faves: next, favesOnly: favesOnly.value, showAudioOnly: showAudioOnly.value });
   };
 
   const toggleFavesOnly = () => {
     if (faveCount <= 0 && !favesOnly.value) return;
     const next = !favesOnly.value;
     favesOnly.value = next;
-    saveGuidePrefs({ faves: faveIds.value, favesOnly: next });
+    saveGuidePrefs({ faves: faveIds.value, favesOnly: next, showAudioOnly: showAudioOnly.value });
+  };
+
+  const toggleShowAudioOnly = () => {
+    const next = !showAudioOnly.value;
+    showAudioOnly.value = next;
+    saveGuidePrefs({ faves: faveIds.value, favesOnly: favesOnly.value, showAudioOnly: next });
   };
 
   useEffect(() => {
@@ -1282,6 +1320,20 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
                 onPointerDown=${(e) => e.stopPropagation()}
               >
                 ${favesOnly.value ? "Show All" : "Faves Only"}
+              </button>
+              <button
+                class=${"guideGridHeaderBtn guideGridHeaderBtnAudioOnly" + (showAudioOnly.value ? " active" : "")}
+                title=${showAudioOnly.value ? "Audio-only channels visible" : "Audio-only channels hidden (TV only)"}
+                aria-label=${showAudioOnly.value ? "Audio-only channels visible" : "Audio-only channels hidden (TV only)"}
+                aria-pressed=${showAudioOnly.value ? "true" : "false"}
+                data-navitem="1"
+                onClick=${(e) => {
+                  e.stopPropagation?.();
+                  toggleShowAudioOnly();
+                }}
+                onPointerDown=${(e) => e.stopPropagation()}
+              >
+                ${showAudioOnly.value ? html`<${RadioIcon} size=${14} />` : html`<${TvIcon} size=${14} />`}
               </button>
               <button
                 class="guideGridHeaderBtn guideGridHeaderBtnClose"

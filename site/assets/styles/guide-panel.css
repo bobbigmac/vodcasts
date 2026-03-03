@@ -280,6 +280,14 @@
   letter-spacing: 0;
 }
 
+.guideGridHeaderBtnAudioOnly {
+  min-width: 38px;
+  padding: 6px 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .guideGridBodyRow {
   display: flex;
   flex: 1;
