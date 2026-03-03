@@ -697,7 +697,8 @@ export function App({ env, log, sources, showsConfig, player, history }) {
         guideOpen.value = true;
         const t = ++token;
         suppressNextRoutePushRef.current = t;
-        player.applyRoute({ feed: route.feed }, { autoplay: false }).catch(() => {}).finally(() => {
+        // Show browsing should not disrupt current playback; just ensure episodes are available for the guide/browse UIs.
+        player.loadSourceEpisodes?.(route.feed).catch(() => {}).finally(() => {
           if (suppressNextRoutePushRef.current === t) suppressNextRoutePushRef.current = 0;
         });
         return;
@@ -749,26 +750,62 @@ export function App({ env, log, sources, showsConfig, player, history }) {
     };
   }, []);
 
-  // Keep the URL shareable. When in show context (playlist with showSlug), use /feed/X/shows/Y; else use episode URL.
+  // Keep the URL shareable.
+  // - While browsing a show (route /feed/X/shows/Y), prefer that route even if we're not playing yet.
+  // - While watching a show playlist, keep /feed/X/shows/Y (so refresh returns to the show context).
+  // - Otherwise use /feed/X/<episode> (slug preferred, id fallback), then /feed/X/.
   useSignalEffect(() => {
+    // If Browse All is open, don't fight the explicit `/browse/` URL.
+    if (browseAllOpen.value) return;
+
+    const curRoute = getRouteFromUrl();
     const pl = player.playlist?.value;
-    const showSlug = pl?.showSlug || null;
-    const s = (showSlug && pl?.feedId ? pl.feedId : null) || player.current.value.source?.id;
-    const e = player.current.value.episode?.slug;
-    if (!s) return;
+    const uiShowSlug = (isBrowseMode || !!guideBrowseFeedId.value) ? (guideBrowseShowSlug.value || null) : null;
+    const showSlug = uiShowSlug || pl?.showSlug || null;
+
+    const feedFromUi = uiShowSlug ? (guideBrowseFeedId.value || env?.initialFeed || null) : null;
+    const feedFromPl = showSlug && pl?.feedId ? pl.feedId : null;
+    const feedFromPlayer = player.current.value.source?.id || null;
+    const feedId = feedFromUi || feedFromPl || feedFromPlayer;
+    if (!feedId) return;
+
+    const epObj = player.current.value.episode || null;
+    const epSeg = (epObj?.slug || epObj?.id || null) && String(epObj.slug || epObj.id);
     const recentUser = Date.now() - (Number(lastUserIntentAtRef.current) || 0) < 1200;
     const fromHistory = !!suppressNextRoutePushRef.current;
+
     if (showSlug) {
-      const routeKey = `${String(s)}::show:${String(showSlug)}`;
+      const routeKey = `${String(feedId)}::show:${String(showSlug)}`;
+      if (curRoute?.feed === feedId && curRoute?.show === showSlug) {
+        lastRouteKeyRef.current = routeKey;
+        return;
+      }
       const shouldPush = !fromHistory && recentUser && routeKey !== lastRouteKeyRef.current;
-      setRouteInUrl({ feed: s, show: showSlug }, { replace: !shouldPush });
+      setRouteInUrl({ feed: feedId, show: showSlug }, { replace: !shouldPush });
       lastRouteKeyRef.current = routeKey;
-    } else {
-      const routeKey = `${String(s)}::${String(e || "")}`;
-      const shouldPush = !fromHistory && recentUser && !!e && routeKey !== lastRouteKeyRef.current;
-      setRouteInUrl({ feed: s, ep: e }, { replace: !shouldPush });
-      lastRouteKeyRef.current = routeKey;
+      return;
     }
+
+    if (epSeg) {
+      const routeKey = `${String(feedId)}::${String(epSeg)}`;
+      if (curRoute?.feed === feedId && curRoute?.ep === epSeg) {
+        lastRouteKeyRef.current = routeKey;
+        return;
+      }
+      const shouldPush = !fromHistory && recentUser && routeKey !== lastRouteKeyRef.current;
+      setRouteInUrl({ feed: feedId, ep: epSeg }, { replace: !shouldPush });
+      lastRouteKeyRef.current = routeKey;
+      return;
+    }
+
+    // No episode selected: keep /feed/X/ (replace-only).
+    const routeKey = `${String(feedId)}::`;
+    if (curRoute?.feed === feedId && !curRoute?.ep && !curRoute?.show && !curRoute?.browse) {
+      lastRouteKeyRef.current = routeKey;
+      return;
+    }
+    setRouteInUrl({ feed: feedId, ep: null, show: null }, { replace: true });
+    lastRouteKeyRef.current = routeKey;
   });
 
   const cur = player.current.value;

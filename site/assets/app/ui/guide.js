@@ -283,7 +283,7 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
   const totalChanCount = sourcesFlatPlayable.length;
   const selectedChanCount = sourcesFlat.length;
   const cornerTitle =
-    (includeAudioOnly ? "" : "TV Only • ") + (favesOnly.value ? "Faves Only" : "All Channels");
+    (includeAudioOnly ? "" : "TV: ") + (favesOnly.value ? "Faves Only" : "All Channels");
 
   const focusSourceIdx = useSignal(Math.max(0, sourcesFlat.findIndex((s) => s.id === currentSourceId)));
   const sourcesFlatRef = useRef([]);
@@ -830,6 +830,9 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
         const ep = prog?.ep || null;
         if (!ep?.id) return;
         (async () => {
+          try {
+            player.clearPlaylist?.();
+          } catch {}
           await player.selectSource(src.id, { preserveEpisode: false, skipAutoEpisode: true, autoplay: true });
           await player.selectEpisode(ep.id, { autoplay: true });
           isOpen.value = false;
@@ -1532,9 +1535,12 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
                                   }}
                                   onClick=${async () => {
                                     focusModeRef.current = "keys";
+                                    try {
+                                      player.clearPlaylist?.();
+                                    } catch {}
                                     await player.selectSource(src.id, { preserveEpisode: false, skipAutoEpisode: true, autoplay: true });
                                     await player.selectEpisode(ep.id, { autoplay: true });
-                                  isOpen.value = false;
+                                    isOpen.value = false;
                                   }}
                                 >
                                   <div class="guideGridEpProgress" style=${{ width: `${pct}%` }} aria-hidden="true"></div>

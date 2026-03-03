@@ -45,17 +45,18 @@ export function getRouteFromUrl() {
   const segs = relPath.split("/").filter(Boolean).map(decodeSeg);
 
   // Support /<feed>/, /<feed>/shows/<show>/, /<feed>/<ep>/; /browse/ for browse-all. Legacy: /feed/<feed>/...
+  // Also accept `/show/` (singular) because some older links used that form.
   let feed = "";
   let ep = "";
   let show = "";
   const browse = segs[0] === "browse";
   if (segs[0] === "feed" && segs.length >= 2) {
     feed = segs[1] || "";
-    if (segs[2] === "shows" && segs[3]) show = segs[3] || "";
+    if ((segs[2] === "shows" || segs[2] === "show") && segs[3]) show = segs[3] || "";
     else ep = segs[2] || "";
   } else if (!browse && segs[0]) {
     feed = segs[0] || sp.get("feed") || sp.get("channel") || sp.get("c") || "";
-    if (segs[1] === "shows" && segs[2]) show = segs[2] || "";
+    if ((segs[1] === "shows" || segs[1] === "show") && segs[2]) show = segs[2] || "";
     else ep = segs[1] || sp.get("ep") || sp.get("episode") || sp.get("e") || "";
   }
 
