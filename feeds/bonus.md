@@ -17,54 +17,9 @@
 - title: Better Business Coach Video Podcast
 - category: business
 
-## atheycreek
-- url: https://atheycreek.com/feed/video
-- title: Athey Creek
-- category: church
-
-## bufordroadbaptist
-- url: https://bufordroadbaptist.podbean.com/feed.xml
-- title: Buford Road Baptist (video?)
-- category: church
-
-## c3naz_video
-- url: https://www.c3naz.net/sermon-archives-video.rss
-- title: C3Naz
-- category: church
-
-## citizenchurch
-- url: https://citizenchurchpodcast.com/feed.xml
-- title: Citizen Church (video?)
-- category: church
-
-## edyoung
-- url: https://edyoung.com/feed/video
-- title: Ed Young
-- category: church
-
-## faithlifechurch
-- url: https://faithlifechurch.org/feed/video
-- title: Faith Life Church
-- category: church
-
-## foothillschurch
-- url: https://foothillschurch.org/feed/video
-- title: Foothills Church
-- category: church
-
 ## freshlife
 - url: https://freshlife.podbean.com/feed.xml
 - title: Fresh Life Church
-- category: church
-
-## gracechapelknoxville
-- url: https://gracechapelknoxville.podbean.com/feed.xml
-- title: Grace Chapel Knoxville (video?)
-- category: church
-
-## gty
-- url: https://www.gty.org/rss/video
-- title: Grace to You
 - category: church
 
 ## kingsway
@@ -72,59 +27,14 @@
 - title: Kingsway Christian Church (video?)
 - category: church
 
-## lancasterbaptist
-- url: https://lancasterbaptist.org/feed/video
-- title: Lancaster Baptist
-- category: church
-
-## lifechurch
-- url: https://www.life.church/feed/video
-- title: Life.Church
-- category: church
-
-## lwcpa
-- url: https://lwcpa.podbean.com/feed.xml
-- title: Light of the World Church (video?)
-- category: church
-
-## marshill_video
-- url: http://marshill.info/feeds/video.xml
-- title: Mars Hill
-- category: church
-
 ## menlochurchvideo
 - url: https://menlochurchvideo.podbean.com/feed.xml
 - title: Menlo Church
 - category: church
 
-## newspring
-- url: https://newspring.cc/feed/video
-- title: NewSpring
-- category: church
-
-## pointofgrace
-- url: https://pointofgracechurch.com/feed/video
-- title: Point of Grace Church
-- category: church
-
 ## restorationchurch
 - url: https://restorationchurch.podbean.com/feed.xml
 - title: Restoration Church Port Orange (video?)
-- category: church
-
-## theporch
-- url: https://www.theporch.tv/feed/video
-- title: The Porch
-- category: church
-
-## watermark
-- url: https://www.watermark.org/feed/video
-- title: Watermark
-- category: church
-
-## woodlandhills
-- url: https://whchurch.org/feed/video
-- title: Woodland Hills Church
 - category: church
 
 ## denver-education-video

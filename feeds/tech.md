@@ -12,16 +12,6 @@
 
 # Feeds
 
-## nih_videocast
-- url: https://videocast.nih.gov/rss/
-- title: NIH VideoCast RSS index
-- category: university
-
-## uctv_ucsd
-- url: https://uctv.ucsd.edu/rss/video
-- title: UCTV (UCSD) video
-- category: university
-
 ## uctv_all
 - url: https://podcast.uctv.tv/uctv_vodcasts.rss
 - title: UCTV (all vodcasts)
@@ -47,40 +37,15 @@
 - title: UCTV (UC Davis)
 - category: university
 
-## chiasmos
-- url: https://chiasmos.uchicago.edu/rss/video
-- title: CHIASMOS (UChicago) video
-- category: university
-
-## sjsu_ischool
-- url: https://www.sjsu.edu/ischool/podcast/rss.xml
-- title: SJSU iSchool (audio/video?)
-- category: university
-
-## bengreenfield
-- url: https://bengreenfieldfitness.com/feed/video
-- title: Ben Greenfield Fitness
-- category: fitness
-
 ## ericroberts
 - url: https://ericrobertsfitness.com/feed/podcast
 - title: Eric Roberts Fitness (podcast)
-- category: fitness
-
-## mindpump
-- url: https://mindpumpmedia.com/feed/video
-- title: Mind Pump Raw
 - category: fitness
 
 ## biblestudyguide
 - url: http://m.biblestudyguide.org/podcast/video-rss.xml
 - title: Bible Study Guide
 - category: bible
-
-## researchtopractice
-- url: https://researchtopractice.com/rss/video
-- title: Research To Practice
-- category: university
 
 ## kinda-funny-gamescast-video-game-podcast
 - url: https://feeds.megaphone.fm/kindafunnygamescast
@@ -90,16 +55,6 @@
 ## autoline-daily-video
 - url: http://www.autoline.tv/podcasts/feeds/autoline-daily-video.xml
 - title: Autoline Daily - Video
-- category: podcastindex
-
-## 5-minute-videos-prageru
-- url: https://feeds.megaphone.fm/PRAGERU3989592970
-- title: 5-Minute Videos | PragerU
-- category: podcastindex
-
-## democracy-now-video
-- url: https://www.democracynow.org/podcast-video.xml
-- title: Democracy Now! Video
 - category: podcastindex
 
 ## nutritionfacts-org-video-podcast
@@ -190,11 +145,6 @@
 ## macbreak-weekly-video
 - url: https://feeds.twit.tv/mbw_video_hd.xml
 - title: MacBreak Weekly
-- category: twit
-
-## tech-news-weekly-video
-- url: https://feeds.twit.tv/tnw_video_hd.xml
-- title: Tech News Weekly
 - category: twit
 
 ## hands-on-tech-video

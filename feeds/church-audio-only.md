@@ -532,12 +532,6 @@
 - category: teaching
 - tags: david-jeremiah, daily
 
-## grace-to-you-oneplace
-- url: https://www.oneplace.com/ministries/grace-to-you/subscribe/podcast.xml
-- title: Grace to You — John MacArthur
-- category: teaching
-- tags: john-macarthur, expositional, gty
-
 ## ten-commandments-ep
 - url: https://www.epchurch.org.au/feed/podcast/the-ten-commandments/index.php/
 - title: The Ten Commandments — Evangelical Presbyterian
