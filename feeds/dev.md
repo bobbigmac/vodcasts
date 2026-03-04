@@ -5,7 +5,7 @@
 - description: Small feed set for fast local dev.
 - base_path: /
 - favicons_path: assets/images/prays-be-favicons
-- og_image_path: assets/images/og-promo.png
+- og_image_path: assets/images/og-promo.jpg
 
 # Defaults
 - min_hours_between_checks: 0

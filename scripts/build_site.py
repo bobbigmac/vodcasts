@@ -382,7 +382,7 @@ def _og_image_url_for_site(*, base_path: str, feeds_path: Path) -> str:
     """
     Optional OpenGraph promo image. Distinct from favicons.
 
-    Should be a path relative to the `site/` folder (e.g. assets/images/og-promo.png).
+    Should be a path relative to the `site/` folder (e.g. assets/images/og-promo.jpg).
     """
     explicit = _norm_rel_web_path(_read_og_image_path_from_feeds_md(feeds_path))
     if not explicit:
