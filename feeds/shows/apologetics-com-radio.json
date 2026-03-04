@@ -4,15 +4,6 @@
   "leftovers_description": "Episodes outside the named segments buckets.",
   "shows": [
     {
-      "id": "gender-unplugged",
-      "title": "Gender Unplugged",
-      "title_full": "Gender Unplugged — Apologetics.com Radio Show",
-      "description": "Gender Unplugged segment episodes.",
-      "categories": ["teaching", "apologetics"],
-      "featured": true,
-      "filter": { "type": "title_prefix", "value": "Gender Unplugged" }
-    },
-    {
       "id": "essential-apologetics",
       "title": "Essential Apologetics",
       "title_full": "Essential Apologetics — Apologetics.com Radio Show",
