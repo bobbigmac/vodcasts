@@ -4,7 +4,7 @@
  */
 import { html, useEffect, useMemo, useRef, useState, useSignal } from "../runtime/vendor.js";
 import { fallbackInitials, thumbFallbackStyle, titlePosClass, VodCarouselRow } from "./vod_carousel.js";
-import { RadioIcon, TvIcon } from "./icons.js";
+import { HeadphonesIcon, TvIcon } from "./icons.js";
 
 const BROWSE_ALL_PREFS_KEY = "vodcasts_browse_all_prefs_v1";
 
@@ -660,7 +660,7 @@ export function BrowseAllPanel({ isOpen, showsConfig, feedTitles, player, histor
                 }}
               >
                 ${showAudioOnlyFeeds.value
-                  ? html`<${RadioIcon} size=${14} /> All ${visibleFeedCount}/${totalFeedCount}`
+                  ? html`<${HeadphonesIcon} size=${14} /> All ${visibleFeedCount}/${totalFeedCount}`
                   : html`<${TvIcon} size=${14} /> TV ${visibleFeedCount}/${totalFeedCount}`}
               </button>
               <button class="browseAllClose" type="button" onClick=${onClose} aria-label="Close">×</button>
@@ -689,7 +689,7 @@ export function BrowseAllPanel({ isOpen, showsConfig, feedTitles, player, histor
               }}
             >
               ${showAudioOnlyFeeds.value
-                ? html`<${RadioIcon} size=${14} /> All ${visibleFeedCount}/${totalFeedCount}`
+                ? html`<${HeadphonesIcon} size=${14} /> All ${visibleFeedCount}/${totalFeedCount}`
                 : html`<${TvIcon} size=${14} /> TV ${visibleFeedCount}/${totalFeedCount}`}
             </button>
             <button class="browseAllClose" type="button" onClick=${onClose} aria-label="Close">×</button>
@@ -754,7 +754,7 @@ export function BrowseAllPanel({ isOpen, showsConfig, feedTitles, player, histor
                                         : ""}
                                       ${isPlayingShow ? html`<span class="vodThumbBadge" aria-hidden="true">Playing</span>` : ""}
                                       ${isAudioOnlyFeed
-                                        ? html`<span class="vodThumbAudio" aria-hidden="true" title="Audio-only feed"><${RadioIcon} size=${16} /></span>`
+                                        ? html`<span class="vodThumbAudio" aria-hidden="true" title="Audio-only feed"><${HeadphonesIcon} size=${16} /></span>`
                                         : ""}
                                       ${(show.artworkOverlay || showTitle)
                                         ? html`
@@ -765,7 +765,9 @@ export function BrowseAllPanel({ isOpen, showsConfig, feedTitles, player, histor
                                         : ""}
                                       <span class="vodThumbMeta" aria-hidden="true">
                                         <span class="vodThumbMetaTop">
-                                          ${isAudioOnlyFeed ? html`<span class="vodThumbFeedAudioIcon" aria-hidden="true"><${RadioIcon} size=${12} /></span>` : ""}
+                                          ${isAudioOnlyFeed
+                                            ? html`<span class="vodThumbFeedAudioIcon" aria-hidden="true"><${HeadphonesIcon} size=${12} /></span>`
+                                            : ""}
                                           ${feedTitle}
                                         </span>
                                         <span class="vodThumbMetaMid">${resumeLabel} · ${total} eps${watched ? ` · ${watched} watched` : ""}</span>

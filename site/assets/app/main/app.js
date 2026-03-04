@@ -44,6 +44,7 @@ function chapterNameAt(chapters, tSec) {
 
 export function App({ env, log, sources, showsConfig, player, history }) {
   const bp = String(env?.basePath || "/").replace(/\/?$/, "/");
+  const browseLogoUrl = String(env?.site?.browseLogoUrl || "").trim();
   const guideOpen = useSignal(false);
   const guideBrowseFeedId = useSignal(null);
   const guideBrowseShowSlug = useSignal(null);
@@ -1486,6 +1487,9 @@ export function App({ env, log, sources, showsConfig, player, history }) {
           }
         }}
       >
+        ${browseLogoUrl
+          ? html`<img class="cornerBtnBrowseLogo" src=${browseLogoUrl} alt="" aria-hidden="true" />`
+          : null}
         Browse
       </button>
       <button
@@ -1547,13 +1551,15 @@ export function App({ env, log, sources, showsConfig, player, history }) {
       </button>
       <button
         id="btnDetails"
-        class="cornerBtn"
-        title="Details"
+        class="cornerBtn cornerBtnDetails"
+        title="Info"
+        aria-label="Info"
         data-navitem="1"
-        data-keyhint="D — Details"
+        data-keyhint="D — Info"
         onClick=${() => (detailsOpen.value = !detailsOpen.value)}
       >
-        ⋯
+        <span class="cornerBtnDetailsText">Info</span>
+        <span class="cornerBtnDetailsIcon" aria-hidden="true">i</span>
       </button>
     </div>
   `;

@@ -871,17 +871,16 @@
   top: 10px;
   width: 30px;
   height: 30px;
-  border: 1px solid color-mix(in srgb, var(--edge) 60%, transparent);
   border-radius: 10px;
-  background: color-mix(in srgb, rgba(0, 0, 0, 0.6) 70%, transparent);
-  color: rgba(255, 255, 255, 0.92);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.98);
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.55;
+  opacity: 0.92;
   pointer-events: none;
   z-index: 6;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.24);
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.55));
 }
 .vodThumbBadge + .vodThumbAudio {
   top: 44px;

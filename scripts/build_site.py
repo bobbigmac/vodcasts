@@ -169,6 +169,18 @@ def _read_favicons_path_from_feeds_md(feeds_path: Path) -> str:
         return ""
 
 
+def _read_browse_logo_path_from_feeds_md(feeds_path: Path) -> str:
+    if feeds_path.suffix.lower() != ".md":
+        return ""
+    try:
+        cfg = read_feeds_config(feeds_path)
+        site = cfg.get("site") if isinstance(cfg.get("site"), dict) else {}
+        v = site.get("browse_logo_path") or site.get("browseLogoPath") or ""
+        return str(v or "").strip()
+    except Exception:
+        return ""
+
+
 def _norm_rel_web_path(path: str) -> str:
     s = str(path or "").strip()
     if not s:
@@ -217,6 +229,24 @@ def _build_favicon_head_html(*, base_path: str, feeds_path: Path) -> str:
         lines.append(f'<link rel="apple-touch-icon" href="{base_path}assets/apple-touch-icon.png" />')
 
     return "\n  ".join(lines)
+
+
+def _browse_logo_url_for_site(*, base_path: str, feeds_path: Path) -> str:
+    """Optional UI logo (e.g. for the Browse button). Distinct from favicons."""
+    # Prefer explicit config, but fall back to favicon.svg when present.
+    explicit = _norm_rel_web_path(_read_browse_logo_path_from_feeds_md(feeds_path))
+    if explicit:
+        fs = VODCASTS_ROOT / "site" / explicit
+        if fs.exists():
+            return _url_join(base_path, explicit)
+
+    favicons_path = _norm_rel_web_path(_read_favicons_path_from_feeds_md(feeds_path))
+    if favicons_path:
+        fs_dir = VODCASTS_ROOT / "site" / favicons_path
+        if (fs_dir / "favicon.svg").exists():
+            return _url_join(base_path, favicons_path) + "/favicon.svg"
+
+    return ""
 
 
 def _pwa_icons_for_manifest(*, base_path: str, feeds_path: Path) -> list[dict[str, str]]:
@@ -440,6 +470,7 @@ def main() -> None:
         "subtitle": cfg.site.subtitle,
         "description": cfg.site.description,
         "base_path": base_path,
+        "browseLogoUrl": _browse_logo_url_for_site(base_path=base_path, feeds_path=feeds_path),
         "comments": {
             "provider": "supabase" if (supabase_url and supabase_anon_key) else "",
             "supabaseUrl": supabase_url,

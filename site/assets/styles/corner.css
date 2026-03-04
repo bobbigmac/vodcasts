@@ -1,37 +1,97 @@
 /**
  * Corner overlay buttons (back, share, etc.).
  */
+:root {
+  --cornerInsetX: 18px;
+  --cornerInsetY: 18px;
+  --cornerBtnSize: 44px;
+  --cornerBtnGap: 10px;
+  --cornerBrowseW: 108px;
+}
+
+@media (max-width: 390px), (max-height: 720px) {
+  :root {
+    --cornerInsetX: 12px;
+    --cornerInsetY: 12px;
+    --cornerBtnSize: 40px;
+    --cornerBtnGap: 8px;
+    --cornerBrowseW: 96px;
+  }
+}
+
 .cornerBtn {
   position: absolute;
-  top: 18px;
-  width: 44px;
-  height: 44px;
+  top: var(--cornerInsetY);
+  top: calc(var(--cornerInsetY) + env(safe-area-inset-top, 0px));
+  width: var(--cornerBtnSize);
+  height: var(--cornerBtnSize);
   border-radius: 12px;
   border: 1px solid var(--edge);
   background: rgba(0,0,0,.55);
   backdrop-filter: blur(8px);
   color: var(--text);
   cursor: pointer;
-  z-index: 90;
+  /* Above the player + guide panels, but below the slide-out drawers. */
+  z-index: 110;
   transition: opacity 0.35s ease, background 0.15s ease;
 }
-.cornerBtnLeft { left: 18px }
+.cornerBtnLeft { left: var(--cornerInsetX); left: calc(var(--cornerInsetX) + env(safe-area-inset-left, 0px)) }
 .cornerBtn.cornerBtnBrowse {
-  left: 18px;
-  width: 108px;
+  left: var(--cornerInsetX);
+  left: calc(var(--cornerInsetX) + env(safe-area-inset-left, 0px));
+  width: var(--cornerBrowseW);
   padding: 0 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   font-size: 13px;
   font-weight: 750;
   letter-spacing: 0.02em;
+  white-space: nowrap;
 }
-.cornerBtn.cornerBtnHistory { left: calc(18px + 108px + 10px) }
-.cornerBtn:not(.cornerBtnLeft):not(.cornerBtnBrowse):not(.cornerBtnHistory) { right: 18px }
-.cornerBtn.cornerBtnMid { right: 72px }
-.cornerBtn.cornerBtnShare { right: 126px }
+.cornerBtnBrowseLogo {
+  display: none;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  opacity: 0.92;
+}
+@media (min-width: 600px) {
+  .cornerBtnBrowseLogo { display: inline-block }
+}
+
+.cornerBtn.cornerBtnHistory {
+  left: calc(var(--cornerInsetX) + var(--cornerBrowseW) + var(--cornerBtnGap));
+  left: calc(var(--cornerInsetX) + env(safe-area-inset-left, 0px) + var(--cornerBrowseW) + var(--cornerBtnGap));
+}
+.cornerBtn:where(:not(.cornerBtnLeft):not(.cornerBtnBrowse):not(.cornerBtnHistory)) {
+  right: var(--cornerInsetX);
+  right: calc(var(--cornerInsetX) + env(safe-area-inset-right, 0px));
+}
+.cornerBtn.cornerBtnMid {
+  right: calc(var(--cornerInsetX) + var(--cornerBtnSize) + var(--cornerBtnGap));
+  right: calc(var(--cornerInsetX) + env(safe-area-inset-right, 0px) + var(--cornerBtnSize) + var(--cornerBtnGap));
+}
+.cornerBtn.cornerBtnShare {
+  right: calc(var(--cornerInsetX) + var(--cornerBtnSize) + var(--cornerBtnGap) + var(--cornerBtnSize) + var(--cornerBtnGap));
+  right: calc(var(--cornerInsetX) + env(safe-area-inset-right, 0px) + var(--cornerBtnSize) + var(--cornerBtnGap) + var(--cornerBtnSize) + var(--cornerBtnGap));
+}
 .cornerBtn:hover { background: rgba(0,0,0,.7) }
+
+.cornerBtn.cornerBtnDetails {
+  font: 750 12px/1 var(--sans, system-ui);
+  letter-spacing: 0.02em;
+}
+.cornerBtnDetailsIcon {
+  display: none;
+  font: 850 18px/1 var(--sans, system-ui);
+  transform: translateY(-0.5px);
+}
+@media (max-width: 420px) {
+  .cornerBtnDetailsText { display: none }
+  .cornerBtnDetailsIcon { display: inline }
+}
 
 /* Hide corner chrome when the global UI idles. */
 .uiIdle .cornerBtn {

@@ -4,7 +4,7 @@
 .guideBar {
   position: absolute;
   left: 50%;
-  bottom: 48px;
+  bottom: calc(48px + env(safe-area-inset-bottom, 0px));
   transform: translateX(-50%);
   display: flex;
   align-items: center;
@@ -28,6 +28,19 @@
   gap: 10px;
   width: fit-content;
   max-width: min(760px, calc(100vw - 40px));
+}
+
+@media (max-width: 390px), (max-height: 720px) {
+  .guideBar {
+    bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+    gap: 10px;
+    padding: 8px 12px;
+    border-radius: 12px;
+  }
+  .guideBar-inner {
+    gap: 8px;
+    max-width: calc(100vw - 24px);
+  }
 }
 
 .guideBarTakeover {
