@@ -1084,6 +1084,89 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
     };
   }, [isOpen.value]);
 
+  // Narrow viewports: when the sidebar is hidden, allow a "pull from the left edge" gesture to reveal it.
+  // This needs to work even when scrollLeft is clamped (no scroll events fire).
+  useEffect(() => {
+    const el = tracksRef.current;
+    if (!el) return;
+    let touchStart = null;
+
+    const minScheduleScrollLeftPx = () => {
+      return Math.max(
+        0,
+        Math.round(((Number(guideZeroTs.value) - Number(trackStartTs.value)) / MS_PER_MIN) * PX_PER_MIN)
+      );
+    };
+
+    const canRevealNow = () => {
+      if (!isOpen.value) return false;
+      if (!isNarrowGuide()) return false;
+      if (!sidebarHidden.value) return false;
+      const min = minScheduleScrollLeftPx();
+      const sl = Number(el.scrollLeft || 0);
+      // Only allow "drawer reveal" when we're already near the left edge of the schedule.
+      return sl <= min + 18;
+    };
+
+    const revealSidebar = () => {
+      sidebarHidden.value = false;
+      sidebarHideOnNextScrollRef.current = false;
+      sidebarLastUserIntentAtRef.current = 0;
+      sidebarAutoToggleAtRef.current = Date.now();
+    };
+
+    const onWheel = (e) => {
+      if (!canRevealNow()) return;
+      const dx = Number(e?.deltaX || 0);
+      const dy = Number(e?.deltaY || 0);
+      if (!dx && !dy) return;
+      // Trackpads typically report a "swipe right" (attempt to scroll left) as negative deltaX.
+      if (Math.abs(dx) > Math.abs(dy) + 2 && dx < -14) revealSidebar();
+    };
+
+    const onTouchStart = (e) => {
+      if (!isOpen.value) return;
+      if (!isNarrowGuide()) return;
+      if (!sidebarHidden.value) return;
+      const t = e?.touches?.[0];
+      if (!t) return;
+      touchStart = { x: t.clientX, y: t.clientY, at: Date.now() };
+    };
+
+    const onTouchMove = (e) => {
+      if (!touchStart) return;
+      if (!canRevealNow()) return;
+      const t = e?.touches?.[0];
+      if (!t) return;
+      const dx = t.clientX - touchStart.x;
+      const dy = t.clientY - touchStart.y;
+      const ax = Math.abs(dx);
+      const ay = Math.abs(dy);
+      // "Pull" = a clear rightward swipe.
+      if (dx > 44 && ax > ay + 12) {
+        revealSidebar();
+        touchStart = null;
+      }
+    };
+
+    const onTouchEnd = () => {
+      touchStart = null;
+    };
+
+    el.addEventListener("wheel", onWheel, { passive: true });
+    el.addEventListener("touchstart", onTouchStart, { passive: true });
+    el.addEventListener("touchmove", onTouchMove, { passive: true });
+    el.addEventListener("touchend", onTouchEnd, { passive: true });
+    el.addEventListener("touchcancel", onTouchEnd, { passive: true });
+    return () => {
+      el.removeEventListener("wheel", onWheel);
+      el.removeEventListener("touchstart", onTouchStart);
+      el.removeEventListener("touchmove", onTouchMove);
+      el.removeEventListener("touchend", onTouchEnd);
+      el.removeEventListener("touchcancel", onTouchEnd);
+    };
+  }, [isOpen.value]);
+
   // Track real mouse movement so hover focus doesn't trigger from programmatic scrolling.
   useEffect(() => {
     if (!isOpen.value) return;
