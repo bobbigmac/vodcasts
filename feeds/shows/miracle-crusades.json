@@ -1,0 +1,62 @@
+{
+  "leftovers_title": "Other speakers",
+  "leftovers_title_full": "Other speakers — Miracle Crusades",
+  "leftovers_description": "Episodes outside the main speaker buckets.",
+  "shows": [
+    {
+      "id": "james-and-brandon-greer",
+      "title": "James & Brandon Greer",
+      "title_full": "James & Brandon Greer — Miracle Crusades",
+      "description": "Episodes led jointly by James & Brandon Greer.",
+      "categories": ["tv-ministry"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "James & Brandon Greer" }
+    },
+    {
+      "id": "james-greer-and-bobby-mihlhauser",
+      "title": "James Greer & Bobby Mihlhauser",
+      "title_full": "James Greer & Bobby Mihlhauser — Miracle Crusades",
+      "description": "Episodes led jointly by James Greer & Bobby Mihlhauser.",
+      "categories": ["tv-ministry"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "James Greer & Bobby Mihlhauser" }
+    },
+    {
+      "id": "brandon-greer",
+      "title": "Brandon Greer",
+      "title_full": "Brandon Greer — Miracle Crusades",
+      "description": "Episodes led by Brandon Greer.",
+      "categories": ["tv-ministry"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Brandon Greer" }
+    },
+    {
+      "id": "bobby-mihlhauser",
+      "title": "Bobby Mihlhauser",
+      "title_full": "Bobby Mihlhauser — Miracle Crusades",
+      "description": "Episodes led by Bobby Mihlhauser.",
+      "categories": ["tv-ministry"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Bobby Mihlhauser" }
+    },
+    {
+      "id": "james-greer",
+      "title": "James Greer",
+      "title_full": "James Greer — Miracle Crusades",
+      "description": "Episodes led by James Greer.",
+      "categories": ["tv-ministry"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "James Greer" }
+    },
+    {
+      "id": "joe-nay",
+      "title": "Joe Nay",
+      "title_full": "Joe Nay — Miracle Crusades",
+      "description": "Episodes led by Joe Nay (including Prophet Joe Nay labeling).",
+      "categories": ["tv-ministry"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Joe Nay" }
+    }
+  ]
+}
+

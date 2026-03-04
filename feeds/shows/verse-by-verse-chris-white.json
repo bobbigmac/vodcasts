@@ -1,0 +1,71 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Verse by Verse Bible Teaching (Chris White)",
+  "leftovers_description": "Episodes outside the main course/book buckets.",
+  "shows": [
+    {
+      "id": "bpt",
+      "title": "BPT",
+      "title_full": "BPT — Verse by Verse Bible Teaching (Chris White)",
+      "description": "BPT episodes (Bible prophecy/teaching topics).",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^BPT\\b" }
+    },
+    {
+      "id": "vbvbt",
+      "title": "VBVBT",
+      "title_full": "VBVBT — Verse by Verse Bible Teaching (Chris White)",
+      "description": "VBVBT course episodes.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^VBVBT\\b" }
+    },
+    {
+      "id": "matthew-24",
+      "title": "Matthew 24",
+      "title_full": "Matthew 24 — Verse by Verse Bible Teaching (Chris White)",
+      "description": "Matthew 24 teaching series.",
+      "categories": ["teaching", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Matthew 24" }
+    },
+    {
+      "id": "hebrews",
+      "title": "Hebrews",
+      "title_full": "Hebrews — Verse by Verse Bible Teaching (Chris White)",
+      "description": "Hebrews teaching series.",
+      "categories": ["teaching", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Hebrews" }
+    },
+    {
+      "id": "galatians",
+      "title": "Galatians",
+      "title_full": "Galatians — Verse by Verse Bible Teaching (Chris White)",
+      "description": "Galatians teaching series.",
+      "categories": ["teaching", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Galatians" }
+    },
+    {
+      "id": "daniel",
+      "title": "Daniel",
+      "title_full": "Daniel — Verse by Verse Bible Teaching (Chris White)",
+      "description": "Daniel teaching series.",
+      "categories": ["teaching", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Daniel" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Verse by Verse Bible Teaching (Chris White)",
+      "description": "All other episodes in this feed.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

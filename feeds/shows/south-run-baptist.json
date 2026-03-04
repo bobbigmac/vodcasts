@@ -1,0 +1,53 @@
+{
+  "leftovers_title": "Other sermons",
+  "leftovers_title_full": "Other sermons — South Run Baptist Church",
+  "leftovers_description": "Sermons outside the main named series buckets.",
+  "shows": [
+    {
+      "id": "believe-series",
+      "title": "Believe Series",
+      "title_full": "Believe Series — South Run Baptist Church",
+      "description": "Believe Series sermons.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Believe Series" }
+    },
+    {
+      "id": "love-actually-advent",
+      "title": "Love Actually (Advent)",
+      "title_full": "Love Actually (Advent) — South Run Baptist Church",
+      "description": "Love Actually Series (Advent) sermons.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Love Actually Series" }
+    },
+    {
+      "id": "transformed",
+      "title": "Transformed",
+      "title_full": "Transformed — South Run Baptist Church",
+      "description": "Transformed series sermons.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Transformed" }
+    },
+    {
+      "id": "glory-days",
+      "title": "Glory Days",
+      "title_full": "Glory Days — South Run Baptist Church",
+      "description": "Glory Days sermon(s).",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Glory Days" }
+    },
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Sermons — South Run Baptist Church",
+      "description": "All other sermons in this feed.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

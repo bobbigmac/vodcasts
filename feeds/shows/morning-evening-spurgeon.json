@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Morning and Evening (Spurgeon)",
+  "leftovers_description": "Items outside the Morning/Evening daily readings.",
+  "shows": [
+    {
+      "id": "morning",
+      "title": "Morning",
+      "title_full": "Morning — Morning and Evening (Spurgeon)",
+      "description": "Morning reading for the day.",
+      "categories": ["devotional"],
+      "featured": true,
+      "filter": { "type": "title_suffix", "value": "| Morning" }
+    },
+    {
+      "id": "evening",
+      "title": "Evening",
+      "title_full": "Evening — Morning and Evening (Spurgeon)",
+      "description": "Evening reading for the day.",
+      "categories": ["devotional"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "| Evening" }
+    }
+  ]
+}
+

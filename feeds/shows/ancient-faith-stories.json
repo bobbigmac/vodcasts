@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Ancient Faith Stories",
+  "leftovers_description": "Items that don’t match the main stories row.",
+  "shows": [
+    {
+      "id": "stories",
+      "title": "Stories",
+      "title_full": "Stories — Ancient Faith Stories",
+      "description": "Story episodes.",
+      "categories": ["kids"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

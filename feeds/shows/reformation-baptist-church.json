@@ -1,0 +1,44 @@
+{
+  "leftovers_title": "Other sermons",
+  "leftovers_title_full": "Other sermons — Reformation Baptist Church (Wetumpka)",
+  "leftovers_description": "Sermons outside the main series buckets.",
+  "shows": [
+    {
+      "id": "rise-up",
+      "title": "Rise Up",
+      "title_full": "Rise Up — Reformation Baptist Church (Wetumpka)",
+      "description": "Rise Up series messages.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Rise Up" }
+    },
+    {
+      "id": "call-to-reformation-and-revival",
+      "title": "A Call to Reformation and Revival",
+      "title_full": "A Call to Reformation and Revival — Reformation Baptist Church (Wetumpka)",
+      "description": "A Call to Reformation and Revival series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "A Call to Reformation and Revival" }
+    },
+    {
+      "id": "new-mercies-for-a-new-year",
+      "title": "New Mercies for a New Year",
+      "title_full": "New Mercies for a New Year — Reformation Baptist Church (Wetumpka)",
+      "description": "New Mercies for a New Year messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "New Mercies for a New Year" }
+    },
+    {
+      "id": "two-corinthians",
+      "title": "2 Corinthians",
+      "title_full": "2 Corinthians — Reformation Baptist Church (Wetumpka)",
+      "description": "Sermons from 2 Corinthians.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "2 Corinthians" }
+    }
+  ]
+}
+

@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Praise and Worship Music Live",
+  "leftovers_description": "Items that don’t match the main worship row.",
+  "shows": [
+    {
+      "id": "worship",
+      "title": "Worship",
+      "title_full": "Worship — Praise and Worship Music Live",
+      "description": "Praise and worship music recordings.",
+      "categories": ["worship"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

@@ -1,0 +1,53 @@
+{
+  "leftovers_title": "Other sermons",
+  "leftovers_title_full": "Other sermons — Richwoods Christian Church",
+  "leftovers_description": "Sermons outside the main series buckets.",
+  "shows": [
+    {
+      "id": "book-of-john-jesus-stuff",
+      "title": "The Book of John: The Jesus Stuff",
+      "title_full": "The Book of John: The Jesus Stuff — Richwoods Christian Church",
+      "description": "Messages in The Book of John: The Jesus Stuff series.",
+      "categories": ["sermons", "bible-study"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^The Book\\s+O[fF]\\s+John:" }
+    },
+    {
+      "id": "life-matters-mission-matters",
+      "title": "Life Matters: Mission Matters",
+      "title_full": "Life Matters: Mission Matters — Richwoods Christian Church",
+      "description": "Messages in the Life Matters: Mission Matters series.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Life Matters:" }
+    },
+    {
+      "id": "advent",
+      "title": "Advent",
+      "title_full": "Advent — Richwoods Christian Church",
+      "description": "Advent series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Advent" }
+    },
+    {
+      "id": "sabbath",
+      "title": "Sabbath",
+      "title_full": "Sabbath — Richwoods Christian Church",
+      "description": "Sabbath series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^(The\\s+)?Sabbath\\b" }
+    },
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Sermons — Richwoods Christian Church",
+      "description": "All other sermons in this feed.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

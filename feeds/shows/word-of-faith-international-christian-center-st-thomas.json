@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Standalone messages",
+  "leftovers_title_full": "Standalone messages — Word of Faith International Christian Center (St. Thomas)",
+  "leftovers_description": "Messages without an explicit “Series – Part N” suffix.",
+  "shows": [
+    {
+      "id": "series-messages",
+      "title": "Series messages",
+      "title_full": "Series messages — Word of Faith International Christian Center (St. Thomas)",
+      "description": "Messages labeled as part of a multi-part series (Series – Part N).",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "Series\\s*[–-]\\s*Part\\s*\\d+\\b" }
+    }
+  ]
+}
+

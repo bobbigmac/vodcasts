@@ -1,0 +1,79 @@
+{
+  "leftovers_title": "Other sermons",
+  "leftovers_title_full": "Other sermons — Crossway Milford",
+  "leftovers_description": "Sermons outside the main series buckets.",
+  "shows": [
+    {
+      "id": "psalm-23",
+      "title": "Experiencing Psalm 23",
+      "title_full": "Experiencing Psalm 23 — Crossway Milford",
+      "description": "Experiencing Psalm 23 series messages.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^Experienc(?:ing|e(?:ing)?)\\s+Psalm\\s+23\\b" }
+    },
+    {
+      "id": "ten-commandments",
+      "title": "Jesus & The 10 Commandments",
+      "title_full": "Jesus & The 10 Commandments — Crossway Milford",
+      "description": "Jesus & The 10 Commandments series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Jesus & The 10 Commandments" }
+    },
+    {
+      "id": "good-and-beautiful-community",
+      "title": "Good & Beautiful Community",
+      "title_full": "Good & Beautiful Community — Crossway Milford",
+      "description": "Good & Beautiful Community series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Good & Beautiful Community" }
+    },
+    {
+      "id": "good-and-beautiful-future",
+      "title": "Good & Beautiful Future",
+      "title_full": "Good & Beautiful Future — Crossway Milford",
+      "description": "Good & Beautiful Future series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Good & Beautiful Future" }
+    },
+    {
+      "id": "jeremiah",
+      "title": "Jeremiah",
+      "title_full": "Jeremiah — Crossway Milford",
+      "description": "Jeremiah series messages.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Jeremiah" }
+    },
+    {
+      "id": "rediscovering-christmas",
+      "title": "Rediscovering Christmas",
+      "title_full": "Rediscovering Christmas — Crossway Milford",
+      "description": "Rediscovering Christmas series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Rediscovering Christmas" }
+    },
+    {
+      "id": "dated-messages",
+      "title": "Dated messages",
+      "title_full": "Dated messages — Crossway Milford",
+      "description": "Messages with leading date stamps (e.g. 02-22-2026 - …).",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^\\d{2}-\\d{2}-\\d{4}\\b" }
+    },
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Sermons — Crossway Milford",
+      "description": "All other sermons in this feed.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}

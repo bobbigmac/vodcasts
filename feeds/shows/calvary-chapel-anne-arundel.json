@@ -1,0 +1,44 @@
+{
+  "leftovers_title": "Other teachings",
+  "leftovers_title_full": "Other teachings — Calvary Chapel Anne Arundel",
+  "leftovers_description": "Teachings outside the main Bible-book buckets.",
+  "shows": [
+    {
+      "id": "revelation",
+      "title": "Revelation",
+      "title_full": "Revelation — Calvary Chapel Anne Arundel",
+      "description": "Verse-by-verse teachings in Revelation.",
+      "categories": ["sermons", "bible-study"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Revelation" }
+    },
+    {
+      "id": "ephesians",
+      "title": "Ephesians",
+      "title_full": "Ephesians — Calvary Chapel Anne Arundel",
+      "description": "Verse-by-verse teachings in Ephesians.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Ephesians" }
+    },
+    {
+      "id": "prophecy-updates",
+      "title": "Prophecy updates",
+      "title_full": "Prophecy updates — Calvary Chapel Anne Arundel",
+      "description": "Periodic prophecy update messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Prophecy Update" }
+    },
+    {
+      "id": "teachings",
+      "title": "Teachings",
+      "title_full": "Teachings — Calvary Chapel Anne Arundel",
+      "description": "All other teachings in this feed.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

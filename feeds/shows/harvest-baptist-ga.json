@@ -1,0 +1,52 @@
+{
+  "leftovers_title": "Other sermons",
+  "leftovers_title_full": "Other sermons — Harvest Baptist Church (GA)",
+  "leftovers_description": "Sermons outside the main Bible-book buckets.",
+  "shows": [
+    {
+      "id": "exodus",
+      "title": "Exodus",
+      "title_full": "Exodus — Harvest Baptist Church (GA)",
+      "description": "Teachings in Exodus.",
+      "categories": ["sermons", "bible-study"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Exodus" }
+    },
+    {
+      "id": "first-thessalonians",
+      "title": "1 Thessalonians",
+      "title_full": "1 Thessalonians — Harvest Baptist Church (GA)",
+      "description": "Teachings in 1 Thessalonians (including occasional misspelling).",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^1\\s*Thes(s)?alon(?:ians|inas)\\b" }
+    },
+    {
+      "id": "second-thessalonians",
+      "title": "2 Thessalonians",
+      "title_full": "2 Thessalonians — Harvest Baptist Church (GA)",
+      "description": "Teachings in 2 Thessalonians (including occasional misspelling).",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^2\\s*Thes(s)?alon(?:ians|inas)\\b" }
+    },
+    {
+      "id": "matthew",
+      "title": "Matthew",
+      "title_full": "Matthew — Harvest Baptist Church (GA)",
+      "description": "Teachings in Matthew.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Matthew" }
+    },
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Sermons — Harvest Baptist Church (GA)",
+      "description": "All other sermons in this feed.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}

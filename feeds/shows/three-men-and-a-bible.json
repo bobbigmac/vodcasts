@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — 3 Men and a Bible",
+  "leftovers_description": "Items that don’t match the standard numbered format.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — 3 Men and a Bible",
+      "description": "Numbered episodes (3 Men and a Bible #N).",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^3\\s*Men\\s+and\\s+a\\s+Bible\\s*#\\s*\\d+\\b" }
+    }
+  ]
+}
+

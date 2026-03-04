@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Truth for Life Sermons",
+  "leftovers_description": "Items outside the main sermons/interviews buckets.",
+  "shows": [
+    {
+      "id": "interviews",
+      "title": "Interviews",
+      "title_full": "Interviews — Truth for Life Sermons",
+      "description": "Interview episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "Interview" }
+    },
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Sermons — Truth for Life Sermons",
+      "description": "Date-prefixed sermon recordings.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^[A-Za-z]{3,9}\\.?(?:\\s+\\d{1,2})?,\\s+\\d{4}:" }
+    }
+  ]
+}
+

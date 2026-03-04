@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Sugar Creek Baptist Church",
+  "leftovers_description": "Items that don’t match the main messages row.",
+  "shows": [
+    {
+      "id": "messages",
+      "title": "Messages",
+      "title_full": "Messages — Sugar Creek Baptist Church",
+      "description": "Sermons and teaching messages.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

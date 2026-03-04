@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other sermons",
+  "leftovers_title_full": "Other sermons — Munger Place",
+  "leftovers_description": "Sermons outside the main named series buckets.",
+  "shows": [
+    {
+      "id": "all-in",
+      "title": "All In",
+      "title_full": "All In — Munger Place",
+      "description": "All In series messages.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "All In" }
+    },
+    {
+      "id": "son",
+      "title": "Son",
+      "title_full": "Son — Munger Place",
+      "description": "Son series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Son" }
+    },
+    {
+      "id": "spirit",
+      "title": "Spirit",
+      "title_full": "Spirit — Munger Place",
+      "description": "Spirit series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Spirit" }
+    }
+  ]
+}
+

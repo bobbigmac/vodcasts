@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — CBC Aiken",
+  "leftovers_description": "Items outside the standard “Sermon for Sunday” entries.",
+  "shows": [
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Sermons — CBC Aiken",
+      "description": "Sermons titled “Sermon for Sunday, …”.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Sermon for Sunday," }
+    }
+  ]
+}
+

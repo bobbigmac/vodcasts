@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other recordings",
+  "leftovers_title_full": "Other recordings — Southeastern Baptist Theological Seminary",
+  "leftovers_description": "Recordings outside the main named buckets.",
+  "shows": [
+    {
+      "id": "casual-conversations",
+      "title": "Casual Conversations",
+      "title_full": "Casual Conversations — Southeastern Baptist Theological Seminary",
+      "description": "Casual Conversations episodes.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Casual Conversations" }
+    },
+    {
+      "id": "convocation",
+      "title": "Convocation",
+      "title_full": "Convocation — Southeastern Baptist Theological Seminary",
+      "description": "Convocation services and sessions.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Convocation" }
+    },
+    {
+      "id": "missions-gathering",
+      "title": "Missions Gathering",
+      "title_full": "Missions Gathering — Southeastern Baptist Theological Seminary",
+      "description": "Missions Gathering sessions.",
+      "categories": ["teaching", "missions"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Missions Gathering" }
+    }
+  ]
+}
+

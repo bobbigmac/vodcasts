@@ -1,0 +1,44 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — Westwood Baptist Church",
+  "leftovers_description": "Messages outside the main series buckets.",
+  "shows": [
+    {
+      "id": "so-that-you-may-believe",
+      "title": "So That You May Believe",
+      "title_full": "So That You May Believe — Westwood Baptist Church",
+      "description": "John series: So That You May Believe.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "So That You May Believe" }
+    },
+    {
+      "id": "lift",
+      "title": "LIFT",
+      "title_full": "LIFT — Westwood Baptist Church",
+      "description": "LIFT series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "LIFT" }
+    },
+    {
+      "id": "mountain-people",
+      "title": "Mountain People",
+      "title_full": "Mountain People — Westwood Baptist Church",
+      "description": "Mountain People series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Mountain People" }
+    },
+    {
+      "id": "messages",
+      "title": "Messages",
+      "title_full": "Messages — Westwood Baptist Church",
+      "description": "All other Westwood Baptist messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

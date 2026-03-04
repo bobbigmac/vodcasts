@@ -1,0 +1,169 @@
+{
+  "leftovers_title": "Other series",
+  "leftovers_title_full": "Other series — National Community Church",
+  "leftovers_description": "Messages outside the main named series buckets.",
+  "shows": [
+    {
+      "id": "jesus",
+      "title": "Jesus",
+      "title_full": "Jesus — National Community Church",
+      "description": "Jesus series messages (Part-labeled).",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^Jesus,\\s*Part\\s*\\d+\\b" }
+    },
+    {
+      "id": "the-good-life",
+      "title": "The Good Life",
+      "title_full": "The Good Life — National Community Church",
+      "description": "The Good Life series messages.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^The Good Life,\\s*Part\\s*\\d+\\b" }
+    },
+    {
+      "id": "welcome-home",
+      "title": "Welcome Home",
+      "title_full": "Welcome Home — National Community Church",
+      "description": "Welcome Home series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Welcome Home,\\s*Part\\s*\\d+\\b" }
+    },
+    {
+      "id": "word",
+      "title": "Word.",
+      "title_full": "Word. — National Community Church",
+      "description": "Word. series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Word\\.,\\s*Part\\s*\\d+\\b" }
+    },
+    {
+      "id": "holy",
+      "title": "Holy",
+      "title_full": "Holy — National Community Church",
+      "description": "Holy series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Holy,\\s*Part\\s*\\d+\\b" }
+    },
+    {
+      "id": "x",
+      "title": "X",
+      "title_full": "X — National Community Church",
+      "description": "X series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^X,\\s*Part\\s*\\d+\\b" }
+    },
+    {
+      "id": "flourish",
+      "title": "Flourish",
+      "title_full": "Flourish — National Community Church",
+      "description": "Flourish series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Flourish,\\s*Part\\s*\\d+\\b" }
+    },
+    {
+      "id": "fear-not",
+      "title": "Fear Not",
+      "title_full": "Fear Not — National Community Church",
+      "description": "Fear Not series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Fear Not,\\s*Part\\s*\\d+\\b" }
+    },
+    {
+      "id": "sola",
+      "title": "SOLA",
+      "title_full": "SOLA — National Community Church",
+      "description": "SOLA series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^SOLA,\\s*Part\\s*\\d+\\b" }
+    },
+    {
+      "id": "come-holy-spirit",
+      "title": "Come Holy Spirit",
+      "title_full": "Come Holy Spirit — National Community Church",
+      "description": "Come Holy Spirit series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Come Holy Spirit Series,\\s*Part\\s*\\d+\\b" }
+    },
+    {
+      "id": "dream",
+      "title": "Dream",
+      "title_full": "Dream — National Community Church",
+      "description": "Dream series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Dream,\\s*Part\\s*\\d+\\b" }
+    },
+    {
+      "id": "dream-24",
+      "title": "Dream 24",
+      "title_full": "Dream 24 — National Community Church",
+      "description": "Dream 24 series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Dream\\s+24,\\s*Part\\s*\\d+\\b" }
+    },
+    {
+      "id": "wonder-of-christmas",
+      "title": "The Wonder of Christmas",
+      "title_full": "The Wonder of Christmas — National Community Church",
+      "description": "The Wonder of Christmas series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^The Wonder of Christmas,\\s*Part\\s*\\d+\\b" }
+    },
+    {
+      "id": "please-sorry-thanks",
+      "title": "Please Sorry Thanks",
+      "title_full": "Please Sorry Thanks — National Community Church",
+      "description": "Please Sorry Thanks series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Please Sorry Thanks,\\s*Part\\s*\\d+\\b" }
+    },
+    {
+      "id": "seen-heard-loved",
+      "title": "Seen Heard Loved",
+      "title_full": "Seen Heard Loved — National Community Church",
+      "description": "Seen Heard Loved series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Seen Heard Loved,\\s*Part\\s*\\d+\\b" }
+    },
+    {
+      "id": "easter-2024",
+      "title": "Easter 2024",
+      "title_full": "Easter 2024 — National Community Church",
+      "description": "Easter 2024 message.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Easter\\s+2024,\\s*Part\\s*\\d+\\b" }
+    },
+    {
+      "id": "second-chance-2024",
+      "title": "People of the Second Chance 2024",
+      "title_full": "People of the Second Chance 2024 — National Community Church",
+      "description": "People of the Second Chance 2024 message.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^People of the Second Chance\\s+2024,\\s*Part\\s*\\d+\\b" }
+    },
+    {
+      "id": "whats-really-happening",
+      "title": "What’s Really Happening?",
+      "title_full": "What’s Really Happening? — National Community Church",
+      "description": "What’s Really Happening? series message.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^What[’']s Really Happening\\?,\\s*Part\\s*\\d+\\b" }
+    }
+  ]
+}

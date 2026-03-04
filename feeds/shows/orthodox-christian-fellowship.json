@@ -1,0 +1,62 @@
+{
+  "leftovers_title": "Other talks",
+  "leftovers_title_full": "Other talks — OCF Campus Ministry",
+  "leftovers_description": "Talks outside the main conference/series buckets.",
+  "shows": [
+    {
+      "id": "orthodox-apologetics",
+      "title": "Orthodox Apologetics",
+      "title_full": "Orthodox Apologetics — OCF Campus Ministry",
+      "description": "Orthodox Apologetics series talks.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Orthodox Apologetics" }
+    },
+    {
+      "id": "on-the-waves",
+      "title": "On the Waves",
+      "title_full": "On the Waves — OCF Campus Ministry",
+      "description": "On the Waves series talks.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "On the Waves" }
+    },
+    {
+      "id": "preparing-for-lent",
+      "title": "Preparing for Lent",
+      "title_full": "Preparing for Lent — OCF Campus Ministry",
+      "description": "Preparing for Lent series talks.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Preparing for Lent" }
+    },
+    {
+      "id": "crossroad-roundtable",
+      "title": "CrossRoad Roundtable",
+      "title_full": "CrossRoad Roundtable — OCF Campus Ministry",
+      "description": "CrossRoad Roundtable discussions.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "CrossRoad Roundtable" }
+    },
+    {
+      "id": "college-conference",
+      "title": "College Conference",
+      "title_full": "College Conference — OCF Campus Ministry",
+      "description": "College Conference sessions (various years).",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "College Conference" }
+    },
+    {
+      "id": "college-conference-2007-antiochian-village",
+      "title": "2007 College Conference (Antiochian Village)",
+      "title_full": "2007 College Conference (Antiochian Village) — OCF Campus Ministry",
+      "description": "2007 College Conference at Antiochian Village sessions.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The 2007 College Conference at Antiochian Village" }
+    }
+  ]
+}
+

@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — Fresh Life Church",
+  "leftovers_description": "Messages outside the main speaker buckets.",
+  "shows": [
+    {
+      "id": "pastor-levi-lusko",
+      "title": "Pastor Levi Lusko",
+      "title_full": "Pastor Levi Lusko — Fresh Life Church",
+      "description": "Messages preached by Pastor Levi Lusko.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_suffix", "value": "| Pastor Levi Lusko" }
+    },
+    {
+      "id": "pastor-kevin-guido",
+      "title": "Pastor Kevin Guido",
+      "title_full": "Pastor Kevin Guido — Fresh Life Church",
+      "description": "Messages preached by Pastor Kevin Guido.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "| Pastor Kevin Guido" }
+    },
+    {
+      "id": "messages",
+      "title": "Messages",
+      "title_full": "Messages — Fresh Life Church",
+      "description": "All other Fresh Life messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Ultimately (R.C. Sproul)",
+  "leftovers_description": "Items that don’t match the main teaching row.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Ultimately (R.C. Sproul)",
+      "description": "Ultimately teaching episodes.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

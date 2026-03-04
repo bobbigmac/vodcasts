@@ -1,0 +1,80 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — Markle Church of Christ",
+  "leftovers_description": "Messages outside the main named series buckets.",
+  "shows": [
+    {
+      "id": "disciple",
+      "title": "Disciple",
+      "title_full": "Disciple — Markle Church of Christ",
+      "description": "Disciple series messages.",
+      "categories": ["sermons", "teaching"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Disciple" }
+    },
+    {
+      "id": "corinthians",
+      "title": "Corinthians",
+      "title_full": "Corinthians — Markle Church of Christ",
+      "description": "Corinthians series messages.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Corinthians" }
+    },
+    {
+      "id": "kingdom-come",
+      "title": "Kingdom Come",
+      "title_full": "Kingdom Come — Markle Church of Christ",
+      "description": "Kingdom Come series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Kingdom Come" }
+    },
+    {
+      "id": "book-of-daniel",
+      "title": "The Book of Daniel",
+      "title_full": "The Book of Daniel — Markle Church of Christ",
+      "description": "The Book Of Daniel series messages.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Book Of Daniel" }
+    },
+    {
+      "id": "christmas-in-corinth",
+      "title": "Christmas in Corinth",
+      "title_full": "Christmas in Corinth — Markle Church of Christ",
+      "description": "Christmas In Corinth series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Christmas In Corinth" }
+    },
+    {
+      "id": "generous-life",
+      "title": "The Generous Life",
+      "title_full": "The Generous Life — Markle Church of Christ",
+      "description": "The Generous Life series messages.",
+      "categories": ["sermons", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Generous Life" }
+    },
+    {
+      "id": "unfiltered-joy",
+      "title": "Unfiltered Joy",
+      "title_full": "Unfiltered Joy — Markle Church of Christ",
+      "description": "Unfiltered Joy series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Unfiltered Joy" }
+    },
+    {
+      "id": "faith-promise",
+      "title": "Faith Promise",
+      "title_full": "Faith Promise — Markle Church of Christ",
+      "description": "Faith Promise series messages (by year).",
+      "categories": ["sermons", "missions"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Faith Promise" }
+    }
+  ]
+}
+

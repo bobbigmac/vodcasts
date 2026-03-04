@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Adventures in Odyssey",
+  "leftovers_description": "Episodes outside the main recurring segments.",
+  "shows": [
+    {
+      "id": "spoiler-warning",
+      "title": "Spoiler Warning",
+      "title_full": "Spoiler Warning — Adventures in Odyssey",
+      "description": "SPOILER WARNING episodes.",
+      "categories": ["family"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "SPOILER WARNING" }
+    },
+    {
+      "id": "wayback-wednesday",
+      "title": "Wayback Wednesday",
+      "title_full": "Wayback Wednesday — Adventures in Odyssey",
+      "description": "Wayback Wednesday segment episodes.",
+      "categories": ["family"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Wayback Wednesday" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Adventures in Odyssey",
+      "description": "All other Adventures in Odyssey podcast episodes.",
+      "categories": ["family"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

@@ -244,10 +244,13 @@ def main() -> None:
     with_filter_sources: list[Source] = []
     parse_errors: list[FeedScan] = []
     processed_sources = 0
+    with_filters_processed = 0
 
     for s in sources:
         processed_sources += 1
         has_filters = (shows_dir / f"{s.id}.json").exists()
+        if has_filters:
+            with_filters_processed += 1
         if args.only_missing and has_filters:
             continue
         if args.only_with_filters and (not has_filters):
@@ -279,7 +282,7 @@ def main() -> None:
     lines.append("")
     lines.append(f"- Total feeds in selection: **{len(sources)}**")
     lines.append(f"- Feeds processed: **{processed_sources}**")
-    lines.append(f"- With show filters: **{len(with_filter_sources)}**")
+    lines.append(f"- With show filters: **{with_filters_processed}**")
     lines.append(f"- Missing show filters: **{len(missing_filters)}**")
     if parse_errors:
         lines.append(f"- Parse/missing-cache errors: **{len(parse_errors)}**")

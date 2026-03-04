@@ -1,0 +1,53 @@
+{
+  "leftovers_title": "Other titles",
+  "leftovers_title_full": "Other titles — Riverview Church",
+  "leftovers_description": "Episodes outside the main title buckets.",
+  "shows": [
+    {
+      "id": "son-of-god",
+      "title": "Son of God",
+      "title_full": "Son of God — Riverview Church",
+      "description": "Son of God series episodes.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Son of God" }
+    },
+    {
+      "id": "son-of-man",
+      "title": "Son of Man",
+      "title_full": "Son of Man — Riverview Church",
+      "description": "Son of Man series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Son of Man" }
+    },
+    {
+      "id": "son-of-the-most-high",
+      "title": "Son of the Most High",
+      "title_full": "Son of the Most High — Riverview Church",
+      "description": "Son of the Most High series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Son of the Most High" }
+    },
+    {
+      "id": "immanuel",
+      "title": "Immanuel",
+      "title_full": "Immanuel — Riverview Church",
+      "description": "Immanuel series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Immanuel" }
+    },
+    {
+      "id": "savior",
+      "title": "Savior",
+      "title_full": "Savior — Riverview Church",
+      "description": "Savior series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Savior" }
+    }
+  ]
+}
+

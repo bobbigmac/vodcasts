@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Interviews & other",
+  "leftovers_title_full": "Interviews & other — The Download Youth Ministry Show",
+  "leftovers_description": "Non-numbered episodes (guest interviews and topical conversations).",
+  "shows": [
+    {
+      "id": "numbered-episodes",
+      "title": "Numbered episodes",
+      "title_full": "Numbered episodes — The Download Youth Ministry Show",
+      "description": "Episodes with numeric prefixes (e.g. 348: …).",
+      "categories": ["ministry"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^\\d{2,4}\\s*[:\\-]\\s*" }
+    }
+  ]
+}
+

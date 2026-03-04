@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other series",
+  "leftovers_title_full": "Other series — Rocky Peak Weekend Services",
+  "leftovers_description": "Messages outside the main named series bucket.",
+  "shows": [
+    {
+      "id": "sent",
+      "title": "Sent…",
+      "title_full": "Sent… — Rocky Peak Weekend Services",
+      "description": "Sent… series messages.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Sent..." }
+    }
+  ]
+}
+

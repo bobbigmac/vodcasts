@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other episodes",
+  "leftovers_title_full": "Other episodes — White Horse Inn",
+  "leftovers_description": "Episodes outside the Theology Q&A bucket.",
+  "shows": [
+    {
+      "id": "theology-qa",
+      "title": "Theology Q&A",
+      "title_full": "Theology Q&A — White Horse Inn",
+      "description": "Theology Q&A episodes.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Theology Q&A" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — White Horse Inn",
+      "description": "All other White Horse Inn episodes.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Without Walls Church",
+  "leftovers_description": "Items that don’t match the main message row.",
+  "shows": [
+    {
+      "id": "message",
+      "title": "Message",
+      "title_full": "Message — Without Walls Church",
+      "description": "Sermon message(s) in this feed.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

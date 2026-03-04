@@ -1,0 +1,53 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — James River Church",
+  "leftovers_description": "Messages outside the main series/speaker buckets.",
+  "shows": [
+    {
+      "id": "is-this-the-end",
+      "title": "Is This the End?",
+      "title_full": "Is This the End? — James River Church",
+      "description": "Is This the End? series messages.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Is This the End?" }
+    },
+    {
+      "id": "john-lindell",
+      "title": "John Lindell",
+      "title_full": "John Lindell — James River Church",
+      "description": "Messages preached by John Lindell.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "| John Lindell" }
+    },
+    {
+      "id": "david-lindell",
+      "title": "David Lindell",
+      "title_full": "David Lindell — James River Church",
+      "description": "Messages preached by David Lindell.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "| David Lindell" }
+    },
+    {
+      "id": "brandon-lindell",
+      "title": "Brandon Lindell",
+      "title_full": "Brandon Lindell — James River Church",
+      "description": "Messages preached by Brandon Lindell.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "| Brandon Lindell" }
+    },
+    {
+      "id": "guest-speakers",
+      "title": "Guest speakers",
+      "title_full": "Guest speakers — James River Church",
+      "description": "Messages with a guest-speaker tag in the title.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains_any", "values": ["| Dr. Jimmy Evans", "| Christine Caine"] }
+    }
+  ]
+}
+

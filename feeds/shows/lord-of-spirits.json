@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other episodes",
+  "leftovers_title_full": "Other episodes — The Lord of Spirits",
+  "leftovers_description": "Episodes outside the main series/specials buckets.",
+  "shows": [
+    {
+      "id": "pantheon-and-pandemonium",
+      "title": "Pantheon and Pandemonium",
+      "title_full": "Pantheon and Pandemonium — The Lord of Spirits",
+      "description": "Pantheon and Pandemonium series episodes.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_contains_any", "values": ["Pantheon and Pandemonium", "Pananthropon & Pandemonium"] }
+    },
+    {
+      "id": "specials",
+      "title": "Specials",
+      "title_full": "Specials — The Lord of Spirits",
+      "description": "Holiday/special themed episodes.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_contains_any", "values": ["Halloween Special", "100th Episode", "Mostly Sorcery"] }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — The Lord of Spirits",
+      "description": "All other Lord of Spirits episodes.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

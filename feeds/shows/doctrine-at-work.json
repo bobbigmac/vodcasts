@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Doctrine at Work",
+  "leftovers_description": "Items that don’t match the main episodes row.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Doctrine at Work",
+      "description": "Doctrine at Work episodes.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

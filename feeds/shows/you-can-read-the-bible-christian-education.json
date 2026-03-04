@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other lessons",
+  "leftovers_title_full": "Other lessons — You Can Read the Bible",
+  "leftovers_description": "Lessons outside the Video Lesson bucket.",
+  "shows": [
+    {
+      "id": "video-lessons",
+      "title": "Video lessons",
+      "title_full": "Video lessons — You Can Read the Bible",
+      "description": "Episodes labeled Video Lesson.",
+      "categories": ["bible-study"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Video Lesson" }
+    },
+    {
+      "id": "lessons",
+      "title": "Lessons",
+      "title_full": "Lessons — You Can Read the Bible",
+      "description": "All other lessons in this feed.",
+      "categories": ["bible-study"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

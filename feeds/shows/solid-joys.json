@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Solid Joys",
+  "leftovers_description": "Items that don’t match the main devotional row.",
+  "shows": [
+    {
+      "id": "devotionals",
+      "title": "Devotionals",
+      "title_full": "Devotionals — Solid Joys",
+      "description": "Daily devotional readings (John Piper).",
+      "categories": ["devotional"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

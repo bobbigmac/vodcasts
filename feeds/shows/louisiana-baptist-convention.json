@@ -1,0 +1,80 @@
+{
+  "leftovers_title": "Other conferences",
+  "leftovers_title_full": "Other conferences — Louisiana Baptist Convention",
+  "leftovers_description": "Items outside the main conference buckets.",
+  "shows": [
+    {
+      "id": "ec-2013",
+      "title": "EC 2013",
+      "title_full": "EC 2013 — Louisiana Baptist Convention",
+      "description": "Evangelism Conference 2013 sessions.",
+      "categories": ["ministry", "conferences"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "EC 2013" }
+    },
+    {
+      "id": "ec-2012",
+      "title": "EC 2012",
+      "title_full": "EC 2012 — Louisiana Baptist Convention",
+      "description": "Evangelism Conference 2012 sessions.",
+      "categories": ["ministry", "conferences"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "EC 2012" }
+    },
+    {
+      "id": "ec-2011",
+      "title": "EC 2011",
+      "title_full": "EC 2011 — Louisiana Baptist Convention",
+      "description": "Evangelism Conference 2011 sessions.",
+      "categories": ["ministry", "conferences"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "EC 2011" }
+    },
+    {
+      "id": "ec-2010",
+      "title": "2010 EC",
+      "title_full": "2010 EC — Louisiana Baptist Convention",
+      "description": "Evangelism Conference 2010 sessions.",
+      "categories": ["ministry", "conferences"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "2010 EC" }
+    },
+    {
+      "id": "e4-preaching-2009",
+      "title": "E4 Preaching Conference 2009",
+      "title_full": "E4 Preaching Conference 2009 — Louisiana Baptist Convention",
+      "description": "E4 Preaching Conference 2009 sessions.",
+      "categories": ["ministry", "conferences"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "E4 Preaching Conference 2009" }
+    },
+    {
+      "id": "evangelism-conference-2009",
+      "title": "Evangelism Conference 2009",
+      "title_full": "Evangelism Conference 2009 — Louisiana Baptist Convention",
+      "description": "Evangelism Conference 2009 sessions.",
+      "categories": ["ministry", "conferences"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Evangelism Conference 2009" }
+    },
+    {
+      "id": "pastors-conference-2009",
+      "title": "Pastor's Conference 2009",
+      "title_full": "Pastor's Conference 2009 — Louisiana Baptist Convention",
+      "description": "Pastor's Conference 2009 sessions.",
+      "categories": ["ministry", "conferences"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Pastor's Conference 2009" }
+    },
+    {
+      "id": "lbc-2011",
+      "title": "LBC 2011",
+      "title_full": "LBC 2011 — Louisiana Baptist Convention",
+      "description": "LBC 2011 sessions.",
+      "categories": ["ministry", "conferences"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "LBC 2011" }
+    }
+  ]
+}
+

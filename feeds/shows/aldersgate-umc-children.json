@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Aldersgate UMC Children",
+  "leftovers_description": "Items outside the standard Young Minds' Time entries.",
+  "shows": [
+    {
+      "id": "young-minds-time",
+      "title": "Young Minds' Time",
+      "title_full": "Young Minds' Time — Aldersgate UMC Children",
+      "description": "Children's sermon/devotional segment titled Young Minds' Time.",
+      "categories": ["family"],
+      "featured": true,
+      "filter": { "type": "title_suffix", "value": "Young Minds' Time" }
+    }
+  ]
+}
+

@@ -1,0 +1,89 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — Living Waters Christian Fellowship",
+  "leftovers_description": "Messages outside the main named series buckets.",
+  "shows": [
+    {
+      "id": "nativity-quest",
+      "title": "Nativity Quest",
+      "title_full": "Nativity Quest — Living Waters Christian Fellowship",
+      "description": "Nativity Quest series messages.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Nativity Quest" }
+    },
+    {
+      "id": "busqueda-de-la-natividad",
+      "title": "Búsqueda de la Natividad",
+      "title_full": "Búsqueda de la Natividad — Living Waters Christian Fellowship",
+      "description": "Spanish Nativity Quest series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Búsqueda de la Natividad" }
+    },
+    {
+      "id": "who-are-you-really",
+      "title": "Who Are You Really",
+      "title_full": "Who Are You Really — Living Waters Christian Fellowship",
+      "description": "Who Are You Really series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Who Are You Really" }
+    },
+    {
+      "id": "rise-up-with-purpose",
+      "title": "Rise Up with Purpose",
+      "title_full": "Rise Up with Purpose — Living Waters Christian Fellowship",
+      "description": "Rise Up with Purpose series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Rise Up with Purpose" }
+    },
+    {
+      "id": "rise-up",
+      "title": "Rise Up",
+      "title_full": "Rise Up — Living Waters Christian Fellowship",
+      "description": "Rise Up series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Rise Up" }
+    },
+    {
+      "id": "vision-casting",
+      "title": "Vision Casting",
+      "title_full": "Vision Casting — Living Waters Christian Fellowship",
+      "description": "Vision Casting series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Vision Casting" }
+    },
+    {
+      "id": "thankful-first",
+      "title": "Thankful First",
+      "title_full": "Thankful First — Living Waters Christian Fellowship",
+      "description": "Thankful First series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Thankful First" }
+    },
+    {
+      "id": "what-now",
+      "title": "What Now?",
+      "title_full": "What Now? — Living Waters Christian Fellowship",
+      "description": "What Now? series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "What Now?" }
+    },
+    {
+      "id": "worship",
+      "title": "Worship",
+      "title_full": "Worship — Living Waters Christian Fellowship",
+      "description": "Worship sets and special worship-only posts.",
+      "categories": ["worship"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "Worship" }
+    }
+  ]
+}
+

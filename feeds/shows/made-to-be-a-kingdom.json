@@ -1,0 +1,53 @@
+{
+  "leftovers_title": "Other episodes",
+  "leftovers_title_full": "Other episodes — Made to Be a Kingdom",
+  "leftovers_description": "Episodes outside the main named buckets.",
+  "shows": [
+    {
+      "id": "parish-duties",
+      "title": "Parish Duties",
+      "title_full": "Parish Duties — Made to Be a Kingdom",
+      "description": "Parish Duties episodes.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Parish Duties" }
+    },
+    {
+      "id": "only-the-penitent-man-shall-pass",
+      "title": "Only the Penitent Man Shall Pass",
+      "title_full": "Only the Penitent Man Shall Pass — Made to Be a Kingdom",
+      "description": "Only the Penitent Man Shall Pass series episodes.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Only the Penitent Man Shall Pass" }
+    },
+    {
+      "id": "baptism-service",
+      "title": "The Baptism Service",
+      "title_full": "The Baptism Service — Made to Be a Kingdom",
+      "description": "The Baptism Service series episodes.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Baptism Service" }
+    },
+    {
+      "id": "two-enemy-kingdoms",
+      "title": "Two Enemy Kingdoms",
+      "title_full": "Two Enemy Kingdoms — Made to Be a Kingdom",
+      "description": "Two Enemy Kingdoms series episodes.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Two Enemy Kingdoms" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Made to Be a Kingdom",
+      "description": "All other episodes.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

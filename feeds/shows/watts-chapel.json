@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — Watts Chapel",
+  "leftovers_description": "Messages outside the main series bucket.",
+  "shows": [
+    {
+      "id": "series-title",
+      "title": "Series Title",
+      "title_full": "Series Title — Watts Chapel",
+      "description": "Episodes labeled with a “Series Title …” prefix.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Series Title" }
+    },
+    {
+      "id": "messages",
+      "title": "Messages",
+      "title_full": "Messages — Watts Chapel",
+      "description": "All other Watts Chapel messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

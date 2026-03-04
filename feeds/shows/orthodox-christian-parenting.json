@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Orthodox Christian Parenting",
+  "leftovers_description": "Items that don’t match the main episodes row.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Orthodox Christian Parenting",
+      "description": "Parenting conversations and interviews.",
+      "categories": ["teaching", "family"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

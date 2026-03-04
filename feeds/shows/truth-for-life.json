@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other episodes",
+  "leftovers_title_full": "Other episodes — Truth for Life",
+  "leftovers_description": "Episodes outside the small named buckets.",
+  "shows": [
+    {
+      "id": "a-lesson-in-dying",
+      "title": "A Lesson in Dying",
+      "title_full": "A Lesson in Dying — Truth for Life",
+      "description": "A Lesson in Dying multi-part messages.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "A Lesson in Dying" }
+    },
+    {
+      "id": "after-the-funeral",
+      "title": "After the Funeral",
+      "title_full": "After the Funeral — Truth for Life",
+      "description": "After the Funeral multi-part messages.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "After the Funeral" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Truth for Life",
+      "description": "All other Truth for Life episodes.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

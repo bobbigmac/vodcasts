@@ -1,0 +1,44 @@
+{
+  "leftovers_title": "Other sermons",
+  "leftovers_title_full": "Other sermons — Saint Andrew's Presbyterian (Yakima)",
+  "leftovers_description": "Sermons outside the main Bible-book buckets.",
+  "shows": [
+    {
+      "id": "genesis",
+      "title": "Genesis",
+      "title_full": "Genesis — Saint Andrew's Presbyterian (Yakima)",
+      "description": "Sermons with Genesis scripture references in parentheses.",
+      "categories": ["sermons", "bible-study"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "\\(Genesis\\b" }
+    },
+    {
+      "id": "matthew",
+      "title": "Matthew",
+      "title_full": "Matthew — Saint Andrew's Presbyterian (Yakima)",
+      "description": "Sermons with Matthew scripture references in parentheses.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\(Matthew\\b" }
+    },
+    {
+      "id": "john",
+      "title": "John",
+      "title_full": "John — Saint Andrew's Presbyterian (Yakima)",
+      "description": "Sermons with John scripture references in parentheses.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\(John\\b" }
+    },
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Sermons — Saint Andrew's Presbyterian (Yakima)",
+      "description": "All other sermons in this feed.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

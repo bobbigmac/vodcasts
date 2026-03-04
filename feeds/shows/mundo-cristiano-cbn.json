@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Mundo Cristiano",
+  "leftovers_description": "Items outside the main Mundo Cristiano episodes.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Mundo Cristiano",
+      "description": "Mundo Cristiano episodes (dated).",
+      "categories": ["tv-ministry", "news"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Mundo Cristiano" }
+    }
+  ]
+}
+

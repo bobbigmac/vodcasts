@@ -1,0 +1,44 @@
+{
+  "leftovers_title": "Other teachings",
+  "leftovers_title_full": "Other teachings — Reality LA",
+  "leftovers_description": "Teachings outside the main named buckets.",
+  "shows": [
+    {
+      "id": "advent",
+      "title": "Advent",
+      "title_full": "Advent — Reality LA",
+      "description": "The Advent of … series messages.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "The Advent of" }
+    },
+    {
+      "id": "vision-sunday",
+      "title": "Vision Sunday",
+      "title_full": "Vision Sunday — Reality LA",
+      "description": "Vision Sunday messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Vision Sunday" }
+    },
+    {
+      "id": "easter",
+      "title": "Easter",
+      "title_full": "Easter — Reality LA",
+      "description": "Easter messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Easter" }
+    },
+    {
+      "id": "teachings",
+      "title": "Teachings",
+      "title_full": "Teachings — Reality LA",
+      "description": "All other teachings in this feed.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

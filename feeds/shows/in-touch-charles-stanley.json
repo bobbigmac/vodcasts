@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — In Touch (Charles Stanley)",
+  "leftovers_description": "Items that don’t match the main messages row.",
+  "shows": [
+    {
+      "id": "messages",
+      "title": "Messages",
+      "title_full": "Messages — In Touch (Charles Stanley)",
+      "description": "In Touch teaching messages (including multi-part messages).",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

@@ -1,0 +1,62 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — VCC Jesus Zentrum",
+  "leftovers_description": "Messages outside the main speaker/series buckets.",
+  "shows": [
+    {
+      "id": "p-martin-kisslinger",
+      "title": "P. Martin Kisslinger",
+      "title_full": "P. Martin Kisslinger — VCC Jesus Zentrum",
+      "description": "Messages tagged with P. Martin Kisslinger / Pastor Martin.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_contains_any", "values": ["P. Martin Kisslinger", "Pastor Martin"] }
+    },
+    {
+      "id": "p-maria-kisslinger",
+      "title": "P. Maria Kisslinger",
+      "title_full": "P. Maria Kisslinger — VCC Jesus Zentrum",
+      "description": "Messages tagged with P. Maria Kisslinger.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "P. Maria Kisslinger" }
+    },
+    {
+      "id": "weihnachtskonzert",
+      "title": "Weihnachtskonzert",
+      "title_full": "Weihnachtskonzert — VCC Jesus Zentrum",
+      "description": "Christmas concert recordings.",
+      "categories": ["sermons", "music"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Weihnachtskonzert" }
+    },
+    {
+      "id": "er-heisst",
+      "title": "ER HEIẞT…",
+      "title_full": "ER HEIẞT… — VCC Jesus Zentrum",
+      "description": "Messages titled ER HEIẞT…",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^ER\\s+HEI[ßS]T\\b" }
+    },
+    {
+      "id": "celebration",
+      "title": "Celebration",
+      "title_full": "Celebration — VCC Jesus Zentrum",
+      "description": "Celebration service recordings.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "CELEBRATION" }
+    },
+    {
+      "id": "messages",
+      "title": "Messages",
+      "title_full": "Messages — VCC Jesus Zentrum",
+      "description": "All other VCC messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

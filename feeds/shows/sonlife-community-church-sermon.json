@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other sermons",
+  "leftovers_title_full": "Other sermons — Sonlife Community Church",
+  "leftovers_description": "Sermons outside the main Acts series and stand-alone bucket.",
+  "shows": [
+    {
+      "id": "acts-of-the-apostles",
+      "title": "Acts of the Apostles",
+      "title_full": "Acts of the Apostles — Sonlife Community Church",
+      "description": "Acts of the Apostles multi-part series.",
+      "categories": ["sermons", "bible-study"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^Acts of the Apostles\\s+Part\\s*\\d+\\b" }
+    },
+    {
+      "id": "stand-alone-sermons",
+      "title": "Stand Alone Sermons",
+      "title_full": "Stand Alone Sermons — Sonlife Community Church",
+      "description": "Stand Alone Sermons posts.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Stand Alone Sermons" }
+    }
+  ]
+}
+

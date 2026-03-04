@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Monticello First Baptist Church",
+  "leftovers_description": "Messages outside the main service buckets.",
+  "shows": [
+    {
+      "id": "wednesday-evening",
+      "title": "Wednesday Evening Service",
+      "title_full": "Wednesday Evening Service — Monticello First Baptist Church",
+      "description": "Wednesday evening services.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Wednesday Evening Service" }
+    },
+    {
+      "id": "sunday-services",
+      "title": "Sunday Services",
+      "title_full": "Sunday Services — Monticello First Baptist Church",
+      "description": "Sunday services (dated).",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Sunday" }
+    }
+  ]
+}
+

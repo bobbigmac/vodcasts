@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Ancient Faith Kids Vlog",
+  "leftovers_description": "Items that don’t match the main vlog row.",
+  "shows": [
+    {
+      "id": "vlog",
+      "title": "Vlog",
+      "title_full": "Vlog — Ancient Faith Kids Vlog",
+      "description": "Short topical videos for kids.",
+      "categories": ["kids"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

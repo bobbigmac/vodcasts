@@ -1,0 +1,188 @@
+{
+  "leftovers_title": "Other throwbacks",
+  "leftovers_title_full": "Other throwbacks — TWiT Throwback",
+  "leftovers_description": "Episodes outside the main show-title buckets.",
+  "shows": [
+    {
+      "id": "tech-news-today",
+      "title": "Tech News Today",
+      "title_full": "Tech News Today — TWiT Throwback",
+      "description": "Tech News Today episodes.",
+      "categories": ["tech", "news"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Tech News Today" }
+    },
+    {
+      "id": "twit-live-specials",
+      "title": "TWiT Live Specials",
+      "title_full": "TWiT Live Specials — TWiT Throwback",
+      "description": "TWiT Live Specials episodes.",
+      "categories": ["tech"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "TWiT Live Specials" }
+    },
+    {
+      "id": "the-tech-guy",
+      "title": "The Tech Guy",
+      "title_full": "The Tech Guy — TWiT Throwback",
+      "description": "The Tech Guy episodes.",
+      "categories": ["tech"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Tech Guy" }
+    },
+    {
+      "id": "know-how",
+      "title": "Know How...",
+      "title_full": "Know How... — TWiT Throwback",
+      "description": "Know How... episodes.",
+      "categories": ["tech"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Know How..." }
+    },
+    {
+      "id": "this-week-in-tech",
+      "title": "This Week in Tech",
+      "title_full": "This Week in Tech — TWiT Throwback",
+      "description": "This Week in Tech episodes.",
+      "categories": ["tech"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "This Week in Tech" }
+    },
+    {
+      "id": "this-week-in-google",
+      "title": "This Week in Google",
+      "title_full": "This Week in Google — TWiT Throwback",
+      "description": "This Week in Google episodes.",
+      "categories": ["tech"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "This Week in Google" }
+    },
+    {
+      "id": "this-week-in-enterprise-tech",
+      "title": "This Week in Enterprise Tech",
+      "title_full": "This Week in Enterprise Tech — TWiT Throwback",
+      "description": "This Week in Enterprise Tech episodes.",
+      "categories": ["tech"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "This Week in Enterprise Tech" }
+    },
+    {
+      "id": "this-week-in-law",
+      "title": "This Week in Law",
+      "title_full": "This Week in Law — TWiT Throwback",
+      "description": "This Week in Law episodes.",
+      "categories": ["tech"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "This Week in Law" }
+    },
+    {
+      "id": "windows-weekly",
+      "title": "Windows Weekly",
+      "title_full": "Windows Weekly — TWiT Throwback",
+      "description": "Windows Weekly episodes.",
+      "categories": ["tech", "windows"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Windows Weekly" }
+    },
+    {
+      "id": "security-now",
+      "title": "Security Now",
+      "title_full": "Security Now — TWiT Throwback",
+      "description": "Security Now episodes.",
+      "categories": ["tech", "security"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Security Now" }
+    },
+    {
+      "id": "macbreak-weekly",
+      "title": "MacBreak Weekly",
+      "title_full": "MacBreak Weekly — TWiT Throwback",
+      "description": "MacBreak Weekly episodes.",
+      "categories": ["tech", "apple"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "MacBreak Weekly" }
+    },
+    {
+      "id": "ios-today",
+      "title": "iOS Today",
+      "title_full": "iOS Today — TWiT Throwback",
+      "description": "iOS Today episodes.",
+      "categories": ["tech", "apple"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "iOS Today" }
+    },
+    {
+      "id": "home-theater-geeks",
+      "title": "Home Theater Geeks",
+      "title_full": "Home Theater Geeks — TWiT Throwback",
+      "description": "Home Theater Geeks episodes.",
+      "categories": ["tech"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Home Theater Geeks" }
+    },
+    {
+      "id": "ham-nation",
+      "title": "Ham Nation",
+      "title_full": "Ham Nation — TWiT Throwback",
+      "description": "Ham Nation episodes.",
+      "categories": ["tech"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Ham Nation" }
+    },
+    {
+      "id": "floss-weekly",
+      "title": "FLOSS Weekly",
+      "title_full": "FLOSS Weekly — TWiT Throwback",
+      "description": "FLOSS Weekly episodes.",
+      "categories": ["tech", "open-source"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "FLOSS Weekly" }
+    },
+    {
+      "id": "triangulation",
+      "title": "Triangulation",
+      "title_full": "Triangulation — TWiT Throwback",
+      "description": "Triangulation episodes.",
+      "categories": ["tech"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Triangulation" }
+    },
+    {
+      "id": "all-about-android",
+      "title": "All About Android",
+      "title_full": "All About Android — TWiT Throwback",
+      "description": "All About Android episodes.",
+      "categories": ["tech", "android"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "All About Android" }
+    },
+    {
+      "id": "android-app-arena",
+      "title": "Android App Arena",
+      "title_full": "Android App Arena — TWiT Throwback",
+      "description": "Android App Arena episodes.",
+      "categories": ["tech", "android"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Android App Arena" }
+    },
+    {
+      "id": "computer-hardware",
+      "title": "This Week in Computer Hardware",
+      "title_full": "This Week in Computer Hardware — TWiT Throwback",
+      "description": "This Week in Computer Hardware episodes.",
+      "categories": ["tech", "hardware"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "This Week in Computer Hardware" }
+    },
+    {
+      "id": "new-screen-savers",
+      "title": "The New Screen Savers",
+      "title_full": "The New Screen Savers — TWiT Throwback",
+      "description": "The New Screen Savers episodes.",
+      "categories": ["tech"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The New Screen Savers" }
+    }
+  ]
+}
+

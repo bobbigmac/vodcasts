@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — The Night Star",
+  "leftovers_description": "Items that don’t match the main stories row.",
+  "shows": [
+    {
+      "id": "stories",
+      "title": "Stories",
+      "title_full": "Stories — The Night Star",
+      "description": "Story episodes.",
+      "categories": ["kids"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

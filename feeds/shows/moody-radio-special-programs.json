@@ -1,0 +1,44 @@
+{
+  "leftovers_title": "Other programs",
+  "leftovers_title_full": "Other programs — Moody Radio Special Programs",
+  "leftovers_description": "Programs outside the main named buckets.",
+  "shows": [
+    {
+      "id": "best-of-in-the-market",
+      "title": "Best of In The Market",
+      "title_full": "Best of In The Market — Moody Radio Special Programs",
+      "description": "Best of episodes from In The Market with Janet Parshall.",
+      "categories": ["radio"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Best of In The Market" }
+    },
+    {
+      "id": "hour-1",
+      "title": "Hour 1",
+      "title_full": "Hour 1 — Moody Radio Special Programs",
+      "description": "Items explicitly labeled Hour 1.",
+      "categories": ["radio"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Hour 1" }
+    },
+    {
+      "id": "hour-2",
+      "title": "Hour 2",
+      "title_full": "Hour 2 — Moody Radio Special Programs",
+      "description": "Items explicitly labeled Hour 2.",
+      "categories": ["radio"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Hour 2" }
+    },
+    {
+      "id": "programs",
+      "title": "Programs",
+      "title_full": "Programs — Moody Radio Special Programs",
+      "description": "All other special programs in this feed.",
+      "categories": ["radio"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

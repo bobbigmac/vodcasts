@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Neighborhoods",
+  "leftovers_description": "Resources and episodes outside the primary series buckets.",
+  "shows": [
+    {
+      "id": "special-reports",
+      "title": "NNN Special Report",
+      "title_full": "NNN Special Report — Neighborhoods",
+      "description": "Neighborhoods special report episodes.",
+      "categories": ["ministry"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "NNN Special Report" }
+    },
+    {
+      "id": "james",
+      "title": "James",
+      "title_full": "James — Neighborhoods",
+      "description": "James series episodes.",
+      "categories": ["ministry", "teaching"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "James" }
+    },
+    {
+      "id": "first-thessalonians",
+      "title": "1 Thessalonians",
+      "title_full": "1 Thessalonians — Neighborhoods",
+      "description": "1 Thessalonians series episodes.",
+      "categories": ["ministry", "teaching"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "1 Thessalonians" }
+    }
+  ]
+}
+

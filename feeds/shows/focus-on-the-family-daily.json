@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Focus on the Family with Jim Daly",
+  "leftovers_description": "Items that don’t match the main buckets.",
+  "shows": [
+    {
+      "id": "best-of",
+      "title": "Best of",
+      "title_full": "Best of — Focus on the Family with Jim Daly",
+      "description": "Compilation episodes (e.g. Best of 2025).",
+      "categories": ["radio", "family"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Best of" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Focus on the Family with Jim Daly",
+      "description": "Regular Focus on the Family daily episodes.",
+      "categories": ["radio", "family"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

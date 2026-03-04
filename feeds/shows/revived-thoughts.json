@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Updates & extras",
+  "leftovers_title_full": "Updates & extras — Revived Thoughts",
+  "leftovers_description": "Short updates or items without an Ep. # prefix.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Revived Thoughts",
+      "description": "Numbered episodes (Ep. #N …).",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^Ep\\.\\s*#\\d+\\b" }
+    }
+  ]
+}
+

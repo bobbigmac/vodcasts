@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Perdido Bay Methodist Church",
+  "leftovers_description": "Items outside the Sermon/Daily buckets.",
+  "shows": [
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Sermons — Perdido Bay Methodist Church",
+      "description": "Sunday sermon recordings (titles starting with “Sermon,”).",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Sermon," }
+    },
+    {
+      "id": "daily-readings",
+      "title": "Daily readings",
+      "title_full": "Daily readings — Perdido Bay Methodist Church",
+      "description": "Day-of-week devotional/reading entries.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)," }
+    }
+  ]
+}
+

@@ -1,0 +1,53 @@
+{
+  "leftovers_title": "Other sermons",
+  "leftovers_title_full": "Other sermons — Timothy Keller (Gospel in Life)",
+  "leftovers_description": "Sermons outside the main buckets.",
+  "shows": [
+    {
+      "id": "open-forum",
+      "title": "Open Forum",
+      "title_full": "Open Forum — Timothy Keller (Gospel in Life)",
+      "description": "Sermons labeled Open Forum.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "\\(Open Forum\\)\\s*$" }
+    },
+    {
+      "id": "wisdom",
+      "title": "Wisdom",
+      "title_full": "Wisdom — Timothy Keller (Gospel in Life)",
+      "description": "Wisdom series sermons.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Wisdom" }
+    },
+    {
+      "id": "holiness",
+      "title": "Holiness",
+      "title_full": "Holiness — Timothy Keller (Gospel in Life)",
+      "description": "Holiness series sermons.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Holiness" }
+    },
+    {
+      "id": "the-battle",
+      "title": "The Battle",
+      "title_full": "The Battle — Timothy Keller (Gospel in Life)",
+      "description": "The Battle for the Mind/Heart/Will sermons.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Battle" }
+    },
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Sermons — Timothy Keller (Gospel in Life)",
+      "description": "All other sermons in this feed.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

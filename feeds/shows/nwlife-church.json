@@ -1,0 +1,125 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — NWLife Church",
+  "leftovers_description": "Messages outside the main named series buckets.",
+  "shows": [
+    {
+      "id": "together-nights",
+      "title": "Together Nights",
+      "title_full": "Together Nights — NWLife Church",
+      "description": "Together Nights special services.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Together Nights" }
+    },
+    {
+      "id": "rise",
+      "title": "Rise",
+      "title_full": "Rise — NWLife Church",
+      "description": "Rise series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Rise" }
+    },
+    {
+      "id": "people-make",
+      "title": "People Make…",
+      "title_full": "People Make… — NWLife Church",
+      "description": "People Make The… series messages.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "People Make" }
+    },
+    {
+      "id": "kingdom-invitation",
+      "title": "Kingdom Invitation",
+      "title_full": "Kingdom Invitation — NWLife Church",
+      "description": "Kingdom Invitation series messages.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Kingdom Invitation" }
+    },
+    {
+      "id": "imagine",
+      "title": "Imagine",
+      "title_full": "Imagine — NWLife Church",
+      "description": "Imagine series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Imagine" }
+    },
+    {
+      "id": "welcome-home",
+      "title": "Welcome Home",
+      "title_full": "Welcome Home — NWLife Church",
+      "description": "Welcome Home series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Welcome Home" }
+    },
+    {
+      "id": "culture",
+      "title": "Culture",
+      "title_full": "Culture — NWLife Church",
+      "description": "Culture series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Culture" }
+    },
+    {
+      "id": "cope",
+      "title": "Cope",
+      "title_full": "Cope — NWLife Church",
+      "description": "Cope series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Cope" }
+    },
+    {
+      "id": "life-with-god",
+      "title": "Life With God",
+      "title_full": "Life With God — NWLife Church",
+      "description": "Life With God series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Life With God" }
+    },
+    {
+      "id": "once-upon-a-time",
+      "title": "Once Upon a Time",
+      "title_full": "Once Upon a Time — NWLife Church",
+      "description": "Once Upon a Time series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Once Upon a Time" }
+    },
+    {
+      "id": "freedom-story",
+      "title": "Freedom Story",
+      "title_full": "Freedom Story — NWLife Church",
+      "description": "Freedom Story series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Freedom Story" }
+    },
+    {
+      "id": "straight-up-g",
+      "title": "Straight Up G",
+      "title_full": "Straight Up G — NWLife Church",
+      "description": "Straight Up G series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Straight Up G" }
+    },
+    {
+      "id": "brave",
+      "title": "Brave",
+      "title_full": "Brave — NWLife Church",
+      "description": "Brave series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Brave" }
+    }
+  ]
+}
+

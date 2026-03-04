@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other kids stories",
+  "leftovers_title_full": "Other kids stories — Superbook CBN Kids",
+  "leftovers_description": "Items outside the main 700 Club Canada / Superbook buckets.",
+  "shows": [
+    {
+      "id": "700-club-canada",
+      "title": "700 Club Canada",
+      "title_full": "700 Club Canada — Superbook CBN Kids",
+      "description": "700 Club Canada episodes published in this feed.",
+      "categories": ["kids"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "700 Club Canada:" }
+    },
+    {
+      "id": "superbook",
+      "title": "Superbook",
+      "title_full": "Superbook — Superbook CBN Kids",
+      "description": "Superbook episodes.",
+      "categories": ["kids"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Superbook" }
+    }
+  ]
+}
+

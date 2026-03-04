@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Announcements & other",
+  "leftovers_title_full": "Announcements & other — First United Methodist Church Warsaw",
+  "leftovers_description": "Non-sermon updates (VBS, updates, photos, events, etc.).",
+  "shows": [
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Sermons — First United Methodist Church Warsaw",
+      "description": "Messages with scripture references (e.g. “– Acts 4.8-12”).",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "[–-]\\s*[A-Za-z]{2,}\\s*\\d" }
+    },
+    {
+      "id": "announcements",
+      "title": "Announcements & media",
+      "title_full": "Announcements & media — First United Methodist Church Warsaw",
+      "description": "All other items in this feed.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

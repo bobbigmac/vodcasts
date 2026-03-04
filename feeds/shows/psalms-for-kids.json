@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Psalms for Kids",
+  "leftovers_description": "Items that don’t match the standard Psalm/Psalms naming pattern.",
+  "shows": [
+    {
+      "id": "psalms",
+      "title": "Psalms",
+      "title_full": "Psalms — Psalms for Kids",
+      "description": "Psalm readings.",
+      "categories": ["kids", "bible"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^Psalm" }
+    }
+  ]
+}
+

@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other sermons",
+  "leftovers_title_full": "Other sermons — Preach the Word (David Legge)",
+  "leftovers_description": "Sermons outside the main named series buckets.",
+  "shows": [
+    {
+      "id": "jesus-preparation-for-ministry",
+      "title": "Jesus’ Preparation for Ministry",
+      "title_full": "Jesus’ Preparation for Ministry — Preach the Word (David Legge)",
+      "description": "Jesus’ Preparation for Ministry multi-part series (PtN).",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^Jesus' Preparation For Ministry\\s*Pt\\d+\\b" }
+    },
+    {
+      "id": "glorious-presence-of-god",
+      "title": "The Glorious Presence of God",
+      "title_full": "The Glorious Presence of God — Preach the Word (David Legge)",
+      "description": "The Glorious Presence of God multi-part series (PtN).",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^The Glorious Presence Of God\\s*Pt\\d+\\b" }
+    },
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Sermons — Preach the Word (David Legge)",
+      "description": "All other sermons in this feed.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

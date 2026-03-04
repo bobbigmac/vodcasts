@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Omega Power Ministries",
+  "leftovers_description": "Items outside the main messages row.",
+  "shows": [
+    {
+      "id": "messages",
+      "title": "Messages",
+      "title_full": "Messages — Omega Power Ministries",
+      "description": "Omega Power Ministries messages.",
+      "categories": ["sermons", "teaching"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

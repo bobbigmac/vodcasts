@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — RevNeal's Sermons",
+  "leftovers_description": "Messages outside the main sermons row.",
+  "shows": [
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Sermons — RevNeal's Sermons",
+      "description": "RevNeal’s sermon messages.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

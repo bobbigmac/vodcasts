@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other sermons",
+  "leftovers_title_full": "Other sermons — First Baptist Columbia WF",
+  "leftovers_description": "Sermons outside the main Ecclesiastes bucket.",
+  "shows": [
+    {
+      "id": "ecclesiastes",
+      "title": "Ecclesiastes",
+      "title_full": "Ecclesiastes — First Baptist Columbia WF",
+      "description": "Sermons in Ecclesiastes.",
+      "categories": ["sermons", "bible-study"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Ecclesiastes" }
+    },
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Sermons — First Baptist Columbia WF",
+      "description": "All other sermons in this feed.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

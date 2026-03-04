@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other sermons",
+  "leftovers_title_full": "Other sermons — Martyn Lloyd-Jones Trust",
+  "leftovers_description": "Sermons outside the main Romans 11 bucket.",
+  "shows": [
+    {
+      "id": "romans-11",
+      "title": "Romans 11",
+      "title_full": "Romans 11 — Martyn Lloyd-Jones Trust",
+      "description": "Sermons referencing Romans 11.",
+      "categories": ["sermons", "bible-study"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Romans 11" }
+    },
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Sermons — Martyn Lloyd-Jones Trust",
+      "description": "All other sermons in this feed.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

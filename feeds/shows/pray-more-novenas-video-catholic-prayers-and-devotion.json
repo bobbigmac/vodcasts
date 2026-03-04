@@ -1,0 +1,170 @@
+{
+  "leftovers_title": "Other prayers",
+  "leftovers_title_full": "Other prayers — Pray More Novenas",
+  "leftovers_description": "Prayers and devotionals outside the main novena series buckets.",
+  "shows": [
+    {
+      "id": "our-lady-of-lourdes",
+      "title": "Our Lady of Lourdes Novena",
+      "title_full": "Our Lady of Lourdes Novena — Pray More Novenas",
+      "description": "Novena prayers for Our Lady of Lourdes.",
+      "categories": ["teaching", "devotional"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Our Lady of Lourdes Novena" }
+    },
+    {
+      "id": "divine-mercy",
+      "title": "Divine Mercy Novena",
+      "title_full": "Divine Mercy Novena — Pray More Novenas",
+      "description": "Divine Mercy Novena prayers.",
+      "categories": ["teaching", "devotional"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Divine Mercy Novena" }
+    },
+    {
+      "id": "mary-undoer-of-knots",
+      "title": "Mary, Undoer of Knots Novena",
+      "title_full": "Mary, Undoer of Knots Novena — Pray More Novenas",
+      "description": "Mary, Undoer of Knots Novena prayers.",
+      "categories": ["teaching", "devotional"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Mary, Undoer of Knots Novena" }
+    },
+    {
+      "id": "immaculate-conception",
+      "title": "Immaculate Conception Novena",
+      "title_full": "Immaculate Conception Novena — Pray More Novenas",
+      "description": "Immaculate Conception Novena prayers.",
+      "categories": ["teaching", "devotional"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Immaculate Conception Novena" }
+    },
+    {
+      "id": "christmas",
+      "title": "Christmas Novena",
+      "title_full": "Christmas Novena — Pray More Novenas",
+      "description": "Christmas Novena prayers.",
+      "categories": ["teaching", "devotional"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Christmas Novena" }
+    },
+    {
+      "id": "st-peregrine",
+      "title": "St. Peregrine Novena",
+      "title_full": "St. Peregrine Novena — Pray More Novenas",
+      "description": "St. Peregrine Novena prayers.",
+      "categories": ["teaching", "devotional"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "St. Peregrine Novena" }
+    },
+    {
+      "id": "sacred-heart",
+      "title": "Sacred Heart of Jesus Novena",
+      "title_full": "Sacred Heart of Jesus Novena — Pray More Novenas",
+      "description": "Sacred Heart of Jesus Novena prayers.",
+      "categories": ["teaching", "devotional"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Sacred Heart of Jesus Novena" }
+    },
+    {
+      "id": "christ-the-king",
+      "title": "Christ the King Novena",
+      "title_full": "Christ the King Novena — Pray More Novenas",
+      "description": "Christ the King Novena prayers.",
+      "categories": ["teaching", "devotional"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Christ the King Novena" }
+    },
+    {
+      "id": "holy-spirit-pentecost",
+      "title": "Holy Spirit Novena (Pentecost)",
+      "title_full": "Holy Spirit Novena (Pentecost) — Pray More Novenas",
+      "description": "Holy Spirit Novena for Pentecost prayers.",
+      "categories": ["teaching", "devotional"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Holy Spirit Novena for Pentecost" }
+    },
+    {
+      "id": "pentecost",
+      "title": "Pentecost Novena",
+      "title_full": "Pentecost Novena — Pray More Novenas",
+      "description": "Pentecost Novena prayers.",
+      "categories": ["teaching", "devotional"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Pentecost Novena" }
+    },
+    {
+      "id": "litany-of-trust",
+      "title": "Litany of Trust Novena",
+      "title_full": "Litany of Trust Novena — Pray More Novenas",
+      "description": "Litany of Trust Novena prayers.",
+      "categories": ["teaching", "devotional"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Litany of Trust Novena" }
+    },
+    {
+      "id": "marriage-and-family",
+      "title": "Novena for Marriage and Family",
+      "title_full": "Novena for Marriage and Family — Pray More Novenas",
+      "description": "Novena prayers for marriage and family.",
+      "categories": ["teaching", "devotional", "family"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Novena for Marriage and Family" }
+    },
+    {
+      "id": "st-anne",
+      "title": "St. Anne Novena",
+      "title_full": "St. Anne Novena — Pray More Novenas",
+      "description": "St. Anne Novena prayers.",
+      "categories": ["teaching", "devotional"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "St. Anne Novena" }
+    },
+    {
+      "id": "st-joseph",
+      "title": "St. Joseph Novena",
+      "title_full": "St. Joseph Novena — Pray More Novenas",
+      "description": "St. Joseph Novena prayers.",
+      "categories": ["teaching", "devotional"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "St. Joseph Novena" }
+    },
+    {
+      "id": "st-jude",
+      "title": "St. Jude Novena",
+      "title_full": "St. Jude Novena — Pray More Novenas",
+      "description": "St. Jude Novena prayers.",
+      "categories": ["teaching", "devotional"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "St. Jude Novena" }
+    },
+    {
+      "id": "st-monica",
+      "title": "St. Monica Novena",
+      "title_full": "St. Monica Novena — Pray More Novenas",
+      "description": "St. Monica Novena prayers.",
+      "categories": ["teaching", "devotional"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "St. Monica Novena" }
+    },
+    {
+      "id": "st-therese",
+      "title": "St. Therese of Lisieux Novena",
+      "title_full": "St. Therese of Lisieux Novena — Pray More Novenas",
+      "description": "St. Therese of Lisieux Novena prayers.",
+      "categories": ["teaching", "devotional"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "St. Therese of Lisieux Novena" }
+    },
+    {
+      "id": "conclave",
+      "title": "The Conclave Novena",
+      "title_full": "The Conclave Novena — Pray More Novenas",
+      "description": "The Conclave Novena prayers.",
+      "categories": ["teaching", "devotional"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "The Conclave Novena" }
+    }
+  ]
+}
+

@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — NPR News Now",
+  "leftovers_description": "Items that don’t match the main news row.",
+  "shows": [
+    {
+      "id": "news",
+      "title": "News",
+      "title_full": "News — NPR News Now",
+      "description": "Short NPR news updates.",
+      "categories": ["news"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

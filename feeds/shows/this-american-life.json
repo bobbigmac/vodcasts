@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — This American Life",
+  "leftovers_description": "Items that don’t match the standard numbered format.",
+  "shows": [
+    {
+      "id": "numbered-episodes",
+      "title": "Numbered episodes",
+      "title_full": "Numbered episodes — This American Life",
+      "description": "Standard episode titles in the form “208: …”.",
+      "categories": ["radio"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^\\d+\\s*:" }
+    }
+  ]
+}
+

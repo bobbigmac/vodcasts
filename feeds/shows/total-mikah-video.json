@@ -1,0 +1,53 @@
+{
+  "leftovers_title": "Other shows",
+  "leftovers_title_full": "Other shows — Total Mikah",
+  "leftovers_description": "Episodes that don’t match the common show title prefixes.",
+  "shows": [
+    {
+      "id": "hands-on-tech",
+      "title": "Hands-On Tech",
+      "title_full": "Hands-On Tech — Total Mikah",
+      "description": "Hands-On Tech episodes.",
+      "categories": ["tech"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Hands-On Tech" }
+    },
+    {
+      "id": "hands-on-apple",
+      "title": "Hands-On Apple",
+      "title_full": "Hands-On Apple — Total Mikah",
+      "description": "Hands-On Apple episodes.",
+      "categories": ["tech", "apple"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Hands-On Apple" }
+    },
+    {
+      "id": "tech-news-weekly",
+      "title": "Tech News Weekly",
+      "title_full": "Tech News Weekly — Total Mikah",
+      "description": "Tech News Weekly episodes.",
+      "categories": ["tech", "news"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Tech News Weekly" }
+    },
+    {
+      "id": "ios-today",
+      "title": "iOS Today",
+      "title_full": "iOS Today — Total Mikah",
+      "description": "iOS Today episodes.",
+      "categories": ["tech", "apple"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "iOS Today" }
+    },
+    {
+      "id": "macbreak-weekly",
+      "title": "MacBreak Weekly",
+      "title_full": "MacBreak Weekly — Total Mikah",
+      "description": "MacBreak Weekly episodes.",
+      "categories": ["tech", "apple"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "MacBreak Weekly" }
+    }
+  ]
+}
+

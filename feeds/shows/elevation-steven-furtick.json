@@ -1,0 +1,29 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — Elevation (Steven Furtick)",
+  "leftovers_description": "Messages outside the guest-speaker bucket.",
+  "shows": [
+    {
+      "id": "guest-speakers",
+      "title": "Guest speakers",
+      "title_full": "Guest speakers — Elevation (Steven Furtick)",
+      "description": "Messages tagged with a guest speaker in trailing parentheses.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": {
+        "type": "title_regex",
+        "value": "\\((?:Jonathan Josephs|Holly Furtick|Larry Brey|Chet Pete|Jabin Chavez|Lysa TerKeurst|Rich Wilkerson Jr\\.|Christine Caine)\\)\\s*$"
+      }
+    },
+    {
+      "id": "messages",
+      "title": "Messages",
+      "title_full": "Messages — Elevation (Steven Furtick)",
+      "description": "All other Elevation messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

@@ -1,0 +1,44 @@
+{
+  "leftovers_title": "Other programs",
+  "leftovers_title_full": "Other programs — Wisdom Television (Dr. Mike Murdock)",
+  "leftovers_description": "Items outside the main named program buckets.",
+  "shows": [
+    {
+      "id": "wisdom-world",
+      "title": "The Wisdom-World",
+      "title_full": "The Wisdom-World — Wisdom Television (Dr. Mike Murdock)",
+      "description": "The Wisdom-World of Mike Murdock..! episodes.",
+      "categories": ["tv-ministry"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "The Wisdom-World of Mike Murdock" }
+    },
+    {
+      "id": "wisdom-keys",
+      "title": "101 Wisdom Keys",
+      "title_full": "101 Wisdom Keys — Wisdom Television (Dr. Mike Murdock)",
+      "description": "101 Wisdom Keys episodes.",
+      "categories": ["tv-ministry"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "101 Wisdom Keys" }
+    },
+    {
+      "id": "the-assignment",
+      "title": "The Assignment",
+      "title_full": "The Assignment — Wisdom Television (Dr. Mike Murdock)",
+      "description": "The Assignment..! episodes.",
+      "categories": ["tv-ministry"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Assignment" }
+    },
+    {
+      "id": "programs",
+      "title": "Programs",
+      "title_full": "Programs — Wisdom Television (Dr. Mike Murdock)",
+      "description": "All other Wisdom Television items.",
+      "categories": ["tv-ministry"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

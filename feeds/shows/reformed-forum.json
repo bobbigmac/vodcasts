@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Reformed Forum",
+  "leftovers_description": "Items that don’t match the main teaching row.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Reformed Forum",
+      "description": "Teaching episodes from Reformed Forum.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

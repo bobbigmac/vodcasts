@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — The Torah Podcast",
+  "leftovers_description": "Items that don’t match the standard numbered episodes.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — The Torah Podcast",
+      "description": "Numbered episodes (e.g. 126 …).",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^\\d+\\b" }
+    }
+  ]
+}
+
