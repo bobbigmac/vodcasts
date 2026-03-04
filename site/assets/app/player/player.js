@@ -1352,12 +1352,31 @@ export function createPlayerService({ env, log, history }) {
     return preloadPromise || Promise.resolve();
   }
 
+  function pickDefaultSourceId(nextSources, { limit = 10 } = {}) {
+    const list = Array.isArray(nextSources) ? nextSources : [];
+    const head = list.slice(0, Math.max(1, Math.min(50, Math.floor(limit) || 10)));
+    const coreCategories = new Set(["sermons", "bible-study", "teaching", "ministry", "worship", "church"]);
+
+    const normCat = (v) => String(v || "").trim().toLowerCase();
+    const hasVideo = (s) => s?.features?.hasVideo === true;
+    const isCore = (s) => coreCategories.has(normCat(s?.category));
+
+    const first = (pred) => head.find((s) => s && typeof s.id === "string" && s.id && pred(s))?.id || null;
+    return (
+      first((s) => isCore(s) && hasVideo(s)) ||
+      first((s) => hasVideo(s)) ||
+      first((s) => isCore(s)) ||
+      head.find((s) => s && typeof s.id === "string" && s.id)?.id ||
+      null
+    );
+  }
+
   async function setSources(nextSources, { initialRoute } = {}) {
     sources = Array.isArray(nextSources) ? nextSources : [];
     if (didInitLoad || !sources.length) return;
     const routeSourceId =
       initialRoute?.feed && typeof initialRoute.feed === "string" && sources.some((s) => s.id === initialRoute.feed) ? initialRoute.feed : null;
-    const wantedSourceId = routeSourceId || persisted.last?.sourceId || sources[0]?.id;
+    const wantedSourceId = routeSourceId || persisted.last?.sourceId || pickDefaultSourceId(sources) || sources[0]?.id;
     if (!wantedSourceId) return;
     if (!videoEl) {
       pendingInitSourceId = wantedSourceId;

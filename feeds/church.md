@@ -15,42 +15,11 @@
 
 # Feeds
 
-## eaglebrook
-- url: https://www.eaglebrookchurch.com/mediafiles/eagle-brook-church-videocast.xml
-- title: Eagle Brook Church
-- category: sermons
-- tags: sermons, bible-teaching, multi-site, sunday, concert, live-music
-
-## james-river
-- url: https://jamesriver.podbean.com/feed.xml
-- title: James River Church
-- category: sermons
-- tags: sermons, pentecostal, multi-site, sunday, concert, live-music
-
-## jerry-savelle
-- url: https://www.jerrysavelle.org/rssfeeds/tvvideo.xml
-- disabled: media_probe: enclosure probe failed (2 sampled) (cache) (checked 2026-03-04)
-- title: Jerry Savelle Ministries
-- category: tv-ministry
-- tags: tv-ministry, faith-teaching, prosperity, healing
-
-## connexus-church
-- url: https://connexuschurchvideo.libsyn.com/rss
-- title: Connexus Church
-- category: sermons
-- tags: sermons, practical-living, canada, sunday, concert, live-music
-
 ## bridgetown
 - url: https://bridgetownvideo.podbean.com/feed.xml
 - title: Bridgetown
 - category: sermons
 - tags: sermons, bible-teaching, portland, series, concert, live-music
-
-## bvov
-- url: https://copelandnetworkvideopodcast.libsyn.com/rss
-- title: Believer's Voice of Victory
-- category: tv-ministry
-- tags: tv-ministry, faith-teaching, prosperity, daily, concert, live-music
 
 ## athey-creek
 - url: https://atheycreek.com/podcast-video.xml
@@ -58,24 +27,11 @@
 - category: bible-study
 - tags: through-the-bible, bible-teaching, oregon, expositional
 
-## lancaster-baptist
-- url: https://feeds.feedburner.com/LancasterBaptistChurchVideoPodcast
-- title: Lancaster Baptist Church
+## connexus-church
+- url: https://connexuschurchvideo.libsyn.com/rss
+- title: Connexus Church
 - category: sermons
-- tags: sermons, baptist, fundamentalist, sunday
-
-## a-better-bible-study-podcast-video
-- url: https://feeds.blubrry.com/feeds/abetterbiblestudy.xml
-- disabled: media_probe: enclosure probe failed (2 sampled) (cache) (checked 2026-03-04)
-- title: Better Bible Study
-- category: bible-study
-- tags: bible-study, church-of-christ, in-depth, q-and-a
-
-## andrew-wommack-tv-podcast
-- url: https://feeds.feedburner.com/AndrewWommackTvPodcastipodVideo
-- title: Andrew Wommack TV
-- category: tv-ministry
-- tags: tv-ministry, faith-teaching, grace, daily
+- tags: sermons, practical-living, canada, sunday, concert, live-music
 
 ## antioch-church
 - url: https://www.antiochvideo.com/podcasts/video.xml
@@ -83,12 +39,29 @@
 - category: sermons
 - tags: sermons, bible-teaching, liturgical, sunday, concert, live-music
 
-## apostolic-faith-church
-- url: https://s3-us-west-1.amazonaws.com/com.jesuscomingsoon.podcast/podcast.xml
-- disabled: media_probe: enclosure probe failed (2 sampled) (cache) (checked 2026-03-04)
-- title: Apostolic Faith Church
-- category: tv-ministry
-- tags: tv-ministry, holiness, pentecostal, weekly-broadcast, concert, live-music
+## btic-podcast-video
+- url: https://podcasts.subsplash.com/8byybfs/podcast.rss
+- title: BTIC Podcast
+- category: sermons
+- tags: sermons, bible-teaching, narrative, sunday
+
+## calvary-chapel-fort-lauderdale
+- url: https://podcasts.subsplash.com/ckfgsjp/podcast.rss
+- title: Calvary Chapel Fort Lauderdale 
+- category: sermons
+- tags: sermons, calvary-chapel, expositional, florida, concert, live-music
+
+## eaglebrook
+- url: https://www.eaglebrookchurch.com/mediafiles/eagle-brook-church-videocast.xml
+- title: Eagle Brook Church
+- category: sermons
+- tags: sermons, bible-teaching, multi-site, sunday, concert, live-music
+
+## lancaster-baptist
+- url: https://feeds.feedburner.com/LancasterBaptistChurchVideoPodcast
+- title: Lancaster Baptist Church
+- category: sermons
+- tags: sermons, baptist, fundamentalist, sunday
 
 ## aspire-2011-pastors-conference
 - url: http://aspiremedia.s3.amazonaws.com/aspirevideo.xml
@@ -108,6 +81,45 @@
 - category: ministry
 - tags: men, bible-teaching, monthly, oregon
 
+## james-river
+- url: https://jamesriver.podbean.com/feed.xml
+- title: James River Church
+- category: sermons
+- tags: sermons, pentecostal, multi-site, sunday, concert, live-music
+
+## bvov
+- url: https://copelandnetworkvideopodcast.libsyn.com/rss
+- title: Believer's Voice of Victory
+- category: tv-ministry
+- tags: tv-ministry, faith-teaching, prosperity, daily, concert, live-music
+
+## andrew-wommack-tv-podcast
+- url: https://feeds.feedburner.com/AndrewWommackTvPodcastipodVideo
+- title: Andrew Wommack TV
+- category: tv-ministry
+- tags: tv-ministry, faith-teaching, grace, daily
+
+## jerry-savelle
+- url: https://www.jerrysavelle.org/rssfeeds/tvvideo.xml
+- disabled: media_probe: enclosure probe failed (2 sampled) (cache) (checked 2026-03-04)
+- title: Jerry Savelle Ministries
+- category: tv-ministry
+- tags: tv-ministry, faith-teaching, prosperity, healing
+
+## a-better-bible-study-podcast-video
+- url: https://feeds.blubrry.com/feeds/abetterbiblestudy.xml
+- disabled: media_probe: enclosure probe failed (2 sampled) (cache) (checked 2026-03-04)
+- title: Better Bible Study
+- category: bible-study
+- tags: bible-study, church-of-christ, in-depth, q-and-a
+
+## apostolic-faith-church
+- url: https://s3-us-west-1.amazonaws.com/com.jesuscomingsoon.podcast/podcast.xml
+- disabled: media_probe: enclosure probe failed (2 sampled) (cache) (checked 2026-03-04)
+- title: Apostolic Faith Church
+- category: tv-ministry
+- tags: tv-ministry, holiness, pentecostal, weekly-broadcast, concert, live-music
+
 ## brentwood-baptist
 - url: http://feeds.feedburner.com/BrentwoodBaptistVideoPodcast
 - disabled: media_probe: enclosure probe failed (2 sampled) (cache) (checked 2026-03-04)
@@ -121,18 +133,6 @@
 - title: Brian Houston
 - category: sermons
 - tags: sermons, hillsong, conferences, australia, concert, live-music
-
-## btic-podcast-video
-- url: https://podcasts.subsplash.com/8byybfs/podcast.rss
-- title: BTIC Podcast
-- category: sermons
-- tags: sermons, bible-teaching, narrative, sunday
-
-## calvary-chapel-fort-lauderdale
-- url: https://podcasts.subsplash.com/ckfgsjp/podcast.rss
-- title: Calvary Chapel Fort Lauderdale 
-- category: sermons
-- tags: sermons, calvary-chapel, expositional, florida, concert, live-music
 
 ## cbn-com-700-club-interactive
 - url: http://podcast.cbn.com/700clubinteractive.aspx
