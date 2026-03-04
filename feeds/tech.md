@@ -4,6 +4,7 @@
 - subtitle: Static vodcast browser
 - description: Video podcast channels + TV-style guide. Built from RSS/Atom feeds.
 - base_path: /
+- og_image_path: assets/images/og-promo.png
 
 # Defaults
 - min_hours_between_checks: 2

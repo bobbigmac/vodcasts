@@ -148,6 +148,57 @@ def _build_meta_head_html(
     )
 
 
+def _norm_site_origin(site_url: str) -> str:
+    u = str(site_url or "").strip()
+    if not u:
+        return ""
+    if not re.match(r"^https?://", u, flags=re.IGNORECASE):
+        u = "https://" + u
+    return u.rstrip("/")
+
+
+def _sitemap_url_path_for_html(rel_html_path: Path, *, base_path: str) -> str:
+    bp = _norm_base_path(base_path)
+    rel = rel_html_path.as_posix()
+    if rel == "index.html":
+        return bp
+    if rel.endswith("/index.html"):
+        d = rel[: -len("/index.html")]
+        return bp + d.strip("/") + "/"
+    return bp + rel.lstrip("/")
+
+
+def _build_sitemap_xml(url_entries: list[tuple[str, str | None]]) -> str:
+    # url_entries: [(loc, lastmod_yyyy_mm_dd_or_none)]
+    lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+    ]
+    for loc, lastmod in url_entries:
+        loc_e = _escape_attr(loc)
+        if lastmod:
+            lastmod_e = _escape_attr(lastmod)
+            lines.append(f"  <url><loc>{loc_e}</loc><lastmod>{lastmod_e}</lastmod></url>")
+        else:
+            lines.append(f"  <url><loc>{loc_e}</loc></url>")
+    lines.append("</urlset>")
+    return "\n".join(lines) + "\n"
+
+
+def _build_robots_txt(*, base_path: str, sitemap_loc: str | None) -> str:
+    bp = _norm_base_path(base_path)
+    lines = [
+        "User-agent: *",
+        f"Disallow: {bp}data/feeds/",
+        # Show RSS feeds are XML and intended for humans/tools; keep them out of crawlers.
+        # Wildcards are supported by major crawlers (Google/Bing).
+        f"Disallow: {bp}feed/*/show/",
+    ]
+    if sitemap_loc:
+        lines.append(f"Sitemap: {sitemap_loc}")
+    return "\n".join(lines) + "\n"
+
+
 def _load_cached_feed_path(cache_dir: Path, source_id: str) -> Path:
     return cache_dir / "feeds" / f"{source_id}.xml"
 
@@ -241,6 +292,24 @@ def _read_browse_logo_path_from_feeds_md(feeds_path: Path) -> str:
         return ""
 
 
+def _read_og_image_path_from_feeds_md(feeds_path: Path) -> str:
+    if feeds_path.suffix.lower() != ".md":
+        return ""
+    try:
+        cfg = read_feeds_config(feeds_path)
+        site = cfg.get("site") if isinstance(cfg.get("site"), dict) else {}
+        v = (
+            site.get("og_image_path")
+            or site.get("opengraph_image_path")
+            or site.get("open_graph_image_path")
+            or site.get("ogImagePath")
+            or ""
+        )
+        return str(v or "").strip()
+    except Exception:
+        return ""
+
+
 def _norm_rel_web_path(path: str) -> str:
     s = str(path or "").strip()
     if not s:
@@ -307,6 +376,21 @@ def _browse_logo_url_for_site(*, base_path: str, feeds_path: Path) -> str:
             return _url_join(base_path, favicons_path) + "/favicon.svg"
 
     return ""
+
+
+def _og_image_url_for_site(*, base_path: str, feeds_path: Path) -> str:
+    """
+    Optional OpenGraph promo image. Distinct from favicons.
+
+    Should be a path relative to the `site/` folder (e.g. assets/images/og-promo.png).
+    """
+    explicit = _norm_rel_web_path(_read_og_image_path_from_feeds_md(feeds_path))
+    if not explicit:
+        return ""
+    fs = VODCASTS_ROOT / "site" / explicit
+    if not fs.exists():
+        return ""
+    return _url_join(base_path, explicit)
 
 
 def _pwa_icons_for_manifest(*, base_path: str, feeds_path: Path) -> list[dict[str, str]]:
@@ -524,13 +608,16 @@ def main() -> None:
         _log(f"  {n} feeds ({time.perf_counter() - t:.1f}s)")
 
     # site.json for the app env.
+    og_image_url = _og_image_url_for_site(base_path=base_path, feeds_path=feeds_path) or None
     site_json = {
         "id": cfg.site.id,
         "title": cfg.site.title,
         "subtitle": cfg.site.subtitle,
         "description": cfg.site.description,
         "base_path": base_path,
+        "url": cfg.site.url,
         "browseLogoUrl": _browse_logo_url_for_site(base_path=base_path, feeds_path=feeds_path),
+        "ogImageUrl": og_image_url or "",
         "comments": {
             "provider": "supabase" if (supabase_url and supabase_anon_key) else "",
             "supabaseUrl": supabase_url,
@@ -862,6 +949,7 @@ def main() -> None:
                     page_description=feed_desc,
                     canonical_path=f"{base_path}feed/{fid}/",
                     og_type="website",
+                    og_image_path=og_image_url,
                 ),
             },
         )
@@ -930,6 +1018,7 @@ def main() -> None:
                 page_description=home_desc,
                 canonical_path=base_path,
                 og_type="website",
+                og_image_path=og_image_url,
             ),
         },
     )
@@ -958,6 +1047,7 @@ def main() -> None:
                 page_description=browse_desc,
                 canonical_path=f"{base_path}browse/",
                 og_type="website",
+                og_image_path=og_image_url,
             ),
         },
     )
@@ -1071,6 +1161,7 @@ def main() -> None:
                         page_description=desc,
                         canonical_path=f"{base_path}{slug}/",
                         og_type="article",
+                        og_image_path=og_image_url,
                     ),
                     "content_html": content_html,
                 },
@@ -1091,6 +1182,30 @@ def main() -> None:
             },
         )
         (out_dir / "404.html").write_text(html_404, encoding="utf-8")
+
+    # robots.txt + sitemap.xml (HTML pages only; exclude RSS/XML)
+    site_origin = _norm_site_origin(cfg.site.url)
+    sitemap_path = _norm_base_path(base_path) + "sitemap.xml"
+    sitemap_loc = (site_origin + sitemap_path) if site_origin else sitemap_path
+
+    url_entries: list[tuple[str, str | None]] = []
+    for html_path in sorted(out_dir.rglob("*.html")):
+        rel = html_path.relative_to(out_dir)
+        rel_s = rel.as_posix()
+        if rel_s == "404.html":
+            continue
+        if rel_s.startswith("assets/") or rel_s.startswith("data/"):
+            continue
+        url_path = _sitemap_url_path_for_html(rel, base_path=base_path)
+        loc = (site_origin + url_path) if site_origin else url_path
+        try:
+            lastmod = time.strftime("%Y-%m-%d", time.gmtime(html_path.stat().st_mtime))
+        except Exception:
+            lastmod = None
+        url_entries.append((loc, lastmod))
+
+    (out_dir / "sitemap.xml").write_text(_build_sitemap_xml(url_entries), encoding="utf-8")
+    (out_dir / "robots.txt").write_text(_build_robots_txt(base_path=base_path, sitemap_loc=sitemap_loc), encoding="utf-8")
 
     _log(f"build complete ({time.perf_counter() - t0:.1f}s total)")
 

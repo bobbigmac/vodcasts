@@ -4,6 +4,7 @@
 - subtitle: News & video feeds
 - description: Global news, science, and video feeds from BBC, Euronews, Al Jazeera, DW, PBS, TED.
 - base_path: /
+- og_image_path: assets/images/og-promo.png
 
 # Defaults
 - min_hours_between_checks: 2

@@ -14,6 +14,7 @@ class SiteConfig:
     subtitle: str
     description: str
     base_path: str
+    url: str = ""
 
 
 @dataclass(frozen=True)
@@ -38,6 +39,7 @@ def _norm_site_from_md(site: dict[str, Any]) -> SiteConfig:
         subtitle=str(site.get("subtitle") or "").strip(),
         description=str(site.get("description") or "").strip(),
         base_path=str(site.get("base_path") or "/").strip() or "/",
+        url=str(site.get("url") or site.get("site_url") or "").strip(),
     )
 
 
@@ -49,6 +51,7 @@ def _norm_site_from_json(site: dict[str, Any] | None) -> SiteConfig:
         subtitle=str(site.get("subtitle") or "").strip(),
         description=str(site.get("description") or "").strip(),
         base_path=str(site.get("base_path") or "/").strip() or "/",
+        url=str(site.get("url") or site.get("site_url") or "").strip(),
     )
 
 

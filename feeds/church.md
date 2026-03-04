@@ -5,6 +5,7 @@
 - description: Discover endless Christian sermons, Bible teachings, and worship videos from global ministries.
 - base_path: /
 - favicons_path: assets/images/prays-be-favicons
+- og_image_path: assets/images/og-promo.png
 - ga_measurement_id: G-RHXR1K9NDR
 
 # Defaults
