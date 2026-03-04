@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Euronews",
+  "leftovers_title_full": "Euronews — No Comment",
+  "leftovers_description": "No Comment videos from Euronews.",
+  "shows": [
+    {
+      "id": "no-comment",
+      "title": "No Comment",
+      "title_full": "Euronews — No Comment",
+      "description": "A silent window on the world.",
+      "categories": ["news", "video"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

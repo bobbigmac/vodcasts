@@ -13,6 +13,10 @@ Filter types:
 - description_contains: substring in description (strip HTML)
 - title_prefix: episode title starts with string
 - title_suffix: episode title ends with string
+- link_contains: substring in episode link URL (case-insensitive)
+- link_regex: regex on episode link URL
+- link_prefix: episode link starts with string
+- link_suffix: episode link ends with string
 
 Multi-feed shows (stub): filter may include "feed_ids": ["id1","id2"] to span feeds.
 """
@@ -58,6 +62,7 @@ def _matches_filter(ep: dict[str, Any], f: dict[str, Any], *, feed_id: str = "")
 
     title = _ep_title(ep)
     desc = _ep_desc_plain(ep)
+    link = _ep_text(ep, "link")
 
     if ftype == "title_contains":
         val = _norm(f.get("value") or f.get("contains") or "")
@@ -100,6 +105,33 @@ def _matches_filter(ep: dict[str, Any], f: dict[str, Any], *, feed_id: str = "")
         if not val:
             return False
         return val.lower() in desc.lower()
+
+    if ftype == "link_contains":
+        val = _norm(f.get("value") or f.get("contains") or "")
+        if not val:
+            return False
+        return val.lower() in link.lower()
+
+    if ftype == "link_regex":
+        pat = _norm(f.get("value") or f.get("pattern") or "")
+        if not pat:
+            return False
+        try:
+            return bool(re.search(pat, link, re.IGNORECASE))
+        except re.error:
+            return False
+
+    if ftype == "link_prefix":
+        val = _norm(f.get("value") or f.get("prefix") or "")
+        if not val:
+            return False
+        return link.lower().startswith(val.lower())
+
+    if ftype == "link_suffix":
+        val = _norm(f.get("value") or f.get("suffix") or "")
+        if not val:
+            return False
+        return link.lower().endswith(val.lower())
 
     return False
 

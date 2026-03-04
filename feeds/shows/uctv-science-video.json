@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Science Talks",
+  "leftovers_title_full": "UCTV Science — Talks & Lectures",
+  "leftovers_description": "Lectures and science talks from UCTV.",
+  "shows": [
+    {
+      "id": "carta",
+      "title": "CARTA",
+      "title_full": "CARTA (UCTV Science)",
+      "description": "Center for Academic Research and Training in Anthropogeny.",
+      "categories": ["science", "talks"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "CARTA:" }
+    },
+    {
+      "id": "mind",
+      "title": "MIND",
+      "title_full": "Medicine Informing Novel Discoveries (MIND)",
+      "description": "MIND talks and sessions.",
+      "categories": ["science", "medicine"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "Medicine Informing Novel Discoveries (MIND)" }
+    },
+    {
+      "id": "autism-tree",
+      "title": "Autism Tree",
+      "title_full": "Autism Tree — Neurodiversity Conference",
+      "description": "Autism Tree annual neurodiversity sessions.",
+      "categories": ["science", "health"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "Autism Tree Annual Neurodiversity Conference 2024" }
+    }
+  ]
+}
+

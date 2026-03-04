@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Science Friday",
+  "leftovers_title_full": "Science Friday — Videos",
+  "leftovers_description": "Videos from Science Friday.",
+  "shows": [
+    {
+      "id": "breakthrough",
+      "title": "Breakthrough",
+      "title_full": "Science Friday — Breakthrough",
+      "description": "Breakthrough series videos.",
+      "categories": ["science", "video"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Breakthrough:" }
+    },
+    {
+      "id": "climate",
+      "title": "Climate",
+      "title_full": "Science Friday — Climate",
+      "description": "Climate-related videos and reporting.",
+      "categories": ["science", "climate"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Climate" }
+    }
+  ]
+}
+

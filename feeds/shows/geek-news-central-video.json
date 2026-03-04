@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Geek News Central",
+  "leftovers_title_full": "Geek News Central (Video)",
+  "leftovers_description": "Tech headlines and commentary.",
+  "shows": [
+    {
+      "id": "ai",
+      "title": "AI",
+      "title_full": "Geek News Central — AI",
+      "description": "AI-focused headlines and episodes.",
+      "categories": ["news", "technology"],
+      "featured": true,
+      "filter": { "type": "title_contains_any", "values": ["AI", "ChatGPT", "OpenAI", "Gemini", "Grok", "DeepSeek", "Perplexity"] }
+    },
+    {
+      "id": "security",
+      "title": "Security",
+      "title_full": "Geek News Central — Security",
+      "description": "Cybersecurity and threat-related episodes.",
+      "categories": ["news", "security"],
+      "featured": false,
+      "filter": { "type": "title_contains_any", "values": ["Security", "Cyber", "Cybercrime", "FBI", "Threat", "Military"] }
+    },
+    {
+      "id": "apple",
+      "title": "Apple",
+      "title_full": "Geek News Central — Apple",
+      "description": "Apple-focused episodes and announcements.",
+      "categories": ["news", "technology"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Apple" }
+    }
+  ]
+}
+

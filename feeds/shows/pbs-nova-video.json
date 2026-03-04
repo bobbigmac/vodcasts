@@ -1,0 +1,53 @@
+{
+  "leftovers_title": "Full Episodes",
+  "leftovers_title_full": "NOVA — Full Episodes",
+  "leftovers_description": "Full episodes and longer-form NOVA videos.",
+  "shows": [
+    {
+      "id": "nova-short",
+      "title": "NOVA Short",
+      "title_full": "NOVA — Short",
+      "description": "Short-form NOVA clips.",
+      "categories": ["science", "video"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "NOVA Short" }
+    },
+    {
+      "id": "gross-science",
+      "title": "Gross Science",
+      "title_full": "NOVA — Gross Science",
+      "description": "NOVA’s Gross Science series.",
+      "categories": ["science", "video"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Gross Science" }
+    },
+    {
+      "id": "nova-labs",
+      "title": "NOVA Labs",
+      "title_full": "NOVA — Labs",
+      "description": "NOVA Labs explainers and interactive topics.",
+      "categories": ["science", "video"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "NOVA Labs" }
+    },
+    {
+      "id": "nsn",
+      "title": "NSN",
+      "title_full": "NOVA ScienceNow (NSN)",
+      "description": "NOVA ScienceNow clips and segments.",
+      "categories": ["science", "video"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "NSN" }
+    },
+    {
+      "id": "slos",
+      "title": "Secret Life of Scientists",
+      "title_full": "The Secret Life of Scientists (SLoS)",
+      "description": "SLoS mini-docs and profiles.",
+      "categories": ["science", "video"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "SLoS" }
+    }
+  ]
+}
+

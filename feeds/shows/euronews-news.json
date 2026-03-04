@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Euronews",
+  "leftovers_title_full": "Euronews — News",
+  "leftovers_description": "News from Euronews (mixed articles and videos).",
+  "shows": [
+    {
+      "id": "bulletins",
+      "title": "Latest Bulletins",
+      "title_full": "Euronews — Latest News Bulletins",
+      "description": "Short bulletins (Morning / Midday / Evening).",
+      "categories": ["news"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Latest news bulletin" }
+    },
+    {
+      "id": "correspondent",
+      "title": "Correspondent Reports",
+      "title_full": "Euronews — Correspondent Reports",
+      "description": "On-the-ground reports from Euronews correspondents.",
+      "categories": ["news"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Euronews correspondent reports" }
+    }
+  ]
+}
+

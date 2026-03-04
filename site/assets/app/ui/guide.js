@@ -20,24 +20,49 @@ const TIME_BUFFER_MIN = 90;
 const NARROW_GUIDE_MAX_W_PX = 720;
 const GUIDE_PREFS_KEY = "vodcasts_guide_prefs_v1";
 
+function fmtCategoryLabel(cat) {
+  const s = String(cat || "").trim();
+  if (!s) return "Other";
+  const parts = s.split(/[-_]+/g).filter(Boolean);
+  const words = parts.map((w) => {
+    const up = w.toUpperCase();
+    if (up === "TV") return "TV";
+    if (up === "TWIT") return "TWiT";
+    if (up === "RSS") return "RSS";
+    return w.slice(0, 1).toUpperCase() + w.slice(1);
+  });
+  return words.join(" ");
+}
+
 function loadGuidePrefs() {
   try {
     const raw = JSON.parse(localStorage.getItem(GUIDE_PREFS_KEY) || "{}");
     const fav = Array.isArray(raw?.faves) ? raw.faves.filter((x) => typeof x === "string" && x) : [];
-    const favesOnly = raw?.favesOnly === true;
     const showAudioOnly = raw?.showAudioOnly !== false;
-    return { faves: new Set(fav), favesOnly, showAudioOnly };
+    const scopeMode0 = String(raw?.scopeMode || "").trim();
+    const scopeCategory0 = String(raw?.scopeCategory || "").trim();
+    const legacyFavesOnly = raw?.favesOnly === true;
+    const scopeMode = scopeMode0 || (legacyFavesOnly ? "faves" : "all");
+    const allNext0 = String(raw?.allNext || "").trim();
+    const allNext = allNext0 === "faves" ? "faves" : "cats";
+    return { faves: new Set(fav), showAudioOnly, scopeMode, scopeCategory: scopeCategory0, allNext };
   } catch {
-    return { faves: new Set(), favesOnly: false, showAudioOnly: true };
+    return { faves: new Set(), showAudioOnly: true, scopeMode: "all", scopeCategory: "", allNext: "cats" };
   }
 }
 
-function saveGuidePrefs({ faves, favesOnly, showAudioOnly }) {
+function saveGuidePrefs({ faves, showAudioOnly, scopeMode, scopeCategory, allNext }) {
   try {
     const list = [...(faves instanceof Set ? faves : new Set())].filter((x) => typeof x === "string" && x).slice(0, 5000);
     localStorage.setItem(
       GUIDE_PREFS_KEY,
-      JSON.stringify({ faves: list, favesOnly: !!favesOnly, showAudioOnly: showAudioOnly !== false })
+      JSON.stringify({
+        faves: list,
+        showAudioOnly: showAudioOnly !== false,
+        scopeMode: String(scopeMode || "all"),
+        scopeCategory: String(scopeCategory || ""),
+        allNext: String(allNext || "cats"),
+      })
     );
   } catch {}
 }
@@ -197,8 +222,10 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
   const prefsInitRef = useRef(null);
   if (!prefsInitRef.current) prefsInitRef.current = loadGuidePrefs();
   const faveIds = useSignal(prefsInitRef.current.faves);
-  const favesOnly = useSignal(!!prefsInitRef.current.favesOnly);
   const showAudioOnly = useSignal(prefsInitRef.current.showAudioOnly !== false);
+  const scopeMode = useSignal(prefsInitRef.current.scopeMode || "all"); // all | category | faves
+  const scopeCategory = useSignal(prefsInitRef.current.scopeCategory || "");
+  const allNextRef = useSignal(prefsInitRef.current.allNext || "cats"); // cats | faves
 
   const faveCount = useMemo(() => {
     const set = faveIds.value instanceof Set ? faveIds.value : new Set();
@@ -209,10 +236,18 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
 
   useEffect(() => {
     if (faveCount > 0) return;
-    if (!favesOnly.value) return;
-    favesOnly.value = false;
-    saveGuidePrefs({ faves: faveIds.value, favesOnly: false, showAudioOnly: showAudioOnly.value });
-  }, [faveCount, favesOnly.value]);
+    if (scopeMode.value !== "faves") return;
+    scopeMode.value = "all";
+    scopeCategory.value = "";
+    allNextRef.value = "cats";
+    saveGuidePrefs({
+      faves: faveIds.value,
+      showAudioOnly: showAudioOnly.value,
+      scopeMode: scopeMode.value,
+      scopeCategory: scopeCategory.value,
+      allNext: allNextRef.value,
+    });
+  }, [faveCount, scopeMode.value]);
 
   const filterText = useSignal("");
   const filterKey = useMemo(() => String(filterText.value || "").trim(), [filterText.value]);
@@ -268,11 +303,30 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
     return out;
   }, [sourcesFlatAll, episodesBySource, includeAudioOnly]);
 
+  const categoriesForRotation = useMemo(() => {
+    const present = new Set();
+    for (const s of sourcesFlat0) present.add(String(s?.category || "other"));
+    const ordered = [];
+    for (const c of CATEGORY_ORDER) if (present.has(c)) ordered.push(c);
+    const extra = [...present].filter((c) => !CATEGORY_ORDER.includes(c)).sort((a, b) => a.localeCompare(b));
+    ordered.push(...extra);
+    return ordered;
+  }, [sourcesFlat0]);
+
   const sourcesFlat = useMemo(() => {
-    if (!favesOnly.value || faveCount <= 0) return sourcesFlat0;
-    const set = faveIds.value instanceof Set ? faveIds.value : new Set();
-    return sourcesFlat0.filter((s) => set.has(s.id));
-  }, [sourcesFlat0, favesOnly.value, faveCount, faveIds.value]);
+    const mode = String(scopeMode.value || "all");
+    if (mode === "faves") {
+      if (faveCount <= 0) return sourcesFlat0;
+      const set = faveIds.value instanceof Set ? faveIds.value : new Set();
+      return sourcesFlat0.filter((s) => set.has(s.id));
+    }
+    if (mode === "category") {
+      const want = String(scopeCategory.value || "").trim();
+      if (!want) return sourcesFlat0;
+      return sourcesFlat0.filter((s) => String(s?.category || "other") === want);
+    }
+    return sourcesFlat0;
+  }, [sourcesFlat0, scopeMode.value, scopeCategory.value, faveCount, faveIds.value]);
 
   const chanNoById = useMemo(() => {
     const m = new Map();
@@ -282,8 +336,13 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
 
   const totalChanCount = sourcesFlatPlayable.length;
   const selectedChanCount = sourcesFlat.length;
-  const cornerTitle =
-    (includeAudioOnly ? "" : "TV: ") + (favesOnly.value ? "Faves Only" : "All Channels");
+  const scopeLabel = useMemo(() => {
+    const mode = String(scopeMode.value || "all");
+    if (mode === "faves") return "Faves";
+    if (mode === "category") return fmtCategoryLabel(scopeCategory.value);
+    return "All Channels";
+  }, [scopeMode.value, scopeCategory.value]);
+  const cornerTitle = (includeAudioOnly ? "" : "TV: ") + scopeLabel;
 
   const focusSourceIdx = useSignal(Math.max(0, sourcesFlat.findIndex((s) => s.id === currentSourceId)));
   const sourcesFlatRef = useRef([]);
@@ -307,6 +366,8 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
   const sidebarHidden = useSignal(false);
   const sidebarHideOnNextScrollRef = useRef(false);
   const sidebarLastUserIntentAtRef = useRef(0);
+  const sidebarAutoToggleAtRef = useRef(0);
+  const lastTracksScrollPosRef = useRef({ sl: 0, st: 0 });
   const marqueeRef = useRef({ el: null, anim: null, key: "" });
   const chanMarqueeRef = useRef({ el: null, anim: null, key: "" });
   const openJumpRef = useRef({ at: 0, done: false });
@@ -581,6 +642,8 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
     const epId = player.current.value.episode?.id || currentEpisodeId || null;
     const tSec = Number(player.playback?.value?.time || 0);
     const nowTs = Date.now();
+    let progStartTs = null;
+    let progEndTs = null;
 
     if (alignNow && schedule && epId) {
       const idx = schedule.playable.findIndex((ep) => ep?.id === epId);
@@ -591,6 +654,8 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
         guideZeroTs.value = nowTs - offSec * 1000;
         trackStartTs.value = nowTs - (VIRTUAL_MIN / 2) * MS_PER_MIN;
         focusTs.value = nowTs;
+        progStartTs = nowTs - posSec * 1000;
+        progEndTs = progStartTs + durSec * 1000;
       } else {
         trackStartTs.value = nowTs - (VIRTUAL_MIN / 2) * MS_PER_MIN;
         focusTs.value = nowTs;
@@ -604,10 +669,21 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
     if (!tracksEl) return;
     requestAnimationFrame(() => {
       try {
-        const x = ((focusTs.value - trackStartTs.value) / MS_PER_MIN) * PX_PER_MIN;
-        const targetLeft = Math.round(x - (tracksEl.clientWidth || 1) * 0.28);
-        const max = Math.max(0, tracksEl.scrollWidth - tracksEl.clientWidth);
-        tracksEl.scrollLeft = clamp(targetLeft, 0, max);
+        const vw = tracksEl.clientWidth || 0;
+        const xLeftTs = Number.isFinite(progStartTs) ? progStartTs : focusTs.value;
+        const xRightTs = Number.isFinite(progEndTs) ? progEndTs : focusTs.value;
+        const xLeft = ((xLeftTs - trackStartTs.value) / MS_PER_MIN) * PX_PER_MIN;
+        const xRight = ((xRightTs - trackStartTs.value) / MS_PER_MIN) * PX_PER_MIN;
+
+        // Only adjust horizontal scroll if the focused/playing block is offscreen.
+        const sl = tracksEl.scrollLeft || 0;
+        const left = sl;
+        const right = sl + vw;
+        const intersects = xRight >= left && xLeft <= right;
+        if (!intersects) {
+          const max = Math.max(0, tracksEl.scrollWidth - vw);
+          tracksEl.scrollLeft = clamp(Math.round(xLeft), 0, max);
+        }
 
         const rowTop = srcIdx * GUIDE_ROW_H_PX;
         const maxTop = Math.max(0, tracksEl.scrollHeight - tracksEl.clientHeight);
@@ -676,6 +752,16 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
     chanMarqueeRef.current = { el: null, anim: null, key: "" };
   }, [isOpen.value]);
 
+  const savePrefs = () => {
+    saveGuidePrefs({
+      faves: faveIds.value,
+      showAudioOnly: showAudioOnly.value,
+      scopeMode: scopeMode.value,
+      scopeCategory: scopeCategory.value,
+      allNext: allNextRef.value,
+    });
+  };
+
   const toggleFave = (sourceId) => {
     const id = String(sourceId || "");
     if (!id) return;
@@ -684,21 +770,81 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
     if (next.has(id)) next.delete(id);
     else next.add(id);
     faveIds.value = next;
-    saveGuidePrefs({ faves: next, favesOnly: favesOnly.value, showAudioOnly: showAudioOnly.value });
+    savePrefs();
   };
 
-  const toggleFavesOnly = () => {
-    if (faveCount <= 0 && !favesOnly.value) return;
-    const next = !favesOnly.value;
-    favesOnly.value = next;
-    saveGuidePrefs({ faves: faveIds.value, favesOnly: next, showAudioOnly: showAudioOnly.value });
+  const rotateChannelScope = () => {
+    const cats = categoriesForRotation || [];
+    const hasFaves = faveCount > 0;
+    const mode = String(scopeMode.value || "all");
+    const cat = String(scopeCategory.value || "");
+
+    if (mode === "all") {
+      if (allNextRef.value === "faves" && hasFaves) {
+        scopeMode.value = "faves";
+        scopeCategory.value = "";
+        allNextRef.value = "cats";
+        savePrefs();
+        return;
+      }
+      // If faves were removed since we last rotated, fall back to categories.
+      if (allNextRef.value === "faves" && !hasFaves) allNextRef.value = "cats";
+      if (cats.length) {
+        scopeMode.value = "category";
+        scopeCategory.value = cats[0];
+        savePrefs();
+        return;
+      }
+      if (hasFaves) {
+        scopeMode.value = "faves";
+        scopeCategory.value = "";
+        allNextRef.value = "cats";
+        savePrefs();
+        return;
+      }
+      return;
+    }
+
+    if (mode === "faves") {
+      scopeMode.value = "all";
+      scopeCategory.value = "";
+      allNextRef.value = "cats";
+      savePrefs();
+      return;
+    }
+
+    if (mode === "category") {
+      const i = cats.indexOf(cat);
+      if (i >= 0 && i < cats.length - 1) {
+        scopeCategory.value = cats[i + 1];
+        savePrefs();
+        return;
+      }
+      scopeMode.value = "all";
+      scopeCategory.value = "";
+      allNextRef.value = hasFaves ? "faves" : "cats";
+      savePrefs();
+    }
   };
 
   const toggleShowAudioOnly = () => {
     const next = !showAudioOnly.value;
     showAudioOnly.value = next;
-    saveGuidePrefs({ faves: faveIds.value, favesOnly: favesOnly.value, showAudioOnly: next });
+    savePrefs();
   };
+
+  useEffect(() => {
+    const mode = String(scopeMode.value || "all");
+    if (mode !== "category") return;
+    const cats = categoriesForRotation || [];
+    const want = String(scopeCategory.value || "").trim();
+    if (!want || !cats.includes(want)) {
+      scopeMode.value = "all";
+      scopeCategory.value = "";
+      if (allNextRef.value !== "faves") allNextRef.value = "cats";
+      savePrefs();
+    }
+  }, [scopeMode.value, scopeCategory.value, categoriesForRotation.join("|")]);
 
   useEffect(() => {
     if (!isOpen.value) return;
@@ -980,6 +1126,22 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
   const renderStartTs = viewStartTs - TIME_BUFFER_MIN * MS_PER_MIN;
   const renderEndTs = viewEndTs + TIME_BUFFER_MIN * MS_PER_MIN;
 
+  // If schedule/time mapping changes while open, keep the viewport clamped to the schedule start.
+  useEffect(() => {
+    if (!isOpen.value) return;
+    const el = tracksRef.current;
+    if (!el) return;
+    const vw = el.clientWidth || 0;
+    if (vw <= 4) return;
+    const max = Math.max(0, (el.scrollWidth || 0) - vw);
+    const min = Math.max(0, Math.round(((Number(guideZeroTs.value) - Number(trackStartTs.value)) / MS_PER_MIN) * PX_PER_MIN));
+    const cur = Math.round(Number(el.scrollLeft || 0));
+    const next = clamp(cur, min, max);
+    if (next === cur) return;
+    lastTracksScrollPosRef.current = { sl: next, st: Number(el.scrollTop || 0) };
+    el.scrollLeft = next;
+  }, [isOpen.value, guideZeroTs.value, trackStartTs.value]);
+
   const visibleRange = useMemo(() => {
     const top = scrollTopPx.value || 0;
     const startRow = clamp(Math.floor(top / GUIDE_ROW_H_PX) - ROW_OVERSCAN, 0, Math.max(0, sourcesFlat.length - 1));
@@ -1011,17 +1173,89 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
       });
     };
 
+    const clampScrollLeftToScheduleStart = () => {
+      // Prevent scrolling into "empty time" before the schedule begins.
+      // Schedules always begin at `guideZeroTs` in our mapping.
+      const vw = tracksEl.clientWidth || 0;
+      if (vw <= 4) return false;
+      const max = Math.max(0, (tracksEl.scrollWidth || 0) - vw);
+      const min = Math.max(
+        0,
+        Math.round(((Number(guideZeroTs.value) - Number(trackStartTs.value)) / MS_PER_MIN) * PX_PER_MIN)
+      );
+      const cur = Math.round(Number(tracksEl.scrollLeft || 0));
+      const next = clamp(cur, min, max);
+      if (next === cur) return false;
+      sidebarHideOnNextScrollRef.current = false;
+      sidebarLastUserIntentAtRef.current = 0;
+      lastTracksScrollPosRef.current = { sl: next, st: Number(tracksEl.scrollTop || 0) };
+      tracksEl.scrollLeft = next;
+      return true;
+    };
+
     const onScroll = () => {
       lastScrollAtRef.current = Date.now();
-      if (isOpen.value && isNarrowGuide() && !sidebarHidden.value) {
-        const pending = !!sidebarHideOnNextScrollRef.current;
+      if (isOpen.value) {
+        try {
+          // Clamp first so the rest of the logic sees a sane scroll position.
+          if (clampScrollLeftToScheduleStart()) {
+            update();
+            return;
+          }
+        } catch {}
+      }
+      if (isOpen.value && isNarrowGuide()) {
+        const slNow = tracksEl.scrollLeft || 0;
+        const stNow = tracksEl.scrollTop || 0;
+        const prev = lastTracksScrollPosRef.current || { sl: slNow, st: stNow };
+        const dsl = slNow - (Number(prev.sl) || 0);
+        const dst = stNow - (Number(prev.st) || 0);
+        lastTracksScrollPosRef.current = { sl: slNow, st: stNow };
+
         const intentAt = Number(sidebarLastUserIntentAtRef.current) || 0;
-        const recentIntent = Date.now() - intentAt < 1500;
+        // Only auto-toggle in response to explicit user interaction (wheel/touchstart/pointerdown).
+        const recentIntent = Date.now() - intentAt < 8000;
         const lastKeys = Number(keyNavAtRef.current) || 0;
         const recentKeys = Date.now() - lastKeys < 700;
-        if (pending && recentIntent && !recentKeys) {
-          sidebarHidden.value = true;
-          sidebarHideOnNextScrollRef.current = false;
+
+        const ax = Math.abs(dsl);
+        const ay = Math.abs(dst);
+        const mostlyX = ax > ay + 3;
+        const mostlyY = ay > ax + 3;
+        const canToggle = Date.now() - (Number(sidebarAutoToggleAtRef.current) || 0) > 650;
+
+        // If the user is panning horizontally, hide the sidebar to reveal more program titles.
+        if (!sidebarHidden.value) {
+          const pending = !!sidebarHideOnNextScrollRef.current;
+          if (pending && recentIntent && !recentKeys) {
+            if (mostlyX && dsl > 0 && ax > 6) {
+              sidebarHidden.value = true;
+              sidebarHideOnNextScrollRef.current = false;
+              sidebarAutoToggleAtRef.current = Date.now();
+            } else if (mostlyY && ay > 6) {
+              // Vertical browse: keep the sidebar visible.
+              sidebarHideOnNextScrollRef.current = false;
+            }
+          } else if (recentIntent && !recentKeys && canToggle && mostlyX && dsl > 0 && ax > 12) {
+            sidebarHidden.value = true;
+            sidebarHideOnNextScrollRef.current = false;
+            sidebarAutoToggleAtRef.current = Date.now();
+          }
+        } else if (recentIntent && !recentKeys && canToggle) {
+          // If the user is browsing vertically, show the sidebar so channel names are visible.
+          if (mostlyY && ay > 12) {
+            sidebarHidden.value = false;
+            sidebarAutoToggleAtRef.current = Date.now();
+          }
+          // Also show it when the user returns close to the left edge.
+          if (slNow <= 10 && mostlyY && ay > 6) {
+            sidebarHidden.value = false;
+            sidebarAutoToggleAtRef.current = Date.now();
+          }
+          if (slNow <= 10 && mostlyX && dsl < 0 && ax > 6) {
+            sidebarHidden.value = false;
+            sidebarAutoToggleAtRef.current = Date.now();
+          }
         }
       }
       update();
@@ -1304,25 +1538,17 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
             </div>
             <div class="guideGridHeaderActions">
               <button
-                class=${"guideGridHeaderBtn guideGridHeaderBtnFaves" + (favesOnly.value ? " active" : "")}
-                disabled=${faveCount <= 0 && !favesOnly.value}
-                aria-disabled=${faveCount <= 0 && !favesOnly.value ? "true" : "false"}
-                title=${faveCount > 0
-                  ? favesOnly.value
-                    ? "Show all channels"
-                    : "Show favorites only"
-                  : favesOnly.value
-                    ? "No favorite channels left (turn off to clear)"
-                    : "No favorite channels yet"}
-                aria-pressed=${favesOnly.value ? "true" : "false"}
+                class=${"guideGridHeaderBtn guideGridHeaderBtnFaves" + (scopeMode.value !== "all" ? " active" : "")}
+                title=${`Channels: ${scopeLabel}. Click to cycle.`}
+                aria-label=${`Channels: ${scopeLabel}. Click to cycle.`}
                 data-navitem="1"
                 onClick=${(e) => {
                   e.stopPropagation?.();
-                  toggleFavesOnly();
+                  rotateChannelScope();
                 }}
                 onPointerDown=${(e) => e.stopPropagation()}
               >
-                ${favesOnly.value ? "Show All" : "Faves Only"}
+                ${scopeMode.value === "faves" ? "Faves" : scopeMode.value === "category" ? fmtCategoryLabel(scopeCategory.value) : "All"}
               </button>
               <button
                 class=${"guideGridHeaderBtn guideGridHeaderBtnAudioOnly" + (showAudioOnly.value ? " active" : "")}
@@ -1565,14 +1791,18 @@ export function GuidePanel({ isOpen, sources, player, showsConfig, onFeedClick }
                               `;
                             })
                           : html`
-                              <button class="guideGridEp guideGridEpLoad" style=${{ left: "0px", width: "260px" }} disabled>
+                              <button
+                                class="guideGridEp guideGridEpLoad"
+                                style=${{ left: `${Math.round(scrollLeftPx.value)}px`, width: "260px" }}
+                                disabled
+                              >
                                 No playable videos
                               </button>
                             `
                         : html`
                             <button
                               class="guideGridEp guideGridEpLoad"
-                              style=${{ left: "0px", width: "220px" }}
+                              style=${{ left: `${Math.round(scrollLeftPx.value)}px`, width: "220px" }}
                               onClick=${async () => {
                                 await player.loadSourceEpisodes(src.id);
                               }}

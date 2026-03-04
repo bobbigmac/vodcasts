@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "TED Talks",
+  "leftovers_title_full": "TED Talks Daily (Video)",
+  "leftovers_description": "Talks and talks-only clips from TED.",
+  "shows": [
+    {
+      "id": "ai",
+      "title": "AI & Tech",
+      "title_full": "TED — AI & Tech",
+      "description": "AI, technology, and computing talks.",
+      "categories": ["talks", "technology"],
+      "featured": true,
+      "filter": { "type": "title_contains_any", "values": ["AI", "ChatGPT", "OpenAI", "Gemini"] }
+    },
+    {
+      "id": "climate",
+      "title": "Climate",
+      "title_full": "TED — Climate",
+      "description": "Climate and environment talks.",
+      "categories": ["talks", "climate"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "climate" }
+    }
+  ]
+}
+

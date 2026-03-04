@@ -1,0 +1,53 @@
+{
+  "leftovers_title": "Al Jazeera",
+  "leftovers_title_full": "Al Jazeera — Latest",
+  "leftovers_description": "Latest items from Al Jazeera’s main RSS feed.",
+  "shows": [
+    {
+      "id": "newsfeed",
+      "title": "Newsfeed",
+      "title_full": "Al Jazeera — Newsfeed (Video)",
+      "description": "Short-form video newsfeed clips.",
+      "categories": ["news", "video"],
+      "featured": true,
+      "filter": { "type": "link_contains", "value": "/video/newsfeed" }
+    },
+    {
+      "id": "inside-story",
+      "title": "Inside Story",
+      "title_full": "Al Jazeera — Inside Story",
+      "description": "Inside Story segments and highlights.",
+      "categories": ["news", "video"],
+      "featured": false,
+      "filter": { "type": "link_contains", "value": "/video/inside-story" }
+    },
+    {
+      "id": "news",
+      "title": "News",
+      "title_full": "Al Jazeera — News",
+      "description": "News articles and updates.",
+      "categories": ["news"],
+      "featured": false,
+      "filter": { "type": "link_contains", "value": "/news/" }
+    },
+    {
+      "id": "economy",
+      "title": "Economy",
+      "title_full": "Al Jazeera — Economy",
+      "description": "Economy and business stories.",
+      "categories": ["news", "business"],
+      "featured": false,
+      "filter": { "type": "link_contains", "value": "/economy/" }
+    },
+    {
+      "id": "sports",
+      "title": "Sports",
+      "title_full": "Al Jazeera — Sports",
+      "description": "Sports stories and liveblogs.",
+      "categories": ["news", "sport"],
+      "featured": false,
+      "filter": { "type": "link_contains", "value": "/sports/" }
+    }
+  ]
+}
+

@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "DW فارسی",
+  "leftovers_title_full": "Deutsche Welle — Persian",
+  "leftovers_description": "Latest items from Deutsche Welle’s Persian feed.",
+  "shows": [
+    {
+      "id": "khabargah",
+      "title": "خبرگاه",
+      "title_full": "DW فارسی — خبرگاه",
+      "description": "Newsdesk updates (خبرگاه).",
+      "categories": ["news"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "خبرگاه" }
+    },
+    {
+      "id": "cartoon",
+      "title": "کاریکاتور هفته",
+      "title_full": "DW فارسی — کاریکاتور هفته",
+      "description": "Weekly cartoon.",
+      "categories": ["news", "culture"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "کاریکاتور" }
+    }
+  ]
+}
+

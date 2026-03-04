@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Headlines",
+  "leftovers_title_full": "BBC News — Headlines",
+  "leftovers_description": "Latest headlines from the BBC front page feed.",
+  "shows": [
+    {
+      "id": "sport",
+      "title": "Sport",
+      "title_full": "BBC News — Sport",
+      "description": "Sports stories surfaced on the front page feed.",
+      "categories": ["news", "sport"],
+      "featured": false,
+      "filter": { "type": "link_contains", "value": "/sport/" }
+    },
+    {
+      "id": "videos",
+      "title": "News Videos",
+      "title_full": "BBC News — Videos",
+      "description": "Video items from the front page feed.",
+      "categories": ["news", "video"],
+      "featured": false,
+      "filter": { "type": "link_contains", "value": "/news/videos" }
+    },
+    {
+      "id": "sounds",
+      "title": "BBC Sounds",
+      "title_full": "BBC Sounds — Clips",
+      "description": "BBC Sounds items (audio) surfaced in the feed.",
+      "categories": ["news", "audio"],
+      "featured": false,
+      "filter": { "type": "link_contains", "value": "/sounds/play" }
+    }
+  ]
+}
+

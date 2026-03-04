@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Euronews Sport",
+  "leftovers_title_full": "Euronews — Sport",
+  "leftovers_description": "Sports news and highlights from Euronews.",
+  "shows": [
+    {
+      "id": "winter-olympics",
+      "title": "Winter Olympics",
+      "title_full": "Euronews Sport — Winter Olympics",
+      "description": "Milano-Cortina and other Olympics coverage.",
+      "categories": ["news", "sport"],
+      "featured": true,
+      "filter": { "type": "title_contains_any", "values": ["Olympics", "Milano-Cortina", "Milan-Cortina", "Winter Olympics"] }
+    },
+    {
+      "id": "afcon",
+      "title": "AFCON",
+      "title_full": "Euronews Sport — AFCON",
+      "description": "Africa Cup of Nations coverage.",
+      "categories": ["news", "sport", "football"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "AFCON" }
+    },
+    {
+      "id": "tashkent",
+      "title": "Tashkent",
+      "title_full": "Euronews Sport — Tashkent",
+      "description": "Tashkent event highlights (combat sports).",
+      "categories": ["news", "sport"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Tashkent" }
+    }
+  ]
+}
+

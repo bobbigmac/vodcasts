@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Tech News Weekly",
+  "leftovers_title_full": "Tech News Weekly (Video)",
+  "leftovers_description": "Weekly tech news and analysis (TWiT).",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Tech News Weekly — Episodes",
+      "description": "All episodes.",
+      "categories": ["news", "technology"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

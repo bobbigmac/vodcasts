@@ -1,0 +1,41 @@
+{
+  "leftovers_title": "Euronews Green",
+  "leftovers_title_full": "Euronews — Green",
+  "leftovers_description": "Environment and climate stories from Euronews Green.",
+  "shows": [
+    {
+      "id": "climate",
+      "title": "Climate",
+      "title_full": "Euronews Green — Climate",
+      "description": "Climate change, warming, emissions, and impacts.",
+      "categories": ["news", "climate"],
+      "featured": true,
+      "filter": {
+        "type": "title_contains_any",
+        "values": ["climate", "warming", "emissions", "carbon", "fossil", "renewable"]
+      }
+    },
+    {
+      "id": "wildlife",
+      "title": "Wildlife",
+      "title_full": "Euronews Green — Wildlife",
+      "description": "Biodiversity, animals, conservation, and habitats.",
+      "categories": ["news", "nature"],
+      "featured": false,
+      "filter": {
+        "type": "title_contains_any",
+        "values": ["wildlife", "penguin", "beaver", "spider", "dolphin", "bird", "tiger", "amazon", "ocean"]
+      }
+    },
+    {
+      "id": "energy",
+      "title": "Energy & Policy",
+      "title_full": "Euronews Green — Energy & Policy",
+      "description": "Energy transition, policy, and environmental regulation.",
+      "categories": ["news", "energy"],
+      "featured": false,
+      "filter": { "type": "title_contains_any", "values": ["energy", "renewable", "solar", "wind", "oil", "gas"] }
+    }
+  ]
+}
+
