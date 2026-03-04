@@ -40,6 +40,12 @@ def _parse_args() -> argparse.Namespace:
         default=[],
         help="Only process this feed id (repeatable).",
     )
+    p.add_argument(
+        "--skip-category",
+        action="append",
+        default=[],
+        help="Skip feeds whose category matches this value (repeatable).",
+    )
     p.add_argument("--only-missing", action="store_true", help="Only list feeds missing show filter files.")
     p.add_argument("--only-with-filters", action="store_true", help="Only list feeds that already have show filters.")
     return p.parse_args()
@@ -229,9 +235,12 @@ def main() -> None:
     max_feeds = max(0, int(args.max_feeds))
     max_missing = max(0, int(args.max_missing))
     wanted_feed_ids = {str(x).strip() for x in (args.feed_id or []) if str(x).strip()}
+    skip_categories = {str(x).strip() for x in (args.skip_category or []) if str(x).strip()}
 
     cfg = load_sources_config(feeds_path)
     sources = cfg.sources[:]
+    if skip_categories:
+        sources = [s for s in sources if str(s.category or "").strip() not in skip_categories]
     if wanted_feed_ids:
         sources = [s for s in sources if s.id in wanted_feed_ids]
     if max_feeds:
@@ -263,7 +272,7 @@ def main() -> None:
             parse_errors.append(scan)
         else:
             missing_filters.append(scan)
-        if args.only_missing and max_missing and (len(missing_filters) + len(parse_errors) >= max_missing):
+        if args.only_missing and max_missing and (len(missing_filters) >= max_missing):
             break
 
     missing_filters.sort(key=lambda x: (-x.episode_count, x.source.id))
