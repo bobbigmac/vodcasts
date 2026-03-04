@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/" xmlns:podcast="https://podcastindex.org/namespace/1.0" version="2.0">
+	<channel>
+		<title>Tech News Weekly (Video)</title>
+		<itunes:author>TWiT</itunes:author>
+		<link>https://twit.tv/shows/tech-news-weekly</link>
+		<generator>TWiT Feed Generator v4.10</generator>
+		<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+		<language>en-US</language>
+		<copyright>This work is licensed under a Creative Commons License - Attribution-NonCommercial-NoDerivatives 4.0 International - http://creativecommons.org/licenses/by-nc-nd/4.0/</copyright>
+		<creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+		<managingEditor>feedmail@twit.tv (TWiT Editors)</managingEditor>
+		<webMaster>feedmail@twit.tv (TWiT Engineering)</webMaster>
+		<ttl>120</ttl>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>12</sy:updateFrequency>
+		<lastBuildDate>Sun, 01 Mar 2026 18:16:27 PST</lastBuildDate>
+		<pubDate>Sun, 01 Mar 2026 18:16:27 PST</pubDate>
+		<rawvoice:frequency>hourly</rawvoice:frequency>
+		<rawvoice:location>Petaluma, CA</rawvoice:location>
+		<itunes:type>episodic</itunes:type>
+		<itunes:subtitle>Your quick update featuring the top journalists and experts breaking this week's tech news.</itunes:subtitle>
+		<itunes:summary>Industry expert Mikah Sargent, brings you interviews from tech journalists who make or break the top stories of the week. Get the freshest perspective and in depth insight into the fast-paced world of technology from Tech News Weekly.
+
+Records every Thursday at 2:00pm Eastern / 11:00am Pacific / 19:00 UTC.</itunes:summary>
+		<description>Industry expert Mikah Sargent, brings you interviews from tech journalists who make or break the top stories of the week. Get the freshest perspective and in depth insight into the fast-paced world of technology from Tech News Weekly.
+
+Records every Thursday at 2:00pm Eastern / 11:00am Pacific / 19:00 UTC.</description>
+		<itunes:keywords>TWiT, Technology, Mikah Sargent, Tech News, Technology News, TNW</itunes:keywords>
+		<rawvoice:rating tv="tv-g">tv-g</rawvoice:rating>
+		<itunes:explicit>no</itunes:explicit>
+		<itunes:block>no</itunes:block>
+		<googleplay:block>No</googleplay:block>
+		<podcast:funding url="https://twit.tv/clubtwit">Become a Club TWiT member!</podcast:funding>
+		<itunes:owner>
+			<itunes:name>Leo Laporte</itunes:name>
+			<itunes:email>feedmail@twit.tv</itunes:email>
+		</itunes:owner>
+		<itunes:category text="News">
+			<itunes:category text="Tech News"/>
+		</itunes:category>
+		<category>Technology</category>
+		<category>Tech News</category>
+		<category>News</category>
+		<image>
+			<title>Tech News Weekly (Video)</title>
+			<url>https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/Tech%20News%20Weekly/album_art/hd/TNW_albumart_standard_video.jpg</url>
+			<link>https://twit.tv/shows/tech-news-weekly</link>
+		</image>
+		<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/Tech%20News%20Weekly/album_art/hd/TNW_albumart_standard_video.jpg" />
+		<itunes:new-feed-url>https://feeds.twit.tv/tnw_video_hd.xml</itunes:new-feed-url>
+		<rawvoice:subscribe feed="https://feeds.twit.tv/tnw_video_hd.xml" itunes="https://podcasts.apple.com/us/podcast/tech-news-weekly-video/id548391172" html="https://twit.tv/shows/tech-news-weekly"></rawvoice:subscribe>
+		<atom:link href="https://feeds.twit.tv/tnw_video_hd.xml" type="application/rss+xml" rel="self"/>
+		<item>
+			<title>TNW 426: Samsung Galaxy S26: AI, Privacy, and New Buds - Samsung&#039;s New Privacy Display Feature</title>
+			<itunes:title>Samsung Galaxy S26: AI, Privacy, and New Buds - Samsung&#039;s New Privacy Display Feature</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 26 Feb 2026 16:00:00 PST</pubDate>
+			<itunes:episode>426</itunes:episode>
+			<podcast:episode>426</podcast:episode>
+			<link>https://twit.tv/shows/tech-news-weekly/episodes/426</link>
+			<comments>https://twit.tv/shows/tech-news-weekly/episodes/426</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Tech News</category>
+			<category>News</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Samsung&#039;s New Privacy Display Feature</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/samsung-galaxy-s26-ultras-new-privacy-display-feature" type="text/html" />
+			<itunes:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, emily forlini, pcmag, FBI, fbi tech dogs, electronic detection dogs, hidden tech, bomb sniffing dogs, AI in education, einstein ai tool, agentic ai, Jason Howell, android faithful</itunes:keywords>
+			<description><![CDATA[
+<p>Emily Forlini of PCMag joins Mikah Sargent this week on <em>Tech News Weekly</em>! A look into a program that trains dogs to detect hidden tech. How AI is impacting learning for kids in schools. Samsung touts a new privacy feature for its latest phones. And Apple is ramping up its new product releases as it catches up in the AI race.</p><ul> 
+<li>Emily talks about her time at the FBI and a program that trains dogs to detect hidden tech.</li> 
+<li>Mikah chats about an agentic AI that was developed to attend lectures and do homework for you, delving into the conversation about AI's impact on a child's learning development.</li> 
+<li>Jason Howell of Android Faithful joins the show to talk about everything announced at the Galaxy Unpacked event that happened in San Francisco, including Samsung's new Privacy Display feature.</li> 
+<li>And Mikah talks about Mark Gurman's look into the work Apple is ramping up on as it works to catch up in the AI era of tech.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/emily-forlini">Emily Forlini</a></p> 
+<p><strong>Guest:</strong> <a href="https://twit.tv/people/jason-howell">Jason Howell</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+<li><a href="http://hipebl.ai" target="_blank" rel="sponsored">hipebl.ai</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Emily Forlini of PCMag joins Mikah Sargent this week on <em>Tech News Weekly</em>! A look into a program that trains dogs to detect hidden tech. How AI is impacting learning for kids in schools. Samsung touts a new privacy feature for its latest phones. And Apple is ramping up its new product releases as it catches up in the AI race.</p><ul> 
+<li>Emily talks about her time at the FBI and a program that trains dogs to detect hidden tech.</li> 
+<li>Mikah chats about an agentic AI that was developed to attend lectures and do homework for you, delving into the conversation about AI's impact on a child's learning development.</li> 
+<li>Jason Howell of Android Faithful joins the show to talk about everything announced at the Galaxy Unpacked event that happened in San Francisco, including Samsung's new Privacy Display feature.</li> 
+<li>And Mikah talks about Mark Gurman's look into the work Apple is ramping up on as it works to catch up in the AI era of tech.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/emily-forlini">Emily Forlini</a></p> 
+<p><strong>Guest:</strong> <a href="https://twit.tv/people/jason-howell">Jason Howell</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+<li><a href="http://hipebl.ai" target="_blank" rel="sponsored">hipebl.ai</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Emily Forlini of PCMag joins Mikah Sargent this week on <em>Tech News Weekly</em>! A look into a program that trains dogs to detect hidden tech. How AI is impacting learning for kids in schools. Samsung touts a new privacy feature for its latest phones. And Apple is ramping up its new product releases as it catches up in the AI race.</p><ul> 
+<li>Emily talks about her time at the FBI and a program that trains dogs to detect hidden tech.</li> 
+<li>Mikah chats about an agentic AI that was developed to attend lectures and do homework for you, delving into the conversation about AI's impact on a child's learning development.</li> 
+<li>Jason Howell of Android Faithful joins the show to talk about everything announced at the Galaxy Unpacked event that happened in San Francisco, including Samsung's new Privacy Display feature.</li> 
+<li>And Mikah talks about Mark Gurman's look into the work Apple is ramping up on as it works to catch up in the AI era of tech.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/emily-forlini">Emily Forlini</a></p> 
+<p><strong>Guest:</strong> <a href="https://twit.tv/people/jason-howell">Jason Howell</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+<li><a href="http://hipebl.ai" target="_blank" rel="sponsored">hipebl.ai</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860308/hero/TNW0426_thumbnail-v2.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0426/tnw0426_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:03:29</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0426/tnw0426_h264m_1920x1080.mp4" length="1120801846" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0426/tnw0426_h264m_1920x1080.mp4" fileSize="1120801846" type="video/mp4" medium="video">
+				<media:title type="plain">TNW 426: Samsung Galaxy S26: AI, Privacy, and New Buds - Samsung&#039;s New Privacy Display Feature</media:title>
+				<media:description type="plain">Samsung&#039;s New Privacy Display Feature</media:description>
+				<media:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, emily forlini, pcmag, FBI, fbi tech dogs, electronic detection dogs, hidden tech, bomb sniffing dogs, AI in education, einstein ai tool, agentic ai, Jason Howell, android faithful</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860308/hero/TNW0426_thumbnail-v2.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+				<media:credit role="host">Emily Forlini</media:credit>
+				<media:credit role="guest">Jason Howell</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/emily-forlini" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/843193/pictures/Emily.jpg">Emily Forlini</podcast:person>
+				<podcast:person role="guest" href="https://twit.tv/people/jason-howell" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/22/pictures/jason-howell.png">Jason Howell</podcast:person>
+		</item>
+		<item>
+			<title>TNW 425: Ring's Lost Dog Ad Was Never About Dogs - Ring&#039;s Super Bowl Commercial Backlash</title>
+			<itunes:title>Ring's Lost Dog Ad Was Never About Dogs - Ring&#039;s Super Bowl Commercial Backlash</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 19 Feb 2026 15:45:00 PST</pubDate>
+			<itunes:episode>425</itunes:episode>
+			<podcast:episode>425</podcast:episode>
+			<link>https://twit.tv/shows/tech-news-weekly/episodes/425</link>
+			<comments>https://twit.tv/shows/tech-news-weekly/episodes/425</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Tech News</category>
+			<category>News</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Ring&#039;s Super Bowl Commercial Backlash</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/how-amazon-rings-search-party-ai-raises-new-questions-home-surveillance" type="text/html" />
+			<itunes:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, jennifer pattison tuohy, the verge, amazon, Ring, ring doorbells, ring super bowl commercial, search party feature, ring ai, amazon ring system, lego, lego smart brick, smart brick technology</itunes:keywords>
+			<description><![CDATA[
+<p>Jennifer Pattison Tuohy of The Verge joins Mikah Sargent this week! Amazon's Ring product had a Super Bowl ad that generated a lot of discussion and backlash following its debut. A look inside Lego's Smart Brick technology. And NASA's Perseverance rover completed its first-ever drive fully planned by AI.</p><ul> 
+<li>Jennifer talks about Amazon Ring's Super Bowl commercial that sparked a lot of backlash, which showcases its AI-powered Search Party feature, with concerns that it could be used as a means of a mass networked surveillance system.</li> 
+<li>Mikah is fascinated by the dive into Lego's new Smart Brick technology.</li> 
+<li>And Tariq Malik of Space.com and <em>This Week in Space</em> joins the show to talk about NASA's Perseverance rover, which completed its first drive planned by AI, and how the technology's use compares to a human-planned drive.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/jennifer-pattison-tuohy">Jennifer Pattison Tuohy</a></p> 
+<p><strong>Guest:</strong> <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Jennifer Pattison Tuohy of The Verge joins Mikah Sargent this week! Amazon's Ring product had a Super Bowl ad that generated a lot of discussion and backlash following its debut. A look inside Lego's Smart Brick technology. And NASA's Perseverance rover completed its first-ever drive fully planned by AI.</p><ul> 
+<li>Jennifer talks about Amazon Ring's Super Bowl commercial that sparked a lot of backlash, which showcases its AI-powered Search Party feature, with concerns that it could be used as a means of a mass networked surveillance system.</li> 
+<li>Mikah is fascinated by the dive into Lego's new Smart Brick technology.</li> 
+<li>And Tariq Malik of Space.com and <em>This Week in Space</em> joins the show to talk about NASA's Perseverance rover, which completed its first drive planned by AI, and how the technology's use compares to a human-planned drive.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/jennifer-pattison-tuohy">Jennifer Pattison Tuohy</a></p> 
+<p><strong>Guest:</strong> <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Jennifer Pattison Tuohy of The Verge joins Mikah Sargent this week! Amazon's Ring product had a Super Bowl ad that generated a lot of discussion and backlash following its debut. A look inside Lego's Smart Brick technology. And NASA's Perseverance rover completed its first-ever drive fully planned by AI.</p><ul> 
+<li>Jennifer talks about Amazon Ring's Super Bowl commercial that sparked a lot of backlash, which showcases its AI-powered Search Party feature, with concerns that it could be used as a means of a mass networked surveillance system.</li> 
+<li>Mikah is fascinated by the dive into Lego's new Smart Brick technology.</li> 
+<li>And Tariq Malik of Space.com and <em>This Week in Space</em> joins the show to talk about NASA's Perseverance rover, which completed its first drive planned by AI, and how the technology's use compares to a human-planned drive.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/jennifer-pattison-tuohy">Jennifer Pattison Tuohy</a></p> 
+<p><strong>Guest:</strong> <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860226/hero/TNW0425_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0425/tnw0425_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>57:23</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0425/tnw0425_h264m_1920x1080.mp4" length="1017023317" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0425/tnw0425_h264m_1920x1080.mp4" fileSize="1017023317" type="video/mp4" medium="video">
+				<media:title type="plain">TNW 425: Ring's Lost Dog Ad Was Never About Dogs - Ring&#039;s Super Bowl Commercial Backlash</media:title>
+				<media:description type="plain">Ring&#039;s Super Bowl Commercial Backlash</media:description>
+				<media:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, jennifer pattison tuohy, the verge, amazon, Ring, ring doorbells, ring super bowl commercial, search party feature, ring ai, amazon ring system, lego, lego smart brick, smart brick technology</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860226/hero/TNW0425_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+				<media:credit role="host">Jennifer Pattison Tuohy</media:credit>
+				<media:credit role="guest">Tariq Malik</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/jennifer-pattison-tuohy" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/846865/pictures/akrales_220906_5191_3741.jpg">Jennifer Pattison Tuohy</podcast:person>
+				<podcast:person role="guest" href="https://twit.tv/people/tariq-malik" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/822480/pictures/tariq-malik.jpg">Tariq Malik</podcast:person>
+		</item>
+		<item>
+			<title>TNW 424: Face Scans on Discord? - Discord&#039;s New Age Verification Process Sparks Privacy Concerns</title>
+			<itunes:title>Face Scans on Discord? - Discord&#039;s New Age Verification Process Sparks Privacy Concerns</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 12 Feb 2026 16:30:00 PST</pubDate>
+			<itunes:episode>424</itunes:episode>
+			<podcast:episode>424</podcast:episode>
+			<link>https://twit.tv/shows/tech-news-weekly/episodes/424</link>
+			<comments>https://twit.tv/shows/tech-news-weekly/episodes/424</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Tech News</category>
+			<category>News</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Discord&#039;s New Age Verification Process Sparks Privacy Concerns</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/discords-new-age-checks-should-you-worry-about-face-scans-and-id-uploads" type="text/html" />
+			<itunes:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, amanda silberling, techcrunch, stanford, date drop, ai matching algorithm, online dating apps, Meta, instagram, Adam Mosseri, tech addiction trial, social media lawsuits, teen safety, snap, tiktok</itunes:keywords>
+			<description><![CDATA[
+<p>Amanda Silberling of TechCrunch joins Mikah Sargent this week on Tech News Weekly! A Stanford graduate built a matchmaking algorithm that's sweeping across the Stanford campus. Is social media "clinically addictive"? Discord announced an age-verification process that sparked privacy concerns among users. And the Virtual Boy is back?</p><ul> 
+<li>Amanda talks about an AI-powered dating app that was developed by a Stanford graduate and how dating for young adults is becoming more driven by tech.</li> 
+<li>Mikah talks about the social media addiction trial and comments made by Instagram's CEO, Adam Mosseri.</li> 
+<li>Emma Roth of The Verge joins the show to talk about Discord's age verification mandate that has sparked huge user privacy concerns, especially following a data breach the company suffered last year.</li> 
+<li>And Scott Stein of CNET stops by to share his thoughts and time with Nintendo's revival of Virtual Boy as a replica accessory for the Nintendo Switch and Switch 2.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/amanda-silberling">Amanda Silberling</a></p> 
+<p><strong>Guests:</strong> <a href="https://x.com/emroth08" target="_blank">Emma Roth</a> and <a href="https://twitter.com/jetscott" target="_blank">Scott Stein</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://preview.modulate.ai" target="_blank" rel="sponsored">preview.modulate.ai</a></li>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Amanda Silberling of TechCrunch joins Mikah Sargent this week on Tech News Weekly! A Stanford graduate built a matchmaking algorithm that's sweeping across the Stanford campus. Is social media "clinically addictive"? Discord announced an age-verification process that sparked privacy concerns among users. And the Virtual Boy is back?</p><ul> 
+<li>Amanda talks about an AI-powered dating app that was developed by a Stanford graduate and how dating for young adults is becoming more driven by tech.</li> 
+<li>Mikah talks about the social media addiction trial and comments made by Instagram's CEO, Adam Mosseri.</li> 
+<li>Emma Roth of The Verge joins the show to talk about Discord's age verification mandate that has sparked huge user privacy concerns, especially following a data breach the company suffered last year.</li> 
+<li>And Scott Stein of CNET stops by to share his thoughts and time with Nintendo's revival of Virtual Boy as a replica accessory for the Nintendo Switch and Switch 2.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/amanda-silberling">Amanda Silberling</a></p> 
+<p><strong>Guests:</strong> <a href="https://x.com/emroth08" target="_blank">Emma Roth</a> and <a href="https://twitter.com/jetscott" target="_blank">Scott Stein</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://preview.modulate.ai" target="_blank" rel="sponsored">preview.modulate.ai</a></li>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Amanda Silberling of TechCrunch joins Mikah Sargent this week on Tech News Weekly! A Stanford graduate built a matchmaking algorithm that's sweeping across the Stanford campus. Is social media "clinically addictive"? Discord announced an age-verification process that sparked privacy concerns among users. And the Virtual Boy is back?</p><ul> 
+<li>Amanda talks about an AI-powered dating app that was developed by a Stanford graduate and how dating for young adults is becoming more driven by tech.</li> 
+<li>Mikah talks about the social media addiction trial and comments made by Instagram's CEO, Adam Mosseri.</li> 
+<li>Emma Roth of The Verge joins the show to talk about Discord's age verification mandate that has sparked huge user privacy concerns, especially following a data breach the company suffered last year.</li> 
+<li>And Scott Stein of CNET stops by to share his thoughts and time with Nintendo's revival of Virtual Boy as a replica accessory for the Nintendo Switch and Switch 2.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/amanda-silberling">Amanda Silberling</a></p> 
+<p><strong>Guests:</strong> <a href="https://x.com/emroth08" target="_blank">Emma Roth</a> and <a href="https://twitter.com/jetscott" target="_blank">Scott Stein</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://preview.modulate.ai" target="_blank" rel="sponsored">preview.modulate.ai</a></li>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860124/hero/TNW0424_thumbnail-v3.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0424/tnw0424_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:00:28</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0424/tnw0424_h264m_1920x1080.mp4" length="1068220844" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0424/tnw0424_h264m_1920x1080.mp4" fileSize="1068220844" type="video/mp4" medium="video">
+				<media:title type="plain">TNW 424: Face Scans on Discord? - Discord&#039;s New Age Verification Process Sparks Privacy Concerns</media:title>
+				<media:description type="plain">Discord&#039;s New Age Verification Process Sparks Privacy Concerns</media:description>
+				<media:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, amanda silberling, techcrunch, stanford, date drop, ai matching algorithm, online dating apps, Meta, instagram, Adam Mosseri, tech addiction trial, social media lawsuits, teen safety, snap, tiktok</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860124/hero/TNW0424_thumbnail-v3.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+				<media:credit role="host">Amanda Silberling</media:credit>
+				<media:credit role="guest">Emma Roth</media:credit>
+				<media:credit role="guest">Scott Stein</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/amanda-silberling" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/834271/pictures/amanda-silberling.jpg">Amanda Silberling</podcast:person>
+				<podcast:person role="guest" href="https://x.com/emroth08">Emma Roth</podcast:person>
+				<podcast:person role="guest" href="https://twitter.com/jetscott">Scott Stein</podcast:person>
+		</item>
+		<item>
+			<title>TNW 423: Streaming Piracy Goes Mainstream - The Samsung Z Galaxy TriFold Phone is Here!</title>
+			<itunes:title>Streaming Piracy Goes Mainstream - The Samsung Z Galaxy TriFold Phone is Here!</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 05 Feb 2026 15:15:00 PST</pubDate>
+			<itunes:episode>423</itunes:episode>
+			<podcast:episode>423</podcast:episode>
+			<link>https://twit.tv/shows/tech-news-weekly/episodes/423</link>
+			<comments>https://twit.tv/shows/tech-news-weekly/episodes/423</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Tech News</category>
+			<category>News</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>The Samsung Z Galaxy TriFold Phone is Here!</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/samsung-galaxy-z-trifold-3000-foldable-phone-worth-it" type="text/html" />
+			<itunes:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, abrar al-heeti, cnet, samsung, Samsung Fold, samsung galaxy z trifold, galaxy z trifold first thoughts, streaming piracy, superbox, vseebox, rogue streaming devices, android tv box</itunes:keywords>
+			<description><![CDATA[
+<p>Abrar Al-Heeti of CNET joins Mikah Sargent on <em>Tech News Weekly</em> this week! Abrar has her hands on the new Samsung Galaxy Z TriFold phone! More people are pirating TV through rogue streaming boxes. The newest social media platform has launched, but it's only for AI bots. And Apple's Lockdown Mode prevented the FBI from accessing a reporter's iPhone.</p><ul> 
+<li>Abrar got her hands on the Samsung Galaxy Z TriFold phone and shares her initial thoughts on the device so far.</li> 
+<li>Mikah talks about how more people are straying away from streaming services and looking towards streaming boxes that allow one to access pirated content that mirrors live TV.</li> 
+<li>Mikah and Abrar chat about Moltbook, a new social media platform that is just for AI bots.</li> 
+<li>And Mikah shares how Apple's Lockdown Mode helped a Washington Post reporter stop the FBI from accessing their seized iPhone.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/abrar-al-heeti">Abrar Al-Heeti</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://hoxhunt.com/securitynow" target="_blank" rel="sponsored">hoxhunt.com/securitynow</a></li>
+<li><a href="http://preview.modulate.ai" target="_blank" rel="sponsored">preview.modulate.ai</a></li>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Abrar Al-Heeti of CNET joins Mikah Sargent on <em>Tech News Weekly</em> this week! Abrar has her hands on the new Samsung Galaxy Z TriFold phone! More people are pirating TV through rogue streaming boxes. The newest social media platform has launched, but it's only for AI bots. And Apple's Lockdown Mode prevented the FBI from accessing a reporter's iPhone.</p><ul> 
+<li>Abrar got her hands on the Samsung Galaxy Z TriFold phone and shares her initial thoughts on the device so far.</li> 
+<li>Mikah talks about how more people are straying away from streaming services and looking towards streaming boxes that allow one to access pirated content that mirrors live TV.</li> 
+<li>Mikah and Abrar chat about Moltbook, a new social media platform that is just for AI bots.</li> 
+<li>And Mikah shares how Apple's Lockdown Mode helped a Washington Post reporter stop the FBI from accessing their seized iPhone.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/abrar-al-heeti">Abrar Al-Heeti</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://hoxhunt.com/securitynow" target="_blank" rel="sponsored">hoxhunt.com/securitynow</a></li>
+<li><a href="http://preview.modulate.ai" target="_blank" rel="sponsored">preview.modulate.ai</a></li>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Abrar Al-Heeti of CNET joins Mikah Sargent on <em>Tech News Weekly</em> this week! Abrar has her hands on the new Samsung Galaxy Z TriFold phone! More people are pirating TV through rogue streaming boxes. The newest social media platform has launched, but it's only for AI bots. And Apple's Lockdown Mode prevented the FBI from accessing a reporter's iPhone.</p><ul> 
+<li>Abrar got her hands on the Samsung Galaxy Z TriFold phone and shares her initial thoughts on the device so far.</li> 
+<li>Mikah talks about how more people are straying away from streaming services and looking towards streaming boxes that allow one to access pirated content that mirrors live TV.</li> 
+<li>Mikah and Abrar chat about Moltbook, a new social media platform that is just for AI bots.</li> 
+<li>And Mikah shares how Apple's Lockdown Mode helped a Washington Post reporter stop the FBI from accessing their seized iPhone.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/abrar-al-heeti">Abrar Al-Heeti</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://hoxhunt.com/securitynow" target="_blank" rel="sponsored">hoxhunt.com/securitynow</a></li>
+<li><a href="http://preview.modulate.ai" target="_blank" rel="sponsored">preview.modulate.ai</a></li>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860042/hero/TNW0423_thumbnail-v2.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0423/tnw0423_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>53:36</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0423/tnw0423_h264m_1920x1080.mp4" length="951384922" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0423/tnw0423_h264m_1920x1080.mp4" fileSize="951384922" type="video/mp4" medium="video">
+				<media:title type="plain">TNW 423: Streaming Piracy Goes Mainstream - The Samsung Z Galaxy TriFold Phone is Here!</media:title>
+				<media:description type="plain">The Samsung Z Galaxy TriFold Phone is Here!</media:description>
+				<media:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, abrar al-heeti, cnet, samsung, Samsung Fold, samsung galaxy z trifold, galaxy z trifold first thoughts, streaming piracy, superbox, vseebox, rogue streaming devices, android tv box</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860042/hero/TNW0423_thumbnail-v2.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+				<media:credit role="host">Abrar Al-Heeti</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/abrar-al-heeti" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/820960/pictures/abrar-al-heeti-headshot.jpg">Abrar Al-Heeti</podcast:person>
+		</item>
+		<item>
+			<title>TNW 422: Oracle's TikTok Takeover Starts With Outage - US TikTok Suffer Issues and Outage</title>
+			<itunes:title>Oracle's TikTok Takeover Starts With Outage - US TikTok Suffer Issues and Outage</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 29 Jan 2026 15:00:00 PST</pubDate>
+			<itunes:episode>422</itunes:episode>
+			<podcast:episode>422</podcast:episode>
+			<link>https://twit.tv/shows/tech-news-weekly/episodes/422</link>
+			<comments>https://twit.tv/shows/tech-news-weekly/episodes/422</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Tech News</category>
+			<category>News</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>US TikTok Suffer Issues and Outage</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/how-big-techs-internal-docs-reveal-social-medias-true-impact-kids" type="text/html" />
+			<itunes:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, jacob wardv, the rip current, big tech, Social Media, teens social media, social media lawsuits, dinosaurs, artifical intelligence, ai dinosaur footprints, dinosaur footprints, Dan Moren</itunes:keywords>
+			<description><![CDATA[
+<p>Jacob Ward joins the show this week! Big Tech is brewing up a battle for your kids. Scientists are using AI to identify dinosaur footprints. Looking into Apple's Creator Studio. And TikTok USDS blames Sunday's outages on a power outage.</p><ul> 
+<li>Jacob Ward talks about recently released documents in lawsuits against big tech that showcase how social media companies are aggressively recruiting teens to their platforms.</li> 
+<li>Mikah Sargent gets very excited about scientists using AI in identifying dinosaur footprints.</li> 
+<li>Dan Moren of SixColors stops by to talk about the Apple Creator Studio collection that makes Final Cut Pro, Logic Pro, and other creative apps available for users for a single subscription.</li> 
+<li>And Emma Roth of The Verge joins the show to talk about the outage the US side of TikTok suffered earlier this week following the finalization of the new TikTok USDS Joint Venture.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://bsky.app/profile/byjacobward.bsky.social" target="_blank">Jacob Ward</a></p> 
+<p><strong>Guests:</strong> <a href="https://dmoren.com/" target="_blank">Dan Moren</a> and <a href="https://x.com/emroth08" target="_blank">Emma Roth</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Jacob Ward joins the show this week! Big Tech is brewing up a battle for your kids. Scientists are using AI to identify dinosaur footprints. Looking into Apple's Creator Studio. And TikTok USDS blames Sunday's outages on a power outage.</p><ul> 
+<li>Jacob Ward talks about recently released documents in lawsuits against big tech that showcase how social media companies are aggressively recruiting teens to their platforms.</li> 
+<li>Mikah Sargent gets very excited about scientists using AI in identifying dinosaur footprints.</li> 
+<li>Dan Moren of SixColors stops by to talk about the Apple Creator Studio collection that makes Final Cut Pro, Logic Pro, and other creative apps available for users for a single subscription.</li> 
+<li>And Emma Roth of The Verge joins the show to talk about the outage the US side of TikTok suffered earlier this week following the finalization of the new TikTok USDS Joint Venture.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://bsky.app/profile/byjacobward.bsky.social" target="_blank">Jacob Ward</a></p> 
+<p><strong>Guests:</strong> <a href="https://dmoren.com/" target="_blank">Dan Moren</a> and <a href="https://x.com/emroth08" target="_blank">Emma Roth</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Jacob Ward joins the show this week! Big Tech is brewing up a battle for your kids. Scientists are using AI to identify dinosaur footprints. Looking into Apple's Creator Studio. And TikTok USDS blames Sunday's outages on a power outage.</p><ul> 
+<li>Jacob Ward talks about recently released documents in lawsuits against big tech that showcase how social media companies are aggressively recruiting teens to their platforms.</li> 
+<li>Mikah Sargent gets very excited about scientists using AI in identifying dinosaur footprints.</li> 
+<li>Dan Moren of SixColors stops by to talk about the Apple Creator Studio collection that makes Final Cut Pro, Logic Pro, and other creative apps available for users for a single subscription.</li> 
+<li>And Emma Roth of The Verge joins the show to talk about the outage the US side of TikTok suffered earlier this week following the finalization of the new TikTok USDS Joint Venture.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://bsky.app/profile/byjacobward.bsky.social" target="_blank">Jacob Ward</a></p> 
+<p><strong>Guests:</strong> <a href="https://dmoren.com/" target="_blank">Dan Moren</a> and <a href="https://x.com/emroth08" target="_blank">Emma Roth</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859923/hero/TNW0422_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0422/tnw0422_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>53:13</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0422/tnw0422_h264m_1920x1080.mp4" length="902723631" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0422/tnw0422_h264m_1920x1080.mp4" fileSize="902723631" type="video/mp4" medium="video">
+				<media:title type="plain">TNW 422: Oracle's TikTok Takeover Starts With Outage - US TikTok Suffer Issues and Outage</media:title>
+				<media:description type="plain">US TikTok Suffer Issues and Outage</media:description>
+				<media:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, jacob wardv, the rip current, big tech, Social Media, teens social media, social media lawsuits, dinosaurs, artifical intelligence, ai dinosaur footprints, dinosaur footprints, Dan Moren</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859923/hero/TNW0422_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+				<media:credit role="host">Jacob Ward</media:credit>
+				<media:credit role="guest">Dan Moren</media:credit>
+				<media:credit role="guest">Emma Roth</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+				<podcast:person role="host" href="https://bsky.app/profile/byjacobward.bsky.social" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/855855/pictures/JacobWard.jpg">Jacob Ward</podcast:person>
+				<podcast:person role="guest" href="https://dmoren.com/" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/713041/pictures/dan.jpg">Dan Moren</podcast:person>
+				<podcast:person role="guest" href="https://x.com/emroth08">Emma Roth</podcast:person>
+		</item>
+		<item>
+			<title>TNW 421: Mobile Gaming's High-Roller VIP Programs - Inside Zynga's Casino-Style Loyalty Secrets</title>
+			<itunes:title>Mobile Gaming's High-Roller VIP Programs - Inside Zynga's Casino-Style Loyalty Secrets</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 22 Jan 2026 14:00:00 PST</pubDate>
+			<itunes:episode>421</itunes:episode>
+			<podcast:episode>421</podcast:episode>
+			<link>https://twit.tv/shows/tech-news-weekly/episodes/421</link>
+			<comments>https://twit.tv/shows/tech-news-weekly/episodes/421</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Tech News</category>
+			<category>News</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Inside Zynga's Casino-Style Loyalty Secrets</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/are-wearable-ai-devices-causing-delusional-behavior" type="text/html" />
+			<itunes:keywords>meta AI glasses, wearable ai, AI delusion, Tech Industry, mental health, New York Times, mobile gaming VIP programs, zynga, farmville, casino tactics, whales, in-app purchases, gaming addiction, Roblox spending, child safety online, EMF theory</itunes:keywords>
+			<description><![CDATA[
+<p>Mikah Sargent and Emily Forlini dive into some of tech's strangest new challenges: AI wearables causing psychological meltdowns, mobile games turning to casino-style tactics, and a viral EMF theory targeting NFL injuries. Get fresh perspectives on tech's impact from mental health to big-money gaming, plus a skeptical look at conspiracy theories in sports.</p><ul> 
+<li>Meta AI Glasses &amp; Mental Health: Emily discusses the case of a tech exec whose constant use of AI glasses led to financial trouble and delusions, highlighting unseen risks of wearable AI.</li> 
+<li>Gaming Industry's VIP Secrets: Mikah digs into how mobile games reward and track their top spenders with perks and personal attention, raising questions about ethics and addiction.</li> 
+<li>49ers EMF Injury Conspiracies: Mikah breaks down the sudden popularity of blaming football injuries on electromagnetic fields, with experts pushing back against the science behind the claims.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/emily-forlini">Emily Forlini</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Mikah Sargent and Emily Forlini dive into some of tech's strangest new challenges: AI wearables causing psychological meltdowns, mobile games turning to casino-style tactics, and a viral EMF theory targeting NFL injuries. Get fresh perspectives on tech's impact from mental health to big-money gaming, plus a skeptical look at conspiracy theories in sports.</p><ul> 
+<li>Meta AI Glasses &amp; Mental Health: Emily discusses the case of a tech exec whose constant use of AI glasses led to financial trouble and delusions, highlighting unseen risks of wearable AI.</li> 
+<li>Gaming Industry's VIP Secrets: Mikah digs into how mobile games reward and track their top spenders with perks and personal attention, raising questions about ethics and addiction.</li> 
+<li>49ers EMF Injury Conspiracies: Mikah breaks down the sudden popularity of blaming football injuries on electromagnetic fields, with experts pushing back against the science behind the claims.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/emily-forlini">Emily Forlini</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Mikah Sargent and Emily Forlini dive into some of tech's strangest new challenges: AI wearables causing psychological meltdowns, mobile games turning to casino-style tactics, and a viral EMF theory targeting NFL injuries. Get fresh perspectives on tech's impact from mental health to big-money gaming, plus a skeptical look at conspiracy theories in sports.</p><ul> 
+<li>Meta AI Glasses &amp; Mental Health: Emily discusses the case of a tech exec whose constant use of AI glasses led to financial trouble and delusions, highlighting unseen risks of wearable AI.</li> 
+<li>Gaming Industry's VIP Secrets: Mikah digs into how mobile games reward and track their top spenders with perks and personal attention, raising questions about ethics and addiction.</li> 
+<li>49ers EMF Injury Conspiracies: Mikah breaks down the sudden popularity of blaming football injuries on electromagnetic fields, with experts pushing back against the science behind the claims.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/emily-forlini">Emily Forlini</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859857/hero/TNW0421_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0421/tnw0421_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>42:40</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0421/tnw0421_h264m_1920x1080.mp4" length="755197147" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0421/tnw0421_h264m_1920x1080.mp4" fileSize="755197147" type="video/mp4" medium="video">
+				<media:title type="plain">TNW 421: Mobile Gaming's High-Roller VIP Programs - Inside Zynga's Casino-Style Loyalty Secrets</media:title>
+				<media:description type="plain">Inside Zynga's Casino-Style Loyalty Secrets</media:description>
+				<media:keywords>meta AI glasses, wearable ai, AI delusion, Tech Industry, mental health, New York Times, mobile gaming VIP programs, zynga, farmville, casino tactics, whales, in-app purchases, gaming addiction, Roblox spending, child safety online, EMF theory</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859857/hero/TNW0421_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+				<media:credit role="host">Emily Forlini</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/emily-forlini" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/843193/pictures/Emily.jpg">Emily Forlini</podcast:person>
+		</item>
+		<item>
+			<title>TNW 420: CES's Best Smart Home Tech - Some of the Coolest Tech From This Year&#039;s CES</title>
+			<itunes:title>CES's Best Smart Home Tech - Some of the Coolest Tech From This Year&#039;s CES</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 15 Jan 2026 15:45:00 PST</pubDate>
+			<itunes:episode>420</itunes:episode>
+			<podcast:episode>420</podcast:episode>
+			<link>https://twit.tv/shows/tech-news-weekly/episodes/420</link>
+			<comments>https://twit.tv/shows/tech-news-weekly/episodes/420</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Tech News</category>
+			<category>News</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Some of the Coolest Tech From This Year&#039;s CES</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/apple-vision-pros-courtside-nba-vr-sports-experience-fans-have-been-waiting" type="text/html" />
+			<itunes:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, jennifer pattison tuohy, the verge, CES, CES 2026, smart robots, aqara, smart lock u400, roborock, saros rover, lifx smart mirror, robot vacuums, robots, ai, bluetooth vulnerabilities, whisper pair, </itunes:keywords>
+			<description><![CDATA[
+<p>Jennifer Pattison Tuohy shares some of the cooler tech she saw at this year's CES. A warning for those using some wireless audio devices. And what happens when you swap the nosebleed sets for a virtual front row experience at a NBA game?</p><ul> 
+<li>Jennifer was on the show floor at CES last week! From smart mirrors to smart locks and robotic pets, she shares some of the exciting and fun tech she saw at the convention.</li> 
+<li>Mikah warns us about patching your wireless audio devices, as a new vulnerability was discovered that leaves devices open for others to eavesdrop on your conversations.</li> 
+<li>And Kerry Wan of ZDNet joins the show to share his experience watching a NBA game within Apple's Vision Pro.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/jennifer-pattison-tuohy">Jennifer Pattison Tuohy</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.zdnet.com/meet-the-team/kerry-wan/" target="_blank">Kerry Wan</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Jennifer Pattison Tuohy shares some of the cooler tech she saw at this year's CES. A warning for those using some wireless audio devices. And what happens when you swap the nosebleed sets for a virtual front row experience at a NBA game?</p><ul> 
+<li>Jennifer was on the show floor at CES last week! From smart mirrors to smart locks and robotic pets, she shares some of the exciting and fun tech she saw at the convention.</li> 
+<li>Mikah warns us about patching your wireless audio devices, as a new vulnerability was discovered that leaves devices open for others to eavesdrop on your conversations.</li> 
+<li>And Kerry Wan of ZDNet joins the show to share his experience watching a NBA game within Apple's Vision Pro.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/jennifer-pattison-tuohy">Jennifer Pattison Tuohy</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.zdnet.com/meet-the-team/kerry-wan/" target="_blank">Kerry Wan</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Jennifer Pattison Tuohy shares some of the cooler tech she saw at this year's CES. A warning for those using some wireless audio devices. And what happens when you swap the nosebleed sets for a virtual front row experience at a NBA game?</p><ul> 
+<li>Jennifer was on the show floor at CES last week! From smart mirrors to smart locks and robotic pets, she shares some of the exciting and fun tech she saw at the convention.</li> 
+<li>Mikah warns us about patching your wireless audio devices, as a new vulnerability was discovered that leaves devices open for others to eavesdrop on your conversations.</li> 
+<li>And Kerry Wan of ZDNet joins the show to share his experience watching a NBA game within Apple's Vision Pro.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/jennifer-pattison-tuohy">Jennifer Pattison Tuohy</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.zdnet.com/meet-the-team/kerry-wan/" target="_blank">Kerry Wan</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859754/hero/TNW0420_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0420/tnw0420_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>57:30</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0420/tnw0420_h264m_1920x1080.mp4" length="975251578" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0420/tnw0420_h264m_1920x1080.mp4" fileSize="975251578" type="video/mp4" medium="video">
+				<media:title type="plain">TNW 420: CES's Best Smart Home Tech - Some of the Coolest Tech From This Year&#039;s CES</media:title>
+				<media:description type="plain">Some of the Coolest Tech From This Year&#039;s CES</media:description>
+				<media:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, jennifer pattison tuohy, the verge, CES, CES 2026, smart robots, aqara, smart lock u400, roborock, saros rover, lifx smart mirror, robot vacuums, robots, ai, bluetooth vulnerabilities, whisper pair, </media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859754/hero/TNW0420_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+				<media:credit role="host">Jennifer Pattison Tuohy</media:credit>
+				<media:credit role="guest">Kerry Wan</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/jennifer-pattison-tuohy" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/846865/pictures/akrales_220906_5191_3741.jpg">Jennifer Pattison Tuohy</podcast:person>
+				<podcast:person role="guest" href="https://www.zdnet.com/meet-the-team/kerry-wan/">Kerry Wan</podcast:person>
+		</item>
+		<item>
+			<title>TNW 419: Utah Trusts AI to Renew Prescriptions - AI Prescribing Meds?</title>
+			<itunes:title>Utah Trusts AI to Renew Prescriptions - AI Prescribing Meds?</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 08 Jan 2026 15:45:00 PST</pubDate>
+			<itunes:episode>419</itunes:episode>
+			<podcast:episode>419</podcast:episode>
+			<link>https://twit.tv/shows/tech-news-weekly/episodes/419</link>
+			<comments>https://twit.tv/shows/tech-news-weekly/episodes/419</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Tech News</category>
+			<category>News</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>AI Prescribing Meds?</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/tech-news-weekly-419-transcript" type="text/html" />
+			<itunes:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, jacob ward, the rip current, CES, CES 2026, ces ai, lego, lego smart brick, lego smart brick technology, Lego Star Wars, ces 2026 ai, ces theme, ces news, ces announcements, ces show floor</itunes:keywords>
+			<description><![CDATA[
+<p>Jacob Ward of The Rip Current joins Mikah Sargent on the show this week! Lego unveils its Smart Brick. Jacob kvetches about AI's overwhelming presence at CES. We get some on-site reporting from CES. And Utah becomes the first state to allow artificial intelligence to renew medical prescriptions.</p><ul> 
+<li>Mikah talks about Lego's new Smart Brick technology that allows you to interact and play with your Lego sets more directly.</li> 
+<li>Jacob shares his thoughts about the overall theme of AI that has become front and center at this year's CES event.</li> 
+<li>Stephen Robles of beard.fm joins the show live from CES to talk about what he saw at the event.</li> 
+<li>And Ruth Reader of POLITICO stops by to talk about Utah being the first state to allow artificial intelligence to begin renewing medical prescriptions for patients.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://bsky.app/profile/byjacobward.bsky.social" target="_blank">Jacob Ward</a></p> 
+<p><strong>Guests:</strong> <a href="https://twitter.com/stephenrobles" target="_blank">Stephen Robles</a> and <a href="https://www.politico.com/staff/ruth-reader" target="_blank">Ruth Reader</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Jacob Ward of The Rip Current joins Mikah Sargent on the show this week! Lego unveils its Smart Brick. Jacob kvetches about AI's overwhelming presence at CES. We get some on-site reporting from CES. And Utah becomes the first state to allow artificial intelligence to renew medical prescriptions.</p><ul> 
+<li>Mikah talks about Lego's new Smart Brick technology that allows you to interact and play with your Lego sets more directly.</li> 
+<li>Jacob shares his thoughts about the overall theme of AI that has become front and center at this year's CES event.</li> 
+<li>Stephen Robles of beard.fm joins the show live from CES to talk about what he saw at the event.</li> 
+<li>And Ruth Reader of POLITICO stops by to talk about Utah being the first state to allow artificial intelligence to begin renewing medical prescriptions for patients.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://bsky.app/profile/byjacobward.bsky.social" target="_blank">Jacob Ward</a></p> 
+<p><strong>Guests:</strong> <a href="https://twitter.com/stephenrobles" target="_blank">Stephen Robles</a> and <a href="https://www.politico.com/staff/ruth-reader" target="_blank">Ruth Reader</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Jacob Ward of The Rip Current joins Mikah Sargent on the show this week! Lego unveils its Smart Brick. Jacob kvetches about AI's overwhelming presence at CES. We get some on-site reporting from CES. And Utah becomes the first state to allow artificial intelligence to renew medical prescriptions.</p><ul> 
+<li>Mikah talks about Lego's new Smart Brick technology that allows you to interact and play with your Lego sets more directly.</li> 
+<li>Jacob shares his thoughts about the overall theme of AI that has become front and center at this year's CES event.</li> 
+<li>Stephen Robles of beard.fm joins the show live from CES to talk about what he saw at the event.</li> 
+<li>And Ruth Reader of POLITICO stops by to talk about Utah being the first state to allow artificial intelligence to begin renewing medical prescriptions for patients.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://bsky.app/profile/byjacobward.bsky.social" target="_blank">Jacob Ward</a></p> 
+<p><strong>Guests:</strong> <a href="https://twitter.com/stephenrobles" target="_blank">Stephen Robles</a> and <a href="https://www.politico.com/staff/ruth-reader" target="_blank">Ruth Reader</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859672/hero/TNW0419_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0419/tnw0419_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:07:38</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0419/tnw0419_h264m_1920x1080.mp4" length="1147229091" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0419/tnw0419_h264m_1920x1080.mp4" fileSize="1147229091" type="video/mp4" medium="video">
+				<media:title type="plain">TNW 419: Utah Trusts AI to Renew Prescriptions - AI Prescribing Meds?</media:title>
+				<media:description type="plain">AI Prescribing Meds?</media:description>
+				<media:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, jacob ward, the rip current, CES, CES 2026, ces ai, lego, lego smart brick, lego smart brick technology, Lego Star Wars, ces 2026 ai, ces theme, ces news, ces announcements, ces show floor</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859672/hero/TNW0419_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+				<media:credit role="host">Jacob Ward</media:credit>
+				<media:credit role="guest">Stephen Robles</media:credit>
+				<media:credit role="guest">Ruth Reader</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+				<podcast:person role="host" href="https://bsky.app/profile/byjacobward.bsky.social" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/855855/pictures/JacobWard.jpg">Jacob Ward</podcast:person>
+				<podcast:person role="guest" href="https://twitter.com/stephenrobles">Stephen Robles</podcast:person>
+				<podcast:person role="guest" href="https://www.politico.com/staff/ruth-reader">Ruth Reader</podcast:person>
+		</item>
+		<item>
+			<title>TNW 418: Best of 2025 - Tech News Weekly&#039;s Favorite Interviews in 2025</title>
+			<itunes:title>Best of 2025 - Tech News Weekly&#039;s Favorite Interviews in 2025</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 28 Dec 2025 13:00:00 PST</pubDate>
+			<itunes:episode>418</itunes:episode>
+			<podcast:episode>418</podcast:episode>
+			<link>https://twit.tv/shows/tech-news-weekly/episodes/418</link>
+			<comments>https://twit.tv/shows/tech-news-weekly/episodes/418</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Tech News</category>
+			<category>News</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Tech News Weekly&#039;s Favorite Interviews in 2025</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/tech-news-weekly-418-transcript" type="text/html" />
+			<itunes:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, eric migicovsky, pebble, new pebble watch, Bloomberg, leah nylen, doj google case, chrome browser, duckduckgo, perplexity, open ai, online search engines, leila zia, wikimedia foundation</itunes:keywords>
+			<description><![CDATA[
+<p>Take a look back at some of our favorite interviews from the past year on Tech News Weekly!</p><ul> 
+<li>Eric Migicovsky, founder of the smartwatch company Pebble, joins Mikah to talk about exciting news with Pebble.</li> 
+<li>Bloomberg antitrust reporter Leah Nylen returns to unpack the latest in the DOJ's case against Google. She explains the three proposed remedies—including a possible Chrome browser divestiture—and what testimony from tech competitors like DuckDuckGo, Perplexity, and OpenAI revealed about Google's dominance in search and AI.</li> 
+<li>Leila Zia, Head of Research at the Wikimedia Foundation, outlines their new AI roadmap, which focuses on supporting Wikipedia's volunteer editors rather than replacing them. She details how AI will assist with moderation, multilingual knowledge expansion, and mentorship—all while upholding values of transparency and human agency.</li> 
+<li>Scott Stein of CNET is staying busy as he joins the show to share his hands-on impressions of Nintendo's Switch 2 console, Mario Kart World, and its new features.</li> 
+<li>And Consumer Reports' Derek Kravitz details Instacart's AI pricing practices.</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Take a look back at some of our favorite interviews from the past year on Tech News Weekly!</p><ul> 
+<li>Eric Migicovsky, founder of the smartwatch company Pebble, joins Mikah to talk about exciting news with Pebble.</li> 
+<li>Bloomberg antitrust reporter Leah Nylen returns to unpack the latest in the DOJ's case against Google. She explains the three proposed remedies—including a possible Chrome browser divestiture—and what testimony from tech competitors like DuckDuckGo, Perplexity, and OpenAI revealed about Google's dominance in search and AI.</li> 
+<li>Leila Zia, Head of Research at the Wikimedia Foundation, outlines their new AI roadmap, which focuses on supporting Wikipedia's volunteer editors rather than replacing them. She details how AI will assist with moderation, multilingual knowledge expansion, and mentorship—all while upholding values of transparency and human agency.</li> 
+<li>Scott Stein of CNET is staying busy as he joins the show to share his hands-on impressions of Nintendo's Switch 2 console, Mario Kart World, and its new features.</li> 
+<li>And Consumer Reports' Derek Kravitz details Instacart's AI pricing practices.</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Take a look back at some of our favorite interviews from the past year on Tech News Weekly!</p><ul> 
+<li>Eric Migicovsky, founder of the smartwatch company Pebble, joins Mikah to talk about exciting news with Pebble.</li> 
+<li>Bloomberg antitrust reporter Leah Nylen returns to unpack the latest in the DOJ's case against Google. She explains the three proposed remedies—including a possible Chrome browser divestiture—and what testimony from tech competitors like DuckDuckGo, Perplexity, and OpenAI revealed about Google's dominance in search and AI.</li> 
+<li>Leila Zia, Head of Research at the Wikimedia Foundation, outlines their new AI roadmap, which focuses on supporting Wikipedia's volunteer editors rather than replacing them. She details how AI will assist with moderation, multilingual knowledge expansion, and mentorship—all while upholding values of transparency and human agency.</li> 
+<li>Scott Stein of CNET is staying busy as he joins the show to share his hands-on impressions of Nintendo's Switch 2 console, Mario Kart World, and its new features.</li> 
+<li>And Consumer Reports' Derek Kravitz details Instacart's AI pricing practices.</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2025/12/859460/hero/TNW0418_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0418/tnw0418_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:27:50</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0418/tnw0418_h264m_1920x1080.mp4" length="1490071098" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0418/tnw0418_h264m_1920x1080.mp4" fileSize="1490071098" type="video/mp4" medium="video">
+				<media:title type="plain">TNW 418: Best of 2025 - Tech News Weekly&#039;s Favorite Interviews in 2025</media:title>
+				<media:description type="plain">Tech News Weekly&#039;s Favorite Interviews in 2025</media:description>
+				<media:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, eric migicovsky, pebble, new pebble watch, Bloomberg, leah nylen, doj google case, chrome browser, duckduckgo, perplexity, open ai, online search engines, leila zia, wikimedia foundation</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2025/12/859460/hero/TNW0418_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>TNW 417: Smart Home Year in Review - Looking Back At Smart Home News</title>
+			<itunes:title>Smart Home Year in Review - Looking Back At Smart Home News</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 18 Dec 2025 16:15:00 PST</pubDate>
+			<itunes:episode>417</itunes:episode>
+			<podcast:episode>417</podcast:episode>
+			<link>https://twit.tv/shows/tech-news-weekly/episodes/417</link>
+			<comments>https://twit.tv/shows/tech-news-weekly/episodes/417</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Tech News</category>
+			<category>News</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Looking Back At Smart Home News</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/how-ai-image-generators-are-becoming-better-through-imperfections" type="text/html" />
+			<itunes:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, jennifer pattison tuohy, the verge, cnet, ai health coaches, ai health, data privacy, ai health wearables, wearable devices, smart wearables, smart homes, smart home devices, smart home news, irobot,</itunes:keywords>
+			<description><![CDATA[
+<p>Jennifer Pattison Tuohy from The Verge joins Mikah Sargent for the final episode of Tech News Weekly for 2025! Are AI health coaches the future for wearables? A look back at smart home news and devices in 2025. And how AI image generators have changed over time.</p><ul> 
+<li>Mikah talks about an article written by CNET's Vanessa Hand Orellana about AI health coaches in wearables and how it showcases innovation within healthcare, but also the data concerns if data breaches or unauthorized access to the data occur.</li> 
+<li>Jennifer reflects on the smart home news and smart home devices highlighted in the past year and shares her excitement about news such as IKEA releasing Thread-supported devices, but also laments on companies like iRobot filing for bankruptcy.</li> 
+<li>And Allison Johnson of The Verge joins the show to talk about how AI image generators are improving as various models have learned from their mistakes &amp; fumbles that occurred in their early beginnings.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/jennifer-pattison-tuohy">Jennifer Pattison Tuohy</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.theverge.com/authors/allison-johnson" target="_blank">Allison Johnson</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="https://auraframes.com/ink?utm_source=podcast&utm_medium=audio&utm_campaign=technewsweeklytwit" target="_blank" rel="sponsored">auraframes.com/ink</a></li>
+<li><a href="http://outsystems.com/twit" target="_blank" rel="sponsored">outsystems.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Jennifer Pattison Tuohy from The Verge joins Mikah Sargent for the final episode of Tech News Weekly for 2025! Are AI health coaches the future for wearables? A look back at smart home news and devices in 2025. And how AI image generators have changed over time.</p><ul> 
+<li>Mikah talks about an article written by CNET's Vanessa Hand Orellana about AI health coaches in wearables and how it showcases innovation within healthcare, but also the data concerns if data breaches or unauthorized access to the data occur.</li> 
+<li>Jennifer reflects on the smart home news and smart home devices highlighted in the past year and shares her excitement about news such as IKEA releasing Thread-supported devices, but also laments on companies like iRobot filing for bankruptcy.</li> 
+<li>And Allison Johnson of The Verge joins the show to talk about how AI image generators are improving as various models have learned from their mistakes &amp; fumbles that occurred in their early beginnings.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/jennifer-pattison-tuohy">Jennifer Pattison Tuohy</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.theverge.com/authors/allison-johnson" target="_blank">Allison Johnson</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="https://auraframes.com/ink?utm_source=podcast&utm_medium=audio&utm_campaign=technewsweeklytwit" target="_blank" rel="sponsored">auraframes.com/ink</a></li>
+<li><a href="http://outsystems.com/twit" target="_blank" rel="sponsored">outsystems.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Jennifer Pattison Tuohy from The Verge joins Mikah Sargent for the final episode of Tech News Weekly for 2025! Are AI health coaches the future for wearables? A look back at smart home news and devices in 2025. And how AI image generators have changed over time.</p><ul> 
+<li>Mikah talks about an article written by CNET's Vanessa Hand Orellana about AI health coaches in wearables and how it showcases innovation within healthcare, but also the data concerns if data breaches or unauthorized access to the data occur.</li> 
+<li>Jennifer reflects on the smart home news and smart home devices highlighted in the past year and shares her excitement about news such as IKEA releasing Thread-supported devices, but also laments on companies like iRobot filing for bankruptcy.</li> 
+<li>And Allison Johnson of The Verge joins the show to talk about how AI image generators are improving as various models have learned from their mistakes &amp; fumbles that occurred in their early beginnings.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/jennifer-pattison-tuohy">Jennifer Pattison Tuohy</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.theverge.com/authors/allison-johnson" target="_blank">Allison Johnson</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="https://auraframes.com/ink?utm_source=podcast&utm_medium=audio&utm_campaign=technewsweeklytwit" target="_blank" rel="sponsored">auraframes.com/ink</a></li>
+<li><a href="http://outsystems.com/twit" target="_blank" rel="sponsored">outsystems.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2025/12/859438/hero/TNW0417_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0417/tnw0417_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:05:14</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0417/tnw0417_h264m_1920x1080.mp4" length="1106500366" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0417/tnw0417_h264m_1920x1080.mp4" fileSize="1106500366" type="video/mp4" medium="video">
+				<media:title type="plain">TNW 417: Smart Home Year in Review - Looking Back At Smart Home News</media:title>
+				<media:description type="plain">Looking Back At Smart Home News</media:description>
+				<media:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, jennifer pattison tuohy, the verge, cnet, ai health coaches, ai health, data privacy, ai health wearables, wearable devices, smart wearables, smart homes, smart home devices, smart home news, irobot,</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2025/12/859438/hero/TNW0417_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+				<media:credit role="host">Jennifer Pattison Tuohy</media:credit>
+				<media:credit role="guest">Allison Johnson</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/jennifer-pattison-tuohy" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/846865/pictures/akrales_220906_5191_3741.jpg">Jennifer Pattison Tuohy</podcast:person>
+				<podcast:person role="guest" href="https://www.theverge.com/authors/allison-johnson">Allison Johnson</podcast:person>
+		</item>
+	</channel>
+</rss>
