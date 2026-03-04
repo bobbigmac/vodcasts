@@ -200,7 +200,6 @@ function buildCategoryRows(allShows, historyAll, player) {
   }
   const otherCategories = [...categoryToShows.keys()];
   const daySeed = dayOfYearSeed();
-  const shuffledCats = shuffledWithSeed(otherCategories, daySeed);
 
   const titleCase = (s) => String(s || "").replace(/\b\w/g, (c) => c.toUpperCase());
   const rows = [];
@@ -300,7 +299,101 @@ function buildCategoryRows(allShows, historyAll, player) {
     if (item) byCat.get(cat).push(item);
   }
 
-  for (const cat of shuffledCats) {
+  const guessProfile = (countsMap) => {
+    const n = (c) => countsMap.get(c) || 0;
+    const hasChurch =
+      n("sermons") +
+        n("worship") +
+        n("praise") +
+        n("devotional") +
+        n("bible-study") +
+        n("teaching") +
+        n("tv-ministry") >
+      6;
+    if (hasChurch) return "church";
+    const hasTech = n("tech") + n("dev") + n("security") + n("programming") + n("keynotes") > 6;
+    if (hasTech) return "tech";
+    if (n("news") > 6) return "news";
+    return "general";
+  };
+
+  const profile = guessProfile(counts);
+  const tierOf = (cat) => {
+    const c = String(cat || "").trim().toLowerCase();
+    if (!c) return 9;
+    const inSet = (set) => set.has(c);
+
+    const churchCore = new Set([
+      "sermons",
+      "worship",
+      "praise",
+      "devotional",
+      "bible-study",
+      "teaching",
+      "prayer",
+      "tv-ministry",
+      "apologetics",
+      "theology",
+      "discipleship",
+      "family",
+      "kids",
+      "hymns",
+      "music",
+    ]);
+    const techCore = new Set(["tech", "dev", "programming", "security", "keynotes"]);
+
+    if (profile === "church") {
+      if (inSet(churchCore)) return 0;
+      if (c === "news") return 1;
+      if (c === "science" || c === "lectures") return 2;
+      if (inSet(techCore)) return 3;
+      if (c === "lifestyle" || c === "radio") return 3;
+      return 2;
+    }
+
+    if (profile === "tech") {
+      if (inSet(techCore)) return 0;
+      if (c === "news") return 1;
+      if (c === "science" || c === "lectures") return 2;
+      if (inSet(churchCore)) return 3;
+      if (c === "lifestyle" || c === "radio") return 3;
+      return 2;
+    }
+
+    if (profile === "news") {
+      if (c === "news") return 0;
+      if (c === "science") return 1;
+      if (c === "lectures") return 2;
+      if (inSet(churchCore)) return 2;
+      return 3;
+    }
+
+    // general: size-first, keep obviously "core" categories early-ish
+    if (c === "news") return 1;
+    if (c === "science" || c === "lectures") return 2;
+    if (inSet(churchCore) || inSet(techCore)) return 1;
+    return 3;
+  };
+
+  // Order categories by: tier (audience relevance), size (row fullness), then a small daily jitter.
+  const orderedCats = [...otherCategories]
+    .filter((cat) => (byCat.get(cat) || []).length)
+    .map((cat) => {
+      const count = (counts.get(cat) || 0) | 0;
+      const jitter01 = (fnv1a32(`${daySeed}:${profile}:${cat}`) % 1000) / 1000;
+      const jitter = (jitter01 - 0.5) * 0.18; // ±9% size variance, seeded daily
+      const effective = count * (1 + jitter);
+      return { cat, tier: tierOf(cat), count, effective, jitter01 };
+    })
+    .sort((a, b) => {
+      if (a.tier !== b.tier) return a.tier - b.tier;
+      if (a.effective !== b.effective) return b.effective - a.effective;
+      // Stable daily tie-break
+      return a.jitter01 - b.jitter01;
+    })
+    .map((x) => x.cat);
+
+  for (const cat of orderedCats) {
     const shows = byCat.get(cat) || [];
     if (shows.length) {
       const safeId = String(cat).replace(/[^a-z0-9_-]+/gi, "_");
