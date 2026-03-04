@@ -18,7 +18,7 @@
       "title_full": "Studio Conversations — BibleProject Podcast",
       "description": "Uncut studio conversation episodes.",
       "categories": ["teaching"],
-      "featured": false,
+      "featured": true,
       "filter": { "type": "title_suffix", "value": "(Studio Conversation)" }
     },
     {
@@ -41,4 +41,3 @@
     }
   ]
 }
-

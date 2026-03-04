@@ -27,9 +27,8 @@
       "title_full": "Classics — UNSHACKLED! Audio Dramas",
       "description": "Classic episodes.",
       "categories": ["family", "audio"],
-      "featured": false,
+      "featured": true,
       "filter": { "type": "title_suffix", "value": "Classic" }
     }
   ]
 }
-
