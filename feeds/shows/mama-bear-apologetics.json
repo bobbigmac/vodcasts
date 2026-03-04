@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Mama Bear Apologetics",
+  "leftovers_description": "Items outside the main numbered episodes and rebroadcasts.",
+  "shows": [
+    {
+      "id": "rebroadcasts",
+      "title": "Re-broadcasts",
+      "title_full": "Re-broadcasts — Mama Bear Apologetics",
+      "description": "Re-broadcast episodes.",
+      "categories": ["teaching", "apologetics"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "Re-?Broadcast" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Mama Bear Apologetics",
+      "description": "Numbered episodes (Episode N …).",
+      "categories": ["teaching", "apologetics"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Episode\\s+\\d+\\b" }
+    }
+  ]
+}
+

@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — The Big Fat Wide Americana Hour",
+  "leftovers_description": "Items outside the standard numbered episodes.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — The Big Fat Wide Americana Hour",
+      "description": "Numbered episodes (No. N).",
+      "categories": ["americana"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^The Big Fat Wide Americana Hour\\s+No\\.\\s*\\d+\\b" }
+    }
+  ]
+}
+

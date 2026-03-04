@@ -1,0 +1,53 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — CCCC",
+  "leftovers_description": "Items outside the main buckets.",
+  "shows": [
+    {
+      "id": "english-audio-summaries",
+      "title": "Sermon audio summaries (English)",
+      "title_full": "Sermon audio summaries (English) — CCCC",
+      "description": "Episodes labeled “Sermon Audio Summary in English”.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Sermon Audio Summary in English" }
+    },
+    {
+      "id": "sunday-school",
+      "title": "Sunday school",
+      "title_full": "Sunday school — CCCC",
+      "description": "主日學 / Sunday School sessions.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains_any", "values": ["主日學", "Sunday School"] }
+    },
+    {
+      "id": "membership-class",
+      "title": "Membership class",
+      "title_full": "Membership class — CCCC",
+      "description": "會友班 / Membership Class sessions.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains_any", "values": ["會友班", "Membership Class"] }
+    },
+    {
+      "id": "romans",
+      "title": "Romans",
+      "title_full": "Romans — CCCC",
+      "description": "Romans series messages.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Romans" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — CCCC",
+      "description": "All other items in this feed.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

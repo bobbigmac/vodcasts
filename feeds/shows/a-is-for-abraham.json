@@ -1,0 +1,25 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — A Is for Abraham",
+  "leftovers_description": "Items outside the letter-based episode titles.",
+  "shows": [
+    {
+      "id": "letter-episodes",
+      "title": "Letter episodes",
+      "title_full": "Letter episodes — A Is for Abraham",
+      "description": "Episodes titled “\"X\" is for …”.",
+      "categories": ["interfaith"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^\"[A-Z](?:')?\"?\\s+is\\s+for\\b" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — A Is for Abraham",
+      "description": "All other items in this feed.",
+      "categories": ["interfaith"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}

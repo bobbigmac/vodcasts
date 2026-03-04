@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Free Bluegrass Gospel Hymns Songs 2",
+  "leftovers_description": "Items outside the main songs row.",
+  "shows": [
+    {
+      "id": "songs",
+      "title": "Songs",
+      "title_full": "Songs — Free Bluegrass Gospel Hymns Songs 2",
+      "description": "Bluegrass gospel hymn songs.",
+      "categories": ["gospel-music"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

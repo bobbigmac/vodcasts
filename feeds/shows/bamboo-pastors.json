@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — The Bamboo Pastors Podcast",
+  "leftovers_description": "Items outside the main numbered episodes and bonus content.",
+  "shows": [
+    {
+      "id": "bonus-content",
+      "title": "Bonus Content",
+      "title_full": "Bonus Content — The Bamboo Pastors Podcast",
+      "description": "Bonus Content episodes.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Bonus Content" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — The Bamboo Pastors Podcast",
+      "description": "Numbered episodes (Episode N: …).",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Episode\\s+\\d+\\b" }
+    },
+    {
+      "id": "shows",
+      "title": "Shows",
+      "title_full": "Shows — The Bamboo Pastors Podcast",
+      "description": "All other items in this feed.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

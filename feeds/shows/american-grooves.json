@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — American Grooves Radio Hour",
+  "leftovers_description": "Items outside the main radio hour row.",
+  "shows": [
+    {
+      "id": "radio-hour",
+      "title": "Radio Hour",
+      "title_full": "Radio Hour — American Grooves Radio Hour",
+      "description": "American Grooves Radio Hour episodes.",
+      "categories": ["americana"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

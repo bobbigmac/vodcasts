@@ -1,0 +1,71 @@
+{
+  "leftovers_title": "Other sermons",
+  "leftovers_title_full": "Other sermons — The Chinese Bible Church Podcast",
+  "leftovers_description": "Sermons outside the main series buckets.",
+  "shows": [
+    {
+      "id": "managing-life",
+      "title": "Managing Life",
+      "title_full": "Managing Life — The Chinese Bible Church Podcast",
+      "description": "Managing Life series messages.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Managing Life" }
+    },
+    {
+      "id": "amos",
+      "title": "Amos",
+      "title_full": "Amos — The Chinese Bible Church Podcast",
+      "description": "Teachings in Amos.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Amos\\b" }
+    },
+    {
+      "id": "joel",
+      "title": "Joel",
+      "title_full": "Joel — The Chinese Bible Church Podcast",
+      "description": "Teachings in Joel.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Joel\\b" }
+    },
+    {
+      "id": "titus",
+      "title": "A Look at Titus",
+      "title_full": "A Look at Titus — The Chinese Bible Church Podcast",
+      "description": "A Look at Titus series messages.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "A Look at Titus" }
+    },
+    {
+      "id": "ordinary-church",
+      "title": "The Ordinary Church",
+      "title_full": "The Ordinary Church — The Chinese Bible Church Podcast",
+      "description": "The Ordinary Church series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Ordinary Church" }
+    },
+    {
+      "id": "balaam",
+      "title": "Balaam",
+      "title_full": "Balaam — The Chinese Bible Church Podcast",
+      "description": "Balaam series messages.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Balaam" }
+    },
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Sermons — The Chinese Bible Church Podcast",
+      "description": "All other sermons in this feed.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

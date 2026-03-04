@@ -1,0 +1,71 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — The Old-Time Radio Hour",
+  "leftovers_description": "Items outside the main named show buckets.",
+  "shows": [
+    {
+      "id": "lux-radio-theater",
+      "title": "Lux",
+      "title_full": "Lux — The Old-Time Radio Hour",
+      "description": "Lux Radio Theater episodes.",
+      "categories": ["otr"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Lux" }
+    },
+    {
+      "id": "destination-freedom",
+      "title": "Destination Freedom",
+      "title_full": "Destination Freedom — The Old-Time Radio Hour",
+      "description": "Destination Freedom episodes.",
+      "categories": ["otr"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Destination Freedom" }
+    },
+    {
+      "id": "lights-out",
+      "title": "Lights Out",
+      "title_full": "Lights Out — The Old-Time Radio Hour",
+      "description": "Lights Out episodes.",
+      "categories": ["otr"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Lights Out" }
+    },
+    {
+      "id": "x-minus-one",
+      "title": "X Minus One",
+      "title_full": "X Minus One — The Old-Time Radio Hour",
+      "description": "X Minus One episodes.",
+      "categories": ["otr"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "X Minus One" }
+    },
+    {
+      "id": "holiday-specials",
+      "title": "Holiday specials",
+      "title_full": "Holiday specials — The Old-Time Radio Hour",
+      "description": "Holiday themed items (Christmas/Thanksgiving/New Year/Valentine’s).",
+      "categories": ["otr"],
+      "featured": false,
+      "filter": { "type": "title_contains_any", "values": ["Christmas", "Thanksgiving", "New Year", "Valentines", "Valentine"] }
+    },
+    {
+      "id": "suspense",
+      "title": "Suspense",
+      "title_full": "Suspense — The Old-Time Radio Hour",
+      "description": "Items that include Suspense in the title.",
+      "categories": ["otr"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Suspense" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — The Old-Time Radio Hour",
+      "description": "All other Old-Time Radio Hour items.",
+      "categories": ["otr"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

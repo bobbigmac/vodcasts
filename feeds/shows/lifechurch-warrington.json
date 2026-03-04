@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — LifeChurch Warrington",
+  "leftovers_description": "Messages outside the Roman Road series bucket.",
+  "shows": [
+    {
+      "id": "roman-road",
+      "title": "The Roman Road",
+      "title_full": "The Roman Road — LifeChurch Warrington",
+      "description": "Messages from the Roman Road series.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_suffix", "value": "[The Roman Road]" }
+    },
+    {
+      "id": "messages",
+      "title": "Messages",
+      "title_full": "Messages — LifeChurch Warrington",
+      "description": "All other LifeChurch Warrington messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

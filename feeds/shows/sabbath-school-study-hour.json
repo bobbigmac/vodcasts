@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Sabbath School Study Hour",
+  "leftovers_description": "Items outside the standard Lesson N format.",
+  "shows": [
+    {
+      "id": "lessons",
+      "title": "Lessons",
+      "title_full": "Lessons — Sabbath School Study Hour",
+      "description": "Lesson-numbered studies.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "\\bLesson\\s*\\d+\\b" }
+    }
+  ]
+}
+

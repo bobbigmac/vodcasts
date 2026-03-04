@@ -1,0 +1,44 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Voices of Interfaith America",
+  "leftovers_description": "Items outside the main buckets.",
+  "shows": [
+    {
+      "id": "faith-in-elections",
+      "title": "Faith in Elections",
+      "title_full": "Faith in Elections — Voices of Interfaith America",
+      "description": "Faith in Elections series episodes.",
+      "categories": ["interfaith"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Faith in Elections" }
+    },
+    {
+      "id": "coming-soon",
+      "title": "Coming Soon",
+      "title_full": "Coming Soon — Voices of Interfaith America",
+      "description": "Coming Soon announcements.",
+      "categories": ["interfaith"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Coming Soon" }
+    },
+    {
+      "id": "promos",
+      "title": "Promos",
+      "title_full": "Promos — Voices of Interfaith America",
+      "description": "Promo items.",
+      "categories": ["interfaith"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Promo" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Voices of Interfaith America",
+      "description": "All other Voices of Interfaith America episodes.",
+      "categories": ["interfaith"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

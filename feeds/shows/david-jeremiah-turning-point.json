@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Turning Point (David Jeremiah)",
+  "leftovers_description": "Items outside the Interviews bucket.",
+  "shows": [
+    {
+      "id": "interviews",
+      "title": "Interviews",
+      "title_full": "Interviews — Turning Point (David Jeremiah)",
+      "description": "Interview episodes.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Interview" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Turning Point (David Jeremiah)",
+      "description": "All other Turning Point episodes.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Southern Gospel News Podcast",
+  "leftovers_description": "Episodes outside the numbered EPISODE bucket.",
+  "shows": [
+    {
+      "id": "numbered-episodes",
+      "title": "Numbered episodes",
+      "title_full": "Numbered episodes — Southern Gospel News Podcast",
+      "description": "Episodes titled “EPISODE N …” / “Episode N …”.",
+      "categories": ["gospel-music"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^(EPISODE|Episode)\\s*\\d+\\b" }
+    },
+    {
+      "id": "features",
+      "title": "Features",
+      "title_full": "Features — Southern Gospel News Podcast",
+      "description": "All other topical episodes and features.",
+      "categories": ["gospel-music"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

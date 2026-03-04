@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — SOUL Church UK",
+  "leftovers_description": "Messages outside the main row.",
+  "shows": [
+    {
+      "id": "messages",
+      "title": "Messages",
+      "title_full": "Messages — SOUL Church UK",
+      "description": "SOUL Church UK messages and teaching.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

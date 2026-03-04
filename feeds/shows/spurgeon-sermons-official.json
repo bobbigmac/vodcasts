@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other sermons",
+  "leftovers_title_full": "Other sermons — Spurgeon Sermons (Official)",
+  "leftovers_description": "Sermons outside the main named series buckets.",
+  "shows": [
+    {
+      "id": "heroic-in-christianity",
+      "title": "The Heroic In Christianity",
+      "title_full": "The Heroic In Christianity — Spurgeon Sermons (Official)",
+      "description": "The Heroic In Christianity series.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "The Heroic In Christianity" }
+    },
+    {
+      "id": "glory-of-god-in-the-face-of-jesus-christ",
+      "title": "The glory of God in the face of Jesus Christ",
+      "title_full": "The glory of God in the face of Jesus Christ — Spurgeon Sermons (Official)",
+      "description": "Series: The glory of God in the face of Jesus Christ.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The glory of God in the face of Jesus Christ" }
+    },
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Sermons — Spurgeon Sermons (Official)",
+      "description": "All other sermons in this feed.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

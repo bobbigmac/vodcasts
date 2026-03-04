@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Common Threads",
+  "leftovers_description": "Items outside the main recurring buckets.",
+  "shows": [
+    {
+      "id": "in-good-faith",
+      "title": "In Good Faith",
+      "title_full": "In Good Faith — Common Threads",
+      "description": "Episodes titled In Good Faith …",
+      "categories": ["interfaith"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "In Good Faith" }
+    },
+    {
+      "id": "two-part-episodes",
+      "title": "Two-part episodes",
+      "title_full": "Two-part episodes — Common Threads",
+      "description": "Episodes explicitly marked Parts 1 & 2.",
+      "categories": ["interfaith"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Parts 1 & 2" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Common Threads",
+      "description": "All other Common Threads episodes.",
+      "categories": ["interfaith"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

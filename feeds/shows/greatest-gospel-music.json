@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Greatest Gospel Music Of All Time",
+  "leftovers_description": "Items outside the main music row.",
+  "shows": [
+    {
+      "id": "music",
+      "title": "Music",
+      "title_full": "Music — Greatest Gospel Music Of All Time",
+      "description": "Gospel music mixes and compilations.",
+      "categories": ["gospel-music"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

@@ -1,0 +1,44 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — Life Vineyard Church",
+  "leftovers_description": "Messages outside the main named series buckets.",
+  "shows": [
+    {
+      "id": "unshakeable-series",
+      "title": "Unshakeable",
+      "title_full": "Unshakeable — Life Vineyard Church",
+      "description": "Unshakeable Series messages.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_suffix", "value": "(Unshakeable Series)" }
+    },
+    {
+      "id": "rooted-series",
+      "title": "Rooted",
+      "title_full": "Rooted — Life Vineyard Church",
+      "description": "Rooted Series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "(Rooted Series)" }
+    },
+    {
+      "id": "the-series",
+      "title": "The Series",
+      "title_full": "The Series — Life Vineyard Church",
+      "description": "Messages labeled “(The Series)”.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "(The Series)" }
+    },
+    {
+      "id": "messages",
+      "title": "Messages",
+      "title_full": "Messages — Life Vineyard Church",
+      "description": "All other Life Vineyard Church messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

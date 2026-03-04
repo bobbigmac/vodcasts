@@ -1,0 +1,62 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — Skylark Church",
+  "leftovers_description": "Messages outside the main speaker buckets.",
+  "shows": [
+    {
+      "id": "guest-speakers",
+      "title": "Guest speakers",
+      "title_full": "Guest speakers — Skylark Church",
+      "description": "Messages labeled Guest Speaker …",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Guest Speaker" }
+    },
+    {
+      "id": "pete-sims",
+      "title": "Pete Sims",
+      "title_full": "Pete Sims — Skylark Church",
+      "description": "Messages by Pete Sims.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Pete Sims" }
+    },
+    {
+      "id": "nicki-sims",
+      "title": "Nicki Sims",
+      "title_full": "Nicki Sims — Skylark Church",
+      "description": "Messages by Nicki Sims (including co-led).",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Nicki Sims" }
+    },
+    {
+      "id": "james-howland-harris",
+      "title": "James Howland-Harris",
+      "title_full": "James Howland-Harris — Skylark Church",
+      "description": "Messages by James Howland-Harris.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "James Howland-Harris" }
+    },
+    {
+      "id": "vision-sunday",
+      "title": "Vision Sunday",
+      "title_full": "Vision Sunday — Skylark Church",
+      "description": "Vision Sunday messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Vision Sunday" }
+    },
+    {
+      "id": "messages",
+      "title": "Messages",
+      "title_full": "Messages — Skylark Church",
+      "description": "All other Skylark Church messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

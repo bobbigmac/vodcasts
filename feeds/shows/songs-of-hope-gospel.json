@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Songs of Hope Gospel Music",
+  "leftovers_description": "Items outside the Gospel-labeled entries.",
+  "shows": [
+    {
+      "id": "gospel",
+      "title": "Gospel",
+      "title_full": "Gospel — Songs of Hope Gospel Music",
+      "description": "Episodes labeled with a Gospel prefix.",
+      "categories": ["gospel-music"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Gospel" }
+    },
+    {
+      "id": "songs",
+      "title": "Songs",
+      "title_full": "Songs — Songs of Hope Gospel Music",
+      "description": "All other songs and medleys in this feed.",
+      "categories": ["gospel-music"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

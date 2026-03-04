@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Free Instrumental Hymns and Songs",
+  "leftovers_description": "Items outside the main named buckets.",
+  "shows": [
+    {
+      "id": "instrumental",
+      "title": "Instrumental",
+      "title_full": "Instrumental — Free Instrumental Hymns and Songs",
+      "description": "Instrumental hymns (titles containing “Instrumental”).",
+      "categories": ["gospel-music"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Instrumental" }
+    },
+    {
+      "id": "songs",
+      "title": "Songs",
+      "title_full": "Songs — Free Instrumental Hymns and Songs",
+      "description": "All other instrumental hymn tracks in this feed.",
+      "categories": ["gospel-music"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

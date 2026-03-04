@@ -1,0 +1,62 @@
+{
+  "leftovers_title": "Other teachings",
+  "leftovers_title_full": "Other teachings — Insight for Living (Daily)",
+  "leftovers_description": "Teachings outside the main named buckets.",
+  "shows": [
+    {
+      "id": "uzziah",
+      "title": "Uzziah",
+      "title_full": "Uzziah — Insight for Living (Daily)",
+      "description": "Uzziah series teachings.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Uzziah:" }
+    },
+    {
+      "id": "absalom",
+      "title": "Absalom",
+      "title_full": "Absalom — Insight for Living (Daily)",
+      "description": "Absalom series teachings.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Absalom:" }
+    },
+    {
+      "id": "saul",
+      "title": "Saul",
+      "title_full": "Saul — Insight for Living (Daily)",
+      "description": "Saul series teachings.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Saul:" }
+    },
+    {
+      "id": "gehazi",
+      "title": "Gehazi",
+      "title_full": "Gehazi — Insight for Living (Daily)",
+      "description": "Gehazi series teachings.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Gehazi:" }
+    },
+    {
+      "id": "naaman",
+      "title": "Naaman",
+      "title_full": "Naaman — Insight for Living (Daily)",
+      "description": "Naaman series teachings.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Naaman:" }
+    },
+    {
+      "id": "teachings",
+      "title": "Teachings",
+      "title_full": "Teachings — Insight for Living (Daily)",
+      "description": "All other daily teachings in this feed.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

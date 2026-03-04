@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — UNSHACKLED! Daily Devotionals",
+  "leftovers_description": "Items outside the main devotionals buckets.",
+  "shows": [
+    {
+      "id": "daily-devotionals-labeled",
+      "title": "Daily Devotionals",
+      "title_full": "Daily Devotionals — UNSHACKLED! Daily Devotionals",
+      "description": "Episodes explicitly labeled “Daily Devotionals …”.",
+      "categories": ["devotional"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Daily Devotionals" }
+    },
+    {
+      "id": "devotionals",
+      "title": "Devotionals",
+      "title_full": "Devotionals — UNSHACKLED! Daily Devotionals",
+      "description": "All other daily devotional episodes.",
+      "categories": ["devotional"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

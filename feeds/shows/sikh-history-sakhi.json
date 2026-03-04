@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other stories",
+  "leftovers_title_full": "Other stories — Sikh History Sakhi",
+  "leftovers_description": "Stories outside the main Jap Ji Sahib buckets.",
+  "shows": [
+    {
+      "id": "jap-ji-sahib",
+      "title": "Jap Ji Sahib",
+      "title_full": "Jap Ji Sahib — Sikh History Sakhi",
+      "description": "Episodes tagged (Jap Ji Sahib).",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "\\(Jap\\s*Ji\\s*Sahib\\)\\s*$" }
+    },
+    {
+      "id": "gurdwara-pathar-sahib",
+      "title": "Gurdwara Pathar Sahib",
+      "title_full": "Gurdwara Pathar Sahib — Sikh History Sakhi",
+      "description": "Episodes tagged (Gurdwara Pathar Sahib).",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "(Gurdwara Pathar Sahib)" }
+    },
+    {
+      "id": "stories",
+      "title": "Stories",
+      "title_full": "Stories — Sikh History Sakhi",
+      "description": "All other Sikh History Sakhi stories.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

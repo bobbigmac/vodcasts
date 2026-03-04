@@ -1,0 +1,44 @@
+{
+  "leftovers_title": "Other episodes",
+  "leftovers_title_full": "Other episodes — Apologetics.com Radio Show",
+  "leftovers_description": "Episodes outside the named segments buckets.",
+  "shows": [
+    {
+      "id": "gender-unplugged",
+      "title": "Gender Unplugged",
+      "title_full": "Gender Unplugged — Apologetics.com Radio Show",
+      "description": "Gender Unplugged segment episodes.",
+      "categories": ["teaching", "apologetics"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Gender Unplugged" }
+    },
+    {
+      "id": "essential-apologetics",
+      "title": "Essential Apologetics",
+      "title_full": "Essential Apologetics — Apologetics.com Radio Show",
+      "description": "Essential Apologetics segment episodes.",
+      "categories": ["teaching", "apologetics"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Essential Apologetics" }
+    },
+    {
+      "id": "treeology",
+      "title": "Treeology",
+      "title_full": "Treeology — Apologetics.com Radio Show",
+      "description": "Treeology segment episodes.",
+      "categories": ["teaching", "apologetics"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Treeology" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Apologetics.com Radio Show",
+      "description": "All other episodes in this feed.",
+      "categories": ["teaching", "apologetics"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

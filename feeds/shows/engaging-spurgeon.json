@@ -1,0 +1,53 @@
+{
+  "leftovers_title": "Other episodes",
+  "leftovers_title_full": "Other episodes — Engaging Spurgeon",
+  "leftovers_description": "Episodes outside the main segment buckets.",
+  "shows": [
+    {
+      "id": "morning-and-evening",
+      "title": "M&E",
+      "title_full": "M&E — Engaging Spurgeon",
+      "description": "Episodes labeled M&E (Morning & Evening).",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "M&E" }
+    },
+    {
+      "id": "lost-sermons-series",
+      "title": "The Lost Sermons Series",
+      "title_full": "The Lost Sermons Series — Engaging Spurgeon",
+      "description": "The Lost Sermons Series episodes.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Lost Sermons Series" }
+    },
+    {
+      "id": "downgrade-controversy",
+      "title": "The Downgrade Controversy",
+      "title_full": "The Downgrade Controversy — Engaging Spurgeon",
+      "description": "The Downgrade Controversy series episodes.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Downgrade Controversy" }
+    },
+    {
+      "id": "bonus-and-specials",
+      "title": "Bonus & specials",
+      "title_full": "Bonus & specials — Engaging Spurgeon",
+      "description": "Special/bonus episodes.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_contains_any", "values": ["BONUS", "Special Guest", "Special"] }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Engaging Spurgeon",
+      "description": "All other Engaging Spurgeon episodes.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

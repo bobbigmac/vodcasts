@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — The Ten Commandments (EP)",
+  "leftovers_description": "Items outside the standard Talk N format.",
+  "shows": [
+    {
+      "id": "talks",
+      "title": "Talks",
+      "title_full": "Talks — The Ten Commandments (EP)",
+      "description": "Talk-numbered episodes covering each commandment.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^The Ten Commandments\\.\\s*Talk\\s*\\d+\\b" }
+    }
+  ]
+}
+

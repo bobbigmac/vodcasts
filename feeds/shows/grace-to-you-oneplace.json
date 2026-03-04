@@ -1,0 +1,44 @@
+{
+  "leftovers_title": "Other teachings",
+  "leftovers_title_full": "Other teachings — Grace to You (John MacArthur)",
+  "leftovers_description": "Teachings outside the main named buckets.",
+  "shows": [
+    {
+      "id": "attitude-behind-the-act",
+      "title": "The Attitude Behind the Act",
+      "title_full": "The Attitude Behind the Act — Grace to You (John MacArthur)",
+      "description": "The Attitude Behind the Act message(s) (A/B).",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "The Attitude Behind the Act" }
+    },
+    {
+      "id": "elements-of-true-prayer",
+      "title": "Elements of True Prayer",
+      "title_full": "Elements of True Prayer — Grace to You (John MacArthur)",
+      "description": "Elements of True Prayer series messages.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Elements of True Prayer" }
+    },
+    {
+      "id": "prayer",
+      "title": "Prayer",
+      "title_full": "Prayer — Grace to You (John MacArthur)",
+      "description": "Prayer-themed messages.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Prayer" }
+    },
+    {
+      "id": "teachings",
+      "title": "Teachings",
+      "title_full": "Teachings — Grace to You (John MacArthur)",
+      "description": "All other teachings in this feed.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

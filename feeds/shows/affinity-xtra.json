@@ -1,0 +1,62 @@
+{
+  "leftovers_title": "Other shows",
+  "leftovers_title_full": "Other shows — Affinity Xtra",
+  "leftovers_description": "Items outside the main recurring segment buckets.",
+  "shows": [
+    {
+      "id": "tech-xtra",
+      "title": "Tech Xtra",
+      "title_full": "Tech Xtra — Affinity Xtra",
+      "description": "Tech Xtra episodes.",
+      "categories": ["radio"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Tech Xtra" }
+    },
+    {
+      "id": "ideologees",
+      "title": "Ideologees",
+      "title_full": "Ideologees — Affinity Xtra",
+      "description": "Ideologees episodes.",
+      "categories": ["radio"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Ideologees" }
+    },
+    {
+      "id": "the-edge",
+      "title": "The Edge",
+      "title_full": "The Edge — Affinity Xtra",
+      "description": "The Edge episodes.",
+      "categories": ["radio", "gospel-music"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Edge" }
+    },
+    {
+      "id": "gospel-zone",
+      "title": "The Gospel Zone",
+      "title_full": "The Gospel Zone — Affinity Xtra",
+      "description": "The Gospel Zone / GospelZone interviews and episodes.",
+      "categories": ["radio", "gospel-music"],
+      "featured": false,
+      "filter": { "type": "title_contains_any", "values": ["The Gospel Zone", "Gospel Zone", "GospelZone"] }
+    },
+    {
+      "id": "live-stream",
+      "title": "Live Stream",
+      "title_full": "Live Stream — Affinity Xtra",
+      "description": "Live stream posts (sports and other events).",
+      "categories": ["radio"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Live Stream" }
+    },
+    {
+      "id": "shows",
+      "title": "Shows",
+      "title_full": "Shows — Affinity Xtra",
+      "description": "All other Affinity Xtra on-demand items.",
+      "categories": ["radio"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

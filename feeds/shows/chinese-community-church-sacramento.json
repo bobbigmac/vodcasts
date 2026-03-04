@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other sermons",
+  "leftovers_title_full": "Other sermons — Chinese Community Church (Sacramento)",
+  "leftovers_description": "Sermons outside the main series/speaker buckets.",
+  "shows": [
+    {
+      "id": "back-to-the-future",
+      "title": "Back To The Future",
+      "title_full": "Back To The Future — Chinese Community Church (Sacramento)",
+      "description": "Back To The Future series messages.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "\"Back To The Future" }
+    },
+    {
+      "id": "pastor-louis-lee",
+      "title": "Pastor Louis Lee",
+      "title_full": "Pastor Louis Lee — Chinese Community Church (Sacramento)",
+      "description": "Messages preached by Pastor Louis Lee.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Pastor Louis Lee" }
+    },
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Sermons — Chinese Community Church (Sacramento)",
+      "description": "All other sermons in this feed.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other episodes",
+  "leftovers_title_full": "Other episodes — Cave to the Cross Apologetics",
+  "leftovers_description": "Episodes outside the main named buckets.",
+  "shows": [
+    {
+      "id": "the-great-debate",
+      "title": "The Great Debate",
+      "title_full": "The Great Debate — Cave to the Cross Apologetics",
+      "description": "The Great Debate series episodes.",
+      "categories": ["teaching", "apologetics"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "The Great Debate" }
+    },
+    {
+      "id": "book-reviews",
+      "title": "Book Reviews",
+      "title_full": "Book Reviews — Cave to the Cross Apologetics",
+      "description": "Book review series episodes.",
+      "categories": ["teaching", "apologetics"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Book Reviews" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Cave to the Cross Apologetics",
+      "description": "All other Cave to the Cross episodes.",
+      "categories": ["teaching", "apologetics"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

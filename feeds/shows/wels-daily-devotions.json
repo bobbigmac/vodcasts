@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — WELS Daily Devotions",
+  "leftovers_description": "Items outside the standard “Title – Month Day, Year” format.",
+  "shows": [
+    {
+      "id": "devotions",
+      "title": "Devotions",
+      "title_full": "Devotions — WELS Daily Devotions",
+      "description": "Daily devotion episodes with date suffix.",
+      "categories": ["devotional"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "\\s+[–-]\\s+[A-Za-z]+\\s+\\d{1,2},\\s+\\d{4}\\s*$" }
+    }
+  ]
+}
+

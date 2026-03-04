@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other episodes",
+  "leftovers_title_full": "Other episodes — Radio Survivor",
+  "leftovers_description": "Episodes outside the Radio Station Visit series.",
+  "shows": [
+    {
+      "id": "radio-station-visits",
+      "title": "Radio Station Visits",
+      "title_full": "Radio Station Visits — Radio Survivor",
+      "description": "Radio Station Visit episodes.",
+      "categories": ["radio"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^Radio Station Visit\\s*#\\s*\\d+\\b" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Radio Survivor",
+      "description": "All other Radio Survivor episodes.",
+      "categories": ["radio"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

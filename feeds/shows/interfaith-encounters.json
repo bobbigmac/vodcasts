@@ -1,0 +1,80 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Interfaith Encounters",
+  "leftovers_description": "Items outside the main series buckets.",
+  "shows": [
+    {
+      "id": "immigration-reprise",
+      "title": "Immigration Reprise",
+      "title_full": "Immigration Reprise — Interfaith Encounters",
+      "description": "Immigration Reprise series episodes.",
+      "categories": ["interfaith"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Immigration Reprise" }
+    },
+    {
+      "id": "migration",
+      "title": "Migration",
+      "title_full": "Migration — Interfaith Encounters",
+      "description": "Migration series episodes (including “Copy of Migration”).",
+      "categories": ["interfaith"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Migration" }
+    },
+    {
+      "id": "ai",
+      "title": "AI",
+      "title_full": "AI — Interfaith Encounters",
+      "description": "AI series episodes.",
+      "categories": ["interfaith"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "AI" }
+    },
+    {
+      "id": "religious-freedom",
+      "title": "Religious Freedom",
+      "title_full": "Religious Freedom — Interfaith Encounters",
+      "description": "Religious Freedom series episodes.",
+      "categories": ["interfaith"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Religious Freedom" }
+    },
+    {
+      "id": "religious-conflict",
+      "title": "Religious Conflict",
+      "title_full": "Religious Conflict — Interfaith Encounters",
+      "description": "Religious Conflict series episodes.",
+      "categories": ["interfaith"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Religious Conflict" }
+    },
+    {
+      "id": "gen-z",
+      "title": "Gen Z",
+      "title_full": "Gen Z — Interfaith Encounters",
+      "description": "Gen Z series episodes.",
+      "categories": ["interfaith"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Gen Z" }
+    },
+    {
+      "id": "future-of-religion",
+      "title": "The Future of Religion",
+      "title_full": "The Future of Religion — Interfaith Encounters",
+      "description": "The Future of Religion series episodes.",
+      "categories": ["interfaith"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Future of Religion" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Interfaith Encounters",
+      "description": "All other Interfaith Encounters episodes.",
+      "categories": ["interfaith"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

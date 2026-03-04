@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other sermons",
+  "leftovers_title_full": "Other sermons — Eric Walsh",
+  "leftovers_description": "Sermons outside the main speaker buckets.",
+  "shows": [
+    {
+      "id": "eric-walsh",
+      "title": "Eric Walsh",
+      "title_full": "Eric Walsh — Eric Walsh Sermons",
+      "description": "Sermons with an “Eric Walsh:” prefix.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Eric Walsh:" }
+    },
+    {
+      "id": "with-barna-magyarosi",
+      "title": "With Barna Magyarosi",
+      "title_full": "With Barna Magyarosi — Eric Walsh Sermons",
+      "description": "Sermons that mention Barna Magyarosi with Eric Walsh.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Barna Magyarosi" }
+    },
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Sermons — Eric Walsh Sermons",
+      "description": "All other sermons in this feed.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

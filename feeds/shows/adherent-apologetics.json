@@ -1,0 +1,52 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Adherent Apologetics",
+  "leftovers_description": "Items outside the main numbered episodes.",
+  "shows": [
+    {
+      "id": "great-thinkers",
+      "title": "Great Thinkers",
+      "title_full": "Great Thinkers — Adherent Apologetics",
+      "description": "Great Thinkers series episodes.",
+      "categories": ["teaching", "apologetics"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Great Thinkers" }
+    },
+    {
+      "id": "opposing-sides",
+      "title": "Opposing Sides",
+      "title_full": "Opposing Sides — Adherent Apologetics",
+      "description": "Opposing Sides series episodes.",
+      "categories": ["teaching", "apologetics"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Opposing Sides" }
+    },
+    {
+      "id": "philosophy-for-all",
+      "title": "Philosophy for All",
+      "title_full": "Philosophy for All — Adherent Apologetics",
+      "description": "Philosophy for All series episodes.",
+      "categories": ["teaching", "apologetics"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Philosophy for All" }
+    },
+    {
+      "id": "ep-numbered",
+      "title": "Ep. # episodes",
+      "title_full": "Ep. # episodes — Adherent Apologetics",
+      "description": "Episodes labeled “Ep. #N”.",
+      "categories": ["teaching", "apologetics"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\bEp\\.\\s*#\\d+\\b" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Adherent Apologetics",
+      "description": "All other Adherent Apologetics episodes.",
+      "categories": ["teaching", "apologetics"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}

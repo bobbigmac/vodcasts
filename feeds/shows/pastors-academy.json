@@ -1,0 +1,62 @@
+{
+  "leftovers_title": "Other lectures",
+  "leftovers_title_full": "Other lectures — London Seminary & the Pastors' Academy",
+  "leftovers_description": "Lectures outside the main named series buckets.",
+  "shows": [
+    {
+      "id": "autumn-special-lectures",
+      "title": "Autumn Special Lectures",
+      "title_full": "Autumn Special Lectures — London Seminary & the Pastors' Academy",
+      "description": "Autumn Special Lecture Series sessions.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Autumn Special Lecture Series" }
+    },
+    {
+      "id": "summer-special-lectures",
+      "title": "Summer Special Lectures",
+      "title_full": "Summer Special Lectures — London Seminary & the Pastors' Academy",
+      "description": "Summer Special Lectures sessions.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Summer Special Lectures" }
+    },
+    {
+      "id": "coffee-time-conversations",
+      "title": "Coffee Time Conversations",
+      "title_full": "Coffee Time Conversations — London Seminary & the Pastors' Academy",
+      "description": "Coffee Time Conversations episodes.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Coffee Time Conversations" }
+    },
+    {
+      "id": "special-lectures-2021",
+      "title": "Special Lectures (2021)",
+      "title_full": "Special Lectures (2021) — London Seminary & the Pastors' Academy",
+      "description": "London Seminary Special Lectures 2021 sessions.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "London Seminary Special Lectures 2021" }
+    },
+    {
+      "id": "memorial-lectures",
+      "title": "Memorial Lectures",
+      "title_full": "Memorial Lectures — London Seminary & the Pastors' Academy",
+      "description": "Memorial lecture recordings (e.g. Martyn Lloyd-Jones Memorial Lecture).",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Memorial Lecture" }
+    },
+    {
+      "id": "lectures",
+      "title": "Lectures",
+      "title_full": "Lectures — London Seminary & the Pastors' Academy",
+      "description": "All other lectures and sessions.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

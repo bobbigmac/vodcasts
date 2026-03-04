@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Jewish Sacred Aging",
+  "leftovers_description": "Items outside the Encore bucket.",
+  "shows": [
+    {
+      "id": "encore",
+      "title": "Encore",
+      "title_full": "Encore — Jewish Sacred Aging",
+      "description": "Encore episodes.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Encore" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Jewish Sacred Aging",
+      "description": "All other Seekers of Meaning episodes.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

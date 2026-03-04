@@ -1,0 +1,44 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — The World of Islam",
+  "leftovers_description": "Items outside the main History/Religion buckets.",
+  "shows": [
+    {
+      "id": "history",
+      "title": "History",
+      "title_full": "History — The World of Islam",
+      "description": "Episodes labeled as History.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^EP\\.?\\d+[-–—]*-+History\\b" }
+    },
+    {
+      "id": "religion",
+      "title": "Religion",
+      "title_full": "Religion — The World of Islam",
+      "description": "Episodes labeled as Religion.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^(EP\\.?\\d+[-–—]*-+Religion\\b|Ep\\.?\\d+-Religion\\b)" }
+    },
+    {
+      "id": "ep-numbered",
+      "title": "EP. episodes",
+      "title_full": "EP. episodes — The World of Islam",
+      "description": "Numbered episodes (EP.N / Ep.N).",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^(EP|Ep)\\.?\\d+\\b" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — The World of Islam",
+      "description": "All other items in this feed.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

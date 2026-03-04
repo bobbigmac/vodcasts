@@ -1,0 +1,25 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — From the Heart of Spurgeon",
+  "leftovers_description": "Items outside the main sermon/reading buckets.",
+  "shows": [
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Sermons — From the Heart of Spurgeon",
+      "description": "Sermons tagged with an (S####) code in the title.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "(\\(S\\s*[0-9/]+\\)|\\bSermon\\s+\\d+\\b)" }
+    },
+    {
+      "id": "lively-reading",
+      "title": "Lively Reading",
+      "title_full": "Lively Reading — From the Heart of Spurgeon",
+      "description": "Episodes labeled as Lively Reading.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Lively Reading" }
+    }
+  ]
+}
