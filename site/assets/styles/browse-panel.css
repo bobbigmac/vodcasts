@@ -436,6 +436,14 @@
   overflow-y: auto;
   padding: 16px 0;
 }
+
+@supports (content-visibility: auto) {
+  .browseAllRowMount {
+    content-visibility: auto;
+    contain-intrinsic-size: 1200px 340px;
+  }
+}
+
 .browseAllRow {
   margin-bottom: 24px;
 }
@@ -755,6 +763,13 @@
   flex: 0 0 auto;
   display: flex;
   align-items: flex-end;
+}
+
+@supports (content-visibility: auto) {
+  .vodCarouselItem {
+    content-visibility: auto;
+    contain-intrinsic-size: 205px 240px;
+  }
 }
 
 /* Thumb sizing: shows are square at rest (1:1), expand wide (16:9) on focus/hover */

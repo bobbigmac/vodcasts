@@ -17,12 +17,11 @@ import { AudioTakeover } from "../ui/takeover/audio_takeover.js";
 import { AudioDisplayTakeover } from "../ui/takeover/audio_display_takeover.js";
 import { getNextPluginId, getPreferredPlugin, setPreferredPlugin } from "../player/audio_viz.js";
 import { ChaptersNavSettingsTakeover, ChaptersNavTakeover } from "../ui/takeover/chapters_nav_takeover.js";
-import { ShareTakeover } from "../ui/takeover/share_takeover.js";
 import { ShuffleTakeover } from "../ui/takeover/shuffle_takeover.js";
 import { ExitFullscreenIcon, FullscreenIcon, MoonIcon, MuteIcon, PauseIcon, PlayIcon, ShareIcon, ShuffleIcon } from "../ui/icons.js";
 import { useLongPress } from "../ui/long_press.js";
 import { clearMediaSessionMetadata, installControls, setMediaSessionMetadata } from "./controls.js";
-import { getRouteFromUrl, setRouteInUrl } from "./route.js";
+import { buildShareUrl, getRouteFromUrl, setRouteInUrl } from "./route.js";
 import { trackEvent } from "../runtime/analytics.js";
 
 function chapterIndexAt(chapters, tSec) {
@@ -40,6 +39,31 @@ function chapterNameAt(chapters, tSec) {
   const idx = chapterIndexAt(chapters, tSec);
   const ch = idx >= 0 ? chapters[idx] : null;
   return ch?.name ? String(ch.name) : "";
+}
+
+async function copyToClipboard(text) {
+  const s = String(text || "");
+  if (!s) return false;
+  try {
+    await navigator.clipboard?.writeText?.(s);
+    return true;
+  } catch {}
+
+  try {
+    const ta = document.createElement("textarea");
+    ta.value = s;
+    ta.setAttribute("readonly", "true");
+    ta.style.position = "fixed";
+    ta.style.left = "-9999px";
+    ta.style.top = "-9999px";
+    document.body.appendChild(ta);
+    ta.select();
+    const ok = document.execCommand("copy");
+    ta.remove();
+    return !!ok;
+  } catch {
+    return false;
+  }
 }
 
 export function App({ env, log, sources, showsConfig, player, history }) {
@@ -66,6 +90,7 @@ export function App({ env, log, sources, showsConfig, player, history }) {
   const historyOpen = useSignal(false);
   const browseAllOpen = useSignal(false);
   const isFullscreen = useSignal(false);
+  const shareOpen = useSignal(false);
   const toast = useSignal({ show: false, msg: "", level: "info", ms: 2200 });
   const panelTakeover = usePanelTakeover({ defaultIdleMs: 5000 });
   const scrubPreview = useSignal({ show: false, label: "", pct: 50, t: 0 });
@@ -82,6 +107,8 @@ export function App({ env, log, sources, showsConfig, player, history }) {
   const seekFxLeftRef = useRef(null);
   const seekFxRightRef = useRef(null);
   const seekFxHideRef = useRef(null);
+  const shareBtnRef = useRef(null);
+  const shareMenuRef = useRef(null);
   const uiIdleToRef = useRef(null);
   const uiIdleRef = useRef(false);
   const appRootRef = useRef(null);
@@ -122,6 +149,7 @@ export function App({ env, log, sources, showsConfig, player, history }) {
       } catch {}
       scrubPreview.value = { ...scrubPreview.value, show: false };
       panelTakeover.close();
+      shareOpen.value = false;
     }
   };
 
@@ -165,6 +193,30 @@ export function App({ env, log, sources, showsConfig, player, history }) {
     return () => cleanup?.();
   }, []);
 
+  useEffect(() => {
+    if (!shareOpen.value) return;
+    const onDoc = (e) => {
+      const t = e?.target;
+      const btn = shareBtnRef.current;
+      const menu = shareMenuRef.current;
+      if (btn && t && btn.contains(t)) return;
+      if (menu && t && menu.contains(t)) return;
+      shareOpen.value = false;
+    };
+    const onKey = (e) => {
+      if (String(e?.key || "") === "Escape") shareOpen.value = false;
+    };
+    document.addEventListener("pointerdown", onDoc, true);
+    document.addEventListener("keydown", onKey, true);
+    return () => {
+      try {
+        document.removeEventListener("pointerdown", onDoc, true);
+      } catch {}
+      try {
+        document.removeEventListener("keydown", onKey, true);
+      } catch {}
+    };
+  }, [shareOpen.value]);
 
   // MediaSession metadata (lock screen / notification controls).
   useSignalEffect(() => {
@@ -696,12 +748,23 @@ export function App({ env, log, sources, showsConfig, player, history }) {
         guideBrowseFeedId.value = route.feed;
         guideBrowseShowSlug.value = route.show;
         guideOpen.value = true;
+        const autoplay = !player.playback.value?.paused;
         const t = ++token;
         suppressNextRoutePushRef.current = t;
-        // Show browsing should not disrupt current playback; just ensure episodes are available for the guide/browse UIs.
-        player.loadSourceEpisodes?.(route.feed).catch(() => {}).finally(() => {
-          if (suppressNextRoutePushRef.current === t) suppressNextRoutePushRef.current = 0;
-        });
+        if (route.ep) {
+          // Deep-link into a show context but still play the episode (e.g. /X/shows/Y/?ep=Z).
+          player
+            .applyRoute(route, { autoplay })
+            .catch(() => {})
+            .finally(() => {
+              if (suppressNextRoutePushRef.current === t) suppressNextRoutePushRef.current = 0;
+            });
+        } else {
+          // Show browsing should not disrupt current playback; just ensure episodes are available for the guide/browse UIs.
+          player.loadSourceEpisodes?.(route.feed).catch(() => {}).finally(() => {
+            if (suppressNextRoutePushRef.current === t) suppressNextRoutePushRef.current = 0;
+          });
+        }
         return;
       }
       guideBrowseShowSlug.value = null;
@@ -1509,16 +1572,53 @@ export function App({ env, log, sources, showsConfig, player, history }) {
         title="Share"
         data-navitem="1"
         data-keyhint="U — Share"
+        ref=${shareBtnRef}
         onClick=${() => {
-          panelTakeover.open({
-            id: "share",
-            idleMs: 8000,
-            render: (takeover) => html`<${ShareTakeover} player=${player} log=${log} takeover=${takeover} />`,
-          });
+          panelTakeover.close();
+          shareOpen.value = !shareOpen.value;
         }}
       >
         <${ShareIcon} />
       </button>
+      ${(() => {
+        if (!shareOpen.value) return null;
+        const route = getRouteFromUrl();
+        const pl = player.playlist?.value || null;
+        const cur = player.current.value || {};
+        const srcId = cur.source?.id || null;
+        const epObj = cur.episode || null;
+        const epSeg = epObj?.slug || epObj?.id || null;
+
+        const showFeedId = route.feed || pl?.feedId || srcId || null;
+        const showSlug = route.show || (pl?.feedId === showFeedId ? pl?.showSlug : null) || null;
+
+        const epFeedId = srcId || null;
+        const epShowSlug = pl?.feedId === epFeedId ? (pl?.showSlug || null) : null;
+
+        const feedUrl = showFeedId ? buildShareUrl({ feed: showFeedId }) : "";
+        const showUrl = showFeedId && showSlug ? buildShareUrl({ feed: showFeedId, show: showSlug }) : "";
+        const epUrl =
+          epFeedId && epSeg
+            ? epShowSlug
+              ? buildShareUrl({ feed: epFeedId, show: epShowSlug, ep: String(epSeg) })
+              : buildShareUrl({ feed: epFeedId, ep: String(epSeg) })
+            : "";
+
+        const copy = async (url, label) => {
+          const ok = await copyToClipboard(url);
+          if (ok) log?.info?.(`Copied ${label} link`);
+          else log?.warn?.("Copy failed");
+          shareOpen.value = false;
+        };
+
+        return html`
+          <div class="cornerShareMenu" ref=${shareMenuRef} role="dialog" aria-label="Share menu">
+            <button class="cornerShareMenuBtn" type="button" disabled=${!feedUrl} onClick=${() => copy(feedUrl, "feed")}>Feed</button>
+            ${showUrl ? html`<button class="cornerShareMenuBtn" type="button" onClick=${() => copy(showUrl, "show")}>Show</button>` : null}
+            <button class="cornerShareMenuBtn" type="button" disabled=${!epUrl} onClick=${() => copy(epUrl, "episode")}>Episode</button>
+          </div>
+        `;
+      })()}
       <button
         id="btnFullscreen"
         class="cornerBtn cornerBtnMid"

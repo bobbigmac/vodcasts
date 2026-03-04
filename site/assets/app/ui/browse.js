@@ -196,7 +196,15 @@ export function BrowsePanel({
                       <div class="vodThumb" style=${thumbFallbackStyle(artSeed)}>
                         <span class="vodThumbPlaceholder">▶</span>
                         ${focusedShow.artworkUrl
-                          ? html`<img class="vodThumbImg" src=${focusedShow.artworkUrl} alt="" loading="lazy" onError=${onThumbImgError} />`
+                          ? html`<img
+                              class="vodThumbImg"
+                              src=${focusedShow.artworkUrl}
+                              alt=""
+                              loading="lazy"
+                              decoding="async"
+                              fetchpriority="low"
+                              onError=${onThumbImgError}
+                            />`
                           : ""}
                         ${badge ? html`<span class="vodThumbBadge" aria-hidden="true">${badge}</span>` : ""}
                         <span class="vodThumbTitle">
@@ -240,7 +248,15 @@ export function BrowsePanel({
                       <div class="vodThumb" style=${thumbFallbackStyle(artSeed)}>
                         <span class="vodThumbPlaceholder">▶</span>
                         ${shows[0]?.artworkUrl
-                          ? html`<img class="vodThumbImg" src=${shows[0].artworkUrl} alt="" loading="lazy" onError=${onThumbImgError} />`
+                          ? html`<img
+                              class="vodThumbImg"
+                              src=${shows[0].artworkUrl}
+                              alt=""
+                              loading="lazy"
+                              decoding="async"
+                              fetchpriority="low"
+                              onError=${onThumbImgError}
+                            />`
                           : ""}
                         ${isPlaying ? html`<span class="vodThumbBadge" aria-hidden="true">Playing</span>` : ""}
                         <span class="vodThumbTitle">
@@ -296,7 +312,15 @@ export function BrowsePanel({
                     <div class="vodThumb" style=${thumbFallbackStyle(thumbSeed)}>
                       <span class="vodThumbPlaceholder">${initials}</span>
                       ${show.artworkUrl
-                        ? html`<img class="vodThumbImg" src=${show.artworkUrl} alt="" loading="lazy" onError=${onThumbImgError} />`
+                        ? html`<img
+                            class="vodThumbImg"
+                            src=${show.artworkUrl}
+                            alt=""
+                            loading="lazy"
+                            decoding="async"
+                            fetchpriority="low"
+                            onError=${onThumbImgError}
+                          />`
                         : ""}
                       ${isPlayingShow ? html`<span class="vodThumbBadge" aria-hidden="true">Playing</span>` : ""}
                       ${audioOnly

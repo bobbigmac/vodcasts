@@ -60,6 +60,10 @@ export function getRouteFromUrl() {
     else ep = segs[1] || sp.get("ep") || sp.get("episode") || sp.get("e") || "";
   }
 
+  // Allow show routes to also deep-link to an episode via query params:
+  //   /<feed>/shows/<show>/?ep=<episode>
+  if (show && !ep) ep = sp.get("ep") || sp.get("episode") || sp.get("e") || "";
+
   const hp = new URLSearchParams(String(u.hash || "").replace(/^#/, ""));
   const t = parseTimeParam(hp.get("t") || hp.get("time") || sp.get("t") || sp.get("time"));
 
@@ -123,7 +127,12 @@ export function buildShareUrl({ feed, ep, show, t } = {}) {
 
   let path = bp;
   if (feed) {
-    if (show) path += encodeURIComponent(String(feed)) + "/shows/" + encodeURIComponent(String(show)) + "/";
+    if (show) {
+      path += encodeURIComponent(String(feed)) + "/shows/" + encodeURIComponent(String(show)) + "/";
+      if (ep) {
+        u.searchParams.set("ep", String(ep));
+      }
+    }
     else if (ep) path += encodeURIComponent(String(feed)) + "/" + encodeURIComponent(String(ep)) + "/";
     else path += encodeURIComponent(String(feed)) + "/";
   }

@@ -463,9 +463,9 @@ function buildCategoryRows(allShows, historyAll, player) {
   return merged;
 }
 
-function BrowseAllRowPlaceholder({ rowId, title, count = 10 }) {
+function BrowseAllRowPlaceholder({ rowId, title, count = 7 }) {
   const items = [];
-  const n = Math.max(6, Math.min(14, Number(count) || 10));
+  const n = Math.max(5, Math.min(10, Number(count) || 7));
   for (let i = 0; i < n; i++) items.push(i);
   return html`
     <section class="vodCarouselRow browseAllRow browseAllRowPlaceholder" data-carousel-rowroot=${rowId}>
@@ -559,10 +559,80 @@ export function BrowseAllPanel({ env, isOpen, showsConfig, feedTitles, player, h
 
   const categoryRows = useMemo(() => buildCategoryRows(allShows, historyAll, player), [allShows, historyAll, player]);
 
+  const progressCacheRef = useRef(new Map());
+  const [progressVersion, setProgressVersion] = useState(0);
+  useEffect(() => {
+    if (!isOpen) return;
+    progressCacheRef.current = new Map();
+    setProgressVersion((v) => v + 1);
+  }, [isOpen, historyAll.length]);
+
   const rowElsRef = useRef(new Map());
   const visibleIdxRef = useRef(new Set());
   const observerRef = useRef(null);
   const [rowWindow, setRowWindow] = useState({ start: 0, end: 6 });
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const rows = categoryRows.slice(rowWindow.start, rowWindow.end + 1);
+    if (!rows.length) return;
+
+    const queue = [];
+    const cache = progressCacheRef.current;
+    for (const row of rows) {
+      const shows = row?.shows || [];
+      for (const it of shows) {
+        const feedId = it?.feedId;
+        const show = it?.show;
+        const showId = show?.id;
+        if (typeof feedId !== "string" || !feedId) continue;
+        if (typeof showId !== "string" || !showId) continue;
+        const key = `${feedId}::${showId}`;
+        if (cache.has(key)) continue;
+        queue.push({ key, feedId, show });
+      }
+    }
+    if (!queue.length) return;
+
+    let canceled = false;
+    const runBatch = (deadline) => {
+      if (canceled) return;
+      const hasBudget = () => {
+        const tr = deadline?.timeRemaining?.();
+        if (Number.isFinite(tr)) return tr > 6;
+        return true;
+      };
+      const shouldYield = () => deadline && deadline.didTimeout !== true && !hasBudget();
+
+      let didAny = false;
+      while (queue.length && !shouldYield()) {
+        const job = queue.shift();
+        if (!job) continue;
+        if (cache.has(job.key)) continue;
+        const hist = historyByFeed.get(job.feedId) || [];
+        cache.set(job.key, getShowProgress(job.show, job.feedId, hist, player));
+        didAny = true;
+      }
+
+      if (didAny) setProgressVersion((v) => v + 1);
+      if (!queue.length) return;
+      schedule();
+    };
+
+    const schedule = () => {
+      if (canceled) return;
+      if (typeof window.requestIdleCallback === "function") {
+        window.requestIdleCallback(runBatch, { timeout: 250 });
+      } else {
+        setTimeout(() => runBatch(null), 0);
+      }
+    };
+
+    schedule();
+    return () => {
+      canceled = true;
+    };
+  }, [isOpen, rowWindow.start, rowWindow.end, categoryRows, historyByFeed, player]);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -633,7 +703,8 @@ export function BrowseAllPanel({ env, isOpen, showsConfig, feedTitles, player, h
   const playShow = (feedId, show, startEp = null) => {
     const episodes = show.episodes || [];
     if (!episodes.length || !feedId) return;
-    const progress = getShowProgress(show, feedId, historyByFeed.get(feedId), player);
+    const cached = progressCacheRef.current.get(`${feedId}::${show?.id || ""}`) || null;
+    const progress = cached || getShowProgress(show, feedId, historyByFeed.get(feedId), player);
     const ep = startEp || progress.resumeEpisode || episodes[0];
     if (!ep?.id) return;
     player.selectSourceAndEpisode(feedId, ep.id, {
@@ -728,15 +799,15 @@ export function BrowseAllPanel({ env, isOpen, showsConfig, feedTitles, player, h
                     ? html`
                         <${VodCarouselRow} rowId=${row.id} title=${row.label} className="browseAllRow">
                           ${row.shows.map(({ feedId, feedTitle, show }, idx) => {
-                            const progress = getShowProgress(show, feedId, historyByFeed.get(feedId), player);
                             const showTitle = show.title_full || show.title;
                             const posClass = titlePosClass(`${feedId}:${show.slug || show.id}`);
                             const eps = show.episodes || [];
                             const isPlayingShow = curSourceId === feedId && curEpId && eps.some((e) => e?.id === curEpId);
                             const isAudioOnlyFeed = feedAudioOnlyIds.has(feedId);
-                            const total = progress.totalEpisodes || (show.episodeCount || 0);
-                            const watched = progress.watchedCount || 0;
-                            const resumeLabel = progress.resumeEpisode ? "Resume" : "Play";
+                            const progress = progressCacheRef.current.get(`${feedId}::${show?.id || ""}`) || null;
+                            const total = progress?.totalEpisodes || (show.episodeCount || eps.length || 0);
+                            const watched = progress?.watchedCount || 0;
+                            const resumeLabel = progress?.resumeEpisode ? "Resume" : "Play";
                             const watchedPct = total > 0 ? Math.round((watched / total) * 100) : 0;
                             const thumbSeed = `${feedId}:${show.slug || show.id}`;
                             const initials = fallbackInitials(showTitle) || "TV";
@@ -759,7 +830,15 @@ export function BrowseAllPanel({ env, isOpen, showsConfig, feedTitles, player, h
                                     <div class="vodThumb" style=${thumbFallbackStyle(thumbSeed)}>
                                       <span class="vodThumbPlaceholder">${initials}</span>
                                       ${show.artworkUrl
-                                        ? html`<img class="vodThumbImg" src=${show.artworkUrl} alt="" loading="lazy" onError=${onThumbImgError} />`
+                                        ? html`<img
+                                            class="vodThumbImg"
+                                            src=${show.artworkUrl}
+                                            alt=""
+                                            loading="lazy"
+                                            decoding="async"
+                                            fetchpriority="low"
+                                            onError=${onThumbImgError}
+                                          />`
                                         : ""}
                                       ${isPlayingShow ? html`<span class="vodThumbBadge" aria-hidden="true">Playing</span>` : ""}
                                       ${isAudioOnlyFeed

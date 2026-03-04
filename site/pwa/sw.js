@@ -3,6 +3,9 @@
 
 const STATIC_CACHE = "vodcasts-static-v1";
 const DATA_CACHE = "vodcasts-data-v1";
+const IMG_CACHE = "vodcasts-img-v1";
+
+const MAX_IMG_ENTRIES = 300;
 
 function urlFor(path) {
   return new URL(path, self.registration.scope).toString();
@@ -36,6 +39,27 @@ function shouldCacheUrl(url) {
     p.endsWith(".webmanifest") ||
     p.endsWith(".xml")
   );
+}
+
+function isCacheableImageRequest(req, url) {
+  if (!req || req.method !== "GET") return false;
+  if (req.destination !== "image") return false;
+  const proto = url?.protocol || "";
+  return proto === "https:" || proto === "http:";
+}
+
+async function pruneCache(cacheName, maxEntries) {
+  try {
+    const cache = await caches.open(cacheName);
+    const keys = await cache.keys();
+    if (keys.length <= maxEntries) return;
+    const toDelete = keys.length - maxEntries;
+    for (let i = 0; i < toDelete; i++) {
+      try {
+        await cache.delete(keys[i]);
+      } catch {}
+    }
+  } catch {}
 }
 
 const PRECACHE = [
@@ -131,6 +155,41 @@ self.addEventListener("fetch", (event) => {
   if (!req || req.method !== "GET") return;
 
   const url = new URL(req.url);
+  if (isCacheableImageRequest(req, url)) {
+    event.respondWith(
+      (async () => {
+        const cache = await caches.open(IMG_CACHE);
+        const cached = await cache.match(req);
+        if (cached) {
+          event.waitUntil(
+            fetch(req)
+              .then((resp) => {
+                if (!resp) return;
+                if (!(resp.ok || resp.type === "opaque")) return;
+                return cache.put(req, resp.clone()).then(() => pruneCache(IMG_CACHE, MAX_IMG_ENTRIES));
+              })
+              .catch(() => {})
+          );
+          return cached;
+        }
+
+        try {
+          const resp = await fetch(req);
+          if (resp && (resp.ok || resp.type === "opaque")) {
+            try {
+              await cache.put(req, resp.clone());
+              event.waitUntil(pruneCache(IMG_CACHE, MAX_IMG_ENTRIES));
+            } catch {}
+          }
+          return resp;
+        } catch {
+          return cached || Response.error();
+        }
+      })()
+    );
+    return;
+  }
+
   if (!isSameOrigin(url)) return;
 
   const base = basePathname();
@@ -189,4 +248,3 @@ self.addEventListener("fetch", (event) => {
     })()
   );
 });
-
