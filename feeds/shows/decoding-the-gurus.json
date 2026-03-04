@@ -1,0 +1,62 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Decoding the Gurus",
+  "leftovers_description": "Episodes outside the named series buckets.",
+  "shows": [
+    {
+      "id": "supplementary-material",
+      "title": "Supplementary Material",
+      "title_full": "Supplementary Material — Decoding the Gurus",
+      "description": "Supplementary Material episodes.",
+      "categories": ["lectures"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Supplementary Material" }
+    },
+    {
+      "id": "decoding-academia",
+      "title": "Decoding Academia",
+      "title_full": "Decoding Academia — Decoding the Gurus",
+      "description": "Decoding Academia series episodes.",
+      "categories": ["lectures"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Decoding Academia" }
+    },
+    {
+      "id": "gurometer",
+      "title": "Gurometer",
+      "title_full": "Gurometer — Decoding the Gurus",
+      "description": "Gurometer episodes and previews.",
+      "categories": ["lectures"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Gurometer" }
+    },
+    {
+      "id": "mini-decoding",
+      "title": "Mini Decoding",
+      "title_full": "Mini Decoding — Decoding the Gurus",
+      "description": "Mini Decoding episodes.",
+      "categories": ["lectures"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Mini[- ]Decoding\\b" }
+    },
+    {
+      "id": "required-readings",
+      "title": "Required Readings",
+      "title_full": "Required Readings — Decoding the Gurus",
+      "description": "Required Readings episodes.",
+      "categories": ["lectures"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Required Readings" }
+    },
+    {
+      "id": "decoding-the-gurus",
+      "title": "Decoding the Gurus",
+      "title_full": "Decoding the Gurus",
+      "description": "Main episodes and everything else.",
+      "categories": ["lectures"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

@@ -60,3 +60,33 @@
 - title: Security Weekly News (Video)
 - category: news
 - tags: security, infosec, tech
+
+## very-bad-wizards
+- url: https://feeds.libsyn.com/474285/rss
+- title: Very Bad Wizards
+- category: lectures
+- tags: philosophy, psychology, culture, longform, audio
+
+## decoding-the-gurus
+- url: https://feeds.captivate.fm/decoding-the-gurus/
+- title: Decoding the Gurus
+- category: lectures
+- tags: media, culture, critique, longform, audio
+
+## conversations-with-tyler
+- url: https://cowenconvos.libsyn.com/rss
+- title: Conversations with Tyler
+- category: lectures
+- tags: economics, policy, ideas, interviews, longform, audio
+
+## 80000-hours-podcast
+- url: https://feeds.transistor.fm/80000-hours-podcast
+- title: 80,000 Hours Podcast
+- category: lectures
+- tags: work, careers, policy, longform, audio
+
+## frontline-club-events
+- url: http://feeds.soundcloud.com/users/580305-frontline-club/tracks
+- title: Frontline Club events
+- category: lectures
+- tags: journalism, foreign-affairs, talks, events, audio

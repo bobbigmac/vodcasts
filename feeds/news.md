@@ -43,6 +43,12 @@
 - category: news
 - tags: wsj, business, markets, daily, audio
 
+## cspan-ceasefire
+- url: https://feeds.megaphone.fm/CSPAN8750886650
+- title: C-SPAN — Ceasefire
+- category: news
+- tags: cspan, politics, interviews, longform, audio
+
 ## bbc-news-front-page
 - url: http://newsrss.bbc.co.uk/rss/newsonline_uk_edition/front_page/rss.xml
 - disabled: media_probe: no supported enclosures in feed (cache) (checked 2026-03-04)

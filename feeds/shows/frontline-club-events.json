@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Frontline Club events",
+  "leftovers_description": "Episodes outside the main row.",
+  "shows": [
+    {
+      "id": "frontline-club-events",
+      "title": "Frontline Club events",
+      "title_full": "Frontline Club events",
+      "description": "Journalism and foreign affairs talks/events (SoundCloud RSS).",
+      "categories": ["lectures"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

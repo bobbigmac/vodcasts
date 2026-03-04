@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Ceasefire (C-SPAN)",
+  "leftovers_description": "Episodes outside the main buckets.",
+  "shows": [
+    {
+      "id": "trailer",
+      "title": "Trailer",
+      "title_full": "Trailer — Ceasefire",
+      "description": "Trailer and introduction episodes.",
+      "categories": ["news"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "TRAILER" }
+    },
+    {
+      "id": "highlights",
+      "title": "Highlights",
+      "title_full": "Highlights — Ceasefire",
+      "description": "Year-in-review and highlight compilations.",
+      "categories": ["news"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Highlights" }
+    },
+    {
+      "id": "ceasefire",
+      "title": "Ceasefire",
+      "title_full": "Ceasefire — C-SPAN",
+      "description": "Calmer, cross-aisle-ish conversations.",
+      "categories": ["news"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

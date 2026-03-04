@@ -1,0 +1,53 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — 80,000 Hours Podcast",
+  "leftovers_description": "Episodes outside the named buckets.",
+  "shows": [
+    {
+      "id": "emergency-pods",
+      "title": "Emergency Pods",
+      "title_full": "Emergency Pods — 80,000 Hours Podcast",
+      "description": "Emergency pod episodes.",
+      "categories": ["lectures"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Emergency pod" }
+    },
+    {
+      "id": "classic-episodes",
+      "title": "Classic Episodes",
+      "title_full": "Classic Episodes — 80,000 Hours Podcast",
+      "description": "Classic episode re-releases.",
+      "categories": ["lectures"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Classic episode" }
+    },
+    {
+      "id": "numbered-episodes",
+      "title": "Numbered Episodes",
+      "title_full": "Numbered Episodes — 80,000 Hours Podcast",
+      "description": "Regular numbered episodes (#123 – ...).",
+      "categories": ["lectures"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^#\\d+\\b" }
+    },
+    {
+      "id": "highlights",
+      "title": "Highlights",
+      "title_full": "Highlights — 80,000 Hours Podcast",
+      "description": "Highlight compilations and best-of episodes.",
+      "categories": ["lectures"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Highlight" }
+    },
+    {
+      "id": "80000-hours",
+      "title": "80,000 Hours Podcast",
+      "title_full": "80,000 Hours Podcast",
+      "description": "Everything else in the feed.",
+      "categories": ["lectures"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

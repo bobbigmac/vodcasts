@@ -1,0 +1,44 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Conversations with Tyler",
+  "leftovers_description": "Episodes outside the main buckets.",
+  "shows": [
+    {
+      "id": "re-releases",
+      "title": "Re-releases",
+      "title_full": "Re-releases — Conversations with Tyler",
+      "description": "Re-released episodes.",
+      "categories": ["lectures"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Re-release" }
+    },
+    {
+      "id": "live",
+      "title": "Live",
+      "title_full": "Live — Conversations with Tyler",
+      "description": "Live event recordings.",
+      "categories": ["lectures"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Live at" }
+    },
+    {
+      "id": "retrospectives",
+      "title": "Retrospectives",
+      "title_full": "Retrospectives — Conversations with Tyler",
+      "description": "Yearly retrospectives and wrap-ups.",
+      "categories": ["lectures"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Retrospective" }
+    },
+    {
+      "id": "conversations-with-tyler",
+      "title": "Conversations",
+      "title_full": "Conversations with Tyler",
+      "description": "Main interviews and discussions.",
+      "categories": ["lectures"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

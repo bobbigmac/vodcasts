@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Very Bad Wizards",
+  "leftovers_description": "Episodes outside the main buckets.",
+  "shows": [
+    {
+      "id": "bonus",
+      "title": "Bonus Episodes",
+      "title_full": "Bonus Episodes — Very Bad Wizards",
+      "description": "Bonus Episode releases.",
+      "categories": ["lectures"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Bonus Episode" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Very Bad Wizards",
+      "description": "Regular numbered episodes.",
+      "categories": ["lectures"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Episode\\s+\\d+\\b" }
+    },
+    {
+      "id": "very-bad-wizards",
+      "title": "Very Bad Wizards",
+      "title_full": "Very Bad Wizards",
+      "description": "Everything else in the feed.",
+      "categories": ["lectures"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+
