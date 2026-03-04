@@ -1,5 +1,13 @@
 from __future__ import annotations
 
+"""
+Dev-only helper: verify that a feed's enclosure URLs actually serve playable media.
+
+This is intentionally *not* used by the build (it may hit many media URLs and can be slow).
+It samples a few enclosure URLs per feed, downloads a small byte-range to confirm bytes exist,
+and writes `- disabled: <reason>` into the feeds markdown for failures.
+"""
+
 import argparse
 import json
 import re

@@ -286,12 +286,6 @@
 - category: teaching
 - tags: reformed, theology, brotherly-love
 
-## reformed-forum
-- url: http://feeds.feedburner.com/ReformedForumWestminsterTheologicalSeminaryFaculty
-- title: Reformed Forum — Westminster Theological Seminary
-- category: teaching
-- tags: reformed, westminster, seminary, theology
-
 ## doctrine-at-work
 - url: https://feeds.transistor.fm/doctrine-at-work
 - title: Doctrine at Work
@@ -447,12 +441,6 @@
 - title: Orthodox Christian Parenting
 - category: teaching
 - tags: orthodox, family, parenting
-
-## aldersgate-umc-children
-- url: http://feeds.feedburner.com/AldersgateUmcChildrensSermonsAndDailyDevotionals
-- title: Aldersgate UMC — Children's Sermons & Devotionals
-- category: family
-- tags: methodist, children, devotional
 
 ## morning-evening-spurgeon
 - url: https://feeds.megaphone.fm/morningandevening
@@ -786,12 +774,6 @@
 
 # === Public radio & Americana ===
 
-## npr-news-now
-- url: https://feeds.npr.org/1001/rss.xml
-- title: NPR News Now
-- category: news
-- tags: npr, news, headlines
-
 ## wait-wait-dont-tell-me
 - url: https://feeds.npr.org/344098539/podcast.xml
 - title: Wait Wait... Don't Tell Me!
@@ -803,3 +785,4 @@
 - title: This American Life
 - category: radio
 - tags: npr, storytelling, weekly
+
