@@ -1,0 +1,53 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Living on the Edge",
+  "leftovers_description": "Episodes outside the main named series buckets.",
+  "shows": [
+    {
+      "id": "uninvited-guests",
+      "title": "Uninvited Guests",
+      "title_full": "Uninvited Guests — Living on the Edge",
+      "description": "Uninvited Guests series episodes.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Uninvited Guests" }
+    },
+    {
+      "id": "the-real-god",
+      "title": "The Real God",
+      "title_full": "The Real God — Living on the Edge",
+      "description": "The Real God series episodes.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Real God" }
+    },
+    {
+      "id": "spiritual-simplicity",
+      "title": "Spiritual Simplicity",
+      "title_full": "Spiritual Simplicity — Living on the Edge",
+      "description": "Spiritual Simplicity series episodes.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Spiritual Simplicity" }
+    },
+    {
+      "id": "balancing-lifes-demands",
+      "title": "Balancing Life’s Demands",
+      "title_full": "Balancing Life’s Demands — Living on the Edge",
+      "description": "Balancing Life’s Demands series episodes.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Balancing Life's Demands" }
+    },
+    {
+      "id": "get-out-of-your-head",
+      "title": "Get Out Of Your Head",
+      "title_full": "Get Out Of Your Head — Living on the Edge",
+      "description": "Get Out Of Your Head series episodes.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Get Out Of Your Head" }
+    }
+  ]
+}
+

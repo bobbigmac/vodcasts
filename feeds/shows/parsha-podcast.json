@@ -1,0 +1,53 @@
+{
+  "leftovers_title": "Weekly Parsha",
+  "leftovers_title_full": "Weekly Parsha — The Parsha Podcast",
+  "leftovers_description": "Weekly Parsha episodes and commentary.",
+  "shows": [
+    {
+      "id": "rebroadcasts",
+      "title": "Rebroadcasts",
+      "title_full": "Rebroadcasts — The Parsha Podcast",
+      "description": "Older rebroadcast episodes.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "(Rebroadcast)" }
+    },
+    {
+      "id": "5784",
+      "title": "5784",
+      "title_full": "Season 5784 — The Parsha Podcast",
+      "description": "Episodes tagged (5784).",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "(5784)" }
+    },
+    {
+      "id": "5783",
+      "title": "5783",
+      "title_full": "Season 5783 — The Parsha Podcast",
+      "description": "Episodes tagged (5783).",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "(5783)" }
+    },
+    {
+      "id": "5782",
+      "title": "5782",
+      "title_full": "Season 5782 — The Parsha Podcast",
+      "description": "Episodes tagged (5782).",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "(5782)" }
+    },
+    {
+      "id": "5781",
+      "title": "5781",
+      "title_full": "Season 5781 — The Parsha Podcast",
+      "description": "Episodes tagged (5781).",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "(5781)" }
+    }
+  ]
+}
+

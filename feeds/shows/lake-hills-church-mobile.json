@@ -1,0 +1,116 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Lake Hills Church",
+  "leftovers_description": "Messages outside the main named series.",
+  "shows": [
+    {
+      "id": "welcome-home",
+      "title": "Welcome Home",
+      "title_full": "Welcome Home — Lake Hills Church",
+      "description": "Welcome Home series episodes.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Welcome Home" }
+    },
+    {
+      "id": "carry-on",
+      "title": "Carry On",
+      "title_full": "Carry On — Lake Hills Church",
+      "description": "Carry On series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Carry On" }
+    },
+    {
+      "id": "faith-works",
+      "title": "Faith Works",
+      "title_full": "Faith Works — Lake Hills Church",
+      "description": "Faith Works series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Faith Works" }
+    },
+    {
+      "id": "founding-father",
+      "title": "Founding Father",
+      "title_full": "Founding Father — Lake Hills Church",
+      "description": "Founding Father series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Founding Father" }
+    },
+    {
+      "id": "clarity-in-the-chaos",
+      "title": "Clarity In The Chaos",
+      "title_full": "Clarity In The Chaos — Lake Hills Church",
+      "description": "Clarity In The Chaos series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Clarity In The Chaos" }
+    },
+    {
+      "id": "peace-out",
+      "title": "Peace Out",
+      "title_full": "Peace Out — Lake Hills Church",
+      "description": "Peace Out series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Peace Out" }
+    },
+    {
+      "id": "you-do-you",
+      "title": "You Do You",
+      "title_full": "You Do You — Lake Hills Church",
+      "description": "You Do You series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "You Do You" }
+    },
+    {
+      "id": "thrones",
+      "title": "Thrones",
+      "title_full": "Thrones — Lake Hills Church",
+      "description": "Thrones series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Thrones" }
+    },
+    {
+      "id": "skill-set",
+      "title": "Skill Set",
+      "title_full": "Skill Set — Lake Hills Church",
+      "description": "Skill Set series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Skill Set" }
+    },
+    {
+      "id": "identity",
+      "title": "Identity",
+      "title_full": "Identity — Lake Hills Church",
+      "description": "Identity series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Identity" }
+    },
+    {
+      "id": "in-the-beginning",
+      "title": "IN THE BEGINNING",
+      "title_full": "IN THE BEGINNING — Lake Hills Church",
+      "description": "IN THE BEGINNING series episodes.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "IN THE BEGINNING" }
+    },
+    {
+      "id": "family-style",
+      "title": "Family Style",
+      "title_full": "Family Style — Lake Hills Church",
+      "description": "Family Style series episodes.",
+      "categories": ["sermons", "family"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Family Style" }
+    }
+  ]
+}
+

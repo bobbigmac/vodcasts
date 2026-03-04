@@ -1,0 +1,91 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Antioch Church",
+  "leftovers_description": "Messages outside the main named series.",
+  "shows": [
+    {
+      "id": "knowing-loving-serving",
+      "title": "Knowing, Loving, Serving",
+      "title_full": "Knowing, Loving, Serving — Antioch Church",
+      "description": "Series episodes.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Knowing, Loving, Serving:" }
+    },
+    {
+      "id": "first-allegiance",
+      "title": "First Allegiance",
+      "title_full": "First Allegiance — Antioch Church",
+      "description": "First Allegiance (Part 1–10).",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^First Allegiance,\\s*Part\\s*\\d+\\b" }
+    },
+    {
+      "id": "ruth-faithful-presence",
+      "title": "Ruth: A Faithful Presence",
+      "title_full": "Ruth: A Faithful Presence — Antioch Church",
+      "description": "Ruth series episodes.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Ruth: A Faithful Presence" }
+    },
+    {
+      "id": "parables",
+      "title": "Parables",
+      "title_full": "Parables — Antioch Church",
+      "description": "Parables series episodes (Part I–V).",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Parables\\s*-\\s*Part\\b" }
+    },
+    {
+      "id": "proverbs",
+      "title": "The Book of Proverbs",
+      "title_full": "The Book of Proverbs — Antioch Church",
+      "description": "Proverbs series episodes.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Book of Proverbs" }
+    },
+    {
+      "id": "as-we-speak",
+      "title": "As We Speak",
+      "title_full": "As We Speak (A Theology of Words) — Antioch Church",
+      "description": "As We Speak (A Theology of Words) series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^As We Speak \\(A Theology of Words\\)" }
+    },
+    {
+      "id": "kingdom-come",
+      "title": "KINGDOM COME",
+      "title_full": "KINGDOM COME — Antioch Church",
+      "description": "KINGDOM COME mini-series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "KINGDOM COME:" }
+    },
+    {
+      "id": "give-your-life-away",
+      "title": "Give Your Life Away",
+      "title_full": "Give Your Life Away — Antioch Church",
+      "description": "Give Your Life Away series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Give Your Life Away" }
+    },
+    {
+      "id": "human-rights-series",
+      "title": "Human Rights Series",
+      "title_full": "Human Rights Series — Antioch Church",
+      "description": "Human Rights Series episodes, including the trailer.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": {
+        "type": "title_regex",
+        "value": "^(?:Human Rights Series\\b|Trailer for Human Rights Series\\b)"
+      }
+    }
+  ]
+}

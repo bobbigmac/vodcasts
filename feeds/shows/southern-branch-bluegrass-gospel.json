@@ -1,0 +1,53 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Southern Branch Bluegrass & Gospel Music Radio",
+  "leftovers_description": "Episodes outside the main syndicated program buckets.",
+  "shows": [
+    {
+      "id": "appalachian-sunday-morning",
+      "title": "Appalachian Sunday Morning",
+      "title_full": "Appalachian Sunday Morning — Southern Branch Bluegrass & Gospel Music Radio",
+      "description": "Appalachian Sunday Morning episodes.",
+      "categories": ["gospel-music"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^(?:The\\s+)?Appalachian\\s+Sunday\\s+Morning\\b" }
+    },
+    {
+      "id": "todays-bluegrass",
+      "title": "Today's Bluegrass",
+      "title_full": "Today's Bluegrass — Southern Branch Bluegrass & Gospel Music Radio",
+      "description": "Today's Bluegrass episodes.",
+      "categories": ["gospel-music"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Today[’']?s\\s+Bluegrass\\b" }
+    },
+    {
+      "id": "roots-of-my-heritage",
+      "title": "Roots of My Heritage",
+      "title_full": "Roots of My Heritage — Southern Branch Bluegrass & Gospel Music Radio",
+      "description": "Roots of My Heritage episodes.",
+      "categories": ["gospel-music"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Roots of My Heritage" }
+    },
+    {
+      "id": "sundaygrass",
+      "title": "Sundaygrass",
+      "title_full": "Sundaygrass — Southern Branch Bluegrass & Gospel Music Radio",
+      "description": "Sundaygrass episodes.",
+      "categories": ["gospel-music"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Sundaygrass" }
+    },
+    {
+      "id": "radio-music-news-top-ten",
+      "title": "Top Ten Count Down",
+      "title_full": "The Radio Music News Top Ten Count Down — Southern Branch Bluegrass & Gospel Music Radio",
+      "description": "Radio Music News Top Ten Count Down episodes.",
+      "categories": ["gospel-music"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Radio Music News Top Ten Count Down" }
+    }
+  ]
+}
+

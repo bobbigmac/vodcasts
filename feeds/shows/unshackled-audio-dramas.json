@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Episodes",
+  "leftovers_title_full": "Episodes — UNSHACKLED! Audio Dramas",
+  "leftovers_description": "Regular episodes (including multi-part stories).",
+  "shows": [
+    {
+      "id": "christmas",
+      "title": "Christmas",
+      "title_full": "Christmas — UNSHACKLED! Audio Dramas",
+      "description": "Christmas specials and Christmas classics.",
+      "categories": ["family", "audio"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Christmas" }
+    },
+    {
+      "id": "specials",
+      "title": "Specials",
+      "title_full": "Specials — UNSHACKLED! Audio Dramas",
+      "description": "Special episodes (anniversary, themed, etc.).",
+      "categories": ["family", "audio"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Special" }
+    },
+    {
+      "id": "classics",
+      "title": "Classics",
+      "title_full": "Classics — UNSHACKLED! Audio Dramas",
+      "description": "Classic episodes.",
+      "categories": ["family", "audio"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "Classic" }
+    }
+  ]
+}
+

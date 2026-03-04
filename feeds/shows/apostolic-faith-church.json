@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Apostolic Faith Church",
+  "leftovers_description": "Episodes (titles vary; no stable series pattern in titles).",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Apostolic Faith Church",
+      "description": "All episodes in the feed.",
+      "categories": ["tv-ministry"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

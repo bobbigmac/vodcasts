@@ -1,0 +1,89 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — City Chapel Sermons",
+  "leftovers_description": "Messages outside the main named series buckets.",
+  "shows": [
+    {
+      "id": "mark",
+      "title": "Mark",
+      "title_full": "Mark — City Chapel Sermons",
+      "description": "Teachings keyed to passages in Mark.",
+      "categories": ["sermons", "bible-study"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^Mark\\s*\\d" }
+    },
+    {
+      "id": "four-cups",
+      "title": "Four Cups",
+      "title_full": "Four Cups — City Chapel Sermons",
+      "description": "Four Cups series episodes (including 4 cups).",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^(?:Four Cups|4\\s+cups)\\b" }
+    },
+    {
+      "id": "fearless",
+      "title": "Fearless",
+      "title_full": "Fearless — City Chapel Sermons",
+      "description": "Fearless series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Fearless" }
+    },
+    {
+      "id": "dear-church",
+      "title": "Dear Church",
+      "title_full": "Dear Church — City Chapel Sermons",
+      "description": "Dear Church series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Dear Church" }
+    },
+    {
+      "id": "tougher-than-hell",
+      "title": "Tougher Than Hell",
+      "title_full": "Tougher Than Hell — City Chapel Sermons",
+      "description": "Tougher Than Hell series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Tougher Than Hell" }
+    },
+    {
+      "id": "awkward-to-awesome",
+      "title": "Awkward To Awesome",
+      "title_full": "Awkward To Awesome — City Chapel Sermons",
+      "description": "Awkward To Awesome series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Awkward To Awesome" }
+    },
+    {
+      "id": "dont-miss-your-moment",
+      "title": "Don't Miss Your Moment",
+      "title_full": "Don't Miss Your Moment — City Chapel Sermons",
+      "description": "Don't Miss Your Moment series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Don't Miss Your Moment" }
+    },
+    {
+      "id": "heaven-is-real",
+      "title": "Heaven Is Real",
+      "title_full": "Heaven Is Real — City Chapel Sermons",
+      "description": "Heaven Is Real series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Heaven Is Real" }
+    },
+    {
+      "id": "just-dig",
+      "title": "Just Dig",
+      "title_full": "Just Dig — City Chapel Sermons",
+      "description": "Just Dig series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Just Dig" }
+    }
+  ]
+}
+

@@ -1,0 +1,106 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Sanctus Church",
+  "leftovers_description": "Messages outside the main named series.",
+  "shows": [
+    {
+      "id": "book-of-acts",
+      "title": "The Book of Acts",
+      "title_full": "The Book of Acts — Sanctus Church",
+      "description": "The Book of Acts series episodes.",
+      "categories": ["sermons", "bible-study"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "The Book of Acts" }
+    },
+    {
+      "id": "vision-sunday",
+      "title": "Vision Sunday",
+      "title_full": "Vision Sunday — Sanctus Church",
+      "description": "Vision Sunday messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Vision Sunday" }
+    },
+    {
+      "id": "names-of-god",
+      "title": "The Names of God",
+      "title_full": "The Names of God — Sanctus Church",
+      "description": "The Names of God series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Names of God" }
+    },
+    {
+      "id": "rooted",
+      "title": "Rooted",
+      "title_full": "Rooted — Sanctus Church",
+      "description": "Rooted series episodes (including Rooted: The Book of Romans).",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Rooted" }
+    },
+    {
+      "id": "seat-at-the-table",
+      "title": "A Seat At The Table",
+      "title_full": "A Seat At The Table — Sanctus Church",
+      "description": "A Seat At The Table series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "A Seat At The Table" }
+    },
+    {
+      "id": "revelation",
+      "title": "Revelation",
+      "title_full": "Revelation — Sanctus Church",
+      "description": "Revelation series episodes.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Revelation" }
+    },
+    {
+      "id": "icons-of-faith",
+      "title": "Icons of Our Faith",
+      "title_full": "Exploring the Icons of Our Faith — Sanctus Church",
+      "description": "Exploring the Icons of Our Faith series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Exploring the Icons of Our Faith" }
+    },
+    {
+      "id": "esther",
+      "title": "Esther",
+      "title_full": "Esther — Sanctus Church",
+      "description": "Esther: Glimpses of God series episodes.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Esther" }
+    },
+    {
+      "id": "fully-devoted",
+      "title": "Fully Devoted",
+      "title_full": "Fully Devoted — Sanctus Church",
+      "description": "Fully Devoted series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Fully Devoted" }
+    },
+    {
+      "id": "easter-at-sanctus",
+      "title": "Easter at Sanctus",
+      "title_full": "Easter at Sanctus — Sanctus Church",
+      "description": "Easter at Sanctus services and specials.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Easter at Sanctus" }
+    },
+    {
+      "id": "rocks-dont-move",
+      "title": "Rocks Don’t Move",
+      "title_full": "Rocks Don’t Move (Until They Do) — Sanctus Church",
+      "description": "Rocks Don’t Move (Until They Do) series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Rocks Don[’']t Move\\.?\\s*\\(Until They Do\\)" }
+    }
+  ]
+}

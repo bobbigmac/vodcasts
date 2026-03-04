@@ -1,0 +1,56 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — The Word of the Lord Endures Forever",
+  "leftovers_description": "Episodes outside the current Bible book series buckets.",
+  "shows": [
+    {
+      "id": "psalms",
+      "title": "Psalms",
+      "title_full": "Psalms — The Word of the Lord Endures Forever",
+      "description": "Episodes in the Psalms series.",
+      "categories": ["bible-study"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "\\bThe Book of Psalms\\b" }
+    },
+    {
+      "id": "genesis",
+      "title": "Genesis",
+      "title_full": "Genesis — The Word of the Lord Endures Forever",
+      "description": "Episodes in the Genesis series.",
+      "categories": ["bible-study"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\bThe Book of Genesis\\b" }
+    },
+    {
+      "id": "proverbs",
+      "title": "Proverbs",
+      "title_full": "Proverbs — The Word of the Lord Endures Forever",
+      "description": "Episodes in the Proverbs series.",
+      "categories": ["bible-study"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\bThe Book of Proverbs\\b" }
+    },
+    {
+      "id": "ecclesiastes",
+      "title": "Ecclesiastes",
+      "title_full": "Ecclesiastes — The Word of the Lord Endures Forever",
+      "description": "Episodes in the Ecclesiastes series.",
+      "categories": ["bible-study"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\bThe Book of Ecclesiastes\\b" }
+    },
+    {
+      "id": "short-letters",
+      "title": "Short Letters",
+      "title_full": "Short letters — The Word of the Lord Endures Forever",
+      "description": "Philemon and the shorter epistles in the feed.",
+      "categories": ["bible-study"],
+      "featured": false,
+      "filter": {
+        "type": "title_regex",
+        "value": "\\bThe Book of (?:Philemon|2 John|3 John)\\b"
+      }
+    }
+  ]
+}
+

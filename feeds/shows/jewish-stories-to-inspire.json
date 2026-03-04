@@ -1,0 +1,89 @@
+{
+  "leftovers_title": "Other Stories",
+  "leftovers_title_full": "Other stories — Jewish Stories to Inspire",
+  "leftovers_description": "Stories that don’t match the main topic tags.",
+  "shows": [
+    {
+      "id": "divine-providence",
+      "title": "Divine Providence",
+      "title_full": "Divine Providence — Jewish Stories to Inspire",
+      "description": "Stories tagged (Divine Providence).",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "\\(Divine Providence\\)\\s*$" }
+    },
+    {
+      "id": "mesirat-nefesh",
+      "title": "Mesirat Nefesh",
+      "title_full": "Mesirat Nefesh — Jewish Stories to Inspire",
+      "description": "Stories tagged (Mesirat Nefesh).",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\(Mesirat Nefesh\\)\\s*$" }
+    },
+    {
+      "id": "chessed",
+      "title": "Chessed",
+      "title_full": "Chessed — Jewish Stories to Inspire",
+      "description": "Stories tagged (Chessed).",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\(Chessed\\)\\s*$" }
+    },
+    {
+      "id": "judge-favorably",
+      "title": "Judge Favorably",
+      "title_full": "Judge Favorably — Jewish Stories to Inspire",
+      "description": "Stories tagged (Judge Favorably).",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\(Judge Favorably\\)\\s*$" }
+    },
+    {
+      "id": "emunah",
+      "title": "Emunah",
+      "title_full": "Emunah — Jewish Stories to Inspire",
+      "description": "Stories tagged (Emunah …).",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\(Emunah[^\\)]*\\)\\s*$" }
+    },
+    {
+      "id": "prayer",
+      "title": "Prayer",
+      "title_full": "Prayer — Jewish Stories to Inspire",
+      "description": "Stories tagged (Prayer).",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\(Prayer\\)\\s*$" }
+    },
+    {
+      "id": "tzaddikim",
+      "title": "Tzaddikim",
+      "title_full": "Tzaddikim — Jewish Stories to Inspire",
+      "description": "Stories tagged (Tzaddikim/Tzadikkim).",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\((Tzaddikim|Tzadikkim)\\)\\s*$" }
+    },
+    {
+      "id": "chinuch",
+      "title": "Chinuch",
+      "title_full": "Chinuch — Jewish Stories to Inspire",
+      "description": "Stories tagged (Chinuch).",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\(Chinuch\\)\\s*$" }
+    },
+    {
+      "id": "bitachon",
+      "title": "Bitachon",
+      "title_full": "Bitachon — Jewish Stories to Inspire",
+      "description": "Stories tagged (Bitachon).",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\(Bitachon\\)\\s*$" }
+    }
+  ]
+}
+

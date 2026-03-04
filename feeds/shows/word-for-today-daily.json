@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — The Word For Today",
+  "leftovers_description": "Daily devotional episodes (titles vary).",
+  "shows": [
+    {
+      "id": "devotionals",
+      "title": "Devotionals",
+      "title_full": "Daily devotionals — The Word For Today",
+      "description": "All episodes.",
+      "categories": ["devotional"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

@@ -1,0 +1,142 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Scottsdale Bible Church",
+  "leftovers_description": "Messages outside the main named series.",
+  "shows": [
+    {
+      "id": "follow",
+      "title": "Follow",
+      "title_full": "Follow — Scottsdale Bible Church",
+      "description": "Series episodes.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^Follow\\s*\\|" }
+    },
+    {
+      "id": "fruit-of-the-spirit",
+      "title": "Fruit of the Spirit",
+      "title_full": "Fruit of the Spirit — Scottsdale Bible Church",
+      "description": "Series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Fruit of the Spirit\\s*\\|" }
+    },
+    {
+      "id": "10-commandments",
+      "title": "10 Commandments",
+      "title_full": "10 Commandments — Scottsdale Bible Church",
+      "description": "Series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^10 Commandments\\s*\\|" }
+    },
+    {
+      "id": "open-topic",
+      "title": "Open Topic",
+      "title_full": "Open Topic — Scottsdale Bible Church",
+      "description": "Open topic messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Open Topic\\s*\\|" }
+    },
+    {
+      "id": "ibelieve",
+      "title": "iBELIEVE",
+      "title_full": "iBELIEVE — Scottsdale Bible Church",
+      "description": "Series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^iBELIEVE\\s*\\|" }
+    },
+    {
+      "id": "the-point",
+      "title": "The Point",
+      "title_full": "The Point — Scottsdale Bible Church",
+      "description": "Series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^The Point\\s*\\|" }
+    },
+    {
+      "id": "fall-proof",
+      "title": "Fall Proof",
+      "title_full": "Fall Proof — Scottsdale Bible Church",
+      "description": "Series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Fall Proof\\s*\\|" }
+    },
+    {
+      "id": "questions-god-answers",
+      "title": "The Questions God Answers",
+      "title_full": "The Questions God Answers — Scottsdale Bible Church",
+      "description": "Series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^The Questions God Answers\\s*\\|" }
+    },
+    {
+      "id": "seeds-of-doubt",
+      "title": "Seeds of Doubt",
+      "title_full": "Seeds of Doubt — Scottsdale Bible Church",
+      "description": "Series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Seeds of Doubt\\s*\\|" }
+    },
+    {
+      "id": "when-jesus-appears",
+      "title": "When Jesus Appears",
+      "title_full": "When Jesus Appears — Scottsdale Bible Church",
+      "description": "Series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^When Jesus Appears\\s*\\|" }
+    },
+    {
+      "id": "three-sixteen",
+      "title": "THREE:SIXTEEN",
+      "title_full": "THREE:SIXTEEN — Scottsdale Bible Church",
+      "description": "Series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^THREE:SIXTEEN\\s*\\|" }
+    },
+    {
+      "id": "summer-on-the-mount",
+      "title": "Summer on the Mount",
+      "title_full": "Summer on the Mount — Scottsdale Bible Church",
+      "description": "Series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Summer on the Mount\\s*\\|" }
+    },
+    {
+      "id": "summer-series",
+      "title": "Summer Series",
+      "title_full": "Summer Series — Scottsdale Bible Church",
+      "description": "Summer Series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Summer Series\\s*\\|" }
+    },
+    {
+      "id": "adjustments",
+      "title": "Adjustments",
+      "title_full": "Adjustments — Scottsdale Bible Church",
+      "description": "Series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Adjustments\\s*\\|" }
+    },
+    {
+      "id": "beautiful-mess",
+      "title": "A Beautiful Mess",
+      "title_full": "A Beautiful Mess — Scottsdale Bible Church",
+      "description": "Series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^A Beautiful Mess\\s*\\|" }
+    }
+  ]
+}

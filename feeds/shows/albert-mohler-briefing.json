@@ -1,0 +1,44 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — The Briefing",
+  "leftovers_description": "Episodes outside the main date-based buckets.",
+  "shows": [
+    {
+      "id": "2026",
+      "title": "2026",
+      "title_full": "2026 — The Briefing",
+      "description": "Daily Briefing episodes from 2026.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "\\b2026\\b" }
+    },
+    {
+      "id": "2025",
+      "title": "2025",
+      "title_full": "2025 — The Briefing",
+      "description": "Daily Briefing episodes from 2025.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\b2025\\b" }
+    },
+    {
+      "id": "2024",
+      "title": "2024",
+      "title_full": "2024 — The Briefing",
+      "description": "Daily Briefing episodes from 2024.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\b2024\\b" }
+    },
+    {
+      "id": "2023",
+      "title": "2023",
+      "title_full": "2023 — The Briefing",
+      "description": "Daily Briefing episodes from 2023.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\b2023\\b" }
+    }
+  ]
+}
+

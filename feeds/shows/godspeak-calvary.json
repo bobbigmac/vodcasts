@@ -1,0 +1,62 @@
+{
+  "leftovers_title": "Guest Speakers",
+  "leftovers_title_full": "Guest Speakers — Godspeak Calvary Chapel",
+  "leftovers_description": "Messages not matching the main pastor buckets.",
+  "shows": [
+    {
+      "id": "pastor-rob-mccoy",
+      "title": "Pastor Rob McCoy",
+      "title_full": "Pastor Rob McCoy — Godspeak Calvary Chapel",
+      "description": "Messages by Pastor Rob McCoy.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Pastor Rob McCoy" }
+    },
+    {
+      "id": "pastor-micah-stephens",
+      "title": "Pastor Micah Stephens",
+      "title_full": "Pastor Micah Stephens — Godspeak Calvary Chapel",
+      "description": "Messages by Pastor Micah Stephens.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Pastor Micah Stephens" }
+    },
+    {
+      "id": "pastor-james-crawford",
+      "title": "Pastor James Crawford",
+      "title_full": "Pastor James Crawford — Godspeak Calvary Chapel",
+      "description": "Messages by Pastor James Crawford.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Pastor James Crawford" }
+    },
+    {
+      "id": "pastor-rick-brown",
+      "title": "Pastor Rick Brown",
+      "title_full": "Pastor Rick Brown — Godspeak Calvary Chapel",
+      "description": "Messages by Pastor Rick Brown.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Pastor Rick Brown" }
+    },
+    {
+      "id": "pastor-craig-linquist",
+      "title": "Pastor Craig Linquist",
+      "title_full": "Pastor Craig Linquist — Godspeak Calvary Chapel",
+      "description": "Messages by Pastor Craig Linquist.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Pastor Craig Linquist" }
+    },
+    {
+      "id": "pastor-scott-bland",
+      "title": "Pastor Scott Bland",
+      "title_full": "Pastor Scott Bland — Godspeak Calvary Chapel",
+      "description": "Messages by Pastor Scott Bland.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Pastor Scott Bland" }
+    }
+  ]
+}
+

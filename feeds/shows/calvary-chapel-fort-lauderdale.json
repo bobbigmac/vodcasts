@@ -1,0 +1,44 @@
+{
+  "leftovers_title": "Sermons",
+  "leftovers_title_full": "Sermons — Calvary Chapel Fort Lauderdale",
+  "leftovers_description": "Sermons and messages from Calvary Chapel Fort Lauderdale.",
+  "shows": [
+    {
+      "id": "fruit-of-the-spirit",
+      "title": "Fruit of the Spirit",
+      "title_full": "Fruit of the Spirit — Calvary Chapel Fort Lauderdale",
+      "description": "Series episodes.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Fruit of the Spirit:" }
+    },
+    {
+      "id": "study-guides",
+      "title": "Study Guides",
+      "title_full": "Study Guides — Calvary Chapel Fort Lauderdale",
+      "description": "Study guide episodes.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Study Guide:" }
+    },
+    {
+      "id": "week-series",
+      "title": "Week Series",
+      "title_full": "Week series — Calvary Chapel Fort Lauderdale",
+      "description": "Short multi-week series episodes (Week One/Two/Three/Four).",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Week\\s+(One|Two|Three|Four):" }
+    },
+    {
+      "id": "vision-weekend",
+      "title": "Vision Weekend",
+      "title_full": "Vision Weekend — Calvary Chapel Fort Lauderdale",
+      "description": "Vision Weekend messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Vision Weekend" }
+    }
+  ]
+}
+

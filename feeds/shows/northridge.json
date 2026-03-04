@@ -1,0 +1,98 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — North Ridge",
+  "leftovers_description": "Messages outside the main named series.",
+  "shows": [
+    {
+      "id": "summer-series",
+      "title": "Summer Series",
+      "title_full": "Summer Series — North Ridge",
+      "description": "Summer Series messages.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": " - Summer Series - " }
+    },
+    {
+      "id": "upside-down",
+      "title": "Upside Down",
+      "title_full": "Upside Down — North Ridge",
+      "description": "Upside Down series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": " - Upside Down - " }
+    },
+    {
+      "id": "the-parables",
+      "title": "The Parables",
+      "title_full": "The Parables — North Ridge",
+      "description": "The Parables series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": " - The Parables - " }
+    },
+    {
+      "id": "the-revelation",
+      "title": "The Revelation",
+      "title_full": "The Revelation — North Ridge",
+      "description": "The Revelation series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": " - The Revelation - " }
+    },
+    {
+      "id": "encounters",
+      "title": "Encounters",
+      "title_full": "Encounters — North Ridge",
+      "description": "Encounters series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": " - Encounters - " }
+    },
+    {
+      "id": "in-with-the-new",
+      "title": "In With the New",
+      "title_full": "In With the New — North Ridge",
+      "description": "In With the New series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": " - In With the New - " }
+    },
+    {
+      "id": "what-if-it-s-true",
+      "title": "What If It's True?",
+      "title_full": "What If It's True? — North Ridge",
+      "description": "What If It's True? series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": " - What If It's True? - " }
+    },
+    {
+      "id": "relationship-jenga",
+      "title": "Relationship Jenga",
+      "title_full": "Relationship Jenga — North Ridge",
+      "description": "Relationship Jenga series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": " - Relationship Jenga - " }
+    },
+    {
+      "id": "wide-awake",
+      "title": "Wide Awake",
+      "title_full": "Wide Awake — North Ridge",
+      "description": "Wide Awake series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": " - Wide Awake - " }
+    },
+    {
+      "id": "a-thrill-of-hope",
+      "title": "A Thrill of Hope",
+      "title_full": "A Thrill of Hope — North Ridge",
+      "description": "A Thrill of Hope series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": " - A Thrill of Hope - " }
+    }
+  ]
+}
+

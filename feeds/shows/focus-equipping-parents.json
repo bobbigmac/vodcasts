@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Episodes",
+  "leftovers_title_full": "Equipping Parents episodes — Focus on the Family",
+  "leftovers_description": "Parenting guidance and encouragement from Focus on the Family.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Equipping Parents episodes — Focus on the Family",
+      "description": "All episodes.",
+      "categories": ["radio", "teaching"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

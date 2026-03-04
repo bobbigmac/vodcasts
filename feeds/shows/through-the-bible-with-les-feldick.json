@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Programs",
+  "leftovers_title_full": "Programs — Through the Bible with Les Feldick",
+  "leftovers_description": "Program episodes from Through the Bible with Les Feldick.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Through the Bible with Les Feldick episodes",
+      "description": "Program episodes (all).",
+      "categories": ["bible-study"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

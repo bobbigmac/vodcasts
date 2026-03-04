@@ -1,0 +1,134 @@
+{
+  "leftovers_title": "Other Messages",
+  "leftovers_title_full": "Other messages — Greg Laurie",
+  "leftovers_description": "Messages outside the main recurring series buckets.",
+  "shows": [
+    {
+      "id": "angels-and-demons",
+      "title": "Angels and Demons",
+      "title_full": "Angels and Demons — Greg Laurie",
+      "description": "Series episodes.",
+      "categories": ["teaching", "sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Angels and Demons |" }
+    },
+    {
+      "id": "what-i-would-tell-my-younger-self",
+      "title": "What I Would Tell My Younger Self",
+      "title_full": "What I Would Tell My Younger Self — Greg Laurie",
+      "description": "Series episodes.",
+      "categories": ["teaching", "sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "What I Would Tell My Younger Self |" }
+    },
+    {
+      "id": "in-case-of-emergency",
+      "title": "In Case of Emergency",
+      "title_full": "In Case of Emergency — Greg Laurie",
+      "description": "Series episodes.",
+      "categories": ["teaching", "sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "In Case of Emergency |" }
+    },
+    {
+      "id": "how-to-overcome-your-giants",
+      "title": "How to Overcome Your Giants",
+      "title_full": "How to Overcome Your Giants — Greg Laurie",
+      "description": "Series episodes.",
+      "categories": ["teaching", "sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "How to Overcome Your Giants |" }
+    },
+    {
+      "id": "between-impossible-and-more-impossible",
+      "title": "Between Impossible & More Impossible",
+      "title_full": "Between Impossible & More Impossible — Greg Laurie",
+      "description": "Series episodes.",
+      "categories": ["teaching", "sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Between Impossible & More Impossible |" }
+    },
+    {
+      "id": "get-your-feet-wet",
+      "title": "Get Your Feet Wet",
+      "title_full": "Get Your Feet Wet — Greg Laurie",
+      "description": "Series episodes.",
+      "categories": ["teaching", "sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Get Your Feet Wet |" }
+    },
+    {
+      "id": "how-to-know-the-will-of-god",
+      "title": "How to Know the Will of God",
+      "title_full": "How to Know the Will of God — Greg Laurie",
+      "description": "Series episodes.",
+      "categories": ["teaching", "sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "How to Know the Will of God |" }
+    },
+    {
+      "id": "how-to-fight-the-spiritual-battle",
+      "title": "How to Fight the Spiritual Battle",
+      "title_full": "How to Fight the Spiritual Battle — Greg Laurie",
+      "description": "Series episodes.",
+      "categories": ["teaching", "sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "How to Fight the Spiritual Battle |" }
+    },
+    {
+      "id": "the-god-of-second-chances",
+      "title": "The God of Second Chances",
+      "title_full": "The God of Second Chances — Greg Laurie",
+      "description": "Series episodes.",
+      "categories": ["teaching", "sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The God of Second Chances |" }
+    },
+    {
+      "id": "god-keeps-his-promises",
+      "title": "God Keeps His Promises",
+      "title_full": "God Keeps His Promises — Greg Laurie",
+      "description": "Series episodes.",
+      "categories": ["teaching", "sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "God Keeps His Promises |" }
+    },
+    {
+      "id": "hope-for-hurting-hearts",
+      "title": "Hope for Hurting Hearts",
+      "title_full": "Hope for Hurting Hearts — Greg Laurie",
+      "description": "Series episodes.",
+      "categories": ["teaching", "sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Hope for Hurting Hearts |" }
+    },
+    {
+      "id": "how-to-lead-others-to-jesus",
+      "title": "How to Lead Others to Jesus",
+      "title_full": "How to Lead Others to Jesus — Greg Laurie",
+      "description": "Series episodes.",
+      "categories": ["teaching", "sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "How to Lead Others to Jesus |" }
+    },
+    {
+      "id": "getting-through-the-storms-of-life",
+      "title": "Getting Through the Storms of Life",
+      "title_full": "Getting Through the Storms of Life — Greg Laurie",
+      "description": "Series episodes.",
+      "categories": ["teaching", "sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Getting Through the Storms of Life |" }
+    },
+    {
+      "id": "sunday-messages",
+      "title": "Sunday Messages",
+      "title_full": "Sunday messages — Greg Laurie",
+      "description": "Episodes labeled as Sunday messages.",
+      "categories": ["teaching", "sermons"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "Sunday Message" }
+    }
+  ]
+}
+

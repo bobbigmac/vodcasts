@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Services",
+  "leftovers_title_full": "Services — St. Matthew's UMC",
+  "leftovers_description": "Service recordings from St. Matthew's United Methodist Church.",
+  "shows": [
+    {
+      "id": "intersection",
+      "title": "INTERSECTION",
+      "title_full": "INTERSECTION — St. Matthew's UMC",
+      "description": "Intersection service recordings.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "-\\s*INTERSECTION\\s*-" }
+    },
+    {
+      "id": "traditional",
+      "title": "Traditional",
+      "title_full": "Traditional service — St. Matthew's UMC",
+      "description": "Traditional service recordings (includes occasional spelling variations).",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "-\\s*Traditi?onal\\s*-" }
+    }
+  ]
+}
+

@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Sunday Sermons",
+  "leftovers_title_full": "Sunday sermons — Bishop Barron",
+  "leftovers_description": "Weekly Sunday homilies and sermons.",
+  "shows": [
+    {
+      "id": "classic-sunday-sermons",
+      "title": "Classic Sunday Sermons",
+      "title_full": "Classic Sunday Sermons — Bishop Barron",
+      "description": "Classic Sunday sermons re-released in the feed.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Classic Sunday Sermon" }
+    }
+  ]
+}
+

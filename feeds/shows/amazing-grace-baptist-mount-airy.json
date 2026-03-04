@@ -1,0 +1,59 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Amazing Grace Baptist Church Mount Airy",
+  "leftovers_description": "Messages outside the main service buckets.",
+  "shows": [
+    {
+      "id": "special-events",
+      "title": "Special Events",
+      "title_full": "Special events — Amazing Grace Baptist Church Mount Airy",
+      "description": "Revival, rally, youth, and camp services.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": {
+        "type": "title_regex",
+        "value": "\\b(?:Revival|Rally|Youth\\s+(?:Rally|Camp)|Camp)\\b"
+      }
+    },
+    {
+      "id": "sunday-morning",
+      "title": "Sunday Morning",
+      "title_full": "Sunday morning services — Amazing Grace Baptist Church Mount Airy",
+      "description": "Sunday morning services.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Sunday Morning" }
+    },
+    {
+      "id": "sunday-evening",
+      "title": "Sunday Evening",
+      "title_full": "Sunday evening services — Amazing Grace Baptist Church Mount Airy",
+      "description": "Sunday evening services.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Sunday Evening" }
+    },
+    {
+      "id": "wednesday-night",
+      "title": "Wednesday Night",
+      "title_full": "Wednesday night services — Amazing Grace Baptist Church Mount Airy",
+      "description": "Wednesday night services.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Wednesday Night" }
+    },
+    {
+      "id": "weeknight-services",
+      "title": "Weeknight Services",
+      "title_full": "Weeknight services — Amazing Grace Baptist Church Mount Airy",
+      "description": "Monday/Tuesday/Thursday/Friday services.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": {
+        "type": "title_regex",
+        "value": "\\b(?:Monday Night|Tuesday Evening|Thursday Evening|Friday Evening)\\b"
+      }
+    }
+  ]
+}
+

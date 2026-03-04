@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Pastor Jonathan's Sermons",
+  "leftovers_description": "Sermons and messages (titles vary; no stable series pattern in titles).",
+  "shows": [
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Sermons — Pastor Jonathan's Sermons",
+      "description": "All episodes.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

@@ -1,0 +1,124 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — The Whole Counsel of God",
+  "leftovers_description": "Episodes outside the major Bible book buckets.",
+  "shows": [
+    {
+      "id": "genesis",
+      "title": "Genesis",
+      "title_full": "Genesis — The Whole Counsel of God",
+      "description": "Genesis episodes.",
+      "categories": ["teaching", "bible-study"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^(?:Genesis\\b|Introduction to Genesis\\b)" }
+    },
+    {
+      "id": "exodus",
+      "title": "Exodus",
+      "title_full": "Exodus — The Whole Counsel of God",
+      "description": "Exodus episodes (including introductions).",
+      "categories": ["teaching", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^(?:Exodus\\b|Introduction to Exodus\\b)" }
+    },
+    {
+      "id": "leviticus",
+      "title": "Leviticus",
+      "title_full": "Leviticus — The Whole Counsel of God",
+      "description": "Leviticus episodes.",
+      "categories": ["teaching", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Leviticus" }
+    },
+    {
+      "id": "numbers",
+      "title": "Numbers",
+      "title_full": "Numbers — The Whole Counsel of God",
+      "description": "Numbers episodes.",
+      "categories": ["teaching", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Numbers" }
+    },
+    {
+      "id": "luke",
+      "title": "Luke",
+      "title_full": "Luke — The Whole Counsel of God",
+      "description": "Luke episodes (including the introduction episode).",
+      "categories": ["teaching", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^(?:Luke\\b|The Gospel According to St\\. Luke\\b)" }
+    },
+    {
+      "id": "john",
+      "title": "John",
+      "title_full": "John — The Whole Counsel of God",
+      "description": "John episodes.",
+      "categories": ["teaching", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "John" }
+    },
+    {
+      "id": "acts",
+      "title": "Acts",
+      "title_full": "Acts — The Whole Counsel of God",
+      "description": "Acts episodes.",
+      "categories": ["teaching", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Acts" }
+    },
+    {
+      "id": "romans",
+      "title": "Romans",
+      "title_full": "Romans — The Whole Counsel of God",
+      "description": "Romans episodes.",
+      "categories": ["teaching", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Romans" }
+    },
+    {
+      "id": "revelation",
+      "title": "Revelation",
+      "title_full": "Revelation — The Whole Counsel of God",
+      "description": "Revelation episodes.",
+      "categories": ["teaching", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Revelation" }
+    },
+    {
+      "id": "hebrews",
+      "title": "Hebrews",
+      "title_full": "Hebrews — The Whole Counsel of God",
+      "description": "Hebrews episodes.",
+      "categories": ["teaching", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Hebrews" }
+    },
+    {
+      "id": "corinthians",
+      "title": "Corinthians",
+      "title_full": "Corinthians (1–2) — The Whole Counsel of God",
+      "description": "1–2 Corinthians episodes.",
+      "categories": ["teaching", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^[12]\\s+Corinthians\\b" }
+    },
+    {
+      "id": "galatians",
+      "title": "Galatians",
+      "title_full": "Galatians — The Whole Counsel of God",
+      "description": "Galatians episodes.",
+      "categories": ["teaching", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Galatians" }
+    },
+    {
+      "id": "ephesians",
+      "title": "Ephesians",
+      "title_full": "Ephesians — The Whole Counsel of God",
+      "description": "Ephesians episodes.",
+      "categories": ["teaching", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Ephesians" }
+    }
+  ]
+}

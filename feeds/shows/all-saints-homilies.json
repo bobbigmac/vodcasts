@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — All Saints Homilies",
+  "leftovers_description": "Homilies (topics vary week to week; no stable series pattern in titles).",
+  "shows": [
+    {
+      "id": "homilies",
+      "title": "Homilies",
+      "title_full": "Homilies — All Saints Homilies",
+      "description": "All homilies in the feed.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

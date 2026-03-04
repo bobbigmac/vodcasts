@@ -1,0 +1,122 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Salem Fields",
+  "leftovers_description": "Messages outside the main named series.",
+  "shows": [
+    {
+      "id": "revival",
+      "title": "Revival",
+      "title_full": "Revival — Salem Fields",
+      "description": "Revival series episodes.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Revival" }
+    },
+    {
+      "id": "rebuild",
+      "title": "Rebuild",
+      "title_full": "Rebuild — Salem Fields",
+      "description": "Rebuild series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Rebuild" }
+    },
+    {
+      "id": "crossfit",
+      "title": "Crossfit",
+      "title_full": "Crossfit — Salem Fields",
+      "description": "Crossfit series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Crossfit" }
+    },
+    {
+      "id": "blueprints",
+      "title": "Blueprints",
+      "title_full": "Blueprints For A Belonging Community — Salem Fields",
+      "description": "Blueprints For A Belonging Community series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Blueprints For A Belonging Community" }
+    },
+    {
+      "id": "real-relationships",
+      "title": "Real Relationships",
+      "title_full": "Real Relationships — Salem Fields",
+      "description": "Real Relationships series episodes.",
+      "categories": ["sermons", "family"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Real Relationships" }
+    },
+    {
+      "id": "everythings-changed",
+      "title": "Everything's Changed",
+      "title_full": "Everything's Changed — Salem Fields",
+      "description": "Everything's Changed series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Everything's Changed" }
+    },
+    {
+      "id": "dont-be-fooled",
+      "title": "Don't Be Fooled",
+      "title_full": "Don't Be Fooled — Salem Fields",
+      "description": "Don't Be Fooled series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Don't Be Fooled" }
+    },
+    {
+      "id": "emerged",
+      "title": "Emerged",
+      "title_full": "Emerged — Salem Fields",
+      "description": "Emerged series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Emerged" }
+    },
+    {
+      "id": "family-reunion",
+      "title": "Family Reunion",
+      "title_full": "Family Reunion — Salem Fields",
+      "description": "Family Reunion series episodes.",
+      "categories": ["sermons", "family"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Family Reunion" }
+    },
+    {
+      "id": "revelation-start-at-home",
+      "title": "Revelation",
+      "title_full": "Revelation — Start at Home — Salem Fields",
+      "description": "Revelation — Start at Home series episodes.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": {
+        "type": "title_regex",
+        "value": "^Revelation\\s*-\\s*Start\\s+at\\s+Home\\b"
+      }
+    },
+    {
+      "id": "state-of-the-church",
+      "title": "State of the Church",
+      "title_full": "State Of The Church — Salem Fields",
+      "description": "State Of The Church updates.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "State Of The Church" }
+    },
+    {
+      "id": "ten-minute-messages",
+      "title": "10 Minute Messages",
+      "title_full": "Ministry 10 Minute Messages — Salem Fields",
+      "description": "Children's and student ministry short messages.",
+      "categories": ["sermons", "family"],
+      "featured": false,
+      "filter": {
+        "type": "title_regex",
+        "value": "^(?:Children's|Student) Ministry 10 Minute Message\\b"
+      }
+    }
+  ]
+}
+

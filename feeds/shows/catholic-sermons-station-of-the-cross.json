@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Homilies",
+  "leftovers_title_full": "Homilies — Sermons for Everyday Living",
+  "leftovers_description": "Daily homilies and reflections from Sermons for Everyday Living.",
+  "shows": [
+    {
+      "id": "lent",
+      "title": "Lent",
+      "title_full": "Lent — Sermons for Everyday Living",
+      "description": "Lenten homilies and reflections.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Lent" }
+    },
+    {
+      "id": "advent",
+      "title": "Advent",
+      "title_full": "Advent — Sermons for Everyday Living",
+      "description": "Advent homilies and reflections.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Advent" }
+    },
+    {
+      "id": "sundays",
+      "title": "Sundays",
+      "title_full": "Sundays — Sermons for Everyday Living",
+      "description": "Sunday homilies.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Sunday" }
+    }
+  ]
+}
+

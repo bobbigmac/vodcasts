@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Reformed Brotherhood",
+  "leftovers_description": "Episodes outside the main multi-part series.",
+  "shows": [
+    {
+      "id": "scots-confession",
+      "title": "Scots Confession",
+      "title_full": "Scots Confession — Reformed Brotherhood",
+      "description": "Scots Confession series episodes (TRB numbered).",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Scots Confession" }
+    },
+    {
+      "id": "armor-of-god",
+      "title": "Armor of God",
+      "title_full": "Armor of God — Reformed Brotherhood",
+      "description": "Armor of God series episodes.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Armor of God" }
+    }
+  ]
+}
+

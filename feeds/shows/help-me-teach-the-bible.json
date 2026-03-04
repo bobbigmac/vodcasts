@@ -1,0 +1,44 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Help Me Teach The Bible",
+  "leftovers_description": "Episodes outside the main buckets (re-releases, live events, and specials).",
+  "shows": [
+    {
+      "id": "re-releases",
+      "title": "Re-releases",
+      "title_full": "Re-releases — Help Me Teach The Bible",
+      "description": "Re-released interviews and episodes.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Re-release" }
+    },
+    {
+      "id": "live-tgcw22",
+      "title": "Live at TGCW22",
+      "title_full": "Live at TGCW22 — Help Me Teach The Bible",
+      "description": "Live sessions from TGCW22.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Live at TGCW22" }
+    },
+    {
+      "id": "live",
+      "title": "Live",
+      "title_full": "Live episodes — Help Me Teach The Bible",
+      "description": "Live events and recordings.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Help Me Teach the Bible Live" }
+    },
+    {
+      "id": "introducing",
+      "title": "Introducing",
+      "title_full": "Introducing — Help Me Teach The Bible",
+      "description": "Introductions and trailers for new content.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Introducing" }
+    }
+  ]
+}
+

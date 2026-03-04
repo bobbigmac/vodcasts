@@ -1,0 +1,44 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — BibleProject Podcast",
+  "leftovers_description": "Episodes outside special release types.",
+  "shows": [
+    {
+      "id": "top-5",
+      "title": "Top 5",
+      "title_full": "Top 5 — BibleProject Podcast",
+      "description": "Top 5 re-release picks.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Top 5" }
+    },
+    {
+      "id": "studio-conversations",
+      "title": "Studio Conversations",
+      "title_full": "Studio Conversations — BibleProject Podcast",
+      "description": "Uncut studio conversation episodes.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "(Studio Conversation)" }
+    },
+    {
+      "id": "featured",
+      "title": "Featured",
+      "title_full": "Featured episodes — BibleProject Podcast",
+      "description": "Featured episodes marked by the feed.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "(Featured Episode)" }
+    },
+    {
+      "id": "re-releases",
+      "title": "Re-releases",
+      "title_full": "Re-releases — BibleProject Podcast",
+      "description": "Re-releases marked in the title.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\bRe-?Release\\b" }
+    }
+  ]
+}
+

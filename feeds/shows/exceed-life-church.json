@@ -1,0 +1,109 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Exceed Life Church",
+  "leftovers_description": "Messages outside the main multi-part series.",
+  "shows": [
+    {
+      "id": "freedom-in-jesus",
+      "title": "Freedom in Jesus",
+      "title_full": "Freedom in Jesus — Exceed Life Church",
+      "description": "Freedom in Jesus series episodes.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Freedom in Jesus" }
+    },
+    {
+      "id": "greater-grace",
+      "title": "Greater Grace",
+      "title_full": "Greater Grace — Exceed Life Church",
+      "description": "Greater Grace series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Greater Grace" }
+    },
+    {
+      "id": "power-of-words",
+      "title": "Power of Words",
+      "title_full": "Power of Words — Exceed Life Church",
+      "description": "Power of Words series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Power of Words" }
+    },
+    {
+      "id": "fellowship-with-the-holy-spirit",
+      "title": "Fellowship with the Holy Spirit",
+      "title_full": "Fellowship with the Holy Spirit — Exceed Life Church",
+      "description": "Fellowship/Friendship with the Holy Spirit series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": {
+        "type": "title_regex",
+        "value": "^F(?:ellow|riend)ship\\s+(?:With|with)\\s+the\\s+Holy\\s+Spirit\\b"
+      }
+    },
+    {
+      "id": "holy-spirit",
+      "title": "The Holy Spirit",
+      "title_full": "The Holy Spirit — Exceed Life Church",
+      "description": "Holy Spirit series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^The (?:Person of the )?Holy Spirit\\b" }
+    },
+    {
+      "id": "kingdom-powers",
+      "title": "Kingdom Powers",
+      "title_full": "Kingdom Powers — Exceed Life Church",
+      "description": "Kingdom Powers series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Kingdom Powers" }
+    },
+    {
+      "id": "fruit-of-the-spirit",
+      "title": "Fruit of the Spirit",
+      "title_full": "Fruit of the Spirit — Exceed Life Church",
+      "description": "Fruit of the Spirit series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Fruit of the Spirit" }
+    },
+    {
+      "id": "born-to-win",
+      "title": "Born to Win",
+      "title_full": "Born to Win — Exceed Life Church",
+      "description": "Born to Win series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Born to Win" }
+    },
+    {
+      "id": "gifts-and-callings",
+      "title": "Gifts and Callings",
+      "title_full": "Gifts and Callings — Exceed Life Church",
+      "description": "Gifts and Callings series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Gifts and Callings" }
+    },
+    {
+      "id": "book-of-james",
+      "title": "The Book of James",
+      "title_full": "The Book of James — Exceed Life Church",
+      "description": "The Book of James series episodes.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Book of James" }
+    },
+    {
+      "id": "fasting-for-breakthrough",
+      "title": "Fasting for Breakthrough",
+      "title_full": "Fasting for Breakthrough — Exceed Life Church",
+      "description": "Fasting for Breakthrough series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Fasting for Breakthrough" }
+    }
+  ]
+}

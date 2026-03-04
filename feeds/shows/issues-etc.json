@@ -1,0 +1,61 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Issues, Etc.",
+  "leftovers_description": "Episodes outside the recurring segments.",
+  "shows": [
+    {
+      "id": "looking-forward-lectionary",
+      "title": "Looking Forward (Lectionary)",
+      "title_full": "Looking Forward to Sunday Morning (Lectionary) — Issues, Etc.",
+      "description": "One Year Lectionary previews.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": {
+        "type": "title_regex",
+        "value": "^Looking Forward to Sunday Morning \\((?:One Year|1 Year) Lectionary\\)"
+      }
+    },
+    {
+      "id": "looking-forward-catechisms",
+      "title": "Looking Forward (Catechisms)",
+      "title_full": "Looking Forward to Sunday Morning (Catechisms) — Issues, Etc.",
+      "description": "Luther’s Catechisms previews.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": {
+        "type": "title_regex",
+        "value": "^Looking Forward to Sunday Morning According to Luther[’']s Catechisms"
+      }
+    },
+    {
+      "id": "comment-line",
+      "title": "Comment Line",
+      "title_full": "Listener email + comment line — Issues, Etc.",
+      "description": "Responding to listener email and comment line.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": {
+        "type": "title_prefix",
+        "value": "Responding to Listener Email and the Issues, Etc. Comment Line"
+      }
+    },
+    {
+      "id": "pop-christianity",
+      "title": "Pop-Christianity",
+      "title_full": "This Week in Pop-Christianity — Issues, Etc.",
+      "description": "This Week in Pop-Christianity segment.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "This Week in Pop-Christianity" }
+    },
+    {
+      "id": "answering-arguments",
+      "title": "Answering Arguments",
+      "title_full": "Answering arguments against Christianity — Issues, Etc.",
+      "description": "Answering Arguments Against Christianity series.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Answering Arguments Against Christianity" }
+    }
+  ]
+}

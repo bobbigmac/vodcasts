@@ -1,0 +1,62 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Buford Road Baptist Church",
+  "leftovers_description": "Messages outside the main named series.",
+  "shows": [
+    {
+      "id": "revelation",
+      "title": "Revelation",
+      "title_full": "The Mighty Book of Revelation — Buford Road Baptist Church",
+      "description": "The Mighty Book of Revelation series (multi-part).",
+      "categories": ["sermons", "bible-study"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "The Mighty Book of Revelation" }
+    },
+    {
+      "id": "king-david",
+      "title": "King David",
+      "title_full": "Lessons from the Life of King David — Buford Road Baptist Church",
+      "description": "Lessons from the life of King David (multi-part).",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Lessons from the Life of King David" }
+    },
+    {
+      "id": "rapture",
+      "title": "The Rapture",
+      "title_full": "The Rapture — Buford Road Baptist Church",
+      "description": "The Rapture series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Rapture" }
+    },
+    {
+      "id": "valleys",
+      "title": "Valleys in the Bible",
+      "title_full": "Valleys in the Bible — Buford Road Baptist Church",
+      "description": "Valleys in the Bible series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Valleys in the Bible" }
+    },
+    {
+      "id": "judgement-seat",
+      "title": "Judgement Seat",
+      "title_full": "The Judgement Seat of Christ — Buford Road Baptist Church",
+      "description": "The Judgement Seat of Christ series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Judgement Seat of Christ" }
+    },
+    {
+      "id": "when-we-pray",
+      "title": "When We Pray",
+      "title_full": "When We Pray — Buford Road Baptist Church",
+      "description": "When We Pray series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "When We Pray" }
+    }
+  ]
+}
+

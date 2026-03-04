@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — MY Devotional — Leading The Way",
+  "leftovers_description": "Episodes outside the year buckets (e.g., undated items).",
+  "shows": [
+    {
+      "id": "2026",
+      "title": "2026",
+      "title_full": "2026 — MY Devotional — Leading The Way",
+      "description": "Daily devotionals from 2026.",
+      "categories": ["devotional"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "\\b2026\\b" }
+    },
+    {
+      "id": "2025",
+      "title": "2025",
+      "title_full": "2025 — MY Devotional — Leading The Way",
+      "description": "Daily devotionals from 2025.",
+      "categories": ["devotional"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\b2025\\b" }
+    },
+    {
+      "id": "2024",
+      "title": "2024",
+      "title_full": "2024 — MY Devotional — Leading The Way",
+      "description": "Daily devotionals from 2024.",
+      "categories": ["devotional"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\b2024\\b" }
+    }
+  ]
+}
+

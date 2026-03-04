@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Daily Orthodox Scriptures",
+  "leftovers_description": "Uncategorized items.",
+  "shows": [
+    {
+      "id": "daily-readings",
+      "title": "Daily Readings",
+      "title_full": "Daily Orthodox Scriptures — Daily Readings",
+      "description": "Daily scripture readings by date.",
+      "categories": ["devotional"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

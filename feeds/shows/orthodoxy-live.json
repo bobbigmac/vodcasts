@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Orthodoxy Live",
+  "leftovers_description": "Episodes outside the mailbag and date/year buckets.",
+  "shows": [
+    {
+      "id": "mailbag",
+      "title": "Mailbag",
+      "title_full": "Mailbag — Orthodoxy Live",
+      "description": "Mailbag episodes.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Mailbag" }
+    },
+    {
+      "id": "recent",
+      "title": "Recent",
+      "title_full": "Recent (2024–2026) — Orthodoxy Live",
+      "description": "Recent episodes dated 2024–2026.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\b202[4-6]\\b" }
+    },
+    {
+      "id": "archive",
+      "title": "Archive",
+      "title_full": "Archive (2012–2023) — Orthodoxy Live",
+      "description": "Older episodes dated 2012–2023.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\b(?:201[2-9]|202[0-3])\\b" }
+    }
+  ]
+}
+

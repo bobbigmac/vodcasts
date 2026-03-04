@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Sermons",
+  "leftovers_title_full": "Sermons — Light + Truth",
+  "leftovers_description": "Classic sermons and messages.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Light + Truth episodes",
+      "description": "All episodes.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

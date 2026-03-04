@@ -1,0 +1,71 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from Ten Minute Bible Hour",
+  "leftovers_description": "Episodes outside the main book-series buckets.",
+  "shows": [
+    {
+      "id": "matthew",
+      "title": "Matthew",
+      "title_full": "Matthew — Ten Minute Bible Hour",
+      "description": "Matthew series episodes (MATT###).",
+      "categories": ["bible-study"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^MATT\\d{3}\\b" }
+    },
+    {
+      "id": "galatians",
+      "title": "Galatians",
+      "title_full": "Galatians — Ten Minute Bible Hour",
+      "description": "Galatians series episodes (GAL###).",
+      "categories": ["bible-study"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^GAL\\d{3}\\b" }
+    },
+    {
+      "id": "esther",
+      "title": "Esther",
+      "title_full": "Esther — Ten Minute Bible Hour",
+      "description": "Esther series episodes (EST###).",
+      "categories": ["bible-study"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^EST\\d{3}\\b" }
+    },
+    {
+      "id": "nehemiah",
+      "title": "Nehemiah",
+      "title_full": "Nehemiah — Ten Minute Bible Hour",
+      "description": "Nehemiah series episodes (NEH###).",
+      "categories": ["bible-study"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^NEH\\d{3}\\b" }
+    },
+    {
+      "id": "philemon",
+      "title": "Philemon",
+      "title_full": "Philemon — Ten Minute Bible Hour",
+      "description": "Philemon series episodes (PLMN###).",
+      "categories": ["bible-study"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^PLMN\\d{3}\\b" }
+    },
+    {
+      "id": "john",
+      "title": "John",
+      "title_full": "John — Ten Minute Bible Hour",
+      "description": "John series episodes (JOHN###).",
+      "categories": ["bible-study"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^JOHN\\d{3}\\b" }
+    },
+    {
+      "id": "bonus",
+      "title": "Bonus",
+      "title_full": "Bonus episodes — Ten Minute Bible Hour",
+      "description": "Bonus episodes and specials.",
+      "categories": ["bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "BONUS" }
+    }
+  ]
+}
+

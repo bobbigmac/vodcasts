@@ -1,0 +1,62 @@
+{
+  "leftovers_title": "Extras",
+  "leftovers_title_full": "Extras — Bible in a Year",
+  "leftovers_description": "Bonus episodes and items without a year suffix.",
+  "shows": [
+    {
+      "id": "2026",
+      "title": "2026",
+      "title_full": "Bible in a Year (2026)",
+      "description": "Daily episodes for 2026.",
+      "categories": ["devotional", "bible-study"],
+      "featured": true,
+      "filter": { "type": "title_suffix", "value": "(2026)" }
+    },
+    {
+      "id": "2025",
+      "title": "2025",
+      "title_full": "Bible in a Year (2025)",
+      "description": "Daily episodes for 2025.",
+      "categories": ["devotional", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "(2025)" }
+    },
+    {
+      "id": "2024",
+      "title": "2024",
+      "title_full": "Bible in a Year (2024)",
+      "description": "Daily episodes for 2024.",
+      "categories": ["devotional", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "(2024)" }
+    },
+    {
+      "id": "2023",
+      "title": "2023",
+      "title_full": "Bible in a Year (2023)",
+      "description": "Daily episodes for 2023.",
+      "categories": ["devotional", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "(2023)" }
+    },
+    {
+      "id": "2022",
+      "title": "2022",
+      "title_full": "Bible in a Year (2022)",
+      "description": "Daily episodes for 2022.",
+      "categories": ["devotional", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "(2022)" }
+    },
+    {
+      "id": "bonus",
+      "title": "Bonus",
+      "title_full": "Bonus — Bible in a Year",
+      "description": "Bonus episodes and specials.",
+      "categories": ["devotional", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "BONUS" }
+    }
+  ]
+}
+

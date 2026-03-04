@@ -1,0 +1,134 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Life.Church",
+  "leftovers_description": "Messages outside the most common named series patterns.",
+  "shows": [
+    {
+      "id": "book-club",
+      "title": "Book Club",
+      "title_full": "Book Club — Life.Church",
+      "description": "Book Club series episodes.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "\\|\\s*Book Club\\b" }
+    },
+    {
+      "id": "been-there",
+      "title": "Been There",
+      "title_full": "Been There — Life.Church",
+      "description": "Been There series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\|\\s*Been There\\b" }
+    },
+    {
+      "id": "peace-of-mind",
+      "title": "Peace of Mind",
+      "title_full": "Peace of Mind — Life.Church",
+      "description": "Peace of Mind series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\|\\s*Peace of Mind\\b" }
+    },
+    {
+      "id": "doubting-god",
+      "title": "Doubting God",
+      "title_full": "Doubting God — Life.Church",
+      "description": "Doubting God series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\|\\s*Doubting God\\b" }
+    },
+    {
+      "id": "love-stories",
+      "title": "Love Stories",
+      "title_full": "Love Stories — Life.Church",
+      "description": "Love Stories series episodes.",
+      "categories": ["sermons", "family"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\|\\s*Love Stories\\b" }
+    },
+    {
+      "id": "he-promises",
+      "title": "He Promises",
+      "title_full": "He Promises — Life.Church",
+      "description": "He Promises series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\|\\s*He Promises\\b" }
+    },
+    {
+      "id": "think-ahead",
+      "title": "Think Ahead",
+      "title_full": "Think Ahead — Life.Church",
+      "description": "Think Ahead series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\|\\s*Think Ahead\\b" }
+    },
+    {
+      "id": "book-of-ruth",
+      "title": "The Book of Ruth",
+      "title_full": "The Book of Ruth — Life.Church",
+      "description": "The Book of Ruth series episodes.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\|\\s*The Book of Ruth\\b" }
+    },
+    {
+      "id": "power-to-change",
+      "title": "The Power to Change",
+      "title_full": "The Power to Change — Life.Church",
+      "description": "The Power to Change series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\|\\s*The Power to Change\\b" }
+    },
+    {
+      "id": "god-is",
+      "title": "God Is",
+      "title_full": "God Is — Life.Church",
+      "description": "God Is series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\|\\s*God Is\\b" }
+    },
+    {
+      "id": "pre-decide",
+      "title": "Pre-Decide",
+      "title_full": "Pre-Decide — Life.Church",
+      "description": "Pre-Decide series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\|\\s*Pre-Decide\\b" }
+    },
+    {
+      "id": "ever-wonder-why",
+      "title": "Ever Wonder Why",
+      "title_full": "Ever Wonder Why — Life.Church",
+      "description": "Ever Wonder Why series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\|\\s*Ever Wonder Why\\b" }
+    },
+    {
+      "id": "a-church-that-pleases-god",
+      "title": "A Church That Pleases God",
+      "title_full": "A Church That Pleases God — Life.Church",
+      "description": "A Church That Pleases God series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\|\\s*A Church That Pleases God\\b" }
+    },
+    {
+      "id": "christian-ish",
+      "title": "Christian-ish",
+      "title_full": "Christian-ish — Life.Church",
+      "description": "Christian-ish series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\|\\s*Christian-ish\\b" }
+    }
+  ]
+}
+

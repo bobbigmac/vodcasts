@@ -1,0 +1,62 @@
+{
+  "leftovers_title": "Sermons",
+  "leftovers_title_full": "Sermons — Moira Pentecostal Church",
+  "leftovers_description": "Sermons and messages from Moira Pentecostal Church.",
+  "shows": [
+    {
+      "id": "lord-teach-us-to-pray",
+      "title": "Lord, Teach Us to Pray",
+      "title_full": "Lord, Teach Us to Pray — Moira Pentecostal Church",
+      "description": "Multi-part series.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Lord Teach Us To Pray" }
+    },
+    {
+      "id": "jesus-our-great-high-priest",
+      "title": "Jesus Our Great High Priest",
+      "title_full": "Jesus Our Great High Priest — Moira Pentecostal Church",
+      "description": "Multi-part series.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Jesus Our Great High Priest" }
+    },
+    {
+      "id": "notable-women-of-the-bible",
+      "title": "Notable Women of the Bible",
+      "title_full": "Notable Women of the Bible — Moira Pentecostal Church",
+      "description": "Multi-part series.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Notable Women Of The Bible" }
+    },
+    {
+      "id": "notorious-women-of-the-bible",
+      "title": "Notorious Women of the Bible",
+      "title_full": "Notorious Women of the Bible — Moira Pentecostal Church",
+      "description": "Sermons focused on notable biblical figures.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Notorious Women of the Bible" }
+    },
+    {
+      "id": "sunday-evening-sermons",
+      "title": "Sunday Evening Sermons",
+      "title_full": "Sunday evening sermons — Moira Pentecostal Church",
+      "description": "Sunday evening messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Sunday Evening Sermon" }
+    },
+    {
+      "id": "guest-speakers",
+      "title": "Guest Speakers",
+      "title_full": "Guest speakers — Moira Pentecostal Church",
+      "description": "Messages from visiting speakers.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Guest Speaker" }
+    }
+  ]
+}
+

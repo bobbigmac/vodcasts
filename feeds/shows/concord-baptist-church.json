@@ -1,0 +1,125 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Concord Baptist Church",
+  "leftovers_description": "Messages outside the main named series.",
+  "shows": [
+    {
+      "id": "ii-c",
+      "title": "II C",
+      "title_full": "II C — Concord Baptist Church",
+      "description": "II C multi-part series.",
+      "categories": ["sermons", "bible-study"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "II C" }
+    },
+    {
+      "id": "believe",
+      "title": "Believe",
+      "title_full": "Believe — Concord Baptist Church",
+      "description": "Believe series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Believe" }
+    },
+    {
+      "id": "24-karat-faith",
+      "title": "24 Karat Faith",
+      "title_full": "24 Karat Faith — Concord Baptist Church",
+      "description": "24 Karat Faith series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "24 Karat Faith" }
+    },
+    {
+      "id": "great-coronation",
+      "title": "The Great Coronation",
+      "title_full": "The Great Coronation — Concord Baptist Church",
+      "description": "The Great Coronation series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Great Coronation" }
+    },
+    {
+      "id": "show-me-your-glory",
+      "title": "Show Me Your Glory",
+      "title_full": "Show Me Your Glory — Concord Baptist Church",
+      "description": "Show Me Your Glory series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Show Me Your Glory" }
+    },
+    {
+      "id": "winning-the-war-within",
+      "title": "Winning the War Within",
+      "title_full": "Winning the War Within — Concord Baptist Church",
+      "description": "Winning the War Within series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Winning the War Within" }
+    },
+    {
+      "id": "you-can-know-for-sure",
+      "title": "You Can Know For Sure",
+      "title_full": "You Can Know For Sure — Concord Baptist Church",
+      "description": "You Can Know For Sure series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "You Can Know For Sure" }
+    },
+    {
+      "id": "neverempty",
+      "title": "#neverempty",
+      "title_full": "#neverempty — Concord Baptist Church",
+      "description": "#neverempty series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "#neverempty" }
+    },
+    {
+      "id": "finding-your-way",
+      "title": "Finding Your Way",
+      "title_full": "Finding Your Way — Concord Baptist Church",
+      "description": "Finding Your Way series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Finding Your Way" }
+    },
+    {
+      "id": "king-is-coming",
+      "title": "The King Is Coming",
+      "title_full": "The King Is Coming — Concord Baptist Church",
+      "description": "The King Is Coming series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The King Is Coming" }
+    },
+    {
+      "id": "crazy-good",
+      "title": "Crazy Good",
+      "title_full": "Crazy Good — Concord Baptist Church",
+      "description": "Crazy Good series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Crazy Good" }
+    },
+    {
+      "id": "lets-go",
+      "title": "Let's Go!",
+      "title_full": "Let's Go! — Concord Baptist Church",
+      "description": "Let's Go! series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Let's Go!" }
+    },
+    {
+      "id": "short-stories-with-jesus",
+      "title": "Short Stories with Jesus",
+      "title_full": "Short Stories with Jesus — Concord Baptist Church",
+      "description": "Short Stories with Jesus series episodes.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Short Stories with Jesus" }
+    }
+  ]
+}
+

@@ -1,0 +1,53 @@
+{
+  "leftovers_title": "Other Sermons",
+  "leftovers_title_full": "Other sermons — Redeemer Presbyterian Church",
+  "leftovers_description": "Sermons outside the most common book buckets.",
+  "shows": [
+    {
+      "id": "hebrews",
+      "title": "Hebrews",
+      "title_full": "Hebrews — Redeemer Presbyterian Church",
+      "description": "Sermons from Hebrews.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Hebrews " }
+    },
+    {
+      "id": "matthew",
+      "title": "Matthew",
+      "title_full": "Matthew — Redeemer Presbyterian Church",
+      "description": "Sermons from Matthew.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Matthew " }
+    },
+    {
+      "id": "ephesians",
+      "title": "Ephesians",
+      "title_full": "Ephesians — Redeemer Presbyterian Church",
+      "description": "Sermons from Ephesians.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Ephesians " }
+    },
+    {
+      "id": "joshua",
+      "title": "Joshua",
+      "title_full": "Joshua — Redeemer Presbyterian Church",
+      "description": "Sermons from Joshua.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Joshua " }
+    },
+    {
+      "id": "psalms",
+      "title": "Psalms",
+      "title_full": "Psalms — Redeemer Presbyterian Church",
+      "description": "Sermons from Psalms.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Psalm " }
+    }
+  ]
+}
+

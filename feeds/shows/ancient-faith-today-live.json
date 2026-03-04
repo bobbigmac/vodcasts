@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Episodes",
+  "leftovers_title_full": "Ancient Faith Today Live episodes",
+  "leftovers_description": "Talk and teaching episodes (topics vary week to week).",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Ancient Faith Today Live episodes",
+      "description": "All episodes (no stable series pattern in titles).",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

@@ -32,11 +32,16 @@ class FeedFeatures:
     has_video: bool
 
 
-def _local(tag: str) -> str:
+def _local(tag: Any) -> str:
+    # lxml comment nodes have a non-string `.tag` (e.g. cython function); ignore them.
+    if not isinstance(tag, str):
+        return ""
     return tag.split("}", 1)[-1] if "}" in tag else tag
 
 
-def _ns(tag: str) -> str:
+def _ns(tag: Any) -> str:
+    if not isinstance(tag, str):
+        return ""
     if tag.startswith("{") and "}" in tag:
         return tag.split("}", 1)[0].strip("{")
     return ""

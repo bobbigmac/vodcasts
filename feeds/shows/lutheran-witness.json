@@ -1,0 +1,43 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — The Lutheran Witness Podcast",
+  "leftovers_description": "Episodes outside the recurring series buckets.",
+  "shows": [
+    {
+      "id": "following-the-formula",
+      "title": "Following the Formula",
+      "title_full": "Following the Formula — The Lutheran Witness Podcast",
+      "description": "Following the Formula episodes (Formula of Concord articles).",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Following the Formula" }
+    },
+    {
+      "id": "searching-the-scriptures",
+      "title": "Searching the Scriptures",
+      "title_full": "Searching the Scriptures — The Lutheran Witness Podcast",
+      "description": "Coffee Hour episodes focused on Searching the Scriptures / LW Searching Scripture.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "Searching (?:the )?Scripture(?:s)?" }
+    },
+    {
+      "id": "coffee-hour",
+      "title": "The Coffee Hour",
+      "title_full": "The Coffee Hour — The Lutheran Witness Podcast",
+      "description": "Coffee Hour episodes (non-Searching-the-Scriptures).",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Coffee Hour" }
+    },
+    {
+      "id": "from-wittenberg",
+      "title": "From Wittenberg",
+      "title_full": "From Wittenberg — The Lutheran Witness Podcast",
+      "description": "From Wittenberg series episodes.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "From Wittenberg" }
+    }
+  ]
+}

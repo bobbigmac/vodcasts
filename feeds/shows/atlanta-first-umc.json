@@ -1,0 +1,133 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Atlanta First United Methodist Church",
+  "leftovers_description": "Messages outside the main worship series buckets.",
+  "shows": [
+    {
+      "id": "focus",
+      "title": "Focus",
+      "title_full": "Focus — Atlanta First United Methodist Church",
+      "description": "Focus worship series episodes.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Focus:" }
+    },
+    {
+      "id": "stranger-things",
+      "title": "Stranger Things",
+      "title_full": "Stranger Things — Atlanta First United Methodist Church",
+      "description": "Stranger Things worship series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Stranger Things:" }
+    },
+    {
+      "id": "weak-and-strong",
+      "title": "WEAK and strong",
+      "title_full": "WEAK and strong — Atlanta First United Methodist Church",
+      "description": "WEAK and strong worship series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "WEAK and strong" }
+    },
+    {
+      "id": "lessons-in-the-wilderness",
+      "title": "Lessons In the Wilderness",
+      "title_full": "Lessons In the Wilderness — Atlanta First United Methodist Church",
+      "description": "Lessons In the Wilderness worship series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Lessons In the Wilderness:" }
+    },
+    {
+      "id": "reckless-love",
+      "title": "Reckless Love",
+      "title_full": "Reckless Love — Atlanta First United Methodist Church",
+      "description": "Reckless Love worship series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Reckless Love:" }
+    },
+    {
+      "id": "mind-the-gap",
+      "title": "Mind the Gap",
+      "title_full": "Mind the Gap — Atlanta First United Methodist Church",
+      "description": "Mind the Gap worship series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Mind the Gap:" }
+    },
+    {
+      "id": "possible",
+      "title": "Possible",
+      "title_full": "Possible — Atlanta First United Methodist Church",
+      "description": "POSSIBLE worship series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Possible:" }
+    },
+    {
+      "id": "creed",
+      "title": "Creed",
+      "title_full": "Creed — Atlanta First United Methodist Church",
+      "description": "Creed worship series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Creed:" }
+    },
+    {
+      "id": "enough-already",
+      "title": "ENOUGH ALREADY!?",
+      "title_full": "ENOUGH ALREADY!? — Atlanta First United Methodist Church",
+      "description": "ENOUGH ALREADY!? worship series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^ENOUGH ALREADY!\\?" }
+    },
+    {
+      "id": "with",
+      "title": "WITH",
+      "title_full": "WITH — Atlanta First United Methodist Church",
+      "description": "WITH worship series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "WITH:" }
+    },
+    {
+      "id": "no-greater-love",
+      "title": "No Greater Love",
+      "title_full": "No Greater Love — Atlanta First United Methodist Church",
+      "description": "No Greater Love worship series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "No Greater Love:" }
+    },
+    {
+      "id": "inside-out",
+      "title": "Inside Out",
+      "title_full": "Inside Out — Atlanta First United Methodist Church",
+      "description": "Inside Out worship series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Inside Out:" }
+    },
+    {
+      "id": "thats-not-in-the-bible",
+      "title": "That’s Not in the Bible!?",
+      "title_full": "That’s Not in the Bible!? — Atlanta First United Methodist Church",
+      "description": "That’s Not in the Bible!? worship series episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^That[’']s Not in the Bible!\\?" }
+    },
+    {
+      "id": "what-a-revelation",
+      "title": "What a Revelation",
+      "title_full": "What a Revelation — Atlanta First United Methodist Church",
+      "description": "What a Revelation series episodes.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "What a Revelation:" }
+    }
+  ]
+}
