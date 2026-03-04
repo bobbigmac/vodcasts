@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Specials",
+  "leftovers_title_full": "Specials — Glorious Living with Cathy",
+  "leftovers_description": "Episodes that don’t follow the standard Glorious Living title prefix.",
+  "shows": [
+    {
+      "id": "glorious-living-with-cathy",
+      "title": "Glorious Living with Cathy",
+      "title_full": "Glorious Living with Cathy — Jesse Duplantis Ministries",
+      "description": "Regular episodes of Glorious Living with Cathy (study series, interviews, and encouragement).",
+      "categories": ["tv-ministry", "teaching"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Glorious Living with Cathy" }
+    },
+    {
+      "id": "glorious-living",
+      "title": "Glorious Living",
+      "title_full": "Glorious Living — Jesse Duplantis Ministries",
+      "description": "Fallback bucket for Glorious Living titles that omit the host name.",
+      "categories": ["tv-ministry", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Glorious Living" }
+    }
+  ]
+}
+

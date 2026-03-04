@@ -1,0 +1,84 @@
+{
+  "leftovers_title": "Specials",
+  "leftovers_title_full": "Specials — Security Weekly Podcast Network",
+  "leftovers_description": "Items that don’t match the network show code tags (e.g. ESW #, PSW #).",
+  "shows": [
+    {
+      "id": "enterprise-security-weekly",
+      "title": "Enterprise Security Weekly",
+      "title_full": "Enterprise Security Weekly — Security Weekly Podcast Network",
+      "description": "Enterprise-focused security interviews and weekly news (ESW #).",
+      "categories": ["tech", "security"],
+      "featured": true,
+      "filter": {
+        "type": "title_contains_any",
+        "values": ["ESW #", "ESW Vault", "Enterprise Security Weekly"]
+      }
+    },
+    {
+      "id": "pauls-security-weekly",
+      "title": "Paul's Security Weekly",
+      "title_full": "Paul's Security Weekly — Security Weekly Podcast Network",
+      "description": "Flagship show episodes (PSW #).",
+      "categories": ["tech", "security"],
+      "featured": true,
+      "filter": {
+        "type": "title_contains_any",
+        "values": ["PSW #", "PSW Vault", "Paul's Security Weekly"]
+      }
+    },
+    {
+      "id": "business-security-weekly",
+      "title": "Business Security Weekly",
+      "title_full": "Business Security Weekly — Security Weekly Podcast Network",
+      "description": "Security leadership, strategy, and business topics (BSW #).",
+      "categories": ["tech", "security"],
+      "featured": false,
+      "filter": {
+        "type": "title_contains_any",
+        "values": ["BSW #", "BSW Vault", "Business Security Weekly"]
+      }
+    },
+    {
+      "id": "application-security-weekly",
+      "title": "Application Security Weekly",
+      "title_full": "Application Security Weekly — Security Weekly Podcast Network",
+      "description": "AppSec interviews and topics (ASW #).",
+      "categories": ["tech", "security"],
+      "featured": false,
+      "filter": {
+        "type": "title_contains_any",
+        "values": ["ASW #", "ASW Vault", "Application Security Weekly"]
+      }
+    },
+    {
+      "id": "security-weekly-news",
+      "title": "Security Weekly News",
+      "title_full": "Security Weekly News — Security Weekly Podcast Network",
+      "description": "Network news roundup episodes (SWN #).",
+      "categories": ["tech", "security", "news"],
+      "featured": false,
+      "filter": {
+        "type": "title_contains_any",
+        "values": ["SWN #", "SWN Vault", "Security Weekly News"]
+      }
+    },
+    {
+      "id": "security-and-compliance-weekly",
+      "title": "Security & Compliance Weekly",
+      "title_full": "Security & Compliance Weekly — Security Weekly Podcast Network",
+      "description": "Security and compliance discussions (SCW #).",
+      "categories": ["tech", "security"],
+      "featured": false,
+      "filter": {
+        "type": "title_contains_any",
+        "values": [
+          "SCW #",
+          "SCW Vault",
+          "Security & Compliance Weekly",
+          "Security and Compliance Weekly"
+        ]
+      }
+    }
+  ]
+}

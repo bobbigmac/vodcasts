@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — Brentwood Baptist",
+  "leftovers_description": "Messages outside the main named series patterns.",
+  "shows": [
+    {
+      "id": "evacuation",
+      "title": "Evacuation",
+      "title_full": "Evacuation — Brentwood Baptist",
+      "description": "The evacuation-themed series messages (Moses/Exodus arc).",
+      "categories": ["sermons", "bible-teaching"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Evacuation" }
+    },
+    {
+      "id": "the-church",
+      "title": "The Church",
+      "title_full": "The Church — Brentwood Baptist",
+      "description": "Messages titled as a short series on the church (Sent/Deepened/Encouraged/etc.).",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Church" }
+    },
+    {
+      "id": "rhythms-of-a-sent-life",
+      "title": "Rhythms of a Sent Life",
+      "title_full": "Rhythms of a Sent Life — Brentwood Baptist",
+      "description": "Series messages in the Rhythms of a Sent Life set.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Rhythms of a Sent Life" }
+    }
+  ]
+}
+

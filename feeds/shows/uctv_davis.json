@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other talks",
+  "leftovers_title_full": "Other talks — UCTV (UC Davis)",
+  "leftovers_description": "Talks outside the main recurring UC Davis series buckets.",
+  "shows": [
+    {
+      "id": "that-may-be-the-chancellor",
+      "title": "That May Be the Chancellor",
+      "title_full": "That May Be the Chancellor — UCTV (UC Davis)",
+      "description": "That May Be the Chancellor series episodes.",
+      "categories": ["university"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^That May Be the Chancellor\\b" }
+    },
+    {
+      "id": "uc-davis-discoveries",
+      "title": "UC Davis Discoveries",
+      "title_full": "UC Davis Discoveries — UCTV (UC Davis)",
+      "description": "UC Davis Discoveries series episodes.",
+      "categories": ["university"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "UC Davis Discoveries" }
+    },
+    {
+      "id": "sustainably-uc-davis",
+      "title": "Sustainably UC Davis",
+      "title_full": "Sustainably UC Davis — UCTV (UC Davis)",
+      "description": "Sustainably UC Davis episodes.",
+      "categories": ["university", "science"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Sustainably UC Davis" }
+    }
+  ]
+}
+

@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — 700 Club Canada",
+  "leftovers_description": "Items outside the standard 700 Club Canada daily episode format.",
+  "shows": [
+    {
+      "id": "daily-episodes",
+      "title": "Daily Episodes",
+      "title_full": "Daily Episodes — 700 Club Canada",
+      "description": "Daily 700 Club Canada episodes.",
+      "categories": ["tv-ministry"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "700 Club Canada" }
+    }
+  ]
+}
+

@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — CBN Finances",
+  "leftovers_description": "Items outside the main finance clips.",
+  "shows": [
+    {
+      "id": "clips",
+      "title": "Finance Clips",
+      "title_full": "Finance Clips — CBN",
+      "description": "CBN finance-related clips and segments.",
+      "categories": ["lifestyle"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

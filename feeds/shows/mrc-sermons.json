@@ -1,0 +1,98 @@
+{
+  "leftovers_title": "Other sermons",
+  "leftovers_title_full": "Other sermons — MRC Sermons",
+  "leftovers_description": "Messages outside the main named series.",
+  "shows": [
+    {
+      "id": "book-of-acts",
+      "title": "The Book of Acts",
+      "title_full": "The Book of Acts — MRC Sermons",
+      "description": "Sermon series through Acts.",
+      "categories": ["sermons", "bible-study"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "The Book of Acts" }
+    },
+    {
+      "id": "reading-scripture",
+      "title": "Reading Scripture",
+      "title_full": "Reading Scripture — MRC Sermons",
+      "description": "Teaching series on reading and understanding the Bible.",
+      "categories": ["sermons", "teaching"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Reading Scripture" }
+    },
+    {
+      "id": "redemption",
+      "title": "Redemption",
+      "title_full": "Redemption — MRC Sermons",
+      "description": "Series exploring redemption in Scripture.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Redemption" }
+    },
+    {
+      "id": "joseph-and-jesus",
+      "title": "Joseph and Jesus",
+      "title_full": "Joseph and Jesus — MRC Sermons",
+      "description": "Series connecting Joseph’s story to Jesus.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Joseph and Jesus" }
+    },
+    {
+      "id": "the-story-our-story",
+      "title": "THE Story, OUR Story",
+      "title_full": "THE Story, OUR Story — MRC Sermons",
+      "description": "Series on God’s story and our place within it.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "THE Story, OUR Story" }
+    },
+    {
+      "id": "lords-prayer",
+      "title": "The Lord's Prayer",
+      "title_full": "The Lord's Prayer — MRC Sermons",
+      "description": "Messages unpacking the Lord’s Prayer.",
+      "categories": ["sermons", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Lord's Prayer" }
+    },
+    {
+      "id": "beginning-the-journey",
+      "title": "Beginning the Journey",
+      "title_full": "Beginning the Journey — MRC Sermons",
+      "description": "Series on identity, purpose, and discipleship.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Beginning the Journey" }
+    },
+    {
+      "id": "the-incarnation",
+      "title": "The Incarnation",
+      "title_full": "The Incarnation — MRC Sermons",
+      "description": "Advent/Christmas-season teaching on the incarnation.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Incarnation" }
+    },
+    {
+      "id": "grace-upon-grace",
+      "title": "Grace Upon Grace",
+      "title_full": "Grace Upon Grace — MRC Sermons",
+      "description": "Series focused on grace in the Christian life.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Grace Upon Grace" }
+    },
+    {
+      "id": "haggai",
+      "title": "Haggai",
+      "title_full": "Haggai — MRC Sermons",
+      "description": "Teaching series through the book of Haggai.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Haggai" }
+    }
+  ]
+}
+

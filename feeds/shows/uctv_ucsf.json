@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other talks",
+  "leftovers_title_full": "Other talks — UCTV (UCSF)",
+  "leftovers_description": "Talks outside the main recurring UCSF buckets.",
+  "shows": [
+    {
+      "id": "prostate-cancer",
+      "title": "Prostate Cancer",
+      "title_full": "Prostate Cancer — UCTV (UCSF)",
+      "description": "UCSF prostate cancer talks and panels.",
+      "categories": ["university", "health"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Prostate Cancer" }
+    },
+    {
+      "id": "mcrpc",
+      "title": "mCRPC",
+      "title_full": "mCRPC — UCTV (UCSF)",
+      "description": "mCRPC-labeled talks.",
+      "categories": ["university", "health"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\(mCRPC\\)\\s*$" }
+    }
+  ]
+}
+

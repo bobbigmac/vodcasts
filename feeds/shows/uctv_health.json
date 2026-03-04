@@ -1,0 +1,62 @@
+{
+  "leftovers_title": "Other talks",
+  "leftovers_title_full": "Other talks — UCTV (Health & Medicine)",
+  "leftovers_description": "Health and medicine talks outside the main recurring buckets.",
+  "shows": [
+    {
+      "id": "prostate-cancer",
+      "title": "Prostate Cancer",
+      "title_full": "Prostate Cancer — UCTV (Health & Medicine)",
+      "description": "Prostate cancer talks and panels.",
+      "categories": ["university", "health"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Prostate Cancer" }
+    },
+    {
+      "id": "mind",
+      "title": "MIND",
+      "title_full": "MIND — UCTV (Health & Medicine)",
+      "description": "Medicine Informing Novel Discoveries (MIND).",
+      "categories": ["university", "health"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "\\(MIND\\)\\s*$" }
+    },
+    {
+      "id": "glow",
+      "title": "GLOW",
+      "title_full": "GLOW — UCTV (Health & Medicine)",
+      "description": "GLOW series episodes.",
+      "categories": ["university", "health"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\(GLOW\\)\\s*$" }
+    },
+    {
+      "id": "hubmap",
+      "title": "HUBMAP",
+      "title_full": "HUBMAP — UCTV (Health & Medicine)",
+      "description": "HUBMAP series episodes.",
+      "categories": ["university", "health"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\(HUBMAP\\)\\s*$" }
+    },
+    {
+      "id": "mcrpc",
+      "title": "mCRPC",
+      "title_full": "mCRPC — UCTV (Health & Medicine)",
+      "description": "mCRPC-labeled talks.",
+      "categories": ["university", "health"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\(mCRPC\\)\\s*$" }
+    },
+    {
+      "id": "hmi",
+      "title": "HMI",
+      "title_full": "HMI — UCTV (Health & Medicine)",
+      "description": "HMI-labeled talks.",
+      "categories": ["university", "health"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\(HMI\\)\\s*$" }
+    }
+  ]
+}
+

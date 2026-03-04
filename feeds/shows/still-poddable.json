@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other episodes",
+  "leftovers_title_full": "Other episodes — Still Poddable",
+  "leftovers_description": "Episodes outside the main recurring segments.",
+  "shows": [
+    {
+      "id": "mailbag",
+      "title": "Celtics Mailbag",
+      "title_full": "Celtics Mailbag — Still Poddable",
+      "description": "Mailbag Q&A episodes.",
+      "categories": ["sports"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Celtics Mailbag" }
+    },
+    {
+      "id": "six-pack",
+      "title": "Poddable 6‑Pack",
+      "title_full": "Poddable 6‑Pack — Still Poddable",
+      "description": "Poddable 6-Pack episodes.",
+      "categories": ["sports"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Poddable\\s+6-?Pack\\b" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Still Poddable",
+      "description": "Regular Still Poddable episodes.",
+      "categories": ["sports"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

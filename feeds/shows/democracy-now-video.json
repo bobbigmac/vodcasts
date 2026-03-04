@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Democracy Now!",
+  "leftovers_description": "Items outside the standard daily show titles.",
+  "shows": [
+    {
+      "id": "daily-shows",
+      "title": "Daily Shows",
+      "title_full": "Daily Shows — Democracy Now!",
+      "description": "Daily Democracy Now! video episodes.",
+      "categories": ["news"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Democracy Now!" }
+    }
+  ]
+}
+

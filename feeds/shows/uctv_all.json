@@ -1,0 +1,89 @@
+{
+  "leftovers_title": "Other talks",
+  "leftovers_title_full": "Other talks — UCTV",
+  "leftovers_description": "Talks and clips outside the major recurring UCTV series buckets.",
+  "shows": [
+    {
+      "id": "carta",
+      "title": "CARTA",
+      "title_full": "CARTA — UCTV",
+      "description": "CARTA conference talks and Q&A sessions.",
+      "categories": ["university", "science"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "CARTA" }
+    },
+    {
+      "id": "panic",
+      "title": "Panic!",
+      "title_full": "Panic! — UCTV",
+      "description": "Panic! series episodes.",
+      "categories": ["university"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Panic!" }
+    },
+    {
+      "id": "prostate-cancer",
+      "title": "Prostate Cancer",
+      "title_full": "Prostate Cancer — UCTV",
+      "description": "Prostate cancer talks and panels.",
+      "categories": ["university", "health"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Prostate Cancer" }
+    },
+    {
+      "id": "cwc-global",
+      "title": "CWC Global",
+      "title_full": "CWC Global — UCTV",
+      "description": "CWC Global series episodes.",
+      "categories": ["university"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "CWC Global" }
+    },
+    {
+      "id": "mind",
+      "title": "MIND",
+      "title_full": "MIND — UCTV",
+      "description": "Medicine Informing Novel Discoveries (MIND).",
+      "categories": ["university", "health"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\(MIND\\)\\s*$" }
+    },
+    {
+      "id": "glow",
+      "title": "GLOW",
+      "title_full": "GLOW — UCTV",
+      "description": "GLOW series episodes.",
+      "categories": ["university", "health"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\(GLOW\\)\\s*$" }
+    },
+    {
+      "id": "hubmap",
+      "title": "HUBMAP",
+      "title_full": "HUBMAP — UCTV",
+      "description": "HUBMAP series episodes.",
+      "categories": ["university", "health"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\(HUBMAP\\)\\s*$" }
+    },
+    {
+      "id": "mcrpc",
+      "title": "mCRPC",
+      "title_full": "mCRPC — UCTV",
+      "description": "mCRPC-labeled talks.",
+      "categories": ["university", "health"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\(mCRPC\\)\\s*$" }
+    },
+    {
+      "id": "hmi",
+      "title": "HMI",
+      "title_full": "HMI — UCTV",
+      "description": "HMI-labeled talks.",
+      "categories": ["university"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\(HMI\\)\\s*$" }
+    }
+  ]
+}
+

@@ -1,0 +1,44 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — Mount Calvary Lutheran",
+  "leftovers_description": "Messages outside the primary sermon buckets.",
+  "shows": [
+    {
+      "id": "holiday-messages",
+      "title": "Holiday Messages",
+      "title_full": "Holiday Messages — Mount Calvary Lutheran",
+      "description": "Christmas and Easter services and messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains_any", "values": ["Christmas", "Easter"] }
+    },
+    {
+      "id": "midweek-sermons",
+      "title": "Midweek Sermons",
+      "title_full": "Midweek Sermons — Mount Calvary Lutheran",
+      "description": "Midweek services (Advent/Lent/Ash Wednesday).",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains_any", "values": ["Midweek", "Ash Wednesday"] }
+    },
+    {
+      "id": "sunday-sermons",
+      "title": "Sunday Sermons",
+      "title_full": "Sunday Sermons — Mount Calvary Lutheran",
+      "description": "Regular Sunday sermon messages.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Sunday Sermon" }
+    },
+    {
+      "id": "other-sermons",
+      "title": "Other Sermons",
+      "title_full": "Other Sermons — Mount Calvary Lutheran",
+      "description": "Other sermon posts that use a generic Sermon prefix.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Sermon" }
+    }
+  ]
+}
+

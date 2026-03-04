@@ -1,0 +1,62 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — Brian Houston",
+  "leftovers_description": "Messages outside the main named series.",
+  "shows": [
+    {
+      "id": "brian-houston-tv",
+      "title": "Brian Houston TV",
+      "title_full": "Brian Houston TV — Brian Houston",
+      "description": "Episodes labeled as Brian Houston TV.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Brian Houston TV" }
+    },
+    {
+      "id": "you-are-the-one",
+      "title": "You Are The One",
+      "title_full": "You Are The One — Brian Houston",
+      "description": "You Are The One series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "You Are The One" }
+    },
+    {
+      "id": "kings-and-queens",
+      "title": "Kings And Queens",
+      "title_full": "Kings And Queens — Brian Houston",
+      "description": "Kings And Queens series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Kings And Queens" }
+    },
+    {
+      "id": "raising-kings",
+      "title": "Raising Kings",
+      "title_full": "Raising Kings — Brian Houston",
+      "description": "Raising Kings multi-part messages.",
+      "categories": ["sermons", "family"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Raising Kings" }
+    },
+    {
+      "id": "my-hand",
+      "title": "My Hand",
+      "title_full": "My Hand — Brian Houston",
+      "description": "My Hand series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "My Hand" }
+    },
+    {
+      "id": "my-faith",
+      "title": "My Faith",
+      "title_full": "My Faith — Brian Houston",
+      "description": "My Faith series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "My Faith" }
+    }
+  ]
+}
+

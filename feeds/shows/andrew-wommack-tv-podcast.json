@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Andrew Wommack TV",
+  "leftovers_description": "Items outside the main Gospel Truth TV episodes.",
+  "shows": [
+    {
+      "id": "gospel-truth-tv",
+      "title": "Gospel Truth TV",
+      "title_full": "Gospel Truth TV — Andrew Wommack TV",
+      "description": "Daily Gospel Truth TV broadcasts.",
+      "categories": ["tv-ministry", "teaching"],
+      "featured": true,
+      "filter": { "type": "title_suffix", "value": "Gospel Truth TV" }
+    }
+  ]
+}
+

@@ -1,0 +1,19 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Enterprise Security Weekly",
+  "leftovers_description": "Items that don’t match the usual ESW numbering.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Enterprise Security Weekly",
+      "description": "Standard episodes labeled with ESW episode numbers.",
+      "categories": ["tech", "security"],
+      "featured": true,
+      "filter": {
+        "type": "title_contains_any",
+        "values": ["ESW #", "ESW Vault", "Enterprise Security Weekly"]
+      }
+    }
+  ]
+}

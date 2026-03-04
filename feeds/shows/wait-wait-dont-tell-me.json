@@ -1,0 +1,53 @@
+{
+  "leftovers_title": "Other segments",
+  "leftovers_title_full": "Other segments — Wait Wait... Don't Tell Me!",
+  "leftovers_description": "Episodes that don’t match the main segment title prefixes.",
+  "shows": [
+    {
+      "id": "wwdtm",
+      "title": "WWDTM",
+      "title_full": "WWDTM — Wait Wait... Don't Tell Me!",
+      "description": "Main show episodes labeled with the WWDTM prefix.",
+      "categories": ["radio", "comedy"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "WWDTM:" }
+    },
+    {
+      "id": "htde",
+      "title": "HTDE",
+      "title_full": "HTDE — Wait Wait... Don't Tell Me!",
+      "description": "How To Do Everything segments (HTDE).",
+      "categories": ["radio", "comedy"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "HTDE:" }
+    },
+    {
+      "id": "anthology",
+      "title": "The Wait Wait Anthology",
+      "title_full": "The Wait Wait Anthology — Wait Wait... Don't Tell Me!",
+      "description": "Compilation and retrospective episodes.",
+      "categories": ["radio", "comedy"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Wait Wait Anthology" }
+    },
+    {
+      "id": "wayback-machine",
+      "title": "Wayback Machine",
+      "title_full": "Wayback Machine — Wait Wait... Don't Tell Me!",
+      "description": "Wayback Machine segments.",
+      "categories": ["radio", "comedy"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Wait Wait Wayback Machine" }
+    },
+    {
+      "id": "bonus",
+      "title": "Bonus / Extended",
+      "title_full": "Bonus / Extended — Wait Wait... Don't Tell Me!",
+      "description": "Bonus cuts and extended editions.",
+      "categories": ["radio", "comedy"],
+      "featured": false,
+      "filter": { "type": "title_contains_any", "values": ["BONUS", "Extended cut"] }
+    }
+  ]
+}
+

@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other clips",
+  "leftovers_title_full": "Other clips — CBN Health",
+  "leftovers_description": "Health and lifestyle clips outside the main Healthy Living episodes.",
+  "shows": [
+    {
+      "id": "newswatch-clips",
+      "title": "NewsWatch Clips",
+      "title_full": "NewsWatch Clips — CBN Health",
+      "description": "Cross-posted CBN NewsWatch clips that appear in this feed.",
+      "categories": ["news"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "CBN NewsWatch" }
+    },
+    {
+      "id": "healthy-living",
+      "title": "Healthy Living",
+      "title_full": "Healthy Living — CBN",
+      "description": "Healthy Living episodes.",
+      "categories": ["lifestyle", "health"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Healthy Living" }
+    }
+  ]
+}
+

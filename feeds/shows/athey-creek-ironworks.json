@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Athey Creek Ironworks",
+  "leftovers_description": "Items outside the main Ironworks buckets.",
+  "shows": [
+    {
+      "id": "guest-speaker",
+      "title": "Guest Speaker",
+      "title_full": "Guest Speaker — Athey Creek Ironworks",
+      "description": "Guest speaker sessions within Ironworks.",
+      "categories": ["ministry", "men"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Guest Speaker" }
+    },
+    {
+      "id": "personal-devotion",
+      "title": "Personal Devotion",
+      "title_full": "Personal Devotion — Athey Creek Ironworks",
+      "description": "Short personal devotion episodes within Ironworks.",
+      "categories": ["ministry", "men", "devotional"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Personal Devotion" }
+    },
+    {
+      "id": "ironworks",
+      "title": "Ironworks",
+      "title_full": "Ironworks — Athey Creek",
+      "description": "Regular Ironworks sessions.",
+      "categories": ["ministry", "men"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Ironworks" }
+    }
+  ]
+}
+

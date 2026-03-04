@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other clips",
+  "leftovers_title_full": "Other clips — CBN NewsWatch",
+  "leftovers_description": "Items outside the main NewsWatch buckets.",
+  "shows": [
+    {
+      "id": "newswatch-am",
+      "title": "NewsWatch AM",
+      "title_full": "NewsWatch AM — CBN",
+      "description": "Morning NewsWatch AM episodes.",
+      "categories": ["news"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "CBN NewsWatch AM" }
+    },
+    {
+      "id": "newswatch",
+      "title": "NewsWatch",
+      "title_full": "NewsWatch — CBN",
+      "description": "NewsWatch clips and episodes (alternate title formatting).",
+      "categories": ["news"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "CBN NewsWatch" }
+    }
+  ]
+}
+

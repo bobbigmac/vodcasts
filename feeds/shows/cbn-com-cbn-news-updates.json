@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — CBN News Updates",
+  "leftovers_description": "Items outside the standard update formats.",
+  "shows": [
+    {
+      "id": "cbn-news-today",
+      "title": "CBN News Today",
+      "title_full": "CBN News Today — CBN",
+      "description": "CBN News Today update items.",
+      "categories": ["news"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "CBN News Today" }
+    },
+    {
+      "id": "cbn-newswatch",
+      "title": "CBN NewsWatch",
+      "title_full": "CBN NewsWatch — CBN",
+      "description": "CBN NewsWatch update items.",
+      "categories": ["news"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "CBN NewsWatch" }
+    }
+  ]
+}
+

@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — CBN Spiritual Gifts: Foundations",
+  "leftovers_description": "Items outside the main lesson set.",
+  "shows": [
+    {
+      "id": "lessons",
+      "title": "Lessons",
+      "title_full": "Lessons — CBN Spiritual Gifts: Foundations",
+      "description": "The Spiritual Gifts: Foundations teaching series lessons.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

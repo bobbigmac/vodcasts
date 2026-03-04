@@ -87,11 +87,6 @@
 - title: Kinda Funny Gamescast: Video Game Podcast
 - category: podcastindex
 
-## kinda-funny-gamescast-video-game-podcast-2
-- url: https://feeds.megaphone.fm/ROOSTER3727935380
-- title: Kinda Funny Gamescast: Video Game Podcast
-- category: podcastindex
-
 ## autoline-daily-video
 - url: http://www.autoline.tv/podcasts/feeds/autoline-daily-video.xml
 - title: Autoline Daily - Video

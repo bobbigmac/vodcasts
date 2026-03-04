@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — 700 Club Interactive",
+  "leftovers_description": "Items outside the main Interactive episodes.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — 700 Club Interactive",
+      "description": "Daily 700 Club Interactive episodes.",
+      "categories": ["tv-ministry", "news"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "700 Club Interactive" }
+    }
+  ]
+}
+

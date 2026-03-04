@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — The 700 Club",
+  "leftovers_description": "Items outside the standard The 700 Club daily episode format.",
+  "shows": [
+    {
+      "id": "daily-episodes",
+      "title": "Daily Episodes",
+      "title_full": "Daily Episodes — The 700 Club",
+      "description": "Daily The 700 Club episodes.",
+      "categories": ["tv-ministry"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "The 700 Club" }
+    }
+  ]
+}
+

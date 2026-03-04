@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — ASPIRE 2011 Pastors' Conference",
+  "leftovers_description": "Items outside the main conference message set.",
+  "shows": [
+    {
+      "id": "messages",
+      "title": "Conference Messages",
+      "title_full": "Conference Messages — ASPIRE 2011 Pastors' Conference",
+      "description": "ASPIRE conference messages.",
+      "categories": ["ministry", "conferences"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "ASPIRE Msg" }
+    }
+  ]
+}
+

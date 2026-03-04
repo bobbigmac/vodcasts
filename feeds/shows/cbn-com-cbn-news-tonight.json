@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — CBN News Tonight",
+  "leftovers_description": "Items outside the standard evening broadcast formats.",
+  "shows": [
+    {
+      "id": "evening-edition",
+      "title": "Evening Edition",
+      "title_full": "Evening Edition — CBN News",
+      "description": "News Channel Evening Edition broadcasts.",
+      "categories": ["news"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "News Channel Evening Edition" }
+    },
+    {
+      "id": "cbn-news-tonight",
+      "title": "CBN News Tonight",
+      "title_full": "CBN News Tonight — CBN",
+      "description": "CBN News Tonight-labeled broadcasts.",
+      "categories": ["news"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "CBN News Tonight" }
+    }
+  ]
+}
+

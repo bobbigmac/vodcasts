@@ -1,0 +1,44 @@
+{
+  "leftovers_title": "Other episodes",
+  "leftovers_title_full": "Other episodes — Fallout Lorecast",
+  "leftovers_description": "Items outside the main Fallout Lorecast buckets.",
+  "shows": [
+    {
+      "id": "patron-chat",
+      "title": "Patron Chat",
+      "title_full": "Patron Chat — Fallout Lorecast",
+      "description": "Patron chat and community episodes.",
+      "categories": ["tech", "gaming"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Patron Chat" }
+    },
+    {
+      "id": "tv-recaps",
+      "title": "Fallout TV Recaps",
+      "title_full": "Fallout TV Recaps — Fallout Lorecast",
+      "description": "Episode recaps and breakdowns for the Fallout TV series.",
+      "categories": ["tech", "gaming"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Fallout TV" }
+    },
+    {
+      "id": "interviews",
+      "title": "Interviews",
+      "title_full": "Interviews — Fallout Lorecast",
+      "description": "Interview episodes.",
+      "categories": ["tech", "gaming"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Interview" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Fallout Lorecast",
+      "description": "Numbered Fallout Lorecast episodes.",
+      "categories": ["tech", "gaming"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^\\d+\\s*:" }
+    }
+  ]
+}
+

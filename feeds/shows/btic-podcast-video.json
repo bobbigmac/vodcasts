@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — BTIC Podcast",
+  "leftovers_description": "Messages outside the primary buckets.",
+  "shows": [
+    {
+      "id": "livestreams",
+      "title": "Livestreams",
+      "title_full": "Livestreams — BTIC Podcast",
+      "description": "Livestream-labeled episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\(Livestream\\)\\s*$" }
+    },
+    {
+      "id": "messages",
+      "title": "Messages",
+      "title_full": "Messages — BTIC Podcast",
+      "description": "Regular message episodes.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

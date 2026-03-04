@@ -1,0 +1,98 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — Heritage",
+  "leftovers_description": "Messages outside the main named series.",
+  "shows": [
+    {
+      "id": "fit-for-life",
+      "title": "Fit For Life",
+      "title_full": "Fit For Life — Heritage",
+      "description": "Fit For Life series messages (Mind/Spirit/Communion sub-weeks).",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Fit For Life" }
+    },
+    {
+      "id": "all-you-need-is-love",
+      "title": "All You Need Is Love",
+      "title_full": "All You Need Is Love — Heritage",
+      "description": "Series messages themed around love and discipleship.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "All You Need Is Love" }
+    },
+    {
+      "id": "life-in-circles",
+      "title": "Life in Circles",
+      "title_full": "Life in Circles — Heritage",
+      "description": "Life in Circles series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Life in Circles" }
+    },
+    {
+      "id": "joy-unspeakable",
+      "title": "Joy Unspeakable",
+      "title_full": "Joy Unspeakable — Heritage",
+      "description": "Joy Unspeakable series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Joy Unspeakable" }
+    },
+    {
+      "id": "psalms",
+      "title": "Psalms",
+      "title_full": "Psalms — Heritage",
+      "description": "Messages through selected Psalms.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Psalms" }
+    },
+    {
+      "id": "unfiltered-family",
+      "title": "Unfiltered Family",
+      "title_full": "Unfiltered Family — Heritage",
+      "description": "Unfiltered Family series messages.",
+      "categories": ["sermons", "family"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Unfiltered Family" }
+    },
+    {
+      "id": "cross-and-crown",
+      "title": "Cross & Crown",
+      "title_full": "Cross & Crown — Heritage",
+      "description": "Cross & Crown series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Cross & Crown" }
+    },
+    {
+      "id": "grit",
+      "title": "GRIT",
+      "title_full": "GRIT — Heritage",
+      "description": "GRIT series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "GRIT" }
+    },
+    {
+      "id": "light-of-the-world",
+      "title": "Light of the World",
+      "title_full": "Light of the World — Heritage",
+      "description": "Light of the World series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Light of the World" }
+    },
+    {
+      "id": "seasons",
+      "title": "Seasons",
+      "title_full": "Seasons — Heritage",
+      "description": "Seasons series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Seasons" }
+    }
+  ]
+}
+

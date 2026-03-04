@@ -1,0 +1,44 @@
+{
+  "leftovers_title": "Other devotionals",
+  "leftovers_title_full": "Other devotionals — Archbishop Foley Beach",
+  "leftovers_description": "Devotional videos outside the main seasonal/special buckets.",
+  "shows": [
+    {
+      "id": "special-messages",
+      "title": "Special Messages",
+      "title_full": "Special Messages — Archbishop Foley Beach",
+      "description": "Short special messages and support/mission updates.",
+      "categories": ["devotional"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "SPECIAL" }
+    },
+    {
+      "id": "preparing-for-lent",
+      "title": "Preparing for Lent",
+      "title_full": "Preparing for Lent — Archbishop Foley Beach",
+      "description": "Preparing for Lent devotional series.",
+      "categories": ["devotional"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Preparing for Lent" }
+    },
+    {
+      "id": "advent-devotionals",
+      "title": "Advent Devotionals",
+      "title_full": "Advent Devotionals — Archbishop Foley Beach",
+      "description": "Advent devotional series.",
+      "categories": ["devotional"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Advent Devotionals" }
+    },
+    {
+      "id": "devotional-video",
+      "title": "Devotional Video",
+      "title_full": "Devotional Video — Archbishop Foley Beach",
+      "description": "Items explicitly labeled as DEVOTIONAL VIDEO.",
+      "categories": ["devotional"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "DEVOTIONAL VIDEO" }
+    }
+  ]
+}
+

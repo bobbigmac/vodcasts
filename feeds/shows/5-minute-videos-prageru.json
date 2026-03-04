@@ -1,0 +1,44 @@
+{
+  "leftovers_title": "Other videos",
+  "leftovers_title_full": "Other videos — PragerU",
+  "leftovers_description": "Videos outside the main recurring series buckets.",
+  "shows": [
+    {
+      "id": "hall-of-evil",
+      "title": "The Hall of Evil",
+      "title_full": "The Hall of Evil — PragerU",
+      "description": "Short biographies of influential villains and destructive ideologies.",
+      "categories": ["education"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "The Hall of Evil" }
+    },
+    {
+      "id": "colonial-america",
+      "title": "Colonial America",
+      "title_full": "Colonial America — PragerU",
+      "description": "Colonial America mini-series episodes.",
+      "categories": ["education", "history"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Colonial America" }
+    },
+    {
+      "id": "israel-at-war",
+      "title": "Israel at War",
+      "title_full": "Israel at War — PragerU",
+      "description": "Israel at War series episodes.",
+      "categories": ["education", "news"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Israel at War" }
+    },
+    {
+      "id": "russiagate",
+      "title": "Russiagate",
+      "title_full": "Russiagate — PragerU",
+      "description": "Russiagate series episodes.",
+      "categories": ["education", "history"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Russiagate" }
+    }
+  ]
+}
+

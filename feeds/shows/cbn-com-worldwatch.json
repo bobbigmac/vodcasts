@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — WorldWatch",
+  "leftovers_description": "Items outside the standard WorldWatch episodes.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — WorldWatch",
+      "description": "WorldWatch episodes (dated).",
+      "categories": ["news"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "WorldWatch" }
+    }
+  ]
+}
+

@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Christian Wealth",
+  "leftovers_description": "Items outside the numbered episode format.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Christian Wealth",
+      "description": "Numbered Christian Wealth episodes.",
+      "categories": ["lifestyle"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^Episode\\s*\\d+\\s*:" }
+    }
+  ]
+}
+

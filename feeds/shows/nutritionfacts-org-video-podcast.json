@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other videos",
+  "leftovers_title_full": "Other videos — NutritionFacts.org",
+  "leftovers_description": "Videos outside the main recurring series buckets.",
+  "shows": [
+    {
+      "id": "friday-favorites",
+      "title": "Friday Favorites",
+      "title_full": "Friday Favorites — NutritionFacts.org",
+      "description": "Friday Favorites episodes.",
+      "categories": ["health"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Friday Favorites" }
+    },
+    {
+      "id": "recipes",
+      "title": "Healthy, Easy Recipes",
+      "title_full": "Healthy, Easy Recipes — NutritionFacts.org",
+      "description": "Recipe-focused videos.",
+      "categories": ["health"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Healthy, Easy Recipes" }
+    },
+    {
+      "id": "videos",
+      "title": "Videos",
+      "title_full": "Videos — NutritionFacts.org",
+      "description": "All other NutritionFacts.org videos.",
+      "categories": ["health"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

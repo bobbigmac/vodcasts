@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other lessons",
+  "leftovers_title_full": "Other lessons — Better Bible Study",
+  "leftovers_description": "Lessons outside the main Q&A and Guided Growth tracks.",
+  "shows": [
+    {
+      "id": "q-and-a",
+      "title": "Q&A",
+      "title_full": "Q&A — Better Bible Study",
+      "description": "Question and answer episodes (QnA).",
+      "categories": ["bible-study", "q-and-a"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^\\d+\\s*QnA\\b" }
+    },
+    {
+      "id": "guided-growth",
+      "title": "Guided Growth",
+      "title_full": "Guided Growth — Better Bible Study",
+      "description": "Guided Growth episodes (GG).",
+      "categories": ["bible-study", "teaching"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^\\d+\\s*GG\\b" }
+    }
+  ]
+}
+

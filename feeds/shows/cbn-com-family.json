@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other clips",
+  "leftovers_title_full": "Other clips — CBN Family",
+  "leftovers_description": "Family and lifestyle clips outside the most clearly labeled series.",
+  "shows": [
+    {
+      "id": "faithwire",
+      "title": "Faithwire",
+      "title_full": "Faithwire — CBN Family",
+      "description": "Faithwire-labeled clips.",
+      "categories": ["lifestyle"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Faithwire" }
+    },
+    {
+      "id": "uncomplicate-it",
+      "title": "Uncomplicate It",
+      "title_full": "Uncomplicate It — CBN Family",
+      "description": "Uncomplicate It clips.",
+      "categories": ["lifestyle"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Uncomplicate It" }
+    },
+    {
+      "id": "jerusalem-dateline",
+      "title": "Jerusalem Dateline",
+      "title_full": "Jerusalem Dateline — CBN Family",
+      "description": "Cross-posted Jerusalem Dateline segments.",
+      "categories": ["news"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Jerusalem Dateline" }
+    }
+  ]
+}
+

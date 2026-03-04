@@ -1,0 +1,71 @@
+{
+  "leftovers_title": "Other seasons",
+  "leftovers_title_full": "Other seasons — Luther for the Busy Man",
+  "leftovers_description": "Readings and meditations outside the main season buckets.",
+  "shows": [
+    {
+      "id": "lent",
+      "title": "Lent",
+      "title_full": "Lent — Luther for the Busy Man",
+      "description": "Daily readings and meditations during Lent.",
+      "categories": ["teaching", "devotional"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Lent" }
+    },
+    {
+      "id": "easter",
+      "title": "Easter",
+      "title_full": "Easter — Luther for the Busy Man",
+      "description": "Easter season readings and reflections.",
+      "categories": ["teaching", "devotional"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Easter\\b" }
+    },
+    {
+      "id": "advent",
+      "title": "Advent",
+      "title_full": "Advent — Luther for the Busy Man",
+      "description": "Advent season readings and reflections.",
+      "categories": ["teaching", "devotional"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Advent\\b" }
+    },
+    {
+      "id": "christmas",
+      "title": "Christmas",
+      "title_full": "Christmas — Luther for the Busy Man",
+      "description": "Christmas season readings and reflections.",
+      "categories": ["teaching", "devotional"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Christmas\\b" }
+    },
+    {
+      "id": "epiphany",
+      "title": "Epiphany",
+      "title_full": "Epiphany — Luther for the Busy Man",
+      "description": "Epiphany season readings and reflections.",
+      "categories": ["teaching", "devotional"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Epiphany\\b" }
+    },
+    {
+      "id": "trinity",
+      "title": "Trinity",
+      "title_full": "Trinity — Luther for the Busy Man",
+      "description": "Week-by-week readings for the season after Trinity.",
+      "categories": ["teaching", "devotional"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Week of Trinity\\b" }
+    },
+    {
+      "id": "pre-lent",
+      "title": "Pre‑Lent (Gesimatide)",
+      "title_full": "Pre‑Lent (Gesimatide) — Luther for the Busy Man",
+      "description": "Septuagesima/Sexagesima/Quinquagesima weeks leading into Lent.",
+      "categories": ["teaching", "devotional"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Week of (Septuagesima|Sexagesima|Quinquagesima)\\b" }
+    }
+  ]
+}
+

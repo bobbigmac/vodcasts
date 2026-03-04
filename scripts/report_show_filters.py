@@ -29,6 +29,12 @@ def _parse_args() -> argparse.Namespace:
     p.add_argument("--limit", type=int, default=160, help="Max episode titles per feed to analyze (default 160).")
     p.add_argument("--max-feeds", type=int, default=0, help="Limit feeds processed (0 = all).")
     p.add_argument(
+        "--max-missing",
+        type=int,
+        default=0,
+        help="Limit missing feeds included in the report (0 = all). When combined with --only-missing, stops scanning after this many missing feeds.",
+    )
+    p.add_argument(
         "--feed-id",
         action="append",
         default=[],
@@ -221,6 +227,7 @@ def main() -> None:
     out_path = Path(args.out)
     limit = max(0, int(args.limit))
     max_feeds = max(0, int(args.max_feeds))
+    max_missing = max(0, int(args.max_missing))
     wanted_feed_ids = {str(x).strip() for x in (args.feed_id or []) if str(x).strip()}
 
     cfg = load_sources_config(feeds_path)
@@ -236,8 +243,10 @@ def main() -> None:
     missing_filters: list[FeedScan] = []
     with_filter_sources: list[Source] = []
     parse_errors: list[FeedScan] = []
+    processed_sources = 0
 
     for s in sources:
+        processed_sources += 1
         has_filters = (shows_dir / f"{s.id}.json").exists()
         if args.only_missing and has_filters:
             continue
@@ -251,9 +260,13 @@ def main() -> None:
             parse_errors.append(scan)
         else:
             missing_filters.append(scan)
+        if args.only_missing and max_missing and (len(missing_filters) + len(parse_errors) >= max_missing):
+            break
 
     missing_filters.sort(key=lambda x: (-x.episode_count, x.source.id))
     with_filter_sources.sort(key=lambda x: x.id)
+    if max_missing and missing_filters:
+        missing_filters = missing_filters[:max_missing]
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
 
@@ -264,7 +277,8 @@ def main() -> None:
     lines.append(f"- Cache: `{cache_root}`")
     lines.append(f"- Title scan limit: `{limit}`")
     lines.append("")
-    lines.append(f"- Total feeds scanned: **{len(sources)}**")
+    lines.append(f"- Total feeds in selection: **{len(sources)}**")
+    lines.append(f"- Feeds processed: **{processed_sources}**")
     lines.append(f"- With show filters: **{len(with_filter_sources)}**")
     lines.append(f"- Missing show filters: **{len(missing_filters)}**")
     if parse_errors:

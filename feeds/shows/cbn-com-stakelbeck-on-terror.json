@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Stakelbeck on Terror",
+  "leftovers_description": "Items outside the main Watchman-labeled episodes.",
+  "shows": [
+    {
+      "id": "the-watchman",
+      "title": "The Watchman",
+      "title_full": "The Watchman — Stakelbeck on Terror",
+      "description": "The Watchman episodes and specials.",
+      "categories": ["news"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "The Watchman" }
+    }
+  ]
+}
+

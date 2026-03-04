@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Christian World News",
+  "leftovers_description": "Items outside the main Christian World News episodes.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Christian World News",
+      "title_full": "Christian World News — CBN",
+      "description": "Weekly Christian World News episodes.",
+      "categories": ["news"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Christian World News" }
+    }
+  ]
+}
+

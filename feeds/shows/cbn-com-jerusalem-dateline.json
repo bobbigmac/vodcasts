@@ -1,0 +1,25 @@
+{
+  "leftovers_title": "Other clips",
+  "leftovers_title_full": "Other clips — Jerusalem Dateline",
+  "leftovers_description": "Items that don’t include the standard Jerusalem Dateline label in the title.",
+  "shows": [
+    {
+      "id": "jerusalem-dateline-labeled",
+      "title": "Jerusalem Dateline",
+      "title_full": "Jerusalem Dateline — CBN",
+      "description": "Episodes and segments that explicitly include the Jerusalem Dateline label.",
+      "categories": ["news"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Jerusalem Dateline" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Jerusalem Dateline",
+      "description": "All Jerusalem Dateline episodes (many are dated without the show label).",
+      "categories": ["news"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}

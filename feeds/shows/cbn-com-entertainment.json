@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — CBN Entertainment",
+  "leftovers_description": "Entertainment clips and cross-posts.",
+  "shows": [
+    {
+      "id": "newswatch-clips",
+      "title": "NewsWatch Clips",
+      "title_full": "NewsWatch Clips — CBN Entertainment",
+      "description": "Cross-posted CBN NewsWatch clips that appear in this feed.",
+      "categories": ["news"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "CBN NewsWatch" }
+    },
+    {
+      "id": "entertainment",
+      "title": "Entertainment",
+      "title_full": "Entertainment — CBN",
+      "description": "Entertainment clips and segments.",
+      "categories": ["lifestyle"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

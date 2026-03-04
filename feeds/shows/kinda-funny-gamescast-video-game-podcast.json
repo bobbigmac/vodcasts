@@ -1,0 +1,61 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Kinda Funny Gamescast",
+  "leftovers_description": "Episodes that don’t match the standard suffix labeling.",
+  "shows": [
+    {
+      "id": "live-reactions",
+      "title": "Live Reactions",
+      "title_full": "Live Reactions — Kinda Funny Gamescast",
+      "description": "Live reactions and watch-alongs (often labeled in the title).",
+      "categories": ["tech", "gaming"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Live Reaction" }
+    },
+    {
+      "id": "gamescast-plays",
+      "title": "Gamescast Plays",
+      "title_full": "Gamescast Plays — Kinda Funny Gamescast",
+      "description": "Gameplay and spoiler streams labeled as Gamescast Plays.",
+      "categories": ["tech", "gaming"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "Gamescast Plays" }
+    },
+    {
+      "id": "game-showdown",
+      "title": "Game Showdown",
+      "title_full": "Game Showdown — Kinda Funny Gamescast",
+      "description": "Trivia and game show episodes labeled as Game Showdown.",
+      "categories": ["tech", "gaming"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "Game Showdown" }
+    },
+    {
+      "id": "game-of-the-year",
+      "title": "Game of the Year",
+      "title_full": "Game of the Year — Kinda Funny Gamescast",
+      "description": "Year-end awards and Game of the Year episodes.",
+      "categories": ["tech", "gaming"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Game of the Year" }
+    },
+    {
+      "id": "kinda-feudy",
+      "title": "Kinda Feudy",
+      "title_full": "Kinda Feudy — Kinda Funny Gamescast",
+      "description": "Feudy-style roundups and games labeled as Kinda Feudy.",
+      "categories": ["tech", "gaming"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "- Kinda Feudy" }
+    },
+    {
+      "id": "gamescast",
+      "title": "Gamescast",
+      "title_full": "Gamescast — Kinda Funny Gamescast",
+      "description": "Main Gamescast episodes labeled with the Kinda Funny Gamescast suffix.",
+      "categories": ["tech", "gaming"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Gamescast" }
+    }
+  ]
+}

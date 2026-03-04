@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other videos",
+  "leftovers_title_full": "Other videos — The Corbett Report",
+  "leftovers_description": "Videos outside the main recurring series buckets.",
+  "shows": [
+    {
+      "id": "solutionswatch",
+      "title": "Solutions Watch",
+      "title_full": "Solutions Watch — The Corbett Report",
+      "description": "Solutions Watch episodes.",
+      "categories": ["tech", "news"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "#SolutionsWatch" }
+    },
+    {
+      "id": "new-world-next-week",
+      "title": "New World Next Week",
+      "title_full": "New World Next Week — The Corbett Report",
+      "description": "New World Next Week episodes (NWNW).",
+      "categories": ["tech", "news"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "NWNW #" }
+    },
+    {
+      "id": "videos",
+      "title": "Videos",
+      "title_full": "Videos — The Corbett Report",
+      "description": "All other Corbett Report videos.",
+      "categories": ["tech", "news"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

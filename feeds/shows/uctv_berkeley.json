@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other talks",
+  "leftovers_title_full": "Other talks — UCTV (UC Berkeley)",
+  "leftovers_description": "Talks outside the main recurring UC Berkeley series buckets.",
+  "shows": [
+    {
+      "id": "for-the-people",
+      "title": "For the People?",
+      "title_full": "For the People? — UCTV (UC Berkeley)",
+      "description": "Representative Government in America lecture series.",
+      "categories": ["university"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "For the People?" }
+    },
+    {
+      "id": "fork-in-the-road",
+      "title": "The Fork in the Road",
+      "title_full": "The Fork in the Road — UCTV (UC Berkeley)",
+      "description": "The Fork in the Road series episodes.",
+      "categories": ["university"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Fork in the Road" }
+    },
+    {
+      "id": "public-health",
+      "title": "Public Health",
+      "title_full": "Public Health — UCTV (UC Berkeley)",
+      "description": "Public health talks and interviews.",
+      "categories": ["university", "health"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Public Health" }
+    }
+  ]
+}
+

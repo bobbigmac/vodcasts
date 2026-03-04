@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Focus on the Family Weekend",
+  "leftovers_description": "Episodes outside the standard weekend broadcast format.",
+  "shows": [
+    {
+      "id": "weekend-broadcasts",
+      "title": "Weekend Broadcasts",
+      "title_full": "Weekend Broadcasts — Focus on the Family Weekend",
+      "description": "The regular weekend radio program episodes.",
+      "categories": ["radio", "family"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Focus on the Family Weekend" }
+    }
+  ]
+}
+

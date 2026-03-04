@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Athey Creek Devoted Live",
+  "leftovers_description": "Items outside the main Devoted Live buckets.",
+  "shows": [
+    {
+      "id": "qa",
+      "title": "Q&A",
+      "title_full": "Q&A — Athey Creek Devoted Live",
+      "description": "Q&A sessions within Devoted Live.",
+      "categories": ["ministry", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Q&A" }
+    },
+    {
+      "id": "devoted-live",
+      "title": "Devoted Live",
+      "title_full": "Devoted Live — Athey Creek",
+      "description": "Regular Devoted Live episodes.",
+      "categories": ["ministry", "teaching"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Devoted Live" }
+    }
+  ]
+}
+

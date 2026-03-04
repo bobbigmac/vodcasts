@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other lessons",
+  "leftovers_title_full": "Other lessons — Bible Study Guide",
+  "leftovers_description": "Lessons outside the common multi-part pattern.",
+  "shows": [
+    {
+      "id": "multi-part",
+      "title": "Multi‑part Lessons",
+      "title_full": "Multi‑part Lessons — Bible Study Guide",
+      "description": "Lessons explicitly labeled as Part I/II/III/etc.",
+      "categories": ["bible-study", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\(Part\\s+(I|II|III|IV|V|VI|VII|VIII|IX|X)\\)\\s*$" }
+    },
+    {
+      "id": "lessons",
+      "title": "Lessons",
+      "title_full": "Lessons — Bible Study Guide",
+      "description": "Regular Bible study lessons.",
+      "categories": ["bible-study", "teaching"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

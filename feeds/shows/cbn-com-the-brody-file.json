@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — The Brody File",
+  "leftovers_description": "Items outside the main The Brody File episodes.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — The Brody File",
+      "description": "The Brody File episodes (dated).",
+      "categories": ["news"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "The Brody File" }
+    }
+  ]
+}
+

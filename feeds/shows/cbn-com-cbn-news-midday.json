@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — CBN News Midday",
+  "leftovers_description": "Items outside the standard Midday Edition format.",
+  "shows": [
+    {
+      "id": "midday-edition",
+      "title": "Midday Edition",
+      "title_full": "Midday Edition — CBN News",
+      "description": "News Channel Midday Edition broadcasts.",
+      "categories": ["news"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "News Channel Midday Edition" }
+    }
+  ]
+}
+

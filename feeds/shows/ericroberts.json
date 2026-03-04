@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Eric Roberts Fitness",
+  "leftovers_description": "Items outside the standard ERF-numbered episodes.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Eric Roberts Fitness",
+      "description": "Main ERF-numbered episodes.",
+      "categories": ["fitness"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^ERF\\s*\\d+\\b" }
+    }
+  ]
+}
+

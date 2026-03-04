@@ -1,0 +1,71 @@
+{
+  "leftovers_title": "Other episodes",
+  "leftovers_title_full": "Other episodes — Video Gamers Podcast",
+  "leftovers_description": "Episodes outside the main recurring segment buckets.",
+  "shows": [
+    {
+      "id": "indie-twig",
+      "title": "Indie TWIG",
+      "title_full": "Indie TWIG — Video Gamers Podcast",
+      "description": "Indie-focused This Week in Gaming (TWIG) episodes.",
+      "categories": ["tech", "gaming"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Indie TWIG" }
+    },
+    {
+      "id": "twig",
+      "title": "TWIG",
+      "title_full": "TWIG — Video Gamers Podcast",
+      "description": "This Week in Gaming (TWIG) episodes.",
+      "categories": ["tech", "gaming", "news"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "TWIG" }
+    },
+    {
+      "id": "hijack-a-host",
+      "title": "Hijack a Host",
+      "title_full": "Hijack a Host — Video Gamers Podcast",
+      "description": "Hijack a Host episodes.",
+      "categories": ["tech", "gaming"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Hijack a Host" }
+    },
+    {
+      "id": "game-court",
+      "title": "Game Court",
+      "title_full": "Game Court — Video Gamers Podcast",
+      "description": "Game Court episodes.",
+      "categories": ["tech", "gaming"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Game Court" }
+    },
+    {
+      "id": "deep-dives",
+      "title": "Deep Dives",
+      "title_full": "Deep Dives — Video Gamers Podcast",
+      "description": "Deep-dive episodes (often tagged as DEEP DIVE).",
+      "categories": ["tech", "gaming"],
+      "featured": false,
+      "filter": { "type": "title_contains_any", "values": ["DEEP DIVE", "Deep Dive"] }
+    },
+    {
+      "id": "remastered",
+      "title": "Remastered",
+      "title_full": "Remastered — Video Gamers Podcast",
+      "description": "Remastered episodes.",
+      "categories": ["tech", "gaming"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "REMASTERED" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Video Gamers Podcast",
+      "description": "Regular episodes labeled as Gaming Podcast.",
+      "categories": ["tech", "gaming"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Gaming Podcast" }
+    }
+  ]
+}
+

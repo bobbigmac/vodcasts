@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Special Reports",
+  "leftovers_title_full": "Special Reports — CBN News",
+  "leftovers_description": "Special report segments and feature stories.",
+  "shows": [
+    {
+      "id": "special-reports",
+      "title": "Special Reports",
+      "title_full": "Special Reports — CBN News",
+      "description": "CBN News special reports and features.",
+      "categories": ["news"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

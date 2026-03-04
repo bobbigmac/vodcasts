@@ -1,0 +1,16 @@
+{
+  "leftovers_title": "Specials",
+  "leftovers_title_full": "Specials — Autoline Daily",
+  "leftovers_description": "Items outside the standard AD # numbering.",
+  "shows": [
+    {
+      "id": "daily-episodes",
+      "title": "Daily Episodes",
+      "title_full": "Daily Episodes — Autoline Daily",
+      "description": "Standard Autoline Daily episodes (AD #).",
+      "categories": ["tech", "autos", "news"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^AD\\s*#\\d+\\b" }
+    }
+  ]
+}

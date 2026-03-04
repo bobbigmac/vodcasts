@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Episodes",
+  "leftovers_title_full": "Episodes — In the Market with Janet Parshall",
+  "leftovers_description": "Regular episodes without an Hour/Best‑of prefix.",
+  "shows": [
+    {
+      "id": "best-of",
+      "title": "Best of",
+      "title_full": "Best of — In the Market with Janet Parshall",
+      "description": "Best‑of and replay episodes.",
+      "categories": ["radio", "talk"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Best of In The Market with Janet Parshall" }
+    },
+    {
+      "id": "hour-1",
+      "title": "Hour 1",
+      "title_full": "Hour 1 — In the Market with Janet Parshall",
+      "description": "Hour 1 segments when the feed labels them explicitly.",
+      "categories": ["radio", "talk"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Hour 1" }
+    },
+    {
+      "id": "hour-2",
+      "title": "Hour 2",
+      "title_full": "Hour 2 — In the Market with Janet Parshall",
+      "description": "Hour 2 segments when the feed labels them explicitly.",
+      "categories": ["radio", "talk"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Hour 2" }
+    }
+  ]
+}
+

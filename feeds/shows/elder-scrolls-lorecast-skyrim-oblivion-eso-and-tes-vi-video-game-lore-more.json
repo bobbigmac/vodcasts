@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other episodes",
+  "leftovers_title_full": "Other episodes — Elder Scrolls Lorecast",
+  "leftovers_description": "Items outside the main Elder Scrolls Lorecast buckets.",
+  "shows": [
+    {
+      "id": "patron-chat",
+      "title": "Patron Chat",
+      "title_full": "Patron Chat — Elder Scrolls Lorecast",
+      "description": "Patron chat and community episodes.",
+      "categories": ["tech", "gaming"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Patron Chat" }
+    },
+    {
+      "id": "iceberg",
+      "title": "Elder Scrolls Iceberg",
+      "title_full": "Elder Scrolls Iceberg — Elder Scrolls Lorecast",
+      "description": "Iceberg episodes exploring deep lore topics.",
+      "categories": ["tech", "gaming"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Iceberg" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Elder Scrolls Lorecast",
+      "description": "Numbered Elder Scrolls Lorecast episodes.",
+      "categories": ["tech", "gaming"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^\\d+\\s*:" }
+    }
+  ]
+}
+
