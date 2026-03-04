@@ -83,6 +83,7 @@ const PRECACHE = [
   "assets/styles/panels.css",
   "assets/styles/corner.css",
   "assets/styles/idle.css",
+  "assets/styles/support.css",
   "assets/themes.css",
   "assets/app.js",
   "assets/vendor/hls.min.js",

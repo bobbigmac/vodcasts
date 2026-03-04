@@ -1,6 +1,5 @@
 import { html } from "../runtime/vendor.js";
 import { useEffect } from "../runtime/vendor.js";
-import { TimedComments } from "../vod/timed_comments.js";
 import { sanitizeHtml } from "../vod/feed_parse.js";
 import { LogPanel } from "./log.js";
 
@@ -15,6 +14,7 @@ function escapeHtml(s) {
 }
 
 export function DetailsPanel({ isOpen, env, player, log }) {
+  const bp = String(env?.basePath || "/").replace(/\/?$/, "/");
   const cur = player.current.value;
   const ep = cur.episode;
   const cache = player.fullDescriptionCache?.value || {};
@@ -61,64 +61,65 @@ export function DetailsPanel({ isOpen, env, player, log }) {
           : ""}
         <div id="epDesc" class="detailsDesc" dangerouslySetInnerHTML=${{ __html: safeDescHtml }}></div>
 
-        <div class="detailsSplit">
-          <div class="detailsChapters">
-            <div class="detailsChaptersTitle">Chapters</div>
-            ${chaptersErr
-              ? html`<div class="detailsEnrichError">Failed to load: ${chaptersErr}</div>`
-              : !hasChapters && ep
-                ? html`<div class="detailsEnrichHint">Not available for this episode</div>`
+        <div class="detailsChapters">
+          <div class="detailsChaptersTitle">Chapters</div>
+          ${chaptersErr
+            ? html`<div class="detailsEnrichError">Failed to load: ${chaptersErr}</div>`
+            : !hasChapters && ep
+              ? html`<div class="detailsEnrichHint">Not available for this episode</div>`
+              : ""}
+          <div id="chapters" class="chapters">
+            ${chapters.map(
+              (ch) => html`
+                <div
+                  class="ch"
+                  onClick=${() => {
+                    player.seekToTime(ch.t || 0);
+                    player.play({ userGesture: true });
+                  }}
+                >
+                  <div class="chName">${ch.name || "Chapter"}</div>
+                  <div class="chTime">${player.fmtTime(ch.t)}</div>
+                </div>
+              `
+            )}
+          </div>
+          ${hasTranscriptLink
+            ? html`
+                <div class="detailsTranscriptLinks">
+                  <div class="detailsChaptersTitle">Transcript</div>
+                  ${transcriptsAll.map(
+                    (t) =>
+                      html`
+                        <a class="detailsTranscriptLink" href=${t.url} target="_blank" rel="noopener noreferrer">
+                          ${t.lang || "en"} transcript</a
+                        >
+                      `
+                  )}
+                </div>
+              `
+            : transcriptsErr
+              ? html`<div class="detailsEnrichError">Subtitles: ${transcriptsErr}</div>`
+              : ep && !hasSubtitles && !transcriptsAll.length
+                ? html`<div class="detailsEnrichHint">No transcript for this episode</div>`
                 : ""}
-            <div id="chapters" class="chapters">
-              ${chapters.map(
-                (ch) => html`
-                  <div
-                    class="ch"
-                    onClick=${() => {
-                      player.seekToTime(ch.t || 0);
-                      player.play({ userGesture: true });
-                    }}
-                  >
-                    <div class="chName">${ch.name || "Chapter"}</div>
-                    <div class="chTime">${player.fmtTime(ch.t)}</div>
-                  </div>
-                `
-              )}
-            </div>
-            ${hasTranscriptLink
-              ? html`
-                  <div class="detailsTranscriptLinks">
-                    <div class="detailsChaptersTitle">Transcript</div>
-                    ${transcriptsAll.map(
-                      (t) =>
-                        html`
-                          <a
-                            class="detailsTranscriptLink"
-                            href=${t.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            ${t.lang || "en"} transcript</a
-                          >
-                        `
-                    )}
-                  </div>
-                `
-              : transcriptsErr
-                ? html`<div class="detailsEnrichError">Subtitles: ${transcriptsErr}</div>`
-                : ep && !hasSubtitles && !transcriptsAll.length
-                  ? html`<div class="detailsEnrichHint">No transcript for this episode</div>`
-                  : ""}
-          </div>
-          <div class="detailsComments">
-            <div class="detailsCommentsTitle">Comments</div>
-            <div id="commentsPanel" class="commentsPanel">
-              <${TimedComments} env=${env} player=${player} isActive=${isOpen.value} />
-            </div>
-          </div>
         </div>
 
         <${LogPanel} log=${log} />
+
+        <div class="detailsSupport">
+          <div class="detailsSupportTitle">Prays.be</div>
+          <div class="detailsSupportLinks">
+            <a href=${bp + "about/"} target="_self">About</a>
+            <a href=${bp + "for/"} target="_self">Who it’s for</a>
+            <a href=${bp + "privacy/"} target="_self">Privacy</a>
+            <a href=${bp + "legal/"} target="_self">Legal</a>
+            <a href="mailto:admin@prays.be">Contact</a>
+          </div>
+          <div class="detailsSupportNote">
+            We curate a mix of third‑party feeds and may adjust the selection over time. If a feed should be removed, email admin@prays.be.
+          </div>
+        </div>
       </div>
     </div>
   `;

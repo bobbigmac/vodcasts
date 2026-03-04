@@ -88,6 +88,66 @@ def _template_sub(template: str, values: dict[str, str]) -> str:
     return out
 
 
+def _escape_attr(s: str) -> str:
+    return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+
+
+def _build_meta_head_html(
+    *,
+    base_path: str,
+    site_title: str,
+    page_title: str,
+    page_description: str,
+    canonical_path: str,
+    og_type: str = "website",
+    og_image_path: str | None = None,
+) -> str:
+    """
+    Basic SEO/OpenGraph metadata for static pages.
+
+    Note: we typically don't know the absolute site origin during static builds,
+    so canonical/og URLs are emitted as root-relative paths.
+    """
+    bp = _norm_base_path(base_path)
+    canon = canonical_path if canonical_path.startswith("/") else bp + canonical_path.lstrip("/")
+    og_image = og_image_path or (bp + "assets/icon-512.png")
+
+    title = _escape_attr(page_title or site_title)
+    desc = _escape_attr(page_description or "")
+    site = _escape_attr(site_title or "")
+    canon_e = _escape_attr(canon)
+    og_image_e = _escape_attr(og_image)
+    og_type_e = _escape_attr(og_type or "website")
+
+    ld = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": site_title,
+        "description": page_description,
+        "inLanguage": "en",
+    }
+    ld_json = _escape_attr(json.dumps(ld, ensure_ascii=False))
+
+    return "\n  ".join(
+        [
+            '<meta name="description" content="' + desc + '" />',
+            '<meta name="robots" content="index,follow" />',
+            '<meta name="referrer" content="strict-origin-when-cross-origin" />',
+            '<link rel="canonical" href="' + canon_e + '" />',
+            '<meta property="og:site_name" content="' + site + '" />',
+            '<meta property="og:type" content="' + og_type_e + '" />',
+            '<meta property="og:title" content="' + title + '" />',
+            '<meta property="og:description" content="' + desc + '" />',
+            '<meta property="og:image" content="' + og_image_e + '" />',
+            '<meta name="twitter:card" content="summary_large_image" />',
+            '<meta name="twitter:title" content="' + title + '" />',
+            '<meta name="twitter:description" content="' + desc + '" />',
+            '<meta name="twitter:image" content="' + og_image_e + '" />',
+            '<script type="application/ld+json">' + ld_json + "</script>",
+        ]
+    )
+
+
 def _load_cached_feed_path(cache_dir: Path, source_id: str) -> Path:
     return cache_dir / "feeds" / f"{source_id}.xml"
 
@@ -642,6 +702,8 @@ def main() -> None:
 
     template_path = VODCASTS_ROOT / "site" / "templates" / "index.html"
     template = template_path.read_text(encoding="utf-8", errors="replace")
+    support_template_path = VODCASTS_ROOT / "site" / "templates" / "support.html"
+    support_template = support_template_path.read_text(encoding="utf-8", errors="replace") if support_template_path.exists() else ""
     vodcasts_config = {"basePath": base_path, "site": site_json}
 
     # Shows + feed landing pages + show RSS feeds
@@ -781,6 +843,7 @@ def main() -> None:
         feed_dir = out_dir / "feed" / fid
         feed_dir.mkdir(parents=True, exist_ok=True)
         feed_vodcasts = {**vodcasts_config, "initialFeed": fid, "initialView": "browse"}
+        feed_desc = f"Browse {feed_title} on {cfg.site.title}. {cfg.site.description}".strip()
         feed_html = _template_sub(
             template,
             {
@@ -789,7 +852,17 @@ def main() -> None:
                 "site_json": json.dumps(site_json, ensure_ascii=False),
                 "vodcasts_config": json.dumps(feed_vodcasts, ensure_ascii=False),
                 "page_title": f"{feed_title} — {cfg.site.title}",
+                "site_title": cfg.site.title,
+                "site_description": cfg.site.description or "",
                 "favicon_head_html": _build_favicon_head_html(base_path=base_path, feeds_path=feeds_path),
+                "meta_head_html": _build_meta_head_html(
+                    base_path=base_path,
+                    site_title=cfg.site.title,
+                    page_title=f"{feed_title} — {cfg.site.title}",
+                    page_description=feed_desc,
+                    canonical_path=f"{base_path}feed/{fid}/",
+                    og_type="website",
+                ),
             },
         )
         (feed_dir / "index.html").write_text(feed_html, encoding="utf-8")
@@ -838,6 +911,7 @@ def main() -> None:
     _log(f"  {len(feed_landing_paths)} feed landings, {sum(len(s) for s in shows_config_all.values())} shows ({time.perf_counter() - t:.1f}s)")
 
     # index.html
+    home_desc = (cfg.site.description or cfg.site.subtitle or "").strip()
     html = _template_sub(
         template,
         {
@@ -846,7 +920,17 @@ def main() -> None:
             "site_json": json.dumps(site_json, ensure_ascii=False),
             "vodcasts_config": json.dumps(vodcasts_config, ensure_ascii=False),
             "page_title": cfg.site.title,
+            "site_title": cfg.site.title,
+            "site_description": cfg.site.description or "",
             "favicon_head_html": _build_favicon_head_html(base_path=base_path, feeds_path=feeds_path),
+            "meta_head_html": _build_meta_head_html(
+                base_path=base_path,
+                site_title=cfg.site.title,
+                page_title=cfg.site.title,
+                page_description=home_desc,
+                canonical_path=base_path,
+                og_type="website",
+            ),
         },
     )
     (out_dir / "index.html").write_text(html, encoding="utf-8")
@@ -855,6 +939,7 @@ def main() -> None:
     browse_dir = out_dir / "browse"
     browse_dir.mkdir(parents=True, exist_ok=True)
     browse_vodcasts = {**vodcasts_config, "initialView": "browseAll"}
+    browse_desc = f"Browse featured shows and categories on {cfg.site.title}.".strip()
     browse_html = _template_sub(
         template,
         {
@@ -863,10 +948,134 @@ def main() -> None:
             "site_json": json.dumps(site_json, ensure_ascii=False),
             "vodcasts_config": json.dumps(browse_vodcasts, ensure_ascii=False),
             "page_title": f"Browse Shows — {cfg.site.title}",
+            "site_title": cfg.site.title,
+            "site_description": cfg.site.description or "",
             "favicon_head_html": _build_favicon_head_html(base_path=base_path, feeds_path=feeds_path),
+            "meta_head_html": _build_meta_head_html(
+                base_path=base_path,
+                site_title=cfg.site.title,
+                page_title=f"Browse Shows — {cfg.site.title}",
+                page_description=browse_desc,
+                canonical_path=f"{base_path}browse/",
+                og_type="website",
+            ),
         },
     )
     (browse_dir / "index.html").write_text(browse_html, encoding="utf-8")
+
+    # Support pages (static HTML, no JS needed)
+    if support_template:
+        support_pages = [
+            (
+                "about",
+                "About Prays.be",
+                "A free, simple way to watch faith-based videos and listen to audio-only feeds — anywhere.",
+                """
+<h1>About Prays.be</h1>
+<p>Prays.be is a free, lightweight way to stream faith-based video and audio content from many different sources in one place.</p>
+<p>Our goal is simple: make it easier to find something encouraging, thoughtful, and faith-forward — on any device.</p>
+<div class="supportCard">
+  <h2>What you can do here</h2>
+  <ul>
+    <li>Browse shows by category and channel.</li>
+    <li>Pick up where you left off (saved on your device).</li>
+    <li>Share links to feeds, shows, and episodes.</li>
+  </ul>
+</div>
+<div class="supportCard">
+  <h2>About sources</h2>
+  <p>We link to third-party feeds. Some sources may be imperfect or controversial; we’re not here to point fingers — we’re here to build a calm, useful way to watch and listen. Over time, we may add clearer source notes and improve curation.</p>
+  <p>We may adjust which feeds are included at any time.</p>
+</div>
+<div class="supportCard">
+  <h2>Removal requests</h2>
+  <p>If you run a feed and would prefer not to be included, email <a href="mailto:admin@prays.be">admin@prays.be</a> and we’ll remove it.</p>
+</div>
+""".strip(),
+            ),
+            (
+                "for",
+                "Who it’s for",
+                "Prays.be is for anyone who wants faith-forward, encouraging content — without drama.",
+                """
+<h1>Who it’s for</h1>
+<p>Prays.be is for people who want a simple, respectful way to watch and listen to faith-based content — whether that’s sermons, Bible teaching, worship, testimony, or thoughtful talks.</p>
+<div class="supportCard">
+  <h2>Our tone</h2>
+  <p>We’re aiming for wholesome, hopeful, and grounded. We don’t want doom-scrolling. We want something you can put on at home, on the train, or on a break — and feel better for it.</p>
+</div>
+<div class="supportCard">
+  <h2>Limitations</h2>
+  <p>Because content comes from many third-party feeds, availability and quality can vary. Some items may disappear, change, or fail to play. We’ll keep improving the experience.</p>
+</div>
+""".strip(),
+            ),
+            (
+                "privacy",
+                "Privacy Policy",
+                "We use basic analytics to understand aggregate usage. Playback state is stored on your device.",
+                """
+<h1>Privacy</h1>
+<p>We try to keep Prays.be simple and privacy-respecting.</p>
+<div class="supportCard">
+  <h2>Analytics</h2>
+  <p>We use Google Analytics to understand aggregate usage (for example: which pages are visited, rough device/browser breakdowns, and general performance). We don’t use it to identify you, and we don’t sell personal data.</p>
+</div>
+<div class="supportCard">
+  <h2>On-device storage</h2>
+  <p>Prays.be stores some settings on your device (via local storage) to make the app work well — things like your last played episode, playback progress, and UI preferences.</p>
+</div>
+<div class="supportCard">
+  <h2>Third-party content</h2>
+  <p>When you play a feed item, your device may connect to third-party servers that host the media. Those providers may log requests under their own policies.</p>
+</div>
+""".strip(),
+            ),
+            (
+                "legal",
+                "Legal",
+                "Prays.be is a viewer for third-party feeds. Content belongs to its respective owners.",
+                """
+<h1>Legal</h1>
+<div class="supportCard">
+  <h2>Third-party content</h2>
+  <p>Prays.be links to and plays media from third-party RSS/Atom feeds. We don’t claim ownership of that content. Trademarks and copyrights belong to their respective owners.</p>
+</div>
+<div class="supportCard">
+  <h2>No guarantees</h2>
+  <p>We aim to provide a stable, positive experience, but feeds can change without notice. Content may be unavailable, inaccurate, or unsuitable for some audiences. Use your best judgment.</p>
+</div>
+<div class="supportCard">
+  <h2>Changes and contact</h2>
+  <p>We may adjust feeds and features at any time. If you believe a feed should be removed, email <a href="mailto:admin@prays.be">admin@prays.be</a>.</p>
+</div>
+""".strip(),
+            ),
+        ]
+
+        for slug, title, desc, content_html in support_pages:
+            pdir = out_dir / slug
+            pdir.mkdir(parents=True, exist_ok=True)
+            full_title = f"{title} — {cfg.site.title}"
+            page_html = _template_sub(
+                support_template,
+                {
+                    "base_path": base_path,
+                    "page_title": full_title,
+                    "site_title": cfg.site.title,
+                    "favicon_head_html": _build_favicon_head_html(base_path=base_path, feeds_path=feeds_path),
+                    "meta_head_html": _build_meta_head_html(
+                        base_path=base_path,
+                        site_title=cfg.site.title,
+                        page_title=full_title,
+                        page_description=desc,
+                        canonical_path=f"{base_path}{slug}/",
+                        og_type="article",
+                    ),
+                    "content_html": content_html,
+                },
+            )
+            (pdir / "index.html").write_text(page_html, encoding="utf-8")
 
     # 404.html (GitHub Pages SPA redirect shim)
     template_404_path = VODCASTS_ROOT / "site" / "templates" / "404.html"

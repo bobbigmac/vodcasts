@@ -229,3 +229,37 @@
 .logEntry { padding: 2px 0 }
 .logEntry.warn { color: #f1d093 }
 .logEntry.error { color: #ff8a8a }
+
+.detailsSupport {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,.06);
+}
+.detailsSupportTitle {
+  font-size: 12px;
+  font-weight: 750;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.detailsSupportLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+.detailsSupportLinks a {
+  color: var(--text);
+  opacity: 0.86;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 650;
+}
+.detailsSupportLinks a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+.detailsSupportNote {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--muted);
+}
