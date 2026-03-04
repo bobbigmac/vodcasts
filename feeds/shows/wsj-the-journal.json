@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "The Journal.",
+  "leftovers_title_full": "The Journal. — The Wall Street Journal",
+  "leftovers_description": "Main episodes from The Journal. feed (excluding named multi-part series).",
+  "shows": [
+    {
+      "id": "camp-swamp-road",
+      "title": "Camp Swamp Road",
+      "title_full": "Camp Swamp Road — The Journal.",
+      "description": "Episodes labeled Camp Swamp Road (Ep. N).",
+      "categories": ["news"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Camp Swamp Road\\b" }
+    },
+    {
+      "id": "missing-15b-fortune",
+      "title": "Missing $15B Fortune",
+      "title_full": "The Case of the Missing $15 Billion Fortune — The Journal.",
+      "description": "Episodes in the ‘Missing $15 Billion Fortune’ series.",
+      "categories": ["news"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Case of the Missing $15 Billion Fortune" }
+    }
+  ]
+}
+

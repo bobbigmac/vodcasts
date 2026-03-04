@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Global News Podcast",
+  "leftovers_title_full": "Global News Podcast — BBC World Service",
+  "leftovers_description": "Main daily episodes and specials from the BBC World Service Global News Podcast feed.",
+  "shows": [
+    {
+      "id": "the-happy-pod",
+      "title": "The Happy Pod",
+      "title_full": "The Happy Pod — BBC World Service",
+      "description": "Uplifting stories and positive news episodes.",
+      "categories": ["news"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Happy Pod" }
+    },
+    {
+      "id": "the-global-story",
+      "title": "The Global Story",
+      "title_full": "The Global Story — BBC World Service",
+      "description": "Longer explainer/interview episodes labeled as The Global Story.",
+      "categories": ["news"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Global Story" }
+    }
+  ]
+}
+

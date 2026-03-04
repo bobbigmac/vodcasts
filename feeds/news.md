@@ -12,6 +12,36 @@
 
 # Feeds
 
+## bbc-world-service-global-news-podcast
+- url: https://podcasts.files.bbci.co.uk/p02nq0gn.rss
+- title: BBC World Service — Global News Podcast
+- category: news
+- tags: bbc, world, headlines, daily, audio
+
+## npr-up-first
+- url: https://feeds.npr.org/510318/podcast.xml
+- title: NPR — Up First
+- category: news
+- tags: npr, us, morning, daily, audio
+
+## reuters-world-news
+- url: https://feeds.megaphone.fm/reutersworldnews
+- title: Reuters — Reuters World News
+- category: news
+- tags: reuters, world, headlines, daily, audio
+
+## the-economist-the-intelligence
+- url: https://rss.acast.com/theintelligencepodcast
+- title: The Economist — The Intelligence
+- category: news
+- tags: economist, world, analysis, daily, audio
+
+## wsj-the-journal
+- url: https://video-api.wsj.com/podcast/rss/wsj/the-journal
+- title: The Wall Street Journal — The Journal.
+- category: news
+- tags: wsj, business, markets, daily, audio
+
 ## bbc-news-front-page
 - url: http://newsrss.bbc.co.uk/rss/newsonline_uk_edition/front_page/rss.xml
 - disabled: media_probe: no supported enclosures in feed (cache) (checked 2026-03-04)
@@ -64,32 +94,38 @@
 - url: http://feeds.pbs.org/pbs/wgbh/nova-video
 - disabled: media_probe: enclosure probe failed (3 sampled) (cache) (checked 2026-03-04)
 - title: NOVA — PBS
-- category: news
+- category: science
 - tags: pbs, nova, science, video
 
 ## ted-talks-video
 - url: http://feeds.feedburner.com/TEDTalks_video
 - disabled: Redundant, hd should be widely enough available
 - title: TED Talks Daily (Video)
-- category: news
+- category: lectures
 - tags: ted, video, talks
 
 ## ted-talks-hd
 - url: https://feeds.feedburner.com/TedtalksHD
 - title: TED Talks Daily (HD)
-- category: news
+- category: lectures
 - tags: ted, video, hd
 
 ## science-friday-video
 - url: https://www.sciencefriday.com/feed/podcast/podcast-video/
 - title: Science Friday Videos
-- category: news
+- category: science
 - tags: science, pbs, video
+
+## msnbc-rachel-maddow-video
+- url: http://podcastfeeds.nbcnews.com/nbcnews/video/podcast/MSNBC-MADDOW-NETCAST-M4V.xml
+- title: MSNBC Rachel Maddow (Video)
+- category: news
+- tags: politics, us, analysis
 
 ## uctv-science-video
 - url: https://podcast.uctv.tv/uctv_video_science.rss
 - title: UCTV Science (Video)
-- category: news
+- category: lectures
 - tags: science, uctv, university-california, video
 
 ## tech-news-weekly-video
@@ -103,4 +139,3 @@
 - title: Geek News Central (Video)
 - category: news
 - tags: tech, geek, video
-

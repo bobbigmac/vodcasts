@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Reuters World News",
+  "leftovers_title_full": "Reuters World News — Reuters",
+  "leftovers_description": "Main Reuters World News episodes (excluding explicitly labeled updates).",
+  "shows": [
+    {
+      "id": "updates",
+      "title": "Updates",
+      "title_full": "Updates — Reuters World News",
+      "description": "Episodes labeled as UPDATE/UPDATE- in the title.",
+      "categories": ["news"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^UPDATE\\b" }
+    }
+  ]
+}
+

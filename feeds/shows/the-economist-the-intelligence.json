@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "The Intelligence",
+  "leftovers_title_full": "The Intelligence — The Economist",
+  "leftovers_description": "Daily episodes from The Economist’s The Intelligence feed (excluding named recurring series).",
+  "shows": [
+    {
+      "id": "the-weekend-intelligence",
+      "title": "The Weekend Intelligence",
+      "title_full": "The Weekend Intelligence — The Economist",
+      "description": "Weekend editions labeled as The Weekend Intelligence.",
+      "categories": ["news"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "The Weekend Intelligence" }
+    },
+    {
+      "id": "boss-class",
+      "title": "Boss Class",
+      "title_full": "Boss Class — The Economist",
+      "description": "Boss Class series episodes.",
+      "categories": ["news"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Boss Class" }
+    }
+  ]
+}
+

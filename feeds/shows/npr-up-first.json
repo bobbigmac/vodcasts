@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Up First (NPR)",
+  "leftovers_description": "Episodes outside the main Up First row.",
+  "shows": [
+    {
+      "id": "up-first",
+      "title": "Up First",
+      "title_full": "Up First — NPR",
+      "description": "NPR’s morning news briefing.",
+      "categories": ["news"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

@@ -258,6 +258,10 @@ def probe_media_url(
 
     throttle.wait(url)
     # Try HEAD first, then a tiny range GET.
+    #
+    # Some hosts respond to HEAD with misleading content-types (e.g. text/plain),
+    # even though a GET returns real media. Treat non-media HEAD content-types as
+    # "unknown" and fall back to a range GET before rejecting.
     status, ctype, _clen, _eff = _curl_headers(
         url,
         user_agent=user_agent,
@@ -265,7 +269,24 @@ def probe_media_url(
         use_head=True,
         limit_rate_kbps=int(limit_rate_kbps),
     )
+    need_range = False
+    ct0 = (ctype or "").lower()
     if status is None or status < 200 or status >= 400:
+        need_range = True
+    elif ct0.startswith("text/html") or ct0.startswith("application/xhtml"):
+        return False, f"unexpected content-type {ctype or 'text/html'}"
+    elif ct0:
+        # Accept obvious media-ish HEAD results; otherwise re-check via GET.
+        if not (
+            ct0.startswith("audio/")
+            or ct0.startswith("video/")
+            or "mpegurl" in ct0
+            or ct0 in ("application/mp4", "application/x-mp4", "application/x-m4v", "application/x-m4a")
+            or ct0 in ("application/octet-stream", "binary/octet-stream")
+        ):
+            need_range = True
+
+    if need_range:
         throttle.wait(url)
         status, ctype, _clen, _eff = _curl_headers(
             url,
