@@ -14,8 +14,8 @@
 		<ttl>720</ttl>
 		<sy:updatePeriod>weekly</sy:updatePeriod>
 		<sy:updateFrequency>1</sy:updateFrequency>
-		<lastBuildDate>Tue, 03 Mar 2026 15:50:02 PST</lastBuildDate>
-		<pubDate>Tue, 03 Mar 2026 15:50:02 PST</pubDate>
+		<lastBuildDate>Tue, 03 Mar 2026 20:55:04 PST</lastBuildDate>
+		<pubDate>Tue, 03 Mar 2026 20:55:04 PST</pubDate>
 		<rawvoice:frequency>weekly</rawvoice:frequency>
 		<rawvoice:location>Petaluma, CA</rawvoice:location>
 		<itunes:type>episodic</itunes:type>
@@ -63,6 +63,7 @@ Records live every Tuesday at 4:30pm Eastern / 1:30pm Pacific / 21:30 UTC.</desc
 			<category>Security</category>
 			<itunes:explicit>no</itunes:explicit>
 			<itunes:subtitle>Click, Paste, Pwned</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/security-now-1068-transcript" type="text/html" />
 			<itunes:keywords>Security Now, TWiT, steve gibson, Leo Laporte, Zero Trust World, Kong Tuk CrashFix exploit, AI-driven hacking, Fortinet firewalls, code signing certificate, hardware security module, Social Engineering, Lapsus$, scattered lapsus hunters</itunes:keywords>
 			<description><![CDATA[
 <p>A crafty new breed of social engineering attack is tricking users into launching malware straight from their clipboard, exposing a fresh vulnerability in Windows that even tech pros could fall for. Leo Laporte and Steve Gibson break down how the latest ClickFix and CrashFix exploits are outsmarting traditional defenses.</p><ul> 
@@ -163,9 +164,9 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860347/hero/SN1067_thumbnail.jpg"/>
 			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/sn/sn1067/sn1067_h264m_1920x1080.mp4</guid>
 			<rawvoice:isHd>yes</rawvoice:isHd>
-			<itunes:duration>0:00</itunes:duration>
-			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/sn/sn1067/sn1067_h264m_1920x1080.mp4" length="2939591491" type="video/mp4"/>
-			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/sn/sn1067/sn1067_h264m_1920x1080.mp4" fileSize="2939591491" type="video/mp4" medium="video">
+			<itunes:duration>2:40:04</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/sn/sn1067/sn1067_h264m_1920x1080.mp4" length="2816258082" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/sn/sn1067/sn1067_h264m_1920x1080.mp4" fileSize="2816258082" type="video/mp4" medium="video">
 				<media:title type="plain">SN 1067: KongTuke's CrashFix - Click, Paste, Pwned</media:title>
 				<media:description type="plain">Click, Paste, Pwned</media:description>
 				<media:keywords>Security Now, TWiT, steve gibson, Leo Laporte, Zero Trust World, Kong Tuk CrashFix exploit, AI-driven hacking, Fortinet firewalls, code signing certificate, hardware security module, Social Engineering, Lapsus$, scattered lapsus hunters</media:keywords>
