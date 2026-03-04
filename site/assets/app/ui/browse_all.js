@@ -2,9 +2,27 @@
  * Browse All: Netflix-style rows by category.
  * Featured (manual), Continue Watching (in-progress), then randomized category rows.
  */
-import { html, useEffect, useMemo } from "../runtime/vendor.js";
+import { html, useEffect, useMemo, useRef, useState, useSignal } from "../runtime/vendor.js";
 import { fallbackInitials, thumbFallbackStyle, titlePosClass, VodCarouselRow } from "./vod_carousel.js";
-import { HeadphonesIcon } from "./icons.js";
+import { RadioIcon, TvIcon } from "./icons.js";
+
+const BROWSE_ALL_PREFS_KEY = "vodcasts_browse_all_prefs_v1";
+
+function loadBrowseAllPrefs() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(BROWSE_ALL_PREFS_KEY) || "{}");
+    const showAudioOnlyFeeds = raw?.showAudioOnlyFeeds !== false;
+    return { showAudioOnlyFeeds };
+  } catch {
+    return { showAudioOnlyFeeds: true };
+  }
+}
+
+function saveBrowseAllPrefs({ showAudioOnlyFeeds }) {
+  try {
+    localStorage.setItem(BROWSE_ALL_PREFS_KEY, JSON.stringify({ showAudioOnlyFeeds: showAudioOnlyFeeds !== false }));
+  } catch {}
+}
 
 function onThumbImgError(e) {
   try {
@@ -28,21 +46,26 @@ function isVideoEpisode(ep) {
   return false;
 }
 
-function isAudioOnlyShow(show) {
-  const eps = show?.episodes || [];
-  if (!Array.isArray(eps) || !eps.length) return false;
-  return !eps.some((e) => isVideoEpisode(e));
-}
-
-function getShowProgress(show, feedId, history, player) {
+function getShowProgress(show, feedId, historyFeedEntries, player) {
   const episodes = show.episodes || [];
   const total = episodes.length;
   if (total === 0) return { watchedCount: 0, resumeEpisode: null, totalEpisodes: 0 };
+  const hist = Array.isArray(historyFeedEntries) ? historyFeedEntries : [];
+  if (!hist.length) return { watchedCount: 0, resumeEpisode: null, totalEpisodes: total };
+
+  const histEpIds = new Set();
+  for (const e of hist) {
+    const eid = e?.episodeId;
+    if (typeof eid === "string" && eid) histEpIds.add(eid);
+  }
+  if (!histEpIds.size) return { watchedCount: 0, resumeEpisode: null, totalEpisodes: total };
+
   const WATCHED_THRESHOLD = 0.9;
   let watchedCount = 0;
   let resumeEpisode = null;
   let bestProgress = 0;
   for (const ep of episodes) {
+    if (!histEpIds.has(ep?.id)) continue;
     const maxProg = player?.getProgressMaxSec?.(feedId, ep.id) ?? 0;
     const dur = ep.durationSec;
     const isWatched = Number.isFinite(dur) && dur > 0 ? maxProg >= dur * WATCHED_THRESHOLD : maxProg > 60;
@@ -53,14 +76,18 @@ function getShowProgress(show, feedId, history, player) {
     }
   }
   if (!resumeEpisode && watchedCount < total) {
-    const historyAll = history?.all?.value || [];
-    const episodeIds = new Set(episodes.map((e) => e?.id).filter(Boolean));
-    for (const e of historyAll) {
-      if (e.sourceId === feedId && episodeIds.has(e.episodeId)) {
-        resumeEpisode = episodes.find((x) => x?.id === e.episodeId);
-        break;
+    let bestAt = 0;
+    let bestId = null;
+    for (const e of hist) {
+      if (typeof e?.episodeId !== "string" || !e.episodeId) continue;
+      if (!histEpIds.has(e.episodeId)) continue;
+      const at = Number(e?.at) || 0;
+      if (at > bestAt) {
+        bestAt = at;
+        bestId = e.episodeId;
       }
     }
+    if (bestId) resumeEpisode = episodes.find((x) => x?.id === bestId) || null;
   }
   return { watchedCount, resumeEpisode, totalEpisodes: total };
 }
@@ -96,25 +123,61 @@ function fnv1a32(s) {
 }
 
 /** Build category rows: Featured, Continue Watching, then shuffled other categories */
-function buildCategoryRows(allShows, history, player) {
-  const historyAll = history?.all?.value || [];
+function buildCategoryRows(allShows, historyAll, player) {
+  const histAll = Array.isArray(historyAll) ? historyAll : [];
   const byShowKey = (feedId, showId) => `${feedId}::${showId}`;
 
   const continueWatching = [];
   const lastWatchedAt = new Map();
-  for (const { feedId, feedTitle, show } of allShows) {
-    const progress = getShowProgress(show, feedId, history, player);
-    if (!progress.resumeEpisode) continue;
-    let maxAt = 0;
-    const epIds = new Set((show.episodes || []).map((e) => e?.id).filter(Boolean));
-    for (const e of historyAll) {
-      if (e.sourceId === feedId && epIds.has(e.episodeId)) {
-        const t = Number(e.at) || 0;
-        if (t > maxAt) maxAt = t;
+  const itemsByFeed = new Map();
+  for (const it of allShows) {
+    if (!itemsByFeed.has(it.feedId)) itemsByFeed.set(it.feedId, []);
+    itemsByFeed.get(it.feedId).push(it);
+  }
+
+  const epIndexByFeed = new Map(); // feedId -> Map(episodeId -> { item, ep })
+  const ensureEpIndex = (feedId) => {
+    if (epIndexByFeed.has(feedId)) return epIndexByFeed.get(feedId);
+    const idx = new Map();
+    const items = itemsByFeed.get(feedId) || [];
+    for (const item of items) {
+      const show = item.show;
+      const eps = show?.episodes || [];
+      if (!Array.isArray(eps) || !eps.length) continue;
+      for (const ep of eps) {
+        const eid = ep?.id;
+        if (typeof eid !== "string" || !eid) continue;
+        if (!idx.has(eid)) idx.set(eid, { item, ep });
       }
     }
-    lastWatchedAt.set(byShowKey(feedId, show.id), maxAt);
-    continueWatching.push({ feedId, feedTitle, show });
+    epIndexByFeed.set(feedId, idx);
+    return idx;
+  };
+
+  const WATCHED_THRESHOLD = 0.9;
+  const seen = new Set();
+  const recent = histAll.slice(0, 600);
+  for (const e of recent) {
+    const feedId = e?.sourceId;
+    const episodeId = e?.episodeId;
+    if (typeof feedId !== "string" || !feedId) continue;
+    if (typeof episodeId !== "string" || !episodeId) continue;
+    if (!itemsByFeed.has(feedId)) continue;
+    const at = Number(e?.at) || 0;
+    const idx = ensureEpIndex(feedId);
+    const hit = idx.get(episodeId);
+    if (!hit) continue;
+    const { item, ep } = hit;
+    const key = byShowKey(feedId, item.show.id);
+    if (seen.has(key)) continue;
+    const maxProg = player?.getProgressMaxSec?.(feedId, episodeId) ?? 0;
+    if (!(maxProg > 0)) continue;
+    const dur = ep?.durationSec;
+    const isWatched = Number.isFinite(dur) && dur > 0 ? maxProg >= dur * WATCHED_THRESHOLD : maxProg > 60;
+    if (isWatched) continue;
+    seen.add(key);
+    lastWatchedAt.set(key, at);
+    continueWatching.push(item);
   }
   continueWatching.sort((a, b) => (lastWatchedAt.get(byShowKey(b.feedId, b.show.id)) || 0) - (lastWatchedAt.get(byShowKey(a.feedId, a.show.id)) || 0));
 
@@ -247,16 +310,76 @@ function buildCategoryRows(allShows, history, player) {
   return rows;
 }
 
+function BrowseAllRowPlaceholder({ rowId, title, count = 10 }) {
+  const items = [];
+  const n = Math.max(6, Math.min(14, Number(count) || 10));
+  for (let i = 0; i < n; i++) items.push(i);
+  return html`
+    <section class="vodCarouselRow browseAllRow browseAllRowPlaceholder" data-carousel-rowroot=${rowId}>
+      ${title ? html`<h3 class="vodCarouselTitle">${title}</h3>` : ""}
+      <div class="vodCarouselViewport">
+        <div class="vodCarouselStrip">
+          <div class="vodCarouselStripInner" data-carousel-row=${rowId}>
+            ${items.map(
+              (i) => html`
+                <div class="vodCarouselItem vodCarouselItemShow vodCarouselItemSkeleton" key=${rowId + ":" + i}>
+                  <div class="vodThumbWrap">
+                    <div class="vodThumb vodThumbSkeleton"></div>
+                  </div>
+                </div>
+              `
+            )}
+          </div>
+        </div>
+      </div>
+    </section>
+  `;
+}
+
 export function BrowseAllPanel({ isOpen, showsConfig, feedTitles, player, history, onClose, onShowClick }) {
   const curSourceId = player?.currentSourceId?.value || null;
   const curEpId = player?.currentEpisodeId?.value || null;
 
   const feeds = showsConfig?.feeds || {};
   const titles = feedTitles || {};
+
+  const prefsInitRef = useRef(loadBrowseAllPrefs());
+  const showAudioOnlyFeeds = useSignal(prefsInitRef.current.showAudioOnlyFeeds !== false);
+  useEffect(() => {
+    saveBrowseAllPrefs({ showAudioOnlyFeeds: showAudioOnlyFeeds.value });
+  }, [showAudioOnlyFeeds.value]);
+
+  const feedAudioOnlyIds = useMemo(() => {
+    const out = new Set();
+    for (const feedId of Object.keys(feeds)) {
+      const shows = feeds[feedId];
+      if (!Array.isArray(shows) || !shows.length) continue;
+      let hasVideo = false;
+      for (const show of shows) {
+        const eps = show?.episodes || [];
+        if (!Array.isArray(eps) || !eps.length) continue;
+        for (const ep of eps) {
+          if (isVideoEpisode(ep)) {
+            hasVideo = true;
+            break;
+          }
+        }
+        if (hasVideo) break;
+      }
+      if (!hasVideo) out.add(feedId);
+    }
+    return out;
+  }, [feeds]);
+
+  const totalFeedCount = useMemo(() => Object.keys(feeds).length, [feeds]);
+  const audioOnlyFeedCount = feedAudioOnlyIds.size;
+  const visibleFeedCount = showAudioOnlyFeeds.value ? totalFeedCount : Math.max(0, totalFeedCount - audioOnlyFeedCount);
+
   const allShows = useMemo(() => {
     const out = [];
     for (const [feedId, shows] of Object.entries(feeds)) {
       if (!Array.isArray(shows)) continue;
+      if (!showAudioOnlyFeeds.value && feedAudioOnlyIds.has(feedId)) continue;
       const feedTitle = titles[feedId] || feedId;
       for (const show of shows) {
         const eps = show.episodes || [];
@@ -265,12 +388,74 @@ export function BrowseAllPanel({ isOpen, showsConfig, feedTitles, player, histor
       }
     }
     return out;
-  }, [feeds, titles]);
+  }, [feeds, titles, showAudioOnlyFeeds.value, feedAudioOnlyIds]);
 
-  const categoryRows = useMemo(
-    () => buildCategoryRows(allShows, history, player),
-    [allShows, history?.all?.value, player]
-  );
+  const historyAll = history?.all?.value || [];
+  const historyByFeed = useMemo(() => {
+    const m = new Map();
+    const arr = Array.isArray(historyAll) ? historyAll : [];
+    for (const e of arr) {
+      const feedId = e?.sourceId;
+      if (typeof feedId !== "string" || !feedId) continue;
+      if (!m.has(feedId)) m.set(feedId, []);
+      m.get(feedId).push(e);
+    }
+    return m;
+  }, [historyAll]);
+
+  const categoryRows = useMemo(() => buildCategoryRows(allShows, historyAll, player), [allShows, historyAll, player]);
+
+  const rowElsRef = useRef(new Map());
+  const visibleIdxRef = useRef(new Set());
+  const observerRef = useRef(null);
+  const [rowWindow, setRowWindow] = useState({ start: 0, end: 6 });
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const content = document.querySelector("#browseAllPanel .browseAllContent");
+    if (!content) return;
+    visibleIdxRef.current = new Set([0, 1, 2]);
+    setRowWindow({ start: 0, end: Math.min(6, Math.max(0, categoryRows.length - 1)) });
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        let changed = false;
+        for (const e of entries) {
+          const idx = Number(e.target?.getAttribute?.("data-row-idx"));
+          if (!Number.isFinite(idx)) continue;
+          if (e.isIntersecting) {
+            if (!visibleIdxRef.current.has(idx)) {
+              visibleIdxRef.current.add(idx);
+              changed = true;
+            }
+          } else {
+            if (visibleIdxRef.current.delete(idx)) changed = true;
+          }
+        }
+        if (!changed) return;
+        const arr = [...visibleIdxRef.current].sort((a, b) => a - b);
+        const min = arr.length ? arr[0] : 0;
+        const max = arr.length ? arr[arr.length - 1] : min;
+        const start = Math.max(0, min - 2);
+        const end = Math.min(categoryRows.length - 1, max + 3);
+        setRowWindow({ start, end });
+      },
+      { root: content, rootMargin: "700px 0px 700px 0px", threshold: 0.01 }
+    );
+    observerRef.current = observer;
+
+    for (const el of rowElsRef.current.values()) {
+      try {
+        observer.observe(el);
+      } catch {}
+    }
+    return () => {
+      try {
+        observer.disconnect();
+      } catch {}
+      observerRef.current = null;
+    };
+  }, [isOpen, categoryRows.length]);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -294,7 +479,7 @@ export function BrowseAllPanel({ isOpen, showsConfig, feedTitles, player, histor
   const playShow = (feedId, show, startEp = null) => {
     const episodes = show.episodes || [];
     if (!episodes.length || !feedId) return;
-    const progress = getShowProgress(show, feedId, history, player);
+    const progress = getShowProgress(show, feedId, historyByFeed.get(feedId), player);
     const ep = startEp || progress.resumeEpisode || episodes[0];
     if (!ep?.id) return;
     player.selectSourceAndEpisode(feedId, ep.id, {
@@ -310,7 +495,23 @@ export function BrowseAllPanel({ isOpen, showsConfig, feedTitles, player, histor
         <div class="browseAllPanel-inner">
           <header class="browseAllHeader">
             <h2 class="browseAllTitle">Browse Shows</h2>
-            <button class="browseAllClose" type="button" onClick=${onClose} aria-label="Close">×</button>
+            <div class="browseAllHeaderActions">
+              <button
+                class=${"browseAllHeaderBtn browseAllHeaderBtnAudioOnly" + (showAudioOnlyFeeds.value ? "" : " active")}
+                type="button"
+                aria-pressed=${showAudioOnlyFeeds.value ? "false" : "true"}
+                title=${showAudioOnlyFeeds.value ? "Audio-only feeds visible" : "Audio-only feeds hidden"}
+                aria-label=${showAudioOnlyFeeds.value ? "Audio-only feeds visible" : "Audio-only feeds hidden"}
+                onClick=${() => {
+                  showAudioOnlyFeeds.value = !showAudioOnlyFeeds.value;
+                }}
+              >
+                ${showAudioOnlyFeeds.value
+                  ? html`<${RadioIcon} size=${14} /> All ${visibleFeedCount}/${totalFeedCount}`
+                  : html`<${TvIcon} size=${14} /> TV ${visibleFeedCount}/${totalFeedCount}`}
+              </button>
+              <button class="browseAllClose" type="button" onClick=${onClose} aria-label="Close">×</button>
+            </div>
           </header>
           <div class="browseAllEmpty">No shows available.</div>
         </div>
@@ -323,90 +524,132 @@ export function BrowseAllPanel({ isOpen, showsConfig, feedTitles, player, histor
       <div class="browseAllPanel-inner">
         <header class="browseAllHeader">
           <h2 class="browseAllTitle">Browse Shows</h2>
-          <button class="browseAllClose" type="button" onClick=${onClose} aria-label="Close">×</button>
+          <div class="browseAllHeaderActions">
+            <button
+              class=${"browseAllHeaderBtn browseAllHeaderBtnAudioOnly" + (showAudioOnlyFeeds.value ? "" : " active")}
+              type="button"
+              aria-pressed=${showAudioOnlyFeeds.value ? "false" : "true"}
+              title=${showAudioOnlyFeeds.value ? "Audio-only feeds visible" : "Audio-only feeds hidden"}
+              aria-label=${showAudioOnlyFeeds.value ? "Audio-only feeds visible" : "Audio-only feeds hidden"}
+              onClick=${() => {
+                showAudioOnlyFeeds.value = !showAudioOnlyFeeds.value;
+              }}
+            >
+              ${showAudioOnlyFeeds.value
+                ? html`<${RadioIcon} size=${14} /> All ${visibleFeedCount}/${totalFeedCount}`
+                : html`<${TvIcon} size=${14} /> TV ${visibleFeedCount}/${totalFeedCount}`}
+            </button>
+            <button class="browseAllClose" type="button" onClick=${onClose} aria-label="Close">×</button>
+          </div>
         </header>
         <div class="browseAllContent" data-carousel-group="browseAll">
           ${categoryRows.map(
-            (row) => html`
-              <${VodCarouselRow} rowId=${row.id} title=${row.label} className="browseAllRow" key=${row.id}>
-                ${row.shows.map(({ feedId, feedTitle, show }, idx) => {
-                  const progress = getShowProgress(show, feedId, history, player);
-                  const showTitle = show.title_full || show.title;
-                  const posClass = titlePosClass(`${feedId}:${show.slug || show.id}`);
-                  const eps = show.episodes || [];
-                  const isPlayingShow = curSourceId === feedId && curEpId && eps.some((e) => e?.id === curEpId);
-                  const audioOnly = isAudioOnlyShow(show);
-                  const total = progress.totalEpisodes || (show.episodeCount || 0);
-                  const watched = progress.watchedCount || 0;
-                  const resumeLabel = progress.resumeEpisode ? "Resume" : "Play";
-                  const watchedPct = total > 0 ? Math.round((watched / total) * 100) : 0;
-                  const thumbSeed = `${feedId}:${show.slug || show.id}`;
-                  const initials = fallbackInitials(showTitle) || "TV";
+            (row, rowIdx) => {
+              const isActive = rowIdx >= rowWindow.start && rowIdx <= rowWindow.end;
+              return html`
+                <div
+                  class="browseAllRowMount"
+                  key=${row.id}
+                  data-row-idx=${rowIdx}
+                  ref=${(el) => {
+                    if (el) {
+                      rowElsRef.current.set(rowIdx, el);
+                      try {
+                        observerRef.current?.observe?.(el);
+                      } catch {}
+                    } else {
+                      rowElsRef.current.delete(rowIdx);
+                    }
+                  }}
+                >
+                  ${isActive
+                    ? html`
+                        <${VodCarouselRow} rowId=${row.id} title=${row.label} className="browseAllRow">
+                          ${row.shows.map(({ feedId, feedTitle, show }, idx) => {
+                            const progress = getShowProgress(show, feedId, historyByFeed.get(feedId), player);
+                            const showTitle = show.title_full || show.title;
+                            const posClass = titlePosClass(`${feedId}:${show.slug || show.id}`);
+                            const eps = show.episodes || [];
+                            const isPlayingShow = curSourceId === feedId && curEpId && eps.some((e) => e?.id === curEpId);
+                            const isAudioOnlyFeed = feedAudioOnlyIds.has(feedId);
+                            const total = progress.totalEpisodes || (show.episodeCount || 0);
+                            const watched = progress.watchedCount || 0;
+                            const resumeLabel = progress.resumeEpisode ? "Resume" : "Play";
+                            const watchedPct = total > 0 ? Math.round((watched / total) * 100) : 0;
+                            const thumbSeed = `${feedId}:${show.slug || show.id}`;
+                            const initials = fallbackInitials(showTitle) || "TV";
 
-                  return html`
-                    <div class=${"vodCarouselItem vodCarouselItemShow" + (isPlayingShow ? " playing" : "")} key=${feedId + ":" + show.id} data-carousel-idx=${idx}>
-                      <div class=${"vodThumbWrap " + posClass}>
-                        <button
-                          class="vodThumbBtn"
-                          type="button"
-                          data-navitem="1"
-                          aria-label=${showTitle || "Show"}
-                          onClick=${() => playShow(feedId, show)}
-                          onFocus=${(e) => {
-                            try {
-                              e.currentTarget.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
-                            } catch {}
-                          }}
-                        >
-                          <div class="vodThumb" style=${thumbFallbackStyle(thumbSeed)}>
-                            <span class="vodThumbPlaceholder">${initials}</span>
-                            ${show.artworkUrl
-                              ? html`<img class="vodThumbImg" src=${show.artworkUrl} alt="" loading="lazy" onError=${onThumbImgError} />`
-                              : ""}
-                            ${isPlayingShow ? html`<span class="vodThumbBadge" aria-hidden="true">Playing</span>` : ""}
-                            ${audioOnly
-                              ? html`<span class="vodThumbAudio" aria-hidden="true" title="Audio only"><${HeadphonesIcon} size=${16} /></span>`
-                              : ""}
-                            ${(show.artworkOverlay || showTitle)
-                              ? html`
-                                  <span class="vodThumbTitle">
-                                    <span class="vodThumbTitleBar">${show.artworkOverlay || showTitle}</span>
-                                  </span>
-                                `
-                              : ""}
-                            <span class="vodThumbMeta" aria-hidden="true">
-                              <span class="vodThumbMetaTop">${feedTitle}</span>
-                              <span class="vodThumbMetaMid">${resumeLabel} · ${total} eps${watched ? ` · ${watched} watched` : ""}</span>
-                              ${watchedPct > 0
-                                ? html`
-                                    <span class="vodThumbMetaBar">
-                                      <span class="vodThumbMetaBarFill" style=${{ width: `${watchedPct}%` }}></span>
-                                    </span>
-                                  `
-                                : ""}
-                            </span>
-                          </div>
-                        </button>
-                        ${onShowClick
-                          ? html`
-                              <button
-                                class="vodThumbIcon"
-                                type="button"
-                                data-navitem="1"
-                                aria-label="View episodes"
-                                title="Episodes"
-                                onClick=${() => onShowClick?.(feedId, show)}
-                              >
-                                ≡
-                              </button>
-                            `
-                          : ""}
-                      </div>
-                    </div>
-                  `;
-                })}
-              </${VodCarouselRow}>
-            `
+                            return html`
+                              <div class=${"vodCarouselItem vodCarouselItemShow" + (isPlayingShow ? " playing" : "")} key=${feedId + ":" + show.id} data-carousel-idx=${idx}>
+                                <div class=${"vodThumbWrap " + posClass}>
+                                  <button
+                                    class="vodThumbBtn"
+                                    type="button"
+                                    data-navitem="1"
+                                    aria-label=${showTitle || "Show"}
+                                    onClick=${() => playShow(feedId, show)}
+                                    onFocus=${(e) => {
+                                      try {
+                                        e.currentTarget.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "start" });
+                                      } catch {}
+                                    }}
+                                  >
+                                    <div class="vodThumb" style=${thumbFallbackStyle(thumbSeed)}>
+                                      <span class="vodThumbPlaceholder">${initials}</span>
+                                      ${show.artworkUrl
+                                        ? html`<img class="vodThumbImg" src=${show.artworkUrl} alt="" loading="lazy" onError=${onThumbImgError} />`
+                                        : ""}
+                                      ${isPlayingShow ? html`<span class="vodThumbBadge" aria-hidden="true">Playing</span>` : ""}
+                                      ${isAudioOnlyFeed
+                                        ? html`<span class="vodThumbAudio" aria-hidden="true" title="Audio-only feed"><${RadioIcon} size=${16} /></span>`
+                                        : ""}
+                                      ${(show.artworkOverlay || showTitle)
+                                        ? html`
+                                            <span class="vodThumbTitle">
+                                              <span class="vodThumbTitleBar">${show.artworkOverlay || showTitle}</span>
+                                            </span>
+                                          `
+                                        : ""}
+                                      <span class="vodThumbMeta" aria-hidden="true">
+                                        <span class="vodThumbMetaTop">
+                                          ${isAudioOnlyFeed ? html`<span class="vodThumbFeedAudioIcon" aria-hidden="true"><${RadioIcon} size=${12} /></span>` : ""}
+                                          ${feedTitle}
+                                        </span>
+                                        <span class="vodThumbMetaMid">${resumeLabel} · ${total} eps${watched ? ` · ${watched} watched` : ""}</span>
+                                        ${watchedPct > 0
+                                          ? html`
+                                              <span class="vodThumbMetaBar">
+                                                <span class="vodThumbMetaBarFill" style=${{ width: `${watchedPct}%` }}></span>
+                                              </span>
+                                            `
+                                          : ""}
+                                      </span>
+                                    </div>
+                                  </button>
+                                  ${onShowClick
+                                    ? html`
+                                        <button
+                                          class="vodThumbIcon"
+                                          type="button"
+                                          data-navitem="1"
+                                          aria-label="View episodes"
+                                          title="Episodes"
+                                          onClick=${() => onShowClick?.(feedId, show)}
+                                        >
+                                          ≡
+                                        </button>
+                                      `
+                                    : ""}
+                                </div>
+                              </div>
+                            `;
+                          })}
+                        </${VodCarouselRow}>
+                      `
+                    : html`<${BrowseAllRowPlaceholder} rowId=${row.id} title=${row.label} />`}
+                </div>
+              `;
+            }
           )}
         </div>
       </div>
