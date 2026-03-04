@@ -9,9 +9,8 @@
       "title_full": "Gospel Truth TV — Andrew Wommack TV",
       "description": "Daily Gospel Truth TV broadcasts.",
       "categories": ["tv-ministry", "teaching"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "title_suffix", "value": "Gospel Truth TV" }
     }
   ]
 }
-

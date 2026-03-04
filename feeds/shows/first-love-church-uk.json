@@ -18,7 +18,7 @@
       "title_full": "The Great Commission — First Love Church UK",
       "description": "Great Commission-themed messages.",
       "categories": ["sermons"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "title_contains", "value": "Great Commission" }
     },
     {
@@ -32,4 +32,3 @@
     }
   ]
 }
-

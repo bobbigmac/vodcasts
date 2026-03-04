@@ -18,9 +18,8 @@
       "title_full": "Episodes — Faith the Facts",
       "description": "Regular Faith the Facts episodes.",
       "categories": ["tv-ministry", "teaching"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "all" }
     }
   ]
 }
-

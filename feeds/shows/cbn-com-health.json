@@ -18,9 +18,8 @@
       "title_full": "Healthy Living — CBN",
       "description": "Healthy Living episodes.",
       "categories": ["lifestyle", "health"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "title_prefix", "value": "Healthy Living" }
     }
   ]
 }
-

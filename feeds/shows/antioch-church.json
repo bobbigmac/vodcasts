@@ -9,7 +9,7 @@
       "title_full": "Knowing, Loving, Serving — Antioch Church",
       "description": "Series episodes.",
       "categories": ["sermons"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "title_prefix", "value": "Knowing, Loving, Serving:" }
     },
     {

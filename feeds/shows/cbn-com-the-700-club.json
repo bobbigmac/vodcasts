@@ -9,9 +9,8 @@
       "title_full": "Daily Episodes — The 700 Club",
       "description": "Daily The 700 Club episodes.",
       "categories": ["tv-ministry"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "title_prefix", "value": "The 700 Club" }
     }
   ]
 }
-

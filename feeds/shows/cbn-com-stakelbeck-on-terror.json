@@ -9,9 +9,8 @@
       "title_full": "The Watchman — Stakelbeck on Terror",
       "description": "The Watchman episodes and specials.",
       "categories": ["news"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "title_prefix", "value": "The Watchman" }
     }
   ]
 }
-

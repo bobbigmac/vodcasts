@@ -9,7 +9,7 @@
       "title_full": "Freedom From Guilt and Regret — Creflo Dollar Ministries",
       "description": "Freedom From Guilt and Regret messages (including Episode 2).",
       "categories": ["tv-ministry", "teaching"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "title_prefix", "value": "Freedom From Guilt and Regret" }
     },
     {
@@ -32,4 +32,3 @@
     }
   ]
 }
-

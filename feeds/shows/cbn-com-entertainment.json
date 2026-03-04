@@ -18,9 +18,8 @@
       "title_full": "Entertainment — CBN",
       "description": "Entertainment clips and segments.",
       "categories": ["lifestyle"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "all" }
     }
   ]
 }
-

@@ -45,9 +45,8 @@
       "title_full": "Messages — Jesse Duplantis Ministries",
       "description": "Regular Jesse Duplantis Ministries messages.",
       "categories": ["tv-ministry", "teaching"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "all" }
     }
   ]
 }
-

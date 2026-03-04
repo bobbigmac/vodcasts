@@ -6,7 +6,7 @@ import { html, useEffect, useMemo, useRef, useState, useSignal } from "../runtim
 import { fallbackInitials, thumbFallbackStyle, titlePosClass, VodCarouselRow } from "./vod_carousel.js";
 import { HeadphonesIcon, TvIcon } from "./icons.js";
 
-const BROWSE_ALL_PREFS_KEY = "vodcasts_browse_all_prefs_v1";
+const BROWSE_ALL_PREFS_KEY = "vodcasts_browse_all_prefs_v2";
 
 function loadBrowseAllPrefs() {
   try {

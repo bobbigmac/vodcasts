@@ -9,7 +9,7 @@
       "title_full": "Best of — Focus on the Family with Jim Daly",
       "description": "Compilation episodes (e.g. Best of 2025).",
       "categories": ["radio", "family"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "title_prefix", "value": "Best of" }
     },
     {
@@ -23,4 +23,3 @@
     }
   ]
 }
-

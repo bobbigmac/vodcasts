@@ -9,7 +9,7 @@
       "title_full": "NewsWatch AM — CBN",
       "description": "Morning NewsWatch AM episodes.",
       "categories": ["news"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "title_prefix", "value": "CBN NewsWatch AM" }
     },
     {
@@ -23,4 +23,3 @@
     }
   ]
 }
-

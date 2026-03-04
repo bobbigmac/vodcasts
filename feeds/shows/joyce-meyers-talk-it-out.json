@@ -18,9 +18,8 @@
       "title_full": "Episodes — Talk It Out",
       "description": "Numbered Talk It Out episodes.",
       "categories": ["tv-ministry", "talk"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "title_regex", "value": "^\\d+\\." }
     }
   ]
 }
-

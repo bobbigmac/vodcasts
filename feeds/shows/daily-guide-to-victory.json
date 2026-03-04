@@ -9,7 +9,7 @@
       "title_full": "Kenneth Copeland — Daily Guide to Victory",
       "description": "Daily Guide to Victory episodes hosted by Kenneth Copeland.",
       "categories": ["tv-ministry", "teaching"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "title_contains", "value": "| Kenneth Copeland |" }
     },
     {
@@ -23,4 +23,3 @@
     }
   ]
 }
-

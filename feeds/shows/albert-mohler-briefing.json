@@ -9,7 +9,7 @@
       "title_full": "2026 — The Briefing",
       "description": "Daily Briefing episodes from 2026.",
       "categories": ["teaching"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "title_regex", "value": "\\b2026\\b" }
     },
     {
@@ -41,4 +41,3 @@
     }
   ]
 }
-

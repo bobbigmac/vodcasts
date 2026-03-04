@@ -9,7 +9,7 @@
       "title_full": "Brian Houston TV — Brian Houston",
       "description": "Episodes labeled as Brian Houston TV.",
       "categories": ["sermons"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "title_prefix", "value": "Brian Houston TV" }
     },
     {
@@ -59,4 +59,3 @@
     }
   ]
 }
-

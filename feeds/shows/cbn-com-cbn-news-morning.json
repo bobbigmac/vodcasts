@@ -9,7 +9,7 @@
       "title_full": "CBN News Today — CBN",
       "description": "CBN News Today morning broadcasts.",
       "categories": ["news"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "title_prefix", "value": "CBN News Today" }
     },
     {
@@ -23,4 +23,3 @@
     }
   ]
 }
-

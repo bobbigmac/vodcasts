@@ -9,9 +9,8 @@
       "title_full": "Lessons — CBN Spiritual Gifts: Foundations",
       "description": "The Spiritual Gifts: Foundations teaching series lessons.",
       "categories": ["teaching"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "all" }
     }
   ]
 }
-

@@ -9,7 +9,7 @@
       "title_full": "Why Few Are Chosen — Dag Heward-Mills",
       "description": "Why Few Are Chosen multi-part series.",
       "categories": ["sermons", "teaching"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "title_contains", "value": "Why Few Are Chosen" }
     },
     {
@@ -59,4 +59,3 @@
     }
   ]
 }
-

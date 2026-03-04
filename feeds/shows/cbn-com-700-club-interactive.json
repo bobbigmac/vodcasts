@@ -9,9 +9,8 @@
       "title_full": "Episodes — 700 Club Interactive",
       "description": "Daily 700 Club Interactive episodes.",
       "categories": ["tv-ministry", "news"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "title_prefix", "value": "700 Club Interactive" }
     }
   ]
 }
-

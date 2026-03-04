@@ -9,9 +9,8 @@
       "title_full": "Episodes — The Brody File",
       "description": "The Brody File episodes (dated).",
       "categories": ["news"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "title_prefix", "value": "The Brody File" }
     }
   ]
 }
-

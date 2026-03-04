@@ -9,9 +9,8 @@
       "title_full": "Vertical Living — James MacDonald",
       "description": "Vertical Living series episodes.",
       "categories": ["ministry", "teaching"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "title_contains", "value": "Vertical Living" }
     }
   ]
 }
-

@@ -9,9 +9,8 @@
       "title_full": "Special Reports — CBN News",
       "description": "CBN News special reports and features.",
       "categories": ["news"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "all" }
     }
   ]
 }
-

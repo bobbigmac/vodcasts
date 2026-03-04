@@ -18,7 +18,7 @@
       "title_full": "Episodes — Jerusalem Dateline",
       "description": "All Jerusalem Dateline episodes (many are dated without the show label).",
       "categories": ["news"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "all" }
     }
   ]

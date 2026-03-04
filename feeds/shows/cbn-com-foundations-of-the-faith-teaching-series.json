@@ -9,9 +9,8 @@
       "title_full": "Foundations of the Faith — CBN",
       "description": "Foundations of the Faith teaching series lessons.",
       "categories": ["teaching"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "title_prefix", "value": "Foundations of the Faith" }
     }
   ]
 }
-

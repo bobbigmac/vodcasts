@@ -9,9 +9,8 @@
       "title_full": "Equipping Parents episodes — Focus on the Family",
       "description": "All episodes.",
       "categories": ["radio", "teaching"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "all" }
     }
   ]
 }
-

@@ -9,9 +9,8 @@
       "title_full": "Weekend Broadcasts — Focus on the Family Weekend",
       "description": "The regular weekend radio program episodes.",
       "categories": ["radio", "family"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "title_prefix", "value": "Focus on the Family Weekend" }
     }
   ]
 }
-

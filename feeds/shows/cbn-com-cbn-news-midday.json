@@ -9,9 +9,8 @@
       "title_full": "Midday Edition — CBN News",
       "description": "News Channel Midday Edition broadcasts.",
       "categories": ["news"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "title_prefix", "value": "News Channel Midday Edition" }
     }
   ]
 }
-

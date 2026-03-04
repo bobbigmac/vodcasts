@@ -9,9 +9,8 @@
       "title_full": "Messages — Omega Power Ministries",
       "description": "Omega Power Ministries messages.",
       "categories": ["sermons", "teaching"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "all" }
     }
   ]
 }
-
