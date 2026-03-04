@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Theme Park Science (Behind the Video)",
+  "leftovers_description": "Items outside the standard TPS episode numbering.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Theme Park Science",
+      "description": "TPS-numbered episodes.",
+      "categories": ["tech"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^TPS\\s*#\\d+\\b" }
+    }
+  ]
+}
+

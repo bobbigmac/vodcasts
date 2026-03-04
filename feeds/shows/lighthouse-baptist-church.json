@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Messages",
+  "leftovers_title_full": "Messages — Lighthouse Baptist Church",
+  "leftovers_description": "Regular messages and sermons.",
+  "shows": [
+    {
+      "id": "messages",
+      "title": "Messages",
+      "title_full": "Messages — Lighthouse Baptist Church",
+      "description": "Regular messages and sermons.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

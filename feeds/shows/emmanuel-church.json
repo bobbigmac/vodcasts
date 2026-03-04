@@ -1,0 +1,80 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — Emmanuel Church",
+  "leftovers_description": "Messages outside the main named series.",
+  "shows": [
+    {
+      "id": "reboot",
+      "title": "Reboot",
+      "title_full": "Reboot — Emmanuel Church",
+      "description": "Reboot series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Reboot" }
+    },
+    {
+      "id": "clutter",
+      "title": "Clutter",
+      "title_full": "Clutter — Emmanuel Church",
+      "description": "Clutter series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Clutter" }
+    },
+    {
+      "id": "dying-to-live",
+      "title": "Dying to Live",
+      "title_full": "Dying to Live — Emmanuel Church",
+      "description": "Dying to Live series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Dying to Live" }
+    },
+    {
+      "id": "start",
+      "title": "Start",
+      "title_full": "Start — Emmanuel Church",
+      "description": "Start series messages (week-by-week).",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Start" }
+    },
+    {
+      "id": "unbroken",
+      "title": "Unbroken",
+      "title_full": "Unbroken — Emmanuel Church",
+      "description": "Unbroken series messages (week-by-week).",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Unbroken" }
+    },
+    {
+      "id": "pursuing-awesome",
+      "title": "Pursuing Awesome",
+      "title_full": "Pursuing Awesome — Emmanuel Church",
+      "description": "Pursuing Awesome series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Pursuing Awesome" }
+    },
+    {
+      "id": "hashtag",
+      "title": "Hashtag",
+      "title_full": "Hashtag — Emmanuel Church",
+      "description": "Hashtag series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Hashtag" }
+    },
+    {
+      "id": "the-gospel",
+      "title": "The Gospel",
+      "title_full": "The Gospel — Emmanuel Church",
+      "description": "The Gospel series messages.",
+      "categories": ["sermons", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Gospel" }
+    }
+  ]
+}
+

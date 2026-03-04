@@ -1,0 +1,98 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Discovering The Jewish Jesus",
+  "leftovers_description": "Episodes outside the main series labels.",
+  "shows": [
+    {
+      "id": "decoding-the-torah",
+      "title": "Decoding the Torah",
+      "title_full": "Decoding the Torah — Discovering The Jewish Jesus",
+      "description": "Decoding the Torah series (Season-labeled).",
+      "categories": ["bible-study", "teaching"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Decoding the Torah" }
+    },
+    {
+      "id": "mysteries-gospel-john",
+      "title": "Mysteries (Gospel of John)",
+      "title_full": "Mysteries (Gospel of John) — Discovering The Jewish Jesus",
+      "description": "Mysteries in the Gospel of John series (Season-labeled).",
+      "categories": ["bible-study", "teaching"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Mysteries in the Gospel of John" }
+    },
+    {
+      "id": "lessons-lords-brother",
+      "title": "Lessons (Lord's Brother)",
+      "title_full": "Lessons (Lord's Brother) — Discovering The Jewish Jesus",
+      "description": "Lessons From the Lord's Brother series (Season-labeled).",
+      "categories": ["bible-study", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Lessons From the Lord's Brother" }
+    },
+    {
+      "id": "song-of-songs",
+      "title": "Song of Songs",
+      "title_full": "Song of Songs — Discovering The Jewish Jesus",
+      "description": "Mysteries of the Song of Songs series (Season-labeled).",
+      "categories": ["bible-study", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Mysteries of the Song of Songs" }
+    },
+    {
+      "id": "revelation-decoded",
+      "title": "Revelation Decoded",
+      "title_full": "Revelation Decoded — Discovering The Jewish Jesus",
+      "description": "Revelation Decoded series (Season-labeled).",
+      "categories": ["bible-study", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Revelation Decoded" }
+    },
+    {
+      "id": "to-know-him-by-name",
+      "title": "To Know Him by Name",
+      "title_full": "To Know Him by Name — Discovering The Jewish Jesus",
+      "description": "To Know Him by Name series (Season-labeled).",
+      "categories": ["bible-study", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "To Know Him by Name" }
+    },
+    {
+      "id": "ephesians",
+      "title": "Ephesians",
+      "title_full": "Ephesians — Discovering The Jewish Jesus",
+      "description": "Deep Revelation from the Book of Ephesians series (Season-labeled).",
+      "categories": ["bible-study", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Deep Revelation From the Book of Ephesians" }
+    },
+    {
+      "id": "prepare-for-the-end",
+      "title": "Prepare for the End",
+      "title_full": "Prepare for the End — Discovering The Jewish Jesus",
+      "description": "Prepare for the End episodes.",
+      "categories": ["bible-study", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Prepare for the End" }
+    },
+    {
+      "id": "reaching-jewish-people",
+      "title": "Reaching Jewish People",
+      "title_full": "Reaching Jewish People — Discovering The Jewish Jesus",
+      "description": "Reaching Jewish People With the Gospel episodes.",
+      "categories": ["bible-study", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Reaching Jewish People" }
+    },
+    {
+      "id": "beatitudes",
+      "title": "The Beatitudes",
+      "title_full": "The Beatitudes — Discovering The Jewish Jesus",
+      "description": "Beatitudes series episodes.",
+      "categories": ["bible-study", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Beatitudes" }
+    }
+  ]
+}
+

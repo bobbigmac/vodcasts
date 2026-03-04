@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Board Room Chat",
+  "leftovers_description": "Episodes outside the main Boardroom Chat LIVE labeling.",
+  "shows": [
+    {
+      "id": "boardroom-chat-live",
+      "title": "Boardroom Chat LIVE",
+      "title_full": "Boardroom Chat LIVE — Jesse Duplantis Ministries",
+      "description": "Live Boardroom Chat episodes.",
+      "categories": ["tv-ministry", "talk"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Boardroom Chat LIVE" }
+    }
+  ]
+}
+

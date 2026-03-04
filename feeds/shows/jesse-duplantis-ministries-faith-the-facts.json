@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Faith the Facts",
+  "leftovers_description": "Episodes outside the main topical buckets.",
+  "shows": [
+    {
+      "id": "hope",
+      "title": "Hope",
+      "title_full": "Hope — Faith the Facts",
+      "description": "Hope-themed episodes.",
+      "categories": ["tv-ministry", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Hope" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Faith the Facts",
+      "description": "Regular Faith the Facts episodes.",
+      "categories": ["tv-ministry", "teaching"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

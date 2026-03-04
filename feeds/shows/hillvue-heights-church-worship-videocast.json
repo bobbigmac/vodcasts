@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Hillvue Heights Worship",
+  "leftovers_description": "Items outside the dated service buckets.",
+  "shows": [
+    {
+      "id": "worship",
+      "title": "Worship",
+      "title_full": "Worship — Hillvue Heights",
+      "description": "Worship sets and music for a given Sunday.",
+      "categories": ["worship"],
+      "featured": true,
+      "filter": { "type": "title_suffix", "value": "- Worship" }
+    },
+    {
+      "id": "sermon",
+      "title": "Sermon",
+      "title_full": "Sermon — Hillvue Heights",
+      "description": "Sermons for a given Sunday.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_suffix", "value": "- Sermon" }
+    }
+  ]
+}
+

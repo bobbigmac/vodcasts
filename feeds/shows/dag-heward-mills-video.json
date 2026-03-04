@@ -1,0 +1,62 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — Dag Heward-Mills",
+  "leftovers_description": "Messages outside the main recurring series buckets.",
+  "shows": [
+    {
+      "id": "why-few-are-chosen",
+      "title": "Why Few Are Chosen",
+      "title_full": "Why Few Are Chosen — Dag Heward-Mills",
+      "description": "Why Few Are Chosen multi-part series.",
+      "categories": ["sermons", "teaching"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Why Few Are Chosen" }
+    },
+    {
+      "id": "anointing",
+      "title": "Anointing",
+      "title_full": "Anointing — Dag Heward-Mills",
+      "description": "Messages focused on anointing/anointed themes.",
+      "categories": ["sermons", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_contains_any", "values": ["Anointing", "Anointed"] }
+    },
+    {
+      "id": "cyrus",
+      "title": "Cyrus",
+      "title_full": "Cyrus — Dag Heward-Mills",
+      "description": "Cyrus-themed messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Cyrus" }
+    },
+    {
+      "id": "preparation",
+      "title": "Preparation",
+      "title_full": "Preparation — Dag Heward-Mills",
+      "description": "Preparation-themed messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Preparation" }
+    },
+    {
+      "id": "jesus-letter-series",
+      "title": "Jesus (A/B/C)",
+      "title_full": "Jesus (A/B/C) — Dag Heward-Mills",
+      "description": "Short A/B/C-labeled Jesus messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^Jesus\\s*\\([A-C]\\)\\s*$" }
+    },
+    {
+      "id": "sons-of-zion",
+      "title": "Sons of Zion",
+      "title_full": "Sons of Zion — Dag Heward-Mills",
+      "description": "Sons of Zion and related messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains_any", "values": ["Sons Of Zion", "Sons of Zion"] }
+    }
+  ]
+}
+

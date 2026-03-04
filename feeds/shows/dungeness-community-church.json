@@ -1,0 +1,89 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — Dungeness Community Church",
+  "leftovers_description": "Messages outside the main named series.",
+  "shows": [
+    {
+      "id": "in-him-ephesians",
+      "title": "In Him (Ephesians)",
+      "title_full": "In Him (Ephesians) — Dungeness Community Church",
+      "description": "In Him series through Ephesians.",
+      "categories": ["sermons", "bible-study"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "In Him - Paul's Letter to the Ephesians" }
+    },
+    {
+      "id": "losing-to-win",
+      "title": "Losing to Win",
+      "title_full": "Losing to Win — Dungeness Community Church",
+      "description": "Losing to Win series messages (surrender themes).",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Losing to Win" }
+    },
+    {
+      "id": "second-scroll",
+      "title": "The 2nd Scroll",
+      "title_full": "The 2nd Scroll — Dungeness Community Church",
+      "description": "The 2nd Scroll series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "2nd Scroll" }
+    },
+    {
+      "id": "two-scrolls",
+      "title": "Two Scrolls",
+      "title_full": "Two Scrolls — Dungeness Community Church",
+      "description": "Two Scrolls series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Two Scrolls" }
+    },
+    {
+      "id": "long-journey-home",
+      "title": "Long Journey Home",
+      "title_full": "Long Journey Home — Dungeness Community Church",
+      "description": "Long Journey Home series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Long Journey Home" }
+    },
+    {
+      "id": "forgotten-prophets",
+      "title": "Forgotten Prophets",
+      "title_full": "Forgotten Prophets — Dungeness Community Church",
+      "description": "Forgotten Prophets series messages.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Forgotten Prophets" }
+    },
+    {
+      "id": "fruit-stand",
+      "title": "If Jesus Had a Fruit Stand",
+      "title_full": "If Jesus Had a Fruit Stand — Dungeness Community Church",
+      "description": "If Jesus Had a Fruit Stand series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "If Jesus Had a Fruit Stand" }
+    },
+    {
+      "id": "outrageous-sayings",
+      "title": "Outrageous Sayings of Jesus",
+      "title_full": "Outrageous Sayings of Jesus — Dungeness Community Church",
+      "description": "Outrageous Sayings of Jesus series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Outrageous Sayings of Jesus" }
+    },
+    {
+      "id": "revelation",
+      "title": "Revelation",
+      "title_full": "Revelation — Dungeness Community Church",
+      "description": "Revelation series messages.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Revelation" }
+    }
+  ]
+}
+

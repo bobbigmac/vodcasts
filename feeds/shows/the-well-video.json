@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — The Well",
+  "leftovers_description": "Messages outside the main sermon series buckets.",
+  "shows": [
+    {
+      "id": "a-better",
+      "title": "A Better…",
+      "title_full": "A Better… — The Well",
+      "description": "The A Better… series messages.",
+      "categories": ["sermons", "teaching"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "A Better" }
+    },
+    {
+      "id": "monarchy",
+      "title": "Monarchy",
+      "title_full": "Monarchy — The Well",
+      "description": "Monarchy series messages.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Monarchy" }
+    },
+    {
+      "id": "on-display",
+      "title": "On Display",
+      "title_full": "On Display — The Well",
+      "description": "Messages with “on display” in the title.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "on Display" }
+    }
+  ]
+}
+

@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — Kingsfield Church",
+  "leftovers_description": "Messages outside the main series buckets.",
+  "shows": [
+    {
+      "id": "ephesians",
+      "title": "Ephesians",
+      "title_full": "Ephesians — Kingsfield Church",
+      "description": "Ephesians series messages.",
+      "categories": ["sermons", "bible-study"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Ephesians" }
+    }
+  ]
+}
+

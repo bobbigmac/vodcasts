@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Specials",
+  "leftovers_title_full": "Specials — New Media Show",
+  "leftovers_description": "Items outside the standard numbered episode titles.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — New Media Show",
+      "description": "Standard episodes with a trailing episode number.",
+      "categories": ["tech", "podcasting"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "#\\d+\\s*$" }
+    }
+  ]
+}
+

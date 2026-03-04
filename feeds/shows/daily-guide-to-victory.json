@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Daily Guide to Victory",
+  "leftovers_description": "Episodes outside the main speaker-labeled buckets.",
+  "shows": [
+    {
+      "id": "kenneth-copeland",
+      "title": "Kenneth Copeland",
+      "title_full": "Kenneth Copeland — Daily Guide to Victory",
+      "description": "Daily Guide to Victory episodes hosted by Kenneth Copeland.",
+      "categories": ["tv-ministry", "teaching"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "| Kenneth Copeland |" }
+    },
+    {
+      "id": "gloria-copeland",
+      "title": "Gloria Copeland",
+      "title_full": "Gloria Copeland — Daily Guide to Victory",
+      "description": "Daily Guide to Victory episodes hosted by Gloria Copeland.",
+      "categories": ["tv-ministry", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "| Gloria Copeland |" }
+    }
+  ]
+}
+

@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — This Week in Space",
+  "leftovers_description": "Items outside the standard TWiS-numbered episodes.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — This Week in Space",
+      "description": "TWiS-numbered episodes.",
+      "categories": ["tech", "science"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^TWiS\\s*\\d+\\s*:" }
+    }
+  ]
+}
+

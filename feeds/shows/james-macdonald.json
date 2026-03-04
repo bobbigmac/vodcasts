@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — James MacDonald",
+  "leftovers_description": "Items outside the main Vertical Living series.",
+  "shows": [
+    {
+      "id": "vertical-living",
+      "title": "Vertical Living",
+      "title_full": "Vertical Living — James MacDonald",
+      "description": "Vertical Living series episodes.",
+      "categories": ["ministry", "teaching"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Vertical Living" }
+    }
+  ]
+}
+

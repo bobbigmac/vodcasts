@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Bluegrass Gospel Hymns",
+  "leftovers_description": "Songs outside the main hymn/video bucket.",
+  "shows": [
+    {
+      "id": "songs",
+      "title": "Songs",
+      "title_full": "Songs — Bluegrass Gospel Hymns",
+      "description": "Bluegrass gospel hymns and worship songs.",
+      "categories": ["worship", "music"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

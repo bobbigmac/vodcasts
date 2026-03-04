@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Hands-On Tech",
+  "leftovers_description": "Items outside the standard HOT-numbered episodes.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Hands-On Tech",
+      "description": "HOT-numbered episodes.",
+      "categories": ["tech"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^HOT\\s*\\d+\\s*:" }
+    }
+  ]
+}
+

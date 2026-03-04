@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — Encounter Church",
+  "leftovers_description": "Messages outside the main named buckets.",
+  "shows": [
+    {
+      "id": "build-his-church",
+      "title": "Build His Church",
+      "title_full": "Build His Church — Encounter Church",
+      "description": "Build His Church series messages.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Build His Church" }
+    },
+    {
+      "id": "prayer",
+      "title": "Prayer",
+      "title_full": "Prayer — Encounter Church",
+      "description": "Messages focused on prayer (Pray/Prayer).",
+      "categories": ["sermons", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_contains_any", "values": ["Pray", "Prayer"] }
+    }
+  ]
+}
+

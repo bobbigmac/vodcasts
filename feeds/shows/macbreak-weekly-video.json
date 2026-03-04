@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — MacBreak Weekly",
+  "leftovers_description": "Items outside the standard MBW-numbered episodes.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — MacBreak Weekly",
+      "description": "MBW-numbered episodes.",
+      "categories": ["tech", "apple"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^MBW\\s*\\d+\\s*:" }
+    }
+  ]
+}
+

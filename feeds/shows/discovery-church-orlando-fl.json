@@ -1,0 +1,89 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — Discovery Church Orlando",
+  "leftovers_description": "Messages outside the main named series.",
+  "shows": [
+    {
+      "id": "isaiah",
+      "title": "Isaiah",
+      "title_full": "Isaiah — Discovery Church Orlando",
+      "description": "Isaiah series messages.",
+      "categories": ["sermons", "bible-study"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Isaiah" }
+    },
+    {
+      "id": "margin",
+      "title": "Margin",
+      "title_full": "Margin — Discovery Church Orlando",
+      "description": "Margin series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Margin" }
+    },
+    {
+      "id": "soul-cravings",
+      "title": "Soul Cravings",
+      "title_full": "Soul Cravings — Discovery Church Orlando",
+      "description": "Soul Cravings series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Soul Cravings" }
+    },
+    {
+      "id": "blessed-life",
+      "title": "The Blessed Life",
+      "title_full": "The Blessed Life — Discovery Church Orlando",
+      "description": "The Blessed Life series messages.",
+      "categories": ["sermons", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Blessed Life" }
+    },
+    {
+      "id": "acclaim",
+      "title": "ACCLAIM",
+      "title_full": "ACCLAIM — Discovery Church Orlando",
+      "description": "ACCLAIM series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "ACCLAIM" }
+    },
+    {
+      "id": "ithrive",
+      "title": "iThrive",
+      "title_full": "iThrive — Discovery Church Orlando",
+      "description": "iThrive series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "iThrive" }
+    },
+    {
+      "id": "circle-of-influence",
+      "title": "The Circle of Influence",
+      "title_full": "The Circle of Influence — Discovery Church Orlando",
+      "description": "The Circle of Influence series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Circle of Influence" }
+    },
+    {
+      "id": "things-could-be-worse",
+      "title": "Things Could Be Worse",
+      "title_full": "Things Could Be Worse — Discovery Church Orlando",
+      "description": "Things Could Be Worse series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Things Could Be Worse" }
+    },
+    {
+      "id": "i-surrender-all",
+      "title": "I Surrender All",
+      "title_full": "I Surrender All — Discovery Church Orlando",
+      "description": "I Surrender All multi-part messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "I Surrender All" }
+    }
+  ]
+}
+

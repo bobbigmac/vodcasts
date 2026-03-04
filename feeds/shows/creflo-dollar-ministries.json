@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Creflo Dollar Ministries",
+  "leftovers_description": "Messages outside the primary named buckets.",
+  "shows": [
+    {
+      "id": "freedom-from-guilt-and-regret",
+      "title": "Freedom From Guilt and Regret",
+      "title_full": "Freedom From Guilt and Regret — Creflo Dollar Ministries",
+      "description": "Freedom From Guilt and Regret messages (including Episode 2).",
+      "categories": ["tv-ministry", "teaching"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Freedom From Guilt and Regret" }
+    },
+    {
+      "id": "overcoming-uncertainty",
+      "title": "Overcoming Uncertainty",
+      "title_full": "Overcoming Uncertainty — Creflo Dollar Ministries",
+      "description": "Overcoming Uncertainty messages (including Episode 2).",
+      "categories": ["tv-ministry", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Overcoming Uncertainty" }
+    },
+    {
+      "id": "contentment",
+      "title": "Contentment",
+      "title_full": "Contentment — Creflo Dollar Ministries",
+      "description": "Messages about being content.",
+      "categories": ["tv-ministry", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Understanding How to Be Content" }
+    }
+  ]
+}
+

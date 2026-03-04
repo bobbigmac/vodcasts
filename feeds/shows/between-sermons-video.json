@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Messages",
+  "leftovers_title_full": "Messages — Between Sermons",
+  "leftovers_description": "Messages and topics outside the primary series bucket.",
+  "shows": [
+    {
+      "id": "you-asked-for-it",
+      "title": "You Asked For It",
+      "title_full": "You Asked For It — Between Sermons",
+      "description": "Q&A / audience-driven messages.",
+      "categories": ["sermons", "teaching"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "You Asked For It" }
+    }
+  ]
+}
+

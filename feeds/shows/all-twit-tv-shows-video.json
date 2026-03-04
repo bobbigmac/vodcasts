@@ -1,0 +1,107 @@
+{
+  "leftovers_title": "Other shows",
+  "leftovers_title_full": "Other shows — TWiT",
+  "leftovers_description": "Episodes that don’t match the common TWiT show title prefixes.",
+  "shows": [
+    {
+      "id": "this-week-in-tech",
+      "title": "This Week in Tech",
+      "title_full": "This Week in Tech — TWiT",
+      "description": "TWiT’s flagship roundtable (This Week in Tech).",
+      "categories": ["tech"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "This Week in Tech" }
+    },
+    {
+      "id": "security-now",
+      "title": "Security Now",
+      "title_full": "Security Now — TWiT",
+      "description": "Security Now episodes.",
+      "categories": ["tech", "security"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Security Now" }
+    },
+    {
+      "id": "macbreak-weekly",
+      "title": "MacBreak Weekly",
+      "title_full": "MacBreak Weekly — TWiT",
+      "description": "MacBreak Weekly episodes.",
+      "categories": ["tech", "apple"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "MacBreak Weekly" }
+    },
+    {
+      "id": "ios-today",
+      "title": "iOS Today",
+      "title_full": "iOS Today — TWiT",
+      "description": "iOS Today episodes.",
+      "categories": ["tech", "apple"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "iOS Today" }
+    },
+    {
+      "id": "windows-weekly",
+      "title": "Windows Weekly",
+      "title_full": "Windows Weekly — TWiT",
+      "description": "Windows Weekly episodes.",
+      "categories": ["tech", "windows"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Windows Weekly" }
+    },
+    {
+      "id": "hands-on-tech",
+      "title": "Hands-On Tech",
+      "title_full": "Hands-On Tech — TWiT",
+      "description": "Hands-On Tech episodes.",
+      "categories": ["tech"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Hands-On Tech" }
+    },
+    {
+      "id": "hands-on-windows",
+      "title": "Hands-On Windows",
+      "title_full": "Hands-On Windows — TWiT",
+      "description": "Hands-On Windows episodes.",
+      "categories": ["tech", "windows"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Hands-On Windows" }
+    },
+    {
+      "id": "hands-on-apple",
+      "title": "Hands-On Apple",
+      "title_full": "Hands-On Apple — TWiT",
+      "description": "Hands-On Apple episodes.",
+      "categories": ["tech", "apple"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Hands-On Apple" }
+    },
+    {
+      "id": "this-week-in-space",
+      "title": "This Week in Space",
+      "title_full": "This Week in Space — TWiT",
+      "description": "This Week in Space episodes.",
+      "categories": ["tech", "science"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "This Week in Space" }
+    },
+    {
+      "id": "tech-news-weekly",
+      "title": "Tech News Weekly",
+      "title_full": "Tech News Weekly — TWiT",
+      "description": "Tech News Weekly episodes.",
+      "categories": ["tech", "news"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Tech News Weekly" }
+    },
+    {
+      "id": "untitled-linux-show",
+      "title": "Untitled Linux Show",
+      "title_full": "Untitled Linux Show — TWiT",
+      "description": "Untitled Linux Show episodes.",
+      "categories": ["tech", "linux"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Untitled Linux Show" }
+    }
+  ]
+}
+

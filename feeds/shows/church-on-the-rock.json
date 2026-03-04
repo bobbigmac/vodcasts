@@ -1,0 +1,89 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — Church On The Rock",
+  "leftovers_description": "Messages outside the main named series buckets.",
+  "shows": [
+    {
+      "id": "guest-speaker",
+      "title": "Guest Speaker",
+      "title_full": "Guest Speaker — Church On The Rock",
+      "description": "Guest speaker messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Guest Speaker" }
+    },
+    {
+      "id": "in-his-presence",
+      "title": "In His Presence",
+      "title_full": "In His Presence — Church On The Rock",
+      "description": "In His Presence multi-part series.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "In His Presence" }
+    },
+    {
+      "id": "whatever-happened-to-hope",
+      "title": "Whatever Happened To Hope",
+      "title_full": "Whatever Happened To Hope — Church On The Rock",
+      "description": "Whatever Happened To Hope series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Whatever Happened To Hope" }
+    },
+    {
+      "id": "why-read-my-bible",
+      "title": "Why Read My Bible",
+      "title_full": "Why Read My Bible — Church On The Rock",
+      "description": "Why Read My Bible series messages.",
+      "categories": ["sermons", "bible-study"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Why Read My Bible" }
+    },
+    {
+      "id": "promise-with-more-blessings",
+      "title": "The Promise",
+      "title_full": "The Promise — Church On The Rock",
+      "description": "The Promise With More Blessings Than Any Other series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Promise With More Blessings Than Any Other" }
+    },
+    {
+      "id": "this-is-church-on-the-rock",
+      "title": "This Is Church On The Rock",
+      "title_full": "This Is Church On The Rock — Church On The Rock",
+      "description": "This Is Church On The Rock multi-part series.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "This Is Church On The Rock" }
+    },
+    {
+      "id": "church-on-the-rock-is",
+      "title": "Church On The Rock Is…",
+      "title_full": "Church On The Rock Is… — Church On The Rock",
+      "description": "Church On The Rock Is… series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Church On The Rock Is" }
+    },
+    {
+      "id": "god-worshipers",
+      "title": "God Worshipers",
+      "title_full": "God Worshipers — Church On The Rock",
+      "description": "God Worshipers series messages.",
+      "categories": ["sermons", "worship"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "God Worshipers" }
+    },
+    {
+      "id": "never-forget-the-1",
+      "title": "Never Forget The 1",
+      "title_full": "Never Forget The 1 — Church On The Rock",
+      "description": "Never Forget The 1 multi-part series.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Never Forget The 1" }
+    }
+  ]
+}
+

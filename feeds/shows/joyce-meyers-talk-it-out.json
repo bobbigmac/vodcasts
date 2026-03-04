@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Talk It Out",
+  "leftovers_description": "Items outside the main Talk It Out episode pattern.",
+  "shows": [
+    {
+      "id": "small-talk",
+      "title": "Small Talk",
+      "title_full": "Small Talk — Talk It Out",
+      "description": "Short episodes labeled as Small Talk.",
+      "categories": ["tv-ministry", "talk"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Small Talk" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Talk It Out",
+      "description": "Numbered Talk It Out episodes.",
+      "categories": ["tv-ministry", "talk"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^\\d+\\." }
+    }
+  ]
+}
+

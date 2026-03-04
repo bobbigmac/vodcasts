@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Daily Tech News Show",
+  "leftovers_description": "Items outside the main labeled buckets.",
+  "shows": [
+    {
+      "id": "ces",
+      "title": "CES",
+      "title_full": "CES — Daily Tech News Show",
+      "description": "CES special episodes.",
+      "categories": ["tech", "news"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "CES" }
+    },
+    {
+      "id": "dtns-live",
+      "title": "DTNS Live",
+      "title_full": "DTNS Live — Daily Tech News Show",
+      "description": "DTNS Live episodes.",
+      "categories": ["tech", "news"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "DTNS Live" }
+    }
+  ]
+}
+

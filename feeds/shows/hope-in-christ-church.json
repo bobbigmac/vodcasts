@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other teachings",
+  "leftovers_title_full": "Other teachings — Hope in Christ Church",
+  "leftovers_description": "Teachings outside the main buckets.",
+  "shows": [
+    {
+      "id": "wonder",
+      "title": "Wonder",
+      "title_full": "Wonder — Hope in Christ Church",
+      "description": "Wonder series episodes.",
+      "categories": ["teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Wonder" }
+    },
+    {
+      "id": "episodes",
+      "title": "Teachings",
+      "title_full": "Teachings — Hope in Christ Church",
+      "description": "Regular teaching episodes.",
+      "categories": ["teaching"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

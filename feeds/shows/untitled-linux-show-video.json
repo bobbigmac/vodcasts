@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Untitled Linux Show",
+  "leftovers_description": "Items outside the standard ULS-numbered episodes.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Untitled Linux Show",
+      "description": "ULS-numbered episodes.",
+      "categories": ["tech", "linux"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^ULS\\s*\\d+\\s*:" }
+    }
+  ]
+}
+

@@ -622,6 +622,8 @@ def main() -> None:
     shows_config_all: dict[str, list[dict[str, Any]]] = {}
     feed_landing_paths: list[str] = []
     feeds_with_custom_shows: list[str] = []
+    feeds_missing_shows_cfg: list[str] = []
+    feeds_empty_shows_cfg: list[str] = []
 
     def _get_shows_for_feed(feed_id: str) -> tuple[dict[str, Any], bool]:
         raw = raw_feeds_by_slug.get(feed_id, {})
@@ -676,13 +678,22 @@ def main() -> None:
         if has_custom_shows:
             feeds_with_custom_shows.append(fid)
         if isinstance(raw_cfg, dict):
-            shows_list = raw_cfg.get("shows") or []
+            shows_val = raw_cfg.get("shows")
+            shows_list = shows_val if isinstance(shows_val, list) else []
             leftovers_title = raw_cfg.get("leftovers_title")
             leftovers_title_full = raw_cfg.get("leftovers_title_full")
             leftovers_description = raw_cfg.get("leftovers_description")
         else:
             shows_list = raw_cfg if isinstance(raw_cfg, list) else []
             leftovers_title = leftovers_title_full = leftovers_description = None
+
+        # Warn on missing/empty show configs. Missing = no file / no inline shows / unreadable JSON.
+        # Empty = file exists but no "shows" entries (or inline shows list is empty).
+        if not has_custom_shows:
+            feeds_missing_shows_cfg.append(fid)
+        elif not shows_list:
+            feeds_empty_shows_cfg.append(fid)
+
         shows = build_shows_for_feed(
             episodes,
             shows_list if shows_list else None,
@@ -785,6 +796,14 @@ def main() -> None:
             "feedsWithCustomShows": feeds_with_custom_shows,
         },
     )
+    if feeds_missing_shows_cfg:
+        sample = ", ".join(feeds_missing_shows_cfg[:20])
+        more = f" (+{len(feeds_missing_shows_cfg) - 20} more)" if len(feeds_missing_shows_cfg) > 20 else ""
+        _log(f"[warn] missing show config for {len(feeds_missing_shows_cfg)} feeds (no shows file/inline config): {sample}{more}")
+    if feeds_empty_shows_cfg:
+        sample = ", ".join(feeds_empty_shows_cfg[:20])
+        more = f" (+{len(feeds_empty_shows_cfg) - 20} more)" if len(feeds_empty_shows_cfg) > 20 else ""
+        _log(f"[warn] empty shows list for {len(feeds_empty_shows_cfg)} feeds (shows file/inline config has no entries): {sample}{more}")
     _log(f"  {len(feed_landing_paths)} feed landings, {sum(len(s) for s in shows_config_all.values())} shows ({time.perf_counter() - t:.1f}s)")
 
     # index.html

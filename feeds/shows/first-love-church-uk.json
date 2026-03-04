@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — First Love Church UK",
+  "leftovers_description": "Messages outside the main topical buckets.",
+  "shows": [
+    {
+      "id": "unchanging-purpose",
+      "title": "The Unchanging Purpose",
+      "title_full": "The Unchanging Purpose — First Love Church UK",
+      "description": "The Unchanging Purpose of Christianity messages.",
+      "categories": ["sermons", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Unchanging Purpose of Christianity" }
+    },
+    {
+      "id": "great-commission",
+      "title": "The Great Commission",
+      "title_full": "The Great Commission — First Love Church UK",
+      "description": "Great Commission-themed messages.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Great Commission" }
+    },
+    {
+      "id": "tithing",
+      "title": "Tithing",
+      "title_full": "Tithing — First Love Church UK",
+      "description": "Messages on tithing, tithers, and related themes.",
+      "categories": ["sermons", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_contains_any", "values": ["Tithe", "Tithers", "Non-Tithers"] }
+    }
+  ]
+}
+

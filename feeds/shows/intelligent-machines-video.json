@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Intelligent Machines",
+  "leftovers_description": "Items outside the standard IM-numbered episodes.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Intelligent Machines",
+      "description": "IM-numbered episodes.",
+      "categories": ["tech", "ai"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^IM\\s*\\d+\\s*:" }
+    }
+  ]
+}
+

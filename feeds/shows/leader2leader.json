@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Leader2Leader",
+  "leftovers_description": "Items outside the standard interview episodes.",
+  "shows": [
+    {
+      "id": "interviews",
+      "title": "Interviews",
+      "title_full": "Interviews — Leader2Leader",
+      "description": "Leadership interviews and conversations.",
+      "categories": ["ministry"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

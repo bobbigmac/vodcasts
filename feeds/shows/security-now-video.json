@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Security Now",
+  "leftovers_description": "Items outside the standard SN-numbered episodes.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Security Now",
+      "description": "SN-numbered episodes.",
+      "categories": ["tech", "security"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^SN\\s*\\d+\\s*:" }
+    }
+  ]
+}
+

@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Home Theater Geeks",
+  "leftovers_description": "Items outside the standard HTG-numbered episodes.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Home Theater Geeks",
+      "description": "HTG-numbered episodes.",
+      "categories": ["tech"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^HTG\\s*\\d+\\s*:" }
+    }
+  ]
+}
+

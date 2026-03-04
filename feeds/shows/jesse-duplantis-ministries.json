@@ -1,0 +1,53 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Jesse Duplantis Ministries",
+  "leftovers_description": "Messages outside the main named buckets.",
+  "shows": [
+    {
+      "id": "50-years-of-ministry",
+      "title": "50 Years of Ministry",
+      "title_full": "50 Years of Ministry — Jesse Duplantis Ministries",
+      "description": "Anniversary series episodes.",
+      "categories": ["tv-ministry", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "50 Years of Ministry" }
+    },
+    {
+      "id": "vision",
+      "title": "Vision",
+      "title_full": "Vision — Jesse Duplantis Ministries",
+      "description": "Vision-labeled episodes.",
+      "categories": ["tv-ministry", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Vision" }
+    },
+    {
+      "id": "impartation",
+      "title": "Impartation",
+      "title_full": "Impartation — Jesse Duplantis Ministries",
+      "description": "Impartation-labeled episodes.",
+      "categories": ["tv-ministry", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Impartation" }
+    },
+    {
+      "id": "knowledge",
+      "title": "Knowledge",
+      "title_full": "Knowledge — Jesse Duplantis Ministries",
+      "description": "Knowledge-labeled episodes.",
+      "categories": ["tv-ministry", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Knowledge" }
+    },
+    {
+      "id": "episodes",
+      "title": "Messages",
+      "title_full": "Messages — Jesse Duplantis Ministries",
+      "description": "Regular Jesse Duplantis Ministries messages.",
+      "categories": ["tv-ministry", "teaching"],
+      "featured": true,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

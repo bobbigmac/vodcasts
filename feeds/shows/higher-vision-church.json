@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — Higher Vision Church",
+  "leftovers_description": "Messages outside the primary named series buckets.",
+  "shows": [
+    {
+      "id": "all-wrapped-up",
+      "title": "All Wrapped Up",
+      "title_full": "All Wrapped Up — Higher Vision Church",
+      "description": "All Wrapped Up series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "All Wrapped Up" }
+    },
+    {
+      "id": "go",
+      "title": "Go",
+      "title_full": "Go — Higher Vision Church",
+      "description": "Go series messages.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Go" }
+    },
+    {
+      "id": "blessed-life",
+      "title": "The Blessed Life",
+      "title_full": "The Blessed Life — Higher Vision Church",
+      "description": "The Blessed Life series messages.",
+      "categories": ["sermons", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Blessed Life" }
+    }
+  ]
+}
+

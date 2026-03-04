@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Windows Weekly",
+  "leftovers_description": "Items outside the standard WW-numbered episodes.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Windows Weekly",
+      "description": "WW-numbered episodes.",
+      "categories": ["tech", "windows"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^WW\\s*\\d+\\s*:" }
+    }
+  ]
+}
+

@@ -1,0 +1,53 @@
+{
+  "leftovers_title": "Other shows",
+  "leftovers_title_full": "Other shows — Total Leo",
+  "leftovers_description": "Episodes that don’t match the common show title prefixes.",
+  "shows": [
+    {
+      "id": "security-now",
+      "title": "Security Now",
+      "title_full": "Security Now — Total Leo",
+      "description": "Security Now episodes.",
+      "categories": ["tech", "security"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "Security Now" }
+    },
+    {
+      "id": "this-week-in-tech",
+      "title": "This Week in Tech",
+      "title_full": "This Week in Tech — Total Leo",
+      "description": "This Week in Tech episodes.",
+      "categories": ["tech"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "This Week in Tech" }
+    },
+    {
+      "id": "intelligent-machines",
+      "title": "Intelligent Machines",
+      "title_full": "Intelligent Machines — Total Leo",
+      "description": "Intelligent Machines episodes.",
+      "categories": ["tech", "ai"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Intelligent Machines" }
+    },
+    {
+      "id": "windows-weekly",
+      "title": "Windows Weekly",
+      "title_full": "Windows Weekly — Total Leo",
+      "description": "Windows Weekly episodes.",
+      "categories": ["tech", "windows"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Windows Weekly" }
+    },
+    {
+      "id": "macbreak-weekly",
+      "title": "MacBreak Weekly",
+      "title_full": "MacBreak Weekly — Total Leo",
+      "description": "MacBreak Weekly episodes.",
+      "categories": ["tech", "apple"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "MacBreak Weekly" }
+    }
+  ]
+}
+

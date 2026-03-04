@@ -1,0 +1,26 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — Jesus Is Lord Church Worldwide",
+  "leftovers_description": "Messages outside the primary event buckets.",
+  "shows": [
+    {
+      "id": "anniversaries",
+      "title": "Anniversaries",
+      "title_full": "Anniversaries — Jesus Is Lord Church Worldwide",
+      "description": "Anniversary celebrations and specials.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Anniversary" }
+    },
+    {
+      "id": "homecoming",
+      "title": "Homecoming",
+      "title_full": "Homecoming — Jesus Is Lord Church Worldwide",
+      "description": "Grand Homecoming specials.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Grand Homecoming" }
+    }
+  ]
+}
+

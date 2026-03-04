@@ -1,0 +1,35 @@
+{
+  "leftovers_title": "Other messages",
+  "leftovers_title_full": "Other messages — Faith Christian Church",
+  "leftovers_description": "Messages outside the main series buckets.",
+  "shows": [
+    {
+      "id": "law-and-grace",
+      "title": "Law and Grace",
+      "title_full": "Law and Grace — Faith Christian Church",
+      "description": "Law and Grace series messages.",
+      "categories": ["sermons", "teaching"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Law and Grace" }
+    },
+    {
+      "id": "definitions",
+      "title": "Definitions",
+      "title_full": "Definitions — Faith Christian Church",
+      "description": "Definitions series messages.",
+      "categories": ["sermons", "teaching"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Definitions" }
+    },
+    {
+      "id": "dated-messages",
+      "title": "Dated Messages",
+      "title_full": "Dated Messages — Faith Christian Church",
+      "description": "Messages labeled with a date prefix (MM-DD-YY).",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "^\\d{1,2}-\\d{1,2}-\\d{2}\\s*-" }
+    }
+  ]
+}
+

@@ -1,0 +1,71 @@
+{
+  "leftovers_title": "Other series",
+  "leftovers_title_full": "Other series — Hope Church",
+  "leftovers_description": "Messages outside the primary named series buckets.",
+  "shows": [
+    {
+      "id": "not-by-sight",
+      "title": "Not by Sight",
+      "title_full": "Not by Sight — Hope Church",
+      "description": "Not by Sight series messages.",
+      "categories": ["sermons"],
+      "featured": true,
+      "filter": { "type": "title_contains", "value": "Not by Sight" }
+    },
+    {
+      "id": "the-unknown",
+      "title": "THE UNKNOWN",
+      "title_full": "THE UNKNOWN — Hope Church",
+      "description": "THE UNKNOWN series messages.",
+      "categories": ["sermons", "teaching"],
+      "featured": true,
+      "filter": { "type": "title_prefix", "value": "THE UNKNOWN" }
+    },
+    {
+      "id": "incomparable-christ",
+      "title": "The Incomparable Christ",
+      "title_full": "The Incomparable Christ — Hope Church",
+      "description": "The Incomparable Christ series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Incomparable Christ" }
+    },
+    {
+      "id": "jesus-follower",
+      "title": "The Life of a Jesus Follower",
+      "title_full": "The Life of a Jesus Follower — Hope Church",
+      "description": "The Life of a Jesus Follower series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Life of a Jesus Follower" }
+    },
+    {
+      "id": "guest-speaker",
+      "title": "Guest Speaker",
+      "title_full": "Guest Speaker — Hope Church",
+      "description": "Guest speaker messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Guest Speaker" }
+    },
+    {
+      "id": "warnings",
+      "title": "WARNINGS",
+      "title_full": "WARNINGS — Hope Church",
+      "description": "WARNINGS series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "WARNINGS" }
+    },
+    {
+      "id": "social-network",
+      "title": "The Social Network",
+      "title_full": "The Social Network — Hope Church",
+      "description": "The Social Network series messages.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Social Network" }
+    }
+  ]
+}
+

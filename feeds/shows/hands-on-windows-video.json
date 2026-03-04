@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Hands-On Windows",
+  "leftovers_description": "Items outside the standard HOW-numbered episodes.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Hands-On Windows",
+      "description": "HOW-numbered episodes.",
+      "categories": ["tech", "windows"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^HOW\\s*\\d+\\s*:" }
+    }
+  ]
+}
+

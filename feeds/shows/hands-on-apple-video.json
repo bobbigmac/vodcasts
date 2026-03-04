@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Hands-On Apple",
+  "leftovers_description": "Items outside the standard HOA-numbered episodes.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Hands-On Apple",
+      "description": "HOA-numbered episodes.",
+      "categories": ["tech", "apple"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^HOA\\s*\\d+\\s*:" }
+    }
+  ]
+}
+

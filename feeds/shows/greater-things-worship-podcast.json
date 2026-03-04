@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Greater Things Worship Podcast",
+  "leftovers_description": "Items outside the numbered episode format.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Greater Things Worship Podcast",
+      "description": "Numbered Greater Things Worship episodes.",
+      "categories": ["worship", "teaching"],
+      "featured": true,
+      "filter": { "type": "title_regex", "value": "^Episode\\s*#\\d+\\b" }
+    }
+  ]
+}
+
