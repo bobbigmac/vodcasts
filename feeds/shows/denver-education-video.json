@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Denver Education",
+  "leftovers_description": "Episodes outside the main row.",
+  "shows": [
+    {
+      "id": "denver-education",
+      "title": "Denver Education",
+      "title_full": "Denver Education — Video Podcast",
+      "description": "Town halls, roundtables, and education-related public sessions.",
+      "categories": ["lectures"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

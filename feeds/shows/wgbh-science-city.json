@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — WGBH Science City",
+  "leftovers_description": "Episodes outside the main row.",
+  "shows": [
+    {
+      "id": "science-city",
+      "title": "Science City",
+      "title_full": "Science City — WGBH",
+      "description": "Short science/engineering profile videos (archival).",
+      "categories": ["science"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

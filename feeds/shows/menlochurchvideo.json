@@ -1,0 +1,53 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Menlo Church",
+  "leftovers_description": "Items outside the main buckets.",
+  "shows": [
+    {
+      "id": "midweek",
+      "title": "Midweek",
+      "title_full": "Midweek — Menlo Church",
+      "description": "Menlo Midweek episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Menlo Midweek" }
+    },
+    {
+      "id": "live-stream",
+      "title": "Live Stream",
+      "title_full": "Live Stream — Menlo Church",
+      "description": "Menlo Church live stream episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Menlo Church Live Stream" }
+    },
+    {
+      "id": "missions",
+      "title": "Missions",
+      "title_full": "Missions — Menlo Church",
+      "description": "Menlo Missions episodes.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Menlo Missions" }
+    },
+    {
+      "id": "sunday-message",
+      "title": "Sunday Message",
+      "title_full": "Sunday Message — Menlo Church",
+      "description": "Episodes explicitly labeled as Sunday Message / Sermon Message.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "title_contains_any", "values": ["Menlo Church Sunday Message", "Menlo Church Sermon Message"] }
+    },
+    {
+      "id": "sermons",
+      "title": "Sermons",
+      "title_full": "Sermons — Menlo Church",
+      "description": "Main sermon series and message videos.",
+      "categories": ["sermons"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

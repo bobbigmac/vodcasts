@@ -1,0 +1,53 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — NASA",
+  "leftovers_description": "NASA videos outside the named buckets.",
+  "shows": [
+    {
+      "id": "news-conferences",
+      "title": "News Conferences",
+      "title_full": "News Conferences — NASA",
+      "description": "Press briefings and official news conferences.",
+      "categories": ["science"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "News Conference" }
+    },
+    {
+      "id": "artemis",
+      "title": "Artemis",
+      "title_full": "Artemis — NASA",
+      "description": "Artemis program updates and related videos.",
+      "categories": ["science"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Artemis" }
+    },
+    {
+      "id": "spacex-crew",
+      "title": "SpaceX Crew",
+      "title_full": "SpaceX Crew Missions — NASA",
+      "description": "NASA SpaceX Crew mission coverage.",
+      "categories": ["science"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "SpaceX Crew" }
+    },
+    {
+      "id": "updates",
+      "title": "Updates",
+      "title_full": "Updates — NASA",
+      "description": "Update-format videos (e.g., Space Operations Update).",
+      "categories": ["science"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Update" }
+    },
+    {
+      "id": "nasa-videos",
+      "title": "NASA Videos",
+      "title_full": "NASA Videos",
+      "description": "Everything else in the feed.",
+      "categories": ["science"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

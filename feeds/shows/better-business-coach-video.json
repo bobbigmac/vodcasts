@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Better Business Coach",
+  "leftovers_description": "Episodes outside the main row.",
+  "shows": [
+    {
+      "id": "better-business-coach",
+      "title": "Better Business Coach",
+      "title_full": "Better Business Coach — Video Podcast",
+      "description": "Business coaching videos and mini-lessons.",
+      "categories": ["lifestyle"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

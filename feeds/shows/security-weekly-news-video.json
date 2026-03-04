@@ -1,0 +1,34 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other — Security Weekly News",
+  "leftovers_description": "Items outside the named buckets.",
+  "shows": [
+    {
+      "id": "swn-vault",
+      "title": "SWN Vault",
+      "title_full": "SWN Vault — Security Weekly News",
+      "description": "Security Weekly News Vault episodes.",
+      "categories": ["news"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "SWN Vault" }
+    },
+    {
+      "id": "security-weekly-news",
+      "title": "Security Weekly News",
+      "title_full": "Security Weekly News (Video)",
+      "description": "Main weekly news episodes (SWN #...).",
+      "categories": ["news"],
+      "featured": false,
+      "filter": { "type": "title_regex", "value": "\\bSWN\\s*#\\d+\\b" }
+    },
+    {
+      "id": "security-weekly-news-other",
+      "title": "Other",
+      "title_full": "Other — Security Weekly News",
+      "description": "Everything else in the feed.",
+      "categories": ["news"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
