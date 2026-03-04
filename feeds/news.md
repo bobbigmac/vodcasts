@@ -14,36 +14,42 @@
 
 ## bbc-news-front-page
 - url: http://newsrss.bbc.co.uk/rss/newsonline_uk_edition/front_page/rss.xml
+- disabled: media_probe: no supported enclosures in feed (cache) (checked 2026-03-04)
 - title: BBC News — Front Page
 - category: news
 - tags: bbc, uk, headlines
 
 ## euronews-news
 - url: https://www.euronews.com/rss?format=mrss&level=theme&name=news
+- disabled: media_probe: no supported enclosures in feed (cache) (checked 2026-03-04)
 - title: Euronews — News
 - category: news
 - tags: euronews, europe, mrss
 
 ## euronews-nocomment
 - url: https://www.euronews.com/rss?format=mrss&level=program&name=nocomment
+- disabled: media_probe: no supported enclosures in feed (cache) (checked 2026-03-04)
 - title: Euronews — No Comment
 - category: news
 - tags: euronews, video
 
 ## euronews-sport
 - url: https://euronews.com/rss?format=mrss&level=theme&name=sport
+- disabled: media_probe: no supported enclosures in feed (cache) (checked 2026-03-04)
 - title: Euronews — Sport
 - category: news
 - tags: euronews, sport
 
 ## euronews-green
 - url: https://www.euronews.com/rss?format=mrss&level=vertical&name=green
+- disabled: media_probe: no supported enclosures in feed (cache) (checked 2026-03-04)
 - title: Euronews — Green
 - category: news
 - tags: euronews, environment
 
 ## aljazeera-all
 - url: https://www.aljazeera.com/xml/rss/all.xml
+- disabled: media_probe: no supported enclosures in feed (cache) (checked 2026-03-04)
 - title: Al Jazeera — All
 - category: news
 - tags: aljazeera, middle-east, global
@@ -56,12 +62,14 @@
 
 ## pbs-nova-video
 - url: http://feeds.pbs.org/pbs/wgbh/nova-video
+- disabled: media_probe: enclosure probe failed (3 sampled) (cache) (checked 2026-03-04)
 - title: NOVA — PBS
 - category: news
 - tags: pbs, nova, science, video
 
 ## ted-talks-video
 - url: http://feeds.feedburner.com/TEDTalks_video
+- disabled: Redundant, hd should be widely enough available
 - title: TED Talks Daily (Video)
 - category: news
 - tags: ted, video, talks
@@ -95,3 +103,4 @@
 - title: Geek News Central (Video)
 - category: news
 - tags: tech, geek, video
+

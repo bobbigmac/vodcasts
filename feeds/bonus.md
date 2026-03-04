@@ -17,11 +17,6 @@
 - title: Better Business Coach Video Podcast
 - category: business
 
-## freshlife
-- url: https://freshlife.podbean.com/feed.xml
-- title: Fresh Life Church
-- category: church
-
 ## kingsway
 - url: https://kingsway.podbean.com/feed.xml
 - title: Kingsway Christian Church (video?)
@@ -32,29 +27,9 @@
 - title: Menlo Church
 - category: church
 
-## restorationchurch
-- url: https://restorationchurch.podbean.com/feed.xml
-- title: Restoration Church Port Orange (video?)
-- category: church
-
 ## denver-education-video
 - url: https://denver.granicus.com/VPodcast.php?view_id=73
 - title: Denver Education Video Podcast
-- category: education
-
-## peerview-internal-medicine
-- url: https://c.peerview.com/podcast/xml/internalmedicine_video.xml
-- title: PeerView Internal Medicine (CME Video)
-- category: education
-
-## peerview-neurology
-- url: https://c.peerview.com/podcast/xml/neurology_video.xml
-- title: PeerView Neuroscience & Psychiatry (CME Video)
-- category: education
-
-## peerview-oncology
-- url: https://c.peerview.com/podcast/xml/oncology_video.xml
-- title: PeerView Oncology & Hematology (CME Video)
 - category: education
 
 ## wgbh-science-city
@@ -72,10 +47,6 @@
 - title: NASA on Odysee
 - category: science
 
-## linux-action-news-video
-- url: https://feedpress.me/lanvideo
-- title: Linux Action News Video
-- category: tech
 
 ## security-weekly-news-video
 - url: https://hntvvideo.libsyn.com/rss

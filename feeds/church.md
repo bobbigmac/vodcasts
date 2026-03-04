@@ -29,6 +29,7 @@
 
 ## jerry-savelle
 - url: https://www.jerrysavelle.org/rssfeeds/tvvideo.xml
+- disabled: media_probe: enclosure probe failed (2 sampled) (cache) (checked 2026-03-04)
 - title: Jerry Savelle Ministries
 - category: tv-ministry
 - tags: tv-ministry, faith-teaching, prosperity, healing
@@ -65,6 +66,7 @@
 
 ## a-better-bible-study-podcast-video
 - url: https://feeds.blubrry.com/feeds/abetterbiblestudy.xml
+- disabled: media_probe: enclosure probe failed (2 sampled) (cache) (checked 2026-03-04)
 - title: Better Bible Study
 - category: bible-study
 - tags: bible-study, church-of-christ, in-depth, q-and-a
@@ -83,6 +85,7 @@
 
 ## apostolic-faith-church
 - url: https://s3-us-west-1.amazonaws.com/com.jesuscomingsoon.podcast/podcast.xml
+- disabled: media_probe: enclosure probe failed (2 sampled) (cache) (checked 2026-03-04)
 - title: Apostolic Faith Church
 - category: tv-ministry
 - tags: tv-ministry, holiness, pentecostal, weekly-broadcast, concert, live-music
@@ -107,12 +110,14 @@
 
 ## brentwood-baptist
 - url: http://feeds.feedburner.com/BrentwoodBaptistVideoPodcast
+- disabled: media_probe: enclosure probe failed (2 sampled) (cache) (checked 2026-03-04)
 - title: Brentwood Baptist
 - category: sermons
 - tags: sermons, baptist, tennessee, sunday, concert, live-music
 
 ## brian-houston
 - url: https://feeds.feedburner.com/hillsong/vodcast
+- disabled: media_probe: enclosure probe failed (2 sampled) (cache) (checked 2026-03-04)
 - title: Brian Houston
 - category: sermons
 - tags: sermons, hillsong, conferences, australia, concert, live-music
@@ -245,6 +250,7 @@
 
 ## cbn-spiritual-gifts-foundations-an-introduction-to-spiritual-gifts
 - url: http://podcast.cbn.com/cbn_video_podcast_spiritual_gifts_webcast_foundations.aspx
+- disabled: media_probe: enclosure probe failed (2 sampled) (cache) (checked 2026-03-04)
 - title: CBN Spiritual Gifts: Foundations
 - category: teaching
 - tags: spiritual-gifts, teaching, prophetic, series
@@ -275,6 +281,7 @@
 
 ## cotr-behind-the-scenes
 - url: http://feeds.feedburner.com/cotrbts
+- disabled: media_probe: enclosure probe failed (2 sampled) (cache) (checked 2026-03-04)
 - title: COTR Behind The Scenes
 - category: ministry
 - tags: behind-the-scenes, ministry, church-life
@@ -336,12 +343,14 @@
 
 ## sandals-church-video
 - url: https://sandalschurch.com/feeds/podcast_video_hd.xml
+- disabled: media_probe: enclosure probe failed (2 sampled) (cache) (checked 2026-03-04)
 - title: Sandals Church Sermon Video
 - category: sermons
 - tags: sermons, california, video
 
 ## scottsdale-bible-church-video
 - url: http://feeds.feedburner.com/scottsdale-bible-hd-video
+- disabled: media_probe: enclosure probe failed (2 sampled) (cache) (checked 2026-03-04)
 - title: Scottsdale Bible Church Sermon HD
 - category: sermons
 - tags: sermons, arizona, video
@@ -372,6 +381,7 @@
 
 ## discovery-church-orlando-fl
 - url: http://feeds.feedburner.com/discoveryvideo
+- disabled: media_probe: enclosure probe failed (2 sampled) (cache) (checked 2026-03-04)
 - title: Discovery Church Orlando FL
 - category: sermons
 - tags: sermons, bible-teaching, florida, series, concert, live-music
@@ -402,6 +412,7 @@
 
 ## forest-home-ministries
 - url: http://feeds.feedburner.com/ForestHomeMinistriesVideoPodcast
+- disabled: media_probe: enclosure probe failed (1 sampled) (cache) (checked 2026-03-04)
 - title: Forest Home Ministries
 - category: ministry
 - tags: camps, retreats, california
@@ -426,12 +437,14 @@
 
 ## higher-vision-church
 - url: http://feeds.feedburner.com/highervisionchurch/guaW
+- disabled: media_probe: enclosure probe failed (2 sampled) (cache) (checked 2026-03-04)
 - title: Higher Vision Church
 - category: sermons
 - tags: sermons, california, sunday
 
 ## hillvue-heights-church-worship-videocast
 - url: https://feeds.feedburner.com/HillvueWorshipVideocast
+- disabled: media_probe: enclosure probe failed (2 sampled) (cache) (checked 2026-03-04)
 - title: Hillvue Heights Church Worship
 - category: worship
 - tags: worship, sermons, kentucky, sunday, concert, live-music
@@ -444,6 +457,7 @@
 
 ## hope-in-christ-church
 - url: http://hopeinchristnm.com/feed/podcast/video-podcast/
+- disabled: media_probe: enclosure probe failed (2 sampled) (cache) (checked 2026-03-04)
 - title: Hope in Christ Church 
 - category: teaching
 - tags: spiritual-formation, discipleship, new-mexico
@@ -765,5 +779,3 @@
 - title: Praise and Worship Music Live — Without Walls International Church
 - category: worship
 - tags: worship, music, florida, pentecostal, concert, live-music
-
-# === Public radio & Americana ===

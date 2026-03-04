@@ -83,6 +83,10 @@ def load_sources_config(path: Path) -> SourcesConfig:
         for f in (cfg.get("feeds") or []):
             if not isinstance(f, dict):
                 continue
+            disabled = f.get("disabled")
+            if disabled not in (None, False, "", "false", "False", 0):
+                # Disabled feeds remain in config for audit/notes, but are not built into sources.
+                continue
             slug = str(f.get("slug") or "").strip()
             if not slug:
                 continue

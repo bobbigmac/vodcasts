@@ -186,8 +186,3 @@
 - url: https://feeds.twit.tv/mikah_video_hd.xml
 - title: Total Mikah
 - category: twit
-
-## twit-throwback-video
-- url: https://feeds.twit.tv/throwback_video_large.xml
-- title: TWiT Throwback
-- category: twit
