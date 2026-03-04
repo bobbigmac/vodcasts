@@ -9,7 +9,7 @@
       "title_full": "Geek News Central — AI",
       "description": "AI-focused headlines and episodes.",
       "categories": ["news", "technology"],
-      "featured": true,
+      "featured": false,
       "filter": { "type": "title_contains_any", "values": ["AI", "ChatGPT", "OpenAI", "Gemini", "Grok", "DeepSeek", "Perplexity"] }
     },
     {
