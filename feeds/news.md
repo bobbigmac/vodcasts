@@ -84,12 +84,6 @@
 - category: news
 - tags: aljazeera, middle-east, global
 
-## dw-persian-all
-- url: http://rss.dw-world.de/xml/rss-per-all_volltext
-- title: Deutsche Welle — Persian (All)
-- category: news
-- tags: dw, persian, germany
-
 ## pbs-nova-video
 - url: http://feeds.pbs.org/pbs/wgbh/nova-video
 - disabled: media_probe: enclosure probe failed (3 sampled) (cache) (checked 2026-03-04)
@@ -115,12 +109,6 @@
 - title: Science Friday Videos
 - category: science
 - tags: science, pbs, video
-
-## msnbc-rachel-maddow-video
-- url: http://podcastfeeds.nbcnews.com/nbcnews/video/podcast/MSNBC-MADDOW-NETCAST-M4V.xml
-- title: MSNBC Rachel Maddow (Video)
-- category: news
-- tags: politics, us, analysis
 
 ## uctv-science-video
 - url: https://podcast.uctv.tv/uctv_video_science.rss

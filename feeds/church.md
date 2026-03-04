@@ -734,6 +734,7 @@
 
 ## without-walls-church
 - url: https://podpoint.com/feed/6700
+- disabled: only 1 entry
 - title: Without Walls Church
 - category: sermons
 - tags: sermons, florida, pentecostal, sunday, concert, live-music
@@ -776,6 +777,7 @@
 
 ## wwic-music-video
 - url: http://feeds.feedburner.com/WWIC-music-video
+- disabled: only one entry
 - title: Praise and Worship Music Live — Without Walls International Church
 - category: worship
 - tags: worship, music, florida, pentecostal, concert, live-music

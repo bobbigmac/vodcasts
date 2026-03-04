@@ -34,6 +34,9 @@ export function createPlayerService({ env, log, history }) {
   let shuffleBusy = false;
 
   const persisted = loadState();
+  const initialPlayIntent = persisted.playIntent === "pause" ? "pause" : persisted.playIntent === "play" ? "play" : null;
+  const initAutoplay = initialPlayIntent !== "pause";
+  userPaused = initialPlayIntent === "pause";
 
   const current = signal({ source: null, episode: null });
   const chapters = signal([]);
@@ -1366,9 +1369,9 @@ export function createPlayerService({ env, log, history }) {
     try {
       await ensurePreload();
       if (routeSourceId) {
-        await applyRoute(initialRoute, { autoplay: true });
+        await applyRoute(initialRoute, { autoplay: initAutoplay });
       } else {
-        await selectSource(wantedSourceId, { preserveEpisode: true });
+        await selectSource(wantedSourceId, { preserveEpisode: true, autoplay: initAutoplay });
       }
     } catch (e) {
       log.error(String(e?.message || e || "init load failed"));
@@ -1484,11 +1487,17 @@ export function createPlayerService({ env, log, history }) {
     videoEl.addEventListener("pause", () => {
       userPaused = true;
       playback.value = { ...playback.value, paused: true, ended: !!videoEl.ended };
+      if (!videoEl.ended) {
+        persisted.playIntent = "pause";
+        saveState();
+      }
     });
 
     videoEl.addEventListener("play", () => {
       userPaused = false;
       playback.value = { ...playback.value, paused: false, ended: !!videoEl.ended };
+      persisted.playIntent = "play";
+      saveState();
     });
 
     videoEl.addEventListener("ended", () => {
@@ -1524,7 +1533,9 @@ export function createPlayerService({ env, log, history }) {
       pendingInitRoute = null;
       didInitLoad = true;
       ensurePreload()
-        .then(() => (route && route.feed === sourceId ? applyRoute(route, { autoplay: true }) : selectSource(sourceId, { preserveEpisode: true })))
+        .then(() =>
+          route && route.feed === sourceId ? applyRoute(route, { autoplay: initAutoplay }) : selectSource(sourceId, { preserveEpisode: true, autoplay: initAutoplay })
+        )
         .catch((e) => {
           log.error(String(e?.message || e || "init load failed"));
         });

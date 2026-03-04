@@ -691,10 +691,10 @@
   align-items: flex-end;
 }
 
-/* Thumb sizing: unselected portrait (9:16), selected wide (16:9) */
+/* Thumb sizing: shows are square at rest (1:1), expand wide (16:9) on focus/hover */
 .vodCarouselItemShow {
   --vod-thumb-h: clamp(170px, 26vw, 240px);
-  --vod-thumb-aspect: 0.5625; /* 9/16 */
+  --vod-thumb-aspect: 0.8542; /* ~1/1 -> 9/16 (1/3 of the way) */
 }
 .vodCarouselItemShow:focus-within,
 .vodCarouselItemShow:hover {

@@ -204,8 +204,8 @@ function buildCategoryRows(allShows, historyAll, player) {
 
   const titleCase = (s) => String(s || "").replace(/\b\w/g, (c) => c.toUpperCase());
   const rows = [];
-  if (featured.length) rows.push({ id: "featured", label: "Featured", shows: shuffledWithSeed(featured, daySeed + 1) });
-  if (continueWatching.length) rows.push({ id: "continue", label: "Continue Watching", shows: continueWatching });
+  if (featured.length) rows.push({ id: "featured", label: "Featured", shows: shuffledWithSeed(featured, daySeed + 1), cats: [] });
+  if (continueWatching.length) rows.push({ id: "continue", label: "Continue Watching", shows: continueWatching, cats: [] });
 
   // Fluidify: assign each show to ONE of its categories to balance row sizes.
   const normCats = (cats) =>
@@ -304,10 +304,70 @@ function buildCategoryRows(allShows, historyAll, player) {
     const shows = byCat.get(cat) || [];
     if (shows.length) {
       const safeId = String(cat).replace(/[^a-z0-9_-]+/gi, "_");
-      rows.push({ id: `cat-${safeId}`, label: titleCase(cat), shows: shuffledWithSeed(shows, daySeed + cat.length) });
+      rows.push({ id: `cat-${safeId}`, label: titleCase(cat), shows: shuffledWithSeed(shows, daySeed + cat.length), cats: [cat] });
     }
   }
-  return rows;
+
+  // Merge small neighboring category rows into a longer row to reduce visual clutter and
+  // improve scroll performance. Cap at ~4 categories or ~12 shows in the merged row.
+  // (Featured / Continue rows are never merged.)
+  const MAX_MERGE_CATS = 4;
+  const MAX_MERGE_SHOWS = 12;
+  const SMALL_ROW_MAX_SHOWS = Math.max(3, Math.min(6, Math.floor(MIN_ITEMS / 2)));
+  const merged = [];
+  const uniqKey = (it) => `${it?.feedId || ""}::${it?.show?.id || it?.show?.slug || ""}`;
+
+  for (let i = 0; i < rows.length; i++) {
+    const r = rows[i];
+    const isCatRow = typeof r?.id === "string" && r.id.startsWith("cat-");
+    const canMergeStart = isCatRow && Array.isArray(r.shows) && r.shows.length > 0 && r.shows.length <= SMALL_ROW_MAX_SHOWS;
+    if (!canMergeStart) {
+      merged.push(r);
+      continue;
+    }
+
+    const take = [r];
+    let takeShows = r.shows.length;
+    while (i + 1 < rows.length) {
+      const nxt = rows[i + 1];
+      const isNextCat = typeof nxt?.id === "string" && nxt.id.startsWith("cat-");
+      if (!isNextCat) break;
+      if (!Array.isArray(nxt.shows) || !nxt.shows.length) break;
+      if (nxt.shows.length > SMALL_ROW_MAX_SHOWS) break;
+      if (take.length >= MAX_MERGE_CATS) break;
+      if (takeShows + nxt.shows.length > MAX_MERGE_SHOWS) break;
+      take.push(nxt);
+      takeShows += nxt.shows.length;
+      i++;
+    }
+
+    if (take.length === 1) {
+      merged.push(r);
+      continue;
+    }
+
+    const label = take.map((x) => x.label).filter(Boolean).join(" • ");
+    const cats = take.flatMap((x) => (Array.isArray(x.cats) ? x.cats : [])).filter(Boolean);
+    const seen = new Set();
+    const combined = [];
+    for (const t of take) {
+      for (const it of t.shows || []) {
+        const k = uniqKey(it);
+        if (!k || seen.has(k)) continue;
+        seen.add(k);
+        combined.push(it);
+      }
+    }
+    const mergeId = `cat-merged-${fnv1a32(cats.join("|") || label || take.map((x) => x.id).join("|"))}`;
+    merged.push({
+      id: mergeId,
+      label,
+      shows: shuffledWithSeed(combined, daySeed + (fnv1a32(mergeId) % 1000)),
+      cats,
+    });
+  }
+
+  return merged;
 }
 
 function BrowseAllRowPlaceholder({ rowId, title, count = 10 }) {
