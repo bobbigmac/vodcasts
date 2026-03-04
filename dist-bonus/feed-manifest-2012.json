@@ -1,0 +1,93 @@
+{
+  "feeds": [
+    {
+      "id": "denver-education-video",
+      "episodes": [
+        {
+          "id": "afc135a7-95c6-1030-b4c5-84d7a9c8f15d",
+          "slug": "2012-12-12-dps-moves-emily-griffith-dec-12-2012-jhazpf",
+          "title": "DPS Moves Emily Griffith  - Dec 12, 2012",
+          "link": "https://denver.granicus.com/MediaPlayer.php?view_id=73&clip_id=5986",
+          "dateText": "2012-12-12",
+          "channelTitle": "City and County of Denver: Education Video Podcast",
+          "durationSec": null,
+          "media": {
+            "url": "https://archive-video.granicus.com/denver/denver_4a30559c-b95b-49b8-9136-89ee1e70cddd.mp4",
+            "type": "video/mp4",
+            "bytes": null,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Watch Download File"
+        },
+        {
+          "id": "94715fde-95f8-1030-b4c5-84d7a9c8f15d",
+          "slug": "2012-12-11-denver-public-schools-startsmart-dec-11-2012-1nbd7x",
+          "title": "Denver Public Schools StartSmart - Dec 11, 2012",
+          "link": "https://denver.granicus.com/MediaPlayer.php?view_id=73&clip_id=5989",
+          "dateText": "2012-12-11",
+          "channelTitle": "City and County of Denver: Education Video Podcast",
+          "durationSec": null,
+          "media": {
+            "url": "https://archive-video.granicus.com/denver/denver_6aa2a72d-9602-476e-b186-4dbcd7083be5.mp4",
+            "type": "video/mp4",
+            "bytes": null,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Watch Download File"
+        },
+        {
+          "id": "f1c2b3d0-6db0-1030-b4c5-84d7a9c8f15d",
+          "slug": "2012-10-22-denver-preschool-program-5th-anniversary-celebration-oct-22-2-1mqms6",
+          "title": "Denver Preschool Program 5th Anniversary Celebration - Oct 22, 2012",
+          "link": "https://denver.granicus.com/MediaPlayer.php?view_id=73&clip_id=5857",
+          "dateText": "2012-10-22",
+          "channelTitle": "City and County of Denver: Education Video Podcast",
+          "durationSec": null,
+          "media": {
+            "url": "https://archive-video.granicus.com/denver/denver_35f6e5b2-7323-4f12-baa6-36c4d0a6f142.mp4",
+            "type": "video/mp4",
+            "bytes": null,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Watch Download File"
+        },
+        {
+          "id": "1842a17a-e788-102f-b6fc-79f14fb49beb",
+          "slug": "2012-05-04-2012-mile-high-teachers-awards-short-subject-may-04-2012-1bt780",
+          "title": "2012 Mile High Teachers Awards (short subject) - May 04, 2012",
+          "link": "https://denver.granicus.com/MediaPlayer.php?view_id=73&clip_id=5481",
+          "dateText": "2012-05-04",
+          "channelTitle": "City and County of Denver: Education Video Podcast",
+          "durationSec": null,
+          "media": {
+            "url": "https://archive-video.granicus.com/denver/denver_aae827e8-f5f2-4506-924f-235fcc4f51b3.mp4",
+            "type": "video/mp4",
+            "bytes": null,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Watch Download File"
+        }
+      ]
+    }
+  ]
+}

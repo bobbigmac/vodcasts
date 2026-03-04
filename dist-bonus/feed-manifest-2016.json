@@ -1,0 +1,51 @@
+{
+  "feeds": [
+    {
+      "id": "denver-education-video",
+      "episodes": [
+        {
+          "id": "eb685452-84f2-11e6-a8c0-0050569d8aaa",
+          "slug": "2016-09-27-investment-in-globeville-elyria-and-swansea-schools-sep-27-20-ptqnxn",
+          "title": "Investment in Globeville, Elyria and Swansea Schools - Sep 27, 2016",
+          "link": "https://denver.granicus.com/MediaPlayer.php?view_id=73&clip_id=9563",
+          "dateText": "2016-09-27",
+          "channelTitle": "City and County of Denver: Education Video Podcast",
+          "durationSec": null,
+          "media": {
+            "url": "https://archive-video.granicus.com/denver/denver_a532f917-f6c1-4f49-b12a-db54196b80b5.mp4",
+            "type": "video/mp4",
+            "bytes": null,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Watch Download File"
+        },
+        {
+          "id": "ae587122-cebe-11e5-a8c0-0050569d8aaa",
+          "slug": "2016-02-08-mentors-in-the-city-feb-08-2016-14w4fc",
+          "title": "Mentors In The City - Feb 08, 2016",
+          "link": "https://denver.granicus.com/MediaPlayer.php?view_id=73&clip_id=8902",
+          "dateText": "2016-02-08",
+          "channelTitle": "City and County of Denver: Education Video Podcast",
+          "durationSec": null,
+          "media": {
+            "url": "https://archive-video.granicus.com/denver/denver_0d6d3030-120b-4cc0-ae22-6d06c1f7dbfb.mp4",
+            "type": "video/mp4",
+            "bytes": null,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Watch Download File"
+        }
+      ]
+    }
+  ]
+}

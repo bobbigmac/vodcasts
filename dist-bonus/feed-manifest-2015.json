@@ -1,0 +1,156 @@
+{
+  "feeds": [
+    {
+      "id": "better-business-coach-video",
+      "episodes": [
+        {
+          "id": "https://matthewpollard.com/?p=5242",
+          "slug": "2015-06-04-bbc-023-discover-more-about-your-business-coaching-clients-qz85h5",
+          "title": "BBC 023 : Discover More About Your Business Coaching Clients",
+          "link": "https://matthewpollard.com/better-business-coach/more-about-your-business-coaching-clients",
+          "dateText": "2015-06-04",
+          "channelTitle": "Better Business Coach Video Podcast: Sales Training | Proven Education | Actionable & Downloadable Worksheets",
+          "durationSec": 900,
+          "media": {
+            "url": "https://media.blubrry.com/betterbusinesscoach/video.gumlet.io/64bf27d33ed6e5096d5ff49f/64c894722e007ac435fd19d1/main.mp4",
+            "type": "video/mp4",
+            "bytes": 114473331,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://matthewpollard.com/wp-content/uploads/2017/11/BBC-BrandingImage-1400px.jpg",
+          "descriptionShort": "The &#8220;Get to Know Yourself&#8221; template should follow directly after episode 21’s ForceField Analysis , and should be completed as part of…"
+        },
+        {
+          "id": "https://matthewpollard.com/?p=4810",
+          "slug": "2015-05-01-bbc-021-forcefield-analysis-how-to-start-a-business-improveme-8l7zkt",
+          "title": "BBC 021 : ForceField Analysis - How to Start a Business Improvement",
+          "link": "https://matthewpollard.com/better-business-coach/forcefield-analysis-for-business-improvement",
+          "dateText": "2015-05-01",
+          "channelTitle": "Better Business Coach Video Podcast: Sales Training | Proven Education | Actionable & Downloadable Worksheets",
+          "durationSec": 509,
+          "media": {
+            "url": "https://media.blubrry.com/betterbusinesscoach/video.gumlet.io/64bf27d33ed6e5096d5ff49f/64c843302e007ac435faa809/main.mp4",
+            "type": "video/mp4",
+            "bytes": 78459358,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://matthewpollard.com/wp-content/uploads/2017/11/BBC-BrandingImage-1400px.jpg",
+          "descriptionShort": "The ForceField Analysis should follow directly after episode 20’s SWOT Analysis , and should be completed as part of your first paid client…"
+        },
+        {
+          "id": "https://matthewpollard.com/?p=4666",
+          "slug": "2015-04-05-bbc-020-swot-analysis-how-to-ensure-business-success-1iwjx7",
+          "title": "BBC 020 : SWOT Analysis - How to Ensure Business Success",
+          "link": "https://matthewpollard.com/better-business-coach/swot-analysis-for-business-success",
+          "dateText": "2015-04-05",
+          "channelTitle": "Better Business Coach Video Podcast: Sales Training | Proven Education | Actionable & Downloadable Worksheets",
+          "durationSec": 1338,
+          "media": {
+            "url": "https://media.blubrry.com/betterbusinesscoach/video.gumlet.io/64bf27d33ed6e5096d5ff49f/64c843308b4f39eebe8b2780/main.mp4",
+            "type": "video/mp4",
+            "bytes": 147207742,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://matthewpollard.com/wp-content/uploads/2017/11/BBC-BrandingImage-1400px.jpg",
+          "descriptionShort": "This worksheet follows shortly after the &#8220; Where Is Your Business Now?&#8221; worksheet, explained in session 13 , and should be completed as…"
+        },
+        {
+          "id": "https://matthewpollard.com/?p=4383",
+          "slug": "2015-02-27-bbc-013-how-to-easily-identify-a-client-s-business-challenges-tnsdho",
+          "title": "BBC 013 : How to Easily Identify a Client's Business Challenges",
+          "link": "https://matthewpollard.com/better-business-coach/identify-business-challenges",
+          "dateText": "2015-02-27",
+          "channelTitle": "Better Business Coach Video Podcast: Sales Training | Proven Education | Actionable & Downloadable Worksheets",
+          "durationSec": 1208,
+          "media": {
+            "url": "https://media.blubrry.com/betterbusinesscoach/video.gumlet.io/64bf27d33ed6e5096d5ff49f/64c843308b4f39eebe8b2781/main.mp4",
+            "type": "video/mp4",
+            "bytes": 124125060,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://matthewpollard.com/wp-content/uploads/2017/11/BBC-BrandingImage-1400px.jpg",
+          "descriptionShort": "This worksheet forms the first part of your first paid client session and is used to re-unfreeze the client to the fact that they must embrace…"
+        },
+        {
+          "id": "https://matthewpollard.com/?p=4051",
+          "slug": "2015-02-06-bbc-008-how-to-leverage-the-business-needs-analysis-for-succe-csdram",
+          "title": "BBC 008 : How to Leverage the Business Needs Analysis for Success (2 of 2)",
+          "link": "https://matthewpollard.com/better-business-coach/leveraging-the-business-needs-analysis-2",
+          "dateText": "2015-02-06",
+          "channelTitle": "Better Business Coach Video Podcast: Sales Training | Proven Education | Actionable & Downloadable Worksheets",
+          "durationSec": 647,
+          "media": {
+            "url": "https://media.blubrry.com/betterbusinesscoach/video.gumlet.io/64bf27d33ed6e5096d5ff49f/64c843308b4f39eebe8b2783/main.mp4",
+            "type": "video/mp4",
+            "bytes": 86792844,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://matthewpollard.com/wp-content/uploads/2017/11/BBC-BrandingImage-1400px.jpg",
+          "descriptionShort": "If you haven’t yet listened to part one, this will not make sense, so please go back and give &#8220; BBC 007 : Part 1 of 2 – First FREE Worksheet –…"
+        },
+        {
+          "id": "https://matthewpollard.com/?p=4037",
+          "slug": "2015-02-06-bbc-007-introducing-the-business-needs-analysis-worksheet-fre-dcy3a6",
+          "title": "BBC 007 : Introducing the Business Needs Analysis Worksheet, FREE! (1 of 2)",
+          "link": "https://matthewpollard.com/better-business-coach/business-needs-analysis-worksheet-1",
+          "dateText": "2015-02-06",
+          "channelTitle": "Better Business Coach Video Podcast: Sales Training | Proven Education | Actionable & Downloadable Worksheets",
+          "durationSec": 1242,
+          "media": {
+            "url": "https://media.blubrry.com/betterbusinesscoach/video.gumlet.io/64bf27d33ed6e5096d5ff49f/64c843302e007ac435faa80a/main.mp4",
+            "type": "video/mp4",
+            "bytes": 143081491,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://matthewpollard.com/wp-content/uploads/2017/11/BBC-BrandingImage-1400px.jpg",
+          "descriptionShort": "The &#8220;Free Business Analysis&#8221; is the ultimate diagnosis tool to use with your clients as well as an amazing tool for turning people…"
+        },
+        {
+          "id": "https://matthewpollard.com/?p=3832",
+          "slug": "2015-01-31-bbc-001-introduction-show-formalities-what-to-expect-1w85vs",
+          "title": "BBC 001 : Introduction | Show Formalities | What to Expect",
+          "link": "https://matthewpollard.com/better-business-coach/bbc-001-introduction-show-formalities-what-to-expect",
+          "dateText": "2015-01-31",
+          "channelTitle": "Better Business Coach Video Podcast: Sales Training | Proven Education | Actionable & Downloadable Worksheets",
+          "durationSec": 283,
+          "media": {
+            "url": "https://media.blubrry.com/betterbusinesscoach/video.gumlet.io/64bf27d33ed6e5096d5ff49f/64c843302e007ac435faa808/main.mp4",
+            "type": "video/mp4",
+            "bytes": 79176925,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://matthewpollard.com/wp-content/uploads/2017/11/BBC-BrandingImage-1400px.jpg",
+          "descriptionShort": "The first session of The Better Business Coach Podcast! This is just a quick introduction to let you know about some amazing content to come. After…"
+        }
+      ]
+    }
+  ]
+}

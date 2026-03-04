@@ -1,0 +1,614 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "eaglebrook",
+      "title": "Eagle Brook Church (videocast)",
+      "category": "church",
+      "feed_url": "https://www.eaglebrookchurch.com/mediafiles/eagle-brook-church-videocast.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "jamesriver_podbean",
+      "title": "James River Church (podbean)",
+      "category": "church",
+      "feed_url": "https://jamesriver.podbean.com/feed.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "jamesriver_feedpodbean",
+      "title": "James River Church (feed.podbean.com)",
+      "category": "church",
+      "feed_url": "https://feed.podbean.com/jamesriverchurch/feed.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "freshlife",
+      "title": "Fresh Life Church (video)",
+      "category": "church",
+      "feed_url": "https://freshlife.podbean.com/feed.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "kingsway",
+      "title": "Kingsway Christian Church (video?)",
+      "category": "church",
+      "feed_url": "https://kingsway.podbean.com/feed.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "restorationchurch",
+      "title": "Restoration Church Port Orange (video?)",
+      "category": "church",
+      "feed_url": "https://restorationchurch.podbean.com/feed.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "woodlandhills",
+      "title": "Woodland Hills Church (video)",
+      "category": "church",
+      "feed_url": "https://whchurch.org/feed/video",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "gracechapelknoxville",
+      "title": "Grace Chapel Knoxville (video?)",
+      "category": "church",
+      "feed_url": "https://gracechapelknoxville.podbean.com/feed.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "bufordroadbaptist",
+      "title": "Buford Road Baptist (video?)",
+      "category": "church",
+      "feed_url": "https://bufordroadbaptist.podbean.com/feed.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "lwcpa",
+      "title": "Light of the World Church (video?)",
+      "category": "church",
+      "feed_url": "https://lwcpa.podbean.com/feed.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "citizenchurch",
+      "title": "Citizen Church (video?)",
+      "category": "church",
+      "feed_url": "https://citizenchurchpodcast.com/feed.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "jerrysavelle",
+      "title": "Jerry Savelle Ministries (TV video)",
+      "category": "church",
+      "feed_url": "https://www.jerrysavelle.org/rssfeeds/tvvideo.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "menlochurchvideo",
+      "title": "Menlo Church (video)",
+      "category": "church",
+      "feed_url": "https://menlochurchvideo.podbean.com/feed.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "connexus",
+      "title": "Connexus Church (video)",
+      "category": "church",
+      "feed_url": "https://connexuschurchvideo.libsyn.com/rss",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "bridgetown",
+      "title": "Bridgetown (video)",
+      "category": "church",
+      "feed_url": "https://bridgetownvideo.podbean.com/feed.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "gty",
+      "title": "Grace to You (video)",
+      "category": "church",
+      "feed_url": "https://www.gty.org/rss/video",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "bvov",
+      "title": "Believer's Voice of Victory (video)",
+      "category": "church",
+      "feed_url": "https://www.bvov.tv/rss/video",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "watermark",
+      "title": "Watermark (video)",
+      "category": "church",
+      "feed_url": "https://www.watermark.org/feed/video",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "foothillschurch",
+      "title": "Foothills Church (video)",
+      "category": "church",
+      "feed_url": "https://foothillschurch.org/feed/video",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "faithlifechurch",
+      "title": "Faith Life Church (video)",
+      "category": "church",
+      "feed_url": "https://faithlifechurch.org/feed/video",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "atheycreek",
+      "title": "Athey Creek (video)",
+      "category": "church",
+      "feed_url": "https://atheycreek.com/feed/video",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "theporch",
+      "title": "The Porch (video)",
+      "category": "church",
+      "feed_url": "https://www.theporch.tv/feed/video",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "lancasterbaptist",
+      "title": "Lancaster Baptist (video)",
+      "category": "church",
+      "feed_url": "https://lancasterbaptist.org/feed/video",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "edyoung",
+      "title": "Ed Young (video)",
+      "category": "church",
+      "feed_url": "https://edyoung.com/feed/video",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "lifechurch",
+      "title": "Life.Church (video)",
+      "category": "church",
+      "feed_url": "https://www.life.church/feed/video",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "newspring",
+      "title": "NewSpring (video)",
+      "category": "church",
+      "feed_url": "https://newspring.cc/feed/video",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "marshill_video",
+      "title": "Mars Hill (video)",
+      "category": "church",
+      "feed_url": "http://marshill.info/feeds/video.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "c3naz_video",
+      "title": "C3Naz (video)",
+      "category": "church",
+      "feed_url": "https://www.c3naz.net/sermon-archives-video.rss",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "pointofgrace",
+      "title": "Point of Grace Church (video)",
+      "category": "church",
+      "feed_url": "https://pointofgracechurch.com/feed/video",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "nih_videocast",
+      "title": "NIH VideoCast RSS index",
+      "category": "university",
+      "feed_url": "https://videocast.nih.gov/rss/",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "uctv_ucsd",
+      "title": "UCTV (UCSD) video",
+      "category": "university",
+      "feed_url": "https://uctv.ucsd.edu/rss/video",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "uctv_all",
+      "title": "UCTV (all vodcasts)",
+      "category": "university",
+      "feed_url": "https://podcast.uctv.tv/uctv_vodcasts.rss",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "uctv_health",
+      "title": "UCTV (health & medicine)",
+      "category": "university",
+      "feed_url": "http://podcast.uctv.tv/uctv_video_health.rss",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "uctv_berkeley",
+      "title": "UCTV (UC Berkeley)",
+      "category": "university",
+      "feed_url": "https://podcast.uctv.tv/UCTV_campus_berkeley_video.rss",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "uctv_ucsf",
+      "title": "UCTV (UCSF)",
+      "category": "university",
+      "feed_url": "https://podcast.uctv.tv/UCTV_campus_ucsf_video.rss",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "uctv_davis",
+      "title": "UCTV (UC Davis)",
+      "category": "university",
+      "feed_url": "https://podcast.uctv.tv/UCTV_campus_davis_video.rss",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "chiasmos",
+      "title": "CHIASMOS (UChicago) video",
+      "category": "university",
+      "feed_url": "https://chiasmos.uchicago.edu/rss/video",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "sjsu_ischool",
+      "title": "SJSU iSchool (audio/video?)",
+      "category": "university",
+      "feed_url": "https://www.sjsu.edu/ischool/podcast/rss.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "bengreenfield",
+      "title": "Ben Greenfield Fitness (video)",
+      "category": "fitness",
+      "feed_url": "https://bengreenfieldfitness.com/feed/video",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "ericroberts",
+      "title": "Eric Roberts Fitness (podcast)",
+      "category": "fitness",
+      "feed_url": "https://ericrobertsfitness.com/feed/podcast",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "mindpump",
+      "title": "Mind Pump Raw (video)",
+      "category": "fitness",
+      "feed_url": "https://mindpumpmedia.com/feed/video",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "biblestudyguide",
+      "title": "Bible Study Guide (video)",
+      "category": "bible",
+      "feed_url": "http://m.biblestudyguide.org/podcast/video-rss.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "researchtopractice",
+      "title": "Research To Practice (video)",
+      "category": "university",
+      "feed_url": "https://researchtopractice.com/rss/video",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "atlantafirstumc_sermons",
+      "title": "Atlanta First UMC (sermons page)",
+      "category": "needs-rss",
+      "feed_url": "https://www.atlantafirstumc.org/sermons/",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "lifepoint_sermons",
+      "title": "Life Point Church (sermons page)",
+      "category": "needs-rss",
+      "feed_url": "https://www.lifepointtoday.net/sermons-main/",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "mvcnaz_sermon_video",
+      "title": "MVC Naz (page says video podcast)",
+      "category": "needs-rss",
+      "feed_url": "https://www.mvcnaz.org/wp4/?page_id=486",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "c3naz_sermon_archives_page",
+      "title": "C3Naz (sermon archives page)",
+      "category": "needs-rss",
+      "feed_url": "https://www.c3naz.net/sermon-archives.html",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "marshill_feeds_page",
+      "title": "Mars Hill (feeds page)",
+      "category": "needs-rss",
+      "feed_url": "http://marshill.info/marshill/feeds.html",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "oldstandrews_sermons",
+      "title": "Old St Andrews Church (sermons page)",
+      "category": "needs-rss",
+      "feed_url": "https://oldstandrewschurch.org/sermons/",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "ucsd_podcast_directory",
+      "title": "UC San Diego course podcasts (directory)",
+      "category": "needs-rss",
+      "feed_url": "https://podcast.ucsd.edu/",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "openyale_rss_page",
+      "title": "Open Yale Courses (RSS page)",
+      "category": "needs-rss",
+      "feed_url": "https://oyc.yale.edu/rss",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "kingdomwinds_video_podcast",
+      "title": "Kingdom Winds (video podcast page)",
+      "category": "needs-rss",
+      "feed_url": "https://kingdomwinds.com/series/video-podcast/",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "feedspot_church",
+      "title": "Feedspot (church RSS directory)",
+      "category": "needs-rss",
+      "feed_url": "https://rss.feedspot.com/church_rss_feeds/",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "feedspot_university",
+      "title": "Feedspot (university RSS directory)",
+      "category": "needs-rss",
+      "feed_url": "https://rss.feedspot.com/university_rss_feeds/",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "kinda-funny-gamescast-video-game-podcast",
+      "title": "Kinda Funny Gamescast: Video Game Podcast",
+      "category": "podcastindex",
+      "feed_url": "https://feeds.megaphone.fm/kindafunnygamescast",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "kinda-funny-gamescast-video-game-podcast-2",
+      "title": "Kinda Funny Gamescast: Video Game Podcast",
+      "category": "podcastindex",
+      "feed_url": "https://feeds.megaphone.fm/ROOSTER3727935380",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "autoline-daily-video",
+      "title": "Autoline Daily - Video",
+      "category": "podcastindex",
+      "feed_url": "http://www.autoline.tv/podcasts/feeds/autoline-daily-video.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "5-minute-videos-prageru",
+      "title": "5-Minute Videos | PragerU",
+      "category": "podcastindex",
+      "feed_url": "https://feeds.megaphone.fm/PRAGERU3989592970",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "democracy-now-video",
+      "title": "Democracy Now! Video",
+      "category": "podcastindex",
+      "feed_url": "https://www.democracynow.org/podcast-video.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "nutritionfacts-org-video-podcast",
+      "title": "NutritionFacts.org Video Podcast",
+      "category": "podcastindex",
+      "feed_url": "https://nutritionfacts.org/videos/feed/podcast/",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "still-poddable",
+      "title": "Still Poddable",
+      "category": "podcastindex",
+      "feed_url": "https://feeds.megaphone.fm/NSM2691900547",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "security-weekly-podcast-network-video",
+      "title": "Security Weekly Podcast Network (Video)",
+      "category": "podcastindex",
+      "feed_url": "https://securityweeklytv.libsyn.com/rss",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "enterprise-security-weekly-video",
+      "title": "Enterprise Security Weekly (Video)",
+      "category": "podcastindex",
+      "feed_url": "https://eswvideo.libsyn.com/rss",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "video-gamers-podcast",
+      "title": "Video Gamers Podcast",
+      "category": "podcastindex",
+      "feed_url": "https://feeds.megaphone.fm/AMGAC9705074721",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "elder-scrolls-lorecast-skyrim-oblivion-eso-and-tes-vi-video-game-lore-more",
+      "title": "Elder Scrolls Lorecast: Skyrim, Oblivion, ESO and TES VI Video Game Lore & More",
+      "category": "podcastindex",
+      "feed_url": "https://feeds.redcircle.com/4a1d1e81-82b0-43de-8343-04ea196a94f0",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "this-week-in-tech-video",
+      "title": "This Week in Tech (Video)",
+      "category": "podcastindex",
+      "feed_url": "https://feeds.twit.tv/twit_video_hd.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "fallout-lorecast-the-fallout-video-game-tv-lore-podcast",
+      "title": "Fallout Lorecast - The Fallout Video Game & TV Lore Podcast",
+      "category": "podcastindex",
+      "feed_url": "https://feeds.redcircle.com/1ef83263-04d9-49eb-a974-9fd1fc990676",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "the-corbett-report-videos",
+      "title": "The Corbett Report - Videos",
+      "category": "podcastindex",
+      "feed_url": "https://www.corbettreport.com/videorss.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "daily-tech-news-show-video",
+      "title": "Daily Tech News Show (VIDEO)",
+      "category": "podcastindex",
+      "feed_url": "http://feeds.feedburner.com/daily_tech_news_show",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "ios-today-video",
+      "title": "iOS Today (Video)",
+      "category": "podcastindex",
+      "feed_url": "https://feeds.twit.tv/ipad_video_hd.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "new-media-show-video",
+      "title": "New Media Show (Video)",
+      "category": "podcastindex",
+      "feed_url": "https://newmediashow.com/feed/podcast/",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "intelligent-machines-video",
+      "title": "Intelligent Machines (Video)",
+      "category": "podcastindex",
+      "feed_url": "https://feeds.twit.tv/twig_video_hd.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "theme-park-science-behind-the-video",
+      "title": "Theme Park Science - Behind the Video",
+      "category": "podcastindex",
+      "feed_url": "https://anchor.fm/s/170bee08/podcast/rss",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "windows-weekly-video",
+      "title": "Windows Weekly (Video)",
+      "category": "podcastindex",
+      "feed_url": "https://feeds.twit.tv/ww_video_hd.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "all-twit-tv-shows-video",
+      "title": "All TWiT.tv Shows (Video)",
+      "category": "twit",
+      "feed_url": "https://feeds.twit.tv/brickhouse_video_hd.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "security-now-video",
+      "title": "Security Now (Video)",
+      "category": "twit",
+      "feed_url": "https://feeds.twit.tv/sn_video_hd.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "macbreak-weekly-video",
+      "title": "MacBreak Weekly (Video)",
+      "category": "twit",
+      "feed_url": "https://feeds.twit.tv/mbw_video_hd.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "tech-news-weekly-video",
+      "title": "Tech News Weekly (Video)",
+      "category": "twit",
+      "feed_url": "https://feeds.twit.tv/tnw_video_hd.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "hands-on-tech-video",
+      "title": "Hands-On Tech (Video)",
+      "category": "twit",
+      "feed_url": "https://feeds.twit.tv/hot_video_hd.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "this-week-in-space-video",
+      "title": "This Week in Space (Video)",
+      "category": "twit",
+      "feed_url": "https://feeds.twit.tv/twis_video_hd.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "home-theater-geeks-video",
+      "title": "Home Theater Geeks (Video)",
+      "category": "twit",
+      "feed_url": "https://feeds.twit.tv/htg_video_hd.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "hands-on-apple-video",
+      "title": "Hands-On Apple (Video)",
+      "category": "twit",
+      "feed_url": "https://feeds.twit.tv/hom_video_hd.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "hands-on-windows-video",
+      "title": "Hands-On Windows (Video)",
+      "category": "twit",
+      "feed_url": "https://feeds.twit.tv/howin_video_hd.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "untitled-linux-show-video",
+      "title": "Untitled Linux Show (Video)",
+      "category": "twit",
+      "feed_url": "https://feeds.twit.tv/uls_video_hd.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "total-leo-video",
+      "title": "Total Leo (Video)",
+      "category": "twit",
+      "feed_url": "https://feeds.twit.tv/leo_video_hd.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "total-mikah-video",
+      "title": "Total Mikah (Video)",
+      "category": "twit",
+      "feed_url": "https://feeds.twit.tv/mikah_video_hd.xml",
+      "fetch_via": "auto"
+    },
+    {
+      "id": "twit-throwback-video",
+      "title": "TWiT Throwback (Video)",
+      "category": "twit",
+      "feed_url": "https://feeds.twit.tv/throwback_video_large.xml",
+      "fetch_via": "auto"
+    }
+  ]
+}

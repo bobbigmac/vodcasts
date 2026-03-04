@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>{{page_title}}</title>
+  {{meta_head_html}}
   <meta name="theme-color" content="#0b0c10" />
   <link rel="stylesheet" href="{{base_path}}assets/style.css">
   <link rel="stylesheet" href="{{base_path}}assets/themes.css">
@@ -32,7 +33,29 @@
   <script src="{{base_path}}assets/vendor/hls.min.js" defer></script>
 </head>
 <body>
-  <div id="app" class="app"></div>
+  <div id="app" class="app">
+    <noscript>
+      <main class="supportPage">
+        <header class="supportHeader">
+          <div class="supportBrand">{{site_title}}</div>
+        </header>
+        <article class="supportContent">
+          <h1>{{site_title}}</h1>
+          <p>{{site_description}}</p>
+          <div class="supportCard">
+            <p><strong>Support pages:</strong></p>
+            <ul>
+              <li><a href="{{base_path}}about/">About</a></li>
+              <li><a href="{{base_path}}for/">Who it’s for</a></li>
+              <li><a href="{{base_path}}privacy/">Privacy</a></li>
+              <li><a href="{{base_path}}legal/">Legal</a></li>
+            </ul>
+            <p>Contact: <a href="mailto:admin@prays.be">admin@prays.be</a></p>
+          </div>
+        </article>
+      </main>
+    </noscript>
+  </div>
 
   <script src="{{base_path}}assets/app.js" defer></script>
 </body>

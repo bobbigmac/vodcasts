@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other episodes",
+  "leftovers_title_full": "Other episodes — Poetry with A.E. Stallings",
+  "leftovers_description": "Episodes outside the main Poetry with A.E. Stallings row.",
+  "shows": [
+    {
+      "id": "poetry",
+      "title": "Poetry with A.E. Stallings",
+      "title_full": "Poetry with A.E. Stallings — Oxford Podcasts",
+      "description": "Oxford Podcasts series on poetry with A.E. Stallings.",
+      "categories": ["lectures", "arts", "poetry", "literature"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

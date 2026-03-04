@@ -1,0 +1,30 @@
+/**
+ * Custom captions and subtitle overlay.
+ */
+.player.custom-captions video::-webkit-media-text-track-display,
+.player.custom-captions video::-webkit-media-text-track-container { display: none !important }
+.player.custom-captions video::cue { visibility: hidden !important }
+
+.subtitleBoxWrap {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 8;
+}
+.subtitleOverlayText {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 4px 8px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.25;
+  white-space: pre-line;
+  overflow-wrap: break-word;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  text-shadow:
+    0 2px 4px rgba(0,0,0,.92),
+    0 0 10px rgba(0,0,0,.75);
+  font-size: calc(clamp(15px, 2.2vw, 22px) * var(--sub-scale, 1));
+}

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <!-- START CHANNEL INFO -->
+    <title>Science City Video Podcast</title>
+    <link>http://www.wgbh.org/sciencefestival/</link>
+    <description>Video from Science in the City, at the first annual Cambridge Science Festival, presented by the MIT Museum.</description>
+    <language>en-us</language>
+    <copyright>(c) 2007 WGBH Educational Foundation</copyright>
+    <itunes:subtitle>Video from Science in the City, at the first annual Cambridge Science Festival, presented by the MIT Museum.</itunes:subtitle>
+    <itunes:author>WGBH Educational Foundation</itunes:author>
+    <itunes:summary>What science careers are available today? Follow rising stars from MIT, MGH and the private sector as they work on everything from building adaptable robots to using science to solve crimes and, in their  spare time, dance, cheerlead, and play in rock bands.</itunes:summary>
+    <itunes:owner>
+      <itunes:name>WGBH Educational Foundation</itunes:name>
+      <itunes:email>feedback@wgbh.org</itunes:email>
+    </itunes:owner>
+    <itunes:image href="http://streams.wgbh.org/online/science/video2007/sciencecity_300x300.jpg" />
+    <image>
+      <url>http://streams.wgbh.org/online/science/video2007/sciencecity_300x300.jpg</url>
+      <title>Science City</title>
+      <link>http://www.wgbh.org/sciencefestival/</link>
+    </image>
+    <itunes:category text="Science &amp; Medicine"/>
+    <itunes:category text="Education"/>
+    <itunes:category text="Technology"/>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:keywords>WGBH, Boston, Science, MIT, Massachusetts Institute of Technology, Cambridge Science Festival, Science in the City, podcast</itunes:keywords>
+    <!-- END CHANNEL INFO -->
+
+
+    <!-- START ITEM -->
+    <item>
+      <title>Eduardo Torres-Jara, Postdoctoral Associate, MIT Artificial Intelligence Laboratory</title>
+      <description><![CDATA[Eduardo Torres-Jara is a postdoctoral associate in the MIT artificial intelligence laboratory working on a major innovation in robotic manipulation. He developed "sensitive manipulation," which enables robots to use tactile feedback to locate and grasp objects. A native of Ecuador, Eduardo enjoys playing sports in his spare time.]]></description>
+      <enclosure url="http://streams.wgbh.org/online/science/video2007/torres_jara.m4v" type="video/quicktime" length="" />
+      <guid>http://streams.wgbh.org/online/science/video2007/torres_jara.m4v</guid>
+      <pubDate>Fri, 27 Apr 2007 16:09:35 -0400</pubDate>
+      <itunes:duration>00:00:00</itunes:duration>
+      <itunes:author>WGBH Educational Foundation</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords>WGBH, Boston, Science, MIT, Massachusetts Institute of Technology, Cambridge Science Festival, Science in the City, MIT, artificial intelligence, Ecuador, robotics</itunes:keywords>
+      <itunes:subtitle>Video from Science in the City, at the first annual Cambridge Science Festival, presented by the MIT Museum.</itunes:subtitle>
+      <itunes:summary>Eduardo Torres-Jara is a postdoctoral associate in the MIT artificial intelligence laboratory working on a major innovation in robotic manipulation. He developed "sensitive manipulation," which enables robots to use tactile feedback to locate and grasp objects. A native of Ecuador, Eduardo enjoys playing sports in his spare time.</itunes:summary>
+    </item>
+    <!-- END ITEM -->
+
+
+    <!-- START ITEM -->
+    <item>
+      <title>Romiya Glover, Chemist</title>
+      <description><![CDATA[Romiya Glover, a chemist working at PointCare Technologies Inc. in Marlboro, Mass., helps develop HIV/AIDS testing devices for countries in critical need of them. A former cheerleader, she coaches the cheer squad at her alma mater, Worcester Polytechnic Institute.]]></description>
+      <enclosure url="http://streams.wgbh.org/online/science/video2007/glover.m4v" type="video/quicktime" length="36170660" />
+      <guid>http://streams.wgbh.org/online/science/video2007/glover.m4v</guid>
+      <pubDate>Thu, 26 Apr 2007 15:14:35 -0400</pubDate>
+      <itunes:duration>00:04:13</itunes:duration>
+      <itunes:author>WGBH Educational Foundation</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords>WGBH, Boston, Science, MIT, Massachusetts Institute of Technology, Cambridge Science Festival, Science in the City, chemistry, HIV, AIDS</itunes:keywords>
+      <itunes:subtitle>Video from Science in the City, at the first annual Cambridge Science Festival, presented by the MIT Museum.</itunes:subtitle>
+      <itunes:summary>Romiya Glover, a chemist working at PointCare Technologies Inc. in Marlboro, Mass., helps develop HIV/AIDS testing devices for countries in critical need of them. A former cheerleader, she coaches the cheer squad at her alma mater, Worcester Polytechnic Institute.</itunes:summary>
+    </item>
+    <!-- END ITEM -->
+
+
+    <!-- START ITEM -->
+    <item>
+      <title>Jennifer Hannaford, Forensic Scientist</title>
+      <description><![CDATA[Jennifer Hannaford is a forensic scientist. As the director of the Latent Print Unit at the Boston Police Department, she recovers, analyzes, and identifies hidden fingerprints. Jennifer's interest in prints goes beyond solving crimes  she creates intricate portraits using her own fingertip impressions.]]></description>
+      <enclosure url="http://streams.wgbh.org/online/science/video2007/hannaford.m4v" type="video/x-m4v" length="38684847" />
+      <guid>http://streams.wgbh.org/online/science/video2007/hannaford.m4v</guid>
+      <pubDate>Wed, 25 Apr 2007 15:12:24 -0400</pubDate>
+      <itunes:duration>00:04:13</itunes:duration>
+      <itunes:author>WGBH Educational Foundation</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords>WGBH, Boston, Science, MIT, Massachusetts Institute of Technology, Cambridge Science Festival, Science in the City, forensic scientist, fingerprints, crime</itunes:keywords>
+      <itunes:subtitle>Video from Science in the City, at the first annual Cambridge Science Festival, presented by the MIT Museum.</itunes:subtitle>
+      <itunes:summary>Jennifer Hannaford is a forensic scientist. As the director of the Latent Print Unit at the Boston Police Department, she recovers, analyzes, and identifies hidden fingerprints. Jennifer's interest in prints goes beyond solving crimes  she creates intricate portraits using her own fingertip impressions.</itunes:summary>
+    </item>
+    <!-- END ITEM -->
+
+
+
+    <!-- START ITEM -->
+    <item>
+      <title>Shaundra Bryant Daily, Electrical Engineer</title>
+      <description><![CDATA[Shaundra Bryant Daily is an electrical engineer and a Ph.D. student at MIT. She created G.I.R.L.S Talk, a computer program that helps kids understand their emotions. As a member of the MIT Dance Troupe, Shaundra sustains a passion for dance that she has had since age 13.]]></description>
+      <enclosure url="http://streams.wgbh.org/online/science/video2007/bryant_daily.m4v" type="audio/mpeg" length="34012755" />
+      <guid>http://streams.wgbh.org/online/science/video2007/bryant_daily.m4v</guid>
+      <pubDate>Tue, 24 Apr 2007 10:27:59 -0400</pubDate>
+      <itunes:duration>00:03:47</itunes:duration>
+      <itunes:author>WGBH Educational Foundation</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords>WGBH, Boston, Science, MIT, Massachusetts Institute of Technology, Cambridge Science Festival, Science in the City, electrical engineer</itunes:keywords>
+      <itunes:subtitle>Video from Science in the City, at the first annual Cambridge Science Festival, presented by the MIT Museum.</itunes:subtitle>
+      <itunes:summary>Shaundra Bryant Daily is an electrical engineer and a Ph.D. student at MIT. She created G.I.R.L.S Talk, a computer program that helps kids understand their emotions. As a member of the MIT Dance Troupe, Shaundra sustains a passion for dance that she has had since age 13.</itunes:summary>
+    </item>
+    <!-- END ITEM -->
+
+
+    <!-- START ITEM -->
+    <item>
+      <title>Kerri-Ann Richard, Environmental Engineer</title>
+      <description><![CDATA[Kerri-Ann Richard, an environmental engineer at GeoHydroCycle in Newton, Mass., works to find clean drinking water, clean up hazardous waste sites, and dispose of waste in an environmentally friendly manner. She is the singer and guitarist for the band Apple Betty.]]></description>
+      <enclosure url="http://streams.wgbh.org/online/science/video2007/richard.m4v" type="video/quicktime" length="34632016" />
+      <guid>http://streams.wgbh.org/online/science/video2007/richard.m4v</guid>
+      <pubDate>Mon, 23 Apr 2007 10:19:46 -0400</pubDate>
+      <itunes:duration>00:03:38</itunes:duration>
+      <itunes:author>WGBH Educational Foundation</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:keywords>WGBH, Boston, Science, MIT, Massachusetts Institute of Technology, Cambridge Science Festival, Science in the City, podcast</itunes:keywords>
+      <itunes:subtitle>Video from Science in the City, at the first annual Cambridge Science Festival, presented by the MIT Museum.</itunes:subtitle>
+      <itunes:summary>Kerri-Ann Richard, an environmental engineer at GeoHydroCycle in Newton, Mass., works to find clean drinking water, clean up hazardous waste sites, and dispose of waste in an environmentally friendly manner. She is the singer and guitarist for the band Apple Betty.</itunes:summary>
+    </item>
+    <!-- END ITEM -->
+
+  </channel>
+</rss>

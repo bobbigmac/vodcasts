@@ -1,0 +1,46 @@
+{
+  "feeds": [
+    {
+      "id": "oxford-poetry-ae-stallings-video",
+      "episodes": [
+        {
+          "id": "http://rss.oucs.ox.ac.uk/tag:2023-11-29:001501:000:episode:7b996097-4500-43e0-b85e-9593f52bf22f:video",
+          "slug": "2023-11-23-the-bat-poet-poetry-as-echolocation-r79g65",
+          "title": "The Bat Poet: Poetry as Echolocation",
+          "link": "https://podcasts.ox.ac.uk/bat-poet-poetry-echolocation",
+          "dateText": "2023-11-23",
+          "channelTitle": "Poetry with A.E. Stallings",
+          "durationSec": 3772,
+          "media": {
+            "url": "https://media.podcasts.ox.ac.uk/engfac/poetry-aestallings/2023-11-20-engfac-poetry-aestallings-bat.mp4",
+            "type": "video/mp4",
+            "bytes": 1467285969,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [
+            {
+              "url": "https://media.podcasts.ox.ac.uk/engfac/poetry-aestallings/2023-11-20-engfac-poetry-aestallings-bat.srt",
+              "type": "application/srt",
+              "lang": "en",
+              "isCaptions": true,
+              "isPlayable": true
+            }
+          ],
+          "transcriptsAll": [
+            {
+              "url": "https://media.podcasts.ox.ac.uk/engfac/poetry-aestallings/2023-11-20-engfac-poetry-aestallings-bat.srt",
+              "type": "application/srt",
+              "lang": "en",
+              "isCaptions": true,
+              "isPlayable": true
+            }
+          ],
+          "imageUrl": null,
+          "descriptionShort": "A.E. Stallings gave her inaugural lecture as the Oxford Professor of Poetry on 20 November 2023. She talked on 'The Bat Poet: Poetry as…"
+        }
+      ]
+    }
+  ]
+}

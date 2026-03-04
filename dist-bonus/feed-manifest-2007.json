@@ -1,0 +1,165 @@
+{
+  "feeds": [
+    {
+      "id": "kingsway",
+      "episodes": [
+        {
+          "id": "http://kingsway.podbean.com/e/word-for-the-men/",
+          "slug": "2007-02-10-word-for-the-men-iup5b1",
+          "title": "Word for the men",
+          "link": "https://kingsway.podbean.com/e/word-for-the-men/",
+          "dateText": "2007-02-10",
+          "channelTitle": "kingsway",
+          "durationSec": 2,
+          "media": {
+            "url": "https://mcdn.podbean.com/mf/web/72xs4/2_10_20073_34PM.mp3",
+            "type": "audio/mpeg",
+            "bytes": 5086049,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null
+        }
+      ]
+    },
+    {
+      "id": "denver-education-video",
+      "episodes": [
+        {
+          "id": "f811dbb9-c403-102a-9da1-4521d4c45972",
+          "slug": "2007-10-04-denver-public-schools-administration-report-to-a-denver-oct-0-1wzhsn",
+          "title": "Denver Public Schools - Administration Report to A+ Denver - Oct 04, 2007",
+          "link": "https://denver.granicus.com/MediaPlayer.php?view_id=73&clip_id=1169",
+          "dateText": "2007-10-04",
+          "channelTitle": "City and County of Denver: Education Video Podcast",
+          "durationSec": null,
+          "media": {
+            "url": "https://archive-video.granicus.com/denver/denver_f818d31e08998da56dabdc6d061c8256.mp4",
+            "type": "video/mp4",
+            "bytes": null,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Watch Download File"
+        }
+      ]
+    },
+    {
+      "id": "wgbh-science-city",
+      "episodes": [
+        {
+          "id": "http://streams.wgbh.org/online/science/video2007/torres_jara.m4v",
+          "slug": "2007-04-27-eduardo-torres-jara-postdoctoral-associate-mit-artificial-int-1rojgi",
+          "title": "Eduardo Torres-Jara, Postdoctoral Associate, MIT Artificial Intelligence Laboratory",
+          "link": "",
+          "dateText": "2007-04-27",
+          "channelTitle": "Science City Video Podcast",
+          "durationSec": null,
+          "media": {
+            "url": "http://streams.wgbh.org/online/science/video2007/torres_jara.m4v",
+            "type": "video/quicktime",
+            "bytes": null,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Eduardo Torres-Jara is a postdoctoral associate in the MIT artificial intelligence laboratory working on a major innovation in robotic manipulation.…"
+        },
+        {
+          "id": "http://streams.wgbh.org/online/science/video2007/glover.m4v",
+          "slug": "2007-04-26-romiya-glover-chemist-736y0h",
+          "title": "Romiya Glover, Chemist",
+          "link": "",
+          "dateText": "2007-04-26",
+          "channelTitle": "Science City Video Podcast",
+          "durationSec": 253,
+          "media": {
+            "url": "http://streams.wgbh.org/online/science/video2007/glover.m4v",
+            "type": "video/quicktime",
+            "bytes": 36170660,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Romiya Glover, a chemist working at PointCare Technologies Inc. in Marlboro, Mass., helps develop HIV/AIDS testing devices for countries in critical…"
+        },
+        {
+          "id": "http://streams.wgbh.org/online/science/video2007/hannaford.m4v",
+          "slug": "2007-04-25-jennifer-hannaford-forensic-scientist-1xmqac",
+          "title": "Jennifer Hannaford, Forensic Scientist",
+          "link": "",
+          "dateText": "2007-04-25",
+          "channelTitle": "Science City Video Podcast",
+          "durationSec": 253,
+          "media": {
+            "url": "http://streams.wgbh.org/online/science/video2007/hannaford.m4v",
+            "type": "video/x-m4v",
+            "bytes": 38684847,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Jennifer Hannaford is a forensic scientist. As the director of the Latent Print Unit at the Boston Police Department, she recovers, analyzes, and…"
+        },
+        {
+          "id": "http://streams.wgbh.org/online/science/video2007/bryant_daily.m4v",
+          "slug": "2007-04-24-shaundra-bryant-daily-electrical-engineer-1br3yp",
+          "title": "Shaundra Bryant Daily, Electrical Engineer",
+          "link": "",
+          "dateText": "2007-04-24",
+          "channelTitle": "Science City Video Podcast",
+          "durationSec": 227,
+          "media": {
+            "url": "http://streams.wgbh.org/online/science/video2007/bryant_daily.m4v",
+            "type": "audio/mpeg",
+            "bytes": 34012755,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Shaundra Bryant Daily is an electrical engineer and a Ph.D. student at MIT. She created G.I.R.L.S Talk, a computer program that helps kids…"
+        },
+        {
+          "id": "http://streams.wgbh.org/online/science/video2007/richard.m4v",
+          "slug": "2007-04-23-kerri-ann-richard-environmental-engineer-3tusvt",
+          "title": "Kerri-Ann Richard, Environmental Engineer",
+          "link": "",
+          "dateText": "2007-04-23",
+          "channelTitle": "Science City Video Podcast",
+          "durationSec": 218,
+          "media": {
+            "url": "http://streams.wgbh.org/online/science/video2007/richard.m4v",
+            "type": "video/quicktime",
+            "bytes": 34632016,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Kerri-Ann Richard, an environmental engineer at GeoHydroCycle in Newton, Mass., works to find clean drinking water, clean up hazardous waste sites,…"
+        }
+      ]
+    }
+  ]
+}

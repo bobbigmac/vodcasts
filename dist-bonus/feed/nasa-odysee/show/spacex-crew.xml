@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>SpaceX Crew</title>
+    <link>/feed/nasa-odysee/</link>
+    <description>NASA on Odysee — SpaceX Crew</description>
+    <language>en</language>
+  <item>
+    <title>NASA’s SpaceX Crew-12 Arrival &amp; Welcome Remarks</title>
+    <link>https://odysee.com/nasa%E2%80%99s-spacex-crew-12-arrival-welcome:c61dad57f4952a3c72dbb817f6e73a14fd3339c9</link>
+    <description>Watch as the next four explorers arrive at the International Space Station. After lifting off from Cape Canaveral Space Force Station on Friday,…</description>
+    <pubDate>2026-02-14</pubDate>
+    <guid isPermaLink="false">https://odysee.com/nasa%E2%80%99s-spacex-crew-12-arrival-welcome:c61dad57f4952a3c72dbb817f6e73a14fd3339c9</guid>
+    <enclosure url="https://player.odycdn.com/api/v3/streams/free/nasa’s-spacex-crew-12-arrival-welcome/c61dad57f4952a3c72dbb817f6e73a14fd3339c9/cdf3e8.mp4" type="video/mp4" length="1286411913"/>
+  </item>
+  <item>
+    <title>NASA's SpaceX Crew-12 Launch</title>
+    <link>https://odysee.com/nasa%27s-spacex-crew-12-launch:c75b0f7bcb1acdea317f73a0f5f1e13ccd7ffb32</link>
+    <description>Watch live as four explorers from three space agencies lift off for a scientific mission to the International Space Station. NASA astronauts Jessica…</description>
+    <pubDate>2026-02-13</pubDate>
+    <guid isPermaLink="false">https://odysee.com/nasa%27s-spacex-crew-12-launch:c75b0f7bcb1acdea317f73a0f5f1e13ccd7ffb32</guid>
+    <enclosure url="https://player.odycdn.com/api/v3/streams/free/nasa's-spacex-crew-12-launch/c75b0f7bcb1acdea317f73a0f5f1e13ccd7ffb32/5821e2.mp4" type="video/mp4" length="816074471"/>
+  </item>
+  <item>
+    <title>NASA's SpaceX Crew-12 Mission to the International Space Station (Official NASA Trailer)</title>
+    <link>https://odysee.com/nasa%27s-spacex-crew-12-mission-to-the:71d72fdc97409b0fbf1b218281169d402b4ff1af</link>
+    <description>Four crew members are preparing to launch to the International Space Station as part of NASA’s SpaceX Crew-12 mission to perform research,…</description>
+    <pubDate>2026-02-12</pubDate>
+    <guid isPermaLink="false">https://odysee.com/nasa%27s-spacex-crew-12-mission-to-the:71d72fdc97409b0fbf1b218281169d402b4ff1af</guid>
+    <enclosure url="https://player.odycdn.com/api/v3/streams/free/nasa's-spacex-crew-12-mission-to-the/71d72fdc97409b0fbf1b218281169d402b4ff1af/a45d24.mp4" type="video/mp4" length="27903674"/>
+  </item>
+  <item>
+    <title>NASA's SpaceX Crew-11 Undocking</title>
+    <link>https://odysee.com/nasa%27s-spacex-crew-11-undocking:6637024602c8645f47f5c7feb7358ff2fca797e4</link>
+    <description>The four members of NASA's SpaceX Crew-11 mission — NASA astronauts Zena Cardman and Mike Fincke, JAXA (Japan Aerospace Exploration Agency)…</description>
+    <pubDate>2026-01-14</pubDate>
+    <guid isPermaLink="false">https://odysee.com/nasa%27s-spacex-crew-11-undocking:6637024602c8645f47f5c7feb7358ff2fca797e4</guid>
+    <enclosure url="https://player.odycdn.com/api/v3/streams/free/nasa's-spacex-crew-11-undocking/6637024602c8645f47f5c7feb7358ff2fca797e4/48df33.mp4" type="video/mp4" length="315331502"/>
+  </item>
+  <item>
+    <title>NASA's SpaceX Crew-11 Re-Entry and Splashdown</title>
+    <link>https://odysee.com/nasa%27s-spacex-crew-11-re-entry-and:f05a5f5c6ec99a2c23f2cdd2cddba8fed0c9e5f3</link>
+    <description>... https://www.youtube.com/watch?v=qRVoblm2Nxw</description>
+    <pubDate>2026-01-12</pubDate>
+    <guid isPermaLink="false">https://odysee.com/nasa%27s-spacex-crew-11-re-entry-and:f05a5f5c6ec99a2c23f2cdd2cddba8fed0c9e5f3</guid>
+    <enclosure url="https://player.odycdn.com/api/v3/streams/free/nasa's-spacex-crew-11-re-entry-and/f05a5f5c6ec99a2c23f2cdd2cddba8fed0c9e5f3/4396f0.mp4" type="video/mp4" length="877956291"/>
+  </item>
+  <item>
+    <title>NASA’s SpaceX Crew-11 Hatch Close</title>
+    <link>https://odysee.com/nasa%E2%80%99s-spacex-crew-11-hatch-close:d781f7dc55b9b1adada2a1d8018de0fa10a0c287</link>
+    <description>Watch as NASA astronauts Zena Cardman and Mike Fincke, JAXA (Japan Aerospace Exploration Agency) astronaut Kimiya Yui, and Roscosmos cosmonaut Oleg…</description>
+    <pubDate>2026-01-12</pubDate>
+    <guid isPermaLink="false">https://odysee.com/nasa%E2%80%99s-spacex-crew-11-hatch-close:d781f7dc55b9b1adada2a1d8018de0fa10a0c287</guid>
+    <enclosure url="https://player.odycdn.com/api/v3/streams/free/nasa’s-spacex-crew-11-hatch-close/d781f7dc55b9b1adada2a1d8018de0fa10a0c287/8d3ad3.mp4" type="video/mp4" length="628595097"/>
+  </item>
+  </channel>
+</rss>

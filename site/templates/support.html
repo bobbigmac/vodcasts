@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" id="htmlRoot" data-theme="modern">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{page_title}}</title>
+  {{meta_head_html}}
+  <meta name="theme-color" content="#0b0c10" />
+  <link rel="stylesheet" href="{{base_path}}assets/style.css">
+  <link rel="stylesheet" href="{{base_path}}assets/themes.css">
+  {{favicon_head_html}}
+</head>
+<body>
+  <main class="supportPage">
+    <header class="supportHeader">
+      <a class="supportBack" href="{{base_path}}" aria-label="Back to Prays.be">← Back</a>
+      <div class="supportBrand">{{site_title}}</div>
+    </header>
+    <article class="supportContent">
+      {{content_html}}
+    </article>
+    <footer class="supportFooter">
+      <nav class="supportFooterLinks" aria-label="Support">
+        <a href="{{base_path}}about/">About</a>
+        <a href="{{base_path}}for/">Who it’s for</a>
+        <a href="{{base_path}}privacy/">Privacy</a>
+        <a href="{{base_path}}legal/">Legal</a>
+      </nav>
+      <div class="supportFooterMeta">Contact: <a href="mailto:admin@prays.be">admin@prays.be</a></div>
+    </footer>
+  </main>
+</body>
+</html>
+

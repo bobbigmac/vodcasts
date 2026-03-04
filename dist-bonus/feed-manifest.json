@@ -1,0 +1,129 @@
+{
+  "version": 3,
+  "base_path": "/",
+  "feeds": [
+    {
+      "id": "better-business-coach-video",
+      "title": "Better Business Coach Video Podcast",
+      "url": "/data/feeds/better-business-coach-video.xml",
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": true
+      }
+    },
+    {
+      "id": "kingsway",
+      "title": "Kingsway Christian Church (video?)",
+      "url": "/data/feeds/kingsway.xml",
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": false
+      }
+    },
+    {
+      "id": "menlochurchvideo",
+      "title": "Menlo Church",
+      "url": "/data/feeds/menlochurchvideo.xml",
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": false
+      }
+    },
+    {
+      "id": "denver-education-video",
+      "title": "Denver Education Video Podcast",
+      "url": "/data/feeds/denver-education-video.xml",
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": true
+      }
+    },
+    {
+      "id": "oxford-poetry-ae-stallings-video",
+      "title": "Oxford Podcasts — Poetry with A.E. Stallings",
+      "url": "/data/feeds/oxford-poetry-ae-stallings-video.xml",
+      "features": {
+        "hasTranscript": true,
+        "hasPlayableTranscript": true,
+        "hasChapters": false,
+        "hasVideo": true
+      }
+    },
+    {
+      "id": "wgbh-science-city",
+      "title": "WGBH Science City Video (archival)",
+      "url": "/data/feeds/wgbh-science-city.xml",
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": true
+      }
+    },
+    {
+      "id": "nasa-odysee",
+      "title": "NASA on Odysee",
+      "url": "/data/feeds/nasa-odysee.xml",
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": true
+      }
+    },
+    {
+      "id": "security-weekly-news-video",
+      "title": "Security Weekly News (Video)",
+      "url": "/data/feeds/security-weekly-news-video.xml",
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": true
+      }
+    }
+  ],
+  "chunks": [
+    {
+      "url": "/feed-manifest-2026.json"
+    },
+    {
+      "url": "/feed-manifest-2025.json"
+    },
+    {
+      "url": "/feed-manifest-2024.json"
+    },
+    {
+      "url": "/feed-manifest-2023.json"
+    },
+    {
+      "url": "/feed-manifest-2016.json"
+    },
+    {
+      "url": "/feed-manifest-2015.json"
+    },
+    {
+      "url": "/feed-manifest-2013.json"
+    },
+    {
+      "url": "/feed-manifest-2012.json"
+    },
+    {
+      "url": "/feed-manifest-2010.json"
+    },
+    {
+      "url": "/feed-manifest-2009.json"
+    },
+    {
+      "url": "/feed-manifest-2007.json"
+    }
+  ]
+}

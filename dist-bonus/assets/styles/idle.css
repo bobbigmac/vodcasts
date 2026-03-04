@@ -1,0 +1,26 @@
+/**
+ * Idle state: hide UI, minimal progress bar.
+ */
+.app.uiIdle,
+.app.uiIdle * { cursor: none !important }
+.app.uiIdle .guideBar {
+  opacity: 0;
+  pointer-events: none;
+}
+.app.uiIdle .cornerBtn {
+  opacity: 0;
+  pointer-events: none;
+}
+.app.uiIdle .statusToast {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+.app.uiIdle .progress {
+  height: 6px !important;
+  background: rgba(0,0,0,.4) !important;
+}
+.app.uiIdle .progress::after { opacity: 0 !important }
+.app.uiIdle .progressThumb { opacity: 0 !important }
+.app.uiIdle .progressChapterTitle { opacity: 0 !important }
+.app.uiIdle .scrubPreview { opacity: 0 !important }
+.app.uiIdle .progressTimeLabels { opacity: 0 !important }

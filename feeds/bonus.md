@@ -36,6 +36,12 @@
 - category: lectures
 - tags: education, denver, public
 
+## oxford-poetry-ae-stallings-video
+- url: https://podcasts.ox.ac.uk/feeds/8acf6569-3bc7-40f3-8a41-c1cad59bce18/video.xml
+- title: Oxford Podcasts — Poetry with A.E. Stallings
+- category: lectures
+- tags: poetry, literature, arts, writing, oxford, lectures
+
 ## wgbh-science-city
 - url: http://streams.wgbh.org/online/science/video2007/podcast.xml
 - title: WGBH Science City Video (archival)
