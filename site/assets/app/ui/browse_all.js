@@ -489,7 +489,8 @@ function BrowseAllRowPlaceholder({ rowId, title, count = 10 }) {
   `;
 }
 
-export function BrowseAllPanel({ isOpen, showsConfig, feedTitles, player, history, onClose, onShowClick }) {
+export function BrowseAllPanel({ env, isOpen, showsConfig, feedTitles, player, history, onClose, onShowClick }) {
+  const browseLogoUrl = String(env?.site?.browseLogoUrl || "").trim();
   const curSourceId = player?.currentSourceId?.value || null;
   const curEpId = player?.currentEpisodeId?.value || null;
 
@@ -647,7 +648,11 @@ export function BrowseAllPanel({ isOpen, showsConfig, feedTitles, player, histor
       <div id="browseAllPanel" class="browseAllPanel" aria-hidden=${isOpen ? "false" : "true"} role="dialog">
         <div class="browseAllPanel-inner">
           <header class="browseAllHeader">
-            <h2 class="browseAllTitle">Browse Shows</h2>
+            <div class="browseAllHeaderLeft">
+              <button class="browseAllBack" type="button" onClick=${() => onClose?.()} aria-label="Back" title="Back">←</button>
+              ${browseLogoUrl ? html`<img class="browseAllLogo" src=${browseLogoUrl} alt="" aria-hidden="true" />` : ""}
+              <h2 class="browseAllTitle">Browse Shows</h2>
+            </div>
             <div class="browseAllHeaderActions">
               <button
                 class=${"browseAllHeaderBtn browseAllHeaderBtnAudioOnly" + (showAudioOnlyFeeds.value ? "" : " active")}
@@ -676,7 +681,11 @@ export function BrowseAllPanel({ isOpen, showsConfig, feedTitles, player, histor
     <div id="browseAllPanel" class="browseAllPanel" aria-hidden=${isOpen ? "false" : "true"} role="dialog">
       <div class="browseAllPanel-inner">
         <header class="browseAllHeader">
-          <h2 class="browseAllTitle">Browse Shows</h2>
+          <div class="browseAllHeaderLeft">
+            <button class="browseAllBack" type="button" onClick=${() => onClose?.()} aria-label="Back" title="Back">←</button>
+            ${browseLogoUrl ? html`<img class="browseAllLogo" src=${browseLogoUrl} alt="" aria-hidden="true" />` : ""}
+            <h2 class="browseAllTitle">Browse Shows</h2>
+          </div>
           <div class="browseAllHeaderActions">
             <button
               class=${"browseAllHeaderBtn browseAllHeaderBtnAudioOnly" + (showAudioOnlyFeeds.value ? "" : " active")}

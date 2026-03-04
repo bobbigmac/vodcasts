@@ -1446,6 +1446,7 @@ export function App({ env, log, sources, showsConfig, player, history }) {
             }}
           />`}
       <${BrowseAllPanel}
+        env=${env}
         isOpen=${browseAllOpen.value}
         showsConfig=${showsConfig?.value}
         feedTitles=${showsConfig?.value?.feedTitles}

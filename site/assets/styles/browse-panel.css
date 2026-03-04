@@ -331,7 +331,42 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
   flex-shrink: 0;
+}
+.browseAllHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+.browseAllLogo {
+  width: 22px;
+  height: 22px;
+  flex: 0 0 auto;
+  opacity: 0.92;
+}
+.browseAllBack {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid color-mix(in srgb, var(--edge) 70%, transparent);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.browseAllBack:hover {
+  background: rgba(255, 255, 255, 0.09);
+}
+.browseAllBack:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--accent, #0a84ff) 70%, transparent);
+  outline-offset: 2px;
 }
 .browseAllHeaderActions {
   display: flex;
@@ -369,6 +404,9 @@
   font-size: 18px;
   font-weight: 650;
   color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .browseAllClose {
   width: 36px;
@@ -415,9 +453,23 @@
   overflow-y: hidden;
   padding: 4px 0;
   scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.14) transparent;
 }
 .browseAllRowStrip::-webkit-scrollbar {
-  height: 6px;
+  height: 4px;
+}
+.browseAllRowStrip::-webkit-scrollbar-track {
+  background: transparent;
+}
+.browseAllRowStrip::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+}
+.browseAllRowStrip:hover {
+  scrollbar-color: rgba(255, 255, 255, 0.28) transparent;
+}
+.browseAllRowStrip:hover::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.28);
 }
 .browseAllRowStrip-inner {
   display: flex;
@@ -632,10 +684,24 @@
   overflow-y: hidden;
   padding: 6px 0;
   scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.14) transparent;
   scroll-behavior: smooth;
 }
 .vodCarouselStrip::-webkit-scrollbar {
-  height: 6px;
+  height: 4px;
+}
+.vodCarouselStrip::-webkit-scrollbar-track {
+  background: transparent;
+}
+.vodCarouselStrip::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+}
+.vodCarouselStrip:hover {
+  scrollbar-color: rgba(255, 255, 255, 0.28) transparent;
+}
+.vodCarouselStrip:hover::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.28);
 }
 .vodCarouselStripInner {
   display: flex;
@@ -867,17 +933,17 @@
 
 .vodThumbAudio {
   position: absolute;
-  left: 10px;
-  top: 10px;
+  right: 45px;
+  top: 6px;
   width: 30px;
   height: 30px;
   border-radius: 10px;
   background: transparent;
-  color: rgba(255, 255, 255, 0.98);
+  color: rgba(255, 255, 255, 1);
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.92;
+  opacity: 1;
   pointer-events: none;
   z-index: 6;
   filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.55));
