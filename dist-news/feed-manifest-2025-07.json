@@ -1,0 +1,2590 @@
+{
+  "feeds": [
+    {
+      "id": "bbc-world-service-global-news-podcast",
+      "episodes": [
+        {
+          "id": "urn:bbc:podcast:p0lsh00w",
+          "slug": "2025-07-26-the-happy-pod-performing-on-the-street-got-me-oasis-tickets-1nq824",
+          "title": "The Happy Pod: Performing on the street got me Oasis tickets",
+          "link": "http://www.bbc.co.uk/programmes/p0lsh00w",
+          "dateText": "2025-07-26",
+          "channelTitle": "Global News Podcast",
+          "durationSec": 1697,
+          "media": {
+            "url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0lsgyrv.mp3",
+            "type": "audio/mpeg",
+            "bytes": 13576000,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "http://ichef.bbci.co.uk/images/ic/3000x3000/p0lqf7hf.jpg",
+          "descriptionShort": "The street musician whose dream of seeing Oasis came true, thanks to a stranger. He says people should never give up. Also: an amazing survival…"
+        },
+        {
+          "id": "urn:bbc:podcast:p0lr4mtm",
+          "slug": "2025-07-19-the-happy-pod-the-thrill-of-swimming-the-arctic-circle-1i1le8",
+          "title": "The Happy Pod: The thrill of swimming the Arctic Circle",
+          "link": "http://www.bbc.co.uk/programmes/p0lr4mtm",
+          "dateText": "2025-07-19",
+          "channelTitle": "Global News Podcast",
+          "durationSec": 1585,
+          "media": {
+            "url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0lr4m9y.mp3",
+            "type": "audio/mpeg",
+            "bytes": 12680000,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "http://ichef.bbci.co.uk/images/ic/3000x3000/p0lqf7hf.jpg",
+          "descriptionShort": "We meet some of the swimmers participating in this year's swim across the Arctic Circle. Also, the groundbreaking science behind three parent…"
+        },
+        {
+          "id": "urn:bbc:podcast:p0lps42r",
+          "slug": "2025-07-12-the-happy-pod-the-trio-bringing-countries-together-with-music-1pqyq4",
+          "title": "The Happy Pod: The trio bringing countries together with music",
+          "link": "http://www.bbc.co.uk/programmes/p0lps42r",
+          "dateText": "2025-07-12",
+          "channelTitle": "Global News Podcast",
+          "durationSec": 1639,
+          "media": {
+            "url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0lps03v.mp3",
+            "type": "audio/mpeg",
+            "bytes": 13112000,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "http://ichef.bbci.co.uk/images/ic/3000x3000/p0lps45j.jpg",
+          "descriptionShort": "The trio hoping to soothe global tensions through musical collaboration. They mix Chinese and American songs to focus on similarities not…"
+        },
+        {
+          "id": "urn:bbc:podcast:p0lncxxc",
+          "slug": "2025-07-05-the-happy-pod-the-surgeon-who-left-his-wedding-to-save-a-life-1h8sgm",
+          "title": "The Happy Pod: The surgeon who left his wedding to save a life",
+          "link": "http://www.bbc.co.uk/programmes/p0lncxxc",
+          "dateText": "2025-07-05",
+          "channelTitle": "Global News Podcast",
+          "durationSec": 1589,
+          "media": {
+            "url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0lncwyy.mp3",
+            "type": "audio/mpeg",
+            "bytes": 12712000,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "http://ichef.bbci.co.uk/images/ic/3000x3000/p0lnpn2w.jpg",
+          "descriptionShort": "A surgeon who left his wedding to save a life says it's inspired him to help more people. Also: one man's adventures with a pet goose; a police…"
+        }
+      ]
+    },
+    {
+      "id": "the-economist-the-intelligence",
+      "episodes": [
+        {
+          "id": "688b35ecc6d705dd3a2a7e3a",
+          "slug": "2025-07-31-luxe-run-out-lvmh-10d0lm",
+          "title": "Luxe run out? LVMH",
+          "link": "https://shows.acast.com/theintelligencepodcast/episodes/luxe-run-out-lvmh",
+          "dateText": "2025-07-31",
+          "channelTitle": "The Intelligence from The Economist",
+          "durationSec": 1393,
+          "media": {
+            "url": "https://sphinx.acast.com/p/acast/s/theintelligencepodcast/e/688b35ecc6d705dd3a2a7e3a/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=KUmcBFvdrJyIrQZOg_C3y_tZNJhWts3Wv4r99sXozjQ",
+            "type": "audio/mpeg",
+            "bytes": 55755968,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://assets.pippa.io/shows/62e286a934d4d93d6587424a/1753954585592-c18d70b5-e45f-40c2-b438-1eaa174b153c.jpeg",
+          "descriptionShort": "LVMH Moët Hennessy Louis Vuitton SE, to use its proper name, is led by Bernard Arnault, who is credited with creating today’s luxury industry. Can…"
+        },
+        {
+          "id": "6889e8d18118276109cfcaf1",
+          "slug": "2025-07-30-heavy-meddle-trump-and-brazil-igp5j9",
+          "title": "Heavy meddle: Trump and Brazil",
+          "link": "https://shows.acast.com/theintelligencepodcast/episodes/heavy-meddle-trump-and-brazil",
+          "dateText": "2025-07-30",
+          "channelTitle": "The Intelligence from The Economist",
+          "durationSec": 1211,
+          "media": {
+            "url": "https://sphinx.acast.com/p/acast/s/theintelligencepodcast/e/6889e8d18118276109cfcaf1/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=gG3tESNA3Car7JjfV9OA_wd9J9W15pczN3_ktK3Z_-c",
+            "type": "audio/mpeg",
+            "bytes": 48463808,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://assets.pippa.io/shows/62e286a934d4d93d6587424a/1753867342238-2520af3a-46cf-4c1c-bcd3-423f39d0e5c5.jpeg",
+          "descriptionShort": "President Donald Trump’s animus towards his Brazilian counterpart Luiz Inácio Lula da Silva is best seen as solidarity with Jair Bolsonaro, another…"
+        },
+        {
+          "id": "68889b8ee0a86cc3ab2241d7",
+          "slug": "2025-07-29-pause-for-little-effect-a-trickle-of-aid-in-gaza-1g9alk",
+          "title": "Pause for little effect: a trickle of aid in Gaza",
+          "link": "https://shows.acast.com/theintelligencepodcast/episodes/pause-for-little-effect-a-trickle-of-aid-in-gaza",
+          "dateText": "2025-07-29",
+          "channelTitle": "The Intelligence from The Economist",
+          "durationSec": 1366,
+          "media": {
+            "url": "https://sphinx.acast.com/p/acast/s/theintelligencepodcast/e/68889b8ee0a86cc3ab2241d7/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=vq0e2BcWi9rRuuHphvfdks8HuIVBYG-TdGJLeObLgWQ",
+            "type": "audio/mpeg",
+            "bytes": 54649088,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://assets.pippa.io/shows/62e286a934d4d93d6587424a/1753782753681-044ad011-534f-4aef-843c-86b1ef42feb7.jpeg",
+          "descriptionShort": "Localised “tactical pauses” in Gaza relieve international pressure on Israel more than they relieve the pressure of starvation on Gazans. We ask how…"
+        },
+        {
+          "id": "68874bf6e0a86cc3abc44787",
+          "slug": "2025-07-28-eu-gotta-know-when-to-hold-em-america-s-latest-trade-deal-1pp02l",
+          "title": "EU gotta know when to hold ‘em: America’s latest trade deal",
+          "link": "https://shows.acast.com/theintelligencepodcast/episodes/eu-gotta-know-when-to-hold-em-americas-latest-trade-deal",
+          "dateText": "2025-07-28",
+          "channelTitle": "The Intelligence from The Economist",
+          "durationSec": 1238,
+          "media": {
+            "url": "https://sphinx.acast.com/p/acast/s/theintelligencepodcast/e/68874bf6e0a86cc3abc44787/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=YX00EeWPMWbKaR1dEEn5jfVkQ0BP6EajO2JqQXHhLMo",
+            "type": "audio/mpeg",
+            "bytes": 49552438,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://assets.pippa.io/shows/62e286a934d4d93d6587424a/1753697068403-33ea29af-871c-4ff9-ada7-1739f91fa7b7.jpeg",
+          "descriptionShort": "The European Union will swallow 15% tariffs in exchange for promises to buy American. We examine the accord and ask what will stick. The English…"
+        },
+        {
+          "id": "68849e182a38d6f5cbdecef9",
+          "slug": "2025-07-26-the-weekend-intelligence-the-hunt-for-austin-tice-part-3-f0qaky",
+          "title": "The Weekend Intelligence: The hunt for Austin Tice (part 3)",
+          "link": "https://shows.acast.com/theintelligencepodcast/episodes/the-weekend-intelligence-the-hunt-for-austin-tice-part-3",
+          "dateText": "2025-07-26",
+          "channelTitle": "The Intelligence from The Economist",
+          "durationSec": 2993,
+          "media": null,
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "In the final episode of The hunt for Austin Tice, our three part series on The Weekend Intelligence, Middle East correspondent, Gareth Browne, goes…"
+        },
+        {
+          "id": "68835231e0a86cc3abf4e894",
+          "slug": "2025-07-25-xiaomi-the-way-a-chinese-tech-giant-gets-bigger-8wt74h",
+          "title": "Xiaomi the way: a Chinese tech giant gets bigger",
+          "link": "https://shows.acast.com/theintelligencepodcast/episodes/xiaomi-the-way-a-chinese-tech-giant-gets-bigger",
+          "dateText": "2025-07-25",
+          "channelTitle": "The Intelligence from The Economist",
+          "durationSec": 1383,
+          "media": {
+            "url": "https://sphinx.acast.com/p/acast/s/theintelligencepodcast/e/68835231e0a86cc3abf4e894/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=r-7sgAKDvOrG5MRt0p3suVesknRxdbtGs0SvCBIOR-s",
+            "type": "audio/mpeg",
+            "bytes": 55337408,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://assets.pippa.io/shows/62e286a934d4d93d6587424a/1753436421118-f7d64674-1d60-4a2c-a352-b362290c643a.jpeg",
+          "descriptionShort": "The smartphone giant is now making strong inroads in the electric-vehicle market. But can its boss’s belovedness at home translate to success…"
+        },
+        {
+          "id": "68820d78911cb5ab74d20779",
+          "slug": "2025-07-24-anti-anti-corruption-a-bill-in-ukraine-sparks-protests-89va6q",
+          "title": "Anti-anti-corruption? A bill in Ukraine sparks protests",
+          "link": "https://shows.acast.com/theintelligencepodcast/episodes/anti-anti-corruption-a-bill-in-ukraine-sparks-protests",
+          "dateText": "2025-07-24",
+          "channelTitle": "The Intelligence from The Economist",
+          "durationSec": 1429,
+          "media": {
+            "url": "https://sphinx.acast.com/p/acast/s/theintelligencepodcast/e/68820d78911cb5ab74d20779/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=5osNYr_bVQW1vnYVtIihJjySHYrr4T0uEtT7sbA6a0s",
+            "type": "audio/mpeg",
+            "bytes": 57164288,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://assets.pippa.io/shows/62e286a934d4d93d6587424a/1753352667830-d338a0f4-783d-40ee-a702-abc246ce2b05.jpeg",
+          "descriptionShort": "A new bill threatening the independence of anti-corruption agencies has brought Ukrainians onto the streets and rattled international observers.…"
+        },
+        {
+          "id": "6880abf5498abee416038fed",
+          "slug": "2025-07-23-the-smaller-c-progress-in-beating-cancer-5s7zgo",
+          "title": "The smaller C: progress in beating cancer",
+          "link": "https://shows.acast.com/theintelligencepodcast/episodes/the-smaller-c-progress-in-beating-cancer",
+          "dateText": "2025-07-23",
+          "channelTitle": "The Intelligence from The Economist",
+          "durationSec": 1316,
+          "media": {
+            "url": "https://sphinx.acast.com/p/acast/s/theintelligencepodcast/e/6880abf5498abee416038fed/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=nprR8nlxrwZ-aL_Sjugxs9hUSAv04OjEcgw-5rReSZQ",
+            "type": "audio/mpeg",
+            "bytes": 52677248,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://assets.pippa.io/shows/62e286a934d4d93d6587424a/1753262404800-0d7a3059-dabd-4ed1-842d-db4a1be89e24.jpeg",
+          "descriptionShort": "Overall, more people are dying from cancer. But a closer look at the numbers reveals just how much success modern medicine has had at making the…"
+        },
+        {
+          "id": "687f6332f6d4262b076221d5",
+          "slug": "2025-07-22-hawks-v-talks-barriers-to-peace-in-gaza-v92s9r",
+          "title": "Hawks v talks: barriers to peace in Gaza",
+          "link": "https://shows.acast.com/theintelligencepodcast/episodes/hawks-v-talks-barriers-to-peace-in-gaza",
+          "dateText": "2025-07-22",
+          "channelTitle": "The Intelligence from The Economist",
+          "durationSec": 1484,
+          "media": {
+            "url": "https://sphinx.acast.com/p/acast/s/theintelligencepodcast/e/687f6332f6d4262b076221d5/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=666E-WzNjsnrqYf7OUpstQDkhbFPKtIUh-IUY-Z8c1c",
+            "type": "audio/mpeg",
+            "bytes": 59397248,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://assets.pippa.io/shows/62e286a934d4d93d6587424a/1753178885137-e0717ed7-4615-4178-8a43-365e549e28ce.jpeg",
+          "descriptionShort": "Even as Western countries band together to condemn Israel’s actions, aid remains at a trickle and the war is expanding into a central-Gazan city. We…"
+        },
+        {
+          "id": "687e118e0de40e9a7c13ee09",
+          "slug": "2025-07-21-land-of-the-rising-shun-immigration-and-japan-s-politics-5airth",
+          "title": "Land of the rising shun? Immigration and Japan’s politics",
+          "link": "https://shows.acast.com/theintelligencepodcast/episodes/land-of-the-rising-shun-immigration-and-japans-politics",
+          "dateText": "2025-07-21",
+          "channelTitle": "The Intelligence from The Economist",
+          "durationSec": 1369,
+          "media": {
+            "url": "https://sphinx.acast.com/p/acast/s/theintelligencepodcast/e/687e118e0de40e9a7c13ee09/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=8d8pKfAngfAmIFaeMtmjUq4v4QUjS7_s4YyJAdbaMRA",
+            "type": "audio/mpeg",
+            "bytes": 54795008,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://assets.pippa.io/shows/62e286a934d4d93d6587424a/1753091930932-09d70885-ec11-47cc-a40f-d2855c48458e.jpeg",
+          "descriptionShort": "The Liberal Democratic Party, which has dominated the country’s politics for seven decades, just got a pasting at the polls—again. We ask why staid…"
+        },
+        {
+          "id": "687a19a80d2a21899314a166",
+          "slug": "2025-07-19-the-weekend-intelligence-the-hunt-for-austin-tice-part-2-cs93bo",
+          "title": "The Weekend Intelligence: The hunt for Austin Tice (part 2)",
+          "link": "https://shows.acast.com/theintelligencepodcast/episodes/the-weekend-intelligence-the-hunt-for-austin-tice-part-2",
+          "dateText": "2025-07-19",
+          "channelTitle": "The Intelligence from The Economist",
+          "durationSec": 2908,
+          "media": null,
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "On December 8th, 2024, rebels swept into Damascus and ousted Syria's dictator, Bashar al-Assad. One of the first things they did was open up the…"
+        },
+        {
+          "id": "687a15df81b46e59567d46d7",
+          "slug": "2025-07-18-the-ships-are-down-houthis-resume-strikes-a79k22",
+          "title": "The ships are down: Houthis resume strikes",
+          "link": "https://shows.acast.com/theintelligencepodcast/episodes/the-ships-are-down-houthis-resume-strikes",
+          "dateText": "2025-07-18",
+          "channelTitle": "The Intelligence from The Economist",
+          "durationSec": 1575,
+          "media": {
+            "url": "https://sphinx.acast.com/p/acast/s/theintelligencepodcast/e/687a15df81b46e59567d46d7/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=udiJC1bpwPcA2y4rh_uwTW2-6lx_7OoHUJmZJV186yQ",
+            "type": "audio/mpeg",
+            "bytes": 63014528,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://assets.pippa.io/shows/62e286a934d4d93d6587424a/1752831389845-286e96de-70bb-49ad-b4ef-e7074c95a3c9.jpeg",
+          "descriptionShort": "Once again, commercial vessels sailing in the Red Sea are being attacked. Our correspondent explains why Houthi rebels , an Iranian-backed militia…"
+        }
+      ]
+    },
+    {
+      "id": "wsj-the-journal",
+      "episodes": [
+        {
+          "id": "6efe16d4-6e51-11f0-8ebd-c732b2033255",
+          "slug": "2025-07-31-why-coke-isn-t-getting-rid-of-high-fructose-corn-syrup-1x4vam",
+          "title": "Why Coke Isn't Getting Rid of High-Fructose Corn Syrup",
+          "link": "",
+          "dateText": "2025-07-31",
+          "channelTitle": "The Journal.",
+          "durationSec": 1049,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ7466573196.mp3?updated=1753996793",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "When President Donald Trump posted that he'd been in talks with Coca-Cola, and that the sodamaker would soon be making Coke with cane sugar , it…"
+        },
+        {
+          "id": "e5e159f2-6d82-11f0-a0b2-d330e99d0238",
+          "slug": "2025-07-30-the-chinese-coffee-giant-taking-on-starbucks-10a7n4",
+          "title": "The Chinese Coffee Giant Taking on Starbucks",
+          "link": "",
+          "dateText": "2025-07-30",
+          "channelTitle": "The Journal.",
+          "durationSec": 1076,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ5217753720.mp3?updated=1753943658",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "A delicious corporate rivalry is brewing! After an accounting fraud scandal nearly derailed its rise, Luckin Coffee has become the top-selling…"
+        },
+        {
+          "id": "a59cda82-6cb6-11f0-af38-57bc864679ae",
+          "slug": "2025-07-29-how-volkswagen-s-electric-bus-lost-its-charge-41pfju",
+          "title": "How Volkswagen's Electric Bus Lost Its Charge",
+          "link": "",
+          "dateText": "2025-07-29",
+          "channelTitle": "The Journal.",
+          "durationSec": 1225,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ7574951738.mp3?updated=1753936066",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "After decades, Volkswagen brought its iconic VW bus back to the U.S. , this time as a fully electric vehicle. But after years of buzz , the new…"
+        },
+        {
+          "id": "01fadc50-6bf1-11f0-8f86-ef60b039c59f",
+          "slug": "2025-07-28-a-pharmaceutical-executive-on-trump-s-tariff-strategy-1y1n2j",
+          "title": "A Pharmaceutical Executive on Trump’s Tariff Strategy",
+          "link": "",
+          "dateText": "2025-07-28",
+          "channelTitle": "The Journal.",
+          "durationSec": 1019,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ5395324751.mp3?updated=1753913947",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Earlier this month, President Donald Trump announced the U.S. would impose up to a 200% tariff on imported pharmaceuticals , though he would give…"
+        },
+        {
+          "id": "fc9e711a-6991-11f0-b16c-537944c691b6",
+          "slug": "2025-07-25-what-killed-the-late-show-1v7wh9",
+          "title": "What Killed 'The Late Show'?",
+          "link": "",
+          "dateText": "2025-07-25",
+          "channelTitle": "The Journal.",
+          "durationSec": 1307,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ9965614618.mp3?updated=1753945857",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Last week, CBS cancelled “The Late Show with Stephen Colbert.” The network said that ending the show was “purely a financial decision.” Over the…"
+        },
+        {
+          "id": "91971af8-68d2-11f0-80b6-1b1fb8904cd7",
+          "slug": "2025-07-24-are-diamonds-even-a-luxury-anymore-1unj2q",
+          "title": "Are Diamonds Even a Luxury Anymore?",
+          "link": "",
+          "dateText": "2025-07-24",
+          "channelTitle": "The Journal.",
+          "durationSec": 1184,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ6056464582.mp3?updated=1753933976",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Global diamond company De Beers spent decades convincing couples that true love required a diamond. But now, lab-grown diamonds that are identical…"
+        },
+        {
+          "id": "6fce9cd4-6800-11f0-bf8a-7fb4dac5d852",
+          "slug": "2025-07-23-the-wall-street-craze-jamie-dimon-can-t-resist-even-if-it-blo-fnnuh1",
+          "title": "The Wall Street Craze Jamie Dimon Can’t Resist. Even If It Blows Up.",
+          "link": "",
+          "dateText": "2025-07-23",
+          "channelTitle": "The Journal.",
+          "durationSec": 1212,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ5695374414.mp3?updated=1753929949",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Jamie Dimon, the cautious head of JPMorgan Chase, has consistently warned that private credit, the hottest trend on Wall Street , could trigger a…"
+        },
+        {
+          "id": "7cea3b00-6736-11f0-9825-97ac9d3c87cf",
+          "slug": "2025-07-22-a-fight-over-buc-ee-s-and-for-the-soul-of-the-american-west-1xhivt",
+          "title": "A Fight Over Buc-ee’s and for the Soul of the American West",
+          "link": "",
+          "dateText": "2025-07-22",
+          "channelTitle": "The Journal.",
+          "durationSec": 1200,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ3102489593.mp3?updated=1753931532",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Buc-ee's — the chain of road stops with a beaver mascot and a die-hard fanbase — is looking to expand westward. Its next stop is Palmer Lake,…"
+        },
+        {
+          "id": "46989d34-666f-11f0-be81-176f7406dff0",
+          "slug": "2025-07-21-one-american-company-taking-on-china-s-rare-earth-dominance-epmu8b",
+          "title": "One American Company Taking on China's Rare-Earth Dominance",
+          "link": "",
+          "dateText": "2025-07-21",
+          "channelTitle": "The Journal.",
+          "durationSec": 1050,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ3629054591.mp3?updated=1753923858",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Tiny rare-earth magnets are used for building phones, electric cars, and submarines, but nearly all of them are mined and made in China . One U.S.…"
+        },
+        {
+          "id": "4058efb6-641a-11f0-84b2-43ea04515f1e",
+          "slug": "2025-07-18-trump-s-letter-to-jeffrey-epstein-q7b5tn",
+          "title": "Trump’s Letter to Jeffrey Epstein",
+          "link": "",
+          "dateText": "2025-07-18",
+          "channelTitle": "The Journal.",
+          "durationSec": 1113,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ8856799135.mp3?updated=1753922867",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "In 2003, Jeffrey Epstein got a gift for his 50th birthday , a leather-bound album containing letters, poems, photos and greetings from friends. One…"
+        },
+        {
+          "id": "6845965e-6349-11f0-9aca-7fa697a9224b",
+          "slug": "2025-07-17-how-1-million-robots-are-taking-over-amazon-warehouses-u69sbd",
+          "title": "How 1 Million Robots Are Taking Over Amazon Warehouses",
+          "link": "",
+          "dateText": "2025-07-17",
+          "channelTitle": "The Journal.",
+          "durationSec": 1157,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ2080061043.mp3?updated=1753929367",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Amazon warehouses are more automated than ever . The company, a key bellwether for the U.S. labor market , now has over a million robots packing and…"
+        },
+        {
+          "id": "239babd8-6281-11f0-97f8-87e7e4e7c935",
+          "slug": "2025-07-16-why-trump-is-ready-to-send-missiles-to-ukraine-e1ht3p",
+          "title": "Why Trump Is Ready to Send Missiles to Ukraine",
+          "link": "",
+          "dateText": "2025-07-16",
+          "channelTitle": "The Journal.",
+          "durationSec": 1242,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ4179920193.mp3?updated=1753919072",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "After talks with NATO allies , President Donald Trump gave Russia 50 days to broker peace with Ukraine. If they can’t make it happen, he says he’ll…"
+        },
+        {
+          "id": "f2434a2a-61b6-11f0-b700-671e6cf5e3a5",
+          "slug": "2025-07-15-the-uncertain-future-of-renewable-energy-12zxpn",
+          "title": "The Uncertain Future of Renewable Energy",
+          "link": "",
+          "dateText": "2025-07-15",
+          "channelTitle": "The Journal.",
+          "durationSec": 1072,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ9913212073.mp3?updated=1752610380",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "After the passage of President Trump’s “Big Beautiful Bill,” renewable energy companies are bracing for more challenging times . The law is set to…"
+        },
+        {
+          "id": "fd289dfe-60f4-11f0-ab94-a30889298d4d",
+          "slug": "2025-07-14-why-elon-musk-s-ai-chatbot-went-rogue-1r1mrr",
+          "title": "Why Elon Musk’s AI Chatbot Went Rogue",
+          "link": "",
+          "dateText": "2025-07-14",
+          "channelTitle": "The Journal.",
+          "durationSec": 1312,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ4907498841.mp3?updated=1752527300",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Last week, Grok went rogue . The AI chatbot – which users can interact with on X – posted antisemitic comments and graphic descriptions of violence…"
+        },
+        {
+          "id": "6aa57900-5e99-11f0-a244-77aca4be975d",
+          "slug": "2025-07-11-can-superman-save-warner-581xiw",
+          "title": "Can Superman Save Warner?",
+          "link": "",
+          "dateText": "2025-07-11",
+          "channelTitle": "The Journal.",
+          "durationSec": 1296,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ9946729760.mp3?updated=1752268047",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "The man of steel is back in a new $225 million reboot . Riding on this weekend’s release is the hope that DC Studios will finally begin to match the…"
+        },
+        {
+          "id": "1ef35930-5dc9-11f0-b862-1368f125d2a2",
+          "slug": "2025-07-10-who-will-be-the-next-fed-chair-maybe-kevin-1yywmv",
+          "title": "Who Will Be the Next Fed Chair? Maybe Kevin",
+          "link": "",
+          "dateText": "2025-07-10",
+          "channelTitle": "The Journal.",
+          "durationSec": 1307,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ3399062805.mp3?updated=1752178377",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "For years, President Trump has feuded with the Federal Reserve and Chair Jerome Powell over interest rates. And now, two Republicans named Kevin (…"
+        },
+        {
+          "id": "c72efbce-5d04-11f0-b206-87ee4a121e87",
+          "slug": "2025-07-09-the-healthcare-costs-of-trump-s-big-beautiful-bill-spf6uz",
+          "title": "The Healthcare Costs of Trump’s Big Beautiful Bill",
+          "link": "",
+          "dateText": "2025-07-09",
+          "channelTitle": "The Journal.",
+          "durationSec": 1187,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ8136119029.mp3?updated=1752094167",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "President Trump’s megabill cuts over $1 trillion in healthcare spending over the next decade, mainly from Medicaid . Experts project nearly 8.7…"
+        },
+        {
+          "id": "9c6be6f4-5c37-11f0-acb0-b76a069d6d32",
+          "slug": "2025-07-08-why-trump-pushed-his-tariff-deadline-a4bdjq",
+          "title": "Why Trump Pushed His Tariff Deadline",
+          "link": "",
+          "dateText": "2025-07-08",
+          "channelTitle": "The Journal.",
+          "durationSec": 1083,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ5941351032.mp3?updated=1752005948",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "When President Trump paused most of his “Liberation Day” tariffs for 90 days last spring, the administration had hoped to cut dozens of trade deals.…"
+        },
+        {
+          "id": "006385ca-5b6d-11f0-8c3c-7fc8fd039f22",
+          "slug": "2025-07-07-ai-is-coming-for-entry-level-jobs-1mkepx",
+          "title": "AI Is Coming for Entry-Level Jobs",
+          "link": "",
+          "dateText": "2025-07-07",
+          "channelTitle": "The Journal.",
+          "durationSec": 1091,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ8599522787.mp3?updated=1751921151",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Artificial intelligence is shaking up business in a big way , and recent college graduates are feeling the pinch . WSJ’s Chip Cutter explores the…"
+        },
+        {
+          "id": "55ff2b60-5848-11f0-9d60-7b9cd2064a73",
+          "slug": "2025-07-03-why-meta-is-offering-100-million-for-ai-geniuses-isrmd3",
+          "title": "Why Meta Is Offering $100 Million for AI Geniuses",
+          "link": "",
+          "dateText": "2025-07-03",
+          "channelTitle": "The Journal.",
+          "durationSec": 1063,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ7533047827.mp3?updated=1751573321",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "In the battle for AI supremacy, Meta’s models have lagged . Now CEO Mark Zuckerberg is racing to hire new AI talent to close the gap with rivals.…"
+        },
+        {
+          "id": "56b52f00-5785-11f0-abd2-cb6999e5d037",
+          "slug": "2025-07-02-how-trump-s-megabill-squeaked-through-the-senate-1qrs67",
+          "title": "How Trump's Megabill Squeaked Through the Senate",
+          "link": "",
+          "dateText": "2025-07-02",
+          "channelTitle": "The Journal.",
+          "durationSec": 981,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ9640457653.mp3?updated=1751492797",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "After a marathon 27-hour session, Senate Republicans passed their version of President Trump's “big, beautiful bill.” Getting enough senators on…"
+        },
+        {
+          "id": "a2b7492a-56b7-11f0-8f03-c39bf0b9f95d",
+          "slug": "2025-07-01-swipe-spend-repeat-the-perks-arms-race-in-your-wallet-19lapm",
+          "title": "Swipe, Spend, Repeat: The Perks Arms Race in Your Wallet",
+          "link": "",
+          "dateText": "2025-07-01",
+          "channelTitle": "The Journal.",
+          "durationSec": 1221,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ6500526328.mp3?updated=1751401671",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "JPMorgan Chase recently announced that it was raising the annual fee on its popular Sapphire Reserve credit card by 45%. The company believes enough…"
+        }
+      ]
+    },
+    {
+      "id": "uctv-science-video",
+      "episodes": [
+        {
+          "id": "40460the-art-of-scientific-storytelling",
+          "slug": "2025-07-28-the-art-of-scientific-storytelling-1yrhcy",
+          "title": "The Art of Scientific Storytelling",
+          "link": "https://www.uctv.tv/shows/40460",
+          "dateText": "2025-07-28",
+          "channelTitle": "Science (Video)",
+          "durationSec": 4294,
+          "media": {
+            "url": "https://podcast.uctv.tv/vod/40460.mp4",
+            "type": "video/mp4",
+            "bytes": 894972415,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://www.uctv.tv/images/widescreen/40460.jpg",
+          "descriptionShort": "Science communication expert Lisa Warshaw and scientist Rob Signer, Ph.D., offer a practical guide to turning complex research into clear, memorable…"
+        },
+        {
+          "id": "40444bottom-up-midbrain-subthalamic-control-of-feeding",
+          "slug": "2025-07-25-bottom-up-midbrain-subthalamic-control-of-feeding-26je5m",
+          "title": "Bottom-Up Midbrain-Subthalamic Control of Feeding",
+          "link": "https://www.uctv.tv/shows/40444",
+          "dateText": "2025-07-25",
+          "channelTitle": "Science (Video)",
+          "durationSec": 3518,
+          "media": {
+            "url": "https://podcast.uctv.tv/vod/40444.mp4",
+            "type": "video/mp4",
+            "bytes": 470735482,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://www.uctv.tv/images/widescreen/40444.jpg",
+          "descriptionShort": "UCLA’s Avishek Adhikari, PhD, presents new research on the role of GABAergic neurons in the brain’s periaqueductal gray (PAG) region. Previously…"
+        },
+        {
+          "id": "40596kumeyaay-ha-kwaiyo --indigenous-ocean-culture-a-renaissance",
+          "slug": "2025-07-23-kumeyaay-ha-kwaiyo-indigenous-ocean-culture-a-renaissance-17nli0",
+          "title": "Kumeyaay Ha Kwaiyo - Indigenous Ocean Culture: A Renaissance",
+          "link": "https://www.uctv.tv/shows/40596",
+          "dateText": "2025-07-23",
+          "channelTitle": "Science (Video)",
+          "durationSec": 2854,
+          "media": {
+            "url": "https://podcast.uctv.tv/vod/40596.mp4",
+            "type": "video/mp4",
+            "bytes": 594488741,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://www.uctv.tv/images/widescreen/40596.jpg",
+          "descriptionShort": "The land we now call Scripps Oceanography has been home to the Kumeyaay people for thousands of years. A history of encroachment, colonization and…"
+        },
+        {
+          "id": "40427seas-the-day-a-new-narrative-for-the-ocean",
+          "slug": "2025-07-15-seas-the-day-a-new-narrative-for-the-ocean-j34fgc",
+          "title": "Seas the Day: A New Narrative for the Ocean",
+          "link": "https://www.uctv.tv/shows/40427",
+          "dateText": "2025-07-15",
+          "channelTitle": "Science (Video)",
+          "durationSec": 3579,
+          "media": {
+            "url": "https://podcast.uctv.tv/vod/40427.mp4",
+            "type": "video/mp4",
+            "bytes": 696370735,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://www.uctv.tv/images/widescreen/40427.jpg",
+          "descriptionShort": "It's time for a new narrative for the ocean, one that reflects current scientific knowledge and acknowledges innovative new partnerships and…"
+        },
+        {
+          "id": "40426science-in-the-white-house-integrating-solutions-to-the-triple-crises-of-climate-change-loss-of-biodiversity-and-inequality/inequity",
+          "slug": "2025-07-09-science-in-the-white-house-integrating-solutions-to-the-tripl-1mibrk",
+          "title": "Science in the White House: Integrating Solutions to the Triple Crises of Climate Change Loss of Biodiversity and Inequality/Inequity",
+          "link": "https://www.uctv.tv/shows/40426",
+          "dateText": "2025-07-09",
+          "channelTitle": "Science (Video)",
+          "durationSec": 4188,
+          "media": {
+            "url": "https://podcast.uctv.tv/vod/40426.mp4",
+            "type": "video/mp4",
+            "bytes": 768254424,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://www.uctv.tv/images/widescreen/40426.jpg",
+          "descriptionShort": "Three major global challenges – climate change, loss of biodiversity and its benefits, and inequality and inequity among people – are typically…"
+        },
+        {
+          "id": "40702carta-mismatch-human-origins-and-modern-disease---questions-answers-and-closing-remarks",
+          "slug": "2025-07-06-carta-mismatch-human-origins-and-modern-disease-questions-ans-1fut5j",
+          "title": "CARTA: Mismatch: Human Origins and Modern Disease - Questions Answers and Closing Remarks",
+          "link": "https://www.uctv.tv/shows/40702",
+          "dateText": "2025-07-06",
+          "channelTitle": "Science (Video)",
+          "durationSec": 4535,
+          "media": {
+            "url": "https://podcast.uctv.tv/vod/40702.mp4",
+            "type": "video/mp4",
+            "bytes": 945366795,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://www.uctv.tv/images/widescreen/40702.jpg",
+          "descriptionShort": "The human body has traits that evolved at different times, from 1.5 billion to 2 million years ago, each bringing health benefits and risks.…"
+        },
+        {
+          "id": "40700carta-three-smokes-in-the-evolution-of-the-human-exposome-with-caleb-finch",
+          "slug": "2025-07-03-carta-three-smokes-in-the-evolution-of-the-human-exposome-wit-18gzi7",
+          "title": "CARTA: Three Smokes in the Evolution of the Human Exposome with Caleb Finch",
+          "link": "https://www.uctv.tv/shows/40700",
+          "dateText": "2025-07-03",
+          "channelTitle": "Science (Video)",
+          "durationSec": 1055,
+          "media": {
+            "url": "https://podcast.uctv.tv/vod/40700.mp4",
+            "type": "video/mp4",
+            "bytes": 79191822,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://www.uctv.tv/images/widescreen/40700.jpg",
+          "descriptionShort": "Humans have long been exposed to three main types of smoke: from early domestic fires, modern wildfires, and more recently, tobacco and fossil fuel…"
+        }
+      ]
+    },
+    {
+      "id": "geek-news-central-video",
+      "episodes": [
+        {
+          "id": "https://geeknewscentral.com/?p=107425",
+          "slug": "2025-07-29-fbi-warns-of-rising-cybercrime-and-real-world-violence-from-y-1kvfxy",
+          "title": "FBI Warns of Rising Cybercrime and Real-World Violence from Youth Network “The Com” #1836",
+          "link": "https://geeknewscentral.com/2025/07/28/fbi-warns-of-rising-cybercrime-and-real-world-violence-from-youth-network-the-com/",
+          "dateText": "2025-07-29",
+          "channelTitle": "Geek News Central Podcast (Video)",
+          "durationSec": 2457,
+          "media": {
+            "url": "https://media.blubrry.com/geeknewscentral/media.blubrry.com/geeknewsvid/ins.blubrry.com/geeknewsvid/GNC-2025-07-28.mp4",
+            "type": "video/mp4",
+            "bytes": 1483707544,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": {
+            "url": "https://transcripts.blubrry.com/geeknewscentral/chapters/1753755692.json",
+            "type": "application/json+chapters"
+          },
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://geeknewscentral.com/wp-content/uploads/2025/07/1400x1400-6.jpg",
+          "descriptionShort": "The FBI has issued an urgent warning about &#8220;The Com,&#8221; a rapidly expanding network of youth aged 11–25 who are engaged in both cyber and…"
+        },
+        {
+          "id": "https://geeknewscentral.com/?p=107399",
+          "slug": "2025-07-25-50-years-of-microsoft-how-the-altair-8800-and-basic-revolutio-gz28kl",
+          "title": "50 Years of Microsoft: How the Altair 8800 and BASIC Revolutionized Computing #1835",
+          "link": "https://geeknewscentral.com/2025/07/24/50-years-of-microsoft-how-the-altair-8800-and-basic-revolutionized-computing/",
+          "dateText": "2025-07-25",
+          "channelTitle": "Geek News Central Podcast (Video)",
+          "durationSec": 3229,
+          "media": {
+            "url": "https://media.blubrry.com/geeknewscentral/media.blubrry.com/geeknewsvid/ins.blubrry.com/geeknewsvid/GNC-2025-07-24.mp4",
+            "type": "video/mp4",
+            "bytes": 1950096933,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": {
+            "url": "https://transcripts.blubrry.com/geeknewscentral/chapters/1753411646.json",
+            "type": "application/json+chapters"
+          },
+          "transcripts": [
+            {
+              "url": "https://transcripts.blubrry.com/geeknewsvid/147270666-58293.srt",
+              "type": "application/srt",
+              "lang": "en",
+              "isCaptions": true,
+              "isPlayable": true
+            }
+          ],
+          "transcriptsAll": [
+            {
+              "url": "https://transcripts.blubrry.com/geeknewsvid/147270666-58293.srt",
+              "type": "application/srt",
+              "lang": "en",
+              "isCaptions": true,
+              "isPlayable": true
+            }
+          ],
+          "imageUrl": "https://geeknewscentral.com/wp-content/uploads/2025/07/1400x1400-5.jpg",
+          "descriptionShort": "Fifty years ago, Bill Gates and Paul Allen&#8217;s agreement with MITS for a BASIC interpreter for the Altair 8800 microcomputer marked the founding…"
+        },
+        {
+          "id": "https://geeknewscentral.com/?p=107371",
+          "slug": "2025-07-22-google-s-gemini-deep-think-ai-achieves-gold-medal-at-2025-int-i2fiqv",
+          "title": "Google’s Gemini Deep Think AI Achieves Gold Medal at 2025 International Mathematical Olympiad #1834",
+          "link": "https://geeknewscentral.com/2025/07/21/googles-gemini-deep-think-ai-achieves-gold-medal-at-2025-international-mathematical-olympiad/",
+          "dateText": "2025-07-22",
+          "channelTitle": "Geek News Central Podcast (Video)",
+          "durationSec": 2016,
+          "media": {
+            "url": "https://media.blubrry.com/geeknewscentral/media.blubrry.com/geeknewsvid/ins.blubrry.com/geeknewsvid/GNC-2025-07-21.mp4",
+            "type": "video/mp4",
+            "bytes": 1217747473,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": {
+            "url": "https://transcripts.blubrry.com/geeknewscentral/chapters/1753151976.json",
+            "type": "application/json+chapters"
+          },
+          "transcripts": [
+            {
+              "url": "https://transcripts.blubrry.com/geeknewsvid/147194656-58126.srt",
+              "type": "application/srt",
+              "lang": "en",
+              "isCaptions": true,
+              "isPlayable": true
+            }
+          ],
+          "transcriptsAll": [
+            {
+              "url": "https://transcripts.blubrry.com/geeknewsvid/147194656-58126.srt",
+              "type": "application/srt",
+              "lang": "en",
+              "isCaptions": true,
+              "isPlayable": true
+            }
+          ],
+          "imageUrl": "https://geeknewscentral.com/wp-content/uploads/2025/07/1400x1400-4.jpg",
+          "descriptionShort": "Google DeepMind’s advanced Gemini Deep Think AI has reached a milestone by solving five out of six problems at the 2025 International Mathematical…"
+        },
+        {
+          "id": "https://geeknewscentral.com/?p=107350",
+          "slug": "2025-07-18-openai-unveils-game-changing-chatgpt-agent-1833-1brfay",
+          "title": "OpenAI Unveils Game-Changing ChatGPT Agent #1833",
+          "link": "https://geeknewscentral.com/2025/07/17/openai-unveils-game-changing-chatgpt-agent/",
+          "dateText": "2025-07-18",
+          "channelTitle": "Geek News Central Podcast (Video)",
+          "durationSec": 2826,
+          "media": {
+            "url": "https://media.blubrry.com/geeknewscentral/media.blubrry.com/geeknewsvid/ins.blubrry.com/geeknewsvid/GNC-2025-07-17a.mp4",
+            "type": "video/mp4",
+            "bytes": 1708143033,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": {
+            "url": "https://transcripts.blubrry.com/geeknewscentral/chapters/1752800529.json",
+            "type": "application/json+chapters"
+          },
+          "transcripts": [
+            {
+              "url": "https://transcripts.blubrry.com/geeknewsvid/147116677-57960.srt",
+              "type": "application/srt",
+              "lang": "en",
+              "isCaptions": true,
+              "isPlayable": true
+            }
+          ],
+          "transcriptsAll": [
+            {
+              "url": "https://transcripts.blubrry.com/geeknewsvid/147116677-57960.srt",
+              "type": "application/srt",
+              "lang": "en",
+              "isCaptions": true,
+              "isPlayable": true
+            }
+          ],
+          "imageUrl": "https://geeknewscentral.com/wp-content/uploads/2025/07/1400x1400-2.jpg",
+          "descriptionShort": "OpenAI has introduced ChatGPT Agent, an advanced AI assistant that performs complex, multi-step tasks by directly controlling a virtual computer.…"
+        },
+        {
+          "id": "https://geeknewscentral.com/?p=107326",
+          "slug": "2025-07-15-self-destructing-ssd-for-ultimate-data-security-1832-1cuvqn",
+          "title": "Self-Destructing SSD for Ultimate Data Security #1832",
+          "link": "https://geeknewscentral.com/2025/07/14/self-destructing-ssd-for-ultimate-data-security/",
+          "dateText": "2025-07-15",
+          "channelTitle": "Geek News Central Podcast (Video)",
+          "durationSec": 2115,
+          "media": {
+            "url": "https://media.blubrry.com/geeknewscentral/media.blubrry.com/geeknewsvid/ins.blubrry.com/geeknewsvid/GNC-2025-07-14.mp4",
+            "type": "video/mp4",
+            "bytes": 1278467141,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": {
+            "url": "https://transcripts.blubrry.com/geeknewscentral/chapters/1752551623.json",
+            "type": "application/json+chapters"
+          },
+          "transcripts": [
+            {
+              "url": "https://transcripts.blubrry.com/geeknewsvid/147034550-57824.srt",
+              "type": "application/srt",
+              "lang": "en",
+              "isCaptions": true,
+              "isPlayable": true
+            }
+          ],
+          "transcriptsAll": [
+            {
+              "url": "https://transcripts.blubrry.com/geeknewsvid/147034550-57824.srt",
+              "type": "application/srt",
+              "lang": "en",
+              "isCaptions": true,
+              "isPlayable": true
+            }
+          ],
+          "imageUrl": "https://geeknewscentral.com/wp-content/uploads/2025/07/1400x1400-1.jpg",
+          "descriptionShort": "TeamGroup has launched the P250Q-M80 SSD, a specialized drive that can physically destroy its flash memory by pressing a button. Designed for…"
+        },
+        {
+          "id": "https://geeknewscentral.com/?p=107247",
+          "slug": "2025-07-11-grok-4-surpasses-openai-and-google-now-top-ai-model-1831-mwm8z5",
+          "title": "Grok 4 Surpasses OpenAI and Google, Now Top AI Model #1831",
+          "link": "https://geeknewscentral.com/2025/07/10/grok-4-surpasses-openai-and-google-now-top-ai-model/",
+          "dateText": "2025-07-11",
+          "channelTitle": "Geek News Central Podcast (Video)",
+          "durationSec": 2677,
+          "media": {
+            "url": "https://media.blubrry.com/geeknewscentral/media.blubrry.com/geeknewsvid/ins.blubrry.com/geeknewsvid/GNC-2025-07-10.mp4",
+            "type": "video/mp4",
+            "bytes": 1617358131,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": {
+            "url": "https://transcripts.blubrry.com/geeknewscentral/chapters/1752200253.json",
+            "type": "application/json+chapters"
+          },
+          "transcripts": [
+            {
+              "url": "https://transcripts.blubrry.com/geeknewsvid/146932595-57702.srt",
+              "type": "application/srt",
+              "lang": "en",
+              "isCaptions": true,
+              "isPlayable": true
+            }
+          ],
+          "transcriptsAll": [
+            {
+              "url": "https://transcripts.blubrry.com/geeknewsvid/146932595-57702.srt",
+              "type": "application/srt",
+              "lang": "en",
+              "isCaptions": true,
+              "isPlayable": true
+            }
+          ],
+          "imageUrl": "https://geeknewscentral.com/wp-content/uploads/2025/07/1400x1400.jpg",
+          "descriptionShort": "xAI&#8217;s Grok 4 achieves the highest Artificial Intelligence Index score, outperforming OpenAI, Google Gemini 2.5 Pro, and Anthropic Claude 4…"
+        },
+        {
+          "id": "https://geeknewscentral.com/?p=107225",
+          "slug": "2025-07-01-ai-driven-revolution-in-adult-content-creation-1830-1ij4fg",
+          "title": "AI-Driven Revolution in Adult Content Creation #1830",
+          "link": "https://geeknewscentral.com/2025/06/30/ai-driven-revolution-in-adult-content-creation/",
+          "dateText": "2025-07-01",
+          "channelTitle": "Geek News Central Podcast (Video)",
+          "durationSec": 2005,
+          "media": {
+            "url": "https://media.blubrry.com/geeknewscentral/media.blubrry.com/geeknewsvid/ins.blubrry.com/geeknewsvid/GNC-2025-06-30.mp4",
+            "type": "video/mp4",
+            "bytes": 2373508455,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": {
+            "url": "https://transcripts.blubrry.com/geeknewscentral/chapters/1751345051.json",
+            "type": "application/json+chapters"
+          },
+          "transcripts": [
+            {
+              "url": "https://transcripts.blubrry.com/geeknewsvid/146695240-57262.srt",
+              "type": "application/srt",
+              "lang": "en",
+              "isCaptions": true,
+              "isPlayable": true
+            }
+          ],
+          "transcriptsAll": [
+            {
+              "url": "https://transcripts.blubrry.com/geeknewsvid/146695240-57262.srt",
+              "type": "application/srt",
+              "lang": "en",
+              "isCaptions": true,
+              "isPlayable": true
+            }
+          ],
+          "imageUrl": "https://geeknewscentral.com/wp-content/uploads/2025/06/1400x1400-1.jpg",
+          "descriptionShort": "In today’s creator-centric adult industry, performers shoulder not only on-camera work but also scripting, editing, marketing, and ongoing fan…"
+        }
+      ]
+    },
+    {
+      "id": "vox-today-explained",
+      "episodes": [
+        {
+          "id": "63788f2a-d2bf-11ef-93ee-439caba570e8",
+          "slug": "2025-07-31-the-trumpiest-judge-yet-xvg0o5",
+          "title": "The Trumpiest judge yet",
+          "link": "",
+          "dateText": "2025-07-31",
+          "channelTitle": "Today, Explained",
+          "durationSec": 1552,
+          "media": {
+            "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP6140034817.mp3?updated=1753983019",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/63788f2a-d2bf-11ef-93ee-439caba570e8/image/82e7fbdc09eb57d7f20f6f569e687117.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "Emil Bove, the president's former lawyer, was just confirmed to the US Court of Appeals for the Third Circuit. The only place to go from there is…"
+        },
+        {
+          "id": "6341be78-d2bf-11ef-93ee-e796fa738f60",
+          "slug": "2025-07-30-ai-is-killing-the-internet-xprw2m",
+          "title": "AI is killing the internet",
+          "link": "",
+          "dateText": "2025-07-30",
+          "channelTitle": "Today, Explained",
+          "durationSec": 1565,
+          "media": {
+            "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP8234196136.mp3?updated=1753928583",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/6341be78-d2bf-11ef-93ee-e796fa738f60/image/d43176f0f9e6be00e6cbe0ed2349b2dc.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "In a first-of-its-kind decision, an AI company wins a copyright infringement lawsuit brought by authors. It's part of a larger fight that is…"
+        },
+        {
+          "id": "630a8a70-d2bf-11ef-93ee-8bff5b240844",
+          "slug": "2025-07-29-gaza-s-breaking-point-o5yj1r",
+          "title": "Gaza's breaking point",
+          "link": "",
+          "dateText": "2025-07-29",
+          "channelTitle": "Today, Explained",
+          "durationSec": 1568,
+          "media": {
+            "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP8975905605.mp3?updated=1753811865",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/630a8a70-d2bf-11ef-93ee-8bff5b240844/image/05713f03af7e6c3622f3d4fbe0906a48.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "Israel says it will allow more food aid to reach starving Palestinians, but it’s going to be tough if the Gaza Humanitarian Foundation remains in…"
+        },
+        {
+          "id": "62d563c2-d2bf-11ef-93ee-c39a9ddfe739",
+          "slug": "2025-07-28-the-mother-of-all-conspiracies-hd7y5a",
+          "title": "The mother of all conspiracies",
+          "link": "",
+          "dateText": "2025-07-28",
+          "channelTitle": "Today, Explained",
+          "durationSec": 1564,
+          "media": {
+            "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP1656580688.mp3?updated=1753723347",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/62d563c2-d2bf-11ef-93ee-c39a9ddfe739/image/0171bf6f5c92c98865035cd7edb8be3e.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "The Epstein scandal won't go away, but that won't stop President Donald Trump from trying to pivot to \"Russia Russia Russia.\" This episode was…"
+        },
+        {
+          "id": "8234aeb6-5dad-11f0-9758-4fc249ddc8ef",
+          "slug": "2025-07-27-is-tipping-fair-101xq0",
+          "title": "Is tipping fair?",
+          "link": "",
+          "dateText": "2025-07-27",
+          "channelTitle": "Today, Explained",
+          "durationSec": 1830,
+          "media": {
+            "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP6174446339.mp3?updated=1753563292",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/8234aeb6-5dad-11f0-9758-4fc249ddc8ef/image/322aacd36c9e0a2822f3639d2a799dfd.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "From raising the tipped minimum wage to \"no tax on tips,\" we look at the challenges of remaking tipped work. This episode was produced by Peter…"
+        },
+        {
+          "id": "629fe846-d2bf-11ef-93ee-b74d7a5619df",
+          "slug": "2025-07-25-crashing-out-s7yyy8",
+          "title": "Crashing out",
+          "link": "",
+          "dateText": "2025-07-25",
+          "channelTitle": "Today, Explained",
+          "durationSec": 1551,
+          "media": {
+            "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP1897813968.mp3?updated=1753465019",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/629fe846-d2bf-11ef-93ee-b74d7a5619df/image/b4b7889e10f8340233df4ac444aad63c.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "Everyone from Love Island’s Huda to Hunter Biden is screaming, crying, or throwing up for the cameras. The big emotions are real, but so are the…"
+        },
+        {
+          "id": "626a6cde-d2bf-11ef-93ee-736e5b1b8432",
+          "slug": "2025-07-24-revoking-us-citizenship-6suvfj",
+          "title": "Revoking US citizenship",
+          "link": "",
+          "dateText": "2025-07-24",
+          "channelTitle": "Today, Explained",
+          "durationSec": 1520,
+          "media": {
+            "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP9402604124.mp3?updated=1753378045",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/626a6cde-d2bf-11ef-93ee-736e5b1b8432/image/ac0b6d4ac6e4c3c5880fb91eb5c83312.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "President Trump wants to ramp up denaturalization — revoking citizenship from Americans who were born elsewhere. It’s a practice with a long and…"
+        },
+        {
+          "id": "62355dbe-d2bf-11ef-93ee-8ffde56a9788",
+          "slug": "2025-07-23-america-s-miraculous-murder-decline-1goe1d",
+          "title": "America’s miraculous murder decline",
+          "link": "",
+          "dateText": "2025-07-23",
+          "channelTitle": "Today, Explained",
+          "durationSec": 1578,
+          "media": {
+            "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP1583659585.mp3?updated=1753291988",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/62355dbe-d2bf-11ef-93ee-8ffde56a9788/image/6649f2fa16894d5f5e09e12d21f663a6.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "Over the last two years, crime rates have been plunging in cities across America. In Baltimore, gun crime is at the lowest it’s been in decades.…"
+        },
+        {
+          "id": "61fcc8c8-d2bf-11ef-93ee-1bf72fd2046a",
+          "slug": "2025-07-22-stop-the-press-gqrj6x",
+          "title": "Stop the press!",
+          "link": "",
+          "dateText": "2025-07-22",
+          "channelTitle": "Today, Explained",
+          "durationSec": 1554,
+          "media": {
+            "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP7749292240.mp3?updated=1753927634",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/61fcc8c8-d2bf-11ef-93ee-1bf72fd2046a/image/4db46f940d03e5d461695823a456ba75.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "From Stephen Colbert to Rupert Murdoch, powerful media figures are in President Trump’s crosshairs. And in many cases, Trump is getting his way.…"
+        },
+        {
+          "id": "61c91dfc-d2bf-11ef-93ee-ebead9d01df2",
+          "slug": "2025-07-21-we-re-setting-fire-to-food-aid-62eso8",
+          "title": "We’re setting fire to food aid",
+          "link": "",
+          "dateText": "2025-07-21",
+          "channelTitle": "Today, Explained",
+          "durationSec": 1552,
+          "media": {
+            "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP5159748049.mp3?updated=1753927656",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/61c91dfc-d2bf-11ef-93ee-ebead9d01df2/image/7bc9dd2e09aae74d812f70cd02157b29.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "The Trump administration is dismantling — or quite literally burning up — both domestic and international food aid programs. The actions will likely…"
+        },
+        {
+          "id": "821e6ab6-5dad-11f0-9758-432faae021df",
+          "slug": "2025-07-20-the-summer-i-turned-into-a-bookworm-12y3w6",
+          "title": "The summer I turned into a bookworm",
+          "link": "",
+          "dateText": "2025-07-20",
+          "channelTitle": "Today, Explained",
+          "durationSec": 1849,
+          "media": {
+            "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP9253082743.mp3?updated=1753932189",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/821e6ab6-5dad-11f0-9758-432faae021df/image/de75d81f833d0cd1f96f5b8410b19c6a.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "Summer. Time for pools, BBQs, and the beach read. But why do we read \"summer books\"? This episode was produced by Avishay Artsy, edited by Amina…"
+        },
+        {
+          "id": "6195d9e2-d2bf-11ef-93ee-4fc5cce19e19",
+          "slug": "2025-07-18-super-mad-about-superman-1nqf4c",
+          "title": "Super mad about Superman",
+          "link": "",
+          "dateText": "2025-07-18",
+          "channelTitle": "Today, Explained",
+          "durationSec": 1546,
+          "media": {
+            "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP5261297250.mp3?updated=1753927558",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/6195d9e2-d2bf-11ef-93ee-4fc5cce19e19/image/44469edf7d49307fa28bf70ceb319722.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "It's a bird! It's a plane! It's a bunch of pundits acting like Superman was ever anything but an immigrant and a humanitarian. This episode was…"
+        },
+        {
+          "id": "61614146-d2bf-11ef-93ee-67d354306210",
+          "slug": "2025-07-17-how-the-yimbys-won-m3yt6s",
+          "title": "How the YIMBYs won",
+          "link": "",
+          "dateText": "2025-07-17",
+          "channelTitle": "Today, Explained",
+          "durationSec": 1560,
+          "media": {
+            "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP9406470653.mp3?updated=1753927538",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/61614146-d2bf-11ef-93ee-67d354306210/image/01283e7bddf3efb36fe26ad75ef60332.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "Yes in My Backyard-ers are celebrating reforms to California's landmark environmental laws, which they say will bring much-needed housing.…"
+        },
+        {
+          "id": "612e0cfe-d2bf-11ef-93ee-5fbeaef9f97d",
+          "slug": "2025-07-16-trump-s-epstein-problem-1e8x8q",
+          "title": "Trump's Epstein problem",
+          "link": "",
+          "dateText": "2025-07-16",
+          "channelTitle": "Today, Explained",
+          "durationSec": 1561,
+          "media": {
+            "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP3435310398.mp3?updated=1753927491",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/612e0cfe-d2bf-11ef-93ee-5fbeaef9f97d/image/015caf57d697724933172e9ddcffcf43.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "You probably shouldn't expect to see the Epstein Files anytime soon. That's because the Department of Justice belongs to President Trump. This…"
+        },
+        {
+          "id": "60f9bb66-d2bf-11ef-93ee-f3b99acff2d2",
+          "slug": "2025-07-15-trump-s-dork-philosopher-k7kz8",
+          "title": "Trump’s dork philosopher",
+          "link": "",
+          "dateText": "2025-07-15",
+          "channelTitle": "Today, Explained",
+          "durationSec": 1553,
+          "media": {
+            "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP6505842346.mp3?updated=1752599581",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/60f9bb66-d2bf-11ef-93ee-f3b99acff2d2/image/a607265cc235c564ea067ce6b0f3b364.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "Curtis Yarvin began as an anonymous blogger arguing esoteric ideas about how America would be better off as a monarchy. He’s now the Trump…"
+        },
+        {
+          "id": "60bcb4c8-d2bf-11ef-93ee-4b762e806a09",
+          "slug": "2025-07-14-elon-s-party-in-the-usa-1i4izf",
+          "title": "Elon's party in the USA",
+          "link": "",
+          "dateText": "2025-07-14",
+          "channelTitle": "Today, Explained",
+          "durationSec": 1551,
+          "media": {
+            "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP5881559404.mp3?updated=1752512607",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/60bcb4c8-d2bf-11ef-93ee-4b762e806a09/image/ff84ab0ec48b41cfb740927f560b6a68.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "Elon Musk says he wants to launch a new political party. Voters consistently say they want more choices. But history is littered with failed…"
+        },
+        {
+          "id": "7867ac5e-5dac-11f0-bb40-f76d7776a649",
+          "slug": "2025-07-13-chat-bff-1vx4se",
+          "title": "Chat BFF",
+          "link": "",
+          "dateText": "2025-07-13",
+          "channelTitle": "Today, Explained",
+          "durationSec": 1852,
+          "media": {
+            "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP1055676467.mp3?updated=1752633916",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/7867ac5e-5dac-11f0-bb40-f76d7776a649/image/e9158b113e8e3675234beb4443cc6d2a.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "More and more of us are interacting with chatbots. Can we have real relationships with AI, and can AI teach humans to be better people? This episode…"
+        },
+        {
+          "id": "6088f908-d2bf-11ef-93ee-3fc5f95cdd7b",
+          "slug": "2025-07-11-plastic-rain-kq6izm",
+          "title": "Plastic rain",
+          "link": "",
+          "dateText": "2025-07-11",
+          "channelTitle": "Today, Explained",
+          "durationSec": 1533,
+          "media": {
+            "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP1230639198.mp3?updated=1752166577",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/6088f908-d2bf-11ef-93ee-3fc5f95cdd7b/image/490c5b3fe4ea1eaf9ca1496214121e5b.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "We're revisiting an episode from earlier this year about how we were mostly able to get the acid rain problem under control...only to find ourselves…"
+        },
+        {
+          "id": "605404e6-d2bf-11ef-93ee-73ab6bcefb31",
+          "slug": "2025-07-10-from-alligator-alcatraz-to-south-sudan-wgz07x",
+          "title": "From Alligator Alcatraz to South Sudan",
+          "link": "",
+          "dateText": "2025-07-10",
+          "channelTitle": "Today, Explained",
+          "durationSec": 1609,
+          "media": {
+            "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP3079689149.mp3?updated=1752171797",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/605404e6-d2bf-11ef-93ee-73ab6bcefb31/image/2224e4f71d4205abb986f0d240704d2f.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "The Trump administration is not happy with their deportation numbers. They're turning to more extreme strategies to hit 1 million by year's end.…"
+        }
+      ]
+    },
+    {
+      "id": "the-rest-is-politics",
+      "episodes": [
+        {
+          "id": "7ff7ca08-6d38-11f0-9536-27c9b48647e8",
+          "slug": "2025-07-30-433-question-time-epstein-s-inner-circle-ukraine-s-zelensky-b-2cxs7y",
+          "title": "433. Question Time: Epstein’s Inner Circle, Ukraine’s Zelensky Backlash, and Destroying the Addiction Economy",
+          "link": "",
+          "dateText": "2025-07-30",
+          "channelTitle": "The Rest Is Politics",
+          "durationSec": 2329,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/GLT2441930766.mp3?updated=1753889347",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Can Zelensky survive a war abroad while fighting enemies at home? What does Epstein’s circle reveal about power, secrets and how justice really…"
+        },
+        {
+          "id": "ef797f78-6c8b-11f0-a696-3b28423c7a2f",
+          "slug": "2025-07-30-432-trump-starmer-and-gaza-is-the-tide-turning-against-israel-1gi938",
+          "title": "432. Trump, Starmer, and Gaza: Is The Tide Turning Against Israel?",
+          "link": "",
+          "dateText": "2025-07-30",
+          "channelTitle": "The Rest Is Politics",
+          "durationSec": 3760,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/GLT1246061358.mp3?updated=1753945105",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Will the West turn the tide on Gaza or is it too little, too late? What are the pictures Netanyahu doesn't want Trump to see? Are Israel's aid drops…"
+        },
+        {
+          "id": "8b28d38e-66fa-11f0-b602-e3b1c6317416",
+          "slug": "2025-07-23-431-question-time-netanyahu-s-survival-deadly-clashes-in-syri-1p1m6x",
+          "title": "431. Question Time: Netanyahu’s Survival, Deadly Clashes in Syria, and Japan’s \"Deep State\"",
+          "link": "",
+          "dateText": "2025-07-23",
+          "channelTitle": "The Rest Is Politics",
+          "durationSec": 3165,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/GLT8442871772.mp3?updated=1753968959",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Is Netanyahu escalating conflict to distract from scandal? How is toxic masculinity taking hold among young men? Is Japan’s youth driving a new wave…"
+        },
+        {
+          "id": "affe5d1e-673b-11f0-b216-cbcb2be9cfd4",
+          "slug": "2025-07-22-430-murdoch-epstein-and-ai-billionaires-is-trump-losing-contr-1v8p1l",
+          "title": "430. Murdoch, Epstein, and AI Billionaires: Is Trump Losing Control?",
+          "link": "",
+          "dateText": "2025-07-22",
+          "channelTitle": "The Rest Is Politics",
+          "durationSec": 3385,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/GLT1227760207.mp3?updated=1753969147",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "What did Alastair make of Jeffrey Epstein when he met him? Just how dangerous is AI in an unregulated world of tech bro billionaires? Why do Rory…"
+        },
+        {
+          "id": "9330057c-6310-11f0-9c70-03df15498f54",
+          "slug": "2025-07-17-the-real-jd-vance-how-trump-ditched-ideology-part-5-1bfiue",
+          "title": "The Real JD Vance: How Trump Ditched Ideology (Part 5)",
+          "link": "",
+          "dateText": "2025-07-17",
+          "channelTitle": "The Rest Is Politics",
+          "durationSec": 2581,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/GLT3589719507.mp3?updated=1753934331",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/9330057c-6310-11f0-9c70-03df15498f54/image/d8c750327c9cf17a5eb17e0fa12ee37b.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "Does Trump already see himself as America’s king? Have he and Vance swapped ideology for a medieval approach to politics? Will reality finally catch…"
+        },
+        {
+          "id": "12fa748a-618c-11f0-b9b9-97c828a6766a",
+          "slug": "2025-07-16-429-question-time-gaza-genocide-and-global-hypocrisy-14ulut",
+          "title": "429. Question Time: Gaza, Genocide, and Global Hypocrisy",
+          "link": "",
+          "dateText": "2025-07-16",
+          "channelTitle": "The Rest Is Politics",
+          "durationSec": 3257,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/GLT6872616447.mp3?updated=1753968410",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Has the West lost its moral voice on Gaza? Can Britain and France rebuild trust on migration after Brexit? And, where are today’s Bob Geldofs — and…"
+        },
+        {
+          "id": "a512adfa-61a1-11f0-976c-4feced3a4a16",
+          "slug": "2025-07-15-428-rory-vs-alastair-are-we-spending-too-much-on-defence-1ypz1p",
+          "title": "428. Rory vs. Alastair: Are we spending too much on defence?",
+          "link": "",
+          "dateText": "2025-07-15",
+          "channelTitle": "The Rest Is Politics",
+          "durationSec": 4060,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/GLT3352887169.mp3?updated=1752604233",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Is Starmer falling into Trump's defence spending trap? What's the bigger threat to the European democracies: Putin or populism? Why has a…"
+        },
+        {
+          "id": "a025a3bc-5d9e-11f0-8951-8fe8999478b5",
+          "slug": "2025-07-11-427-the-real-jd-vance-heir-to-the-maga-throne-part-4-10ohx2",
+          "title": "427. The Real JD Vance: Heir to the MAGA Throne (Part 4)",
+          "link": "",
+          "dateText": "2025-07-11",
+          "channelTitle": "The Rest Is Politics",
+          "durationSec": 788,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/GLT5954114574.mp3?updated=1752160843",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Is JD Vance Trump's most dangerous heir? Would a JD Vance presidency be even more dangerous than Trump 2.0? How historically unusual is it for a…"
+        },
+        {
+          "id": "de706964-5cbc-11f0-a769-4324613bc15a",
+          "slug": "2025-07-09-426-corbyn-s-comeback-musk-s-new-party-and-the-broken-send-sy-ps2e8h",
+          "title": "426. Corbyn's Comeback, Musk's New Party and The Broken SEND System",
+          "link": "",
+          "dateText": "2025-07-09",
+          "channelTitle": "The Rest Is Politics",
+          "durationSec": 2820,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/GLT4554441595.mp3?updated=1752233531",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Is Corbyn’s new party a bold move — or a boost for the Tories? Can Labour fix SEND — or are vulnerable kids being left behind? Is Bosnia ready for…"
+        },
+        {
+          "id": "06248f9a-5c3a-11f0-b5a8-abb8c0c2a67b",
+          "slug": "2025-07-08-425-israel-gaza-and-the-definition-of-genocide-wztyc",
+          "title": "425. Israel, Gaza, and the Definition of Genocide",
+          "link": "",
+          "dateText": "2025-07-08",
+          "channelTitle": "The Rest Is Politics",
+          "durationSec": 3171,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/GLT8773590692.mp3?updated=1752008611",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Is the Israeli government creating a prison camp for Palestinians in Rafah? Why did the BBC drop its documentary investigating Israel’s destruction…"
+        },
+        {
+          "id": "6980ef4a-5832-11f0-84c9-73a19406ceb6",
+          "slug": "2025-07-03-424-the-real-jd-vance-from-never-trumper-to-vice-president-pa-87dbhf",
+          "title": "424. The Real JD Vance: From Never Trumper to Vice President (Part 3)",
+          "link": "",
+          "dateText": "2025-07-03",
+          "channelTitle": "The Rest Is Politics",
+          "durationSec": 734,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/GLT4870331939.mp3?updated=1752233584",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "How do you go from calling Donald Trump “Hitler” to becoming his most loyal ally? Why did JD Vance abandon the thoughtful, Christian conservative…"
+        },
+        {
+          "id": "ab50157a-572b-11f0-b171-1ffe52cc4e17",
+          "slug": "2025-07-02-423-question-time-glastonbury-s-israel-fallout-new-york-s-soc-197ad5",
+          "title": "423. Question Time: Glastonbury’s Israel fallout, New York’s socialist mayor and why NATO called Trump ‘daddy’",
+          "link": "",
+          "dateText": "2025-07-02",
+          "channelTitle": "The Rest Is Politics",
+          "durationSec": 2751,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/GLT6757862706.mp3?updated=1752233746",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Has ‘impartiality’ become a cover for moral failure in Palestine? Why does Trump want a Nobel peace price? And, why is the head of NATO calling…"
+        },
+        {
+          "id": "173a3b02-56b5-11f0-8c4e-73970c783a5a",
+          "slug": "2025-07-01-422-things-can-only-get-better-starmer-s-stormy-first-year-1vlto4",
+          "title": "422. Things Can Only Get Better? Starmer's Stormy First Year",
+          "link": "",
+          "dateText": "2025-07-01",
+          "channelTitle": "The Rest Is Politics",
+          "durationSec": 3383,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/GLT4444985853.mp3?updated=1752233765",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "What have the Labour government achieved since the general election one year ago? What are the hardest challenges Keir Starmer must face? How has…"
+        }
+      ]
+    },
+    {
+      "id": "intelligence-squared",
+      "episodes": [
+        {
+          "id": "241a8128-6c73-11f0-b840-3f003ac6cc33",
+          "slug": "2025-07-29-did-apple-s-rise-fuel-china-s-fight-for-tech-supremacy-with-p-172zx3",
+          "title": "Did Apple’s Rise Fuel China’s Fight for Tech Supremacy? With Patrick McGee",
+          "link": "",
+          "dateText": "2025-07-29",
+          "channelTitle": "Intelligence Squared",
+          "durationSec": 2896,
+          "media": {
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR8946769480.mp3?updated=1753919120",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/241a8128-6c73-11f0-b840-3f003ac6cc33/image/d773c594c6f585730b5a3881305a983f.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "How did Apple, the world’s most valuable company and creator of the defining product of the 21st century, end up so deeply entangled with China’s…"
+        },
+        {
+          "id": "b83777f6-6bcb-11f0-976f-d3a397893a04",
+          "slug": "2025-07-28-how-did-the-fourteenth-century-shape-england-with-helen-carr-nv6sde",
+          "title": "How did the fourteenth century shape England? With Helen Carr",
+          "link": "",
+          "dateText": "2025-07-28",
+          "channelTitle": "Intelligence Squared",
+          "durationSec": 2478,
+          "media": {
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR9189633741.mp3?updated=1753937662",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/b83777f6-6bcb-11f0-976f-d3a397893a04/image/74a587e2c88cc180c6f80679427d487a.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "The death of Edward I in 1307 marked the beginning of a period of intense turmoil and change in England. The fourteenth century ushered in the…"
+        },
+        {
+          "id": "f0fa8746-6972-11f0-a522-9bb31d5a64db",
+          "slug": "2025-07-26-how-will-taiwan-shape-asia-s-future-with-chris-horton-9smcak",
+          "title": "How will Taiwan shape Asia’s future? With Chris Horton",
+          "link": "",
+          "dateText": "2025-07-26",
+          "channelTitle": "Intelligence Squared",
+          "durationSec": 3530,
+          "media": {
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR2495353701.mp3?updated=1753945056",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/f0fa8746-6972-11f0-a522-9bb31d5a64db/image/97e371625b857498b226e253867b5b68.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "The issue of Taiwan is a constant background hum in today’s news cycle. Perched precariously on the fault-lines of global power, the fate of this…"
+        },
+        {
+          "id": "5fe20640-695d-11f0-b78f-ef9ccf89d066",
+          "slug": "2025-07-25-where-will-the-next-tech-superpower-emerge-with-mehran-gul-1ivwrt",
+          "title": "Where Will the Next Tech Superpower Emerge? With Mehran Gul",
+          "link": "",
+          "dateText": "2025-07-25",
+          "channelTitle": "Intelligence Squared",
+          "durationSec": 3076,
+          "media": {
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR8335193423.mp3?updated=1753927374",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/5fe20640-695d-11f0-b78f-ef9ccf89d066/image/ea67890f5d91c741b5e8aa79d2d9591f.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "For the past fifty years, Silicon Valley has led the world in developing cutting-edge technologies and spawning high-growth, billion-dollar tech…"
+        },
+        {
+          "id": "825df036-67c2-11f0-b911-af277b876fa8",
+          "slug": "2025-07-23-the-safekeep-with-women-s-prize-winner-yael-van-der-wouden-9zrx2v",
+          "title": "The Safekeep, with Women’s Prize-winner Yael van der Wouden",
+          "link": "",
+          "dateText": "2025-07-23",
+          "channelTitle": "Intelligence Squared",
+          "durationSec": 2775,
+          "media": {
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR4629835152.mp3?updated=1753932289",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/825df036-67c2-11f0-b911-af277b876fa8/image/37bdf2aa811e6f2db0344c3ef8d8c2ff.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "It’s been a remarkable eighteen months for Dutch-Israeli author Yael van der Wouden. Her debut novel, The Safekeep, was shortlisted for the Booker…"
+        },
+        {
+          "id": "8fc1002e-4c42-11f0-baca-a7fbca15b2fc",
+          "slug": "2025-07-22-the-specialist-the-untold-story-of-the-shredded-banksy-with-a-7n9rxp",
+          "title": "The Specialist | The Untold Story of the Shredded Banksy, with Alex Branczik",
+          "link": "",
+          "dateText": "2025-07-22",
+          "channelTitle": "Intelligence Squared",
+          "durationSec": 854,
+          "media": {
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR9401898710.mp3?updated=1750251551",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/8fc1002e-4c42-11f0-baca-a7fbca15b2fc/image/82c3ee52057c13131392e54cee9324f7.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "This is an episode of The Specialist, produced by Intelligence Squared in partnership with Sotheby's. In The Specialist, explore the significance…"
+        },
+        {
+          "id": "8f93e90e-4c42-11f0-baca-dfc0e79fa86c",
+          "slug": "2025-07-22-the-specialist-the-rediscovery-of-rubens-the-massacre-of-the--1tr6uw",
+          "title": "The Specialist | The Rediscovery of Rubens’ The Massacre of the Innocents, with George Gordon",
+          "link": "",
+          "dateText": "2025-07-22",
+          "channelTitle": "Intelligence Squared",
+          "durationSec": 892,
+          "media": {
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR4108466828.mp3?updated=1750251500",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/8f93e90e-4c42-11f0-baca-dfc0e79fa86c/image/80bea1eecc79e944495b4f063599d28f.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "This is an episode of The Specialist, produced by Intelligence Squared in partnership with Sotheby's. In The Specialist, explore the significance…"
+        },
+        {
+          "id": "2abb3cba-662a-11f0-acb8-83f13fbd28b0",
+          "slug": "2025-07-21-how-can-football-shirts-explain-money-power-and-politics-pf4b19",
+          "title": "How Can Football Shirts Explain Money, Power and Politics?",
+          "link": "",
+          "dateText": "2025-07-21",
+          "channelTitle": "Intelligence Squared",
+          "durationSec": 2212,
+          "media": {
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR3270161592.mp3?updated=1753919786",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/2abb3cba-662a-11f0-acb8-83f13fbd28b0/image/908ea4f1f084615649110a26a9801092.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "In today’s episode, journalist and author Joey D'Urso joins us to discuss the themes of his new book More Than A Shirt: How Football Shirts Explain…"
+        },
+        {
+          "id": "3ac9c1fc-63f6-11f0-b9ac-1fc0abab0171",
+          "slug": "2025-07-19-how-geography-explains-our-world-with-tim-marshall-qcxspf",
+          "title": "How Geography Explains Our World, with Tim Marshall",
+          "link": "",
+          "dateText": "2025-07-19",
+          "channelTitle": "Intelligence Squared",
+          "durationSec": 1778,
+          "media": {
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR6350113088.mp3?updated=1753922134",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/3ac9c1fc-63f6-11f0-b9ac-1fc0abab0171/image/fbe860d877474c2b2536cfca1441e318.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "Tim Marshall is one of the world’s most successful authors on foreign affairs. He’s the writer who put the ‘geo’ into geopolitics with his…"
+        },
+        {
+          "id": "d9adb9a2-625e-11f0-990d-9f26d5a8ee4c",
+          "slug": "2025-07-17-how-will-trump-s-tariff-war-impact-the-global-economy-with-ph-17i8o8",
+          "title": "How will Trump’s tariff war impact the global economy? With Philip Coggan",
+          "link": "",
+          "dateText": "2025-07-17",
+          "channelTitle": "Intelligence Squared",
+          "durationSec": 2857,
+          "media": {
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR7185268182.mp3?updated=1753942203",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/d9adb9a2-625e-11f0-990d-9f26d5a8ee4c/image/5456041afdd56db318dba097774f51ae.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "What happens when the world’s biggest economy turns its back on global trade? In today's episode, host Adam McCauley is joined by renowned financial…"
+        },
+        {
+          "id": "aad743b8-6197-11f0-a575-47c15e8c0a57",
+          "slug": "2025-07-15-the-search-for-a-jewish-homeland-in-texas-with-rachel-cockere-9o0gad",
+          "title": "The Search for a Jewish Homeland in Texas, with Rachel Cockerell and James McAuley",
+          "link": "",
+          "dateText": "2025-07-15",
+          "channelTitle": "Intelligence Squared",
+          "durationSec": 1710,
+          "media": {
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR1982440763.mp3?updated=1752598280",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/aad743b8-6197-11f0-a575-47c15e8c0a57/image/99001869dafcb92e51836b86437e1652.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "On June 7th 1907, a ship packed with Russian Jews sets sail not to Jerusalem or New York, as many on board have dreamt, but to Texas. The man who…"
+        },
+        {
+          "id": "f2afad96-5e69-11f0-bdbd-33e99aef911c",
+          "slug": "2025-07-13-what-can-charlottesville-teach-us-about-america-s-national-st-hb4ghm",
+          "title": "What can Charlottesville teach us about America’s national story? With Deborah Baker",
+          "link": "",
+          "dateText": "2025-07-13",
+          "channelTitle": "Intelligence Squared",
+          "durationSec": 2266,
+          "media": {
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR9008757187.mp3?updated=1752250278",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/f2afad96-5e69-11f0-bdbd-33e99aef911c/image/c4e3f9649c96a60beb7cd364ac88bd93.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "In August 2017, over a thousand neo-Nazis, fascists, Klan members, and neo-Confederates descended on a small southern city to protest the pending…"
+        },
+        {
+          "id": "6b8a881e-5d7d-11f0-a8a9-cf562240b4ea",
+          "slug": "2025-07-12-why-does-nobody-understand-quantum-physics-with-frank-verstra-xxiqjt",
+          "title": "Why does nobody understand quantum physics? With Frank Verstraete and Céline Broeckaert",
+          "link": "",
+          "dateText": "2025-07-12",
+          "channelTitle": "Intelligence Squared",
+          "durationSec": 2867,
+          "media": {
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR6795101908.mp3?updated=1753694695",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/6b8a881e-5d7d-11f0-a8a9-cf562240b4ea/image/2d798b324fcc12da59e6c4f0ef02918a.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "Why does the universe behave in ways that defy logic - and can anyone truly understand it? In this episode, we’re joined by physicist Frank…"
+        },
+        {
+          "id": "7a3dcce6-5d7c-11f0-b46a-fb293c024e34",
+          "slug": "2025-07-10-what-if-globalisation-fails-with-ben-chu-13lrx7",
+          "title": "What if Globalisation Fails? with Ben Chu",
+          "link": "",
+          "dateText": "2025-07-10",
+          "channelTitle": "Intelligence Squared",
+          "durationSec": 2294,
+          "media": {
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR4287484728.mp3?updated=1752145556",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "What happens if globalisation fails? Can nations truly stand alone in an interconnected world? Is the new race for national self-sufficiency a path…"
+        },
+        {
+          "id": "a1aa5676-5be4-11f0-8620-c7768a0daebe",
+          "slug": "2025-07-08-classic-debate-neville-chamberlain-did-the-right-thing-hm6bnm",
+          "title": "Classic Debate: Neville Chamberlain Did The Right Thing",
+          "link": "",
+          "dateText": "2025-07-08",
+          "channelTitle": "Intelligence Squared",
+          "durationSec": 3783,
+          "media": {
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR2962071322.mp3?updated=1752138242",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/a1aa5676-5be4-11f0-8620-c7768a0daebe/image/3a1d69ccb4edc0fee7352bcbff73104a.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "If ever a politician got a bum rap it’s Neville Chamberlain. He has gone down in history as the British prime minster whose policy of appeasement in…"
+        },
+        {
+          "id": "78397ada-58ea-11f0-8f76-0772943e380a",
+          "slug": "2025-07-07-are-bureaucrats-a-force-for-good-with-michael-lewis-and-gilli-1fpwxh",
+          "title": "Are bureaucrats a force for good? With Michael Lewis and Gillian Tett (Part Two)",
+          "link": "",
+          "dateText": "2025-07-07",
+          "channelTitle": "Intelligence Squared",
+          "durationSec": 2193,
+          "media": {
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR7364864671.mp3?updated=1751885825",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/78397ada-58ea-11f0-8f76-0772943e380a/image/a8ef185e21a8c8049747e864fdd06fef.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "The concept of government is under attack. In the United States, Donald Trump has fired tens of thousands of federal workers; ignored congressional…"
+        },
+        {
+          "id": "ebe3ccc0-58e9-11f0-b9eb-0369ade58430",
+          "slug": "2025-07-05-are-bureaucrats-a-force-for-good-with-michael-lewis-and-gilli-1rxej6",
+          "title": "Are bureaucrats a force for good? With Michael Lewis and Gillian Tett (Part One)",
+          "link": "",
+          "dateText": "2025-07-05",
+          "channelTitle": "Intelligence Squared",
+          "durationSec": 2210,
+          "media": {
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR4528712608.mp3?updated=1751642771",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/ebe3ccc0-58e9-11f0-b9eb-0369ade58430/image/318ce6ca4791358da79971403bcd549a.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "The concept of government is under attack. In the United States, Donald Trump has fired tens of thousands of federal workers; ignored congressional…"
+        },
+        {
+          "id": "1c0ca6d8-58b3-11f0-912a-cf6088c6ec33",
+          "slug": "2025-07-04-ctrl-alt-delusion-resetting-reality-in-the-manosphere-zz4qb8",
+          "title": "Ctrl, Alt, Delusion: Resetting Reality in the Manosphere",
+          "link": "",
+          "dateText": "2025-07-04",
+          "channelTitle": "Intelligence Squared",
+          "durationSec": 2645,
+          "media": {
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR7697529204.mp3?updated=1751620203",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Today’s episode is the recording of our recent panel Ctrl, Alt, Delusion: Resetting Reality in the Manosphere , live at SXSW London, in partnership…"
+        },
+        {
+          "id": "043af980-55d2-11f0-a545-cf57488aa5c1",
+          "slug": "2025-07-01-the-genius-myth-with-helen-lewis-and-armando-iannucci-part-tw-133jn3",
+          "title": "The Genius Myth, with Helen Lewis and Armando Iannucci (Part Two)",
+          "link": "",
+          "dateText": "2025-07-01",
+          "channelTitle": "Intelligence Squared",
+          "durationSec": 2136,
+          "media": {
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR9164354102.mp3?updated=1751302707",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "The tortured poet. The rebellious scientist. The monstrous artist. The tech disruptor. You can tell what a society values by who it labels as a…"
+        }
+      ]
+    },
+    {
+      "id": "gresham-college-lectures",
+      "episodes": [
+        {
+          "id": "Buzzsprout-17575971",
+          "slug": "2025-07-29-sum-stories-equations-and-their-origins-robin-wilson-kf26ui",
+          "title": "Sum Stories: Equations and their Origins - Robin Wilson",
+          "link": "",
+          "dateText": "2025-07-29",
+          "channelTitle": "Gresham College Lectures",
+          "durationSec": 3282,
+          "media": {
+            "url": "https://www.buzzsprout.com/1904814/episodes/17575971-sum-stories-equations-and-their-origins-robin-wilson.mp3",
+            "type": "audio/mpeg",
+            "bytes": 39589743,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "How long is the coastline of Britain? What is a rhombicuboctahedron? Which US president proved Pythagoras’s theorem? These and many other intriguing…"
+        },
+        {
+          "id": "Buzzsprout-17562067",
+          "slug": "2025-07-25-the-deceived-brain-coding-and-illusion-alain-goriely-1esreb",
+          "title": "The Deceived Brain: Coding and Illusion - Alain Goriely",
+          "link": "",
+          "dateText": "2025-07-25",
+          "channelTitle": "Gresham College Lectures",
+          "durationSec": 3089,
+          "media": {
+            "url": "https://www.buzzsprout.com/1904814/episodes/17562067-the-deceived-brain-coding-and-illusion-alain-goriely.mp3",
+            "type": "audio/mpeg",
+            "bytes": 37248580,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "We perceive the world through the processing of information given by our senses. Sometimes, this processing is faulty leading to illusions: shapes…"
+        },
+        {
+          "id": "Buzzsprout-17544743",
+          "slug": "2025-07-22-the-future-of-immunity-robin-may-vl83bh",
+          "title": "The Future of Immunity - Robin May",
+          "link": "",
+          "dateText": "2025-07-22",
+          "channelTitle": "Gresham College Lectures",
+          "durationSec": 3088,
+          "media": {
+            "url": "https://www.buzzsprout.com/1904814/episodes/17544743-the-future-of-immunity-robin-may.mp3",
+            "type": "audio/mpeg",
+            "bytes": 37217567,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Our understanding of the human immune system today is vastly different from that of 50 years ago. This knowledge has led to immune-based therapies…"
+        },
+        {
+          "id": "Buzzsprout-17525934",
+          "slug": "2025-07-18-remixing-the-music-of-the-spheres-milton-mermikides-and-chris-o76fea",
+          "title": "Remixing the Music of the Spheres - Milton Mermikides and Chris Lintott",
+          "link": "",
+          "dateText": "2025-07-18",
+          "channelTitle": "Gresham College Lectures",
+          "durationSec": 2596,
+          "media": {
+            "url": "https://www.buzzsprout.com/1904814/episodes/17525934-remixing-the-music-of-the-spheres-milton-mermikides-and-chris-lintott.mp3",
+            "type": "audio/mpeg",
+            "bytes": 31343382,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "This is the fifth and final lecture from the Gresham Festival of Musical Ideas. https://www.gresham.ac.uk/watch-now/series/musical-ideas-2025…"
+        },
+        {
+          "id": "Buzzsprout-17525911",
+          "slug": "2025-07-18-the-virtues-of-music-milton-mermikides-and-melissa-lane-swtd6v",
+          "title": "The Virtues of Music - Milton Mermikides and Melissa Lane",
+          "link": "",
+          "dateText": "2025-07-18",
+          "channelTitle": "Gresham College Lectures",
+          "durationSec": 2487,
+          "media": {
+            "url": "https://www.buzzsprout.com/1904814/episodes/17525911-the-virtues-of-music-milton-mermikides-and-melissa-lane.mp3",
+            "type": "audio/mpeg",
+            "bytes": 30025645,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "This is the third lecture from the Gresham Festival of Musical Ideas. https://www.gresham.ac.uk/watch-now/series/musical-ideas-2025 This dialogue…"
+        },
+        {
+          "id": "Buzzsprout-17525904",
+          "slug": "2025-07-18-climbing-mount-groove-music-and-dance-in-the-brain-milton-mer-t6w4dt",
+          "title": "Climbing Mount Groove: Music and Dance in the Brain - Milton Mermikides and Morten Kringelbach",
+          "link": "",
+          "dateText": "2025-07-18",
+          "channelTitle": "Gresham College Lectures",
+          "durationSec": 2583,
+          "media": {
+            "url": "https://www.buzzsprout.com/1904814/episodes/17525904-climbing-mount-groove-music-and-dance-in-the-brain-milton-mermikides-and-morten-kringelbach.mp3",
+            "type": "audio/mpeg",
+            "bytes": 31201666,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "This is the second lecture from the Gresham Festival of Musical Ideas. https://www.gresham.ac.uk/watch-now/series/musical-ideas-2025 Why does a…"
+        },
+        {
+          "id": "Buzzsprout-17525886",
+          "slug": "2025-07-18-the-evolution-of-music-milton-mermikides-and-robin-may-1x04ji",
+          "title": "The Evolution of Music - Milton Mermikides and Robin May",
+          "link": "",
+          "dateText": "2025-07-18",
+          "channelTitle": "Gresham College Lectures",
+          "durationSec": 2997,
+          "media": {
+            "url": "https://www.buzzsprout.com/1904814/episodes/17525886-the-evolution-of-music-milton-mermikides-and-robin-may.mp3",
+            "type": "audio/mpeg",
+            "bytes": 36180604,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "This is the first lecture from the Gresham Festival of Musical Ideas. https://www.gresham.ac.uk/watch-now/series/musical-ideas-2025 Musical…"
+        },
+        {
+          "id": "Buzzsprout-17525865",
+          "slug": "2025-07-18-the-maths-of-music-and-the-music-of-maths-milton-mermikides-a-1wpjt7",
+          "title": "The Maths of Music (and the Music of Maths) - Milton Mermikides and Sarah Hart",
+          "link": "",
+          "dateText": "2025-07-18",
+          "channelTitle": "Gresham College Lectures",
+          "durationSec": 2624,
+          "media": {
+            "url": "https://www.buzzsprout.com/1904814/episodes/17525865-the-maths-of-music-and-the-music-of-maths-milton-mermikides-and-sarah-hart.mp3",
+            "type": "audio/mpeg",
+            "bytes": 31686743,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "This is the fourth lecture from the Gresham Festival of Musical Ideas. https://www.gresham.ac.uk/watch-now/series/musical-ideas-2025 Professors…"
+        },
+        {
+          "id": "Buzzsprout-17508139",
+          "slug": "2025-07-15-architecture-of-enslavement-colonialism-and-independence-the--12bwbw",
+          "title": "Architecture of Enslavement, Colonialism and Independence: The Story of James Fort in Accra - Elsie Owusu",
+          "link": "",
+          "dateText": "2025-07-15",
+          "channelTitle": "Gresham College Lectures",
+          "durationSec": 2775,
+          "media": {
+            "url": "https://www.buzzsprout.com/1904814/episodes/17508139-architecture-of-enslavement-colonialism-and-independence-the-story-of-james-fort-in-accra-elsie-owusu.mp3",
+            "type": "audio/mpeg",
+            "bytes": 33490283,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Accra’s James Fort is an iconic monument for Ghana and modern Africa. This lecture explores the fort&apos;s evolution -from its role as a trading…"
+        },
+        {
+          "id": "Buzzsprout-17489161",
+          "slug": "2025-07-11-the-operatic-showstopper-you-ll-never-walk-alone-dominic-broo-q18zuf",
+          "title": "The Operatic Showstopper: ‘You’ll Never Walk Alone’ - Dominic Broomfield-McHugh",
+          "link": "",
+          "dateText": "2025-07-11",
+          "channelTitle": "Gresham College Lectures",
+          "durationSec": 2869,
+          "media": {
+            "url": "https://www.buzzsprout.com/1904814/episodes/17489161-the-operatic-showstopper-you-ll-never-walk-alone-dominic-broomfield-mchugh.mp3",
+            "type": "audio/mpeg",
+            "bytes": 34595026,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "This lecture considers ‘You’ll Never Walk Alone’ from Carousel (1945). Perhaps Rodgers and Hammerstein’s most operatic song, it was originally…"
+        },
+        {
+          "id": "Buzzsprout-17469717",
+          "slug": "2025-07-08-carbon-takeback-how-we-will-stop-fossil-fuels-from-causing-gl-lkx432",
+          "title": "Carbon Takeback: How We Will Stop Fossil Fuels from Causing Global Warming - Myles Allen",
+          "link": "",
+          "dateText": "2025-07-08",
+          "channelTitle": "Gresham College Lectures",
+          "durationSec": 2936,
+          "media": {
+            "url": "https://www.buzzsprout.com/1904814/episodes/17469717-carbon-takeback-how-we-will-stop-fossil-fuels-from-causing-global-warming-myles-allen.mp3",
+            "type": "audio/mpeg",
+            "bytes": 35375722,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "We have to stop fossil fuels from causing global warming – before the world stops using fossil fuels. There’s only one solution: safe and permanent…"
+        },
+        {
+          "id": "Buzzsprout-17448580",
+          "slug": "2025-07-04-do-computers-get-sick-how-humans-and-computers-fight-viruses--10zyb7",
+          "title": "Do Computers Get Sick? How Humans and Computers Fight Viruses - Robin May & Victoria Baines",
+          "link": "",
+          "dateText": "2025-07-04",
+          "channelTitle": "Gresham College Lectures",
+          "durationSec": 3020,
+          "media": {
+            "url": "https://www.buzzsprout.com/1904814/episodes/17448580-do-computers-get-sick-how-humans-and-computers-fight-viruses-robin-may-victoria-baines.mp3",
+            "type": "audio/mpeg",
+            "bytes": 36406067,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Whether you are human or computer, viruses can ruin your day, so taking steps to avoid them is important. This lecture will ask whether there are…"
+        },
+        {
+          "id": "Buzzsprout-17429101",
+          "slug": "2025-07-01-illuminating-the-dark-side-of-the-moon-milton-mermikides-i38nkj",
+          "title": "Illuminating the Dark Side of the Moon - Milton Mermikides",
+          "link": "",
+          "dateText": "2025-07-01",
+          "channelTitle": "Gresham College Lectures",
+          "durationSec": 3132,
+          "media": {
+            "url": "https://www.buzzsprout.com/1904814/episodes/17429101-illuminating-the-dark-side-of-the-moon-milton-mermikides.mp3",
+            "type": "audio/mpeg",
+            "bytes": 37748875,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Now over 50 years old, Pink Floyd’s Dark Side of the Moon remains the perfect example of a concept album. Blending cyclical forms, jazz and modal…"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other episodes",
+  "leftovers_title_full": "Other episodes — Intelligence Squared",
+  "leftovers_description": "Episodes outside the main Intelligence Squared row.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "Intelligence Squared",
+      "title_full": "Intelligence Squared",
+      "description": "Debates and longform interviews on ideas shaping the world.",
+      "categories": ["lectures", "ideas", "debates"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

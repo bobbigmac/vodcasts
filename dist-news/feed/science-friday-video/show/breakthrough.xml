@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Breakthrough</title>
+    <link>/feed/science-friday-video/</link>
+    <description>Science Friday Videos — Breakthrough</description>
+    <language>en</language>
+  <item>
+    <title>Breakthrough: The Slime Minder</title>
+    <link>https://www.sciencefriday.com/videos/breakthrough-the-slime-minder/</link>
+    <description>Discover how Audrey Dussutour is breaking new ground in our understanding of animal cognition from an unexpected source: slime molds.</description>
+    <pubDate>2020-10-23</pubDate>
+    <guid isPermaLink="false">https://www.sciencefriday.com/?post_type=video&amp;p=59178</guid>
+    <enclosure url="http://www.sciencefriday.com/podcast-download/59178/breakthrough-the-slime-minder" type="video/mp4" length="1645"/>
+  </item>
+  <item>
+    <title>Breakthrough: The Lake Sentinel</title>
+    <link>https://www.sciencefriday.com/videos/breakthrough-the-lake-sentinel/</link>
+    <description>Discover how earth scientist Africa Flores-Anderson uses satellite data to help underserved communities.</description>
+    <pubDate>2020-10-16</pubDate>
+    <guid isPermaLink="false">https://www.sciencefriday.com/?post_type=video&amp;p=59107</guid>
+    <enclosure url="http://www.sciencefriday.com/podcast-download/59107/breakthrough-the-lake-sentinel" type="video/mp4" length="1646"/>
+  </item>
+  <item>
+    <title>Breakthrough: The Galaxy Hunter</title>
+    <link>https://www.sciencefriday.com/videos/breakthrough-the-galaxy-hunter/</link>
+    <description>Learn about how astrophysicist Burçin Mutlu-Pakdil has defied odds—breaking cultural conventions and discovering a completely new kind of galaxy.</description>
+    <pubDate>2020-10-07</pubDate>
+    <guid isPermaLink="false">https://www.sciencefriday.com/?post_type=video&amp;p=59046</guid>
+    <enclosure url="http://www.sciencefriday.com/podcast-download/59046/breakthrough-the-galaxy-hunter" type="video/mp4" length="1646"/>
+  </item>
+  <item>
+    <title>Breakthrough: The Trauma Tracer</title>
+    <link>https://www.sciencefriday.com/videos/breakthrough-the-trauma-tracer/</link>
+    <description>Follow Bianca Jones Marlin as she uses cutting-edge neuroscience to uncover how the effects of trauma can be passed down from generation to…</description>
+    <pubDate>2020-10-01</pubDate>
+    <guid isPermaLink="false">https://www.sciencefriday.com/?post_type=video&amp;p=58965</guid>
+    <enclosure url="http://www.sciencefriday.com/podcast-download/58965/breakthrough-the-trauma-tracer" type="video/mp4" length="1"/>
+  </item>
+  </channel>
+</rss>

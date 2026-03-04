@@ -1,0 +1,329 @@
+{
+  "version": 1,
+  "site": {
+    "id": "vodcasts-news",
+    "title": "VODcasts News",
+    "subtitle": "News & video feeds",
+    "description": "Global news, science, and video feeds from BBC, Euronews, Al Jazeera, DW, PBS, TED.",
+    "base_path": "/",
+    "browseLogoUrl": "",
+    "comments": {
+      "provider": "",
+      "supabaseUrl": "",
+      "supabaseAnonKey": "",
+      "hcaptchaSitekey": ""
+    },
+    "analytics": {
+      "provider": "",
+      "measurementId": ""
+    }
+  },
+  "sources": [
+    {
+      "id": "bbc-world-service-global-news-podcast",
+      "title": "BBC World Service — Global News Podcast",
+      "category": "news",
+      "feed_url": "/data/feeds/bbc-world-service-global-news-podcast.xml",
+      "feed_url_remote": "https://podcasts.files.bbci.co.uk/p02nq0gn.rss",
+      "has_cached_xml": true,
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": false
+      },
+      "tags": [
+        "bbc",
+        "world",
+        "headlines",
+        "daily",
+        "audio"
+      ]
+    },
+    {
+      "id": "npr-up-first",
+      "title": "NPR — Up First",
+      "category": "news",
+      "feed_url": "/data/feeds/npr-up-first.xml",
+      "feed_url_remote": "https://feeds.npr.org/510318/podcast.xml",
+      "has_cached_xml": true,
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": false
+      },
+      "tags": [
+        "npr",
+        "us",
+        "morning",
+        "daily",
+        "audio"
+      ]
+    },
+    {
+      "id": "reuters-world-news",
+      "title": "Reuters — Reuters World News",
+      "category": "news",
+      "feed_url": "/data/feeds/reuters-world-news.xml",
+      "feed_url_remote": "https://feeds.megaphone.fm/reutersworldnews",
+      "has_cached_xml": true,
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": false
+      },
+      "tags": [
+        "reuters",
+        "world",
+        "headlines",
+        "daily",
+        "audio"
+      ]
+    },
+    {
+      "id": "the-economist-the-intelligence",
+      "title": "The Economist — The Intelligence",
+      "category": "news",
+      "feed_url": "/data/feeds/the-economist-the-intelligence.xml",
+      "feed_url_remote": "https://rss.acast.com/theintelligencepodcast",
+      "has_cached_xml": true,
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": false
+      },
+      "tags": [
+        "economist",
+        "world",
+        "analysis",
+        "daily",
+        "audio"
+      ]
+    },
+    {
+      "id": "wsj-the-journal",
+      "title": "The Wall Street Journal — The Journal.",
+      "category": "news",
+      "feed_url": "/data/feeds/wsj-the-journal.xml",
+      "feed_url_remote": "https://video-api.wsj.com/podcast/rss/wsj/the-journal",
+      "has_cached_xml": true,
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": false
+      },
+      "tags": [
+        "wsj",
+        "business",
+        "markets",
+        "daily",
+        "audio"
+      ]
+    },
+    {
+      "id": "ted-talks-hd",
+      "title": "TED Talks Daily (HD)",
+      "category": "lectures",
+      "feed_url": "/data/feeds/ted-talks-hd.xml",
+      "feed_url_remote": "https://feeds.feedburner.com/TedtalksHD",
+      "has_cached_xml": true,
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": true
+      },
+      "tags": [
+        "ted",
+        "video",
+        "hd"
+      ]
+    },
+    {
+      "id": "science-friday-video",
+      "title": "Science Friday Videos",
+      "category": "science",
+      "feed_url": "/data/feeds/science-friday-video.xml",
+      "feed_url_remote": "https://www.sciencefriday.com/feed/podcast/podcast-video/",
+      "has_cached_xml": true,
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": true
+      },
+      "tags": [
+        "science",
+        "pbs",
+        "video"
+      ]
+    },
+    {
+      "id": "uctv-science-video",
+      "title": "UCTV Science (Video)",
+      "category": "lectures",
+      "feed_url": "/data/feeds/uctv-science-video.xml",
+      "feed_url_remote": "https://podcast.uctv.tv/uctv_video_science.rss",
+      "has_cached_xml": true,
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": true
+      },
+      "tags": [
+        "science",
+        "uctv",
+        "university-california",
+        "video"
+      ]
+    },
+    {
+      "id": "tech-news-weekly-video",
+      "title": "Tech News Weekly (Video)",
+      "category": "news",
+      "feed_url": "/data/feeds/tech-news-weekly-video.xml",
+      "feed_url_remote": "https://feeds.twit.tv/tnw_video_hd.xml",
+      "has_cached_xml": true,
+      "features": {
+        "hasTranscript": true,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": true
+      },
+      "tags": [
+        "tech",
+        "twit",
+        "video"
+      ]
+    },
+    {
+      "id": "geek-news-central-video",
+      "title": "Geek News Central (Video)",
+      "category": "news",
+      "feed_url": "/data/feeds/geek-news-central-video.xml",
+      "feed_url_remote": "https://geeknewscentral.com/feed/video/",
+      "has_cached_xml": true,
+      "features": {
+        "hasTranscript": true,
+        "hasPlayableTranscript": true,
+        "hasChapters": true,
+        "hasVideo": true
+      },
+      "tags": [
+        "tech",
+        "geek",
+        "video"
+      ]
+    },
+    {
+      "id": "vox-today-explained",
+      "title": "Vox — Today, Explained",
+      "category": "news",
+      "feed_url": "/data/feeds/vox-today-explained.xml",
+      "feed_url_remote": "https://feeds.megaphone.fm/VMP5705694065",
+      "has_cached_xml": true,
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": false
+      },
+      "tags": [
+        "vox",
+        "explainers",
+        "current-affairs",
+        "daily",
+        "audio"
+      ]
+    },
+    {
+      "id": "the-rest-is-politics",
+      "title": "Goalhanger — The Rest Is Politics",
+      "category": "news",
+      "feed_url": "/data/feeds/the-rest-is-politics.xml",
+      "feed_url_remote": "https://feeds.megaphone.fm/GLT9190936013",
+      "has_cached_xml": true,
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": false
+      },
+      "tags": [
+        "politics",
+        "analysis",
+        "interviews",
+        "audio"
+      ]
+    },
+    {
+      "id": "intelligence-squared",
+      "title": "Intelligence Squared",
+      "category": "lectures",
+      "feed_url": "/data/feeds/intelligence-squared.xml",
+      "feed_url_remote": "https://feeds.megaphone.fm/NSR6363847171",
+      "has_cached_xml": true,
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": false
+      },
+      "tags": [
+        "debates",
+        "interviews",
+        "ideas",
+        "longform",
+        "audio"
+      ]
+    },
+    {
+      "id": "jpl-podcasts",
+      "title": "NASA Jet Propulsion Laboratory (JPL) — Podcasts",
+      "category": "science",
+      "feed_url": "/data/feeds/jpl-podcasts.xml",
+      "feed_url_remote": "https://www.jpl.nasa.gov/feeds/podcasts/",
+      "has_cached_xml": true,
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": true
+      },
+      "tags": [
+        "nasa",
+        "jpl",
+        "space",
+        "science",
+        "audio",
+        "video"
+      ]
+    },
+    {
+      "id": "gresham-college-lectures",
+      "title": "Gresham College — Lectures",
+      "category": "lectures",
+      "feed_url": "/data/feeds/gresham-college-lectures.xml",
+      "feed_url_remote": "https://feeds.buzzsprout.com/1904814.rss",
+      "has_cached_xml": true,
+      "features": {
+        "hasTranscript": true,
+        "hasPlayableTranscript": true,
+        "hasChapters": false,
+        "hasVideo": false
+      },
+      "tags": [
+        "lectures",
+        "education",
+        "public-lectures",
+        "uk",
+        "audio"
+      ]
+    }
+  ]
+}

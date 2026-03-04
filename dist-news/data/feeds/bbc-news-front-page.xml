@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+        <title><![CDATA[BBC News]]></title>
+        <description><![CDATA[BBC News - News Front Page]]></description>
+        <link>https://www.bbc.co.uk/news</link>
+        <image>
+            <url>https://news.bbcimg.co.uk/nol/shared/img/bbc_news_120x60.gif</url>
+            <title>BBC News</title>
+            <link>https://www.bbc.co.uk/news</link>
+        </image>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Wed, 04 Mar 2026 02:39:36 GMT</lastBuildDate>
+        <atom:link href="https://feeds.bbci.co.uk/news/rss.xml" rel="self" type="application/rss+xml"/>
+        <copyright><![CDATA[Copyright: (C) British Broadcasting Corporation, see https://www.bbc.co.uk/usingthebbc/terms-of-use/#15metadataandrssfeeds for terms and conditions of reuse.]]></copyright>
+        <language><![CDATA[en-gb]]></language>
+        <ttl>15</ttl>
+        <item>
+            <title><![CDATA[Trump says Starmer is 'no Winston Churchill' over Iran strikes]]></title>
+            <description><![CDATA[Sir Keir Starmer had refused to grant the US permission to use the Diego Garcia military base.]]></description>
+            <link>https://www.bbc.com/news/articles/c62gwkjg0k9o?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/c62gwkjg0k9o#1</guid>
+            <pubDate>Tue, 03 Mar 2026 20:17:30 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6cd3/live/ee58be70-174d-11f1-b048-c9424b2cf5fd.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Funerals held for students and staff after Iran school strike]]></title>
+            <description><![CDATA[Iranian authorities say they were killed in a US-Israeli strike in the city of Minab on Saturday.]]></description>
+            <link>https://www.bbc.com/news/articles/c98qpz144nvo?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/c98qpz144nvo#1</guid>
+            <pubDate>Tue, 03 Mar 2026 21:30:49 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2dfd/live/577edf60-1749-11f1-b048-c9424b2cf5fd.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[UK to send Royal Navy warship HMS Dragon to Cyprus]]></title>
+            <description><![CDATA[The prime minister said the "UK is fully committed to the security of Cyprus and British military personnel based" on RAF Akrotiri.]]></description>
+            <link>https://www.bbc.com/news/articles/c4g40yp2p13o?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/c4g40yp2p13o#1</guid>
+            <pubDate>Tue, 03 Mar 2026 23:10:24 GMT</pubDate>
+            <media:thumbnail width="240" height="134" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d1ea/live/18e8efe0-171f-11f1-b787-dd8097b9508d.png"/>
+        </item>
+        <item>
+            <title><![CDATA[US and Israel bomb Iran for fourth day as Trump says air defences 'gone']]></title>
+            <description><![CDATA[Iran is responding to the strikes by launching missile and drone attacks on Israel and Gulf states hosting US bases.]]></description>
+            <link>https://www.bbc.com/news/articles/cn0ekjnkj54o?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/cn0ekjnkj54o#1</guid>
+            <pubDate>Tue, 03 Mar 2026 23:12:11 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e507/live/ccb9a2e0-174b-11f1-9120-a910fc22c6ac.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Fears over food shortages in Tehran as residents worry about length of war]]></title>
+            <description><![CDATA[Locals tell BBC Persian they are worried about the availability of groceries and price increases as strikes continue to hit the capital.]]></description>
+            <link>https://www.bbc.com/news/articles/cdr2ep48r33o?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/cdr2ep48r33o#1</guid>
+            <pubDate>Tue, 03 Mar 2026 18:01:45 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c2c7/live/383ae4f0-1712-11f1-a977-831dd3cb5c6e.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Mahmood to stop study visas from four countries due to 'abuse']]></title>
+            <description><![CDATA[The government will end study visas from Afghanistan, Cameroon, Myanmar and Sudan, due to what says is abuse.]]></description>
+            <link>https://www.bbc.com/news/articles/cx2jy74895eo?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/cx2jy74895eo#2</guid>
+            <pubDate>Tue, 03 Mar 2026 22:53:51 GMT</pubDate>
+            <media:thumbnail width="240" height="134" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/de57/live/441cc270-173f-11f1-95f3-4f8508781bec.png"/>
+        </item>
+        <item>
+            <title><![CDATA[Andrew gives up lease on Crown Estate property]]></title>
+            <description><![CDATA[The former prince hands back a property in Ascot, with lease documents showing an annual rent of £13,000.]]></description>
+            <link>https://www.bbc.com/news/articles/cd9gepe7z4yo?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/cd9gepe7z4yo#2</guid>
+            <pubDate>Tue, 03 Mar 2026 16:51:53 GMT</pubDate>
+            <media:thumbnail width="240" height="134" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1959/live/d3fa6520-1724-11f1-9818-d31fae74aa0f.png"/>
+        </item>
+        <item>
+            <title><![CDATA[TikTok won't protect DMs with controversial privacy tech, saying it would put users at risk]]></title>
+            <description><![CDATA[TikTok tells the BBC it won't join rival platforms such as WhatsApp and Messenger in using end-to-end encryption.]]></description>
+            <link>https://www.bbc.com/news/articles/cly2m5e5ke4o?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/cly2m5e5ke4o#2</guid>
+            <pubDate>Wed, 04 Mar 2026 00:34:49 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/642d/live/9816c7c0-1723-11f1-9120-a910fc22c6ac.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Asia stocks fall for third day, oil edges up as markets track Iran war]]></title>
+            <description><![CDATA[The conflict in the Middle East has rattled financial markets and global energy prices have soared.]]></description>
+            <link>https://www.bbc.com/news/articles/cwy884ekn0jo?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/cwy884ekn0jo#2</guid>
+            <pubDate>Wed, 04 Mar 2026 01:54:38 GMT</pubDate>
+            <media:thumbnail width="240" height="134" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6500/live/9d7c0510-1771-11f1-a2ea-b30ebfec0f91.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Use our tax calculator to see how the Spring Statement affects you]]></title>
+            <description><![CDATA[Wages are forecast to go up over the next five years but you could pay more tax because of frozen thresholds.]]></description>
+            <link>https://www.bbc.com/news/articles/c99k7djlklyo?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/c99k7djlklyo#2</guid>
+            <pubDate>Wed, 04 Mar 2026 00:01:44 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a282/live/678b8360-0b58-11f1-b7e1-afb6d0884c18.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[The 15-minute call where hundreds of 'devastated' Brewdog staff were made redundant]]></title>
+            <description><![CDATA[The independent brewer and pub chain has been bought by US beverage and cannabis firm Tilray in a £33m deal.]]></description>
+            <link>https://www.bbc.com/news/articles/cd70zjvwjpdo?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/cd70zjvwjpdo#2</guid>
+            <pubDate>Tue, 03 Mar 2026 16:53:43 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fb5a/live/c4324ac0-170d-11f1-b048-c9424b2cf5fd.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[New charges for son of Norway's crown princess on trial for rape]]></title>
+            <description><![CDATA[Marius Borg Høiby now faces a total of 40 charges at his trial and denies the most serious allegations.]]></description>
+            <link>https://www.bbc.com/news/articles/c0e5r28y3xqo?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/c0e5r28y3xqo#2</guid>
+            <pubDate>Tue, 03 Mar 2026 18:59:39 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/38b4/live/b6ff8070-1726-11f1-b048-c9424b2cf5fd.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[The unsung body doubles of Wuthering Heights]]></title>
+            <description><![CDATA[How a cast of secret stars helped to bring Emerald Fennel's hit literary adaptation to life.]]></description>
+            <link>https://www.bbc.com/news/articles/c2k8p194zwko?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/c2k8p194zwko#3</guid>
+            <pubDate>Tue, 03 Mar 2026 09:20:29 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5446/live/3d445f60-16ec-11f1-801d-ed3cff6bf876.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[No new tax rises in Spring Statement, but don't be fooled - tax bills are still rising]]></title>
+            <description><![CDATA[There are measures, announced ahead of the chancellor's Spring Statement, yet to take effect. ]]></description>
+            <link>https://www.bbc.com/news/articles/cj6dwg4deewo?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/cj6dwg4deewo#3</guid>
+            <pubDate>Tue, 03 Mar 2026 15:37:23 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9a43/live/ab883280-1723-11f1-9120-a910fc22c6ac.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Key points from the Spring Statement - at a glance]]></title>
+            <description><![CDATA[Chancellor Rachel Reeves updates MPs on her plans for the economy, as the latest forecasts are unveiled.]]></description>
+            <link>https://www.bbc.com/news/articles/c5yv255914xo?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/c5yv255914xo#3</guid>
+            <pubDate>Tue, 03 Mar 2026 14:27:04 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ea6e/live/fa77c940-16fc-11f1-a694-e5c2b699acf9.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[The Papers:  'Trump mocks Starmer' and 'Middle East energy shock for markets']]></title>
+            <description><![CDATA[Many of the papers focus on the deteriorating relationship between Donald Trump and Sir Keir.]]></description>
+            <link>https://www.bbc.com/news/articles/cr73jg7z4nro?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/cr73jg7z4nro#3</guid>
+            <pubDate>Wed, 04 Mar 2026 00:16:52 GMT</pubDate>
+            <media:thumbnail width="240" height="134" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ac49/live/0aa6ea90-175b-11f1-801d-ed3cff6bf876.png"/>
+        </item>
+        <item>
+            <title><![CDATA[Celebrating Holi - the Hindu festival brings its array of colours to India and elsewhere]]></title>
+            <description><![CDATA[The Hindu festival, which celebrates the victory of good over evil, also marks the end of winter.]]></description>
+            <link>https://www.bbc.com/news/articles/cq6qvvnj1jvo?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/cq6qvvnj1jvo#3</guid>
+            <pubDate>Wed, 04 Mar 2026 00:59:51 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8a31/live/91a31190-16de-11f1-8420-a53022a9aaa5.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA['Shh please girls' - the night 11-year-old Gary Barlow left clubgoers gobsmacked]]></title>
+            <description><![CDATA[The Take That star was only 11 years old when he began performing to patrons at Connah's Quay Labour Club.]]></description>
+            <link>https://www.bbc.com/news/articles/c33jpr11j3xo?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/c33jpr11j3xo#3</guid>
+            <pubDate>Tue, 03 Mar 2026 18:09:33 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3233/live/28c15840-1615-11f1-9697-634d5add2261.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[We still change our plans and routes for safety five years after Sarah Everard's murder]]></title>
+            <description><![CDATA[Five years after Sarah Everard was murdered, women continue to change their behaviour to stay safe.]]></description>
+            <link>https://www.bbc.com/news/articles/c178x2yzkglo?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/c178x2yzkglo#3</guid>
+            <pubDate>Tue, 03 Mar 2026 06:12:07 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/0050/live/2905ff80-171f-11f1-9120-a910fc22c6ac.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Watch: Footage from across Iran shows scale of strikes]]></title>
+            <description><![CDATA[Footage verified by the BBC and news agencies shows large explosions in Iran following US and Israel strikes.]]></description>
+            <link>https://www.bbc.com/news/videos/cd70zp0v3g4o?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/videos/cd70zp0v3g4o#4</guid>
+            <pubDate>Tue, 03 Mar 2026 15:08:38 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1480/live/ae113e70-170f-11f1-b048-c9424b2cf5fd.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA['All red lines have been crossed': Gulf states weigh response to Iranian strikes]]></title>
+            <description><![CDATA[Retaliatory Iranian strikes on Gulf states have tarnished their image as safe and prosperous, writes the BBC's Barbara Plett-Usher.]]></description>
+            <link>https://www.bbc.com/news/articles/cjrqqd8lw2wo?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/cjrqqd8lw2wo#4</guid>
+            <pubDate>Wed, 04 Mar 2026 00:24:05 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8fb6/live/5a697a30-175f-11f1-94c9-397764549425.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[We need more updates, say British nationals stuck in Middle East]]></title>
+            <description><![CDATA[Air travel in the Middle East has been severely disrupted since Saturday, with thousands of flights cancelled.]]></description>
+            <link>https://www.bbc.com/news/articles/cgml4e7p3x2o?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/cgml4e7p3x2o#4</guid>
+            <pubDate>Tue, 03 Mar 2026 17:09:45 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2832/live/eba48140-1708-11f1-9120-a910fc22c6ac.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[European allies rush to bolster Cyprus defences after drones target British base]]></title>
+            <description><![CDATA[The Cypriot government suspects the Iran-backed group Hezbollah in Lebanon targeted the UK's RAF Akrotiri base in Cyprus.]]></description>
+            <link>https://www.bbc.com/news/articles/c4g74npdwnyo?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/c4g74npdwnyo#4</guid>
+            <pubDate>Tue, 03 Mar 2026 22:10:09 GMT</pubDate>
+            <media:thumbnail width="240" height="134" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/5597/live/893ae050-1747-11f1-95f3-4f8508781bec.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Watch: How the US-Israel war with Iran is jeopardising shipping]]></title>
+            <description><![CDATA[Ben Chu has been looking at what’s happened to marine traffic in the Strait of Hormuz, a key trade passage. ]]></description>
+            <link>https://www.bbc.com/news/videos/cvgjnv2y90wo?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/videos/cvgjnv2y90wo#4</guid>
+            <pubDate>Tue, 03 Mar 2026 18:49:50 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fffb/live/b37715a0-1729-11f1-9120-a910fc22c6ac.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Rapper Ghetts jailed for 12 years for killing student in hit-and-run]]></title>
+            <description><![CDATA[The grime artist failed to stop after his BMW hit Nepali student Yubin Tamang, 20, in Ilford.]]></description>
+            <link>https://www.bbc.com/news/articles/cvgjn1rpwn7o?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/cvgjn1rpwn7o#5</guid>
+            <pubDate>Tue, 03 Mar 2026 15:53:19 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c4d5/live/7e2f3730-171d-11f1-9120-a910fc22c6ac.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Elton John's family photo hung in National Portrait Gallery]]></title>
+            <description><![CDATA[The portrait shows Sir Elton with husband David Furnish and their teenage sons Zachary and Elijah.]]></description>
+            <link>https://www.bbc.com/news/articles/c89kq5d5vepo?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/c89kq5d5vepo#5</guid>
+            <pubDate>Tue, 03 Mar 2026 12:49:12 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4fc5/live/35765340-16fd-11f1-b048-c9424b2cf5fd.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Ant and Dec take legal action over 'secret profits' in Banksy deals]]></title>
+            <description><![CDATA[A court hears that an art consultant working for the TV hosts took "secret and unauthorised profits".]]></description>
+            <link>https://www.bbc.com/news/articles/cgjzwexg10vo?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/cgjzwexg10vo#5</guid>
+            <pubDate>Tue, 03 Mar 2026 20:45:44 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/d588/live/444239b0-171c-11f1-b787-dd8097b9508d.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Former Daily Mail showbusiness editor denies hacking Sadie Frost's voicemails]]></title>
+            <description><![CDATA[Seven high-profile claimants allege the Daily Mail's publisher committed "grave breaches of privacy" - something it denies.]]></description>
+            <link>https://www.bbc.com/news/articles/c5yvx5xpze5o?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/c5yvx5xpze5o#5</guid>
+            <pubDate>Tue, 03 Mar 2026 20:17:47 GMT</pubDate>
+            <media:thumbnail width="240" height="134" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fdf2/live/d0ef1560-172e-11f1-b7ef-f57aa9718260.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[OpenAI changes deal with US military after backlash]]></title>
+            <description><![CDATA[Chief Executive Sam Altman said the group would prohibit the use of its systems to spy on Americans.]]></description>
+            <link>https://www.bbc.com/news/articles/c3rz1nd0egro?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/c3rz1nd0egro#5</guid>
+            <pubDate>Tue, 03 Mar 2026 19:37:28 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/66a5/live/a73797b0-1710-11f1-b048-c9424b2cf5fd.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Lionesses deliver Wiegman's 'clear win' to make World Cup statement]]></title>
+            <description><![CDATA[A "clear win" was what Sarina Wiegman wanted from her England side against Ukraine - and that was what they delivered in a bright start to their World Cup qualifying campaign.]]></description>
+            <link>https://www.bbc.com/sport/football/articles/c98qp2lzj13o?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/sport/football/articles/c98qp2lzj13o#5</guid>
+            <pubDate>Tue, 03 Mar 2026 20:39:37 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f451/live/c9aada10-173c-11f1-95f3-4f8508781bec.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Actor settles claim against theatre in Kevin Spacey assault case]]></title>
+            <description><![CDATA[He alleged that Spacey, who has denied the allegations, assaulted him on two separate occasions.]]></description>
+            <link>https://www.bbc.com/news/articles/c78jegj9r91o?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/news/articles/c78jegj9r91o#5</guid>
+            <pubDate>Tue, 03 Mar 2026 16:44:47 GMT</pubDate>
+            <media:thumbnail width="240" height="134" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2e4f/live/61b0d250-171b-11f1-8edd-eb638c7531c5.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[BBC News app]]></title>
+            <description><![CDATA[Top stories, breaking news, live reporting, and follow news topics that match your interests]]></description>
+            <link>https://www.bbc.co.uk/news/10628994?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/news/10628994#7</guid>
+            <pubDate>Wed, 30 Apr 2025 14:04:28 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2cf6/live/d1e71250-9509-11ee-8df3-1d2983d8814f.png"/>
+        </item>
+        <item>
+            <title><![CDATA[Trump 'Not Happy' With Starmer Over Iran]]></title>
+            <description><![CDATA[Trump criticises Starmer saying “This is not Winston Churchill we’re dealing with”.]]></description>
+            <link>https://www.bbc.co.uk/sounds/play/p0n4fhpt?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/sounds/play/p0n4fhpt#8</guid>
+            <pubDate>Tue, 03 Mar 2026 19:28:00 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/images/ic/240x135/p0l7jnbt.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Global News Podcast: Trump warns of more US deaths in Iran war]]></title>
+            <description><![CDATA[Iran's retaliatory strikes have killed three US service members]]></description>
+            <link>https://www.bbc.co.uk/sounds/play/p0n42r1x?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.co.uk/sounds/play/p0n42r1x#8</guid>
+            <pubDate>Mon, 02 Mar 2026 05:41:00 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/images/ic/240x135/p0n42r3q.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA['Same old story' for Slot as Wolves 'keep fighting']]></title>
+            <description><![CDATA[Liverpool head coach Arne Slot began the week by saying he found most Premier League games no longer a joy to watch - and had little to enjoy as he described defeat at Wolves as the "same old story".]]></description>
+            <link>https://www.bbc.com/sport/football/articles/clygeylkg17o?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/sport/football/articles/clygeylkg17o#10</guid>
+            <pubDate>Wed, 04 Mar 2026 00:33:47 GMT</pubDate>
+            <media:thumbnail width="240" height="134" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3762/live/fb63d120-1763-11f1-9120-a910fc22c6ac.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Trump 'does not care' if Iran play at  World Cup]]></title>
+            <description><![CDATA[US President Donald Trump says he does not care if Iran take part in this summer's 2026 World Cup.]]></description>
+            <link>https://www.bbc.com/sport/football/articles/c5y4v1yly04o?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/sport/football/articles/c5y4v1yly04o#10</guid>
+            <pubDate>Tue, 03 Mar 2026 22:41:03 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ac1b/live/1a8bf0b0-174f-11f1-af5d-31bc823ef898.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Lionesses deliver Wiegman's 'clear win' to make World Cup statement]]></title>
+            <description><![CDATA[A "clear win" was what Sarina Wiegman wanted from her England side against Ukraine - and that was what they delivered in a bright start to their World Cup qualifying campaign.]]></description>
+            <link>https://www.bbc.com/sport/football/articles/c98qp2lzj13o?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/sport/football/articles/c98qp2lzj13o#10</guid>
+            <pubDate>Tue, 03 Mar 2026 20:39:37 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f451/live/c9aada10-173c-11f1-95f3-4f8508781bec.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Is it time to trust South Africa as World Cup 'favourites'?]]></title>
+            <description><![CDATA[South Africa are the only unbeaten team left at the T20 World Cup and go into their semi-final against New Zealand  as favourites, so it is time to trust them despite their past in global tournaments? ]]></description>
+            <link>https://www.bbc.com/sport/cricket/articles/cdxg4w95p65o?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/sport/cricket/articles/cdxg4w95p65o#10</guid>
+            <pubDate>Tue, 03 Mar 2026 16:01:00 GMT</pubDate>
+            <media:thumbnail width="240" height="134" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2f04/live/29289c20-16f2-11f1-b048-c9424b2cf5fd.jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Smith, Atkinson and Murley start in England revamp]]></title>
+            <description><![CDATA[England head coach Steve Borthwick makes 12 changes - nine personnel switches and three positional shifts - as he revamps his side to face Italy on Saturday]]></description>
+            <link>https://www.bbc.com/sport/rugby-union/articles/cvg1pd983xdo?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/sport/rugby-union/articles/cvg1pd983xdo#10</guid>
+            <pubDate>Tue, 03 Mar 2026 17:42:39 GMT</pubDate>
+            <media:thumbnail width="240" height="135" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/114b/live/01e985c0-1706-11f1-9120-a910fc22c6ac.png"/>
+        </item>
+        <item>
+            <title><![CDATA['The hunger is big' - Sunderland reach 40 points and want more]]></title>
+            <description><![CDATA[By reaching 40 points with victory at Leeds on Tuesday, Sunderland have pretty much ensured Premier League survival by early March.]]></description>
+            <link>https://www.bbc.com/sport/football/articles/cy8ly8p3x9no?at_medium=RSS&amp;at_campaign=rss</link>
+            <guid isPermaLink="false">https://www.bbc.com/sport/football/articles/cy8ly8p3x9no#10</guid>
+            <pubDate>Tue, 03 Mar 2026 23:41:09 GMT</pubDate>
+            <media:thumbnail width="240" height="134" url="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/3a13/live/1ef6ef20-1753-11f1-af5d-31bc823ef898.jpg"/>
+        </item>
+    </channel>
+</rss>

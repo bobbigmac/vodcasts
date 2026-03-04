@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other episodes",
+  "leftovers_title_full": "Other episodes — Today, Explained",
+  "leftovers_description": "Episodes outside the main Today, Explained row.",
+  "shows": [
+    {
+      "id": "today-explained",
+      "title": "Today, Explained",
+      "title_full": "Today, Explained — Vox",
+      "description": "Daily explainers on the news and the world.",
+      "categories": ["news", "explainers"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

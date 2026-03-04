@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Autism Tree</title>
+    <link>/feed/uctv-science-video/</link>
+    <description>UCTV Science (Video) — Autism Tree</description>
+    <language>en</language>
+  <item>
+    <title>Parents of Neurodiversity - Autism Tree Annual Neurodiversity Conference 2024</title>
+    <link>https://www.uctv.tv/shows/40214</link>
+    <description>Ths discussion captures the experiences of parents raising neurodivergent children, emphasizing the importance of finding joy, fostering inclusion,…</description>
+    <pubDate>2025-02-26</pubDate>
+    <guid isPermaLink="false">40214parents-of-neurodiversity---autism-tree-annual-neurodiversity-conference-2024</guid>
+    <enclosure url="https://podcast.uctv.tv/vod/40214.mp4" type="video/mp4" length="718361037"/>
+  </item>
+  <item>
+    <title>No More Sidekicks: Putting Authentic Characters Front and Center in Fiction and Popular Culture - Autism Tree Annual Neurodiversity Conference 2024</title>
+    <link>https://www.uctv.tv/shows/40330</link>
+    <description>This engaging panel discussion delves into the evolving representation of autistic characters in literature, comics, and pop culture, featuring…</description>
+    <pubDate>2025-02-05</pubDate>
+    <guid isPermaLink="false">40330no-more-sidekicks-putting-authentic-characters-front-and-center-in-fiction-and-popular-culture---autism-tree-annual-neurodiversity-conference-2024</guid>
+    <enclosure url="https://podcast.uctv.tv/vod/40330.mp4" type="video/mp4" length="748075241"/>
+  </item>
+  </channel>
+</rss>

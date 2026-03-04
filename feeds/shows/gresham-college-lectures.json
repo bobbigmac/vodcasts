@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other episodes",
+  "leftovers_title_full": "Other episodes — Gresham College",
+  "leftovers_description": "Episodes outside the main Gresham College lectures row.",
+  "shows": [
+    {
+      "id": "lectures",
+      "title": "Lectures",
+      "title_full": "Lectures — Gresham College",
+      "description": "Public lectures from Gresham College.",
+      "categories": ["lectures", "education"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

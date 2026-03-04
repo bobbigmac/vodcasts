@@ -1,0 +1,1370 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:jwplayer="http://developer.longtailvideo.com/" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+  <channel>
+    <atom:link xmlns:atom10="http://www.w3.org/2005/Atom" href="https://pa.tedcdn.com/feeds/talks.rss?type=video&amp;apikey=172BB350-0205&amp;days=60" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Wed, 21 May 2025 17:37:48 +0000</lastBuildDate>
+    <title>TED Talks Daily (SD video)</title>
+    <link>https://www.ted.com/talks</link>
+    <generator>TED - TED.com</generator>
+    <description>TED is a nonprofit devoted to ideas worth spreading. On this video feed, you'll find TED Talks to inspire, intrigue and stir the imagination from some of the world's leading thinkers and doers, speaking from the stage at TED conferences, TEDx events and partner events around the world. This podcast is also available in high-def video and audio-only formats.</description>
+    <itunes:subtitle>TED is a nonprofit devoted to ideas worth spreading. On this video feed, you'll find TED Talks to inspire, intrigue and stir the imagination from some of the world's leading thinkers and doers, speaking from the stage at TED conferences, TEDx events and p</itunes:subtitle>
+    <itunes:author>TED</itunes:author>
+    <itunes:summary>TED is a nonprofit devoted to ideas worth spreading. On this video feed, you'll find TED Talks to inspire, intrigue and stir the imagination from some of the world's leading thinkers and doers, speaking from the stage at TED conferences, TEDx events and partner events around the world. This podcast is also available in high-def video and audio-only formats.</itunes:summary>
+    <language>en</language>
+    <copyright>© TED: https://www.ted.com/about/our-organization/our-policies-terms/ted-com-terms-of-use#h2--copyright-issues-and-licenses</copyright>
+    
+    <image>
+      <url>https://pl.tedcdn.com/rss_feed_images/ted_talks_main_podcast/video.png</url>
+      <title>TED Talks Daily (SD video)</title>
+      <link>https://www.ted.com/talks</link>
+      <width>144</width>
+      <height>144</height>
+    </image>
+    <itunes:image href="https://pl.tedcdn.com/rss_feed_images/ted_talks_main_podcast/video.png"/>
+    <category>Science</category>
+    <category>Technology</category>
+    <category>Entertainment</category>
+    <category>Design</category>
+    
+    
+    
+    <itunes:keywords>TED, TEDTalks, TED Talks, inspiration, creativity, tech demo, education</itunes:keywords>
+    <itunes:explicit>no</itunes:explicit>
+    <media:rating scheme="urn:simple">nonadult</media:rating>
+    <itunes:category text="Education"/><itunes:category text="Technology"/><itunes:category text="Arts"/><itunes:category text="Society &amp; Culture"/><itunes:category text="News &amp; Politics"/><itunes:owner><itunes:email>contact@ted.com</itunes:email><itunes:name>TED</itunes:name></itunes:owner><item>
+      <title>This is what the future of media looks like | Hamish McKenzie</title>
+      <itunes:author>Hamish McKenzie</itunes:author>
+      <description>
+        <![CDATA[What if the polarizing mess of social media, clickbait headlines and addictive algorithms isn't a breakdown of media but a transition to something better? Substack cofounder Hamish McKenzie explores how independent creators are growing a new media "garden," where trust beats engagement metrics and audiences matter more than ads. Learn why clicking “subscribe” doesn’t just signal support; it gives you power.]]>
+      </description>
+      <itunes:subtitle>This is what the future of media looks like | Hamish McKenzie</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[What if the polarizing mess of social media, clickbait headlines and addictive algorithms isn't a breakdown of media but a transition to something better? Substack cofounder Hamish McKenzie explores how independent creators are growing a new media "garden," where trust beats engagement metrics and audiences matter more than ads. Learn why clicking “subscribe” doesn’t just signal support; it gives you power.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/199003.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/hamish_mckenzie_this_is_what_the_future_of_media_looks_like?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148378</guid>
+      <jwplayer:talkId>148378</jwplayer:talkId>
+      <pubDate>Wed, 21 May 2025 14:48:48 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:10:58</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/199003.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148378/ecba9a5c-46fc-4d3e-85b6-b76bac9b5eb6/HamishMcKenzie_2025-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148378/ecba9a5c-46fc-4d3e-85b6-b76bac9b5eb6/HamishMcKenzie_2025-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>The catastrophic risks of AI — and a safer path | Yoshua Bengio</title>
+      <itunes:author>Yoshua Bengio</itunes:author>
+      <description>
+        <![CDATA[Yoshua Bengio — the world's most-cited computer scientist and a "godfather" of artificial intelligence — is deadly concerned about the current trajectory of the technology. As AI models race toward full-blown agency, Bengio warns that they've already learned to deceive, cheat, self-preserve and slip out of our control. Drawing on his groundbreaking research, he reveals a bold plan to keep AI safe and ensure that human flourishing, not machines with unchecked power and autonomy, defines our future.]]>
+      </description>
+      <itunes:subtitle>The catastrophic risks of AI — and a safer path | Yoshua Bengio</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[Yoshua Bengio — the world's most-cited computer scientist and a "godfather" of artificial intelligence — is deadly concerned about the current trajectory of the technology. As AI models race toward full-blown agency, Bengio warns that they've already learned to deceive, cheat, self-preserve and slip out of our control. Drawing on his groundbreaking research, he reveals a bold plan to keep AI safe and ensure that human flourishing, not machines with unchecked power and autonomy, defines our future.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/198948.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/yoshua_bengio_the_catastrophic_risks_of_ai_and_a_safer_path?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148377</guid>
+      <jwplayer:talkId>148377</jwplayer:talkId>
+      <pubDate>Tue, 20 May 2025 14:55:18 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:14:49</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/198948.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148377/0f2795e4-2743-40aa-a1d6-1838a6ddf3b5/YoshuaBengio_2025-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148377/0f2795e4-2743-40aa-a1d6-1838a6ddf3b5/YoshuaBengio_2025-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>How to make climate stories impossible to ignore | Katherine Dunn</title>
+      <itunes:author>Katherine Dunn</itunes:author>
+      <description>
+        <![CDATA[In environmental reporting, “it's not always about the big climate story,” says journalist Katherine Dunn. She challenges newsrooms to rethink how they cover climate change, connecting to the things readers love — whether that’s jobs, football or even a good mango — with three actionable tips for making overlooked stories irresistible.]]>
+      </description>
+      <itunes:subtitle>How to make climate stories impossible to ignore | Katherine Dunn</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[In environmental reporting, “it's not always about the big climate story,” says journalist Katherine Dunn. She challenges newsrooms to rethink how they cover climate change, connecting to the things readers love — whether that’s jobs, football or even a good mango — with three actionable tips for making overlooked stories irresistible.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/197241.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/katherine_dunn_how_to_make_climate_stories_impossible_to_ignore?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148243</guid>
+      <jwplayer:talkId>148243</jwplayer:talkId>
+      <pubDate>Mon, 19 May 2025 15:00:13 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:09:46</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/197241.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148243/31ec32c3-9d0c-4d8e-b125-c72cd7036185/KatherineDunn_2024T-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148243/31ec32c3-9d0c-4d8e-b125-c72cd7036185/KatherineDunn_2024T-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>What if the climate movement felt like a house party? | Matthew Phillips</title>
+      <itunes:author>Matthew Phillips</itunes:author>
+      <description>
+        <![CDATA[You’re invited into a bold new vision for the climate movement — a space of trust and honesty, where artists inspire action and everyone has a role to play. Social impact leader Matthew Phillips explores how shared purpose and imagination can revive the fragmented approach to climate action and unlock the power of collective momentum.]]>
+      </description>
+      <itunes:subtitle>What if the climate movement felt like a house party? | Matthew Phillips</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[You’re invited into a bold new vision for the climate movement — a space of trust and honesty, where artists inspire action and everyone has a role to play. Social impact leader Matthew Phillips explores how shared purpose and imagination can revive the fragmented approach to climate action and unlock the power of collective momentum.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/197327.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/matthew_phillips_what_if_the_climate_movement_felt_like_a_house_party?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148264</guid>
+      <jwplayer:talkId>148264</jwplayer:talkId>
+      <pubDate>Fri, 16 May 2025 14:47:26 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:08:34</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/197327.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148264/36116c5e-bfae-4e20-a924-8014e7c88d2c/MatthewPhillips_2024T-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148264/36116c5e-bfae-4e20-a924-8014e7c88d2c/MatthewPhillips_2024T-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>The AI revolution is underhyped | Eric Schmidt</title>
+      <itunes:author>Eric Schmidt</itunes:author>
+      <description>
+        <![CDATA[The arrival of non-human intelligence is a very big deal, says former Google CEO and chairman Eric Schmidt. In a wide-ranging interview with technologist Bilawal Sidhu, Schmidt makes the case that AI is wildly underhyped, as near-constant breakthroughs give rise to systems capable of doing even the most complex tasks on their own. He explores the staggering opportunities, sobering challenges and urgent risks of AI, showing why everyone will need to engage with this technology in order to remain relevant.]]>
+      </description>
+      <itunes:subtitle>The AI revolution is underhyped | Eric Schmidt</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[The arrival of non-human intelligence is a very big deal, says former Google CEO and chairman Eric Schmidt. In a wide-ranging interview with technologist Bilawal Sidhu, Schmidt makes the case that AI is wildly underhyped, as near-constant breakthroughs give rise to systems capable of doing even the most complex tasks on their own. He explores the staggering opportunities, sobering challenges and urgent risks of AI, showing why everyone will need to engage with this technology in order to remain relevant.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/198690.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/eric_schmidt_the_ai_revolution_is_underhyped?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148366</guid>
+      <jwplayer:talkId>148366</jwplayer:talkId>
+      <pubDate>Thu, 15 May 2025 14:52:26 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:25:34</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/198690.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148366/29154634-39fc-4807-90db-05e74cc312ff/EricSchmidt_2025-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148366/29154634-39fc-4807-90db-05e74cc312ff/EricSchmidt_2025-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>The delicious potential of rescuing wasted food | Jasmine Crowe-Houston</title>
+      <itunes:author>Jasmine Crowe-Houston</itunes:author>
+      <description>
+        <![CDATA[What if solving hunger isn't about growing more food but wasting less of it? Social entrepreneur Jasmine Crowe-Houston has made that idea her mission with Goodr, a platform that reroutes surplus food to people in need. In conversation with journalist and "TED Radio Hour" host Manoush Zomorodi, she shares how a viral moment led to a nationwide effort to fix the food waste problem.]]>
+      </description>
+      <itunes:subtitle>The delicious potential of rescuing wasted food | Jasmine Crowe-Houston</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[What if solving hunger isn't about growing more food but wasting less of it? Social entrepreneur Jasmine Crowe-Houston has made that idea her mission with Goodr, a platform that reroutes surplus food to people in need. In conversation with journalist and "TED Radio Hour" host Manoush Zomorodi, she shares how a viral moment led to a nationwide effort to fix the food waste problem.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/196858.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/jasmine_crowe_houston_the_delicious_potential_of_rescuing_wasted_food?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148161</guid>
+      <jwplayer:talkId>148161</jwplayer:talkId>
+      <pubDate>Wed, 14 May 2025 14:54:36 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:13:48</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/196858.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148161/c1857cbb-7cfe-43d6-9a62-d6ce9e452fc1/JasmineCrowe-Houston_2024N-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148161/c1857cbb-7cfe-43d6-9a62-d6ce9e452fc1/JasmineCrowe-Houston_2024N-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>Are we cooked? How social media shapes your language | Adam Aleksic</title>
+      <itunes:author>Adam Aleksic</itunes:author>
+      <description>
+        <![CDATA[Gen Z slang is rife with new words like "unalive," "skibidi" and "rizz." Where do these words come from — and how do they get popular so fast? Linguist Adam Aleksic explores how the forces of social media algorithms are reshaping the way people talk and view their very own identities.]]>
+      </description>
+      <itunes:subtitle>Are we cooked? How social media shapes your language | Adam Aleksic</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[Gen Z slang is rife with new words like "unalive," "skibidi" and "rizz." Where do these words come from — and how do they get popular so fast? Linguist Adam Aleksic explores how the forces of social media algorithms are reshaping the way people talk and view their very own identities.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/198378.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/adam_aleksic_are_we_cooked_how_social_media_shapes_your_language?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148344</guid>
+      <jwplayer:talkId>148344</jwplayer:talkId>
+      <pubDate>Tue, 13 May 2025 14:44:26 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:13:52</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/198378.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148344/92a2ba1a-c7c8-41e3-a326-cf2ecf696cdb/AdamAleksic_2024X-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148344/92a2ba1a-c7c8-41e3-a326-cf2ecf696cdb/AdamAleksic_2024X-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>How I make vegan food sexy | Pinky Cole</title>
+      <itunes:author>Pinky Cole</itunes:author>
+      <description>
+        <![CDATA[At the plant-based burger chain Slutty Vegan, Pinky Cole is flipping the script on vegan food with bold style. In conversation with host of "TED Radio Hour" Manoush Zomorodi, she shares the highs and lows of her entrepreneurial journey, from her roots in Baltimore to the grease fire that took her first storefront in Harlem. Learn more about the authenticity, resilience and community that went into building a multimillion-dollar vegan food empire.]]>
+      </description>
+      <itunes:subtitle>How I make vegan food sexy | Pinky Cole</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[At the plant-based burger chain Slutty Vegan, Pinky Cole is flipping the script on vegan food with bold style. In conversation with host of "TED Radio Hour" Manoush Zomorodi, she shares the highs and lows of her entrepreneurial journey, from her roots in Baltimore to the grease fire that took her first storefront in Harlem. Learn more about the authenticity, resilience and community that went into building a multimillion-dollar vegan food empire.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/198568.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/pinky_cole_how_i_make_vegan_food_sexy?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148362</guid>
+      <jwplayer:talkId>148362</jwplayer:talkId>
+      <pubDate>Mon, 12 May 2025 14:58:17 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:18:14</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/198568.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148362/21e509f3-e745-4227-ba45-be2305a8b496/PinkyColeHayes_2024N-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148362/21e509f3-e745-4227-ba45-be2305a8b496/PinkyColeHayes_2024N-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>The poetry of family | Duncan Keegan</title>
+      <itunes:author>Duncan Keegan</itunes:author>
+      <description>
+        <![CDATA[Duncan Keegan doesn't consider himself a poet, but this deeply beautiful talk shows otherwise. With simple grace and quiet eloquence, he celebrates family, connection and togetherness, often most called for at the hardest of times.]]>
+      </description>
+      <itunes:subtitle>The poetry of family | Duncan Keegan</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[Duncan Keegan doesn't consider himself a poet, but this deeply beautiful talk shows otherwise. With simple grace and quiet eloquence, he celebrates family, connection and togetherness, often most called for at the hardest of times.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/198485.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/duncan_keegan_the_poetry_of_family?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148349</guid>
+      <jwplayer:talkId>148349</jwplayer:talkId>
+      <pubDate>Fri, 09 May 2025 14:54:20 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:09:44</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/198485.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148349/a8d97f20-2b88-44bc-9d6b-abee37520fa6/DuncanKeegan_2025-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148349/a8d97f20-2b88-44bc-9d6b-abee37520fa6/DuncanKeegan_2025-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>Can AI help with the chaos of family life? | Avni Patel Thompson</title>
+      <itunes:author>Avni Patel Thompson</itunes:author>
+      <description>
+        <![CDATA[Tech innovator Avni Patel Thompson designed an app to shield busy parents from the chaos of scheduling school pickups, coordinating playdates, planning birthday parties and more — but as the product developed, something felt off. What might we lose when AI smooths over the friction of everyday family life? Patel Thompson explores her surprising discovery and how you can leverage AI to connect more deeply with the ones you love.]]>
+      </description>
+      <itunes:subtitle>Can AI help with the chaos of family life? | Avni Patel Thompson</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[Tech innovator Avni Patel Thompson designed an app to shield busy parents from the chaos of scheduling school pickups, coordinating playdates, planning birthday parties and more — but as the product developed, something felt off. What might we lose when AI smooths over the friction of everyday family life? Patel Thompson explores her surprising discovery and how you can leverage AI to connect more deeply with the ones you love.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/198127.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/avni_patel_thompson_can_ai_help_with_the_chaos_of_family_life?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148334</guid>
+      <jwplayer:talkId>148334</jwplayer:talkId>
+      <pubDate>Thu, 08 May 2025 15:04:17 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:08:29</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/198127.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148334/74b7f7ba-65bf-408c-9fc7-615c6f33ba7f/AvniPatelThompson_2025-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148334/74b7f7ba-65bf-408c-9fc7-615c6f33ba7f/AvniPatelThompson_2025-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>A parent's guide to raising kids after loss | Andy Laats</title>
+      <itunes:author>Andy Laats</itunes:author>
+      <description>
+        <![CDATA[Andy Laats had the textbook fairytale family setup ... a great job, a happy marriage, three wonderful kids and everything going for them. Until one day, they didn't anymore. In this tender, wise and unexpectedly funny talk, Laats describes the profound lessons he's learned over the years as a father, offering insights that will resonate with anyone who's ever had any kind of family.]]>
+      </description>
+      <itunes:subtitle>A parent's guide to raising kids after loss | Andy Laats</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[Andy Laats had the textbook fairytale family setup ... a great job, a happy marriage, three wonderful kids and everything going for them. Until one day, they didn't anymore. In this tender, wise and unexpectedly funny talk, Laats describes the profound lessons he's learned over the years as a father, offering insights that will resonate with anyone who's ever had any kind of family.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/197960.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/andy_laats_a_parent_s_guide_to_raising_kids_after_loss?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148325</guid>
+      <jwplayer:talkId>148325</jwplayer:talkId>
+      <pubDate>Thu, 08 May 2025 14:53:10 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:09:56</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/197960.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148325/8afb4305-6dcc-4d6d-b3f5-e36bacb5b67e/AndyLaats_2025-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148325/8afb4305-6dcc-4d6d-b3f5-e36bacb5b67e/AndyLaats_2025-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>You are the bridge to the next generation | Ndinini Kimesera Sikar</title>
+      <itunes:author>Ndinini Kimesera Sikar</itunes:author>
+      <description>
+        <![CDATA["Do you know what you want to preserve for the next generation?" asks community leader Ndinini Kimesera Sikar. Drawing on her experience growing up in a family of 38 in a traditional Maasai village in Tanzania — where every chore was shared, every story was sung and belonging meant survival — she explores how we can blend the old with the new to build the life we want, encouraging us all to ponder our list of "must-haves" for the future.]]>
+      </description>
+      <itunes:subtitle>You are the bridge to the next generation | Ndinini Kimesera Sikar</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA["Do you know what you want to preserve for the next generation?" asks community leader Ndinini Kimesera Sikar. Drawing on her experience growing up in a family of 38 in a traditional Maasai village in Tanzania — where every chore was shared, every story was sung and belonging meant survival — she explores how we can blend the old with the new to build the life we want, encouraging us all to ponder our list of "must-haves" for the future.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/198492.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/ndinini_kimesera_sikar_you_are_the_bridge_to_the_next_generation?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148352</guid>
+      <jwplayer:talkId>148352</jwplayer:talkId>
+      <pubDate>Wed, 07 May 2025 14:41:33 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:09:22</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/198492.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148352/1f05bbba-74c3-4045-9c92-aae3b2a51a1e/NdininiKimeseraSikar_2025-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148352/1f05bbba-74c3-4045-9c92-aae3b2a51a1e/NdininiKimeseraSikar_2025-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>Are we still human if robots help raise our babies? | Sarah Blaffer Hrdy</title>
+      <itunes:author>Sarah Blaffer Hrdy</itunes:author>
+      <description>
+        <![CDATA[AI is transforming the way we work — could it also reshape what makes us human? In this quick and insightful talk, evolutionary anthropologist Sarah Blaffer Hrdy explores how the human brain was shaped by millions of years of shared childcare and mutually supportive communities, asking a provocative question: If robots help raise the next generation, will we lose the empathy that defines us?]]>
+      </description>
+      <itunes:subtitle>Are we still human if robots help raise our babies? | Sarah Blaffer Hrdy</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[AI is transforming the way we work — could it also reshape what makes us human? In this quick and insightful talk, evolutionary anthropologist Sarah Blaffer Hrdy explores how the human brain was shaped by millions of years of shared childcare and mutually supportive communities, asking a provocative question: If robots help raise the next generation, will we lose the empathy that defines us?]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/198495.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/sarah_blaffer_hrdy_are_we_still_human_if_robots_help_raise_our_babies?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148353</guid>
+      <jwplayer:talkId>148353</jwplayer:talkId>
+      <pubDate>Tue, 06 May 2025 14:53:54 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:08:25</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/198495.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148353/62781c18-28cd-4e7d-a109-633f8730a1a5/SarahBlafferHrdy_2025-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148353/62781c18-28cd-4e7d-a109-633f8730a1a5/SarahBlafferHrdy_2025-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>The mental health AI chatbot made for real life | Alison Darcy</title>
+      <itunes:author>Alison Darcy</itunes:author>
+      <description>
+        <![CDATA[Who do you turn to when panic strikes in the middle of the night — and can AI help? Psychologist Alison Darcy shares the vision behind Woebot, a mental health chatbot designed to support people in tough moments, especially when no one else is around. In conversation with author and podcaster Kelly Corrigan, Darcy explores what we should expect and demand from ethically designed, psychological AIs.]]>
+      </description>
+      <itunes:subtitle>The mental health AI chatbot made for real life | Alison Darcy</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[Who do you turn to when panic strikes in the middle of the night — and can AI help? Psychologist Alison Darcy shares the vision behind Woebot, a mental health chatbot designed to support people in tough moments, especially when no one else is around. In conversation with author and podcaster Kelly Corrigan, Darcy explores what we should expect and demand from ethically designed, psychological AIs.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/198425.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/alison_darcy_the_mental_health_ai_chatbot_made_for_real_life?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148347</guid>
+      <jwplayer:talkId>148347</jwplayer:talkId>
+      <pubDate>Mon, 05 May 2025 14:40:05 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:13:31</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/198425.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148347/6d9f913d-ad90-4595-b510-a23c9fd2aeb7/AlisonDarcy_2025-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148347/6d9f913d-ad90-4595-b510-a23c9fd2aeb7/AlisonDarcy_2025-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>How art helped me grapple with grief | Navied Mahdavian</title>
+      <itunes:author>Navied Mahdavian</itunes:author>
+      <description>
+        <![CDATA[With just a few lines, cartoons can say so much with so little. In a moving talk, cartoonist Navied Mahdavian shares his process for distilling huge concepts into drawings on the page — and shows how his work helped him grieve the death of his beloved grandmother, flaws and all.]]>
+      </description>
+      <itunes:subtitle>How art helped me grapple with grief | Navied Mahdavian</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[With just a few lines, cartoons can say so much with so little. In a moving talk, cartoonist Navied Mahdavian shares his process for distilling huge concepts into drawings on the page — and shows how his work helped him grieve the death of his beloved grandmother, flaws and all.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/197086.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/navied_mahdavian_how_art_helped_me_grapple_with_grief?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148236</guid>
+      <jwplayer:talkId>148236</jwplayer:talkId>
+      <pubDate>Fri, 02 May 2025 15:01:19 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:08:01</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/197086.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148236/7d0c1adc-a09c-4858-b0b5-d46ec10ff1a8/NaviedMahdavian_2024N-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148236/7d0c1adc-a09c-4858-b0b5-d46ec10ff1a8/NaviedMahdavian_2024N-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>The economic opportunity hidden in the climate transition | Marielle Remillard</title>
+      <itunes:author>Marielle Remillard</itunes:author>
+      <description>
+        <![CDATA[The energy grid of the future demands a massive amount of materials: billions of solar panels, millions of wind turbines and more. Climate strategist Marielle Remillard reveals why there may be critical shortages ahead — and breaks down how this could also be the biggest business opportunity since the Industrial Revolution.]]>
+      </description>
+      <itunes:subtitle>The economic opportunity hidden in the climate transition | Marielle Remillard</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[The energy grid of the future demands a massive amount of materials: billions of solar panels, millions of wind turbines and more. Climate strategist Marielle Remillard reveals why there may be critical shortages ahead — and breaks down how this could also be the biggest business opportunity since the Industrial Revolution.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/190953.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/marielle_remillard_the_economic_opportunity_hidden_in_the_climate_transition?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:142044</guid>
+      <jwplayer:talkId>142044</jwplayer:talkId>
+      <pubDate>Fri, 02 May 2025 14:57:13 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:12:21</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/190953.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_142044/80e20b0e-4586-4ea2-8d7e-df5159c4a043/MarielleRemillard_2024S-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_142044/80e20b0e-4586-4ea2-8d7e-df5159c4a043/MarielleRemillard_2024S-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>Star Wars changed visual effects — AI is doing it again | Rob Bredow</title>
+      <itunes:author>Rob Bredow</itunes:author>
+      <description>
+        <![CDATA[Jedi master of visual effects Rob Bredow, known for his work at Industrial Light & Magic and Lucasfilm, takes us on a cinematic journey through the evolution of visual effects, with behind-the-scenes stories from the making of fan favorites like “Jurassic Park,” “Star Wars,” “Indiana Jones” and more. He shares how artist-driven innovation continues to blend old and new technology, offering hope that AI won’t replace creatives but instead will empower artists to create new, mind-blowing wonders for the big screen.]]>
+      </description>
+      <itunes:subtitle>Star Wars changed visual effects — AI is doing it again | Rob Bredow</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[Jedi master of visual effects Rob Bredow, known for his work at Industrial Light & Magic and Lucasfilm, takes us on a cinematic journey through the evolution of visual effects, with behind-the-scenes stories from the making of fan favorites like “Jurassic Park,” “Star Wars,” “Indiana Jones” and more. He shares how artist-driven innovation continues to blend old and new technology, offering hope that AI won’t replace creatives but instead will empower artists to create new, mind-blowing wonders for the big screen.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/198367.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/rob_bredow_star_wars_changed_visual_effects_ai_is_doing_it_again?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148343</guid>
+      <jwplayer:talkId>148343</jwplayer:talkId>
+      <pubDate>Thu, 01 May 2025 14:59:26 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:15:31</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/198367.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148343/7aca9edb-0b34-49bf-8eda-f230a928e741/RobBredow_2025-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148343/7aca9edb-0b34-49bf-8eda-f230a928e741/RobBredow_2025-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>TED Talks Daily Book Club: Talk to Me | Rich Benjamin</title>
+      <itunes:author>Rich Benjamin</itunes:author>
+      <description>
+        <![CDATA[Rich Benjamin is a cultural critic, anthropologist and author of the new memoir "Talk to Me: Lessons from a Family Forged by History." In this interview with "TED Talks Daily" podcast host Elise Hu, Benjamin discusses the power of history in shaping generations — and how the intimate search for answers in his own family’s past helped him tell the story of two nations. (This interview is part of the TED Talks Daily Book Club series, recorded live for the TED Membership program. TED Members are invited to attend live recordings and participate in Q&As with authors. To join in on the fun, sign up at go.ted.com/membership.)]]>
+      </description>
+      <itunes:subtitle>TED Talks Daily Book Club: Talk to Me | Rich Benjamin</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[Rich Benjamin is a cultural critic, anthropologist and author of the new memoir "Talk to Me: Lessons from a Family Forged by History." In this interview with "TED Talks Daily" podcast host Elise Hu, Benjamin discusses the power of history in shaping generations — and how the intimate search for answers in his own family’s past helped him tell the story of two nations. (This interview is part of the TED Talks Daily Book Club series, recorded live for the TED Membership program. TED Members are invited to attend live recordings and participate in Q&As with authors. To join in on the fun, sign up at go.ted.com/membership.)]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/198173.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/rich_benjamin_ted_talks_daily_book_club_talk_to_me?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148199</guid>
+      <jwplayer:talkId>148199</jwplayer:talkId>
+      <pubDate>Thu, 01 May 2025 14:48:43 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:43:20</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/198173.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148199/391b5432-f4ed-4598-bbd4-bb713b278fc4/RichBenjamin_2025H-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148199/391b5432-f4ed-4598-bbd4-bb713b278fc4/RichBenjamin_2025H-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>Why AI is our ultimate test and greatest invitation | Tristan Harris</title>
+      <itunes:author>Tristan Harris</itunes:author>
+      <description>
+        <![CDATA[Technologist Tristan Harris has an urgent question: What if the way we’re deploying the world’s most powerful technology — artificial intelligence — isn’t inevitable, but a choice? In this eye-opening talk, he calls on us to learn from the mistakes of social media’s catastrophic rollout and confront the predictable dangers of reckless AI development, offering a “narrow path” where power is matched with responsibility, foresight and wisdom.]]>
+      </description>
+      <itunes:subtitle>Why AI is our ultimate test and greatest invitation | Tristan Harris</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[Technologist Tristan Harris has an urgent question: What if the way we’re deploying the world’s most powerful technology — artificial intelligence — isn’t inevitable, but a choice? In this eye-opening talk, he calls on us to learn from the mistakes of social media’s catastrophic rollout and confront the predictable dangers of reckless AI development, offering a “narrow path” where power is matched with responsibility, foresight and wisdom.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/198370.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/tristan_harris_why_ai_is_our_ultimate_test_and_greatest_invitation?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148338</guid>
+      <jwplayer:talkId>148338</jwplayer:talkId>
+      <pubDate>Wed, 30 Apr 2025 14:45:36 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:15:11</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/198370.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148338/ef942e1e-1c13-4e51-86ee-bf06fa863c59/TristanHarris_2025-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148338/ef942e1e-1c13-4e51-86ee-bf06fa863c59/TristanHarris_2025-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>Where in the world is Trump taking us? | Ian Bremmer</title>
+      <itunes:author>Ian Bremmer</itunes:author>
+      <description>
+        <![CDATA[It’s been an eventful first 100 days for the second Trump administration, which has featured tariff turmoil, shifting foreign policy and the upheaval of prior geopolitical relationships. In this discussion, political scientist Ian Bremmer separates signal from noise in the biggest stories of the day, evaluating the global economy, US-China relations, the future of Ukraine and Europe, immigration and more. (This interview, hosted by TED’s Helen Walters, was recorded on April 29, 2025.)  ]]>
+      </description>
+      <itunes:subtitle>Where in the world is Trump taking us? | Ian Bremmer</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[It’s been an eventful first 100 days for the second Trump administration, which has featured tariff turmoil, shifting foreign policy and the upheaval of prior geopolitical relationships. In this discussion, political scientist Ian Bremmer separates signal from noise in the biggest stories of the day, evaluating the global economy, US-China relations, the future of Ukraine and Europe, immigration and more. (This interview, hosted by TED’s Helen Walters, was recorded on April 29, 2025.)  ]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/198400.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/ian_bremmer_where_in_the_world_is_trump_taking_us?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148342</guid>
+      <jwplayer:talkId>148342</jwplayer:talkId>
+      <pubDate>Wed, 30 Apr 2025 14:44:35 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:54:18</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/198400.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148342/6ee3e806-c7c5-4bac-8ba9-5b3af4620f13/TEDExplains_Episode_Thumbnail_Trump-100_1920x1080.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148342/6ee3e806-c7c5-4bac-8ba9-5b3af4620f13/TEDExplains_Episode_Thumbnail_Trump-100_1920x1080.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>A new vision of healthy masculinity | Davonte Green</title>
+      <itunes:author>Davonte Green</itunes:author>
+      <description>
+        <![CDATA[What does it actually mean to be a "real man" these days? In a personal talk packed with actionable advice, youth advocate Davonte Green challenges age-old stereotypes about masculinity, showing that emotional intelligence and self-control — not aggression — are the keys to moving through the world with confidence and strength.]]>
+      </description>
+      <itunes:subtitle>A new vision of healthy masculinity | Davonte Green</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[What does it actually mean to be a "real man" these days? In a personal talk packed with actionable advice, youth advocate Davonte Green challenges age-old stereotypes about masculinity, showing that emotional intelligence and self-control — not aggression — are the keys to moving through the world with confidence and strength.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/198285.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/davonte_green_a_new_vision_of_healthy_masculinity?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148339</guid>
+      <jwplayer:talkId>148339</jwplayer:talkId>
+      <pubDate>Tue, 29 Apr 2025 15:12:33 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:11:38</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/198285.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148339/d55521e8-45b6-4978-a1c3-effb32dbd28c/DavonteGreen_2024X-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148339/d55521e8-45b6-4978-a1c3-effb32dbd28c/DavonteGreen_2024X-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>Feeling stressed? The answer isn’t to “just relax” | Aditi Nerurkar</title>
+      <itunes:author>Aditi Nerurkar</itunes:author>
+      <description>
+        <![CDATA[Stress isn’t all bad. In fact, the right kind can fuel growth instead of burnout. In this actionable discussion, physician and author Aditi Nerurkar shares tips for managing your stress, boosting your confidence and increasing your resilience. Discover how to spot your stress signals before they spiral — and turn pressure into progress. (This live conversation was hosted by TED’s Whitney Pennington Rodgers and was part of a TED Membership event. Visit ted.com/membership to support TED today and join more exclusive events like this one.)]]>
+      </description>
+      <itunes:subtitle>Feeling stressed? The answer isn’t to “just relax” | Aditi Nerurkar</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[Stress isn’t all bad. In fact, the right kind can fuel growth instead of burnout. In this actionable discussion, physician and author Aditi Nerurkar shares tips for managing your stress, boosting your confidence and increasing your resilience. Discover how to spot your stress signals before they spiral — and turn pressure into progress. (This live conversation was hosted by TED’s Whitney Pennington Rodgers and was part of a TED Membership event. Visit ted.com/membership to support TED today and join more exclusive events like this one.)]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/197690.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/aditi_nerurkar_feeling_stressed_the_answer_isn_t_to_just_relax?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148312</guid>
+      <jwplayer:talkId>148312</jwplayer:talkId>
+      <pubDate>Mon, 28 Apr 2025 15:02:07 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:57:17</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/197690.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148312/44f471d0-4f95-4f91-adca-3d4b4548bdd6/AditiNerurkar_2025H-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148312/44f471d0-4f95-4f91-adca-3d4b4548bdd6/AditiNerurkar_2025H-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>How to speak up — even when you don’t want to | Sarah Crawford-Bohl</title>
+      <itunes:author>Sarah Crawford-Bohl</itunes:author>
+      <description>
+        <![CDATA[What stops you from speaking up when it matters most? Healthcare leader Sarah Crawford-Bohl offers a practical, compassionate framework to have difficult conversations with clarity and heart — and shows how it can lead to stronger teams and real impact.]]>
+      </description>
+      <itunes:subtitle>How to speak up — even when you don’t want to | Sarah Crawford-Bohl</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[What stops you from speaking up when it matters most? Healthcare leader Sarah Crawford-Bohl offers a practical, compassionate framework to have difficult conversations with clarity and heart — and shows how it can lead to stronger teams and real impact.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/197416.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/sarah_crawford_bohl_how_to_speak_up_even_when_you_don_t_want_to?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148277</guid>
+      <jwplayer:talkId>148277</jwplayer:talkId>
+      <pubDate>Fri, 25 Apr 2025 14:42:51 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:11:48</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/197416.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148277/f6e10c22-398e-4cd0-8d1e-75b3c5cfb98e/SarahCrawfod-Bohl_2024X-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148277/f6e10c22-398e-4cd0-8d1e-75b3c5cfb98e/SarahCrawfod-Bohl_2024X-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>The AI arsenal that could stop World War III | Palmer Luckey</title>
+      <itunes:author>Palmer Luckey</itunes:author>
+      <description>
+        <![CDATA[AI in warfare is no longer hypothetical; it's inevitable, says Palmer Luckey, an inventor and founder of the defense technology company Anduril Industries. He takes us inside the high-tech arms race to build AI-powered weapons, "killer robots" and autonomous fighter jets at scale — and makes the counterintuitive case for why this may be the surest path to deterrence and lasting peace. (Followed by Q&A with technologist Bilawal Sidhu)]]>
+      </description>
+      <itunes:subtitle>The AI arsenal that could stop World War III | Palmer Luckey</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[AI in warfare is no longer hypothetical; it's inevitable, says Palmer Luckey, an inventor and founder of the defense technology company Anduril Industries. He takes us inside the high-tech arms race to build AI-powered weapons, "killer robots" and autonomous fighter jets at scale — and makes the counterintuitive case for why this may be the surest path to deterrence and lasting peace. (Followed by Q&A with technologist Bilawal Sidhu)]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/198099.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/palmer_luckey_the_ai_arsenal_that_could_stop_world_war_iii?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148330</guid>
+      <jwplayer:talkId>148330</jwplayer:talkId>
+      <pubDate>Thu, 24 Apr 2025 14:53:44 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:15:12</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/198099.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148330/bc165074-ff5b-47d3-99c3-478616455c15/PalmerLuckey_2025-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148330/bc165074-ff5b-47d3-99c3-478616455c15/PalmerLuckey_2025-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>Can big tech and privacy coexist? | Carole Cadwalladr and Chris Anderson</title>
+      <itunes:author>Carole Cadwalladr and Chris Anderson</itunes:author>
+      <description>
+        <![CDATA["If you can't respect the basic fundamental underlying principles with which we order society — which is 'Do not steal' — then what are you left with?" asks investigative journalist Carole Cadwalladr. Following her TED2025 talk, Cadwalladr is in conversation with Chris Anderson, head of TED, to warn about surveillance fascism. What happens when big Silicon Valley companies take over communication platforms and weaponize intellectual property against you? She suggests that when you feel powerless, it's often actually because you are powerful — and explores why it's so important to fight information chaos by supporting independent media and journalists.]]>
+      </description>
+      <itunes:subtitle>Can big tech and privacy coexist? | Carole Cadwalladr and Chris Anderson</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA["If you can't respect the basic fundamental underlying principles with which we order society — which is 'Do not steal' — then what are you left with?" asks investigative journalist Carole Cadwalladr. Following her TED2025 talk, Cadwalladr is in conversation with Chris Anderson, head of TED, to warn about surveillance fascism. What happens when big Silicon Valley companies take over communication platforms and weaponize intellectual property against you? She suggests that when you feel powerless, it's often actually because you are powerful — and explores why it's so important to fight information chaos by supporting independent media and journalists.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/197963.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/carole_cadwalladr_and_chris_anderson_can_big_tech_and_privacy_coexist?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148297</guid>
+      <jwplayer:talkId>148297</jwplayer:talkId>
+      <pubDate>Wed, 23 Apr 2025 15:20:58 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:36:18</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/197963.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148297/39c11551-5d1b-4c96-aa92-a888292fe0d6/CaroleCadwalladrandChrisAnderson_2025-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148297/39c11551-5d1b-4c96-aa92-a888292fe0d6/CaroleCadwalladrandChrisAnderson_2025-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>The role of art and forgiveness in democracy | Marc Bamuthi Joseph and Wendy Whelan</title>
+      <itunes:author>Marc Bamuthi Joseph and Wendy Whelan</itunes:author>
+      <description>
+        <![CDATA[Can art pave the way for a politically divided nation to move forward? Artist, cultural strategist and TED Fellow Marc Bamuthi Joseph reflects on the role of art, forgiveness and remembrance in the pursuit of public healing — especially at a time when trust is contested and community forums fractured. Wendy Whelan, associate artistic director of the New York City Ballet, joins him on stage for a rendition of “The Carnival of the Animals,” exploring how the cuckoo bird exemplifies the cycles of inaction that lead to injustice. It's more than a performance — it's a reckoning. ]]>
+      </description>
+      <itunes:subtitle>The role of art and forgiveness in democracy | Marc Bamuthi Joseph and Wendy Whelan</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[Can art pave the way for a politically divided nation to move forward? Artist, cultural strategist and TED Fellow Marc Bamuthi Joseph reflects on the role of art, forgiveness and remembrance in the pursuit of public healing — especially at a time when trust is contested and community forums fractured. Wendy Whelan, associate artistic director of the New York City Ballet, joins him on stage for a rendition of “The Carnival of the Animals,” exploring how the cuckoo bird exemplifies the cycles of inaction that lead to injustice. It's more than a performance — it's a reckoning. ]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/196184.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/marc_bamuthi_joseph_and_wendy_whelan_the_role_of_art_and_forgiveness_in_democracy?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:147531</guid>
+      <jwplayer:talkId>147531</jwplayer:talkId>
+      <pubDate>Wed, 23 Apr 2025 15:10:48 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:09:36</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/196184.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_147531/daeffef5-c767-4658-bd0f-3b36a7ceaa9d/MarcBamuthiJosephandWendyWhelan_2024N-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_147531/daeffef5-c767-4658-bd0f-3b36a7ceaa9d/MarcBamuthiJosephandWendyWhelan_2024N-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>The climate movement needs new stories — here's mine | Fenton Lutunatabua</title>
+      <itunes:author>Fenton Lutunatabua</itunes:author>
+      <description>
+        <![CDATA["We are not drowning. We are fighting," says storyteller Fenton Lutunatabua, echoing the mantra of the climate activists he works with across the Pacific. He shares stories of the people and communities at the front lines of the climate crisis, proving they're not waiting to be saved — they're demanding action and putting up a fierce fight for the future.]]>
+      </description>
+      <itunes:subtitle>The climate movement needs new stories — here's mine | Fenton Lutunatabua</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA["We are not drowning. We are fighting," says storyteller Fenton Lutunatabua, echoing the mantra of the climate activists he works with across the Pacific. He shares stories of the people and communities at the front lines of the climate crisis, proving they're not waiting to be saved — they're demanding action and putting up a fierce fight for the future.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/197015.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/fenton_lutunatabua_the_climate_movement_needs_new_stories_here_s_mine?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148194</guid>
+      <jwplayer:talkId>148194</jwplayer:talkId>
+      <pubDate>Tue, 22 Apr 2025 15:13:20 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:07:36</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/197015.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148194/0690afd6-8b1c-43b0-b2d3-d15f50fa1e5a/FentonLutunatabua_2024T-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148194/0690afd6-8b1c-43b0-b2d3-d15f50fa1e5a/FentonLutunatabua_2024T-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>Your inner fire is your greatest strength | Xiye Bastida</title>
+      <itunes:author>Xiye Bastida</itunes:author>
+      <description>
+        <![CDATA[Hope isn’t just a feeling, but a skill you can practice, explains climate activist Xiye Bastida. Taking cues from the resilience of nature, she shows why trusting Indigenous leaders who’ve protected the planet for generations can help turn despair about the climate into the momentum needed to ignite meaningful change. A powerful reminder that the fire in your heart is your greatest strength for creating a better future.]]>
+      </description>
+      <itunes:subtitle>Your inner fire is your greatest strength | Xiye Bastida</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[Hope isn’t just a feeling, but a skill you can practice, explains climate activist Xiye Bastida. Taking cues from the resilience of nature, she shows why trusting Indigenous leaders who’ve protected the planet for generations can help turn despair about the climate into the momentum needed to ignite meaningful change. A powerful reminder that the fire in your heart is your greatest strength for creating a better future.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/197787.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/xiye_bastida_your_inner_fire_is_your_greatest_strength?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148320</guid>
+      <jwplayer:talkId>148320</jwplayer:talkId>
+      <pubDate>Tue, 22 Apr 2025 14:42:58 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:11:47</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/197787.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148320/f4c6d583-1fa0-442d-b7f3-353d70ae52aa/XiyeBastida_2025-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148320/f4c6d583-1fa0-442d-b7f3-353d70ae52aa/XiyeBastida_2025-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>How music helped me live through long COVID | Joshua Roman</title>
+      <itunes:author>Joshua Roman</itunes:author>
+      <description>
+        <![CDATA[An accomplished cellist, TED Fellow Joshua Roman has practiced his instrument daily since he was a child — until a severe case of long COVID almost robbed him of his ability to play. In an inspiring talk, he plays a piece by Johann Sebastian Bach, shares how he found his way back to music and then performs a staggering new solo composition, titled "Immunity."]]>
+      </description>
+      <itunes:subtitle>How music helped me live through long COVID | Joshua Roman</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[An accomplished cellist, TED Fellow Joshua Roman has practiced his instrument daily since he was a child — until a severe case of long COVID almost robbed him of his ability to play. In an inspiring talk, he plays a piece by Johann Sebastian Bach, shares how he found his way back to music and then performs a staggering new solo composition, titled "Immunity."]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/197465.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/joshua_roman_how_music_helped_me_live_through_long_covid?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148286</guid>
+      <jwplayer:talkId>148286</jwplayer:talkId>
+      <pubDate>Fri, 18 Apr 2025 14:44:42 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:16:57</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/197465.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148286/5b12f248-e30b-4f61-968a-74991e3f8a45/JoshuaRoman_2024-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148286/5b12f248-e30b-4f61-968a-74991e3f8a45/JoshuaRoman_2024-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>The next computer? Your glasses | Shahram Izadi</title>
+      <itunes:author>Shahram Izadi</itunes:author>
+      <description>
+        <![CDATA[Picture this: you’re wearing a normal-looking pair of glasses, but they give you the ability to quickly summarize a book, translate between languages or remember where you left your keys. In a live demo of unreleased technology, computer scientist Shahram Izadi unveils Google’s new Android XR platform, which aims to give users the power of AI via smart glasses and headsets. He’s joined onstage by two colleagues, giving a glimpse of the future of “extended reality” (XR) devices — smart, seamless and right before your eyes.]]>
+      </description>
+      <itunes:subtitle>The next computer? Your glasses | Shahram Izadi</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[Picture this: you’re wearing a normal-looking pair of glasses, but they give you the ability to quickly summarize a book, translate between languages or remember where you left your keys. In a live demo of unreleased technology, computer scientist Shahram Izadi unveils Google’s new Android XR platform, which aims to give users the power of AI via smart glasses and headsets. He’s joined onstage by two colleagues, giving a glimpse of the future of “extended reality” (XR) devices — smart, seamless and right before your eyes.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/197693.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/shahram_izadi_the_next_computer_your_glasses?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148309</guid>
+      <jwplayer:talkId>148309</jwplayer:talkId>
+      <pubDate>Thu, 17 Apr 2025 14:57:09 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:16:03</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/197693.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148309/99a010a9-47ab-47f8-b9e2-3f8745ebe28e/ShahramIzadi_2025-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148309/99a010a9-47ab-47f8-b9e2-3f8745ebe28e/ShahramIzadi_2025-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>The hidden cost of the green transition's mineral rush | Galina Angarova</title>
+      <itunes:author>Galina Angarova</itunes:author>
+      <description>
+        <![CDATA[What if the race to save the planet is harming the people who protect it? Indigenous advocate Galina Angarova exposes the hidden cost of the green energy transition, where the demand for minerals like nickel and lithium threatens to devastate Indigenous lands and livelihoods. She calls for a radical shift in mindset — one that centers Indigenous leadership, consent and reciprocity as the foundation of a truly just and sustainable future.]]>
+      </description>
+      <itunes:subtitle>The hidden cost of the green transition's mineral rush | Galina Angarova</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[What if the race to save the planet is harming the people who protect it? Indigenous advocate Galina Angarova exposes the hidden cost of the green energy transition, where the demand for minerals like nickel and lithium threatens to devastate Indigenous lands and livelihoods. She calls for a radical shift in mindset — one that centers Indigenous leadership, consent and reciprocity as the foundation of a truly just and sustainable future.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/196966.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/galina_angarova_the_hidden_cost_of_the_green_transition_s_mineral_rush?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148195</guid>
+      <jwplayer:talkId>148195</jwplayer:talkId>
+      <pubDate>Thu, 17 Apr 2025 14:51:37 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:13:47</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/196966.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148195/73b736f8-0447-4980-91ac-b9a14a5df7b9/GalinaAngarova_2024T-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148195/73b736f8-0447-4980-91ac-b9a14a5df7b9/GalinaAngarova_2024T-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>Stop telling single people to get married | Peter McGraw</title>
+      <itunes:author>Peter McGraw</itunes:author>
+      <description>
+        <![CDATA[Why do we assume single people aren’t happy? Behavioral economist (and lifelong bachelor) Peter McGraw advocates for a world in which single life is just as accepted as marriage, debunking the myth that getting hitched is the only path to fulfillment. From spinsters to cat ladies, he outlines the power in chosen family — and invites you to reconsider what it means to live a remarkable life.]]>
+      </description>
+      <itunes:subtitle>Stop telling single people to get married | Peter McGraw</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[Why do we assume single people aren’t happy? Behavioral economist (and lifelong bachelor) Peter McGraw advocates for a world in which single life is just as accepted as marriage, debunking the myth that getting hitched is the only path to fulfillment. From spinsters to cat ladies, he outlines the power in chosen family — and invites you to reconsider what it means to live a remarkable life.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/197324.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/peter_mcgraw_stop_telling_single_people_to_get_married?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148258</guid>
+      <jwplayer:talkId>148258</jwplayer:talkId>
+      <pubDate>Wed, 16 Apr 2025 14:58:22 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:11:12</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/197324.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148258/48762b86-4e98-45df-a745-bdd577101b31/PeterMcGraw_2024X-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148258/48762b86-4e98-45df-a745-bdd577101b31/PeterMcGraw_2024X-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>OpenAI's Sam Altman talks ChatGPT, AI agents and superintelligence — live at TED2025 | Sam Altman</title>
+      <itunes:author>Sam Altman</itunes:author>
+      <description>
+        <![CDATA[The AI revolution is here to stay, says Sam Altman, the CEO of OpenAI. In a probing, live conversation with head of TED Chris Anderson, Altman discusses the astonishing growth of AI and shows how models like ChatGPT could soon become extensions of ourselves. He also addresses questions of safety, power and moral authority, reflecting on the world he envisions — where AI will almost certainly outpace human intelligence. (Recorded on April 11, 2025)]]>
+      </description>
+      <itunes:subtitle>OpenAI's Sam Altman talks ChatGPT, AI agents and superintelligence — live at TED2025 | Sam Altman</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[The AI revolution is here to stay, says Sam Altman, the CEO of OpenAI. In a probing, live conversation with head of TED Chris Anderson, Altman discusses the astonishing growth of AI and shows how models like ChatGPT could soon become extensions of ourselves. He also addresses questions of safety, power and moral authority, reflecting on the world he envisions — where AI will almost certainly outpace human intelligence. (Recorded on April 11, 2025)]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/197648.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/sam_altman_openai_s_sam_altman_talks_chatgpt_ai_agents_and_superintelligence_live_at_ted2025?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148296</guid>
+      <jwplayer:talkId>148296</jwplayer:talkId>
+      <pubDate>Tue, 15 Apr 2025 15:05:22 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:47:26</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/197648.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148296/4f775345-82e9-42d5-83cc-ff50aa8fa007/SamAltman_2025-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148296/4f775345-82e9-42d5-83cc-ff50aa8fa007/SamAltman_2025-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>Meet NEO, your robot butler in training | Bernt Børnich</title>
+      <itunes:author>Bernt Børnich</itunes:author>
+      <description>
+        <![CDATA[What if doing your chores were as easy as flipping a switch? In this talk and live demo, roboticist and founder of 1X Bernt Børnich introduces NEO, a humanoid robot designed to help you out around the house. Watch as NEO shows off its ability to vacuum, water plants and keep you company, while Børnich tells the story of its development — and shares a vision for robot helpers that could free up your time to focus on what truly matters.]]>
+      </description>
+      <itunes:subtitle>Meet NEO, your robot butler in training | Bernt Børnich</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[What if doing your chores were as easy as flipping a switch? In this talk and live demo, roboticist and founder of 1X Bernt Børnich introduces NEO, a humanoid robot designed to help you out around the house. Watch as NEO shows off its ability to vacuum, water plants and keep you company, while Børnich tells the story of its development — and shares a vision for robot helpers that could free up your time to focus on what truly matters.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/197604.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/bernt_bornich_meet_neo_your_robot_butler_in_training?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148292</guid>
+      <jwplayer:talkId>148292</jwplayer:talkId>
+      <pubDate>Fri, 11 Apr 2025 15:00:04 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:14:45</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/197604.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148292/294da993-5fbb-4d04-90fe-4e7f3e14a431/BerntBornich_2025-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148292/294da993-5fbb-4d04-90fe-4e7f3e14a431/BerntBornich_2025-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>This is what a digital coup looks like | Carole Cadwalladr</title>
+      <itunes:author>Carole Cadwalladr</itunes:author>
+      <description>
+        <![CDATA[“We are watching the collapse of the international order in real time, and this is just the start,” says investigative journalist Carole Cadwalladr. In a searing talk, she decries the rise of the “broligarchy” — the powerful tech executives who are using their global digital platforms to amass unprecedented geopolitical power, dismantling democracy and enabling authoritarian control across the world. Her rallying cry: resist data harvesting and mass surveillance, and support others in a groundswell of digital disobedience. “You have more power than you think,” she says. (This talk contains mature language.)]]>
+      </description>
+      <itunes:subtitle>This is what a digital coup looks like | Carole Cadwalladr</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[“We are watching the collapse of the international order in real time, and this is just the start,” says investigative journalist Carole Cadwalladr. In a searing talk, she decries the rise of the “broligarchy” — the powerful tech executives who are using their global digital platforms to amass unprecedented geopolitical power, dismantling democracy and enabling authoritarian control across the world. Her rallying cry: resist data harvesting and mass surveillance, and support others in a groundswell of digital disobedience. “You have more power than you think,” she says. (This talk contains mature language.)]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/197557.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/carole_cadwalladr_this_is_what_a_digital_coup_looks_like?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148289</guid>
+      <jwplayer:talkId>148289</jwplayer:talkId>
+      <pubDate>Thu, 10 Apr 2025 01:29:10 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:17:38</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/197557.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148289/f238a9b3-82fc-41ab-8e55-26179003028c/CaroleCadwalladr_2025-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148289/f238a9b3-82fc-41ab-8e55-26179003028c/CaroleCadwalladr_2025-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>Norse mythology’s climate lessons for the future | Lauren Fadiman</title>
+      <itunes:author>Lauren Fadiman</itunes:author>
+      <description>
+        <![CDATA[What if ancient myths are warnings for the future? Contemporary folklorist Lauren Fadiman explores how the Norse tale of Ragnarök may stem from real climate catastrophe, revealing how folklore preserves lessons of resilience and can guide how we adapt to our own time of crisis.]]>
+      </description>
+      <itunes:subtitle>Norse mythology’s climate lessons for the future | Lauren Fadiman</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[What if ancient myths are warnings for the future? Contemporary folklorist Lauren Fadiman explores how the Norse tale of Ragnarök may stem from real climate catastrophe, revealing how folklore preserves lessons of resilience and can guide how we adapt to our own time of crisis.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/196744.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/lauren_fadiman_norse_mythology_s_climate_lessons_for_the_future?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148016</guid>
+      <jwplayer:talkId>148016</jwplayer:talkId>
+      <pubDate>Tue, 08 Apr 2025 14:44:44 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:06:26</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/196744.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148016/02a38f80-f05b-4375-88c9-302cb0169e2b/LaurenGFadiman_2024T-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148016/02a38f80-f05b-4375-88c9-302cb0169e2b/LaurenGFadiman_2024T-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>Parkour! How the sport keeps your body and mind fit | Taylor Lynn Carpenter</title>
+      <itunes:author>Taylor Lynn Carpenter</itunes:author>
+      <description>
+        <![CDATA[Parkour isn't just for extreme athletes — it's a life skill that can help anyone navigate the world more easily, says professional parkour athlete Taylor Lynn Carpenter. She pulls off some slick vaults, jumps, dives and rolls onstage, showing how the basic movements of parkour can help you maintain mobility, overcome obstacles and rediscover your sense of adventure.]]>
+      </description>
+      <itunes:subtitle>Parkour! How the sport keeps your body and mind fit | Taylor Lynn Carpenter</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[Parkour isn't just for extreme athletes — it's a life skill that can help anyone navigate the world more easily, says professional parkour athlete Taylor Lynn Carpenter. She pulls off some slick vaults, jumps, dives and rolls onstage, showing how the basic movements of parkour can help you maintain mobility, overcome obstacles and rediscover your sense of adventure.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/196696.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/taylor_lynn_carpenter_parkour_how_the_sport_keeps_your_body_and_mind_fit?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:147981</guid>
+      <jwplayer:talkId>147981</jwplayer:talkId>
+      <pubDate>Mon, 07 Apr 2025 14:44:04 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:06:40</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/196696.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_147981/eb36df14-889d-4c72-ac48-b8f54647f727/TaylorLynnCarpenter_2024N-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_147981/eb36df14-889d-4c72-ac48-b8f54647f727/TaylorLynnCarpenter_2024N-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>The best way to lower Earth’s temperature — fast | Daniel Zavala-Araiza</title>
+      <itunes:author>Daniel Zavala-Araiza</itunes:author>
+      <description>
+        <![CDATA[There's an invisible super-pollutant heating up the planet — but it's surprisingly easy to reduce, if we try. Revealing how methane contributes (way) more in the short term to global warming than carbon dioxide, chemical engineer Daniel Zavala-Araiza highlights the emerging technologies and bold new policies that are part of a worldwide effort to hold oil and gas companies accountable for polluting our skies with this harmful gas. It's an optimistic glimpse into a future where global cooperation and cutting-edge monitoring could rapidly slow climate change.]]>
+      </description>
+      <itunes:subtitle>The best way to lower Earth’s temperature — fast | Daniel Zavala-Araiza</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[There's an invisible super-pollutant heating up the planet — but it's surprisingly easy to reduce, if we try. Revealing how methane contributes (way) more in the short term to global warming than carbon dioxide, chemical engineer Daniel Zavala-Araiza highlights the emerging technologies and bold new policies that are part of a worldwide effort to hold oil and gas companies accountable for polluting our skies with this harmful gas. It's an optimistic glimpse into a future where global cooperation and cutting-edge monitoring could rapidly slow climate change.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/196738.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/daniel_zavala_araiza_the_best_way_to_lower_earth_s_temperature_fast?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148015</guid>
+      <jwplayer:talkId>148015</jwplayer:talkId>
+      <pubDate>Fri, 04 Apr 2025 14:45:13 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:09:01</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/196738.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148015/79296088-a5f2-47ed-a7c3-1cecbe8ffdbb/DanielZavala-Araiza_2024T-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148015/79296088-a5f2-47ed-a7c3-1cecbe8ffdbb/DanielZavala-Araiza_2024T-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>The rise of China's homegrown brands — and why they matter | Roger Hu</title>
+      <itunes:author>Roger Hu</itunes:author>
+      <description>
+        <![CDATA[A generational shift is transforming business in China, says consumer expert Roger Hu. He describes the young, ambitious entrepreneurs taking over family businesses across the country, positioning local Chinese enterprises to emerge as innovative and globally competitive giants.]]>
+      </description>
+      <itunes:subtitle>The rise of China's homegrown brands — and why they matter | Roger Hu</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[A generational shift is transforming business in China, says consumer expert Roger Hu. He describes the young, ambitious entrepreneurs taking over family businesses across the country, positioning local Chinese enterprises to emerge as innovative and globally competitive giants.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/193670.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/roger_hu_the_rise_of_china_s_homegrown_brands_and_why_they_matter?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:145335</guid>
+      <jwplayer:talkId>145335</jwplayer:talkId>
+      <pubDate>Thu, 03 Apr 2025 14:52:59 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:06:47</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/193670.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_145335/5a39cecb-2196-4ca4-8d30-dac064ce25e0/RogerHu_2024S-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_145335/5a39cecb-2196-4ca4-8d30-dac064ce25e0/RogerHu_2024S-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>The power of gaming together in a lonely world | Laura Miele</title>
+      <itunes:author>Laura Miele</itunes:author>
+      <description>
+        <![CDATA[Can gaming with friends help combat loneliness? Laura Miele, the president of EA Entertainment & Technology, dives into how video games unite millions worldwide in a vibrant network of social hubs. With personal stories, research and a glimpse into the future of AI in gaming, she shows why playing together isn't just fun — it’s vital for human connection.]]>
+      </description>
+      <itunes:subtitle>The power of gaming together in a lonely world | Laura Miele</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[Can gaming with friends help combat loneliness? Laura Miele, the president of EA Entertainment & Technology, dives into how video games unite millions worldwide in a vibrant network of social hubs. With personal stories, research and a glimpse into the future of AI in gaming, she shows why playing together isn't just fun — it’s vital for human connection.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/195855.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/laura_miele_the_power_of_gaming_together_in_a_lonely_world?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:147329</guid>
+      <jwplayer:talkId>147329</jwplayer:talkId>
+      <pubDate>Wed, 02 Apr 2025 14:50:16 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:09:48</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/195855.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_147329/143bffbd-82c6-4a78-ae4a-0dd36ba7fb36/LauraMiele_2024N-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_147329/143bffbd-82c6-4a78-ae4a-0dd36ba7fb36/LauraMiele_2024N-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>How "Bluey" teaches adults to be playful again | Sarina Petersen</title>
+      <itunes:author>Sarina Petersen</itunes:author>
+      <description>
+        <![CDATA["Bluey," the Australian children's show, is a global phenomenon. But how did a cartoon for kids become a smash hit with adults, too? Sarina Petersen, who studies social psychology, explains how "Bluey" keeps viewers of all ages hooked with a unique blend of humor, authenticity and nostalgia.]]>
+      </description>
+      <itunes:subtitle>How "Bluey" teaches adults to be playful again | Sarina Petersen</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA["Bluey," the Australian children's show, is a global phenomenon. But how did a cartoon for kids become a smash hit with adults, too? Sarina Petersen, who studies social psychology, explains how "Bluey" keeps viewers of all ages hooked with a unique blend of humor, authenticity and nostalgia.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/197020.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/sarina_petersen_how_bluey_teaches_adults_to_be_playful_again?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148197</guid>
+      <jwplayer:talkId>148197</jwplayer:talkId>
+      <pubDate>Tue, 01 Apr 2025 15:01:05 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:14:25</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/197020.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148197/f05c623c-6fe5-4f64-8169-076bab02c215/SarinaPetersen_2024X-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148197/f05c623c-6fe5-4f64-8169-076bab02c215/SarinaPetersen_2024X-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>Is parenting advice leading to more anxious kids? | Mathilde H. Ross</title>
+      <itunes:author>Mathilde H. Ross</itunes:author>
+      <description>
+        <![CDATA[Today's experts often overwhelm parents and guardians with alarming warnings of treacherous roads ahead for their children, sometimes turning dedication into anxiety and obsessiveness. Instead of chasing trends, psychiatrist Mathilde H. Ross recommends trusting your instincts — and picking up a surprising source of simple, positive guidance on bonding and development. Her reassuring message? "You are quite literally evolved for this."]]>
+      </description>
+      <itunes:subtitle>Is parenting advice leading to more anxious kids? | Mathilde H. Ross</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[Today's experts often overwhelm parents and guardians with alarming warnings of treacherous roads ahead for their children, sometimes turning dedication into anxiety and obsessiveness. Instead of chasing trends, psychiatrist Mathilde H. Ross recommends trusting your instincts — and picking up a surprising source of simple, positive guidance on bonding and development. Her reassuring message? "You are quite literally evolved for this."]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/195725.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/mathilde_h_ross_is_parenting_advice_leading_to_more_anxious_kids?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:147282</guid>
+      <jwplayer:talkId>147282</jwplayer:talkId>
+      <pubDate>Mon, 31 Mar 2025 14:57:48 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:08:34</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/195725.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_147282/83b41898-0fdc-4dde-8368-06169bf7454d/MathildeHRoss_2024N-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_147282/83b41898-0fdc-4dde-8368-06169bf7454d/MathildeHRoss_2024N-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>Why joy and flexibility are good for business | Rosie Sargeant</title>
+      <itunes:author>Rosie Sargeant</itunes:author>
+      <description>
+        <![CDATA[“In the future, companies will succeed or fail based on how much their people enjoy their work,” says management consultant Rosie Sargeant. She offers three tips to make work more joyful, increase employee retention and boost customer satisfaction, suggesting how fun (like kangaroo-themed employee check-ins) can be both professional and profitable.]]>
+      </description>
+      <itunes:subtitle>Why joy and flexibility are good for business | Rosie Sargeant</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[“In the future, companies will succeed or fail based on how much their people enjoy their work,” says management consultant Rosie Sargeant. She offers three tips to make work more joyful, increase employee retention and boost customer satisfaction, suggesting how fun (like kangaroo-themed employee check-ins) can be both professional and profitable.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/193673.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/rosie_sargeant_why_joy_and_flexibility_are_good_for_business?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:145336</guid>
+      <jwplayer:talkId>145336</jwplayer:talkId>
+      <pubDate>Fri, 28 Mar 2025 15:05:14 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:06:35</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/193673.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_145336/3b479708-a27e-4c96-b835-3afcf3c80534/RosieSargent_2024S-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_145336/3b479708-a27e-4c96-b835-3afcf3c80534/RosieSargent_2024S-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>My Big Idea (Ep. 3): The monthly miracle packed with scientific potential | Karli Büchling</title>
+      <itunes:author>Karli Büchling</itunes:author>
+      <description>
+        <![CDATA[Karli Büchling hates blood, but she has devoted herself to studying it in the service of women’s health. Exploring centuries of stigma around the study of women’s health, she unveils a bold idea to unlock medical breakthroughs in the field. Join Karli as she prepares and delivers her big idea in a groundbreaking TED Talk — and gets exciting news that could accelerate her research and help millions worldwide. (This episode contains medical imagery)]]>
+      </description>
+      <itunes:subtitle>My Big Idea (Ep. 3): The monthly miracle packed with scientific potential | Karli Büchling</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[Karli Büchling hates blood, but she has devoted herself to studying it in the service of women’s health. Exploring centuries of stigma around the study of women’s health, she unveils a bold idea to unlock medical breakthroughs in the field. Join Karli as she prepares and delivers her big idea in a groundbreaking TED Talk — and gets exciting news that could accelerate her research and help millions worldwide. (This episode contains medical imagery)]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/196901.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/karli_buchling_my_big_idea_ep_3_the_monthly_miracle_packed_with_scientific_potential?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148162</guid>
+      <jwplayer:talkId>148162</jwplayer:talkId>
+      <pubDate>Thu, 27 Mar 2025 15:18:59 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:17:40</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/196901.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148162/3bb9bed2-98d4-4d03-ad91-a3caddda350a/TED_My_Big_Idea_Karli_YT_no-title.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148162/3bb9bed2-98d4-4d03-ad91-a3caddda350a/TED_My_Big_Idea_Karli_YT_no-title.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>How industrial fishing sinks communities | Lamin Jassey</title>
+      <itunes:author>Lamin Jassey</itunes:author>
+      <description>
+        <![CDATA[What happens when the fish that sustain a community start disappearing? Environmental activist Lamin Jassey shares how industrial fish meal factories are devastating local waters, livelihoods and health in The Gambia — and how communities are organizing to defend their coasts and reclaim their future, one catch at a time.]]>
+      </description>
+      <itunes:subtitle>How industrial fishing sinks communities | Lamin Jassey</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[What happens when the fish that sustain a community start disappearing? Environmental activist Lamin Jassey shares how industrial fish meal factories are devastating local waters, livelihoods and health in The Gambia — and how communities are organizing to defend their coasts and reclaim their future, one catch at a time.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/196413.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/lamin_jassey_how_industrial_fishing_sinks_communities?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:147773</guid>
+      <jwplayer:talkId>147773</jwplayer:talkId>
+      <pubDate>Thu, 27 Mar 2025 14:49:26 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:07:20</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/196413.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_147773/1af08e86-7459-4b86-bf12-3ee085ac1702/LaminJassey_2024T-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_147773/1af08e86-7459-4b86-bf12-3ee085ac1702/LaminJassey_2024T-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>My Big Idea (Ep. 2): Can a boxing gym transform a community? | Percy Tussamba</title>
+      <itunes:author>Percy Tussamba</itunes:author>
+      <description>
+        <![CDATA[Percy Tussamba was born in Angola, but after a very turbulent time for his family, was forced to leave his home and ended up in the UK. Faced with the challenge of starting a new life in an unfamiliar place, he found a sport that changed his life. Now he wants to share his experience and help build community for other refugees, helping them establish themselves and thrive. Follow along as he prepares and delivers his big idea in a moving TED Talk, bringing him one step closer to making his dream a reality. (This video is part of "My Big Idea," a new series from TED that documents the process of imagining and then creating a TED Talk, featuring first-time speakers and ideas new to the TED stage.)]]>
+      </description>
+      <itunes:subtitle>My Big Idea (Ep. 2): Can a boxing gym transform a community? | Percy Tussamba</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[Percy Tussamba was born in Angola, but after a very turbulent time for his family, was forced to leave his home and ended up in the UK. Faced with the challenge of starting a new life in an unfamiliar place, he found a sport that changed his life. Now he wants to share his experience and help build community for other refugees, helping them establish themselves and thrive. Follow along as he prepares and delivers his big idea in a moving TED Talk, bringing him one step closer to making his dream a reality. (This video is part of "My Big Idea," a new series from TED that documents the process of imagining and then creating a TED Talk, featuring first-time speakers and ideas new to the TED stage.)]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/197153.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/percy_tussamba_my_big_idea_ep_2_can_a_boxing_gym_transform_a_community?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:147983</guid>
+      <jwplayer:talkId>147983</jwplayer:talkId>
+      <pubDate>Wed, 26 Mar 2025 17:21:32 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:19:42</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/197153.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_147983/fa1e6334-069f-4d07-ac27-4429c186efec/TED_My_Big_Idea_Percy_YT_no-title.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_147983/fa1e6334-069f-4d07-ac27-4429c186efec/TED_My_Big_Idea_Percy_YT_no-title.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>How disgust drives your politics | Cindy Kam</title>
+      <itunes:author>Cindy Kam</itunes:author>
+      <description>
+        <![CDATA[Would you eat a bug? How about fine-crafted chocolate — shaped like poo? Your answer depends on both your disgust at the prospect and whether you choose to act on that emotion, says political psychologist Cindy Kam. She dives into how the feeling of disgust — whether motivated by real or imagined contamination — can connect or divide us, from everyday decisions to political alliances.]]>
+      </description>
+      <itunes:subtitle>How disgust drives your politics | Cindy Kam</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[Would you eat a bug? How about fine-crafted chocolate — shaped like poo? Your answer depends on both your disgust at the prospect and whether you choose to act on that emotion, says political psychologist Cindy Kam. She dives into how the feeling of disgust — whether motivated by real or imagined contamination — can connect or divide us, from everyday decisions to political alliances.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/196652.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/cindy_kam_how_disgust_drives_your_politics?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:147982</guid>
+      <jwplayer:talkId>147982</jwplayer:talkId>
+      <pubDate>Wed, 26 Mar 2025 14:56:44 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:15:50</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/196652.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_147982/606e7c61-9e84-4c30-9f1d-d7ae05a9cbe4/CindyKam_2024X-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_147982/606e7c61-9e84-4c30-9f1d-d7ae05a9cbe4/CindyKam_2024X-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>My Big Idea (Ep. 1): A joyful way to get outside | Hazel Cottle</title>
+      <itunes:author>Hazel Cottle</itunes:author>
+      <description>
+        <![CDATA[As a mother and occupational therapist, Hazel Cottle knows how important it is for both her kids and her patients to spend time outdoors. It sparks joy, brings people together and improves lives. Yet in the UK, a country where it rains a lot, it can be tempting to stay warm and dry inside the house. Hazel thinks she has the perfect solution to encourage families to get outside — even when it’s wet and dreary. Join Hazel as she prepares and delivers her big idea in a TED Talk — and gets some surprising news that just might bring puddle parks to life.]]>
+      </description>
+      <itunes:subtitle>My Big Idea (Ep. 1): A joyful way to get outside | Hazel Cottle</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[As a mother and occupational therapist, Hazel Cottle knows how important it is for both her kids and her patients to spend time outdoors. It sparks joy, brings people together and improves lives. Yet in the UK, a country where it rains a lot, it can be tempting to stay warm and dry inside the house. Hazel thinks she has the perfect solution to encourage families to get outside — even when it’s wet and dreary. Join Hazel as she prepares and delivers her big idea in a TED Talk — and gets some surprising news that just might bring puddle parks to life.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/196643.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/hazel_cottle_my_big_idea_ep_1_a_joyful_way_to_get_outside?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148017</guid>
+      <jwplayer:talkId>148017</jwplayer:talkId>
+      <pubDate>Tue, 25 Mar 2025 21:31:08 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:16:47</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/196643.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148017/a78bcd02-cff6-4117-a8a0-283f2f723e0e/TED_My_Big_Idea_Hazel_YT_no-title.jpeg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148017/a78bcd02-cff6-4117-a8a0-283f2f723e0e/TED_My_Big_Idea_Hazel_YT_no-title.jpeg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>What if you could give a TED Talk? An inside look at “My Big Idea,” an original series from TED | TED</title>
+      <itunes:author>TED</itunes:author>
+      <description>
+        <![CDATA[If you’ve ever wondered how you can give a TED Talk, you’re not alone. TED believes that ideas change everything — and that they can come from unexpected places. So, we issued an open call to anyone in the UK in search of the biggest, boldest and brightest ideas. Out of 500 applicants, 10 were selected to speak at a special in-person TED event in partnership with TEDxBrighton. In this film, you’ll meet all 10 speakers and follow the process of going from an idea in someone's head to an actual TED Talk on the stage. We’re always looking for the next big idea — maybe yours could be next.]]>
+      </description>
+      <itunes:subtitle>What if you could give a TED Talk? An inside look at “My Big Idea,” an original series from TED | TED</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[If you’ve ever wondered how you can give a TED Talk, you’re not alone. TED believes that ideas change everything — and that they can come from unexpected places. So, we issued an open call to anyone in the UK in search of the biggest, boldest and brightest ideas. Out of 500 applicants, 10 were selected to speak at a special in-person TED event in partnership with TEDxBrighton. In this film, you’ll meet all 10 speakers and follow the process of going from an idea in someone's head to an actual TED Talk on the stage. We’re always looking for the next big idea — maybe yours could be next.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/196904.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/ted_what_if_you_could_give_a_ted_talk_an_inside_look_at_my_big_idea_an_original_series_from_ted?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:148180</guid>
+      <jwplayer:talkId>148180</jwplayer:talkId>
+      <pubDate>Tue, 25 Mar 2025 21:20:21 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:13:57</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/196904.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148180/e37cc002-7d95-435d-9cfd-24738323f7c8/TED_MyBigIdea_YT_EpOverview_01.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_148180/e37cc002-7d95-435d-9cfd-24738323f7c8/TED_MyBigIdea_YT_EpOverview_01.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>The "hot shot rule" to help you become a better leader | Kat Cole</title>
+      <itunes:author>Kat Cole</itunes:author>
+      <description>
+        <![CDATA[Confidence doesn’t come before action — it comes from taking action, says business leader Kat Cole, who worked her way up from waitress to CEO of a global health company. She presents a simple yet powerful practice called the "hot shot rule" to help you step into a leadership mindset, break free from inertia and take decisive action when it matters most.]]>
+      </description>
+      <itunes:subtitle>The "hot shot rule" to help you become a better leader | Kat Cole</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[Confidence doesn’t come before action — it comes from taking action, says business leader Kat Cole, who worked her way up from waitress to CEO of a global health company. She presents a simple yet powerful practice called the "hot shot rule" to help you step into a leadership mindset, break free from inertia and take decisive action when it matters most.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/195004.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/kat_cole_the_hot_shot_rule_to_help_you_become_a_better_leader?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:146987</guid>
+      <jwplayer:talkId>146987</jwplayer:talkId>
+      <pubDate>Tue, 25 Mar 2025 14:42:59 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:07:45</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/195004.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_146987/83bf17c1-7634-4aed-bbb5-7e2e7b442cfb/KatCole_2024N-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_146987/83bf17c1-7634-4aed-bbb5-7e2e7b442cfb/KatCole_2024N-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>A fresh approach to resolving conflicts | Darya Shaikh</title>
+      <itunes:author>Darya Shaikh</itunes:author>
+      <description>
+        <![CDATA[Conflict is an unavoidable part of any relationship. But what if the point of arguing isn't to win, but rather to grow from the experience? Facilitator Darya Shaikh presents a powerful framework for managing conflicts, showing how you can navigate complex conversations and identify pathways for mutual progress despite differences.]]>
+      </description>
+      <itunes:subtitle>A fresh approach to resolving conflicts | Darya Shaikh</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[Conflict is an unavoidable part of any relationship. But what if the point of arguing isn't to win, but rather to grow from the experience? Facilitator Darya Shaikh presents a powerful framework for managing conflicts, showing how you can navigate complex conversations and identify pathways for mutual progress despite differences.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/196693.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/darya_shaikh_a_fresh_approach_to_resolving_conflicts?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:147980</guid>
+      <jwplayer:talkId>147980</jwplayer:talkId>
+      <pubDate>Mon, 24 Mar 2025 14:54:18 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:07:37</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/196693.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_147980/2e422b6c-ba28-4dd3-82b3-db452b6bed3e/DaryaShaikh_2024T-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_147980/2e422b6c-ba28-4dd3-82b3-db452b6bed3e/DaryaShaikh_2024T-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>The key to navigating change with confidence  | Kristy Ellmer</title>
+      <itunes:author>Kristy Ellmer</itunes:author>
+      <description>
+        <![CDATA[What if the change you fear most is actually the best thing for you? Change leader Kristy Ellmer shares a powerful lesson on how even the most difficult transitions, including layoffs and company-wide transformations, can open unexpected doors. She offers tools from behavioral science to help you shift your mindset and navigate uncertainty with confidence — even when every instinct tells you to resist.]]>
+      </description>
+      <itunes:subtitle>The key to navigating change with confidence  | Kristy Ellmer</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[What if the change you fear most is actually the best thing for you? Change leader Kristy Ellmer shares a powerful lesson on how even the most difficult transitions, including layoffs and company-wide transformations, can open unexpected doors. She offers tools from behavioral science to help you shift your mindset and navigate uncertainty with confidence — even when every instinct tells you to resist.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/194028.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/kristy_ellmer_the_key_to_navigating_change_with_confidence?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:145675</guid>
+      <jwplayer:talkId>145675</jwplayer:talkId>
+      <pubDate>Mon, 24 Mar 2025 14:51:15 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:12:43</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/194028.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_145675/2562d8d1-036a-476f-87b9-7c4c95876cab/KristyEllmer_2024S-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_145675/2562d8d1-036a-476f-87b9-7c4c95876cab/KristyEllmer_2024S-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>Why are we sending critical metals to the dump? | Jeff More</title>
+      <itunes:author>Jeff More</itunes:author>
+      <description>
+        <![CDATA[The world is heading toward a massive copper shortage that could derail the clean energy transition, says mining expert Jeff More. He shows how advanced sensing technology could get us back on the right track, drastically cutting down on the wasted materials from traditional mining and helping meet the growing demand for essential metals.]]>
+      </description>
+      <itunes:subtitle>Why are we sending critical metals to the dump? | Jeff More</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[The world is heading toward a massive copper shortage that could derail the clean energy transition, says mining expert Jeff More. He shows how advanced sensing technology could get us back on the right track, drastically cutting down on the wasted materials from traditional mining and helping meet the growing demand for essential metals.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/195836.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/jeff_more_why_are_we_sending_critical_metals_to_the_dump?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:147327</guid>
+      <jwplayer:talkId>147327</jwplayer:talkId>
+      <pubDate>Fri, 21 Mar 2025 14:48:38 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:06:23</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/195836.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_147327/570f738e-1835-4f1d-857b-f822eb22a578/JeffMore_2024T-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_147327/570f738e-1835-4f1d-857b-f822eb22a578/JeffMore_2024T-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>Is generosity the most underrated leadership skill? | Joe Davis</title>
+      <itunes:author>Joe Davis</itunes:author>
+      <description>
+        <![CDATA[Leadership isn’t about a title or position — it’s about generosity, says organizational expert Joe Davis. Drawing on his extensive experience as a people manager, he shares three essential tips for leaders to unlock the potential of their teams by listening generously, embracing vulnerability and leading with humanity — and shows how it's possible to both earn trust and drive results.]]>
+      </description>
+      <itunes:subtitle>Is generosity the most underrated leadership skill? | Joe Davis</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[Leadership isn’t about a title or position — it’s about generosity, says organizational expert Joe Davis. Drawing on his extensive experience as a people manager, he shares three essential tips for leaders to unlock the potential of their teams by listening generously, embracing vulnerability and leading with humanity — and shows how it's possible to both earn trust and drive results.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/193667.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/joe_davis_is_generosity_the_most_underrated_leadership_skill?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:145333</guid>
+      <jwplayer:talkId>145333</jwplayer:talkId>
+      <pubDate>Thu, 20 Mar 2025 14:47:21 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:07:08</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/193667.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_145333/a528a79f-0b7d-4880-b624-0c3e20718170/JoeDavis_2024S-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_145333/a528a79f-0b7d-4880-b624-0c3e20718170/JoeDavis_2024S-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>An ethicist's guide to living a good life | Ira Bedzow</title>
+      <itunes:author>Ira Bedzow</itunes:author>
+      <description>
+        <![CDATA[It's easy to say you have values — but how can you actually put them into action? Ethicist and rabbi Ira Bedzow helps people wrestle with this big question so they can navigate life with a sense of meaning and direction. He sits down with Shoshana Ungerleider, physician and host of the "TED Health" podcast, to discuss why you may have more than one singular purpose, how to define success on your own terms and the role of community in a fulfilling life.]]>
+      </description>
+      <itunes:subtitle>An ethicist's guide to living a good life | Ira Bedzow</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[It's easy to say you have values — but how can you actually put them into action? Ethicist and rabbi Ira Bedzow helps people wrestle with this big question so they can navigate life with a sense of meaning and direction. He sits down with Shoshana Ungerleider, physician and host of the "TED Health" podcast, to discuss why you may have more than one singular purpose, how to define success on your own terms and the role of community in a fulfilling life.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/195858.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/ira_bedzow_an_ethicist_s_guide_to_living_a_good_life?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:147328</guid>
+      <jwplayer:talkId>147328</jwplayer:talkId>
+      <pubDate>Wed, 19 Mar 2025 14:39:30 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:25:05</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/195858.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_147328/9ccdece4-bc1d-4b6e-8ca2-39e1ae09b1e4/IraBedzow_2024N-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_147328/9ccdece4-bc1d-4b6e-8ca2-39e1ae09b1e4/IraBedzow_2024N-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>An NBA champion's advice on being a top teammate | Shane Battier</title>
+      <itunes:author>Shane Battier</itunes:author>
+      <description>
+        <![CDATA[What if the secret to success isn’t being in the spotlight, but making everyone else around you shine? Former NBA player Shane Battier shares how his most impactful moments didn’t come from scoring points but rather from small, underrated actions that helped his team win — and why prioritizing "we" over "me" can create a lasting legacy, both on and off the court.]]>
+      </description>
+      <itunes:subtitle>An NBA champion's advice on being a top teammate | Shane Battier</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[What if the secret to success isn’t being in the spotlight, but making everyone else around you shine? Former NBA player Shane Battier shares how his most impactful moments didn’t come from scoring points but rather from small, underrated actions that helped his team win — and why prioritizing "we" over "me" can create a lasting legacy, both on and off the court.]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/196435.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/shane_battier_an_nba_champion_s_advice_on_being_a_top_teammate?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:147778</guid>
+      <jwplayer:talkId>147778</jwplayer:talkId>
+      <pubDate>Tue, 18 Mar 2025 14:58:41 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:10:34</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/196435.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_147778/3b5f02ee-c5f6-4252-91c4-499ef837d33f/ShaneBattier_2024X-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_147778/3b5f02ee-c5f6-4252-91c4-499ef837d33f/ShaneBattier_2024X-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>A survival guide for musicians in the age of AI | Harvey Mason jr.</title>
+      <itunes:author>Harvey Mason jr.</itunes:author>
+      <description>
+        <![CDATA[Artificial intelligence can write a song in seconds, but does that mean human songwriters will become obsolete? Recording Academy CEO Harvey Mason jr. doesn’t think so. A songwriter himself, he offers a four-step “survival guide” for human creators to endure the age of AI, urging musicians to embrace technology while preserving the emotional essence of human artistry.
+]]>
+      </description>
+      <itunes:subtitle>A survival guide for musicians in the age of AI | Harvey Mason jr.</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[Artificial intelligence can write a song in seconds, but does that mean human songwriters will become obsolete? Recording Academy CEO Harvey Mason jr. doesn’t think so. A songwriter himself, he offers a four-step “survival guide” for human creators to endure the age of AI, urging musicians to embrace technology while preserving the emotional essence of human artistry.
+]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/194852.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/harvey_mason_jr_a_survival_guide_for_musicians_in_the_age_of_ai?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:146813</guid>
+      <jwplayer:talkId>146813</jwplayer:talkId>
+      <pubDate>Tue, 18 Mar 2025 14:41:09 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:12:51</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/194852.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_146813/f274210f-5473-4355-8310-916fcade1cbb/HarveyMason_2024S-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_146813/f274210f-5473-4355-8310-916fcade1cbb/HarveyMason_2024S-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+    <item>
+      <title>How to see the future coming — and prepare for it | Jane McGonigal</title>
+      <itunes:author>Jane McGonigal</itunes:author>
+      <description>
+        <![CDATA[As a futurist who helps people prepare for all different kinds of possibilities, Jane McGonigal thinks we overuse words like "unthinkable" and "unimaginable." She introduces three hypothetical scenarios, showing how you can foster the ability to think creatively, anticipate new risks and feel ready for whatever the future may hold. (Created in collaboration with Ignite Talks)]]>
+      </description>
+      <itunes:subtitle>How to see the future coming — and prepare for it | Jane McGonigal</itunes:subtitle>
+      <itunes:summary>
+        <![CDATA[As a futurist who helps people prepare for all different kinds of possibilities, Jane McGonigal thinks we overuse words like "unthinkable" and "unimaginable." She introduces three hypothetical scenarios, showing how you can foster the ability to think creatively, anticipate new risks and feel ready for whatever the future may hold. (Created in collaboration with Ignite Talks)]]>
+      </itunes:summary>
+      <enclosure length="" type="video/mp4" url="https://download.ted.com/products/194900.mp4?apikey=172BB350-0205"/>
+      <link>https://www.ted.com/talks/jane_mcgonigal_how_to_see_the_future_coming_and_prepare_for_it?rss=172BB350-0205</link>
+      <guid isPermaLink="false">en.video.talk.ted.com:146814</guid>
+      <jwplayer:talkId>146814</jwplayer:talkId>
+      <pubDate>Mon, 17 Mar 2025 15:02:39 +0000</pubDate>
+      <category>Higher Education</category>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:duration>00:05:38</itunes:duration>
+      <itunes:keywords>TED</itunes:keywords>
+      <media:content fileSize="" type="video/mp4" url="https://download.ted.com/products/194900.mp4?apikey=172BB350-0205"/>
+      <media:thumbnail height="360" url="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_146814/615e1d50-de0c-4af1-83a9-cd13bfe21e04/JaneMcGonigal_2024N-embed.jpg?h=360&amp;origin=rss&amp;w=480" width="480"/>
+      <itunes:image href="https://pi.tedcdn.com/r/talkstar-assets.s3.amazonaws.com/production/talks/talk_146814/615e1d50-de0c-4af1-83a9-cd13bfe21e04/JaneMcGonigal_2024N-embed.jpg?"/>
+    <author>contact@ted.com (TED)</author></item>
+  </channel>
+</rss>

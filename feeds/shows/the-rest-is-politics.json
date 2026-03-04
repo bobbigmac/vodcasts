@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other episodes",
+  "leftovers_title_full": "Other episodes — The Rest Is Politics",
+  "leftovers_description": "Episodes outside the main The Rest Is Politics row.",
+  "shows": [
+    {
+      "id": "episodes",
+      "title": "The Rest Is Politics",
+      "title_full": "The Rest Is Politics — Goalhanger",
+      "description": "Politics discussion and interviews.",
+      "categories": ["news", "politics"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

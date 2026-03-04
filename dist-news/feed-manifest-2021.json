@@ -1,0 +1,114 @@
+{
+  "feeds": [
+    {
+      "id": "science-friday-video",
+      "episodes": [
+        {
+          "id": "https://www.sciencefriday.com/?post_type=video&p=64361",
+          "slug": "2021-12-15-wondrous-beauty-made-from-dead-insects-1fwppe",
+          "title": "Wondrous Beauty Made From Dead Insects",
+          "link": "https://www.sciencefriday.com/videos/cicada-insect-art/",
+          "dateText": "2021-12-15",
+          "channelTitle": "Science Friday Videos",
+          "durationSec": null,
+          "media": {
+            "url": "http://www.sciencefriday.com/podcast-download/64361/cicada-insect-art",
+            "type": "video/mp4",
+            "bytes": 1642,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "http://www.sciencefriday.com/wp-content/uploads/2021/12/MagicicadaWall.gif",
+          "descriptionShort": "Artist Jennifer Angus creates a celebration of cicadas and insects in her eye-catching collages and dioramas."
+        },
+        {
+          "id": "https://www.sciencefriday.com/?post_type=video&p=64317",
+          "slug": "2021-12-08-a-tour-through-maria-ferreira-s-crystal-gardens-aaozgg",
+          "title": "A Tour Through Maria Ferreira’s Crystal Gardens",
+          "link": "https://www.sciencefriday.com/videos/crystal-art/",
+          "dateText": "2021-12-08",
+          "channelTitle": "Science Friday Videos",
+          "durationSec": null,
+          "media": {
+            "url": "http://www.sciencefriday.com/podcast-download/64317/crystal-art",
+            "type": "video/mp4",
+            "bytes": 1651,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "http://www.sciencefriday.com/wp-content/uploads/2021/12/RevealingCrystals.gif",
+          "descriptionShort": "Blending chemistry, physics, and animation, artist Maria Constanza Ferreira grows tiny gardens of crystals to create dazzling images."
+        },
+        {
+          "id": "https://www.sciencefriday.com/?post_type=video&p=64135",
+          "slug": "2021-11-17-how-climate-change-is-giving-maine-s-wild-blueberries-the-blu-zulwea",
+          "title": "How Climate Change Is Giving Maine’s Wild Blueberries The Blues",
+          "link": "https://www.sciencefriday.com/videos/maine-wild-blueberries-climate-change/",
+          "dateText": "2021-11-17",
+          "channelTitle": "Science Friday Videos",
+          "durationSec": null,
+          "media": {
+            "url": "http://www.sciencefriday.com/podcast-download/64135/maine-wild-blueberries-climate-change",
+            "type": "video/mp4",
+            "bytes": 1651,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "http://www.sciencefriday.com/wp-content/uploads/2021/11/Blueberry-Gif-2.gif",
+          "descriptionShort": "Climate change is threatening Maine&#039;s native blueberries. These researchers are looking to provide solutions—and help farmers in the process."
+        },
+        {
+          "id": "https://www.sciencefriday.com/?post_type=video&p=64024",
+          "slug": "2021-11-10-how-puffins-on-the-gulf-of-maine-act-as-sentinels-of-climate--tn2aar",
+          "title": "How Puffins On The Gulf Of Maine Act As ‘Sentinels Of Climate Change’",
+          "link": "https://www.sciencefriday.com/videos/puffins-maine-climate-change/",
+          "dateText": "2021-11-10",
+          "channelTitle": "Science Friday Videos",
+          "durationSec": null,
+          "media": {
+            "url": "http://www.sciencefriday.com/podcast-download/64024/puffins-maine-climate-change",
+            "type": "video/mp4",
+            "bytes": 1633,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "http://www.sciencefriday.com/wp-content/uploads/2021/11/Puffin1.gif",
+          "descriptionShort": "Learn how conservationists live on an isolated island to study Maine&#039;s puffin population, and how the birds are dealing with warming seas."
+        },
+        {
+          "id": "https://www.sciencefriday.com/?post_type=video&p=60537",
+          "slug": "2021-02-10-these-stunning-images-were-created-using-the-forces-behind-ev-1wis45",
+          "title": "These Stunning Images Were Created Using The Forces Behind Evolution",
+          "link": "https://www.sciencefriday.com/videos/emergence-machine-learning-art-images/",
+          "dateText": "2021-02-10",
+          "channelTitle": "Science Friday Videos",
+          "durationSec": null,
+          "media": {
+            "url": "http://www.sciencefriday.com/podcast-download/60537/emergence-machine-learning-art-images",
+            "type": "video/mp4",
+            "bytes": 1654,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "http://www.sciencefriday.com/wp-content/uploads/2021/03/weird-art.gif",
+          "descriptionShort": "A computer programmer and artist discovers inspiration in biological growth processes."
+        }
+      ]
+    }
+  ]
+}

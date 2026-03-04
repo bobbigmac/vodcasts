@@ -1,0 +1,763 @@
+{
+  "feeds": [
+    {
+      "id": "bbc-world-service-global-news-podcast",
+      "episodes": [
+        {
+          "id": "urn:bbc:podcast:p0n4m16l",
+          "slug": "2026-03-04-us-submarine-sinks-iranian-warship-in-indian-ocean-azl5ez",
+          "title": "US submarine sinks Iranian warship in Indian Ocean",
+          "link": "http://www.bbc.co.uk/programmes/p0n4m16l",
+          "dateText": "2026-03-04",
+          "channelTitle": "Global News Podcast",
+          "durationSec": 1553,
+          "media": {
+            "url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0n4lztf.mp3",
+            "type": "audio/mpeg",
+            "bytes": 12424000,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "http://ichef.bbci.co.uk/images/ic/3000x3000/p0n4m1ck.jpg",
+          "descriptionShort": "The Pentagon has released footage of a US submarine firing on an Iranian warship in the Indian Ocean and sinking it. Earlier, the Sri Lankan Navy…"
+        },
+        {
+          "id": "urn:bbc:podcast:p0n4gs02",
+          "slug": "2026-03-04-us-congress-receives-classified-briefing-on-war-with-iran-1i6rlq",
+          "title": "US Congress receives classified briefing on war with Iran",
+          "link": "http://www.bbc.co.uk/programmes/p0n4gs02",
+          "dateText": "2026-03-04",
+          "channelTitle": "Global News Podcast",
+          "durationSec": 1646,
+          "media": {
+            "url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0n4grsf.mp3",
+            "type": "audio/mpeg",
+            "bytes": 13168000,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "http://ichef.bbci.co.uk/images/ic/3000x3000/p0n4gs0x.jpg",
+          "descriptionShort": "As the US-Israel war with Iran continues the Trump administration is facing mounting calls from Congress to explain why it started its campaign now,…"
+        },
+        {
+          "id": "urn:bbc:podcast:p0n4dfz7",
+          "slug": "2026-03-03-israel-hits-tehran-and-beirut-with-simultaneous-strikes-1eluet",
+          "title": "Israel hits Tehran and Beirut with 'simultaneous strikes'",
+          "link": "http://www.bbc.co.uk/programmes/p0n4dfz7",
+          "dateText": "2026-03-03",
+          "channelTitle": "Global News Podcast",
+          "durationSec": 1579,
+          "media": {
+            "url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0n4dbbj.mp3",
+            "type": "audio/mpeg",
+            "bytes": 12632000,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "http://ichef.bbci.co.uk/images/ic/3000x3000/p0n4dg3h.jpg",
+          "descriptionShort": "The Israeli defence minister says he has told troops to \"take control\" of new positions in Lebanon. The IDF says it's targeting Hezbollah. Israel…"
+        },
+        {
+          "id": "urn:bbc:podcast:p0n48pjt",
+          "slug": "2026-03-03-iran-widens-retaliatory-attacks-in-gulf-countries-xndail",
+          "title": "Iran widens retaliatory attacks in Gulf countries",
+          "link": "http://www.bbc.co.uk/programmes/p0n48pjt",
+          "dateText": "2026-03-03",
+          "channelTitle": "Global News Podcast",
+          "durationSec": 1606,
+          "media": {
+            "url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0n48pcb.mp3",
+            "type": "audio/mpeg",
+            "bytes": 12848000,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "http://ichef.bbci.co.uk/images/ic/3000x3000/p0n48pl3.jpg",
+          "descriptionShort": "On the fourth day of the US and Israel's war against Iran, Tehran has widened its retaliatory attacks in the Gulf region, with two of its drones…"
+        },
+        {
+          "id": "urn:bbc:podcast:p0n46jrk",
+          "slug": "2026-03-02-us-says-iran-war-will-not-be-endless-14pkqs",
+          "title": "US says Iran war will not be 'endless'",
+          "link": "http://www.bbc.co.uk/programmes/p0n46jrk",
+          "dateText": "2026-03-02",
+          "channelTitle": "Global News Podcast",
+          "durationSec": 1549,
+          "media": {
+            "url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0n46hcx.mp3",
+            "type": "audio/mpeg",
+            "bytes": 12392000,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "http://ichef.bbci.co.uk/images/ic/3000x3000/p0n46k1s.jpg",
+          "descriptionShort": "The US and Israel strike targets across Iran for a third day. The American Secretary of Defence, Pete Hegseth, says Washington's objectives won't be…"
+        },
+        {
+          "id": "urn:bbc:podcast:p0n42r1x",
+          "slug": "2026-03-02-trump-warns-of-more-us-deaths-in-iran-war-1jcoa9",
+          "title": "Trump warns of more US deaths in Iran war",
+          "link": "http://www.bbc.co.uk/programmes/p0n42r1x",
+          "dateText": "2026-03-02",
+          "channelTitle": "Global News Podcast",
+          "durationSec": 1566,
+          "media": {
+            "url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0n42qvs.mp3",
+            "type": "audio/mpeg",
+            "bytes": 12528000,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "http://ichef.bbci.co.uk/images/ic/3000x3000/p0n42r3b.jpg",
+          "descriptionShort": "President Donald Trump has warned that more American military personnel are likely to be killed as the US and Israel continue their attacks on Iran.…"
+        },
+        {
+          "id": "urn:bbc:podcast:p0n417wy",
+          "slug": "2026-03-01-the-happy-pod-the-chance-encounter-that-became-a-lasting-frie-r4ninz",
+          "title": "The Happy Pod: The chance encounter that became a lasting friendship",
+          "link": "http://www.bbc.co.uk/programmes/p0n417wy",
+          "dateText": "2026-03-01",
+          "channelTitle": "Global News Podcast",
+          "durationSec": 1589,
+          "media": {
+            "url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0n417l2.mp3",
+            "type": "audio/mpeg",
+            "bytes": 12712000,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "http://ichef.bbci.co.uk/images/ic/3000x3000/p0n417zz.jpg",
+          "descriptionShort": "We meet two women who have forged an unconventional friendship after meeting by chance more than four years ago. Neena found Carol's lost subway…"
+        },
+        {
+          "id": "urn:bbc:podcast:p0n413nl",
+          "slug": "2026-03-01-israel-continues-to-strike-iran-after-ayatollah-s-death-awru31",
+          "title": "Israel continues to strike Iran after Ayatollah's death",
+          "link": "http://www.bbc.co.uk/programmes/p0n413nl",
+          "dateText": "2026-03-01",
+          "channelTitle": "Global News Podcast",
+          "durationSec": 1793,
+          "media": {
+            "url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0n412vt.mp3",
+            "type": "audio/mpeg",
+            "bytes": 14344000,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "http://ichef.bbci.co.uk/images/ic/3000x3000/p0n413pc.jpg",
+          "descriptionShort": "Israel is launching strikes on Iran for a second day after initial joint attacks with the US killed the Supreme Leader Ayatollah Ali Khamenei.…"
+        },
+        {
+          "id": "urn:bbc:podcast:p0n3yy2y",
+          "slug": "2026-03-01-iran-s-supreme-leader-killed-in-us-israeli-strikes-1gl1n6",
+          "title": "Iran's Supreme Leader killed in US-Israeli strikes",
+          "link": "http://www.bbc.co.uk/programmes/p0n3yy2y",
+          "dateText": "2026-03-01",
+          "channelTitle": "Global News Podcast",
+          "durationSec": 1597,
+          "media": {
+            "url": "http://open.live.bbc.co.uk/mediaselector/6/redir/version/2.0/mediaset/audio-nondrm-download-rss-low/proto/http/vpid/p0n3yxyc.mp3",
+            "type": "audio/mpeg",
+            "bytes": 12776000,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "http://ichef.bbci.co.uk/images/ic/3000x3000/p0n3yy4t.jpg",
+          "descriptionShort": "Iran's Supreme Leader, Ayatollah Ali Khamenei, has been killed in his office by US and Israeli strikes - ending his 36-year iron rule of the Islamic…"
+        }
+      ]
+    },
+    {
+      "id": "npr-up-first",
+      "episodes": [
+        {
+          "id": "ce704bab-9303-49be-ae42-6be2953b3b55",
+          "slug": "2026-03-04-middle-east-war-intensifies-trump-s-rational-for-war-first-mi-1q8am3",
+          "title": "Middle East War Intensifies, Trump's Rational For War, First Midterm Primaries",
+          "link": "https://www.npr.org/2026/03/04/nx-s1-5735494/middle-east-war-intensifies-trumps-rational-for-war-first-midterm-primaries",
+          "dateText": "2026-03-04",
+          "channelTitle": "Up First from NPR",
+          "durationSec": 829,
+          "media": {
+            "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/traffic.megaphone.fm/NPR5077613722.mp3?t=podcast&e=nx-s1-5735494&p=510318&d=829&size=13278608",
+            "type": "audio/mpeg",
+            "bytes": 13278608,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "The Middle East war is in its fifth day as the U.S. and Israel keep striking targets across Iran and Lebanon, Iran retaliates into the Gulf, and…"
+        },
+        {
+          "id": "b907a520-ca92-4d6e-a8ac-23a941ad946e",
+          "slug": "2026-03-03-middle-east-at-war-congress-briefed-on-war-texas-and-north-ca-e7ilal",
+          "title": "Middle East At War, Congress Briefed On War, Texas and North Carolina Primaries",
+          "link": "https://www.npr.org/2026/03/03/nx-s1-5733810/middle-east-at-war-congress-briefed-on-war-texas-and-north-carolina-primaries",
+          "dateText": "2026-03-03",
+          "channelTitle": "Up First from NPR",
+          "durationSec": 790,
+          "media": {
+            "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/traffic.megaphone.fm/NPR9950879329.mp3?t=podcast&e=nx-s1-5733810&p=510318&d=790&size=12649161",
+            "type": "audio/mpeg",
+            "bytes": 12649161,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "The State Department is urging Americans in the Middle East to leave as Iranian attacks continue, including a drone strike on the U.S. embassy in…"
+        },
+        {
+          "id": "3794005e-b739-48a1-9dde-9ae19b1c2245",
+          "slug": "2026-03-02-us-israeli-war-with-iran-trump-s-war-address-gulf-countries-b-arxlsd",
+          "title": "US Israeli War With Iran, Trump's War Address, Gulf Countries Bear The Brunt",
+          "link": "https://www.npr.org/2026/03/02/nx-s1-5732179/us-israeli-war-with-iran-trumps-war-address-gulf-countries-bear-the-brunt",
+          "dateText": "2026-03-02",
+          "channelTitle": "Up First from NPR",
+          "durationSec": 934,
+          "media": {
+            "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/traffic.megaphone.fm/NPR2961530383.mp3?t=podcast&e=nx-s1-5732179&p=510318&d=934&size=14950445",
+            "type": "audio/mpeg",
+            "bytes": 14950445,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "It is day three of the U.S. Israeli war with Iran as the fighting widens with Tehran launching retaliatory attacks across the Middle East, and…"
+        },
+        {
+          "id": "431a5022-60ea-4ce0-8ee5-58afbef7738a",
+          "slug": "2026-03-01-bet-on-anything-everywhere-all-at-once-1byq5x",
+          "title": "Bet on Anything, Everywhere, All at Once",
+          "link": "https://www.npr.org/2026/03/01/nx-s1-5718399/trumps-big-bet-on-prediction-markets",
+          "dateText": "2026-03-01",
+          "channelTitle": "Up First from NPR",
+          "durationSec": 1599,
+          "media": {
+            "url": "https://prfx.byspotify.com/e/play.podtrac.com/npr-510318/traffic.megaphone.fm/NPR1953785542.mp3?t=podcast&e=nx-s1-5718399&p=510318&d=1599&size=25596744",
+            "type": "audio/mpeg",
+            "bytes": 25596744,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F8a%2F43%2F67aae53f491f94f9ee4f44777436%2F87a7011d-773d-49ee-be5d-c88d486d4dc9.jpg",
+          "descriptionShort": "The rise of prediction markets means you can now bet on just about anything, right from your phone. Apps like Kalshi and Polymarket have grown…"
+        }
+      ]
+    },
+    {
+      "id": "reuters-world-news",
+      "episodes": [
+        {
+          "id": "a8a7f6e4-17a6-11f1-afb3-0f63b37faca6",
+          "slug": "2026-03-04-update-the-iran-war-nato-warship-torpedoed-and-khamenei-s-son-1pu6jq",
+          "title": "UPDATE – The Iran war: NATO, warship torpedoed and Khamenei’s son",
+          "link": "",
+          "dateText": "2026-03-04",
+          "channelTitle": "Reuters World News",
+          "durationSec": 753,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/THRH9210012743.mp3?updated=1772640389",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/a8a7f6e4-17a6-11f1-afb3-0f63b37faca6/image/361d23014287d7e7c25a1a3ff1f21897.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "*This podcast has been updated for the latest news on the US-Israeli war with details of the U.S. sinking an Iranian warship off Sri Lanka’s coast,…"
+        },
+        {
+          "id": "9017c928-16df-11f1-9e73-2fe366ce2129",
+          "slug": "2026-03-03-iran-strait-of-hormuz-us-allies-and-prediction-markets-1a9md3",
+          "title": "Iran: Strait of Hormuz, US allies and prediction markets",
+          "link": "",
+          "dateText": "2026-03-03",
+          "channelTitle": "Reuters World News",
+          "durationSec": 789,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/THRH4399210937.mp3?updated=1772568793",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/9017c928-16df-11f1-9e73-2fe366ce2129/image/8fa9f8699a4900f6550e74512851cd55.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "Iran closes the Strait of Hormuz and hits energy infrastructure in the Gulf. America’s European allies walk a tightrope. And online prediction…"
+        },
+        {
+          "id": "7e0f5a00-161e-11f1-8012-179fe706851c",
+          "slug": "2026-03-02-iran-conflict-widens-as-midterms-approach-clnvs2",
+          "title": "Iran conflict widens as midterms approach",
+          "link": "",
+          "dateText": "2026-03-02",
+          "channelTitle": "Reuters World News",
+          "durationSec": 799,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/THRH1668817602.mp3?updated=1772454638",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/7e0f5a00-161e-11f1-8012-179fe706851c/image/ffca523c32b0e2e8bc702f942459c255.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "The Iran conflict widens as Israel strikes Lebanon following attacks by Hezbollah, and the risk of a regional war with Iranian proxies ramps up.…"
+        },
+        {
+          "id": "babe86d2-157f-11f1-a878-c30c711d0b40",
+          "slug": "2026-03-01-iran-s-leadership-retaliation-travel-and-oil-disruption-and-t-10jqtb",
+          "title": "Iran’s leadership, retaliation, travel and oil disruption and Trump’s plan",
+          "link": "",
+          "dateText": "2026-03-01",
+          "channelTitle": "Reuters World News",
+          "durationSec": 760,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/THRH4170560108.mp3?updated=1772397034",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/babe86d2-157f-11f1-a878-c30c711d0b40/image/4f5780ad03575934d8c8f39904369fe6.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "Israel has launched a new wave of strikes on Tehran after killing Iran's supreme leader and leaving the Islamic Republic grappling to rebuild its…"
+        },
+        {
+          "id": "07b1a76e-1515-11f1-88d9-234e9dcb9d2c",
+          "slug": "2026-03-01-a-historic-day-in-iran-ayatollah-khamenei-is-dead-asv8ew",
+          "title": "A historic day in Iran: Ayatollah Khamenei is dead",
+          "link": "",
+          "dateText": "2026-03-01",
+          "channelTitle": "Reuters World News",
+          "durationSec": 777,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/THRH3488103184.mp3?updated=1772335838",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Listen to our correspondents discuss the latest developments in Iran , including the death of Supreme Leader Ayatollah Ali Khamenei . With Khamenei…"
+        }
+      ]
+    },
+    {
+      "id": "the-economist-the-intelligence",
+      "episodes": [
+        {
+          "id": "69a812ccb5381e1c013d35a3",
+          "slug": "2026-03-04-crude-awakening-iran-oil-shock-1xru9h",
+          "title": "Crude awakening: Iran oil shock",
+          "link": "https://shows.acast.com/theintelligencepodcast/episodes/crude-awakening-iran-oil-shock",
+          "dateText": "2026-03-04",
+          "channelTitle": "The Intelligence from The Economist",
+          "durationSec": 1280,
+          "media": {
+            "url": "https://sphinx.acast.com/p/acast/s/theintelligencepodcast/e/69a812ccb5381e1c013d35a3/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=8Va1fhoRVemdKKfZDgZeKLBhGsTe1t5B-pPFCUCUPQU",
+            "type": "audio/mpeg",
+            "bytes": 51213988,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://assets.pippa.io/shows/62e286a934d4d93d6587424a/1772622478500-4dc45f2f-c23a-40b4-be1d-c208b43973f4.jpeg",
+          "descriptionShort": "As America and Israel continue to bombard Iran, much of Iran’s retaliation is directed against energy infrastructure . With tankers blocked and oil…"
+        },
+        {
+          "id": "69a6ca2b34c1aedaaa848fe0",
+          "slug": "2026-03-03-escalation-middle-east-war-widens-cruzf0",
+          "title": "Escalation: Middle East war widens",
+          "link": "https://shows.acast.com/theintelligencepodcast/episodes/escalation-middle-east-war-widens",
+          "dateText": "2026-03-03",
+          "channelTitle": "The Intelligence from The Economist",
+          "durationSec": 1482,
+          "media": {
+            "url": "https://sphinx.acast.com/p/acast/s/theintelligencepodcast/e/69a6ca2b34c1aedaaa848fe0/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=YBGOw_v7CxJfQvbFoEKIZQVa-2YiUuCShqzqupwTb3A",
+            "type": "audio/mpeg",
+            "bytes": 59297312,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://assets.pippa.io/shows/62e286a934d4d93d6587424a/1772538141148-6142560a-73d1-424f-b9f5-d0849a0157b0.jpeg",
+          "descriptionShort": "The war in Iran has entered its fourth day with further American and Israeli strikes, and Iranian retaliation across the region. Now Israel’s prime…"
+        },
+        {
+          "id": "69a577beccf5ebd4b1b12390",
+          "slug": "2026-03-02-war-with-iran-middle-east-in-flames-15hxno",
+          "title": "War with Iran: Middle East in flames",
+          "link": "https://shows.acast.com/theintelligencepodcast/episodes/war-with-iran-middle-east-in-flames",
+          "dateText": "2026-03-02",
+          "channelTitle": "The Intelligence from The Economist",
+          "durationSec": 1758,
+          "media": {
+            "url": "https://sphinx.acast.com/p/acast/s/theintelligencepodcast/e/69a577beccf5ebd4b1b12390/media.mp3?tk=eyJ0ayI6ImRlZmF1bHQiLCJhZHMiOnRydWUsInNwb25zIjp0cnVlLCJzdGF0dXMiOiJwdWJsaWMifQ==&sig=tryVN3EsGyPX8Krjq5TmA7n_AFGdUcS47SXM5228DRE",
+            "type": "audio/mpeg",
+            "bytes": 70338148,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://assets.pippa.io/shows/62e286a934d4d93d6587424a/1772451728006-063982ad-6c27-4c3c-a8c5-317d8fe71f90.jpeg",
+          "descriptionShort": "This weekend, America and Israel launched long-anticipated attacks on Iran , killing Ali Khamenei, the country’s supreme leader. Our correspondents…"
+        }
+      ]
+    },
+    {
+      "id": "wsj-the-journal",
+      "episodes": [
+        {
+          "id": "790c8626-1755-11f1-ba08-cbaca18724b3",
+          "slug": "2026-03-03-trump-s-shifting-reasons-for-war-with-iran-1pqcoy",
+          "title": "Trump’s Shifting Reasons for War With Iran",
+          "link": "",
+          "dateText": "2026-03-03",
+          "channelTitle": "The Journal.",
+          "durationSec": 1217,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ7223547933.mp3?updated=1772580497",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "The U.S.’s war with Iran has entered its fourth day . The Trump administration has given several reasons for initiating attacks on Iran. All of them…"
+        },
+        {
+          "id": "36f08c40-1685-11f1-8e39-b339cf60dc52",
+          "slug": "2026-03-02-what-s-next-for-iran-o8kvh3",
+          "title": "What’s Next for Iran?",
+          "link": "",
+          "dateText": "2026-03-02",
+          "channelTitle": "The Journal.",
+          "durationSec": 1171,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ5803398299.mp3?updated=1772524541",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "After a joint U.S. and Israeli military campaign against Iran killed Supreme Leader Ayatollah Ali Khamenei , Iran has launched its own strikes in…"
+        },
+        {
+          "id": "a52fdc7e-1559-11f1-a239-3f464ee9c386",
+          "slug": "2026-03-01-camp-swamp-road-ep-6-your-side-their-side-and-the-truth-13g4zn",
+          "title": "Camp Swamp Road Ep. 6: Your Side, Their Side and the Truth",
+          "link": "",
+          "dateText": "2026-03-01",
+          "channelTitle": "The Journal.",
+          "durationSec": 3172,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/WSJ3250341799.mp3?updated=1772395362",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/a52fdc7e-1559-11f1-a239-3f464ee9c386/image/62724379946ace5a33ec8a2ad36ed904.jpeg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "If you want to start on episode one, or hear the full series up to this point, click on this playlist . Jennifer Spivey Foley has her day in court.…"
+        }
+      ]
+    },
+    {
+      "id": "vox-today-explained",
+      "episodes": [
+        {
+          "id": "a14b7276-72de-11f0-9be1-935c4f6e8f40",
+          "slug": "2026-03-04-ai-goes-to-war-hqsk39",
+          "title": "AI goes to war",
+          "link": "",
+          "dateText": "2026-03-04",
+          "channelTitle": "Today, Explained",
+          "durationSec": 1558,
+          "media": {
+            "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP9367924952.mp3?updated=1772648773",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/a14b7276-72de-11f0-9be1-935c4f6e8f40/image/63495a4d73e3beeb7aca1576a47e63ff.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "The US military is using AI to wage war while AI companies are fighting about how their tech is used. This episode was produced by Hady Mawajdeh and…"
+        },
+        {
+          "id": "a0dca15c-72de-11f0-9be1-733fb342996b",
+          "slug": "2026-03-03-maha-moms-are-mad-1t05sy",
+          "title": "MAHA moms are mad",
+          "link": "",
+          "dateText": "2026-03-03",
+          "channelTitle": "Today, Explained",
+          "durationSec": 1550,
+          "media": {
+            "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP4026678050.mp3?updated=1772564922",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/a0dca15c-72de-11f0-9be1-733fb342996b/image/01c73c7b293fc7381e9ea6187e1709b6.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "An executive order regarding pesticides has infuriated some of the most powerful people in the MAHA movement. This episode was produced by Danielle…"
+        },
+        {
+          "id": "a07edb94-72de-11f0-9be1-a7ffb10366ba",
+          "slug": "2026-03-02-a-man-no-plan-iran-qdipgj",
+          "title": "A man, no plan, Iran",
+          "link": "",
+          "dateText": "2026-03-02",
+          "channelTitle": "Today, Explained",
+          "durationSec": 1551,
+          "media": {
+            "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP4568209399.mp3?updated=1772478721",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/a07edb94-72de-11f0-9be1-a7ffb10366ba/image/7544116804e101373fd8e77a56c15611.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "President Trump got what he wanted in Iran: a change in leadership. But what he wants next isn't clear... and seems to change by the minute. This…"
+        },
+        {
+          "id": "bb794826-72de-11f0-8fea-9febd37cb164",
+          "slug": "2026-03-01-you-me-and-adhd-yqy07v",
+          "title": "You, me, and ADHD",
+          "link": "",
+          "dateText": "2026-03-01",
+          "channelTitle": "Today, Explained",
+          "durationSec": 1828,
+          "media": {
+            "url": "https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP7430879877.mp3?updated=1772140911",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/bb794826-72de-11f0-8fea-9febd37cb164/image/061284a4a9e5d121634185e3292a8d50.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "It’s not just for school kids anymore. Why more adults are getting diagnosed with the disorder. This episode was produced by Avishay Artsy, edited…"
+        }
+      ]
+    },
+    {
+      "id": "the-rest-is-politics",
+      "episodes": [
+        {
+          "id": "7f624a78-1747-11f1-bb46-874513708585",
+          "slug": "2026-03-04-508-is-starmer-sleepwalking-into-war-with-iran-kc2skf",
+          "title": "508. Is Starmer Sleepwalking into War with Iran?",
+          "link": "",
+          "dateText": "2026-03-04",
+          "channelTitle": "The Rest Is Politics",
+          "durationSec": 3659,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/GLT7831891142.mp3?updated=1772576149",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/7f624a78-1747-11f1-bb46-874513708585/image/4f5cb456c3c2406b774d0df99378ae96.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "Is Keir Starmer sleepwalking into a war Britain never agreed to fight? What are Trump's real objectives in attacking Iran? How far will Iran's…"
+        },
+        {
+          "id": "c773d0e8-1594-11f1-9c70-6b4b866f7f8f",
+          "slug": "2026-03-01-507-the-ayatollah-is-killed-reaction-7g2l2k",
+          "title": "507. The Ayatollah Is Killed - REACTION",
+          "link": "",
+          "dateText": "2026-03-01",
+          "channelTitle": "The Rest Is Politics",
+          "durationSec": 3807,
+          "media": {
+            "url": "https://pdst.fm/e/traffic.megaphone.fm/GLT1520162215.mp3?updated=1772390790",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/c773d0e8-1594-11f1-9c70-6b4b866f7f8f/image/6fd1d3af3337b9ded22a49ad21cd4a64.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "With the confirmation of the death of Iran's Supreme Leader confirmed, where does this leave the regime? Who is being targeted in Iran's retaliation…"
+        }
+      ]
+    },
+    {
+      "id": "intelligence-squared",
+      "episodes": [
+        {
+          "id": "d4c90c8a-16f3-11f1-a5b4-572bd763cf69",
+          "slug": "2026-03-04-what-does-it-take-to-run-goldman-sachs-during-a-meltdown-with-7x7ybm",
+          "title": "What Does It Take to Run Goldman Sachs During a Meltdown? With Former CEO Lloyd Blankfein",
+          "link": "",
+          "dateText": "2026-03-04",
+          "channelTitle": "Intelligence Squared",
+          "durationSec": 2694,
+          "media": {
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR5301328012.mp3?updated=1772538135",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/d4c90c8a-16f3-11f1-a5b4-572bd763cf69/image/6220e1858ab897b2431dc24f68eb51a5.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "What does it take to lead one of the world’s most powerful banks when the global financial system is on the brink of collapse? As CEO for Goldman…"
+        },
+        {
+          "id": "96795d3a-13f2-11f1-9db9-1b690c29f4c6",
+          "slug": "2026-03-02-cnn-s-christiane-amanpour-on-trump-iran-and-the-world-in-2026-b2zva9",
+          "title": "CNN's Christiane Amanpour on Trump, Iran and the World in 2026 (Part Two)",
+          "link": "",
+          "dateText": "2026-03-02",
+          "channelTitle": "Intelligence Squared",
+          "durationSec": 2329,
+          "media": {
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR1173224002.mp3?updated=1772207370",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/96795d3a-13f2-11f1-9db9-1b690c29f4c6/image/f46718d271dd86a5f941d1768ca853fb.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "As one of the world’s most respected journalists, CNN’s chief international anchor Christiane Amanpour has witnessed some of the most consequential…"
+        },
+        {
+          "id": "54125a78-13f2-11f1-98aa-5bebf2cea64e",
+          "slug": "2026-03-01-cnn-s-christiane-amanpour-on-trump-iran-and-the-world-in-2026-e2tb20",
+          "title": "CNN's Christiane Amanpour on Trump, Iran and the World in 2026 (Part One)",
+          "link": "",
+          "dateText": "2026-03-01",
+          "channelTitle": "Intelligence Squared",
+          "durationSec": 2271,
+          "media": {
+            "url": "https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR7516521939.mp3?updated=1772207241",
+            "type": "audio/mpeg",
+            "bytes": null,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://megaphone.imgix.net/podcasts/54125a78-13f2-11f1-98aa-5bebf2cea64e/image/893409ca44d1b14151e35b49b34ae5b2.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress",
+          "descriptionShort": "As one of the world’s most respected journalists, CNN’s chief international anchor Christiane Amanpour has witnessed some of the most consequential…"
+        }
+      ]
+    },
+    {
+      "id": "gresham-college-lectures",
+      "episodes": [
+        {
+          "id": "Buzzsprout-18782285",
+          "slug": "2026-03-03-climate-risk-and-insurance-raghavendra-rau-9h1aud",
+          "title": "Climate Risk and Insurance -  Raghavendra Rau",
+          "link": "",
+          "dateText": "2026-03-03",
+          "channelTitle": "Gresham College Lectures",
+          "durationSec": 3589,
+          "media": {
+            "url": "https://www.buzzsprout.com/1904814/episodes/18782285-climate-risk-and-insurance-raghavendra-rau.mp3",
+            "type": "audio/mpeg",
+            "bytes": 43292447,
+            "hasVideoInFeed": false,
+            "pickedIsVideo": false
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": null,
+          "descriptionShort": "Watch the Q&amp;A session here: https://youtu.be/Hwl0YRRaHgE Why did coastal homeowners lose insurance while UK energy bills spiked after Russia’s…"
+        }
+      ]
+    }
+  ]
+}

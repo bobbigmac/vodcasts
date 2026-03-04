@@ -1,0 +1,1669 @@
+import { computed, effect, signal } from "../runtime/vendor.js";
+import { fetchCached } from "../vod/feed_cache.js";
+import { parseFeedXml } from "../vod/feed_parse.js";
+import { loadChaptersForEpisode } from "../ui/chapters.js";
+import { trackEvent } from "../runtime/analytics.js";
+import { createAudioViz } from "./audio_viz.js";
+
+export function createPlayerService({ env, log, history }) {
+  const STORAGE_KEY = "vodcasts_state_v1";
+  const GUIDE_PREFS_KEY = "vodcasts_guide_prefs_v1";
+  const FEED_PROXY = env.feedProxy;
+  const FEED_MANIFEST_URL = env.feedManifestUrl;
+
+  let videoEl = null;
+  let hls = null;
+  let transcriptBlobUrls = [];
+  let lastPersistMs = 0;
+
+  let sources = [];
+  let currentSource = null;
+  let episodes = [];
+  let episodesBySource = {};
+  let currentEp = null;
+
+  let userPaused = false;
+  let didInitLoad = false;
+  let pendingInitSourceId = null;
+  let pendingInitRoute = null;
+
+  let sleepEndAt = null;
+  let sleepTickId = null;
+
+  let shuffleTickId = null;
+  let shuffleBusy = false;
+
+  const persisted = loadState();
+  const initialPlayIntent = persisted.playIntent === "pause" ? "pause" : persisted.playIntent === "play" ? "play" : null;
+  const initAutoplay = initialPlayIntent !== "pause";
+  userPaused = initialPlayIntent === "pause";
+
+  const current = signal({ source: null, episode: null });
+  const chapters = signal([]);
+  const VOLUME_STEP = 0.1;
+  const DEFAULT_RATE_STEPS = [0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.5, 3, 3.5, 4, 4.5, 5, 7, 12];
+  const SHUFFLE_INTERVALS = [
+    { label: "10s", ms: 10 * 1000 },
+    { label: "30s", ms: 30 * 1000 },
+    { label: "1m", ms: 60 * 1000 },
+    { label: "2m", ms: 2 * 60 * 1000 },
+    { label: "5m", ms: 5 * 60 * 1000 },
+    { label: "10m", ms: 10 * 60 * 1000 },
+    { label: "20m", ms: 20 * 60 * 1000 },
+    { label: "30m", ms: 30 * 60 * 1000 },
+    { label: "1hr", ms: 60 * 60 * 1000 },
+    { label: "2hr", ms: 2 * 60 * 60 * 1000 },
+    { label: "3hr", ms: 3 * 60 * 60 * 1000 },
+  ];
+  const DEFAULT_SHUFFLE = {
+    active: false,
+    nextAt: null,
+    intervalIdx: 4,
+    changeFeed: true,
+    changeEpisode: true,
+    changeTime: true,
+    sameCategory: false,
+    baseCategory: null,
+    favesOnly: false,
+    sameShow: false,
+  };
+  const DEFAULT_RANDOM = { favesOnly: false };
+  const playback = signal({
+    paused: true,
+    ended: false,
+    muted: true,
+    volume: Number(persisted.volume) >= 0 ? clamp(Number(persisted.volume), 0, 1) : 1,
+    rate: 1,
+    time: 0,
+    duration: NaN,
+  });
+  const captions = signal({ available: false, showing: false });
+  const sleep = signal({ active: false, label: "" });
+  const sourceEpisodes = signal({});
+  const audioBlocked = signal(false);
+  const loading = signal(false);
+  const chaptersLoadError = signal(null);
+  const transcriptsLoadError = signal(null);
+  const fullDescriptionCache = signal({});
+  const subtitleBox = signal(null);
+  const subtitleCue = signal(null);
+  const skip = signal(normalizeSkip(persisted.skip));
+  const rateSteps = signal(normalizeRateSteps(persisted.rateSteps) || DEFAULT_RATE_STEPS.slice());
+  const shuffle = signal({ ...normalizeShuffle(persisted.shuffle), label: "" });
+  const randomPrefs = signal(normalizeRandom(persisted.random));
+  /** Active playlist: { feedId, episodes: [{id, ...}, ...] }. When set, playNextInFeed advances through this list. */
+  const playlist = signal(null);
+
+  const currentSourceId = computed(() => current.value.source?.id || null);
+  const currentEpisodeId = computed(() => current.value.episode?.id || null);
+  const isAudioOnly = computed(() => current.value.episode?.media?.pickedIsVideo === false);
+
+  const DEFAULT_SUBTITLE_PREFS = { x: 50, y: 78, w: 92, opacity: 1, scale: 1 };
+
+  function loadState() {
+    try {
+      const raw = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+      return raw && typeof raw === "object" ? raw : {};
+    } catch {
+      return {};
+    }
+  }
+  function saveState() {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(persisted));
+    } catch {}
+  }
+
+  function clamp(v, a, b) {
+    return Math.min(b, Math.max(a, v));
+  }
+
+  function normalizeSkip(input) {
+    const s = input && typeof input === "object" ? input : {};
+    return {
+      back: Number.isFinite(Number(s.back)) ? clamp(Math.round(Number(s.back)), 5, 120) : 10,
+      fwd: Number.isFinite(Number(s.fwd)) ? clamp(Math.round(Number(s.fwd)), 5, 180) : 30,
+    };
+  }
+
+  function normalizeRateSteps(v) {
+    const list = Array.isArray(v) ? v : [];
+    const out = [];
+    const seen = new Set();
+    for (const r0 of list) {
+      const r = Number(r0);
+      if (!Number.isFinite(r) || r <= 0) continue;
+      const clamped = clamp(r, 0.25, 12);
+      const key = Math.round(clamped * 1000) / 1000;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      out.push(key);
+    }
+    if (!out.includes(1)) out.push(1);
+    out.sort((a, b) => a - b);
+    return out.length ? out : null;
+  }
+
+  function normalizeShuffle(input) {
+    const s = input && typeof input === "object" ? input : {};
+    const intervalIdx0 = Number.isFinite(Number(s.intervalIdx)) ? Math.round(Number(s.intervalIdx)) : DEFAULT_SHUFFLE.intervalIdx;
+    const intervalIdx = clamp(intervalIdx0, 0, SHUFFLE_INTERVALS.length - 1);
+
+    const changeFeed = s.changeFeed !== false;
+    const changeEpisode = s.changeEpisode !== false;
+    const changeTime = s.changeTime !== false;
+    const hasAny = changeFeed || changeEpisode || changeTime;
+
+    const nextAt = Number.isFinite(Number(s.nextAt)) ? Number(s.nextAt) : null;
+    return {
+      active: !!s.active,
+      nextAt,
+      intervalIdx,
+      changeFeed: hasAny ? changeFeed : DEFAULT_SHUFFLE.changeFeed,
+      changeEpisode: hasAny ? changeEpisode : DEFAULT_SHUFFLE.changeEpisode,
+      changeTime: hasAny ? changeTime : DEFAULT_SHUFFLE.changeTime,
+      sameCategory: s.sameCategory === true,
+      baseCategory: typeof s.baseCategory === "string" && s.baseCategory.trim() ? s.baseCategory.trim() : null,
+      favesOnly: s.favesOnly === true,
+      sameShow: s.sameShow === true,
+    };
+  }
+
+  function normalizeRandom(input) {
+    const s = input && typeof input === "object" ? input : {};
+    return { favesOnly: s.favesOnly === true };
+  }
+
+  function loadGuideFavesSet() {
+    try {
+      const raw = JSON.parse(localStorage.getItem(GUIDE_PREFS_KEY) || "{}");
+      const list = Array.isArray(raw?.faves) ? raw.faves : [];
+      return new Set(list.filter((x) => typeof x === "string" && x));
+    } catch {
+      return new Set();
+    }
+  }
+
+  function normalizeRate(v, steps = DEFAULT_RATE_STEPS) {
+    if (!Number.isFinite(v) || v <= 0) return 1;
+    const arr = steps && steps.length ? steps : DEFAULT_RATE_STEPS;
+    let best = arr[0];
+    let bestDist = Math.abs(v - best);
+    for (let i = 1; i < arr.length; i++) {
+      const r = arr[i];
+      const d = Math.abs(v - r);
+      if (d < bestDist) {
+        best = r;
+        bestDist = d;
+      }
+    }
+    return best;
+  }
+
+  function fmtTime(s) {
+    if (!Number.isFinite(s) || s < 0) return "00:00";
+    const hh = Math.floor(s / 3600);
+    const mm = Math.floor((s % 3600) / 60);
+    const ss = Math.floor(s % 60);
+    if (hh > 0) return `${String(hh).padStart(2, "0")}:${String(mm).padStart(2, "0")}:${String(ss).padStart(2, "0")}`;
+    return `${String(mm).padStart(2, "0")}:${String(ss).padStart(2, "0")}`;
+  }
+
+  function shuffleLeftLabel(nextAt) {
+    if (!Number.isFinite(nextAt)) return "";
+    const leftMs = nextAt - Date.now();
+    const leftSec = Math.max(0, Math.ceil(leftMs / 1000));
+    return fmtTime(leftSec);
+  }
+
+  function persistShuffle(next) {
+    const s = next && typeof next === "object" ? next : shuffle.value;
+    persisted.shuffle = {
+      active: !!s.active,
+      nextAt: Number.isFinite(Number(s.nextAt)) ? Number(s.nextAt) : null,
+      intervalIdx: clamp(Math.round(Number(s.intervalIdx) || 0), 0, SHUFFLE_INTERVALS.length - 1),
+      changeFeed: s.changeFeed !== false,
+      changeEpisode: s.changeEpisode !== false,
+      changeTime: s.changeTime !== false,
+      sameCategory: s.sameCategory === true,
+      baseCategory: typeof s.baseCategory === "string" && s.baseCategory.trim() ? s.baseCategory.trim() : null,
+      favesOnly: s.favesOnly === true,
+      sameShow: s.sameShow === true,
+    };
+    saveState();
+  }
+
+  function persistRandom(next) {
+    const s = next && typeof next === "object" ? next : randomPrefs.value;
+    persisted.random = { favesOnly: s.favesOnly === true };
+    saveState();
+  }
+
+  function setRandomSettings(nextPartial) {
+    const cur = randomPrefs.value;
+    const next = { ...cur, ...(nextPartial && typeof nextPartial === "object" ? nextPartial : {}) };
+    next.favesOnly = next.favesOnly === true;
+    randomPrefs.value = next;
+    persistRandom(next);
+  }
+
+  function ensureShuffleTick() {
+    if (!shuffle.value.active) {
+      if (shuffleTickId) clearInterval(shuffleTickId);
+      shuffleTickId = null;
+      shuffleBusy = false;
+      return;
+    }
+    if (shuffleTickId) return;
+    shuffleTickId = setInterval(() => shuffleTick(), 400);
+  }
+
+  function setShuffleSettings(nextPartial, { resetNextAt = false } = {}) {
+    const cur = shuffle.value;
+    const next = { ...cur, ...(nextPartial && typeof nextPartial === "object" ? nextPartial : {}) };
+    const any = !!next.changeFeed || !!next.changeEpisode || !!next.changeTime;
+    if (!any) {
+      next.changeFeed = cur.changeFeed;
+      next.changeEpisode = cur.changeEpisode;
+      next.changeTime = cur.changeTime;
+    }
+    const hadInterval = nextPartial && typeof nextPartial === "object" && Object.prototype.hasOwnProperty.call(nextPartial, "intervalIdx");
+    next.intervalIdx = clamp(Math.round(Number(next.intervalIdx) || 0), 0, SHUFFLE_INTERVALS.length - 1);
+    if (next.sameCategory && !next.baseCategory && currentSource?.category) next.baseCategory = String(currentSource.category);
+    const intervalChanged = hadInterval && next.intervalIdx !== cur.intervalIdx;
+    if ((resetNextAt || intervalChanged) && next.active) next.nextAt = Date.now() + SHUFFLE_INTERVALS[next.intervalIdx].ms;
+    next.label = next.active ? shuffleLeftLabel(next.nextAt) : "";
+    shuffle.value = next;
+    persistShuffle(next);
+    ensureShuffleTick();
+  }
+
+  function startShuffle() {
+    const cur = shuffle.value;
+    const intervalIdxRaw = Number(cur.intervalIdx);
+    const intervalIdx = clamp(
+      Math.round(Number.isFinite(intervalIdxRaw) ? intervalIdxRaw : DEFAULT_SHUFFLE.intervalIdx),
+      0,
+      SHUFFLE_INTERVALS.length - 1
+    );
+    const now = Date.now();
+    const nextAt0 = Number.isFinite(Number(cur.nextAt)) ? Number(cur.nextAt) : null;
+    const nextAt = nextAt0 && nextAt0 > now ? nextAt0 : now + SHUFFLE_INTERVALS[intervalIdx].ms;
+    const baseCategory = currentSource?.category ? String(currentSource.category) : null;
+    setShuffleSettings({ active: true, intervalIdx, nextAt, baseCategory }, { resetNextAt: false });
+  }
+
+  function stopShuffle() {
+    const next = { ...shuffle.value, active: false, nextAt: null, label: "" };
+    shuffle.value = next;
+    persistShuffle(next);
+    ensureShuffleTick();
+  }
+
+  function toggleShuffle() {
+    if (shuffle.value.active) stopShuffle();
+    else startShuffle();
+  }
+
+  function pickRandomId(list, { exclude } = {}) {
+    const arr = Array.isArray(list) ? list : [];
+    if (!arr.length) return null;
+    if (arr.length === 1) return arr[0];
+    for (let i = 0; i < 6; i++) {
+      const v = arr[Math.floor(Math.random() * arr.length)];
+      if (exclude == null || v !== exclude) return v;
+    }
+    return arr[Math.floor(Math.random() * arr.length)];
+  }
+
+  function scheduleShuffleSoon(ms = 15000) {
+    const intervalIdx = clamp(Math.round(Number(shuffle.value.intervalIdx) || 0), 0, SHUFFLE_INTERVALS.length - 1);
+    const nextAt = Date.now() + Math.max(1000, Math.min(ms, SHUFFLE_INTERVALS[intervalIdx].ms));
+    setShuffleSettings({ nextAt }, { resetNextAt: false });
+  }
+
+  function scheduleNextShuffle() {
+    const intervalIdx = clamp(Math.round(Number(shuffle.value.intervalIdx) || 0), 0, SHUFFLE_INTERVALS.length - 1);
+    const nextAt = Date.now() + SHUFFLE_INTERVALS[intervalIdx].ms;
+    setShuffleSettings({ nextAt }, { resetNextAt: false });
+  }
+
+  function seekRandomTimeSoon() {
+    if (!videoEl) return;
+    const apply = () => {
+      if (!videoEl) return;
+      const dur = videoEl.duration;
+      if (!Number.isFinite(dur) || dur <= 2) return;
+      const max = Math.max(0, dur - 20);
+      if (max <= 1) return;
+      const t = Math.random() * max;
+      if (t > 0.25) videoEl.currentTime = t;
+    };
+    if (Number.isFinite(videoEl.duration) && videoEl.duration > 0) apply();
+    else videoEl.addEventListener("loadedmetadata", apply, { once: true });
+  }
+
+  async function doShuffleNow({ force = false } = {}) {
+    if (!shuffle.value.active) return;
+    if (!sources.length) return;
+    if (!videoEl) return;
+    if (loading.value) return;
+
+    const pb = playback.value;
+    if (!force && (pb.paused || pb.ended)) return;
+
+    const cfg = shuffle.value;
+    const doFeed = !!cfg.changeFeed;
+    const doEp = !!cfg.changeEpisode;
+    const doTime = !!cfg.changeTime;
+    const pl = playlist.value;
+    const useShow = !!cfg.sameShow && pl?.feedId && pl.episodes?.length;
+
+    if (useShow && (doFeed || doEp)) {
+      const playable = pl.episodes.filter((e) => e?.id);
+      if (playable.length) {
+        if (currentSource?.id !== pl.feedId) {
+          await selectSource(pl.feedId, { preserveEpisode: false, skipAutoEpisode: true, autoplay: false });
+        }
+        const nextEp = playable[Math.floor(Math.random() * playable.length)];
+        if (nextEp?.id) await selectEpisode(nextEp.id, { autoplay: true });
+        if (doTime) seekRandomTimeSoon();
+      }
+      return;
+    }
+
+    if (doFeed) {
+      const baseCat = cfg.sameCategory && cfg.baseCategory ? String(cfg.baseCategory) : "";
+      const pool0 = baseCat ? sources.filter((s) => (s.category || "") === baseCat) : sources;
+      const faves = cfg.favesOnly ? loadGuideFavesSet() : null;
+      const pool = faves && faves.size ? pool0.filter((s) => faves.has(s.id)) : pool0;
+      const ids0 = pool0.map((s) => s.id).filter(Boolean);
+      const ids = pool.map((s) => s.id).filter(Boolean);
+      const idsUse = ids.length ? ids : ids0;
+      const nextSourceId = pickRandomId(idsUse, { exclude: currentSource?.id || null }) || currentSource?.id || idsUse[0];
+      const pickRandomEpisode = !!doEp;
+      await selectSource(nextSourceId, {
+        preserveEpisode: false,
+        pickRandomEpisode,
+        autoplay: true,
+        ignoreLastBySource: true,
+      });
+      if (doTime) seekRandomTimeSoon();
+      return;
+    }
+
+    if (doEp) {
+      const playable = episodes.filter((e) => e.media?.url);
+      const ids = playable.map((e) => e.id).filter(Boolean);
+      const nextEpId = pickRandomId(ids, { exclude: currentEp?.id || null }) || currentEp?.id || ids[0];
+      if (nextEpId) await selectEpisode(nextEpId, { autoplay: true });
+      if (doTime) seekRandomTimeSoon();
+      return;
+    }
+
+    if (doTime) {
+      seekRandomTimeSoon();
+    }
+  }
+
+  function shuffleTick() {
+    if (!shuffle.value.active) {
+      ensureShuffleTick();
+      return;
+    }
+    const nextAt = shuffle.value.nextAt;
+    if (!Number.isFinite(nextAt)) {
+      scheduleNextShuffle();
+      return;
+    }
+    const leftMs = nextAt - Date.now();
+    if (leftMs <= 0) {
+      if (shuffleBusy) return;
+      shuffleBusy = true;
+      Promise.resolve()
+        .then(async () => {
+          if (!videoEl || loading.value || playback.value.paused || playback.value.ended || !sources.length) {
+            scheduleShuffleSoon(15000);
+            return;
+          }
+          await doShuffleNow();
+          scheduleNextShuffle();
+        })
+        .finally(() => {
+          shuffleBusy = false;
+        });
+      return;
+    }
+    const label = shuffleLeftLabel(nextAt);
+    if (label !== shuffle.value.label) shuffle.value = { ...shuffle.value, label };
+  }
+
+  function episodeKey(sourceId, episodeId) {
+    return `${sourceId}::${episodeId}`;
+  }
+
+  function getProgressSec(sourceId, episodeId) {
+    const v = persisted.progress?.[episodeKey(sourceId, episodeId)];
+    return Number.isFinite(v) ? v : 0;
+  }
+
+  function getProgressMaxSec(sourceId, episodeId) {
+    const k = episodeKey(sourceId, episodeId);
+    const v = persisted.progressMax?.[k];
+    if (Number.isFinite(v)) return v;
+    return getProgressSec(sourceId, episodeId);
+  }
+
+  function getKnownDurationSec(sourceId, episodeId) {
+    const k = episodeKey(sourceId, episodeId);
+    const v = persisted.durByEpisode?.[k];
+    return Number.isFinite(v) && v > 0 ? v : null;
+  }
+
+  function setKnownDurationSec(sourceId, episodeId, durSec) {
+    const k = episodeKey(sourceId, episodeId);
+    const d = Number(durSec);
+    if (!Number.isFinite(d) || d <= 0) return;
+    persisted.durByEpisode ||= {};
+    const prev = persisted.durByEpisode[k];
+    // Keep the larger value in case metadata changes slightly.
+    persisted.durByEpisode[k] = Number.isFinite(prev) && prev > 0 ? Math.max(prev, d) : d;
+    saveState();
+  }
+
+  function setProgressSec(sourceId, episodeId, t) {
+    const k = episodeKey(sourceId, episodeId);
+    persisted.progress ||= {};
+    const cur = Math.max(0, t || 0);
+    persisted.progress[k] = cur;
+    persisted.progressMax ||= {};
+    const prevMax = persisted.progressMax[k];
+    const nextMax = Number.isFinite(prevMax) ? Math.max(prevMax, cur) : cur;
+    persisted.progressMax[k] = nextMax;
+    persisted.last = { sourceId, episodeId, at: Date.now() };
+    saveState();
+  }
+
+  function isProbablyHls(url, mime) {
+    const u = String(url || "").toLowerCase();
+    const t = String(mime || "").toLowerCase();
+    if (u.includes(".m3u8")) return true;
+    if (t.includes("application/vnd.apple.mpegurl")) return true;
+    if (t.includes("application/x-mpegurl")) return true;
+    return false;
+  }
+
+  function isNativeHls() {
+    const can =
+      videoEl?.canPlayType?.("application/vnd.apple.mpegurl") || videoEl?.canPlayType?.("application/x-mpegURL");
+    return can === "probably" || can === "maybe";
+  }
+
+  let audioVizInstance = null;
+
+  function destroyAudioViz() {
+    if (audioVizInstance) {
+      try {
+        audioVizInstance.destroy();
+      } catch {}
+      audioVizInstance = null;
+    }
+  }
+
+  function teardownPlayer() {
+    destroyAudioViz();
+    transcriptBlobUrls.forEach((u) => URL.revokeObjectURL(u));
+    transcriptBlobUrls = [];
+    [...(videoEl?.querySelectorAll?.("track") || [])].forEach((t) => t.remove());
+    captions.value = { available: false, showing: false };
+    chapters.value = [];
+    loading.value = false;
+
+    if (hls) {
+      try {
+        hls.destroy();
+      } catch {}
+      hls = null;
+    }
+    videoEl?.pause?.();
+    videoEl?.removeAttribute?.("src");
+    try {
+      videoEl?.load?.();
+    } catch {}
+  }
+
+  async function waitForHlsJs(timeoutMs = 2500) {
+    if (window.Hls && Hls.isSupported && Hls.isSupported()) return true;
+    const t0 = Date.now();
+    while (Date.now() - t0 < timeoutMs) {
+      if (window.Hls && Hls.isSupported && Hls.isSupported()) return true;
+      await new Promise((r) => setTimeout(r, 50));
+    }
+    return !!(window.Hls && Hls.isSupported && Hls.isSupported());
+  }
+
+  async function fetchText(url, fetchVia = "auto", { useCache = false } = {}) {
+    const u = String(url || "");
+    const isRemote = /^https?:\/\//i.test(u);
+    const via = fetchVia === "auto" ? (isRemote ? (env.isDev ? "proxy" : "direct") : "direct") : fetchVia;
+    const finalUrl = via === "proxy" && isRemote ? FEED_PROXY + encodeURIComponent(u) : u;
+    if (useCache && isRemote) return fetchCached(finalUrl);
+    const res = await fetch(finalUrl, { cache: "no-store" });
+    if (!res.ok) throw new Error(`fetch ${res.status}`);
+    return await res.text();
+  }
+
+  async function preloadFeedManifest() {
+    if (!FEED_MANIFEST_URL) return false;
+    try {
+      const res = await fetch(FEED_MANIFEST_URL, { cache: "no-store" });
+      if (!res.ok) return false;
+      const json = await res.json();
+      const feeds = Array.isArray(json?.feeds) ? json.feeds : [];
+      if (!feeds.length) return false;
+
+      const chunks = Array.isArray(json?.chunks) ? json.chunks : [];
+      const isChunked = json?.version >= 3 && chunks.length > 0;
+
+      if (isChunked) {
+        // v3: feed meta in index; episodes in chunks. Merge episodes per feed.
+        for (const f of feeds) {
+          const id = String(f?.id || "").trim();
+          if (id) episodesBySource[id] = [];
+        }
+        const chunkUrls = chunks.map((c) => c?.url).filter(Boolean);
+        const results = await Promise.all(chunkUrls.map((u) => fetch(u, { cache: "default" }).then((r) => (r.ok ? r.json() : null)).catch(() => null)));
+        for (const chunk of results) {
+          if (!chunk?.feeds) continue;
+          for (const f of chunk.feeds) {
+            const id = String(f?.id || "").trim();
+            if (!id) continue;
+            const eps = Array.isArray(f?.episodes) ? f.episodes : [];
+            const existing = episodesBySource[id] || [];
+            episodesBySource[id] = [...existing, ...eps].sort((a, b) => {
+              const da = (a?.dateText || "").trim();
+              const db = (b?.dateText || "").trim();
+              return db.localeCompare(da);
+            });
+          }
+        }
+      } else {
+        // v2 legacy: feeds include episodes
+        for (const f of feeds) {
+          const id = String(f?.id || "").trim();
+          if (!id) continue;
+          const eps = Array.isArray(f?.episodes) ? f.episodes : [];
+          episodesBySource[id] = eps;
+        }
+      }
+      sourceEpisodes.value = { ...episodesBySource };
+      return Object.keys(episodesBySource).length > 0;
+    } catch (e) {
+      log.warn(`Manifest preload failed: ${String(e?.message || e)}`);
+      return false;
+    }
+  }
+
+  async function preloadCachedFeeds() {
+    const cached = sources.filter((s) => s.has_cached_xml && s.feed_url);
+    if (!cached.length) return;
+    const results = await Promise.all(
+      cached.map(async (src) => {
+        try {
+          const xmlText = await fetchText(src.feed_url, src.fetch_via || "auto", { useCache: false });
+          const parsed = parseFeedXml(xmlText, src);
+          return { sourceId: src.id, episodes: parsed.episodes };
+        } catch (e) {
+          log.warn(`Preload ${src.id}: ${String(e?.message || e)}`);
+          return { sourceId: src.id, episodes: [] };
+        }
+      })
+    );
+    for (const { sourceId, episodes } of results) {
+      episodesBySource[sourceId] = episodes;
+    }
+    sourceEpisodes.value = { ...episodesBySource };
+  }
+
+  async function loadFullDescription(sourceId, episodeId) {
+    const key = episodeKey(sourceId, episodeId);
+    if (fullDescriptionCache.value[key]) return fullDescriptionCache.value[key];
+    const src = sources.find((s) => s.id === sourceId);
+    if (!src?.feed_url) return "";
+    try {
+      const xmlText = await fetchText(src.feed_url, src.fetch_via || "auto", { useCache: true });
+      const parsed = parseFeedXml(xmlText, src);
+      const ep = parsed.episodes?.find((e) => e.id === episodeId);
+      const html = ep?.descriptionHtml || "";
+      if (html) {
+        fullDescriptionCache.value = { ...fullDescriptionCache.value, [key]: html };
+      }
+      return html;
+    } catch {
+      return "";
+    }
+  }
+
+  async function loadSourceEpisodes(sourceId) {
+    const existing = episodesBySource[sourceId];
+    if (existing && Array.isArray(existing) && existing.some((e) => e?.media?.url)) return existing;
+    const src = sources.find((s) => s.id === sourceId);
+    if (!src) {
+      const fallback = Array.isArray(existing) ? existing : [];
+      episodesBySource[sourceId] = fallback;
+      sourceEpisodes.value = { ...episodesBySource };
+      return fallback;
+    }
+    try {
+      const xmlText = await fetchText(src.feed_url, src.fetch_via || "auto", { useCache: true });
+      const parsed = parseFeedXml(xmlText, src);
+      episodesBySource[sourceId] = parsed.episodes;
+      sourceEpisodes.value = { ...episodesBySource };
+      return parsed.episodes;
+    } catch {
+      trackEvent("feed_fetch_error", { channel_id: sourceId });
+      // Important: set an empty list so the guide doesn't remain stuck in a "Loading…" state.
+      const fallback = Array.isArray(existing) ? existing : [];
+      episodesBySource[sourceId] = fallback;
+      sourceEpisodes.value = { ...episodesBySource };
+      return fallback;
+    }
+  }
+
+  async function selectSource(
+    sourceId,
+    {
+      preserveEpisode = true,
+      pickRandomEpisode = false,
+      skipAutoEpisode = false,
+      autoplay = true,
+      ignoreLastBySource = false,
+      preferEpisodeId = null,
+    } = {}
+  ) {
+    const src = sources.find((s) => s.id === sourceId);
+    if (!src) {
+      log.warn(`Source not found: "${sourceId}" (available: ${sources.map((s) => s.id).join(", ")})`);
+      return false;
+    }
+    currentSource = src;
+    currentEp = null;
+    current.value = { source: currentSource, episode: null };
+
+    try {
+      const existing = episodesBySource[src.id];
+      const existingPlayable = Array.isArray(existing) && existing.some((e) => e?.media?.url);
+      if (existingPlayable) {
+        episodes = existing;
+      } else {
+        log.info(`Fetching feed: ${src.title || src.id}`);
+        const xmlText = await fetchText(src.feed_url, src.fetch_via || "auto", { useCache: true });
+        const parsed = parseFeedXml(xmlText, src);
+        episodes = parsed.episodes;
+      }
+      episodesBySource[src.id] = episodes;
+      sourceEpisodes.value = { ...episodesBySource };
+
+      const playable = episodes.filter((e) => e.media?.url);
+      log.info(`${src.title || src.id}: ${playable.length} media (of ${episodes.length})`);
+      trackEvent("select_channel", { channel_id: src.id, channel_title: src.title || src.id, playable_count: playable.length });
+
+      let wanted = null;
+      if (!skipAutoEpisode) {
+        if (preferEpisodeId && playable.some((e) => e.id === preferEpisodeId)) {
+          wanted = preferEpisodeId;
+        } else if (pickRandomEpisode && playable.length) {
+          wanted = playable[Math.floor(Math.random() * playable.length)].id;
+        } else if (ignoreLastBySource) {
+          wanted = playable[0]?.id || null;
+        } else {
+          const lastId =
+            persisted.lastBySource?.[src.id] || (preserveEpisode && persisted.last?.sourceId === src.id ? persisted.last?.episodeId : null);
+          const lastIsPlayable = lastId && playable.some((e) => e.id === lastId);
+          wanted = (lastIsPlayable ? lastId : null) || playable[0]?.id || null;
+        }
+      }
+
+      if (wanted) await selectEpisode(wanted, { autoplay: autoplay && !userPaused });
+      return true;
+    } catch (e) {
+      episodes = [];
+      try {
+        episodesBySource[src.id] = [];
+        sourceEpisodes.value = { ...episodesBySource };
+      } catch {}
+      log.error(`Feed error: ${String(e?.message || e)} — ${src.feed_url}`);
+      return false;
+    }
+  }
+
+  function resolveEpisodeIdBySlugOrId(epSlugOrId) {
+    const q = String(epSlugOrId || "").trim();
+    if (!q) return null;
+    const bySlug = episodes.find((e) => String(e.slug || "").toLowerCase() === q.toLowerCase());
+    if (bySlug?.id) return bySlug.id;
+    const byId = episodes.find((e) => e.id === q);
+    return byId?.id || null;
+  }
+
+  function firstPlayableEpisodeId() {
+    const playable = episodes.filter((e) => e.media?.url);
+    return playable[0]?.id || null;
+  }
+
+  async function applyRoute(route, { autoplay = true } = {}) {
+    const feed = route?.feed ? String(route.feed) : "";
+    const ep = route?.ep ? String(route.ep) : "";
+    // Important: `route.t` is either a number or null. Avoid `Number(null) === 0`,
+    // which would incorrectly override resume time to 0 (start over) on refresh.
+    const t = typeof route?.t === "number" ? route.t : null;
+    if (!feed) return false;
+    if (!sources.some((s) => s.id === feed)) return false;
+
+    if (ep) {
+      await selectSource(feed, { preserveEpisode: false, skipAutoEpisode: true, autoplay, ignoreLastBySource: true });
+      const episodeId = resolveEpisodeIdBySlugOrId(ep) || firstPlayableEpisodeId();
+      if (!episodeId) return true;
+      await selectEpisode(episodeId, { autoplay, startAt: Number.isFinite(t) ? Math.max(0, t) : undefined });
+      return true;
+    }
+
+    // Feed-only routes are browse-first: select the feed, but don't auto-play anything.
+    await selectSource(feed, { preserveEpisode: true, skipAutoEpisode: true, autoplay: false, ignoreLastBySource: false });
+    return true;
+  }
+
+  async function selectEpisode(episodeId, { autoplay = true, startAt: overrideStartAt } = {}) {
+    if (!currentSource) return;
+    const wantedId = resolveEpisodeIdBySlugOrId(episodeId) || (episodes.some((e) => e.id === episodeId) ? episodeId : null);
+    const ep = wantedId ? episodes.find((e) => e.id === wantedId) : null;
+    if (!ep) {
+      log.warn(`Episode not found: "${String(episodeId || "")}"`);
+      return;
+    }
+    if (!ep.media?.url) return log.warn(`Episode "${(ep.title || "").slice(0, 40)}…": no media URL`);
+    if (!videoEl) return log.error("Player: no <video> element attached");
+
+    const resumeSafeTime = (tSec, durSec) => {
+      const t = Number(tSec);
+      if (!Number.isFinite(t) || t <= 0) return 0;
+      const dur = Number(durSec);
+      if (Number.isFinite(dur) && dur > 2) {
+        // Don't resume if we're effectively "done" (near the end).
+        // Keep both a percent cutoff (98%) and an absolute cutoff (last 20s) for short videos.
+        if (t >= dur * 0.98 || t >= dur - 20) return 0;
+        return clamp(t, 0, Math.max(0, dur - 0.25));
+      }
+      return Math.max(0, t);
+    };
+
+    teardownPlayer();
+    chaptersLoadError.value = null;
+    transcriptsLoadError.value = null;
+    loading.value = true;
+    currentEp = ep;
+    current.value = { source: currentSource, episode: currentEp };
+    trackEvent("select_episode", {
+      channel_id: currentSource.id,
+      channel_title: currentSource.title || currentSource.id,
+      episode_slug: ep.slug || "",
+      has_captions: (ep.transcripts || []).length > 0,
+      has_chapters: !!(ep.chaptersInline && ep.chaptersInline.length) || !!ep.chaptersExternal,
+    });
+
+    const rawStartAt = overrideStartAt ?? getProgressSec(currentSource.id, ep.id) ?? 0;
+    const knownDur = getKnownDurationSec(currentSource.id, ep.id);
+    const startAt = resumeSafeTime(rawStartAt, knownDur);
+    history.startSegment({
+      sourceId: currentSource.id,
+      episodeId: ep.id,
+      episodeTitle: ep.title,
+      channelTitle: ep.channelTitle || currentSource.title,
+      startTime: startAt,
+    });
+    persisted.last = { sourceId: currentSource.id, episodeId: ep.id, at: Date.now() };
+    persisted.lastBySource ||= {};
+    persisted.lastBySource[currentSource.id] = ep.id;
+    saveState();
+
+    const mediaUrl = ep.media.url;
+    const mediaType = ep.media.type || "";
+    const shouldUseHls = isProbablyHls(mediaUrl, mediaType);
+    const usingNative = shouldUseHls && isNativeHls();
+    if (shouldUseHls && !usingNative && !window.Hls) {
+      log.info("Waiting for hls.js…");
+      await waitForHlsJs(2500);
+    }
+    const usingHlsJs = shouldUseHls && !usingNative && window.Hls && Hls.isSupported();
+
+    if (shouldUseHls && !usingNative && !usingHlsJs) {
+      log.error("HLS not supported");
+      return;
+    }
+
+    if (usingNative) {
+      videoEl.src = mediaUrl;
+    } else if (usingHlsJs) {
+      hls = new Hls({ enableWorker: true });
+      hls.on(Hls.Events.ERROR, (_evt, data) => {
+        if (data?.fatal) log.error(`HLS error: ${data?.type || "fatal"}`);
+      });
+      hls.loadSource(mediaUrl);
+      hls.attachMedia(videoEl);
+    } else {
+      videoEl.src = mediaUrl;
+    }
+
+    videoEl.addEventListener(
+      "loadedmetadata",
+      () => {
+        const tryResume = () => {
+          if (!videoEl) return;
+          const dur = videoEl.duration;
+          if (Number.isFinite(dur) && dur > 2) {
+            try {
+              if (currentSource && currentEp) setKnownDurationSec(currentSource.id, currentEp.id, dur);
+            } catch {}
+          }
+          const safe = resumeSafeTime(startAt, dur);
+          if (safe > 0.25) {
+            try {
+              videoEl.currentTime = safe;
+            } catch {}
+          }
+          return safe;
+        };
+
+        tryResume();
+        // HLS (and some browsers) can report `duration` as NaN/Infinity at loadedmetadata.
+        // If we want to resume and duration becomes known later, try once more.
+        if (startAt > 0.25 && (!Number.isFinite(videoEl.duration) || videoEl.duration <= 2)) {
+          let done = false;
+          const onDur = () => {
+            if (done) return;
+            const dur = videoEl?.duration;
+            if (!Number.isFinite(dur) || dur <= 2) return;
+            done = true;
+            try {
+              videoEl.removeEventListener("durationchange", onDur);
+            } catch {}
+            tryResume();
+          };
+          try {
+            videoEl.addEventListener("durationchange", onDur);
+          } catch {}
+          setTimeout(() => {
+            if (done) return;
+            done = true;
+            try {
+              videoEl?.removeEventListener?.("durationchange", onDur);
+            } catch {}
+          }, 8000);
+        }
+        if (autoplay) play({ userGesture: false });
+      },
+      { once: true }
+    );
+
+    await loadTranscripts(ep);
+    await loadChapters(ep);
+  }
+
+  function srtToWebVTT(srt) {
+    return (
+      "WEBVTT\n\n" +
+      String(srt || "")
+        .replace(/\r\n/g, "\n")
+        .replace(/\r/g, "\n")
+        .replace(/(\d{2}:\d{2}:\d{2}),(\d{3})/g, "$1.$2")
+        .trim()
+    );
+  }
+
+  async function loadTranscripts(ep) {
+    const list = ep.transcripts || [];
+    if (!list.length || !videoEl) return;
+    transcriptsLoadError.value = null;
+
+    for (const t of list) {
+      try {
+        const isRemote = /^https?:\/\//i.test(t.url);
+        const fetchOne = async (u) => {
+          const res = await fetch(u, { cache: "no-store" });
+          if (!res.ok) throw new Error(String(res.status));
+          return res.text();
+        };
+
+        const directUrl = t.url;
+        const proxyUrl = isRemote ? FEED_PROXY + encodeURIComponent(t.url) : t.url;
+        let txt;
+        try {
+          txt = await fetchOne(directUrl);
+        } catch {
+          if (!env.isDev) throw new Error("direct fetch failed");
+          txt = await fetchOne(proxyUrl);
+        }
+        if (t.type === "application/x-subrip" || t.type === "application/srt") txt = srtToWebVTT(txt);
+        const blob = new Blob([txt], { type: "text/vtt" });
+        const blobUrl = URL.createObjectURL(blob);
+        transcriptBlobUrls.push(blobUrl);
+        const track = document.createElement("track");
+        track.kind = "subtitles";
+        track.src = blobUrl;
+        track.srclang = t.lang;
+        track.label = t.lang === "en" ? "English" : t.lang;
+        track.default = false;
+        videoEl.appendChild(track);
+        log.info(`Subtitles: loaded ${t.lang} (${t.type})`);
+      } catch (e) {
+        const msg = String(e?.message || e || "fetch failed");
+        log.warn(`Subtitles failed: ${t.url} — ${msg}`);
+        transcriptsLoadError.value = msg;
+      }
+    }
+
+    if (transcriptBlobUrls.length) {
+      const tracks = videoEl.textTracks;
+      for (const t of tracks) t.mode = "hidden";
+      if (tracks.length) setupCueListeners(tracks[0]);
+      captions.value = { available: true, showing: true };
+    } else if (list.length) transcriptsLoadError.value = transcriptsLoadError.value || "Failed to load subtitles";
+  }
+
+  async function loadChapters(ep) {
+    try {
+      const list = await loadChaptersForEpisode({ env, episode: ep, fetchText });
+      chapters.value = list;
+      chaptersLoadError.value = null;
+    } catch (e) {
+      const msg = String(e?.message || e || "fetch failed");
+      log.warn(`Chapters failed: ${msg}`);
+      chapters.value = [];
+      chaptersLoadError.value = msg;
+    }
+  }
+
+  function toggleCaptions() {
+    if (!videoEl) return;
+    const tracks = videoEl.textTracks;
+    if (!tracks || !tracks.length) return;
+    const anyShowing = [...tracks].some((t) => t.mode === "showing" || t.mode === "hidden");
+    for (const t of tracks) t.mode = anyShowing ? "disabled" : "hidden";
+    if (!anyShowing) {
+      const track = tracks[0];
+      track.mode = "hidden";
+      setupCueListeners(track);
+    } else {
+      if (tracks.length && cueChangeHandler) clearCueListeners(tracks[0]);
+      subtitleCue.value = null;
+    }
+    captions.value = { available: true, showing: !anyShowing };
+  }
+
+  let cueChangeHandler = null;
+  function setupCueListeners(track) {
+    if (cueChangeHandler) {
+      track.removeEventListener("cuechange", cueChangeHandler);
+      cueChangeHandler = null;
+    }
+    cueChangeHandler = () => {
+      const cues = [...(track.activeCues || [])];
+      const text = cues.map((c) => (c.getCueAsHTML ? stripHtml(c.getCueAsHTML()) : c.text || "")).join("\n");
+      subtitleCue.value = text ? { text } : null;
+    };
+    track.addEventListener("cuechange", cueChangeHandler);
+    cueChangeHandler();
+  }
+  function clearCueListeners(track) {
+    if (cueChangeHandler && track) {
+      track.removeEventListener("cuechange", cueChangeHandler);
+      cueChangeHandler = null;
+    }
+    subtitleCue.value = null;
+  }
+  function stripHtml(html) {
+    if (!html) return "";
+    if (typeof html === "string") {
+      const div = document.createElement("div");
+      div.innerHTML = html;
+      return div.textContent || "";
+    }
+    // VTTCue.getCueAsHTML() returns a DocumentFragment.
+    if (typeof html === "object" && (html.nodeType || "textContent" in html)) {
+      return html.textContent || "";
+    }
+    return String(html);
+  }
+
+  function normalizeSubtitlePrefs(input) {
+    const s = input && typeof input === "object" ? input : {};
+
+    const legacyHasH = Object.prototype.hasOwnProperty.call(s, "h");
+    const isOldDefault =
+      legacyHasH &&
+      Number(s.x) === 10 &&
+      Number(s.y) === 10 &&
+      Number(s.w) === 80 &&
+      Number(s.h) === 15 &&
+      (s.opacity == null || Math.abs(Number(s.opacity) - 0.95) < 0.0001);
+
+    if (isOldDefault) return { ...DEFAULT_SUBTITLE_PREFS };
+
+    if (legacyHasH) {
+      const x0 = Number.isFinite(Number(s.x)) ? Number(s.x) : 10;
+      const y0 = Number.isFinite(Number(s.y)) ? Number(s.y) : 10;
+      const w0 = Number.isFinite(Number(s.w)) ? Number(s.w) : 80;
+      const h0 = Number.isFinite(Number(s.h)) ? Number(s.h) : 15;
+      return {
+        x: clamp(x0 + w0 / 2, 0, 100),
+        y: clamp(y0 + h0 / 2, 0, 100),
+        w: clamp(w0, 30, 100),
+        opacity: Number.isFinite(Number(s.opacity)) ? clamp(Number(s.opacity), 0.15, 1) : DEFAULT_SUBTITLE_PREFS.opacity,
+        scale: 1,
+      };
+    }
+
+    return {
+      x: Number.isFinite(Number(s.x)) ? clamp(Number(s.x), 0, 100) : DEFAULT_SUBTITLE_PREFS.x,
+      y: Number.isFinite(Number(s.y)) ? clamp(Number(s.y), 0, 100) : DEFAULT_SUBTITLE_PREFS.y,
+      w: Number.isFinite(Number(s.w)) ? clamp(Number(s.w), 30, 100) : DEFAULT_SUBTITLE_PREFS.w,
+      opacity: Number.isFinite(Number(s.opacity)) ? clamp(Number(s.opacity), 0.15, 1) : DEFAULT_SUBTITLE_PREFS.opacity,
+      scale: Number.isFinite(Number(s.scale)) ? clamp(Number(s.scale), 0.6, 2.4) : DEFAULT_SUBTITLE_PREFS.scale,
+    };
+  }
+
+  function setSubtitleBox(s) {
+    const box = normalizeSubtitlePrefs(s);
+    persisted.subtitleBox = box;
+    saveState();
+    subtitleBox.value = box;
+  }
+
+  function setSkip(next) {
+    const v = normalizeSkip(next);
+    persisted.skip = v;
+    saveState();
+    skip.value = v;
+  }
+
+  function setRateSteps(next) {
+    const norm = normalizeRateSteps(next) || DEFAULT_RATE_STEPS.slice();
+    persisted.rateSteps = norm;
+    saveState();
+    rateSteps.value = norm;
+
+    const snapped = normalizeRate(playback.value.rate || 1, norm);
+    persisted.rate = snapped;
+    if (snapped !== 1) persisted.lastNonOneRate = snapped;
+    saveState();
+
+    playback.value = { ...playback.value, rate: snapped };
+    if (videoEl) {
+      try {
+        videoEl.playbackRate = snapped;
+      } catch {}
+    }
+  }
+
+  function resetRateSteps() {
+    setRateSteps(DEFAULT_RATE_STEPS.slice());
+  }
+
+  async function playNextInFeed({ autoplay = true } = {}) {
+    if (!currentSource || !currentEp) return false;
+    const pl = playlist.value;
+    if (pl?.feedId === currentSource?.id && pl?.episodes?.length) {
+      const playable = pl.episodes.filter((e) => e?.id);
+      if (playable.length) {
+        const idx = playable.findIndex((e) => e.id === currentEp.id);
+        const next = idx >= 0 && idx < playable.length - 1 ? playable[idx + 1] : playable[0];
+        if (next?.id) {
+          await selectEpisode(next.id, { autoplay, startAt: 0 });
+          return true;
+        }
+      }
+    }
+    const playable = (episodes || []).filter((e) => e.media?.url);
+    if (!playable.length) return false;
+    const idx = playable.findIndex((e) => e.id === currentEp.id);
+    const next = idx >= 0 && idx < playable.length - 1 ? playable[idx + 1] : playable[0];
+    if (!next?.id) return false;
+    await selectEpisode(next.id, { autoplay, startAt: 0 });
+    return true;
+  }
+
+  function setPlaylist(next) {
+    if (!next?.feedId || !Array.isArray(next.episodes)) {
+      playlist.value = null;
+      return;
+    }
+    playlist.value = {
+      feedId: next.feedId,
+      episodes: next.episodes,
+      showSlug: next.showSlug || null,
+    };
+  }
+
+  function clearPlaylist() {
+    playlist.value = null;
+  }
+
+  async function play({ userGesture = true } = {}) {
+    if (!videoEl) return;
+    userPaused = false;
+    const hasMutedPref = Object.prototype.hasOwnProperty.call(persisted, "muted");
+    const userChoseMuted = hasMutedPref && persisted.muted === true;
+    const wantsMuted = userChoseMuted ? true : userGesture ? false : persisted.muted === true;
+    if (wantsMuted) {
+      try {
+        videoEl.muted = true;
+        playback.value = { ...playback.value, muted: true };
+      } catch {}
+      try {
+        await videoEl.play();
+        audioBlocked.value = false;
+      } catch {
+        log.warn("Autoplay blocked (press Play)");
+      }
+      return;
+    }
+    try {
+      try {
+        videoEl.muted = false;
+        playback.value = { ...playback.value, muted: false };
+      } catch {}
+      await videoEl.play();
+      audioBlocked.value = false;
+    } catch (err) {
+      const isAutoplayBlock = err?.name === "NotAllowedError";
+      if (isAutoplayBlock) {
+        videoEl.pause();
+        audioBlocked.value = true;
+        log.warn("Sound muted by browser. Click video or Play to enable.");
+      } else if (userGesture) {
+        let recovered = false;
+        try {
+          videoEl.muted = true;
+          await videoEl.play();
+          recovered = true;
+        } catch {}
+        if (!recovered) log.warn("Autoplay blocked (press Play)");
+      }
+    }
+  }
+
+  function unmuteOnGesture() {
+    if (!videoEl || !videoEl.muted) return;
+    const hasMutedPref = Object.prototype.hasOwnProperty.call(persisted, "muted");
+    if (hasMutedPref && persisted.muted === true) return;
+    try {
+      videoEl.muted = false;
+      playback.value = { ...playback.value, muted: false };
+      audioBlocked.value = false;
+      persisted.muted = false;
+      saveState();
+    } catch {}
+  }
+
+  function pause() {
+    if (!videoEl) return;
+    userPaused = true;
+    videoEl.pause();
+  }
+
+  function togglePlay() {
+    if (!videoEl) return;
+    if (videoEl.paused) {
+      play({ userGesture: true });
+    } else if (videoEl.muted) {
+      // Playing but muted: unmute on user gesture instead of pausing
+      const hasMutedPref = Object.prototype.hasOwnProperty.call(persisted, "muted");
+      if (hasMutedPref && persisted.muted === true) {
+        pause();
+        return;
+      }
+      try {
+        videoEl.muted = false;
+        playback.value = { ...playback.value, muted: false };
+        audioBlocked.value = false;
+        persisted.muted = false;
+        saveState();
+      } catch {}
+    } else {
+      pause();
+    }
+  }
+
+  function seekBy(deltaSec) {
+    if (!videoEl) return;
+    videoEl.currentTime = Math.max(0, (videoEl.currentTime || 0) + deltaSec);
+  }
+
+  function seekToPct(pct01) {
+    if (!videoEl) return;
+    const dur = videoEl.duration;
+    if (!Number.isFinite(dur) || dur <= 0) return;
+    videoEl.currentTime = clamp(pct01, 0, 1) * dur;
+  }
+
+  function seekToTime(tSec) {
+    if (!videoEl) return;
+    const t = Math.max(0, Number(tSec) || 0);
+    videoEl.currentTime = t;
+  }
+
+  function rateUp() {
+    if (!videoEl) return;
+    const steps = rateSteps.value && rateSteps.value.length ? rateSteps.value : DEFAULT_RATE_STEPS;
+    const cur = normalizeRate(videoEl.playbackRate || playback.value.rate || 1, steps);
+    const idx = steps.indexOf(cur);
+    const next = steps[Math.min(steps.length - 1, (idx >= 0 ? idx : 2) + 1)] || 1;
+    try {
+      videoEl.playbackRate = next;
+    } catch {}
+    persisted.rate = next;
+    if (next !== 1) persisted.lastNonOneRate = next;
+    saveState();
+    playback.value = { ...playback.value, rate: next };
+  }
+
+  function rateDown() {
+    if (!videoEl) return;
+    const steps = rateSteps.value && rateSteps.value.length ? rateSteps.value : DEFAULT_RATE_STEPS;
+    const cur = normalizeRate(videoEl.playbackRate || playback.value.rate || 1, steps);
+    const idx = steps.indexOf(cur);
+    const next = steps[Math.max(0, (idx >= 0 ? idx : 2) - 1)] || 1;
+    try {
+      videoEl.playbackRate = next;
+    } catch {}
+    persisted.rate = next;
+    if (next !== 1) persisted.lastNonOneRate = next;
+    saveState();
+    playback.value = { ...playback.value, rate: next };
+  }
+
+  function toggleRate() {
+    if (!videoEl) return;
+    const steps = rateSteps.value && rateSteps.value.length ? rateSteps.value : DEFAULT_RATE_STEPS;
+    const cur = normalizeRate(videoEl.playbackRate || playback.value.rate || 1, steps);
+    const next = cur === 1 ? (persisted.lastNonOneRate || 1.5) : 1;
+    try {
+      videoEl.playbackRate = next;
+    } catch {}
+    persisted.rate = next;
+    if (next !== 1) persisted.lastNonOneRate = next;
+    saveState();
+    playback.value = { ...playback.value, rate: next };
+  }
+
+  function volumeUp() {
+    if (!videoEl) return;
+    const v = playback.value;
+    let vol = clamp((v.volume ?? 1) + VOLUME_STEP, 0, 1);
+    if (vol > 0 && v.muted) {
+      try {
+        videoEl.muted = false;
+        audioBlocked.value = false;
+        persisted.muted = false;
+      } catch {}
+    }
+    videoEl.volume = vol;
+    persisted.volume = vol;
+    saveState();
+    playback.value = { ...v, volume: vol, muted: !!videoEl.muted };
+  }
+
+  function volumeDown() {
+    if (!videoEl) return;
+    const v = playback.value;
+    let vol = clamp((v.volume ?? 1) - VOLUME_STEP, 0, 1);
+    videoEl.volume = vol;
+    if (vol <= 0) {
+      try {
+        videoEl.muted = true;
+        persisted.muted = true;
+      } catch {}
+    }
+    persisted.volume = vol;
+    saveState();
+    playback.value = { ...v, volume: vol, muted: !!videoEl.muted };
+  }
+
+  function toggleMute() {
+    if (!videoEl) return;
+    const v = playback.value;
+    const next = !v.muted;
+    try {
+      videoEl.muted = next;
+    } catch {}
+    persisted.muted = next;
+    saveState();
+    playback.value = { ...v, muted: next };
+  }
+
+  let preloadPromise = null;
+  function ensurePreload() {
+    if (!preloadPromise && sources.length) {
+      preloadPromise = (async () => {
+        const ok = await preloadFeedManifest();
+        if (!ok) await preloadCachedFeeds();
+      })();
+    }
+    return preloadPromise || Promise.resolve();
+  }
+
+  function pickDefaultSourceId(nextSources, { limit = 10 } = {}) {
+    const list = Array.isArray(nextSources) ? nextSources : [];
+    const head = list.slice(0, Math.max(1, Math.min(50, Math.floor(limit) || 10)));
+    const coreCategories = new Set(["sermons", "bible-study", "teaching", "ministry", "worship", "church"]);
+
+    const normCat = (v) => String(v || "").trim().toLowerCase();
+    const hasVideo = (s) => s?.features?.hasVideo === true;
+    const isCore = (s) => coreCategories.has(normCat(s?.category));
+
+    const first = (pred) => head.find((s) => s && typeof s.id === "string" && s.id && pred(s))?.id || null;
+    return (
+      first((s) => isCore(s) && hasVideo(s)) ||
+      first((s) => hasVideo(s)) ||
+      first((s) => isCore(s)) ||
+      head.find((s) => s && typeof s.id === "string" && s.id)?.id ||
+      null
+    );
+  }
+
+  async function setSources(nextSources, { initialRoute } = {}) {
+    sources = Array.isArray(nextSources) ? nextSources : [];
+    if (didInitLoad || !sources.length) return;
+    const routeSourceId =
+      initialRoute?.feed && typeof initialRoute.feed === "string" && sources.some((s) => s.id === initialRoute.feed) ? initialRoute.feed : null;
+    const wantedSourceId = routeSourceId || persisted.last?.sourceId || pickDefaultSourceId(sources) || sources[0]?.id;
+    if (!wantedSourceId) return;
+    if (!videoEl) {
+      pendingInitSourceId = wantedSourceId;
+      pendingInitRoute = routeSourceId ? initialRoute : null;
+      ensurePreload();
+      return;
+    }
+    didInitLoad = true;
+    try {
+      await ensurePreload();
+      if (routeSourceId) {
+        await applyRoute(initialRoute, { autoplay: initAutoplay });
+      } else {
+        await selectSource(wantedSourceId, { preserveEpisode: true, autoplay: initAutoplay });
+      }
+    } catch (e) {
+      log.error(String(e?.message || e || "init load failed"));
+    }
+  }
+
+  function setSleepTimerMins(mins) {
+    if (!videoEl) return;
+    sleepEndAt = Date.now() + mins * 60 * 1000;
+    sleep.value = { active: true, label: `${fmtTime(mins * 60)}` };
+    if (sleepTickId) clearInterval(sleepTickId);
+    sleepTickId = setInterval(() => {
+      if (!sleepEndAt) return;
+      const leftMs = sleepEndAt - Date.now();
+      if (leftMs <= 0) {
+        clearSleepTimer();
+        history.markCurrentHadSleep();
+        videoEl.pause();
+        return;
+      }
+      const leftSec = Math.ceil(leftMs / 1000);
+      sleep.value = { active: true, label: `${fmtTime(leftSec)}` };
+    }, 400);
+  }
+
+  function clearSleepTimer() {
+    sleepEndAt = null;
+    if (sleepTickId) clearInterval(sleepTickId);
+    sleepTickId = null;
+    sleep.value = { active: false, label: "" };
+  }
+
+  function attachAudioViz(container) {
+    if (!container) {
+      destroyAudioViz();
+      return;
+    }
+    if (!videoEl || !isAudioOnly.value) return;
+    destroyAudioViz();
+    try {
+      const ep = current.value.episode;
+      const src = current.value.source;
+      audioVizInstance = createAudioViz(videoEl, container, { episode: ep, source: src });
+      audioVizInstance.start();
+    } catch (e) {
+      log.warn(`Audio viz failed: ${String(e?.message || e)}`);
+      audioVizInstance = null;
+    }
+  }
+
+  function attachVideo(el) {
+    videoEl = el;
+    if (!videoEl) return;
+    const vol = Number(persisted.volume) >= 0 ? clamp(Number(persisted.volume), 0, 1) : 1;
+    videoEl.volume = vol;
+    const muted = persisted.muted ?? true;
+    // Init configurable skip + speed steps from persisted state.
+    skip.value = normalizeSkip(persisted.skip);
+    rateSteps.value = normalizeRateSteps(persisted.rateSteps) || DEFAULT_RATE_STEPS.slice();
+    shuffle.value = { ...normalizeShuffle(persisted.shuffle), label: "" };
+    if (shuffle.value.active) ensureShuffleTick();
+
+    const rate = normalizeRate(Number(persisted.rate) || 1, rateSteps.value);
+    try {
+      videoEl.playbackRate = rate;
+    } catch {}
+    try {
+      videoEl.muted = muted;
+    } catch {}
+    playback.value = { ...playback.value, volume: vol, muted, rate, ended: !!videoEl.ended };
+
+    if (persisted.subtitleBox) setSubtitleBox(persisted.subtitleBox);
+
+    // Click/tap on video: unmute + toggle play/pause.
+    videoEl.addEventListener("click", () => {
+      unmuteOnGesture();
+      togglePlay();
+    });
+
+    // One-time unlock: first user interaction anywhere tries to unmute.
+    const unlockOnce = () => {
+      unmuteOnGesture();
+      document.removeEventListener("click", unlockOnce);
+      document.removeEventListener("touchstart", unlockOnce);
+      document.removeEventListener("keydown", unlockOnce);
+    };
+    document.addEventListener("click", unlockOnce, { once: true });
+    document.addEventListener("touchstart", unlockOnce, { once: true });
+    document.addEventListener("keydown", unlockOnce, { once: true });
+
+    videoEl.addEventListener("timeupdate", () => {
+      const now = Date.now();
+      const dur = videoEl.duration;
+      const cur = videoEl.currentTime;
+      playback.value = {
+        paused: videoEl.paused,
+        ended: !!videoEl.ended,
+        muted: !!videoEl.muted,
+        volume: Number.isFinite(videoEl.volume) ? videoEl.volume : playback.value.volume ?? 1,
+        rate: normalizeRate(videoEl.playbackRate || playback.value.rate || 1),
+        time: Number.isFinite(cur) ? cur : 0,
+        duration: Number.isFinite(dur) ? dur : NaN,
+      };
+
+      if (!currentSource || !currentEp) return;
+      history.updateEnd(videoEl.currentTime || 0, videoEl.duration);
+      if (now - lastPersistMs > 2000) {
+        lastPersistMs = now;
+        setProgressSec(currentSource.id, currentEp.id, videoEl.currentTime || 0);
+      }
+    });
+
+    videoEl.addEventListener("pause", () => {
+      userPaused = true;
+      playback.value = { ...playback.value, paused: true, ended: !!videoEl.ended };
+      if (!videoEl.ended) {
+        persisted.playIntent = "pause";
+        saveState();
+      }
+    });
+
+    videoEl.addEventListener("play", () => {
+      userPaused = false;
+      playback.value = { ...playback.value, paused: false, ended: !!videoEl.ended };
+      persisted.playIntent = "play";
+      saveState();
+    });
+
+    videoEl.addEventListener("ended", () => {
+      playback.value = { ...playback.value, paused: true, ended: true };
+      if (shuffle.value.active) {
+        if (shuffleBusy) return;
+        shuffleBusy = true;
+        Promise.resolve()
+          .then(async () => {
+            await doShuffleNow({ force: true });
+            scheduleNextShuffle();
+          })
+          .finally(() => {
+            shuffleBusy = false;
+          });
+        return;
+      }
+      Promise.resolve().then(() => playNextInFeed({ autoplay: true })).catch(() => {});
+    });
+
+    videoEl.addEventListener("loadstart", () => { loading.value = true; });
+    videoEl.addEventListener("waiting", () => { loading.value = true; });
+    videoEl.addEventListener("canplay", () => { loading.value = false; });
+    videoEl.addEventListener("canplaythrough", () => { loading.value = false; });
+    videoEl.addEventListener("playing", () => { loading.value = false; });
+
+    window.addEventListener("beforeunload", () => history.finalize());
+
+    if (!didInitLoad && pendingInitSourceId) {
+      const sourceId = pendingInitSourceId;
+      pendingInitSourceId = null;
+      const route = pendingInitRoute;
+      pendingInitRoute = null;
+      didInitLoad = true;
+      ensurePreload()
+        .then(() =>
+          route && route.feed === sourceId ? applyRoute(route, { autoplay: initAutoplay }) : selectSource(sourceId, { preserveEpisode: true, autoplay: initAutoplay })
+        )
+        .catch((e) => {
+          log.error(String(e?.message || e || "init load failed"));
+        });
+    }
+  }
+
+  async function playRandom() {
+    if (!sources.length) return;
+    const faves = randomPrefs.value.favesOnly ? loadGuideFavesSet() : null;
+    const favPool = faves && faves.size ? sources.filter((s) => faves.has(s.id)) : [];
+    const pool = favPool.length ? favPool : sources;
+    if (!pool.length) return;
+    const src = pool[Math.floor(Math.random() * pool.length)];
+    await selectSource(src.id, { preserveEpisode: false, pickRandomEpisode: true, autoplay: true });
+  }
+
+  async function playRandomFromShow() {
+    const pl = playlist.value;
+    if (!pl?.feedId || !pl.episodes?.length) return;
+    if (currentSource?.id !== pl.feedId) {
+      await selectSource(pl.feedId, { preserveEpisode: false, skipAutoEpisode: true, autoplay: false });
+    }
+    const playable = pl.episodes.filter((e) => e?.id);
+    if (!playable.length) return;
+    const ep = playable[Math.floor(Math.random() * playable.length)];
+    await selectEpisode(ep.id, { autoplay: true, startAt: 0 });
+  }
+
+  async function selectSourceAndEpisode(sourceId, episodeId, { autoplay = true, startAt, playlist: pl } = {}) {
+    if (pl?.feedId && pl?.episodes?.length) setPlaylist(pl);
+    else if (!pl) setPlaylist(null);
+    const ok = await selectSource(sourceId, { preserveEpisode: false, skipAutoEpisode: true, autoplay });
+    if (!ok) {
+      setPlaylist(null);
+      return;
+    }
+    const wanted = resolveEpisodeIdBySlugOrId(episodeId) || episodeId;
+    await selectEpisode(wanted, { autoplay, startAt });
+  }
+
+  effect(() => {
+    const v = playback.value;
+    if (!videoEl) return;
+    if (videoEl.muted !== v.muted) playback.value = { ...v, muted: !!videoEl.muted };
+  });
+
+  return {
+    fmtTime,
+    current,
+    currentSourceId,
+    currentEpisodeId,
+    isAudioOnly,
+    attachAudioViz,
+    chapters,
+    chaptersLoadError,
+    captions,
+    transcriptsLoadError,
+    playback,
+    sleep,
+    shuffle,
+    shuffleIntervals: SHUFFLE_INTERVALS,
+    randomPrefs,
+    setRandomSettings,
+    sourceEpisodes,
+    setSources,
+    attachVideo,
+    teardownPlayer,
+    fetchText,
+    loadFullDescription,
+    fullDescriptionCache,
+    loadSourceEpisodes,
+    selectSource,
+    selectEpisode,
+    selectSourceAndEpisode,
+    applyRoute,
+    play,
+    pause,
+    togglePlay,
+    audioBlocked,
+    loading,
+    seekBy,
+    seekToPct,
+    seekToTime,
+    rateUp,
+    rateDown,
+    toggleRate,
+    volumeUp,
+    volumeDown,
+    toggleMute,
+    toggleCaptions,
+    subtitleBox,
+    subtitleCue,
+    setSubtitleBox,
+    skip,
+    setSkip,
+    rateSteps,
+    setRateSteps,
+    resetRateSteps,
+    setSleepTimerMins,
+    clearSleepTimer,
+    playRandom,
+    playRandomFromShow,
+    toggleShuffle,
+    setShuffleSettings,
+    getProgressSec,
+    getProgressMaxSec,
+    getKnownDurationSec,
+    playlist,
+    setPlaylist,
+    clearPlaylist,
+  };
+}

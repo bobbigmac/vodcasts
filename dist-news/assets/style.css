@@ -1,0 +1,17 @@
+/**
+ * Main stylesheet: imports partials by concern.
+ */
+@import "styles/variables.css";
+@import "styles/layout.css";
+@import "styles/player.css";
+@import "styles/audio-viz.css";
+@import "styles/progress.css";
+@import "styles/captions.css";
+@import "styles/overlays.css";
+@import "styles/guide-bar.css";
+@import "styles/guide-panel.css";
+@import "styles/browse-panel.css";
+@import "styles/panels.css";
+@import "styles/corner.css";
+@import "styles/idle.css";
+@import "styles/support.css";

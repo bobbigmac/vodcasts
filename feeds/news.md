@@ -127,3 +127,33 @@
 - title: Geek News Central (Video)
 - category: news
 - tags: tech, geek, video
+
+## vox-today-explained
+- url: https://feeds.megaphone.fm/VMP5705694065
+- title: Vox — Today, Explained
+- category: news
+- tags: vox, explainers, current-affairs, daily, audio
+
+## the-rest-is-politics
+- url: https://feeds.megaphone.fm/GLT9190936013
+- title: Goalhanger — The Rest Is Politics
+- category: news
+- tags: politics, analysis, interviews, audio
+
+## intelligence-squared
+- url: https://feeds.megaphone.fm/NSR6363847171
+- title: Intelligence Squared
+- category: lectures
+- tags: debates, interviews, ideas, longform, audio
+
+## jpl-podcasts
+- url: https://www.jpl.nasa.gov/feeds/podcasts/
+- title: NASA Jet Propulsion Laboratory (JPL) — Podcasts
+- category: science
+- tags: nasa, jpl, space, science, audio, video
+
+## gresham-college-lectures
+- url: https://feeds.buzzsprout.com/1904814.rss
+- title: Gresham College — Lectures
+- category: lectures
+- tags: lectures, education, public-lectures, uk, audio

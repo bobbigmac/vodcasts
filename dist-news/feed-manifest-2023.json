@@ -1,0 +1,92 @@
+{
+  "feeds": [
+    {
+      "id": "jpl-podcasts",
+      "episodes": [
+        {
+          "id": "https://www.jpl.nasa.gov/videos/methane-hot-spots",
+          "slug": "2023-10-31-methane-hot-spots-zz7ua2",
+          "title": "Methane Hot Spots",
+          "link": "https://www.jpl.nasa.gov/videos/methane-hot-spots",
+          "dateText": "2023-10-31",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": null,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/e2-Methane_hotspots_SVS_1080p30_X3L944a.m4v",
+            "type": "video/mp4",
+            "bytes": 22285997,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/Methane_thumb.max-3000x3000.jpg"
+        },
+        {
+          "id": "https://www.jpl.nasa.gov/videos/nasas-cadre-mini-rovers-to-explore-the-moon-as-a-team",
+          "slug": "2023-10-03-nasa-s-cadre-mini-rovers-to-explore-the-moon-as-a-team-1x0v87",
+          "title": "NASA’s CADRE: Mini Rovers to Explore the Moon as a Team",
+          "link": "https://www.jpl.nasa.gov/videos/nasas-cadre-mini-rovers-to-explore-the-moon-as-a-team",
+          "dateText": "2023-10-03",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": 67,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/CADRE_video_-_cc_-_border.mp4",
+            "type": "video/mp4",
+            "bytes": 78037151,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/PIA25666.max-3000x3000.jpg",
+          "descriptionShort": "NASA’s CADRE (Cooperative Autonomous Distributed Robotic Exploration) technology demonstration is sending a trio of rovers the size of a carry-on…"
+        },
+        {
+          "id": "https://www.jpl.nasa.gov/videos/preserving-the-past-restoring-damaged-photo-negatives",
+          "slug": "2023-09-13-preserving-the-past-restoring-damaged-photo-negatives-7b35ca",
+          "title": "Preserving the Past: Restoring Damaged Photo Negatives",
+          "link": "https://www.jpl.nasa.gov/videos/preserving-the-past-restoring-damaged-photo-negatives",
+          "dateText": "2023-09-13",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": 53,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/Archives-Preservation-Video.m4v",
+            "type": "video/mp4",
+            "bytes": 23563674,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/Preserving_the_Past_Restoring_Damaged_Phot.max-3000x3000.jpg",
+          "descriptionShort": "This video shows how the JPL Archives performs conservation efforts to preserve the content of the photos in our Still Negatives Collection. Digital…"
+        },
+        {
+          "id": "https://www.jpl.nasa.gov/videos/perseverances-mastcam-z-views-ingenuitys-47th-takeoff",
+          "slug": "2023-03-17-perseverance-s-mastcam-z-views-ingenuity-s-47th-takeoff-4i2iq2",
+          "title": "Perseverance's Mastcam-Z Views Ingenuity's 47th Takeoff",
+          "link": "https://www.jpl.nasa.gov/videos/perseverances-mastcam-z-views-ingenuitys-47th-takeoff",
+          "dateText": "2023-03-17",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": null,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/PIA25686.mp4",
+            "type": "video/mp4",
+            "bytes": 3514684,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/Ingenuity_thumb.max-3000x3000.jpg",
+          "descriptionShort": "March 14, 2023 NASA’s Ingenuity Mars Helicopter is seen here at the starting point of its 47th flight on Mars. This video shows the dust initially…"
+        }
+      ]
+    }
+  ]
+}

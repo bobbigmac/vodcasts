@@ -1,0 +1,17 @@
+{
+  "leftovers_title": "Other episodes",
+  "leftovers_title_full": "Other episodes — NASA JPL",
+  "leftovers_description": "Episodes outside the main NASA JPL row.",
+  "shows": [
+    {
+      "id": "jpl",
+      "title": "NASA JPL",
+      "title_full": "NASA Jet Propulsion Laboratory (JPL) — Podcasts",
+      "description": "Updates and stories from NASA’s Jet Propulsion Laboratory.",
+      "categories": ["science", "space"],
+      "featured": false,
+      "filter": { "type": "all" }
+    }
+  ]
+}
+

@@ -1,0 +1,560 @@
+{
+  "feeds": [
+    {
+      "id": "science-friday-video",
+      "episodes": [
+        {
+          "id": "https://www.sciencefriday.com/?post_type=video&p=59178",
+          "slug": "2020-10-23-breakthrough-the-slime-minder-wm2ms9",
+          "title": "Breakthrough: The Slime Minder",
+          "link": "https://www.sciencefriday.com/videos/breakthrough-the-slime-minder/",
+          "dateText": "2020-10-23",
+          "channelTitle": "Science Friday Videos",
+          "durationSec": null,
+          "media": {
+            "url": "http://www.sciencefriday.com/podcast-download/59178/breakthrough-the-slime-minder",
+            "type": "video/mp4",
+            "bytes": 1645,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "http://www.sciencefriday.com/wp-content/uploads/2020/10/Dussutour4k-Framegrab-5.jpg",
+          "descriptionShort": "Discover how Audrey Dussutour is breaking new ground in our understanding of animal cognition from an unexpected source: slime molds."
+        },
+        {
+          "id": "https://www.sciencefriday.com/?post_type=video&p=59107",
+          "slug": "2020-10-16-breakthrough-the-lake-sentinel-1ymzyb",
+          "title": "Breakthrough: The Lake Sentinel",
+          "link": "https://www.sciencefriday.com/videos/breakthrough-the-lake-sentinel/",
+          "dateText": "2020-10-16",
+          "channelTitle": "Science Friday Videos",
+          "durationSec": null,
+          "media": {
+            "url": "http://www.sciencefriday.com/podcast-download/59107/breakthrough-the-lake-sentinel",
+            "type": "video/mp4",
+            "bytes": 1646,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "http://www.sciencefriday.com/wp-content/uploads/2020/10/Africa-Flores-Anderson1.jpg",
+          "descriptionShort": "Discover how earth scientist Africa Flores-Anderson uses satellite data to help underserved communities."
+        },
+        {
+          "id": "https://www.sciencefriday.com/?post_type=video&p=59046",
+          "slug": "2020-10-07-breakthrough-the-galaxy-hunter-ua8lp7",
+          "title": "Breakthrough: The Galaxy Hunter",
+          "link": "https://www.sciencefriday.com/videos/breakthrough-the-galaxy-hunter/",
+          "dateText": "2020-10-07",
+          "channelTitle": "Science Friday Videos",
+          "durationSec": null,
+          "media": {
+            "url": "http://www.sciencefriday.com/podcast-download/59046/breakthrough-the-galaxy-hunter",
+            "type": "video/mp4",
+            "bytes": 1646,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "http://www.sciencefriday.com/wp-content/uploads/2020/10/burcin-stars-min.png",
+          "descriptionShort": "Learn about how astrophysicist Burçin Mutlu-Pakdil has defied odds—breaking cultural conventions and discovering a completely new kind of galaxy."
+        },
+        {
+          "id": "https://www.sciencefriday.com/?post_type=video&p=58965",
+          "slug": "2020-10-01-breakthrough-the-trauma-tracer-1n95b6",
+          "title": "Breakthrough: The Trauma Tracer",
+          "link": "https://www.sciencefriday.com/videos/breakthrough-the-trauma-tracer/",
+          "dateText": "2020-10-01",
+          "channelTitle": "Science Friday Videos",
+          "durationSec": null,
+          "media": {
+            "url": "http://www.sciencefriday.com/podcast-download/58965/breakthrough-the-trauma-tracer",
+            "type": "video/mp4",
+            "bytes": 1,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "http://www.sciencefriday.com/wp-content/uploads/2020/10/Bianca-lab.jpg",
+          "descriptionShort": "Follow Bianca Jones Marlin as she uses cutting-edge neuroscience to uncover how the effects of trauma can be passed down from generation to…"
+        }
+      ]
+    },
+    {
+      "id": "jpl-podcasts",
+      "episodes": [
+        {
+          "id": "https://www.jpl.nasa.gov/videos/whats-up-january-2021",
+          "slug": "2020-12-31-what-s-up-january-2021-1uo4qk",
+          "title": "What's Up - January 2021",
+          "link": "https://www.jpl.nasa.gov/videos/whats-up-january-2021",
+          "dateText": "2020-12-31",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": 197,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/JPL-20210101-WHATSUf-0001-720cc.m4v",
+            "type": "video/mp4",
+            "bytes": 105938903,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/multimediathumbswhatsup-square.max-3000x3000.jpg",
+          "descriptionShort": "What are some skywatching highlights in January 2021? Mark Earth&#x27;s closest approach to the Sun for the year, called perihelion, at the start of…"
+        },
+        {
+          "id": "https://www.jpl.nasa.gov/videos/perseverances-sample-tubes-ready-for-mars",
+          "slug": "2020-12-22-perseverance-s-sample-tubes-ready-for-mars-1yjegj",
+          "title": "Perseverance’s Sample Tubes Ready for Mars",
+          "link": "https://www.jpl.nasa.gov/videos/perseverances-sample-tubes-ready-for-mars",
+          "dateText": "2020-12-22",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": 157,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/Perseverances_Sample_Tubes_Ready_for_Mars_-_720.m4v",
+            "type": "video/mp4",
+            "bytes": 37148902,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/Perseverance_Sample_Tubes_Ready_for_Mars_-.max-3000x3000.jpg",
+          "descriptionShort": "One key activity for NASA&#x27;s Perseverance Mars rover, which is on its way to the Red Planet, will be to collect samples of Martian rock and…"
+        },
+        {
+          "id": "https://www.jpl.nasa.gov/videos/perseverance-arrives-at-mars-feb-18-2021",
+          "slug": "2020-12-21-perseverance-arrives-at-mars-feb-18-2021-1c67v6",
+          "title": "Perseverance Arrives at Mars: Feb. 18, 2021",
+          "link": "https://www.jpl.nasa.gov/videos/perseverance-arrives-at-mars-feb-18-2021",
+          "dateText": "2020-12-21",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": 59,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/Perseverance_Arrives_at_Mars_-_720.m4v",
+            "type": "video/mp4",
+            "bytes": 18063083,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/https-d2pn8kiwq2w21t-cloudfront-net-media-.max-3000x3000.jpg",
+          "descriptionShort": "After nearly 300 million miles (470 million km), NASA’s Perseverance rover completes its journey to Mars on Feb. 18, 2021. But, to reach the surface…"
+        },
+        {
+          "id": "https://www.jpl.nasa.gov/videos/nisar-watching-the-earth-move-under-our-feet",
+          "slug": "2020-12-17-nisar-watching-the-earth-move-under-our-feet-1fsvhm",
+          "title": "NISAR: Watching the Earth Move Under Our Feet",
+          "link": "https://www.jpl.nasa.gov/videos/nisar-watching-the-earth-move-under-our-feet",
+          "dateText": "2020-12-17",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": 243,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/NISAR_Mission_12.17.2020-720cc.m4v",
+            "type": "video/mp4",
+            "bytes": 124617898,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/nisar20201217-640.max-3000x3000.jpg",
+          "descriptionShort": "The joint U.S.-Indian NISAR satellite mission will use radar to observe a wide range of Earth processes, from the flow rates of glaciers and ice…"
+        },
+        {
+          "id": "https://www.jpl.nasa.gov/videos/whats-up-december-2020",
+          "slug": "2020-12-02-what-s-up-december-2020-995aqk",
+          "title": "What's Up - December 2020",
+          "link": "https://www.jpl.nasa.gov/videos/whats-up-december-2020",
+          "dateText": "2020-12-02",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": 204,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/videoswhatsup20201202JPL-20201201-WHATSUf-0001-720cc.m4v",
+            "type": "video/mp4",
+            "bytes": 122179564,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/multimediathumbswhatsup-square.max-3000x3000.jpg",
+          "descriptionShort": "What are some skywatching highlights in December 2020? Catch the year&#x27;s best meteor shower, the Geminids, in the middle of the month. Then…"
+        },
+        {
+          "id": "https://www.jpl.nasa.gov/videos/whats-up-november-2020",
+          "slug": "2020-10-30-what-s-up-november-2020-c44gsb",
+          "title": "What's Up - November 2020",
+          "link": "https://www.jpl.nasa.gov/videos/whats-up-november-2020",
+          "dateText": "2020-10-30",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": 196,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/videoswhatsup20201030JPL-20201101-WHATSUf-0001-720cc.m4v",
+            "type": "video/mp4",
+            "bytes": 108365288,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/multimediathumbswhatsup-square.max-3000x3000.jpg",
+          "descriptionShort": "What are some skywatching highlights in November 2020? Cool autumn evenings are a great time to look for the Pleiades star cluster. You&#x27;ll also…"
+        },
+        {
+          "id": "https://www.jpl.nasa.gov/videos/whats-up-october-2020",
+          "slug": "2020-10-01-what-s-up-october-2020-niuzj5",
+          "title": "What's Up - October 2020",
+          "link": "https://www.jpl.nasa.gov/videos/whats-up-october-2020",
+          "dateText": "2020-10-01",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": 210,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/videoswhatsup20201001JPL-20201001-WHATSUf-0001-720cc.m4v",
+            "type": "video/mp4",
+            "bytes": 187183905,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/multimediathumbswhatsup-square.max-3000x3000.jpg",
+          "descriptionShort": "What are some skywatching highlights in October 2020? Not one, but two, full moons; Mars at opposition; and finding the Andromeda galaxy."
+        },
+        {
+          "id": "https://www.jpl.nasa.gov/videos/whats-up-september-2020",
+          "slug": "2020-09-01-what-s-up-september-2020-cgxz3k",
+          "title": "What's Up - September 2020",
+          "link": "https://www.jpl.nasa.gov/videos/whats-up-september-2020",
+          "dateText": "2020-09-01",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": 198,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/videoswhatsup20200901JPL-20200901-WHATSUf-0001-720cc.m4v",
+            "type": "video/mp4",
+            "bytes": 176833264,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/multimediathumbswhatsup-square.max-3000x3000.jpg",
+          "descriptionShort": "What are some skywatching highlights in September 2020? Spot the Moon together with Mars and Venus, along with the flickering star Fomalhaut, which…"
+        },
+        {
+          "id": "https://www.jpl.nasa.gov/videos/whats-up-august-2020",
+          "slug": "2020-07-31-what-s-up-august-2020-1dty5v",
+          "title": "What's Up - August 2020",
+          "link": "https://www.jpl.nasa.gov/videos/whats-up-august-2020",
+          "dateText": "2020-07-31",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": 172,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/videoswhatsup20200801JPL-20200801-WHATSUf-0001-720cc.m4v",
+            "type": "video/mp4",
+            "bytes": 154119277,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/multimediathumbswhatsup-square.max-3000x3000.jpg",
+          "descriptionShort": "What are some skywatching highlights in August 2020? See the Moon posing with various planets throughout the month, plus catch the peak of the…"
+        },
+        {
+          "id": "https://www.jpl.nasa.gov/videos/getting-perseverance-to-the-launch-pad",
+          "slug": "2020-07-22-getting-perseverance-to-the-launch-pad-80i23k",
+          "title": "Getting Perseverance to the Launch Pad",
+          "link": "https://www.jpl.nasa.gov/videos/getting-perseverance-to-the-launch-pad",
+          "dateText": "2020-07-22",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": 155,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/videosmars202020200722JPL-20200722-M2020f-0001-GettingPerseverance-720cc.m4v",
+            "type": "video/mp4",
+            "bytes": 131726254,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/multimediathumbsJPL-20200722-M2020f-0001-G.max-3000x3000.jpg",
+          "descriptionShort": "In February 2020, NASA’s Perseverance Rover began its long journey to Mars by first traveling across the United States. The rover was built at…"
+        },
+        {
+          "id": "https://www.jpl.nasa.gov/videos/nasas-ingenuity-mars-helicopter-the-first-aircraft-on-mars",
+          "slug": "2020-07-14-nasa-s-ingenuity-mars-helicopter-the-first-aircraft-on-mars-10k0ze",
+          "title": "NASA’s Ingenuity Mars Helicopter: The First Aircraft on Mars",
+          "link": "https://www.jpl.nasa.gov/videos/nasas-ingenuity-mars-helicopter-the-first-aircraft-on-mars",
+          "dateText": "2020-07-14",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": 200,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/videosmars202020200714JPL-20200713-Mars-Helicopter-Mission-Overview-720cc.m4v",
+            "type": "video/mp4",
+            "bytes": 103538672,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/multimediathumbsJPL-20200713-Mars-Helicopt.max-3000x3000.jpg",
+          "descriptionShort": "NASA's Ingenuity Mars Helicopter will make history's first attempt at powered flight on another planet next spring. It is riding with the agency's…"
+        },
+        {
+          "id": "https://www.jpl.nasa.gov/videos/whats-up-july-2020",
+          "slug": "2020-07-01-what-s-up-july-2020-1hize8",
+          "title": "What's Up - July 2020",
+          "link": "https://www.jpl.nasa.gov/videos/whats-up-july-2020",
+          "dateText": "2020-07-01",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": 204,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/videoswhatsup20200701JPL-20200701-WHATSUf-0001-720cc.m4v",
+            "type": "video/mp4",
+            "bytes": 161305638,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/multimediathumbswhatsup-square.max-3000x3000.jpg",
+          "descriptionShort": "What&#x27;s Up for July? How about some moons with those giant planets? Mars after midnight. And are the stars of Mars the same as ours?"
+        },
+        {
+          "id": "https://www.jpl.nasa.gov/videos/whats-up-june-2020",
+          "slug": "2020-06-22-what-s-up-june-2020-1gcvxu",
+          "title": "What's Up - June 2020",
+          "link": "https://www.jpl.nasa.gov/videos/whats-up-june-2020",
+          "dateText": "2020-06-22",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": 204,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/videoswhatsup20200622JPL-20200601-WHATSUf-0001-720cc.m4v",
+            "type": "video/mp4",
+            "bytes": 182278386,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/multimediathumbswhatsup-square.max-3000x3000.jpg",
+          "descriptionShort": "What are some skywatching highlights you can see in June 2020? Look for the Summer Triangle rising in the east after sundown, keep tabs on the…"
+        },
+        {
+          "id": "https://www.jpl.nasa.gov/videos/mars-2020-perseverance-rover-sample-caching-system",
+          "slug": "2020-06-02-mars-2020-perseverance-rover-sample-caching-system-1l9hlq",
+          "title": "Mars 2020 Perseverance Rover Sample Caching System",
+          "link": "https://www.jpl.nasa.gov/videos/mars-2020-perseverance-rover-sample-caching-system",
+          "dateText": "2020-06-02",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": 154,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/videosmars202020200602JPL-20200529-MARSf-0001-Mars_Sample_Caching-720cc.m4v",
+            "type": "video/mp4",
+            "bytes": 79559467,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/multimediathumbsJPL-20200529-MARSf-0001-64.max-3000x3000.jpg",
+          "descriptionShort": "Watch as NASA-JPL engineers test the Sample Caching System on the Perseverance Mars rover. Described as one of the most complex robotic systems ever…"
+        },
+        {
+          "id": "https://www.jpl.nasa.gov/videos/working-remotely-how-astronauts-upgraded-a-complex-experiment-in-space",
+          "slug": "2020-05-12-working-remotely-how-astronauts-upgraded-a-complex-experiment-f8oup2",
+          "title": "Working Remotely: How Astronauts Upgraded a Complex Experiment in Space",
+          "link": "https://www.jpl.nasa.gov/videos/working-remotely-how-astronauts-upgraded-a-complex-experiment-in-space",
+          "dateText": "2020-05-12",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": 111,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/videoscoldatomlab2020051220200507_CAL_Upgrade-720cc.m4v",
+            "type": "video/mp4",
+            "bytes": 98717368,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/Working-Remotely-How-Astronauts-Upgraded-a.max-3000x3000.jpg",
+          "descriptionShort": "NASA&#x27;s Cold Atom Laboratory underwent a major hardware upgrade aboard the International Space Station in January 2020. The mission team at…"
+        },
+        {
+          "id": "https://www.jpl.nasa.gov/videos/whats-up-may-2020",
+          "slug": "2020-05-04-what-s-up-may-2020-pn4iq6",
+          "title": "What's Up - May 2020",
+          "link": "https://www.jpl.nasa.gov/videos/whats-up-may-2020",
+          "dateText": "2020-05-04",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": 201,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/videoswhatsup20200504JPL-20200501-WHATSUf-0001-720cc.m4v",
+            "type": "video/mp4",
+            "bytes": 175332264,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/multimediathumbswhatsup-square.max-3000x3000.jpg",
+          "descriptionShort": "What astronomy highlights can you see in the sky in May 2020? Venus, Sirius and the Milky Way. With so many of us staying home these days,…"
+        },
+        {
+          "id": "https://www.jpl.nasa.gov/videos/whats-up-april-2020",
+          "slug": "2020-03-31-what-s-up-april-2020-r90ix5",
+          "title": "What's Up - April 2020",
+          "link": "https://www.jpl.nasa.gov/videos/whats-up-april-2020",
+          "dateText": "2020-03-31",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": 199,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/videoswhatsup20200331JPL-20200401-WHATSUf-0001-720cc.m4v",
+            "type": "video/mp4",
+            "bytes": 173120598,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/multimediathumbswhatsup-square.max-3000x3000.jpg",
+          "descriptionShort": "What are some astronomy highlights in the sky in April 2020? This month, Venus visits the Pleiades; Mars, Jupiter and Saturn begin their breakup;…"
+        },
+        {
+          "id": "https://www.jpl.nasa.gov/videos/curiositys-18-billion-pixel-panorama-on-mars",
+          "slug": "2020-03-04-curiosity-s-1-8-billion-pixel-panorama-on-mars-1nw2an",
+          "title": "Curiosity’s 1.8 Billion-Pixel Panorama on Mars",
+          "link": "https://www.jpl.nasa.gov/videos/curiositys-18-billion-pixel-panorama-on-mars",
+          "dateText": "2020-03-04",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": 189,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/videosmsl20200304JPL-20200303-MSLf-0001-720cc.m4v",
+            "type": "video/mp4",
+            "bytes": 157831252,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/multimediathumbsPIA23623-640.max-3000x3000.jpg",
+          "descriptionShort": "NASA Curiosity Project Scientist Ashwin Vasavada guides this tour of the rover's view of the Martian surface."
+        },
+        {
+          "id": "https://www.jpl.nasa.gov/videos/whats-up-march-2020",
+          "slug": "2020-03-02-what-s-up-march-2020-3tuqc",
+          "title": "What's Up - March 2020",
+          "link": "https://www.jpl.nasa.gov/videos/whats-up-march-2020",
+          "dateText": "2020-03-02",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": 164,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/videoswhatsup20200302JPL-20200301-WHATSUf-0001-720cc.m4v",
+            "type": "video/mp4",
+            "bytes": 144940649,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/multimediathumbswhatsup-square.max-3000x3000.jpg",
+          "descriptionShort": "Looking for astronomy highlights for March 2020? This month, early risers enjoy a planetary grouping of Mars, Jupiter and Saturn in the early…"
+        },
+        {
+          "id": "https://www.jpl.nasa.gov/videos/whats-up-february-2020",
+          "slug": "2020-02-04-what-s-up-february-2020-uhrq2v",
+          "title": "What's Up - February 2020",
+          "link": "https://www.jpl.nasa.gov/videos/whats-up-february-2020",
+          "dateText": "2020-02-04",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": 184,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/videoswhatsup20200204JPL-20200203-WHATSUf-0001-720cc.m4v",
+            "type": "video/mp4",
+            "bytes": 161878940,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/multimediathumbswhatsup-square.max-3000x3000.jpg",
+          "descriptionShort": "Looking for astronomy highlights for February 2020? This month is the best time of the year to try to view Mercury, soon after sunset; Mars…"
+        },
+        {
+          "id": "https://www.jpl.nasa.gov/videos/nasas-spitzer-space-telescope-unveiling-the-universe",
+          "slug": "2020-01-15-nasa-s-spitzer-space-telescope-unveiling-the-universe-1781nn",
+          "title": "NASA's Spitzer Space Telescope: Unveiling the Universe",
+          "link": "https://www.jpl.nasa.gov/videos/nasas-spitzer-space-telescope-unveiling-the-universe",
+          "dateText": "2020-01-15",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": 245,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/videosspitzer20200115JPL-20200115-SPITZRf-0001-720cc.m4v",
+            "type": "video/mp4",
+            "bytes": 219792847,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/multimediathumbsPIA20913-640.max-3000x3000.jpg",
+          "descriptionShort": "After 16 years of unveiling the infrared universe, NASA's Spitzer Space Telescope has left a singular legacy. As one of NASA’s four Great…"
+        },
+        {
+          "id": "https://www.jpl.nasa.gov/videos/nasas-new-planet-tracker-neid",
+          "slug": "2020-01-08-nasa-s-new-planet-tracker-neid-skchi",
+          "title": "NASA's New Planet Tracker, NEID",
+          "link": "https://www.jpl.nasa.gov/videos/nasas-new-planet-tracker-neid",
+          "dateText": "2020-01-08",
+          "channelTitle": "Podcast for audio and video - NASA's Jet Propulsion Laboratory",
+          "durationSec": 124,
+          "media": {
+            "url": "https://d2pn8kiwq2w21t.cloudfront.net/media/videosNEID20200108JPL-20200108-EXOPLN-0001-720cc.m4v",
+            "type": "video/mp4",
+            "bytes": 106792029,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "https://d2pn8kiwq2w21t.cloudfront.net/images/multimediathumbsneid20200108-640.max-3000x3000.jpg",
+          "descriptionShort": "A new NASA-funded planet-hunting instrument has been installed on the WIYN telescope, on Arizona's Kitt Peak. NEID (pronounced NOO-id) is a…"
+        }
+      ]
+    }
+  ]
+}

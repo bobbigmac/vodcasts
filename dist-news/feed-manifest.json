@@ -1,0 +1,227 @@
+{
+  "version": 3,
+  "base_path": "/",
+  "feeds": [
+    {
+      "id": "bbc-world-service-global-news-podcast",
+      "title": "BBC World Service — Global News Podcast",
+      "url": "/data/feeds/bbc-world-service-global-news-podcast.xml",
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": false
+      }
+    },
+    {
+      "id": "npr-up-first",
+      "title": "NPR — Up First",
+      "url": "/data/feeds/npr-up-first.xml",
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": false
+      }
+    },
+    {
+      "id": "reuters-world-news",
+      "title": "Reuters — Reuters World News",
+      "url": "/data/feeds/reuters-world-news.xml",
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": false
+      }
+    },
+    {
+      "id": "the-economist-the-intelligence",
+      "title": "The Economist — The Intelligence",
+      "url": "/data/feeds/the-economist-the-intelligence.xml",
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": false
+      }
+    },
+    {
+      "id": "wsj-the-journal",
+      "title": "The Wall Street Journal — The Journal.",
+      "url": "/data/feeds/wsj-the-journal.xml",
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": false
+      }
+    },
+    {
+      "id": "ted-talks-hd",
+      "title": "TED Talks Daily (HD)",
+      "url": "/data/feeds/ted-talks-hd.xml",
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": true
+      }
+    },
+    {
+      "id": "science-friday-video",
+      "title": "Science Friday Videos",
+      "url": "/data/feeds/science-friday-video.xml",
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": true
+      }
+    },
+    {
+      "id": "uctv-science-video",
+      "title": "UCTV Science (Video)",
+      "url": "/data/feeds/uctv-science-video.xml",
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": true
+      }
+    },
+    {
+      "id": "tech-news-weekly-video",
+      "title": "Tech News Weekly (Video)",
+      "url": "/data/feeds/tech-news-weekly-video.xml",
+      "features": {
+        "hasTranscript": true,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": true
+      }
+    },
+    {
+      "id": "geek-news-central-video",
+      "title": "Geek News Central (Video)",
+      "url": "/data/feeds/geek-news-central-video.xml",
+      "features": {
+        "hasTranscript": true,
+        "hasPlayableTranscript": true,
+        "hasChapters": true,
+        "hasVideo": true
+      }
+    },
+    {
+      "id": "vox-today-explained",
+      "title": "Vox — Today, Explained",
+      "url": "/data/feeds/vox-today-explained.xml",
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": false
+      }
+    },
+    {
+      "id": "the-rest-is-politics",
+      "title": "Goalhanger — The Rest Is Politics",
+      "url": "/data/feeds/the-rest-is-politics.xml",
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": false
+      }
+    },
+    {
+      "id": "intelligence-squared",
+      "title": "Intelligence Squared",
+      "url": "/data/feeds/intelligence-squared.xml",
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": false
+      }
+    },
+    {
+      "id": "jpl-podcasts",
+      "title": "NASA Jet Propulsion Laboratory (JPL) — Podcasts",
+      "url": "/data/feeds/jpl-podcasts.xml",
+      "features": {
+        "hasTranscript": false,
+        "hasPlayableTranscript": false,
+        "hasChapters": false,
+        "hasVideo": true
+      }
+    },
+    {
+      "id": "gresham-college-lectures",
+      "title": "Gresham College — Lectures",
+      "url": "/data/feeds/gresham-college-lectures.xml",
+      "features": {
+        "hasTranscript": true,
+        "hasPlayableTranscript": true,
+        "hasChapters": false,
+        "hasVideo": false
+      }
+    }
+  ],
+  "chunks": [
+    {
+      "url": "/feed-manifest-2026-01.json"
+    },
+    {
+      "url": "/feed-manifest-2026-02.json"
+    },
+    {
+      "url": "/feed-manifest-2026-03.json"
+    },
+    {
+      "url": "/feed-manifest-2025-q1.json"
+    },
+    {
+      "url": "/feed-manifest-2025-q2.json"
+    },
+    {
+      "url": "/feed-manifest-2025-07.json"
+    },
+    {
+      "url": "/feed-manifest-2025-08.json"
+    },
+    {
+      "url": "/feed-manifest-2025-09.json"
+    },
+    {
+      "url": "/feed-manifest-2025-10.json"
+    },
+    {
+      "url": "/feed-manifest-2025-11.json"
+    },
+    {
+      "url": "/feed-manifest-2025-12.json"
+    },
+    {
+      "url": "/feed-manifest-2024.json"
+    },
+    {
+      "url": "/feed-manifest-2023.json"
+    },
+    {
+      "url": "/feed-manifest-2021.json"
+    },
+    {
+      "url": "/feed-manifest-2020.json"
+    },
+    {
+      "url": "/feed-manifest-2019.json"
+    },
+    {
+      "url": "/feed-manifest-2018.json"
+    },
+    {
+      "url": "/feed-manifest-1970.json"
+    }
+  ]
+}

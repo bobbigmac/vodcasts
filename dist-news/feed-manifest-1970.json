@@ -1,0 +1,30 @@
+{
+  "feeds": [
+    {
+      "id": "science-friday-video",
+      "episodes": [
+        {
+          "id": "https://www.sciencefriday.com/?post_type=video&p=59898",
+          "slug": "1970-01-01-surveying-the-northern-lights-1w15hn",
+          "title": "Surveying The Northern Lights",
+          "link": "https://www.sciencefriday.com/videos/aurora-northern-lights/",
+          "dateText": "1970-01-01",
+          "channelTitle": "Science Friday Videos",
+          "durationSec": null,
+          "media": {
+            "url": "http://www.sciencefriday.com/podcast-download/59898/aurora-northern-lights",
+            "type": "video/mp4",
+            "bytes": 1630,
+            "hasVideoInFeed": true,
+            "pickedIsVideo": true
+          },
+          "chaptersExternal": null,
+          "transcripts": [],
+          "transcriptsAll": [],
+          "imageUrl": "http://www.sciencefriday.com/wp-content/uploads/2020/12/Aurora.jpg",
+          "descriptionShort": "For nearly two decades, Don Hampton has been monitoring the Northern Lights in Alaska to understand the energy pouring down from auroras."
+        }
+      ]
+    }
+  ]
+}
