@@ -4,14 +4,40 @@
   "leftovers_description": "Episodes outside the main The Rest Is Politics row.",
   "shows": [
     {
+      "id": "question-time",
+      "title": "Question Time",
+      "title_full": "Question Time — The Rest Is Politics",
+      "description": "Q&A / listener questions episodes.",
+      "categories": ["news", "politics"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Question Time" }
+    },
+    {
+      "id": "leading",
+      "title": "Leading",
+      "title_full": "Leading — The Rest Is Politics",
+      "description": "Interviews (\"Leading\") episodes.",
+      "categories": ["news", "politics"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Leading:" }
+    },
+    {
+      "id": "reactions",
+      "title": "Reactions",
+      "title_full": "Reactions — The Rest Is Politics",
+      "description": "Short reaction episodes.",
+      "categories": ["news", "politics"],
+      "featured": false,
+      "filter": { "type": "title_contains_any", "values": ["REACTION", "Reacts"] }
+    },
+    {
       "id": "episodes",
-      "title": "The Rest Is Politics",
-      "title_full": "The Rest Is Politics — Goalhanger",
-      "description": "Politics discussion and interviews.",
+      "title": "Episodes",
+      "title_full": "Episodes — The Rest Is Politics",
+      "description": "All other episodes in this feed.",
       "categories": ["news", "politics"],
       "featured": false,
       "filter": { "type": "all" }
     }
   ]
 }
-

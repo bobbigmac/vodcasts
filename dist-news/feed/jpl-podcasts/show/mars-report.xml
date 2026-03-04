@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Mars Report</title>
+    <link>/feed/jpl-podcasts/</link>
+    <description>NASA Jet Propulsion Laboratory (JPL) — Podcasts — Mars Report</description>
+    <language>en</language>
+  <item>
+    <title>Mars Report: December 20, 2018</title>
+    <link>https://www.jpl.nasa.gov/videos/mars-report-december-20-2018</link>
+    <description>NASA's InSight has been busy. After landing on the Red Planet, the mission sent home pictures and sound, then placed its first instrument on the…</description>
+    <pubDate>2018-12-20</pubDate>
+    <guid isPermaLink="false">https://www.jpl.nasa.gov/videos/mars-report-december-20-2018</guid>
+    <enclosure url="https://d2pn8kiwq2w21t.cloudfront.net/media/videosmars20181220JPL-20181220-MARSf-0001-720cc.m4v" type="video/mp4" length="91759255"/>
+  </item>
+  <item>
+    <title>Mars Report: August 20 2018</title>
+    <link>https://www.jpl.nasa.gov/videos/mars-report-august-20-2018</link>
+    <description>What's the latest news from Mars? A global dust storm is starting to settle, but still obscures the Martian surface. Curiosity turns six and drills…</description>
+    <pubDate>2018-08-20</pubDate>
+    <guid isPermaLink="false">https://www.jpl.nasa.gov/videos/mars-report-august-20-2018</guid>
+    <enclosure url="https://d2pn8kiwq2w21t.cloudfront.net/media/videosmars20180820JPL-20180814-MARSf-0001-720cc.m4v" type="video/mp4" length="66249312"/>
+  </item>
+  <item>
+    <title>Mars Report: May 24, 2018</title>
+    <link>https://www.jpl.nasa.gov/videos/mars-report-may-24-2018</link>
+    <description>What's the latest news from Mars? NASA's InSight lander and MarCO CubeSats are on their way to the Red Planet, a tiny helicopter will hitch a ride…</description>
+    <pubDate>2018-05-24</pubDate>
+    <guid isPermaLink="false">https://www.jpl.nasa.gov/videos/mars-report-may-24-2018</guid>
+    <enclosure url="https://d2pn8kiwq2w21t.cloudfront.net/media/videosmars20180524JPL-20180524-MARSf-0001-360cc.m4v" type="video/mp4" length="103547482"/>
+  </item>
+  <item>
+    <title>Mars Report: March 30, 2018</title>
+    <link>https://www.jpl.nasa.gov/videos/mars-report-march-30-2018</link>
+    <description>NASA's InSight arrives at Vandenberg AFB and readies for launch, Opportunity uses its grinder for the first time in 300 sols, and Curiosity…</description>
+    <pubDate>2018-03-30</pubDate>
+    <guid isPermaLink="false">https://www.jpl.nasa.gov/videos/mars-report-march-30-2018</guid>
+    <enclosure url="https://d2pn8kiwq2w21t.cloudfront.net/media/videosmars20180330JPL-20180330-MARSf-0001-720cc.m4v" type="video/mp4" length="76766883"/>
+  </item>
+  </channel>
+</rss>

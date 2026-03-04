@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
-    <title>Intelligence Squared</title>
+    <title>Episodes</title>
     <link>/feed/intelligence-squared/</link>
-    <description>Intelligence Squared — Intelligence Squared</description>
+    <description>Intelligence Squared — Episodes</description>
     <language>en</language>
   <item>
     <title>What Does It Take to Run Goldman Sachs During a Meltdown? With Former CEO Lloyd Blankfein</title>
@@ -60,14 +60,6 @@
     <pubDate>2026-02-22</pubDate>
     <guid isPermaLink="false">ed482f3a-0e87-11f1-8faa-bb633a53ffc1</guid>
     <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR9113390282.mp3?updated=1771612824" type="audio/mpeg" length=""/>
-  </item>
-  <item>
-    <title>The Specialist | Jackie O's Faux Pearls, with Frank Everett</title>
-    <link></link>
-    <description>This is an episode of The Specialist, your weekly dose of wonder. In The Specialist, explore the significance and journey of an extraordinary work…</description>
-    <pubDate>2026-02-21</pubDate>
-    <guid isPermaLink="false">8a516878-005f-11f1-a356-6b1e08b81bc3</guid>
-    <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR5114354847.mp3" type="audio/mpeg" length=""/>
   </item>
   <item>
     <title>Could Silicon Valley Billionaires Cure Aging? With Aleks Krotoski</title>
@@ -374,14 +366,6 @@
     <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR3865469881.mp3?updated=1765891611" type="audio/mpeg" length=""/>
   </item>
   <item>
-    <title>The Specialist | The Anonymous Altarpiece: Decoding a Renaissance Enigma, with Alex Bell</title>
-    <link></link>
-    <description>This is an episode of The Specialist, your weekly dose of wonder. In The Specialist, explore the significance and journey of an extraordinary work…</description>
-    <pubDate>2025-12-20</pubDate>
-    <guid isPermaLink="false">a353b316-bb2d-11f0-bb80-8fdf6e6549a0</guid>
-    <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR2284106483.mp3" type="audio/mpeg" length=""/>
-  </item>
-  <item>
     <title>Have We Finally Solved The Mystery of Vermeer's Girl with a Pearl Earring? With Andrew Graham-Dixon</title>
     <link></link>
     <description>Johannes Vermeer is one of the greatest painters in history, yet the man himself remains an enigma. But have we finally solved the mystery of one of…</description>
@@ -412,14 +396,6 @@
     <pubDate>2025-12-14</pubDate>
     <guid isPermaLink="false">f1962bfc-d5ff-11f0-b150-f762810ae4aa</guid>
     <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR4948688087.mp3?updated=1765400159" type="audio/mpeg" length=""/>
-  </item>
-  <item>
-    <title>The Intelligence Squared Economic Outlook with Jeremy Hunt</title>
-    <link></link>
-    <description>We’ve heard enough from the pessimists. Yes, these are hard times, but what investors, business owners and all of us need right now is not more…</description>
-    <pubDate>2025-12-12</pubDate>
-    <guid isPermaLink="false">ae837bde-d768-11f0-968d-63ca0c0b2ad3</guid>
-    <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR3737116824.mp3?updated=1765551272" type="audio/mpeg" length=""/>
   </item>
   <item>
     <title>Rory Stewart on Trump, Nationalism and The Value of Rural Life (Part Two)</title>
@@ -476,14 +452,6 @@
     <pubDate>2025-12-01</pubDate>
     <guid isPermaLink="false">4d70b362-cba0-11f0-bae1-efa2e55b1734</guid>
     <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR7259337413.mp3?updated=1764255698" type="audio/mpeg" length=""/>
-  </item>
-  <item>
-    <title>The Specialist | Virgil Abloh’s Reimagining of the Iconic Nike Air Force 1 for Louis Vuitton, with Brahm Wachter</title>
-    <link></link>
-    <description>This is an episode of The Specialist, your weekly dose of wonder. In The Specialist, explore the significance and journey of an extraordinary work…</description>
-    <pubDate>2025-11-29</pubDate>
-    <guid isPermaLink="false">a3256434-bb2d-11f0-bb80-1fa0a4b352fd</guid>
-    <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR7069463882.mp3" type="audio/mpeg" length=""/>
   </item>
   <item>
     <title>Why Do Authoritarians Want To Control The News? With Martin Moore</title>
@@ -606,44 +574,12 @@
     <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR4463489647.mp3?updated=1761909029" type="audio/mpeg" length=""/>
   </item>
   <item>
-    <title>The Intelligence Squared Economic Outlook with Jeremy Hunt (Part Two)</title>
-    <link></link>
-    <description>We’ve heard enough from the pessimists. Yes, these are hard times, but what investors, business owners and all of us need right now is not more…</description>
-    <pubDate>2025-11-02</pubDate>
-    <guid isPermaLink="false">51f7b16e-b5ad-11f0-b0aa-9f8dd4409b8f</guid>
-    <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR5187211206.mp3?updated=1761842328" type="audio/mpeg" length=""/>
-  </item>
-  <item>
-    <title>The Intelligence Squared Economic Outlook with Jeremy Hunt (Part One)</title>
-    <link></link>
-    <description>We’ve heard enough from the pessimists. Yes, these are hard times, but what investors, business owners and all of us need right now is not more…</description>
-    <pubDate>2025-10-31</pubDate>
-    <guid isPermaLink="false">8e397582-b5ac-11f0-8378-23353e387886</guid>
-    <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR6754403443.mp3?updated=1761842101" type="audio/mpeg" length=""/>
-  </item>
-  <item>
     <title>What Are The Essentials for Reimagining Work with AI Agents?</title>
     <link></link>
     <description>We’re only at the very beginning of the AI transformation. The next big leap isn’t just smarter chatbots, it’s AI agents: tools that don’t just…</description>
     <pubDate>2025-10-29</pubDate>
     <guid isPermaLink="false">af727af2-a51a-11f0-bf60-d38db50934be</guid>
     <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR8141504481.mp3?updated=1760648248" type="audio/mpeg" length=""/>
-  </item>
-  <item>
-    <title>The Age of the Strongman: Understanding Trump, with Anne Applebaum (Part Two)</title>
-    <link></link>
-    <description>The morning after Donald Trump’s victory over Kamala Harris in the U.S. presidential election, The New York Times front page declared: ‘America…</description>
-    <pubDate>2025-10-27</pubDate>
-    <guid isPermaLink="false">acf34668-b324-11f0-a949-2ff69017df3f</guid>
-    <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR5121633025.mp3?updated=1761563580" type="audio/mpeg" length=""/>
-  </item>
-  <item>
-    <title>The Age of the Strongman: Understanding Trump, with Anne Applebaum (Part One)</title>
-    <link></link>
-    <description>This event is part of our Age of the Strongman series. Click here to see the other events in the series . The morning after Donald Trump’s victory…</description>
-    <pubDate>2025-10-25</pubDate>
-    <guid isPermaLink="false">ab102924-b1a3-11f0-8e12-dfd2578cfdd3</guid>
-    <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR8120418136.mp3?updated=1761398251" type="audio/mpeg" length=""/>
   </item>
   <item>
     <title>Lyse Doucet on Reporting from the Frontlines (Part Two)</title>
@@ -708,14 +644,6 @@
     <pubDate>2025-10-11</pubDate>
     <guid isPermaLink="false">cbace0d4-a071-11f0-bcb2-db9026873a17</guid>
     <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR4809302119.mp3?updated=1759507996" type="audio/mpeg" length=""/>
-  </item>
-  <item>
-    <title>The Specialist | The Most Valuable Car in the World, with Gord Duff And Marcus Breitschwerdt</title>
-    <link></link>
-    <description>This is an episode of The Specialist, your weekly dose of wonder. In The Specialist, explore the significance and journey of an extraordinary work…</description>
-    <pubDate>2025-10-10</pubDate>
-    <guid isPermaLink="false">beabe5c0-9e18-11f0-a629-97889eae2d08</guid>
-    <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR5537032197.mp3?updated=1760648124" type="audio/mpeg" length=""/>
   </item>
   <item>
     <title>What Can Criminal Psychology Teach Us About Climate Change? With Julia Shaw</title>
@@ -804,6 +732,78 @@
     <pubDate>2025-09-21</pubDate>
     <guid isPermaLink="false">7d8fd312-9481-11f0-bcf2-47a464232e1b</guid>
     <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR8595047332.mp3?updated=1758195443" type="audio/mpeg" length=""/>
+  </item>
+  <item>
+    <title>Is the Data on Climate Change More Optimistic than We Thought? With Hannah Ritchie</title>
+    <link></link>
+    <description>What if the real story of climate change is far more hopeful than we’ve been led to believe? With so much doomsday reporting and general…</description>
+    <pubDate>2025-09-20</pubDate>
+    <guid isPermaLink="false">a744d99a-93bf-11f0-9144-bf9166ae77d1</guid>
+    <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR3867541561.mp3?updated=1758121619" type="audio/mpeg" length=""/>
+  </item>
+  <item>
+    <title>Ian McEwan on Speculative Fiction, Lost Poems and What We Can Know</title>
+    <link></link>
+    <description>Ian McEwan is the critically acclaimed author of nineteen novels and two short story collections. His novels include Atonement, Enduring Love, The…</description>
+    <pubDate>2025-09-18</pubDate>
+    <guid isPermaLink="false">e3c9d5c8-93bf-11f0-a74c-cff35a39ad27</guid>
+    <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR5891548086.mp3?updated=1758121593" type="audio/mpeg" length=""/>
+  </item>
+  <item>
+    <title>Sotheby’s Talks | Custodians of Taste: Pauline Karpidas and the Women who Shape the Art World</title>
+    <link></link>
+    <description>On today’s episode, an episode from our friends at Sotheby's exploring the remarkable collecting journey of Pauline Karpidas, one of the most…</description>
+    <pubDate>2025-09-16</pubDate>
+    <guid isPermaLink="false">15395c86-8e62-11f0-9cfe-53c766c5c5b6</guid>
+    <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR3250978121.mp3?updated=1758055291" type="audio/mpeg" length=""/>
+  </item>
+  <item>
+    <title>Arundhati Roy on Storytelling, Memory and The Human Condition (Part Two)</title>
+    <link></link>
+    <description>‘It is vanishingly rare for a writer to both confront the ugliness of humanity and still search for its beauty. Roy is that rare writer.’ – Naomi…</description>
+    <pubDate>2025-09-14</pubDate>
+    <guid isPermaLink="false">006a813e-8fc2-11f0-84a3-b7100d009126</guid>
+    <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR1109820928.mp3?updated=1757678168" type="audio/mpeg" length=""/>
+  </item>
+  <item>
+    <title>Arundhati Roy on Storytelling, Memory and The Human Condition (Part One)</title>
+    <link></link>
+    <description>‘It is vanishingly rare for a writer to both confront the ugliness of humanity and still search for its beauty. Roy is that rare writer.’ – Naomi…</description>
+    <pubDate>2025-09-13</pubDate>
+    <guid isPermaLink="false">d2c92820-8fc1-11f0-923f-5b71fc789340</guid>
+    <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR9963172601.mp3?updated=1757678102" type="audio/mpeg" length=""/>
+  </item>
+  <item>
+    <title>Nick Clegg on Meta, AI and the Battle for Big Tech (Part Two)</title>
+    <link></link>
+    <description>Nick Clegg has had a seat at the heart of power for nearly two decades. As leader of the Liberal Democrats he served as deputy Prime Minister from…</description>
+    <pubDate>2025-09-11</pubDate>
+    <guid isPermaLink="false">b3ec5d7c-8e64-11f0-bcd8-a7b1a61ef0f4</guid>
+    <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR7362290063.mp3?updated=1757523014" type="audio/mpeg" length=""/>
+  </item>
+  <item>
+    <title>Nick Clegg on Meta, AI and the Battle for Big Tech (Part One)</title>
+    <link></link>
+    <description>Nick Clegg has had a seat at the heart of power for nearly two decades. As leader of the Liberal Democrats he served as deputy Prime Minister from…</description>
+    <pubDate>2025-09-10</pubDate>
+    <guid isPermaLink="false">42e06988-8e60-11f0-b52e-1bce8074caa0</guid>
+    <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR2163238139.mp3?updated=1757521045" type="audio/mpeg" length=""/>
+  </item>
+  <item>
+    <title>Could AI Help Save Lives? With Dr Charlotte Blease</title>
+    <link></link>
+    <description>How can AI improve our healthcare industry? In this episode, Dr Emma Yhnell speaks to health informaticist and author Dr Charlotte Blease about the…</description>
+    <pubDate>2025-09-05</pubDate>
+    <guid isPermaLink="false">40eef310-8a3c-11f0-bbef-572f5a78c54e</guid>
+    <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR3972034126.mp3?updated=1757065713" type="audio/mpeg" length=""/>
+  </item>
+  <item>
+    <title>Hotels with History | Claridge's, London</title>
+    <link></link>
+    <description>This is an episode of Hotels with History, produced by Intelligence Squared on behalf of Perowne International⁠ . In today’s episode, the rise of…</description>
+    <pubDate>2025-09-02</pubDate>
+    <guid isPermaLink="false">e60a0496-792c-11f0-9324-6bb6cd1d858a</guid>
+    <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR3176470757.mp3?updated=1756724223" type="audio/mpeg" length=""/>
   </item>
   </channel>
 </rss>

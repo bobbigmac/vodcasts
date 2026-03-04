@@ -4,14 +4,67 @@
   "leftovers_description": "Episodes outside the main Intelligence Squared row.",
   "shows": [
     {
-      "id": "episodes",
-      "title": "Intelligence Squared",
-      "title_full": "Intelligence Squared",
-      "description": "Debates and longform interviews on ideas shaping the world.",
+      "id": "economic-outlook",
+      "title": "Economic Outlook",
+      "title_full": "Economic Outlook — Intelligence Squared",
+      "description": "Economics and policy outlook episodes.",
+      "categories": ["lectures", "ideas", "economics"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Intelligence Squared Economic Outlook" }
+    },
+    {
+      "id": "classic-debates",
+      "title": "Classic Debates",
+      "title_full": "Classic Debates — Intelligence Squared",
+      "description": "Debate-format episodes (classic debates).",
       "categories": ["lectures", "ideas", "debates"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Classic Debate:" }
+    },
+    {
+      "id": "the-specialist",
+      "title": "The Specialist",
+      "title_full": "The Specialist — Intelligence Squared",
+      "description": "Expert deep-dives (\"The Specialist\").",
+      "categories": ["lectures", "ideas"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Specialist |" }
+    },
+    {
+      "id": "age-of-the-strongman",
+      "title": "Age of the Strongman",
+      "title_full": "Age of the Strongman — Intelligence Squared",
+      "description": "Episodes in The Age of the Strongman series.",
+      "categories": ["lectures", "ideas", "politics"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The Age of the Strongman:" }
+    },
+    {
+      "id": "12-books-of-christmas",
+      "title": "12 Books of Christmas",
+      "title_full": "12 Books of Christmas — Intelligence Squared",
+      "description": "Seasonal book interviews and specials.",
+      "categories": ["lectures", "ideas", "books"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "The 12 Books of Christmas |" }
+    },
+    {
+      "id": "archive",
+      "title": "Archive",
+      "title_full": "Archive — Intelligence Squared",
+      "description": "Older archive episodes.",
+      "categories": ["lectures", "ideas"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Archive" }
+    },
+    {
+      "id": "episodes",
+      "title": "Episodes",
+      "title_full": "Episodes — Intelligence Squared",
+      "description": "All other episodes in this feed.",
+      "categories": ["lectures", "ideas"],
       "featured": false,
       "filter": { "type": "all" }
     }
   ]
 }
-

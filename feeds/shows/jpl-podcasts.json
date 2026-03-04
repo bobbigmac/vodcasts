@@ -4,14 +4,31 @@
   "leftovers_description": "Episodes outside the main NASA JPL row.",
   "shows": [
     {
+      "id": "whats-up",
+      "title": "What's Up",
+      "title_full": "What's Up — NASA JPL",
+      "description": "Monthly skywatching guide episodes.",
+      "categories": ["science", "space"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "What's Up" }
+    },
+    {
+      "id": "mars-report",
+      "title": "Mars Report",
+      "title_full": "Mars Report — NASA JPL",
+      "description": "Short updates from Mars missions.",
+      "categories": ["science", "space"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Mars Report" }
+    },
+    {
       "id": "jpl",
-      "title": "NASA JPL",
-      "title_full": "NASA Jet Propulsion Laboratory (JPL) — Podcasts",
-      "description": "Updates and stories from NASA’s Jet Propulsion Laboratory.",
+      "title": "Episodes",
+      "title_full": "Episodes — NASA JPL",
+      "description": "All other episodes in this feed.",
       "categories": ["science", "space"],
       "featured": false,
       "filter": { "type": "all" }
     }
   ]
 }
-

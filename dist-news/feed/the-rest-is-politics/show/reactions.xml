@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Reactions</title>
+    <link>/feed/the-rest-is-politics/</link>
+    <description>Goalhanger — The Rest Is Politics — Reactions</description>
+    <language>en</language>
+  <item>
+    <title>507. The Ayatollah Is Killed - REACTION</title>
+    <link></link>
+    <description>With the confirmation of the death of Iran's Supreme Leader confirmed, where does this leave the regime? Who is being targeted in Iran's retaliation…</description>
+    <pubDate>2026-03-01</pubDate>
+    <guid isPermaLink="false">c773d0e8-1594-11f1-9c70-6b4b866f7f8f</guid>
+    <enclosure url="https://pdst.fm/e/traffic.megaphone.fm/GLT1520162215.mp3?updated=1772390790" type="audio/mpeg" length=""/>
+  </item>
+  <item>
+    <title>498. Alastair Reacts to Starmer-Mandelson Turmoil</title>
+    <link></link>
+    <description>How should the government and politics as a whole respond to the latest revelations about the scale of Epstein's influence, and Mandelson's abuse of…</description>
+    <pubDate>2026-02-08</pubDate>
+    <guid isPermaLink="false">d5c0fbca-0519-11f1-9b7d-37912afa6adb</guid>
+    <enclosure url="https://pdst.fm/e/traffic.megaphone.fm/GLT3121455651.mp3" type="audio/mpeg" length=""/>
+  </item>
+  </channel>
+</rss>

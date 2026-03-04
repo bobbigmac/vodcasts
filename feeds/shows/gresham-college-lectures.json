@@ -4,14 +4,58 @@
   "leftovers_description": "Episodes outside the main Gresham College lectures row.",
   "shows": [
     {
+      "id": "twentieth-century-divas",
+      "title": "Twentieth-Century Divas",
+      "title_full": "Twentieth-Century Divas — Gresham College",
+      "description": "Episodes in the Twentieth-Century Divas series.",
+      "categories": ["lectures", "education"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Twentieth-Century Divas" }
+    },
+    {
+      "id": "music-mermikides",
+      "title": "Music",
+      "title_full": "Music — Gresham College (Milton Mermikides)",
+      "description": "Lectures by Milton Mermikides (music).",
+      "categories": ["lectures", "education", "music"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Milton Mermikides" }
+    },
+    {
+      "id": "astronomy-lintott",
+      "title": "Astronomy",
+      "title_full": "Astronomy — Gresham College (Chris Lintott)",
+      "description": "Lectures by Chris Lintott (astronomy).",
+      "categories": ["lectures", "education", "science"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Chris Lintott" }
+    },
+    {
+      "id": "history-hutton",
+      "title": "History & Myth",
+      "title_full": "History & Myth — Gresham College (Ronald Hutton)",
+      "description": "Lectures by Ronald Hutton (history & myth).",
+      "categories": ["lectures", "education", "history"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Ronald Hutton" }
+    },
+    {
+      "id": "science-may",
+      "title": "Science & Health",
+      "title_full": "Science & Health — Gresham College (Robin May)",
+      "description": "Lectures by Robin May (science & health).",
+      "categories": ["lectures", "education", "science"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "Robin May" }
+    },
+    {
       "id": "lectures",
       "title": "Lectures",
       "title_full": "Lectures — Gresham College",
-      "description": "Public lectures from Gresham College.",
+      "description": "All other public lectures from Gresham College.",
       "categories": ["lectures", "education"],
       "featured": false,
       "filter": { "type": "all" }
     }
   ]
 }
-

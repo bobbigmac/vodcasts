@@ -4,14 +4,31 @@
   "leftovers_description": "Episodes outside the main Today, Explained row.",
   "shows": [
     {
+      "id": "replays",
+      "title": "Replays",
+      "title_full": "Replays — Today, Explained",
+      "description": "Replayed episodes (usually labeled “(replay)”).",
+      "categories": ["news", "explainers"],
+      "featured": false,
+      "filter": { "type": "title_contains", "value": "(replay)" }
+    },
+    {
+      "id": "introductions",
+      "title": "Introductions",
+      "title_full": "Introductions — Today, Explained",
+      "description": "Cross-promo / introducing other shows.",
+      "categories": ["news", "explainers"],
+      "featured": false,
+      "filter": { "type": "title_prefix", "value": "Introducing " }
+    },
+    {
       "id": "today-explained",
-      "title": "Today, Explained",
-      "title_full": "Today, Explained — Vox",
-      "description": "Daily explainers on the news and the world.",
+      "title": "Episodes",
+      "title_full": "Episodes — Today, Explained",
+      "description": "All other episodes in this feed.",
       "categories": ["news", "explainers"],
       "featured": false,
       "filter": { "type": "all" }
     }
   ]
 }
-

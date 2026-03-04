@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Age of the Strongman</title>
+    <link>/feed/intelligence-squared/</link>
+    <description>Intelligence Squared — Age of the Strongman</description>
+    <language>en</language>
+  <item>
+    <title>The Age of the Strongman: Understanding Trump, with Anne Applebaum (Part Two)</title>
+    <link></link>
+    <description>The morning after Donald Trump’s victory over Kamala Harris in the U.S. presidential election, The New York Times front page declared: ‘America…</description>
+    <pubDate>2025-10-27</pubDate>
+    <guid isPermaLink="false">acf34668-b324-11f0-a949-2ff69017df3f</guid>
+    <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR5121633025.mp3?updated=1761563580" type="audio/mpeg" length=""/>
+  </item>
+  <item>
+    <title>The Age of the Strongman: Understanding Trump, with Anne Applebaum (Part One)</title>
+    <link></link>
+    <description>This event is part of our Age of the Strongman series. Click here to see the other events in the series . The morning after Donald Trump’s victory…</description>
+    <pubDate>2025-10-25</pubDate>
+    <guid isPermaLink="false">ab102924-b1a3-11f0-8e12-dfd2578cfdd3</guid>
+    <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR8120418136.mp3?updated=1761398251" type="audio/mpeg" length=""/>
+  </item>
+  <item>
+    <title>The Age of the Strongman: Understanding Netanyahu, with Anshel Pfeffer (Part Two)</title>
+    <link></link>
+    <description>In November 2022, Benjamin Netanyahu returned to power in Israel after winning his sixth election. Propped up by a bloc of far-right and…</description>
+    <pubDate>2025-09-07</pubDate>
+    <guid isPermaLink="false">510a3178-8a6a-11f0-9e92-837c032c283a</guid>
+    <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR4291531461.mp3?updated=1757089983" type="audio/mpeg" length=""/>
+  </item>
+  <item>
+    <title>The Age of the Strongman: Understanding Netanyahu, with Anshel Pfeffer (Part One)</title>
+    <link></link>
+    <description>In November 2022, Benjamin Netanyahu returned to power in Israel after winning his sixth election. Propped up by a bloc of far-right and…</description>
+    <pubDate>2025-09-06</pubDate>
+    <guid isPermaLink="false">21d9bc34-8a6a-11f0-9288-872b29f5f453</guid>
+    <enclosure url="https://pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/NSR4338181145.mp3?updated=1757089891" type="audio/mpeg" length=""/>
+  </item>
+  </channel>
+</rss>

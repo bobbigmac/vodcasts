@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
-    <title>Today, Explained</title>
+    <title>Episodes</title>
     <link>/feed/vox-today-explained/</link>
-    <description>Vox — Today, Explained — Today, Explained</description>
+    <description>Vox — Today, Explained — Episodes</description>
     <language>en</language>
   <item>
     <title>AI goes to war</title>

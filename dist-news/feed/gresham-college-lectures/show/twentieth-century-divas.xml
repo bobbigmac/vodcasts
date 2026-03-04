@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Twentieth-Century Divas</title>
+    <link>/feed/gresham-college-lectures/</link>
+    <description>Gresham College — Lectures — Twentieth-Century Divas</description>
+    <language>en</language>
+  <item>
+    <title>Twentieth-Century Divas: Julie Andrews - Dominic Broomfield-McHugh</title>
+    <link>https://www.gresham.ac.uk/watch-now/andrews</link>
+    <description>Starring in My Fair Lady (1956), The Sound of Music (1965) and Cinderella (1957) gave Dame Julie Andrews unparalleled profile. These were among the…</description>
+    <pubDate>2024-06-06</pubDate>
+    <guid isPermaLink="false">Buzzsprout-15203380</guid>
+    <enclosure url="https://www.buzzsprout.com/1904814/episodes/15203380-twentieth-century-divas-julie-andrews-dominic-broomfield-mchugh.mp3" type="audio/mpeg" length="42580329"/>
+  </item>
+  <item>
+    <title>Twentieth-Century Divas: Shirley Bassey - Dominic Broomfield-McHugh</title>
+    <link>https://www.gresham.ac.uk/watch-now/bassey</link>
+    <description>The Black Welsh singer started out recording cover versions of American songbook classics but rose to international fame after her performance of…</description>
+    <pubDate>2024-04-26</pubDate>
+    <guid isPermaLink="false">Buzzsprout-14961047</guid>
+    <enclosure url="https://www.buzzsprout.com/1904814/episodes/14961047-twentieth-century-divas-shirley-bassey-dominic-broomfield-mchugh.mp3" type="audio/mpeg" length="47143768"/>
+  </item>
+  </channel>
+</rss>
