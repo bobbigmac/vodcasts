@@ -102,6 +102,13 @@ export function BrowsePanel({
   onBack,
   onExpandShow,
 }) {
+  const normBasePath = (p) => {
+    let s = String(p || "/");
+    if (!s.startsWith("/")) s = "/" + s;
+    if (!s.endsWith("/")) s = s + "/";
+    return s;
+  };
+  const bp = normBasePath(window.__VODCASTS__?.basePath || "/");
   const curSourceId = player?.currentSourceId?.value || null;
   const curEpId = player?.currentEpisodeId?.value || null;
   const open = !!isOpen?.value;
@@ -148,6 +155,12 @@ export function BrowsePanel({
     ? focusedShow.title_full || focusedShow.title
     : (feedTitle || feedId);
 
+  const selfHref = focusedShow
+    ? (feedId && (focusedShow.slug || focusedShow.id))
+      ? `${bp}feed/${encodeURIComponent(String(feedId))}/shows/${encodeURIComponent(String(focusedShow.slug || focusedShow.id))}/`
+      : null
+    : (feedId ? `${bp}feed/${encodeURIComponent(String(feedId))}/` : null);
+
   const headerBackLabel = focusedShow ? "Back to shows" : "Back";
 
   const header = html`
@@ -159,7 +172,11 @@ export function BrowsePanel({
             </button>
           `
         : ""}
-      <h2 class="browseTitle">${showHeaderTitle}</h2>
+      <h2 class="browseTitle">
+        ${selfHref
+          ? html`<a class="browseTitleLink" href=${selfHref}>${showHeaderTitle}</a>`
+          : html`${showHeaderTitle}`}
+      </h2>
     </header>
   `;
 

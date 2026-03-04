@@ -92,6 +92,11 @@ def _escape_attr(s: str) -> str:
     return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
 
 
+def _escape_html(s: str) -> str:
+    # For text nodes (quotes are fine but harmless to escape too).
+    return _escape_attr(s)
+
+
 def _build_meta_head_html(
     *,
     base_path: str,
@@ -358,6 +363,159 @@ def _build_favicon_head_html(*, base_path: str, feeds_path: Path) -> str:
         lines.append(f'<link rel="apple-touch-icon" href="{base_path}assets/apple-touch-icon.png" />')
 
     return "\n  ".join(lines)
+
+
+def _seo_shell(*, title: str, body_html: str, base_path: str) -> str:
+    # Render as a support-like page (only visible when JS is disabled / blocked).
+    t = _escape_html(title)
+    bp = _norm_base_path(base_path)
+    return f"""
+<main class="supportPage seoContent">
+  <header class="supportHeader">
+    <a class="supportBack" href="{bp}" aria-label="Back to home">← Home</a>
+    <div class="supportBrand">{t}</div>
+  </header>
+  <article class="supportContent">
+    {body_html}
+  </article>
+  <footer class="supportFooter">
+    <nav class="supportFooterLinks" aria-label="Support">
+      <a href="{bp}browse/">Browse</a>
+      <a href="{bp}about/">About</a>
+      <a href="{bp}for/">Who it’s for</a>
+      <a href="{bp}privacy/">Privacy</a>
+      <a href="{bp}legal/">Legal</a>
+    </nav>
+    <div class="supportFooterMeta">Contact: <a href="mailto:admin@prays.be">admin@prays.be</a></div>
+  </footer>
+</main>
+""".strip()
+
+
+def _seo_home_html(*, cfg_site_title: str, cfg_site_desc: str, base_path: str) -> str:
+    bp = _norm_base_path(base_path)
+    title = cfg_site_title or "Home"
+    body = f"""
+<h1><a href="{bp}" style="color:inherit;text-decoration:none">{_escape_html(cfg_site_title)}</a></h1>
+<p>{_escape_html(cfg_site_desc)}</p>
+<div class="supportCard">
+  <h2>Browse</h2>
+  <ul>
+    <li><a href="{bp}browse/">Browse shows</a> (categories + feeds)</li>
+  </ul>
+</div>
+""".strip()
+    return _seo_shell(title=title, body_html=body, base_path=base_path)
+
+
+def _seo_feed_html(
+    *,
+    feed_id: str,
+    feed_title: str,
+    show_configs: list[dict[str, Any]],
+    base_path: str,
+) -> str:
+    bp = _norm_base_path(base_path)
+    feed_title_e = _escape_html(feed_title or feed_id)
+    feed_url = f"{bp}feed/{_escape_attr(feed_id)}/"
+    items = []
+    for s in show_configs or []:
+        sid = str(s.get("id") or "")
+        slug = str(s.get("slug") or "")
+        stitle = str(s.get("title") or sid) or sid
+        scount = int(s.get("episodeCount") or 0)
+        sdesc = str(s.get("description") or "").strip()
+        url = f"{bp}feed/{_escape_attr(feed_id)}/shows/{_escape_attr(slug)}/"
+        line = f'<li><a href="{url}">{_escape_html(stitle)}</a> <span style="opacity:.75">({scount})</span>'
+        if sdesc:
+            line += f'<div style="opacity:.88;margin-top:2px">{_escape_html(sdesc)}</div>'
+        line += "</li>"
+        items.append(line)
+    shows_ul = "<ul>" + "\n".join(items) + "</ul>" if items else "<p>No shows available.</p>"
+    body = f"""
+<h1><a href="{feed_url}" style="color:inherit;text-decoration:none">{feed_title_e}</a></h1>
+<p>Show rows for this feed (same as the in-app Browse view).</p>
+<div class="supportCard">
+  <h2>Shows</h2>
+  {shows_ul}
+</div>
+""".strip()
+    return _seo_shell(title=feed_title, body_html=body, base_path=base_path)
+
+
+def _seo_show_html(
+    *,
+    feed_id: str,
+    feed_title: str,
+    show_title: str,
+    show_slug: str,
+    show_description: str | None,
+    episodes: list[dict[str, Any]],
+    base_path: str,
+) -> str:
+    bp = _norm_base_path(base_path)
+    show_url = f"{bp}feed/{_escape_attr(feed_id)}/shows/{_escape_attr(show_slug)}/"
+    feed_url = f"{bp}feed/{_escape_attr(feed_id)}/"
+
+    ep_items = []
+    for ep in (episodes or [])[:80]:
+        ep_seg = ep.get("slug") or ep.get("id")
+        if not ep_seg:
+            continue
+        ep_title = _escape_html(str(ep.get("title") or "Untitled"))
+        date = _escape_html(str(ep.get("dateText") or ""))
+        ep_url = f"{show_url}?ep={_escape_attr(str(ep_seg))}"
+        meta = f' <span style="opacity:.7">{date}</span>' if date else ""
+        ep_items.append(f'<li><a href="{ep_url}">{ep_title}</a>{meta}</li>')
+    eps_ul = "<ul>" + "\n".join(ep_items) + "</ul>" if ep_items else "<p>No episodes found for this show.</p>"
+
+    desc_html = f"<p>{_escape_html(show_description)}</p>" if show_description else ""
+    body = f"""
+<h1><a href="{show_url}" style="color:inherit;text-decoration:none">{_escape_html(show_title)}</a></h1>
+<p>From <a href="{feed_url}">{_escape_html(feed_title or feed_id)}</a></p>
+{desc_html}
+<div class="supportCard">
+  <h2>Episodes</h2>
+  {eps_ul}
+</div>
+""".strip()
+    return _seo_shell(title=show_title, body_html=body, base_path=base_path)
+
+
+def _seo_browse_all_html(
+    *,
+    cfg_site_title: str,
+    shows_config_all: dict[str, list[dict[str, Any]]],
+    feed_titles: dict[str, str],
+    base_path: str,
+) -> str:
+    bp = _norm_base_path(base_path)
+    blocks = []
+    for fid, shows in sorted((shows_config_all or {}).items(), key=lambda kv: (feed_titles.get(kv[0], kv[0]).lower(), kv[0])):
+        ft = feed_titles.get(fid) or fid
+        feed_url = f"{bp}feed/{_escape_attr(fid)}/"
+        items = []
+        for s in shows or []:
+            slug = str(s.get("slug") or "")
+            title = str(s.get("title") or s.get("id") or slug) or slug
+            count = int(s.get("episodeCount") or 0)
+            url = f"{bp}feed/{_escape_attr(fid)}/shows/{_escape_attr(slug)}/"
+            items.append(f'<li><a href="{url}">{_escape_html(title)}</a> <span style="opacity:.7">({count})</span></li>')
+        ul = "<ul>" + "\n".join(items[:80]) + "</ul>" if items else "<p>No shows.</p>"
+        blocks.append(
+            f"""
+<div class="supportCard">
+  <h2><a href="{feed_url}" style="color:inherit;text-decoration:none">{_escape_html(ft)}</a></h2>
+  {ul}
+</div>
+""".strip()
+        )
+    body = f"""
+<h1><a href="{bp}browse/" style="color:inherit;text-decoration:none">Browse Shows</a></h1>
+<p>{_escape_html(cfg_site_title)} — show rows grouped by feed (static HTML for crawlers; the app view is richer with JavaScript enabled).</p>
+{''.join(blocks)}
+""".strip()
+    return _seo_shell(title="Browse Shows", body_html=body, base_path=base_path)
 
 
 def _browse_logo_url_for_site(*, base_path: str, feeds_path: Path) -> str:
@@ -931,6 +1089,12 @@ def main() -> None:
         feed_dir.mkdir(parents=True, exist_ok=True)
         feed_vodcasts = {**vodcasts_config, "initialFeed": fid, "initialView": "browse"}
         feed_desc = f"Browse {feed_title} on {cfg.site.title}. {cfg.site.description}".strip()
+        feed_seo_html = _seo_feed_html(
+            feed_id=fid,
+            feed_title=feed_title,
+            show_configs=show_configs,
+            base_path=base_path,
+        )
         feed_html = _template_sub(
             template,
             {
@@ -942,6 +1106,7 @@ def main() -> None:
                 "site_title": cfg.site.title,
                 "site_description": cfg.site.description or "",
                 "favicon_head_html": _build_favicon_head_html(base_path=base_path, feeds_path=feeds_path),
+                "seo_body_html": feed_seo_html,
                 "meta_head_html": _build_meta_head_html(
                     base_path=base_path,
                     site_title=cfg.site.title,
@@ -955,6 +1120,57 @@ def main() -> None:
         )
         (feed_dir / "index.html").write_text(feed_html, encoding="utf-8")
         feed_landing_paths.append(f"feed/{fid}/")
+
+        # Show landing pages (HTML): /feed/<fid>/shows/<show-slug>/
+        shows_html_dir = feed_dir / "shows"
+        shows_html_dir.mkdir(parents=True, exist_ok=True)
+        for s in shows:
+            eps = s.get("episodes") or []
+            if not eps:
+                continue
+            show_slug = str(s.get("slug") or s.get("id") or "").strip()
+            if not show_slug:
+                continue
+            show_title = str(s.get("title") or show_slug).strip() or show_slug
+            show_desc = (str(s.get("description") or "").strip() or None)
+            show_page_title = f"{show_title} — {feed_title} — {cfg.site.title}"
+            show_path = f"{base_path}feed/{fid}/shows/{show_slug}/"
+            show_seo_html = _seo_show_html(
+                feed_id=fid,
+                feed_title=feed_title,
+                show_title=show_title,
+                show_slug=show_slug,
+                show_description=show_desc,
+                episodes=eps,
+                base_path=base_path,
+            )
+            show_vodcasts = {**vodcasts_config, "initialFeed": fid, "initialView": "browse"}
+            show_html = _template_sub(
+                template,
+                {
+                    "base_path": base_path,
+                    "base_path_json": json.dumps(base_path),
+                    "site_json": json.dumps(site_json, ensure_ascii=False),
+                    "vodcasts_config": json.dumps(show_vodcasts, ensure_ascii=False),
+                    "page_title": show_page_title,
+                    "site_title": cfg.site.title,
+                    "site_description": cfg.site.description or "",
+                    "favicon_head_html": _build_favicon_head_html(base_path=base_path, feeds_path=feeds_path),
+                    "seo_body_html": show_seo_html,
+                    "meta_head_html": _build_meta_head_html(
+                        base_path=base_path,
+                        site_title=cfg.site.title,
+                        page_title=show_page_title,
+                        page_description=(show_desc or f"Browse episodes in {show_title}.").strip(),
+                        canonical_path=show_path,
+                        og_type="website",
+                        og_image_path=og_image_url,
+                    ),
+                },
+            )
+            show_dir = shows_html_dir / show_slug
+            show_dir.mkdir(parents=True, exist_ok=True)
+            (show_dir / "index.html").write_text(show_html, encoding="utf-8")
 
         # Show RSS feeds
         show_dir = feed_dir / "show"
@@ -1011,6 +1227,7 @@ def main() -> None:
             "site_title": cfg.site.title,
             "site_description": cfg.site.description or "",
             "favicon_head_html": _build_favicon_head_html(base_path=base_path, feeds_path=feeds_path),
+            "seo_body_html": _seo_home_html(cfg_site_title=cfg.site.title, cfg_site_desc=cfg.site.description or "", base_path=base_path),
             "meta_head_html": _build_meta_head_html(
                 base_path=base_path,
                 site_title=cfg.site.title,
@@ -1040,6 +1257,12 @@ def main() -> None:
             "site_title": cfg.site.title,
             "site_description": cfg.site.description or "",
             "favicon_head_html": _build_favicon_head_html(base_path=base_path, feeds_path=feeds_path),
+            "seo_body_html": _seo_browse_all_html(
+                cfg_site_title=cfg.site.title,
+                shows_config_all=shows_config_all,
+                feed_titles=feed_titles,
+                base_path=base_path,
+            ),
             "meta_head_html": _build_meta_head_html(
                 base_path=base_path,
                 site_title=cfg.site.title,

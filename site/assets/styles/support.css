@@ -1,6 +1,13 @@
 /**
  * Static support pages (About/Privacy/Legal/etc.)
  */
+.seoContent {
+  display: block;
+}
+.js .seoContent {
+  display: none;
+}
+
 .supportPage {
   min-height: 100vh;
   max-width: 860px;
@@ -100,4 +107,3 @@
   opacity: 1;
   text-decoration: underline;
 }
-
