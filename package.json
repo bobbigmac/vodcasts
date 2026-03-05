@@ -14,5 +14,6 @@
     "dev": "node scripts/vod.cjs dev",
     "find-feeds": "node scripts/find-feeds.js"
   },
+  "license": "UNLICENSED",
   "packageManager": "yarn@1.22.22"
 }
