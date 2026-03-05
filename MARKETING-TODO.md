@@ -1,6 +1,6 @@
 # MARKETING-TODO (Prays.Be submissions)
 
-Goal: directories + editorial inboxes + indexing rails (no paid accounts).
+Goal: directories + editorial inboxes (no paid accounts).
 
 ## Prep once (reuse everywhere)
 
@@ -11,24 +11,7 @@ Goal: directories + editorial inboxes + indexing rails (no paid accounts).
 - Short description (1 sentence) + long description (3–5 sentences)
 - “What it is” keywords (pick 3–6): `Christian sermons`, `vodcasts`, `teaching`, `RSS`, `church video`, `TV-style player`
 
-## 1) Indexing rails (search engines)
-
-**Go to**
-- Google Search Console: https://search.google.com/search-console/about
-- Bing Webmaster Tools: https://www.bing.com/webmasters/about
-- IndexNow (optional): https://www.bing.com/indexnow
-
-**Submit**
-- Verify domain/URL ownership
-- Submit sitemap URL (and re-submit after major content changes)
-- (Optional) Add IndexNow key + ping on updates (fast discovery)
-
-**Copy to use (site description for “property/about” fields)**
-```text
-Prays.Be is a distraction-free way to watch and listen to Christian sermons and teachings online. It organizes public sermon/vodcast feeds into a simple TV-style player with a guide and resume watching, so you can follow teaching without noise or social feeds.
-```
-
-## 2) Human-edited “suggest a site” directory
+## 1) Human-edited “suggest a site” directory
 
 **Go to**
 - Curlie (DMOZ successor) — suggest a site: https://curlie.org/docs/en/add.html
@@ -44,12 +27,10 @@ Prays.Be is a distraction-free way to watch and listen to Christian sermons and 
 Prays.Be is a simple, distraction-free player for Christian sermons and teachings. It pulls from public vodcast/sermon feeds and organizes them into an easy guide-style browsing experience.
 ```
 
-## 3) Christian directories (site listing submissions)
+## 2) Christian directories (site listing submissions)
 
 **Go to**
-- Find Christian Links — submit a listing: https://findchristianlinks.com/submit-a-listing.html
 - Bonpounou Christian Directory — submit a site: https://bonpounou.com/directory/submit.html
-- Church Angel — add a directory listing: https://www.churchangel.com/add-directory-listing/
 
 **Submit**
 - Site name: `Prays.Be`
@@ -63,7 +44,7 @@ Prays.Be is a simple, distraction-free player for Christian sermons and teaching
 Prays.Be collects Christian sermons and teachings into one simple, distraction-free place. Browse services and series from public feeds and watch/listen with a clean TV-style player (no social feed required).
 ```
 
-## 4) Editorial inboxes (resource / story idea pitch)
+## 3) Editorial inboxes (resource / story idea pitch)
 
 **Go to**
 - ChurchLeaders — contribute / suggest resources: https://churchleaders.com/contribute
@@ -105,7 +86,7 @@ If this fits your resources column or a short write-up, I’m happy to share mor
 [Optional: 1-sentence bio]
 ```
 
-## 5) Free press-release style posts (SEO/discovery pages)
+## 4) Free press-release style posts (SEO/discovery pages)
 
 **Go to**
 - PRLog — submit free press release: https://www.prlog.org/submit-free-press-release.html
@@ -130,13 +111,12 @@ About Prays.Be
 Prays.Be is a minimal “vodcast TV” style player for Christian sermons and teaching, organized from public feeds into a simple browsing and playback experience.
 ```
 
-## 6) Q&A + backlink checks (quiet, non-social)
+## 5) Q&A + backlink checks (quiet, non-social)
 
 **Go to**
 - Christianity Stack Exchange: https://christianity.stackexchange.com/
 - Quora (account may be required): https://www.quora.com/
 - Ahrefs free backlink checker: https://ahrefs.com/backlink-checker
-- Submit Express (directory submission tools; be selective): https://www.submitexpress.com/
 
 **Submit**
 - Answer real questions (don’t “drive-by promote”). Only mention Prays.Be when it’s directly helpful.
@@ -147,7 +127,7 @@ Prays.Be is a minimal “vodcast TV” style player for Christian sermons and te
 If you’re looking for more sermons/teaching on this topic, Prays.Be is a distraction-free way to browse and watch/listen to Christian sermons and teachings from public vodcast/sermon feeds: https://prays.be/
 ```
 
-## 7) Optional (only if you publish your own RSS podcast feed)
+## 6) Optional (only if you publish your own RSS podcast feed)
 
 If you ever publish a *separate* curated podcast feed (e.g. “Weekly sermon picks”), submit that RSS feed to podcast directories.
 
@@ -167,11 +147,6 @@ A curated feed of Christian sermons and teaching: weekly picks with clear titles
 
 ## Appendix: items from research that are currently not usable (keep out of your workflow)
 
-- Agape Christian Search (agapechristiansearch.com) appears hijacked/redirected (do not submit).
-- Christian Top 1000 (christiantop1000.com) returns `410 Gone`.
-- Christian Web Search (christianwebsearch.com) did not resolve at time of writing.
-- PRfree returned `403` to automated checks: https://prfree.org/
 - Religion News Service press release page returned `403` to automated checks: https://religionnews.com/press-release/
-- YouthPastor “All In One Christian Submit” hub returned `403` to automated checks (and may have moved): https://www.youthpastor.com/
 - PRLeap is clearly paid (pricing page); skip if you’re avoiding paid accounts: https://www.prleap.com/pricing
 - Faith News Service has pricing; skip if you’re avoiding paid accounts: https://faithnewsservice.com/pricing/

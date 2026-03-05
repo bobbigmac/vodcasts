@@ -83,6 +83,61 @@
   background: rgba(255, 255, 255, 0.03);
 }
 
+.supportSplit {
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.supportSplit .supportCard {
+  margin-top: 0;
+}
+
+.supportAside {
+  padding: 10px 12px;
+  border: 1px solid color-mix(in srgb, var(--edge) 70%, transparent);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.02);
+  color: var(--muted);
+  font-size: 12px;
+}
+.supportAsideTitle {
+  margin-bottom: 6px;
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--muted) 90%, transparent);
+}
+.supportAsideLinks {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.supportAsideLinks a {
+  color: var(--text);
+  opacity: 0.82;
+  text-decoration: none;
+}
+.supportAsideLinks a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+@media (min-width: 760px) {
+  .supportSplit {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .supportAside {
+    width: 230px;
+    flex: 0 0 auto;
+  }
+}
+
 .supportFooter {
   margin-top: 22px;
   padding-top: 14px;

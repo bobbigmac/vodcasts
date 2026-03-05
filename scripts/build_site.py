@@ -1300,9 +1300,17 @@ def main() -> None:
   <p>We link to third-party feeds. Some sources may be imperfect or controversial; we’re not here to point fingers — we’re here to build a calm, useful way to watch and listen. Over time, we may add clearer source notes and improve curation.</p>
   <p>We may adjust which feeds are included at any time.</p>
 </div>
-<div class="supportCard">
-  <h2>Removal requests</h2>
-  <p>If you run a feed and would prefer not to be included, email <a href="mailto:admin@prays.be">admin@prays.be</a> and we’ll remove it.</p>
+<div class="supportSplit">
+  <div class="supportCard">
+    <h2>Removal requests</h2>
+    <p>If you run a feed and would prefer not to be included, email <a href="mailto:admin@prays.be">admin@prays.be</a> and we’ll remove it.</p>
+  </div>
+  <aside class="supportAside" aria-label="Reciprocal links">
+    <div class="supportAsideTitle">Thanks to</div>
+    <ul class="supportAsideLinks">
+      <li><a href="https://bonpounou.com/directory/" target="_blank" rel="noopener noreferrer">Bonpounou Directory</a></li>
+    </ul>
+  </aside>
 </div>
 """.strip(),
             ),
