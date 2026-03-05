@@ -7,6 +7,7 @@ import { fallbackInitials, thumbFallbackStyle, titlePosClass, VodCarouselRow } f
 import { HeadphonesIcon, TvIcon } from "./icons.js";
 
 const BROWSE_ALL_PREFS_KEY = "vodcasts_browse_all_prefs_v2";
+const BROWSE_ALL_INTRO_KEY = "vodcasts_browse_all_intro_v1";
 
 function loadBrowseAllPrefs() {
   try {
@@ -21,6 +22,21 @@ function loadBrowseAllPrefs() {
 function saveBrowseAllPrefs({ showAudioOnlyFeeds }) {
   try {
     localStorage.setItem(BROWSE_ALL_PREFS_KEY, JSON.stringify({ showAudioOnlyFeeds: showAudioOnlyFeeds !== false }));
+  } catch {}
+}
+
+function loadBrowseAllIntro() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(BROWSE_ALL_INTRO_KEY) || "{}");
+    return { dismissed: raw?.dismissed === true };
+  } catch {
+    return { dismissed: false };
+  }
+}
+
+function saveBrowseAllIntro({ dismissed }) {
+  try {
+    localStorage.setItem(BROWSE_ALL_INTRO_KEY, JSON.stringify({ dismissed: dismissed === true }));
   } catch {}
 }
 
@@ -489,8 +505,9 @@ function BrowseAllRowPlaceholder({ rowId, title, count = 7 }) {
   `;
 }
 
-export function BrowseAllPanel({ env, isOpen, showsConfig, feedTitles, player, history, onClose, onShowClick }) {
+export function BrowseAllPanel({ env, isOpen, isNewcomer, showsConfig, feedTitles, player, history, onClose, onShowClick }) {
   const browseLogoUrl = String(env?.site?.browseLogoUrl || "").trim();
+  const siteTitle = String(env?.site?.title || env?.site?.name || "").trim() || "Vodcasts";
   const curSourceId = player?.currentSourceId?.value || null;
   const curEpId = player?.currentEpisodeId?.value || null;
 
@@ -502,6 +519,13 @@ export function BrowseAllPanel({ env, isOpen, showsConfig, feedTitles, player, h
   useEffect(() => {
     saveBrowseAllPrefs({ showAudioOnlyFeeds: showAudioOnlyFeeds.value });
   }, [showAudioOnlyFeeds.value]);
+
+  const introInitRef = useRef(loadBrowseAllIntro());
+  const introDismissed = useSignal(introInitRef.current.dismissed === true);
+  useEffect(() => {
+    saveBrowseAllIntro({ dismissed: introDismissed.value === true });
+  }, [introDismissed.value]);
+  const showIntro = !!isNewcomer && introDismissed.value !== true;
 
   const feedAudioOnlyIds = useMemo(() => {
     const out = new Set();
@@ -776,6 +800,44 @@ export function BrowseAllPanel({ env, isOpen, showsConfig, feedTitles, player, h
           </div>
         </header>
         <div class="browseAllContent" data-carousel-group="browseAll">
+          ${showIntro
+            ? html`
+                <section class="browseAllHero" aria-label="Welcome">
+                  <div class="browseAllHeroInner">
+                    <div class="browseAllHeroKicker">New here?</div>
+                    <div class="browseAllHeroTitle">Welcome to ${siteTitle}</div>
+                    <div class="browseAllHeroText">
+                      Pick a show to start watching. Your progress stays on this device, and you can hide audio-only feeds with the TV toggle.
+                    </div>
+                    <div class="browseAllHeroActions">
+                      <button
+                        class="browseAllHeroBtn"
+                        type="button"
+                        data-navitem="1"
+                        onClick=${() => {
+                          introDismissed.value = true;
+                          try {
+                            const first = document.querySelector("#browseAllPanel .browseAllRowMount[data-row-idx='0']");
+                            first?.scrollIntoView?.({ behavior: "smooth", block: "start" });
+                          } catch {}
+                        }}
+                      >
+                        Let’s go
+                      </button>
+                      <button
+                        class="browseAllHeroBtnSecondary"
+                        type="button"
+                        onClick=${() => {
+                          introDismissed.value = true;
+                        }}
+                      >
+                        Dismiss
+                      </button>
+                    </div>
+                  </div>
+                </section>
+              `
+            : null}
           ${categoryRows.map(
             (row, rowIdx) => {
               const isActive = rowIdx >= rowWindow.start && rowIdx <= rowWindow.end;

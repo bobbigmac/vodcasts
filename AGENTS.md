@@ -1,77 +1,67 @@
 <INSTRUCTIONS>
 # AGENTS.md (vodcasts project guide)
 
-This folder is intended to be movable as its own project. Keep imports and scripts
-relative to this folder, not the parent repo.
+This folder is intended to be movable as its own project. Keep imports and scripts relative to this folder (not the parent repo).
 
-## Process notes
+## Quick commands
 
-- Build output lives in `dist/`; generate it with `python3 -m scripts.build_site --base-path / --out dist`.
-- Feed cache lives in `cache*/feeds/` and is copied into the build as `dist/data/feeds/` to avoid CORS issues.
-- Dev server uses Vite rooted at `dist/` with a plugin that rebuilds (and copies assets on change).
-- In dev only, a `/__feed?url=…` proxy exists to fetch remote feeds/transcripts (see `vite.config.js`).
+- Select env (persists to `.vodcasts-env`): `yarn use dev|church|tech|complete`
+- Update RSS cache: `yarn update`
+- Build static site (runs a quiet update first): `yarn build` (set `VOD_BASE_PATH` for subpath builds)
+- Dev server (Vite; rebuilds into `dist/`): `yarn dev`
 
-## Deployments
+## Deployments (feeds + cache)
 
-- Use `feeds*.md` + a matching `cache*` directory per deployment.
-- Keep feed slugs stable: cached filenames are `cache/<env>/feeds/<slug>.xml`.
+- Each deployment is a pair: `feeds/<env>.md` + `cache/<env>/`.
+- Feed slugs must remain stable: cached filenames are `cache/<env>/feeds/<slug>.xml` and build outputs reference them.
+- The build copies cached feeds into the site at `dist/data/feeds/<slug>.xml` to avoid CORS issues.
+- Dev-only remote fetch/proxy exists at `/__feed?url=…` (see `vite.config.js`).
 
-## Client architecture
+## Build outputs (what the client consumes)
 
-- HTML loads `site/assets/app.js`, which bootstraps the ESM app at `site/assets/app/index.js`.
-- The app reads config from `window.__VODCASTS__` (injected by the build into `index.html`). Feed landing pages inject `initialFeed` + `initialView: "browse"`. Routes: `/` homepage; `/feed/<slug>/` feed landing; `/feed/<slug>/<ep>/` episode; `/<feed>/<ep>/` legacy.
-- The app loads `video-sources.json` (built artifact) which points each source’s `feed_url` at either:
-  - `data/feeds/<slug>.xml` when cached, or
-  - the original remote RSS URL as a fallback (likely CORS-blocked in prod).
+- `dist/site.json` — site config + build metadata (also used for optional analytics/comments config).
+- `dist/video-sources.json` — normalized sources from feeds markdown, with computed `features` and resolved `feed_url`.
+- `dist/shows-config.json` — per-feed “shows” (derived from `feeds/shows/<slug>.json` + feed content) used by Browse UIs.
+- `dist/feed-manifest.json` — compact episode metadata used for client-side preload.
+- `dist/data/feeds/` — shipped RSS cache used by `video-sources.json` when available.
+- `dist/feed/<slug>/index.html` — per-feed landing pages.
+- `dist/browse/index.html` — browse-all entrypoint (route `/browse/`).
 
-## File map (1 line per file)
+Build script entrypoints:
+- `scripts/update_feeds.py` — fetch RSS into `cache/<env>/feeds/` (cooldown + ETag/Last-Modified).
+- `scripts/build_site.py` — writes the artifacts above, plus landing pages and show RSS exports.
+- `scripts/show_filters.py` — applies show filter rules to group episodes into shows.
+- `scripts/scan_feed_titles.py` — scans cached feeds for title patterns (useful when authoring show filters).
+- `scripts/report_show_filters.py` — helper report for missing/empty show configs and detected shows (writes to `tmp/`).
 
-- `package.json` — local scripts (`update/build/dev`) and stack (`vite` + `dotenv`).
-- `feeds/complete.md` — full feed set (porting reference; not used in normal builds).
-- `feeds/church.md` — church-only deployment feeds config.
-- `feeds/tech.md` — tech/edu-ish deployment feeds config.
-- `feeds/dev.md` — tiny dev feed set for quick local iteration.
-- `feeds/shows/<slug>.json` — per-feed show filters (auto-loaded by slug); or `shows_path` in feed.
-- `feeds/video-sources.json` — legacy JSON sources list (reference copy; not required by the build).
-- `vite.config.js` — Vite dev server rooted at `dist/` + dev rebuild plugin + `/__feed` proxy.
+## Client architecture (runtime)
 
-### Build scripts
+- HTML template: `site/templates/index.html` injects `window.__VODCASTS__` (basePath/site/initialFeed/initialView).
+- App entry: `site/assets/app.js` loads `site/assets/app/index.js` which calls `bootApp()` (`site/assets/app/main/boot.js`).
+- Routes: `site/assets/app/main/route.js` supports `/browse/`, `/feed/<slug>/…`, and legacy `/<slug>/…` forms (also GitHub Pages `?p=` redirect).
+- `initialView` values:
+  - `"browse"` — used by feed landing pages (open per-feed Browse panel).
+  - `"browseAll"` — used by the browse-all entrypoint.
+- Newcomer behavior: on `/` (homepage), if there is no prior player state in `localStorage` (`vodcasts_state_v1` absent), the app opens Browse All by default.
+- Default feed selection heuristic lives in `site/assets/app/player/player.js` (`pickDefaultSourceId()` uses the first ~10 sources as the head and prefers “core” categories with video).
 
-- `scripts/update_feeds.py` — fetches feed XML into `cache*/feeds/` with cooldown + ETag/Last-Modified support.
-- `scripts/find-feeds.js` — find video podcasts via PodcastIndex API; add to feeds config (requires .env with PODCASTINDEX_KEY/SECRET). Caches API + RSS in `cache/find-feeds/`.
-- `scripts/build_site.py` — copies assets + cached feeds into `dist/`, writes `site.json`, `video-sources.json` (with per-feed features), `feed-manifest.json` (all feeds + episodes brief), `shows-config.json` (Netflix-style shows per feed), per-feed landing pages at `dist/feed/<slug>/index.html`, show RSS at `dist/feed/<slug>/show/<show-slug>.xml`, renders `index.html`.
-- `scripts/show_filters.py` — smart filters: map feed episodes into shows (title_contains, title_prefix, title_regex, all, etc.); leftovers go to feed-level row.
-- `scripts/scan_feed_titles.py` — scan cached feeds for episode title patterns; use before writing `feeds/shows/<id>.json` to derive filters from actual content.
-- `scripts/sources.py` — loads sources from feeds markdown and normalizes categories + titles.
-- `scripts/shared.py` — markdown config loader + `curl`-based fetch helper with hard timeouts.
-- `scripts/feeds_md.py` — markdown feeds parser (copied from the parent project; keep compatible).
+## Front-end modules (high-signal)
 
-### Static site
+- `site/assets/app/main/app.js` — main UI composition (player + panels + corner buttons) and route syncing.
+- `site/assets/app/main/controls.js` — keyboard/remote focus + input helpers.
+- `site/assets/app/player/player.js` — media controller (HLS, progress persistence, play/pause intent persistence, chapters/subtitles).
+- `site/assets/app/ui/browse_all.js` — Browse All Shows panel (category rows, light virtualization, audio-only toggle, newcomer hero).
+- `site/assets/app/ui/browse.js` — per-feed show browsing panel.
+- `site/assets/app/ui/guide.js` — channel guide (feed list + episodes).
+- `site/assets/app/ui/details.js` — details sidebar.
+- `site/assets/app/state/history.js` — local history store (Continue Watching).
 
-- `site/templates/index.html` — single-page UI shell; includes details sidebar w/ comments panel.
-- `site/assets/style.css` — main stylesheet; @imports partials from `site/assets/styles/` (variables, layout, player, audio-viz, progress, captions, overlays, guide-bar, guide-panel, panels, corner, idle).
-- `site/assets/themes.css` — theme overrides (modern/dos).
-- `site/assets/app.js` — stable loader that imports `assets/app/index.js` as a module.
+## Persistence keys (client)
 
-### Client app modules
-
-- `site/assets/app/index.js` — composition root; calls `bootApp()`.
-- `site/assets/app/main/boot.js` — loads env + sources; creates store + controller.
-- `site/assets/app/main/controller.js` — wires UI panels (player/guide/details/history) and global UX glue (idle fade, Esc).
-- `site/assets/app/runtime/env.js` — reads `window.__VODCASTS__` and exposes `sourcesUrl` + `feedProxy` (dev).
-- `site/assets/app/runtime/store.js` — minimal `getState/update/subscribe`.
-- `site/assets/app/runtime/log.js` — log panel writer.
-- `site/assets/app/player/player.js` — video element controller (HLS via `hls.js`, progress persistence, chapters/subtitles, sleep timer).
-- `site/assets/app/player/audio_viz.js` — audio-only display: uses preferred plugin from registry.
-- `site/assets/app/player/audio_plugins/` — built-in plugins: wave, starfield, clock, weather, calendar, aquarium. Preference via Audio options (◐) when playing audio-only.
-- `site/assets/app/ui/guide.js` — channel guide renderer (lazy loads episodes per feed).
-- `site/assets/app/ui/browse.js` — Netflix-style browse panel (show rows, episode cards); used on feed landing pages.
-- `site/assets/app/ui/details.js` — details sidebar coordinator (binds comments to current episode when open).
-- `site/assets/app/ui/chapters.js` — chapters loader + renderer.
-- `site/assets/app/state/history.js` — session history store + renderer.
-- `site/assets/app/vod/sources.js` — loads `video-sources.json`.
-- `site/assets/app/vod/feed_cache.js` — browser Cache API wrapper + heuristic TTL for remote fetches.
-- `site/assets/app/vod/feed_parse.js` — RSS/Atom parsing + enclosure picking + chapters/transcripts extraction.
-- `site/assets/app/vod/timed_comments.js` — Supabase timed comments (optional; configured by `site.json`).
+- `vodcasts_state_v1` — player state (volume/mute, playIntent, last feed/episode, prefs).
+- `vodcasts_history_v1` — watch/play history used by Continue Watching and progress UI.
+- `vodcasts_guide_prefs_v1` — guide favorites and guide-related prefs.
+- `vodcasts_browse_all_prefs_v2` — Browse All prefs (e.g. audio-only visibility toggle).
+- `vodcasts_browse_all_intro_v1` — Browse All newcomer hero dismissal.
 
 </INSTRUCTIONS>

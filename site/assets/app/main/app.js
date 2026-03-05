@@ -725,7 +725,11 @@ export function App({ env, log, sources, showsConfig, player, history }) {
   // Sync UI to route on load: only /browse/ opens Browse All; /X/shows/Y opens guide with show.
   useEffect(() => {
     const route = getRouteFromUrl();
-    browseAllOpen.value = !!route.browse;
+    const wantsBrowseAll =
+      !!route.browse ||
+      env?.initialView === "browseAll" ||
+      (!!player?.isNewcomer && !route.browse && !route.feed && !route.show && !route.ep);
+    browseAllOpen.value = wantsBrowseAll;
     if (route.feed && route.show) {
       guideBrowseFeedId.value = route.feed;
       guideBrowseShowSlug.value = route.show;
@@ -1518,6 +1522,7 @@ export function App({ env, log, sources, showsConfig, player, history }) {
       <${BrowseAllPanel}
         env=${env}
         isOpen=${browseAllOpen.value}
+        isNewcomer=${!!player?.isNewcomer}
         showsConfig=${showsConfig?.value}
         feedTitles=${showsConfig?.value?.feedTitles}
         player=${player}

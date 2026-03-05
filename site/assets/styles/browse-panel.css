@@ -454,6 +454,79 @@
   overscroll-behavior: contain;
 }
 
+.browseAllHero {
+  padding: 0 16px 18px 16px;
+}
+.browseAllHeroInner {
+  border: 1px solid color-mix(in srgb, var(--edge) 80%, transparent);
+  border-radius: 16px;
+  padding: 14px 14px 12px 14px;
+  background:
+    radial-gradient(1200px 300px at 20% -20%, color-mix(in srgb, var(--accent, #0a84ff) 18%, transparent), transparent 70%),
+    rgba(255, 255, 255, 0.04);
+}
+.browseAllHeroKicker {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--muted) 75%, var(--text));
+  margin-bottom: 6px;
+}
+.browseAllHeroTitle {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.browseAllHeroText {
+  font-size: 13px;
+  line-height: 1.35;
+  color: color-mix(in srgb, var(--muted) 80%, var(--text));
+  max-width: 70ch;
+}
+.browseAllHeroActions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+.browseAllHeroBtn,
+.browseAllHeroBtnSecondary {
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+.browseAllHeroBtn {
+  border: 1px solid color-mix(in srgb, var(--edge) 60%, var(--accent, #0a84ff));
+  background: color-mix(in srgb, var(--accent, #0a84ff) 26%, rgba(255, 255, 255, 0.06));
+  color: var(--text);
+}
+.browseAllHeroBtn:hover {
+  background: color-mix(in srgb, var(--accent, #0a84ff) 34%, rgba(255, 255, 255, 0.06));
+}
+.browseAllHeroBtnSecondary {
+  border: 1px solid color-mix(in srgb, var(--edge) 75%, transparent);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+}
+.browseAllHeroBtnSecondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+.browseAllHeroBtn:focus-visible,
+.browseAllHeroBtnSecondary:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--accent, #0a84ff) 70%, transparent);
+  outline-offset: 2px;
+}
+
 @supports (content-visibility: auto) {
   .browseAllRowMount {
     content-visibility: auto;

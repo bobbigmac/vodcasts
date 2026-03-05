@@ -33,7 +33,8 @@ export function createPlayerService({ env, log, history }) {
   let shuffleTickId = null;
   let shuffleBusy = false;
 
-  const persisted = loadState();
+  const { persisted, hadStoredState } = loadStateWithMeta();
+  const isNewcomer = !hadStoredState;
   const initialPlayIntent = persisted.playIntent === "pause" ? "pause" : persisted.playIntent === "play" ? "play" : null;
   const initAutoplay = initialPlayIntent !== "pause";
   userPaused = initialPlayIntent === "pause";
@@ -100,12 +101,15 @@ export function createPlayerService({ env, log, history }) {
 
   const DEFAULT_SUBTITLE_PREFS = { x: 50, y: 78, w: 92, opacity: 1, scale: 1 };
 
-  function loadState() {
+  function loadStateWithMeta() {
     try {
-      const raw = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
-      return raw && typeof raw === "object" ? raw : {};
+      const rawStr = localStorage.getItem(STORAGE_KEY);
+      const hadStoredState = rawStr != null;
+      const raw = JSON.parse(rawStr || "{}");
+      const persisted = raw && typeof raw === "object" ? raw : {};
+      return { persisted, hadStoredState };
     } catch {
-      return {};
+      return { persisted: {}, hadStoredState: false };
     }
   }
   function saveState() {
@@ -1606,6 +1610,7 @@ export function createPlayerService({ env, log, history }) {
     current,
     currentSourceId,
     currentEpisodeId,
+    isNewcomer,
     isAudioOnly,
     attachAudioViz,
     chapters,
