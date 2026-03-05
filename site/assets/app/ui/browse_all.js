@@ -766,7 +766,7 @@ export function BrowseAllPanel({ env, isOpen, isNewcomer, showsConfig, feedTitle
               <button class="browseAllClose" type="button" onClick=${onClose} aria-label="Close">×</button>
             </div>
           </header>
-          <div class="browseAllEmpty">No shows available.</div>
+          <div class="browseAllEmpty">Loading shows...</div>
         </div>
       </div>
     `;

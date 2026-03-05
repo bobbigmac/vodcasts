@@ -431,7 +431,7 @@ def _seo_feed_html(
             line += f'<div style="opacity:.88;margin-top:2px">{_escape_html(sdesc)}</div>'
         line += "</li>"
         items.append(line)
-    shows_ul = "<ul>" + "\n".join(items) + "</ul>" if items else "<p>No shows available.</p>"
+    shows_ul = "<ul>" + "\n".join(items) + "</ul>" if items else "<p>Loading shows...</p>"
     body = f"""
 <h1><a href="{feed_url}" style="color:inherit;text-decoration:none">{feed_title_e}</a></h1>
 <p>Show rows for this feed (same as the in-app Browse view).</p>
