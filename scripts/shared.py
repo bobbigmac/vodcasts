@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import html
 import json
+import os
 import re
 import subprocess
 import tempfile
@@ -139,12 +140,27 @@ def fetch_url(
             "%{http_code}\n%{url_effective}\n",
             url,
         ]
-
-        p = subprocess.run(args, capture_output=True, text=True)
+        p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        try:
+            stdout, stderr = p.communicate()
+        except KeyboardInterrupt:
+            try:
+                if os.name == "nt":
+                    subprocess.run(
+                        ["taskkill", "/PID", str(int(p.pid)), "/T", "/F"],
+                        stdout=subprocess.DEVNULL,
+                        stderr=subprocess.DEVNULL,
+                        check=False,
+                    )
+                else:
+                    p.terminate()
+            except Exception:
+                pass
+            raise
         if p.returncode != 0:
-            raise ValueError((p.stderr or "").strip() or f"curl failed ({p.returncode})")
+            raise ValueError((stderr or "").strip() or f"curl failed ({p.returncode})")
 
-        out_lines = (p.stdout or "").splitlines()
+        out_lines = (stdout or "").splitlines()
         if len(out_lines) < 2:
             raise ValueError("curl: missing status output")
         status = int(out_lines[-2].strip() or "0")
