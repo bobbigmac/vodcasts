@@ -1,9 +1,5 @@
 # MARKETING-TODO (Prays.Be submissions)
 
-Goal: directories + editorial inboxes (no paid accounts).
-
-## Prep once (reuse everywhere)
-
 - Canonical URL: https://prays.be/
 - Contact email: (pick one you’re happy to publish)
 - 512×512 logo (PNG) + 1200×630 social preview image (optional)
@@ -11,33 +7,9 @@ Goal: directories + editorial inboxes (no paid accounts).
 - Short description (1 sentence) + long description (3–5 sentences)
 - “What it is” keywords (pick 3–6): `Christian sermons`, `vodcasts`, `teaching`, `RSS`, `church video`, `TV-style player`
 
-## 1) Human-edited “suggest a site” directory
-
-**Go to**
-- Curlie (DMOZ successor) — suggest a site: https://curlie.org/docs/en/add.html
-
-**Submit**
-- URL: https://prays.be/
-- Best-fitting category (choose 1; don’t spam multiple categories)
-- Title: `Prays.Be`
-- Description: 1–2 plain sentences (no hype, no keywords list)
-
-**Copy to use (directory listing blurb)**
 ```text
 Prays.Be is a simple, distraction-free player for Christian sermons and teachings. It pulls from public vodcast/sermon feeds and organizes them into an easy guide-style browsing experience.
 ```
-
-## 2) Christian directories (site listing submissions)
-
-**Go to**
-- Bonpounou Christian Directory — submit a site: https://bonpounou.com/directory/submit.html
-
-**Submit**
-- Site name: `Prays.Be`
-- URL: https://prays.be/
-- Category: `Media`, `Sermons`, `Teaching`, `Resources` (pick the closest option they offer)
-- Short description (1–2 sentences) + (if asked) longer description (3–5 sentences)
-- Optional: logo, screenshot, contact email
 
 **Copy to use (Christian directory listing blurb)**
 ```text
