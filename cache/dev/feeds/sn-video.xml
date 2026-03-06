@@ -14,8 +14,8 @@
 		<ttl>720</ttl>
 		<sy:updatePeriod>weekly</sy:updatePeriod>
 		<sy:updateFrequency>1</sy:updateFrequency>
-		<lastBuildDate>Thu, 05 Mar 2026 10:25:03 PST</lastBuildDate>
-		<pubDate>Thu, 05 Mar 2026 10:25:03 PST</pubDate>
+		<lastBuildDate>Thu, 05 Mar 2026 15:53:37 PST</lastBuildDate>
+		<pubDate>Thu, 05 Mar 2026 15:53:37 PST</pubDate>
 		<rawvoice:frequency>weekly</rawvoice:frequency>
 		<rawvoice:location>Petaluma, CA</rawvoice:location>
 		<itunes:type>episodic</itunes:type>
@@ -49,8 +49,8 @@ Records live every Tuesday at 4:30pm Eastern / 1:30pm Pacific / 21:30 UTC.</desc
 		<rawvoice:subscribe feed="https://feeds.twit.tv/sn_video_hd.xml" itunes="https://podcasts.apple.com/us/podcast/security-now-video/id593053325" html="https://twit.tv/shows/security-now"></rawvoice:subscribe>
 		<atom:link href="https://feeds.twit.tv/sn_video_hd.xml" type="application/rss+xml" rel="self"/>
 		<item>
-			<title>SN 1068: The Call is Coming from Inside the House - Live From Zero Trust World 2026</title>
-			<itunes:title>The Call is Coming from Inside the House - Live From Zero Trust World 2026</itunes:title>
+			<title>SN 1068: The Call Is Coming From Inside the House - Live From Zero Trust World 2026</title>
+			<itunes:title>The Call Is Coming From Inside the House - Live From Zero Trust World 2026</itunes:title>
 			<itunes:episodeType>full</itunes:episodeType>
 			<itunes:author>TWiT</itunes:author>
 			<pubDate>Thu, 05 Mar 2026 10:25:00 PST</pubDate>
@@ -109,7 +109,7 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 			<itunes:duration>51:55</itunes:duration>
 			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/sn/sn1068/sn1068_h264m_1920x1080.mp4" length="920423201" type="video/mp4"/>
 			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/sn/sn1068/sn1068_h264m_1920x1080.mp4" fileSize="920423201" type="video/mp4" medium="video">
-				<media:title type="plain">SN 1068: The Call is Coming from Inside the House - Live From Zero Trust World 2026</media:title>
+				<media:title type="plain">SN 1068: The Call Is Coming From Inside the House - Live From Zero Trust World 2026</media:title>
 				<media:description type="plain">Live From Zero Trust World 2026</media:description>
 				<media:keywords>Security Now, TWiT, steve gibson, Leo Laporte, zero trust, internal threats, ThreatLocker, enterprise security, network perimeter, authentication failures, ransomware, Social Engineering, least privilege, packet filtering, whitelisting apps</media:keywords>
 				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/03/860376/hero/SN1068_thumbnail.jpg" width="400" height="225" />

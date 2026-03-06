@@ -14,8 +14,8 @@
 		<ttl>720</ttl>
 		<sy:updatePeriod>weekly</sy:updatePeriod>
 		<sy:updateFrequency>1</sy:updateFrequency>
-		<lastBuildDate>Sun, 01 Mar 2026 21:55:03 PST</lastBuildDate>
-		<pubDate>Sun, 01 Mar 2026 21:55:03 PST</pubDate>
+		<lastBuildDate>Thu, 05 Mar 2026 15:53:52 PST</lastBuildDate>
+		<pubDate>Thu, 05 Mar 2026 15:53:52 PST</pubDate>
 		<rawvoice:frequency>weekly</rawvoice:frequency>
 		<rawvoice:location>Petaluma, CA</rawvoice:location>
 		<itunes:type>episodic</itunes:type>
@@ -61,6 +61,7 @@ Records live every Sunday at 5:15pm Eastern / 2:15pm Pacific / 22:15 UTC.</descr
 			<category>Tech News</category>
 			<itunes:explicit>no</itunes:explicit>
 			<itunes:subtitle>Anthropic Stands Up to The Pentagon</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/week-tech-episode-1073-transcript" type="text/html" />
 			<itunes:keywords>Technology, Anthropic, openAI, claude, sam altman, department of defense, Pentagon AI, supply chain risk, mass surveillance, autonomous weapons, layoffs, block, jack dorsey, AI job loss, netflix, Warner Brothers Discovery, Paramount merger, CNN, CBS News,</itunes:keywords>
 			<description><![CDATA[
 <p>Anthropic's clash with the Pentagon pits tech ethics against government demands, raising explosive questions about AI's role in surveillance and weaponry. If you care about who controls the future of artificial intelligence, this episode is a must-listen.</p><ul> 
@@ -185,7 +186,7 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860331/hero/TWIT1073_thumbnail.jpg"/>
 			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twit/twit1073/twit1073_h264m_1920x1080.mp4</guid>
 			<rawvoice:isHd>yes</rawvoice:isHd>
-			<itunes:duration>0:00</itunes:duration>
+			<itunes:duration>2:54:24</itunes:duration>
 			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twit/twit1073/twit1073_h264m_1920x1080.mp4" length="3072086962" type="video/mp4"/>
 			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twit/twit1073/twit1073_h264m_1920x1080.mp4" fileSize="3072086962" type="video/mp4" medium="video">
 				<media:title type="plain">TWiT 1073: Broetry in Motion - Anthropic Stands Up to The Pentagon</media:title>
