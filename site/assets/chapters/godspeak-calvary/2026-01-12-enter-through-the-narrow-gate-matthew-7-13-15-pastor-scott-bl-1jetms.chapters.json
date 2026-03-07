@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772866097,
+  "feed": "godspeak-calvary",
+  "episode_slug": "2026-01-12-enter-through-the-narrow-gate-matthew-7-13-15-pastor-scott-bl-1jetms",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — if you will open up with me to the book of Matthew, All right, we will be i…",
+      "kind": "intro",
+      "tags": [
+        "anchored reading",
+        "matthew",
+        "new testament",
+        "reading program"
+      ]
+    },
+    {
+      "startTime": 241.986,
+      "title": "Scripture reading — if you will open up with me to the book of Matthew, All right,…",
+      "kind": "scripture",
+      "tags": [
+        "bible",
+        "chapter seven",
+        "matthew chapter",
+        "seven"
+      ]
+    },
+    {
+      "startTime": 363.439,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "mount",
+        "thank",
+        "sermon"
+      ]
+    },
+    {
+      "startTime": 488.93,
+      "title": "Pray for Deliverance and Renewal",
+      "kind": "message",
+      "tags": [
+        "deliverance",
+        "renewal",
+        "prayer"
+      ]
+    },
+    {
+      "startTime": 3668.939,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "lord jesus",
+        "holy spirit",
+        "let pray"
+      ]
+    }
+  ]
+}

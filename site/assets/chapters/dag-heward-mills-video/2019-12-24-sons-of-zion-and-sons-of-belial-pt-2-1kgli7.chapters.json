@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865003,
+  "feed": "dag-heward-mills-video",
+  "episode_slug": "2019-12-24-sons-of-zion-and-sons-of-belial-pt-2-1kgli7",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start"
+    },
+    {
+      "startTime": 78.306,
+      "title": "Celebrating New Beginnings",
+      "kind": "message",
+      "tags": [
+        "new beginnings",
+        "joy",
+        "hope"
+      ]
+    },
+    {
+      "startTime": 144.923,
+      "title": "Prayer — today and for your great blessings that are coming to u…",
+      "kind": "prayer",
+      "tags": [
+        "nothing",
+        "impossible",
+        "let sing",
+        "god"
+      ]
+    },
+    {
+      "startTime": 6812.938,
+      "title": "Are You Ready to Give Your Life to Jesus?",
+      "kind": "invitation",
+      "confidence": 0.927921537761234,
+      "tags": [
+        "invitation",
+        "savior",
+        "salvation"
+      ]
+    },
+    {
+      "startTime": 7095.412,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "jesus christ",
+        "jesus",
+        "body",
+        "christ"
+      ]
+    },
+    {
+      "startTime": 7323.611,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "jesus christ",
+        "jesus",
+        "may",
+        "whatever causes"
+      ]
+    }
+  ]
+}

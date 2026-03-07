@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863040,
+  "feed": "atlanta-first-umc",
+  "episode_slug": "2026-01-04-manifest-light-sermon-for-january-4-2026-10kckc",
+  "chapters": [
+    {
+      "startTime": 0.802,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "manifest",
+        "god",
+        "say",
+        "heard"
+      ]
+    },
+    {
+      "startTime": 226.09300000000002,
+      "title": "Manifesting Glory Through Words",
+      "kind": "message",
+      "tags": [
+        "manifestation",
+        "words",
+        "glory"
+      ]
+    },
+    {
+      "startTime": 2283.973,
+      "title": "Prayer — Doxology",
+      "kind": "prayer",
+      "tags": [
+        "holy spirit",
+        "father",
+        "son",
+        "holy"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865192,
+  "feed": "desiring-god-messages",
+  "episode_slug": "2026-02-21-living-in-god-s-sovereign-sustaining-grace-h9k8eh",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — I pray that you would help me be faithful now to this passage i…",
+      "kind": "scripture",
+      "tags": [
+        "messiah jesus",
+        "thank",
+        "jesus",
+        "christ jesus"
+      ]
+    },
+    {
+      "startTime": 126.862,
+      "title": "Reflecting on Faith: A New Covenant Promise",
+      "kind": "message",
+      "tags": [
+        "faith",
+        "covenant",
+        "promise"
+      ]
+    }
+  ]
+}

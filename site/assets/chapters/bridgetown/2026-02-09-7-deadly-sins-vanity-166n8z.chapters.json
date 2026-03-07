@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863337,
+  "feed": "bridgetown",
+  "episode_slug": "2026-02-09-7-deadly-sins-vanity-166n8z",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — I lost all sense of control over my body",
+      "kind": "intro",
+      "tags": [
+        "small beard",
+        "lord",
+        "amos",
+        "bathroom"
+      ]
+    },
+    {
+      "startTime": 32.299,
+      "title": "Scripture reading — I lost all sense of control over my body",
+      "kind": "scripture",
+      "tags": [
+        "small beard",
+        "lord",
+        "amos",
+        "bathroom"
+      ]
+    },
+    {
+      "startTime": 149.282,
+      "title": "Learning to Submit to Body’s Limitations",
+      "kind": "message",
+      "tags": [
+        "submission",
+        "bodylimitations",
+        "eternalrenewal"
+      ]
+    },
+    {
+      "startTime": 275.307,
+      "title": "Welcome — My attention wasn't first on what God might give, but on what I might lose",
+      "kind": "welcome",
+      "tags": [
+        "fear rather",
+        "sunday mornings",
+        "god",
+        "sunday"
+      ]
+    }
+  ]
+}

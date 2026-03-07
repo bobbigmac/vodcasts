@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863151,
+  "feed": "between-sermons-video",
+  "episode_slug": "2025-12-03-are-your-emotions-running-your-life-how-to-take-control-befor-w9pjaa",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Yeah, I'm excited to be on this show because we get to talk about emotions",
+      "kind": "intro",
+      "tags": [
+        "another episode",
+        "red flags",
+        "get",
+        "hat day"
+      ]
+    },
+    {
+      "startTime": 129.195,
+      "title": "Emotions and Red Flags",
+      "kind": "message",
+      "tags": [
+        "emotions",
+        "red flags"
+      ]
+    },
+    {
+      "startTime": 4092.341,
+      "title": "Outro — I'm going to come back when it's Christmas",
+      "kind": "outro",
+      "tags": [
+        "just going",
+        "going",
+        "come back",
+        "back"
+      ]
+    }
+  ]
+}

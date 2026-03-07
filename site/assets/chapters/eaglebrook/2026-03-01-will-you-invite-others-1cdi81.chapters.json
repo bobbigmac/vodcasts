@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865338,
+  "feed": "eaglebrook",
+  "episode_slug": "2026-03-01-will-you-invite-others-1cdi81",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — We're so glad you're here with us wherever you might be",
+      "kind": "welcome",
+      "tags": [
+        "hey everyone",
+        "bob merritt",
+        "hey",
+        "everyone"
+      ]
+    },
+    {
+      "startTime": 211.24,
+      "title": "Worship — that's why we worship",
+      "kind": "worship",
+      "confidence": 0.7433392230464442,
+      "tags": [
+        "always changing",
+        "god character",
+        "god",
+        "god love"
+      ]
+    },
+    {
+      "startTime": 383.057,
+      "title": "Without the Love of Jesus, I Don't Know What I Could Be",
+      "kind": "message",
+      "tags": [
+        "love",
+        "jesus",
+        "unknown"
+      ]
+    },
+    {
+      "startTime": 3547.46,
+      "title": "Pray This Prayer Quietly In Your Heart",
+      "kind": "invitation",
+      "confidence": 0.8244795993830032,
+      "tags": [
+        "prayer",
+        "faith",
+        "believe"
+      ]
+    }
+  ]
+}

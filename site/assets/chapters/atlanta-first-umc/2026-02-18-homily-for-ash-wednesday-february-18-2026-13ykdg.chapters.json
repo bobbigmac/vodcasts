@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863085,
+  "feed": "atlanta-first-umc",
+  "episode_slug": "2026-02-18-homily-for-ash-wednesday-february-18-2026-13ykdg",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — It's hard to entice folks to come to Ash Wednesday service because if they…",
+      "kind": "intro",
+      "tags": [
+        "ash wednesday",
+        "worship experiences",
+        "god",
+        "important worship"
+      ]
+    },
+    {
+      "startTime": 115.426,
+      "title": "Repentance and Renewal on Ash Wednesday",
+      "kind": "message",
+      "tags": [
+        "repentance",
+        "ash wednesday",
+        "faithfulness"
+      ]
+    },
+    {
+      "startTime": 1141.134,
+      "title": "Prayer — Doxology",
+      "kind": "prayer",
+      "tags": [
+        "holy spirit",
+        "father",
+        "son",
+        "spirit"
+      ]
+    }
+  ]
+}

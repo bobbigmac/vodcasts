@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772862827,
+  "feed": "all-saints-homilies",
+  "episode_slug": "2023-03-29-the-struggle-of-faith-ah6b5e",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Ancient Faith Radio presents Homilies from All Saints, taken from the weekl…",
+      "kind": "intro",
+      "tags": [
+        "henry reardon",
+        "touchstone magazine",
+        "faith radio",
+        "father patrick"
+      ]
+    },
+    {
+      "startTime": 14.965,
+      "title": "Prayer — Doxology",
+      "kind": "prayer",
+      "tags": [
+        "father pat",
+        "holy spirit",
+        "father",
+        "pat"
+      ]
+    },
+    {
+      "startTime": 143.022,
+      "title": "Faith's Weakness: Progress in the Valley",
+      "kind": "message",
+      "tags": [
+        "faith",
+        "weakness",
+        "progress"
+      ]
+    },
+    {
+      "startTime": 1266.176,
+      "title": "Outro — We make progress in the valley where even the slightest bit of faith transf…",
+      "kind": "outro",
+      "tags": [
+        "slightest effort",
+        "effort given",
+        "mustard seed",
+        "make progress"
+      ]
+    }
+  ]
+}

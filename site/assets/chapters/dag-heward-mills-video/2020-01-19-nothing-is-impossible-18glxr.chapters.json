@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865018,
+  "feed": "dag-heward-mills-video",
+  "episode_slug": "2020-01-19-nothing-is-impossible-18glxr",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start"
+    },
+    {
+      "startTime": 37.922,
+      "title": "Prayer — what you are doing this morning on this beautiful chris…",
+      "kind": "prayer",
+      "tags": [
+        "sunday morning",
+        "christmas sunday",
+        "shall",
+        "sunday"
+      ]
+    },
+    {
+      "startTime": 162.375,
+      "title": "Nothing Shall Be Impossible",
+      "kind": "message",
+      "tags": [
+        "impossibility",
+        "god's power",
+        "life goals"
+      ]
+    },
+    {
+      "startTime": 318.836,
+      "title": "Scripture reading — I want you to write down one thing that looks impossible",
+      "kind": "scripture",
+      "tags": [
+        "nothing shall",
+        "lord",
+        "impossible",
+        "receive"
+      ]
+    },
+    {
+      "startTime": 3367.347,
+      "title": "Invitation - Thank You for Jesus Sending Him to This World",
+      "kind": "invitation",
+      "confidence": 0.9694991278287826,
+      "tags": [
+        "thanksgiving",
+        "jesus",
+        "world"
+      ]
+    },
+    {
+      "startTime": 3496.354,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god bless",
+        "god",
+        "bless",
+        "receive"
+      ]
+    },
+    {
+      "startTime": 3657.143,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "cleansed forever",
+        "whatever represents",
+        "jesus",
+        "whatever"
+      ]
+    }
+  ]
+}

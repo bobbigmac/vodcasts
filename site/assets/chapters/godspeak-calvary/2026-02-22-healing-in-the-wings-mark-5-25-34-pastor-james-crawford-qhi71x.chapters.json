@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772866171,
+  "feed": "godspeak-calvary",
+  "episode_slug": "2026-02-22-healing-in-the-wings-mark-5-25-34-pastor-james-crawford-qhi71x",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — We'll see what the Lord does, but I'm thankful to be here",
+      "kind": "intro",
+      "tags": [
+        "welcome church",
+        "guys",
+        "today",
+        "going"
+      ]
+    },
+    {
+      "startTime": 112.69800000000001,
+      "title": "New Fatherhood Reflections",
+      "kind": "message",
+      "tags": [
+        "family",
+        "parenting",
+        "newborn"
+      ]
+    },
+    {
+      "startTime": 221.852,
+      "title": "Prayer — what you're doing in and through this church and your b…",
+      "kind": "prayer",
+      "tags": [
+        "caffeine 24-7",
+        "lord",
+        "amen",
+        "just give"
+      ]
+    },
+    {
+      "startTime": 547.223,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "something",
+        "one",
+        "lord",
+        "father"
+      ]
+    },
+    {
+      "startTime": 2132.548,
+      "title": "Prayer — what you're doing in our lives, the things that we need…",
+      "kind": "prayer",
+      "tags": [
+        "give",
+        "need",
+        "father",
+        "thank"
+      ]
+    }
+  ]
+}

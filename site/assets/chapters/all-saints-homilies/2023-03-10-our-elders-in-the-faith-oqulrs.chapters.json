@@ -2,32 +2,44 @@
   "version": 1,
   "generator": {
     "name": "vodcasts-answer-engine",
-    "version": 2,
-    "mode": "semantic"
+    "version": 4,
+    "mode": "hybrid"
   },
-  "generated_at_unix": 1772851866,
+  "generated_at_unix": 1772862813,
   "feed": "all-saints-homilies",
   "episode_slug": "2023-03-10-our-elders-in-the-faith-oqulrs",
   "chapters": [
     {
       "startTime": 0.0,
-      "title": "Intro — They're those who lived the faith before us and handed the faith on to us",
-      "kind": "intro"
+      "title": "Intro — That's why we have this epistle today",
+      "kind": "intro",
+      "tags": [
+        "henry reardon",
+        "touchstone magazine",
+        "faith radio",
+        "patrick henry"
+      ]
     },
     {
-      "startTime": 265.084,
-      "title": "Message — He says Esau was a profane person who for one morsel of food sold his bir…",
-      "kind": "message"
-    },
-    {
-      "startTime": 651.639,
-      "title": "Topic — Esau imagined he could be a cultured person by reason of what he could purc…",
-      "kind": "topic"
+      "startTime": 133.314,
+      "title": "Elders' Authority Over Us",
+      "kind": "message",
+      "tags": [
+        "elders",
+        "authority",
+        "faith"
+      ]
     },
     {
       "startTime": 1541.423,
       "title": "Outro — We're going to pray and fast because they've come now to accept the traditi…",
-      "kind": "outro"
+      "kind": "outro",
+      "tags": [
+        "praying exorcisms",
+        "going",
+        "church",
+        "saints orthodox"
+      ]
     }
   ]
 }

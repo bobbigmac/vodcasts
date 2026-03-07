@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864275,
+  "feed": "church-of-the-highlands-weekend-video",
+  "episode_slug": "2026-02-08-what-is-love-mifyyr",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — I love seeing people gather, and I love seeing what God is doing to young…",
+      "kind": "welcome",
+      "tags": [
+        "god",
+        "god house",
+        "love",
+        "welcome"
+      ]
+    },
+    {
+      "startTime": 41.73,
+      "title": "Welcome — I love seeing people gather, and I love seeing what God is doing to young…",
+      "kind": "welcome",
+      "tags": [
+        "god",
+        "god house",
+        "love",
+        "welcome"
+      ]
+    },
+    {
+      "startTime": 124.674,
+      "title": "Praying for Growth",
+      "kind": "message",
+      "tags": [
+        "growth",
+        "prayer",
+        "church"
+      ]
+    },
+    {
+      "startTime": 1844.463,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "start worshiping",
+        "today",
+        "going"
+      ]
+    }
+  ]
+}

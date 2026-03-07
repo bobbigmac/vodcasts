@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864479,
+  "feed": "city-chapel-church",
+  "episode_slug": "2023-10-11-mark-7-14-23-13-things-i-hate-about-you-1ou114",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — Mark chapter seven, just to give some context to this passage,…",
+      "kind": "scripture",
+      "tags": [
+        "slaughter creek",
+        "okayest church",
+        "weekly podcast",
+        "world okayest"
+      ]
+    },
+    {
+      "startTime": 3.202,
+      "title": "Scripture reading — Mark chapter seven, just to give some context to this passage,…",
+      "kind": "scripture",
+      "tags": [
+        "slaughter creek",
+        "okayest church",
+        "weekly podcast",
+        "world okayest"
+      ]
+    },
+    {
+      "startTime": 115.388,
+      "title": "Jesus’ New Commandment: Serving Others Without Fear",
+      "kind": "message",
+      "tags": [
+        "discipleship",
+        "service",
+        "mission"
+      ]
+    },
+    {
+      "startTime": 3263.394,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "various actions",
+        "malice",
+        "god",
+        "somebody"
+      ]
+    },
+    {
+      "startTime": 3582.199,
+      "title": "Benediction — Father, I pray that you would bless them",
+      "kind": "benediction",
+      "tags": [
+        "bless",
+        "father",
+        "available",
+        "pray"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865809,
+  "feed": "first-love-church-uk",
+  "episode_slug": "2020-01-15-the-great-commission-according-to-timothy-12-01-20-866qss",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — We will then hear life-changing preaching from our pastor, Bishop Richard…",
+      "kind": "welcome",
+      "tags": [
+        "richard iey",
+        "bishop richard",
+        "first love",
+        "love church"
+      ]
+    },
+    {
+      "startTime": 13.186,
+      "title": "Welcome — We will then hear life-changing preaching from our pastor, Bishop Richard…",
+      "kind": "welcome",
+      "tags": [
+        "richard iey",
+        "bishop richard",
+        "first love",
+        "love church"
+      ]
+    },
+    {
+      "startTime": 135.231,
+      "title": "The Healing Power of Listening",
+      "kind": "story",
+      "tags": [
+        "healing",
+        "listening",
+        "faith"
+      ]
+    },
+    {
+      "startTime": 385.282,
+      "title": "Worship — since the moment I said like that, I need you to guide me",
+      "kind": "worship",
+      "confidence": 0.6014809589154858,
+      "tags": [
+        "holy spirit",
+        "need",
+        "exodus",
+        "honor"
+      ]
+    },
+    {
+      "startTime": 7605.122,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "christ",
+        "jesus",
+        "every"
+      ]
+    },
+    {
+      "startTime": 7811.586,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "first love",
+        "amen",
+        "love church",
+        "lord"
+      ]
+    }
+  ]
+}

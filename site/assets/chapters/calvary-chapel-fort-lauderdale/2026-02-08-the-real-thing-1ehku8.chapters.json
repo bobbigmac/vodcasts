@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863815,
+  "feed": "calvary-chapel-fort-lauderdale",
+  "episode_slug": "2026-02-08-the-real-thing-1ehku8",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "ever",
+        "counterfeit",
+        "devastating",
+        "dmb"
+      ]
+    },
+    {
+      "startTime": 126.69200000000001,
+      "title": "The Enemy of Abundance",
+      "kind": "message",
+      "tags": [
+        "abundance",
+        "enemies",
+        "life"
+      ]
+    },
+    {
+      "startTime": 3026.396,
+      "title": "Join Us on Our Journey Together",
+      "kind": "invitation",
+      "confidence": 0.9978450763817024,
+      "tags": [
+        "community",
+        "commitment",
+        "growth"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865784,
+  "feed": "first-love-church-uk",
+  "episode_slug": "2020-01-08-the-great-commission-according-to-james-05-01-20-141wo6",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — a couple of months ago, I was coming to the end of my masters and everythin…",
+      "kind": "intro",
+      "tags": [
+        "looking dry",
+        "get started",
+        "looking",
+        "dry"
+      ]
+    },
+    {
+      "startTime": 13.186,
+      "title": "Break / transition",
+      "kind": "transition",
+      "confidence": 0.883515842226503,
+      "tags": [
+        "richard iey",
+        "bishop richard",
+        "love church",
+        "first love"
+      ]
+    },
+    {
+      "startTime": 262.882,
+      "title": "The Power of Prayer: Receiving Prophetic Guidance",
+      "kind": "message",
+      "tags": [
+        "prayer",
+        "prophetic guidance",
+        "success"
+      ]
+    },
+    {
+      "startTime": 439.33,
+      "title": "Giving / generosity — I like the testimonies from the Greater Love Gospel Choir, yo…",
+      "kind": "giving",
+      "tags": [
+        "greater love",
+        "gospel choir",
+        "love gospel",
+        "greater"
+      ]
+    },
+    {
+      "startTime": 9145.191,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "lord jesus",
+        "god bless",
+        "jesus"
+      ]
+    },
+    {
+      "startTime": 9493.666,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "blood",
+        "may",
+        "behalf"
+      ]
+    }
+  ]
+}

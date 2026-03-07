@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865294,
+  "feed": "dungeness-community-church",
+  "episode_slug": "2026-02-16-in-him-paul-s-letter-to-the-ephesians-tim-richards-2-of-12-vi-1snaf7",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "pastor britt",
+        "britt",
+        "secret",
+        "ever belonged"
+      ]
+    },
+    {
+      "startTime": 127.34,
+      "title": "Living Faith Despite Controlling Beliefs",
+      "kind": "message",
+      "tags": [
+        "faith",
+        "controlling",
+        "beliefs"
+      ]
+    },
+    {
+      "startTime": 366.786,
+      "title": "Giving / generosity — Making known to us the mystery of his will according to his p…",
+      "kind": "giving",
+      "tags": [
+        "see people",
+        "people constantly",
+        "constantly offering",
+        "life hacks"
+      ]
+    },
+    {
+      "startTime": 1127.684,
+      "title": "Worship — what is it that will lead to the praise of his glory?",
+      "kind": "worship",
+      "confidence": 0.8846748789619375,
+      "tags": [
+        "praise",
+        "glory",
+        "christ",
+        "god"
+      ]
+    },
+    {
+      "startTime": 2786.21,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "carrie underwood",
+        "maybe",
+        "need jesus",
+        "song famous"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865454,
+  "feed": "eric-walsh-sermons",
+  "episode_slug": "2026-02-13-eric-walsh-the-science-of-surrender-cuwcjm",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Our scripture reading is from Matthew chapter 16, and we'll start at verse…",
+      "kind": "intro",
+      "tags": [
+        "matthew chapter",
+        "bible",
+        "gospels",
+        "matthew"
+      ]
+    },
+    {
+      "startTime": 49.649,
+      "title": "Prayer — this opportunity to study your word and your truths",
+      "kind": "prayer",
+      "tags": [
+        "father god",
+        "lord",
+        "jesus",
+        "father"
+      ]
+    },
+    {
+      "startTime": 178.184,
+      "title": "Jesus' Footwashing: A Challenge and Invitation",
+      "kind": "message",
+      "tags": [
+        "challenge",
+        "invitation",
+        "ministry"
+      ]
+    },
+    {
+      "startTime": 2904.93,
+      "title": "Prayer — this opportunity, lord, to just worship you on this, yo…",
+      "kind": "prayer",
+      "tags": [
+        "want",
+        "lord",
+        "jesus",
+        "god"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863079,
+  "feed": "atlanta-first-umc",
+  "episode_slug": "2026-02-15-manifest-glory-sermon-for-february-15-2026-1035yr",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "manifest",
+        "can wrap",
+        "old testament",
+        "life"
+      ]
+    },
+    {
+      "startTime": 129.67,
+      "title": "They Saw the God Who Had Just Been a Cloud Shepherding Them Through the Wilderness",
+      "kind": "message",
+      "tags": [
+        "history",
+        "miracle",
+        "faith"
+      ]
+    },
+    {
+      "startTime": 223.65,
+      "title": "Scripture reading — As they were coming down the mountain, Jesus ordered them, tell…",
+      "kind": "scripture",
+      "tags": [
+        "matthew chapter",
+        "gospel reading",
+        "gospel",
+        "please rise"
+      ]
+    },
+    {
+      "startTime": 1615.016,
+      "title": "Worship — the others didn't quite get it because when Moses comes down off the moun…",
+      "kind": "worship",
+      "confidence": 0.6604044743550609,
+      "tags": [
+        "god",
+        "everybody wants",
+        "glory",
+        "get"
+      ]
+    },
+    {
+      "startTime": 1917.578,
+      "title": "Prayer — Doxology",
+      "kind": "prayer",
+      "tags": [
+        "holy spirit",
+        "father",
+        "spirit",
+        "son"
+      ]
+    }
+  ]
+}

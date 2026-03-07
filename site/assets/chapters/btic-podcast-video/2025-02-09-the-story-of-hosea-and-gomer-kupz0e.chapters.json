@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863494,
+  "feed": "btic-podcast-video",
+  "episode_slug": "2025-02-09-the-story-of-hosea-and-gomer-kupz0e",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — so we learn the story so that we have an arsenal with which to tell others…",
+      "kind": "intro",
+      "tags": [
+        "tell",
+        "love",
+        "matter",
+        "story"
+      ]
+    },
+    {
+      "startTime": 277.442,
+      "title": "God's Love Unconditional",
+      "kind": "message",
+      "tags": [
+        "love",
+        "unconditional",
+        "god"
+      ]
+    },
+    {
+      "startTime": 1676.834,
+      "title": "Show Someone God’s Love This Week",
+      "kind": "invitation",
+      "confidence": 0.5506710358827784,
+      "tags": [
+        "love",
+        "practical",
+        "reach"
+      ]
+    },
+    {
+      "startTime": 1919.927,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "father",
+        "pray",
+        "jesus",
+        "see jesus"
+      ]
+    }
+  ]
+}

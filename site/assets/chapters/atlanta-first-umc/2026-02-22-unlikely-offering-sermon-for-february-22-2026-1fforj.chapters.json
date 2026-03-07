@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863089,
+  "feed": "atlanta-first-umc",
+  "episode_slug": "2026-02-22-unlikely-offering-sermon-for-february-22-2026-1fforj",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — One of the Pharisees asked Jesus to eat with him and when he we…",
+      "kind": "scripture",
+      "tags": [
+        "updated edition",
+        "new revised",
+        "revised standard",
+        "standard version"
+      ]
+    },
+    {
+      "startTime": 53.669,
+      "title": "Giving / generosity — Please stand for the reading of the gospel this morning from…",
+      "kind": "giving",
+      "tags": [
+        "unlikely offering",
+        "verses one",
+        "verses",
+        "eight"
+      ]
+    },
+    {
+      "startTime": 91.483,
+      "title": "Scripture reading — One of the Pharisees asked Jesus to eat with him and when he we…",
+      "kind": "scripture",
+      "tags": [
+        "updated edition",
+        "new revised",
+        "revised standard",
+        "standard version"
+      ]
+    },
+    {
+      "startTime": 215.838,
+      "title": "Mary’s Touch",
+      "kind": "message",
+      "tags": [
+        "saint",
+        "miracle",
+        "faith"
+      ]
+    },
+    {
+      "startTime": 1738.082,
+      "title": "Giving / generosity — She humbled herself in such a way that she got on the floor a…",
+      "kind": "giving",
+      "tags": [
+        "god says",
+        "says god",
+        "god",
+        "offering"
+      ]
+    },
+    {
+      "startTime": 1801.698,
+      "title": "Giving / generosity — I am going to bring an unlikely offering to God",
+      "kind": "giving",
+      "tags": [
+        "gonna show",
+        "show",
+        "offering",
+        "going"
+      ]
+    },
+    {
+      "startTime": 1878.338,
+      "title": "Benediction — The Luke text says, and you shall go in peace",
+      "kind": "benediction",
+      "tags": [
+        "luke text",
+        "text says",
+        "luke",
+        "want peace"
+      ]
+    },
+    {
+      "startTime": 1900.782,
+      "title": "Giving / generosity — It's going to take a gift of love, devotion, or generosity th…",
+      "kind": "giving",
+      "tags": [
+        "sacrificial offering",
+        "almighty god",
+        "going",
+        "offering"
+      ]
+    },
+    {
+      "startTime": 1954.26,
+      "title": "Prayer — Doxology",
+      "kind": "prayer",
+      "tags": [
+        "holy spirit",
+        "father",
+        "son",
+        "spirit"
+      ]
+    }
+  ]
+}

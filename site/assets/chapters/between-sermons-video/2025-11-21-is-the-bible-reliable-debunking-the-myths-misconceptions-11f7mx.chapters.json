@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863110,
+  "feed": "between-sermons-video",
+  "episode_slug": "2025-11-21-is-the-bible-reliable-debunking-the-myths-misconceptions-11f7mx",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — this week we talked about, I believe in God",
+      "kind": "intro",
+      "tags": [
+        "pastor carlton",
+        "get",
+        "welcome back",
+        "another episode"
+      ]
+    },
+    {
+      "startTime": 122.246,
+      "title": "Why Do We Trust the Bible?",
+      "kind": "message",
+      "tags": [
+        "trust",
+        "bible",
+        "authority"
+      ]
+    },
+    {
+      "startTime": 3856.7,
+      "title": "Scripture reading — I think if you just start reading it, you'll start to see the H…",
+      "kind": "scripture",
+      "tags": [
+        "bible",
+        "bible plan",
+        "bible open",
+        "god"
+      ]
+    },
+    {
+      "startTime": 3972.885,
+      "title": "Outro — until next week, if you have any questions, I know we haven't said that in…",
+      "kind": "outro",
+      "tags": [
+        "week",
+        "know",
+        "love",
+        "next week"
+      ]
+    }
+  ]
+}

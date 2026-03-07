@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772866295,
+  "feed": "harvest-baptist-ga",
+  "episode_slug": "2026-02-23-exodus-ch15-v1-v21-17msc9",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — There's our sermon title from Exodus 15",
+      "kind": "welcome",
+      "tags": [
+        "harvest baptist",
+        "baptist church",
+        "local church",
+        "sermon podcast"
+      ]
+    },
+    {
+      "startTime": 10.658,
+      "title": "Welcome — There's our sermon title from Exodus 15",
+      "kind": "welcome",
+      "tags": [
+        "harvest baptist",
+        "baptist church",
+        "local church",
+        "sermon podcast"
+      ]
+    },
+    {
+      "startTime": 130.728,
+      "title": "Worship — The Lord is the strength of his people",
+      "kind": "worship",
+      "confidence": 0.6671289163019204,
+      "tags": [
+        "sing praises",
+        "god",
+        "king",
+        "sing"
+      ]
+    },
+    {
+      "startTime": 232.962,
+      "title": "Scripture reading — Songs Praise Victory, and that's where we find ourselves here i…",
+      "kind": "scripture",
+      "tags": [
+        "joy clap",
+        "hands together",
+        "unite psalm",
+        "heart trust"
+      ]
+    },
+    {
+      "startTime": 352.29,
+      "title": "Response to God’s Power",
+      "kind": "message",
+      "tags": [
+        "response",
+        "god's power",
+        "acknowledgment"
+      ]
+    },
+    {
+      "startTime": 474.669,
+      "title": "Scripture reading — Then Moses and the people of Israel sang the song to the Lord s…",
+      "kind": "scripture",
+      "tags": [
+        "lord",
+        "pastor chris",
+        "israel",
+        "god"
+      ]
+    },
+    {
+      "startTime": 3023.353,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "may",
+        "let pray",
+        "heart"
+      ]
+    },
+    {
+      "startTime": 3144.066,
+      "title": "Benediction — For more information about the church, please visit our website Harve…",
+      "kind": "benediction",
+      "tags": [
+        "harvest baptist",
+        "baptist church",
+        "harvest",
+        "baptist"
+      ]
+    }
+  ]
+}

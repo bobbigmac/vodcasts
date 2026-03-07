@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864112,
+  "feed": "chinese-bible-church",
+  "episode_slug": "2021-10-17-king-josiah-14m38j",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "chronicles chapter",
+        "years old",
+        "images",
+        "jerusalem"
+      ]
+    },
+    {
+      "startTime": 104.589,
+      "title": "Inquiring About God’s Will",
+      "kind": "message",
+      "tags": [
+        "worship",
+        "prayer",
+        "instruction"
+      ]
+    },
+    {
+      "startTime": 149.89,
+      "title": "Prayer — your word, the bible, that we have it to learn and stud…",
+      "kind": "prayer",
+      "tags": [
+        "king josiah",
+        "bible",
+        "king",
+        "lord"
+      ]
+    },
+    {
+      "startTime": 1535.352,
+      "title": "Prayer — you help us share your word with as many people as poss…",
+      "kind": "prayer",
+      "tags": [
+        "word",
+        "dear god",
+        "know",
+        "lord"
+      ]
+    }
+  ]
+}

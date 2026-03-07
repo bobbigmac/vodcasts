@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864420,
+  "feed": "city-chapel-church",
+  "episode_slug": "2023-04-30-43-names-of-god-using-the-alphabet-8zpiar",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "pastor wright",
+        "pastor james",
+        "james wright",
+        "pastor texted"
+      ]
+    },
+    {
+      "startTime": 131.286,
+      "title": "Finding Abba: Fatherhood in Adoption",
+      "kind": "message",
+      "tags": [
+        "adoption",
+        "fatherhood",
+        "religion"
+      ]
+    },
+    {
+      "startTime": 2849.41,
+      "title": "Every Question Has An Answer In Him",
+      "kind": "invitation",
+      "confidence": 0.8987335381461166,
+      "tags": [
+        "answer",
+        "excellence",
+        "god"
+      ]
+    },
+    {
+      "startTime": 2980.775,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "zealous one",
+        "one",
+        "zealous",
+        "god"
+      ]
+    },
+    {
+      "startTime": 3143.69,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "amen",
+        "jesus' name",
+        "word",
+        "name"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863605,
+  "feed": "calvary-chapel-anne-arundel",
+  "episode_slug": "2025-12-21-the-chosen-1xu73x",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "jesus christ",
+        "ephesians chapter",
+        "read ephesians",
+        "lord jesus"
+      ]
+    },
+    {
+      "startTime": 132.386,
+      "title": "The Will of God Unfolds",
+      "kind": "message",
+      "tags": [
+        "faith",
+        "grace",
+        "perseverance"
+      ]
+    },
+    {
+      "startTime": 2824.962,
+      "title": "Outro — Thank you for giving us just a moment to slow down before this Christmas an…",
+      "kind": "outro",
+      "tags": [
+        "christ",
+        "without blame",
+        "christmas",
+        "heart"
+      ]
+    }
+  ]
+}

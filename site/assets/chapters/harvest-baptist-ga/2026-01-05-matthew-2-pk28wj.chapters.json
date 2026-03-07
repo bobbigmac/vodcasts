@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772866227,
+  "feed": "harvest-baptist-ga",
+  "episode_slug": "2026-01-05-matthew-2-pk28wj",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — This sermon cannot and will not replace what a local church can provide t…",
+      "kind": "welcome",
+      "tags": [
+        "harvest baptist",
+        "baptist church",
+        "local church",
+        "harvest"
+      ]
+    },
+    {
+      "startTime": 10.658,
+      "title": "Welcome — This sermon cannot and will not replace what a local church can provide t…",
+      "kind": "welcome",
+      "tags": [
+        "harvest baptist",
+        "baptist church",
+        "local church",
+        "harvest"
+      ]
+    },
+    {
+      "startTime": 134.451,
+      "title": "Scripture reading — Well, the New Testament says it is and the New Testament is the…",
+      "kind": "scripture",
+      "tags": [
+        "old testament",
+        "new testament",
+        "testament",
+        "old"
+      ]
+    },
+    {
+      "startTime": 243.682,
+      "title": "Worshiping the King",
+      "kind": "message",
+      "tags": [
+        "worship",
+        "kingdom",
+        "devotion"
+      ]
+    },
+    {
+      "startTime": 2475.234,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "let pray",
+        "father",
+        "gospel",
+        "thank"
+      ]
+    },
+    {
+      "startTime": 2568.066,
+      "title": "Benediction — For more information about the church, please visit our website Harve…",
+      "kind": "benediction",
+      "tags": [
+        "harvest baptist",
+        "baptist church",
+        "harvest",
+        "baptist"
+      ]
+    }
+  ]
+}

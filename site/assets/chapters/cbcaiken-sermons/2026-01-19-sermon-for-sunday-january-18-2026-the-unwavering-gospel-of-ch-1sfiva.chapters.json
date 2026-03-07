@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863993,
+  "feed": "cbcaiken-sermons",
+  "episode_slug": "2026-01-19-sermon-for-sunday-january-18-2026-the-unwavering-gospel-of-ch-1sfiva",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — in all of these things, the reason for this is because the gospel exposes t…",
+      "kind": "intro",
+      "tags": [
+        "jesus christ",
+        "gospel",
+        "jesus",
+        "christ"
+      ]
+    },
+    {
+      "startTime": 130.082,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "paul",
+        "amen",
+        "rome"
+      ]
+    },
+    {
+      "startTime": 291.87,
+      "title": "Scripture reading — Even though that there was heavy opposition, he still wanted to…",
+      "kind": "scripture",
+      "tags": [
+        "jesus christ",
+        "gospel",
+        "jesus",
+        "christ"
+      ]
+    },
+    {
+      "startTime": 546.577,
+      "title": "Understanding the Gospel: Power of God Over Sin",
+      "kind": "message",
+      "tags": [
+        "gospel",
+        "power",
+        "sin"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864670,
+  "feed": "connexus-church",
+  "episode_slug": "2026-01-25-how-do-you-know-what-s-true-anymore-in-a-world-shaped-by-algo-1088kl",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — It's forming, in a sense, what we think about everything",
+      "kind": "intro",
+      "tags": [
+        "forming",
+        "think",
+        "voices",
+        "one"
+      ]
+    },
+    {
+      "startTime": 232.453,
+      "title": "Finding Depth Amidst Overwhelming Voices",
+      "kind": "message",
+      "tags": [
+        "depth",
+        "overwhelming",
+        "voices"
+      ]
+    },
+    {
+      "startTime": 2173.861,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "voice",
+        "bible",
+        "something jesus",
+        "voices"
+      ]
+    }
+  ]
+}

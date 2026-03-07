@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864333,
+  "feed": "church-on-the-rock",
+  "episode_slug": "2026-02-02-in-his-presence-part-1-ggw29z",
+  "chapters": [
+    {
+      "startTime": 0.45,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "presence",
+        "god presence",
+        "god",
+        "presence gets"
+      ]
+    },
+    {
+      "startTime": 254.178,
+      "title": "The Presence of God Sets Us Apart",
+      "kind": "message",
+      "tags": [
+        "god",
+        "presence",
+        "difference"
+      ]
+    },
+    {
+      "startTime": 1719.33,
+      "title": "Outro — Read the gospels, the life of Christ",
+      "kind": "outro",
+      "tags": [
+        "real rest",
+        "team comes",
+        "christ",
+        "learn"
+      ]
+    }
+  ]
+}

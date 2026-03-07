@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863625,
+  "feed": "calvary-chapel-anne-arundel",
+  "episode_slug": "2025-12-28-prophecy-update-december-2025-1o61p7",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "going",
+        "sodom",
+        "know",
+        "lord"
+      ]
+    },
+    {
+      "startTime": 130.786,
+      "title": "The Heart of God: Hope and Purpose",
+      "kind": "message",
+      "tags": [
+        "hope",
+        "purpose",
+        "god"
+      ]
+    },
+    {
+      "startTime": 373.73,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "lives personally",
+        "good work",
+        "israel",
+        "lives"
+      ]
+    },
+    {
+      "startTime": 3413.122,
+      "title": "Worship — Lord, as we worship you, you're worthy to be worshiped",
+      "kind": "worship",
+      "confidence": 0.7630722413178782,
+      "tags": [
+        "new covenant",
+        "new testament",
+        "cup",
+        "lord"
+      ]
+    }
+  ]
+}

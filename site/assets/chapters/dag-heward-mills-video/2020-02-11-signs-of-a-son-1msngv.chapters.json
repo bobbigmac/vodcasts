@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865063,
+  "feed": "dag-heward-mills-video",
+  "episode_slug": "2020-02-11-signs-of-a-son-1msngv",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start"
+    },
+    {
+      "startTime": 105.72999999999999,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "weeks ago",
+        "god pleases",
+        "preaching"
+      ]
+    },
+    {
+      "startTime": 177.28199999999998,
+      "title": "Prayer — the blessing you give to us today",
+      "kind": "prayer",
+      "tags": [
+        "death",
+        "jesus' name",
+        "appointment",
+        "pray"
+      ]
+    },
+    {
+      "startTime": 399.298,
+      "title": "Praying for Deliverance",
+      "kind": "message",
+      "tags": [
+        "deliverance",
+        "prayer",
+        "freedom"
+      ]
+    },
+    {
+      "startTime": 8442.178,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "loudest amen",
+        "week",
+        "activated",
+        "blood"
+      ]
+    }
+  ]
+}

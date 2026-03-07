@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864199,
+  "feed": "chinese-community-church-sacramento",
+  "episode_slug": "2018-06-03-are-we-losing-our-minds-part-2-pastor-louis-lee-june-03-2018-cttsaq",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — This is a continuation of the sermon I began last Sunday",
+      "kind": "intro",
+      "tags": [
+        "brown bibles",
+        "whatever",
+        "verses eight",
+        "philippians"
+      ]
+    },
+    {
+      "startTime": 120.062,
+      "title": "Prayer—The Amazing Gift of Eternal Life Through Faith in Jesus",
+      "kind": "message",
+      "tags": [
+        "faith",
+        "eternal life",
+        "jesus"
+      ]
+    },
+    {
+      "startTime": 156.257,
+      "title": "Prayer — the amazing gift of eternal life through faith in jesus…",
+      "kind": "prayer",
+      "tags": [
+        "jesus christ",
+        "word",
+        "god word",
+        "god"
+      ]
+    },
+    {
+      "startTime": 1584.177,
+      "title": "Prayer — the new life you've given us",
+      "kind": "prayer",
+      "tags": [
+        "let pray",
+        "jesus christ",
+        "god",
+        "father god"
+      ]
+    }
+  ]
+}

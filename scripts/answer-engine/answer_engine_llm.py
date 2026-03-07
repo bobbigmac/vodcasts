@@ -15,7 +15,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer  # type: ignore
 
 
 _DEFAULT_MODEL = "Qwen/Qwen2.5-1.5B-Instruct"
-_ALLOWED_KINDS = {
+_COMMON_KINDS = {
     "start",
     "welcome",
     "intro",
@@ -194,13 +194,29 @@ def _normalize_kind(v: str, fallback: str) -> str:
     k = " ".join(str(v or "").strip().lower().replace("-", "_").split())
     k = k.replace(" ", "_")
     k = _KIND_ALIASES.get(k, k)
-    if k not in _ALLOWED_KINDS:
+    if not k:
+        return fallback
+    if k in _COMMON_KINDS:
+        return k
+    k = re.sub(r"[^a-z0-9_]+", "_", k).strip("_")
+    k = re.sub(r"_+", "_", k)
+    if len(k) < 3 or len(k) > 32:
+        return fallback
+    if k in {"chapter", "section", "segment", "content", "other", "misc", "general", "unknown"}:
         return fallback
     return k
 
 
 def _allowed_kinds_csv() -> str:
-    return ", ".join(sorted(_ALLOWED_KINDS))
+    return ", ".join(sorted(_COMMON_KINDS))
+
+
+def _kind_prompt_examples() -> str:
+    return (
+        "Common examples: welcome, worship, prayer, scripture, teaching, application, story, testimony, "
+        "conversation, interview, q_and_a, invitation, giving, benediction, news_update, devotional, "
+        "conference_talk, kids_story, panel_discussion, ministry_update, health_segment, finance_segment."
+    )
 
 
 def _normalize_tags(v: Any) -> list[str]:
@@ -331,7 +347,9 @@ def _review_boundary_local(*, before_text: str, after_text: str, title_hint: str
         "Prefer keeping boundaries for a clear new section a human would notice: teaching, application, scripture reading, story, testimony, conversation, response, worship, prayer, giving, announcements, benediction, or outro. "
         "Reject boundaries when the speaker is simply continuing the same argument. "
         "Return JSON only with keys keep, kind, title, tags. "
-        f"kind must be one of: {_allowed_kinds_csv()}."
+        f"Use one of these common kinds when they fit: {_allowed_kinds_csv()}. "
+        f"{_kind_prompt_examples()} "
+        "If none fit well, you may propose another short snake_case kind for a human-recognizable section."
     )
     user = (
         f"Title hint: {title_hint or '(none)'}\n\n"
@@ -367,8 +385,9 @@ def _refine_chapter_metadata_local(
     system = (
         "You create chapter metadata for sermons and podcasts. "
         "Return JSON only with keys kind, title, tags. "
-        f"kind must be one of: {_allowed_kinds_csv()}. "
-        "Use human-facing kinds like welcome, worship, scripture, teaching, application, story, testimony, conversation, invitation, giving, benediction, or outro when they fit better than a generic label. "
+        f"Use one of these common kinds when they fit: {_allowed_kinds_csv()}. "
+        f"{_kind_prompt_examples()} "
+        "If another human-recognizable section label fits better, you may propose a short snake_case kind instead of forcing a generic one. "
         "Title should be concise, informative, and written for navigation. Avoid quoting filler or repeating generic prefixes unless the segment is actually prayer, ad, announcements, intro, transition, or outro. "
         "tags should be 2 to 6 topical phrases in lowercase."
     )

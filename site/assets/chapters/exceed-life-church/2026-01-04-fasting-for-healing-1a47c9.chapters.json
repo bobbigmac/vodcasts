@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865497,
+  "feed": "exceed-life-church",
+  "episode_slug": "2026-01-04-fasting-for-healing-1a47c9",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start"
+    },
+    {
+      "startTime": 3.874,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "amen",
+        "fasting",
+        "fasting can"
+      ]
+    },
+    {
+      "startTime": 1267.857,
+      "title": "Speaking Faithful Words Leads to Blessing",
+      "kind": "message",
+      "tags": [
+        "faith",
+        "words",
+        "blessing"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863011,
+  "feed": "antioch-church",
+  "episode_slug": "2024-01-14-oriented-freedom-dm921x",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — honor God with your bodies",
+      "kind": "scripture",
+      "tags": [
+        "chapter six",
+        "scripture reading",
+        "lord",
+        "god"
+      ]
+    },
+    {
+      "startTime": 228.251,
+      "title": "Elevating Our Body’s Understanding of Sex",
+      "kind": "message",
+      "tags": [
+        "sexuality",
+        "church growth",
+        "spiritual maturity"
+      ]
+    },
+    {
+      "startTime": 1810.622,
+      "title": "Break / transition",
+      "kind": "transition",
+      "confidence": 0.6132589765454988,
+      "tags": [
+        "avoid separating",
+        "christ",
+        "christ inside",
+        "live differently"
+      ]
+    }
+  ]
+}

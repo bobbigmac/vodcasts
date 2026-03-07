@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864700,
+  "feed": "connexus-church",
+  "episode_slug": "2026-02-15-how-to-pray-when-you-don-t-know-what-to-say-vijay-krishnan-pr-vvjrhk",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Giving / generosity — I often felt like, Oh, I should pray more",
+      "kind": "giving",
+      "tags": [
+        "prayer",
+        "felt like",
+        "bent towards",
+        "towards turning"
+      ]
+    },
+    {
+      "startTime": 79.669,
+      "title": "Giving / generosity — I often felt like, Oh, I should pray more",
+      "kind": "giving",
+      "tags": [
+        "prayer",
+        "felt like",
+        "bent towards",
+        "towards turning"
+      ]
+    },
+    {
+      "startTime": 199.344,
+      "title": "Prayer Lab: Learning to Pray",
+      "kind": "message",
+      "tags": [
+        "prayer",
+        "growth",
+        "relationship"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863665,
+  "feed": "calvary-chapel-anne-arundel",
+  "episode_slug": "2026-02-01-ephesians-2-1-7-qrdku1",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "ephesians chapter",
+        "chapter two",
+        "made",
+        "alive"
+      ]
+    },
+    {
+      "startTime": 123.894,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "two-edged sword",
+        "god",
+        "lean",
+        "word"
+      ]
+    },
+    {
+      "startTime": 254.38400000000001,
+      "title": "I’m Older Than I Was in Bible College",
+      "kind": "message",
+      "tags": [
+        "age",
+        "bible college",
+        "transition"
+      ]
+    },
+    {
+      "startTime": 2890.734,
+      "title": "Benediction — We will spend eternity looking at one another's going",
+      "kind": "benediction",
+      "tags": [
+        "marvelous light",
+        "heavenly places",
+        "love",
+        "god"
+      ]
+    }
+  ]
+}

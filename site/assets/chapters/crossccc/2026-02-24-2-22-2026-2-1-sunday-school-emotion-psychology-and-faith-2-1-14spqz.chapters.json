@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864776,
+  "feed": "crossccc",
+  "episode_slug": "2026-02-24-2-22-2026-2-1-sunday-school-emotion-psychology-and-faith-2-1-14spqz",
+  "chapters": [
+    {
+      "startTime": 0.226,
+      "title": "Prayer — giving us light in the past",
+      "kind": "prayer",
+      "tags": [
+        "good morning",
+        "hearts",
+        "today",
+        "believe"
+      ]
+    },
+    {
+      "startTime": 126.212,
+      "title": "Returning to Truth",
+      "kind": "message",
+      "tags": [
+        "truth",
+        "healing",
+        "hope"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865039,
+  "feed": "dag-heward-mills-video",
+  "episode_slug": "2020-02-04-the-seven-supernatural-powers-of-a-father-178e44",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Are you ready for a word from heaven?",
+      "kind": "intro",
+      "tags": [
+        "god",
+        "thank god",
+        "holy spirit",
+        "word"
+      ]
+    },
+    {
+      "startTime": 83.682,
+      "title": "Welcome — Are you ready for a word from heaven?",
+      "kind": "welcome",
+      "tags": [
+        "god",
+        "thank god",
+        "holy spirit",
+        "word"
+      ]
+    },
+    {
+      "startTime": 200.584,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "rest upon",
+        "feel",
+        "impossible",
+        "rest"
+      ]
+    },
+    {
+      "startTime": 325.054,
+      "title": "Recognizing the Power of Fathers",
+      "kind": "message",
+      "tags": [
+        "fathers",
+        "parenting",
+        "family"
+      ]
+    },
+    {
+      "startTime": 4406.431,
+      "title": "Benediction — May your spiritual life change levels in 2020",
+      "kind": "benediction",
+      "tags": [
+        "may",
+        "evil",
+        "blood",
+        "jesus"
+      ]
+    },
+    {
+      "startTime": 4531.962,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "jesus",
+        "name",
+        "jesus name",
+        "jesus christ"
+      ]
+    }
+  ]
+}

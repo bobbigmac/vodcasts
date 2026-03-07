@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864525,
+  "feed": "concord-baptist-church",
+  "episode_slug": "2019-09-08-never-get-thirsty-again-1rru2v",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — Some of you, maybe like me, can remember playing football back in the day…",
+      "kind": "welcome",
+      "tags": [
+        "get thirsty",
+        "thirsty",
+        "john chapter",
+        "get"
+      ]
+    },
+    {
+      "startTime": 72.514,
+      "title": "Welcome — Some of you, maybe like me, can remember playing football back in the day…",
+      "kind": "welcome",
+      "tags": [
+        "get thirsty",
+        "thirsty",
+        "john chapter",
+        "get"
+      ]
+    },
+    {
+      "startTime": 174.904,
+      "title": "Living Water",
+      "kind": "message",
+      "tags": [
+        "living water",
+        "satisfaction",
+        "fulfillment"
+      ]
+    },
+    {
+      "startTime": 335.108,
+      "title": "Prayer — be hearers of the word, but not just be hearers",
+      "kind": "prayer",
+      "tags": [
+        "jesus",
+        "lord",
+        "living water",
+        "water"
+      ]
+    },
+    {
+      "startTime": 1924.626,
+      "title": "Receive the Living Water - Pray for Salvation Today",
+      "kind": "invitation",
+      "confidence": 0.8427628336863724,
+      "tags": [
+        "prayer",
+        "salvation",
+        "gospel"
+      ]
+    },
+    {
+      "startTime": 2032.477,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "jesus",
+        "say",
+        "god",
+        "living water"
+      ]
+    }
+  ]
+}

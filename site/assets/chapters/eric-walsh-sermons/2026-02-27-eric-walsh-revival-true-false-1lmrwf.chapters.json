@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865483,
+  "feed": "eric-walsh-sermons",
+  "episode_slug": "2026-02-27-eric-walsh-revival-true-false-1lmrwf",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — We're gonna read verses six and seven",
+      "kind": "intro",
+      "tags": [
+        "scripture reading",
+        "division",
+        "well thou",
+        "verses six"
+      ]
+    },
+    {
+      "startTime": 30.813,
+      "title": "Prayer — this opportunity to study your word",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "let pray",
+        "second kings",
+        "thank"
+      ]
+    },
+    {
+      "startTime": 152.542,
+      "title": "Josiah’s Heart for God’s House",
+      "kind": "message",
+      "tags": [
+        "serving",
+        "god's house",
+        "heart"
+      ]
+    },
+    {
+      "startTime": 1437.89,
+      "title": "False Prophets and Hostility",
+      "kind": "story",
+      "tags": [
+        "false-prophets",
+        "hostility",
+        "end-times"
+      ]
+    },
+    {
+      "startTime": 2352.9,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "holy spirit",
+        "spirit",
+        "holy",
+        "need"
+      ]
+    },
+    {
+      "startTime": 2599.822,
+      "title": "Prayer — the holy spirit, for the word, the holy word of the bib…",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "father god",
+        "coal miners",
+        "holy spirit"
+      ]
+    }
+  ]
+}

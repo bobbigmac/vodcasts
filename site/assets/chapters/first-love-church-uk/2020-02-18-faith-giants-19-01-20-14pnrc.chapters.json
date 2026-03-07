@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865836,
+  "feed": "first-love-church-uk",
+  "episode_slug": "2020-02-18-faith-giants-19-01-20-14pnrc",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — Whilst you're enjoying the service, leave a comment, let us know what you…",
+      "kind": "welcome",
+      "tags": [
+        "bishop richard",
+        "richard iey",
+        "first love",
+        "love church"
+      ]
+    },
+    {
+      "startTime": 13.186,
+      "title": "Welcome — Whilst you're enjoying the service, leave a comment, let us know what you…",
+      "kind": "welcome",
+      "tags": [
+        "bishop richard",
+        "richard iey",
+        "first love",
+        "love church"
+      ]
+    },
+    {
+      "startTime": 1649.89,
+      "title": "After That, The Lord Has Cast Them Out Before You",
+      "kind": "message",
+      "tags": [
+        "congregation",
+        "passing",
+        "encouragement"
+      ]
+    },
+    {
+      "startTime": 1672.361,
+      "title": "Welcome — Heal us, save us, bless us, counsel us, O God, through your word",
+      "kind": "welcome",
+      "tags": [
+        "bishop rich",
+        "seat",
+        "thank",
+        "god"
+      ]
+    },
+    {
+      "startTime": 9722.399,
+      "title": "Heavenly Father, Please Have Mercy on Me",
+      "kind": "invitation",
+      "confidence": 0.9211336002093251,
+      "tags": [
+        "forgiveness",
+        "sins",
+        "repentance"
+      ]
+    },
+    {
+      "startTime": 10129.003,
+      "title": "Prayer — this great privilege",
+      "kind": "prayer",
+      "tags": [
+        "love church",
+        "first love",
+        "church london",
+        "love"
+      ]
+    }
+  ]
+}

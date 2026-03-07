@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864649,
+  "feed": "connexus-church",
+  "episode_slug": "2026-01-11-what-you-focus-on-is-forming-you-and-your-phone-knows-it-jeff-67kxvw",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — I want you to know, man, we're so glad you're on the journey with us",
+      "kind": "welcome",
+      "tags": [
+        "jeff brody",
+        "glad",
+        "know",
+        "phone"
+      ]
+    },
+    {
+      "startTime": 105.256,
+      "title": "What Algorithms Are Doing to Your Soul?",
+      "kind": "message",
+      "tags": [
+        "soul",
+        "algorithm",
+        "spirit"
+      ]
+    },
+    {
+      "startTime": 2368.257,
+      "title": "Prayer — the gift of your son jesus and your death on the cross",
+      "kind": "prayer",
+      "tags": [
+        "let pray",
+        "pray together",
+        "god",
+        "son jesus"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863801,
+  "feed": "calvary-chapel-fort-lauderdale",
+  "episode_slug": "2026-02-01-give-them-the-keys-1fvmcb",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — we knew the emphasis was discipleship and we wanna prepare our church for t…",
+      "kind": "intro",
+      "tags": [
+        "high school",
+        "middle school",
+        "school",
+        "gonna teach"
+      ]
+    },
+    {
+      "startTime": 117.64099999999999,
+      "title": "Welcome — we knew the emphasis was discipleship and we wanna prepare our church for…",
+      "kind": "welcome",
+      "tags": [
+        "high school",
+        "middle school",
+        "school",
+        "gonna teach"
+      ]
+    },
+    {
+      "startTime": 213.30700000000002,
+      "title": "Discipleship Through Service",
+      "kind": "message",
+      "tags": [
+        "discipleship",
+        "service",
+        "mission"
+      ]
+    },
+    {
+      "startTime": 2207.011,
+      "title": "Invitation: Step Forward and Share Your Faith",
+      "kind": "invitation",
+      "confidence": 0.928638730443614,
+      "tags": [
+        "invitation",
+        "sharing",
+        "faith"
+      ]
+    },
+    {
+      "startTime": 2767.426,
+      "title": "Step Forward and Serve",
+      "kind": "invitation",
+      "confidence": 0.9978450763817024,
+      "tags": [
+        "discipleship",
+        "service",
+        "mission"
+      ]
+    },
+    {
+      "startTime": 2995.17,
+      "title": "Outro — Go in the peace and blessing of our God",
+      "kind": "outro",
+      "tags": [
+        "jesus christ",
+        "receive",
+        "benediction",
+        "god"
+      ]
+    }
+  ]
+}

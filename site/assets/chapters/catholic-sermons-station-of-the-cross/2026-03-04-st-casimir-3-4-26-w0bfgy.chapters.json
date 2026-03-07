@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863958,
+  "feed": "catholic-sermons-station-of-the-cross",
+  "episode_slug": "2026-03-04-st-casimir-3-4-26-w0bfgy",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "everyday living",
+        "cross presents",
+        "powerful sermons",
+        "presents sermons"
+      ]
+    },
+    {
+      "startTime": 129.624,
+      "title": "Prayer and Mercy",
+      "kind": "message",
+      "tags": [
+        "prayer",
+        "mercy",
+        "forgiveness"
+      ]
+    },
+    {
+      "startTime": 3036.834,
+      "title": "Invitation: Embrace Your Need for Forgiveness",
+      "kind": "invitation",
+      "confidence": 0.5506710358827784,
+      "tags": [
+        "forgiveness",
+        "need",
+        "grace"
+      ]
+    }
+  ]
+}

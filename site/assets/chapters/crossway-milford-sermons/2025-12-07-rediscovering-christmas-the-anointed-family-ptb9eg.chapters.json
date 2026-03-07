@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864810,
+  "feed": "crossway-milford-sermons",
+  "episode_slug": "2025-12-07-rediscovering-christmas-the-anointed-family-ptb9eg",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — I remember spending Christmas day in New York City",
+      "kind": "intro",
+      "tags": [
+        "york city",
+        "new york",
+        "christmas",
+        "city"
+      ]
+    },
+    {
+      "startTime": 4.77,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "new hampshire",
+        "crossway christian",
+        "christian church",
+        "church milford"
+      ]
+    },
+    {
+      "startTime": 244.669,
+      "title": "Rediscovering Christmas Wonder",
+      "kind": "message",
+      "tags": [
+        "christmas",
+        "wonder",
+        "rediscovery"
+      ]
+    },
+    {
+      "startTime": 1472.375,
+      "title": "Outro — Number three, they're faithful",
+      "kind": "outro",
+      "tags": [
+        "number two",
+        "number three",
+        "number",
+        "god"
+      ]
+    },
+    {
+      "startTime": 1512.109,
+      "title": "Benediction — May the Lord bless you and keep you",
+      "kind": "benediction"
+    }
+  ]
+}

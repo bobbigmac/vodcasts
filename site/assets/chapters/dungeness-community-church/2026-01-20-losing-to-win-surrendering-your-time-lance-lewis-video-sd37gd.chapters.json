@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865242,
+  "feed": "dungeness-community-church",
+  "episode_slug": "2026-01-20-losing-to-win-surrendering-your-time-lance-lewis-video-sd37gd",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — if you lose your life for the sake of Jesus, you find life",
+      "kind": "intro",
+      "tags": [
+        "win",
+        "life",
+        "way",
+        "jesus"
+      ]
+    },
+    {
+      "startTime": 183.629,
+      "title": "Less Time, More Leisure?",
+      "kind": "message",
+      "tags": [
+        "timemanagement",
+        "leisuretime",
+        "worklifebalance"
+      ]
+    },
+    {
+      "startTime": 2554.626,
+      "title": "Accepting Christ: The Desperate Search for Love and Acceptance",
+      "kind": "invitation",
+      "confidence": 0.7746273444605613,
+      "tags": [
+        "acceptance",
+        "love",
+        "forgiveness"
+      ]
+    }
+  ]
+}

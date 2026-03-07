@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864795,
+  "feed": "crossccc",
+  "episode_slug": "2026-03-03-3-1-2026-14-1-15-7-3-romans-14-1-15-7-loving-one-another-more-1b394s",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "romans chapter",
+        "chapter 20-23",
+        "chapter",
+        "romans"
+      ]
+    },
+    {
+      "startTime": 29.538,
+      "title": "Praying for Strength",
+      "kind": "prayer",
+      "tags": [
+        "strength",
+        "prayer",
+        "encouragement"
+      ]
+    },
+    {
+      "startTime": 47.759,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "let pray",
+        "pray",
+        "sharp",
+        "will make"
+      ]
+    },
+    {
+      "startTime": 2905.814,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "need",
+        "change",
+        "let pray",
+        "pray"
+      ]
+    }
+  ]
+}

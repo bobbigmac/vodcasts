@@ -73,7 +73,7 @@ The chapterer now aims for human-facing section labels instead of only generic `
 - `illustration`, `story`, `testimony`, `conversation`, `interview`, `q_and_a`
 - `response`, `invitation`, `communion`, `announcements`, `giving`, `ad`, `transition`, `benediction`, `outro`
 
-Not every feed will use every kind. The point is to describe the section the way a listener would, not the way a low-level segment classifier would.
+Not every feed will use every kind. The point is to describe the section the way a listener would, not the way a low-level segment classifier would. The LLM may also propose other short snake_case kinds when a clearer label fits a feed better, for example `news_update`, `panel_discussion`, `conference_talk`, or `kids_story`.
 
 ### Persistent LLM server
 

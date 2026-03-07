@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865522,
+  "feed": "exceed-life-church",
+  "episode_slug": "2026-01-25-keep-pressing-into-god-1kyzbt",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start"
+    },
+    {
+      "startTime": 4.162,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "amen",
+        "god wants",
+        "going"
+      ]
+    },
+    {
+      "startTime": 1017.857,
+      "title": "You’re Coming Into a Greater Place in God",
+      "kind": "message",
+      "tags": [
+        "growinginfaith",
+        "promisedland",
+        "greaterplace"
+      ]
+    },
+    {
+      "startTime": 1044.936,
+      "title": "Scripture reading — that spirit of God causes us to shout grace to those mountains…",
+      "kind": "scripture",
+      "tags": [
+        "lord said",
+        "god",
+        "lord",
+        "zechariah"
+      ]
+    },
+    {
+      "startTime": 2418.978,
+      "title": "God’s Hand Upon Joseph: Prosperity Through Divine Providence",
+      "kind": "invitation",
+      "confidence": 0.7018027205701126,
+      "tags": [
+        "prosperity",
+        "divine providence",
+        "joseph"
+      ]
+    },
+    {
+      "startTime": 2659.966,
+      "title": "Receive Jesus Today",
+      "kind": "invitation",
+      "confidence": 0.9575742589194887,
+      "tags": [
+        "invitation",
+        "savior",
+        "faith"
+      ]
+    }
+  ]
+}

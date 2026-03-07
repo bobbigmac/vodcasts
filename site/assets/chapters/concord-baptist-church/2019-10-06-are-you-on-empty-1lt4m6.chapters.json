@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864573,
+  "feed": "concord-baptist-church",
+  "episode_slug": "2019-10-06-are-you-on-empty-1lt4m6",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — sometimes it feels that way physically, that you're just on emp…",
+      "kind": "scripture",
+      "tags": [
+        "empty",
+        "concord",
+        "know",
+        "sometimes"
+      ]
+    },
+    {
+      "startTime": 72.674,
+      "title": "Scripture reading — sometimes it feels that way physically, that you're just on emp…",
+      "kind": "scripture",
+      "tags": [
+        "empty",
+        "concord",
+        "know",
+        "sometimes"
+      ]
+    },
+    {
+      "startTime": 182.21,
+      "title": "Jesus' Fuel Gauge",
+      "kind": "message",
+      "tags": [
+        "spiritual",
+        "metaphor",
+        "health"
+      ]
+    },
+    {
+      "startTime": 525.111,
+      "title": "Prayer — always being right where god wants you to be",
+      "kind": "prayer",
+      "tags": [
+        "thank",
+        "sea",
+        "galilee",
+        "god wants"
+      ]
+    },
+    {
+      "startTime": 1986.173,
+      "title": "Pray for Salvation",
+      "kind": "invitation",
+      "confidence": 0.7558567168465629,
+      "tags": [
+        "prayer",
+        "savior",
+        "conversion"
+      ]
+    }
+  ]
+}

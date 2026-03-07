@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865995,
+  "feed": "fresh-life-church",
+  "episode_slug": "2021-03-28-same-dirt-different-day-ohhlso",
+  "chapters": [
+    {
+      "startTime": 0.29,
+      "title": "Prayer — this time and your presence",
+      "kind": "prayer",
+      "tags": [
+        "different day",
+        "different",
+        "exodus chapter",
+        "going"
+      ]
+    },
+    {
+      "startTime": 115.023,
+      "title": "When Moses Found Himself Saying 'Same Dirt, Different Day'",
+      "kind": "message",
+      "tags": [
+        "moses",
+        "shepherd",
+        "exile"
+      ]
+    },
+    {
+      "startTime": 2033.253,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "pray together",
+        "god",
+        "feel",
+        "jesus"
+      ]
+    }
+  ]
+}

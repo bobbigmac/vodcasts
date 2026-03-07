@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863931,
+  "feed": "catholic-sermons-station-of-the-cross",
+  "episode_slug": "2026-03-02-traditional-lenten-practices-3-2-26-8htatr",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — I have become a man and put away the things of a child",
+      "kind": "intro",
+      "tags": [
+        "lenten practices",
+        "traditional lenten",
+        "child",
+        "first sermon"
+      ]
+    },
+    {
+      "startTime": 46.778,
+      "title": "Prayer — Doxology",
+      "kind": "prayer",
+      "tags": [
+        "holy ghost",
+        "ghost",
+        "father",
+        "son"
+      ]
+    },
+    {
+      "startTime": 177.122,
+      "title": "How Should We Read the Bible?",
+      "kind": "message",
+      "tags": [
+        "biblicalreading",
+        "spiritualguidance",
+        "devotion"
+      ]
+    },
+    {
+      "startTime": 1666.131,
+      "title": "Scripture reading — The other point we mentioned is, how should the Bible be read?",
+      "kind": "scripture",
+      "tags": [
+        "bible",
+        "read",
+        "holy scripture",
+        "bible daily"
+      ]
+    },
+    {
+      "startTime": 3210.397,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "everyday living",
+        "started",
+        "finished",
+        "anyway"
+      ]
+    }
+  ]
+}

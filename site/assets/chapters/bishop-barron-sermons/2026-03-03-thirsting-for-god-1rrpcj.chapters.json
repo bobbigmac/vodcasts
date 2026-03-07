@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863268,
+  "feed": "bishop-barron-sermons",
+  "episode_slug": "2026-03-03-thirsting-for-god-1rrpcj",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — this theme that preoccupies us in the church today, look to the dynamics of…",
+      "kind": "intro",
+      "tags": [
+        "catholic ministries",
+        "fire catholic",
+        "word",
+        "god word"
+      ]
+    },
+    {
+      "startTime": 122.893,
+      "title": "Water Well Symbolism in Christian Marriage",
+      "kind": "message",
+      "tags": [
+        "marriage",
+        "christian symbolism",
+        "jesus"
+      ]
+    },
+    {
+      "startTime": 862.4639999999999,
+      "title": "Outro — Thank you for listening to this week's homily from Bishop Robert Barron",
+      "kind": "outro",
+      "tags": [
+        "find bread",
+        "tell starving",
+        "starving people",
+        "bishop barron"
+      ]
+    }
+  ]
+}

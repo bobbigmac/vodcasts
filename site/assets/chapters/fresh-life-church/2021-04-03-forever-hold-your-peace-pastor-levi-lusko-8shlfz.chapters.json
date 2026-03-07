@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772866008,
+  "feed": "fresh-life-church",
+  "episode_slug": "2021-04-03-forever-hold-your-peace-pastor-levi-lusko-8shlfz",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "good friday",
+        "forever hold",
+        "calling forever",
+        "egyptians"
+      ]
+    },
+    {
+      "startTime": 125.967,
+      "title": "They Start Crying Out to God",
+      "kind": "message",
+      "tags": [
+        "prayer",
+        "worship"
+      ]
+    },
+    {
+      "startTime": 2616.182,
+      "title": "Invitation: Salvation & Peace",
+      "kind": "invitation",
+      "confidence": 0.9170900334248273,
+      "tags": [
+        "salvation",
+        "peace"
+      ]
+    }
+  ]
+}

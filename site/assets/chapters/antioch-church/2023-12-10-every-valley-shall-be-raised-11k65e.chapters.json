@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772862981,
+  "feed": "antioch-church",
+  "episode_slug": "2023-12-10-every-valley-shall-be-raised-11k65e",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — You who bring good news to Jerusalem, lift up your voice with a…",
+      "kind": "scripture",
+      "tags": [
+        "isaiah chapter",
+        "scripture reading",
+        "reading today",
+        "lord"
+      ]
+    },
+    {
+      "startTime": 123.797,
+      "title": "Welcome — Advent is a time to acknowledge that God doesn't feel very close in my li…",
+      "kind": "welcome",
+      "tags": [
+        "gently leads",
+        "advent",
+        "church",
+        "god"
+      ]
+    },
+    {
+      "startTime": 250.054,
+      "title": "God's Presence Amidst Suffering",
+      "kind": "message",
+      "tags": [
+        "suffering",
+        "hope",
+        "god's presence"
+      ]
+    }
+  ]
+}

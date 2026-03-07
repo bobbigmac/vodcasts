@@ -5,7 +5,7 @@
     "version": 4,
     "mode": "hybrid"
   },
-  "generated_at_unix": 1772857159,
+  "generated_at_unix": 1772863253,
   "feed": "bishop-barron-sermons",
   "episode_slug": "2026-02-06-become-someone-for-others-pjc9m2",
   "chapters": [
@@ -22,12 +22,23 @@
     },
     {
       "startTime": 124.301,
-      "title": "Be the Salt of the Earth: Serving Others for Happiness",
+      "title": "Happiness vs Fulfillment",
       "kind": "message",
       "tags": [
-        "discipleship",
-        "service",
-        "happiness"
+        "happiness",
+        "fulfillment",
+        "practical advice"
+      ]
+    },
+    {
+      "startTime": 154.68200000000002,
+      "title": "Scripture reading — Jesus says to his disciples, you are the salt of the earth",
+      "kind": "scripture",
+      "tags": [
+        "great sermon",
+        "salt",
+        "mount",
+        "great"
       ]
     }
   ]

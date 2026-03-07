@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863656,
+  "feed": "calvary-chapel-anne-arundel",
+  "episode_slug": "2026-01-18-ephesians-1-15-23-1jlk1w",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — The great apostle Paul praying for the people that he ministers…",
+      "kind": "scripture",
+      "tags": [
+        "lord jesus",
+        "let read",
+        "read verse",
+        "jesus christ"
+      ]
+    },
+    {
+      "startTime": 130.448,
+      "title": "Prayer Power in Spiritual Richness",
+      "kind": "message",
+      "tags": [
+        "prayer",
+        "spiritual richness",
+        "power"
+      ]
+    },
+    {
+      "startTime": 2904.784,
+      "title": "Prayer — that we got to know you more today",
+      "kind": "prayer",
+      "tags": [
+        "raise jesus",
+        "lord",
+        "power",
+        "know"
+      ]
+    }
+  ]
+}

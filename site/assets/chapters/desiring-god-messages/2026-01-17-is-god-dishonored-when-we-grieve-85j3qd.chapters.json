@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865142,
+  "feed": "desiring-god-messages",
+  "episode_slug": "2026-01-17-is-god-dishonored-when-we-grieve-85j3qd",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Worship — There are many Psalms of praise where they sing because they're happy",
+      "kind": "worship",
+      "tags": [
+        "dad sent",
+        "gospel singer",
+        "psalms",
+        "sing"
+      ]
+    },
+    {
+      "startTime": 122.95,
+      "title": "Godly Grief vs. Worldly Sorrow",
+      "kind": "message",
+      "tags": [
+        "grief",
+        "sorrow",
+        "glory"
+      ]
+    },
+    {
+      "startTime": 1022.146,
+      "title": "Worship — draw near to us now those who are happy and especially in suffering, espe…",
+      "kind": "worship",
+      "confidence": 0.7919548176429795,
+      "tags": [
+        "grieve",
+        "enduring joy",
+        "joy without",
+        "sing"
+      ]
+    }
+  ]
+}

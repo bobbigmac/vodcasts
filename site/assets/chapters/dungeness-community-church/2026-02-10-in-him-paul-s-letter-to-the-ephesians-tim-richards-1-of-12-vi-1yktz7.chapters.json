@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865283,
+  "feed": "dungeness-community-church",
+  "episode_slug": "2026-02-10-in-him-paul-s-letter-to-the-ephesians-tim-richards-1-of-12-vi-1yktz7",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — Paul spent a lot of time in Ephesus, helped get the church esta…",
+      "kind": "scripture",
+      "tags": [
+        "asia heard",
+        "two years",
+        "ephesus",
+        "artemis"
+      ]
+    },
+    {
+      "startTime": 76.305,
+      "title": "Scripture reading — Paul spent a lot of time in Ephesus, helped get the church esta…",
+      "kind": "scripture",
+      "tags": [
+        "asia heard",
+        "two years",
+        "ephesus",
+        "artemis"
+      ]
+    },
+    {
+      "startTime": 198.138,
+      "title": "Paul’s Letter to the Ephesians: The Power of Being in Christ",
+      "kind": "message",
+      "tags": [
+        "ephesians",
+        "christianity",
+        "relationship"
+      ]
+    }
+  ]
+}

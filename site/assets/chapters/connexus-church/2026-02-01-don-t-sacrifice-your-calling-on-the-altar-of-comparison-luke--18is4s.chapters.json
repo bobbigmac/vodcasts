@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864682,
+  "feed": "connexus-church",
+  "episode_slug": "2026-02-01-don-t-sacrifice-your-calling-on-the-altar-of-comparison-luke--18is4s",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — my friend Julian joins me at the squat rack beside me",
+      "kind": "welcome",
+      "tags": [
+        "good morning",
+        "leg day",
+        "gym",
+        "day"
+      ]
+    },
+    {
+      "startTime": 100.114,
+      "title": "Facing Challenges: Finding True Success",
+      "kind": "message",
+      "tags": [
+        "success",
+        "challenges",
+        "growth"
+      ]
+    },
+    {
+      "startTime": 2073.346,
+      "title": "Worship — ultimately, I'm bringing my life to you to the altar",
+      "kind": "worship",
+      "confidence": 0.7018027205701126,
+      "tags": [
+        "jesus",
+        "god",
+        "chasing",
+        "want"
+      ]
+    },
+    {
+      "startTime": 2194.3,
+      "title": "Prayer — jesus, who himself lived this, laying aside his life to…",
+      "kind": "prayer",
+      "tags": [
+        "temporary things",
+        "chase temporary",
+        "give",
+        "god"
+      ]
+    }
+  ]
+}

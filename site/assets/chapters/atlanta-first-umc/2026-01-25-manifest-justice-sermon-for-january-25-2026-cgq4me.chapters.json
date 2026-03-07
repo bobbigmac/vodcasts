@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863063,
+  "feed": "atlanta-first-umc",
+  "episode_slug": "2026-01-25-manifest-justice-sermon-for-january-25-2026-cgq4me",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "called manifest",
+        "biblical justice",
+        "matthew",
+        "series called"
+      ]
+    },
+    {
+      "startTime": 121.636,
+      "title": "God’s Call to Serve",
+      "kind": "message",
+      "tags": [
+        "discipleship",
+        "service",
+        "mission"
+      ]
+    },
+    {
+      "startTime": 229.506,
+      "title": "Giving / generosity — God has told you, O mortal, what is good",
+      "kind": "giving",
+      "tags": [
+        "ten thousands",
+        "burnt offerings",
+        "year old",
+        "god"
+      ]
+    },
+    {
+      "startTime": 1643.302,
+      "title": "Prayer — Doxology",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "heavenly father",
+        "justice",
+        "god"
+      ]
+    }
+  ]
+}

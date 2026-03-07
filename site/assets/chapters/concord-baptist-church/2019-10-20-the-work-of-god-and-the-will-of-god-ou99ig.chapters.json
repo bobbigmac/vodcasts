@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864590,
+  "feed": "concord-baptist-church",
+  "episode_slug": "2019-10-20-the-work-of-god-and-the-will-of-god-ou99ig",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — The question is, are we doing the kind of work that God would say, yeah, th…",
+      "kind": "intro",
+      "tags": [
+        "god",
+        "work",
+        "god wants",
+        "god will"
+      ]
+    },
+    {
+      "startTime": 71.554,
+      "title": "Welcome — The question is, are we doing the kind of work that God would say, yeah,…",
+      "kind": "welcome",
+      "tags": [
+        "god",
+        "work",
+        "god wants",
+        "god will"
+      ]
+    },
+    {
+      "startTime": 185.37,
+      "title": "Seeking God’s Blessings vs. Seeking Earthly Stuff",
+      "kind": "message",
+      "tags": [
+        "seeking",
+        "blessings",
+        "earthly"
+      ]
+    },
+    {
+      "startTime": 253.237,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "second language",
+        "english",
+        "let pray",
+        "god"
+      ]
+    },
+    {
+      "startTime": 2014.431,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "say",
+        "need",
+        "jesus"
+      ]
+    }
+  ]
+}

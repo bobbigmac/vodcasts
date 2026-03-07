@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864389,
+  "feed": "city-chapel-church",
+  "episode_slug": "2023-04-16-mark-4-26-29-prt-5-release-lot59e",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — on multiplication, but first off, you just need to know that we are a chu…",
+      "kind": "welcome",
+      "tags": [
+        "god",
+        "multiplication",
+        "church",
+        "people"
+      ]
+    },
+    {
+      "startTime": 2.946,
+      "title": "Scripture reading — That's how the kingdom of God grows",
+      "kind": "scripture",
+      "tags": [
+        "slaughter creek",
+        "city chapel",
+        "mark chapter",
+        "chapter four"
+      ]
+    },
+    {
+      "startTime": 126.349,
+      "title": "Welcome — on multiplication, but first off, you just need to know that we are a chu…",
+      "kind": "welcome",
+      "tags": [
+        "god",
+        "multiplication",
+        "church",
+        "people"
+      ]
+    },
+    {
+      "startTime": 368.286,
+      "title": "Multiplication vs. Stagnation",
+      "kind": "message",
+      "tags": [
+        "multiplication",
+        "stagnation",
+        "church growth"
+      ]
+    },
+    {
+      "startTime": 3197.846,
+      "title": "Giving / generosity — Bringing them across our path, let us share the bread, the ac…",
+      "kind": "giving",
+      "tags": [
+        "give",
+        "people",
+        "jesus",
+        "god"
+      ]
+    },
+    {
+      "startTime": 3448.606,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "holy spirit",
+        "will supply",
+        "words",
+        "want"
+      ]
+    }
+  ]
+}

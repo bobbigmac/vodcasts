@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772866304,
+  "feed": "harvest-baptist-ga",
+  "episode_slug": "2026-03-02-exodus-chapter-15-nvggxt",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — Pray you have one of our hymn books",
+      "kind": "welcome",
+      "tags": [
+        "harvest baptist",
+        "baptist church",
+        "exodus chapter",
+        "local church"
+      ]
+    },
+    {
+      "startTime": 10.658,
+      "title": "Welcome — Pray you have one of our hymn books",
+      "kind": "welcome",
+      "tags": [
+        "harvest baptist",
+        "baptist church",
+        "exodus chapter",
+        "local church"
+      ]
+    },
+    {
+      "startTime": 205.944,
+      "title": "Scripture reading — Let no one fail to obtain the grace of God so that we make sure…",
+      "kind": "scripture",
+      "tags": [
+        "people",
+        "god",
+        "bitter people",
+        "life turn"
+      ]
+    },
+    {
+      "startTime": 311.842,
+      "title": "Prayer — the reading and the giving of your inspired holy and er…",
+      "kind": "prayer",
+      "tags": [
+        "triumphed gloriously",
+        "lord",
+        "red sea",
+        "mara"
+      ]
+    },
+    {
+      "startTime": 394.402,
+      "title": "Worship — We want to think on that as we think about this narrative and Moses made…",
+      "kind": "worship",
+      "confidence": 0.7219626995468058,
+      "tags": [
+        "red sea",
+        "pastor chris",
+        "let begin",
+        "want"
+      ]
+    },
+    {
+      "startTime": 488.947,
+      "title": "The Problem Wasn't the Bitter Water",
+      "kind": "message",
+      "tags": [
+        "biblical",
+        "moral"
+      ]
+    },
+    {
+      "startTime": 1961.916,
+      "title": "Benediction — Thank you for listening to this sermon from Harvest Baptist Church",
+      "kind": "benediction",
+      "tags": [
+        "christ",
+        "god knows",
+        "god",
+        "morning"
+      ]
+    }
+  ]
+}

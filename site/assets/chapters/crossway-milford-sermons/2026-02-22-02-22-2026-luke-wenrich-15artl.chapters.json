@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864886,
+  "feed": "crossway-milford-sermons",
+  "episode_slug": "2026-02-22-02-22-2026-luke-wenrich-15artl",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — so as I reflect on what God has put in my heart over these circumstances an…",
+      "kind": "intro",
+      "tags": [
+        "good morning",
+        "morning",
+        "god",
+        "spirit"
+      ]
+    },
+    {
+      "startTime": 144.493,
+      "title": "Moving Forward Together",
+      "kind": "message",
+      "tags": [
+        "community",
+        "leadership",
+        "renewal"
+      ]
+    },
+    {
+      "startTime": 1544.965,
+      "title": "Benediction — so there's this prayer that I found that really just met me",
+      "kind": "benediction",
+      "tags": [
+        "can learn",
+        "peace",
+        "prayer",
+        "lord"
+      ]
+    }
+  ]
+}

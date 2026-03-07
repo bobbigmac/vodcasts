@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864020,
+  "feed": "cbcaiken-sermons",
+  "episode_slug": "2026-02-10-sermon-for-sunday-feb-8-2026-deacon-ordination-xkfh8t",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — we're excited today to be ordaining in as a deacon, Brother Rick Burkey and…",
+      "kind": "intro",
+      "tags": [
+        "brother joe",
+        "brother rick",
+        "pastor steve",
+        "brother"
+      ]
+    },
+    {
+      "startTime": 129.968,
+      "title": "Scripture reading — Our entire message is going to be centered around deacon ordina…",
+      "kind": "scripture",
+      "tags": [
+        "get ready",
+        "going",
+        "deacon",
+        "lord"
+      ]
+    },
+    {
+      "startTime": 258.185,
+      "title": "Serving Others Without Fear",
+      "kind": "message",
+      "tags": [
+        "discipleship",
+        "service",
+        "mission"
+      ]
+    },
+    {
+      "startTime": 331.476,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "deacon",
+        "father",
+        "deacons"
+      ]
+    },
+    {
+      "startTime": 1078.103,
+      "title": "Paul and Barnabas' Personal Witness",
+      "kind": "story",
+      "tags": [
+        "testimony",
+        "ministry",
+        "leadership"
+      ]
+    },
+    {
+      "startTime": 2026.594,
+      "title": "Giving / generosity — If you don't know Jesus Christ as your Lord and Savior today…",
+      "kind": "giving",
+      "tags": [
+        "jesus christ",
+        "know jesus",
+        "service without",
+        "without offering"
+      ]
+    }
+  ]
+}

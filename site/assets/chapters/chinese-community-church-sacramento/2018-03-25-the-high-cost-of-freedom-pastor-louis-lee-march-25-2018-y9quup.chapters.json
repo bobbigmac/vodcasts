@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864153,
+  "feed": "chinese-community-church-sacramento",
+  "episode_slug": "2018-03-25-the-high-cost-of-freedom-pastor-louis-lee-march-25-2018-y9quup",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — If you could take out your sermon outlines for this morning, the high cost…",
+      "kind": "intro",
+      "tags": [
+        "good morning",
+        "day sunday",
+        "high cost",
+        "romans chapter"
+      ]
+    },
+    {
+      "startTime": 116.715,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "jesus christ",
+        "free",
+        "father god",
+        "father"
+      ]
+    },
+    {
+      "startTime": 245.986,
+      "title": "Swimming Two Miles: Freedom in Christ",
+      "kind": "message",
+      "tags": [
+        "freedom",
+        "christ",
+        "swimming"
+      ]
+    },
+    {
+      "startTime": 1819.074,
+      "title": "Prayer — the freedom that we can experience in christ",
+      "kind": "prayer",
+      "tags": [
+        "sermon time",
+        "end today",
+        "today sermon",
+        "let close"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865856,
+  "feed": "first-love-church-uk",
+  "episode_slug": "2020-02-18-types-of-flock-09-02-20-y5jwqr",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — what was your life like before you found God and before you came to churc…",
+      "kind": "welcome",
+      "tags": [
+        "god",
+        "found god",
+        "prayed",
+        "life"
+      ]
+    },
+    {
+      "startTime": 144.034,
+      "title": "Welcome — what was your life like before you found God and before you came to churc…",
+      "kind": "welcome",
+      "tags": [
+        "god",
+        "found god",
+        "prayed",
+        "life"
+      ]
+    },
+    {
+      "startTime": 377.046,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "say hello",
+        "gospel choir",
+        "hello",
+        "greater love"
+      ]
+    },
+    {
+      "startTime": 965.634,
+      "title": "Make Yourself Known",
+      "kind": "message",
+      "tags": [
+        "self-awareness",
+        "intimacy",
+        "community"
+      ]
+    },
+    {
+      "startTime": 7128.044,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "pray",
+        "amen",
+        "people"
+      ]
+    }
+  ]
+}

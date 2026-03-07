@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864721,
+  "feed": "connexus-church",
+  "episode_slug": "2026-03-01-how-to-pray-with-someone-without-it-being-awkward-vijay-krish-1cz24n",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Giving / generosity — When it comes to prayer, I think we need to be a bit more hon…",
+      "kind": "giving",
+      "tags": [
+        "stealing money",
+        "offering play",
+        "faith really",
+        "think"
+      ]
+    },
+    {
+      "startTime": 34.204,
+      "title": "Giving / generosity — When it comes to prayer, I think we need to be a bit more hon…",
+      "kind": "giving",
+      "tags": [
+        "stealing money",
+        "offering play",
+        "faith really",
+        "think"
+      ]
+    },
+    {
+      "startTime": 146.005,
+      "title": "Praying with Others",
+      "kind": "message",
+      "tags": [
+        "prayer",
+        "community",
+        "relationship"
+      ]
+    }
+  ]
+}

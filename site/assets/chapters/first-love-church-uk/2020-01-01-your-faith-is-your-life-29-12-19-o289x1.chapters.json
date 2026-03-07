@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865740,
+  "feed": "first-love-church-uk",
+  "episode_slug": "2020-01-01-your-faith-is-your-life-29-12-19-o289x1",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — Good afternoon and welcome to the best place to be on a Sunday, First Lov…",
+      "kind": "welcome",
+      "tags": [
+        "bishop richard",
+        "richard iey",
+        "love church",
+        "first love"
+      ]
+    },
+    {
+      "startTime": 13.186,
+      "title": "Welcome — Good afternoon and welcome to the best place to be on a Sunday, First Lov…",
+      "kind": "welcome",
+      "tags": [
+        "bishop richard",
+        "richard iey",
+        "love church",
+        "first love"
+      ]
+    },
+    {
+      "startTime": 371.138,
+      "title": "Finding Hope in Prison",
+      "kind": "testimony",
+      "tags": [
+        "prison",
+        "hope",
+        "christ"
+      ]
+    },
+    {
+      "startTime": 9003.443,
+      "title": "Prayer — these precious ones, lord",
+      "kind": "prayer",
+      "tags": [
+        "jesus",
+        "god bless",
+        "father",
+        "god"
+      ]
+    }
+  ]
+}

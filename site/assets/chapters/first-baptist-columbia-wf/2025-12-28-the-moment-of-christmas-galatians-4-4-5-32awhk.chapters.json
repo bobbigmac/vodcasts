@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865619,
+  "feed": "first-baptist-columbia-wf",
+  "episode_slug": "2025-12-28-the-moment-of-christmas-galatians-4-4-5-32awhk",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Of course they took some spurs tickets and they even had some dolls and lit…",
+      "kind": "intro",
+      "tags": [
+        "wichita falls",
+        "first baptist",
+        "baptist church",
+        "first"
+      ]
+    },
+    {
+      "startTime": 108.445,
+      "title": "The Moment of Christmas Anticipation",
+      "kind": "message",
+      "tags": [
+        "spiritual-meaning",
+        "christmas",
+        "anticipation"
+      ]
+    },
+    {
+      "startTime": 951.905,
+      "title": "Jesus Paid for Your Gift of Eternal Life",
+      "kind": "invitation",
+      "confidence": 0.7509246953683317,
+      "tags": [
+        "eternal life",
+        "redemption",
+        "rescue"
+      ]
+    }
+  ]
+}

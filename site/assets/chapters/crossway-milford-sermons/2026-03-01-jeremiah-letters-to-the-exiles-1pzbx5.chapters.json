@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864896,
+  "feed": "crossway-milford-sermons",
+  "episode_slug": "2026-03-01-jeremiah-letters-to-the-exiles-1pzbx5",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — That is a simple way in which God is showing his mercy to you this morning",
+      "kind": "welcome",
+      "tags": [
+        "dave ripper",
+        "christian church",
+        "crossway christian",
+        "morning"
+      ]
+    },
+    {
+      "startTime": 2.626,
+      "title": "Welcome — That is a simple way in which God is showing his mercy to you this morning",
+      "kind": "welcome",
+      "tags": [
+        "dave ripper",
+        "christian church",
+        "crossway christian",
+        "morning"
+      ]
+    },
+    {
+      "startTime": 259.45799999999997,
+      "title": "Restoring Your Fortunes",
+      "kind": "message",
+      "tags": [
+        "hope",
+        "success",
+        "recovery"
+      ]
+    },
+    {
+      "startTime": 2572.739,
+      "title": "Prayer — your word that feeds us day in and day out",
+      "kind": "prayer",
+      "tags": [
+        "heart wherever",
+        "lord used",
+        "lord",
+        "miraculous way"
+      ]
+    },
+    {
+      "startTime": 2698.766,
+      "title": "Benediction — Until the next time, we can be with you",
+      "kind": "benediction",
+      "tags": [
+        "crosswaycc.org",
+        "answer",
+        "visit",
+        "website"
+      ]
+    }
+  ]
+}

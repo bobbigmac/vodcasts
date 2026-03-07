@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864440,
+  "feed": "city-chapel-church",
+  "episode_slug": "2023-05-19-mark-5-1-13-1nkrmp",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — when he, Jesus, had come out of the boat immediately, There met him out of…",
+      "kind": "intro",
+      "tags": [
+        "slaughter creek",
+        "city chapel",
+        "okayest church",
+        "weekly podcast"
+      ]
+    },
+    {
+      "startTime": 126.32,
+      "title": "Welcome — so he took Mark as his interpreter and they moved to Rome to plant a chur…",
+      "kind": "welcome",
+      "tags": [
+        "sounds like",
+        "mark",
+        "demons talking",
+        "little confusing"
+      ]
+    },
+    {
+      "startTime": 251.126,
+      "title": "The Power of Believing in Jesus",
+      "kind": "message",
+      "tags": [
+        "spiritual",
+        "faith",
+        "healing"
+      ]
+    }
+  ]
+}

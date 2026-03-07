@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865150,
+  "feed": "desiring-god-messages",
+  "episode_slug": "2026-01-24-the-supremacy-of-christ-our-hope-1m1par",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "jesus christ",
+        "ask",
+        "historical arguments",
+        "four solid"
+      ]
+    },
+    {
+      "startTime": 117.506,
+      "title": "The Hope Within Us",
+      "kind": "message",
+      "tags": [
+        "hope",
+        "eternal life",
+        "salvation"
+      ]
+    },
+    {
+      "startTime": 2111.638,
+      "title": "Worship — It is the glory of Christ because you have been brought into it and glori…",
+      "kind": "worship",
+      "confidence": 0.7630722413178782,
+      "tags": [
+        "glory",
+        "jesus",
+        "main point",
+        "main"
+      ]
+    },
+    {
+      "startTime": 2240.738,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "new heavens",
+        "new earth",
+        "coming",
+        "pray"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864752,
+  "feed": "crossccc",
+  "episode_slug": "2026-02-17-5-membership-class-audio-summary-5-analysis-of-the-church-mem-1qz5kn",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Let's see how they believe from the core",
+      "kind": "intro",
+      "tags": [
+        "listening session",
+        "ground",
+        "teaching",
+        "chen zhongqiang"
+      ]
+    },
+    {
+      "startTime": 115.938,
+      "title": "The Relationship Between Individual Beliefs and Community Health",
+      "kind": "message",
+      "tags": [
+        "community",
+        "beliefs",
+        "health"
+      ]
+    }
+  ]
+}

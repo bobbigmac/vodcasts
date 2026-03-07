@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864326,
+  "feed": "church-on-the-rock",
+  "episode_slug": "2026-01-25-this-is-church-on-the-rock-part-4-18irs3",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — We're a church that equips the believer",
+      "kind": "welcome",
+      "tags": [
+        "church",
+        "faith",
+        "know",
+        "rock"
+      ]
+    },
+    {
+      "startTime": 245.842,
+      "title": "Scripture reading — The Bible says that we receive by faith",
+      "kind": "scripture",
+      "tags": [
+        "bible says",
+        "god",
+        "bible",
+        "faith"
+      ]
+    },
+    {
+      "startTime": 362.291,
+      "title": "Living By Faith",
+      "kind": "message",
+      "tags": [
+        "faith",
+        "victory",
+        "overcoming"
+      ]
+    },
+    {
+      "startTime": 1747.971,
+      "title": "Giving / generosity — Pastor, today I need to reset my faith",
+      "kind": "giving",
+      "tags": [
+        "faith",
+        "want",
+        "today",
+        "life"
+      ]
+    },
+    {
+      "startTime": 1861.296,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "heavenly father",
+        "church",
+        "rock"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864940,
+  "feed": "dag-heward-mills-video",
+  "episode_slug": "2019-12-03-why-few-are-chosen-pt-6-1c6o4s",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — I believe your life is about to change",
+      "kind": "intro",
+      "tags": [
+        "god",
+        "love center",
+        "life",
+        "called"
+      ]
+    },
+    {
+      "startTime": 245.954,
+      "title": "Prayer — the blessing we have today in your house",
+      "kind": "prayer",
+      "tags": [
+        "father",
+        "amen",
+        "thank",
+        "house"
+      ]
+    },
+    {
+      "startTime": 306.498,
+      "title": "There is Something Called an Evil Day",
+      "kind": "message",
+      "tags": [
+        "evil",
+        "trouble",
+        "day"
+      ]
+    },
+    {
+      "startTime": 2578.391,
+      "title": "Worship — You wanna eat surprises?",
+      "kind": "worship",
+      "confidence": 0.9211336002093251,
+      "tags": [
+        "hallelujah",
+        "surprise",
+        "wanna eat",
+        "eat"
+      ]
+    },
+    {
+      "startTime": 4623.312,
+      "title": "Worship — Humility that you will be like Jesus",
+      "kind": "worship",
+      "confidence": 0.9989298966003604,
+      "tags": [
+        "hallelujah hallelujah",
+        "fighting",
+        "like jesus",
+        "hallelujah let"
+      ]
+    },
+    {
+      "startTime": 8763.014,
+      "title": "Give Your Life to Jesus",
+      "kind": "invitation",
+      "confidence": 0.9709866729178029,
+      "tags": [
+        "salvation",
+        "conversion",
+        "faith"
+      ]
+    },
+    {
+      "startTime": 9064.491,
+      "title": "Prayer — freedom today by the body and the blood of jesus christ",
+      "kind": "prayer",
+      "tags": [
+        "jesus christ",
+        "jesus",
+        "blood",
+        "feet everybody"
+      ]
+    },
+    {
+      "startTime": 9184.418,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "amen",
+        "receive divine",
+        "receive",
+        "jesus"
+      ]
+    },
+    {
+      "startTime": 9313.623,
+      "title": "Receive Divine Recovery",
+      "kind": "invitation",
+      "confidence": 0.6865138191173947,
+      "tags": [
+        "recovery",
+        "divine",
+        "encouragement"
+      ]
+    }
+  ]
+}

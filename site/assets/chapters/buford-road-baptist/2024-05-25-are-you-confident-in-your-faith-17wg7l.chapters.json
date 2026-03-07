@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863596,
+  "feed": "buford-road-baptist",
+  "episode_slug": "2024-05-25-are-you-confident-in-your-faith-17wg7l",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — We're going to be reading in Luke chapter 12 and verse number 22 to start o…",
+      "kind": "intro",
+      "tags": [
+        "baptist church",
+        "david kogel",
+        "buford road",
+        "road baptist"
+      ]
+    },
+    {
+      "startTime": 125.6,
+      "title": "Seeking the Kingdom of God",
+      "kind": "message",
+      "tags": [
+        "faith",
+        "trust",
+        "god"
+      ]
+    },
+    {
+      "startTime": 2135.487,
+      "title": "Benediction — The peace of God, which passeth all understanding, shall keep your he…",
+      "kind": "benediction",
+      "tags": [
+        "god",
+        "carry underwood",
+        "peace",
+        "need"
+      ]
+    }
+  ]
+}

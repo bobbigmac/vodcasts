@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772862970,
+  "feed": "antioch-church",
+  "episode_slug": "2023-12-03-waiting-with-expectation-1s52j0",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — We all shrivel up like a leaf, and like the wind, our sins swee…",
+      "kind": "scripture",
+      "tags": [
+        "scripture reading",
+        "reading today",
+        "isaiah",
+        "verses one"
+      ]
+    },
+    {
+      "startTime": 105.777,
+      "title": "Welcome — Maybe you didn't grow up in churches with a lot of liturgy or knowledge o…",
+      "kind": "welcome",
+      "tags": [
+        "new year",
+        "new",
+        "year",
+        "lord"
+      ]
+    },
+    {
+      "startTime": 212.554,
+      "title": "Expecting God’s Coming in Unexpected Ways",
+      "kind": "message",
+      "tags": [
+        "expectation",
+        "god's presence",
+        "advent"
+      ]
+    }
+  ]
+}

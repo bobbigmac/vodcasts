@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865315,
+  "feed": "dungeness-community-church",
+  "episode_slug": "2026-03-03-in-him-paul-s-letter-to-the-ephesians-tim-richards-4-of-12-vi-1p8rvs",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "know",
+        "question",
+        "dcc ask",
+        "answer"
+      ]
+    },
+    {
+      "startTime": 120.131,
+      "title": "The Dark Night of the Soul",
+      "kind": "message",
+      "tags": [
+        "faithstrugglehealing"
+      ]
+    }
+  ]
+}

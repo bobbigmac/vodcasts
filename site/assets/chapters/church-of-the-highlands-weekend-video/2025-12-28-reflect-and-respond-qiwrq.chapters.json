@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864209,
+  "feed": "church-of-the-highlands-weekend-video",
+  "episode_slug": "2025-12-28-reflect-and-respond-qiwrq",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — Hey church, I hope you and your family truly experience the joy, peace, a…",
+      "kind": "welcome",
+      "tags": [
+        "christmas season",
+        "god",
+        "seek god",
+        "hope"
+      ]
+    },
+    {
+      "startTime": 94.132,
+      "title": "Discovering Purpose Together",
+      "kind": "message",
+      "tags": [
+        "purpose",
+        "growth",
+        "community"
+      ]
+    },
+    {
+      "startTime": 365.442,
+      "title": "Welcome — I'm the campus pastor here, and I'm honored",
+      "kind": "welcome",
+      "tags": [
+        "pastor",
+        "want",
+        "god",
+        "campus"
+      ]
+    },
+    {
+      "startTime": 2160.198,
+      "title": "Praying for Reconciliation Today",
+      "kind": "invitation",
+      "confidence": 0.8489281911636292,
+      "tags": [
+        "reconciliation",
+        "forgiveness",
+        "response"
+      ]
+    },
+    {
+      "startTime": 2357.928,
+      "title": "Prayer — saving me today",
+      "kind": "prayer",
+      "tags": [
+        "purpose",
+        "believe",
+        "moment forward",
+        "jesus"
+      ]
+    }
+  ]
+}

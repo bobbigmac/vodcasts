@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865905,
+  "feed": "first-love-church-uk",
+  "episode_slug": "2020-03-06-signs-of-people-who-are-not-sons-01-03-20-1q91au",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — Albert, what is your testimony about today?",
+      "kind": "welcome",
+      "tags": [
+        "sunday service",
+        "first love",
+        "god",
+        "powerful sunday"
+      ]
+    },
+    {
+      "startTime": 37.314,
+      "title": "Welcome — Albert, what is your testimony about today?",
+      "kind": "welcome",
+      "tags": [
+        "sunday service",
+        "first love",
+        "god",
+        "powerful sunday"
+      ]
+    },
+    {
+      "startTime": 243.245,
+      "title": "I Didn't Expect to Be Fired, But Praying for Divine Favor Gave Me a Job",
+      "kind": "message",
+      "tags": [
+        "success",
+        "prayer",
+        "job"
+      ]
+    },
+    {
+      "startTime": 372.61,
+      "title": "Welcome — what's your testimony about today?",
+      "kind": "welcome",
+      "tags": [
+        "god",
+        "job",
+        "went",
+        "said"
+      ]
+    },
+    {
+      "startTime": 3168.355,
+      "title": "Prayer — the blessed opportunity to be in church, to be in his p…",
+      "kind": "prayer",
+      "tags": [
+        "thank",
+        "holy spirit",
+        "god",
+        "pray"
+      ]
+    },
+    {
+      "startTime": 10699.067,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "christ",
+        "jesus",
+        "preserve",
+        "lord"
+      ]
+    },
+    {
+      "startTime": 10822.801,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "jesus name",
+        "love church",
+        "first love",
+        "church london"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864223,
+  "feed": "church-of-the-highlands-weekend-video",
+  "episode_slug": "2026-01-04-divine-order-jh0fex",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start"
+    },
+    {
+      "startTime": 26.05,
+      "title": "Excitement and Renewal",
+      "kind": "message",
+      "tags": [
+        "excitement",
+        "renewal"
+      ]
+    },
+    {
+      "startTime": 129.412,
+      "title": "Welcome — I want us to lean into that today here at church and really all month lon…",
+      "kind": "welcome",
+      "tags": [
+        "blank slate",
+        "start",
+        "fresh start",
+        "church"
+      ]
+    },
+    {
+      "startTime": 1981.392,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "take",
+        "moment",
+        "god got"
+      ]
+    },
+    {
+      "startTime": 2096.11,
+      "title": "Invitation—This Is A Moment Of Salvation For You",
+      "kind": "invitation",
+      "confidence": 0.9154151409984352,
+      "tags": [
+        "salvation",
+        "moment",
+        "momentofsaving"
+      ]
+    },
+    {
+      "startTime": 2198.889,
+      "title": "Prayer — those who just prayed that prayer, that the old is gone…",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "just prayed",
+        "new creation",
+        "new"
+      ]
+    }
+  ]
+}

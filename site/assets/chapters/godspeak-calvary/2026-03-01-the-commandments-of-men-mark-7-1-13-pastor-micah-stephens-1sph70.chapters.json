@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772866195,
+  "feed": "godspeak-calvary",
+  "episode_slug": "2026-03-01-the-commandments-of-men-mark-7-1-13-pastor-micah-stephens-1sph70",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "iran",
+        "things going",
+        "iran used",
+        "persian people"
+      ]
+    },
+    {
+      "startTime": 113.702,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "charlie",
+        "man",
+        "iran",
+        "see"
+      ]
+    },
+    {
+      "startTime": 242.104,
+      "title": "Praying for Leaders",
+      "kind": "message",
+      "tags": [
+        "leadership",
+        "prayer",
+        "trust"
+      ]
+    },
+    {
+      "startTime": 1060.657,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "jerusalem",
+        "israel",
+        "let pray",
+        "pray"
+      ]
+    },
+    {
+      "startTime": 3734.989,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "thank",
+        "jesus' name",
+        "lord",
+        "blood"
+      ]
+    },
+    {
+      "startTime": 3860.159,
+      "title": "Worship — God, it would be an outpouring of our hearts, the posture of our hearts t…",
+      "kind": "worship",
+      "confidence": 0.7018027205701126,
+      "tags": [
+        "last song",
+        "lord",
+        "song",
+        "words"
+      ]
+    }
+  ]
+}

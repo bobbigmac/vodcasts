@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864316,
+  "feed": "church-on-the-rock",
+  "episode_slug": "2026-01-18-this-is-church-on-the-rock-part-3-rdju4a",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — every time I come to church on the rock, I get stronger and stronger",
+      "kind": "welcome",
+      "tags": [
+        "bible",
+        "never",
+        "church",
+        "god"
+      ]
+    },
+    {
+      "startTime": 121.698,
+      "title": "God's Favor—A Graceful Demonstration",
+      "kind": "message",
+      "tags": [
+        "favor",
+        "grace",
+        "demonstration"
+      ]
+    },
+    {
+      "startTime": 211.464,
+      "title": "Scripture reading — When I look at that verse, I see a gracious God",
+      "kind": "scripture",
+      "tags": [
+        "god",
+        "dennis",
+        "wilson",
+        "good"
+      ]
+    },
+    {
+      "startTime": 1611.818,
+      "title": "Give All Glory to the Lord",
+      "kind": "invitation",
+      "confidence": 0.738154331419674,
+      "tags": [
+        "grace",
+        "faithfulness",
+        "debt freedom"
+      ]
+    },
+    {
+      "startTime": 1731.385,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "going",
+        "just going",
+        "church",
+        "say"
+      ]
+    }
+  ]
+}

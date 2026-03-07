@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865364,
+  "feed": "eric-walsh-sermons",
+  "episode_slug": "2026-01-19-eric-walsh-01-a-generation-addicted-drugs-demons-and-a-rising-cr02g3",
+  "chapters": [
+    {
+      "startTime": 0.13,
+      "title": "Prayer — this opportunity to talk on these sensitive, difficult…",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "father god",
+        "holy ghost",
+        "asking lord"
+      ]
+    },
+    {
+      "startTime": 128.362,
+      "title": "There Is a Reason the Devil Wants Us All Addicted to Stuff",
+      "kind": "message",
+      "tags": [
+        "addiction",
+        "temptation",
+        "devotion"
+      ]
+    },
+    {
+      "startTime": 3267.317,
+      "title": "Prayer — this opportunity, lord, just to share, we just ask for…",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "let pray",
+        "holy spirit",
+        "holy ghost"
+      ]
+    }
+  ]
+}

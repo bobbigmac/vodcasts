@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863685,
+  "feed": "calvary-chapel-anne-arundel",
+  "episode_slug": "2026-02-15-ephesians-2-11-22-1j2717",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — we're in Ephesians chapter 2 verse 11 through 22 a little big chunk I love…",
+      "kind": "intro",
+      "tags": [
+        "ephesians chapter",
+        "next sunday",
+        "sunday prophecy",
+        "last week"
+      ]
+    },
+    {
+      "startTime": 130.402,
+      "title": "Praying for Our Country",
+      "kind": "message",
+      "tags": [
+        "prayer",
+        "politics",
+        "nationalism"
+      ]
+    },
+    {
+      "startTime": 256.714,
+      "title": "Scripture reading — These are Bible lands that we read about",
+      "kind": "scripture",
+      "tags": [
+        "bible land",
+        "bible",
+        "bible lands",
+        "middle east"
+      ]
+    },
+    {
+      "startTime": 3111.621,
+      "title": "Prayer — this word and lord, we simply sit here, be still",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "location",
+        "amazing",
+        "word"
+      ]
+    }
+  ]
+}

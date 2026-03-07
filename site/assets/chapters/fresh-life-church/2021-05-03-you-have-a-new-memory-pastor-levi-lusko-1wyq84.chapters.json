@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772866073,
+  "feed": "fresh-life-church",
+  "episode_slug": "2021-05-03-you-have-a-new-memory-pastor-levi-lusko-1wyq84",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — God says, but Moses was my servant",
+      "kind": "intro",
+      "tags": [
+        "bible",
+        "moses",
+        "servant",
+        "joshua"
+      ]
+    },
+    {
+      "startTime": 108.80199999999999,
+      "title": "God’s Blessing Follows Where You Go",
+      "kind": "message",
+      "tags": [
+        "blessings",
+        "destination",
+        "followers"
+      ]
+    },
+    {
+      "startTime": 220.44400000000002,
+      "title": "Worship — The Lord will do amazing things among you",
+      "kind": "worship",
+      "confidence": 0.8060199577091081,
+      "tags": [
+        "god going",
+        "god",
+        "god will",
+        "honor"
+      ]
+    },
+    {
+      "startTime": 3634.99,
+      "title": "Giving / generosity — We need God to deal with these things in our hearts so they'r…",
+      "kind": "giving",
+      "tags": [
+        "god",
+        "need",
+        "need god",
+        "rolling away"
+      ]
+    }
+  ]
+}

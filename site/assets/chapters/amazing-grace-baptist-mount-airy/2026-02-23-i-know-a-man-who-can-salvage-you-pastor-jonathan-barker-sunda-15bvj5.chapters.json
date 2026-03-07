@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772862911,
+  "feed": "amazing-grace-baptist-mount-airy",
+  "episode_slug": "2026-02-23-i-know-a-man-who-can-salvage-you-pastor-jonathan-barker-sunda-15bvj5",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "north carolina",
+        "jonathan barker",
+        "amazing grace",
+        "grace baptist"
+      ]
+    },
+    {
+      "startTime": 115.65100000000001,
+      "title": "Praying for Strength",
+      "kind": "message",
+      "tags": [
+        "prayer",
+        "strength",
+        "faith"
+      ]
+    },
+    {
+      "startTime": 234.994,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "man",
+        "whenever",
+        "can salvage"
+      ]
+    }
+  ]
+}

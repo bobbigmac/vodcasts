@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863307,
+  "feed": "bridgetown",
+  "episode_slug": "2026-01-19-7-deadly-sins-greed-1gzlva",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "bridgetown family",
+        "holy spirit",
+        "keller auditorium",
+        "portland keller"
+      ]
+    },
+    {
+      "startTime": 115.074,
+      "title": "Jesus' Teachings on Greed and Wealth",
+      "kind": "message",
+      "tags": [
+        "greed",
+        "wealth",
+        "sacrifice"
+      ]
+    },
+    {
+      "startTime": 216.251,
+      "title": "Scripture reading — Jesus' take on money reads dated, naive, and to be completely h…",
+      "kind": "scripture",
+      "tags": [
+        "lord",
+        "jesus",
+        "flower",
+        "sure"
+      ]
+    }
+  ]
+}

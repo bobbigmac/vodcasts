@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863844,
+  "feed": "calvary-chapel-fort-lauderdale",
+  "episode_slug": "2026-03-01-becoming-a-leader-in-god-s-house-19bl9a",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "will happen",
+        "die",
+        "happen",
+        "question"
+      ]
+    },
+    {
+      "startTime": 129.039,
+      "title": "Developing New Habits: The Key to Forming Character",
+      "kind": "message",
+      "tags": [
+        "character development",
+        "habit formation",
+        "personal growth"
+      ]
+    },
+    {
+      "startTime": 3271.842,
+      "title": "Invitation—Praying for Forgiveness and Renewal",
+      "kind": "invitation",
+      "confidence": 0.9978450763817024,
+      "tags": [
+        "forgiveness",
+        "renewal",
+        "spiritual growth"
+      ]
+    },
+    {
+      "startTime": 3389.858,
+      "title": "Outro — Cause all that I have is a Hallelujah",
+      "kind": "outro",
+      "tags": [
+        "hallelujah",
+        "morning",
+        "hands",
+        "lot"
+      ]
+    }
+  ]
+}

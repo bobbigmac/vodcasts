@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863176,
+  "feed": "between-sermons-video",
+  "episode_slug": "2025-12-21-the-savior-complex-why-trying-to-fix-everyone-is-wearing-you--1yj0pu",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — How was that, you know, taking the, feeling the shoes of Pastor Brent?",
+      "kind": "intro",
+      "tags": [
+        "pastor asa",
+        "sundays",
+        "pastor",
+        "pastor brent"
+      ]
+    },
+    {
+      "startTime": 121.905,
+      "title": "Expressing Emotions: A Journey Towards Open Communication",
+      "kind": "message",
+      "tags": [
+        "communication",
+        "emotions",
+        "openness"
+      ]
+    },
+    {
+      "startTime": 3633.732,
+      "title": "Outro — we all love you here at Disciples Church and we're praying for you",
+      "kind": "outro",
+      "tags": [
+        "set free",
+        "free",
+        "living",
+        "guys"
+      ]
+    }
+  ]
+}

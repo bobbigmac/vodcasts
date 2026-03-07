@@ -2,37 +2,55 @@
   "version": 1,
   "generator": {
     "name": "vodcasts-answer-engine",
-    "version": 2,
-    "mode": "semantic"
+    "version": 4,
+    "mode": "hybrid"
   },
-  "generated_at_unix": 1772851869,
+  "generated_at_unix": 1772863383,
   "feed": "bridgetown",
   "episode_slug": "2026-03-02-the-good-news-about-our-bodies-chronic-illness-disability-10g2du",
   "chapters": [
     {
       "startTime": 0.0,
-      "title": "Start",
-      "kind": "start"
+      "title": "Intro — the snap of her fingers without a dramatic accident or a gradual onset of s…",
+      "kind": "intro",
+      "tags": [
+        "high school",
+        "backup plan",
+        "plot twist",
+        "thea rosenberg"
+      ]
     },
     {
-      "startTime": 121.666,
-      "title": "Message — Though our first definition of overcoming is almost always subconsciously…",
-      "kind": "message"
+      "startTime": 55.052,
+      "title": "Scripture reading — the snap of her fingers without a dramatic accident or a gradua…",
+      "kind": "scripture",
+      "tags": [
+        "backup plan",
+        "thea rosenberg",
+        "plot twist",
+        "high school"
+      ]
     },
     {
-      "startTime": 860.33,
-      "title": "Topic — it is just that, the surrender of my will that brings me finally to the for…",
-      "kind": "topic"
+      "startTime": 166.393,
+      "title": "Welcome — With the way or ways my body seems out of step with God's design for life…",
+      "kind": "welcome",
+      "tags": [
+        "hard look",
+        "body",
+        "jesus",
+        "christian spirituality"
+      ]
     },
     {
-      "startTime": 1459.618,
-      "title": "Topic — God associates limits with love, choosing them for himself",
-      "kind": "topic"
-    },
-    {
-      "startTime": 1957.286,
-      "title": "Topic — Embracing my bodily limitations is a core part to embracing my apprenticesh…",
-      "kind": "topic"
+      "startTime": 279.01,
+      "title": "Fearfully and Wonderously Made",
+      "kind": "message",
+      "tags": [
+        "surrender",
+        "faithfulness",
+        "creation"
+      ]
     }
   ]
 }

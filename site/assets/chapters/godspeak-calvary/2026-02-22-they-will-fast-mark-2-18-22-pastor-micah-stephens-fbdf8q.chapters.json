@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772866182,
+  "feed": "godspeak-calvary",
+  "episode_slug": "2026-02-22-they-will-fast-mark-2-18-22-pastor-micah-stephens-fbdf8q",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Does anybody know what Wednesday was?",
+      "kind": "intro",
+      "tags": [
+        "challenging first",
+        "less heavy",
+        "little less",
+        "really heavy"
+      ]
+    },
+    {
+      "startTime": 126.669,
+      "title": "Fasting and Its Purpose",
+      "kind": "message",
+      "tags": [
+        "fasting",
+        "prayer",
+        "repentance"
+      ]
+    },
+    {
+      "startTime": 630.156,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "fasting",
+        "let pray",
+        "lord"
+      ]
+    },
+    {
+      "startTime": 3070.73,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "god",
+        "fast",
+        "thank"
+      ]
+    }
+  ]
+}

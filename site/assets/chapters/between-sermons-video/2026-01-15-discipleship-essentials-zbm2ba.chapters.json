@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863199,
+  "feed": "between-sermons-video",
+  "episode_slug": "2026-01-15-discipleship-essentials-zbm2ba",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — It's gonna be awesome as we just follow the footsteps of Jesus and learn a…",
+      "kind": "intro",
+      "tags": [
+        "pastor aza",
+        "new",
+        "aza",
+        "luke"
+      ]
+    },
+    {
+      "startTime": 223.448,
+      "title": "Starting Our Journey Together",
+      "kind": "message",
+      "tags": [
+        "discipleship",
+        "community",
+        "growth"
+      ]
+    },
+    {
+      "startTime": 451.39300000000003,
+      "title": "Worship — That's going to be the discipleship essentials growing in Christ",
+      "kind": "worship",
+      "confidence": 0.6671289163019204,
+      "tags": [
+        "god",
+        "god will",
+        "praise god",
+        "people"
+      ]
+    },
+    {
+      "startTime": 3395.737,
+      "title": "Invitation - Practice Surrender During Your Fast",
+      "kind": "invitation",
+      "confidence": 0.5506710358827784,
+      "tags": [
+        "surrender",
+        "fast",
+        "devotion"
+      ]
+    }
+  ]
+}

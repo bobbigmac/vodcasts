@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863027,
+  "feed": "antioch-church",
+  "episode_slug": "2024-01-28-love-builds-up-1xhvhy",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — the church in Corinth is a pretty big mess",
+      "kind": "welcome",
+      "tags": [
+        "eat causes",
+        "never eat",
+        "eat meat",
+        "will never"
+      ]
+    },
+    {
+      "startTime": 121.116,
+      "title": "Welcome — the church in Corinth is a pretty big mess",
+      "kind": "welcome",
+      "tags": [
+        "eat causes",
+        "never eat",
+        "eat meat",
+        "will never"
+      ]
+    },
+    {
+      "startTime": 249.474,
+      "title": "Christians Should Eat Meat Sacrificed to Idols",
+      "kind": "message",
+      "tags": [
+        "sacrifice",
+        "idolatry",
+        "diet"
+      ]
+    }
+  ]
+}

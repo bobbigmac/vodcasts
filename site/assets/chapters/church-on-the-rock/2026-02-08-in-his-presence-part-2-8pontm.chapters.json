@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864340,
+  "feed": "church-on-the-rock",
+  "episode_slug": "2026-02-08-in-his-presence-part-2-8pontm",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — I have to prepare myself before I ever get to church to get the most out of…",
+      "kind": "intro",
+      "tags": [
+        "get",
+        "life",
+        "presence",
+        "church"
+      ]
+    },
+    {
+      "startTime": 128.92,
+      "title": "Welcome — I have to prepare myself before I ever get to church to get the most out…",
+      "kind": "welcome",
+      "tags": [
+        "get",
+        "life",
+        "presence",
+        "church"
+      ]
+    },
+    {
+      "startTime": 242.588,
+      "title": "Preparing Your Heart for God’s Presence",
+      "kind": "message",
+      "tags": [
+        "preparation",
+        "heart",
+        "god"
+      ]
+    },
+    {
+      "startTime": 1955.638,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god bless",
+        "god",
+        "life",
+        "bless"
+      ]
+    }
+  ]
+}

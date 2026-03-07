@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863443,
+  "feed": "btic-podcast-video",
+  "episode_slug": "2024-12-15-we-are-the-bearers-of-good-news-zcc2gv",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "good news",
+        "news",
+        "good",
+        "series"
+      ]
+    },
+    {
+      "startTime": 143.762,
+      "title": "Taking Good News Outside Walls",
+      "kind": "message",
+      "tags": [
+        "goodnews",
+        "sharing",
+        "transformative"
+      ]
+    },
+    {
+      "startTime": 272.173,
+      "title": "Scripture reading — an angel then appears out of that light",
+      "kind": "scripture",
+      "tags": [
+        "luke chapter",
+        "christmas",
+        "chapter two",
+        "good news"
+      ]
+    },
+    {
+      "startTime": 1795.903,
+      "title": "Giving / generosity — Father you have given us the story, the good news of Jesus an…",
+      "kind": "giving",
+      "tags": [
+        "christmas service",
+        "inviting somebody",
+        "service next",
+        "next week"
+      ]
+    },
+    {
+      "startTime": 1925.698,
+      "title": "Receive Jesus Today",
+      "kind": "invitation",
+      "confidence": 0.9083703161224951,
+      "tags": [
+        "reception",
+        "invitation",
+        "conversion"
+      ]
+    }
+  ]
+}

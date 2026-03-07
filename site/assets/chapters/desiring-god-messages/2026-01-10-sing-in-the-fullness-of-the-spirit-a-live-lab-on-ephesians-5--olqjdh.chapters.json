@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865138,
+  "feed": "desiring-god-messages",
+  "episode_slug": "2026-01-10-sing-in-the-fullness-of-the-spirit-a-live-lab-on-ephesians-5--olqjdh",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "ephesians chapter",
+        "holy spirit",
+        "spirit",
+        "lord"
+      ]
+    },
+    {
+      "startTime": 130.74099999999999,
+      "title": "Awake From Spiritual Sleep",
+      "kind": "message",
+      "tags": [
+        "spiritual awakening",
+        "conversion",
+        "living life"
+      ]
+    },
+    {
+      "startTime": 2038.436,
+      "title": "Worship — if you're singing to him, you know this person right here is listening to…",
+      "kind": "worship",
+      "confidence": 0.9588281290609323,
+      "tags": [
+        "singing",
+        "lord",
+        "one another",
+        "come"
+      ]
+    },
+    {
+      "startTime": 2422.95,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "holy spirit",
+        "spirit",
+        "holy",
+        "greater"
+      ]
+    }
+  ]
+}

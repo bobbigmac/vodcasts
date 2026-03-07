@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863564,
+  "feed": "buford-road-baptist",
+  "episode_slug": "2024-05-18-lessons-of-a-godly-mother-146ijh",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — the lessons that we're going to talk about today are paramount",
+      "kind": "scripture",
+      "tags": [
+        "baptist church",
+        "tony kahoot",
+        "buford road",
+        "road baptist"
+      ]
+    },
+    {
+      "startTime": 126.2,
+      "title": "God's Call to Spiritual Leadership",
+      "kind": "message",
+      "tags": [
+        "leadership",
+        "responsibility",
+        "women"
+      ]
+    },
+    {
+      "startTime": 254.29,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "hearing aids",
+        "lord",
+        "hannah",
+        "lord jesus"
+      ]
+    },
+    {
+      "startTime": 1717.314,
+      "title": "Giving / generosity — Worshiping Him comes from our heart",
+      "kind": "giving",
+      "tags": [
+        "god",
+        "great delight",
+        "burn offerings",
+        "lord"
+      ]
+    }
+  ]
+}

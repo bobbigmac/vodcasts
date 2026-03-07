@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772862848,
+  "feed": "all-saints-homilies",
+  "episode_slug": "2023-09-24-a-matter-of-daily-concern-18mezc",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Ancient Faith Radio presents Homilies from All Saints, taken from the weekl…",
+      "kind": "intro",
+      "tags": [
+        "henry reardon",
+        "touchstone magazine",
+        "faith radio",
+        "father patrick"
+      ]
+    },
+    {
+      "startTime": 15.366,
+      "title": "Prayer — Doxology",
+      "kind": "prayer",
+      "tags": [
+        "father pat",
+        "holy spirit",
+        "pat",
+        "father"
+      ]
+    },
+    {
+      "startTime": 64.482,
+      "title": "Scripture reading — he starts to write himself, and he's writing the large letters,…",
+      "kind": "scripture",
+      "tags": [
+        "past sunday",
+        "last chapter",
+        "galatians",
+        "second thessalonians"
+      ]
+    },
+    {
+      "startTime": 194.061,
+      "title": "The Cross in Our Lives",
+      "kind": "message",
+      "tags": [
+        "cross",
+        "suffering",
+        "discipleship"
+      ]
+    },
+    {
+      "startTime": 1180.264,
+      "title": "Outro — Poor health is one of the things that we can endure as a cross",
+      "kind": "outro",
+      "tags": [
+        "something physical",
+        "poor health",
+        "cross",
+        "health"
+      ]
+    }
+  ]
+}

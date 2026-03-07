@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864284,
+  "feed": "church-of-the-highlands-weekend-video",
+  "episode_slug": "2026-02-15-the-most-excellent-way-1c3078",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — I get to be in week two of Loveology",
+      "kind": "intro",
+      "tags": [
+        "good morning",
+        "morning church",
+        "love",
+        "morning"
+      ]
+    },
+    {
+      "startTime": 41.154,
+      "title": "Welcome — I get to be in week two of Loveology",
+      "kind": "welcome",
+      "tags": [
+        "good morning",
+        "morning church",
+        "love",
+        "morning"
+      ]
+    },
+    {
+      "startTime": 164.733,
+      "title": "Living Love Out",
+      "kind": "message",
+      "tags": [
+        "love",
+        "living",
+        "outreach"
+      ]
+    }
+  ]
+}

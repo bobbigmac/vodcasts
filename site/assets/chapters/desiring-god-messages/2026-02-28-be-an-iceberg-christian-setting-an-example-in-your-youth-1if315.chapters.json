@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865195,
+  "feed": "desiring-god-messages",
+  "episode_slug": "2026-02-28-be-an-iceberg-christian-setting-an-example-in-your-youth-1if315",
+  "chapters": [
+    {
+      "startTime": 1.122,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "want",
+        "jesus",
+        "let pray",
+        "pray together"
+      ]
+    },
+    {
+      "startTime": 126.539,
+      "title": "Navigating Iceberg Pastors",
+      "kind": "message",
+      "tags": [
+        "iceberg",
+        "pastors",
+        "ambition"
+      ]
+    }
+  ]
+}

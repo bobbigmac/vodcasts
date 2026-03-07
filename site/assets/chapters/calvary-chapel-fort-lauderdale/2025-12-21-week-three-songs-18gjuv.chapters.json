@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863721,
+  "feed": "calvary-chapel-fort-lauderdale",
+  "episode_slug": "2025-12-21-week-three-songs-18gjuv",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "song",
+        "christmas",
+        "christmas time",
+        "even"
+      ]
+    },
+    {
+      "startTime": 118.765,
+      "title": "Why Are Songs Not Ordinary?",
+      "kind": "message",
+      "tags": [
+        "music",
+        "emotion",
+        "inspiration"
+      ]
+    },
+    {
+      "startTime": 338.813,
+      "title": "Scripture reading — The reason songs are so powerful is because we have been made i…",
+      "kind": "scripture",
+      "tags": [
+        "god",
+        "bible",
+        "wanna share",
+        "gonna read"
+      ]
+    },
+    {
+      "startTime": 1565.614,
+      "title": "Worship — You see, every time we sing, we're singing between past moments of the pe…",
+      "kind": "worship",
+      "confidence": 0.9036723617695069,
+      "tags": [
+        "god",
+        "song",
+        "sing",
+        "mary song"
+      ]
+    },
+    {
+      "startTime": 2843.798,
+      "title": "Invitation: Deciding to Follow Jesus",
+      "kind": "invitation",
+      "confidence": 0.9837554855580501,
+      "tags": [
+        "decisions",
+        "faith",
+        "relationship"
+      ]
+    }
+  ]
+}

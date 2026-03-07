@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864553,
+  "feed": "concord-baptist-church",
+  "episode_slug": "2019-09-22-do-you-want-to-get-well-7kvses",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start"
+    },
+    {
+      "startTime": 73.922,
+      "title": "Worship — Our one brother lives in Chicago, so it's me",
+      "kind": "worship",
+      "confidence": 0.6927212613988687,
+      "tags": [
+        "hey concord",
+        "concord",
+        "lives",
+        "manhattan"
+      ]
+    },
+    {
+      "startTime": 166.68,
+      "title": "Greg vs. Kyle: Who's Your Favorite?",
+      "kind": "message",
+      "tags": [
+        "family",
+        "relationships"
+      ]
+    },
+    {
+      "startTime": 366.475,
+      "title": "Prayer — your written word",
+      "kind": "prayer",
+      "tags": [
+        "pray",
+        "like jesus",
+        "let pray",
+        "pray together"
+      ]
+    },
+    {
+      "startTime": 1821.519,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "jesus",
+        "need",
+        "say",
+        "let pray"
+      ]
+    },
+    {
+      "startTime": 1881.538,
+      "title": "Pray Now!",
+      "kind": "invitation",
+      "confidence": 0.7558567168465629,
+      "tags": [
+        "prayer",
+        "commitment",
+        "savior"
+      ]
+    }
+  ]
+}

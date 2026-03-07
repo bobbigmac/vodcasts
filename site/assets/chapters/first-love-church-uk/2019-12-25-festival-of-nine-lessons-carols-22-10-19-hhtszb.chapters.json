@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865717,
+  "feed": "first-love-church-uk",
+  "episode_slug": "2019-12-25-festival-of-nine-lessons-carols-22-10-19-hhtszb",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — We are having our carol service and we have a very, very special group in…",
+      "kind": "welcome",
+      "tags": [
+        "bishop richard",
+        "richard iey",
+        "first love",
+        "love church"
+      ]
+    },
+    {
+      "startTime": 14.05,
+      "title": "Welcome — We are having our carol service and we have a very, very special group in…",
+      "kind": "welcome",
+      "tags": [
+        "bishop richard",
+        "richard iey",
+        "first love",
+        "love church"
+      ]
+    },
+    {
+      "startTime": 478.41700000000003,
+      "title": "Abraham's Faithful Sacrifice",
+      "kind": "message",
+      "tags": [
+        "faith",
+        "sacrifice",
+        "abraham"
+      ]
+    },
+    {
+      "startTime": 494.622,
+      "title": "Giving / generosity — the angel of the Lord called unto Abraham out of heaven, the…",
+      "kind": "giving",
+      "tags": [
+        "abraham went",
+        "burnt offering",
+        "thy seed",
+        "jehovah jairah"
+      ]
+    },
+    {
+      "startTime": 805.742,
+      "title": "Prayer — this opportunity to give our god",
+      "kind": "prayer",
+      "tags": [
+        "lord add",
+        "lord",
+        "god",
+        "holy word"
+      ]
+    },
+    {
+      "startTime": 8221.129,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "thank",
+        "jesus",
+        "lord jesus"
+      ]
+    },
+    {
+      "startTime": 8686.53,
+      "title": "Prayer — the blessing of the communion",
+      "kind": "prayer",
+      "tags": [
+        "lives",
+        "cancel",
+        "thank",
+        "midst"
+      ]
+    },
+    {
+      "startTime": 8805.506,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "thank",
+        "god",
+        "may god",
+        "lord"
+      ]
+    }
+  ]
+}

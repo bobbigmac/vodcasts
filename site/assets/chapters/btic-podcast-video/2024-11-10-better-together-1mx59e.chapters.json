@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863406,
+  "feed": "btic-podcast-video",
+  "episode_slug": "2024-11-10-better-together-1mx59e",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — I am your host, Timothy, and we're here together on this beautiful day to h…",
+      "kind": "intro",
+      "tags": [
+        "berea temple",
+        "international church",
+        "father",
+        "temple"
+      ]
+    },
+    {
+      "startTime": 11.33,
+      "title": "Welcome — I am your host, Timothy, and we're here together on this beautiful day to…",
+      "kind": "welcome",
+      "tags": [
+        "berea temple",
+        "international church",
+        "father",
+        "temple"
+      ]
+    },
+    {
+      "startTime": 143.231,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "church",
+        "good neighbors",
+        "neighbors",
+        "final message"
+      ]
+    },
+    {
+      "startTime": 273.474,
+      "title": "Unity Unites Us",
+      "kind": "message",
+      "tags": [
+        "unity",
+        "united",
+        "growth"
+      ]
+    },
+    {
+      "startTime": 2993.2,
+      "title": "Giving / generosity — Whatever it looks like, remember that God has placed each of…",
+      "kind": "giving",
+      "tags": [
+        "shared purpose",
+        "neighbor name",
+        "helping hand",
+        "gathering people"
+      ]
+    },
+    {
+      "startTime": 3163.838,
+      "title": "Prayer — become neighbors who care, who offer compassion, who of…",
+      "kind": "prayer",
+      "tags": [
+        "let pray",
+        "pray",
+        "become neighbors",
+        "neighbors"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864915,
+  "feed": "dag-heward-mills-video",
+  "episode_slug": "2019-11-27-preparation-of-rehearsals-174zu9",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start"
+    },
+    {
+      "startTime": 436.514,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "jesus' name",
+        "david",
+        "amen",
+        "david said"
+      ]
+    },
+    {
+      "startTime": 562.252,
+      "title": "Rehearsing Your Ministry",
+      "kind": "message",
+      "tags": [
+        "ministry",
+        "preparation",
+        "practice"
+      ]
+    },
+    {
+      "startTime": 4914.818,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "jesus",
+        "mighty name",
+        "mighty",
+        "name"
+      ]
+    }
+  ]
+}

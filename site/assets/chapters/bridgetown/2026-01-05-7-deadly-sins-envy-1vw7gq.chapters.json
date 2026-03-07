@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863286,
+  "feed": "bridgetown",
+  "episode_slug": "2026-01-05-7-deadly-sins-envy-1vw7gq",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — that last bit you'll see in our English Bibles in quotations, a…",
+      "kind": "scripture",
+      "tags": [
+        "new york",
+        "york city",
+        "heller",
+        "cameron russell"
+      ]
+    },
+    {
+      "startTime": 73.826,
+      "title": "Scripture reading — that last bit you'll see in our English Bibles in quotations, a…",
+      "kind": "scripture",
+      "tags": [
+        "new york",
+        "york city",
+        "heller",
+        "cameron russell"
+      ]
+    },
+    {
+      "startTime": 301.294,
+      "title": "Coveting: The Biblical Warning Against Envy",
+      "kind": "message",
+      "tags": [
+        "enjoyment",
+        "sin",
+        "consequences"
+      ]
+    }
+  ]
+}

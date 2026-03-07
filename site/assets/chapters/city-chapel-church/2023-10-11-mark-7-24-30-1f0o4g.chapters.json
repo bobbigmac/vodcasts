@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864514,
+  "feed": "city-chapel-church",
+  "episode_slug": "2023-10-11-mark-7-24-30-1f0o4g",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Announcements — This Sunday is the 20th, so next, Sunday, we are having a baptism s…",
+      "kind": "announcements",
+      "tags": [
+        "mark gospel",
+        "going",
+        "called shepherds",
+        "mark"
+      ]
+    },
+    {
+      "startTime": 3.202,
+      "title": "Scripture reading — anyway, Mark chapter seven, we're going to look at verse 24",
+      "kind": "scripture",
+      "tags": [
+        "slaughter creek",
+        "city chapel",
+        "okayest church",
+        "weekly podcast"
+      ]
+    },
+    {
+      "startTime": 50.862,
+      "title": "Announcements — This Sunday is the 20th, so next, Sunday, we are having a baptism s…",
+      "kind": "announcements",
+      "tags": [
+        "mark gospel",
+        "going",
+        "called shepherds",
+        "mark"
+      ]
+    },
+    {
+      "startTime": 165.602,
+      "title": "Jesus' Visit to Gentiles",
+      "kind": "message",
+      "tags": [
+        "gentiles",
+        "phoenicia",
+        "heathen"
+      ]
+    },
+    {
+      "startTime": 2799.797,
+      "title": "Prayer—Agreement with God’s Hope",
+      "kind": "invitation",
+      "confidence": 0.738154331419674,
+      "tags": [
+        "agreement",
+        "hope",
+        "prayer"
+      ]
+    },
+    {
+      "startTime": 2884.47,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "get",
+        "fed",
+        "house",
+        "care groups"
+      ]
+    }
+  ]
+}

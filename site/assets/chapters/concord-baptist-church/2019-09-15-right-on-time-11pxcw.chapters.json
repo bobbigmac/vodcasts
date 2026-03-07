@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864538,
+  "feed": "concord-baptist-church",
+  "episode_slug": "2019-09-15-right-on-time-11pxcw",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — A few years ago I was speaking at a church in Michigan and it was in Midlan…",
+      "kind": "intro",
+      "tags": [
+        "joy club",
+        "club group",
+        "just telling",
+        "good food"
+      ]
+    },
+    {
+      "startTime": 72.418,
+      "title": "Welcome — A few years ago I was speaking at a church in Michigan and it was in Midl…",
+      "kind": "welcome",
+      "tags": [
+        "joy club",
+        "club group",
+        "just telling",
+        "good food"
+      ]
+    },
+    {
+      "startTime": 191.028,
+      "title": "Jesus' Assurance of Life",
+      "kind": "message",
+      "tags": [
+        "faith",
+        "healing",
+        "hope"
+      ]
+    },
+    {
+      "startTime": 563.636,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "second sign",
+        "sign jesus",
+        "jesus performed",
+        "galilee"
+      ]
+    },
+    {
+      "startTime": 2170.354,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "jesus",
+        "come",
+        "need"
+      ]
+    }
+  ]
+}

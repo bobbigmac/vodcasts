@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864609,
+  "feed": "concord-baptist-church",
+  "episode_slug": "2019-11-03-the-one-thing-jesus-prayed-for-19attz",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — church, listen to this, church is not a place where leaders never struggl…",
+      "kind": "welcome",
+      "tags": [
+        "church",
+        "want",
+        "god word",
+        "god"
+      ]
+    },
+    {
+      "startTime": 73.858,
+      "title": "Scripture reading — I know you expected him to be here also, and I appreciated Greg…",
+      "kind": "scripture",
+      "tags": [
+        "john",
+        "steve parr",
+        "levi",
+        "turn"
+      ]
+    },
+    {
+      "startTime": 165.578,
+      "title": "Welcome — church, listen to this, church is not a place where leaders never struggl…",
+      "kind": "welcome",
+      "tags": [
+        "church",
+        "want",
+        "god word",
+        "god"
+      ]
+    },
+    {
+      "startTime": 366.332,
+      "title": "Scripture reading — Or you may think this is a little unsettling to walk in today a…",
+      "kind": "scripture",
+      "tags": [
+        "make mistakes",
+        "never struggle",
+        "god",
+        "jesus"
+      ]
+    },
+    {
+      "startTime": 458.01800000000003,
+      "title": "Prayer — The Lord's Prayer",
+      "kind": "prayer",
+      "tags": [
+        "lord prayer",
+        "prayer",
+        "lord",
+        "jesus"
+      ]
+    },
+    {
+      "startTime": 570.0,
+      "title": "Praying for Unity and Church Unity",
+      "kind": "message",
+      "tags": [
+        "unity",
+        "church",
+        "prayer"
+      ]
+    },
+    {
+      "startTime": 1797.163,
+      "title": "Prayer — your word and for the reminder",
+      "kind": "prayer",
+      "tags": [
+        "let pray",
+        "father",
+        "pray",
+        "now god"
+      ]
+    }
+  ]
+}

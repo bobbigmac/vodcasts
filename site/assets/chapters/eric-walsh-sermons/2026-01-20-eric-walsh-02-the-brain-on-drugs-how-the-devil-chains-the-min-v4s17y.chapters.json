@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865383,
+  "feed": "eric-walsh-sermons",
+  "episode_slug": "2026-01-20-eric-walsh-02-the-brain-on-drugs-how-the-devil-chains-the-min-v4s17y",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "bible says",
+        "romans seven",
+        "romans chapter",
+        "wretched man"
+      ]
+    },
+    {
+      "startTime": 19.807,
+      "title": "Prayer — this opportunity to study a word and lord, as we get in…",
+      "kind": "prayer",
+      "tags": [
+        "let pray",
+        "lord",
+        "says",
+        "good"
+      ]
+    },
+    {
+      "startTime": 148.831,
+      "title": "The Power of Addiction: Understanding How It Captures Us",
+      "kind": "message",
+      "tags": [
+        "addiction",
+        "satanic influence",
+        "holiness"
+      ]
+    },
+    {
+      "startTime": 3471.183,
+      "title": "Prayer — your love for your blessings",
+      "kind": "prayer",
+      "tags": [
+        "father god",
+        "lord",
+        "holy spirit",
+        "christ"
+      ]
+    }
+  ]
+}

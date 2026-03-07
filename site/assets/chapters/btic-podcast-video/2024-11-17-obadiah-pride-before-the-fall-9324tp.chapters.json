@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863418,
+  "feed": "btic-podcast-video",
+  "episode_slug": "2024-11-17-obadiah-pride-before-the-fall-9324tp",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Well, bad news, we're doing the whole thing in one sermon",
+      "kind": "intro",
+      "tags": [
+        "berea temple",
+        "international church",
+        "god",
+        "going"
+      ]
+    },
+    {
+      "startTime": 11.33,
+      "title": "Welcome — let's all prepare ourselves to receive what God has in store for us today",
+      "kind": "welcome",
+      "tags": [
+        "berea temple",
+        "international church",
+        "god",
+        "church podcast"
+      ]
+    },
+    {
+      "startTime": 141.328,
+      "title": "Scripture reading — Well, bad news, we're doing the whole thing in one sermon",
+      "kind": "scripture",
+      "tags": [
+        "going",
+        "one",
+        "news",
+        "bibles"
+      ]
+    },
+    {
+      "startTime": 262.402,
+      "title": "They Had Replaced God",
+      "kind": "message",
+      "tags": [
+        "pride",
+        "fall",
+        "faith"
+      ]
+    },
+    {
+      "startTime": 2665.777,
+      "title": "Invitation: Embrace Humility Today",
+      "kind": "invitation",
+      "confidence": 0.9128391485380187,
+      "tags": [
+        "humility",
+        "renewal",
+        "faith"
+      ]
+    }
+  ]
+}

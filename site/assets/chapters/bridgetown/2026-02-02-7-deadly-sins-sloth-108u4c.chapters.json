@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863328,
+  "feed": "bridgetown",
+  "episode_slug": "2026-02-02-7-deadly-sins-sloth-108u4c",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "bags",
+        "master",
+        "gold",
+        "five bags"
+      ]
+    },
+    {
+      "startTime": 141.3,
+      "title": "Scripture reading — Augustine prayed, Lord make me pure, but not yet",
+      "kind": "scripture",
+      "tags": [
+        "sometimes",
+        "lord",
+        "god",
+        "real"
+      ]
+    },
+    {
+      "startTime": 401.442,
+      "title": "Staying Comfortable vs. Staying Discomforted",
+      "kind": "message",
+      "tags": [
+        "sloth",
+        "discomfort",
+        "stewardship"
+      ]
+    },
+    {
+      "startTime": 2666.541,
+      "title": "Giving / generosity — I, even through this teaching, have become more and more awar…",
+      "kind": "giving",
+      "tags": [
+        "know",
+        "way",
+        "year",
+        "sloth"
+      ]
+    }
+  ]
+}

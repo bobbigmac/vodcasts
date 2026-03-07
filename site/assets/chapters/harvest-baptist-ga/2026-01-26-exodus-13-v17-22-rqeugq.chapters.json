@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772866265,
+  "feed": "harvest-baptist-ga",
+  "episode_slug": "2026-01-26-exodus-13-v17-22-rqeugq",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — God's redemption creates ownership and that we are the lords",
+      "kind": "welcome",
+      "tags": [
+        "harvest baptist",
+        "baptist church",
+        "local church",
+        "redemption creates"
+      ]
+    },
+    {
+      "startTime": 10.658,
+      "title": "Welcome — God's redemption creates ownership and that we are the lords",
+      "kind": "welcome",
+      "tags": [
+        "harvest baptist",
+        "baptist church",
+        "local church",
+        "redemption creates"
+      ]
+    },
+    {
+      "startTime": 134.02100000000002,
+      "title": "Why is Moses Getting Into Trouble?",
+      "kind": "message",
+      "tags": [
+        "sin",
+        "deliverance",
+        "christian life"
+      ]
+    },
+    {
+      "startTime": 363.423,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "might travel",
+        "people",
+        "pillar",
+        "night"
+      ]
+    },
+    {
+      "startTime": 2202.978,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "promise",
+        "god",
+        "promise abraham",
+        "come"
+      ]
+    },
+    {
+      "startTime": 2423.106,
+      "title": "Benediction — Thank you for listening to this sermon from Harvest Baptist Church",
+      "kind": "benediction",
+      "tags": [
+        "outnumbered pharaoh",
+        "pharaoh will",
+        "narrow road",
+        "govern everything"
+      ]
+    }
+  ]
+}

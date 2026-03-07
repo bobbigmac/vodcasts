@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772862851,
+  "feed": "all-saints-homilies",
+  "episode_slug": "2023-11-02-touched-by-another-human-being-19rbfb",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — At the beginning of the service, when I'm holding the Gospel book and getti…",
+      "kind": "intro",
+      "tags": [
+        "saints orthodox",
+        "henry reardon",
+        "touchstone magazine",
+        "faith radio"
+      ]
+    },
+    {
+      "startTime": 15.367,
+      "title": "Prayer — Doxology",
+      "kind": "prayer",
+      "tags": [
+        "father pat",
+        "holy spirit",
+        "father",
+        "pat"
+      ]
+    },
+    {
+      "startTime": 252.494,
+      "title": "She Was Smitten by God and Afflicted",
+      "kind": "message",
+      "tags": [
+        "health",
+        "miracles",
+        "faith"
+      ]
+    },
+    {
+      "startTime": 1345.236,
+      "title": "Outro — This has been a presentation of Ancient Faith Radio",
+      "kind": "outro",
+      "tags": [
+        "pat reardon",
+        "touchstone magazine",
+        "saints orthodox",
+        "father pat"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863559,
+  "feed": "buford-road-baptist",
+  "episode_slug": "2024-05-17-shewbread-if33ea",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — Jesus said unto them, verily I say unto you, Moses gave you not…",
+      "kind": "scripture",
+      "tags": [
+        "unto",
+        "bread",
+        "said unto",
+        "eat"
+      ]
+    },
+    {
+      "startTime": 107.405,
+      "title": "Scripture reading — Jesus said unto them, verily I say unto you, Moses gave you not…",
+      "kind": "scripture",
+      "tags": [
+        "unto",
+        "bread",
+        "said unto",
+        "eat"
+      ]
+    },
+    {
+      "startTime": 365.946,
+      "title": "The White Rat and Cow Beliefs",
+      "kind": "message",
+      "tags": [
+        "faith",
+        "religion",
+        "belief"
+      ]
+    }
+  ]
+}

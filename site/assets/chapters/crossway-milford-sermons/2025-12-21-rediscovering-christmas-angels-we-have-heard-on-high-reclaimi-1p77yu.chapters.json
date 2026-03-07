@@ -2,10 +2,10 @@
   "version": 1,
   "generator": {
     "name": "vodcasts-answer-engine",
-    "version": 3,
+    "version": 4,
     "mode": "hybrid"
   },
-  "generated_at_unix": 1772854701,
+  "generated_at_unix": 1772864832,
   "feed": "crossway-milford-sermons",
   "episode_slug": "2025-12-21-rediscovering-christmas-angels-we-have-heard-on-high-reclaimi-1p77yu",
   "chapters": [
@@ -21,6 +21,17 @@
       ]
     },
     {
+      "startTime": 4.77,
+      "title": "Scripture reading — I want to do the tightest first and then we'll go to Luke one,…",
+      "kind": "scripture",
+      "tags": [
+        "chris crowe",
+        "new hampshire",
+        "crossway christian",
+        "christian church"
+      ]
+    },
+    {
       "startTime": 120.546,
       "title": "Prayer",
       "kind": "prayer",
@@ -33,22 +44,12 @@
     },
     {
       "startTime": 350.983,
-      "title": "The Annunciation: Mary's Revelation",
+      "title": "The Annunciation: Mary’s Revelation",
       "kind": "message",
       "tags": [
-        "mary",
-        "angel",
-        "incarnation"
-      ]
-    },
-    {
-      "startTime": 1434.498,
-      "title": "Staying Familiar With Scripture",
-      "kind": "topic",
-      "tags": [
-        "familiarity",
-        "scripture",
-        "devotion"
+        "angelic visitation",
+        "virgin conception",
+        "christian faith"
       ]
     },
     {
@@ -61,6 +62,11 @@
         "love",
         "want"
       ]
+    },
+    {
+      "startTime": 2616.68,
+      "title": "Benediction — May the Lord bless you and keep you",
+      "kind": "benediction"
     }
   ]
 }

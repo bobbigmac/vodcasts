@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772862840,
+  "feed": "all-saints-homilies",
+  "episode_slug": "2023-08-22-a-vocation-both-common-and-special-10q7i4",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Ancient Faith Radio presents Homilies from All Saints, taken from the weekl…",
+      "kind": "intro",
+      "tags": [
+        "henry reardon",
+        "touchstone magazine",
+        "faith radio",
+        "father patrick"
+      ]
+    },
+    {
+      "startTime": 15.345,
+      "title": "Welcome — that at the beginning and at the end of the year, we honor the mother of…",
+      "kind": "welcome",
+      "tags": [
+        "father pat",
+        "holy spirit",
+        "church begins",
+        "church"
+      ]
+    },
+    {
+      "startTime": 117.22,
+      "title": "Growing Glimpses of the Virgin Mary’s Influence",
+      "kind": "message",
+      "tags": [
+        "virgin mary",
+        "influence",
+        "growth"
+      ]
+    },
+    {
+      "startTime": 896.738,
+      "title": "Outro — May her influence over the church abound",
+      "kind": "outro",
+      "tags": [
+        "queen mothers",
+        "falling asleep",
+        "mother",
+        "mothers"
+      ]
+    }
+  ]
+}

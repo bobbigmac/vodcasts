@@ -2,42 +2,56 @@
   "version": 1,
   "generator": {
     "name": "vodcasts-answer-engine",
-    "version": 2,
-    "mode": "semantic"
+    "version": 4,
+    "mode": "hybrid"
   },
-  "generated_at_unix": 1772851873,
+  "generated_at_unix": 1772863635,
   "feed": "calvary-chapel-anne-arundel",
   "episode_slug": "2026-01-04-ephesians-1-7-10-848zvp",
   "chapters": [
     {
       "startTime": 0.0,
-      "title": "Intro — just a beautiful passage of scripture to start 2026 off for us based on the…",
-      "kind": "intro"
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "sins according",
+        "ephesians chapter",
+        "let read",
+        "abound towards"
+      ]
     },
     {
       "startTime": 132.194,
-      "title": "Prayer — the word that you've given us",
-      "kind": "prayer"
+      "title": "Redemption Through His Blood",
+      "kind": "message",
+      "tags": [
+        "redemption",
+        "blood",
+        "forgiveness"
+      ]
     },
     {
-      "startTime": 258.044,
-      "title": "Message — This is how it would read, in whom we are having redemption",
-      "kind": "message"
+      "startTime": 3072.379,
+      "title": "Worship — Through his blood the forgiveness of sins according to the riches of his…",
+      "kind": "worship",
+      "confidence": 0.8296670111745905,
+      "tags": [
+        "let sing",
+        "song white",
+        "just prepare",
+        "christ"
+      ]
     },
     {
-      "startTime": 1276.113,
-      "title": "Topic — it brings a clotting and a healing to bring us this redemption",
-      "kind": "topic"
-    },
-    {
-      "startTime": 1899.35,
-      "title": "Topic — I come walking in and I go, babe, I just got run over by a truck",
-      "kind": "topic"
-    },
-    {
-      "startTime": 3366.832,
-      "title": "Prayer",
-      "kind": "prayer"
+      "startTime": 3400.807,
+      "title": "Prayer — the cup, and we do this in remembrance of you, that you…",
+      "kind": "prayer",
+      "tags": [
+        "new covenant",
+        "new testament",
+        "lord",
+        "blood"
+      ]
     }
   ]
 }

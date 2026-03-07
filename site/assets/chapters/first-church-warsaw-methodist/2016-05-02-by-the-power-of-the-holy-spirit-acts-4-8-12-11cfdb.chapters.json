@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865682,
+  "feed": "first-church-warsaw-methodist",
+  "episode_slug": "2016-05-02-by-the-power-of-the-holy-spirit-acts-4-8-12-11cfdb",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "holy spirit",
+        "three men",
+        "melody",
+        "men"
+      ]
+    },
+    {
+      "startTime": 127.313,
+      "title": "Paul's International Trip",
+      "kind": "message",
+      "tags": [
+        "family",
+        "travel",
+        "adventures"
+      ]
+    },
+    {
+      "startTime": 1250.815,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "holy spirit",
+        "holy",
+        "spirit",
+        "power"
+      ]
+    }
+  ]
+}

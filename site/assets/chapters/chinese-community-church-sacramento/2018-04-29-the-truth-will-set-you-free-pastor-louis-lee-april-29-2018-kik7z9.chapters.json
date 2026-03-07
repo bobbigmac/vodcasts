@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864173,
+  "feed": "chinese-community-church-sacramento",
+  "episode_slug": "2018-04-29-the-truth-will-set-you-free-pastor-louis-lee-april-29-2018-kik7z9",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Well, many have heard the expression, all truth is God's truth",
+      "kind": "intro",
+      "tags": [
+        "truth",
+        "pontius pilate",
+        "jesus",
+        "free"
+      ]
+    },
+    {
+      "startTime": 114.93299999999999,
+      "title": "Prayer — every person who's here this morning",
+      "kind": "prayer",
+      "tags": [
+        "paul pierce",
+        "just begin",
+        "boston celtics",
+        "truth"
+      ]
+    },
+    {
+      "startTime": 236.786,
+      "title": "Scripture reading — Jesus said to Pontius Pilate, my kingdom is not of this world",
+      "kind": "scripture",
+      "tags": [
+        "just read",
+        "pontius pilate",
+        "truth",
+        "pontius"
+      ]
+    },
+    {
+      "startTime": 352.983,
+      "title": "The Miracle of Feeding Thousands",
+      "kind": "message",
+      "tags": [
+        "miracle",
+        "feeding",
+        "jesus"
+      ]
+    },
+    {
+      "startTime": 690.746,
+      "title": "Scripture reading — As I said in previous sermons in this little sermon series abou…",
+      "kind": "scripture",
+      "tags": [
+        "john chapter",
+        "read earlier",
+        "right way",
+        "jesus"
+      ]
+    },
+    {
+      "startTime": 1407.969,
+      "title": "Prayer — this time and thank you for the worship",
+      "kind": "prayer",
+      "tags": [
+        "jesus christ",
+        "son jesus",
+        "father god",
+        "jesus"
+      ]
+    }
+  ]
+}

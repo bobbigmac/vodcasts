@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772866205,
+  "feed": "harvest-baptist-ga",
+  "episode_slug": "2025-12-22-exodus-10-1-20-16wg0e",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — That being said, We hope that this sermon challenges and encourages you i…",
+      "kind": "welcome",
+      "tags": [
+        "harvest baptist",
+        "baptist church",
+        "local church",
+        "harvest"
+      ]
+    },
+    {
+      "startTime": 10.658,
+      "title": "Welcome — That being said, We hope that this sermon challenges and encourages you i…",
+      "kind": "welcome",
+      "tags": [
+        "harvest baptist",
+        "baptist church",
+        "local church",
+        "harvest"
+      ]
+    },
+    {
+      "startTime": 76.399,
+      "title": "The Wrathful God: Understanding Repentance and Confession",
+      "kind": "message",
+      "tags": [
+        "theology",
+        "faith",
+        "god"
+      ]
+    },
+    {
+      "startTime": 326.682,
+      "title": "Scripture reading — We're going to begin reading in Exodus chapter 10",
+      "kind": "scripture",
+      "tags": [
+        "god",
+        "one",
+        "lord",
+        "pharaoh"
+      ]
+    },
+    {
+      "startTime": 793.614,
+      "title": "Scripture reading — This is biblical church when our children are there",
+      "kind": "scripture",
+      "tags": [
+        "children",
+        "lord",
+        "pharaoh",
+        "god"
+      ]
+    },
+    {
+      "startTime": 2883.445,
+      "title": "Prayer — the opportunity to open your word, to look at your work…",
+      "kind": "prayer",
+      "tags": [
+        "wrath poured",
+        "father",
+        "thank",
+        "christ"
+      ]
+    }
+  ]
+}

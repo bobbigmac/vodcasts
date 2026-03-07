@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865961,
+  "feed": "fresh-life-church",
+  "episode_slug": "2021-02-28-handle-with-care-pastor-levi-lusko-1ismr2",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — we're taking some time to go through a love story in Scripture…",
+      "kind": "scripture",
+      "tags": [
+        "bible",
+        "patrick day",
+        "genesis",
+        "valentine day"
+      ]
+    },
+    {
+      "startTime": 106.009,
+      "title": "Food vs Birth Stories",
+      "kind": "message",
+      "tags": [
+        "food",
+        "birth",
+        "delivery"
+      ]
+    },
+    {
+      "startTime": 201.692,
+      "title": "Scripture reading — We're living in a day when relationships are kind of just blasé…",
+      "kind": "scripture",
+      "tags": [
+        "got robbed",
+        "pizza",
+        "pizza delivery",
+        "person"
+      ]
+    },
+    {
+      "startTime": 1724.811,
+      "title": "Worship — when we honor God, the gift, when we say He's the heaviest, we receive th…",
+      "kind": "worship",
+      "confidence": 0.9438652371658662,
+      "tags": [
+        "honor",
+        "god",
+        "worth",
+        "heaviness"
+      ]
+    },
+    {
+      "startTime": 3554.029,
+      "title": "Inviting Others to Serve",
+      "kind": "invitation",
+      "confidence": 0.7812881130477852,
+      "tags": [
+        "discipleship",
+        "service",
+        "mission"
+      ]
+    },
+    {
+      "startTime": 3661.981,
+      "title": "Prayer — you stoking the fires of revival, even in this moment",
+      "kind": "prayer",
+      "tags": [
+        "pray",
+        "thank",
+        "jesus",
+        "god"
+      ]
+    }
+  ]
+}

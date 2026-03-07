@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865646,
+  "feed": "first-baptist-columbia-wf",
+  "episode_slug": "2026-02-02-the-search-for-meaning-ecclesiastes-2-1-26-jwvfr5",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — among those was a guy named Errol Flynn",
+      "kind": "welcome",
+      "tags": [
+        "wichita falls",
+        "first baptist",
+        "baptist church",
+        "errol flynn"
+      ]
+    },
+    {
+      "startTime": 129.709,
+      "title": "Is Life Filled With More Than We Think?",
+      "kind": "message",
+      "tags": [
+        "life",
+        "meaning",
+        "questions"
+      ]
+    },
+    {
+      "startTime": 2011.81,
+      "title": "Outro — That is the view that life and the blessings of this life are a gift from G…",
+      "kind": "outro",
+      "tags": [
+        "constantly pursuing",
+        "solomon says",
+        "first baptist",
+        "god"
+      ]
+    }
+  ]
+}

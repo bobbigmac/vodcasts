@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772866046,
+  "feed": "fresh-life-church",
+  "episode_slug": "2021-04-11-a-life-filled-to-bursting-pastor-kevin-guido-11ljg2",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — my wife makes this lamb curry",
+      "kind": "scripture",
+      "tags": [
+        "bible app",
+        "lot",
+        "bible",
+        "colossians chapter"
+      ]
+    },
+    {
+      "startTime": 105.61699999999999,
+      "title": "Full to Bursting: Filling Up With Knowledge",
+      "kind": "message",
+      "tags": [
+        "knowledge",
+        "spiritual growth",
+        "wisdom"
+      ]
+    },
+    {
+      "startTime": 234.978,
+      "title": "Welcome — He does that by going out and starting churches",
+      "kind": "welcome",
+      "tags": [
+        "giving thanks",
+        "church",
+        "father",
+        "colossae"
+      ]
+    },
+    {
+      "startTime": 1988.666,
+      "title": "Invitation: Trust in Christ",
+      "kind": "invitation",
+      "confidence": 0.8880832513826711,
+      "tags": [
+        "trust",
+        "christ",
+        "conversion"
+      ]
+    },
+    {
+      "startTime": 2350.554,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "thank",
+        "god",
+        "let pray",
+        "pray"
+      ]
+    },
+    {
+      "startTime": 2480.248,
+      "title": "Praying Together: Drawing a Line in the Sand",
+      "kind": "invitation",
+      "confidence": 0.8787620335666184,
+      "tags": [
+        "prayer",
+        "decision",
+        "surrender"
+      ]
+    }
+  ]
+}

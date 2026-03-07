@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865942,
+  "feed": "fresh-life-church",
+  "episode_slug": "2021-02-21-four-keys-to-avoiding-relation-shipwreck-1pos6w",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — If you have a Bible, like I said, Genesis 24, the title of this…",
+      "kind": "scripture",
+      "tags": [
+        "valentine day",
+        "bible",
+        "patrick day",
+        "day"
+      ]
+    },
+    {
+      "startTime": 125.785,
+      "title": "Trust in God’s Providence",
+      "kind": "message",
+      "tags": [
+        "providence",
+        "trust",
+        "god"
+      ]
+    },
+    {
+      "startTime": 3329.474,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "father",
+        "always want",
+        "god",
+        "want"
+      ]
+    },
+    {
+      "startTime": 3459.342,
+      "title": "Invitation—In This Moment, Trust Christ",
+      "kind": "invitation",
+      "confidence": 0.7919548176429796,
+      "tags": [
+        "trust",
+        "salvation",
+        "repentance"
+      ]
+    },
+    {
+      "startTime": 3589.762,
+      "title": "Prayer — new life",
+      "kind": "prayer",
+      "tags": [
+        "come",
+        "say",
+        "life",
+        "later"
+      ]
+    }
+  ]
+}

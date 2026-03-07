@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864255,
+  "feed": "church-of-the-highlands-weekend-video",
+  "episode_slug": "2026-01-25-made-for-this-ministry-1nff8j",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — I want you to know, I am personally so excited about the season we're in…",
+      "kind": "welcome",
+      "tags": [
+        "dream team",
+        "god",
+        "hey church",
+        "dream"
+      ]
+    },
+    {
+      "startTime": 198.758,
+      "title": "Seeking God’s Kingdom",
+      "kind": "message",
+      "tags": [
+        "seeking",
+        "kingdom",
+        "god"
+      ]
+    },
+    {
+      "startTime": 294.84000000000003,
+      "title": "Giving / generosity — for this, I'm gonna give you a lifespan of 20 years",
+      "kind": "giving",
+      "tags": [
+        "years",
+        "god",
+        "god agreed",
+        "give"
+      ]
+    },
+    {
+      "startTime": 2008.29,
+      "title": "Ready to Serve?",
+      "kind": "invitation",
+      "confidence": 0.7960743882657866,
+      "tags": [
+        "discipleship",
+        "service",
+        "mission"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863890,
+  "feed": "catholic-sermons-station-of-the-cross",
+  "episode_slug": "2026-02-27-ember-friday-of-lent-2-7-26-1ftv1o",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — We have these beautiful complimentary passages again, the passage from Ezek…",
+      "kind": "intro",
+      "tags": [
+        "everyday living",
+        "inspirational priests",
+        "powerful sermons",
+        "cross presents"
+      ]
+    },
+    {
+      "startTime": 127.394,
+      "title": "Message — We can get our sins forgiven and we become whole again",
+      "kind": "message",
+      "tags": [
+        "first one",
+        "catholic church",
+        "sins",
+        "sins forgiven"
+      ]
+    },
+    {
+      "startTime": 171.06799999999998,
+      "title": "Prayer — Doxology",
+      "kind": "prayer",
+      "tags": [
+        "holy ghost",
+        "see god",
+        "god",
+        "shall see"
+      ]
+    },
+    {
+      "startTime": 301.812,
+      "title": "Welcome — we have the Stations of the Cross by the great moral theologian of the Ca…",
+      "kind": "welcome",
+      "tags": [
+        "catholic church",
+        "church",
+        "good confession",
+        "catholic"
+      ]
+    },
+    {
+      "startTime": 3242.809,
+      "title": "Prayer — Doxology",
+      "kind": "prayer",
+      "tags": [
+        "holy ghost",
+        "everyday living",
+        "media network",
+        "cross catholic"
+      ]
+    }
+  ]
+}

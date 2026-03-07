@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772862905,
+  "feed": "amazing-grace-baptist-mount-airy",
+  "episode_slug": "2026-02-23-2-thessalonians-pastor-jonathan-barker-wednesday-night-2-18-2-ejt24y",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start"
+    },
+    {
+      "startTime": 2.338,
+      "title": "Prayer — taking out time today to tune in to our preaching podca…",
+      "kind": "prayer",
+      "tags": [
+        "north carolina",
+        "jonathan barker",
+        "amazing grace",
+        "grace baptist"
+      ]
+    },
+    {
+      "startTime": 236.034,
+      "title": "The Heart of Paul: Centering the Church",
+      "kind": "message",
+      "tags": [
+        "shepherd",
+        "pastoral",
+        "encouragement"
+      ]
+    },
+    {
+      "startTime": 483.526,
+      "title": "Scripture reading — in chapter number two and the first three verses, number one to…",
+      "kind": "scripture",
+      "tags": [
+        "chapter number",
+        "jesus christ",
+        "number",
+        "lord jesus"
+      ]
+    },
+    {
+      "startTime": 2045.723,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "judgmental baptist",
+        "amen",
+        "god",
+        "offer restoration"
+      ]
+    }
+  ]
+}

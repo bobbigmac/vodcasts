@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864246,
+  "feed": "church-of-the-highlands-weekend-video",
+  "episode_slug": "2026-01-18-eternity-focused-finances-982kff",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — I know your campus pastor just took a moment in prayer earlier, but I jus…",
+      "kind": "welcome",
+      "tags": [
+        "god",
+        "alabama",
+        "just want",
+        "today"
+      ]
+    },
+    {
+      "startTime": 88.975,
+      "title": "Seeking First the Kingdom: A Divine Reordering of Life",
+      "kind": "message",
+      "tags": [
+        "seeking",
+        "kingdom",
+        "reordering"
+      ]
+    },
+    {
+      "startTime": 1797.652,
+      "title": "Giving / generosity — that spirit wants to bring to us not only a spirit of fear, b…",
+      "kind": "giving",
+      "tags": [
+        "praise party",
+        "week passing",
+        "god",
+        "spirit"
+      ]
+    },
+    {
+      "startTime": 1984.972,
+      "title": "Fill Us With Your Holy Spirit",
+      "kind": "invitation",
+      "confidence": 0.8712650964121958,
+      "tags": [
+        "hope",
+        "lordship",
+        "soul"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863879,
+  "feed": "catholic-sermons-station-of-the-cross",
+  "episode_slug": "2026-02-26-go-the-extra-mile-2-26-26-1p7q3w",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — His grandmother will tell you he gets involved in high school and drama",
+      "kind": "intro",
+      "tags": [
+        "extra step",
+        "extra mile",
+        "extra",
+        "everyday living"
+      ]
+    },
+    {
+      "startTime": 124.81700000000001,
+      "title": "Recovering from Loss and Redemption",
+      "kind": "message",
+      "tags": [
+        "loss",
+        "redemption",
+        "recovery"
+      ]
+    },
+    {
+      "startTime": 3242.726,
+      "title": "Prayer — Doxology",
+      "kind": "prayer",
+      "tags": [
+        "holy ghost",
+        "everyday living",
+        "ghost",
+        "media network"
+      ]
+    }
+  ]
+}

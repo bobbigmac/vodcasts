@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863457,
+  "feed": "btic-podcast-video",
+  "episode_slug": "2025-01-12-the-call-of-abraham-tz3d41",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start"
+    },
+    {
+      "startTime": 21.378,
+      "title": "The Call of Abraham: The Power of Love",
+      "kind": "message",
+      "tags": [
+        "faith",
+        "history",
+        "love"
+      ]
+    },
+    {
+      "startTime": 51.677,
+      "title": "Worship — We thank you and praise you in the mighty name of Jesus",
+      "kind": "worship",
+      "confidence": 0.8504313807773649,
+      "tags": [
+        "lord",
+        "going",
+        "snowy day",
+        "worship together"
+      ]
+    },
+    {
+      "startTime": 726.861,
+      "title": "Scripture reading — if you have your Bible and you're wanting to get ahead, as soon…",
+      "kind": "scripture",
+      "tags": [
+        "starting point",
+        "going",
+        "god",
+        "starting"
+      ]
+    },
+    {
+      "startTime": 2464.327,
+      "title": "Reconnecting with God Today",
+      "kind": "invitation",
+      "confidence": 0.7018027205701126,
+      "tags": [
+        "reconnection",
+        "god",
+        "connection"
+      ]
+    },
+    {
+      "startTime": 2577.762,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "holy spirit",
+        "jesus christ",
+        "mighty"
+      ]
+    }
+  ]
+}

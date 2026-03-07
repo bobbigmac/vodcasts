@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865443,
+  "feed": "eric-walsh-sermons",
+  "episode_slug": "2026-01-26-eric-walsh-defeating-the-strong-man-15lbdn",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "bible says",
+        "strong man",
+        "isaiah",
+        "verse"
+      ]
+    },
+    {
+      "startTime": 28.825,
+      "title": "Prayer — this opportunity to study a word",
+      "kind": "prayer",
+      "tags": [
+        "father god",
+        "jesus",
+        "lord",
+        "father"
+      ]
+    },
+    {
+      "startTime": 133.619,
+      "title": "The Strong Man, the Devil Has Control Over the Earth",
+      "kind": "message",
+      "tags": [
+        "devotion",
+        "spiritual-warfare",
+        "exorcism"
+      ]
+    },
+    {
+      "startTime": 260.004,
+      "title": "Welcome — The church itself has been possessed by devils",
+      "kind": "welcome",
+      "tags": [
+        "church",
+        "satan kingdom",
+        "said",
+        "satan"
+      ]
+    },
+    {
+      "startTime": 383.765,
+      "title": "Worship — they said, what do you have to do with us demon?",
+      "kind": "worship",
+      "confidence": 0.6014809589154858,
+      "tags": [
+        "demon said",
+        "demon",
+        "said",
+        "cast"
+      ]
+    },
+    {
+      "startTime": 3425.085,
+      "title": "Prayer — begin to push away those things that feed the flesh cau…",
+      "kind": "prayer",
+      "tags": [
+        "father god",
+        "god",
+        "father",
+        "lord"
+      ]
+    }
+  ]
+}

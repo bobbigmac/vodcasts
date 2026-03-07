@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863755,
+  "feed": "calvary-chapel-fort-lauderdale",
+  "episode_slug": "2026-01-11-week-two-reflect-rejoice-mzvv2c",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — There will be times that you pause and you completely mess it up",
+      "kind": "intro",
+      "tags": [
+        "four-part series",
+        "pastor doug",
+        "means",
+        "doug introduced"
+      ]
+    },
+    {
+      "startTime": 7.682,
+      "title": "Scripture reading — There will be times that you pause and you completely mess it up",
+      "kind": "scripture",
+      "tags": [
+        "four-part series",
+        "pastor doug",
+        "means",
+        "doug introduced"
+      ]
+    },
+    {
+      "startTime": 111.13499999999999,
+      "title": "Prayer Practice: Connecting with God’s Heart",
+      "kind": "message",
+      "tags": [
+        "prayer",
+        "connection",
+        "heavenly father"
+      ]
+    },
+    {
+      "startTime": 321.526,
+      "title": "Scripture reading — I want to give you like a closer magnifying look at this prayer",
+      "kind": "scripture",
+      "tags": [
+        "three months",
+        "verse nine",
+        "india",
+        "matthew chapter"
+      ]
+    },
+    {
+      "startTime": 910.717,
+      "title": "Scripture reading — He tries to focus and meditate on God's presence and he gets mo…",
+      "kind": "scripture",
+      "tags": [
+        "god",
+        "matter essentially",
+        "psalm",
+        "god presence"
+      ]
+    },
+    {
+      "startTime": 2913.315,
+      "title": "Prayer & Invitation - Hear His Word This Morning",
+      "kind": "invitation",
+      "confidence": 0.8987335381461166,
+      "tags": [
+        "prayer",
+        "invitation"
+      ]
+    },
+    {
+      "startTime": 3047.906,
+      "title": "Prayer & Invitation - Hear His Word This Morning",
+      "kind": "invitation",
+      "confidence": 0.7018027205701126,
+      "tags": [
+        "prayer",
+        "invitation",
+        "heaven"
+      ]
+    },
+    {
+      "startTime": 3074.338,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "lord jesus",
+        "jesus christ",
+        "lord",
+        "dear lord"
+      ]
+    },
+    {
+      "startTime": 3243.041,
+      "title": "Invitation - Join Us for Worship!",
+      "kind": "invitation",
+      "confidence": 0.7677637252702412,
+      "tags": [
+        "worship",
+        "community"
+      ]
+    }
+  ]
+}

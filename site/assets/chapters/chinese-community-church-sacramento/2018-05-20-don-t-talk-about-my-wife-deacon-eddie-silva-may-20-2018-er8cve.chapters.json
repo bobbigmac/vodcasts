@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864187,
+  "feed": "chinese-community-church-sacramento",
+  "episode_slug": "2018-05-20-don-t-talk-about-my-wife-deacon-eddie-silva-may-20-2018-er8cve",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Just as Christ loved the church, and gave himself up for her to make her ho…",
+      "kind": "intro",
+      "tags": [
+        "wonderful day",
+        "lord day",
+        "day",
+        "good morning"
+      ]
+    },
+    {
+      "startTime": 29.122,
+      "title": "Welcome — Just as Christ loved the church, and gave himself up for her to make her…",
+      "kind": "welcome",
+      "tags": [
+        "god",
+        "isaiah",
+        "word",
+        "lord"
+      ]
+    },
+    {
+      "startTime": 159.09300000000002,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "lord father",
+        "happy birthday",
+        "just pray",
+        "birthday"
+      ]
+    },
+    {
+      "startTime": 278.85,
+      "title": "Praise for Siblings and Wisdom from Michelle",
+      "kind": "message",
+      "tags": [
+        "siblings",
+        "wisdom",
+        "sisters"
+      ]
+    }
+  ]
+}

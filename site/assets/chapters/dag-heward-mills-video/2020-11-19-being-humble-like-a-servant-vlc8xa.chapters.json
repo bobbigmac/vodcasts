@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865082,
+  "feed": "dag-heward-mills-video",
+  "episode_slug": "2020-11-19-being-humble-like-a-servant-vlc8xa",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — In this Thursday's teaching, Bishop Dag will continue to teach on the subje…",
+      "kind": "intro",
+      "tags": [
+        "hewitt mills",
+        "dag hewitt",
+        "mills podcast",
+        "mills ministries"
+      ]
+    },
+    {
+      "startTime": 67.931,
+      "title": "Prayer — the great blessing and opportunity we have this morning…",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "holy word",
+        "humble",
+        "amen"
+      ]
+    },
+    {
+      "startTime": 415.451,
+      "title": "Scripture reading — he says, Leviathan, the dragon, is the king over all the childr…",
+      "kind": "scripture",
+      "tags": [
+        "verse one",
+        "read verse",
+        "thou let",
+        "leviathan"
+      ]
+    },
+    {
+      "startTime": 543.106,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "humble",
+        "servant",
+        "bible tells",
+        "amen"
+      ]
+    },
+    {
+      "startTime": 806.491,
+      "title": "Welcome — I said there shall be no cleaner in our church office",
+      "kind": "welcome",
+      "tags": [
+        "whatever god",
+        "god wants",
+        "god",
+        "church"
+      ]
+    },
+    {
+      "startTime": 883.52,
+      "title": "Eating Bigness: Leadership and Humility",
+      "kind": "message",
+      "tags": [
+        "leadership",
+        "humility",
+        "discipleship"
+      ]
+    },
+    {
+      "startTime": 3408.642,
+      "title": "Adapt and Serve - Find Your Humility",
+      "kind": "invitation",
+      "confidence": 0.9645630422784014,
+      "tags": [
+        "humility",
+        "adaptation",
+        "servant leadership"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863466,
+  "feed": "btic-podcast-video",
+  "episode_slug": "2025-01-19-the-birth-of-the-church-1pmdo6",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "stories",
+        "story",
+        "tell",
+        "know"
+      ]
+    },
+    {
+      "startTime": 148.376,
+      "title": "Celebrating the Birth of the Church",
+      "kind": "message",
+      "tags": [
+        "beginnings",
+        "church",
+        "birth"
+      ]
+    },
+    {
+      "startTime": 273.608,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "holy spirit",
+        "spirit",
+        "holy",
+        "pentecostal"
+      ]
+    },
+    {
+      "startTime": 2286.318,
+      "title": "Worship — what are we doing to prepare ourselves to be ready to embrace that power?",
+      "kind": "worship",
+      "confidence": 0.6246889011486004,
+      "tags": [
+        "worship together",
+        "together",
+        "ready",
+        "serve"
+      ]
+    },
+    {
+      "startTime": 2439.838,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "want",
+        "let pray",
+        "pray",
+        "father"
+      ]
+    }
+  ]
+}

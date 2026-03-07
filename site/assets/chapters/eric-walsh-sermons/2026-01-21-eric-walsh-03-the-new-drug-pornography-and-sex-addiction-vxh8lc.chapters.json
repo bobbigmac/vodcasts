@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865396,
+  "feed": "eric-walsh-sermons",
+  "episode_slug": "2026-01-21-eric-walsh-03-the-new-drug-pornography-and-sex-addiction-vxh8lc",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "problems",
+        "speak",
+        "going",
+        "third session"
+      ]
+    },
+    {
+      "startTime": 62.783,
+      "title": "Prayer — this opportunity to study a word and to deal with these…",
+      "kind": "prayer",
+      "tags": [
+        "david",
+        "lord",
+        "father god",
+        "holy ghost"
+      ]
+    },
+    {
+      "startTime": 177.21800000000002,
+      "title": "David's Seduction: Understanding Sexual Temptation",
+      "kind": "message",
+      "tags": [
+        "sin",
+        "sexuality",
+        "temptation"
+      ]
+    },
+    {
+      "startTime": 3485.831,
+      "title": "Prayer — this opportunity to study a word and to deal with these…",
+      "kind": "prayer",
+      "tags": [
+        "come back",
+        "lord",
+        "going",
+        "holy ghost"
+      ]
+    }
+  ]
+}

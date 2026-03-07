@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863351,
+  "feed": "bridgetown",
+  "episode_slug": "2026-02-17-7-deadly-sins-gluttony-1rh95f",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Early afternoon when the farmer poured out the feed, the whole place came a…",
+      "kind": "intro",
+      "tags": [
+        "may",
+        "lord",
+        "jesus",
+        "word"
+      ]
+    },
+    {
+      "startTime": 90.33500000000001,
+      "title": "Scripture reading — Early afternoon when the farmer poured out the feed, the whole…",
+      "kind": "scripture",
+      "tags": [
+        "may",
+        "lord",
+        "jesus",
+        "word"
+      ]
+    },
+    {
+      "startTime": 220.402,
+      "title": "Relearning Gluttony: Finding True Fulfillment Through Communion",
+      "kind": "message",
+      "tags": [
+        "gluttony",
+        "fulfillment",
+        "communion"
+      ]
+    },
+    {
+      "startTime": 2257.861,
+      "title": "Confessing Vice: A Path to Healing Desire",
+      "kind": "invitation",
+      "confidence": 0.6865138191173947,
+      "tags": [
+        "vice",
+        "healing",
+        "desire"
+      ]
+    }
+  ]
+}

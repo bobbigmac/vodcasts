@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863644,
+  "feed": "calvary-chapel-anne-arundel",
+  "episode_slug": "2026-01-11-the-seal-tzvyt7",
+  "chapters": [
+    {
+      "startTime": 1.698,
+      "title": "Worship — We are in Ephesians chapter one verse 11 through 14",
+      "kind": "worship",
+      "confidence": 0.6014809589154858,
+      "tags": [
+        "chapter one",
+        "ephesians chapter",
+        "one verse",
+        "word"
+      ]
+    },
+    {
+      "startTime": 127.138,
+      "title": "Everything He’s Done Is According to His Will",
+      "kind": "message",
+      "tags": [
+        "faith",
+        "grace",
+        "savior"
+      ]
+    },
+    {
+      "startTime": 255.085,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "perfect love",
+        "love",
+        "father",
+        "perfect"
+      ]
+    },
+    {
+      "startTime": 1611.338,
+      "title": "Worship — There's the trinity and the praise and the glory and the point that I'm b…",
+      "kind": "worship",
+      "confidence": 0.9327944872602503,
+      "tags": [
+        "holy spirit",
+        "praise",
+        "spirit",
+        "glory"
+      ]
+    }
+  ]
+}

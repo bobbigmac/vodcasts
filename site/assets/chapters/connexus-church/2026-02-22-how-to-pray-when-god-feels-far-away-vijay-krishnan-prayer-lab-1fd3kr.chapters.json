@@ -2,37 +2,44 @@
   "version": 1,
   "generator": {
     "name": "vodcasts-answer-engine",
-    "version": 2,
-    "mode": "semantic"
+    "version": 4,
+    "mode": "hybrid"
   },
-  "generated_at_unix": 1772851883,
+  "generated_at_unix": 1772864710,
   "feed": "connexus-church",
   "episode_slug": "2026-02-22-how-to-pray-when-god-feels-far-away-vijay-krishnan-prayer-lab-1fd3kr",
   "chapters": [
     {
       "startTime": 0.0,
       "title": "Start",
-      "kind": "start"
+      "kind": "start",
+      "tags": [
+        "conexus",
+        "jeff brody",
+        "hey",
+        "going"
+      ]
     },
     {
       "startTime": 128.642,
-      "title": "Message — so I'm reading from Psalm 139 in the new living translation",
-      "kind": "message"
-    },
-    {
-      "startTime": 615.148,
-      "title": "Topic — You know my thoughts and everything about me and you're going to lead me in…",
-      "kind": "topic"
-    },
-    {
-      "startTime": 1128.8029999999999,
-      "title": "Topic — I'm becoming more aware of God's presence in my past",
-      "kind": "topic"
+      "title": "Prayer—Finding Peace in God’s Presence",
+      "kind": "message",
+      "tags": [
+        "prayer",
+        "peace",
+        "god"
+      ]
     },
     {
       "startTime": 1702.472,
       "title": "Prayer — Doxology",
-      "kind": "prayer"
+      "kind": "prayer",
+      "tags": [
+        "holy spirit",
+        "father",
+        "spirit",
+        "holy"
+      ]
     }
   ]
 }

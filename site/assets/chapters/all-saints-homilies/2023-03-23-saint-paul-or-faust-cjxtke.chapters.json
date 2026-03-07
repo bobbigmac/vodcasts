@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772862820,
+  "feed": "all-saints-homilies",
+  "episode_slug": "2023-03-23-saint-paul-or-faust-cjxtke",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — First question I will ask each of these folks be baptized",
+      "kind": "intro",
+      "tags": [
+        "saints orthodox",
+        "henry reardon",
+        "touchstone magazine",
+        "faith radio"
+      ]
+    },
+    {
+      "startTime": 102.989,
+      "title": "Faith, Hope, and Patience: Navigating Modern Sin",
+      "kind": "message",
+      "tags": [
+        "faith",
+        "hope",
+        "patience"
+      ]
+    },
+    {
+      "startTime": 1310.089,
+      "title": "Outro — This has been a presentation of Ancient Faith Radio",
+      "kind": "outro",
+      "tags": [
+        "pat reardon",
+        "touchstone magazine",
+        "saints orthodox",
+        "father pat"
+      ]
+    }
+  ]
+}

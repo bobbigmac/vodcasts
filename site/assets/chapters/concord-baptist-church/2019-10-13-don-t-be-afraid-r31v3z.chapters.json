@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864581,
+  "feed": "concord-baptist-church",
+  "episode_slug": "2019-10-13-don-t-be-afraid-r31v3z",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — We're gonna talk about don't be afraid",
+      "kind": "welcome",
+      "tags": [
+        "concord",
+        "know",
+        "storm",
+        "faith"
+      ]
+    },
+    {
+      "startTime": 71.81,
+      "title": "Welcome — We're gonna talk about don't be afraid",
+      "kind": "welcome",
+      "tags": [
+        "concord",
+        "know",
+        "storm",
+        "faith"
+      ]
+    },
+    {
+      "startTime": 194.48,
+      "title": "In the Midst of Storms: Trusting Jesus Through Trials",
+      "kind": "message",
+      "tags": [
+        "trials",
+        "trust",
+        "jesus"
+      ]
+    },
+    {
+      "startTime": 240.156,
+      "title": "Prayer — all these things in jesus' name, we pray",
+      "kind": "prayer",
+      "tags": [
+        "father",
+        "pray",
+        "snow",
+        "let pray"
+      ]
+    },
+    {
+      "startTime": 1984.05,
+      "title": "Trust in Christ During Storms",
+      "kind": "invitation",
+      "confidence": 0.7746273444605613,
+      "tags": [
+        "storm",
+        "trust",
+        "christ"
+      ]
+    },
+    {
+      "startTime": 2112.133,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "next step",
+        "want",
+        "come",
+        "pray"
+      ]
+    }
+  ]
+}

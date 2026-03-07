@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863967,
+  "feed": "catholic-sermons-station-of-the-cross",
+  "episode_slug": "2026-03-05-fight-temptation-3-5-26-1vlpfz",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "devil",
+        "jesus",
+        "devil goes",
+        "powerful sermons"
+      ]
+    },
+    {
+      "startTime": 127.396,
+      "title": "Expecting Temptation: Understanding God’s Allowance",
+      "kind": "message",
+      "tags": [
+        "temptation",
+        "god's will",
+        "faith"
+      ]
+    },
+    {
+      "startTime": 3237.537,
+      "title": "Prayer — Doxology",
+      "kind": "prayer",
+      "tags": [
+        "holy spirit",
+        "holy names",
+        "holy",
+        "everyday living"
+      ]
+    }
+  ]
+}

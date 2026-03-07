@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863711,
+  "feed": "calvary-chapel-fort-lauderdale",
+  "episode_slug": "2025-12-14-week-two-table-5wo1jl",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — today we're gonna talk about the power of a table",
+      "kind": "intro",
+      "tags": [
+        "table",
+        "god",
+        "around",
+        "ordinary"
+      ]
+    },
+    {
+      "startTime": 224.642,
+      "title": "The Table’s Power: Security and Connection",
+      "kind": "message",
+      "tags": [
+        "security",
+        "connection",
+        "table"
+      ]
+    },
+    {
+      "startTime": 2954.498,
+      "title": "Invitation - Find Rest and Forgiveness",
+      "kind": "invitation",
+      "confidence": 0.895649515245235,
+      "tags": [
+        "rest",
+        "forgiveness",
+        "soul"
+      ]
+    },
+    {
+      "startTime": 3296.751,
+      "title": "Find Your Place in God’s Family",
+      "kind": "invitation",
+      "confidence": 0.9321190606282386,
+      "tags": [
+        "community",
+        "welcoming",
+        "family"
+      ]
+    }
+  ]
+}

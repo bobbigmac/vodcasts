@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772866139,
+  "feed": "godspeak-calvary",
+  "episode_slug": "2026-02-01-who-you-can-be-genesis-32-22-32-joshua-broome-1pwmmh",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "weeks ago",
+        "many pregnancy",
+        "pregnancy centers",
+        "coming together"
+      ]
+    },
+    {
+      "startTime": 133.217,
+      "title": "Prayer — your word that is true",
+      "kind": "prayer",
+      "tags": [
+        "even fathom",
+        "within someone",
+        "leave behind",
+        "fathom speaking"
+      ]
+    },
+    {
+      "startTime": 263.621,
+      "title": "Jacob’s Wrestling Experience: Finding Peace Amid Tribulations",
+      "kind": "message",
+      "tags": [
+        "tribulations",
+        "peace",
+        "wrestling"
+      ]
+    },
+    {
+      "startTime": 2810.501,
+      "title": "Finding Forgiveness and Healing",
+      "kind": "invitation",
+      "confidence": 0.5506710358827784,
+      "tags": [
+        "forgiveness",
+        "healing",
+        "confession"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864353,
+  "feed": "church-on-the-rock",
+  "episode_slug": "2026-02-15-in-his-presence-part-3-rw4jyo",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — during the week, I was a carnal Christian",
+      "kind": "welcome",
+      "tags": [
+        "christian",
+        "god",
+        "carnal christian",
+        "church"
+      ]
+    },
+    {
+      "startTime": 239.567,
+      "title": "Hunger for God: Revitalizing Your Desire for Scripture",
+      "kind": "message",
+      "tags": [
+        "hunger",
+        "desire",
+        "scripture"
+      ]
+    },
+    {
+      "startTime": 1934.822,
+      "title": "Invitation— Surrender My Life to Jesus",
+      "kind": "invitation",
+      "confidence": 0.8173164759472653,
+      "tags": [
+        "surrender",
+        "religion",
+        "relationship"
+      ]
+    },
+    {
+      "startTime": 2038.013,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "simply saying",
+        "want",
+        "church"
+      ]
+    }
+  ]
+}

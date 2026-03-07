@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772866164,
+  "feed": "godspeak-calvary",
+  "episode_slug": "2026-02-15-listening-loving-and-living-the-word-nehemiah-8-craig-linquis-1210jn",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "valentine day",
+        "day",
+        "valentine",
+        "last night"
+      ]
+    },
+    {
+      "startTime": 126.481,
+      "title": "Seeking First the Kingdom of God",
+      "kind": "message",
+      "tags": [
+        "seeking",
+        "kingdom",
+        "god"
+      ]
+    },
+    {
+      "startTime": 3278.882,
+      "title": "Prayer — this chapter in which we see the people, your people, r…",
+      "kind": "prayer",
+      "tags": [
+        "wicked ways",
+        "lord",
+        "people",
+        "may"
+      ]
+    }
+  ]
+}

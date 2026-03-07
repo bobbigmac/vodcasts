@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772862925,
+  "feed": "amazing-grace-baptist-mount-airy",
+  "episode_slug": "2026-03-02-spiritual-gifts-pastor-jonathan-barker-wednesday-night-2-25-2-1rwid6",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "north carolina",
+        "jonathan barker",
+        "amazing grace",
+        "grace baptist"
+      ]
+    },
+    {
+      "startTime": 127.414,
+      "title": "Understanding Spiritual Gifts: A Call to Wisdom and Grace",
+      "kind": "message",
+      "tags": [
+        "spiritual gifts",
+        "wisdom",
+        "grace"
+      ]
+    }
+  ]
+}

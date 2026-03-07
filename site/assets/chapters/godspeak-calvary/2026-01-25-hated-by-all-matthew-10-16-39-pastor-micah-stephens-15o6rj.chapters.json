@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772866127,
+  "feed": "godspeak-calvary",
+  "episode_slug": "2026-01-25-hated-by-all-matthew-10-16-39-pastor-micah-stephens-15o6rj",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Giving / generosity — What was it that these two churches did?",
+      "kind": "giving",
+      "tags": [
+        "attendance grew",
+        "offering grew",
+        "music sounded",
+        "kids ministry"
+      ]
+    },
+    {
+      "startTime": 131.037,
+      "title": "Welcome — because these two churches, it was the church of Smyrna and the church of…",
+      "kind": "welcome",
+      "tags": [
+        "great turnover",
+        "christ",
+        "jesus",
+        "stamp"
+      ]
+    },
+    {
+      "startTime": 174.722,
+      "title": "Giving / generosity — What was it that these two churches did?",
+      "kind": "giving",
+      "tags": [
+        "attendance grew",
+        "offering grew",
+        "music sounded",
+        "kids ministry"
+      ]
+    },
+    {
+      "startTime": 303.357,
+      "title": "Scripture reading — as we open up Matthew chapter 10, I would invite you to stand f…",
+      "kind": "scripture",
+      "tags": [
+        "god",
+        "expect",
+        "god word",
+        "jesus"
+      ]
+    },
+    {
+      "startTime": 430.771,
+      "title": "The Warning Against Hatred",
+      "kind": "message",
+      "tags": [
+        "hatred",
+        "jesus",
+        "followers"
+      ]
+    },
+    {
+      "startTime": 637.733,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "yes",
+        "let god",
+        "god speak"
+      ]
+    },
+    {
+      "startTime": 3326.636,
+      "title": "Prayer — the second chance, i was seeking to save my own life an…",
+      "kind": "prayer",
+      "tags": [
+        "peter",
+        "jesus",
+        "john",
+        "god"
+      ]
+    },
+    {
+      "startTime": 3454.533,
+      "title": "Benediction — This is peace with God, especially in covenant relationship with Him",
+      "kind": "benediction",
+      "tags": [
+        "god",
+        "peace",
+        "hebrew",
+        "want"
+      ]
+    },
+    {
+      "startTime": 3585.945,
+      "title": "Lord, We Thank You for Your Faithfulness",
+      "kind": "invitation",
+      "confidence": 0.944423787388517,
+      "tags": [
+        "faithfulness",
+        "thanksgiving",
+        "devotion"
+      ]
+    }
+  ]
+}

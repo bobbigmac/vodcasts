@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864620,
+  "feed": "concord-baptist-church",
+  "episode_slug": "2019-11-10-the-one-thing-you-should-be-focused-on-6g8ma",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — Came downstairs, my wife had already gone to bed",
+      "kind": "welcome",
+      "tags": [
+        "matthew chapter",
+        "matthew",
+        "steve park",
+        "already"
+      ]
+    },
+    {
+      "startTime": 74.274,
+      "title": "Welcome — Came downstairs, my wife had already gone to bed",
+      "kind": "welcome",
+      "tags": [
+        "matthew chapter",
+        "matthew",
+        "steve park",
+        "already"
+      ]
+    },
+    {
+      "startTime": 176.622,
+      "title": "Love God with All Your Heart",
+      "kind": "message",
+      "tags": [
+        "love",
+        "god",
+        "heart"
+      ]
+    },
+    {
+      "startTime": 2054.114,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "let pray",
+        "may",
+        "father",
+        "thank"
+      ]
+    }
+  ]
+}

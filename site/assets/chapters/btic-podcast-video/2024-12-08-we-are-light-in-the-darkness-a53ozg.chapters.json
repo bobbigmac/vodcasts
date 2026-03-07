@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863433,
+  "feed": "btic-podcast-video",
+  "episode_slug": "2024-12-08-we-are-light-in-the-darkness-a53ozg",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Where hope is planted, light shines and darkness is ultimately overcome",
+      "kind": "intro",
+      "tags": [
+        "welcome home",
+        "brea temple",
+        "light",
+        "going"
+      ]
+    },
+    {
+      "startTime": 17.41,
+      "title": "Welcome — Where hope is planted, light shines and darkness is ultimately overcome",
+      "kind": "welcome",
+      "tags": [
+        "welcome home",
+        "brea temple",
+        "light",
+        "going"
+      ]
+    },
+    {
+      "startTime": 145.74,
+      "title": "The Light of Christ Overcomes Darkness",
+      "kind": "message",
+      "tags": [
+        "hope",
+        "sin",
+        "darkness"
+      ]
+    },
+    {
+      "startTime": 2186.351,
+      "title": "Prayer — being a light that shines, that shines through us into…",
+      "kind": "prayer",
+      "tags": [
+        "light",
+        "father",
+        "pray",
+        "darkness"
+      ]
+    }
+  ]
+}

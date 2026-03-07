@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865579,
+  "feed": "faith-christian-churchs",
+  "episode_slug": "2013-02-04-1-20-13-reaching-3westn",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Now, Paul starts off the Scripture after he's talking about people who have…",
+      "kind": "intro",
+      "tags": [
+        "christian church",
+        "torren brooks",
+        "faith christian",
+        "pastor torren"
+      ]
+    },
+    {
+      "startTime": 110.29599999999999,
+      "title": "None of Us Have Attained",
+      "kind": "message",
+      "tags": [
+        "attainment",
+        "status",
+        "self-evaluation"
+      ]
+    },
+    {
+      "startTime": 291.746,
+      "title": "Scripture reading — See, behold is a visual cue that in the story something is ther…",
+      "kind": "scripture",
+      "tags": [
+        "behold",
+        "move forward",
+        "jesus gives",
+        "see"
+      ]
+    }
+  ]
+}

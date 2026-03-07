@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864306,
+  "feed": "church-of-the-highlands-weekend-video",
+  "episode_slug": "2026-03-01-why-you-still-feel-stuck-17lpf5",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — I mean, you just love a cluttered house",
+      "kind": "intro",
+      "tags": [
+        "happy sunday",
+        "sunday",
+        "love",
+        "cluttered"
+      ]
+    },
+    {
+      "startTime": 36.066,
+      "title": "Welcome — I mean, you just love a cluttered house",
+      "kind": "welcome",
+      "tags": [
+        "happy sunday",
+        "sunday",
+        "love",
+        "cluttered"
+      ]
+    },
+    {
+      "startTime": 125.995,
+      "title": "Spiritual Spring Cleaning—Clutter-Free Living",
+      "kind": "message",
+      "tags": [
+        "clutter",
+        "spiritual decluttering",
+        "cleaning"
+      ]
+    },
+    {
+      "startTime": 209.136,
+      "title": "Scripture reading — It's just an incredible chapter in the Bible",
+      "kind": "scripture",
+      "tags": [
+        "god",
+        "romans chapter",
+        "somebody",
+        "chapter"
+      ]
+    },
+    {
+      "startTime": 1978.878,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "today",
+        "romans",
+        "across highlands"
+      ]
+    }
+  ]
+}

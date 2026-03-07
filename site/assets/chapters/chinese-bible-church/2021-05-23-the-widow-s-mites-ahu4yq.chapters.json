@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864067,
+  "feed": "chinese-bible-church",
+  "episode_slug": "2021-05-23-the-widow-s-mites-ahu4yq",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — he said, of a truth I say unto you, that this poor widow hath cast in more…",
+      "kind": "intro",
+      "tags": [
+        "luke chapter",
+        "gonna start",
+        "luke",
+        "verse"
+      ]
+    },
+    {
+      "startTime": 46.291,
+      "title": "Giving / generosity — For all these have their abundance cast in unto the offerings…",
+      "kind": "giving",
+      "tags": [
+        "abundance cast",
+        "god",
+        "hath cast",
+        "cast"
+      ]
+    },
+    {
+      "startTime": 73.899,
+      "title": "Prayer — your word, the bible",
+      "kind": "prayer",
+      "tags": [
+        "heard",
+        "know",
+        "bible",
+        "read"
+      ]
+    },
+    {
+      "startTime": 202.197,
+      "title": "Jesus Sitting at the Temple",
+      "kind": "message",
+      "tags": [
+        "temple",
+        "treasury",
+        "money"
+      ]
+    },
+    {
+      "startTime": 234.799,
+      "title": "Giving / generosity — she throws in her two pennies, her two mites, and Jesus point…",
+      "kind": "giving",
+      "tags": [
+        "say",
+        "bible",
+        "widow",
+        "know"
+      ]
+    },
+    {
+      "startTime": 1624.565,
+      "title": "Prayer — the story of this widow here",
+      "kind": "prayer",
+      "tags": [
+        "stingy toward",
+        "people",
+        "whatever",
+        "jesus"
+      ]
+    }
+  ]
+}

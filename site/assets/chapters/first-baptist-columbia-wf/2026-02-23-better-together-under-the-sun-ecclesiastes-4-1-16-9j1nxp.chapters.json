@@ -2,27 +2,43 @@
   "version": 1,
   "generator": {
     "name": "vodcasts-answer-engine",
-    "version": 2,
-    "mode": "semantic"
+    "version": 4,
+    "mode": "hybrid"
   },
-  "generated_at_unix": 1772851889,
+  "generated_at_unix": 1772865669,
   "feed": "first-baptist-columbia-wf",
   "episode_slug": "2026-02-23-better-together-under-the-sun-ecclesiastes-4-1-16-9j1nxp",
   "chapters": [
     {
       "startTime": 0.0,
       "title": "Intro — We're glad you're part of First Baptist Church, Wichita Falls, Texas",
-      "kind": "intro"
+      "kind": "intro",
+      "tags": [
+        "first baptist",
+        "baptist church",
+        "wichita falls",
+        "baptist"
+      ]
     },
     {
       "startTime": 115.101,
-      "title": "Message — so Solomon is telling us that this reality that there is no one to comfor…",
-      "kind": "message"
+      "title": "The Power of Three Strands",
+      "kind": "message",
+      "tags": [
+        "application",
+        "teaching"
+      ]
     },
     {
-      "startTime": 1263.646,
-      "title": "Topic — then Solomon says this, he said, and there is a second youth who succeeds h…",
-      "kind": "topic"
+      "startTime": 2085.549,
+      "title": "Outro — Because a cord of three strands is not easily broken",
+      "kind": "outro",
+      "tags": [
+        "woven together",
+        "first baptist",
+        "easily broken",
+        "wigital falls"
+      ]
     }
   ]
 }

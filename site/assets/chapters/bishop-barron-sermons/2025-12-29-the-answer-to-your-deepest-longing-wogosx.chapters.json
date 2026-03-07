@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863236,
+  "feed": "bishop-barron-sermons",
+  "episode_slug": "2025-12-29-the-answer-to-your-deepest-longing-wogosx",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Well, I think it's some ways it's telling the whole spiritual life that you…",
+      "kind": "intro",
+      "tags": [
+        "catholic ministries",
+        "fire catholic",
+        "word",
+        "god word"
+      ]
+    },
+    {
+      "startTime": 121.036,
+      "title": "The Quest for Joy: Unfulfillable Longing in Life",
+      "kind": "message",
+      "tags": [
+        "joy",
+        "longing",
+        "life"
+      ]
+    },
+    {
+      "startTime": 887.202,
+      "title": "Outro — We're the three kings, everybody, longing for Christ",
+      "kind": "outro",
+      "tags": [
+        "incense rises",
+        "human figure",
+        "honoring christ",
+        "incense"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865116,
+  "feed": "desiring-god-messages",
+  "episode_slug": "2025-12-27-word-prayer-and-people-three-habits-for-enjoying-jesus-1ks7x8",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "jesus christ",
+        "desiring god",
+        "jesus",
+        "college"
+      ]
+    },
+    {
+      "startTime": 128.511,
+      "title": "Enjoying God’s Presence",
+      "kind": "message",
+      "tags": [
+        "enjoyment",
+        "god",
+        "presence"
+      ]
+    },
+    {
+      "startTime": 298.562,
+      "title": "Giving / generosity — This may be my favorite means of grace quote outside the Bible",
+      "kind": "giving",
+      "tags": [
+        "grace",
+        "holy spirit",
+        "come",
+        "come buy"
+      ]
+    }
+  ]
+}

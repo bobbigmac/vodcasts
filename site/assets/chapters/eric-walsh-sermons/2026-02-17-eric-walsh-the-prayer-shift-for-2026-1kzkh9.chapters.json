@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865469,
+  "feed": "eric-walsh-sermons",
+  "episode_slug": "2026-02-17-eric-walsh-the-prayer-shift-for-2026-1kzkh9",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — that is one of the things I love about the Sabbath",
+      "kind": "intro",
+      "tags": [
+        "happy sabbath",
+        "sabbath",
+        "god",
+        "prayer shift"
+      ]
+    },
+    {
+      "startTime": 99.99600000000001,
+      "title": "Prayer — this opportunity to study your word",
+      "kind": "prayer",
+      "tags": [
+        "father god",
+        "lord",
+        "let pray",
+        "father"
+      ]
+    },
+    {
+      "startTime": 219.047,
+      "title": "Moses' Education: From Sheep to Hero",
+      "kind": "message",
+      "tags": [
+        "education",
+        "sheep",
+        "hero"
+      ]
+    },
+    {
+      "startTime": 3208.545,
+      "title": "Giving / generosity — he shouts, don't give her any more morphine",
+      "kind": "giving",
+      "tags": [
+        "thing flatlined",
+        "lord",
+        "said",
+        "morphine"
+      ]
+    },
+    {
+      "startTime": 3280.951,
+      "title": "Prayer — you forgive us of our sin, lord",
+      "kind": "prayer",
+      "tags": [
+        "father god",
+        "lord",
+        "god",
+        "father"
+      ]
+    }
+  ]
+}

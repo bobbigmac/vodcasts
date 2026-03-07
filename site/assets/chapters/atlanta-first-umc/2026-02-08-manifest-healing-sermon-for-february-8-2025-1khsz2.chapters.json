@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863067,
+  "feed": "atlanta-first-umc",
+  "episode_slug": "2026-02-08-manifest-healing-sermon-for-february-8-2025-1khsz2",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — Will you call this a fast, a day acceptable to the Lord?",
+      "kind": "scripture",
+      "tags": [
+        "old testament",
+        "versus one",
+        "one",
+        "psalms one"
+      ]
+    },
+    {
+      "startTime": 144.113,
+      "title": "The Salt of the Earth",
+      "kind": "message",
+      "tags": [
+        "discipleship",
+        "service",
+        "mission"
+      ]
+    },
+    {
+      "startTime": 1304.305,
+      "title": "Benediction — after we have done our best, may the Lord grant us peace",
+      "kind": "benediction",
+      "tags": [
+        "united methodist",
+        "methodist church",
+        "methodist christians",
+        "methodist"
+      ]
+    }
+  ]
+}

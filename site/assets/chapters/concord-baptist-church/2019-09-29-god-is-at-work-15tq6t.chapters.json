@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864564,
+  "feed": "concord-baptist-church",
+  "episode_slug": "2019-09-29-god-is-at-work-15tq6t",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — then there's those who are monotheists, right?",
+      "kind": "welcome",
+      "tags": [
+        "god",
+        "concord",
+        "one god",
+        "maybe"
+      ]
+    },
+    {
+      "startTime": 73.538,
+      "title": "Welcome — then there's those who are monotheists, right?",
+      "kind": "welcome",
+      "tags": [
+        "god",
+        "concord",
+        "one god",
+        "maybe"
+      ]
+    },
+    {
+      "startTime": 183.064,
+      "title": "Jesus continues his work",
+      "kind": "message",
+      "tags": [
+        "jesus",
+        "work",
+        "serving"
+      ]
+    },
+    {
+      "startTime": 420.858,
+      "title": "Prayer — the words of scripture",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "experiencing god",
+        "let pray",
+        "pray together"
+      ]
+    },
+    {
+      "startTime": 2086.804,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "maybe",
+        "let pray",
+        "pray together",
+        "see god"
+      ]
+    }
+  ]
+}

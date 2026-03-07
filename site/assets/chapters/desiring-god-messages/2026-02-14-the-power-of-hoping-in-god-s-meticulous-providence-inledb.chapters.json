@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865182,
+  "feed": "desiring-god-messages",
+  "episode_slug": "2026-02-14-the-power-of-hoping-in-god-s-meticulous-providence-inledb",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "need",
+        "pray",
+        "moment need",
+        "invite"
+      ]
+    },
+    {
+      "startTime": 117.44200000000001,
+      "title": "Memorial Service Reflections",
+      "kind": "message",
+      "tags": [
+        "mourning",
+        "loss",
+        "purpose"
+      ]
+    }
+  ]
+}

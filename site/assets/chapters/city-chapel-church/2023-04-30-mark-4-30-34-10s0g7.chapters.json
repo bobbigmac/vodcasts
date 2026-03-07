@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864434,
+  "feed": "city-chapel-church",
+  "episode_slug": "2023-04-30-mark-4-30-34-10s0g7",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — That's where the kingdom of God ultimately resides is within your own heart",
+      "kind": "intro",
+      "tags": [
+        "god",
+        "kingdom",
+        "long",
+        "mark"
+      ]
+    },
+    {
+      "startTime": 128.92,
+      "title": "The Tiny Seed Grows Giant",
+      "kind": "message",
+      "tags": [
+        "parables",
+        "growth",
+        "faith"
+      ]
+    },
+    {
+      "startTime": 236.75900000000001,
+      "title": "Welcome — that is important because I think in the King James, it says it grows to…",
+      "kind": "welcome",
+      "tags": [
+        "king james",
+        "largest",
+        "trees",
+        "yet"
+      ]
+    },
+    {
+      "startTime": 298.406,
+      "title": "Giving / generosity — It was the kind of sermon that makes you want to just never p…",
+      "kind": "giving",
+      "tags": [
+        "preach",
+        "think brandon",
+        "monday thursday",
+        "service"
+      ]
+    },
+    {
+      "startTime": 3064.642,
+      "title": "Scripture reading — See, even God even told Saul, he said, you're going to die in t…",
+      "kind": "scripture",
+      "tags": [
+        "god",
+        "chapter",
+        "saul",
+        "david"
+      ]
+    },
+    {
+      "startTime": 3861.139,
+      "title": "Prayer — the year working",
+      "kind": "prayer",
+      "tags": [
+        "fighting",
+        "fight",
+        "strength",
+        "god"
+      ]
+    },
+    {
+      "startTime": 3977.954,
+      "title": "Announcements — anyway, so the first laser tag ever that Rocky could have gone to w…",
+      "kind": "announcements",
+      "tags": [
+        "blazer tag",
+        "rocky",
+        "tag",
+        "star wars"
+      ]
+    }
+  ]
+}

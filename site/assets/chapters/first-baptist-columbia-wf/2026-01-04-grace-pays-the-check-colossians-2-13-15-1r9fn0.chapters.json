@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865626,
+  "feed": "first-baptist-columbia-wf",
+  "episode_slug": "2026-01-04-grace-pays-the-check-colossians-2-13-15-1r9fn0",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — I'm going to start the new year off in church",
+      "kind": "welcome",
+      "tags": [
+        "wichita falls",
+        "first baptist",
+        "baptist church",
+        "baptist"
+      ]
+    },
+    {
+      "startTime": 225.344,
+      "title": "We Can’t Fix Our Sins",
+      "kind": "message",
+      "tags": [
+        "sin",
+        "grace",
+        "change"
+      ]
+    },
+    {
+      "startTime": 1248.059,
+      "title": "Outro — It was nailed to the cross spiritually",
+      "kind": "outro",
+      "tags": [
+        "grace paid",
+        "first baptist",
+        "wiginal falls",
+        "grace"
+      ]
+    }
+  ]
+}

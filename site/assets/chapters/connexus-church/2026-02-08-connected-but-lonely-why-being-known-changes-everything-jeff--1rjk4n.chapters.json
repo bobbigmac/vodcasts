@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864693,
+  "feed": "connexus-church",
+  "episode_slug": "2026-02-08-connected-but-lonely-why-being-known-changes-everything-jeff--1rjk4n",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — we're gonna start the conversation today talking about loneliness",
+      "kind": "intro",
+      "tags": [
+        "connected",
+        "today",
+        "lonely",
+        "thing"
+      ]
+    },
+    {
+      "startTime": 256.913,
+      "title": "The Lonely Culture: Why We Can’t Stop Scrolling",
+      "kind": "message",
+      "tags": [
+        "culture",
+        "technology",
+        "loneliness"
+      ]
+    },
+    {
+      "startTime": 2311.906,
+      "title": "Prayer — the gift of your son jesus, his sacrifice on the cross,…",
+      "kind": "prayer",
+      "tags": [
+        "become close",
+        "jesus",
+        "friends",
+        "god"
+      ]
+    }
+  ]
+}

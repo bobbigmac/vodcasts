@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865351,
+  "feed": "eric-walsh-sermons",
+  "episode_slug": "2025-12-22-eric-walsh-when-god-spared-not-fu1tt2",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — they shall keep the way of the Lord to do justice and judgment that the Lor…",
+      "kind": "intro",
+      "tags": [
+        "abraham",
+        "god",
+        "lord",
+        "shall"
+      ]
+    },
+    {
+      "startTime": 28.706,
+      "title": "Prayer — this opportunity to study a word",
+      "kind": "prayer",
+      "tags": [
+        "father god",
+        "god",
+        "let pray",
+        "lord"
+      ]
+    },
+    {
+      "startTime": 141.32,
+      "title": "Scripture reading — they shall keep the way of the Lord to do justice and judgment…",
+      "kind": "scripture",
+      "tags": [
+        "abraham",
+        "god",
+        "lord",
+        "shall"
+      ]
+    },
+    {
+      "startTime": 260.226,
+      "title": "Will You Destroy the Righteous with the Wicked?",
+      "kind": "message",
+      "tags": [
+        "sin",
+        "judgment",
+        "righteousness"
+      ]
+    },
+    {
+      "startTime": 370.651,
+      "title": "Scripture reading — Abraham believed God and it was counted unto him for righteousn…",
+      "kind": "scripture",
+      "tags": [
+        "abraham",
+        "god",
+        "believed god",
+        "abraham believed"
+      ]
+    },
+    {
+      "startTime": 2524.877,
+      "title": "Christ Was Not Spared So That You and I Could Be",
+      "kind": "invitation",
+      "confidence": 0.6246889011486004,
+      "tags": [
+        "sacrifice",
+        "grace",
+        "salvation"
+      ]
+    }
+  ]
+}

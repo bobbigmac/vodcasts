@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865541,
+  "feed": "exceed-life-church",
+  "episode_slug": "2026-02-22-keys-to-walking-in-god-s-love-112156",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start"
+    },
+    {
+      "startTime": 4.098,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "god love",
+        "love",
+        "amen"
+      ]
+    },
+    {
+      "startTime": 611.58,
+      "title": "Closing Thoughts on Relationships",
+      "kind": "message",
+      "tags": [
+        "relationships",
+        "trust",
+        "growth"
+      ]
+    }
+  ]
+}

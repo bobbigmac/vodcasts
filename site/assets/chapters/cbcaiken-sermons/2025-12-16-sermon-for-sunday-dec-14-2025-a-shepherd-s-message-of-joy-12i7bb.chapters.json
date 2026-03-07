@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863975,
+  "feed": "cbcaiken-sermons",
+  "episode_slug": "2025-12-16-sermon-for-sunday-dec-14-2025-a-shepherd-s-message-of-joy-12i7bb",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — Talk about these shepherds a little bit this morning as we talk…",
+      "kind": "scripture",
+      "tags": [
+        "going",
+        "candle",
+        "luke",
+        "joy"
+      ]
+    },
+    {
+      "startTime": 103.35499999999999,
+      "title": "Shepherds' Joy: A Child's Birth",
+      "kind": "message",
+      "tags": [
+        "sheep",
+        "birth",
+        "joy"
+      ]
+    },
+    {
+      "startTime": 184.672,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "jesus christ",
+        "jesus",
+        "father",
+        "lord"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772866086,
+  "feed": "godspeak-calvary",
+  "episode_slug": "2026-01-11-let-your-yes-be-yes-matthew-5-33-37-pastor-micah-stephens-1vvbqs",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "lord",
+        "fear",
+        "proverbs",
+        "god"
+      ]
+    },
+    {
+      "startTime": 126.722,
+      "title": "Fear of the Lord: A Strong Confidence",
+      "kind": "message",
+      "tags": [
+        "fear",
+        "lord",
+        "confidence"
+      ]
+    },
+    {
+      "startTime": 382.978,
+      "title": "Scripture reading — if you don't have a Bible you can raise your hand",
+      "kind": "scripture",
+      "tags": [
+        "god",
+        "taken hold",
+        "tell",
+        "need"
+      ]
+    },
+    {
+      "startTime": 3028.322,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "pray",
+        "know",
+        "swear"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864192,
+  "feed": "chinese-community-church-sacramento",
+  "episode_slug": "2018-05-27-are-we-losing-our-minds-pastor-louis-lee-may-27-2018-waa4ym",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "jesus christ",
+        "christ",
+        "little bit",
+        "bit hard"
+      ]
+    },
+    {
+      "startTime": 126.071,
+      "title": "Struggling with Impatience: How to Slow Down and Drive Safely",
+      "kind": "message",
+      "tags": [
+        "driving",
+        "impatience",
+        "safety"
+      ]
+    },
+    {
+      "startTime": 813.606,
+      "title": "Prayer — the new life that we can experience in christ",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "let pray",
+        "great god",
+        "father"
+      ]
+    }
+  ]
+}

@@ -5,7 +5,7 @@
     "version": 4,
     "mode": "hybrid"
   },
-  "generated_at_unix": 1772856896,
+  "generated_at_unix": 1772865325,
   "feed": "eaglebrook",
   "episode_slug": "2026-02-22-will-you-follow-jesus-ka8qrt",
   "chapters": [
@@ -34,7 +34,7 @@
       "startTime": 3310.21,
       "title": "Come Follow Jesus",
       "kind": "invitation",
-      "confidence": 0.7558567168465629,
+      "confidence": 0.7919548176429796,
       "tags": [
         "invitation",
         "faith",

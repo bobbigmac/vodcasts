@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865690,
+  "feed": "first-church-warsaw-methodist",
+  "episode_slug": "2016-05-02-my-one-and-only-luke-14-25-27-162brl",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "completely committed",
+        "becoming completely",
+        "old testament",
+        "jesus"
+      ]
+    },
+    {
+      "startTime": 130.63400000000001,
+      "title": "The Messiah Sitting Next to Me",
+      "kind": "message",
+      "tags": [
+        "messiah",
+        "study",
+        "miracle"
+      ]
+    },
+    {
+      "startTime": 258.082,
+      "title": "Scripture reading — If you get your Bibles out, Luke 14, Whether it's your Bible or…",
+      "kind": "scripture",
+      "tags": [
+        "bible",
+        "bible studies",
+        "jesus",
+        "luke"
+      ]
+    },
+    {
+      "startTime": 1829.41,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "help",
+        "god",
+        "dear god",
+        "let pray"
+      ]
+    }
+  ]
+}

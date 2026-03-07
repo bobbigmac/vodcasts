@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863241,
+  "feed": "bishop-barron-sermons",
+  "episode_slug": "2026-01-05-side-by-side-with-sinners-1fbl45",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Giving / generosity — Well, then why would he be going to John the Baptist who is o…",
+      "kind": "giving",
+      "tags": [
+        "john",
+        "repentance",
+        "jesus",
+        "seeking repentance"
+      ]
+    },
+    {
+      "startTime": 110.922,
+      "title": "Giving / generosity — Well, then why would he be going to John the Baptist who is o…",
+      "kind": "giving",
+      "tags": [
+        "john",
+        "repentance",
+        "jesus",
+        "seeking repentance"
+      ]
+    },
+    {
+      "startTime": 236.252,
+      "title": "Jesus Identifies With Sinners",
+      "kind": "message",
+      "tags": [
+        "sin",
+        "repentance",
+        "identification"
+      ]
+    }
+  ]
+}

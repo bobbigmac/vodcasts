@@ -1,0 +1,92 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772862949,
+  "feed": "antioch-church",
+  "episode_slug": "2023-11-19-rooted-responsive-worship-1twzdv",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Worship — Christian worship then at this layer isn't something we do, it's a way of…",
+      "kind": "worship",
+      "tags": [
+        "god",
+        "worship",
+        "christian worship",
+        "christian"
+      ]
+    },
+    {
+      "startTime": 77.863,
+      "title": "Welcome — This morning, we're talking about worship",
+      "kind": "welcome",
+      "tags": [
+        "worship",
+        "lord",
+        "week",
+        "thanks"
+      ]
+    },
+    {
+      "startTime": 205.843,
+      "title": "Worship — Christian worship then at this layer isn't something we do, it's a way of…",
+      "kind": "worship",
+      "confidence": 0.9211336002093251,
+      "tags": [
+        "god",
+        "worship",
+        "christian worship",
+        "christian"
+      ]
+    },
+    {
+      "startTime": 450.402,
+      "title": "Living Sacrifice: Bringing Our Whole Self to God",
+      "kind": "message",
+      "tags": [
+        "sacrifice",
+        "worship",
+        "christianity"
+      ]
+    },
+    {
+      "startTime": 489.384,
+      "title": "Worship — worship isn't just something we do",
+      "kind": "worship",
+      "confidence": 0.8379742490661192,
+      "tags": [
+        "god",
+        "worship",
+        "christian worship",
+        "worship god"
+      ]
+    },
+    {
+      "startTime": 1716.435,
+      "title": "Worship — This is the liturgy that shapes our gatherings",
+      "kind": "worship",
+      "confidence": 0.6604044743550609,
+      "tags": [
+        "says sundays",
+        "worship",
+        "sundays",
+        "antioch"
+      ]
+    },
+    {
+      "startTime": 1840.65,
+      "title": "Worship Shapes Public Identity",
+      "kind": "invitation",
+      "confidence": 0.7746273444605613,
+      "tags": [
+        "public identity",
+        "worship",
+        "worldview"
+      ]
+    }
+  ]
+}

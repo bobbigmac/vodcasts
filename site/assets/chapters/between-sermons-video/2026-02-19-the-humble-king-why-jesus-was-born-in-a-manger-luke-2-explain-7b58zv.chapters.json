@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863224,
+  "feed": "between-sermons-video",
+  "episode_slug": "2026-02-19-the-humble-king-why-jesus-was-born-in-a-manger-luke-2-explain-7b58zv",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — You know, it is the story that comes around every December, right?",
+      "kind": "intro",
+      "tags": [
+        "christmas",
+        "christmas story",
+        "story",
+        "know"
+      ]
+    },
+    {
+      "startTime": 248.318,
+      "title": "Exploring Historical Accuracy in Luke’s Gospel",
+      "kind": "message",
+      "tags": [
+        "historicalaccuracy",
+        "biblicalrevelation",
+        "gospeltruth"
+      ]
+    },
+    {
+      "startTime": 3432.308,
+      "title": "Giving / generosity — they just disbelieved that they could have been the ones actu…",
+      "kind": "giving",
+      "tags": [
+        "jerusalem",
+        "sacrificial lamb",
+        "bethlehem",
+        "lamb"
+      ]
+    },
+    {
+      "startTime": 3812.738,
+      "title": "Outro — Like he is the greatest gift for us",
+      "kind": "outro",
+      "tags": [
+        "kept coming",
+        "just kept",
+        "greatest gift",
+        "stop saying"
+      ]
+    }
+  ]
+}

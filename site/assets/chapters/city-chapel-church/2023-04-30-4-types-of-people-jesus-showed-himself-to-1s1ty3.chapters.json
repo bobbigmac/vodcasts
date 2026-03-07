@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864405,
+  "feed": "city-chapel-church",
+  "episode_slug": "2023-04-30-4-types-of-people-jesus-showed-himself-to-1s1ty3",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "easter story",
+        "easter",
+        "long",
+        "jesus"
+      ]
+    },
+    {
+      "startTime": 126.902,
+      "title": "Jesus Appeared to Select People",
+      "kind": "message",
+      "tags": [
+        "select",
+        "people",
+        "empathy"
+      ]
+    },
+    {
+      "startTime": 2675.414,
+      "title": "Outro — you need him to speak peace to your heart",
+      "kind": "outro",
+      "tags": [
+        "lou says",
+        "last week",
+        "lou",
+        "made last"
+      ]
+    },
+    {
+      "startTime": 2806.803,
+      "title": "Receive the Holy Spirit Today",
+      "kind": "invitation",
+      "confidence": 0.7812881130477852,
+      "tags": [
+        "revelation",
+        "quitting",
+        "freshness"
+      ]
+    },
+    {
+      "startTime": 2878.274,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "lord will",
+        "whoever calls",
+        "jesus",
+        "lord"
+      ]
+    }
+  ]
+}

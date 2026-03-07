@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863909,
+  "feed": "catholic-sermons-station-of-the-cross",
+  "episode_slug": "2026-02-28-ember-saturday-of-lent-2-28-26-mhhec",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — the souls, the sons and daughters that the parents give to the church, That…",
+      "kind": "intro",
+      "tags": [
+        "ember days",
+        "powerful sermons",
+        "everyday living",
+        "presents sermons"
+      ]
+    },
+    {
+      "startTime": 3.746,
+      "title": "Welcome — the souls, the sons and daughters that the parents give to the church, Th…",
+      "kind": "welcome",
+      "tags": [
+        "ember days",
+        "powerful sermons",
+        "everyday living",
+        "presents sermons"
+      ]
+    },
+    {
+      "startTime": 130.356,
+      "title": "Fear Not - Sacrificing for the Kingdom",
+      "kind": "message",
+      "tags": [
+        "sacrifice",
+        "kingdom",
+        "discipleship"
+      ]
+    },
+    {
+      "startTime": 338.882,
+      "title": "Welcome — Whether the Catholic Church that the world sees, that's a caricature",
+      "kind": "welcome",
+      "tags": [
+        "catholic church",
+        "traditional mass",
+        "church",
+        "mass"
+      ]
+    }
+  ]
+}

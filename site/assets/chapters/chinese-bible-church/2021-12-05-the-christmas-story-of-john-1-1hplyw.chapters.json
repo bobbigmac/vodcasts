@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864125,
+  "feed": "chinese-bible-church",
+  "episode_slug": "2021-12-05-the-christmas-story-of-john-1-1hplyw",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "god",
+        "word",
+        "light",
+        "john chapter"
+      ]
+    },
+    {
+      "startTime": 81.495,
+      "title": "Prayer — your word, the bible",
+      "kind": "prayer",
+      "tags": [
+        "christmas",
+        "christmas story",
+        "book",
+        "word"
+      ]
+    },
+    {
+      "startTime": 203.579,
+      "title": "The Deity of Christ",
+      "kind": "message",
+      "tags": [
+        "deity",
+        "christ",
+        "divinity"
+      ]
+    },
+    {
+      "startTime": 1684.304,
+      "title": "Prayer — your word, the bible",
+      "kind": "prayer",
+      "tags": [
+        "let pray",
+        "god",
+        "dear god",
+        "thank"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863945,
+  "feed": "catholic-sermons-station-of-the-cross",
+  "episode_slug": "2026-03-03-st-katherine-drexel-3-3-26-4muy79",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — for he shall be delivered to the Gentiles and shall be mocked and scourged…",
+      "kind": "intro",
+      "tags": [
+        "everyday living",
+        "inspirational priests",
+        "cross presents",
+        "powerful sermons"
+      ]
+    },
+    {
+      "startTime": 73.243,
+      "title": "Prayer — Doxology",
+      "kind": "prayer",
+      "tags": [
+        "holy ghost",
+        "understood none",
+        "ghost",
+        "father"
+      ]
+    },
+    {
+      "startTime": 197.228,
+      "title": "The Manly Pursuit of Virtue",
+      "kind": "message",
+      "tags": [
+        "virtue",
+        "manliness",
+        "pursuit"
+      ]
+    },
+    {
+      "startTime": 3243.55,
+      "title": "Prayer — Doxology",
+      "kind": "prayer",
+      "tags": [
+        "holy spirit",
+        "everyday living",
+        "father",
+        "son"
+      ]
+    }
+  ]
+}

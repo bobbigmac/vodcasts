@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865305,
+  "feed": "dungeness-community-church",
+  "episode_slug": "2026-02-23-in-him-paul-s-letter-to-the-ephesians-tim-richards-3-of-12-vi-2rgq7y",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — we're actually going to think a bit about the entire chapter of…",
+      "kind": "scripture",
+      "tags": [
+        "ephesians chapter",
+        "ephesians",
+        "chapter",
+        "going"
+      ]
+    },
+    {
+      "startTime": 242.274,
+      "title": "The Resurrection: A New Beginning",
+      "kind": "message",
+      "tags": [
+        "resurrection",
+        "new beginning",
+        "faith"
+      ]
+    },
+    {
+      "startTime": 1923.23,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "lord jesus",
+        "thank",
+        "let pray",
+        "lord"
+      ]
+    }
+  ]
+}

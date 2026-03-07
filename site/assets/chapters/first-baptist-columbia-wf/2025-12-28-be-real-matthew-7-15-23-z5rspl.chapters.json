@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865614,
+  "feed": "first-baptist-columbia-wf",
+  "episode_slug": "2025-12-28-be-real-matthew-7-15-23-z5rspl",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — I am especially excited to be here because this is my home church, all ri…",
+      "kind": "welcome",
+      "tags": [
+        "wichita falls",
+        "first baptist",
+        "baptist church",
+        "first"
+      ]
+    },
+    {
+      "startTime": 216.964,
+      "title": "Beware False Prophets: The Warning Against Temptation",
+      "kind": "message",
+      "tags": [
+        "warning",
+        "prophets",
+        "temptation"
+      ]
+    },
+    {
+      "startTime": 421.721,
+      "title": "Teeth and Faith",
+      "kind": "story",
+      "tags": [
+        "faith",
+        "teeth",
+        "healing"
+      ]
+    },
+    {
+      "startTime": 1931.797,
+      "title": "Outro — if I can make an encouragement for you as we begin to step into a new year,…",
+      "kind": "outro",
+      "tags": [
+        "funny sunday",
+        "sunday",
+        "new year",
+        "sunday right"
+      ]
+    }
+  ]
+}

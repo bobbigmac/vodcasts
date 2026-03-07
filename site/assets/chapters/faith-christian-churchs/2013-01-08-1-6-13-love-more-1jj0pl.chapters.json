@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865559,
+  "feed": "faith-christian-churchs",
+  "episode_slug": "2013-01-08-1-6-13-love-more-1jj0pl",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — For the next 30 minutes, we're going to be looking through God's Word and f…",
+      "kind": "intro",
+      "tags": [
+        "pastor torrin",
+        "torrin brooks",
+        "faith christian",
+        "christian church"
+      ]
+    },
+    {
+      "startTime": 44.031,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "philippi",
+        "heavenly father",
+        "paul",
+        "lord"
+      ]
+    },
+    {
+      "startTime": 158.162,
+      "title": "Praying for Others",
+      "kind": "message",
+      "tags": [
+        "prayer",
+        "love",
+        "discernment"
+      ]
+    },
+    {
+      "startTime": 1733.465,
+      "title": "Prayer — watching today's service, but you really should visit i…",
+      "kind": "prayer",
+      "tags": [
+        "love",
+        "god",
+        "sin",
+        "church"
+      ]
+    }
+  ]
+}

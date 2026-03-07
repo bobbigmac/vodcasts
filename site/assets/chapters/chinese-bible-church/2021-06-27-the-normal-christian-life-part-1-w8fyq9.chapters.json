@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864074,
+  "feed": "chinese-bible-church",
+  "episode_slug": "2021-06-27-the-normal-christian-life-part-1-w8fyq9",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start"
+    },
+    {
+      "startTime": 3.298,
+      "title": "Prayer — gathering us here in your house today to hear your word…",
+      "kind": "prayer",
+      "tags": [
+        "romans chapter",
+        "come short",
+        "god",
+        "normal"
+      ]
+    },
+    {
+      "startTime": 114.487,
+      "title": "Likewise, There’s No Turning Back the Clock on the Pandemic",
+      "kind": "message",
+      "tags": [
+        "pandemic",
+        "normalcy",
+        "recovery"
+      ]
+    },
+    {
+      "startTime": 1571.189,
+      "title": "Prayer — giving us your words here in the bible",
+      "kind": "prayer",
+      "tags": [
+        "holy spirit",
+        "let pray",
+        "dear god",
+        "holy"
+      ]
+    }
+  ]
+}

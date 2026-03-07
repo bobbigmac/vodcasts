@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863542,
+  "feed": "buford-road-baptist",
+  "episode_slug": "2024-05-11-jesus-knows-our-every-need-so-believe-and-obey-1tuy55",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — it says, trust in the Lord and do good",
+      "kind": "scripture",
+      "tags": [
+        "verse",
+        "want",
+        "lord",
+        "know"
+      ]
+    },
+    {
+      "startTime": 129.779,
+      "title": "Scripture reading — it says, trust in the Lord and do good",
+      "kind": "scripture",
+      "tags": [
+        "verse",
+        "want",
+        "lord",
+        "know"
+      ]
+    },
+    {
+      "startTime": 258.966,
+      "title": "The Beginning of Miracles",
+      "kind": "message",
+      "tags": [
+        "miracles",
+        "beginning",
+        "ministry"
+      ]
+    }
+  ]
+}

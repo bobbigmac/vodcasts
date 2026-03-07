@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865413,
+  "feed": "eric-walsh-sermons",
+  "episode_slug": "2026-01-22-eric-walsh-04-healing-the-brain-after-addiction-the-power-of--xn8w9n",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — so beating addiction and healing the brain, the power of the Adventist heal…",
+      "kind": "intro",
+      "tags": [
+        "last one",
+        "really focusing",
+        "last",
+        "one"
+      ]
+    },
+    {
+      "startTime": 24.839,
+      "title": "Prayer — this opportunity to continue on our study and to move f…",
+      "kind": "prayer",
+      "tags": [
+        "father god",
+        "move forward",
+        "bible says",
+        "lord"
+      ]
+    },
+    {
+      "startTime": 137.375,
+      "title": "In Other Words: The Cross Revisited",
+      "kind": "message",
+      "tags": [
+        "cross",
+        "sacrifice",
+        "faith"
+      ]
+    },
+    {
+      "startTime": 3320.129,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "going",
+        "want",
+        "christ"
+      ]
+    }
+  ]
+}

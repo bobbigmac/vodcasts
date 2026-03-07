@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864661,
+  "feed": "connexus-church",
+  "episode_slug": "2026-01-18-why-the-algorithm-feeds-your-anger-and-how-jesus-forms-you-je-os18nx",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "soul",
+        "part two",
+        "starve",
+        "two today"
+      ]
+    },
+    {
+      "startTime": 125.937,
+      "title": "Reprogramming Your Algorithm: Five Ways to Make Social Media Healthier",
+      "kind": "message",
+      "tags": [
+        "socialmedia",
+        "algorithm",
+        "wellness"
+      ]
+    },
+    {
+      "startTime": 1772.156,
+      "title": "Jesus, Form Me",
+      "kind": "invitation",
+      "confidence": 0.6246889011486004,
+      "tags": [
+        "formation",
+        "compassion",
+        "freedom"
+      ]
+    },
+    {
+      "startTime": 1895.416,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "posting",
+        "make",
+        "like jesus",
+        "may"
+      ]
+    }
+  ]
+}

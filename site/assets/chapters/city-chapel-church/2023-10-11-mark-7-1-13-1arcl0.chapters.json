@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864467,
+  "feed": "city-chapel-church",
+  "episode_slug": "2023-10-11-mark-7-1-13-1arcl0",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — We've been preaching verse by verse through the Gospel of Mark",
+      "kind": "intro",
+      "tags": [
+        "mark",
+        "gospel",
+        "mark chapter",
+        "peter"
+      ]
+    },
+    {
+      "startTime": 3.138,
+      "title": "Scripture reading — If you have a Bible, Mark 7, we're going to continue on",
+      "kind": "scripture",
+      "tags": [
+        "mark",
+        "mark chapter",
+        "chapter seven",
+        "king james"
+      ]
+    },
+    {
+      "startTime": 125.863,
+      "title": "Welcome — that's why I love the Gospel of Mark, because it is a pastoral gospel",
+      "kind": "welcome",
+      "tags": [
+        "mark",
+        "gospel",
+        "eat unless",
+        "mark tells"
+      ]
+    },
+    {
+      "startTime": 247.234,
+      "title": "In Fact, God Is Writing a New Chapter",
+      "kind": "message",
+      "tags": [
+        "newchapter",
+        "godwriting",
+        "newbeginning"
+      ]
+    },
+    {
+      "startTime": 2561.753,
+      "title": "Submit Your Conscience to God",
+      "kind": "invitation",
+      "confidence": 0.6865138191173947,
+      "tags": [
+        "desire",
+        "conscience",
+        "submission"
+      ]
+    },
+    {
+      "startTime": 2684.546,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "want",
+        "god",
+        "desire",
+        "change"
+      ]
+    }
+  ]
+}

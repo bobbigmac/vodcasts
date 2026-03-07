@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863364,
+  "feed": "bridgetown",
+  "episode_slug": "2026-02-22-the-good-news-about-our-bodies-work-yjb3jq",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — What interest does God have in that workplace?",
+      "kind": "intro",
+      "tags": [
+        "street north",
+        "amazon assembly",
+        "lord",
+        "columbia river"
+      ]
+    },
+    {
+      "startTime": 104.616,
+      "title": "Scripture reading — What interest does God have in that workplace?",
+      "kind": "scripture",
+      "tags": [
+        "street north",
+        "amazon assembly",
+        "lord",
+        "columbia river"
+      ]
+    },
+    {
+      "startTime": 219.031,
+      "title": "The Meaning of Life: Ruling Over Creation",
+      "kind": "message",
+      "tags": [
+        "meaningoflife",
+        "creation",
+        "purpose"
+      ]
+    },
+    {
+      "startTime": 2910.082,
+      "title": "Giving / generosity — I wonder if success in Jesus' kingdom might require some of u…",
+      "kind": "giving",
+      "tags": [
+        "god original",
+        "original design",
+        "loving service",
+        "skill set"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865701,
+  "feed": "first-church-warsaw-methodist",
+  "episode_slug": "2016-05-02-your-dirty-heart-dana-mark-4-3-8-11whq7",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "mark chapter",
+        "jesus",
+        "teach",
+        "people"
+      ]
+    },
+    {
+      "startTime": 131.367,
+      "title": "A Farmer Sows His Seed",
+      "kind": "message",
+      "tags": [
+        "parable",
+        "illustration",
+        "truth"
+      ]
+    },
+    {
+      "startTime": 2191.059,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "god",
+        "speak",
+        "thank"
+      ]
+    }
+  ]
+}

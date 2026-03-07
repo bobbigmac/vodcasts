@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864106,
+  "feed": "chinese-bible-church",
+  "episode_slug": "2021-09-12-balaam-part-2-paxzgx",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — the angel of the Lord said unto Balaam, Go with the men, but only the word…",
+      "kind": "intro",
+      "tags": [
+        "balaam",
+        "god",
+        "said unto",
+        "unto"
+      ]
+    },
+    {
+      "startTime": 93.331,
+      "title": "Scripture reading — Balaam said unto the angel of the Lord, I have sinned, for I kn…",
+      "kind": "scripture",
+      "tags": [
+        "said unto",
+        "fell flat",
+        "three times",
+        "lord said"
+      ]
+    },
+    {
+      "startTime": 181.762,
+      "title": "Prayer — your word, the bible",
+      "kind": "prayer",
+      "tags": [
+        "today message",
+        "god",
+        "word",
+        "curse israel"
+      ]
+    },
+    {
+      "startTime": 310.367,
+      "title": "Giving / generosity — he tells Balaam, please come and curse Israel",
+      "kind": "giving",
+      "tags": [
+        "god",
+        "curse israel",
+        "israel",
+        "balaam"
+      ]
+    },
+    {
+      "startTime": 419.69100000000003,
+      "title": "He Realizes His Mistake and Talks to the Angel",
+      "kind": "message",
+      "tags": [
+        "sin",
+        "focus",
+        "stewardship"
+      ]
+    },
+    {
+      "startTime": 1899.776,
+      "title": "Prayer — help us with this that on day-to-day basis we stay fait…",
+      "kind": "prayer",
+      "tags": [
+        "worldly",
+        "worldly thing",
+        "let accept",
+        "worldly goal"
+      ]
+    }
+  ]
+}

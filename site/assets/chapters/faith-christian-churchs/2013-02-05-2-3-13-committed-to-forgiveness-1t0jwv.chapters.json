@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865588,
+  "feed": "faith-christian-churchs",
+  "episode_slug": "2013-02-05-2-3-13-committed-to-forgiveness-1t0jwv",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — You have to understand that for Jesus to even get to the cross,…",
+      "kind": "scripture",
+      "tags": [
+        "christian church",
+        "pastor torrin",
+        "torrin brooks",
+        "faith christian"
+      ]
+    },
+    {
+      "startTime": 112.368,
+      "title": "Welcome — what Jesus did is he cleared out the area that was made for the Gentiles…",
+      "kind": "welcome",
+      "tags": [
+        "tables",
+        "wood tables",
+        "plastic tables",
+        "last supper"
+      ]
+    },
+    {
+      "startTime": 233.375,
+      "title": "Commitment Above Church Commitments",
+      "kind": "message",
+      "tags": [
+        "commitment",
+        "church",
+        "discipleship"
+      ]
+    }
+  ]
+}

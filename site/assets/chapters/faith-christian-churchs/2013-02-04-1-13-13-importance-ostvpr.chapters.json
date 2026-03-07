@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865569,
+  "feed": "faith-christian-churchs",
+  "episode_slug": "2013-02-04-1-13-13-importance-ostvpr",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Hope you enjoy this morning's sermon",
+      "kind": "intro",
+      "tags": [
+        "christian church",
+        "pastor torrin",
+        "torrin brooks",
+        "faith christian"
+      ]
+    },
+    {
+      "startTime": 85.587,
+      "title": "The Power of Ministry",
+      "kind": "message",
+      "tags": [
+        "ministry",
+        "discipleship",
+        "service"
+      ]
+    },
+    {
+      "startTime": 1829.073,
+      "title": "Outro — Our lives show how much we care about what Christ did for us by how we trea…",
+      "kind": "outro",
+      "tags": [
+        "ministry pouring",
+        "gospel getting",
+        "jesus christ",
+        "community shows"
+      ]
+    }
+  ]
+}

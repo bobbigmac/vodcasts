@@ -532,6 +532,17 @@ _BOUNDARY_REVIEW_KINDS = {
 _HARD_LOCKED_KINDS = {"start", "welcome", "intro", "worship", "prayer", "scripture", "reading", "announcements", "giving", "ad", "transition", "benediction", "outro"}
 
 
+def _is_open_content_kind(kind: str) -> bool:
+    k = normalize_ws(str(kind or "")).strip().lower().replace("-", "_").replace(" ", "_")
+    if not k or len(k) < 3 or len(k) > 32:
+        return False
+    if not re.match(r"^[a-z][a-z0-9_]*$", k):
+        return False
+    if k in {"start", "intro", "ad", "transition", "outro", "announcements", "content", "chapter", "section", "segment", "other", "misc", "general", "unknown"}:
+        return False
+    return True
+
+
 def classify_segment(text: str, *, start_sec: float, end_sec: float, total_sec: float) -> tuple[str, float]:
     """
     Very lightweight classification for tagging intros/ads/breaks/prayer/outros.
@@ -2038,6 +2049,16 @@ def _chapter_title(kind: str, text: str, *, conf: float | None = None, title_mod
             return _truncate_title(f"{label} — {kw_s}")
         return label
 
+    if _is_open_content_kind(kind):
+        label = kind.replace("_", " ").strip().title()
+        if ref and sent:
+            return _truncate_title(f"{label} — {ref} — {sent}")
+        if sent:
+            return _truncate_title(f"{label} — {sent}")
+        if kw_s:
+            return _truncate_title(f"{label} — {kw_s}")
+        return label
+
     # content/topic
     if ref and sent:
         return _truncate_title(f"{ref} — {sent}")
@@ -2265,7 +2286,7 @@ def chapters_from_segments(*, feed: str, episode_slug: str, segments: list[Segme
                         if decision:
                             allowed = _BOUNDARY_REVIEW_KINDS
                             proposed = str(decision.kind or kind)
-                            kind = proposed if proposed in allowed else kind
+                            kind = proposed if proposed in allowed or _is_open_content_kind(proposed) else kind
                             title = str(decision.title or title)
                             tags = list(decision.tags or tags)
                     except Exception as exc:
@@ -2304,9 +2325,8 @@ def chapters_from_segments(*, feed: str, episode_slug: str, segments: list[Segme
                 )
                 tags = list(ch.get("tags") or [])
                 if meta:
-                    allowed_content_kinds = _HUMAN_CHAPTER_KINDS - {"start", "intro", "ad", "transition", "outro", "announcements"}
                     next_kind = str(meta.kind or kind_hint or "topic")
-                    if next_kind not in allowed_content_kinds:
+                    if next_kind not in (_HUMAN_CHAPTER_KINDS - {"start", "intro", "ad", "transition", "outro", "announcements"}) and not _is_open_content_kind(next_kind):
                         next_kind = kind_hint
                     ch["kind"] = next_kind
                     ch["title"] = str(meta.title or ch.get("title") or "Chapter")

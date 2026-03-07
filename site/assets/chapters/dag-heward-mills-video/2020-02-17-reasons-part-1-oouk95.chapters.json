@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865071,
+  "feed": "dag-heward-mills-video",
+  "episode_slug": "2020-02-17-reasons-part-1-oouk95",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start"
+    },
+    {
+      "startTime": 41.698,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "reasons",
+        "holy spirit",
+        "god",
+        "say"
+      ]
+    },
+    {
+      "startTime": 165.858,
+      "title": "Making Meatloaf Together",
+      "kind": "message",
+      "tags": [
+        "cooking",
+        "marriage",
+        "love"
+      ]
+    },
+    {
+      "startTime": 4920.184,
+      "title": "Worship — Number four, why Christians are friendly with all unbelievers?",
+      "kind": "worship",
+      "confidence": 0.9257264217856661,
+      "tags": [
+        "hallelujah",
+        "jesus' name",
+        "christians",
+        "lord"
+      ]
+    },
+    {
+      "startTime": 5555.058,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god bless",
+        "jesus",
+        "god",
+        "now say"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863501,
+  "feed": "btic-podcast-video",
+  "episode_slug": "2025-02-16-the-good-samaritan-wx7grb",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "season",
+        "imagine",
+        "retirement season",
+        "high school"
+      ]
+    },
+    {
+      "startTime": 146.178,
+      "title": "Love Moves: The Good Samaritan",
+      "kind": "message",
+      "tags": [
+        "love",
+        "samaritan",
+        "story"
+      ]
+    },
+    {
+      "startTime": 2433.868,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "way",
+        "love",
+        "father",
+        "see"
+      ]
+    }
+  ]
+}

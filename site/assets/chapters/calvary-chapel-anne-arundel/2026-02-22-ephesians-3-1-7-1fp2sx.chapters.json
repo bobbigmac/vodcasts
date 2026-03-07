@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863696,
+  "feed": "calvary-chapel-anne-arundel",
+  "episode_slug": "2026-02-22-ephesians-3-1-7-1fp2sx",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "ephesians chapter",
+        "snow",
+        "ephesians",
+        "today"
+      ]
+    },
+    {
+      "startTime": 126.425,
+      "title": "Dispensation of Grace",
+      "kind": "message",
+      "tags": [
+        "dispensation",
+        "grace",
+        "outpouring"
+      ]
+    },
+    {
+      "startTime": 3032.772,
+      "title": "Invitation—As They Walk By, They See Me",
+      "kind": "invitation",
+      "confidence": 0.9128391485380187,
+      "tags": [
+        "orlando police",
+        "rolled past",
+        "first dozen",
+        "just rolled"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863867,
+  "feed": "catholic-sermons-station-of-the-cross",
+  "episode_slug": "2026-02-25-ember-wednesday-of-lent-2-25-26-peo9dt",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Our first sermon for today is entitled The History and Meaning of the Lente…",
+      "kind": "intro",
+      "tags": [
+        "everyday living",
+        "inspirational priests",
+        "cross presents",
+        "powerful sermons"
+      ]
+    },
+    {
+      "startTime": 33.602,
+      "title": "Prayer — Doxology",
+      "kind": "prayer",
+      "tags": [
+        "holy ghost",
+        "ember wednesday",
+        "lent",
+        "roman liturgy"
+      ]
+    },
+    {
+      "startTime": 136.994,
+      "title": "Prayer Invocation During Lent",
+      "kind": "message",
+      "tags": [
+        "prayer",
+        "lent",
+        "invocation"
+      ]
+    },
+    {
+      "startTime": 2964.126,
+      "title": "Prayer — Doxology",
+      "kind": "prayer",
+      "tags": [
+        "holy spirit",
+        "lent moses",
+        "lent",
+        "father"
+      ]
+    },
+    {
+      "startTime": 3232.481,
+      "title": "Prayer — Doxology",
+      "kind": "prayer",
+      "tags": [
+        "many wounds",
+        "holy spirit",
+        "everyday living",
+        "sermons"
+      ]
+    }
+  ]
+}

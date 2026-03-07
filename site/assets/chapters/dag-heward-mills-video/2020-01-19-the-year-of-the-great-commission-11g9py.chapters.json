@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865028,
+  "feed": "dag-heward-mills-video",
+  "episode_slug": "2020-01-19-the-year-of-the-great-commission-11g9py",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Today we just decided to have church early",
+      "kind": "intro",
+      "tags": [
+        "church",
+        "year",
+        "thank",
+        "new year"
+      ]
+    },
+    {
+      "startTime": 39.746,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "bible says",
+        "know",
+        "open"
+      ]
+    },
+    {
+      "startTime": 234.498,
+      "title": "Welcome — Today we just decided to have church early",
+      "kind": "welcome",
+      "tags": [
+        "church",
+        "year",
+        "thank",
+        "new year"
+      ]
+    },
+    {
+      "startTime": 315.675,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "great commission",
+        "great",
+        "commission",
+        "amen"
+      ]
+    },
+    {
+      "startTime": 443.874,
+      "title": "Love and Commandments",
+      "kind": "message",
+      "tags": [
+        "love",
+        "commandments",
+        "relationship"
+      ]
+    },
+    {
+      "startTime": 5051.778,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "amen",
+        "loudest amen",
+        "jesus",
+        "name"
+      ]
+    }
+  ]
+}

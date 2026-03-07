@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863784,
+  "feed": "calvary-chapel-fort-lauderdale",
+  "episode_slug": "2026-01-25-week-four-yield-s1tcif",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "pray",
+        "prayer",
+        "think",
+        "going"
+      ]
+    },
+    {
+      "startTime": 121.218,
+      "title": "Prayer Journey: Unexpected Answers",
+      "kind": "message",
+      "tags": [
+        "prayer",
+        "unexpected",
+        "answers"
+      ]
+    },
+    {
+      "startTime": 247.164,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "let take",
+        "pray",
+        "let pray",
+        "read god"
+      ]
+    },
+    {
+      "startTime": 3294.402,
+      "title": "Worship — As the people of God, as we yield our lives to him, we say, God, not our…",
+      "kind": "worship",
+      "confidence": 0.6965383391937605,
+      "tags": [
+        "great god",
+        "give praise",
+        "god",
+        "praise"
+      ]
+    },
+    {
+      "startTime": 3310.026,
+      "title": "Benediction — you can find out what it means to follow Christ and to learn more abo…",
+      "kind": "benediction",
+      "tags": [
+        "let pray",
+        "pray yielding",
+        "imagine according",
+        "work within"
+      ]
+    }
+  ]
+}

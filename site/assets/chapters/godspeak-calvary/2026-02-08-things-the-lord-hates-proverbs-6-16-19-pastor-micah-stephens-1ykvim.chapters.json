@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772866156,
+  "feed": "godspeak-calvary",
+  "episode_slug": "2026-02-08-things-the-lord-hates-proverbs-6-16-19-pastor-micah-stephens-1ykvim",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "little",
+        "sick",
+        "hey",
+        "weather"
+      ]
+    },
+    {
+      "startTime": 58.786,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "turning point",
+        "bad bunny",
+        "halftime show",
+        "amen"
+      ]
+    },
+    {
+      "startTime": 181.691,
+      "title": "Today’s Topic: The Importance of Choosing Righteousness Over Pride",
+      "kind": "message",
+      "tags": [
+        "god",
+        "god hates",
+        "hates",
+        "hate"
+      ]
+    },
+    {
+      "startTime": 696.887,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "man",
+        "faithful man",
+        "wicked man",
+        "faithful"
+      ]
+    },
+    {
+      "startTime": 1800.079,
+      "title": "Resisting Correction Is Foolish",
+      "kind": "teaching",
+      "tags": [
+        "self-improvement",
+        "growth",
+        "consequences"
+      ]
+    },
+    {
+      "startTime": 2831.609,
+      "title": "Prayer — the mouths that stretch the truth, lord, would they be…",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "god",
+        "murdered christ",
+        "amen"
+      ]
+    }
+  ]
+}

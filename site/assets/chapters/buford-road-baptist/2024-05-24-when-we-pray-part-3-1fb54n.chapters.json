@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863583,
+  "feed": "buford-road-baptist",
+  "episode_slug": "2024-05-24-when-we-pray-part-3-1fb54n",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — actually, this is the third major failure, and I love Abraham in the Bible",
+      "kind": "intro",
+      "tags": [
+        "man",
+        "abraham",
+        "find",
+        "failure"
+      ]
+    },
+    {
+      "startTime": 257.731,
+      "title": "Scripture reading — in these failures here, Abraham's going to learn a great lesson",
+      "kind": "scripture",
+      "tags": [
+        "great lesson",
+        "abraham",
+        "going",
+        "sarah"
+      ]
+    },
+    {
+      "startTime": 384.098,
+      "title": "The Power of Prayer: Healing and Restoration",
+      "kind": "message",
+      "tags": [
+        "prayer",
+        "healing",
+        "restoration"
+      ]
+    },
+    {
+      "startTime": 2042.4,
+      "title": "Break / transition",
+      "kind": "transition",
+      "confidence": 0.6321205588285577,
+      "tags": [
+        "prayer",
+        "abraham excuses",
+        "abraham",
+        "god"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865634,
+  "feed": "first-baptist-columbia-wf",
+  "episode_slug": "2026-01-11-an-unstoppable-force-matthew-16-13-18-ap83h7",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — We're going to be a church that stands on the Word of God",
+      "kind": "welcome",
+      "tags": [
+        "wichita falls",
+        "first baptist",
+        "church",
+        "going"
+      ]
+    },
+    {
+      "startTime": 248.93,
+      "title": "Jesus' Blessing on Simon",
+      "kind": "message",
+      "tags": [
+        "blessing",
+        "simon",
+        "barjona"
+      ]
+    },
+    {
+      "startTime": 2093.826,
+      "title": "Outro — There are protests in the streets, and I'm just gonna tell you this, I pray…",
+      "kind": "outro",
+      "tags": [
+        "church",
+        "free yet",
+        "first baptist",
+        "pray"
+      ]
+    }
+  ]
+}

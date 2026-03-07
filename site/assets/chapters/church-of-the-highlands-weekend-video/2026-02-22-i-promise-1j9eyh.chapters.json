@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864299,
+  "feed": "church-of-the-highlands-weekend-video",
+  "episode_slug": "2026-02-22-i-promise-1j9eyh",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — we're so glad you're along with us",
+      "kind": "intro",
+      "tags": [
+        "pastor mark",
+        "guys",
+        "know",
+        "give jesus"
+      ]
+    },
+    {
+      "startTime": 41.954,
+      "title": "Welcome — I want to give a special shout out to one campus today because Pastor Mar…",
+      "kind": "welcome",
+      "tags": [
+        "say hello",
+        "give jesus",
+        "best hand",
+        "see every"
+      ]
+    },
+    {
+      "startTime": 339.688,
+      "title": "Praying for Your Heart",
+      "kind": "message",
+      "tags": [
+        "prayer",
+        "heart",
+        "conflict"
+      ]
+    },
+    {
+      "startTime": 2092.507,
+      "title": "Prayer for Forgiveness",
+      "kind": "invitation",
+      "confidence": 0.944423787388517,
+      "tags": [
+        "forgiveness",
+        "prayer",
+        "sin"
+      ]
+    }
+  ]
+}

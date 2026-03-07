@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864085,
+  "feed": "chinese-bible-church",
+  "episode_slug": "2021-07-18-the-norman-christian-life-part-2-1m9477",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "romans chapter",
+        "unto god",
+        "sin",
+        "christ"
+      ]
+    },
+    {
+      "startTime": 100.027,
+      "title": "Prayer — your word, the bible",
+      "kind": "prayer",
+      "tags": [
+        "normal",
+        "bible",
+        "forward",
+        "words"
+      ]
+    },
+    {
+      "startTime": 218.82999999999998,
+      "title": "The Normal Christian Life",
+      "kind": "message",
+      "tags": [
+        "christianity",
+        "soul",
+        "heart"
+      ]
+    },
+    {
+      "startTime": 1801.184,
+      "title": "Prayer — your word of the bible here in romans chapter 6 that we…",
+      "kind": "prayer",
+      "tags": [
+        "holy spirit",
+        "romans chapter",
+        "let pray",
+        "spirit"
+      ]
+    }
+  ]
+}

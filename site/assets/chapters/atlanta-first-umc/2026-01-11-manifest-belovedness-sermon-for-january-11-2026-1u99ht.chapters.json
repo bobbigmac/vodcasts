@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863046,
+  "feed": "atlanta-first-umc",
+  "episode_slug": "2026-01-11-manifest-belovedness-sermon-for-january-11-2026-1u99ht",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — He will faithfully bring forth justice",
+      "kind": "intro",
+      "tags": [
+        "revised standard",
+        "standard version",
+        "new revised",
+        "version updated"
+      ]
+    },
+    {
+      "startTime": 58.592,
+      "title": "Scripture reading — He will faithfully bring forth justice",
+      "kind": "scripture",
+      "tags": [
+        "revised standard",
+        "standard version",
+        "new revised",
+        "version updated"
+      ]
+    },
+    {
+      "startTime": 186.786,
+      "title": "Cowboy and Angel Come to Church",
+      "kind": "story",
+      "tags": [
+        "kids",
+        "church growth"
+      ]
+    },
+    {
+      "startTime": 1988.962,
+      "title": "Prayer — Doxology",
+      "kind": "prayer",
+      "tags": [
+        "holy ghost",
+        "make room",
+        "ghost",
+        "father"
+      ]
+    }
+  ]
+}

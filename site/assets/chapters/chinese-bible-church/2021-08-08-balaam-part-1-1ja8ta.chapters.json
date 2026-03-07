@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864094,
+  "feed": "chinese-bible-church",
+  "episode_slug": "2021-08-08-balaam-part-1-1ja8ta",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "moab",
+        "numbers chapter",
+        "unto",
+        "unto balaam"
+      ]
+    },
+    {
+      "startTime": 105.63,
+      "title": "There's Actually More Written About This Guy, Balaam",
+      "kind": "message",
+      "tags": [
+        "balaam",
+        "adventures",
+        "biblical stories"
+      ]
+    },
+    {
+      "startTime": 149.739,
+      "title": "Scripture reading — Balaam rose up in the morning, and saddled his ass, and went wi…",
+      "kind": "scripture",
+      "tags": [
+        "house full",
+        "balaak",
+        "balaam answered",
+        "said unto"
+      ]
+    },
+    {
+      "startTime": 188.003,
+      "title": "Prayer — gathering us here in your house to hear your word",
+      "kind": "prayer",
+      "tags": [
+        "know",
+        "bible",
+        "bible stories",
+        "story"
+      ]
+    },
+    {
+      "startTime": 2025.95,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "next time",
+        "famous part",
+        "things",
+        "balaam"
+      ]
+    }
+  ]
+}

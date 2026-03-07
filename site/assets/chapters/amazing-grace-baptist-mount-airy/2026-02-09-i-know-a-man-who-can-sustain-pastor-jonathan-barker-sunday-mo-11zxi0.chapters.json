@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772862875,
+  "feed": "amazing-grace-baptist-mount-airy",
+  "episode_slug": "2026-02-09-i-know-a-man-who-can-sustain-pastor-jonathan-barker-sunday-mo-11zxi0",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "north carolina",
+        "jonathan barker",
+        "amazing grace",
+        "grace baptist"
+      ]
+    },
+    {
+      "startTime": 120.685,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "added unto",
+        "know",
+        "said"
+      ]
+    },
+    {
+      "startTime": 248.642,
+      "title": "God Sustains Us Today",
+      "kind": "message",
+      "tags": [
+        "faithfulness",
+        "sustainability",
+        "provision"
+      ]
+    }
+  ]
+}

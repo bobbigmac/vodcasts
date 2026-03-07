@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863247,
+  "feed": "bishop-barron-sermons",
+  "episode_slug": "2026-01-22-unity-in-christ-pkd954",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Friends, welcome to Word on Fire Catholic Ministries",
+      "kind": "intro",
+      "tags": [
+        "catholic ministries",
+        "fire catholic",
+        "word",
+        "god word"
+      ]
+    },
+    {
+      "startTime": 63.374,
+      "title": "Scripture reading — We're talking about districts of the Holy Land named for the so…",
+      "kind": "scripture",
+      "tags": [
+        "gospel reading",
+        "land",
+        "prophet isaiah",
+        "isaiah"
+      ]
+    },
+    {
+      "startTime": 188.157,
+      "title": "Jesus, the King Uniting Tribes",
+      "kind": "message",
+      "tags": [
+        "unity",
+        "god's plan",
+        "israel"
+      ]
+    }
+  ]
+}

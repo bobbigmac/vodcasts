@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864062,
+  "feed": "chinese-bible-church",
+  "episode_slug": "2021-04-18-the-life-of-christ-jesus-baptism-72h4ey",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "matthew chapter",
+        "chapter three",
+        "verse one",
+        "unto"
+      ]
+    },
+    {
+      "startTime": 101.09899999999999,
+      "title": "He Baptized the Same Type Today",
+      "kind": "message",
+      "tags": [
+        "baptism",
+        "parable",
+        "church"
+      ]
+    },
+    {
+      "startTime": 134.557,
+      "title": "Prayer — your word, the bible",
+      "kind": "prayer",
+      "tags": [
+        "jesus",
+        "jesus christ",
+        "thank",
+        "dear god"
+      ]
+    },
+    {
+      "startTime": 1577.122,
+      "title": "Prayer — jesus christ who died on the cross to wash away all of…",
+      "kind": "prayer",
+      "tags": [
+        "jesus christ",
+        "lord",
+        "jesus",
+        "christ"
+      ]
+    }
+  ]
+}

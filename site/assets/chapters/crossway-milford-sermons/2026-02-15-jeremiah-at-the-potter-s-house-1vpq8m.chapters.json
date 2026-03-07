@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864875,
+  "feed": "crossway-milford-sermons",
+  "episode_slug": "2026-02-15-jeremiah-at-the-potter-s-house-1vpq8m",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — as the lead pastor and always grateful for the calling that God…",
+      "kind": "scripture",
+      "tags": [
+        "worship team",
+        "god presence",
+        "god",
+        "god grace"
+      ]
+    },
+    {
+      "startTime": 110.809,
+      "title": "Resilient Faith Amid Challenges",
+      "kind": "message",
+      "tags": [
+        "resilience",
+        "faith",
+        "challenges"
+      ]
+    },
+    {
+      "startTime": 1305.332,
+      "title": "Prayer — this chance just to study your word today",
+      "kind": "prayer",
+      "tags": [
+        "jesus",
+        "lord",
+        "like jesus",
+        "god"
+      ]
+    }
+  ]
+}

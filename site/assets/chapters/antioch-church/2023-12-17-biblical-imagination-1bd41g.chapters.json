@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772862987,
+  "feed": "antioch-church",
+  "episode_slug": "2023-12-17-biblical-imagination-1bd41g",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — In my faithfulness, I will reward my people and make my everlas…",
+      "kind": "scripture",
+      "tags": [
+        "isaiah chapter",
+        "lord",
+        "verses one",
+        "scripture reading"
+      ]
+    },
+    {
+      "startTime": 127.337,
+      "title": "Prayer — the gift of your word",
+      "kind": "prayer",
+      "tags": [
+        "sovereign lord",
+        "lord will",
+        "sprout come",
+        "garden causes"
+      ]
+    },
+    {
+      "startTime": 257.09,
+      "title": "Imagination: A Source of Great Accomplishments and Worst Nightmares",
+      "kind": "message",
+      "tags": [
+        "imagination",
+        "accomplishment",
+        "nightmare"
+      ]
+    },
+    {
+      "startTime": 2060.888,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "unstoppable god",
+        "see beyond",
+        "ruins around",
+        "see"
+      ]
+    }
+  ]
+}

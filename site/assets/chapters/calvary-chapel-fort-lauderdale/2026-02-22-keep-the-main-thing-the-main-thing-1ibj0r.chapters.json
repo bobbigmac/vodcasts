@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863832,
+  "feed": "calvary-chapel-fort-lauderdale",
+  "episode_slug": "2026-02-22-keep-the-main-thing-the-main-thing-1ibj0r",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — We've been invited into a relationship with God, the Father, the Son and th…",
+      "kind": "intro",
+      "tags": [
+        "little things",
+        "christ",
+        "main thing",
+        "timothy"
+      ]
+    },
+    {
+      "startTime": 99.72800000000001,
+      "title": "Welcome — We've been invited into a relationship with God, the Father, the Son and…",
+      "kind": "welcome",
+      "tags": [
+        "little things",
+        "christ",
+        "main thing",
+        "timothy"
+      ]
+    },
+    {
+      "startTime": 214.58100000000002,
+      "title": "Praying for Leaders & Our Church",
+      "kind": "message",
+      "tags": [
+        "prayer",
+        "leadership",
+        "church"
+      ]
+    },
+    {
+      "startTime": 1193.731,
+      "title": "Prayer — president trump, for vice president vance",
+      "kind": "prayer",
+      "tags": [
+        "pray",
+        "pray god",
+        "god",
+        "people"
+      ]
+    },
+    {
+      "startTime": 3060.17,
+      "title": "Worship — We are brothers and sisters in His family and He has a place for every on…",
+      "kind": "worship",
+      "confidence": 0.755856716846563,
+      "tags": [
+        "king jesus",
+        "king together",
+        "blood",
+        "family"
+      ]
+    },
+    {
+      "startTime": 3143.076,
+      "title": "Invitation: Join Us in Following Jesus",
+      "kind": "invitation",
+      "confidence": 0.7677637252702412,
+      "tags": [
+        "followingjesus",
+        "relationshipchange",
+        "calvary"
+      ]
+    }
+  ]
+}

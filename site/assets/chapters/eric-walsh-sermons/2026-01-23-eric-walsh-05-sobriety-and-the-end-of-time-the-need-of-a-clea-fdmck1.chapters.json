@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865425,
+  "feed": "eric-walsh-sermons",
+  "episode_slug": "2026-01-23-eric-walsh-05-sobriety-and-the-end-of-time-the-need-of-a-clea-fdmck1",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "let get",
+        "get right",
+        "get",
+        "marijuana"
+      ]
+    },
+    {
+      "startTime": 125.497,
+      "title": "The Power of Deception: Understanding Pornography's Impact",
+      "kind": "message",
+      "tags": [
+        "sexuality",
+        "feminism",
+        "christianity"
+      ]
+    },
+    {
+      "startTime": 237.929,
+      "title": "Scripture reading — Somebody can program a computer to promote the deceptions",
+      "kind": "scripture",
+      "tags": [
+        "artificial intelligence",
+        "social media",
+        "social",
+        "media"
+      ]
+    },
+    {
+      "startTime": 381.721,
+      "title": "Prayer — this opportunity to study your word and i just asked now",
+      "kind": "prayer",
+      "tags": [
+        "holy spirit",
+        "daniel chapter",
+        "bible",
+        "lord"
+      ]
+    },
+    {
+      "startTime": 3948.226,
+      "title": "Prayer — remember that you came to save us from our sins, not in…",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "tell god",
+        "god",
+        "father god"
+      ]
+    }
+  ]
+}

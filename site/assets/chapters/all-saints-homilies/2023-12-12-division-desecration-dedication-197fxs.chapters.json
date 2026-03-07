@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772862857,
+  "feed": "all-saints-homilies",
+  "episode_slug": "2023-12-12-division-desecration-dedication-197fxs",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "first book",
+        "holy places",
+        "maccabees",
+        "mount zion"
+      ]
+    },
+    {
+      "startTime": 130.704,
+      "title": "The Importance of Defending Our Faith Against False Claims",
+      "kind": "message",
+      "tags": [
+        "faith defense",
+        "false claims",
+        "defend faith"
+      ]
+    },
+    {
+      "startTime": 1103.941,
+      "title": "Outro — Let us hold sacred the inner temple of our hearts and minds",
+      "kind": "outro",
+      "tags": [
+        "quite sure",
+        "children",
+        "temple",
+        "fight"
+      ]
+    }
+  ]
+}

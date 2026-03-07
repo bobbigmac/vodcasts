@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864008,
+  "feed": "cbcaiken-sermons",
+  "episode_slug": "2026-02-02-sermon-for-sunday-feb-1-2026-growing-on-1dqq60",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — I am anticipating a full house next week to be able to celebrate those guys…",
+      "kind": "intro",
+      "tags": [
+        "bible turned",
+        "peter chapter",
+        "next week",
+        "somewhere else"
+      ]
+    },
+    {
+      "startTime": 113.05799999999999,
+      "title": "Scripture reading — I am anticipating a full house next week to be able to celebrat…",
+      "kind": "scripture",
+      "tags": [
+        "bible turned",
+        "peter chapter",
+        "next week",
+        "somewhere else"
+      ]
+    },
+    {
+      "startTime": 237.986,
+      "title": "Growing Spiritually Together",
+      "kind": "message",
+      "tags": [
+        "spiritual growth",
+        "community support",
+        "personal development"
+      ]
+    },
+    {
+      "startTime": 1609.3,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "jesus christ",
+        "lord",
+        "thank",
+        "christ"
+      ]
+    }
+  ]
+}

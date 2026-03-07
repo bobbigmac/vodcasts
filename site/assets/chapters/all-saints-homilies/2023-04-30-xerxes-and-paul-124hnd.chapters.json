@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772862837,
+  "feed": "all-saints-homilies",
+  "episode_slug": "2023-04-30-xerxes-and-paul-124hnd",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — so were the churches established in the faith",
+      "kind": "intro",
+      "tags": [
+        "saints orthodox",
+        "henry rearton",
+        "touchstone magazine",
+        "patrick henry"
+      ]
+    },
+    {
+      "startTime": 136.861,
+      "title": "The Holy Spirit's Call to Serve",
+      "kind": "message",
+      "tags": [
+        "giving",
+        "application",
+        "invitation"
+      ]
+    },
+    {
+      "startTime": 190.952,
+      "title": "Scripture reading — In the previous chapter, Silas had been described as a prophet…",
+      "kind": "scripture",
+      "tags": [
+        "apostle paul",
+        "lord",
+        "paul",
+        "silas"
+      ]
+    },
+    {
+      "startTime": 1491.362,
+      "title": "Outro — Xerxes was on a religious mission",
+      "kind": "outro",
+      "tags": [
+        "precise place",
+        "offering sacrifice",
+        "xerxes coming",
+        "athena"
+      ]
+    }
+  ]
+}

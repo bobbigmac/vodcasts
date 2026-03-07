@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863133,
+  "feed": "between-sermons-video",
+  "episode_slug": "2025-11-26-when-god-interrupts-the-plan-fear-of-the-lord-awe-obedience-c-dbewnn",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — it was all a ploy by Jason to not have to preach three times",
+      "kind": "intro",
+      "tags": [
+        "lord showed",
+        "service",
+        "lord",
+        "came"
+      ]
+    },
+    {
+      "startTime": 129.065,
+      "title": "Welcome — it was all a ploy by Jason to not have to preach three times",
+      "kind": "welcome",
+      "tags": [
+        "lord showed",
+        "service",
+        "lord",
+        "came"
+      ]
+    },
+    {
+      "startTime": 239.677,
+      "title": "Awesomeness at Worship",
+      "kind": "message",
+      "tags": [
+        "awesomeness",
+        "worship"
+      ]
+    },
+    {
+      "startTime": 4403.522,
+      "title": "Worship — It's like, when you have a correct understanding of who God is, your resp…",
+      "kind": "worship",
+      "confidence": 0.8846748789619375,
+      "tags": [
+        "god",
+        "sacrifice",
+        "worship",
+        "lord"
+      ]
+    },
+    {
+      "startTime": 4528.255,
+      "title": "Outro — We're actually talking to people, but we hope you were encouraged by this e…",
+      "kind": "outro",
+      "tags": [
+        "verse one",
+        "god",
+        "hope",
+        "romans"
+      ]
+    }
+  ]
+}

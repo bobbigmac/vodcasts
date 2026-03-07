@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863480,
+  "feed": "btic-podcast-video",
+  "episode_slug": "2025-01-26-a-new-beginning-11kbrw",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "story",
+        "new",
+        "new beginnings",
+        "new beginning"
+      ]
+    },
+    {
+      "startTime": 271.362,
+      "title": "Scripture reading — We're all in this book called life and God wants to write somet…",
+      "kind": "scripture",
+      "tags": [
+        "god wants",
+        "god",
+        "matter",
+        "wants"
+      ]
+    },
+    {
+      "startTime": 344.794,
+      "title": "Let Go of Old Things and Let New Begin",
+      "kind": "message",
+      "tags": [
+        "letting go",
+        "new beginnings",
+        "old man"
+      ]
+    },
+    {
+      "startTime": 2853.858,
+      "title": "Prayer — that love on every single one of you in this church thi…",
+      "kind": "prayer",
+      "tags": [
+        "love",
+        "lord",
+        "amen",
+        "every"
+      ]
+    }
+  ]
+}

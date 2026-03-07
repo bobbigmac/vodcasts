@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865884,
+  "feed": "first-love-church-uk",
+  "episode_slug": "2020-02-18-types-of-sheep-02-02-20-1auq88",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — My testimony is about how I received a new job by putting God first",
+      "kind": "welcome",
+      "tags": [
+        "god",
+        "testimony",
+        "god first",
+        "love church"
+      ]
+    },
+    {
+      "startTime": 127.154,
+      "title": "Finding Full-Time Job Through Prayer",
+      "kind": "message",
+      "tags": [
+        "job search",
+        "god first",
+        "success"
+      ]
+    },
+    {
+      "startTime": 241.149,
+      "title": "Welcome — Wow, so you're completely blessed just by putting God first",
+      "kind": "welcome",
+      "tags": [
+        "god first",
+        "god",
+        "job offer",
+        "great commission"
+      ]
+    },
+    {
+      "startTime": 1504.167,
+      "title": "Scripture reading — Woe unto the pastors that destroy and scatter the sheep of my p…",
+      "kind": "scripture",
+      "tags": [
+        "psalm",
+        "verse",
+        "lord",
+        "pasture"
+      ]
+    },
+    {
+      "startTime": 2592.61,
+      "title": "Scripture reading — he that entereth in by the door is the shepherd of the sheep",
+      "kind": "scripture",
+      "tags": [
+        "john chapter",
+        "john",
+        "sheep",
+        "verily"
+      ]
+    },
+    {
+      "startTime": 4854.914,
+      "title": "Scripture reading — Verse four, the disease that is the sick, have ye not strengthe…",
+      "kind": "scripture",
+      "tags": [
+        "type three",
+        "sick",
+        "shepherds",
+        "neither"
+      ]
+    },
+    {
+      "startTime": 8735.186,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "heavenly father",
+        "jesus",
+        "father",
+        "lord"
+      ]
+    },
+    {
+      "startTime": 8811.622,
+      "title": "Outro — all of you with the book at the close of service would like to see you very…",
+      "kind": "outro",
+      "tags": [
+        "time",
+        "first time",
+        "first",
+        "beautiful"
+      ]
+    },
+    {
+      "startTime": 9031.49,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "power",
+        "jesus",
+        "father"
+      ]
+    },
+    {
+      "startTime": 9115.352,
+      "title": "Outro — Remember you can listen to this message again and many others on the First…",
+      "kind": "outro",
+      "tags": [
+        "amen",
+        "bishop richard",
+        "first love",
+        "love church"
+      ]
+    }
+  ]
+}

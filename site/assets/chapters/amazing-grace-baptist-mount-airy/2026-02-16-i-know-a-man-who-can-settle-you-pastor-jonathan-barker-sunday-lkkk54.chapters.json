@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772862900,
+  "feed": "amazing-grace-baptist-mount-airy",
+  "episode_slug": "2026-02-16-i-know-a-man-who-can-settle-you-pastor-jonathan-barker-sunday-lkkk54",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "north carolina",
+        "jonathan barker",
+        "amazing grace",
+        "grace baptist"
+      ]
+    },
+    {
+      "startTime": 121.059,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "today",
+        "world",
+        "say"
+      ]
+    },
+    {
+      "startTime": 245.661,
+      "title": "God's Consistency and Trustworthiness",
+      "kind": "message",
+      "tags": [
+        "consistency",
+        "trustworthiness",
+        "serving"
+      ]
+    },
+    {
+      "startTime": 1869.452,
+      "title": "Trust in God’s Unwavering Trustworthiness Today",
+      "kind": "invitation",
+      "confidence": 0.7018027205701126,
+      "tags": [
+        "trust",
+        "god",
+        "unwavering"
+      ]
+    }
+  ]
+}

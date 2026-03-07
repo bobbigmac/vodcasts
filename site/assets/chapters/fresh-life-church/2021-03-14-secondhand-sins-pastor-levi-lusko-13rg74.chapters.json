@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865973,
+  "feed": "fresh-life-church",
+  "episode_slug": "2021-03-14-secondhand-sins-pastor-levi-lusko-13rg74",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "genesis chapter",
+        "amazing journey",
+        "bible",
+        "genesis"
+      ]
+    },
+    {
+      "startTime": 124.47,
+      "title": "God’s Blessing Continues",
+      "kind": "message",
+      "tags": [
+        "blessing",
+        "favor",
+        "power",
+        "love"
+      ]
+    },
+    {
+      "startTime": 2823.553,
+      "title": "God’s Invitation—Ready to Trust Jesus?",
+      "kind": "invitation",
+      "confidence": 0.7812881130477852,
+      "tags": [
+        "invitation",
+        "trust",
+        "salvation"
+      ]
+    },
+    {
+      "startTime": 2932.24,
+      "title": "Outro — he went back to Ireland and he preached",
+      "kind": "outro",
+      "tags": [
+        "god",
+        "god bless",
+        "may",
+        "ireland"
+      ]
+    }
+  ]
+}

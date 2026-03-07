@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864041,
+  "feed": "cbcaiken-sermons",
+  "episode_slug": "2026-03-01-sermon-for-sunday-march-1-2026-a-christian-s-obedience-1gfsym",
+  "chapters": [
+    {
+      "startTime": 0.226,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "jonah",
+        "god bless",
+        "like jonah",
+        "god"
+      ]
+    },
+    {
+      "startTime": 125.63,
+      "title": "The Marvel of Undeserved Assignment",
+      "kind": "message",
+      "tags": [
+        "undeserved",
+        "assignment",
+        "miracle"
+      ]
+    },
+    {
+      "startTime": 171.175,
+      "title": "Scripture reading — Jonah obeyed the word of the Lord and went to Nineveh",
+      "kind": "scripture",
+      "tags": [
+        "nineveh",
+        "jonah obeyed",
+        "lord",
+        "now nineveh"
+      ]
+    },
+    {
+      "startTime": 246.173,
+      "title": "Prayer — this passage of scripture",
+      "kind": "prayer",
+      "tags": [
+        "great fish",
+        "great",
+        "jonah",
+        "fish"
+      ]
+    },
+    {
+      "startTime": 350.796,
+      "title": "Scripture reading — The New Testament in the Gospel of Matthew points us to Jonah b…",
+      "kind": "scripture",
+      "tags": [
+        "ever wondered",
+        "someone standing",
+        "jonah",
+        "nineveh"
+      ]
+    }
+  ]
+}

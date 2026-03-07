@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863853,
+  "feed": "catholic-sermons-station-of-the-cross",
+  "episode_slug": "2026-02-24-st-matthias-lent-2-24-26-1hdgrk",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "everyday living",
+        "inspirational priests",
+        "powerful sermons",
+        "cross presents"
+      ]
+    },
+    {
+      "startTime": 124.894,
+      "title": "The Role of Succession in Apostolic Leadership",
+      "kind": "message",
+      "tags": [
+        "apostolic leadership",
+        "succession",
+        "apostolic succession"
+      ]
+    },
+    {
+      "startTime": 337.977,
+      "title": "Prayer — Doxology",
+      "kind": "prayer",
+      "tags": [
+        "holy spirit",
+        "four corners",
+        "heavenly jerusalem",
+        "spirit"
+      ]
+    },
+    {
+      "startTime": 3233.395,
+      "title": "Outro — We hope you will join us again next time for, Sermons for Everyday Living",
+      "kind": "outro",
+      "tags": [
+        "saint matthias",
+        "everyday living",
+        "sermons",
+        "matthias"
+      ]
+    }
+  ]
+}

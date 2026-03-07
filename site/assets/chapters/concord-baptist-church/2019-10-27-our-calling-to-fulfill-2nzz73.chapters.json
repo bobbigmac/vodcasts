@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864601,
+  "feed": "concord-baptist-church",
+  "episode_slug": "2019-10-27-our-calling-to-fulfill-2nzz73",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Good morning, Concord Baptist Church",
+      "kind": "intro",
+      "tags": [
+        "concord baptist",
+        "baptist church",
+        "baptist",
+        "georgia baptist"
+      ]
+    },
+    {
+      "startTime": 71.426,
+      "title": "Welcome — Good morning, Concord Baptist Church",
+      "kind": "welcome",
+      "tags": [
+        "concord baptist",
+        "baptist church",
+        "baptist",
+        "georgia baptist"
+      ]
+    },
+    {
+      "startTime": 187.074,
+      "title": "Worship — can we just one more time give God praise for the first responders I have…",
+      "kind": "worship",
+      "confidence": 0.6014809589154858,
+      "tags": [
+        "first responders",
+        "challenging season",
+        "first",
+        "responders"
+      ]
+    },
+    {
+      "startTime": 280.85699999999997,
+      "title": "Prayer — this day that you have made and our resolve is to rejoi…",
+      "kind": "prayer",
+      "tags": [
+        "god create",
+        "god",
+        "god plan",
+        "create"
+      ]
+    },
+    {
+      "startTime": 408.08,
+      "title": "The Significance of Calling, Purpose, and Destiny",
+      "kind": "message",
+      "tags": [
+        "calling",
+        "purpose",
+        "destiny"
+      ]
+    },
+    {
+      "startTime": 2130.118,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "life",
+        "heavenly father",
+        "god",
+        "thank"
+      ]
+    },
+    {
+      "startTime": 2325.442,
+      "title": "Prayer — this opportunity we get",
+      "kind": "prayer",
+      "tags": [
+        "will respond",
+        "will come",
+        "people will",
+        "will see"
+      ]
+    },
+    {
+      "startTime": 2375.516,
+      "title": "Worship — Amen, church, let's sing",
+      "kind": "worship",
+      "confidence": 0.6024760121833554
+    }
+  ]
+}

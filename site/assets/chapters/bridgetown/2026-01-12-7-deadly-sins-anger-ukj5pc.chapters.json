@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863297,
+  "feed": "bridgetown",
+  "episode_slug": "2026-01-12-7-deadly-sins-anger-ukj5pc",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — I said, I need my daughters to get married so I can have grandchildren",
+      "kind": "intro",
+      "tags": [
+        "chocolate croissant",
+        "know",
+        "year",
+        "god"
+      ]
+    },
+    {
+      "startTime": 114.033,
+      "title": "Welcome — then we have a 20 year old, she just turned 20 yesterday, Sophia Joyce",
+      "kind": "welcome",
+      "tags": [
+        "good morning",
+        "pastor tyler",
+        "morning church",
+        "year old"
+      ]
+    },
+    {
+      "startTime": 352.449,
+      "title": "That Day Church: Finding Myself Again",
+      "kind": "message",
+      "tags": [
+        "discovery",
+        "identity",
+        "personal growth"
+      ]
+    }
+  ]
+}

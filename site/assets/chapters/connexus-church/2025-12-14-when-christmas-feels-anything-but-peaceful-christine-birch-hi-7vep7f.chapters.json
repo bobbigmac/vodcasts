@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864627,
+  "feed": "connexus-church",
+  "episode_slug": "2025-12-14-when-christmas-feels-anything-but-peaceful-christine-birch-hi-7vep7f",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — he kept saying, But what about Christmas dinner?",
+      "kind": "intro",
+      "tags": [
+        "christmas dinner",
+        "christmas",
+        "christmas rhythms",
+        "predictable christmas"
+      ]
+    },
+    {
+      "startTime": 113.422,
+      "title": "Christmas Dinner Surprise",
+      "kind": "message",
+      "tags": [
+        "christmas",
+        "surprise",
+        "dinner"
+      ]
+    },
+    {
+      "startTime": 1890.21,
+      "title": "Benediction — later she said, I wanted to paint the Prince of Peace I saw",
+      "kind": "benediction",
+      "tags": [
+        "peace",
+        "prince",
+        "god",
+        "angel message"
+      ]
+    },
+    {
+      "startTime": 2147.36,
+      "title": "Prayer — who you are, that you want to make amends with us, that…",
+      "kind": "prayer",
+      "tags": [
+        "can come",
+        "feels chaotic",
+        "life feels",
+        "god"
+      ]
+    }
+  ]
+}

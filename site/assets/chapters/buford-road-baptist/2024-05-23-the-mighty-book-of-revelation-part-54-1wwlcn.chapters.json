@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863575,
+  "feed": "buford-road-baptist",
+  "episode_slug": "2024-05-23-the-mighty-book-of-revelation-part-54-1wwlcn",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — We want you to take your Bibles and turn with me now as we cont…",
+      "kind": "scripture",
+      "tags": [
+        "baptist church",
+        "tony kahoot",
+        "buford road",
+        "road baptist"
+      ]
+    },
+    {
+      "startTime": 130.5,
+      "title": "God's Protection for Witnesses During Rapture",
+      "kind": "message",
+      "tags": [
+        "prophetic",
+        "rapture",
+        "gospel"
+      ]
+    }
+  ]
+}

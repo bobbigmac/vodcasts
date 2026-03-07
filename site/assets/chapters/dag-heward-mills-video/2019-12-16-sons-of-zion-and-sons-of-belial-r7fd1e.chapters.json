@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864974,
+  "feed": "dag-heward-mills-video",
+  "episode_slug": "2019-12-16-sons-of-zion-and-sons-of-belial-r7fd1e",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start"
+    },
+    {
+      "startTime": 36.578,
+      "title": "Honoring Ryan Hart Bonke’s Passing",
+      "kind": "message",
+      "tags": [
+        "loss",
+        "preach",
+        "ministry"
+      ]
+    },
+    {
+      "startTime": 153.597,
+      "title": "Prayer — the life of reinhard bonke, the great evangelist who is…",
+      "kind": "prayer",
+      "tags": [
+        "belial",
+        "sons",
+        "son",
+        "reinhard bonke"
+      ]
+    },
+    {
+      "startTime": 9270.369,
+      "title": "Give Your Life to Jesus Today!",
+      "kind": "invitation",
+      "confidence": 0.9007387484403543,
+      "tags": [
+        "giving",
+        "invitation"
+      ]
+    },
+    {
+      "startTime": 9990.101,
+      "title": "Benediction — Receive divine escape from every power of the enemy in the name of Je…",
+      "kind": "benediction",
+      "tags": [
+        "jesus",
+        "name",
+        "may",
+        "jesus christ"
+      ]
+    },
+    {
+      "startTime": 10119.586,
+      "title": "Receive Divine Grace in 2020",
+      "kind": "invitation",
+      "confidence": 0.6246889011486004,
+      "tags": [
+        "grace",
+        "growth",
+        "prosperity"
+      ]
+    }
+  ]
+}

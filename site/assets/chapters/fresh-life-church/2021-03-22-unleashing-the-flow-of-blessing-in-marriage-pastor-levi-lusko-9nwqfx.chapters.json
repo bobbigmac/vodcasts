@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865983,
+  "feed": "fresh-life-church",
+  "episode_slug": "2021-03-22-unleashing-the-flow-of-blessing-in-marriage-pastor-levi-lusko-9nwqfx",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — where we pick up the story in Genesis 26, they have got married",
+      "kind": "intro",
+      "tags": [
+        "already grabbed",
+        "bible",
+        "things",
+        "need"
+      ]
+    },
+    {
+      "startTime": 118.961,
+      "title": "God’s Blessing Continues: Prosperity in Marriage",
+      "kind": "message",
+      "tags": [
+        "blessing",
+        "marriage",
+        "prosperity"
+      ]
+    },
+    {
+      "startTime": 3050.517,
+      "title": "Prayer — healing right now in marriages",
+      "kind": "prayer",
+      "tags": [
+        "look",
+        "pray",
+        "love",
+        "jesus"
+      ]
+    },
+    {
+      "startTime": 3281.113,
+      "title": "Benediction — this is just a symbol we'd love for you to have",
+      "kind": "benediction",
+      "tags": [
+        "please come",
+        "love",
+        "heart",
+        "please"
+      ]
+    }
+  ]
+}

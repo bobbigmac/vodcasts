@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865254,
+  "feed": "dungeness-community-church",
+  "episode_slug": "2026-01-26-losing-to-win-surrendering-your-trust-lance-lewis-video-kmsjo9",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — You know, there are some things that we don't want to surrender to",
+      "kind": "intro",
+      "tags": [
+        "surrender",
+        "horse stops",
+        "stops just",
+        "just short"
+      ]
+    },
+    {
+      "startTime": 127.121,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "god",
+        "horse",
+        "going"
+      ]
+    },
+    {
+      "startTime": 363.239,
+      "title": "Trust in God’s Victory",
+      "kind": "message",
+      "tags": [
+        "victory",
+        "surrender",
+        "prayer"
+      ]
+    },
+    {
+      "startTime": 2175.266,
+      "title": "God's Pathway: Toward Eternal Life",
+      "kind": "invitation",
+      "confidence": 0.5506710358827784,
+      "tags": [
+        "eternal life",
+        "pathway",
+        "eternal"
+      ]
+    },
+    {
+      "startTime": 2431.413,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "take control",
+        "god",
+        "control",
+        "life"
+      ]
+    }
+  ]
+}

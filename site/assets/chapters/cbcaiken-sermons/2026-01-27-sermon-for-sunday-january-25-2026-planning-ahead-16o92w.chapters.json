@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864000,
+  "feed": "cbcaiken-sermons",
+  "episode_slug": "2026-01-27-sermon-for-sunday-january-25-2026-planning-ahead-16o92w",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — We just want to make sure that everybody's safe and hi, Diane",
+      "kind": "intro",
+      "tags": [
+        "conestone",
+        "know",
+        "want",
+        "get"
+      ]
+    },
+    {
+      "startTime": 66.353,
+      "title": "Prayer — this day, for this time that we have together",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "know",
+        "just pray",
+        "pray"
+      ]
+    },
+    {
+      "startTime": 185.538,
+      "title": "Scripture reading — You know, we get prepared for all kinds of different things and…",
+      "kind": "scripture",
+      "tags": [
+        "plan process",
+        "used back",
+        "take whenever",
+        "getting ready"
+      ]
+    },
+    {
+      "startTime": 313.384,
+      "title": "Making Decisions Daily",
+      "kind": "message",
+      "tags": [
+        "decision-making",
+        "daily-life"
+      ]
+    },
+    {
+      "startTime": 1481.252,
+      "title": "Giving / generosity — I hope and pray today that you are absolutely 100% obeying th…",
+      "kind": "giving",
+      "tags": [
+        "god",
+        "also applies",
+        "tithing offering",
+        "applies"
+      ]
+    },
+    {
+      "startTime": 1610.941,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "bible study",
+        "gotten something",
+        "bible",
+        "god bless"
+      ]
+    }
+  ]
+}

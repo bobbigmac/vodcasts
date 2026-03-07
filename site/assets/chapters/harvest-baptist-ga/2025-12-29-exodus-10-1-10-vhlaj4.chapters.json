@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772866213,
+  "feed": "harvest-baptist-ga",
+  "episode_slug": "2025-12-29-exodus-10-1-10-vhlaj4",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — Take your Bible with me to Exodus chapter 11",
+      "kind": "welcome",
+      "tags": [
+        "harvest baptist",
+        "baptist church",
+        "local church",
+        "harvest"
+      ]
+    },
+    {
+      "startTime": 10.658,
+      "title": "Welcome — Take your Bible with me to Exodus chapter 11",
+      "kind": "welcome",
+      "tags": [
+        "harvest baptist",
+        "baptist church",
+        "local church",
+        "harvest"
+      ]
+    },
+    {
+      "startTime": 131.163,
+      "title": "Understanding Personal Autonomy in Worldview Contexts",
+      "kind": "message",
+      "tags": [
+        "worldview",
+        "freedom",
+        "christianity"
+      ]
+    },
+    {
+      "startTime": 2444.791,
+      "title": "Prayer — have full assurance in your wisdom",
+      "kind": "prayer",
+      "tags": [
+        "help",
+        "full assurance",
+        "father",
+        "know"
+      ]
+    },
+    {
+      "startTime": 2527.33,
+      "title": "Benediction — For more information about the church, please visit our website Harve…",
+      "kind": "benediction",
+      "tags": [
+        "harvest baptist",
+        "baptist church",
+        "harvest",
+        "baptist"
+      ]
+    }
+  ]
+}

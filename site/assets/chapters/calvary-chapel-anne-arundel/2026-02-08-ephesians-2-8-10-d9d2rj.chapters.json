@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863675,
+  "feed": "calvary-chapel-anne-arundel",
+  "episode_slug": "2026-02-08-ephesians-2-8-10-d9d2rj",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "swiss alps",
+        "ephesians chapter",
+        "actually really",
+        "minutes long"
+      ]
+    },
+    {
+      "startTime": 125.678,
+      "title": "The Gift of Eternal Salvation",
+      "kind": "message",
+      "tags": [
+        "salvation",
+        "eternal",
+        "grace"
+      ]
+    },
+    {
+      "startTime": 3673.922,
+      "title": "Outro — Lord, what you would have us do, we'll worry about that later",
+      "kind": "outro",
+      "tags": [
+        "beloved one",
+        "amazing calling",
+        "love song",
+        "lord"
+      ]
+    }
+  ]
+}

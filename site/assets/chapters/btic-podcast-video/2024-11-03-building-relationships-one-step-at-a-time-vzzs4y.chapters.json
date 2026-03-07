@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863397,
+  "feed": "btic-podcast-video",
+  "episode_slug": "2024-11-03-building-relationships-one-step-at-a-time-vzzs4y",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — I am your host, Timothy, and we're here together on this beautiful day to h…",
+      "kind": "intro",
+      "tags": [
+        "berea temple",
+        "international church",
+        "god word",
+        "church podcast"
+      ]
+    },
+    {
+      "startTime": 135.288,
+      "title": "Living Beyond Proximity: Building Meaningful Relationships",
+      "kind": "message",
+      "tags": [
+        "relationships",
+        "community",
+        "connection"
+      ]
+    },
+    {
+      "startTime": 265.441,
+      "title": "Scripture reading — it all started with a simple step, going outside and saying hel…",
+      "kind": "scripture",
+      "tags": [
+        "heaven forbid",
+        "question led",
+        "talking",
+        "know"
+      ]
+    },
+    {
+      "startTime": 2472.514,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "holy spirit",
+        "father",
+        "pray",
+        "begin"
+      ]
+    }
+  ]
+}

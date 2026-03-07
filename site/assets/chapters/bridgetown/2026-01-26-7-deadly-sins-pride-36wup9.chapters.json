@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863316,
+  "feed": "bridgetown",
+  "episode_slug": "2026-01-26-7-deadly-sins-pride-36wup9",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — I commanded that all the wise men of Babylon be brought before…",
+      "kind": "scripture",
+      "tags": [
+        "chapter four",
+        "verse four",
+        "four",
+        "dream"
+      ]
+    },
+    {
+      "startTime": 11.522,
+      "title": "Scripture reading — I commanded that all the wise men of Babylon be brought before…",
+      "kind": "scripture",
+      "tags": [
+        "chapter four",
+        "verse four",
+        "four",
+        "dream"
+      ]
+    },
+    {
+      "startTime": 226.728,
+      "title": "Scripture reading — As I come to stop lights, come to traffic lights, I'll regularl…",
+      "kind": "scripture",
+      "tags": [
+        "pray",
+        "lord prayer",
+        "friend",
+        "lord"
+      ]
+    },
+    {
+      "startTime": 325.011,
+      "title": "Repentance through Kindness",
+      "kind": "message",
+      "tags": [
+        "repentance",
+        "kindness",
+        "oppression"
+      ]
+    },
+    {
+      "startTime": 2368.738,
+      "title": "Giving / generosity — generosity can free us from the captivity of pride and enable…",
+      "kind": "giving",
+      "tags": [
+        "god",
+        "every good",
+        "every perfect",
+        "perfect gift"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864767,
+  "feed": "crossccc",
+  "episode_slug": "2026-02-24-2-22-2026-14-1-15-7-2-romans-14-1-15-7-loving-one-another-mor-10ipby",
+  "chapters": [
+    {
+      "startTime": 0.162,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "anxious",
+        "party party",
+        "god",
+        "let pray"
+      ]
+    },
+    {
+      "startTime": 126.217,
+      "title": "Respecting Freedom of Conscience",
+      "kind": "message",
+      "tags": [
+        "freedom",
+        "conscience",
+        "respect"
+      ]
+    },
+    {
+      "startTime": 679.587,
+      "title": "Meeting the Church Rules",
+      "kind": "story",
+      "tags": [
+        "church",
+        "rules",
+        "acceptance"
+      ]
+    },
+    {
+      "startTime": 2587.765,
+      "title": "Benediction — Don't pursue the harmony that is formed by each other",
+      "kind": "benediction",
+      "tags": [
+        "one thing",
+        "thing",
+        "one",
+        "peace"
+      ]
+    },
+    {
+      "startTime": 2749.986,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "let pray",
+        "pray",
+        "give",
+        "amen"
+      ]
+    }
+  ]
+}

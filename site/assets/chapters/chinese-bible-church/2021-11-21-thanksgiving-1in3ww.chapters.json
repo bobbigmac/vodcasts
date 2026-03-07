@@ -2,37 +2,55 @@
   "version": 1,
   "generator": {
     "name": "vodcasts-answer-engine",
-    "version": 2,
-    "mode": "semantic"
+    "version": 4,
+    "mode": "hybrid"
   },
-  "generated_at_unix": 1772851878,
+  "generated_at_unix": 1772864119,
   "feed": "chinese-bible-church",
   "episode_slug": "2021-11-21-thanksgiving-1in3ww",
   "chapters": [
     {
       "startTime": 0.0,
       "title": "Start",
-      "kind": "start"
+      "kind": "start",
+      "tags": [
+        "luke chapter",
+        "verse number",
+        "luke",
+        "chapter"
+      ]
     },
     {
       "startTime": 58.733,
       "title": "Prayer — your word, the bible",
-      "kind": "prayer"
+      "kind": "prayer",
+      "tags": [
+        "jesus",
+        "today",
+        "dear god",
+        "today message"
+      ]
     },
     {
       "startTime": 176.849,
-      "title": "Message — they stood far off and they probably knew They probably knew that back ea…",
-      "kind": "message"
-    },
-    {
-      "startTime": 1133.075,
-      "title": "Topic — That he realized who Jesus was and what Jesus was deserving of",
-      "kind": "topic"
+      "title": "Thanksgiving and Praise",
+      "kind": "message",
+      "tags": [
+        "thanksgiving",
+        "praise",
+        "worship"
+      ]
     },
     {
       "startTime": 1780.597,
       "title": "Prayer — this thanksgiving season, a wonderful chance for us to…",
-      "kind": "prayer"
+      "kind": "prayer",
+      "tags": [
+        "hope",
+        "god",
+        "year",
+        "thank"
+      ]
     }
   ]
 }

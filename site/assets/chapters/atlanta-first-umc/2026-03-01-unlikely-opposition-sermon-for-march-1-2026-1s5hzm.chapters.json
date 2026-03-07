@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863098,
+  "feed": "atlanta-first-umc",
+  "episode_slug": "2026-03-01-unlikely-opposition-sermon-for-march-1-2026-1s5hzm",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — Jesus said, Peter, before this night is over, you will deny me…",
+      "kind": "scripture",
+      "tags": [
+        "standard version",
+        "revised standard",
+        "new revised",
+        "updated edition"
+      ]
+    },
+    {
+      "startTime": 82.274,
+      "title": "Scripture reading — Jesus said, Peter, before this night is over, you will deny me…",
+      "kind": "scripture",
+      "tags": [
+        "standard version",
+        "revised standard",
+        "new revised",
+        "updated edition"
+      ]
+    },
+    {
+      "startTime": 211.755,
+      "title": "Jesus Healing People on Their Way to Jerusalem",
+      "kind": "message",
+      "tags": [
+        "healing",
+        "journey",
+        "jerusalem"
+      ]
+    },
+    {
+      "startTime": 2005.218,
+      "title": "Prayer — Doxology",
+      "kind": "prayer",
+      "tags": [
+        "holy spirit",
+        "father",
+        "son",
+        "spirit"
+      ]
+    }
+  ]
+}

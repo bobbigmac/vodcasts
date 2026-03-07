@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865676,
+  "feed": "first-baptist-columbia-wf",
+  "episode_slug": "2026-03-02-the-money-mirage-ecclesiastes-5-5peslt",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — I mean, if you had that kind of money, you just wouldn't have to have any w…",
+      "kind": "intro",
+      "tags": [
+        "wichita falls",
+        "first baptist",
+        "money",
+        "baptist church"
+      ]
+    },
+    {
+      "startTime": 255.531,
+      "title": "The Myth of Wealth",
+      "kind": "message",
+      "tags": [
+        "money",
+        "wealth",
+        "wisdom"
+      ]
+    },
+    {
+      "startTime": 1896.066,
+      "title": "Outro — It is all a mirage that will leave you empty",
+      "kind": "outro",
+      "tags": [
+        "richly provides",
+        "god",
+        "first baptist",
+        "things"
+      ]
+    }
+  ]
+}

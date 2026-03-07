@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864846,
+  "feed": "crossway-milford-sermons",
+  "episode_slug": "2026-01-18-jeremiah-how-to-do-the-difficult-will-of-god-1k9l1h",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "chris crowe",
+        "church milford",
+        "milford campus",
+        "crossway christian"
+      ]
+    },
+    {
+      "startTime": 117.416,
+      "title": "Jeremiah’s Journey: Discerning God’s Will",
+      "kind": "message",
+      "tags": [
+        "prophets",
+        "jewish history",
+        "faithfulness"
+      ]
+    },
+    {
+      "startTime": 161.073,
+      "title": "Scripture reading — We believe that his will wouldn't include difficulty, but it do…",
+      "kind": "scripture",
+      "tags": [
+        "josiah",
+        "judah",
+        "son",
+        "lord came"
+      ]
+    },
+    {
+      "startTime": 2064.578,
+      "title": "Outro — Thanks for listening to the Crossway Christian Church's Milford Campus Serm…",
+      "kind": "outro",
+      "tags": [
+        "sermit podcast",
+        "crossway christian",
+        "christian church",
+        "church milford"
+      ]
+    },
+    {
+      "startTime": 2078.067,
+      "title": "Benediction — May the Lord bless you and keep you",
+      "kind": "benediction"
+    }
+  ]
+}

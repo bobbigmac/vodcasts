@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772866029,
+  "feed": "fresh-life-church",
+  "episode_slug": "2021-04-04-the-power-to-overcome-gloominess-and-despair-pastor-levi-lusk-wfazdw",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — so we have the prophetic word confirmed, which you do well to heed",
+      "kind": "intro",
+      "tags": [
+        "overcome gloominess",
+        "lord jesus",
+        "jesus christ",
+        "feel stuck"
+      ]
+    },
+    {
+      "startTime": 121.813,
+      "title": "Jesus' Life Pointing to the Cross",
+      "kind": "message",
+      "tags": [
+        "faith",
+        "sacrifice",
+        "hope"
+      ]
+    },
+    {
+      "startTime": 3213.739,
+      "title": "Invitation: Trust in God’s Power Today",
+      "kind": "invitation",
+      "confidence": 0.9709866729178029,
+      "tags": [
+        "trust",
+        "god's power",
+        "soul"
+      ]
+    },
+    {
+      "startTime": 3430.21,
+      "title": "Prayer Together: Let's Commit Our Hearts to Jesus",
+      "kind": "invitation",
+      "confidence": 0.8173164759472653,
+      "tags": [
+        "commitment",
+        "prayer",
+        "surrender"
+      ]
+    }
+  ]
+}

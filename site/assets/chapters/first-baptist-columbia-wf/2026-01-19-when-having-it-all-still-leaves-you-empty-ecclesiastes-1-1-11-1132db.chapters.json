@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865640,
+  "feed": "first-baptist-columbia-wf",
+  "episode_slug": "2026-01-19-when-having-it-all-still-leaves-you-empty-ecclesiastes-1-1-11-1132db",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — I'm gonna do eight messages through the book of Ecclesiastes",
+      "kind": "welcome",
+      "tags": [
+        "wichita falls",
+        "first baptist",
+        "baptist church",
+        "first"
+      ]
+    },
+    {
+      "startTime": 113.542,
+      "title": "Solomon’s Reflections on Success",
+      "kind": "message",
+      "tags": [
+        "wisdom",
+        "success",
+        "achievement"
+      ]
+    },
+    {
+      "startTime": 239.874,
+      "title": "Scripture reading — He wrote or at least compiled the book of Proverbs and he wrote…",
+      "kind": "scripture",
+      "tags": [
+        "book",
+        "wrote",
+        "song",
+        "songs"
+      ]
+    }
+  ]
+}

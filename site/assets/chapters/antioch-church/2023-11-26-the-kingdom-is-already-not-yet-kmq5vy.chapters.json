@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772862960,
+  "feed": "antioch-church",
+  "episode_slug": "2023-11-26-the-kingdom-is-already-not-yet-kmq5vy",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — As you know, for the last couple of months, we've been in a ser…",
+      "kind": "scripture",
+      "tags": [
+        "holy spirit",
+        "jesus",
+        "acts",
+        "one"
+      ]
+    },
+    {
+      "startTime": 220.642,
+      "title": "The Kingdom of God—A Fresh Perspective",
+      "kind": "message",
+      "tags": [
+        "kingdom",
+        "jesus",
+        "faith"
+      ]
+    },
+    {
+      "startTime": 1815.122,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "fell swoop",
+        "one fell",
+        "holy spirit",
+        "whatever god"
+      ]
+    }
+  ]
+}

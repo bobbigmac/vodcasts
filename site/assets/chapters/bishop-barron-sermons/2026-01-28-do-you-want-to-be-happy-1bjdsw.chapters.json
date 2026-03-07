@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863250,
+  "feed": "bishop-barron-sermons",
+  "episode_slug": "2026-01-28-do-you-want-to-be-happy-1bjdsw",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Matthew, chapters 5, 6, and 7 is this great speech of Jesus that probably r…",
+      "kind": "intro",
+      "tags": [
+        "catholic ministries",
+        "fire catholic",
+        "word",
+        "fire"
+      ]
+    },
+    {
+      "startTime": 127.574,
+      "title": "Clean Hearts Lead to Happiness",
+      "kind": "message",
+      "tags": [
+        "happiness",
+        "heart",
+        "truth"
+      ]
+    },
+    {
+      "startTime": 896.183,
+      "title": "Outro — That means you're on the right path",
+      "kind": "outro",
+      "tags": [
+        "one putting",
+        "putting obstacles",
+        "bishop barron",
+        "conformed way"
+      ]
+    }
+  ]
+}

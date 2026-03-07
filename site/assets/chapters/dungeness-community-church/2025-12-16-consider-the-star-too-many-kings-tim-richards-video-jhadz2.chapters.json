@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865220,
+  "feed": "dungeness-community-church",
+  "episode_slug": "2025-12-16-consider-the-star-too-many-kings-tim-richards-video-jhadz2",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "excellency",
+        "yes",
+        "majesty",
+        "hearts"
+      ]
+    },
+    {
+      "startTime": 132.174,
+      "title": "Message — Then Herod, when he saw that he had been tricked by the wise men, became…",
+      "kind": "message",
+      "tags": [
+        "herod",
+        "wise men",
+        "jerusalem",
+        "men"
+      ]
+    },
+    {
+      "startTime": 2385.949,
+      "title": "Prayer — the ways that we try to grab the throne back for oursel…",
+      "kind": "prayer",
+      "tags": [
+        "lord jesus",
+        "king",
+        "better king",
+        "pray"
+      ]
+    }
+  ]
+}

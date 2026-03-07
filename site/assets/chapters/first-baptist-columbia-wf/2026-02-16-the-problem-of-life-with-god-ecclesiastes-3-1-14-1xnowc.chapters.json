@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865663,
+  "feed": "first-baptist-columbia-wf",
+  "episode_slug": "2026-02-16-the-problem-of-life-with-god-ecclesiastes-3-1-14-1xnowc",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — We're going to explore Ecclesiastes 3 this morning",
+      "kind": "welcome",
+      "tags": [
+        "wichita falls",
+        "first baptist",
+        "three doors",
+        "baptist church"
+      ]
+    },
+    {
+      "startTime": 116.45,
+      "title": "A Time to Give Birth and a Time to Die",
+      "kind": "message",
+      "tags": [
+        "death",
+        "faith",
+        "transition"
+      ]
+    },
+    {
+      "startTime": 2236.354,
+      "title": "Outro — He was delivered over by the predetermined or predestined and foreknowledge…",
+      "kind": "outro",
+      "tags": [
+        "god",
+        "first baptist",
+        "godless men",
+        "god plan"
+      ]
+    }
+  ]
+}

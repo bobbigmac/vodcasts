@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863275,
+  "feed": "bridgetown",
+  "episode_slug": "2025-12-26-first-light-advent-2025-jesus-christmas-eve-10hpwm",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — I remember a couple of Christmases ago amid a personal cancer battle that w…",
+      "kind": "intro",
+      "tags": [
+        "joseph also",
+        "david",
+        "also went",
+        "town"
+      ]
+    },
+    {
+      "startTime": 40.224,
+      "title": "Scripture reading — I remember a couple of Christmases ago amid a personal cancer b…",
+      "kind": "scripture",
+      "tags": [
+        "lord",
+        "christmas",
+        "remember",
+        "ramon"
+      ]
+    },
+    {
+      "startTime": 161.538,
+      "title": "It's a profoundly personal answer to philosophy's great riddle",
+      "kind": "message",
+      "tags": [
+        "personal",
+        "philosophy",
+        "answer"
+      ]
+    }
+  ]
+}

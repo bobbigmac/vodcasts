@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864732,
+  "feed": "crossccc",
+  "episode_slug": "2026-02-17-2-15-2026-1-2-sunday-school-emotion-psychology-and-faith-1-2-c3el8a",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "people",
+        "god",
+        "people mind",
+        "people hearts"
+      ]
+    },
+    {
+      "startTime": 117.67,
+      "title": "Our Problem is Clearer Than We Think",
+      "kind": "message",
+      "tags": [
+        "discipleship",
+        "self-awareness",
+        "growth"
+      ]
+    },
+    {
+      "startTime": 2143.046,
+      "title": "Scripture reading — Let's read from chapter 139, chapter 13-24",
+      "kind": "scripture",
+      "tags": [
+        "let read",
+        "chapter",
+        "chapter 13-24",
+        "read"
+      ]
+    }
+  ]
+}

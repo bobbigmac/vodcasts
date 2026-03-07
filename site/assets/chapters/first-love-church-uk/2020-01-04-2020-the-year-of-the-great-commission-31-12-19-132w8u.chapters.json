@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865767,
+  "feed": "first-love-church-uk",
+  "episode_slug": "2020-01-04-2020-the-year-of-the-great-commission-31-12-19-132w8u",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Oh, you wanna give a round of applause to Jesus!",
+      "kind": "intro",
+      "tags": [
+        "church london",
+        "first love",
+        "love church",
+        "watch night"
+      ]
+    },
+    {
+      "startTime": 13.186,
+      "title": "Break / transition",
+      "kind": "transition",
+      "confidence": 0.883515842226503,
+      "tags": [
+        "bishop richard",
+        "richard iey",
+        "first love",
+        "love church"
+      ]
+    },
+    {
+      "startTime": 347.444,
+      "title": "Worship — I want you to welcome the greater love to evacuate the stage because it's…",
+      "kind": "worship",
+      "confidence": 0.7606910777562454,
+      "tags": [
+        "let sing",
+        "feel like",
+        "thank",
+        "united kingdom"
+      ]
+    },
+    {
+      "startTime": 1776.081,
+      "title": "Surviving a Car Crash",
+      "kind": "story",
+      "tags": [
+        "car accident",
+        "safety",
+        "miracle"
+      ]
+    },
+    {
+      "startTime": 4108.578,
+      "title": "Prayer — this great blessing and great honor, privilege to be in…",
+      "kind": "prayer",
+      "tags": [
+        "thank",
+        "lord",
+        "great",
+        "word"
+      ]
+    },
+    {
+      "startTime": 10640.242,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "jesus",
+        "come",
+        "year",
+        "need jesus"
+      ]
+    },
+    {
+      "startTime": 11129.186,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "jesus",
+        "lord jesus",
+        "amen",
+        "lord"
+      ]
+    },
+    {
+      "startTime": 12548.819,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "come upon",
+        "come",
+        "upon",
+        "people"
+      ]
+    },
+    {
+      "startTime": 12673.826,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "amen",
+        "year",
+        "blessed",
+        "new"
+      ]
+    }
+  ]
+}

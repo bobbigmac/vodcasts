@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863989,
+  "feed": "cbcaiken-sermons",
+  "episode_slug": "2026-01-11-sermon-for-sunday-january-11-2026-hot-cold-or-indifferent-bi9ixs",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — We're within here, but I believe that God wants to reach out so much further",
+      "kind": "intro",
+      "tags": [
+        "believe",
+        "lord together",
+        "church",
+        "great time"
+      ]
+    },
+    {
+      "startTime": 116.53399999999999,
+      "title": "Welcome — We're within here, but I believe that God wants to reach out so much furt…",
+      "kind": "welcome",
+      "tags": [
+        "believe",
+        "lord together",
+        "church",
+        "great time"
+      ]
+    },
+    {
+      "startTime": 239.903,
+      "title": "Prayer — these words that we have this morning",
+      "kind": "prayer",
+      "tags": [
+        "fresh",
+        "fresh set",
+        "fresh mind",
+        "fresh heart"
+      ]
+    },
+    {
+      "startTime": 362.403,
+      "title": "They Most Certainly Were Not Being Honest With God",
+      "kind": "message",
+      "tags": [
+        "lukewarm",
+        "indifferent",
+        "church"
+      ]
+    },
+    {
+      "startTime": 1648.221,
+      "title": "Prayer — coming this morning",
+      "kind": "prayer",
+      "tags": [
+        "saving knowledge",
+        "jesus",
+        "let pray",
+        "lord leads"
+      ]
+    }
+  ]
+}

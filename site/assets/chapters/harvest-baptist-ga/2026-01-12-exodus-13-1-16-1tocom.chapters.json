@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772866251,
+  "feed": "harvest-baptist-ga",
+  "episode_slug": "2026-01-12-exodus-13-1-16-1tocom",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — Now, I find it fitting that we come to this part, it being real…",
+      "kind": "scripture",
+      "tags": [
+        "harvest baptist",
+        "baptist church",
+        "local church",
+        "god"
+      ]
+    },
+    {
+      "startTime": 10.658,
+      "title": "Scripture reading — Now, I find it fitting that we come to this part, it being real…",
+      "kind": "scripture",
+      "tags": [
+        "harvest baptist",
+        "baptist church",
+        "local church",
+        "god"
+      ]
+    },
+    {
+      "startTime": 302.399,
+      "title": "Living Without Leaven: A Holy Life",
+      "kind": "message",
+      "tags": [
+        "holiness",
+        "self-control",
+        "redemption"
+      ]
+    },
+    {
+      "startTime": 2525.309,
+      "title": "Benediction — For more information about the church, please visit our website, Harv…",
+      "kind": "benediction",
+      "tags": [
+        "harvest baptist",
+        "baptist church",
+        "harvest",
+        "baptist"
+      ]
+    }
+  ]
+}

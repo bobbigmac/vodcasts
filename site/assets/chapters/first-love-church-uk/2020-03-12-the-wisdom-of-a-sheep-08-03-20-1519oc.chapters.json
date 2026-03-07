@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865926,
+  "feed": "first-love-church-uk",
+  "episode_slug": "2020-03-12-the-wisdom-of-a-sheep-08-03-20-1519oc",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start"
+    },
+    {
+      "startTime": 37.762,
+      "title": "Worship — I don't know about you, but I'm ready to praise God",
+      "kind": "worship",
+      "confidence": 0.6014809589154858,
+      "tags": [
+        "love church",
+        "bishop richard",
+        "best place",
+        "first love"
+      ]
+    },
+    {
+      "startTime": 441.858,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "church",
+        "lord",
+        "want"
+      ]
+    },
+    {
+      "startTime": 2234.472,
+      "title": "I Prayed, But Still Didn't Go Church Properly",
+      "kind": "message",
+      "tags": [
+        "prayer",
+        "church",
+        "depression"
+      ]
+    },
+    {
+      "startTime": 10721.228,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "say",
+        "jesus",
+        "heavenly father",
+        "father"
+      ]
+    },
+    {
+      "startTime": 10929.313,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "jesus",
+        "lord",
+        "save",
+        "god"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863924,
+  "feed": "catholic-sermons-station-of-the-cross",
+  "episode_slug": "2026-03-01-2nd-sunday-of-lent-3-1-26-dgis3y",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Our first sermon for today is entitled The Second Sunday of Lent, The Trans…",
+      "kind": "intro",
+      "tags": [
+        "everyday living",
+        "inspirational priests",
+        "cross presents",
+        "powerful sermons"
+      ]
+    },
+    {
+      "startTime": 33.122,
+      "title": "Prayer — Doxology",
+      "kind": "prayer",
+      "tags": [
+        "holy ghost",
+        "lord",
+        "holy gospel",
+        "lord transfiguration"
+      ]
+    },
+    {
+      "startTime": 159.237,
+      "title": "The Road to Mount Tabor",
+      "kind": "message",
+      "tags": [
+        "mountain",
+        "passion",
+        "faith"
+      ]
+    }
+  ]
+}

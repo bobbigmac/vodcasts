@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863261,
+  "feed": "bishop-barron-sermons",
+  "episode_slug": "2026-02-17-the-serpent-s-slogans-17jj72",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Nicholas, the greatest golfer in the world knew he had to get back to basics",
+      "kind": "intro",
+      "tags": [
+        "catholic ministries",
+        "fire catholic",
+        "word",
+        "god word"
+      ]
+    },
+    {
+      "startTime": 111.132,
+      "title": "Scripture reading — so we live out our spiritual lives in both body and soul",
+      "kind": "scripture",
+      "tags": [
+        "jack nicklaus",
+        "god",
+        "spiritual",
+        "lent"
+      ]
+    },
+    {
+      "startTime": 234.953,
+      "title": "Enjoying Life’s Delights",
+      "kind": "message",
+      "tags": [
+        "delight",
+        "life",
+        "blessings"
+      ]
+    },
+    {
+      "startTime": 749.01,
+      "title": "Break / transition",
+      "kind": "transition",
+      "confidence": 0.6321205588285577,
+      "tags": [
+        "god",
+        "criterion",
+        "safe",
+        "try"
+      ]
+    },
+    {
+      "startTime": 878.1659999999999,
+      "title": "Outro — Everything else is a footnote to it",
+      "kind": "outro",
+      "tags": [
+        "important point",
+        "way",
+        "point",
+        "barron"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864145,
+  "feed": "chinese-community-church-sacramento",
+  "episode_slug": "2018-03-18-spiritual-fitness-spiritual-maturity-pastor-curtis-yee-march--18zfs1",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "good morning",
+        "ephesians chapter",
+        "brown bible",
+        "god"
+      ]
+    },
+    {
+      "startTime": 75.95400000000001,
+      "title": "Spiritual Fitness: Building Health Through Faith",
+      "kind": "message",
+      "tags": [
+        "spiritual fitness",
+        "health",
+        "faith"
+      ]
+    },
+    {
+      "startTime": 2339.458,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "long way",
+        "simply turn",
+        "god",
+        "call"
+      ]
+    }
+  ]
+}

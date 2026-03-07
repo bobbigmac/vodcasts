@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863735,
+  "feed": "calvary-chapel-fort-lauderdale",
+  "episode_slug": "2026-01-04-week-one-pause-4cw121",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "want",
+        "new year",
+        "year",
+        "many"
+      ]
+    },
+    {
+      "startTime": 125.688,
+      "title": "Training Your Soul: The Path to Eternity",
+      "kind": "message",
+      "tags": [
+        "training",
+        "soul",
+        "eternity"
+      ]
+    },
+    {
+      "startTime": 3466.626,
+      "title": "Make Your Decision Today",
+      "kind": "invitation",
+      "confidence": 0.9931943355077695,
+      "tags": [
+        "decision-making",
+        "eternity",
+        "god"
+      ]
+    }
+  ]
+}

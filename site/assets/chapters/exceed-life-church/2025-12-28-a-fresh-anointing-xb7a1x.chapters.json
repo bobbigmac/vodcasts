@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865492,
+  "feed": "exceed-life-church",
+  "episode_slug": "2025-12-28-a-fresh-anointing-xb7a1x",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start"
+    },
+    {
+      "startTime": 3.97,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "amen",
+        "fresh",
+        "fresh anointing"
+      ]
+    },
+    {
+      "startTime": 263.514,
+      "title": "Triumph in God’s Works",
+      "kind": "message",
+      "tags": [
+        "triumph",
+        "god's works",
+        "glory"
+      ]
+    },
+    {
+      "startTime": 2005.345,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "king dainties",
+        "get linda",
+        "amen",
+        "daniel"
+      ]
+    },
+    {
+      "startTime": 2123.914,
+      "title": "Invitation: Serve Others Without Fear",
+      "kind": "invitation",
+      "confidence": 0.8427628336863724,
+      "tags": [
+        "discipleship",
+        "service",
+        "mission"
+      ]
+    }
+  ]
+}

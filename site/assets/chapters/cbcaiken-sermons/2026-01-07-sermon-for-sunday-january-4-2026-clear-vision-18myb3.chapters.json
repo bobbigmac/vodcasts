@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863984,
+  "feed": "cbcaiken-sermons",
+  "episode_slug": "2026-01-07-sermon-for-sunday-january-4-2026-clear-vision-18myb3",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — It is good to see each and every one of you",
+      "kind": "welcome",
+      "tags": [
+        "still working",
+        "want",
+        "wonderful",
+        "morning"
+      ]
+    },
+    {
+      "startTime": 122.201,
+      "title": "Welcome Back",
+      "kind": "message",
+      "tags": [
+        "welcome",
+        "church",
+        "community"
+      ]
+    },
+    {
+      "startTime": 620.521,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "vision",
+        "king james",
+        "listens will",
+        "lord"
+      ]
+    }
+  ]
+}

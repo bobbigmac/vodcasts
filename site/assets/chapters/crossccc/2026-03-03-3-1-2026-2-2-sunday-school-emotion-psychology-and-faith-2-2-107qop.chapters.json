@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864802,
+  "feed": "crossccc",
+  "episode_slug": "2026-03-03-3-1-2026-2-2-sunday-school-emotion-psychology-and-faith-2-2-107qop",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — First of all, the idol It's not about other gods",
+      "kind": "intro",
+      "tags": [
+        "one",
+        "second one",
+        "gods",
+        "god"
+      ]
+    },
+    {
+      "startTime": 158.709,
+      "title": "Scripture reading — First of all, the idol It's not about other gods",
+      "kind": "scripture",
+      "tags": [
+        "one",
+        "second one",
+        "gods",
+        "god"
+      ]
+    },
+    {
+      "startTime": 267.178,
+      "title": "Moses as an Idol",
+      "kind": "message",
+      "tags": [
+        "idolatry",
+        "israelites",
+        "god"
+      ]
+    }
+  ]
+}

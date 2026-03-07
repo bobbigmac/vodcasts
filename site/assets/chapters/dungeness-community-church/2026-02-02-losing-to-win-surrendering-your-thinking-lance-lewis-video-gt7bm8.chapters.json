@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865268,
+  "feed": "dungeness-community-church",
+  "episode_slug": "2026-02-02-losing-to-win-surrendering-your-thinking-lance-lewis-video-gt7bm8",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — today we're going to talk about surrendering your thinking to God",
+      "kind": "intro",
+      "tags": [
+        "god",
+        "surrender",
+        "jesus",
+        "really appreciate"
+      ]
+    },
+    {
+      "startTime": 116.994,
+      "title": "The Softness of Men",
+      "kind": "message",
+      "tags": [
+        "faith",
+        "surrender",
+        "reason"
+      ]
+    },
+    {
+      "startTime": 2945.256,
+      "title": "Prayer — this day and for this time we have to spend together, g…",
+      "kind": "prayer",
+      "tags": [
+        "king",
+        "can grab",
+        "god",
+        "business"
+      ]
+    }
+  ]
+}

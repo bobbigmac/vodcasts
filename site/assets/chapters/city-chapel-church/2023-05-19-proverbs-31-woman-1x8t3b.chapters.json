@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864455,
+  "feed": "city-chapel-church",
+  "episode_slug": "2023-05-19-proverbs-31-woman-1x8t3b",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — I will try and speak slowly but I don't guarantee",
+      "kind": "intro",
+      "tags": [
+        "slaughter creek",
+        "city chapel",
+        "weekly podcast",
+        "world okayest"
+      ]
+    },
+    {
+      "startTime": 129.838,
+      "title": "Celebrating Mothers: Nurturing and Creating Beauty",
+      "kind": "message",
+      "tags": [
+        "moms",
+        "nurturing",
+        "beauty"
+      ]
+    },
+    {
+      "startTime": 2490.594,
+      "title": "Receive Encouragement—Honoring Your Mother",
+      "kind": "invitation",
+      "confidence": 0.6246889011486004,
+      "tags": [
+        "encouragement",
+        "motherhood",
+        "honoring"
+      ]
+    },
+    {
+      "startTime": 2737.003,
+      "title": "Prayer — these precious women in our lives that have nurtured us…",
+      "kind": "prayer",
+      "tags": [
+        "jesus' name",
+        "pray",
+        "today",
+        "close today"
+      ]
+    }
+  ]
+}

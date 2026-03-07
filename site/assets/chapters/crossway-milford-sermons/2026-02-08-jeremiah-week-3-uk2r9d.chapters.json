@@ -1,0 +1,83 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864867,
+  "feed": "crossway-milford-sermons",
+  "episode_slug": "2026-02-08-jeremiah-week-3-uk2r9d",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Prayer is something that we are invited into",
+      "kind": "intro",
+      "tags": [
+        "good morning",
+        "donut",
+        "come",
+        "prayer"
+      ]
+    },
+    {
+      "startTime": 4.802,
+      "title": "Welcome — Prayer is something that we are invited into",
+      "kind": "welcome",
+      "tags": [
+        "good morning",
+        "donut",
+        "come",
+        "prayer"
+      ]
+    },
+    {
+      "startTime": 128.954,
+      "title": "Jeremiah Weeps: The Secret Place of Prayer",
+      "kind": "message",
+      "tags": [
+        "prayer",
+        "rejection",
+        "heartbreak"
+      ]
+    },
+    {
+      "startTime": 259.502,
+      "title": "Scripture reading — God whispers in our pleasures, but he shouts in our pain",
+      "kind": "scripture",
+      "tags": [
+        "god",
+        "jeremiah",
+        "god whispers",
+        "pleasures"
+      ]
+    },
+    {
+      "startTime": 1056.61,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "jesus thank",
+        "never alone",
+        "jeremiah",
+        "constantly present"
+      ]
+    },
+    {
+      "startTime": 2712.397,
+      "title": "Prayer — loving us so much",
+      "kind": "prayer",
+      "tags": [
+        "let pray",
+        "thank",
+        "can bring",
+        "bring"
+      ]
+    },
+    {
+      "startTime": 2790.897,
+      "title": "Benediction — May the Lord bless you and keep you",
+      "kind": "benediction"
+    }
+  ]
+}

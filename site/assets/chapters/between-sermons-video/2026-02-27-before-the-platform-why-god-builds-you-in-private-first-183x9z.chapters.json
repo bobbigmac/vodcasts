@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863233,
+  "feed": "between-sermons-video",
+  "episode_slug": "2026-02-27-before-the-platform-why-god-builds-you-in-private-first-183x9z",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — You just went from church to church",
+      "kind": "welcome",
+      "tags": [
+        "church",
+        "another episode",
+        "disciples church",
+        "sermons"
+      ]
+    },
+    {
+      "startTime": 10.53,
+      "title": "Welcome — You just went from church to church",
+      "kind": "welcome",
+      "tags": [
+        "church",
+        "another episode",
+        "disciples church",
+        "sermons"
+      ]
+    },
+    {
+      "startTime": 118.461,
+      "title": "The Power of God’s Control",
+      "kind": "message",
+      "tags": [
+        "faith",
+        "god",
+        "strength"
+      ]
+    },
+    {
+      "startTime": 3970.032,
+      "title": "Outro — then he tells him, go to the temple now",
+      "kind": "outro",
+      "tags": [
+        "heart postured",
+        "know",
+        "man",
+        "just keep"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864504,
+  "feed": "city-chapel-church",
+  "episode_slug": "2023-10-11-mark-7-14-23-13-things-i-hate-about-you-prt-2-1da7tp",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — We're working through the gospel of Mark going verse by verse",
+      "kind": "scripture",
+      "tags": [
+        "slaughter creek",
+        "city chapel",
+        "weekly podcast",
+        "world okayest"
+      ]
+    },
+    {
+      "startTime": 3.202,
+      "title": "Scripture reading — We're working through the gospel of Mark going verse by verse",
+      "kind": "scripture",
+      "tags": [
+        "slaughter creek",
+        "city chapel",
+        "weekly podcast",
+        "world okayest"
+      ]
+    },
+    {
+      "startTime": 119.46000000000001,
+      "title": "Defiling Actions & Defilement",
+      "kind": "message",
+      "tags": [
+        "sin",
+        "holiness",
+        "salvation"
+      ]
+    },
+    {
+      "startTime": 1867.384,
+      "title": "The Power of Words",
+      "kind": "teaching",
+      "tags": [
+        "communication",
+        "persuasion",
+        "impact"
+      ]
+    },
+    {
+      "startTime": 3404.404,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "best",
+        "trust",
+        "dad",
+        "good evidence"
+      ]
+    }
+  ]
+}

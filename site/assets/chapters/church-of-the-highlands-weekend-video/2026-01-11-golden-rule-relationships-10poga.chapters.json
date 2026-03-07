@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864234,
+  "feed": "church-of-the-highlands-weekend-video",
+  "episode_slug": "2026-01-11-golden-rule-relationships-10poga",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — our theme for the entire year comes out of Matthew chapter 6 verse 33",
+      "kind": "welcome",
+      "tags": [
+        "anybody excited",
+        "church",
+        "week",
+        "god"
+      ]
+    },
+    {
+      "startTime": 25.154,
+      "title": "Welcome — our theme for the entire year comes out of Matthew chapter 6 verse 33",
+      "kind": "welcome",
+      "tags": [
+        "anybody excited",
+        "church",
+        "week",
+        "god"
+      ]
+    },
+    {
+      "startTime": 104.35300000000001,
+      "title": "Seeking First His Kingdom: Practical Steps for Abundant Life",
+      "kind": "message",
+      "tags": [
+        "abundance",
+        "kingdom",
+        "life"
+      ]
+    },
+    {
+      "startTime": 1839.436,
+      "title": "Give God Praise and Pray for Us",
+      "kind": "invitation",
+      "confidence": 0.8712650964121958,
+      "tags": [
+        "praise",
+        "prayer",
+        "community"
+      ]
+    }
+  ]
+}

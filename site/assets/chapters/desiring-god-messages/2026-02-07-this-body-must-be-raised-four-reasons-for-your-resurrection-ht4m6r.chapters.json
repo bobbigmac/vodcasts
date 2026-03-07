@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865169,
+  "feed": "desiring-god-messages",
+  "episode_slug": "2026-02-07-this-body-must-be-raised-four-reasons-for-your-resurrection-ht4m6r",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "lord",
+        "must put",
+        "death",
+        "shall"
+      ]
+    },
+    {
+      "startTime": 130.679,
+      "title": "Resurrection Life: Purpose and Direction",
+      "kind": "message",
+      "tags": [
+        "resurrection",
+        "purpose",
+        "direction"
+      ]
+    },
+    {
+      "startTime": 1986.073,
+      "title": "Worship — You're gonna shine like the sun in the kingdom of your father, Jesus said",
+      "kind": "worship",
+      "confidence": 0.6604044743550609,
+      "tags": [
+        "glory",
+        "god",
+        "glory will",
+        "glorious"
+      ]
+    },
+    {
+      "startTime": 2224.449,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "life",
+        "always abounding",
+        "jesus"
+      ]
+    }
+  ]
+}

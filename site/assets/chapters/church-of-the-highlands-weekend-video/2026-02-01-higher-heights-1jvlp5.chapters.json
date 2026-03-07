@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864267,
+  "feed": "church-of-the-highlands-weekend-video",
+  "episode_slug": "2026-02-01-higher-heights-1jvlp5",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — We're just in awe of you and what you're doing here at Church of the High…",
+      "kind": "welcome",
+      "tags": [
+        "church",
+        "campus",
+        "highlands",
+        "jesus"
+      ]
+    },
+    {
+      "startTime": 13.73,
+      "title": "Welcome — We're just in awe of you and what you're doing here at Church of the High…",
+      "kind": "welcome",
+      "tags": [
+        "church",
+        "campus",
+        "highlands",
+        "jesus"
+      ]
+    },
+    {
+      "startTime": 121.187,
+      "title": "We Are Grateful Where God Has Brings Us",
+      "kind": "message",
+      "tags": [
+        "gratitude",
+        "god",
+        "bringing"
+      ]
+    },
+    {
+      "startTime": 297.442,
+      "title": "Welcome — Thank you for being a pray first church",
+      "kind": "welcome",
+      "tags": [
+        "praise god",
+        "god",
+        "praise",
+        "thank"
+      ]
+    },
+    {
+      "startTime": 2302.315,
+      "title": "Giving / generosity — I'm so grateful to the Lord for letting me be here",
+      "kind": "giving",
+      "tags": [
+        "love",
+        "pastor mark",
+        "god",
+        "mark"
+      ]
+    },
+    {
+      "startTime": 2413.826,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "announcement",
+        "lord",
+        "want"
+      ]
+    }
+  ]
+}

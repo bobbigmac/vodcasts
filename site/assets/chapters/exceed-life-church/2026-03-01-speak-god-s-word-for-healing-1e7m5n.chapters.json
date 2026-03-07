@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865552,
+  "feed": "exceed-life-church",
+  "episode_slug": "2026-03-01-speak-god-s-word-for-healing-1e7m5n",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start"
+    },
+    {
+      "startTime": 3.938,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "amen",
+        "praise god",
+        "jesus"
+      ]
+    },
+    {
+      "startTime": 127.977,
+      "title": "Healing Focus: Focusing on Jesus' Cross",
+      "kind": "message",
+      "tags": [
+        "healing",
+        "focus",
+        "jesus"
+      ]
+    },
+    {
+      "startTime": 257.171,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "jesus",
+        "blood",
+        "god",
+        "amen"
+      ]
+    },
+    {
+      "startTime": 1732.289,
+      "title": "Confessing the Lordship of Jesus Christ is Powerful",
+      "kind": "invitation",
+      "confidence": 0.9293487869395705,
+      "tags": [
+        "confession",
+        "salvation",
+        "lordship"
+      ]
+    },
+    {
+      "startTime": 2115.328,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "says",
+        "three times",
+        "jesus"
+      ]
+    },
+    {
+      "startTime": 2244.588,
+      "title": "Healing Words: Confessing No Weapon Formed Against Us Shall Prosper",
+      "kind": "invitation",
+      "confidence": 0.9083703161224951,
+      "tags": [
+        "healing",
+        "confession",
+        "weapon"
+      ]
+    },
+    {
+      "startTime": 2367.97,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "believe jesus",
+        "exceed life",
+        "life church",
+        "jesus"
+      ]
+    }
+  ]
+}

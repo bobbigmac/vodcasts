@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865656,
+  "feed": "first-baptist-columbia-wf",
+  "episode_slug": "2026-02-16-be-faithful-genesis-39-1cphpj",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — God's purpose for your future begins with your present faithfulness",
+      "kind": "welcome",
+      "tags": [
+        "wichita falls",
+        "first baptist",
+        "life",
+        "joseph"
+      ]
+    },
+    {
+      "startTime": 239.24,
+      "title": "Joseph’s Dreams and Rebellious Brothers",
+      "kind": "message",
+      "tags": [
+        "faith",
+        "family",
+        "dreams"
+      ]
+    },
+    {
+      "startTime": 1938.797,
+      "title": "Outro — what I couldn't see, God was building in me",
+      "kind": "outro",
+      "tags": [
+        "sees purpose",
+        "god",
+        "first baptist",
+        "pit"
+      ]
+    }
+  ]
+}

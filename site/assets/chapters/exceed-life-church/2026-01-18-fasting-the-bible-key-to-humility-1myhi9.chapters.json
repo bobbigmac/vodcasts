@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772865511,
+  "feed": "exceed-life-church",
+  "episode_slug": "2026-01-18-fasting-the-bible-key-to-humility-1myhi9",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start"
+    },
+    {
+      "startTime": 3.938,
+      "title": "Fasting & Prayer: Bringing Closer to God",
+      "kind": "invitation",
+      "confidence": 0.7746273444605614,
+      "tags": [
+        "fasting",
+        "prayer",
+        "closeness"
+      ]
+    },
+    {
+      "startTime": 623.078,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "god grace",
+        "amen",
+        "lord"
+      ]
+    },
+    {
+      "startTime": 1104.987,
+      "title": "Praying for Children’s Transformation",
+      "kind": "message",
+      "tags": [
+        "children",
+        "transformation",
+        "god's intervention"
+      ]
+    },
+    {
+      "startTime": 2096.79,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "god can",
+        "jews",
+        "fasting"
+      ]
+    },
+    {
+      "startTime": 2221.698,
+      "title": "Praying for Your Family’s Transformation",
+      "kind": "invitation",
+      "confidence": 0.8738142182949613,
+      "tags": [
+        "prayer",
+        "family transformation"
+      ]
+    },
+    {
+      "startTime": 2347.507,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "believe jesus",
+        "life church",
+        "jesus",
+        "say"
+      ]
+    }
+  ]
+}

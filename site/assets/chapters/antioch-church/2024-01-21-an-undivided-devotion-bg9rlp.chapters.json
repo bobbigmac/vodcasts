@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863020,
+  "feed": "antioch-church",
+  "episode_slug": "2024-01-21-an-undivided-devotion-bg9rlp",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — You may remember last week I was out in Holland, Michigan at Western Theo…",
+      "kind": "welcome",
+      "tags": [
+        "lord",
+        "thank",
+        "thanks",
+        "sean"
+      ]
+    },
+    {
+      "startTime": 41.756,
+      "title": "Welcome — You may remember last week I was out in Holland, Michigan at Western Theo…",
+      "kind": "welcome",
+      "tags": [
+        "lord",
+        "thank",
+        "thanks",
+        "sean"
+      ]
+    },
+    {
+      "startTime": 174.69,
+      "title": "Living Free From Anxiety",
+      "kind": "message",
+      "tags": [
+        "anxiety",
+        "freedom",
+        "god"
+      ]
+    }
+  ]
+}

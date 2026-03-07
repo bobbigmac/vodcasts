@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864133,
+  "feed": "chinese-community-church-sacramento",
+  "episode_slug": "2018-03-11-i-am-the-light-of-the-world-pastor-tim-clements-march-11-2018-1j8tn3",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Scripture reading — as I'm referring to this, I want you to know that I'm going to…",
+      "kind": "scripture",
+      "tags": [
+        "john chapter",
+        "john",
+        "lord",
+        "really good"
+      ]
+    },
+    {
+      "startTime": 78.937,
+      "title": "Scripture reading — as I'm referring to this, I want you to know that I'm going to…",
+      "kind": "scripture",
+      "tags": [
+        "john chapter",
+        "john",
+        "lord",
+        "really good"
+      ]
+    },
+    {
+      "startTime": 163.034,
+      "title": "The Resurrection Light",
+      "kind": "message",
+      "tags": [
+        "resurrection",
+        "light",
+        "christ"
+      ]
+    },
+    {
+      "startTime": 1847.832,
+      "title": "Prayer — your grace and your mercy",
+      "kind": "prayer",
+      "tags": [
+        "lord",
+        "light",
+        "let pray",
+        "pray together"
+      ]
+    }
+  ]
+}

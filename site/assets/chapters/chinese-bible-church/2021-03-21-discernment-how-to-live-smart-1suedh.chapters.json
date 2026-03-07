@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864052,
+  "feed": "chinese-bible-church",
+  "episode_slug": "2021-03-21-discernment-how-to-live-smart-1suedh",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "proverbs chapter",
+        "will receive",
+        "thou",
+        "thou will"
+      ]
+    },
+    {
+      "startTime": 61.7,
+      "title": "Prayer — your word, the bible, that we have it to learn from, th…",
+      "kind": "prayer",
+      "tags": [
+        "one year",
+        "year",
+        "one",
+        "march"
+      ]
+    },
+    {
+      "startTime": 161.972,
+      "title": "Learning and Growth Over Time",
+      "kind": "message",
+      "tags": [
+        "growth",
+        "learning",
+        "adaptability"
+      ]
+    },
+    {
+      "startTime": 1675.856,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "know",
+        "wise",
+        "everything",
+        "god"
+      ]
+    }
+  ]
+}

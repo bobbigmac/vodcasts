@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864184,
+  "feed": "chinese-community-church-sacramento",
+  "episode_slug": "2018-05-13-the-truth-will-set-you-free-part-2-pastor-louis-lee-may-13-20-1d2wrg",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "today scripture",
+        "scripture reading",
+        "truth",
+        "john"
+      ]
+    },
+    {
+      "startTime": 122.429,
+      "title": "Understanding Freedom Through Truth",
+      "kind": "message",
+      "tags": [
+        "freedom",
+        "truth",
+        "christianity"
+      ]
+    },
+    {
+      "startTime": 193.148,
+      "title": "Prayer — the opportunity to worship and to fellowship thank you…",
+      "kind": "prayer",
+      "tags": [
+        "father",
+        "truth",
+        "father god",
+        "jesus"
+      ]
+    },
+    {
+      "startTime": 537.5840000000001,
+      "title": "Scripture reading — so you have the word of God, living, written",
+      "kind": "scripture",
+      "tags": [
+        "jesus christ",
+        "jesus",
+        "god",
+        "bible"
+      ]
+    },
+    {
+      "startTime": 1097.045,
+      "title": "Prayer",
+      "kind": "prayer",
+      "tags": [
+        "jesus christ",
+        "jesus",
+        "father god",
+        "let pray"
+      ]
+    }
+  ]
+}

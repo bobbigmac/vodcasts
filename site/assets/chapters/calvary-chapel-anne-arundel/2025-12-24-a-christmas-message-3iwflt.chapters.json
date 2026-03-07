@@ -2,27 +2,33 @@
   "version": 1,
   "generator": {
     "name": "vodcasts-answer-engine",
-    "version": 2,
-    "mode": "semantic"
+    "version": 4,
+    "mode": "hybrid"
   },
-  "generated_at_unix": 1772851871,
+  "generated_at_unix": 1772863612,
   "feed": "calvary-chapel-anne-arundel",
   "episode_slug": "2025-12-24-a-christmas-message-3iwflt",
   "chapters": [
     {
       "startTime": 0.0,
       "title": "Intro — just the first six verses, beautiful entryway into Christmas and the celebr…",
-      "kind": "intro"
+      "kind": "intro",
+      "tags": [
+        "christmas",
+        "christmas eve",
+        "perfect god",
+        "one"
+      ]
     },
     {
       "startTime": 256.848,
-      "title": "Message — that is one of the most beautiful things when the uniqueness of the gift…",
-      "kind": "message"
-    },
-    {
-      "startTime": 1108.55,
-      "title": "Topic — you know the story of Fort McHenry, it's the war 1812",
-      "kind": "topic"
+      "title": "The Gift of Adoption",
+      "kind": "message",
+      "tags": [
+        "adoption",
+        "predestination",
+        "religion"
+      ]
     }
   ]
 }

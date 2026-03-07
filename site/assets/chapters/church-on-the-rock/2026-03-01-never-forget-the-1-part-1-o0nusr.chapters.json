@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772864378,
+  "feed": "church-on-the-rock",
+  "episode_slug": "2026-03-01-never-forget-the-1-part-1-o0nusr",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Welcome — your ministry is just as important as my ministry",
+      "kind": "welcome",
+      "tags": [
+        "ministry",
+        "every member",
+        "series",
+        "believer"
+      ]
+    },
+    {
+      "startTime": 130.05,
+      "title": "The Ministry of Reconciliation",
+      "kind": "message",
+      "tags": [
+        "reconciliation",
+        "ministry",
+        "faith"
+      ]
+    },
+    {
+      "startTime": 382.786,
+      "title": "Scripture reading — That he was teaching in their synagogues and preaching the gosp…",
+      "kind": "scripture",
+      "tags": [
+        "bible",
+        "paper bible",
+        "never",
+        "one"
+      ]
+    },
+    {
+      "startTime": 2479.104,
+      "title": "Outro — She opens the door and she goes, I found them",
+      "kind": "outro",
+      "tags": [
+        "said",
+        "pastor kim",
+        "church",
+        "god"
+      ]
+    }
+  ]
+}

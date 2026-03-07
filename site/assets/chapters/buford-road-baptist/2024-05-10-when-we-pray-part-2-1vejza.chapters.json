@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 4,
+    "mode": "hybrid"
+  },
+  "generated_at_unix": 1772863528,
+  "feed": "buford-road-baptist",
+  "episode_slug": "2024-05-10-when-we-pray-part-2-1vejza",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start",
+      "tags": [
+        "baptist church",
+        "buford road",
+        "road baptist",
+        "david kogel"
+      ]
+    },
+    {
+      "startTime": 130.2,
+      "title": "Praying Without Feeling Like It",
+      "kind": "message",
+      "tags": [
+        "prayer",
+        "soul",
+        "spiritual"
+      ]
+    },
+    {
+      "startTime": 1918.577,
+      "title": "Outro — I guarantee you, we won't know half what happened when we prayed till we ge…",
+      "kind": "outro",
+      "tags": [
+        "know",
+        "god",
+        "church service",
+        "pray"
+      ]
+    }
+  ]
+}
