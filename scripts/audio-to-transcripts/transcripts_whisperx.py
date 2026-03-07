@@ -14,6 +14,7 @@ import signal
 import atexit
 import urllib.error
 import urllib.request
+from concurrent.futures import FIRST_COMPLETED, Future, ThreadPoolExecutor, wait
 from contextlib import contextmanager
 from dataclasses import dataclass
 from pathlib import Path
@@ -38,6 +39,7 @@ _MEDIA_PROBE_MAX_TIME_SECONDS = 10
 
 _EXISTING_VTT_MIN_CHARS = 80
 _EXISTING_VTT_MIN_WORDS = 10
+_TRANSCRIPTION_CONCURRENCY = 2
 
 
 class MediaDownloadError(RuntimeError):
@@ -85,6 +87,28 @@ class TranscriptCandidate:
     lang: str
     is_captions: bool
     is_playable: bool
+
+
+@dataclass(frozen=True)
+class WorkItem:
+    src: Source
+    channel_title: str
+    ep: dict[str, Any]
+    action: str  # download|generate
+
+
+@dataclass(frozen=True)
+class WorkOutcome:
+    src_id: str
+    ep_slug: str
+    action: str
+    chosen: str
+    provided_count: int = 0
+    rejected_provided: int = 0
+    generated_count: int = 0
+    spotcheck_count: int = 0
+    errors: int = 0
+    dead_media: bool = False
 
 
 def _parse_args() -> argparse.Namespace:
