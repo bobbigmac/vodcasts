@@ -1,0 +1,8 @@
+# Required dependencies for transcript parsing, search, and chapter generation.
+stop-words
+snowballstemmer
+webvtt-py
+pysrt
+yake
+sentence-transformers
+keybert

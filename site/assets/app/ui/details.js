@@ -31,7 +31,8 @@ export function DetailsPanel({ isOpen, env, player, log }) {
   const chapters = player.chapters.value || [];
   const chaptersErr = player.chaptersLoadError?.value ?? null;
   const transcriptsErr = player.transcriptsLoadError?.value ?? null;
-  const hasChapters = ep && ((ep.chaptersInline && ep.chaptersInline.length) || ep.chaptersExternal);
+  const declaredChapters = ep && ((ep.chaptersInline && ep.chaptersInline.length) || ep.chaptersExternal);
+  const hasChapters = chapters.length > 0 || declaredChapters;
   const hasSubtitles = ep && ep.transcripts && ep.transcripts.length > 0;
   const transcriptsAll = ep?.transcriptsAll || ep?.transcripts || [];
   const hasTranscriptLink = transcriptsAll.length > 0;
@@ -65,7 +66,7 @@ export function DetailsPanel({ isOpen, env, player, log }) {
           <div class="detailsChaptersTitle">Chapters</div>
           ${chaptersErr
             ? html`<div class="detailsEnrichError">Failed to load: ${chaptersErr}</div>`
-            : !hasChapters && ep
+            : !chapters.length && ep && !declaredChapters
               ? html`<div class="detailsEnrichHint">Not available for this episode</div>`
               : ""}
           <div id="chapters" class="chapters">

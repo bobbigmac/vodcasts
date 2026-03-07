@@ -29,6 +29,18 @@ Run these from inside the `vodcasts/` folder:
 - `yarn build` — build static site into `dist/`
 - `yarn dev` — dev server on port `8000` (small feed set)
 
+## Answer Engine (transcript search)
+
+For local transcript/subtitle search (“find candidate answers” for free-text questions), see `scripts/answer-engine/`.
+
+Typical flow:
+
+- Analyze transcripts into cached segments: `bash scripts/answer-engine/ae.sh analyze`
+- Build/update search index: `bash scripts/answer-engine/ae.sh index`
+- Query: `bash scripts/answer-engine/ae.sh query search --q "How can I handle stress better?"`
+- Generate auto-chapters JSON into `site/assets/chapters/`: `bash scripts/answer-engine/ae.sh chapters`
+- Fast dev spot-check (single file): `bash scripts/answer-engine/ae.sh chapters --transcript <feed>/<episode>.vtt --force --print`
+
 ## Analytics (optional)
 
 GA4 can be enabled by setting a measurement id:

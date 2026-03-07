@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 2,
+    "mode": "semantic"
+  },
+  "generated_at_unix": 1772848416,
+  "feed": "all-saints-homilies",
+  "episode_slug": "2023-02-14-the-supremacy-of-love-15dczz",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — When the apostle Paul, we love it in the Lord, lists faith, hope, and love…",
+      "kind": "intro"
+    },
+    {
+      "startTime": 191.047,
+      "title": "Message — pressed on the point, of course, those same students of Paul explained th…",
+      "kind": "message"
+    },
+    {
+      "startTime": 875.879,
+      "title": "Outro — God's love is the font and source of all things",
+      "kind": "outro"
+    }
+  ]
+}

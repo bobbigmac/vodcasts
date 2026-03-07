@@ -9,6 +9,9 @@ This folder is intended to be movable as its own project. Keep imports and scrip
 - Update RSS cache: `yarn update`
 - Build static site (runs a quiet update first): `yarn build` (set `VOD_BASE_PATH` for subpath builds)
 - Dev server (Vite; rebuilds into `dist/`): `yarn dev`
+- Answer Engine (transcript search): `bash scripts/answer-engine/ae.sh analyze` then `bash scripts/answer-engine/ae.sh index` then `bash scripts/answer-engine/ae.sh query search --q "..."` (cache stored under `cache/<env>/answer-engine/`)
+- Auto-chapters from analyzed transcripts: `bash scripts/answer-engine/ae.sh chapters` (writes to `site/assets/chapters/<feed>/<episode>.chapters.json`)
+- Fast dev spot-check (single file): `bash scripts/answer-engine/ae.sh chapters --transcript <feed>/<episode>.vtt --force --print`
 
 ## Deployments (feeds + cache)
 
