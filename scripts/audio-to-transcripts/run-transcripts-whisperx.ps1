@@ -17,7 +17,7 @@ Param(
   [switch]$Refresh,
   [string]$Ffmpeg = "ffmpeg",
   [string]$Whisperx = "whisperx",
-  [string]$WhisperxModel = "large-v3",
+  [string]$WhisperxModel = "medium",
   [string]$Language = "en",
   [string]$WhisperxDevice = "cuda",
   [string]$WhisperxComputeType = "float16",
@@ -62,9 +62,11 @@ if ($EpisodeSlug -ne "") { $argsList += @("--episode-slug", $EpisodeSlug) }
 if ($NoDownloadProvided) { $argsList += @("--no-download-provided") }
 if ($GenerateMissing) { $argsList += @("--generate-missing") }
 if ($AllowCpu) { $argsList += @("--allow-cpu") }
-if ($SpotCheckEvery -ge 0) { $argsList += @("--spot-check-every", "$SpotCheckEvery") }
-if ($SpotCheckSeconds -gt 0) { $argsList += @("--spot-check-seconds", "$SpotCheckSeconds") }
-if ($SpotCheckBitrate -ne "") { $argsList += @("--spot-check-bitrate", $SpotCheckBitrate) }
+if ($SpotCheckEvery -gt 0) {
+  $argsList += @("--spot-check-every", "$SpotCheckEvery")
+  if ($SpotCheckSeconds -gt 0) { $argsList += @("--spot-check-seconds", "$SpotCheckSeconds") }
+  if ($SpotCheckBitrate -ne "") { $argsList += @("--spot-check-bitrate", $SpotCheckBitrate) }
+}
 if ($Execute) { $argsList += @("--execute") }
 if ($Refresh) { $argsList += @("--refresh") }
 if ($WhisperxExtraArgs -ne "") { $argsList += @("--whisperx-extra-args", $WhisperxExtraArgs) }

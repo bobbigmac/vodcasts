@@ -13,9 +13,9 @@
     "build": "node scripts/vod.cjs build",
     "dev": "node scripts/vod.cjs dev",
     "find-feeds": "node scripts/find-feeds.js",
-    "transcripts": "powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/setup-venv.ps1 && powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/run-transcripts-whisperx.ps1 -GenerateMissing -Execute -SpotCheckEvery 10 -SpotCheckSeconds 600 -WhisperxDevice cuda -WhisperxComputeType float16 -WhisperxModel medium",
-    "transcripts:hq": "powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/setup-venv.ps1 && powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/run-transcripts-whisperx.ps1 -GenerateMissing -Execute -SpotCheckEvery 10 -SpotCheckSeconds 600 -WhisperxDevice cuda -WhisperxComputeType float16 -WhisperxModel large-v3",
-    "transcripts:fast": "powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/setup-venv.ps1 && powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/run-transcripts-whisperx.ps1 -GenerateMissing -Execute -SpotCheckEvery 10 -SpotCheckSeconds 600 -WhisperxDevice cuda -WhisperxComputeType int8 -WhisperxModel small"
+    "transcripts": "powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/setup-venv.ps1 && powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/run-transcripts-whisperx.ps1 -GenerateMissing -Execute -SpotCheckEvery 10 -SpotCheckSeconds 600",
+    "transcripts:hq": "powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/setup-venv.ps1 && powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/run-transcripts-whisperx.ps1 -GenerateMissing -Execute -SpotCheckEvery 10 -SpotCheckSeconds 600 -WhisperxModel large-v3",
+    "transcripts:fast": "powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/setup-venv.ps1 && powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/run-transcripts-whisperx.ps1 -GenerateMissing -Execute -SpotCheckEvery 10 -SpotCheckSeconds 600 -WhisperxModel small -WhisperxComputeType int8"
   },
   "license": "UNLICENSED",
   "packageManager": "yarn@1.22.22"

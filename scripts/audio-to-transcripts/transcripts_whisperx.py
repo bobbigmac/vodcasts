@@ -163,7 +163,7 @@ def _parse_args() -> argparse.Namespace:
     # WhisperX pipeline (only used when --generate-missing + --execute)
     p.add_argument("--ffmpeg", default="ffmpeg", help="ffmpeg executable (default: ffmpeg).")
     p.add_argument("--whisperx", default="whisperx", help="whisperx executable (default: whisperx).")
-    p.add_argument("--whisperx-model", default="large-v3", help="WhisperX model name (default: large-v3).")
+    p.add_argument("--whisperx-model", default="medium", help="WhisperX model name (default: medium).")
     p.add_argument("--language", default="en", help="Language code for WhisperX (default: en).")
     p.add_argument(
         "--whisperx-device",
@@ -234,8 +234,8 @@ def _matches_tag(source: Source, tag: str) -> bool:
     return t in tags
 
 
-_SRT_TS_RE = re.compile(r"^\\d{2}:\\d{2}:\\d{2}[,.]\\d{3}\\s+-->\\s+\\d{2}:\\d{2}:\\d{2}[,.]\\d{3}")
-_VTT_TS_RE = re.compile(r"^\\d{2}:\\d{2}:\\d{2}\\.\\d{3}\\s+-->\\s+\\d{2}:\\d{2}:\\d{2}\\.\\d{3}")
+_SRT_TS_RE = re.compile(r"^\d{2}:\d{2}:\d{2}[,.]\d{3}\s+-->\s+\d{2}:\d{2}:\d{2}[,.]\d{3}")
+_VTT_TS_RE = re.compile(r"^\d{2}:\d{2}:\d{2}\.\d{3}\s+-->\s+\d{2}:\d{2}:\d{2}\.\d{3}")
 
 
 def _extract_text_from_srt(s: str) -> str:
@@ -264,9 +264,10 @@ def _extract_text_from_vtt(s: str) -> str:
             continue
         if line.upper().startswith("WEBVTT"):
             continue
-        if _VTT_TS_RE.match(line):
+        # Accept both standard WebVTT timestamps (.) and common "VTT-but-actually-SRT" timestamps (,).
+        if _VTT_TS_RE.match(line) or _SRT_TS_RE.match(line):
             continue
-        if "-->" in line and (":" in line and "." in line):
+        if "-->" in line and re.search(r"\d{2}:\d{2}:\d{2}[\.,]\d{3}\s+-->\s+\d{2}:\d{2}:\d{2}[\.,]\d{3}", line):
             # tolerate non-standard timestamps
             continue
         if line.startswith("NOTE"):
@@ -276,6 +277,26 @@ def _extract_text_from_vtt(s: str) -> str:
             continue
         out.append(line)
     return " ".join(out).strip()
+
+
+def _normalize_vtt_timestamp_commas(vtt: str) -> str:
+    """
+    WebVTT requires '.' as the millisecond separator, but some sources (and some tools) output ','.
+    Normalize cue timing lines so cached .vtt files remain browser-playable.
+    """
+    lines: list[str] = []
+    changed = False
+    for raw in (vtt or "").splitlines():
+        line = raw.rstrip("\n")
+        if "-->" in line and "," in line:
+            fixed = re.sub(r"(\d{2}:\d{2}:\d{2}),(\d{3})", r"\1.\2", line)
+            if fixed != line:
+                changed = True
+            line = fixed
+        lines.append(line)
+    if not changed:
+        return vtt
+    return "\n".join(lines).rstrip() + "\n"
 
 
 def _srt_to_vtt(srt: str) -> str:
@@ -312,7 +333,7 @@ def _is_sensible_text(text: str, *, min_chars: int, min_words: int) -> bool:
     t = (text or "").strip()
     if len(t) < int(min_chars):
         return False
-    words = [w for w in re.split(r"\\s+", t) if w]
+    words = [w for w in re.split(r"\s+", t) if w]
     if len(words) < int(min_words):
         return False
     letters = sum(ch.isalpha() for ch in t)
@@ -334,7 +355,7 @@ def _count_vtt_timestamps(text: str) -> int:
         if _VTT_TS_RE.match(s):
             cnt += 1
             continue
-        if "-->" in s and re.search(r"\\d{2}:\\d{2}:\\d{2}[\\.,]\\d{3}\\s+-->\\s+\\d{2}:\\d{2}:\\d{2}[\\.,]\\d{3}", s):
+        if "-->" in s and re.search(r"\d{2}:\d{2}:\d{2}[\.,]\d{3}\s+-->\s+\d{2}:\d{2}:\d{2}[\.,]\d{3}", s):
             cnt += 1
     return cnt
 
@@ -369,6 +390,7 @@ def _normalize_provided_subtitles_to_vtt(text: str, *, min_chars: int, min_words
 
     if kind == "vtt":
         vtt = picked if picked.lstrip().upper().startswith("WEBVTT") else ("WEBVTT\n\n" + picked.strip() + "\n")
+        vtt = _normalize_vtt_timestamp_commas(vtt)
         ts = _count_vtt_timestamps(vtt)
         extracted = _extract_text_from_vtt(vtt)
     else:
@@ -406,7 +428,7 @@ def _vtt_file_seems_complete(path: Path, *, min_chars: int, min_words: int) -> b
         txt = path.read_text(encoding="utf-8", errors="replace")
         if _count_vtt_timestamps(txt) < 3:
             return False
-        return _vtt_seems_complete(txt, min_chars=int(min_chars), min_words=int(min_words))
+        return _vtt_seems_complete(_normalize_vtt_timestamp_commas(txt), min_chars=int(min_chars), min_words=int(min_words))
     except Exception:
         return False
 
@@ -525,6 +547,20 @@ def _write_bytes(path: Path, data: bytes, *, execute: bool) -> None:
     path.write_bytes(data)
 
 
+def _maybe_normalize_existing_vtt(path: Path, *, execute: bool) -> None:
+    if not execute:
+        return
+    try:
+        txt = path.read_text(encoding="utf-8", errors="replace")
+        fixed = _normalize_vtt_timestamp_commas(txt)
+        if fixed != txt:
+            _write_text(path, fixed, execute=True)
+            print(f"[fix] {path}: normalized VTT timestamps (, -> .)")
+    except Exception:
+        # Best-effort only; validation/skip logic decides correctness.
+        pass
+
+
 def _generate_with_whisperx(
     *,
     media_url: str,
@@ -560,11 +596,11 @@ def _generate_with_whisperx(
         )
         if should_prefetch:
             media_path = tmp / "media"
-            with _timed("media_download"):
-                try:
-                    # Quick probe: if we can't even start receiving bytes quickly, treat it as dead for this run.
-                    # (Don't throttle the real download; we only want fast-fail on "dead/stalled" URLs.)
-                    probe_path = tmp / "media.probe"
+            try:
+                # Quick probe: if we can't even start receiving bytes quickly, treat it as dead for this run.
+                # (Don't throttle the real download; we only want fast-fail on "dead/stalled" URLs.)
+                probe_path = tmp / "media.probe"
+                with _timed("media_probe"):
                     _run(
                         [
                             "curl",
@@ -585,6 +621,7 @@ def _generate_with_whisperx(
                         ],
                         execute=True,
                     )
+                with _timed("media_download"):
                     _run(
                         [
                             "curl",
@@ -601,8 +638,8 @@ def _generate_with_whisperx(
                         ],
                         execute=True,
                     )
-                except Exception as e:
-                    raise MediaDownloadError(str(e)) from e
+            except Exception as e:
+                raise MediaDownloadError(str(e)) from e
             if not media_path.exists():
                 raise MediaDownloadError("media download produced no file")
             sz = int(media_path.stat().st_size)
@@ -864,6 +901,7 @@ def main() -> None:
             if not bool(args.refresh) and required and all(p.exists() for p in required):
                 # Restartable runs: treat an existing valid VTT as complete and never regenerate it.
                 if _vtt_file_seems_complete(final_vtt, min_chars=_EXISTING_VTT_MIN_CHARS, min_words=_EXISTING_VTT_MIN_WORDS):
+                    _maybe_normalize_existing_vtt(final_vtt, execute=bool(args.execute))
                     skipped_existing += 1
                     continue
 
@@ -961,6 +999,7 @@ def main() -> None:
 
             if not bool(args.refresh) and final_vtt.exists():
                 if _vtt_file_seems_complete(final_vtt, min_chars=_EXISTING_VTT_MIN_CHARS, min_words=_EXISTING_VTT_MIN_WORDS):
+                    _maybe_normalize_existing_vtt(final_vtt, execute=bool(args.execute))
                     skipped_existing += 1
                     chosen = "skipped_existing"
                     print(f"[skip] {item.src.id}/{ep_slug}: already have valid vtt")
@@ -1034,12 +1073,12 @@ def main() -> None:
                         if spot_mp3 is not None:
                             spotcheck_count += 1
 
-                        if vtt_text:
-                            with _timed("write_vtt"):
-                                _write_text(final_vtt, vtt_text, execute=bool(args.execute))
-                        elif srt_text:
-                            with _timed("write_vtt"):
-                                _write_text(final_vtt, _srt_to_vtt(srt_text), execute=bool(args.execute))
+                        vtt_out = vtt_text or (_srt_to_vtt(srt_text) if srt_text else "")
+                        vtt_out = _normalize_vtt_timestamp_commas(vtt_out)
+                        if not _vtt_seems_complete(vtt_out, min_chars=_EXISTING_VTT_MIN_CHARS, min_words=_EXISTING_VTT_MIN_WORDS):
+                            raise RuntimeError("generated subtitles failed transcript sanity")
+                        with _timed("write_vtt"):
+                            _write_text(final_vtt, vtt_out, execute=bool(args.execute))
                         chosen = "generated"
                         generated_count += 1
                 else:
@@ -1088,12 +1127,12 @@ def main() -> None:
                             )
                             if spot_mp3 is not None:
                                 spotcheck_count += 1
-                            if vtt_text:
-                                with _timed("write_vtt"):
-                                    _write_text(final_vtt, vtt_text, execute=bool(args.execute))
-                            elif srt_text:
-                                with _timed("write_vtt"):
-                                    _write_text(final_vtt, _srt_to_vtt(srt_text), execute=bool(args.execute))
+                            vtt_out = vtt_text or (_srt_to_vtt(srt_text) if srt_text else "")
+                            vtt_out = _normalize_vtt_timestamp_commas(vtt_out)
+                            if not _vtt_seems_complete(vtt_out, min_chars=_EXISTING_VTT_MIN_CHARS, min_words=_EXISTING_VTT_MIN_WORDS):
+                                raise RuntimeError("fallback generated subtitles failed transcript sanity")
+                            with _timed("write_vtt"):
+                                _write_text(final_vtt, vtt_out, execute=bool(args.execute))
                             chosen = "generated"
                             generated_count += 1
                         except MediaDownloadError as e2:
