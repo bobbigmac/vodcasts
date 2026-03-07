@@ -12,6 +12,8 @@ import shlex
 import html
 import signal
 import atexit
+import urllib.error
+import urllib.request
 from contextlib import contextmanager
 from dataclasses import dataclass
 from pathlib import Path
@@ -26,6 +28,7 @@ if str(_REPO_ROOT) not in sys.path:
 from scripts.feed_manifest import parse_feed_for_manifest
 from scripts.shared import VODCASTS_ROOT, fetch_url
 from scripts.sources import Source, load_sources_config
+from whisperx_worker_common import WorkerWhisperxOptions, parse_worker_extra_args
 
 
 _PLAYABLE_TYPES = {"text/vtt", "application/x-subrip", "application/srt"}
@@ -179,6 +182,11 @@ def _parse_args() -> argparse.Namespace:
         "--whisperx-extra-args",
         default="",
         help='Extra args appended to the whisperx command (e.g. "--batch_size 4 --output_format srt").',
+    )
+    p.add_argument(
+        "--whisperx-worker-url",
+        default=(os.environ.get("VODCASTS_WHISPERX_WORKER_URL") or ""),
+        help="Optional local WhisperX worker URL (for persistent model reuse). Example: http://127.0.0.1:8776",
     )
     p.add_argument(
         "--allow-cpu",
@@ -561,6 +569,56 @@ def _maybe_normalize_existing_vtt(path: Path, *, execute: bool) -> None:
         pass
 
 
+def _post_json(url: str, payload: dict[str, Any], *, timeout_seconds: int) -> dict[str, Any]:
+    raw = json.dumps(payload, ensure_ascii=True).encode("utf-8")
+    req = urllib.request.Request(
+        url,
+        data=raw,
+        headers={"Content-Type": "application/json; charset=utf-8"},
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=max(1, int(timeout_seconds))) as resp:
+            body = resp.read()
+    except urllib.error.HTTPError as e:
+        detail = e.read().decode("utf-8", errors="replace")
+        raise RuntimeError(f"worker http {e.code}: {detail}") from e
+    except urllib.error.URLError as e:
+        raise RuntimeError(f"worker unavailable: {e}") from e
+    try:
+        obj = json.loads(body.decode("utf-8", errors="replace"))
+    except Exception as e:
+        raise RuntimeError(f"worker returned invalid json: {e}") from e
+    if not isinstance(obj, dict):
+        raise RuntimeError("worker returned non-object json")
+    if obj.get("ok") is False:
+        raise RuntimeError(str(obj.get("error") or "worker_error"))
+    return obj
+
+
+def _worker_payload_for_options(
+    *,
+    wav_path: Path,
+    whisperx_model: str,
+    language: str,
+    whisperx_device: str,
+    whisperx_compute_type: str,
+    options: WorkerWhisperxOptions,
+) -> dict[str, Any]:
+    payload = options.to_payload()
+    payload.update(
+        {
+            "audio_path": str(wav_path),
+            "model": str(whisperx_model or ""),
+            "language": str(language or ""),
+            "device": str(whisperx_device or ""),
+            "compute_type": str(whisperx_compute_type or ""),
+            "vad_method": str(options.vad_method or "silero"),
+        }
+    )
+    return payload
+
+
 def _generate_with_whisperx(
     *,
     media_url: str,
@@ -571,6 +629,7 @@ def _generate_with_whisperx(
     whisperx_device: str,
     whisperx_compute_type: str,
     whisperx_extra_args: str,
+    whisperx_worker_url: str,
     spot_mp3_path: Path | None,
     spot_seconds: int,
     spot_bitrate: str,
@@ -582,6 +641,8 @@ def _generate_with_whisperx(
     if not execute:
         # dry-run placeholder
         return "", ""
+
+    worker_options, worker_unsupported = parse_worker_extra_args(whisperx_extra_args)
 
     with tempfile.TemporaryDirectory(prefix="vodcasts.whisperx.") as td:
         tmp = Path(td)
@@ -691,6 +752,27 @@ def _generate_with_whisperx(
                 ],
                 execute=True,
             )
+
+        worker_url = str(whisperx_worker_url or "").strip().rstrip("/")
+        if worker_url:
+            if worker_unsupported:
+                unsupported = " ".join(worker_unsupported)
+                print(f"[warn] worker unsupported extra args ({unsupported}); falling back to whisperx CLI")
+            else:
+                payload = _worker_payload_for_options(
+                    wav_path=wav_path,
+                    whisperx_model=whisperx_model,
+                    language=language,
+                    whisperx_device=whisperx_device,
+                    whisperx_compute_type=whisperx_compute_type,
+                    options=worker_options,
+                )
+                with _timed("whisperx_worker"):
+                    res = _post_json(f"{worker_url}/transcribe", payload, timeout_seconds=max(600, int(30 + spot_seconds)))
+                srt_text = str(res.get("srt_text") or "")
+                vtt_text = str(res.get("vtt_text") or "")
+                if srt_text or vtt_text:
+                    return srt_text, vtt_text
 
         cmd = [
             whisperx_cmd,
@@ -1064,6 +1146,7 @@ def main() -> None:
                             whisperx_device=str(args.whisperx_device),
                             whisperx_compute_type=str(args.whisperx_compute_type),
                             whisperx_extra_args=str(args.whisperx_extra_args),
+                            whisperx_worker_url=str(args.whisperx_worker_url),
                             spot_mp3_path=spot_mp3 if bool(args.execute) else None,
                             spot_seconds=int(args.spot_check_seconds or 600),
                             spot_bitrate=str(args.spot_check_bitrate or "96k"),
@@ -1120,6 +1203,7 @@ def main() -> None:
                                 whisperx_device=str(args.whisperx_device),
                                 whisperx_compute_type=str(args.whisperx_compute_type),
                                 whisperx_extra_args=str(args.whisperx_extra_args),
+                                whisperx_worker_url=str(args.whisperx_worker_url),
                                 spot_mp3_path=spot_mp3 if bool(args.execute) else None,
                                 spot_seconds=int(args.spot_check_seconds or 600),
                                 spot_bitrate=str(args.spot_check_bitrate or "96k"),

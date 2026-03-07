@@ -31,6 +31,26 @@ Note: WhisperX may download model weights the first time you run it. If you want
 
 This creates `scripts/audio-to-transcripts/.venv/` and installs deps (including CUDA-enabled torch + whisperx).
 
+## Persistent worker
+
+Generation now prefers a local persistent WhisperX worker so the ASR model stays warm across files.
+Normal `run-transcripts-whisperx.ps1 -Execute -GenerateMissing` runs auto-start a private worker for the batch, route per-file requests over `http://127.0.0.1:<port>`, and stop it afterward.
+
+If you want to keep one shared worker running across multiple commands, start it explicitly:
+
+```powershell
+.\scripts\audio-to-transcripts\run-transcripts-whisperx.ps1 -ServeWorker -WorkerWarmup
+```
+
+Then point transcript runs at it:
+
+```powershell
+.\scripts\audio-to-transcripts\run-transcripts-whisperx.ps1 -Execute -GenerateMissing `
+  -WhisperxWorkerUrl "http://127.0.0.1:8776"
+```
+
+The worker accepts concurrent HTTP requests safely, but processes them through a single queued GPU worker thread so model state is reused and requests do not trample each other.
+
 ## One-command run (recommended)
 
 ```powershell
@@ -76,6 +96,7 @@ This prints what it *would* download/generate, without writing files.
 - Temp working files use the `Q:` RAM disk (and `-Execute` refuses to run if it can't find it).
 - Unless overridden via `-WhisperxExtraArgs`, generation defaults to `--vad_method silero` to avoid pyannote/torchcodec issues.
 - Runs are restartable: a previously-written `.vtt` that looks complete is never re-downloaded/regenerated (unless `-Refresh`).
+- If `-WhisperxExtraArgs` includes flags the worker path does not support yet, the generator falls back to the old per-file `whisperx` CLI invocation for those runs.
 
 ## Speed vs quality (WhisperX)
 
