@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 2,
+    "mode": "semantic"
+  },
+  "generated_at_unix": 1772851889,
+  "feed": "first-baptist-columbia-wf",
+  "episode_slug": "2026-02-23-better-together-under-the-sun-ecclesiastes-4-1-16-9j1nxp",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — We're glad you're part of First Baptist Church, Wichita Falls, Texas",
+      "kind": "intro"
+    },
+    {
+      "startTime": 115.101,
+      "title": "Message — so Solomon is telling us that this reality that there is no one to comfor…",
+      "kind": "message"
+    },
+    {
+      "startTime": 1263.646,
+      "title": "Topic — then Solomon says this, he said, and there is a second youth who succeeds h…",
+      "kind": "topic"
+    }
+  ]
+}

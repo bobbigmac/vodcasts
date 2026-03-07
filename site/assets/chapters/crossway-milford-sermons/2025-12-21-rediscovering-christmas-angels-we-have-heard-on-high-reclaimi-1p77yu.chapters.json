@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 2,
+    "mode": "semantic"
+  },
+  "generated_at_unix": 1772851886,
+  "feed": "crossway-milford-sermons",
+  "episode_slug": "2025-12-21-rediscovering-christmas-angels-we-have-heard-on-high-reclaimi-1p77yu",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Luke chapter one verse 26 down to verse 38",
+      "kind": "intro"
+    },
+    {
+      "startTime": 120.546,
+      "title": "Prayer",
+      "kind": "prayer"
+    },
+    {
+      "startTime": 350.983,
+      "title": "Message — I've titled this message in this series, angels we have heard on high, re…",
+      "kind": "message"
+    },
+    {
+      "startTime": 1434.498,
+      "title": "Topic — Stay familiar with what God has said",
+      "kind": "topic"
+    },
+    {
+      "startTime": 1985.607,
+      "title": "Topic — Mary's trying to tune in to what God is saying, what the angel is saying, w…",
+      "kind": "topic"
+    },
+    {
+      "startTime": 2554.784,
+      "title": "Outro — What are you going to speak to us right now, Lord?",
+      "kind": "outro"
+    }
+  ]
+}

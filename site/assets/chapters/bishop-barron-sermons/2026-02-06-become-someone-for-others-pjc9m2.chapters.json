@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 2,
+    "mode": "semantic"
+  },
+  "generated_at_unix": 1772851866,
+  "feed": "bishop-barron-sermons",
+  "episode_slug": "2026-02-06-become-someone-for-others-pjc9m2",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — Become fulfilled and the happiness will take care of itself",
+      "kind": "intro"
+    },
+    {
+      "startTime": 124.301,
+      "title": "Message — Well, then I see a saint and suddenly the light goes on and I can see whe…",
+      "kind": "message"
+    }
+  ]
+}

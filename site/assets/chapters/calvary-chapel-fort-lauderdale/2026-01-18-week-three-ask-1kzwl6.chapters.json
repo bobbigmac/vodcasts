@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 2,
+    "mode": "semantic"
+  },
+  "generated_at_unix": 1772851876,
+  "feed": "calvary-chapel-fort-lauderdale",
+  "episode_slug": "2026-01-18-week-three-ask-1kzwl6",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — together, let us read the answer that Jesus gave to the request Lord teach…",
+      "kind": "intro"
+    },
+    {
+      "startTime": 8.034,
+      "title": "Prayer",
+      "kind": "prayer"
+    },
+    {
+      "startTime": 242.806,
+      "title": "Prayer — daily bread, i pray for forgiveness, and i pray against…",
+      "kind": "prayer"
+    },
+    {
+      "startTime": 356.901,
+      "title": "Message — Think about these short prayers in the Bible",
+      "kind": "message"
+    },
+    {
+      "startTime": 877.774,
+      "title": "Topic — listen, Jesus answered every single one of those prayers",
+      "kind": "topic"
+    },
+    {
+      "startTime": 1567.928,
+      "title": "Topic — we want to practice this type of prayer",
+      "kind": "topic"
+    },
+    {
+      "startTime": 3471.442,
+      "title": "Prayer",
+      "kind": "prayer"
+    },
+    {
+      "startTime": 3545.378,
+      "title": "Outro — We wanna remind you, you are invited back on Tuesday night at 6.30 here in…",
+      "kind": "outro"
+    }
+  ]
+}

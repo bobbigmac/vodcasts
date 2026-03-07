@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 2,
+    "mode": "semantic"
+  },
+  "generated_at_unix": 1772851869,
+  "feed": "bridgetown",
+  "episode_slug": "2026-03-02-the-good-news-about-our-bodies-chronic-illness-disability-10g2du",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start"
+    },
+    {
+      "startTime": 121.666,
+      "title": "Message — Though our first definition of overcoming is almost always subconsciously…",
+      "kind": "message"
+    },
+    {
+      "startTime": 860.33,
+      "title": "Topic — it is just that, the surrender of my will that brings me finally to the for…",
+      "kind": "topic"
+    },
+    {
+      "startTime": 1459.618,
+      "title": "Topic — God associates limits with love, choosing them for himself",
+      "kind": "topic"
+    },
+    {
+      "startTime": 1957.286,
+      "title": "Topic — Embracing my bodily limitations is a core part to embracing my apprenticesh…",
+      "kind": "topic"
+    }
+  ]
+}

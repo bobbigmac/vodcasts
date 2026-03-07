@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 2,
+    "mode": "semantic"
+  },
+  "generated_at_unix": 1772851883,
+  "feed": "connexus-church",
+  "episode_slug": "2026-02-22-how-to-pray-when-god-feels-far-away-vijay-krishnan-prayer-lab-1fd3kr",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start"
+    },
+    {
+      "startTime": 128.642,
+      "title": "Message — so I'm reading from Psalm 139 in the new living translation",
+      "kind": "message"
+    },
+    {
+      "startTime": 615.148,
+      "title": "Topic — You know my thoughts and everything about me and you're going to lead me in…",
+      "kind": "topic"
+    },
+    {
+      "startTime": 1128.8029999999999,
+      "title": "Topic — I'm becoming more aware of God's presence in my past",
+      "kind": "topic"
+    },
+    {
+      "startTime": 1702.472,
+      "title": "Prayer — Doxology",
+      "kind": "prayer"
+    }
+  ]
+}

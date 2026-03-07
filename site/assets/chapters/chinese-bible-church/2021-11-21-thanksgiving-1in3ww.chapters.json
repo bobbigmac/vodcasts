@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 2,
+    "mode": "semantic"
+  },
+  "generated_at_unix": 1772851878,
+  "feed": "chinese-bible-church",
+  "episode_slug": "2021-11-21-thanksgiving-1in3ww",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Start",
+      "kind": "start"
+    },
+    {
+      "startTime": 58.733,
+      "title": "Prayer — your word, the bible",
+      "kind": "prayer"
+    },
+    {
+      "startTime": 176.849,
+      "title": "Message — they stood far off and they probably knew They probably knew that back ea…",
+      "kind": "message"
+    },
+    {
+      "startTime": 1133.075,
+      "title": "Topic — That he realized who Jesus was and what Jesus was deserving of",
+      "kind": "topic"
+    },
+    {
+      "startTime": 1780.597,
+      "title": "Prayer — this thanksgiving season, a wonderful chance for us to…",
+      "kind": "prayer"
+    }
+  ]
+}

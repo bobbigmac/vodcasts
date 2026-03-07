@@ -25,9 +25,10 @@ ensure_venv() {
     echo "${req_hash}" > "${stamp}"
   fi
 
-  # Prefer the matching CUDA wheel when torch is missing, but do not replace an
-  # already-installed torch build. Runtime device fallback happens in Python.
-  if ! "${PY}" -c 'import torch' >/dev/null 2>&1; then
+  # Ensure we have a CUDA-capable torch build that can actually see the GPU.
+  # sentence-transformers may pull in a CPU wheel first, which is not acceptable
+  # for the semantic chapter path on CUDA-capable systems.
+  if ! "${PY}" -c 'import torch, sys; sys.exit(0 if (torch.version.cuda and torch.cuda.is_available()) else 1)' >/dev/null 2>&1; then
     echo "[answer-engine] installing CUDA torch (cu128) ... (large download)" >&2
     "${PY}" -m pip install --index-url "${TORCH_INDEX}" "${TORCH_SPEC}"
   fi
@@ -50,6 +51,7 @@ Usage:
 
 Examples:
   bash scripts/answer-engine/ae.sh analyze
+  bash scripts/answer-engine/ae.sh analyze --transcript bridgetown/2026-03-02-the-good-news-about-our-bodies-chronic-illness-disability-10g2du.vtt
   bash scripts/answer-engine/ae.sh index
   bash scripts/answer-engine/ae.sh chapters --transcript calvary-chapel-anne-arundel/2026-01-04-ephesians-1-7-10-848zvp.vtt --print
   bash scripts/answer-engine/ae.sh query search --q "forgiveness" --limit 10

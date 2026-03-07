@@ -33,15 +33,15 @@ function Ensure-Venv {
     Set-Content -Path $stamp -Value $hash -NoNewline
   }
 
-  $needsTorch = $true
+  $needsCudaTorch = $true
   try {
-    & $Py -c "import torch"
-    if ($LASTEXITCODE -eq 0) { $needsTorch = $false }
+    & $Py -c "import torch; import sys; sys.exit(0 if (torch.version.cuda and torch.cuda.is_available()) else 1)"
+    if ($LASTEXITCODE -eq 0) { $needsCudaTorch = $false }
   } catch {
-    $needsTorch = $true
+    $needsCudaTorch = $true
   }
 
-  if ($needsTorch) {
+  if ($needsCudaTorch) {
     Write-Host "[answer-engine] installing CUDA torch (cu128) ... (large download)"
     & $Py -m pip install --index-url $TorchIndex $TorchSpec
   }
@@ -61,6 +61,7 @@ Usage:
 
 Examples:
   powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 analyze
+  powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 analyze --transcript bridgetown/2026-03-02-the-good-news-about-our-bodies-chronic-illness-disability-10g2du.vtt
   powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 index
   powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 chapters --transcript feed/episode.vtt --print
   powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 query search --q "forgiveness" --limit 10

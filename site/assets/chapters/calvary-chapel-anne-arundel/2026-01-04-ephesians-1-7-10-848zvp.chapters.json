@@ -5,66 +5,38 @@
     "version": 2,
     "mode": "semantic"
   },
-  "generated_at_unix": 1772847149,
+  "generated_at_unix": 1772851873,
   "feed": "calvary-chapel-anne-arundel",
   "episode_slug": "2026-01-04-ephesians-1-7-10-848zvp",
   "chapters": [
     {
       "startTime": 0.0,
-      "title": "Intro — Maybe it's just your very state that you know your life is in from a spirit…",
+      "title": "Intro — just a beautiful passage of scripture to start 2026 off for us based on the…",
       "kind": "intro"
     },
     {
       "startTime": 132.194,
-      "title": "Prayer — verse, read, redemption",
+      "title": "Prayer — the word that you've given us",
       "kind": "prayer"
     },
     {
       "startTime": 258.044,
-      "title": "Message — hear word redemption, gospel left jerusalem, moving roman empire",
+      "title": "Message — This is how it would read, in whom we are having redemption",
       "kind": "message"
     },
     {
-      "startTime": 786.53,
-      "title": "Prayer — theological meanings, life, truth",
-      "kind": "prayer"
-    },
-    {
-      "startTime": 918.242,
-      "title": "Sponsor / support",
-      "kind": "ad",
-      "confidence": 0.5228860844789656
-    },
-    {
-      "startTime": 1293.577,
-      "title": "Topic — blood makes atonement, hebrews 22 according, remission forgiveness",
+      "startTime": 1276.113,
+      "title": "Topic — it brings a clotting and a healing to bring us this redemption",
       "kind": "topic"
     },
     {
-      "startTime": 2181.823,
-      "title": "Break / transition",
-      "kind": "transition",
-      "confidence": 0.5276334472589854
-    },
-    {
-      "startTime": 2310.478,
-      "title": "Prayer — supply, brother, grace",
-      "kind": "prayer"
-    },
-    {
-      "startTime": 2558.385,
-      "title": "Sponsor / support",
-      "kind": "ad",
-      "confidence": 0.5228860844789656
-    },
-    {
-      "startTime": 2692.064,
-      "title": "Topic — queen victoria security, plan servant house, sleep doesn plan",
+      "startTime": 1899.35,
+      "title": "Topic — I come walking in and I go, babe, I just got run over by a truck",
       "kind": "topic"
     },
     {
-      "startTime": 3460.876,
-      "title": "Prayer — bless, glory, hear",
+      "startTime": 3366.832,
+      "title": "Prayer",
       "kind": "prayer"
     }
   ]

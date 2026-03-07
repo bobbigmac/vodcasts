@@ -53,7 +53,8 @@ When present, the client will attempt to fetch chapters from `assets/chapters/<f
 
 For dev iteration (avoid re-indexing everything), analyze and generate chapters for one transcript:
 
-- `bash scripts/answer-engine/ae.sh analyze --limit-files 1`
+- `bash scripts/answer-engine/ae.sh analyze --transcript <feed>/<episode>.vtt`
+- `bash scripts/answer-engine/ae.sh analyze --transcript <feed>/<episode>.vtt --transcript <feed>/<episode-2>.vtt`
 - `bash scripts/answer-engine/ae.sh chapters --transcript <feed>/<episode>.vtt --force --print`
 
 ### Dependencies
@@ -68,7 +69,7 @@ Semantic chapters are the default and only supported mode:
 
 - `bash scripts/answer-engine/ae.sh chapters`
 
-This uses `sentence-transformers` + `keybert` and downloads model weights the first time. `ae.sh` / `ae.ps1` prefer the matching CUDA torch wheel (`cu128`) to match `scripts/audio-to-transcripts/`, but model initialization falls back to CPU if CUDA cannot be used at runtime.
+This uses `sentence-transformers` + `keybert` and downloads model weights the first time. `ae.sh` / `ae.ps1` ensure a CUDA-capable torch wheel (`cu128`) is installed when CUDA is available, to match `scripts/audio-to-transcripts/`, but model initialization still falls back to CPU if CUDA cannot be used at runtime.
 
 ## Notes
 

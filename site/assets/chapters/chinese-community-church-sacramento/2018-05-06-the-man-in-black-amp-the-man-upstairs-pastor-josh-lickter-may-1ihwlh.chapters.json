@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "generator": {
+    "name": "vodcasts-answer-engine",
+    "version": 2,
+    "mode": "semantic"
+  },
+  "generated_at_unix": 1772851881,
+  "feed": "chinese-community-church-sacramento",
+  "episode_slug": "2018-05-06-the-man-in-black-amp-the-man-upstairs-pastor-josh-lickter-may-1ihwlh",
+  "chapters": [
+    {
+      "startTime": 0.0,
+      "title": "Intro — then Jesus came to them and said, all authority in heaven and on earth have…",
+      "kind": "intro"
+    },
+    {
+      "startTime": 37.06,
+      "title": "Prayer — Doxology",
+      "kind": "prayer"
+    },
+    {
+      "startTime": 167.5,
+      "title": "Message — To put differently, this is how Johnny Cash chose to be obedient to the g…",
+      "kind": "message"
+    },
+    {
+      "startTime": 740.038,
+      "title": "Topic — This is part of the post-resurrection story of Jesus Christ",
+      "kind": "topic"
+    },
+    {
+      "startTime": 1532.531,
+      "title": "Topic — It's something that more and more followers of Christ need to do",
+      "kind": "topic"
+    },
+    {
+      "startTime": 1806.965,
+      "title": "Prayer — the support of everyone here and i ask this morning tha…",
+      "kind": "prayer"
+    }
+  ]
+}
