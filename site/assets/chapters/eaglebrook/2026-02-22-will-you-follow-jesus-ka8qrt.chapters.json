@@ -2,42 +2,44 @@
   "version": 1,
   "generator": {
     "name": "vodcasts-answer-engine",
-    "version": 2,
-    "mode": "semantic"
+    "version": 4,
+    "mode": "hybrid"
   },
-  "generated_at_unix": 1772851888,
+  "generated_at_unix": 1772856896,
   "feed": "eaglebrook",
   "episode_slug": "2026-02-22-will-you-follow-jesus-ka8qrt",
   "chapters": [
     {
       "startTime": 0.0,
-      "title": "Intro — I just gotta say, I'm excited for what today holds, that today can be a day…",
-      "kind": "intro"
-    },
-    {
-      "startTime": 949.302,
-      "title": "Prayer — who you are, that you are a god of peace, a god of hope…",
-      "kind": "prayer"
+      "title": "Worship — I just gotta say, I'm excited for what today holds, that today can be a d…",
+      "kind": "worship",
+      "tags": [
+        "hey everybody",
+        "worthy",
+        "today",
+        "hey"
+      ]
     },
     {
       "startTime": 1028.642,
-      "title": "Message — We're here from our senior pastor, Jason Strand today",
-      "kind": "message"
-    },
-    {
-      "startTime": 1523.81,
-      "title": "Topic — Notice here, he's talking to people who think they are going to heaven",
-      "kind": "topic"
+      "title": "Kevin Garnett: A Friend Beyond Sports",
+      "kind": "message",
+      "tags": [
+        "kevin garnett",
+        "sports",
+        "friendship"
+      ]
     },
     {
       "startTime": 3310.21,
-      "title": "Topic — when we do things that God hasn't asked us not to do, it creates a separati…",
-      "kind": "topic"
-    },
-    {
-      "startTime": 3394.585,
-      "title": "Prayer",
-      "kind": "prayer"
+      "title": "Come Follow Jesus",
+      "kind": "invitation",
+      "confidence": 0.7558567168465629,
+      "tags": [
+        "invitation",
+        "faith",
+        "repentance"
+      ]
     }
   ]
 }

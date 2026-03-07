@@ -1,61 +1,107 @@
 # Answer Engine (transcript search + auto-chapters)
 
-This folder contains a small, local-first helper for searching our subtitle/transcript dataset (WebVTT/SRT) in `site/assets/transcripts/` and surfacing timestamped “answer-ish” segments for a free-text question (e.g. a Reddit post).
+This folder contains a small, local-first helper for searching our subtitle/transcript dataset (WebVTT/SRT) in `site/assets/transcripts/` and surfacing timestamped "answer-ish" segments for a free-text question.
 
-It is intentionally **not** an LLM and does not call any LLM APIs. The goal is to be a fast “tool” an LLM (or a human) can drive: build an index, run different styles of query, then open specific candidates and verify context.
+The search/index path is intentionally not an LLM. The optional chapter-refinement path can use a small local instruct model for better chapter boundaries, titles, kinds, and tags.
 
 ## What it builds
 
-- A SQLite full-text index of transcript **segments** (default output under `cache/<env>/answer-engine/`).
-- Auto-chapters JSON per transcript (so the site can load them alongside transcripts).
+- A SQLite full-text index of transcript segments (default output under `cache/<env>/answer-engine/`).
+- Auto-chapters JSON per transcript.
 
 ## Quick start
 
-1) Pick your active env:
+1. Pick your active env:
 
 - `yarn use dev|church|tech|complete`
 
-2) Ensure the Python deps are installed (PEP 668 means this must be in a venv):
+2. Ensure the Python deps are installed in the local venv:
 
-- macOS/Linux (auto-creates `scripts/answer-engine/.venv/`):
+- macOS/Linux:
   - `bash scripts/answer-engine/ae.sh analyze --help`
 - Windows PowerShell:
   - `powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 analyze --help`
 
-3) Build the derived caches:
+3. Build the derived caches:
 
 - Parse transcripts into cached segments:
   - `bash scripts/answer-engine/ae.sh analyze`
 - Rebuild the FTS answer index from cached segments:
   - `bash scripts/answer-engine/ae.sh index`
 
-4) Query for candidate answers:
+4. Query for candidate answers:
 
 - `bash scripts/answer-engine/ae.sh query search --q "I struggle to forgive someone I trusted" --limit 12`
 - `bash scripts/answer-engine/ae.sh query search --q "How can I handle myself better in stressful situations?" --json | jq`
 
 ## Auto-chapters
 
-Generate chapter JSON files for transcripts using semantic topic shifts plus representative-sentence titles:
+Generate chapter JSON files from analyzed transcripts:
 
 - Parse transcripts first:
   - `bash scripts/answer-engine/ae.sh analyze`
-- Write chapters into `site/assets/chapters/` (default):
+- Write chapters into `site/assets/chapters/`:
   - `bash scripts/answer-engine/ae.sh chapters`
-- (Alt) Write chapters adjacent to transcripts as `*.chapters.json`:
+- Write chapters adjacent to transcripts as `*.chapters.json`:
   - `bash scripts/answer-engine/ae.sh chapters --adjacent`
 - Rewrite existing chapters after algorithm tweaks:
   - `bash scripts/answer-engine/ae.sh chapters --force`
 
-When present, the client will attempt to fetch chapters from `assets/chapters/<feed>/<episode>.chapters.json` (and also `*.chapters.json` next to a local transcript) when the episode has no chapters in the feed.
+When present, the client fetches chapters from `assets/chapters/<feed>/<episode>.chapters.json` (and also `*.chapters.json` next to a local transcript) when the episode has no feed-provided chapters.
 
-### Fast spot-check (single file)
+### Fast spot-check
 
-For dev iteration (avoid re-indexing everything), analyze and generate chapters for one transcript:
+For dev iteration, analyze and generate chapters for one transcript:
 
 - `bash scripts/answer-engine/ae.sh analyze --transcript <feed>/<episode>.vtt`
 - `bash scripts/answer-engine/ae.sh analyze --transcript <feed>/<episode>.vtt --transcript <feed>/<episode-2>.vtt`
 - `bash scripts/answer-engine/ae.sh chapters --transcript <feed>/<episode>.vtt --force --print`
+- `bash scripts/answer-engine/ae.sh chapters --transcript <feed>/<episode>.vtt --llm-url http://127.0.0.1:8765 --force --print`
+
+### Chapter modes
+
+- `hybrid` (default): semantic candidates plus local LLM refinement.
+- `semantic`: semantic candidates only, no LLM pass.
+
+The semantic path uses `sentence-transformers` + `keybert`. `ae.sh` / `ae.ps1` ensure a CUDA-capable torch wheel (`cu128`) is installed when CUDA is available, matching the audio-to-transcripts tooling.
+
+### Chapter kinds
+
+The chapterer now aims for human-facing section labels instead of only generic `message` / `topic`. Current kinds include:
+
+- `welcome`, `intro`, `worship`, `prayer`, `scripture`, `message`, `teaching`, `application`
+- `illustration`, `story`, `testimony`, `conversation`, `interview`, `q_and_a`
+- `response`, `invitation`, `communion`, `announcements`, `giving`, `ad`, `transition`, `benediction`, `outro`
+
+Not every feed will use every kind. The point is to describe the section the way a listener would, not the way a low-level segment classifier would.
+
+### Persistent LLM server
+
+If you are processing multiple files, keep the chapter LLM warm in one process instead of reloading it in every `chapters` run.
+
+Start the server once:
+
+- macOS/Linux:
+  - `bash scripts/answer-engine/ae.sh serve-llm --warmup`
+- Windows PowerShell:
+  - `powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 serve-llm --warmup`
+
+Then point chapter runs at it:
+
+- `bash scripts/answer-engine/ae.sh chapters --llm-url http://127.0.0.1:8765 --transcript <feed>/<episode>.vtt --force --print`
+- `powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 chapters --llm-url http://127.0.0.1:8765 --transcript <feed>/<episode>.vtt --force --print`
+
+Defaults:
+
+- Model: `Qwen/Qwen2.5-1.5B-Instruct`
+- Device: `cuda` when available, otherwise `cpu`
+
+Useful env overrides:
+
+- `VOD_ANSWER_LLM_MODEL`
+- `VOD_ANSWER_LLM_DEVICE`
+- `VOD_ANSWER_LLM_MAX_INPUT_CHARS`
+- `VOD_ANSWER_LLM_HTTP_TIMEOUT_SEC`
 
 ### Dependencies
 
@@ -63,17 +109,9 @@ Installed automatically by `ae.sh` / `ae.ps1` into `scripts/answer-engine/.venv/
 
 - `scripts/answer-engine/requirements.txt`
 
-### Chapter mode
-
-Semantic chapters are the default and only supported mode:
-
-- `bash scripts/answer-engine/ae.sh chapters`
-
-This uses `sentence-transformers` + `keybert` and downloads model weights the first time. `ae.sh` / `ae.ps1` ensure a CUDA-capable torch wheel (`cu128`) is installed when CUDA is available, to match `scripts/audio-to-transcripts/`, but model initialization still falls back to CPU if CUDA cannot be used at runtime.
-
 ## Notes
 
-- Indexing is based on `site/assets/transcripts/**.vtt|.srt` (not `cache/<env>/transcripts/`).
+- Indexing is based on `site/assets/transcripts/**.vtt|.srt`.
 - The shared cached artifact is analyzed transcript segments in SQLite; search indexing and chapter writing are separate downstream steps.
 - Episode metadata is best-effort joined from cached feeds in `cache/<env>/feeds/<slug>.xml` when available.
 - Outputs live in `cache/` and are regenerable; they are ignored by git.

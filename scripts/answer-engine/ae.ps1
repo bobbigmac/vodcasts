@@ -56,6 +56,7 @@ Usage:
   powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 analyze [analyze.py args...]
   powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 index [build_index.py args...]
   powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 chapters [make_chapters.py args...]
+  powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 serve-llm [serve_llm.py args...]
   powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 query [query.py args...]
   powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 pip [pip args...]
 
@@ -64,6 +65,7 @@ Examples:
   powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 analyze --transcript bridgetown/2026-03-02-the-good-news-about-our-bodies-chronic-illness-disability-10g2du.vtt
   powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 index
   powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 chapters --transcript feed/episode.vtt --print
+  powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 serve-llm --warmup
   powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 query search --q "forgiveness" --limit 10
 "@
     exit 0
@@ -81,6 +83,11 @@ Examples:
   "chapters" {
     Ensure-Venv
     & $Py (Join-Path $Root "make_chapters.py") @Args
+    exit $LASTEXITCODE
+  }
+  "serve-llm" {
+    Ensure-Venv
+    & $Py (Join-Path $Root "serve_llm.py") @Args
     exit $LASTEXITCODE
   }
   "query" {

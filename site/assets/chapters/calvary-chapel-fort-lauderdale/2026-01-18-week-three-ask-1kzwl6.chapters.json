@@ -2,52 +2,66 @@
   "version": 1,
   "generator": {
     "name": "vodcasts-answer-engine",
-    "version": 2,
-    "mode": "semantic"
+    "version": 4,
+    "mode": "hybrid"
   },
-  "generated_at_unix": 1772851876,
+  "generated_at_unix": 1772857048,
   "feed": "calvary-chapel-fort-lauderdale",
   "episode_slug": "2026-01-18-week-three-ask-1kzwl6",
   "chapters": [
     {
       "startTime": 0.0,
       "title": "Intro — together, let us read the answer that Jesus gave to the request Lord teach…",
-      "kind": "intro"
+      "kind": "intro",
+      "tags": [
+        "god",
+        "prayer",
+        "lord prayer",
+        "lord"
+      ]
     },
     {
       "startTime": 8.034,
       "title": "Prayer",
-      "kind": "prayer"
+      "kind": "prayer",
+      "tags": [
+        "pray",
+        "know",
+        "father",
+        "faith"
+      ]
     },
     {
       "startTime": 242.806,
       "title": "Prayer — daily bread, i pray for forgiveness, and i pray against…",
-      "kind": "prayer"
+      "kind": "prayer",
+      "tags": [
+        "god",
+        "think",
+        "father",
+        "want"
+      ]
     },
     {
       "startTime": 356.901,
-      "title": "Message — Think about these short prayers in the Bible",
-      "kind": "message"
-    },
-    {
-      "startTime": 877.774,
-      "title": "Topic — listen, Jesus answered every single one of those prayers",
-      "kind": "topic"
-    },
-    {
-      "startTime": 1567.928,
-      "title": "Topic — we want to practice this type of prayer",
-      "kind": "topic"
+      "title": "Praying for God’s Kingdom to Come",
+      "kind": "message",
+      "tags": [
+        "prayer",
+        "kingdom",
+        "god"
+      ]
     },
     {
       "startTime": 3471.442,
-      "title": "Prayer",
-      "kind": "prayer"
-    },
-    {
-      "startTime": 3545.378,
-      "title": "Outro — We wanna remind you, you are invited back on Tuesday night at 6.30 here in…",
-      "kind": "outro"
+      "title": "Prayer to Open Your Heart to God",
+      "kind": "invitation",
+      "confidence": 0.9994945189460358,
+      "tags": [
+        "prayer",
+        "confession",
+        "forgiveness"
+      ]
     }
   ]
 }

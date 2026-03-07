@@ -480,6 +480,58 @@ def answeriness(text: str) -> float:
     return float(1.0 - math.exp(-max(0.0, raw)))
 
 
+_HUMAN_CHAPTER_KINDS = {
+    "start",
+    "welcome",
+    "intro",
+    "worship",
+    "prayer",
+    "scripture",
+    "reading",
+    "message",
+    "teaching",
+    "application",
+    "topic",
+    "illustration",
+    "story",
+    "testimony",
+    "conversation",
+    "interview",
+    "q_and_a",
+    "response",
+    "invitation",
+    "communion",
+    "announcements",
+    "giving",
+    "ad",
+    "transition",
+    "benediction",
+    "outro",
+}
+
+_BOUNDARY_REVIEW_KINDS = {
+    "message",
+    "teaching",
+    "application",
+    "topic",
+    "scripture",
+    "reading",
+    "illustration",
+    "story",
+    "testimony",
+    "conversation",
+    "interview",
+    "q_and_a",
+    "response",
+    "invitation",
+    "communion",
+    "worship",
+    "prayer",
+}
+
+_HARD_LOCKED_KINDS = {"start", "welcome", "intro", "worship", "prayer", "scripture", "reading", "announcements", "giving", "ad", "transition", "benediction", "outro"}
+
+
 def classify_segment(text: str, *, start_sec: float, end_sec: float, total_sec: float) -> tuple[str, float]:
     """
     Very lightweight classification for tagging intros/ads/breaks/prayer/outros.
@@ -638,6 +690,234 @@ def classify_segment(text: str, *, start_sec: float, end_sec: float, total_sec: 
     return kind, float(conf)
 
 
+def classify_segment_v2(text: str, *, start_sec: float, end_sec: float, total_sec: float) -> tuple[str, float]:
+    """
+    Human-facing structure classifier used for chapter generation.
+    Returns one of:
+      content|welcome|intro|worship|prayer|scripture|invitation|giving|announcements|ad|transition|benediction|outro
+    """
+    s = normalize_ws(strip_html(text or "")).lower()
+    toks = _tokenize(s)
+    if not toks:
+        return "content", 0.0
+    pos = 0.0 if total_sec <= 0 else max(0.0, min(1.0, start_sec / total_sec))
+    dur = max(0.0, float(end_sec) - float(start_sec))
+
+    def has_any(needles: set[str]) -> int:
+        return sum(1 for t in toks if t in needles)
+
+    def has_phrase(pat: str) -> bool:
+        return bool(re.search(pat, s, flags=re.I))
+
+    def count_phrases(pats: list[tuple[str, float]]) -> float:
+        sc = 0.0
+        for pat, w in pats:
+            if has_phrase(pat):
+                sc += float(w)
+        return sc
+
+    welcome_hits = has_any({"welcome", "glad", "joining", "thanks", "morning", "evening", "church", "online"})
+    intro_hits = has_any({"welcome", "glad", "joining", "thanks", "morning", "evening"})
+    worship_hits = has_any({"worship", "sing", "praise", "glory", "honor", "worthy", "hallelujah"})
+    outro_hits = has_any({"subscribe", "watching", "listening", "bye", "presentation"})
+    ad_hits = has_any({"sponsor", "sponsored", "promo", "discount", "offer", "donate", "donation", "patreon", "paypal", "venmo", "cashapp"})
+    ann_hits = has_any({"announcements", "register", "signup", "conference", "camp"})
+    giving_hits = has_any({"give", "giving", "offering", "tithe", "generosity", "donate", "donation"})
+    prayer_hits = has_any({"amen"})
+    transition_hits = has_any({"break", "return", "returning", "music", "pause", "intermission", "tuned"})
+    scripture_hits = has_any({"scripture", "verse", "chapter", "bible", "gospel", "psalm"})
+    invitation_hits = has_any({"respond", "receive", "surrender", "salvation", "repent", "confess"})
+    benediction_hits = has_any({"peace", "bless", "grace"})
+
+    welcome_phr = [
+        (r"\bhey\s+everybody[, ]+\s+welcome\s+to\s+church\b", 1.05),
+        (r"\bwelcome\s+to\s+church\b", 0.95),
+        (r"\bglad\s+(you|ya)(?:'re|\s+are)?\s+(here|joining)\b", 0.60),
+        (r"\bgreat\s+to\s+see\s+you\s+today\b", 0.65),
+        (r"\bjoining\s+us\s+from\b", 0.55),
+    ]
+    intro_phr = [
+        (r"\bwelcome\b", 0.35),
+        (r"\bthank(s)?\s+you\s+for\s+(joining|being)\b", 0.45),
+        (r"\bpresents\b", 0.30),
+        (r"\btaken\s+from\b", 0.35),
+        (r"\bhere('?s| is)\s+(pastor|father|fr\\.?|reverend)\b", 0.55),
+        (r"\btoday\s+(we('| a)re|we)\b", 0.25),
+        (r"\bwe\s+(are|re)\s+in\s+(a|the)\s+series\b", 0.45),
+    ]
+    worship_phr = [
+        (r"\blet('?| u)s\s+do\s+some\s+singing\b", 1.15),
+        (r"\blet('?| u)s\s+sing\b", 1.05),
+        (r"\bas\s+we\s+sing\b", 0.85),
+        (r"\blift\s+up\s+the\s+name\s+of\s+jesus\b", 1.00),
+        (r"\bworthy\s+of\s+our\s+(praise|worship)\b", 1.05),
+        (r"\bwe\s+give\s+you\s+all\s+the\s+(honor|glory)\b", 1.00),
+        (r"\bworship\s+together\b", 0.80),
+        (r"\bstand\s+to\s+your\s+feet\b", 0.80),
+    ]
+    outro_phr = [
+        (r"\bthanks?\s+for\s+(watching|listening)\b", 0.55),
+        (r"\bsee\s+you\s+(next|again)\b", 0.35),
+        (r"\bnext\s+week\b", 0.25),
+        (r"\bgod\s+bless\b", 0.45),
+        (r"\bbefore\s+you\s+go\b", 0.45),
+        (r"\blike\s+and\s+subscribe\b", 0.75),
+        (r"\buntil\s+next\s+time\b", 0.55),
+        (r"\bthat('?s)?\s+all\s+for\s+today\b", 0.65),
+        (r"\bthis\s+has\s+been\s+(a\s+)?presentation\b", 1.05),
+    ]
+    ad_phr = [
+        (r"\bthis\s+(episode|video)\s+is\s+sponsored\b", 1.10),
+        (r"\bsponsor(?:ed|ship)?\b", 0.55),
+        (r"\bpromo\s+code\b", 0.85),
+        (r"\bbrought\s+to\s+you\s+by\b", 0.85),
+        (r"\bsupport\s+(this|the)\s+(show|podcast|ministry|church)\b", 0.75),
+        (r"\bmake\s+a\s+donation\b", 0.85),
+        (r"\bplease\s+donate\b", 0.85),
+        (r"\bpatreon\b", 0.65),
+        (r"\blink\s+in\s+the\s+description\b", 0.55),
+        (r"\bvisit\s+\w+(\s+dot\s+|\.)com\b", 0.70),
+    ]
+    ann_phr = [
+        (r"\bannouncements\b", 0.95),
+        (r"\bregister\b", 0.55),
+        (r"\bsign\s+up\b", 0.45),
+        (r"\bservice\s+times?\b", 0.55),
+        (r"\bsmall\s+groups?\b", 0.55),
+        (r"\bupcoming\b", 0.35),
+        (r"\bevent\b", 0.30),
+    ]
+    giving_phr = [
+        (r"\b(tithes?|offerings?)\b", 1.05),
+        (r"\bgenerosity\b", 0.75),
+        (r"\btext\s+to\s+give\b", 1.15),
+        (r"\bonline\s+giving\b", 1.05),
+        (r"\bour\s+(tithes?|offerings?)\b", 1.10),
+        (r"\bwe\s+invite\s+you\s+to\s+give\b", 1.00),
+        (r"\bpartner\s+with\s+us\b", 0.70),
+    ]
+    invitation_phr = [
+        (r"\bif\s+you('?ve|\s+have)\s+never\b", 0.95),
+        (r"\blead\s+you\s+in\s+a\s+(very\s+)?simple\s+prayer\b", 1.45),
+        (r"\bpray\s+this\s+prayer\b", 0.95),
+        (r"\breceive\s+(jesus|christ)\b", 1.05),
+        (r"\bgive\s+your\s+life\s+to\s+(jesus|christ)\b", 1.15),
+        (r"\bput\s+your\s+faith\s+in\s+jesus\b", 1.00),
+        (r"\braise\s+your\s+hand\b", 0.90),
+        (r"\bcome\s+forward\b", 0.90),
+        (r"\bconfess\s+with\s+your\s+mouth\b", 0.80),
+        (r"\bi\s+invite\s+you\s+inside\b", 1.10),
+        (r"\bforgive\s+my\s+sin\b", 1.10),
+        (r"\btoday\s+i\s+repent\b", 1.15),
+        (r"\bwelcome\s+to\s+the\s+family\s+of\s+god\b", 1.20),
+        (r"\bmost\s+important\s+decision\s+of\s+your\s+life\b", 1.15),
+        (r"\bif\s+you('?ve|\s+have)\s+decided\s+to\s+follow\s+jesus\b", 1.20),
+    ]
+    prayer_phr = [
+        (r"\blet('| )s\s+pray\b", 1.15),
+        (r"\bjoin\s+me\s+in\s+prayer\b", 0.95),
+        (r"\bbow\s+your\s+heads?\b", 1.10),
+        (r"\bin\s+the\s+name\s+of\s+the\s+father\b", 1.15),
+        (r"\bour\s+father\s+who\s+(art|is)\b", 1.15),
+        (r"\bin\s+jesus('?s)?\s+name\b", 0.85),
+        (r"\b(dear|heavenly)\s+(lord|father|god)\b", 0.90),
+        (r"^(lord|father|god|jesus)\b[, ]+(we\s+)?(thank|ask|praise|pray|come|lift|confess|worship)\b", 1.00),
+        (r"\b(lord|father|god|jesus)\b[, ]+\s*(we\s+)?(thank|ask|praise|pray|come|lift|confess|worship)\b", 0.85),
+        (r"\bthank\s+you\s+(lord|jesus|father|god)\b", 0.75),
+        (r"\bamen\b", 0.65),
+    ]
+    scripture_phr = [
+        (r"\bopen\s+(your|the)\s+bibles?\b", 1.00),
+        (r"\bturn\s+(with\s+me|in\s+your\s+bibles?|to)\b", 0.80),
+        (r"\breading\s+from\b", 1.00),
+        (r"\bour\s+scripture\s+reading\b", 1.05),
+        (r"\bthe\s+word\s+of\s+the\s+lord\b", 1.10),
+        (r"\bour\s+text\s+today\b", 0.75),
+        (r"\bchapter\s+\d+\b", 0.55),
+    ]
+    transition_phr = [
+        (r"\bwe('?| a)ll\s+be\s+right\s+back\b", 1.30),
+        (r"\bback\s+in\s+(a\s+)?moment\b", 1.10),
+        (r"\bafter\s+the\s+break\b", 1.05),
+        (r"\bwhen\s+we\s+return\b", 0.90),
+        (r"\band\s+now\s+back\b", 1.05),
+        (r"\bwe('?| a)re\s+back\b", 0.95),
+        (r"\bdon't\s+go\s+anywhere\b", 1.05),
+        (r"\\[\\s*music\\s*\\]", 1.15),
+        (r"â™ª", 1.15),
+        (r"\bquick\s+break\b", 1.10),
+        (r"\bshort\s+break\b", 1.05),
+        (r"\bwe\s+(just\s+)?need\s+to\s+pause\b", 0.95),
+        (r"\bstay\s+tuned\b", 1.00),
+    ]
+    benediction_phr = [
+        (r"\bgo\s+in\s+peace\b", 1.25),
+        (r"\bthe\s+lord\s+bless\s+you\s+and\s+keep\s+you\b", 1.25),
+        (r"\bmay\s+the\s+lord\b", 0.95),
+        (r"\bgrace\s+of\s+the\s+lord\b", 1.05),
+        (r"\bhave\s+a\s+great\s+week\b", 0.60),
+        (r"\byou\s+are\s+invited\s+back\b", 0.55),
+    ]
+
+    welcome = (welcome_hits * 0.16) + count_phrases(welcome_phr) + (0.55 if pos <= 0.06 else 0.0)
+    intro = (intro_hits * 0.14) + count_phrases(intro_phr) + (0.45 if pos <= 0.10 else 0.0)
+    worship = (worship_hits * 0.18) + count_phrases(worship_phr) + (0.20 if pos <= 0.35 else 0.0)
+    outro = (outro_hits * 0.14) + count_phrases(outro_phr) + (0.45 if pos >= 0.88 else 0.0)
+    ad = (ad_hits * 0.16) + count_phrases(ad_phr) + (0.10 if 0.05 <= pos <= 0.95 else 0.0)
+    announcements = (ann_hits * 0.14) + count_phrases(ann_phr) + (0.12 if pos <= 0.28 else 0.0)
+    giving = (giving_hits * 0.16) + count_phrases(giving_phr) + (0.10 if pos <= 0.25 or pos >= 0.82 else 0.0)
+    invitation = (invitation_hits * 0.18) + count_phrases(invitation_phr) + (0.26 if pos >= 0.55 else 0.0)
+    prayer = (prayer_hits * 0.14) + count_phrases(prayer_phr) + (0.10 if pos >= 0.65 else 0.0)
+    scripture = (scripture_hits * 0.12) + count_phrases(scripture_phr) + (0.75 if _extract_bible_ref(s) else 0.0)
+    transition = (transition_hits * 0.10) + count_phrases(transition_phr) + (0.05 if 0.05 <= pos <= 0.95 else 0.0)
+    benediction = (benediction_hits * 0.14) + count_phrases(benediction_phr) + (0.35 if pos >= 0.82 else 0.0)
+
+    if dur < 18.0:
+        welcome *= 0.78
+        intro *= 0.75
+        worship *= 0.75
+        outro *= 0.75
+        ad *= 0.70
+        announcements *= 0.75
+        giving *= 0.75
+        invitation *= 0.78
+        prayer *= 0.70
+        scripture *= 0.80
+        transition *= 0.70
+        benediction *= 0.80
+
+    scores = {
+        "welcome": welcome,
+        "intro": intro,
+        "worship": worship,
+        "outro": outro,
+        "ad": ad,
+        "announcements": announcements,
+        "giving": giving,
+        "invitation": invitation,
+        "prayer": prayer,
+        "scripture": scripture,
+        "transition": transition,
+        "benediction": benediction,
+    }
+    kind = max(scores.keys(), key=lambda k: scores[k])
+    conf = float(1.0 - math.exp(-max(0.0, scores[kind])))
+    thresh = 0.50
+    if kind in {"welcome", "worship", "scripture", "giving", "benediction"}:
+        thresh = 0.60
+    if kind == "invitation":
+        thresh = 0.55
+    if kind == "ad":
+        thresh = 0.62
+    if kind == "prayer":
+        thresh = 0.58
+    if kind == "transition":
+        thresh = 0.56
+    if conf < thresh:
+        return "content", float(conf)
+    return kind, float(conf)
+
+
 @dataclass(frozen=True)
 class Segment:
     start: float
@@ -670,7 +950,7 @@ def cues_to_segments(
         nonlocal buf_text, start, end
         txt = normalize_ws(" ".join(buf_text))
         if txt:
-            kind, conf = classify_segment(txt, start_sec=start, end_sec=end, total_sec=total_sec)
+            kind, conf = classify_segment_v2(txt, start_sec=start, end_sec=end, total_sec=total_sec)
             out.append(
                 Segment(
                     start=float(start),
@@ -692,16 +972,20 @@ def cues_to_segments(
         gap = float(c.start - prev_end)
         prev_end = c.end
 
-        # Hard boundaries help keep intros/prayers/ads/transitions from being mixed
+        # Hard boundaries help keep structured sections from being mixed
         # into the first "big segment", which makes both classification and titles worse.
         if buf_text:
             boundary = bool(
                 re.search(
                     r"\b("
                     r"let('| )s\s+pray|let\s+us\s+pray|join\s+me\s+in\s+prayer|bow\s+your\s+heads?|"
+                    r"let('| )s\s+sing|stand\s+to\s+your\s+feet|worship\s+together|"
                     r"in\s+the\s+name\s+of\s+the\s+father|our\s+father\s+who\s+(art|is)|"
+                    r"open\s+(your|the)\s+bibles?|reading\s+from|the\s+word\s+of\s+the\s+lord|"
+                    r"tithes?|offerings?|text\s+to\s+give|online\s+giving|"
                     r"this\s+(episode|video)\s+is\s+sponsored|promo\s+code|brought\s+to\s+you\s+by|"
                     r"announcements?|we('?| a)ll\s+be\s+right\s+back|after\s+the\s+break|when\s+we\s+return|"
+                    r"go\s+in\s+peace|the\s+lord\s+bless\s+you\s+and\s+keep\s+you|"
                     r"here('?s| is)\s+(pastor|father|fr\\.?|reverend)"
                     r")\b",
                     c.text or "",
@@ -913,11 +1197,12 @@ def analyze_transcripts(
 
     started = time.time()
     now = int(started)
-    tokenizer_version = 3
+    tokenizer_version = 6
     tok_info = {
         "version": int(tokenizer_version),
         "stemmer": "snowball",
         "stopwords": "stop-words",
+        "segment_classifier": "human-structure-v3",
     }
     prev_info = _meta_get(con, "tokenizer_info", None)
     if prev_info != tok_info:
@@ -934,6 +1219,8 @@ def analyze_transcripts(
     files = list(transcript_paths or _iter_transcript_files(transcripts_root))
     files = [Path(p).resolve() for p in files]
     files.sort()
+    if transcript_paths:
+        force = True
     if limit_files and limit_files > 0:
         files = files[: int(limit_files)]
 
@@ -1571,7 +1858,7 @@ def _chapter_title(kind: str, text: str, *, conf: float | None = None, title_mod
     kind = (kind or "").strip().lower()
     ref = _extract_bible_ref(text)
     tm = (title_mode or "semantic").strip().lower()
-    if tm not in {"semantic", "embed", "embeddings"}:
+    if tm not in {"semantic", "embed", "embeddings", "hybrid"}:
         raise ValueError(f"Unsupported chapter title mode: {title_mode}")
 
     from answer_engine_semantic import keyphrases_for_title, representative_sentence  # type: ignore
@@ -1591,6 +1878,14 @@ def _chapter_title(kind: str, text: str, *, conf: float | None = None, title_mod
     kw_s = ", ".join(kw) if kw else ""
     sent = representative_sentence(text, max_chars=104)
 
+    if kind == "welcome":
+        base = "Welcome"
+        if sent:
+            return _truncate_title(f"{base} — {sent}")
+        if kw_s:
+            return _truncate_title(f"{base} — {kw_s}")
+        return base
+
     if kind == "intro":
         base = "Intro"
         if ref:
@@ -1601,6 +1896,14 @@ def _chapter_title(kind: str, text: str, *, conf: float | None = None, title_mod
         if kw_s:
             base += f" — {kw_s}"
         return _truncate_title(base)
+
+    if kind == "worship":
+        base = "Worship"
+        if sent:
+            return _truncate_title(f"{base} — {sent}")
+        if kw_s:
+            return _truncate_title(f"{base} — {kw_s}")
+        return base
 
     if kind == "outro":
         base = "Outro"
@@ -1638,6 +1941,14 @@ def _chapter_title(kind: str, text: str, *, conf: float | None = None, title_mod
             base += f" — {kw_s}"
         return _truncate_title(base)
 
+    if kind == "giving":
+        base = "Giving / generosity"
+        if sent:
+            return _truncate_title(f"{base} — {sent}")
+        if kw_s:
+            return _truncate_title(f"{base} — {kw_s}")
+        return base
+
     if kind == "prayer":
         s = normalize_ws(strip_html(text or "")).lower()
         if re.search(r"\bin\s+the\s+name\s+of\s+the\s+father\b", s):
@@ -1649,16 +1960,36 @@ def _chapter_title(kind: str, text: str, *, conf: float | None = None, title_mod
             return _truncate_title(f"Prayer — {subj}")
         return "Prayer"
 
-    if kind == "message":
+    if kind in {"scripture", "reading"}:
+        label = "Scripture reading" if kind == "scripture" else "Reading"
         if ref and sent:
-            return _truncate_title(f"Message — {ref} — {sent}")
+            return _truncate_title(f"{label} — {ref} — {sent}")
         if ref:
-            return _truncate_title(f"Message — {ref}")
+            return _truncate_title(f"{label} — {ref}")
         if sent:
-            return _truncate_title(f"Message — {sent}")
+            return _truncate_title(f"{label} — {sent}")
         if kw_s:
-            return _truncate_title(f"Message — {kw_s}")
-        return "Message"
+            return _truncate_title(f"{label} — {kw_s}")
+        return label
+
+    if kind in {"message", "teaching"}:
+        label = "Message" if kind == "message" else "Teaching"
+        if ref and sent:
+            return _truncate_title(f"{label} — {ref} — {sent}")
+        if ref:
+            return _truncate_title(f"{label} — {ref}")
+        if sent:
+            return _truncate_title(f"{label} — {sent}")
+        if kw_s:
+            return _truncate_title(f"{label} — {kw_s}")
+        return label
+
+    if kind == "application":
+        if sent:
+            return _truncate_title(f"Application — {sent}")
+        if kw_s:
+            return _truncate_title(f"Application — {kw_s}")
+        return "Application"
 
     if kind == "topic":
         if ref and sent:
@@ -1670,6 +2001,42 @@ def _chapter_title(kind: str, text: str, *, conf: float | None = None, title_mod
         if kw_s:
             return _truncate_title(f"Topic — {kw_s}")
         return "Topic"
+
+    if kind in {"illustration", "story"}:
+        label = "Illustration" if kind == "illustration" else "Story"
+        if sent:
+            return _truncate_title(f"{label} — {sent}")
+        if kw_s:
+            return _truncate_title(f"{label} — {kw_s}")
+        return label
+
+    if kind == "testimony":
+        if sent:
+            return _truncate_title(f"Testimony — {sent}")
+        if kw_s:
+            return _truncate_title(f"Testimony — {kw_s}")
+        return "Testimony"
+
+    if kind in {"conversation", "interview", "q_and_a"}:
+        label = {"conversation": "Conversation", "interview": "Interview", "q_and_a": "Q&A"}[kind]
+        if sent:
+            return _truncate_title(f"{label} — {sent}")
+        if kw_s:
+            return _truncate_title(f"{label} — {kw_s}")
+        return label
+
+    if kind in {"response", "invitation", "communion", "benediction"}:
+        label = {
+            "response": "Response",
+            "invitation": "Invitation",
+            "communion": "Communion",
+            "benediction": "Benediction",
+        }[kind]
+        if sent:
+            return _truncate_title(f"{label} — {sent}")
+        if kw_s:
+            return _truncate_title(f"{label} — {kw_s}")
+        return label
 
     # content/topic
     if ref and sent:
@@ -1690,14 +2057,34 @@ def chapters_from_segments(*, feed: str, episode_slug: str, segments: list[Segme
 
     chapters: list[dict[str, Any]] = []
     title_mode = (mode or "semantic").strip().lower()
-    if title_mode not in {"semantic", "embed", "embeddings"}:
+    if title_mode not in {"semantic", "embed", "embeddings", "hybrid"}:
         raise ValueError(f"Unsupported chapters mode: {mode}")
+    llm_enabled = title_mode == "hybrid"
 
-    def add(t: float, title: str, *, kind: str | None = None, conf: float | None = None) -> None:
+    def interval_text(start_t: float, end_t: float) -> str:
+        bits = [s.text for s in segments if s.end > float(start_t) and s.start < float(end_t)]
+        return normalize_ws(" ".join(bits))
+
+    def fallback_tags(text: str, *, limit: int = 4) -> list[str]:
+        out: list[str] = []
+        seen: set[str] = set()
+        for kw in top_keywords(text, k=max(2, limit * 2), n=2) or []:
+            tag = normalize_ws(kw).strip().lower()
+            if not tag or len(tag) < 3:
+                continue
+            if tag in seen:
+                continue
+            seen.add(tag)
+            out.append(tag[:40])
+            if len(out) >= limit:
+                break
+        return out
+
+    def add(t: float, title: str, *, kind: str | None = None, conf: float | None = None, tags: list[str] | None = None) -> None:
         if not title:
             return
         t = float(max(0.0, min(total, t)))
-        if chapters and abs(float(chapters[-1].get("startTime") or 0.0) - t) < 2.0:
+        if any(abs(float(existing.get("startTime") or 0.0) - t) < 2.0 for existing in chapters):
             return
         if chapters:
             prev = chapters[-1]
@@ -1712,18 +2099,25 @@ def chapters_from_segments(*, feed: str, episode_slug: str, segments: list[Segme
             ch["kind"] = str(kind)
         if conf is not None:
             ch["confidence"] = float(conf)
+        if tags:
+            ch["tags"] = list(tags)
         chapters.append(ch)
 
     # Intro run (early non-content) + main message start.
     intro_end = 0.0
     intro_texts: list[str] = []
+    intro_kind_texts: dict[str, list[str]] = {}
+    intro_kind_scores: dict[str, float] = {}
     for s in segments:
         if s.start > 8 * 60.0:
             break
         if s.kind != "content" and s.kind_conf >= 0.50:
             intro_end = float(s.end)
-            # Don't let a brief opening doxology dominate the intro title.
-            if s.kind != "prayer":
+            intro_kind_texts.setdefault(str(s.kind or "intro"), []).append(s.text)
+            intro_kind_scores[str(s.kind or "intro")] = float(intro_kind_scores.get(str(s.kind or "intro"), 0.0)) + float(
+                max(0.35, s.kind_conf)
+            )
+            if s.kind not in {"prayer", "worship"}:
                 intro_texts.append(s.text)
             continue
         # Stop after we hit clear content for a bit.
@@ -1736,14 +2130,23 @@ def chapters_from_segments(*, feed: str, episode_slug: str, segments: list[Segme
             main_start = float(s.start)
             break
 
-    if intro_texts:
-        add(0.0, _chapter_title("intro", " ".join(intro_texts), title_mode=title_mode), kind="intro")
+    if intro_texts or intro_kind_texts:
+        intro_kind = "intro"
+        if intro_kind_scores:
+            ranked = sorted(intro_kind_scores.items(), key=lambda kv: (-float(kv[1]), kv[0]))
+            top_kind, top_score = ranked[0]
+            if top_kind in {"welcome", "worship", "scripture", "reading", "giving", "announcements"} and top_score >= 0.70:
+                intro_kind = top_kind
+        intro_source = intro_kind_texts.get(intro_kind) or intro_texts
+        intro_txt = normalize_ws(" ".join(intro_source or intro_texts))
+        if intro_txt:
+            add(0.0, _chapter_title(intro_kind, intro_txt, title_mode=title_mode), kind=intro_kind, tags=fallback_tags(intro_txt))
     if main_start > 0.0:
         # Name the main message from the first ~8 minutes of content.
         main_segments = [s for s in segments if s.kind == "content" and s.start >= main_start and s.start < main_start + 8 * 60.0]
         title_segments = main_segments[1:] if len(main_segments) >= 3 else main_segments
         main_txt = " ".join(s.text for s in title_segments)
-        add(main_start, _chapter_title("message", main_txt, title_mode=title_mode), kind="message")
+        add(main_start, _chapter_title("message", main_txt, title_mode=title_mode), kind="message", tags=fallback_tags(main_txt))
 
     edge_window = min(8 * 60.0, max(3 * 60.0, total * 0.16))
     content_window_end = max(main_start + 90.0, edge_window)
@@ -1753,9 +2156,9 @@ def chapters_from_segments(*, feed: str, episode_slug: str, segments: list[Segme
     while i < len(segments):
         s = segments[i]
         min_conf = 0.60
-        if s.kind in {"ad", "transition"}:
+        if s.kind in {"ad", "transition", "worship", "invitation"}:
             min_conf = 0.52
-        if s.kind in {"ad", "announcements", "prayer", "transition", "outro"} and s.kind_conf >= min_conf:
+        if s.kind in {"welcome", "worship", "scripture", "reading", "giving", "invitation", "ad", "announcements", "prayer", "transition", "benediction", "outro"} and s.kind_conf >= min_conf:
             kind = s.kind
             conf = s.kind_conf
             run_start = s.start
@@ -1777,18 +2180,39 @@ def chapters_from_segments(*, feed: str, episode_slug: str, segments: list[Segme
             allow = True
             if kind == "prayer":
                 allow = near_start or near_end or (conf >= 0.92 and run_dur >= 90.0)
+            elif kind == "welcome":
+                allow = near_start
+            elif kind == "worship":
+                allow = near_start or near_end or (conf >= 0.88 and run_dur >= 120.0)
+            elif kind in {"scripture", "reading"}:
+                allow = near_start or (conf >= 0.86 and run_dur >= 75.0)
+            elif kind == "giving":
+                allow = near_start or near_end
+            elif kind == "invitation":
+                allow = near_end or (conf >= 0.88 and run_dur >= 60.0)
             elif kind == "announcements":
                 before_message = bool(main_start <= 0.0 or run_start <= main_start + 30.0)
                 allow = (near_start and before_message) or near_end
             elif kind in {"ad", "outro"}:
                 allow = near_start or near_end
+            elif kind == "benediction":
+                allow = near_end
             elif kind == "transition":
                 allow = near_end or conf >= 0.78
             if not allow:
                 i = j
                 continue
-            title = _chapter_title(kind, " ".join(run_texts), conf=conf, title_mode=title_mode)
-            add(run_start, title, kind=kind, conf=conf if kind in {"ad", "transition"} else None)
+            run_txt = normalize_ws(" ".join(run_texts))
+            if kind in {"worship", "welcome", "prayer"} and re.search(
+                r"\b(lead\s+you\s+in\s+a\s+(very\s+)?simple\s+prayer|welcome\s+to\s+the\s+family\s+of\s+god|"
+                r"most\s+important\s+decision\s+of\s+your\s+life|decided\s+to\s+follow\s+jesus|"
+                r"give\s+your\s+life\s+to\s+(jesus|christ)|pray\s+this\s+prayer)\b",
+                run_txt,
+                flags=re.I,
+            ):
+                kind = "invitation"
+            title = _chapter_title(kind, run_txt, conf=conf, title_mode=title_mode)
+            add(run_start, title, kind=kind, conf=conf if kind in {"ad", "transition", "worship", "invitation"} else None, tags=fallback_tags(run_txt))
             i = j
             continue
         i += 1
@@ -1799,7 +2223,7 @@ def chapters_from_segments(*, feed: str, episode_slug: str, segments: list[Segme
         for s in segments:
             if s.start < main_start:
                 continue
-            if s.kind in {"outro", "ad", "announcements"} and s.kind_conf >= 0.55 and s.start >= total * 0.70:
+            if s.kind in {"outro", "ad", "announcements", "benediction", "giving"} and s.kind_conf >= 0.55 and s.start >= total * 0.70:
                 content_end = min(content_end, float(s.start))
                 break
 
@@ -1808,7 +2232,7 @@ def chapters_from_segments(*, feed: str, episode_slug: str, segments: list[Segme
     mode = (mode or "semantic").strip().lower()
     added_topics = 0
 
-    if mode in {"semantic", "embed", "embeddings"} and main_start > 0.0 and content_end - main_start >= 900.0:
+    if title_mode in {"semantic", "embed", "embeddings", "hybrid"} and main_start > 0.0 and content_end - main_start >= 900.0:
         from answer_engine_semantic import TextSpan, pick_chapter_times  # type: ignore
 
         spans = [TextSpan(start=float(s.start), end=float(s.end), text=str(s.text)) for s in segments if s.kind == "content"]
@@ -1826,7 +2250,27 @@ def chapters_from_segments(*, feed: str, episode_slug: str, segments: list[Segme
             window_end = t + 180.0
             txt = " ".join(s.text for s in segments if s.start <= window_end and s.end >= window_start and s.kind == "content")
             if txt:
-                add(t, _chapter_title("topic", txt, title_mode=title_mode), kind="topic")
+                kind = "topic"
+                title = _chapter_title("topic", txt, title_mode=title_mode)
+                tags = fallback_tags(txt)
+                if llm_enabled:
+                    try:
+                        from answer_engine_llm import review_boundary  # type: ignore
+
+                        before_txt = interval_text(max(main_start, t - 210.0), t)
+                        after_txt = interval_text(t, min(content_end, t + 210.0))
+                        decision = review_boundary(before_text=before_txt, after_text=after_txt, title_hint=title)
+                        if decision and not decision.keep:
+                            continue
+                        if decision:
+                            allowed = _BOUNDARY_REVIEW_KINDS
+                            proposed = str(decision.kind or kind)
+                            kind = proposed if proposed in allowed else kind
+                            title = str(decision.title or title)
+                            tags = list(decision.tags or tags)
+                    except Exception as exc:
+                        print(f"[answer-engine] LLM boundary review failed at {t:.1f}s: {exc}", flush=True)
+                add(t, title, kind=kind, tags=tags)
                 added_topics += 1
 
     chapters.sort(key=lambda c: float(c.get("startTime") or 0.0))
@@ -1834,9 +2278,66 @@ def chapters_from_segments(*, feed: str, episode_slug: str, segments: list[Segme
     if not chapters or float(chapters[0].get("startTime") or 0.0) > 2.0:
         chapters.insert(0, {"startTime": 0.0, "title": "Start", "kind": "start"})
 
+    if llm_enabled and chapters:
+        try:
+            from answer_engine_llm import refine_chapter_metadata  # type: ignore
+
+            for idx, ch in enumerate(chapters):
+                start_t = float(ch.get("startTime") or 0.0)
+                end_t = float(chapters[idx + 1].get("startTime") or total) if idx + 1 < len(chapters) else total
+                chapter_txt = interval_text(start_t, end_t)
+                prev_title = str(chapters[idx - 1].get("title") or "") if idx > 0 else ""
+                next_title = str(chapters[idx + 1].get("title") or "") if idx + 1 < len(chapters) else ""
+                kind_hint = str(ch.get("kind") or "topic")
+                if kind_hint in _HARD_LOCKED_KINDS:
+                    if not ch.get("tags"):
+                        tags = fallback_tags(chapter_txt)
+                        if tags:
+                            ch["tags"] = tags
+                    continue
+                meta = refine_chapter_metadata(
+                    kind_hint=kind_hint,
+                    title_hint=str(ch.get("title") or ""),
+                    chapter_text=chapter_txt,
+                    prev_title=prev_title,
+                    next_title=next_title,
+                )
+                tags = list(ch.get("tags") or [])
+                if meta:
+                    allowed_content_kinds = _HUMAN_CHAPTER_KINDS - {"start", "intro", "ad", "transition", "outro", "announcements"}
+                    next_kind = str(meta.kind or kind_hint or "topic")
+                    if next_kind not in allowed_content_kinds:
+                        next_kind = kind_hint
+                    ch["kind"] = next_kind
+                    ch["title"] = str(meta.title or ch.get("title") or "Chapter")
+                    tags = list(meta.tags or tags or fallback_tags(chapter_txt))
+                elif not tags:
+                    tags = fallback_tags(chapter_txt)
+                if tags:
+                    ch["tags"] = tags
+        except Exception as exc:
+            print(f"[answer-engine] LLM chapter refinement failed; falling back to extractive tags: {exc}", flush=True)
+            for idx, ch in enumerate(chapters):
+                if ch.get("tags"):
+                    continue
+                start_t = float(ch.get("startTime") or 0.0)
+                end_t = float(chapters[idx + 1].get("startTime") or total) if idx + 1 < len(chapters) else total
+                tags = fallback_tags(interval_text(start_t, end_t))
+                if tags:
+                    ch["tags"] = tags
+    else:
+        for idx, ch in enumerate(chapters):
+            if ch.get("tags"):
+                continue
+            start_t = float(ch.get("startTime") or 0.0)
+            end_t = float(chapters[idx + 1].get("startTime") or total) if idx + 1 < len(chapters) else total
+            tags = fallback_tags(interval_text(start_t, end_t))
+            if tags:
+                ch["tags"] = tags
+
     return {
         "version": 1,
-        "generator": {"name": "vodcasts-answer-engine", "version": 2, "mode": str(mode or "semantic")},
+        "generator": {"name": "vodcasts-answer-engine", "version": 4, "mode": str(mode or "semantic")},
         "generated_at_unix": int(time.time()),
         "feed": feed,
         "episode_slug": episode_slug,
@@ -1906,7 +2407,7 @@ def _chapters_needs_update(path: Path, *, mode: str) -> bool:
             return True
         if str(gen.get("name") or "") != "vodcasts-answer-engine":
             return True
-        if int(gen.get("version") or 0) != 2:
+        if int(gen.get("version") or 0) != 4:
             return True
         if str(gen.get("mode") or "") != str(mode or "semantic"):
             return True

@@ -20,7 +20,8 @@ def _parse_args() -> argparse.Namespace:
         default="",
         help="Transcript path (absolute, or relative to site/assets/transcripts/). If omitted, writes all chapters from analysis cache.",
     )
-    p.add_argument("--mode", default="semantic", help="Chapter generation mode. Only `semantic` is supported.")
+    p.add_argument("--mode", default="hybrid", help="Chapter generation mode. `hybrid` uses semantic candidates plus local LLM refinement; `semantic` skips the LLM pass.")
+    p.add_argument("--llm-url", default="", help="Optional local LLM endpoint, e.g. http://127.0.0.1:8765. Avoids reloading the model for each process.")
     p.add_argument(
         "--out",
         default="",
@@ -34,6 +35,10 @@ def _parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = _parse_args()
+    if str(args.llm_url or "").strip():
+        import os
+
+        os.environ["VOD_ANSWER_LLM_URL"] = str(args.llm_url).strip()
     _cache_dir, transcripts_root, db_path = resolve_paths(args)
 
     t_arg = str(args.transcript or "").strip()

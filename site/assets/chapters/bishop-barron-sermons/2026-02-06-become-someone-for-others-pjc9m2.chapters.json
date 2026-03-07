@@ -2,22 +2,33 @@
   "version": 1,
   "generator": {
     "name": "vodcasts-answer-engine",
-    "version": 2,
-    "mode": "semantic"
+    "version": 4,
+    "mode": "hybrid"
   },
-  "generated_at_unix": 1772851866,
+  "generated_at_unix": 1772857159,
   "feed": "bishop-barron-sermons",
   "episode_slug": "2026-02-06-become-someone-for-others-pjc9m2",
   "chapters": [
     {
       "startTime": 0.0,
       "title": "Intro — Become fulfilled and the happiness will take care of itself",
-      "kind": "intro"
+      "kind": "intro",
+      "tags": [
+        "catholic ministries",
+        "fire catholic",
+        "word",
+        "god word"
+      ]
     },
     {
       "startTime": 124.301,
-      "title": "Message — Well, then I see a saint and suddenly the light goes on and I can see whe…",
-      "kind": "message"
+      "title": "Be the Salt of the Earth: Serving Others for Happiness",
+      "kind": "message",
+      "tags": [
+        "discipleship",
+        "service",
+        "happiness"
+      ]
     }
   ]
 }
