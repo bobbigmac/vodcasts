@@ -845,6 +845,195 @@ def _generate_with_whisperx(
         raise ValueError(f"whisperx produced no .srt/.vtt in {out_dir}")
 
 
+def _process_work_item(
+    *,
+    item: WorkItem,
+    out_dir: Path,
+    require_cuda: bool,
+    download_provided: bool,
+    execute: bool,
+    generate_missing: bool,
+    timeout_seconds: int,
+    user_agent: str,
+    min_text_chars: int,
+    min_words: int,
+    ffmpeg_cmd: str,
+    whisperx_cmd: str,
+    whisperx_model: str,
+    language: str,
+    whisperx_device: str,
+    whisperx_compute_type: str,
+    whisperx_extra_args: str,
+    whisperx_worker_url: str,
+    spot_check_seconds: int,
+    spot_check_bitrate: str,
+    should_spot_check: bool,
+) -> WorkOutcome:
+    ep = item.ep
+    ep_slug = _norm(ep.get("slug") or "")
+    media_url = _norm((ep.get("media") or {}).get("url") if isinstance(ep.get("media"), dict) else "")
+    feed_out = out_dir / item.src.id
+    final_vtt = feed_out / f"{ep_slug}.vtt"
+    cand = _pick_best_transcript_candidate(ep)
+
+    if execute:
+        feed_out.mkdir(parents=True, exist_ok=True)
+
+    chosen = ""
+    provided_count = 0
+    rejected_provided = 0
+    generated_count = 0
+    spotcheck_count = 0
+    errors = 0
+    dead_media = False
+    spot_mp3: Path | None = None
+
+    try:
+        if item.action == "download":
+            if cand is None:
+                raise ValueError("planned download but no transcript candidate exists")
+            print(f"[want] {item.src.id}/{ep_slug}: provided transcript ({cand.typ}, {cand.lang}) {cand.url}")
+            b = _download_bytes(
+                cand.url,
+                timeout_seconds=int(timeout_seconds),
+                user_agent=str(user_agent),
+                execute=bool(execute),
+                label=f"download_provided {item.src.id}/{ep_slug}",
+            )
+            if b is None and not bool(execute):
+                chosen = "provided"
+            else:
+                assert b is not None
+                text = b.decode("utf-8", errors="replace")
+                with _timed("validate_provided"):
+                    _provided_kind, vtt = _normalize_provided_subtitles_to_vtt(
+                        text,
+                        min_chars=int(min_text_chars),
+                        min_words=int(min_words),
+                    )
+                with _timed("write_vtt"):
+                    _write_text(final_vtt, vtt, execute=bool(execute))
+                chosen = "provided"
+                provided_count += 1
+
+        elif item.action == "generate":
+            if not media_url:
+                raise ValueError("planned generate but missing media url")
+            if require_cuda and not bool(execute):
+                chosen = "generated"
+            else:
+                if require_cuda:
+                    print("[gpu] require_cuda=1 device=cuda (no cpu fallback)")
+                print(f"[gen] {item.src.id}/{ep_slug}: whisperx from media {media_url}")
+
+                if bool(execute) and bool(should_spot_check):
+                    spot_mp3 = feed_out / f"{ep_slug}.spotcheck.mp3"
+
+                srt_text, vtt_text = _generate_with_whisperx(
+                    media_url=media_url,
+                    ffmpeg_cmd=str(ffmpeg_cmd),
+                    whisperx_cmd=str(whisperx_cmd),
+                    whisperx_model=str(whisperx_model),
+                    language=str(language),
+                    whisperx_device=str(whisperx_device),
+                    whisperx_compute_type=str(whisperx_compute_type),
+                    whisperx_extra_args=str(whisperx_extra_args),
+                    whisperx_worker_url=str(whisperx_worker_url),
+                    spot_mp3_path=spot_mp3 if bool(execute) else None,
+                    spot_seconds=int(spot_check_seconds or 600),
+                    spot_bitrate=str(spot_check_bitrate or "96k"),
+                    execute=bool(execute),
+                )
+
+                if spot_mp3 is not None:
+                    spotcheck_count += 1
+
+                vtt_out = vtt_text or (_srt_to_vtt(srt_text) if srt_text else "")
+                vtt_out = _normalize_vtt_timestamp_commas(vtt_out)
+                if not _vtt_seems_complete(vtt_out, min_chars=_EXISTING_VTT_MIN_CHARS, min_words=_EXISTING_VTT_MIN_WORDS):
+                    raise RuntimeError("generated subtitles failed transcript sanity")
+                with _timed("write_vtt"):
+                    _write_text(final_vtt, vtt_out, execute=bool(execute))
+                chosen = "generated"
+                generated_count += 1
+        else:
+            raise ValueError(f"unknown action: {item.action}")
+
+    except MediaDownloadError as e:
+        errors += 1
+        chosen = "error"
+        dead_media = True
+        print(f"[dead] {item.src.id}/{ep_slug}: media unreachable; skipping rest of feed this run: {e}")
+
+    except Exception as e:
+        is_reject = isinstance(e, ProvidedTranscriptRejected)
+        if is_reject:
+            rejected_provided += 1
+            print(f"[reject] {item.src.id}/{ep_slug}: {e}")
+            chosen = "rejected"
+        else:
+            errors += 1
+            print(f"[error] {item.src.id}/{ep_slug}: {e}")
+            chosen = "error"
+
+        if item.action == "download" and bool(generate_missing) and media_url:
+            if require_cuda and not bool(execute):
+                pass
+            else:
+                why = "rejected" if is_reject else "download failed"
+                print(f"[fallback] {item.src.id}/{ep_slug}: generating because provided transcript {why}")
+                try:
+                    if bool(execute) and bool(should_spot_check):
+                        spot_mp3 = feed_out / f"{ep_slug}.spotcheck.mp3"
+                    srt_text, vtt_text = _generate_with_whisperx(
+                        media_url=media_url,
+                        ffmpeg_cmd=str(ffmpeg_cmd),
+                        whisperx_cmd=str(whisperx_cmd),
+                        whisperx_model=str(whisperx_model),
+                        language=str(language),
+                        whisperx_device=str(whisperx_device),
+                        whisperx_compute_type=str(whisperx_compute_type),
+                        whisperx_extra_args=str(whisperx_extra_args),
+                        whisperx_worker_url=str(whisperx_worker_url),
+                        spot_mp3_path=spot_mp3 if bool(execute) else None,
+                        spot_seconds=int(spot_check_seconds or 600),
+                        spot_bitrate=str(spot_check_bitrate or "96k"),
+                        execute=bool(execute),
+                    )
+                    if spot_mp3 is not None:
+                        spotcheck_count += 1
+                    vtt_out = vtt_text or (_srt_to_vtt(srt_text) if srt_text else "")
+                    vtt_out = _normalize_vtt_timestamp_commas(vtt_out)
+                    if not _vtt_seems_complete(vtt_out, min_chars=_EXISTING_VTT_MIN_CHARS, min_words=_EXISTING_VTT_MIN_WORDS):
+                        raise RuntimeError("fallback generated subtitles failed transcript sanity")
+                    with _timed("write_vtt"):
+                        _write_text(final_vtt, vtt_out, execute=bool(execute))
+                    chosen = "generated"
+                    generated_count += 1
+                except MediaDownloadError as e2:
+                    errors += 1
+                    chosen = "error"
+                    dead_media = True
+                    print(f"[dead] {item.src.id}/{ep_slug}: media unreachable; skipping rest of feed this run: {e2}")
+                except Exception as e2:
+                    errors += 1
+                    chosen = "error"
+                    print(f"[error] {item.src.id}/{ep_slug}: fallback generation failed: {e2}")
+
+    return WorkOutcome(
+        src_id=item.src.id,
+        ep_slug=ep_slug,
+        action=item.action,
+        chosen=(chosen or "error"),
+        provided_count=provided_count,
+        rejected_provided=rejected_provided,
+        generated_count=generated_count,
+        spotcheck_count=spotcheck_count,
+        errors=errors,
+        dead_media=dead_media,
+    )
+
+
 def main() -> None:
     args = _parse_args()
 
@@ -931,13 +1120,6 @@ def main() -> None:
         raise ValueError("CUDA is required (generation is enabled and --allow-cpu is not set), but --whisperx-device is not 'cuda'.")
 
     # Note: we only enforce CUDA availability after planning, and only if we actually need generation.
-
-    @dataclass(frozen=True)
-    class WorkItem:
-        src: Source
-        channel_title: str
-        ep: dict[str, Any]
-        action: str  # download|generate
 
     def _fnv1a32(s: str) -> int:
         h = 0x811C9DC5
@@ -1088,173 +1270,96 @@ def main() -> None:
 
     interrupted = False
     try:
-        for item in work:
-            ep = item.ep
-            ep_slug = _norm(ep.get("slug") or "")
-            media_url = _norm((ep.get("media") or {}).get("url") if isinstance(ep.get("media"), dict) else "")
+        max_workers = _TRANSCRIPTION_CONCURRENCY if bool(args.execute) and bool(args.generate_missing) else 1
+        pending = list(work)
+        active_feeds: set[str] = set()
+        future_to_item: dict[Future[WorkOutcome], WorkItem] = {}
 
+        def _maybe_skip_without_worker(item: WorkItem) -> bool:
+            nonlocal skipped_existing, skipped_dead_media, processed
+            ep_slug = _norm(item.ep.get("slug") or "")
             if item.src.id in dead_media_feeds:
                 _advance(f"skip: {item.src.id}/{ep_slug}")
                 skipped_dead_media += 1
                 print(f"[skip] {item.src.id}/{ep_slug}: skipped (media dead earlier in this feed)")
                 processed += 1
-                continue
-
-            feed_out = out_dir / item.src.id
-            final_vtt = feed_out / f"{ep_slug}.vtt"
-
+                return True
+            final_vtt = out_dir / item.src.id / f"{ep_slug}.vtt"
             if not bool(args.refresh) and final_vtt.exists():
                 if _vtt_file_seems_complete(final_vtt, min_chars=_EXISTING_VTT_MIN_CHARS, min_words=_EXISTING_VTT_MIN_WORDS):
                     _maybe_normalize_existing_vtt(final_vtt, execute=bool(args.execute))
                     skipped_existing += 1
-                    chosen = "skipped_existing"
+                    _advance(f"skip: {item.src.id}/{ep_slug}")
                     print(f"[skip] {item.src.id}/{ep_slug}: already have valid vtt")
-                    print(f"[ok] {item.src.id}/{ep_slug}: {chosen}")
+                    print(f"[ok] {item.src.id}/{ep_slug}: skipped_existing")
                     processed += 1
+                    return True
+            return False
+
+        def _pop_next_runnable() -> WorkItem | None:
+            i = 0
+            while i < len(pending):
+                item = pending[i]
+                if item.src.id in active_feeds:
+                    i += 1
                     continue
+                pending.pop(i)
+                if _maybe_skip_without_worker(item):
+                    continue
+                return item
+            return None
 
-            cand = _pick_best_transcript_candidate(ep)
-            _advance(f"{item.action}: {item.src.id}/{ep_slug}")
-
-            if bool(args.execute):
-                feed_out.mkdir(parents=True, exist_ok=True)
-
-            chosen = ""
-            spot_mp3: Path | None = None
-
-            try:
-                if item.action == "download":
-                    if cand is None:
-                        raise ValueError("planned download but no transcript candidate exists")
-                    print(f"[want] {item.src.id}/{ep_slug}: provided transcript ({cand.typ}, {cand.lang}) {cand.url}")
-                    b = _download_bytes(
-                        cand.url,
+        with ThreadPoolExecutor(max_workers=max_workers, thread_name_prefix="vodcasts-transcripts") as pool:
+            while pending or future_to_item:
+                while len(future_to_item) < max_workers:
+                    item = _pop_next_runnable()
+                    if item is None:
+                        break
+                    active_feeds.add(item.src.id)
+                    fut = pool.submit(
+                        _process_work_item,
+                        item=item,
+                        out_dir=out_dir,
+                        require_cuda=require_cuda,
+                        download_provided=bool(args.download_provided),
+                        execute=bool(args.execute),
+                        generate_missing=bool(args.generate_missing),
                         timeout_seconds=int(args.timeout_seconds),
                         user_agent=str(args.user_agent),
-                        execute=bool(args.execute),
-                        label=f"download_provided {item.src.id}/{ep_slug}",
+                        min_text_chars=int(args.min_text_chars),
+                        min_words=int(args.min_words),
+                        ffmpeg_cmd=str(args.ffmpeg),
+                        whisperx_cmd=str(args.whisperx),
+                        whisperx_model=str(args.whisperx_model),
+                        language=str(args.language),
+                        whisperx_device=str(args.whisperx_device),
+                        whisperx_compute_type=str(args.whisperx_compute_type),
+                        whisperx_extra_args=str(args.whisperx_extra_args),
+                        whisperx_worker_url=str(args.whisperx_worker_url),
+                        spot_check_seconds=int(args.spot_check_seconds or 600),
+                        spot_check_bitrate=str(args.spot_check_bitrate or "96k"),
+                        should_spot_check=_should_spot_check(item.src.id, _norm(item.ep.get("slug") or "")),
                     )
-                    if b is None and not bool(args.execute):
-                        chosen = "provided"
-                    else:
-                        assert b is not None
-                        text = b.decode("utf-8", errors="replace")
-                        with _timed("validate_provided"):
-                            _provided_kind, vtt = _normalize_provided_subtitles_to_vtt(
-                                text, min_chars=int(args.min_text_chars), min_words=int(args.min_words)
-                            )
-                        with _timed("write_vtt"):
-                            _write_text(final_vtt, vtt, execute=bool(args.execute))
-                        chosen = "provided"
-                        provided_count += 1
+                    future_to_item[fut] = item
 
-                elif item.action == "generate":
-                    if not media_url:
-                        raise ValueError("planned generate but missing media url")
-                    if require_cuda and not bool(args.execute):
-                        chosen = "generated"
-                    else:
-                        if require_cuda:
-                            print("[gpu] require_cuda=1 device=cuda (no cpu fallback)")
-                        print(f"[gen] {item.src.id}/{ep_slug}: whisperx from media {media_url}")
+                if not future_to_item:
+                    continue
 
-                        if bool(args.execute) and _should_spot_check(item.src.id, ep_slug):
-                            spot_mp3 = feed_out / f"{ep_slug}.spotcheck.mp3"
-
-                        srt_text, vtt_text = _generate_with_whisperx(
-                            media_url=media_url,
-                            ffmpeg_cmd=str(args.ffmpeg),
-                            whisperx_cmd=str(args.whisperx),
-                            whisperx_model=str(args.whisperx_model),
-                            language=str(args.language),
-                            whisperx_device=str(args.whisperx_device),
-                            whisperx_compute_type=str(args.whisperx_compute_type),
-                            whisperx_extra_args=str(args.whisperx_extra_args),
-                            whisperx_worker_url=str(args.whisperx_worker_url),
-                            spot_mp3_path=spot_mp3 if bool(args.execute) else None,
-                            spot_seconds=int(args.spot_check_seconds or 600),
-                            spot_bitrate=str(args.spot_check_bitrate or "96k"),
-                            execute=bool(args.execute),
-                        )
-
-                        if spot_mp3 is not None:
-                            spotcheck_count += 1
-
-                        vtt_out = vtt_text or (_srt_to_vtt(srt_text) if srt_text else "")
-                        vtt_out = _normalize_vtt_timestamp_commas(vtt_out)
-                        if not _vtt_seems_complete(vtt_out, min_chars=_EXISTING_VTT_MIN_CHARS, min_words=_EXISTING_VTT_MIN_WORDS):
-                            raise RuntimeError("generated subtitles failed transcript sanity")
-                        with _timed("write_vtt"):
-                            _write_text(final_vtt, vtt_out, execute=bool(args.execute))
-                        chosen = "generated"
-                        generated_count += 1
-                else:
-                    raise ValueError(f"unknown action: {item.action}")
-
-            except MediaDownloadError as e:
-                dead_media_feeds.add(item.src.id)
-                errors += 1
-                chosen = "error"
-                print(f"[dead] {item.src.id}/{ep_slug}: media unreachable; skipping rest of feed this run: {e}")
-
-            except Exception as e:
-                is_reject = isinstance(e, ProvidedTranscriptRejected)
-                if is_reject:
-                    rejected_provided += 1
-                    print(f"[reject] {item.src.id}/{ep_slug}: {e}")
-                    chosen = "rejected"
-                else:
-                    errors += 1
-                    print(f"[error] {item.src.id}/{ep_slug}: {e}")
-                    chosen = "error"
-
-                # If a provided transcript existed but was unusable / failed, allow generation as a fallback.
-                if item.action == "download" and bool(args.generate_missing) and media_url:
-                    if require_cuda and not bool(args.execute):
-                        pass
-                    else:
-                        why = "rejected" if is_reject else "download failed"
-                        print(f"[fallback] {item.src.id}/{ep_slug}: generating because provided transcript {why}")
-                        try:
-                            if bool(args.execute) and _should_spot_check(item.src.id, ep_slug):
-                                spot_mp3 = feed_out / f"{ep_slug}.spotcheck.mp3"
-                            srt_text, vtt_text = _generate_with_whisperx(
-                                media_url=media_url,
-                                ffmpeg_cmd=str(args.ffmpeg),
-                                whisperx_cmd=str(args.whisperx),
-                                whisperx_model=str(args.whisperx_model),
-                                language=str(args.language),
-                                whisperx_device=str(args.whisperx_device),
-                                whisperx_compute_type=str(args.whisperx_compute_type),
-                                whisperx_extra_args=str(args.whisperx_extra_args),
-                                whisperx_worker_url=str(args.whisperx_worker_url),
-                                spot_mp3_path=spot_mp3 if bool(args.execute) else None,
-                                spot_seconds=int(args.spot_check_seconds or 600),
-                                spot_bitrate=str(args.spot_check_bitrate or "96k"),
-                                execute=bool(args.execute),
-                            )
-                            if spot_mp3 is not None:
-                                spotcheck_count += 1
-                            vtt_out = vtt_text or (_srt_to_vtt(srt_text) if srt_text else "")
-                            vtt_out = _normalize_vtt_timestamp_commas(vtt_out)
-                            if not _vtt_seems_complete(vtt_out, min_chars=_EXISTING_VTT_MIN_CHARS, min_words=_EXISTING_VTT_MIN_WORDS):
-                                raise RuntimeError("fallback generated subtitles failed transcript sanity")
-                            with _timed("write_vtt"):
-                                _write_text(final_vtt, vtt_out, execute=bool(args.execute))
-                            chosen = "generated"
-                            generated_count += 1
-                        except MediaDownloadError as e2:
-                            dead_media_feeds.add(item.src.id)
-                            errors += 1
-                            chosen = "error"
-                            print(f"[dead] {item.src.id}/{ep_slug}: media unreachable; skipping rest of feed this run: {e2}")
-                        except Exception as e2:
-                            errors += 1
-                            chosen = "error"
-                            print(f"[error] {item.src.id}/{ep_slug}: fallback generation failed: {e2}")
-
-            print(f"[ok] {item.src.id}/{ep_slug}: {chosen}")
-            processed += 1
+                done, _pending_futures = wait(tuple(future_to_item.keys()), return_when=FIRST_COMPLETED)
+                for fut in done:
+                    item = future_to_item.pop(fut)
+                    active_feeds.discard(item.src.id)
+                    outcome = fut.result()
+                    if outcome.dead_media:
+                        dead_media_feeds.add(item.src.id)
+                    provided_count += int(outcome.provided_count)
+                    rejected_provided += int(outcome.rejected_provided)
+                    generated_count += int(outcome.generated_count)
+                    spotcheck_count += int(outcome.spotcheck_count)
+                    errors += int(outcome.errors)
+                    _advance(f"{outcome.action}: {outcome.src_id}/{outcome.ep_slug}")
+                    print(f"[ok] {outcome.src_id}/{outcome.ep_slug}: {outcome.chosen}")
+                    processed += 1
 
     except KeyboardInterrupt:
         interrupted = True

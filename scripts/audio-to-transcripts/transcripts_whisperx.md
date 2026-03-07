@@ -34,6 +34,7 @@ This creates `scripts/audio-to-transcripts/.venv/` and installs deps (including 
 ## Persistent worker
 
 Generation now prefers a local persistent WhisperX worker so the ASR model stays warm across files.
+The transcript runner now keeps **up to two generation jobs in flight**, and the worker keeps **two warm WhisperX model slots** so `transcripts:fast` is not stuck at one-file-at-a-time generation.
 Normal `run-transcripts-whisperx.ps1 -Execute -GenerateMissing` runs auto-start a private worker for the batch, route per-file requests over `http://127.0.0.1:<port>`, and stop it afterward.
 
 If you want to keep one shared worker running across multiple commands, start it explicitly:
@@ -49,7 +50,7 @@ Then point transcript runs at it:
   -WhisperxWorkerUrl "http://127.0.0.1:8776"
 ```
 
-The worker accepts concurrent HTTP requests safely, but processes them through a single queued GPU worker thread so model state is reused and requests do not trample each other.
+The worker accepts concurrent HTTP requests safely and services them with a fixed two-slot worker pool. The transcript runner also only drives up to two in-flight jobs at a time, so concurrency stays capped at 2.
 
 ## One-command run (recommended)
 

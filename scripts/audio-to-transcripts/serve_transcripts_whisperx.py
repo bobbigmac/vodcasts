@@ -7,7 +7,7 @@ import os
 import queue
 import sys
 import threading
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any
@@ -17,6 +17,8 @@ from whisperx import alignment, asr
 from whisperx.utils import WriteSRT, WriteVTT
 
 from whisperx_worker_common import WorkerWhisperxOptions, parse_worker_extra_args
+
+_TRANSCRIBE_WORKER_POOL = 2
 
 
 def _parse_args() -> argparse.Namespace:
@@ -40,6 +42,13 @@ class Job:
     error: str = ""
 
 
+@dataclass
+class WorkerState:
+    slot: int
+    asr_model: Any | None = None
+    align_cache: dict[tuple[str, str], tuple[Any, dict[str, Any]]] = field(default_factory=dict)
+
+
 class WhisperXService:
     def __init__(
         self,
@@ -59,16 +68,21 @@ class WhisperXService:
         self._stats_lock = threading.Lock()
         self._active_jobs = 0
         self._processed_jobs = 0
-        self._asr_model: Any | None = None
-        self._align_cache: dict[tuple[str, str], tuple[Any, dict[str, Any]]] = {}
-        self._worker = threading.Thread(target=self._run_loop, name="whisperx-worker", daemon=True)
-        self._worker.start()
+        self._states = [WorkerState(slot=i + 1) for i in range(_TRANSCRIBE_WORKER_POOL)]
+        self._workers = [
+            threading.Thread(target=self._run_loop, args=(state,), name=f"whisperx-worker-{state.slot}", daemon=True)
+            for state in self._states
+        ]
+        for worker in self._workers:
+            worker.start()
 
     def shutdown(self) -> None:
-        self._jobs.put(None)
-        self._worker.join(timeout=5.0)
+        for _ in self._workers:
+            self._jobs.put(None)
+        for worker in self._workers:
+            worker.join(timeout=5.0)
 
-    def _run_loop(self) -> None:
+    def _run_loop(self, state: WorkerState) -> None:
         while True:
             job = self._jobs.get()
             if job is None:
@@ -76,7 +90,7 @@ class WhisperXService:
             with self._stats_lock:
                 self._active_jobs += 1
             try:
-                job.result = self._transcribe(job.payload)
+                job.result = self._transcribe(job.payload, state=state)
             except Exception as exc:
                 job.error = str(exc)
             finally:
@@ -94,7 +108,9 @@ class WhisperXService:
             "language": self.default_language,
             "device": self.device,
             "compute_type": self.compute_type,
-            "loaded": self._asr_model is not None,
+            "loaded": any(state.asr_model is not None for state in self._states),
+            "loaded_workers": sum(1 for state in self._states if state.asr_model is not None),
+            "worker_pool_size": len(self._states),
             "queue_size": self._jobs.qsize(),
             "active_jobs": active_jobs,
             "processed_jobs": processed_jobs,
@@ -102,9 +118,10 @@ class WhisperXService:
         }
 
     def warmup(self) -> dict[str, Any]:
-        self._ensure_asr_model()
-        if not self.options.no_align:
-            self._get_align_model(language=self.default_language, align_model_name=self.options.align_model)
+        for state in self._states:
+            self._ensure_asr_model(state=state)
+            if not self.options.no_align:
+                self._get_align_model(state=state, language=self.default_language, align_model_name=self.options.align_model)
         info = self.model_info()
         info["cuda_available"] = bool(getattr(torch, "cuda", None) and torch.cuda.is_available())
         return info
@@ -117,15 +134,15 @@ class WhisperXService:
             raise RuntimeError(job.error)
         return job.result or {}
 
-    def _ensure_asr_model(self) -> Any:
-        if self._asr_model is not None:
-            return self._asr_model
+    def _ensure_asr_model(self, *, state: WorkerState) -> Any:
+        if state.asr_model is not None:
+            return state.asr_model
         vad_options: dict[str, Any] = {"chunk_size": int(self.options.chunk_size or 30)}
         if self.options.vad_onset is not None:
             vad_options["vad_onset"] = float(self.options.vad_onset)
         if self.options.vad_offset is not None:
             vad_options["vad_offset"] = float(self.options.vad_offset)
-        self._asr_model = asr.load_model(
+        state.asr_model = asr.load_model(
             self.model_name,
             device=self.device,
             compute_type=self.compute_type,
@@ -134,17 +151,17 @@ class WhisperXService:
             vad_options=vad_options,
             threads=int(self.options.threads or 4),
         )
-        return self._asr_model
+        return state.asr_model
 
-    def _get_align_model(self, *, language: str, align_model_name: str) -> tuple[Any, dict[str, Any]]:
+    def _get_align_model(self, *, state: WorkerState, language: str, align_model_name: str) -> tuple[Any, dict[str, Any]]:
         key = (str(language or "en").strip() or "en", str(align_model_name or "").strip())
-        if key not in self._align_cache:
-            self._align_cache[key] = alignment.load_align_model(
+        if key not in state.align_cache:
+            state.align_cache[key] = alignment.load_align_model(
                 language_code=key[0],
                 device=self.device,
                 model_name=(key[1] or None),
             )
-        return self._align_cache[key]
+        return state.align_cache[key]
 
     def _validate_request(self, payload: dict[str, Any]) -> None:
         req_model = str(payload.get("model") or self.model_name).strip() or self.model_name
@@ -160,13 +177,13 @@ class WhisperXService:
         if req_vad != self.options.vad_method:
             raise ValueError(f"worker vad_method mismatch: requested={req_vad} server={self.options.vad_method}")
 
-    def _transcribe(self, payload: dict[str, Any]) -> dict[str, Any]:
+    def _transcribe(self, payload: dict[str, Any], *, state: WorkerState) -> dict[str, Any]:
         self._validate_request(payload)
         audio_path = Path(str(payload.get("audio_path") or "")).resolve()
         if not audio_path.exists():
             raise FileNotFoundError(f"audio path not found: {audio_path}")
 
-        model = self._ensure_asr_model()
+        model = self._ensure_asr_model(state=state)
         language = str(payload.get("language") or self.default_language).strip() or self.default_language
         batch_size = payload.get("batch_size", self.options.batch_size)
         chunk_size = int(payload.get("chunk_size") or self.options.chunk_size or 30)
@@ -189,7 +206,11 @@ class WhisperXService:
             verbose=verbose,
         )
         if not no_align and result.get("segments"):
-            align_model, align_meta = self._get_align_model(language=result.get("language") or language, align_model_name=align_model_name)
+            align_model, align_meta = self._get_align_model(
+                state=state,
+                language=result.get("language") or language,
+                align_model_name=align_model_name,
+            )
             result = alignment.align(
                 result["segments"],
                 align_model,
