@@ -5,7 +5,7 @@ SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 SOURCE_FILE="${SOURCE_FILE:-$SCRIPT_DIR/youtube-podcast-sources.tsv}"
 OUT_DIR="${OUT_DIR:-podcast-transcripts/youtube}"
 ARCHIVE_FILE="${ARCHIVE_FILE:-$OUT_DIR/.yt-dlp-archive.txt}"
-PLAYLIST_END="${PLAYLIST_END:-10}"
+PLAYLIST_END="${PLAYLIST_END:-}"
 SUB_LANGS="${SUB_LANGS:-en.*,en}"
 DATEAFTER="${DATEAFTER:-}"
 YTDLP_BIN="${YTDLP_BIN:-yt-dlp}"
@@ -21,7 +21,7 @@ Options:
   --source-file PATH    Override the TSV source manifest.
   --out-dir PATH        Output directory. Default: podcast-transcripts/youtube
   --archive-file PATH   Download archive path. Default: <out-dir>/.yt-dlp-archive.txt
-  --playlist-end N      Limit items per channel/playlist. Default: 10
+  --playlist-end N      Limit items per channel/playlist. Default: all items
   --slug SLUG           Only run one slug. Repeatable.
   --dateafter DATE      Pass through to yt-dlp, e.g. 20250101
   -h, --help            Show this help.
@@ -134,9 +134,12 @@ run_source() {
     --download-archive "$ARCHIVE_FILE"
     --sleep-interval "$SLEEP_INTERVAL"
     --max-sleep-interval "$MAX_SLEEP_INTERVAL"
-    --playlist-end "$PLAYLIST_END"
     --output "$target_dir/%(upload_date>%Y-%m-%d)s - %(title).180B [%(id)s].%(ext)s"
   )
+
+  if [[ -n "$PLAYLIST_END" ]]; then
+    cmd+=(--playlist-end "$PLAYLIST_END")
+  fi
 
   if [[ -n "$DATEAFTER" ]]; then
     cmd+=(--dateafter "$DATEAFTER")

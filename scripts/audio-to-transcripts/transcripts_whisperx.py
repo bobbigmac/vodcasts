@@ -42,6 +42,7 @@ _MEDIA_PROBE_MAX_TIME_SECONDS = 10
 _EXISTING_VTT_MIN_CHARS = 80
 _EXISTING_VTT_MIN_WORDS = 10
 _TRANSCRIPTION_CONCURRENCY = 2
+max_episodes_per_feed = 12
 
 _TRANSCRIPT_SANITY_FAILURES_PATH = VODCASTS_ROOT / "transcript-sanity-failures.md"
 _REVIEW_TRANSCRIPTS_DIR = VODCASTS_ROOT / "review-transcripts"
@@ -1309,9 +1310,10 @@ def main() -> None:
         eps = [e for e in (episodes or []) if isinstance(e, dict)]
         # Prefer more recent entries when a feed's ordering is ambiguous.
         eps.sort(key=lambda e: _norm(e.get("dateText") or ""), reverse=True)
-        max_per_feed = int(args.max_episodes_per_feed or 0)
+        max_per_feed = int(max_episodes_per_feed or 0)
+        max_per_feed_double = int(max_episodes_per_feed or 0) * 2
         if max_per_feed > 0:
-            limit = 20 if src.id in HIGH_VALUE_FEEDS else max_per_feed
+            limit = max_per_feed_double if src.id in HIGH_VALUE_FEEDS else max_per_feed
             eps = eps[:limit]
         if only_episode_slug:
             eps = [e for e in eps if isinstance(e, dict) and _norm(e.get("slug") or "") == only_episode_slug]

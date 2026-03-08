@@ -1,21 +1,69 @@
 # slug	type	url	note
-lex-fridman	channel	https://www.youtube.com/@lexfridman	Official-looking channel match from ytsearch on 2026-03-08.
-theo-von-this-past-weekend	channel	https://www.youtube.com/@TheoVon	Official-looking Theo Von channel carrying This Past Weekend episodes.
-new-heights	channel	https://www.youtube.com/@newheightshow	Official-looking New Heights channel.
-huberman-lab	channel	https://www.youtube.com/@hubermanlab	Official Andrew Huberman / Huberman Lab channel.
-diary-of-a-ceo	channel	https://www.youtube.com/@TheDiaryOfACEO	Official-looking The Diary Of A CEO channel.
-modern-wisdom	channel	https://www.youtube.com/@ChrisWillx	Official-looking Chris Williamson / Modern Wisdom channel.
-on-purpose	channel	https://www.youtube.com/channel/UCbk_QsfaFZG6PdQeCvaYXJQ	Official-looking Jay Shetty Podcast channel.
-mel-robbins	channel	https://www.youtube.com/@melrobbins	Official-looking Mel Robbins channel.
-shawn-ryan-show	channel	https://www.youtube.com/@ShawnRyanShow	Official-looking Shawn Ryan Show channel.
-megyn-kelly-show	channel	https://www.youtube.com/@MegynKelly	Official-looking Megyn Kelly channel.
-ben-shapiro-show	channel	https://www.youtube.com/@BenShapiro	Official-looking Ben Shapiro channel.
-candace-owens	channel	https://www.youtube.com/@RealCandaceO	Official-looking Candace Owens channel.
-pbd-podcast	channel	https://www.youtube.com/@PBDPodcast	Official-looking PBD Podcast channel.
-club-shay-shay	channel	https://www.youtube.com/@ClubShayShay	Official-looking Club Shay Shay channel.
+2-bears-1-cave	channel	https://www.youtube.com/@2Bears1Cave	Official-looking 2 Bears, 1 Cave channel.
+48-hours	channel	https://www.youtube.com/@48hours	Official-looking 48 Hours channel.
+99-invisible	channel	https://www.youtube.com/@99percentinvisible	Official-looking 99% Invisible channel.
+a16z-podcast	channel	https://www.youtube.com/@a16z	Official a16z channel carrying a16z Podcast episodes and clips.
+acquired	channel	https://www.youtube.com/@AcquiredFM	Official-looking Acquired channel.
+all-in	channel	https://www.youtube.com/@allin	Official-looking All-In podcast channel.
+armchair-expert	channel	https://www.youtube.com/@ArmchairExpertPod	Official-looking Armchair Expert channel.
+ascension-presents	channel	https://www.youtube.com/@AscensionPresents	Parent Ascension channel carrying The Bible in a Year and related Fr. Mike Schmitz podcast/video episodes.
 bad-friends	channel	https://www.youtube.com/@BadFriends	Official-looking Bad Friends channel.
+bankless	channel	https://www.youtube.com/@Bankless	Official-looking Bankless channel.
+ben-shapiro-show	channel	https://www.youtube.com/@BenShapiro	Official-looking Ben Shapiro channel.
+bffs	channel	https://www.youtube.com/@BFFsPod	Official-looking BFFs channel.
 call-her-daddy	channel	https://www.youtube.com/@callherdaddy	Official-looking Call Her Daddy channel.
-rest-is-politics	channel	https://www.youtube.com/@restispolitics	Official-looking The Rest Is Politics channel.
+candace-owens	channel	https://www.youtube.com/@RealCandaceO	Official-looking Candace Owens channel.
+charlie-kirk-show	channel	https://www.youtube.com/@CharlieKirk	Official-looking Charlie Kirk channel carrying Charlie Kirk Show material.
+club-shay-shay	channel	https://www.youtube.com/@ClubShayShay	Official-looking Club Shay Shay channel.
+conan-obrien-needs-a-friend	channel	https://www.youtube.com/@TeamCoco	Parent Team Coco channel carrying Conan O'Brien Needs A Friend podcast material.
+crime-junkie	channel	https://www.youtube.com/@CrimeJunkiePodcast	Official-looking Crime Junkie channel.
+darknet-diaries	channel	https://www.youtube.com/@JackRhysider	Creator channel carrying Darknet Diaries content.
+dateline-nbc	channel	https://www.youtube.com/@DatelineNBC	Official-looking Dateline NBC channel.
+diary-of-a-ceo	channel	https://www.youtube.com/@TheDiaryOfACEO	Official-looking The Diary Of A CEO channel.
+dwarkesh-podcast	channel	https://www.youtube.com/@dwarkeshpatel	Official-looking Dwarkesh Patel channel carrying Dwarkesh Podcast episodes.
+freakonomics-radio	channel	https://www.youtube.com/@FreakonomicsRadio	Official-looking Freakonomics Radio channel.
+giggly-squad	channel	https://www.youtube.com/@GigglySquad	Official-looking Giggly Squad channel.
+good-inside-with-dr-becky	channel	https://www.youtube.com/@GoodInside	Official-looking Good Inside with Dr. Becky channel.
+good-life-project	channel	https://www.youtube.com/@GoodLifeProject	Official-looking Good Life Project channel.
+hidden-brain	channel	https://www.youtube.com/@HiddenBrainMedia	Official-looking Hidden Brain channel.
+huberman-lab	channel	https://www.youtube.com/@hubermanlab	Official Andrew Huberman / Huberman Lab channel.
+joe-rogan-experience	channel	https://www.youtube.com/@joerogan	Official-looking Joe Rogan / PowerfulJRE handle.
+jordan-b-peterson-podcast	channel	https://www.youtube.com/@JordanBPeterson	Official-looking Jordan B. Peterson channel.
+lex-fridman	channel	https://www.youtube.com/@lexfridman	Official-looking Lex Fridman channel.
+mel-robbins	channel	https://www.youtube.com/@melrobbins	Official-looking Mel Robbins channel.
+megyn-kelly-show	channel	https://www.youtube.com/@MegynKelly	Official-looking Megyn Kelly channel.
+modern-wisdom	channel	https://www.youtube.com/@ChrisWillx	Official-looking Chris Williamson / Modern Wisdom channel.
+morbid	channel	https://www.youtube.com/@MorbidPodcast	Official-looking Morbid channel.
+mrballen	channel	https://www.youtube.com/@MrBallen	Official-looking MrBallen channel.
+nbc-news	channel	https://www.youtube.com/@NBCNews	Parent NBC News channel carrying NBC Nightly News and related audio/video franchises.
+new-heights	channel	https://www.youtube.com/@newheightshow	Official-looking New Heights channel.
+new-york-times	channel	https://www.youtube.com/@thenewyorktimes	Parent New York Times channel carrying The Daily, Ezra Klein, and other NYT audio/video posts.
+npr	channel	https://www.youtube.com/@NPR	Parent NPR channel carrying Up First, NPR News Now, Fresh Air, and other NPR shows.
+on-purpose	channel	https://www.youtube.com/channel/UCbk_QsfaFZG6PdQeCvaYXJQ	Official-looking Jay Shetty Podcast channel.
+pbd-podcast	channel	https://www.youtube.com/@PBDPodcast	Official-looking PBD Podcast channel.
+peter-attia-drive	channel	https://www.youtube.com/@PeterAttiaMD	Official-looking Peter Attia channel carrying The Drive material.
+pod-save-america	channel	https://www.youtube.com/@PodSaveAmerica	Official-looking Pod Save America channel.
+pomp-podcast	channel	https://www.youtube.com/@AnthonyPompliano	Parent Anthony Pompliano channel carrying The Pomp Podcast.
+prof-g-pod	channel	https://www.youtube.com/@TheProfGPod	Official-looking Prof G Pod channel.
+radio-rental	channel	https://www.youtube.com/@RadioRental	Official-looking Radio Rental channel.
+rest-is-entertainment	channel	https://www.youtube.com/@therestisentertainment	Official-looking The Rest Is Entertainment channel.
 rest-is-history	channel	https://www.youtube.com/@restishistorypod	Official-looking The Rest Is History channel.
+rest-is-politics	channel	https://www.youtube.com/@restispolitics	Official-looking The Rest Is Politics channel.
+rich-roll-podcast	channel	https://www.youtube.com/@RichRoll	Official-looking Rich Roll channel.
+rotten-mango	channel	https://www.youtube.com/@StephanieSoo	Parent Stephanie Soo channel carrying Rotten Mango episodes.
+school-of-greatness	channel	https://www.youtube.com/@LewisHowes	Parent Lewis Howes channel carrying The School of Greatness.
+serialously-with-annie-elise	channel	https://www.youtube.com/@AnnieElisex	Official-looking Annie Elise channel carrying Serialously material.
+shawn-ryan-show	channel	https://www.youtube.com/@ShawnRyanShow	Official-looking Shawn Ryan Show channel.
+skinny-confidential-him-her	channel	https://www.youtube.com/@tscpodcast	Official-looking The Skinny Confidential Him & Her channel.
 smartless	channel	https://www.youtube.com/@SmartLess	Official-looking SmartLess channel.
-joe-rogan-experience	channel	https://www.youtube.com/@joerogan	PowerfulJRE / Joe Rogan channel surfaced by ytsearch on 2026-03-08.
+the-breakfast-club	channel	https://www.youtube.com/@BreakfastClubPower1051FM	Official-looking The Breakfast Club / Power 105.1 channel.
+the-ramsey-show	channel	https://www.youtube.com/@TheRamseyShow	Official-looking Ramsey channel.
+the-tucker-carlson-show	channel	https://www.youtube.com/@TuckerCarlson	Official-looking Tucker Carlson channel.
+the-viall-files	channel	https://www.youtube.com/@viallfiles	Official-looking The Viall Files channel.
+theo-von-this-past-weekend	channel	https://www.youtube.com/@TheoVon	Official-looking Theo Von channel carrying This Past Weekend episodes.
+this-american-life	channel	https://www.youtube.com/@ThisAmericanLife	Official-looking This American Life channel.
+unchained	channel	https://www.youtube.com/@UnchainedCrypto	Official-looking Unchained channel.
+waveform	channel	https://www.youtube.com/@Waveform	Official-looking Waveform channel.
+wsj	channel	https://www.youtube.com/@WSJ	Parent Wall Street Journal channel carrying The Journal and related WSJ audio/video.
+wtf-with-marc-maron	channel	https://www.youtube.com/@WTFpod	Official-looking WTF with Marc Maron channel.
+your-moms-house	channel	https://www.youtube.com/@YMHStudios	YMH Studios channel carrying Your Mom's House and related podcasts.
