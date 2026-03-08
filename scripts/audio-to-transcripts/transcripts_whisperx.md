@@ -58,7 +58,7 @@ The worker accepts concurrent HTTP requests safely and services them with a fixe
 yarn transcripts
 ```
 
-This processes the **currently-selected env** (`yarn use dev|church|tech|complete`), limiting to **church/sermons** sources and **10 episodes per feed** by default, with periodic MP3 spot-checks enabled.
+This processes the **currently-selected env** (`yarn use dev|church|tech|complete`), limiting to **church/sermons** sources and **10 episodes per feed** by default (20 for high-value feeds), with periodic MP3 spot-checks enabled.
 
 Other presets:
 
@@ -98,6 +98,12 @@ This prints what it *would* download/generate, without writing files.
 - Unless overridden via `-WhisperxExtraArgs`, generation defaults to `--vad_method silero` to avoid pyannote/torchcodec issues.
 - Runs are restartable: a previously-written `.vtt` that looks complete is never re-downloaded/regenerated (unless `-Refresh`).
 - If `-WhisperxExtraArgs` includes flags the worker path does not support yet, the generator falls back to the old per-file `whisperx` CLI invocation for those runs.
+
+## Housekeeping
+
+- **Sanity failures retry**: Entries in `transcript-sanity-failures.md` may pass after the MM:SS timestamp fix. Remove an entry and re-run to retry.
+- **Orphan spotcheck MP3s**: Failed runs can leave `.spotcheck.mp3` files in feed folders without a matching `.vtt`. These are debug artifacts; safe to delete if no companion VTT exists.
+- **High-value feeds**: Feeds in `HIGH_VALUE_FEEDS` get 20 episodes (vs default 10). See `transcripts_whisperx.py` for the list.
 
 ## Speed vs quality (WhisperX)
 

@@ -46,6 +46,55 @@ _TRANSCRIPTION_CONCURRENCY = 2
 _TRANSCRIPT_SANITY_FAILURES_PATH = VODCASTS_ROOT / "transcript-sanity-failures.md"
 _REVIEW_TRANSCRIPTS_DIR = VODCASTS_ROOT / "review-transcripts"
 
+# Feeds with high advice/support density for answer engine (practical, pastoral, how-to).
+# Tuned from transcript sampling across 35+ feeds (titles + content).
+HIGH_VALUE_FEEDS = frozenset({
+    "bridgetown",
+    "desiring-god-messages",
+    "desiring-god-messages-video",
+    "between-sermons-video",
+    "bishop-barron-sermons",
+    "eric-walsh-sermons",
+    "calvary-chapel-fort-lauderdale",
+    "calvary-chapel-anne-arundel",
+    "connexus-church",
+    "dag-heward-mills-video",
+    "exceed-life-church",
+    "first-baptist-columbia-wf",
+    "church-of-the-highlands-weekend-video",
+    "church-on-the-rock",
+    "dungeness-community-church",
+    "fresh-life-church",
+    "godspeak-calvary",
+    "crossway-milford-sermons",
+    "harvest-baptist-ga",
+    "amazing-grace-baptist-mount-airy",
+    "btic-podcast-video",
+    "concord-baptist-church",
+    "cbcaiken-sermons",
+    "buford-road-baptist",
+    "antioch-church",
+    "first-love-church-uk",
+})
+
+# Feeds with lower advice density for answer engine (liturgical, narrative, institutional, bilingual).
+# Kept for future limit tuning; not applied yet.
+WEAKER_FEEDS = frozenset({
+    "all-saints-homilies",
+    "crossccc",
+    "catholic-sermons-station-of-the-cross",
+    "chinese-bible-church",
+    "chinese-community-church-sacramento",
+    "lancaster-baptist",
+    "faith-christian-churchs",
+    "heritage",
+    "atlanta-first-umc",
+    "city-chapel-church",
+    "eaglebrook",
+    "first-church-warsaw-methodist",
+    "elevation-steven-furtick",
+})
+
 
 class MediaDownloadError(RuntimeError):
     pass
@@ -1060,6 +1109,11 @@ def _process_work_item(
             errors += 1
             print(f"[error] {item.src.id}/{ep_slug}: {e}")
             chosen = "error"
+            # Move any orphan spotcheck to review-transcripts (generation failed before sanity check)
+            if item.action == "generate":
+                orphan_spot = feed_out / f"{ep_slug}.spotcheck.mp3"
+                if orphan_spot.exists():
+                    _move_failed_to_review(item.src.id, ep_slug, "", orphan_spot, execute=bool(execute))
 
         if item.action == "download" and bool(generate_missing) and media_url:
             if (item.src.id, ep_slug) in sanity_failures:
@@ -1108,6 +1162,10 @@ def _process_work_item(
                     errors += 1
                     chosen = "error"
                     print(f"[error] {item.src.id}/{ep_slug}: fallback generation failed: {e2}")
+                    # Move any orphan spotcheck to review-transcripts
+                    orphan_spot = feed_out / f"{ep_slug}.spotcheck.mp3"
+                    if orphan_spot.exists():
+                        _move_failed_to_review(item.src.id, ep_slug, "", orphan_spot, execute=bool(execute))
 
     return WorkOutcome(
         src_id=item.src.id,
@@ -1251,8 +1309,10 @@ def main() -> None:
         eps = [e for e in (episodes or []) if isinstance(e, dict)]
         # Prefer more recent entries when a feed's ordering is ambiguous.
         eps.sort(key=lambda e: _norm(e.get("dateText") or ""), reverse=True)
-        if args.max_episodes_per_feed and int(args.max_episodes_per_feed) > 0:
-            eps = eps[: int(args.max_episodes_per_feed)]
+        max_per_feed = int(args.max_episodes_per_feed or 0)
+        if max_per_feed > 0:
+            limit = 20 if src.id in HIGH_VALUE_FEEDS else max_per_feed
+            eps = eps[:limit]
         if only_episode_slug:
             eps = [e for e in eps if isinstance(e, dict) and _norm(e.get("slug") or "") == only_episode_slug]
 
