@@ -335,6 +335,8 @@ def _move_failed_to_review(
 
 _SRT_TS_RE = re.compile(r"^\d{2}:\d{2}:\d{2}[,.]\d{3}\s+-->\s+\d{2}:\d{2}:\d{2}[,.]\d{3}")
 _VTT_TS_RE = re.compile(r"^\d{2}:\d{2}:\d{2}\.\d{3}\s+-->\s+\d{2}:\d{2}:\d{2}\.\d{3}")
+# WhisperX outputs MM:SS.mmm (e.g. 00:00.546 --> 04:30.114) instead of HH:MM:SS.mmm
+_VTT_TS_MMSS_RE = re.compile(r"^\d{1,2}:\d{2}[,.]\d{3}\s+-->\s+\d{1,2}:\d{2}[,.]\d{3}")
 
 
 def _extract_text_from_srt(s: str) -> str:
@@ -364,10 +366,14 @@ def _extract_text_from_vtt(s: str) -> str:
         if line.upper().startswith("WEBVTT"):
             continue
         # Accept both standard WebVTT timestamps (.) and common "VTT-but-actually-SRT" timestamps (,).
-        if _VTT_TS_RE.match(line) or _SRT_TS_RE.match(line):
+        # Also WhisperX MM:SS.mmm format (e.g. 00:00.546 --> 04:30.114).
+        if _VTT_TS_RE.match(line) or _SRT_TS_RE.match(line) or _VTT_TS_MMSS_RE.match(line):
             continue
-        if "-->" in line and re.search(r"\d{2}:\d{2}:\d{2}[\.,]\d{3}\s+-->\s+\d{2}:\d{2}:\d{2}[\.,]\d{3}", line):
-            # tolerate non-standard timestamps
+        if "-->" in line and re.search(
+            r"\d{2}:\d{2}:\d{2}[\.,]\d{3}\s+-->\s+\d{2}:\d{2}:\d{2}[\.,]\d{3}|"
+            r"\d{1,2}:\d{2}[\.,]\d{3}\s+-->\s+\d{1,2}:\d{2}[\.,]\d{3}",
+            line,
+        ):
             continue
         if line.startswith("NOTE"):
             continue
@@ -382,6 +388,7 @@ def _normalize_vtt_timestamp_commas(vtt: str) -> str:
     """
     WebVTT requires '.' as the millisecond separator, but some sources (and some tools) output ','.
     Normalize cue timing lines so cached .vtt files remain browser-playable.
+    Supports both HH:MM:SS and MM:SS formats.
     """
     lines: list[str] = []
     changed = False
@@ -389,6 +396,7 @@ def _normalize_vtt_timestamp_commas(vtt: str) -> str:
         line = raw.rstrip("\n")
         if "-->" in line and "," in line:
             fixed = re.sub(r"(\d{2}:\d{2}:\d{2}),(\d{3})", r"\1.\2", line)
+            fixed = re.sub(r"(\d{1,2}:\d{2}),(\d{3})", r"\1.\2", fixed)
             if fixed != line:
                 changed = True
             line = fixed
@@ -425,7 +433,10 @@ def _looks_like_vtt(text: str) -> bool:
         return False
     if s.upper().startswith("WEBVTT"):
         return True
-    return any(_VTT_TS_RE.match(ln.strip()) for ln in s.splitlines()[:200])
+    return any(
+        _VTT_TS_RE.match(ln.strip()) or _VTT_TS_MMSS_RE.match(ln.strip())
+        for ln in s.splitlines()[:200]
+    )
 
 
 def _is_sensible_text(text: str, *, min_chars: int, min_words: int) -> bool:
@@ -451,10 +462,14 @@ def _count_vtt_timestamps(text: str) -> int:
     cnt = 0
     for ln in (text or "").splitlines():
         s = ln.strip()
-        if _VTT_TS_RE.match(s):
+        if _VTT_TS_RE.match(s) or _VTT_TS_MMSS_RE.match(s):
             cnt += 1
             continue
-        if "-->" in s and re.search(r"\d{2}:\d{2}:\d{2}[\.,]\d{3}\s+-->\s+\d{2}:\d{2}:\d{2}[\.,]\d{3}", s):
+        if "-->" in s and re.search(
+            r"\d{2}:\d{2}:\d{2}[\.,]\d{3}\s+-->\s+\d{2}:\d{2}:\d{2}[\.,]\d{3}|"
+            r"\d{1,2}:\d{2}[\.,]\d{3}\s+-->\s+\d{1,2}:\d{2}[\.,]\d{3}",
+            s,
+        ):
             cnt += 1
     return cnt
 
