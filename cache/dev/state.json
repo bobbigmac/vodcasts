@@ -4,7 +4,7 @@
     "twit_twit": {
       "status": "not_modified",
       "url": "https://feeds.twit.tv/twit_video_hd.xml",
-      "last_checked_unix": 1772996019,
+      "last_checked_unix": 1773005997,
       "etag": "\"69aa1795-20625\"",
       "last_modified": "Thu, 05 Mar 2026 23:53:57 GMT"
     },
@@ -12,144 +12,143 @@
       "status": "ok",
       "url": "https://www.eaglebrookchurch.com/mediafiles/eagle-brook-church-videocast.xml",
       "fetched_url": "https://www.eaglebrookchurch.com/mediafiles/eagle-brook-church-videocast.xml",
-      "last_checked_unix": 1772996019,
-      "last_ok_unix": 1772996019,
+      "last_checked_unix": 1773005997,
+      "last_ok_unix": 1773005997,
       "etag": null,
-      "last_modified": "Sun, 08 Mar 2026 18:33:36 GMT",
+      "last_modified": "Sun, 08 Mar 2026 19:53:13 GMT",
       "bytes": 1225271
     },
     "geek-news-central-podcast-video": {
-      "status": "not_modified",
+      "status": "error",
       "url": "https://geeknewscentral.com/feed/video/",
-      "last_checked_unix": 1772996019,
-      "etag": "\"55a0e9a20a44f9f7d9e367c3a7c44c99\"",
-      "last_modified": "Sun, 01 Mar 2026 06:00:56 GMT"
+      "last_checked_unix": 1773005997,
+      "error": "http 415"
     },
     "apple-events": {
       "status": "not_modified",
       "url": "https://applehosted.podcasts.apple.com/apple_keynotes/apple_keynotes.xml",
-      "last_checked_unix": 1772996019,
+      "last_checked_unix": 1773005997,
       "etag": "\"46cbdb00f4af02d42de912f837241b10:1758936926.445644\"",
       "last_modified": "Sat, 27 Sep 2025 01:35:26 GMT"
     },
     "mbw-video": {
       "status": "not_modified",
       "url": "https://feeds.twit.tv/mbw_video_hd.xml",
-      "last_checked_unix": 1772996019,
+      "last_checked_unix": 1773005997,
       "etag": "\"69aa179c-1c1e0\"",
       "last_modified": "Thu, 05 Mar 2026 23:54:04 GMT"
     },
     "ipad-video": {
       "status": "not_modified",
       "url": "https://feeds.twit.tv/ipad_video_hd.xml",
-      "last_checked_unix": 1772996019,
+      "last_checked_unix": 1773005997,
       "etag": "\"69aa173d-17956\"",
       "last_modified": "Thu, 05 Mar 2026 23:52:29 GMT"
     },
     "twig-video": {
       "status": "not_modified",
       "url": "https://feeds.twit.tv/twig_video_hd.xml",
-      "last_checked_unix": 1772996019,
+      "last_checked_unix": 1773005997,
       "etag": "\"69aa178d-1e3e4\"",
       "last_modified": "Thu, 05 Mar 2026 23:53:49 GMT"
     },
     "podcasting-tech": {
       "status": "not_modified",
       "url": "https://feeds.captivate.fm/podcasting-tech/",
-      "last_checked_unix": 1772996019,
+      "last_checked_unix": 1773005997,
       "etag": "\"b119d-64afb3fa7d8b3\"",
       "last_modified": "Tue, 17 Feb 2026 01:47:05 GMT"
     },
     "ww-video": {
       "status": "not_modified",
       "url": "https://feeds.twit.tv/ww_video_hd.xml",
-      "last_checked_unix": 1772996019,
+      "last_checked_unix": 1773005997,
       "etag": "\"69aa17af-23cae\"",
       "last_modified": "Thu, 05 Mar 2026 23:54:23 GMT"
     },
     "a-couple-of-rad-techs": {
       "status": "not_modified",
       "url": "https://feeds.captivate.fm/a-couple-of-rad-techs/",
-      "last_checked_unix": 1772996019,
+      "last_checked_unix": 1773005997,
       "etag": "\"d1524-64a1d4a631300\"",
       "last_modified": "Fri, 06 Feb 2026 00:58:42 GMT"
     },
     "twit-specials-video": {
       "status": "not_modified",
       "url": "https://feeds.twit.tv/specials_video_hd.xml",
-      "last_checked_unix": 1772996019,
+      "last_checked_unix": 1773005997,
       "etag": "\"694b6ed9-11dff\"",
       "last_modified": "Wed, 24 Dec 2025 04:40:57 GMT"
     },
     "sn-video": {
       "status": "not_modified",
       "url": "https://feeds.twit.tv/sn_video_hd.xml",
-      "last_checked_unix": 1772996019,
+      "last_checked_unix": 1773005997,
       "etag": "\"69aa1787-1c356\"",
       "last_modified": "Thu, 05 Mar 2026 23:53:43 GMT"
     },
     "twit-events-video": {
       "status": "not_modified",
       "url": "https://feeds.twit.tv/events_video_hd.xml",
-      "last_checked_unix": 1772996019,
+      "last_checked_unix": 1773005997,
       "etag": "\"694b6ece-2281d\"",
       "last_modified": "Wed, 24 Dec 2025 04:40:46 GMT"
     },
     "transcripted-ai-video": {
-      "status": "not_modified",
+      "status": "ok",
       "url": "https://transcripted.ai/api/rss/consolidated/video",
-      "last_checked_unix": 1772996019,
+      "fetched_url": "https://transcripted.ai/api/rss/consolidated/video",
+      "last_checked_unix": 1773005997,
+      "last_ok_unix": 1773005997,
       "etag": null,
-      "last_modified": "Sun, 08 Mar 2026 13:17:07 GMT"
+      "last_modified": "Sun, 08 Mar 2026 20:16:44 GMT",
+      "bytes": 7967226
     },
     "bbc-world-service-global-news-podcast": {
       "status": "ok",
       "url": "https://podcasts.files.bbci.co.uk/p02nq0gn.rss",
       "fetched_url": "https://podcasts.files.bbci.co.uk/p02nq0gn.rss",
-      "last_checked_unix": 1772996019,
-      "last_ok_unix": 1772996019,
-      "etag": "\"abfb6a57c5d46053fe28e28e09e62fd6\"",
-      "last_modified": "Sun, 08 Mar 2026 16:52:04 GMT",
-      "bytes": 905848
+      "last_checked_unix": 1773005997,
+      "last_ok_unix": 1773005997,
+      "etag": "\"a1868bfd8d7448695544af580b687b1f\"",
+      "last_modified": "Sun, 08 Mar 2026 20:00:04 GMT",
+      "bytes": 909029
     },
     "npr-up-first": {
       "status": "ok",
       "url": "https://feeds.npr.org/510318/podcast.xml",
       "fetched_url": "https://feeds.npr.org/510318/podcast.xml",
-      "last_checked_unix": 1772996019,
-      "last_ok_unix": 1772996019,
+      "last_checked_unix": 1773005997,
+      "last_ok_unix": 1773005997,
       "etag": "W/\"1c564c-mSTAjWa75VqFX8O9f0AWy4fL7KQ\"",
       "last_modified": null,
       "bytes": 1857100
     },
     "reuters-world-news": {
-      "status": "ok",
+      "status": "not_modified",
       "url": "https://feeds.megaphone.fm/reutersworldnews",
-      "fetched_url": "https://feeds.megaphone.fm/reutersworldnews",
-      "last_checked_unix": 1772996019,
-      "last_ok_unix": 1772996019,
+      "last_checked_unix": 1773005997,
       "etag": null,
-      "last_modified": "Sun, 08 Mar 2026 17:42:52 GMT",
-      "bytes": 3853757
+      "last_modified": "Sun, 08 Mar 2026 17:42:52 GMT"
     },
     "wsj-the-journal": {
       "status": "not_modified",
       "url": "https://video-api.wsj.com/podcast/rss/wsj/the-journal",
-      "last_checked_unix": 1772996019,
+      "last_checked_unix": 1773005997,
       "etag": null,
       "last_modified": "Sat, 07 Mar 2026 08:14:28 GMT"
     },
     "the-economist-the-intelligence": {
       "status": "not_modified",
       "url": "https://rss.acast.com/theintelligencepodcast",
-      "last_checked_unix": 1772996019,
+      "last_checked_unix": 1773005997,
       "etag": "\"ZGpFdU1pNHdPakUzTnpJNE56UXdNemswTWpNPTo6c2F4ZXNz\"",
       "last_modified": null
     },
     "science-friday-video": {
       "status": "not_modified",
       "url": "https://www.sciencefriday.com/feed/podcast/podcast-video/",
-      "last_checked_unix": 1772996019,
+      "last_checked_unix": 1773005997,
       "etag": "\"fcf292f51e7d82ab48961236c223434b\"",
       "last_modified": "Sat, 07 Mar 2026 18:11:45 GMT"
     },
@@ -157,8 +156,8 @@
       "status": "ok",
       "url": "https://feeds.feedburner.com/TedtalksHD",
       "fetched_url": "https://feeds.feedburner.com/TedtalksHD",
-      "last_checked_unix": 1772996019,
-      "last_ok_unix": 1772996019,
+      "last_checked_unix": 1773005997,
+      "last_ok_unix": 1773005997,
       "etag": null,
       "last_modified": "Wed, 21 May 2025 19:21:10 GMT",
       "bytes": 356166
@@ -166,49 +165,48 @@
     "tech-news-weekly-video": {
       "status": "not_modified",
       "url": "https://feeds.twit.tv/tnw_video_hd.xml",
-      "last_checked_unix": 1772996019,
+      "last_checked_unix": 1773005997,
       "etag": "\"69aa17c0-17ff0\"",
       "last_modified": "Thu, 05 Mar 2026 23:54:40 GMT"
     },
     "uctv-science-video": {
       "status": "not_modified",
       "url": "https://podcast.uctv.tv/uctv_video_science.rss",
-      "last_checked_unix": 1772996019,
+      "last_checked_unix": 1773005997,
       "etag": "\"e277c6f8ba8dc1:0\"",
       "last_modified": "Fri, 27 Feb 2026 17:10:28 GMT"
     },
     "geek-news-central-video": {
-      "status": "not_modified",
+      "status": "error",
       "url": "https://geeknewscentral.com/feed/video/",
-      "last_checked_unix": 1772996019,
-      "etag": "\"55a0e9a20a44f9f7d9e367c3a7c44c99\"",
-      "last_modified": "Sun, 01 Mar 2026 06:00:56 GMT"
+      "last_checked_unix": 1773005997,
+      "error": "http 415"
     },
     "vox-today-explained": {
       "status": "not_modified",
       "url": "https://feeds.megaphone.fm/VMP5705694065",
-      "last_checked_unix": 1772996019,
+      "last_checked_unix": 1773005997,
       "etag": null,
       "last_modified": "Sun, 08 Mar 2026 12:00:00 GMT"
     },
     "the-rest-is-politics": {
       "status": "not_modified",
       "url": "https://feeds.megaphone.fm/GLT9190936013",
-      "last_checked_unix": 1772996019,
+      "last_checked_unix": 1773005997,
       "etag": null,
       "last_modified": "Fri, 06 Mar 2026 11:22:09 GMT"
     },
     "jpl-podcasts": {
       "status": "not_modified",
       "url": "https://www.jpl.nasa.gov/feeds/podcasts/",
-      "last_checked_unix": 1772996019,
+      "last_checked_unix": 1773005997,
       "etag": null,
       "last_modified": "Thu, 02 Nov 2023 21:00:14 GMT"
     },
     "intelligence-squared": {
       "status": "not_modified",
       "url": "https://feeds.megaphone.fm/NSR6363847171",
-      "last_checked_unix": 1772996019,
+      "last_checked_unix": 1773005997,
       "etag": null,
       "last_modified": "Sun, 08 Mar 2026 00:26:23 GMT"
     },
@@ -216,21 +214,21 @@
       "status": "ok",
       "url": "https://feeds.buzzsprout.com/1904814.rss",
       "fetched_url": "https://rss.buzzsprout.com/1904814.rss",
-      "last_checked_unix": 1772996019,
-      "last_ok_unix": 1772996019,
-      "etag": "\"052caee2d75feb4a0ad08089d001ff12\"",
-      "last_modified": "Sun, 08 Mar 2026 18:48:41 GMT",
+      "last_checked_unix": 1773005997,
+      "last_ok_unix": 1773005997,
+      "etag": "\"4dedf0b7437557a3918632d8db5fca0c\"",
+      "last_modified": "Sun, 08 Mar 2026 21:35:17 GMT",
       "bytes": 4872972
     },
     "cspan-ceasefire": {
       "status": "not_modified",
       "url": "https://feeds.megaphone.fm/CSPAN8750886650",
-      "last_checked_unix": 1772996019,
+      "last_checked_unix": 1773005997,
       "etag": null,
       "last_modified": "Sat, 07 Mar 2026 00:00:00 GMT"
     }
   },
-  "updated_at_unix": 1772996019,
+  "updated_at_unix": 1773005997,
   "site": {
     "id": "vodcasts-dev",
     "title": "VODcasts (Dev)",
