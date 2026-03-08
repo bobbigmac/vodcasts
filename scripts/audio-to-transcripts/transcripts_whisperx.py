@@ -4,9 +4,11 @@ import argparse
 import json
 import os
 import re
+import shutil
 import sys
 import subprocess
 import tempfile
+import threading
 import time
 import shlex
 import html
@@ -40,6 +42,9 @@ _MEDIA_PROBE_MAX_TIME_SECONDS = 10
 _EXISTING_VTT_MIN_CHARS = 80
 _EXISTING_VTT_MIN_WORDS = 10
 _TRANSCRIPTION_CONCURRENCY = 2
+
+_TRANSCRIPT_SANITY_FAILURES_PATH = VODCASTS_ROOT / "transcript-sanity-failures.md"
+_REVIEW_TRANSCRIPTS_DIR = VODCASTS_ROOT / "review-transcripts"
 
 
 class MediaDownloadError(RuntimeError):
@@ -264,6 +269,68 @@ def _matches_tag(source: Source, tag: str) -> bool:
         return True
     tags = tuple(_norm(x).lower() for x in (source.tags or ()))
     return t in tags
+
+
+def _load_sanity_failures() -> set[tuple[str, str]]:
+    """Load feed_id/ep_slug pairs from transcript-sanity-failures.md."""
+    out: set[tuple[str, str]] = set()
+    if not _TRANSCRIPT_SANITY_FAILURES_PATH.exists():
+        return out
+    # Parse lines like "- feed_id/ep_slug: reason" or "| feed_id | ep_slug | reason |"
+    key_re = re.compile(r"([a-zA-Z0-9][\w.-]+)/([\w.-]+)")
+    for line in (_TRANSCRIPT_SANITY_FAILURES_PATH.read_text(encoding="utf-8", errors="replace").splitlines() or []):
+        m = key_re.search(line)
+        if m:
+            out.add((m.group(1), m.group(2)))
+    return out
+
+
+_SANITY_FAILURE_LOCK = threading.Lock()
+
+
+def _append_sanity_failure(feed_id: str, ep_slug: str, reason: str) -> None:
+    """Append a failure entry to transcript-sanity-failures.md."""
+    key = f"{feed_id}/{ep_slug}"
+    entry = f"- {key}: {reason}\n"
+    with _SANITY_FAILURE_LOCK:
+        if _TRANSCRIPT_SANITY_FAILURES_PATH.exists():
+            content = _TRANSCRIPT_SANITY_FAILURES_PATH.read_text(encoding="utf-8", errors="replace")
+            if key in content:
+                return  # already listed
+            content = content.rstrip()
+            if content and not content.endswith("\n"):
+                content += "\n"
+            content += entry
+        else:
+            content = (
+                "# Transcript Sanity Failures\n\n"
+                "Episodes that failed transcript sanity checks. Remove an entry to allow regeneration.\n\n"
+                + entry
+            )
+        _TRANSCRIPT_SANITY_FAILURES_PATH.write_text(content, encoding="utf-8")
+
+
+def _move_failed_to_review(
+    feed_id: str,
+    ep_slug: str,
+    vtt_text: str,
+    spot_mp3_path: Path | None,
+    *,
+    execute: bool,
+) -> None:
+    """Move failed VTT and spot MP3 to review-transcripts/feed_id/ for manual inspection."""
+    if not execute:
+        return
+    review_feed = _REVIEW_TRANSCRIPTS_DIR / feed_id
+    review_feed.mkdir(parents=True, exist_ok=True)
+    vtt_dest = review_feed / f"{ep_slug}.vtt"
+    if vtt_text:
+        vtt_dest.write_text(vtt_text, encoding="utf-8")
+        print(f"[review] {feed_id}/{ep_slug}: vtt -> {vtt_dest.relative_to(VODCASTS_ROOT)}")
+    if spot_mp3_path and spot_mp3_path.exists():
+        mp3_dest = review_feed / f"{ep_slug}.spotcheck.mp3"
+        shutil.move(str(spot_mp3_path), str(mp3_dest))
+        print(f"[review] {feed_id}/{ep_slug}: spotcheck -> {mp3_dest.relative_to(VODCASTS_ROOT)}")
 
 
 _SRT_TS_RE = re.compile(r"^\d{2}:\d{2}:\d{2}[,.]\d{3}\s+-->\s+\d{2}:\d{2}:\d{2}[,.]\d{3}")
@@ -868,6 +935,7 @@ def _process_work_item(
     spot_check_seconds: int,
     spot_check_bitrate: str,
     should_spot_check: bool,
+    sanity_failures: set[tuple[str, str]],
 ) -> WorkOutcome:
     ep = item.ep
     ep_slug = _norm(ep.get("slug") or "")
@@ -951,6 +1019,8 @@ def _process_work_item(
                 vtt_out = vtt_text or (_srt_to_vtt(srt_text) if srt_text else "")
                 vtt_out = _normalize_vtt_timestamp_commas(vtt_out)
                 if not _vtt_seems_complete(vtt_out, min_chars=_EXISTING_VTT_MIN_CHARS, min_words=_EXISTING_VTT_MIN_WORDS):
+                    _move_failed_to_review(item.src.id, ep_slug, vtt_out, spot_mp3, execute=bool(execute))
+                    _append_sanity_failure(item.src.id, ep_slug, "generated subtitles failed transcript sanity")
                     raise RuntimeError("generated subtitles failed transcript sanity")
                 with _timed("write_vtt"):
                     _write_text(final_vtt, vtt_out, execute=bool(execute))
@@ -977,7 +1047,9 @@ def _process_work_item(
             chosen = "error"
 
         if item.action == "download" and bool(generate_missing) and media_url:
-            if require_cuda and not bool(execute):
+            if (item.src.id, ep_slug) in sanity_failures:
+                print(f"[skip] {item.src.id}/{ep_slug}: in transcript-sanity-failures (remove to retry)")
+            elif require_cuda and not bool(execute):
                 pass
             else:
                 why = "rejected" if is_reject else "download failed"
@@ -1005,6 +1077,8 @@ def _process_work_item(
                     vtt_out = vtt_text or (_srt_to_vtt(srt_text) if srt_text else "")
                     vtt_out = _normalize_vtt_timestamp_commas(vtt_out)
                     if not _vtt_seems_complete(vtt_out, min_chars=_EXISTING_VTT_MIN_CHARS, min_words=_EXISTING_VTT_MIN_WORDS):
+                        _move_failed_to_review(item.src.id, ep_slug, vtt_out, spot_mp3, execute=bool(execute))
+                        _append_sanity_failure(item.src.id, ep_slug, "fallback generated subtitles failed transcript sanity")
                         raise RuntimeError("fallback generated subtitles failed transcript sanity")
                     with _timed("write_vtt"):
                         _write_text(final_vtt, vtt_out, execute=bool(execute))
@@ -1093,6 +1167,7 @@ def main() -> None:
         sources = [s for s in sources if s.id == only_source_id]
     elif not args.all_sources and tag:
         sources = [s for s in sources if _matches_any_tag(s, tag)]
+    sources = [s for s in sources if s.id != "life-church-video"]  # excluded: always fails transcript generation
 
     # Focus tagged sources first without excluding others when --all-sources is set.
     if args.all_sources and tag:
@@ -1136,8 +1211,13 @@ def main() -> None:
 
     max_total = int(args.max_episodes_total or 0)
 
+    sanity_failures = _load_sanity_failures()
+    if sanity_failures:
+        print(f"[plan] transcript_sanity_failures={len(sanity_failures)} (skip listed until removed from {_TRANSCRIPT_SANITY_FAILURES_PATH.name})")
+
     missing_feed = 0
     skipped_existing = 0
+    skipped_sanity_failure = 0
     planned_download = 0
     planned_download_with_media_for_fallback = 0
     planned_generate = 0
@@ -1180,6 +1260,9 @@ def main() -> None:
             elif bool(args.generate_missing) and media_url and (
                 bool(args.generate_missing_all_sources) or only_source_id or (not args.all_sources) or (not tag) or _matches_any_tag(src, tag)
             ):
+                if (src.id, ep_slug) in sanity_failures:
+                    skipped_sanity_failure += 1
+                    continue
                 action = "generate"
                 required = [final_vtt]
             else:
@@ -1209,7 +1292,8 @@ def main() -> None:
     print(
         "[plan] "
         + f"episodes_to_process={len(work)} download={planned_download} generate={planned_generate} "
-        + f"skipped_existing={skipped_existing} missing_feed={missing_feed} missed_no_action={planned_missed}"
+        + f"skipped_existing={skipped_existing} skipped_sanity_failure={skipped_sanity_failure} "
+        + f"missing_feed={missing_feed} missed_no_action={planned_missed}"
     )
 
     # Generation can also happen as a fallback when a provided transcript is rejected,
@@ -1339,6 +1423,7 @@ def main() -> None:
                         spot_check_seconds=int(args.spot_check_seconds or 600),
                         spot_check_bitrate=str(args.spot_check_bitrate or "96k"),
                         should_spot_check=_should_spot_check(item.src.id, _norm(item.ep.get("slug") or "")),
+                        sanity_failures=sanity_failures,
                     )
                     future_to_item[fut] = item
 

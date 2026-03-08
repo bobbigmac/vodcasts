@@ -263,6 +263,43 @@ _SYNONYMS_RAW: dict[str, set[str]] = {
     "faith": {"belief", "trust"},
 }
 
+# Broader semantic neighborhoods for question expansion. These are not strict
+# synonyms; they are adjacent concepts and listener-facing language that often
+# show up when a speaker talks around the same issue.
+_PROBLEM_SPACE_RAW: dict[str, set[str]] = {
+    "anxiety": {"fear", "worry", "panic", "rest", "peace", "control", "overwhelm", "burden", "trust"},
+    "fear": {"anxiety", "worry", "panic", "threat", "uncertainty", "trust", "peace", "courage"},
+    "worry": {"anxiety", "fear", "burden", "trouble", "peace", "trust", "tomorrow"},
+    "stress": {"pressure", "overwhelm", "burden", "rest", "peace", "control", "fatigue"},
+    "doubt": {"questions", "uncertainty", "faith", "trust", "assurance", "confidence", "unbelief"},
+    "lonely": {"alone", "isolation", "community", "belonging", "friendship", "family", "rejection"},
+    "loneliness": {"alone", "isolation", "community", "belonging", "friendship", "rejection"},
+    "alone": {"lonely", "loneliness", "isolation", "community", "belonging", "friendship"},
+    "forgive": {"hurt", "wound", "offense", "bitterness", "resentment", "reconciliation", "mercy", "grace"},
+    "forgiveness": {"hurt", "wound", "offense", "bitterness", "resentment", "reconciliation", "mercy", "grace"},
+    "betrayal": {"trust", "wound", "hurt", "resentment", "reconciliation", "healing", "faithfulness"},
+    "anger": {"resentment", "bitterness", "offense", "wound", "grace", "mercy"},
+    "shame": {"guilt", "worth", "acceptance", "identity", "mercy", "grace", "healing"},
+    "guilt": {"shame", "condemnation", "grace", "forgiveness", "mercy", "cleansing"},
+    "comparison": {"envy", "jealousy", "identity", "approval", "worth", "status", "contentment"},
+    "jealousy": {"envy", "comparison", "contentment", "covet", "approval", "worth"},
+    "envy": {"jealousy", "comparison", "contentment", "covet", "approval"},
+    "body": {"image", "appearance", "worth", "shame", "beauty", "identity", "embodied"},
+    "illness": {"sickness", "pain", "weakness", "suffering", "healing", "body", "limitations"},
+    "disability": {"weakness", "limitations", "body", "suffering", "healing", "dignity"},
+    "pain": {"suffering", "grief", "weakness", "healing", "lament", "endurance"},
+    "grief": {"loss", "mourning", "sorrow", "lament", "comfort", "hope"},
+    "suffering": {"pain", "grief", "weakness", "trials", "endurance", "hope", "comfort"},
+    "pray": {"prayer", "asking", "waiting", "listening", "lament", "persistence", "intercede"},
+    "prayer": {"pray", "asking", "waiting", "listening", "lament", "persistence", "intercede"},
+    "silent": {"waiting", "listening", "lament", "distance", "presence", "patience"},
+    "waiting": {"silent", "patience", "hope", "trust", "endurance", "listen"},
+    "faith": {"trust", "hope", "obedience", "belief", "confidence", "assurance", "endurance"},
+    "trust": {"faith", "surrender", "control", "obedience", "hope", "assurance"},
+    "marriage": {"spouse", "family", "conflict", "reconciliation", "intimacy", "covenant"},
+    "relationship": {"conflict", "reconciliation", "friendship", "family", "trust", "hurt"},
+}
+
 _STEMMER = snowballstemmer.stemmer("english")
 
 
@@ -444,6 +481,7 @@ def _normalize_synonyms(raw: dict[str, set[str]]) -> dict[str, set[str]]:
 _STOPWORDS = _build_stopwords()
 _THEME_WEIGHTS = _normalize_theme_weights(_THEME_WEIGHTS_RAW)
 _SYNONYMS = _normalize_synonyms(_SYNONYMS_RAW)
+_PROBLEM_SPACE = _normalize_synonyms(_PROBLEM_SPACE_RAW)
 
 
 def index_text(text: str) -> str:
@@ -462,6 +500,110 @@ def theme_density(text: str) -> float:
     # Normalize: average weight per token, squashed to [0,1).
     avg = score / max(1.0, float(len(toks)))
     return 1.0 - math.exp(-avg)
+
+
+def _rank_query_term(term: str, *, seed_terms: set[str] | None = None) -> float:
+    t = _norm_token(term)
+    if not t:
+        return -1.0
+    score = min(12.0, float(len(t))) + (float(_THEME_WEIGHTS.get(t, 0.0)) * 1.5)
+    if seed_terms and t in seed_terms:
+        score += 6.0
+    if t in _PROBLEM_SPACE:
+        score += 1.2
+    if t in _SYNONYMS:
+        score += 0.8
+    return score
+
+
+def _collect_problem_space_terms(*texts: str, max_terms: int = 18) -> list[str]:
+    seed_terms: list[str] = []
+    seed_set: set[str] = set()
+    for text in texts:
+        raw = normalize_ws(strip_html(text or ""))
+        for tok in _filter_tokens(_tokenize(raw)):
+            if tok and tok not in seed_set:
+                seed_set.add(tok)
+                seed_terms.append(tok)
+    if not seed_terms:
+        return []
+
+    scores: dict[str, float] = {}
+    for idx, term in enumerate(seed_terms):
+        scores[term] = max(
+            scores.get(term, -1.0),
+            _rank_query_term(term, seed_terms=seed_set) + max(0.0, 2.6 - (idx * 0.2)),
+        )
+        first_ring = sorted((_SYNONYMS.get(term, set()) | _PROBLEM_SPACE.get(term, set())))
+        for rel in first_ring:
+            if not rel or rel == term:
+                continue
+            rel_score = _rank_query_term(rel, seed_terms=seed_set) + (2.4 if rel in seed_set else 0.9)
+            scores[rel] = max(scores.get(rel, -1.0), rel_score)
+            if rel in seed_set:
+                continue
+            for second in sorted(_PROBLEM_SPACE.get(rel, set())):
+                if not second or second == term:
+                    continue
+                second_score = _rank_query_term(second, seed_terms=seed_set) + (0.4 if second in seed_set else 0.0)
+                scores[second] = max(scores.get(second, -1.0), second_score)
+
+    ranked = sorted(scores.items(), key=lambda item: (item[1], len(item[0])), reverse=True)
+    return [term for term, _score in ranked[: max(4, int(max_terms))]]
+
+
+def _build_problem_space_queries(
+    *,
+    question: str,
+    related_topics: Iterable[str] | None = None,
+    max_queries: int = 4,
+) -> list[str]:
+    topic_list = [normalize_ws(strip_html(t or "")).strip() for t in (related_topics or []) if normalize_ws(strip_html(t or "")).strip()]
+    seed_terms = _collect_problem_space_terms(question, max_terms=8)
+    expanded_terms = _collect_problem_space_terms(question, *topic_list, max_terms=18)
+    if not expanded_terms:
+        return []
+
+    out: list[str] = []
+    seen: set[str] = set()
+
+    def add_query(parts: Iterable[str]) -> None:
+        toks: list[str] = []
+        local_seen: set[str] = set()
+        for part in parts:
+            nt = _norm_token(part)
+            if not nt or nt in local_seen:
+                continue
+            local_seen.add(nt)
+            toks.append(nt)
+        if len(toks) < 2:
+            return
+        q = " ".join(toks[:5]).strip()
+        if not q or q in seen:
+            return
+        seen.add(q)
+        out.append(q)
+
+    add_query(seed_terms[:2] + [t for t in expanded_terms if t not in seed_terms][:3])
+
+    topic_terms = _collect_problem_space_terms(*topic_list, max_terms=8)
+    if topic_terms:
+        add_query(topic_terms[:2] + [t for t in expanded_terms if t not in topic_terms][:3])
+
+    anchor_terms = seed_terms[:2] + [t for t in topic_terms if t not in seed_terms][:2]
+    for anchor in anchor_terms:
+        neighbors = sorted(
+            (_SYNONYMS.get(anchor, set()) | _PROBLEM_SPACE.get(anchor, set())),
+            key=lambda t: _rank_query_term(t, seed_terms=set(seed_terms)),
+            reverse=True,
+        )
+        add_query([anchor] + neighbors[:4])
+        if len(out) >= max(1, int(max_queries)):
+            break
+
+    if not out:
+        add_query(expanded_terms[:5])
+    return out[: max(1, int(max_queries))]
 
 
 def answeriness(text: str) -> float:
@@ -1511,6 +1653,49 @@ def _build_fts_query(q: str, *, max_terms: int = 14) -> tuple[str, list[str]]:
     return " AND ".join(must + ["(" + " OR ".join(optional) + ")"]), expanded_terms
 
 
+def _build_fts_query_variants(q: str, *, max_terms: int = 14) -> tuple[list[str], list[str]]:
+    primary, expanded_terms = _build_fts_query(q, max_terms=max_terms)
+    raw = normalize_ws(strip_html(q or ""))
+    toks = _filter_tokens(_tokenize(raw))
+    uniq: list[str] = []
+    seen: set[str] = set()
+    for t in toks:
+        if t not in seen:
+            seen.add(t)
+            uniq.append(t)
+    terms = uniq[: max(3, min(max_terms, len(uniq)))]
+
+    variants: list[str] = []
+    if primary:
+        variants.append(primary)
+
+    if len(terms) >= 3:
+        variants.append(" AND ".join(terms[:3]))
+    if len(terms) >= 2:
+        variants.append(" AND ".join(terms[:2]))
+    if terms:
+        variants.append(" OR ".join(terms[: min(5, len(terms))]))
+    if expanded_terms:
+        exp_uniq: list[str] = []
+        exp_seen: set[str] = set()
+        for t in expanded_terms:
+            if t and t not in exp_seen:
+                exp_seen.add(t)
+                exp_uniq.append(t)
+        if len(exp_uniq) >= 2:
+            variants.append(" OR ".join(exp_uniq[: min(8, len(exp_uniq))]))
+
+    out: list[str] = []
+    seen_q: set[str] = set()
+    for v in variants:
+        vv = normalize_ws(v).strip()
+        if not vv or vv in seen_q:
+            continue
+        seen_q.add(vv)
+        out.append(vv)
+    return out, expanded_terms
+
+
 def _snippet(text: str, *, max_chars: int = 240) -> str:
     s = normalize_ws(text or "")
     if len(s) <= max_chars:
@@ -1535,24 +1720,29 @@ def search_segments(
     con.row_factory = sqlite3.Row
     if bool(_meta_get(con, "fts_dirty", False)):
         return {"query": q, "fts": "", "results": [], "episodes": [], "error": "index-stale-run-analyze-then-index"}
-    fts_q, expanded_terms = _build_fts_query(q)
-    if not fts_q:
+    fts_variants, expanded_terms = _build_fts_query_variants(q)
+    if not fts_variants:
         return {"query": q, "fts": "", "results": [], "episodes": [], "error": "empty-query"}
 
-    # bm25() is “more relevant” when *more negative*; we sort ascending.
-    rows = con.execute(
-        """
-        SELECT rowid, bm25(segments_fts, 1.0, 0.6, 0.2, 0.2) AS bm25
-        FROM segments_fts
-        WHERE segments_fts MATCH ?
-        ORDER BY bm25
-        LIMIT ?
-        """,
-        (fts_q, int(max(1, candidates))),
-    ).fetchall()
+    rows: list[sqlite3.Row] = []
+    used_fts = ""
+    for fts_q in fts_variants:
+        rows = con.execute(
+            """
+            SELECT rowid, bm25(segments_fts, 1.0, 0.6, 0.2, 0.2) AS bm25
+            FROM segments_fts
+            WHERE segments_fts MATCH ?
+            ORDER BY bm25
+            LIMIT ?
+            """,
+            (fts_q, int(max(1, candidates))),
+        ).fetchall()
+        if rows:
+            used_fts = fts_q
+            break
 
     if not rows:
-        return {"query": q, "fts": fts_q, "expanded_terms": expanded_terms, "results": [], "episodes": []}
+        return {"query": q, "fts": fts_variants[0], "expanded_terms": expanded_terms, "results": [], "episodes": []}
 
     ids = [int(r["rowid"]) for r in rows]
     bm25_by_id = {int(r["rowid"]): float(r["bm25"]) for r in rows}
@@ -1618,14 +1808,15 @@ def search_segments(
 
     return {
         "query": q,
-        "fts": fts_q,
+        "fts": used_fts or fts_variants[0],
+        "fts_variants": fts_variants,
         "expanded_terms": expanded_terms,
         "results": results,
         "episodes": episodes,
     }
 
 
-def load_segment_context(*, db_path: Path, segment_id: int, before: int = 1, after: int = 1) -> dict[str, Any]:
+def load_segment_context(*, db_path: Path, segment_id: int, before: int = 1, after: int = 1, include_text: bool = False) -> dict[str, Any]:
     con = sqlite3.connect(str(db_path))
     con.row_factory = sqlite3.Row
     row = con.execute("SELECT * FROM segments WHERE id=?", (int(segment_id),)).fetchone()
@@ -1658,7 +1849,7 @@ def load_segment_context(*, db_path: Path, segment_id: int, before: int = 1, aft
     ).fetchall()
 
     def to_min(r: sqlite3.Row) -> dict[str, Any]:
-        return {
+        out = {
             "segment_id": int(r["id"]),
             "start_sec": float(r["start_sec"] or 0.0),
             "end_sec": float(r["end_sec"] or 0.0),
@@ -1666,6 +1857,9 @@ def load_segment_context(*, db_path: Path, segment_id: int, before: int = 1, aft
             "kind_conf": float(r["kind_conf"] or 0.0),
             "snippet": _snippet(str(r["text"]), max_chars=320),
         }
+        if include_text:
+            out["text"] = normalize_ws(strip_html(str(r["text"] or "")))
+        return out
 
     context = [to_min(r) for r in reversed(prev_rows)] + [to_min(r) for r in next_rows]
     return {
@@ -1677,6 +1871,314 @@ def load_segment_context(*, db_path: Path, segment_id: int, before: int = 1, aft
         "transcript_path": file_path,
         "share_path": _share_path(feed, ep, float(row["start_sec"] or 0.0)),
         "context": context,
+    }
+
+
+def _format_timecode(sec: float) -> str:
+    total = int(max(0.0, float(sec)))
+    h = total // 3600
+    m = (total % 3600) // 60
+    s = total % 60
+    if h > 0:
+        return f"{h:d}:{m:02d}:{s:02d}"
+    return f"{m:02d}:{s:02d}"
+
+
+def _normalize_quote_for_match(text: str) -> str:
+    return normalize_ws(strip_html(text or "")).strip()
+
+
+def _pick_verified_quote(requested_quote: str, *, segment_text: str, fallback_text: str = "") -> str:
+    seg_norm = _normalize_quote_for_match(segment_text)
+    req_norm = _normalize_quote_for_match(requested_quote)
+    if req_norm and seg_norm:
+        i = seg_norm.lower().find(req_norm.lower())
+        if i >= 0:
+            return seg_norm[i : i + len(req_norm)]
+    best = _best_sentence(segment_text or fallback_text)
+    if best:
+        return best[:220].rstrip()
+    return _snippet(segment_text or fallback_text, max_chars=220)
+
+
+def _answer_candidate_kind_weight(kind: str) -> float:
+    k = str(kind or "").strip().lower()
+    if k in {"teaching", "application", "message", "content", "story", "testimony", "conversation", "interview", "q_and_a"}:
+        return 1.0
+    if k in {"scripture", "illustration", "response"}:
+        return 0.92
+    if k in {"welcome", "intro", "worship", "prayer", "communion", "invitation", "benediction", "outro"}:
+        return 0.62
+    if k in {"announcements", "ad", "giving", "transition"}:
+        return 0.40
+    return 0.82
+
+
+def _query_overlap_score(text: str, queries: Iterable[str]) -> float:
+    text_toks = {
+        t
+        for t in _filter_tokens(_tokenize(normalize_ws(text or "")))
+        if len(t) >= 5 or t in _THEME_WEIGHTS
+    }
+    if not text_toks:
+        return 0.0
+    score = 0.0
+    for query in queries:
+        q_toks = {
+            t
+            for t in _filter_tokens(_tokenize(normalize_ws(query or "")))
+            if len(t) >= 5 or t in _THEME_WEIGHTS
+        }
+        if not q_toks:
+            continue
+        inter = len(text_toks & q_toks)
+        if inter <= 0:
+            continue
+        score = max(score, inter / float(max(1, min(len(q_toks), 6))))
+    return score
+
+
+def _pick_focus_segment(*, context: list[dict[str, Any]], queries: list[str], default_segment_id: int) -> dict[str, Any] | None:
+    best: dict[str, Any] | None = None
+    best_score = -1.0
+    for seg in context:
+        seg_id = int(seg.get("segment_id") or 0)
+        if seg_id <= 0:
+            continue
+        kind = str(seg.get("kind") or "content")
+        text = str(seg.get("text") or seg.get("snippet") or "")
+        score = (_query_overlap_score(text, queries) * 3.0) + (_answer_candidate_kind_weight(kind) * 0.6)
+        if seg_id == int(default_segment_id):
+            score += 0.05
+        if best is None or score > best_score:
+            best = seg
+            best_score = score
+    return best
+
+
+def answer_question(
+    *,
+    db_path: Path,
+    transcripts_root: Path,
+    q: str,
+    answers: int = 3,
+    per_query_limit: int = 8,
+    candidates: int = 180,
+    review_candidates: int = 6,
+    include_noncontent: bool = False,
+) -> dict[str, Any]:
+    from answer_engine_llm import plan_query, summarize_answer_candidate
+
+    question = normalize_ws(strip_html(q or "")).strip()
+    if not question:
+        return {"query": q, "error": "empty-query", "answers": []}
+
+    plan = plan_query(question=question)
+    search_queries: list[str] = []
+    problem_space_queries = _build_problem_space_queries(
+        question=question,
+        related_topics=(plan.related_topics if plan else []),
+        max_queries=4,
+    )
+    seen_q: set[str] = set()
+    for query in [question] + list((plan.search_queries if plan else []) or []) + problem_space_queries:
+        qq = normalize_ws(query or "").strip()
+        if len(qq) < 3:
+            continue
+        key = qq.lower()
+        if key in seen_q:
+            continue
+        seen_q.add(key)
+        search_queries.append(qq)
+        if len(search_queries) >= 8:
+            break
+
+    merged: dict[int, dict[str, Any]] = {}
+    search_runs: list[dict[str, Any]] = []
+    for idx, query in enumerate(search_queries or [question]):
+        payload = search_segments(
+            db_path=db_path,
+            q=query,
+            limit=int(max(1, per_query_limit)),
+            candidates=int(max(20, candidates)),
+            include_noncontent=bool(include_noncontent),
+        )
+        search_runs.append(
+            {
+                "query": query,
+                "fts": payload.get("fts"),
+                "expanded_terms": list(payload.get("expanded_terms") or []),
+                "result_count": len(payload.get("results") or []),
+            }
+        )
+        query_weight = 1.0 if idx == 0 else max(0.58, 0.92 - (0.08 * idx))
+        for rank, seg in enumerate(payload.get("results") or []):
+            seg_id = int(seg.get("segment_id") or 0)
+            if seg_id <= 0:
+                continue
+            rank_mult = max(0.55, 1.0 - (0.05 * rank))
+            cur = merged.get(seg_id)
+            score = float(seg.get("score") or 0.0) * query_weight * rank_mult
+            if cur is None:
+                cur = dict(seg)
+                cur["retrieval_score"] = float(score)
+                cur["query_matches"] = [query]
+                cur["expanded_terms"] = list(payload.get("expanded_terms") or [])
+                merged[seg_id] = cur
+            else:
+                cur["retrieval_score"] = max(float(cur.get("retrieval_score") or 0.0), float(score))
+                matches = list(cur.get("query_matches") or [])
+                if query not in matches:
+                    matches.append(query)
+                cur["query_matches"] = matches
+
+    if not merged:
+        return {
+            "query": question,
+            "plan": {
+                "intent": plan.intent if plan else "",
+                "search_queries": search_queries,
+                "problem_space_queries": problem_space_queries,
+                "related_topics": (plan.related_topics if plan else []),
+            },
+            "search_runs": search_runs,
+            "answers": [],
+        }
+
+    retrieved = sorted(
+        merged.values(),
+        key=lambda x: (
+            (float(x.get("retrieval_score") or 0.0) * _answer_candidate_kind_weight(str(x.get("kind") or "")))
+            + (0.10 * len(x.get("query_matches") or []))
+        ),
+        reverse=True,
+    )
+
+    picked: list[dict[str, Any]] = []
+    episode_starts: dict[tuple[str, str], list[float]] = {}
+    for seg in retrieved:
+        ep_key = (str(seg.get("feed") or ""), str(seg.get("episode_slug") or ""))
+        starts = episode_starts.setdefault(ep_key, [])
+        start_sec = float(seg.get("start_sec") or 0.0)
+        if any(abs(start_sec - prev) < 90.0 for prev in starts):
+            continue
+        starts.append(start_sec)
+        picked.append(seg)
+        if len(picked) >= int(max(1, review_candidates)):
+            break
+
+    reviewed: list[dict[str, Any]] = []
+    for seg in picked:
+        ctx = load_segment_context(
+            db_path=db_path,
+            segment_id=int(seg.get("segment_id") or 0),
+            before=2,
+            after=3,
+            include_text=True,
+        )
+        context = list(ctx.get("context") or [])
+        if not context:
+            continue
+        by_id = {int(c.get("segment_id") or 0): c for c in context if int(c.get("segment_id") or 0) > 0}
+        focus = _pick_focus_segment(
+            context=context,
+            queries=[question] + list(seg.get("query_matches") or []),
+            default_segment_id=int(seg.get("segment_id") or 0),
+        )
+        if not focus:
+            continue
+        focus_id = int(focus.get("segment_id") or 0)
+        focus_index = next((i for i, c in enumerate(context) if int(c.get("segment_id") or 0) == focus_id), 0)
+        review_context = context[max(0, focus_index - 1) : min(len(context), focus_index + 2)]
+        if not review_context:
+            review_context = [focus]
+        llm_summary = summarize_answer_candidate(
+            question=question,
+            episode_title=str(seg.get("episode_title") or ""),
+            chapter_hint="",
+            retrieval_queries=list(seg.get("query_matches") or []),
+            context_segments=[
+                {
+                    "segment_id": int(c.get("segment_id") or 0),
+                    "timecode": _format_timecode(float(c.get("start_sec") or 0.0)),
+                    "kind": str(c.get("kind") or "content"),
+                    "text": str(c.get("text") or ""),
+                }
+                for c in review_context
+            ],
+        )
+        focus_overlap = _query_overlap_score(str(focus.get("text") or focus.get("snippet") or ""), [question] + list(seg.get("query_matches") or []))
+        if llm_summary is None or not llm_summary.recommendation:
+            continue
+        if not llm_summary.relevant and max(focus_overlap, float(llm_summary.relevance or 0.0)) < 0.34:
+            continue
+
+        start_ctx = focus
+        quote_ctx = focus
+        if not start_ctx or not quote_ctx:
+            continue
+
+        start_sec = float(start_ctx.get("start_sec") or seg.get("start_sec") or 0.0)
+        quote_text = _pick_verified_quote(
+            "",
+            segment_text=str(quote_ctx.get("text") or ""),
+            fallback_text=str(start_ctx.get("text") or ""),
+        )
+
+        reviewed.append(
+            {
+                "feed": str(seg.get("feed") or ""),
+                "episode_slug": str(seg.get("episode_slug") or ""),
+                "episode_title": str(seg.get("episode_title") or ""),
+                "episode_date": str(seg.get("episode_date") or ""),
+                "segment_id": int(seg.get("segment_id") or 0),
+                "start_segment_id": int(start_ctx.get("segment_id") or seg.get("segment_id") or 0),
+                "quote_segment_id": int(quote_ctx.get("segment_id") or 0),
+                "start_sec": float(start_sec),
+                "timecode": _format_timecode(start_sec),
+                "share_path": _share_path(str(seg.get("feed") or ""), str(seg.get("episode_slug") or ""), start_sec),
+                "transcript_path": str(seg.get("transcript_path") or ""),
+                "retrieval_score": float(seg.get("retrieval_score") or 0.0),
+                "relevance": max(float(llm_summary.relevance or 0.0), float(focus_overlap or 0.0)),
+                "score": (float(seg.get("retrieval_score") or 0.0) * 0.55) + (max(float(llm_summary.relevance or 0.0), float(focus_overlap or 0.0)) * 2.0),
+                "recommendation": llm_summary.recommendation,
+                "summary": llm_summary.summary,
+                "why_relevant": llm_summary.why_relevant,
+                "quote": quote_text,
+                "tags": list(llm_summary.tags or []),
+                "query_matches": list(seg.get("query_matches") or []),
+                "supporting_context": [
+                    {
+                        "segment_id": int(c.get("segment_id") or 0),
+                        "start_sec": float(c.get("start_sec") or 0.0),
+                        "timecode": _format_timecode(float(c.get("start_sec") or 0.0)),
+                        "kind": str(c.get("kind") or "content"),
+                        "snippet": str(c.get("snippet") or ""),
+                    }
+                    for c in context
+                ],
+            }
+        )
+
+    by_episode: dict[tuple[str, str], dict[str, Any]] = {}
+    for ans in reviewed:
+        key = (str(ans.get("feed") or ""), str(ans.get("episode_slug") or ""))
+        cur = by_episode.get(key)
+        if cur is None or float(ans.get("score") or 0.0) > float(cur.get("score") or 0.0):
+            by_episode[key] = ans
+
+    answers_out = sorted(by_episode.values(), key=lambda x: float(x.get("score") or 0.0), reverse=True)[: int(max(1, answers))]
+    return {
+        "query": question,
+        "plan": {
+            "intent": plan.intent if plan else "",
+            "search_queries": search_queries,
+            "problem_space_queries": problem_space_queries,
+            "related_topics": (plan.related_topics if plan else []),
+        },
+        "search_runs": search_runs,
+        "reviewed_candidates": len(reviewed),
+        "answers": answers_out,
     }
 
 

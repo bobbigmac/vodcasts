@@ -13,7 +13,9 @@ def _parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Run a persistent local LLM service for answer-engine chaptering.")
     p.add_argument("--host", default="127.0.0.1", help="Bind host (default: 127.0.0.1).")
     p.add_argument("--port", type=int, default=8765, help="Bind port (default: 8765).")
+    p.add_argument("--provider", choices=("local", "openai"), default="", help="Optional provider override for this server process.")
     p.add_argument("--model", default="", help="Optional model override for this server process.")
+    p.add_argument("--openai-model", default="", help="Optional OpenAI model override when provider=openai.")
     p.add_argument("--device", default="", help="Optional device override, e.g. cuda or cpu.")
     p.add_argument("--warmup", action="store_true", help="Load the tokenizer/model before accepting requests.")
     return p.parse_args()
@@ -21,13 +23,25 @@ def _parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = _parse_args()
+    if args.provider:
+        os.environ["VOD_ANSWER_LLM_PROVIDER"] = str(args.provider)
     if args.model:
         os.environ["VOD_ANSWER_LLM_MODEL"] = str(args.model)
+    if args.openai_model:
+        os.environ["VOD_ANSWER_OPENAI_MODEL"] = str(args.openai_model)
     if args.device:
         os.environ["VOD_ANSWER_LLM_DEVICE"] = str(args.device)
     os.environ["VOD_ANSWER_LLM_SERVER"] = "1"
 
-    from answer_engine_llm import model_info, refine_chapter_metadata, review_boundary, warmup_model  # type: ignore
+    from answer_engine_llm import (  # type: ignore
+        model_info,
+        plan_query,
+        refine_chapter_metadata,
+        summarize_answer_candidate,
+        review_answer_candidate,
+        review_boundary,
+        warmup_model,
+    )
 
     gpu_lock = Lock()
 
@@ -88,6 +102,63 @@ def main() -> None:
                             next_title=str(body.get("next_title") or ""),
                         )
                     payload = {"kind": meta.kind, "title": meta.title, "tags": meta.tags} if meta else {}
+                    self._send_json(200, payload)
+                    return
+                if self.path == "/plan-query":
+                    with gpu_lock:
+                        plan = plan_query(question=str(body.get("question") or ""))
+                    payload = (
+                        {"intent": plan.intent, "search_queries": plan.search_queries, "related_topics": plan.related_topics}
+                        if plan
+                        else {}
+                    )
+                    self._send_json(200, payload)
+                    return
+                if self.path == "/review-answer":
+                    with gpu_lock:
+                        review = review_answer_candidate(
+                            question=str(body.get("question") or ""),
+                            episode_title=str(body.get("episode_title") or ""),
+                            chapter_hint=str(body.get("chapter_hint") or ""),
+                            retrieval_queries=list(body.get("retrieval_queries") or []),
+                            context_segments=list(body.get("context_segments") or []),
+                        )
+                    payload = (
+                        {
+                            "relevant": review.relevant,
+                            "relevance": review.relevance,
+                            "start_segment_id": review.start_segment_id,
+                            "quote_segment_id": review.quote_segment_id,
+                            "summary": review.summary,
+                            "why_relevant": review.why_relevant,
+                            "quote": review.quote,
+                            "tags": review.tags,
+                        }
+                        if review
+                        else {}
+                    )
+                    self._send_json(200, payload)
+                    return
+                if self.path == "/summarize-answer":
+                    with gpu_lock:
+                        summary = summarize_answer_candidate(
+                            question=str(body.get("question") or ""),
+                            episode_title=str(body.get("episode_title") or ""),
+                            chapter_hint=str(body.get("chapter_hint") or ""),
+                            retrieval_queries=list(body.get("retrieval_queries") or []),
+                            context_segments=list(body.get("context_segments") or []),
+                        )
+                    payload = (
+                        {
+                            "relevant": summary.relevant,
+                            "relevance": summary.relevance,
+                            "summary": summary.summary,
+                            "why_relevant": summary.why_relevant,
+                            "tags": summary.tags,
+                        }
+                        if summary
+                        else {}
+                    )
                     self._send_json(200, payload)
                     return
                 self._send_json(404, {"ok": False, "error": "not_found"})

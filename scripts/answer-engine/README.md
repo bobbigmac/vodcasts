@@ -1,8 +1,8 @@
 # Answer Engine (transcript search + auto-chapters)
 
-This folder contains a small, local-first helper for searching our subtitle/transcript dataset (WebVTT/SRT) in `site/assets/transcripts/` and surfacing timestamped "answer-ish" segments for a free-text question.
+This folder contains a small, local-first helper for searching our subtitle/transcript dataset (WebVTT/SRT) in `site/assets/transcripts/`, grounding answers to free-text questions, and generating auto-chapters.
 
-The search/index path is intentionally not an LLM. The optional chapter-refinement path can use a small local instruct model for better chapter boundaries, titles, kinds, and tags.
+The retrieval/index path stays SQLite FTS over analyzed transcript segments. The local LLM layer is used for question understanding and grounded answer review so a free-text question can turn into a few precise timestamped recommendations with summaries and quotes.
 
 ## What it builds
 
@@ -33,6 +33,20 @@ The search/index path is intentionally not an LLM. The optional chapter-refineme
 
 - `bash scripts/answer-engine/ae.sh query search --q "I struggle to forgive someone I trusted" --limit 12`
 - `bash scripts/answer-engine/ae.sh query search --q "How can I handle myself better in stressful situations?" --json | jq`
+
+5. Ask for grounded timestamped answers:
+
+- `bash scripts/answer-engine/ae.sh query answer --q "I struggle to forgive someone I trusted" --answers 3`
+- `powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 query answer --q "How can I handle myself better in stressful situations?" --answers 3`
+- `bash scripts/answer-engine/ae.sh query answer --llm-url http://127.0.0.1:8765 --q "How do I stop living in fear?" --json | jq`
+
+The `answer` flow:
+
+- asks the local LLM to expand the question into related retrieval intents and topics
+- runs several targeted FTS searches against the analyzed transcript segments
+- loads transcript context around the strongest hits
+- asks the LLM to turn the strongest grounded context into a natural recommendation-style reply plus a literal quote
+- returns the best few episode/timestamp matches instead of just raw search hits
 
 ## Auto-chapters
 
@@ -91,14 +105,26 @@ Then point chapter runs at it:
 - `bash scripts/answer-engine/ae.sh chapters --llm-url http://127.0.0.1:8765 --transcript <feed>/<episode>.vtt --force --print`
 - `powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 chapters --llm-url http://127.0.0.1:8765 --transcript <feed>/<episode>.vtt --force --print`
 
+The same server can also back `query answer --llm-url http://127.0.0.1:8765 ...`, which avoids reloading the LLM for every answer query.
+
 Defaults:
 
 - Model: `Qwen/Qwen2.5-1.5B-Instruct`
 - Device: `cuda` when available, otherwise `cpu`
 
+OpenAI swap-in:
+
+- Set `OPENAI_API_KEY` in `.env` or your shell.
+- Set `VOD_ANSWER_LLM_PROVIDER=openai` to route the same helper calls through the OpenAI API instead of the local Transformers model.
+- Optional: set `VOD_ANSWER_OPENAI_MODEL` (default: `gpt-4o-mini`).
+- Or run the HTTP helper in OpenAI mode: `bash scripts/answer-engine/ae.sh serve-llm --provider openai --openai-model gpt-4o-mini`
+- This uses the same query/chapter helper functions with restrained output-token caps and `store: false`.
+
 Useful env overrides:
 
+- `VOD_ANSWER_LLM_PROVIDER`
 - `VOD_ANSWER_LLM_MODEL`
+- `VOD_ANSWER_OPENAI_MODEL`
 - `VOD_ANSWER_LLM_DEVICE`
 - `VOD_ANSWER_LLM_MAX_INPUT_CHARS`
 - `VOD_ANSWER_LLM_HTTP_TIMEOUT_SEC`
