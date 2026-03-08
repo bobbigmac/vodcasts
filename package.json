@@ -16,7 +16,8 @@
     "answer-ui": "node scripts/answer-engine/run_query_ui.mjs",
     "transcripts": "powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/setup-venv.ps1 && powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/run-transcripts-whisperx.ps1 -GenerateMissing -Execute -SpotCheckEvery 10 -SpotCheckSeconds 600",
     "transcripts:hq": "powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/setup-venv.ps1 && powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/run-transcripts-whisperx.ps1 -GenerateMissing -Execute -SpotCheckEvery 10 -SpotCheckSeconds 600 -WhisperxModel large-v3",
-    "transcripts:fast": "powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/setup-venv.ps1 && powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/run-transcripts-whisperx.ps1 -GenerateMissing -Execute -SpotCheckEvery 10 -SpotCheckSeconds 600 -WhisperxModel small -WhisperxComputeType int8"
+    "transcripts:fast": "powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/setup-venv.ps1 && powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/run-transcripts-whisperx.ps1 -GenerateMissing -Execute -SpotCheckEvery 10 -SpotCheckSeconds 600 -WhisperxModel small -WhisperxComputeType int8",
+    "transcripts:turbo": "powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/setup-venv.ps1 && powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/run-transcripts-whisperx.ps1 -GenerateMissing -Execute -SpotCheckEvery 3 -SpotCheckSeconds 200 -WhisperxModel base.en"
   },
   "license": "UNLICENSED",
   "packageManager": "yarn@1.22.22"
