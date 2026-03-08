@@ -12,3 +12,4 @@ __pycache__/
 scripts/audio-to-transcripts/.venv/
 .vodcasts-env
 tmp/
+podcast-transcripts/
