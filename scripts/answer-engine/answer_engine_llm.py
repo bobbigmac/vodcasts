@@ -354,6 +354,32 @@ def _normalize_text_line(v: str, fallback: str = "", *, max_len: int = 280) -> s
     return text[:max_len].rstrip()
 
 
+def _normalize_recommendation_text(v: str, fallback: str = "", *, max_len: int = 900) -> str:
+    text = " ".join(str(v or "").strip().split())
+    if not text:
+        return fallback
+    text = text.strip(" -:;,.")
+    if not text:
+        return fallback
+    if len(text) <= max_len:
+        return text
+
+    clipped = text[:max_len].rstrip()
+    sentence_breaks = [clipped.rfind(ch) for ch in (". ", "? ", "! ")]
+    best_break = max(sentence_breaks)
+    if best_break >= int(max_len * 0.55):
+        return clipped[: best_break + 1].rstrip()
+
+    comma_break = max(clipped.rfind(", "), clipped.rfind("; "), clipped.rfind(": "))
+    if comma_break >= int(max_len * 0.70):
+        return clipped[:comma_break].rstrip() + "."
+
+    word_break = clipped.rfind(" ")
+    if word_break >= int(max_len * 0.75):
+        return clipped[:word_break].rstrip() + "."
+    return clipped.rstrip() + "."
+
+
 def _normalize_query_list(v: Any, fallback: list[str]) -> list[str]:
     vals = v if isinstance(v, list) else []
     out: list[str] = []
@@ -845,6 +871,10 @@ def _summarize_answer_candidate_local(
     *,
     question: str,
     episode_title: str,
+    source_title: str = "",
+    source_category: str = "",
+    source_tags: list[str] | None = None,
+    content_label: str = "",
     chapter_hint: str,
     retrieval_queries: list[str],
     context_segments: list[dict[str, Any]],
@@ -867,6 +897,7 @@ def _summarize_answer_candidate_local(
         return None
 
     rq = ", ".join([_normalize_text_line(q, "", max_len=80) for q in retrieval_queries if _normalize_text_line(q, "", max_len=80)])
+    source_tags_text = ", ".join([_normalize_text_line(t, "", max_len=40) for t in (source_tags or []) if _normalize_text_line(t, "", max_len=40)])
     system = (
         "You turn transcript excerpts into a grounded recommendation for someone asking for help. "
         "Return JSON only with keys relevant, relevance, recommendation, tags. "
@@ -875,6 +906,9 @@ def _summarize_answer_candidate_local(
         "Write recommendation as natural, warm, concise advice in the style of a thoughtful friend replying to a Reddit or Facebook post. "
         "Speak directly to the person using 'you' when helpful. "
         "Summarize the advice or framing from the excerpt itself. "
+        "Aim for about 60 to 110 words, in 2 to 4 complete sentences. "
+        "Finish cleanly at the end of a sentence instead of trailing off. "
+        "When it fits naturally, refer to the source once using the provided source title and content label, for example 'This sermon from Bridgetown...' or 'This Bible study from Athey Creek...'. "
         "Do not say 'the speaker says', 'this video', 'this episode', 'this clip', or 'this is relevant because'. "
         "Do not mention metadata, retrieval, or analysis. "
         "Keep it grounded in the provided excerpt."
@@ -882,6 +916,10 @@ def _summarize_answer_candidate_local(
     user = (
         f"QUESTION:\n{_clip_text(question, max_chars=600)}\n\n"
         f"EPISODE:\n{_normalize_text_line(episode_title, '', max_len=140)}\n\n"
+        f"SOURCE TITLE:\n{_normalize_text_line(source_title, '(unknown)', max_len=120)}\n\n"
+        f"CONTENT LABEL:\n{_normalize_text_line(content_label, 'message', max_len=40)}\n\n"
+        f"SOURCE CATEGORY:\n{_normalize_text_line(source_category, '(unknown)', max_len=60)}\n\n"
+        f"SOURCE TAGS:\n{source_tags_text or '(none)'}\n\n"
         f"CHAPTER HINT:\n{_normalize_text_line(chapter_hint, '(none)', max_len=120)}\n\n"
         f"RETRIEVAL HINTS:\n{rq or '(none)'}\n\n"
         "EXCERPTS:\n"
@@ -890,7 +928,7 @@ def _summarize_answer_candidate_local(
         '{"relevant":true,"relevance":0.82,"recommendation":"If this is where you are, one helpful way to think about it is ... You do not have to force certainty overnight, but you can keep bringing it to God honestly.","tags":["forgiveness","betrayal","healing"]}'
     )
     try:
-        raw = _chat_json(system=system, user=user, max_new_tokens=180)
+        raw = _chat_json(system=system, user=user, max_new_tokens=240)
     except Exception as exc:
         print(f"[answer-engine] LLM answer summary unavailable: {exc}", file=sys.stderr, flush=True)
         return None
@@ -899,8 +937,8 @@ def _summarize_answer_candidate_local(
     return AnswerSummary(
         relevant=bool(raw.get("relevant")),
         relevance=_normalize_unit_float(raw.get("relevance"), 0.0),
-        recommendation=_normalize_text_line(str(raw.get("recommendation") or raw.get("summary") or ""), "", max_len=420),
-        summary=_normalize_text_line(str(raw.get("recommendation") or raw.get("summary") or ""), "", max_len=420),
+        recommendation=_normalize_recommendation_text(str(raw.get("recommendation") or raw.get("summary") or ""), "", max_len=900),
+        summary=_normalize_recommendation_text(str(raw.get("recommendation") or raw.get("summary") or ""), "", max_len=900),
         why_relevant="",
         tags=_normalize_tags(raw.get("tags")),
     )
@@ -910,6 +948,10 @@ def summarize_answer_candidate(
     *,
     question: str,
     episode_title: str,
+    source_title: str = "",
+    source_category: str = "",
+    source_tags: list[str] | None = None,
+    content_label: str = "",
     chapter_hint: str,
     retrieval_queries: list[str],
     context_segments: list[dict[str, Any]],
@@ -923,6 +965,10 @@ def summarize_answer_candidate(
                 {
                     "question": question,
                     "episode_title": episode_title,
+                    "source_title": source_title,
+                    "source_category": source_category,
+                    "source_tags": source_tags or [],
+                    "content_label": content_label,
                     "chapter_hint": chapter_hint,
                     "retrieval_queries": retrieval_queries,
                     "context_segments": context_segments,
@@ -932,8 +978,8 @@ def summarize_answer_candidate(
                 return AnswerSummary(
                     relevant=bool(raw.get("relevant")),
                     relevance=_normalize_unit_float(raw.get("relevance"), 0.0),
-                    recommendation=_normalize_text_line(str(raw.get("recommendation") or raw.get("summary") or ""), "", max_len=420),
-                    summary=_normalize_text_line(str(raw.get("recommendation") or raw.get("summary") or ""), "", max_len=420),
+                    recommendation=_normalize_recommendation_text(str(raw.get("recommendation") or raw.get("summary") or ""), "", max_len=900),
+                    summary=_normalize_recommendation_text(str(raw.get("recommendation") or raw.get("summary") or ""), "", max_len=900),
                     why_relevant="",
                     tags=_normalize_tags(raw.get("tags")),
                 )
@@ -942,6 +988,10 @@ def summarize_answer_candidate(
     return _summarize_answer_candidate_local(
         question=question,
         episode_title=episode_title,
+        source_title=source_title,
+        source_category=source_category,
+        source_tags=source_tags,
+        content_label=content_label,
         chapter_hint=chapter_hint,
         retrieval_queries=retrieval_queries,
         context_segments=context_segments,

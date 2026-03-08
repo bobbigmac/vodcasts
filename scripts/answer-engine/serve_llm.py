@@ -144,6 +144,10 @@ def main() -> None:
                         summary = summarize_answer_candidate(
                             question=str(body.get("question") or ""),
                             episode_title=str(body.get("episode_title") or ""),
+                            source_title=str(body.get("source_title") or ""),
+                            source_category=str(body.get("source_category") or ""),
+                            source_tags=list(body.get("source_tags") or []),
+                            content_label=str(body.get("content_label") or ""),
                             chapter_hint=str(body.get("chapter_hint") or ""),
                             retrieval_queries=list(body.get("retrieval_queries") or []),
                             context_segments=list(body.get("context_segments") or []),

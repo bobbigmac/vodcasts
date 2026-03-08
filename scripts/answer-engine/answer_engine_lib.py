@@ -21,6 +21,7 @@ if str(_REPO_ROOT) not in sys.path:
 
 from scripts.feed_manifest import parse_feed_for_manifest
 from scripts.shared import VODCASTS_ROOT, normalize_ws, strip_html
+from scripts.sources import load_sources_config
 
 import pysrt  # type: ignore
 import snowballstemmer  # type: ignore
@@ -331,6 +332,68 @@ def default_cache_dir(env: str | None = None) -> Path:
 
 def default_transcripts_root() -> Path:
     return VODCASTS_ROOT / "site" / "assets" / "transcripts"
+
+
+@lru_cache(maxsize=8)
+def _load_sources_lookup(env: str) -> dict[str, dict[str, Any]]:
+    env_name = _canon_env(str(env or "").strip()) or active_env()
+    cfg_path = VODCASTS_ROOT / "feeds" / f"{env_name}.md"
+    if not cfg_path.exists():
+        return {}
+    try:
+        cfg = load_sources_config(cfg_path)
+    except Exception:
+        return {}
+    out: dict[str, dict[str, Any]] = {}
+    for src in cfg.sources or []:
+        out[str(src.id)] = {
+            "title": str(src.title or src.id).strip() or str(src.id),
+            "category": str(src.category or "").strip(),
+            "tags": [str(t).strip() for t in (src.tags or ()) if str(t).strip()],
+        }
+    return out
+
+
+def _content_label_from_source(*, category: str, tags: Iterable[str] | None = None, episode_title: str = "") -> str:
+    cat = normalize_ws(str(category or "")).strip().lower()
+    tag_set = {normalize_ws(str(t or "")).strip().lower() for t in (tags or []) if normalize_ws(str(t or "")).strip()}
+    title = normalize_ws(str(episode_title or "")).strip().lower()
+
+    if "homily" in cat or "homily" in tag_set:
+        return "homily"
+    if "sermon" in cat or "sermons" in tag_set:
+        if "sunday" in tag_set and ("concert" in tag_set or "live-music" in tag_set or "worship" in tag_set):
+            return "service"
+        return "sermon"
+    if "bible-study" in cat or "bible teaching" in cat or "through-the-bible" in tag_set or "expositional" in tag_set:
+        return "Bible study"
+    if "conference" in cat or "conferences" in tag_set:
+        return "conference talk"
+    if "news" in cat:
+        return "news segment"
+    if "devotional" in cat or "devotional" in tag_set:
+        return "devotional"
+    if "podcast" in title:
+        return "podcast episode"
+    if "church" in title and ("sunday" in tag_set or "worship" in tag_set):
+        return "service"
+    if "study" in title:
+        return "study"
+    return "message"
+
+
+def _source_context_for_feed(feed_slug: str, *, episode_title: str = "") -> dict[str, Any]:
+    info = _load_sources_lookup(active_env()).get(str(feed_slug or "").strip()) or {}
+    source_title = normalize_ws(str(info.get("title") or feed_slug or "")).strip() or str(feed_slug or "")
+    source_category = normalize_ws(str(info.get("category") or "")).strip()
+    source_tags = [str(t) for t in (info.get("tags") or []) if str(t).strip()]
+    content_label = _content_label_from_source(category=source_category, tags=source_tags, episode_title=episode_title)
+    return {
+        "source_title": source_title,
+        "source_category": source_category,
+        "source_tags": source_tags,
+        "content_label": content_label,
+    }
 
 
 def _relpath_under_root(path: Path) -> str:
@@ -1708,6 +1771,26 @@ def _share_path(feed: str, episode_slug: str, t_sec: float) -> str:
     return f"/{feed}/{episode_slug}/#t={t}"
 
 
+def _recommendation_with_source(*, recommendation: str, source_title: str, content_label: str) -> str:
+    text = normalize_ws(recommendation or "").strip()
+    title = normalize_ws(source_title or "").strip()
+    label = normalize_ws(content_label or "").strip() or "message"
+    if not text:
+        return text
+    lower = text.lower()
+    if title and title.lower() in lower:
+        return text
+    if label.lower() in lower and " from " in lower:
+        return text
+    if title and label.lower() in title.lower():
+        prefix = f"{title} is worth a watch if this is where you are: "
+    elif title:
+        prefix = f"This {label} from {title} is worth a watch if this is where you are: "
+    else:
+        prefix = f"This {label} is worth a watch if this is where you are: "
+    return prefix + text[0].lower() + text[1:] if len(text) > 1 and text[0].isupper() else prefix + text
+
+
 def search_segments(
     *,
     db_path: Path,
@@ -2069,6 +2152,7 @@ def answer_question(
 
     reviewed: list[dict[str, Any]] = []
     for seg in picked:
+        source_ctx = _source_context_for_feed(str(seg.get("feed") or ""), episode_title=str(seg.get("episode_title") or ""))
         ctx = load_segment_context(
             db_path=db_path,
             segment_id=int(seg.get("segment_id") or 0),
@@ -2095,6 +2179,10 @@ def answer_question(
         llm_summary = summarize_answer_candidate(
             question=question,
             episode_title=str(seg.get("episode_title") or ""),
+            source_title=str(source_ctx.get("source_title") or ""),
+            source_category=str(source_ctx.get("source_category") or ""),
+            source_tags=list(source_ctx.get("source_tags") or []),
+            content_label=str(source_ctx.get("content_label") or ""),
             chapter_hint="",
             retrieval_queries=list(seg.get("query_matches") or []),
             context_segments=[
@@ -2124,6 +2212,11 @@ def answer_question(
             segment_text=str(quote_ctx.get("text") or ""),
             fallback_text=str(start_ctx.get("text") or ""),
         )
+        recommendation_text = _recommendation_with_source(
+            recommendation=str(llm_summary.recommendation or llm_summary.summary or ""),
+            source_title=str(source_ctx.get("source_title") or ""),
+            content_label=str(source_ctx.get("content_label") or ""),
+        )
 
         reviewed.append(
             {
@@ -2131,6 +2224,10 @@ def answer_question(
                 "episode_slug": str(seg.get("episode_slug") or ""),
                 "episode_title": str(seg.get("episode_title") or ""),
                 "episode_date": str(seg.get("episode_date") or ""),
+                "source_title": str(source_ctx.get("source_title") or ""),
+                "source_category": str(source_ctx.get("source_category") or ""),
+                "source_tags": list(source_ctx.get("source_tags") or []),
+                "content_label": str(source_ctx.get("content_label") or ""),
                 "segment_id": int(seg.get("segment_id") or 0),
                 "start_segment_id": int(start_ctx.get("segment_id") or seg.get("segment_id") or 0),
                 "quote_segment_id": int(quote_ctx.get("segment_id") or 0),
@@ -2141,8 +2238,8 @@ def answer_question(
                 "retrieval_score": float(seg.get("retrieval_score") or 0.0),
                 "relevance": max(float(llm_summary.relevance or 0.0), float(focus_overlap or 0.0)),
                 "score": (float(seg.get("retrieval_score") or 0.0) * 0.55) + (max(float(llm_summary.relevance or 0.0), float(focus_overlap or 0.0)) * 2.0),
-                "recommendation": llm_summary.recommendation,
-                "summary": llm_summary.summary,
+                "recommendation": recommendation_text,
+                "summary": recommendation_text,
                 "why_relevant": llm_summary.why_relevant,
                 "quote": quote_text,
                 "tags": list(llm_summary.tags or []),
