@@ -15,7 +15,7 @@ MAX_SLEEP_INTERVAL="${MAX_SLEEP_INTERVAL:-5}"
 usage() {
   cat <<'EOF'
 Usage:
-  bash scripts/data-gathering/youtube-podcast-subs.sh [options] [-- extra yt-dlp args]
+  bash scripts/podcast-transcription-miner/youtube-podcast-subs.sh [options] [-- extra yt-dlp args]
 
 Options:
   --source-file PATH    Override the TSV source manifest.
@@ -31,9 +31,9 @@ Environment overrides:
   SUB_LANGS, DATEAFTER, SLEEP_INTERVAL, MAX_SLEEP_INTERVAL
 
 Examples:
-  bash scripts/data-gathering/youtube-podcast-subs.sh
-  bash scripts/data-gathering/youtube-podcast-subs.sh --playlist-end 25 --slug lex-fridman
-  DATEAFTER=20250101 bash scripts/data-gathering/youtube-podcast-subs.sh -- --cookies-from-browser firefox
+  bash scripts/podcast-transcription-miner/youtube-podcast-subs.sh
+  bash scripts/podcast-transcription-miner/youtube-podcast-subs.sh --playlist-end 25 --slug lex-fridman
+  DATEAFTER=20250101 bash scripts/podcast-transcription-miner/youtube-podcast-subs.sh -- --cookies-from-browser firefox
 EOF
 }
 
