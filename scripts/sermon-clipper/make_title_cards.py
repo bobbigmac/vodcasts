@@ -2,18 +2,21 @@
 from __future__ import annotations
 
 import argparse
-import re
+import math
 import sys
 from pathlib import Path
 
 _REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(_REPO_ROOT))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 try:
     from PIL import Image, ImageDraw, ImageFont
 except ImportError:
     print("[make_title_cards] Install Pillow: pip install Pillow", file=sys.stderr)
     sys.exit(1)
+
+from _lib import parse_long_form_script
 
 
 def _parse_args() -> argparse.Namespace:
@@ -22,96 +25,62 @@ def _parse_args() -> argparse.Namespace:
     p.add_argument("--output", "-o", required=True, help="Output directory for images.")
     p.add_argument("--width", type=int, default=1920, help="Image width (default: 1920).")
     p.add_argument("--height", type=int, default=1080, help="Image height (default: 1080).")
-    p.add_argument("--bg", default="#1a1a2e", help="Background color (default: #1a1a2e).")
-    p.add_argument("--fg", default="#eaeaea", help="Text color (default: #eaeaea).")
-    p.add_argument("--font-size", type=int, default=72, help="Title font size (default: 72).")
-    p.add_argument("--transition-font-size", type=int, default=48, help="Transition card font size (default: 48).")
-    p.add_argument("--transition-duration", type=float, default=3.0, help="Suggested duration for transition cards (seconds).")
+    p.add_argument("--font-size", type=int, default=82, help="Title font size (default: 82).")
+    p.add_argument("--transition-font-size", type=int, default=58, help="Transition card font size (default: 58).")
     return p.parse_args()
 
 
-def _hex_to_rgb(hex_str: str) -> tuple[int, int, int]:
-    """Convert #RRGGBB to (r,g,b)."""
-    hex_str = hex_str.lstrip("#")
-    if len(hex_str) == 6:
-        return tuple(int(hex_str[i : i + 2], 16) for i in (0, 2, 4))
-    return (26, 26, 46)
-
-
-def _wrap_text(text: str, max_chars: int = 40) -> list[str]:
-    """Simple word wrap."""
-    words = text.split()
-    lines = []
-    current = []
-    for w in words:
-        if sum(len(x) for x in current) + len(current) + len(w) <= max_chars:
-            current.append(w)
-        else:
-            if current:
-                lines.append(" ".join(current))
-            current = [w]
-    if current:
-        lines.append(" ".join(current))
-    return lines
-
-
 def _find_font(size: int) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
-    """Try common fonts first."""
     candidates = [
+        "C:/Windows/Fonts/arialbd.ttf",
         "C:/Windows/Fonts/arial.ttf",
-        "C:/Windows/Fonts/segui.ttf",
+        "C:/Windows/Fonts/segoeuib.ttf",
         "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
         "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
     ]
-    for p in candidates:
-        if Path(p).exists():
+    for font_path in candidates:
+        p = Path(font_path)
+        if p.exists():
             try:
-                return ImageFont.truetype(p, size)
+                return ImageFont.truetype(str(p), size)
             except Exception:
                 pass
     return ImageFont.load_default()
 
 
-def _parse_script(script_path: Path) -> list[dict]:
-    """Extract title_card and transition sections from script (in order)."""
-    text = script_path.read_text(encoding="utf-8", errors="replace")
-    cards = []
-    transition_idx = 0
-    current_type = None
-    current_content = []
-
-    for line in text.splitlines():
-        line_stripped = line.strip()
-        if line_stripped.startswith("## "):
-            section = line_stripped[3:].strip().lower()
-            if current_type == "title_card" and current_content:
-                kv = {}
-                for ln in current_content:
-                    if ":" in ln:
-                        k, v = ln.split(":", 1)
-                        kv[k.strip()] = v.strip()
-                cards.append({"id": kv.get("id", ""), "text": kv.get("text", "")})
-            elif current_type == "transition" and current_content:
-                transition_idx += 1
-                cards.append({"id": f"transition_{transition_idx}", "text": " ".join(current_content).strip()})
-            current_type = section
-            current_content = []
+def _wrap_text(draw: ImageDraw.ImageDraw, text: str, font, max_width: int) -> list[str]:
+    words = (text or "").split()
+    if not words:
+        return [""]
+    lines: list[str] = []
+    current: list[str] = []
+    for word in words:
+        test = " ".join(current + [word])
+        bbox = draw.textbbox((0, 0), test, font=font)
+        width = bbox[2] - bbox[0]
+        if width <= max_width or not current:
+            current.append(word)
             continue
-        if current_type in ("title_card", "transition") and line:
-            current_content.append(line)
+        lines.append(" ".join(current))
+        current = [word]
+    if current:
+        lines.append(" ".join(current))
+    return lines
 
-    if current_type == "title_card" and current_content:
-        kv = {}
-        for ln in current_content:
-            if ":" in ln:
-                k, v = ln.split(":", 1)
-                kv[k.strip()] = v.strip()
-        cards.append({"id": kv.get("id", ""), "text": kv.get("text", "")})
-    elif current_type == "transition" and current_content:
-        transition_idx += 1
-        cards.append({"id": f"transition_{transition_idx}", "text": " ".join(current_content).strip()})
 
-    return cards
+def _gradient_background(width: int, height: int) -> Image.Image:
+    img = Image.new("RGB", (width, height), "#0f172a")
+    pixels = img.load()
+    for y in range(height):
+        blend = y / max(height - 1, 1)
+        for x in range(width):
+            radial = math.hypot(x - width * 0.78, y - height * 0.22) / max(width, height)
+            radial = min(max(radial, 0.0), 1.0)
+            r = int(15 + 24 * (1 - blend) + 60 * (1 - radial))
+            g = int(23 + 38 * blend + 16 * (1 - radial))
+            b = int(42 + 70 * blend + 18 * (1 - radial))
+            pixels[x, y] = (min(r, 255), min(g, 255), min(b, 255))
+    return img
 
 
 def main() -> None:
@@ -121,37 +90,57 @@ def main() -> None:
         print(f"[make_title_cards] Script not found: {script_path}", file=sys.stderr)
         sys.exit(1)
 
-    cards = _parse_script(script_path)
+    parsed = parse_long_form_script(script_path)
+    theme = str(parsed.get("metadata", {}).get("theme") or "sermon clips").strip()
+    cards = [item for item in parsed.get("items") or [] if item.get("type") == "title_card"]
     if not cards:
         print("[make_title_cards] No title_card sections found in script", file=sys.stderr)
         sys.exit(2)
 
     out_dir = Path(args.output)
     out_dir.mkdir(parents=True, exist_ok=True)
-    bg = _hex_to_rgb(args.bg)
-    fg = _hex_to_rgb(args.fg)
+    for existing_png in out_dir.glob("*.png"):
+        try:
+            existing_png.unlink()
+        except OSError:
+            pass
+
     for i, card in enumerate(cards):
         card_id = card.get("id") or f"card_{i}"
-        text = card.get("text") or ""
+        text = str(card.get("text") or "").strip()
         is_transition = card_id.startswith("transition_")
         font_size = args.transition_font_size if is_transition else args.font_size
         font = _find_font(font_size)
-        max_chars = 50 if is_transition else 35
+        label_font = _find_font(34)
+        footer_font = _find_font(28)
 
-        img = Image.new("RGB", (args.width, args.height), bg)
+        img = _gradient_background(args.width, args.height)
         draw = ImageDraw.Draw(img)
 
-        lines = _wrap_text(text, max_chars=max_chars)
-        line_height = int(font_size * 1.4)
-        total_h = len(lines) * line_height
-        y = (args.height - total_h) // 2
+        if is_transition:
+            draw.rounded_rectangle((112, 96, 410, 160), radius=18, fill="#1d4ed8")
+            draw.text((148, 114), "Transition", fill="white", font=label_font)
+        else:
+            draw.rounded_rectangle((112, 96, 350, 160), radius=18, fill="#be123c")
+            draw.text((148, 114), theme.title(), fill="white", font=label_font)
 
-        for ln in lines:
-            bbox = draw.textbbox((0, 0), ln, font=font)
-            tw = bbox[2] - bbox[0]
-            x = (args.width - tw) // 2
-            draw.text((x, y), ln, fill=fg, font=font)
+        max_width = args.width - 320
+        lines = _wrap_text(draw, text, font, max_width=max_width)
+        line_height = int(font_size * 1.28)
+        total_height = len(lines) * line_height
+        y = max(220, (args.height - total_height) // 2)
+
+        for line in lines:
+            bbox = draw.textbbox((0, 0), line, font=font)
+            text_width = bbox[2] - bbox[0]
+            x = (args.width - text_width) // 2
+            draw.text((x, y), line, fill="#f8fafc", font=font)
             y += line_height
+
+        footer = "prays.be"
+        footer_bbox = draw.textbbox((0, 0), footer, font=footer_font)
+        footer_width = footer_bbox[2] - footer_bbox[0]
+        draw.text((args.width - footer_width - 120, args.height - 92), footer, fill="#cbd5e1", font=footer_font)
 
         out_path = out_dir / f"{card_id}.png"
         img.save(out_path, "PNG")

@@ -15,17 +15,19 @@ case "$cmd" in
   write)  exec "$PY" "$ROOT/write_script.py" "$@" ;;
   cards)  python "$ROOT/make_title_cards.py" "$@" ;;
   render) python "$ROOT/render_video.py" "$@" ;;
+  clean)  python "$ROOT/cleanup_outputs.py" "$@" ;;
   help)
     echo "Sermon Clipper - generate video essays from church feed clips."
     echo ""
     echo "Usage: bash scripts/sermon-clipper/sc.sh <cmd> [args...]"
-    echo "Commands: search, write, cards, render"
+    echo "Commands: search, write, cards, render, clean"
     echo ""
     echo "Examples:"
     echo "  bash scripts/sermon-clipper/sc.sh search --theme forgiveness --output out/clips.json"
     echo "  bash scripts/sermon-clipper/sc.sh write --theme forgiveness --clips out/clips.json --output out/video.md"
     echo "  bash scripts/sermon-clipper/sc.sh cards --script out/video.md --output out/title-cards"
     echo "  bash scripts/sermon-clipper/sc.sh render --script out/video.md --output out/video.mp4 --title-cards out/title-cards"
+    echo "  bash scripts/sermon-clipper/sc.sh clean --path out/sermon-clips-examples"
     exit 0
     ;;
   *)

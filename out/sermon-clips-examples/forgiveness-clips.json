@@ -14,18 +14,6 @@
       "share_path": "/antioch-church/2023-08-20-full-bloom-93yx2/#t=1827"
     },
     {
-      "feed": "amazing-grace-baptist-mount-airy",
-      "episode_slug": "2025-12-22-the-church-epistles-colossians-pastor-jonathan-barker-wednesd-epim2c",
-      "episode_title": "\"The Church Epistles: Colossians\" - Pastor Jonathan Barker - Wednesday Night - 12/17/25",
-      "episode_date": "2025-12-22",
-      "start_sec": 2025.456,
-      "end_sec": 2153.697,
-      "duration_sec": 128.2410000000002,
-      "snippet": "to the chakon the glory of God, we can walk with Him, we can talk with Him, we can fellowship with Him, Holocaust, of the ministry, of the Lord Jesus Christ, and reconciling us back to God. Oh yes, amen. Hallelujah. If we weren't sedignifi…",
-      "score": 21.372885025405488,
-      "share_path": "/amazing-grace-baptist-mount-airy/2025-12-22-the-church-epistles-colossians-pastor-jonathan-barker-wednesd-epim2c/#t=2025"
-    },
-    {
       "feed": "church-of-the-highlands-weekend-video",
       "episode_slug": "2025-12-28-reflect-and-respond-qiwrq",
       "episode_title": "Reflect and Respond",
@@ -36,6 +24,18 @@
       "snippet": "God has a plan for your life for 2026, but so does the enemy. And today we get to choose whose plan are we gonna hang on to? Look at 2 Corinthians chapter five, it says this. It says, therefore, if anyone is in Christ, the new creation has…",
       "score": 19.153136028196958,
       "share_path": "/church-of-the-highlands-weekend-video/2025-12-28-reflect-and-respond-qiwrq/#t=1058"
+    },
+    {
+      "feed": "church-on-the-rock",
+      "episode_slug": "2026-03-01-never-forget-the-1-part-1-o0nusr",
+      "episode_title": "Never Forget The 1 - Part 1",
+      "episode_date": "2026-03-01",
+      "start_sec": 130.05,
+      "end_sec": 254.749,
+      "duration_sec": 124.69899999999998,
+      "snippet": "I've had other people down through the years been here 42. Pastor, I'm called to be a prophet. Wonderful. Pastor, I'm called to be a prophet thus. That's wonderful. I hope you profit church on the rock by being here. Amen. You're not a lia…",
+      "score": 18.791581662129175,
+      "share_path": "/church-on-the-rock/2026-03-01-never-forget-the-1-part-1-o0nusr/#t=130"
     },
     {
       "feed": "calvary-chapel-fort-lauderdale",
@@ -74,18 +74,6 @@
       "share_path": "/between-sermons-video/2025-12-11-you-don-t-have-a-communication-problem-you-have-a-you-problem-1l0rwo/#t=4040"
     },
     {
-      "feed": "crossway-milford-sermons",
-      "episode_slug": "2026-01-18-jeremiah-how-to-do-the-difficult-will-of-god-1k9l1h",
-      "episode_title": "Jeremiah - How To Do The Difficult Will Of God",
-      "episode_date": "2026-01-18",
-      "start_sec": 523.298,
-      "end_sec": 629.598,
-      "duration_sec": 106.29999999999995,
-      "snippet": "But I think Jeremiah was being prepared. I've quoted Chuck Smith before here, right? Everything is preparation for what's next in your life, our life. So whatever you're going through, that's the difficult will of God is preparation for yo…",
-      "score": 14.562578299368623,
-      "share_path": "/crossway-milford-sermons/2026-01-18-jeremiah-how-to-do-the-difficult-will-of-god-1k9l1h/#t=523"
-    },
-    {
       "feed": "connexus-church",
       "episode_slug": "2026-01-11-what-you-focus-on-is-forming-you-and-your-phone-knows-it-jeff-67kxvw",
       "episode_title": "What You Focus On Is Forming You — And Your Phone Knows It // Jeff Brodie // Starve The Algorithm. Feed The Soul (Part 1)",
@@ -96,7 +84,33 @@
       "snippet": "And then he says this, since God chose you to be the holy people he loves, you must clothe yourselves. Now he's talking about putting on rituals. You left those old ones behind, put on the new ones, clothe yourselves with tenderhearted mer…",
       "score": 12.582766620489949,
       "share_path": "/connexus-church/2026-01-11-what-you-focus-on-is-forming-you-and-your-phone-knows-it-jeff-67kxvw/#t=1722"
+    },
+    {
+      "feed": "btic-podcast-video",
+      "episode_slug": "2024-12-15-we-are-the-bearers-of-good-news-zcc2gv",
+      "episode_title": "We Are The Bearers Of Good News",
+      "episode_date": "2024-12-15",
+      "start_sec": 689.794,
+      "end_sec": 789.014,
+      "duration_sec": 99.22000000000003,
+      "snippet": "They are excited to tell everybody that I am now a believer, that I am now a Christian. Because everything that they've been looking for, everything that they've been hunting for, everything that they have been trying to fill with their li…",
+      "score": 10.891717752573312,
+      "share_path": "/btic-podcast-video/2024-12-15-we-are-the-bearers-of-good-news-zcc2gv/#t=689"
     }
   ],
-  "total_duration_sec": 922.2080000000005
+  "total_duration_sec": 911.5860000000004,
+  "filters": {
+    "require_video": true,
+    "require_transcript": true,
+    "min_duration": 15.0,
+    "max_duration": 120.0,
+    "target_duration": 900.0
+  },
+  "rejected_counts": {
+    "duplicate_feed": 15,
+    "used_clip": 0,
+    "too_short": 0,
+    "not_renderable": 28,
+    "too_long": 9
+  }
 }

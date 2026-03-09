@@ -5,6 +5,7 @@ import hashlib
 import json
 import os
 import re
+import shutil
 import sys
 from pathlib import Path
 
@@ -21,6 +22,12 @@ def _slugify_query(q: str) -> str:
     """Safe filename from query string."""
     s = re.sub(r"[^a-z0-9]+", "-", (q or "").lower().strip()).strip("-")
     return s[:64] if s else "query"
+
+
+def safe_slug(value: str, default: str = "item", max_len: int = 64) -> str:
+    """Filesystem-safe slug."""
+    s = re.sub(r"[^a-z0-9]+", "-", (value or "").lower().strip()).strip("-")
+    return (s[:max_len] or default).strip("-") or default
 
 
 def search_segments_cached(
@@ -60,7 +67,10 @@ def search_segments_cached(
     if not payload.get("error"):
         cache_subdir.mkdir(parents=True, exist_ok=True)
         try:
-            cache_path.write_text(json.dumps(payload, ensure_ascii=False, indent=0), encoding="utf-8")
+            cache_path.write_text(
+                json.dumps(payload, ensure_ascii=False, indent=0),
+                encoding="utf-8",
+            )
         except Exception:
             pass
 
@@ -84,6 +94,45 @@ def default_cache_dir(env: str | None = None) -> Path:
 def default_content_cache_dir(env: str | None = None) -> Path:
     """Project-local shared cache for downloaded source videos. Clear occasionally in production."""
     return default_cache_dir(env) / "sermon-clipper" / "content"
+
+
+def default_work_root() -> Path:
+    """Scratch work root kept inside sermon-clipper, not next to user outputs."""
+    return Path(__file__).resolve().parent / ".work"
+
+
+def resolve_work_dir(
+    kind: str,
+    output_path: Path,
+    explicit_work_dir: str = "",
+) -> tuple[Path, bool]:
+    """Resolve work dir. Auto-generated work dirs live under scripts/sermon-clipper/.work/."""
+    if explicit_work_dir:
+        return Path(explicit_work_dir).resolve(), False
+    digest = hashlib.sha1(str(output_path.resolve()).encode("utf-8")).hexdigest()[:10]
+    work_dir = default_work_root() / safe_slug(kind, default="render") / f"{safe_slug(output_path.stem, default='output')}-{digest}"
+    return work_dir, True
+
+
+def reset_directory(path: Path) -> Path:
+    """Remove and recreate a directory."""
+    if path.exists():
+        shutil.rmtree(path, ignore_errors=True)
+    path.mkdir(parents=True, exist_ok=True)
+    return path
+
+
+def remove_path(path: Path) -> None:
+    """Remove file or directory if present."""
+    if not path.exists():
+        return
+    if path.is_dir():
+        shutil.rmtree(path, ignore_errors=True)
+        return
+    try:
+        path.unlink()
+    except FileNotFoundError:
+        pass
 
 
 def get_source_path(content_cache: Path, feed: str, episode_slug: str) -> Path:
@@ -132,6 +181,25 @@ def get_episode_media_info(cache_dir: Path, feed_slug: str, episode_slug: str) -
     except Exception:
         pass
     return None
+
+
+def clip_has_render_requirements(
+    cache_dir: Path,
+    transcripts_root: Path,
+    feed_slug: str,
+    episode_slug: str,
+    require_video: bool = True,
+    require_transcript: bool = True,
+) -> bool:
+    """Return True when a clip is renderable with the requested constraints."""
+    media_info = get_episode_media_info(cache_dir, feed_slug, episode_slug)
+    if not media_info or not media_info.get("url"):
+        return False
+    if require_video and not media_info.get("pickedIsVideo"):
+        return False
+    if require_transcript and not get_transcript_path(transcripts_root, feed_slug, episode_slug):
+        return False
+    return True
 
 
 def load_clips_json(path: Path) -> list[dict]:
@@ -205,6 +273,7 @@ def clip_transcript_to_vtt(
     try:
         if ext == ".vtt":
             import webvtt
+
             v = webvtt.read(str(transcript_path))
             for c in getattr(v, "captions", []) or []:
                 s = _parse_vtt_time(str(getattr(c, "start", "") or ""))
@@ -214,7 +283,6 @@ def clip_transcript_to_vtt(
                 txt = str(getattr(c, "text", "") or "").strip()
                 if not txt:
                     continue
-                # Cue overlaps clip if it ends after start and starts before end
                 if e <= start_sec or s >= end_sec:
                     continue
                 new_s = max(0.0, s - start_sec)
@@ -222,7 +290,12 @@ def clip_transcript_to_vtt(
                 cues.append((new_s, new_e, txt))
         elif ext == ".srt":
             import pysrt
-            subs = pysrt.open(str(transcript_path), encoding="utf-8", error_handling=getattr(pysrt, "ERROR_LOG", 1))
+
+            subs = pysrt.open(
+                str(transcript_path),
+                encoding="utf-8",
+                error_handling=getattr(pysrt, "ERROR_LOG", 1),
+            )
             for s in subs or []:
                 start_ms = getattr(getattr(s, "start", None), "ordinal", 0) or 0
                 end_ms = getattr(getattr(s, "end", None), "ordinal", 0) or 0
@@ -253,6 +326,136 @@ def clip_transcript_to_vtt(
         lines.append("")
     out_path.write_text("\n".join(lines), encoding="utf-8")
     return True
+
+
+def parse_markdown_sections(text: str) -> list[dict]:
+    """Parse ##-headed markdown sections in order."""
+    sections: list[dict] = []
+    current_type: str | None = None
+    current_lines: list[str] = []
+    for raw_line in text.splitlines():
+        line = raw_line.rstrip()
+        line_stripped = line.strip()
+        if line_stripped.startswith("## "):
+            if current_type is not None:
+                sections.append(
+                    {"type": current_type, "content": "\n".join(current_lines).strip()}
+                )
+            current_type = line_stripped[3:].strip().lower()
+            current_lines = []
+            continue
+        if current_type is not None:
+            current_lines.append(line)
+    if current_type is not None:
+        sections.append(
+            {"type": current_type, "content": "\n".join(current_lines).strip()}
+        )
+    return sections
+
+
+def parse_key_value_block(text: str) -> dict[str, str]:
+    """Parse simple key: value blocks, preserving continuation lines."""
+    data: dict[str, str] = {}
+    current_key: str | None = None
+    for raw_line in text.splitlines():
+        line = raw_line.rstrip()
+        if not line.strip():
+            continue
+        if ":" in line and not line.startswith((" ", "\t")):
+            key, value = line.split(":", 1)
+            current_key = key.strip()
+            data[current_key] = value.strip()
+            continue
+        if current_key:
+            data[current_key] = f"{data[current_key]}\n{line.strip()}".strip()
+    return data
+
+
+def parse_long_form_script(script_path: Path) -> dict:
+    """Parse a long-form sermon clipper script."""
+    text = script_path.read_text(encoding="utf-8", errors="replace")
+    sections = parse_markdown_sections(text)
+    items: list[dict] = []
+    metadata: dict[str, str] = {}
+    transition_idx = 0
+    for section in sections:
+        section_type = section["type"]
+        content = section["content"]
+        if section_type == "metadata":
+            metadata = parse_key_value_block(content)
+            continue
+        if section_type in {"intro", "outro"}:
+            items.append({"type": section_type, "text": content.strip()})
+            continue
+        if section_type == "title_card":
+            kv = parse_key_value_block(content)
+            items.append(
+                {
+                    "type": "title_card",
+                    "id": kv.get("id", ""),
+                    "text": kv.get("text", ""),
+                }
+            )
+            continue
+        if section_type == "transition":
+            transition_idx += 1
+            items.append(
+                {
+                    "type": "title_card",
+                    "id": f"transition_{transition_idx}",
+                    "text": content.strip(),
+                }
+            )
+            continue
+        if section_type == "clip":
+            kv = parse_key_value_block(content)
+            items.append(
+                {
+                    "type": "clip",
+                    "feed": kv.get("feed"),
+                    "episode": kv.get("episode"),
+                    "start_sec": float(kv.get("start_sec") or 0),
+                    "end_sec": float(kv.get("end_sec") or 0),
+                    "quote": kv.get("quote", ""),
+                    "episode_title": kv.get("episode_title") or "",
+                    "feed_title": kv.get("feed_title") or "",
+                }
+            )
+    return {"metadata": metadata, "items": items}
+
+
+def parse_short_script(script_path: Path) -> dict:
+    """Parse a shorts script."""
+    text = script_path.read_text(encoding="utf-8", errors="replace")
+    sections = parse_markdown_sections(text)
+    items: list[dict] = []
+    metadata: dict[str, str] = {}
+    for section in sections:
+        section_type = section["type"]
+        content = section["content"]
+        if section_type == "metadata":
+            metadata = parse_key_value_block(content)
+            continue
+        if section_type in {"intro", "outro"}:
+            items.append({"type": section_type, "text": content.strip()})
+            continue
+        if section_type == "clip":
+            kv = parse_key_value_block(content)
+            items.append(
+                {
+                    "type": "clip",
+                    "feed": kv.get("feed"),
+                    "episode": kv.get("episode"),
+                    "start_sec": float(kv.get("start_sec") or 0),
+                    "end_sec": float(kv.get("end_sec") or 0),
+                    "quote": kv.get("quote", ""),
+                    "context": kv.get("context", ""),
+                    "decorators": kv.get("decorators", ""),
+                    "episode_title": kv.get("episode_title") or "",
+                    "feed_title": kv.get("feed_title") or "",
+                }
+            )
+    return {"metadata": metadata, "items": items}
 
 
 def _parse_vtt_time(s: str) -> float:

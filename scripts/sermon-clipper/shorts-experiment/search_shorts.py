@@ -13,7 +13,15 @@ for p in (_REPO_ROOT, _AE_ROOT, _PARENT.parent):
     if str(p) not in sys.path:
         sys.path.insert(0, str(p))
 
-from _lib import clip_id, default_env, load_used_clips, search_segments_cached
+from _lib import (
+    clip_has_render_requirements,
+    clip_id,
+    default_cache_dir,
+    default_env,
+    default_transcripts_root,
+    load_used_clips,
+    search_segments_cached,
+)
 
 
 def _parse_args() -> argparse.Namespace:
@@ -31,6 +39,8 @@ def _parse_args() -> argparse.Namespace:
     p.add_argument("--max-duration", type=float, default=18.0, help="Max clip seconds (default: 18). Tighter for ~50s total.")
     p.add_argument("--max-total-duration", type=float, default=55.0, help="Max total seconds across all clips (default: 55).")
     p.add_argument("--feeds", default="", help="Comma-separated feed slugs to restrict (e.g. church-of-the-highlands-weekend-video).")
+    p.add_argument("--allow-audio", action="store_true", help="Allow audio-only enclosures in search results.")
+    p.add_argument("--allow-missing-transcript", action="store_true", help="Allow clips without local transcript files.")
     p.add_argument("--no-cache", action="store_true", help="Bypass query cache; run fresh search.")
     return p.parse_args()
 
@@ -38,8 +48,9 @@ def _parse_args() -> argparse.Namespace:
 def main() -> None:
     args = _parse_args()
     env = (args.env or "").strip() or default_env()
-    cache_dir = Path(args.cache).resolve() if args.cache else _REPO_ROOT / "cache" / env
+    cache_dir = Path(args.cache).resolve() if args.cache else default_cache_dir(env)
     db_path = cache_dir / "answer-engine" / "answer_engine.sqlite"
+    transcripts_root = default_transcripts_root()
 
     if not db_path.exists():
         print(f"[search_shorts] DB not found: {db_path}. Run: ae.sh analyze && ae.sh index", file=sys.stderr)
@@ -63,10 +74,19 @@ def main() -> None:
     used_ids = load_used_clips(Path(args.exclude_used)) if args.exclude_used else set()
     min_dur = float(args.min_duration)
     max_dur = float(args.max_duration)
+    max_total = float(args.max_total_duration or 999)
     allowed_feeds = {f.strip() for f in (args.feeds or "").split(",") if f.strip()}
+    require_video = not bool(args.allow_audio)
+    require_transcript = not bool(args.allow_missing_transcript)
 
     clips = []
     seen_feeds = set()
+    rejected = {
+        "duplicate_feed": 0,
+        "used_clip": 0,
+        "duration": 0,
+        "not_renderable": 0,
+    }
     for r in results:
         feed = r.get("feed")
         if allowed_feeds and feed not in allowed_feeds:
@@ -78,38 +98,69 @@ def main() -> None:
         cid = clip_id(feed, ep_slug, start)
 
         if feed in seen_feeds:
+            rejected["duplicate_feed"] += 1
             continue
         if cid in used_ids:
+            rejected["used_clip"] += 1
             continue
         if dur < min_dur or dur > max_dur:
+            rejected["duration"] += 1
+            continue
+        if not clip_has_render_requirements(
+            cache_dir=cache_dir,
+            transcripts_root=transcripts_root,
+            feed_slug=str(feed or ""),
+            episode_slug=str(ep_slug or ""),
+            require_video=require_video,
+            require_transcript=require_transcript,
+        ):
+            rejected["not_renderable"] += 1
             continue
 
-        seen_feeds.add(feed)
-        max_total = float(args.max_total_duration or 999)
         total_so_far = sum(c["duration_sec"] for c in clips)
         if total_so_far + dur > max_total and len(clips) >= args.min_clips:
             break
-        clips.append({
-            "feed": feed,
-            "episode_slug": ep_slug,
-            "episode_title": r.get("episode_title"),
-            "episode_date": r.get("episode_date"),
-            "start_sec": start,
-            "end_sec": end,
-            "duration_sec": dur,
-            "snippet": r.get("snippet"),
-            "score": float(r.get("score") or 0),
-            "share_path": r.get("share_path"),
-        })
+
+        seen_feeds.add(feed)
+        clips.append(
+            {
+                "feed": feed,
+                "episode_slug": ep_slug,
+                "episode_title": r.get("episode_title"),
+                "episode_date": r.get("episode_date"),
+                "start_sec": start,
+                "end_sec": end,
+                "duration_sec": dur,
+                "snippet": r.get("snippet"),
+                "score": float(r.get("score") or 0),
+                "share_path": r.get("share_path"),
+            }
+        )
         if len(clips) >= args.limit:
             break
 
     if len(clips) < args.min_clips:
-        print(f"[search_shorts] Only {len(clips)} clips found; need at least {args.min_clips}. Try broader query or relax --min-duration/--max-duration.", file=sys.stderr)
+        print(
+            f"[search_shorts] Only {len(clips)} clips found; need at least {args.min_clips}. "
+            "Try a broader query or relax duration filters.",
+            file=sys.stderr,
+        )
         sys.exit(3)
 
     total_dur = sum(c["duration_sec"] for c in clips)
-    out = {"query": args.theme, "clips": clips, "total_duration_sec": total_dur}
+    out = {
+        "query": args.theme,
+        "clips": clips,
+        "total_duration_sec": total_dur,
+        "filters": {
+            "require_video": require_video,
+            "require_transcript": require_transcript,
+            "min_duration": min_dur,
+            "max_duration": max_dur,
+            "max_total_duration": max_total,
+        },
+        "rejected_counts": rejected,
+    }
     out_json = json.dumps(out, ensure_ascii=False, indent=2)
 
     if args.output:

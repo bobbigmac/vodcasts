@@ -7,7 +7,7 @@ Param(
 $Root = Split-Path -Parent $MyInvocation.MyCommand.Path
 $Parent = Split-Path -Parent $Root
 $AeRoot = Join-Path (Split-Path -Parent $Parent) "answer-engine"
-$AePy = Join-Path $AeRoot ".venv" "Scripts" "python.exe"
+$AePy = Join-Path (Join-Path (Join-Path $AeRoot ".venv") "Scripts") "python.exe"
 if (!(Test-Path $AePy)) { $AePy = "python" }
 
 function Run-Python {
@@ -22,6 +22,7 @@ switch ($Cmd) {
   "search" { Run-Python -ScriptName "search_shorts.py" -Rest $Args }
   "write"  { Run-Python -ScriptName "write_short_script.py" -Rest $Args }
   "render" { Run-Python -ScriptName "render_short.py" -Rest $Args -UseAeVenv $false }
+  "clean"  { Run-Python -ScriptName "..\\cleanup_outputs.py" -Rest $Args -UseAeVenv $false }
   "help" {
     Write-Output @"
 Shorts Experiment - vertical shorts from church feed clips.
@@ -30,8 +31,9 @@ Usage:
   short.ps1 search --theme forgiveness --output out/short-clips.json
   short.ps1 write --theme forgiveness --clips out/short-clips.json --output out/short.md
   short.ps1 render --script out/short.md --output out/short.mp4
+  short.ps1 clean --path out/shorts
 
-Commands: search, write, render
+Commands: search, write, render, clean
 "@
     exit 0
   }

@@ -1,53 +1,39 @@
-# Sermon Clipper — Agent Guide
+# Sermon Clipper Agent Guide
 
-This folder produces YouTube-style video essays from church feed transcripts. An LLM uses the answer-engine index to find compelling clips, then writes a video script that the tools render.
+This folder produces long-form commentary videos from church feed transcripts.
 
-## Index & Querying
+## What the tools do now
 
-### How to search
+- `search_clips.py` searches the answer-engine index and, by default, filters to clips that are actually renderable: video enclosure present, transcript present, one clip per feed, duration bounds respected, used clips excluded.
+- `write_script.py` writes a usable first-draft markdown script from those clips. It now fills intro, transitions, outro, and title-card copy automatically instead of leaving bracket placeholders everywhere.
+- `make_title_cards.py` renders PNG cards from `title_card` and `transition` sections.
+- `render_video.py` downloads source media into the shared content cache, extracts clips, adds optional overlays and subtitles, concatenates the result, and refuses to publish if too few clips survive render.
+- `cleanup_outputs.py` removes `__pycache__`, internal `.work/`, output-side `work*` directories, and stray `concat_list.txt` files.
 
-```bash
-# Use the answer-engine venv
-scripts/answer-engine/.venv/Scripts/python.exe scripts/sermon-clipper/search_clips.py --theme "..." --output out/clips.json
-```
+## Caches and scratch
 
-Or via `sc.ps1 search` / `sc.sh search`.
+- Query cache: `cache/<env>/sermon-clipper/query-cache/`
+- Shared content cache: `cache/<env>/sermon-clipper/content/`
+- Scratch render dir: `scripts/sermon-clipper/.work/`
+- Default scratch dirs are removed after a successful render unless `--keep-work` is passed.
 
-### Query patterns that work well
+## Script contract
 
-- **Single concept**: `forgiveness`, `prayer`, `suffering`, `hope` — good for broad exploration
-- **Question / concern**: `when I can't forgive`, `struggling with doubt`, `how do I pray when it feels empty`
-- **Life situation**: `chronic illness and faith`, `parenting with grace`, `work and calling`
-- **Theological angle**: `theology of suffering`, `grace and law`, `reconciliation`
-- **Emotional / experiential**: `when God feels silent`, `joy in hardship`, `peace that passes understanding`
-
-The index uses FTS + reranking. Broader terms surface more; specific phrases can yield sharper matches. Try multiple queries and merge results if needed.
-
-### Rules (enforced by search_clips)
-
-- **One clip per feed** — no repeated sources in a single video
-- **Target ~15 minutes** — `--target-duration 900` (seconds)
-- **Favor clips under 2 minutes** — `--max-duration 120`
-- **Exclude already-used clips** — `--exclude-used out/used-clips.json`
-- **Snappiness** — `--max-duration 45` for quick bites; default 120 for fuller explanations
-
-## Video script format (markdown)
-
-The script is the source of truth. Structure:
+The markdown script remains the render source of truth:
 
 ```markdown
-# Video: [Compelling title — not just "What Pastors Say About X"]
+# Video: When Forgiveness Gets Real
 
 ## metadata
-theme: [topic]
+theme: forgiveness
 target_duration_minutes: 15
 
 ## intro
-[2–3 sentences that frame the issue. Why does this matter? What question or concern are we exploring?]
+2-3 sentences that frame the issue.
 
 ## title_card
 id: intro
-text: [Brief discussion of the issue — 1–2 sentences. Not "here are some pastors." Set up the journey.]
+text: One sentence that sets up the journey.
 
 ## clip
 feed: ...
@@ -55,62 +41,48 @@ episode: ...
 start_sec: ...
 end_sec: ...
 quote: "..."
-episode_title: [for overlay]
-feed_title: [for overlay, optional]
+episode_title: ...
+feed_title: ...
 
 ## transition
-[Radio-style "link": reflect on what just played, add depth, flow into the next. Can use question, concern, conceit. 1–3 sentences. Not DJ-ish — substantive.]
-
-## clip
-...
+1-3 sentences connecting the previous clip to the next.
 
 ## outro
-[Wrap up. What did we learn? Where might the viewer go from here?]
+Brief wrap-up that points viewers to the fuller context.
 
 ## title_card
 id: outro
-text: [Closing thought or call to action]
+text: Full episodes and full context at prays.be
 ```
 
-### Script quality guidelines
+`render_video.py` treats `transition` sections as title cards named `transition_1`, `transition_2`, and so on.
 
-- **Title card intro**: Discuss the issue briefly. Why this topic? What’s at stake? Set up the journey.
-- **Transitions**: After each clip, say something that adds depth — reflect, question, connect. Flow into the next clip. Think radio links, not DJ banter.
-- **Goal**: Compelling, inspiring, exploratory. Take the viewer on a journey. Curate clips that build on each other.
-- **Fair use**: Short excerpts, clear attribution, your commentary/analysis carries the piece.
-
-## Pipeline
-
-1. **search_clips** — Query index, apply rules, output JSON
-2. **write_script** — Produce markdown script (LLM fills intro, transitions, outro, title card text)
-3. **make_title_cards** — Generate images from `title_card` sections
-4. **render_video** — Download, extract clips, add source overlays, concatenate
-5. **Register clips** — Append to `used-clips.json` so future videos don’t reuse them
-
-## Shorts experiment
-
-See `shorts-experiment/AGENTS.md` for vertical shorts. TODO: OpenCV face smart-crop for variable layouts (see shorts AGENTS.md). (2–4 clips, 10–25s each, split-screen layout). Same index, tuned for quick iteration.
-
-## Files
-
-- `search_clips.py` — Query index, one-per-feed, duration rules, exclude-used
-- `write_script.py` — Skeleton from clips; LLM enriches intro/transitions/outro
-- `make_title_cards.py` — PNG title cards from script
-- `render_video.py` — ffmpeg: download to shared content cache, extract, overlay source (feed + episode title), concat
-- `_lib.py` — clip_id, used-clips registry, get_feed_title
-
-## Example workflow
+## Workflow
 
 ```powershell
-# 1. Search (exclude clips already used)
-sc.ps1 search --theme "when forgiveness feels impossible" --output out/clips.json --exclude-used out/used-clips.json
+# Search renderable clips
+sc.ps1 search --theme "when forgiveness feels impossible" --output out/sermon-clips-examples/forgiveness-clips.json --exclude-used out/sermon-clips-examples/used-clips.json
 
-# 2. LLM: Read clips.json, write a rich script (intro, transitions, outro, title card text)
-#    Edit out/forgiveness-video.md with compelling content
+# Write first draft script
+sc.ps1 write --theme "when forgiveness feels impossible" --clips out/sermon-clips-examples/forgiveness-clips.json --output out/sermon-clips-examples/forgiveness-video.md
 
-# 3. Generate title cards (intro + transitions + outro)
-sc.ps1 cards --script out/forgiveness-video.md --output out/title-cards
+# Generate cards
+sc.ps1 cards --script out/sermon-clips-examples/forgiveness-video.md --output out/sermon-clips-examples/forgiveness-cards
 
-# 4. Render (adds source overlay to clips, registers used clips)
-sc.ps1 render --script out/forgiveness-video.md --output out/forgiveness.mp4 --title-cards out/title-cards --register out/used-clips.json
+# Render
+sc.ps1 render --script out/sermon-clips-examples/forgiveness-video.md --output out/sermon-clips-examples/forgiveness.mp4 --title-cards out/sermon-clips-examples/forgiveness-cards --register out/sermon-clips-examples/used-clips.json
+
+# Clean leftovers from older runs if needed
+sc.ps1 clean --path out/sermon-clips-examples
 ```
+
+## Useful flags
+
+- `search_clips.py`: `--allow-audio`, `--allow-missing-transcript`, `--exclude-used`, `--no-cache`
+- `render_video.py`: `--no-download`, `--trim-silence`, `--no-subs`, `--no-overlay`, `--min-clips`, `--keep-work`
+
+## Quality bar
+
+- Do not accept card-only or one-clip long-form renders.
+- Prefer clips that can render cleanly before writing scripts.
+- Keep commentary substantive. Short excerpts plus framing, not clip dumping.
