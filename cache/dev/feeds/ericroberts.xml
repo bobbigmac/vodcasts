@@ -15,7 +15,7 @@ xmlns:rawvoice="https://blubrry.com/developer/rawvoice-rss/"
 	<atom:link href="https://ericrobertsfitness.com/feed/podcast" rel="self" type="application/rss+xml" />
 	<link>https://ericrobertsfitness.com/</link>
 	<description>Online Fitness Coaching</description>
-	<lastBuildDate>Fri, 06 Mar 2026 11:00:00 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 09 Mar 2026 11:00:00 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -42,6 +42,34 @@ xmlns:rawvoice="https://blubrry.com/developer/rawvoice-rss/"
 	<podcast:podping usesPodping="true" />
 	<podcast:guid>a9191b09-02b4-5c01-a7da-a136ad1ba72e</podcast:guid>
 	<rawvoice:subscribe feed="https://ericrobertsfitness.com/feed/podcast" itunes="https://podcasts.apple.com/us/podcast/eric-roberts-fitness/id1473838608" blubrry="https://blubrry.com/eric_roberts_fitness_podcast/" spotify="https://open.spotify.com/show/2gSP16i6mmEu6kzzbCUXel"></rawvoice:subscribe>
+	<item>
+		<title>ERF 973: Injuries, Mental Battles, and 40 Pounds Lost: Grant&#8217;s Story</title>
+		<link>https://ericrobertsfitness.com/erf-973-injuries-mental-battles-and-40-pounds-lost-grants-journey/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=erf-973-injuries-mental-battles-and-40-pounds-lost-grants-journey</link>
+		<pubDate>Mon, 09 Mar 2026 11:00:00 +0000</pubDate>
+		<guid isPermaLink="false">https://ericrobertsfitness.com/?p=8580</guid>
+		<comments>https://ericrobertsfitness.com/erf-973-injuries-mental-battles-and-40-pounds-lost-grants-journey/#respond</comments>
+		<wfw:commentRss>https://ericrobertsfitness.com/erf-973-injuries-mental-battles-and-40-pounds-lost-grants-journey/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<category><![CDATA[Podcast]]></category>
+		<description>Work With Me 1:1 Coaching - https://ericrobertsfitness.com/erf-1on1.html
+
+In this episode, I sit down with my assistant coach Tara and our client Grant Bourdage to talk about his incredible transformation — going from 310 pounds, multiple surgeries, and a hip replacement at just 25 years old, to losing 40 pounds and completely changing his life. We dive into the mental and physical battles Grant faced, how he pushed through injuries, job loss, and self-doubt, and what finally made him take action. This is a raw, honest, and deeply inspiring conversation about what it really takes to bet on yourself when everything feels stacked against you.
+
+Join my Clubhouse App - https://ericrobertsfitness.com/clubhouse-page.html
+
+Free Calorie Calculator https://ericrobertsfitness.com/free-calorie-calculator/
+
+20% Off Legion Athletic Supplements Code “ERIC” HERE https://legionathletics.rfrl.co/qj2dy
+
+Youtube Channel https://www.youtube.com/@ericrobertsfitness
+
+Video Podcast: https://www.youtube.com/@EricRobertsFitnessPodcast</description>
+		<enclosure url="https://media.blubrry.com/eric_roberts_fitness_podcast/ericrobertsfitness.com/wp-content/uploads/2026/03/riverside_eric_tara-granston-magic-episode-_-mar-03-2026_member__-coaches-po.mp3" length="30779159" type="audio/mpeg" />
+		<itunes:author>Eric Roberts Fitness</itunes:author>
+		<itunes:episodeType>full</itunes:episodeType>
+		<itunes:explicit>false</itunes:explicit>
+		<itunes:duration>1:04:07</itunes:duration>
+	</item>
 	<item>
 		<title>ERF 972: Top Life Lessons I Learned NOT From School</title>
 		<link>https://ericrobertsfitness.com/erf-972-top-life-lessons-i-learned-not-from-school/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=erf-972-top-life-lessons-i-learned-not-from-school</link>
@@ -28973,27 +29001,6 @@ If you read this and want anything covered more in depth, feel free to reach out
 		<itunes:author>Eric Roberts Fitness</itunes:author>
 		<itunes:episodeType>full</itunes:episodeType>
 		<itunes:duration>24:03</itunes:duration>
-	</item>
-	<item>
-		<title>ERF Q&#038;A 003: Tips to Reduce Hunger While Dieting</title>
-		<link>https://ericrobertsfitness.com/erf-qa-003-tips-to-reduce-hunger-while-dieting/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=erf-qa-003-tips-to-reduce-hunger-while-dieting</link>
-		<pubDate>Thu, 22 Aug 2019 19:00:11 +0000</pubDate>
-		<guid isPermaLink="false">https://ericrobertsfitness.com/?p=340</guid>
-		<comments>https://ericrobertsfitness.com/erf-qa-003-tips-to-reduce-hunger-while-dieting/#respond</comments>
-		<wfw:commentRss>https://ericrobertsfitness.com/erf-qa-003-tips-to-reduce-hunger-while-dieting/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		<category><![CDATA[Podcast]]></category>
-		<description>This Q&amp;A is something I get asked about a lot during someones fat loss journey.
-
-Hunger is somewhat expected while being on a diet, obviously.
-
-But there are certain ways to suppress that hunger if you strategically plan for it.
-
-Listen to this weeks Q&amp;A to find out 4 immediately actionable tips to help in your journey!</description>
-		<enclosure url="https://media.blubrry.com/eric_roberts_fitness_podcast/content.blubrry.com/eric_roberts_fitness_podcast/QA-3-Audio-Only-W-music.mp3" length="5212708" type="audio/mpeg" />
-		<itunes:author>Eric Roberts Fitness</itunes:author>
-		<itunes:episodeType>full</itunes:episodeType>
-		<itunes:duration>5:31</itunes:duration>
 	</item>
 </channel>
 </rss>

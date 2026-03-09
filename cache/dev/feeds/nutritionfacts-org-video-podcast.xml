@@ -15,7 +15,7 @@ xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
 	<atom:link href="https://nutritionfacts.org/videos/feed/podcast/" rel="self" type="application/rss+xml" />
 	<link>https://nutritionfacts.org/videos/</link>
 	<description>Michael Greger, M.D. FACLM, founder of NutritionFacts.org and New York Times best-selling author of How Not to Die, How Not to Diet, and the just-released How Not to Age, brings you the latest in evidence-based nutrition research, delivered in easy to understand video segments. NutritionFacts.org is a non-profit and non-commercial public health organization, and more than 2,000 videos on virtually every aspect of healthy eating are available on our website. New videos and blogs are uploaded every day–always without any sponsors, ads, brand partnerships, or paid subscriptions.</description>
-	<lastBuildDate>Mon, 09 Mar 2026 05:31:17 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 09 Mar 2026 11:50:26 +0000</lastBuildDate>
 	<language>en</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -59,6 +59,22 @@ NutritionFacts.org is a non-profit and non-commercial public health organization
 	<rawvoice:frequency>Tri-Weekly</rawvoice:frequency>
 	<rawvoice:donate href="https://nutritionfacts.org/donate/">Donate to NutritionFacts.org</rawvoice:donate>
 	<rawvoice:subscribe feed="https://nutritionfacts.org/videos/feed/podcast/" itunes="https://itunes.apple.com/us/podcast/nutritionfacts-org-video-podcast/id1210294497"></rawvoice:subscribe>
+	<item>
+		<title>The Best Milk Alternative: Oat vs. Soy Milk</title>
+		<link>https://nutritionfacts.org/video/the-best-milk-alternative-oat-vs-soy-milk/</link>
+		<pubDate>Mon, 09 Mar 2026 11:50:26 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=118318</guid>
+		<description>Can oat milk’s nutritional profile compete with soy milk’s?</description>
+		<content:encoded><![CDATA[Can oat milk’s nutritional profile compete with soy milk’s?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/02/72-07-V03-YouTube.mp4" length="306186347" type="video/mp4" />
+		<itunes:subtitle>Can oat milk’s nutritional profile compete with soy milk’s?</itunes:subtitle>
+		<itunes:summary><![CDATA[Can oat milk’s nutritional profile compete with soy milk’s?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>6:06</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=118318-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
 	<item>
 		<title>Friday Favorites: Do Garlic, Beer, Bananas, and B Vitamins Really Repel Mosquitoes?</title>
 		<link>https://nutritionfacts.org/video/friday-favorites-do-garlic-beer-bananas-and-b-vitamins-really-repel-mosquitoes/</link>
@@ -1643,22 +1659,6 @@ NutritionFacts.org is a non-profit and non-commercial public health organization
 		<itunes:explicit>clean</itunes:explicit>
 		<itunes:duration>2:32</itunes:duration>
 		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=114821-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
-		</item>
-	<item>
-		<title>Friday Favorites: Mixed Nuts Put to the Test for Erectile Dysfunction</title>
-		<link>https://nutritionfacts.org/video/friday-favorites-mixed-nuts-put-to-the-test-for-erectile-dysfunction/</link>
-		<pubDate>Fri, 18 Jul 2025 11:50:14 +0000</pubDate>
-		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=114455</guid>
-		<description>Walnuts, almonds, and hazelnuts are put to the test for erectile dysfunction, sexual function, sperm count, and semen quality.</description>
-		<content:encoded><![CDATA[Walnuts, almonds, and hazelnuts are put to the test for erectile dysfunction, sexual function, sperm count, and semen quality.]]></content:encoded>
-		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/07/3-Mixed-Nuts-Put-to-the-Test-for-Erectile-Dysfunction.mp4" length="233796028" type="video/mp4" />
-		<itunes:subtitle>Walnuts, almonds, and hazelnuts are put to the test for erectile dysfunction, sexual function, sperm count, and semen quality.</itunes:subtitle>
-		<itunes:summary><![CDATA[Walnuts, almonds, and hazelnuts are put to the test for erectile dysfunction, sexual function, sperm count, and semen quality.]]></itunes:summary>
-		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
-		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
-		<itunes:explicit>clean</itunes:explicit>
-		<itunes:duration>4:59</itunes:duration>
-		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=114455-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
 		</item>
 </channel>
 </rss>
