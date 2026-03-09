@@ -33,6 +33,53 @@ ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_OUT_DIR = ROOT / "podcast-transcripts"
 DEFAULT_DB_PATH = ROOT / "podcastindex-feeds" / "podcastindex_feeds.db"
 DEFAULT_STATE_DB = ROOT / "podcast-transcripts" / "podcastindex-miner-state.sqlite"
+DEFAULT_SELECTION_PROFILE = "curated"
+DEFAULT_CURATED_MIN_POPULARITY = 8
+DEFAULT_EXCLUDED_HOSTS = (
+    "castbox.fm",
+    "ximalaya.com",
+)
+DEFAULT_WARNING_HOSTS = (
+    "anchor.fm",
+    "feedburner.com",
+    "podomatic.com",
+    "podbean.com",
+    "rss.com",
+    "soundcloud.com",
+    "spreaker.com",
+)
+DEFAULT_EXCLUDED_TEXT_PATTERNS = (
+    "horoscope",
+    "zodiac",
+    "affirmation",
+    "white noise",
+    "sleep sounds",
+    "rain sounds",
+    "nature sounds",
+    "binaural",
+    "solfeggio",
+    "432hz",
+    "528hz",
+    "deep house",
+    "dj mix",
+    "lofi",
+    "lo-fi",
+    "pure music",
+    "ambient music",
+    "meditation music",
+    "sleep music",
+    "asmr",
+    "sound effects",
+)
+DEFAULT_WARNING_TEXT_PATTERNS = (
+    "radio",
+    "live stream",
+    "24/7",
+    "music mix",
+    "instrumental",
+    "fm",
+    "am",
+)
 
 
 def format_bytes(num_bytes: float) -> str:
@@ -75,6 +122,8 @@ class FeedCandidate:
     popularity_score: int
     newest_item_pubdate: int
     podcast_guid: str
+    selection_profile: str
+    warning_flags: list[str]
     metadata: dict[str, Any]
 
 
@@ -161,6 +210,7 @@ class PodcastIndexMiner:
         progress_every: int,
         progress_log: Path | None,
         status_json: Path | None,
+        selection_profile: str,
     ) -> None:
         self.db_path = db_path.resolve()
         self.out_dir = out_dir.resolve()
@@ -176,6 +226,9 @@ class PodcastIndexMiner:
         self.progress_every = max(5, progress_every)
         self.progress_log = progress_log.resolve() if progress_log else None
         self.status_json = status_json.resolve() if status_json else None
+        self.selection_profile = (selection_profile or DEFAULT_SELECTION_PROFILE).strip().lower()
+        if self.selection_profile not in {"curated", "broad"}:
+            raise ValueError("selection_profile must be 'curated' or 'broad'")
         self.sessions = ThreadLocalSessions()
         self.host_limiter = HostLimiter(self.per_host)
         self.manifest_path = self.out_dir / "podcastindex-manifest.json"
@@ -209,8 +262,78 @@ class PodcastIndexMiner:
                 "generated_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                 "workers": self.workers,
                 "per_host": self.per_host,
+                "selection_profile": self.selection_profile,
+                "effective_min_popularity": self.effective_min_popularity(),
             }
         )
+
+    def effective_min_popularity(self) -> int:
+        if self.selection_profile == "curated":
+            return max(self.min_popularity, DEFAULT_CURATED_MIN_POPULARITY)
+        return self.min_popularity
+
+    def selection_text_sql(self) -> str:
+        return (
+            "lower("
+            "coalesce(title, '') || ' ' || "
+            "coalesce(description, '') || ' ' || "
+            "coalesce(category1, '') || ' ' || "
+            "coalesce(category2, '') || ' ' || "
+            "coalesce(category3, '') || ' ' || "
+            "coalesce(generator, '') || ' ' || "
+            "coalesce(itunesAuthor, '') || ' ' || "
+            "coalesce(itunesOwnerName, '')"
+            ")"
+        )
+
+    def candidate_order_sql(self) -> str:
+        if self.selection_profile == "curated":
+            warning_host_sql = ",".join(f"'{host}'" for host in DEFAULT_WARNING_HOSTS)
+            return (
+                "popularityScore desc, "
+                "case when priority >= 0 then priority else -1 end desc, "
+                "case when lower(itunesType) in ('episodic', 'serial') then 1 else 0 end desc, "
+                f"case when lower(host) in ({warning_host_sql}) then 0 else 1 end desc, "
+                "case when newestItemPubdate >= strftime('%s', 'now') - 31536000 then 1 else 0 end desc, "
+                "case "
+                "when episodeCount between 20 and 800 then 2 "
+                "when episodeCount between 5 and 1200 then 1 "
+                "else 0 end desc, "
+                "newestItemPubdate desc, "
+                "episodeCount desc, "
+                "id asc"
+            )
+        return "popularityScore desc, episodeCount desc, newestItemPubdate desc, id asc"
+
+    def warning_flags_for_row(self, row: sqlite3.Row) -> list[str]:
+        flags: list[str] = []
+        host = str(row["host"] or "").strip().lower()
+        title = str(row["title"] or "").strip().lower()
+        description = str(row["description"] or "").strip().lower()
+        combined = " ".join(
+            [
+                title,
+                description,
+                str(row["category1"] or "").strip().lower(),
+                str(row["category2"] or "").strip().lower(),
+                str(row["category3"] or "").strip().lower(),
+            ]
+        )
+        if host in DEFAULT_WARNING_HOSTS:
+            flags.append(f"warning_host:{host}")
+        if int(row["priority"] or -1) < 0:
+            flags.append("no_priority_signal")
+        if int(row["episodeCount"] or 0) >= 1000:
+            flags.append("very_high_episode_count")
+        newest_item_pubdate = int(row["newestItemPubdate"] or 0)
+        if newest_item_pubdate > 0 and newest_item_pubdate < int(time.time()) - (86400 * 365 * 2):
+            flags.append("stale_feed")
+        if int(row["itunesId"] or 0) <= 0:
+            flags.append("no_itunes_id")
+        for pattern in DEFAULT_WARNING_TEXT_PATTERNS:
+            if pattern in combined:
+                flags.append(f"warning_text:{pattern}")
+        return sorted(set(flags))
 
     def candidate_where_parts(self) -> tuple[list[str], list[object]]:
         where_parts = [
@@ -221,13 +344,23 @@ class PodcastIndexMiner:
             "url <> ''",
         ]
         params: list[object] = []
-        if self.min_popularity > 0:
+        effective_min_popularity = self.effective_min_popularity()
+        if effective_min_popularity > 0:
             where_parts.append("popularityScore >= ?")
-            params.append(self.min_popularity)
+            params.append(effective_min_popularity)
         if self.hosts:
             host_params = ",".join("?" for _ in self.hosts)
             where_parts.append(f"lower(host) in ({host_params})")
             params.extend(self.hosts)
+        if self.selection_profile == "curated":
+            where_parts.append("itunesId > 0")
+            host_params = ",".join("?" for _ in DEFAULT_EXCLUDED_HOSTS)
+            where_parts.append(f"lower(host) not in ({host_params})")
+            params.extend(DEFAULT_EXCLUDED_HOSTS)
+            text_sql = self.selection_text_sql()
+            for pattern in DEFAULT_EXCLUDED_TEXT_PATTERNS:
+                where_parts.append(f"{text_sql} not like ?")
+                params.append(f"%{pattern}%")
         return where_parts, params
 
     def candidate_subquery_sql(self) -> tuple[str, list[object]]:
@@ -237,7 +370,7 @@ class PodcastIndexMiner:
             "select id "
             "from podcasts "
             f"where {' and '.join(where_parts)} "
-            "order by popularityScore desc, episodeCount desc, newestItemPubdate desc, id asc"
+            f"order by {self.candidate_order_sql()} "
             f"{limit_clause}"
         )
         return sql, params
@@ -404,7 +537,7 @@ class PodcastIndexMiner:
             "select * "
             "from podcasts "
             f"where {' and '.join(where_parts)} "
-            "order by popularityScore desc, episodeCount desc, newestItemPubdate desc, id asc"
+            f"order by {self.candidate_order_sql()} "
             f"{limit_clause}"
         )
         cursor = conn.execute(sql, params)
@@ -413,6 +546,10 @@ class PodcastIndexMiner:
             if not rows:
                 break
             for row in rows:
+                warning_flags = self.warning_flags_for_row(row)
+                metadata = {key: row[key] for key in row.keys()}
+                metadata["_selection_profile"] = self.selection_profile
+                metadata["_selection_warning_flags"] = warning_flags
                 yield FeedCandidate(
                     feed_id=int(row["id"]),
                     url=str(row["url"]),
@@ -422,7 +559,9 @@ class PodcastIndexMiner:
                     popularity_score=int(row["popularityScore"] or 0),
                     newest_item_pubdate=int(row["newestItemPubdate"] or 0),
                     podcast_guid=str(row["podcastGuid"] or ""),
-                    metadata={key: row[key] for key in row.keys()},
+                    selection_profile=self.selection_profile,
+                    warning_flags=warning_flags,
+                    metadata=metadata,
                 )
         conn.close()
 
@@ -703,6 +842,8 @@ class PodcastIndexMiner:
         meta = {
             "podcast_meta_version": 1,
             "source_kind": "podcastindex_feed_scan",
+            "selection_profile": outcome.metadata.get("_selection_profile", self.selection_profile),
+            "selection_warning_flags": outcome.metadata.get("_selection_warning_flags", []),
             "feed_id": outcome.feed_id,
             "show_slug": outcome.show_slug,
             "show_title": outcome.show_title,
@@ -868,6 +1009,8 @@ class PodcastIndexMiner:
                 "projected_disk_bytes": projected_disk_bytes,
                 "workers": self.workers,
                 "per_host": self.per_host,
+                "selection_profile": self.selection_profile,
+                "effective_min_popularity": self.effective_min_popularity(),
                 "started_at": dt.datetime.fromtimestamp(start_time, tz=dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
                 "updated_at_epoch": now_ts,
             }
@@ -907,7 +1050,8 @@ class PodcastIndexMiner:
             f"transcript_feeds={baseline_transcript_feeds:,} "
             f"transcript_files={baseline_transcript_files:,} "
             f"disk={format_bytes(baseline_disk_bytes)} "
-            f"workers={self.workers} per_host={self.per_host}",
+            f"workers={self.workers} per_host={self.per_host} "
+            f"profile={self.selection_profile} min_popularity={self.effective_min_popularity()}",
             "",
         ])
         self.print_progress(
@@ -1008,7 +1152,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--workers", type=int, default=16, help="Global worker pool size.")
     parser.add_argument("--per-host", type=int, default=2, help="Max concurrent HTTP requests per host.")
     parser.add_argument("--limit-feeds", type=int, default=0, help="Limit number of candidate feeds scanned (0 = no limit).")
-    parser.add_argument("--min-popularity", type=int, default=0, help="Minimum popularityScore from the PodcastIndex DB.")
+    parser.add_argument("--min-popularity", type=int, default=0, help="Minimum popularityScore from the PodcastIndex DB. In curated mode the effective minimum defaults to at least 8.")
+    parser.add_argument("--selection-profile", choices=["curated", "broad"], default=DEFAULT_SELECTION_PROFILE, help="Curated prioritizes likely real/popular podcasts and excludes obvious junk; broad keeps the old wider scan behavior.")
     parser.add_argument("--host", action="append", default=[], help="Restrict scanning to specific host(s). Repeatable.")
     parser.add_argument("--feed-timeout", type=int, default=30, help="Timeout in seconds for feed fetches.")
     parser.add_argument("--transcript-timeout", type=int, default=30, help="Timeout in seconds for transcript fetches.")
@@ -1036,6 +1181,7 @@ def main() -> None:
         progress_every=int(args.progress_every),
         progress_log=Path(args.progress_log) if args.progress_log else None,
         status_json=Path(args.status_json) if args.status_json else None,
+        selection_profile=str(args.selection_profile or DEFAULT_SELECTION_PROFILE),
     )
     miner.run()
 

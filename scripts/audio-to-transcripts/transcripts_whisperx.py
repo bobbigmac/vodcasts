@@ -239,6 +239,12 @@ def _parse_args() -> argparse.Namespace:
         help="Limit total episodes processed across all feeds (0 = all).",
     )
     p.add_argument(
+        "--concurrency",
+        type=int,
+        default=0,
+        help="Max parallel workers for generation (0 = use default: 2 when execute, 1 when dry-run).",
+    )
+    p.add_argument(
         "--download-provided",
         action="store_true",
         help="Download provided podcast:transcript assets when present (default).",
@@ -1361,9 +1367,12 @@ def main() -> None:
     feeds_defaulted = not str(args.feeds or "").strip()
     cache_defaulted = not str(args.cache or "").strip()
     feeds_path = Path(args.feeds) if not feeds_defaulted else (VODCASTS_ROOT / "feeds" / f"{env_name}.md")
-    cache_dir = Path(args.cache) if not cache_defaulted else (VODCASTS_ROOT / "cache" / env_name)
+    cache_dir = (Path(args.cache) if not cache_defaulted else (VODCASTS_ROOT / "cache" / env_name)).resolve()
     feeds_cache_dir = cache_dir / "feeds"
-    out_dir = Path(args.out) if args.out else (cache_dir / "transcripts")
+    out_dir = (Path(args.out) if args.out else (cache_dir / "transcripts")).resolve()
+    # Transcripts always go to project cache, never temp/ramdisk
+    if str(out_dir).upper().startswith("Q:"):
+        raise RuntimeError(f"transcript out_dir must not be on temp drive Q:; got {out_dir}")
 
     cfg = load_sources_config(feeds_path)
     sources = list(cfg.sources)
@@ -1385,7 +1394,9 @@ def main() -> None:
     only_episode_slug = _norm(args.episode_slug or "")
 
     env_part = f" env={env_name}" if (feeds_defaulted or cache_defaulted) else ""
-    print(f"[plan]{env_part} feeds={feeds_path} cache={cache_dir} out={out_dir}")
+    out_abs = str(out_dir.resolve())
+    print(f"[plan]{env_part} feeds={feeds_path} cache={cache_dir}")
+    print(f"[plan] transcript out (absolute): {out_abs}")
     print(
         "[plan] "
         + f"sources={len(sources)} download_provided={bool(args.download_provided)} "
@@ -1438,7 +1449,7 @@ def main() -> None:
         if only_episode_slug:
             eps = [e for e in eps if isinstance(e, dict) and _norm(e.get("slug") or "") == only_episode_slug]
 
-        feed_out = out_dir / src.id
+        feed_out = (out_dir / src.id).resolve()
         for ep in eps:
             ep_slug = _norm(ep.get("slug") or "")
             if not ep_slug:
@@ -1465,6 +1476,22 @@ def main() -> None:
             else:
                 planned_missed += 1
                 continue
+
+            # Belt-and-suspenders: skip if we already have this episode (glob by exact slug, avoids path bugs)
+            skipped_via_glob = False
+            if not bool(args.refresh) and action == "generate":
+                for p in feed_out.glob("*.vtt"):
+                    if p.stem == ep_slug:
+                        try:
+                            if p.stat().st_size > 1024:
+                                _maybe_normalize_existing_vtt(p, execute=bool(args.execute))
+                                skipped_existing += 1
+                                skipped_via_glob = True
+                                break
+                        except OSError:
+                            pass
+                if skipped_via_glob:
+                    continue
 
             if not bool(args.refresh) and required and all(p.exists() for p in required):
                 # Restartable runs: treat an existing valid VTT as complete and never regenerate it.
@@ -1567,7 +1594,11 @@ def main() -> None:
 
     interrupted = False
     try:
-        max_workers = _TRANSCRIPTION_CONCURRENCY if bool(args.execute) and bool(args.generate_missing) else 1
+        concurrency = int(args.concurrency or 0)
+        if concurrency > 0:
+            max_workers = concurrency
+        else:
+            max_workers = _TRANSCRIPTION_CONCURRENCY if bool(args.execute) and bool(args.generate_missing) else 1
         pending = list(work)
         active_feeds: set[str] = set()
         future_to_item: dict[Future[WorkOutcome], WorkItem] = {}

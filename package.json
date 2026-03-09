@@ -14,11 +14,13 @@
     "dev": "node scripts/vod.cjs dev",
     "find-feeds": "node scripts/find-feeds.js",
     "answer-ui": "node scripts/answer-engine/run_query_ui.mjs",
-    "podcast-transcripts:mine": "python -u scripts/podcast-transcription-miner/mine_podcastindex_transcripts.py --workers 16 --per-host 2 --progress-every 15",
+    "podcast-transcripts:mine": "python -u scripts/podcast-transcription-miner/mine_podcastindex_transcripts.py --selection-profile curated --workers 16 --per-host 2 --progress-every 15",
     "transcripts": "powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/setup-venv.ps1 && powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/run-transcripts-whisperx.ps1 -GenerateMissing -Execute",
     "transcripts:hq": "powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/setup-venv.ps1 && powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/run-transcripts-whisperx.ps1 -GenerateMissing -Execute -WhisperxModel large-v3",
     "transcripts:fast": "powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/setup-venv.ps1 && powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/run-transcripts-whisperx.ps1 -GenerateMissing -Execute -WhisperxModel small -WhisperxComputeType int8",
-    "transcripts:turbo": "powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/setup-venv.ps1 && powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/run-transcripts-whisperx.ps1 -GenerateMissing -Execute -WhisperxModel base.en"
+    "transcripts:turbo": "powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/setup-venv.ps1 && powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/run-transcripts-whisperx.ps1 -GenerateMissing -Execute -WhisperxModel base.en",
+    "transcripts:turbo-one": "powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/setup-venv.ps1 && powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/run-transcripts-whisperx.ps1 -GenerateMissing -Execute -WhisperxModel base.en -Concurrency 1",
+    "transcripts:turbo-one:dry": "powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/setup-venv.ps1 && powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/run-transcripts-whisperx.ps1 -GenerateMissing -WhisperxModel base.en -Concurrency 1"
   },
   "license": "UNLICENSED",
   "packageManager": "yarn@1.22.22"

@@ -7,6 +7,7 @@ Param(
   [string]$SourceId = "",
   [string]$EpisodeSlug = "",
   [int]$MaxEpisodesPerFeed = 10,
+  [int]$Concurrency = 0,
   [switch]$NoDownloadProvided,
   [switch]$GenerateMissing,
   [switch]$AllowCpu,
@@ -105,6 +106,7 @@ if ($Out -ne "") { $argsList += @("--out", $Out) }
 if ($AllSources) { $argsList += @("--all-sources") }
 if ($SourceId -ne "") { $argsList += @("--source-id", $SourceId) }
 if ($EpisodeSlug -ne "") { $argsList += @("--episode-slug", $EpisodeSlug) }
+if ($Concurrency -gt 0) { $argsList += @("--concurrency", "$Concurrency") }
 if ($NoDownloadProvided) { $argsList += @("--no-download-provided") }
 if ($GenerateMissing) { $argsList += @("--generate-missing") }
 if ($AllowCpu) { $argsList += @("--allow-cpu") }
