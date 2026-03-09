@@ -1,0 +1,1082 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/" xmlns:podcast="https://podcastindex.org/namespace/1.0" version="2.0">
+	<channel>
+		<title>This Week in Space (Video)</title>
+		<itunes:author>TWiT</itunes:author>
+		<link>https://twit.tv/shows/this-week-in-space</link>
+		<generator>TWiT Feed Generator v4.10</generator>
+		<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+		<language>en-US</language>
+		<copyright>This work is licensed under a Creative Commons License - Attribution-NonCommercial-NoDerivatives 4.0 International - http://creativecommons.org/licenses/by-nc-nd/4.0/</copyright>
+		<creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+		<managingEditor>feedmail@twit.tv (TWiT Editors)</managingEditor>
+		<webMaster>feedmail@twit.tv (TWiT Engineering)</webMaster>
+		<ttl>720</ttl>
+		<sy:updatePeriod>weekly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+		<lastBuildDate>Fri, 06 Mar 2026 14:50:17 PST</lastBuildDate>
+		<pubDate>Fri, 06 Mar 2026 14:50:17 PST</pubDate>
+		<rawvoice:frequency>weekly</rawvoice:frequency>
+		<rawvoice:location>Petaluma, CA</rawvoice:location>
+		<itunes:type>episodic</itunes:type>
+		<itunes:subtitle>This Week in Space podcast covers the new space age plus the race to Mars and other planets.</itunes:subtitle>
+		<itunes:summary>The new space age is upon us, and This Week in Space leaves no topic untouched. Every Friday, join Editor-in-Chief of Ad Astra magazine, Rod Pyle and Managing Editor of Space.com, Tariq Malik as they explore everything related to the cosmos. You can join Club TWiT for $10 per month and get ad-free audio and video feeds for all our shows plus everything else the club offers...or get just this podcast ad-free for $5 per month.
+
+New episodes posted every Friday.</itunes:summary>
+		<description>The new space age is upon us, and This Week in Space leaves no topic untouched. Every Friday, join Editor-in-Chief of Ad Astra magazine, Rod Pyle and Managing Editor of Space.com, Tariq Malik as they explore everything related to the cosmos. You can join Club TWiT for $10 per month and get ad-free audio and video feeds for all our shows plus everything else the club offers...or get just this podcast ad-free for $5 per month.
+
+New episodes posted every Friday.</description>
+		<itunes:keywords>space, technology, mars, the moon, apollo , NASA</itunes:keywords>
+		<rawvoice:rating tv="tv-g">tv-g</rawvoice:rating>
+		<itunes:explicit>no</itunes:explicit>
+		<itunes:block>no</itunes:block>
+		<googleplay:block>No</googleplay:block>
+		<podcast:funding url="https://twit.tv/clubtwit">Become a Club TWiT member!</podcast:funding>
+		<itunes:owner>
+			<itunes:name>Leo Laporte</itunes:name>
+			<itunes:email>feedmail@twit.tv</itunes:email>
+		</itunes:owner>
+		<itunes:category text="Science" />
+		<itunes:category text="Science">
+			<itunes:category text="Astronomy"/>
+		</itunes:category>
+		<itunes:category text="Technology" />
+		<category>Space</category>
+		<category>Technology</category>
+		<image>
+			<title>This Week in Space (Video)</title>
+			<url>https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/This%20Week%20in%20Space/album_art/hd/TWIS_albumart_standard_video.jpg</url>
+			<link>https://twit.tv/shows/this-week-in-space</link>
+		</image>
+		<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/This%20Week%20in%20Space/album_art/hd/TWIS_albumart_standard_video.jpg" />
+		<itunes:new-feed-url>https://feeds.twit.tv/twis_video_hd.xml</itunes:new-feed-url>
+		<rawvoice:subscribe feed="https://feeds.twit.tv/twis_video_hd.xml" itunes="https://podcasts.apple.com/us/podcast/this-week-in-space-video/id1676696187" html="https://twit.tv/shows/this-week-in-space"></rawvoice:subscribe>
+		<atom:link href="https://feeds.twit.tv/twis_video_hd.xml" type="application/rss+xml" rel="self"/>
+		<item>
+			<title>TWiS 200: Our 200th Episode Listener Special! - We&#039;re Talking to You!</title>
+			<itunes:title>Our 200th Episode Listener Special! - We&#039;re Talking to You!</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Fri, 06 Mar 2026 14:45:00 PST</pubDate>
+			<itunes:episode>200</itunes:episode>
+			<podcast:episode>200</podcast:episode>
+			<link>https://twit.tv/shows/this-week-in-space/episodes/200</link>
+			<comments>https://twit.tv/shows/this-week-in-space/episodes/200</comments>
+			<category>News</category>
+			<category>Space</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>We&#039;re Talking to You!</itunes:subtitle>
+			<itunes:keywords>space news, space podcast, rod pyle, tariq malik, This Week in Space, NASA Artemis program, Artemis II updates, Artemis III changes, SLS Block 1, interim cryogenic propulsion stage, Vulcan Centaur, Blue Moon lander, NASA Force hiring initiative</itunes:keywords>
+			<description><![CDATA[
+<p>It's our 200th episode, our annual listener special! We took your comments, suggestions, advice, and insults and wove them into a rollicking, fun-filled hour of mishaps, mayhem, and mirth! Plus space headlines and a whole passel of your space jokes! This is a fun one, so don't be shy—join us!<br /> 
+<br /> 
+Headlines:</p><ul> 
+<li>NASA's Artemis Program Unveils New Details and Updates</li> 
+<li>Moon Safe from Asteroid 2024 YR4 in 2032</li> 
+<li>NASA Launches "NASA Force" Hiring Initiative Led by Jared Isaacman</li> 
+<li>MAVEN Orbiter at Mars Faces Potential Loss—Latest Status Update</li> 
+<li>Total Lunar Eclipse Marks Last Sight Until 2029</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://helixsleep.com/space" target="_blank" rel="sponsored">helixsleep.com/space</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>It's our 200th episode, our annual listener special! We took your comments, suggestions, advice, and insults and wove them into a rollicking, fun-filled hour of mishaps, mayhem, and mirth! Plus space headlines and a whole passel of your space jokes! This is a fun one, so don't be shy—join us!<br /> 
+<br /> 
+Headlines:</p><ul> 
+<li>NASA's Artemis Program Unveils New Details and Updates</li> 
+<li>Moon Safe from Asteroid 2024 YR4 in 2032</li> 
+<li>NASA Launches "NASA Force" Hiring Initiative Led by Jared Isaacman</li> 
+<li>MAVEN Orbiter at Mars Faces Potential Loss—Latest Status Update</li> 
+<li>Total Lunar Eclipse Marks Last Sight Until 2029</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://helixsleep.com/space" target="_blank" rel="sponsored">helixsleep.com/space</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>It's our 200th episode, our annual listener special! We took your comments, suggestions, advice, and insults and wove them into a rollicking, fun-filled hour of mishaps, mayhem, and mirth! Plus space headlines and a whole passel of your space jokes! This is a fun one, so don't be shy—join us!<br /> 
+<br /> 
+Headlines:</p><ul> 
+<li>NASA's Artemis Program Unveils New Details and Updates</li> 
+<li>Moon Safe from Asteroid 2024 YR4 in 2032</li> 
+<li>NASA Launches "NASA Force" Hiring Initiative Led by Jared Isaacman</li> 
+<li>MAVEN Orbiter at Mars Faces Potential Loss—Latest Status Update</li> 
+<li>Total Lunar Eclipse Marks Last Sight Until 2029</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://helixsleep.com/space" target="_blank" rel="sponsored">helixsleep.com/space</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860404/hero/TWIS0200_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0200/twis0200_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:19:31</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0200/twis0200_h264m_1920x1080.mp4" length="1406123751" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0200/twis0200_h264m_1920x1080.mp4" fileSize="1406123751" type="video/mp4" medium="video">
+				<media:title type="plain">TWiS 200: Our 200th Episode Listener Special! - We&#039;re Talking to You!</media:title>
+				<media:description type="plain">We&#039;re Talking to You!</media:description>
+				<media:keywords>space news, space podcast, rod pyle, tariq malik, This Week in Space, NASA Artemis program, Artemis II updates, Artemis III changes, SLS Block 1, interim cryogenic propulsion stage, Vulcan Centaur, Blue Moon lander, NASA Force hiring initiative</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/03/860404/hero/TWIS0200_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Science">IAB15</media:category>
+				<media:credit role="host">Rod Pyle</media:credit>
+				<media:credit role="host">Tariq Malik</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/rod-pyle" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/822413/pictures/rp_athlete_2022.jpg">Rod Pyle</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/tariq-malik" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/822480/pictures/tariq-malik.jpg">Tariq Malik</podcast:person>
+		</item>
+		<item>
+			<title>TWiS 199: The Obsolete Astronaut? - And a New Report on Crewed Mars Missions</title>
+			<itunes:title>The Obsolete Astronaut? - And a New Report on Crewed Mars Missions</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Fri, 27 Feb 2026 14:30:00 PST</pubDate>
+			<itunes:episode>199</itunes:episode>
+			<podcast:episode>199</podcast:episode>
+			<link>https://twit.tv/shows/this-week-in-space/episodes/199</link>
+			<comments>https://twit.tv/shows/this-week-in-space/episodes/199</comments>
+			<category>News</category>
+			<category>Space</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>And a New Report on Crewed Mars Missions</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/future-human-mars-exploration" type="text/html" />
+			<itunes:keywords>space news, space podcast, rod pyle, tariq malik, This Week in Space, NASA Artemis plan, Artemis mission delays, SLS rocket, lunar landers, Starship, Blue Moon, lunar exploration, Gateway space station, Mars exploration, search for life on Mars</itunes:keywords>
+			<description><![CDATA[
+<p>In this age of rapidly advancing AI and robotic technology, do we still need to send humans into space? The argument has long been that people can do things better and faster off-Earth, but the changing face of robotic tech has some feeling otherwise. This week's guest is a returning friend of the show, Dr. Pascal Lee, who has thoughts on how and when robots may perform better--and more safely--than humans in space, and then, of course, Tariq and I worry about how our mechanical masters might take our place in the cosmos. Pascal also reports on his recent experience with the National Academies' report on the human exploration of Mars. Join us!<br /> 
+<br /> 
+Headlines:</p><ul> 
+<li>NASA Unveils Major Overhaul to Artemis Lunar Program, With Arrtemis II &amp; III Facing Delays and a Shift in the Lunar Landing Timeline.</li> 
+<li>Mike Fincke Revealed as Astronaut Medically Evacuated from ISS</li></ul> 
+<p>Main Topic: First Steps for the Human Exploration of Mars</p><ul> 
+<li>National Academies Report Identifies Top Mars Science Priorities for Astronauts, With the Search for Life on Mars Ranked as the Highest Scientific Priority</li> 
+<li>Strategies Debated: Shorter Missions vs. Building Lasting Mars Infrastructure</li> 
+<li>Call for Focused Mars Surface Lab to Maximize Science Returns</li> 
+<li>Discussion of Sample Return, Planetary Protection, and Evolving AI/Robotics/Human Partnerships</li> 
+<li>Debate Over Long-Term Human Settlement on Mars Versus Robotic and Cyborg Exploration</li> 
+<li>Implications of Rapid Progress in Humanoid Robotics and AI for the Future of Space Exploration</li></ul> 
+<p>Also, Rod and Tariq are celebrating their 200th episode of <em>This Week in Space</em> and are hosting an Ask Us Anything (AUA) episode! Get your questions ready and send them to <a href="mailto:twis@twit.tv" target="_blank">twis@twit.tv</a> for Rod and Tariq to answer them!</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p><strong>Guest:</strong> <a href="http://www.pascallee.net/" target="_blank">Pascal Lee</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>In this age of rapidly advancing AI and robotic technology, do we still need to send humans into space? The argument has long been that people can do things better and faster off-Earth, but the changing face of robotic tech has some feeling otherwise. This week's guest is a returning friend of the show, Dr. Pascal Lee, who has thoughts on how and when robots may perform better--and more safely--than humans in space, and then, of course, Tariq and I worry about how our mechanical masters might take our place in the cosmos. Pascal also reports on his recent experience with the National Academies' report on the human exploration of Mars. Join us!<br /> 
+<br /> 
+Headlines:</p><ul> 
+<li>NASA Unveils Major Overhaul to Artemis Lunar Program, With Arrtemis II &amp; III Facing Delays and a Shift in the Lunar Landing Timeline.</li> 
+<li>Mike Fincke Revealed as Astronaut Medically Evacuated from ISS</li></ul> 
+<p>Main Topic: First Steps for the Human Exploration of Mars</p><ul> 
+<li>National Academies Report Identifies Top Mars Science Priorities for Astronauts, With the Search for Life on Mars Ranked as the Highest Scientific Priority</li> 
+<li>Strategies Debated: Shorter Missions vs. Building Lasting Mars Infrastructure</li> 
+<li>Call for Focused Mars Surface Lab to Maximize Science Returns</li> 
+<li>Discussion of Sample Return, Planetary Protection, and Evolving AI/Robotics/Human Partnerships</li> 
+<li>Debate Over Long-Term Human Settlement on Mars Versus Robotic and Cyborg Exploration</li> 
+<li>Implications of Rapid Progress in Humanoid Robotics and AI for the Future of Space Exploration</li></ul> 
+<p>Also, Rod and Tariq are celebrating their 200th episode of <em>This Week in Space</em> and are hosting an Ask Us Anything (AUA) episode! Get your questions ready and send them to <a href="mailto:twis@twit.tv" target="_blank">twis@twit.tv</a> for Rod and Tariq to answer them!</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p><strong>Guest:</strong> <a href="http://www.pascallee.net/" target="_blank">Pascal Lee</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>In this age of rapidly advancing AI and robotic technology, do we still need to send humans into space? The argument has long been that people can do things better and faster off-Earth, but the changing face of robotic tech has some feeling otherwise. This week's guest is a returning friend of the show, Dr. Pascal Lee, who has thoughts on how and when robots may perform better--and more safely--than humans in space, and then, of course, Tariq and I worry about how our mechanical masters might take our place in the cosmos. Pascal also reports on his recent experience with the National Academies' report on the human exploration of Mars. Join us!<br /> 
+<br /> 
+Headlines:</p><ul> 
+<li>NASA Unveils Major Overhaul to Artemis Lunar Program, With Arrtemis II &amp; III Facing Delays and a Shift in the Lunar Landing Timeline.</li> 
+<li>Mike Fincke Revealed as Astronaut Medically Evacuated from ISS</li></ul> 
+<p>Main Topic: First Steps for the Human Exploration of Mars</p><ul> 
+<li>National Academies Report Identifies Top Mars Science Priorities for Astronauts, With the Search for Life on Mars Ranked as the Highest Scientific Priority</li> 
+<li>Strategies Debated: Shorter Missions vs. Building Lasting Mars Infrastructure</li> 
+<li>Call for Focused Mars Surface Lab to Maximize Science Returns</li> 
+<li>Discussion of Sample Return, Planetary Protection, and Evolving AI/Robotics/Human Partnerships</li> 
+<li>Debate Over Long-Term Human Settlement on Mars Versus Robotic and Cyborg Exploration</li> 
+<li>Implications of Rapid Progress in Humanoid Robotics and AI for the Future of Space Exploration</li></ul> 
+<p>Also, Rod and Tariq are celebrating their 200th episode of <em>This Week in Space</em> and are hosting an Ask Us Anything (AUA) episode! Get your questions ready and send them to <a href="mailto:twis@twit.tv" target="_blank">twis@twit.tv</a> for Rod and Tariq to answer them!</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p><strong>Guest:</strong> <a href="http://www.pascallee.net/" target="_blank">Pascal Lee</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860316/hero/TWIS0199_thumbnail-v2.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0199/twis0199_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:01:11</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0199/twis0199_h264m_1920x1080.mp4" length="1082941989" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0199/twis0199_h264m_1920x1080.mp4" fileSize="1082941989" type="video/mp4" medium="video">
+				<media:title type="plain">TWiS 199: The Obsolete Astronaut? - And a New Report on Crewed Mars Missions</media:title>
+				<media:description type="plain">And a New Report on Crewed Mars Missions</media:description>
+				<media:keywords>space news, space podcast, rod pyle, tariq malik, This Week in Space, NASA Artemis plan, Artemis mission delays, SLS rocket, lunar landers, Starship, Blue Moon, lunar exploration, Gateway space station, Mars exploration, search for life on Mars</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860316/hero/TWIS0199_thumbnail-v2.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Science">IAB15</media:category>
+				<media:credit role="host">Rod Pyle</media:credit>
+				<media:credit role="host">Tariq Malik</media:credit>
+				<media:credit role="guest">Pascal Lee</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/rod-pyle" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/822413/pictures/rp_athlete_2022.jpg">Rod Pyle</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/tariq-malik" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/822480/pictures/tariq-malik.jpg">Tariq Malik</podcast:person>
+				<podcast:person role="guest" href="http://www.pascallee.net/">Pascal Lee</podcast:person>
+		</item>
+		<item>
+			<title>TWiS 198: A Dragonfly on Titan - Inside the Dragonfly Mission</title>
+			<itunes:title>A Dragonfly on Titan - Inside the Dragonfly Mission</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Fri, 20 Feb 2026 14:15:00 PST</pubDate>
+			<itunes:episode>198</itunes:episode>
+			<podcast:episode>198</podcast:episode>
+			<link>https://twit.tv/shows/this-week-in-space/episodes/198</link>
+			<comments>https://twit.tv/shows/this-week-in-space/episodes/198</comments>
+			<category>News</category>
+			<category>Space</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Inside the Dragonfly Mission</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/inside-nasas-ambitious-dragonfly-mission" type="text/html" />
+			<itunes:keywords>space news, space podcast, rod pyle, tariq malik, This Week in Space, NASA Artemis II, Artemis Moon rocket, Boeing Starliner failure, Dragonfly mission, Titan Saturn moon, Dr. Elizabeth Turtle, planetary scientist, Johns Hopkins Applied Physics Lab</itunes:keywords>
+			<description><![CDATA[
+<p>One of the most exciting missions to ever journey to the outer solar system has the be the Dragonfly multi-rotor helicopter that will head to Saturn's moon Titan in 2028. The car-sized probe will arrive at that strange, frozen world in 2034, descending into the soupy, smoggy atmosphere and then taking flight before it even touches the ground! We spoke with the mission's Principal Investigator, Dr. Elizabeth "Zibi" Turtle, about the mission's origins, current progress, and what to expect in the coming years. She also took us through a narrated tour of the surface of Titan, with its hydrocarbon sand dunes and methane seas. The Dragonfly mission will be an adventure of a lifetime!<br /> 
+<br /> 
+Headlines:</p><ul> 
+<li>NASA's Artemis II Moon Rocket Aces New Fueling Test</li> 
+<li>Boeing Starliner is Rated a "Type A" Mishap and Faces More Launch Delays</li> 
+<li>Perseverance Rover Gets Instant Mars GPS-like Functionality</li></ul> 
+<p>Main Topic: NASA's Dragonfly Mission to Titan</p><ul> 
+<li>Dr. Elizabeth Turtle explains Dragonfly's origins and mission concept</li> 
+<li>Why Titan is unique and somewhat akin to the primordial Earth, perfect for exploring prebiotic chemistry</li> 
+<li>Dragonfly's advanced science suite and autonomous flying capability</li> 
+<li>Insights from the Cassini/Huygens missions and how they are shaping Dragonfly</li> 
+<li>Navigation, flight strategy, and safety planning for Titan's harsh environment</li> 
+<li>Power, heating, and longevity on Titan's freezing surface</li> 
+<li>Titan's dune landscape, flying conditions, and analogs to Earth</li> 
+<li>Big scientific questions: methane cycle, atmospheric mysteries, and potential surprises</li> 
+<li>Mission timeline, lander design, and the innovative "fly-as-you-land" arrival approach</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.jhuapl.edu/about/people/elizabeth-turtle" target="_blank">Dr. Elizabeth Turtle</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>One of the most exciting missions to ever journey to the outer solar system has the be the Dragonfly multi-rotor helicopter that will head to Saturn's moon Titan in 2028. The car-sized probe will arrive at that strange, frozen world in 2034, descending into the soupy, smoggy atmosphere and then taking flight before it even touches the ground! We spoke with the mission's Principal Investigator, Dr. Elizabeth "Zibi" Turtle, about the mission's origins, current progress, and what to expect in the coming years. She also took us through a narrated tour of the surface of Titan, with its hydrocarbon sand dunes and methane seas. The Dragonfly mission will be an adventure of a lifetime!<br /> 
+<br /> 
+Headlines:</p><ul> 
+<li>NASA's Artemis II Moon Rocket Aces New Fueling Test</li> 
+<li>Boeing Starliner is Rated a "Type A" Mishap and Faces More Launch Delays</li> 
+<li>Perseverance Rover Gets Instant Mars GPS-like Functionality</li></ul> 
+<p>Main Topic: NASA's Dragonfly Mission to Titan</p><ul> 
+<li>Dr. Elizabeth Turtle explains Dragonfly's origins and mission concept</li> 
+<li>Why Titan is unique and somewhat akin to the primordial Earth, perfect for exploring prebiotic chemistry</li> 
+<li>Dragonfly's advanced science suite and autonomous flying capability</li> 
+<li>Insights from the Cassini/Huygens missions and how they are shaping Dragonfly</li> 
+<li>Navigation, flight strategy, and safety planning for Titan's harsh environment</li> 
+<li>Power, heating, and longevity on Titan's freezing surface</li> 
+<li>Titan's dune landscape, flying conditions, and analogs to Earth</li> 
+<li>Big scientific questions: methane cycle, atmospheric mysteries, and potential surprises</li> 
+<li>Mission timeline, lander design, and the innovative "fly-as-you-land" arrival approach</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.jhuapl.edu/about/people/elizabeth-turtle" target="_blank">Dr. Elizabeth Turtle</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>One of the most exciting missions to ever journey to the outer solar system has the be the Dragonfly multi-rotor helicopter that will head to Saturn's moon Titan in 2028. The car-sized probe will arrive at that strange, frozen world in 2034, descending into the soupy, smoggy atmosphere and then taking flight before it even touches the ground! We spoke with the mission's Principal Investigator, Dr. Elizabeth "Zibi" Turtle, about the mission's origins, current progress, and what to expect in the coming years. She also took us through a narrated tour of the surface of Titan, with its hydrocarbon sand dunes and methane seas. The Dragonfly mission will be an adventure of a lifetime!<br /> 
+<br /> 
+Headlines:</p><ul> 
+<li>NASA's Artemis II Moon Rocket Aces New Fueling Test</li> 
+<li>Boeing Starliner is Rated a "Type A" Mishap and Faces More Launch Delays</li> 
+<li>Perseverance Rover Gets Instant Mars GPS-like Functionality</li></ul> 
+<p>Main Topic: NASA's Dragonfly Mission to Titan</p><ul> 
+<li>Dr. Elizabeth Turtle explains Dragonfly's origins and mission concept</li> 
+<li>Why Titan is unique and somewhat akin to the primordial Earth, perfect for exploring prebiotic chemistry</li> 
+<li>Dragonfly's advanced science suite and autonomous flying capability</li> 
+<li>Insights from the Cassini/Huygens missions and how they are shaping Dragonfly</li> 
+<li>Navigation, flight strategy, and safety planning for Titan's harsh environment</li> 
+<li>Power, heating, and longevity on Titan's freezing surface</li> 
+<li>Titan's dune landscape, flying conditions, and analogs to Earth</li> 
+<li>Big scientific questions: methane cycle, atmospheric mysteries, and potential surprises</li> 
+<li>Mission timeline, lander design, and the innovative "fly-as-you-land" arrival approach</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.jhuapl.edu/about/people/elizabeth-turtle" target="_blank">Dr. Elizabeth Turtle</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860233/hero/TWIS0198_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0198/twis0198_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>59:27</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0198/twis0198_h264m_1920x1080.mp4" length="1053607694" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0198/twis0198_h264m_1920x1080.mp4" fileSize="1053607694" type="video/mp4" medium="video">
+				<media:title type="plain">TWiS 198: A Dragonfly on Titan - Inside the Dragonfly Mission</media:title>
+				<media:description type="plain">Inside the Dragonfly Mission</media:description>
+				<media:keywords>space news, space podcast, rod pyle, tariq malik, This Week in Space, NASA Artemis II, Artemis Moon rocket, Boeing Starliner failure, Dragonfly mission, Titan Saturn moon, Dr. Elizabeth Turtle, planetary scientist, Johns Hopkins Applied Physics Lab</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860233/hero/TWIS0198_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Science">IAB15</media:category>
+				<media:credit role="host">Rod Pyle</media:credit>
+				<media:credit role="host">Tariq Malik</media:credit>
+				<media:credit role="guest">Dr. Elizabeth Turtle</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/rod-pyle" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/822413/pictures/rp_athlete_2022.jpg">Rod Pyle</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/tariq-malik" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/822480/pictures/tariq-malik.jpg">Tariq Malik</podcast:person>
+				<podcast:person role="guest" href="https://www.jhuapl.edu/about/people/elizabeth-turtle">Dr. Elizabeth Turtle</podcast:person>
+		</item>
+		<item>
+			<title>TWiS 197: Inside UNOOSA - The UN and Space</title>
+			<itunes:title>Inside UNOOSA - The UN and Space</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Fri, 13 Feb 2026 14:00:00 PST</pubDate>
+			<itunes:episode>197</itunes:episode>
+			<podcast:episode>197</podcast:episode>
+			<link>https://twit.tv/shows/this-week-in-space/episodes/197</link>
+			<comments>https://twit.tv/shows/this-week-in-space/episodes/197</comments>
+			<category>News</category>
+			<category>Space</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>The UN and Space</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/week-space-197-transcript" type="text/html" />
+			<itunes:keywords>space news, space podcast, rod pyle, tariq malik, This Week in Space, SpaceX Crew-12 launch, International Space Station, VAST commercial flight, unoosa, Aarti Holla-Maini, Dr. Rick Janet, Committee on the Peaceful Uses of Outer Space</itunes:keywords>
+			<description><![CDATA[
+<p>Most people don't think of spaceflight when talking about the United Nations, but the UN, through its Office of Outer Space Affairs, or UNOOSA, has been pivotal in securing agreements on space poilicy and behavioral norms. This week, we speak with Aarti Holla-Maini, the director of UNOOSA, and Dr. Rick Jenet, the executive director of Expanding Frontiers and the National Space Society's representative to the UN, about the importance of this office. It's a wide-ranging discussion of the intersection of international space efforts and the intersection with commercial space as we expand activities into Earth orbit, the moon, and beyond.<br /> 
+<br /> 
+Headlines:</p><ul> 
+<li>SpaceX Crew-12 Launch Sends New Astronauts to the ISS</li> 
+<li>Vast Joins Commercial Flights to the ISS, Prepares for Private Space Stations</li> 
+<li>Axiom, Voyager, and Vast Face Off in Commercial LEO Station Race</li> 
+<li>International Collaboration Ramps Up for Future of Space Policy</li></ul> 
+<p>Main Topic: Inside UNOOSA—The United Nations Office for Outer Space Affairs</p><ul> 
+<li>Dr. Rick Janet Explains the Role of COPUOS and UNOOSA in Global Space Governance</li> 
+<li>Aarti Holla-Maini Shares Her Path to Leading UNOOSA and Her Vision for Its Future</li> 
+<li>Distinguishing UNOOSA (the office) from COPUOS (the committee)</li> 
+<li>UNOOSA's Expanding Mission: Capacity Building, Disaster Response, Space Law, and Sustainability</li> 
+<li>The Importance of Neutral Convening, Capacity Building, and Industry Input</li> 
+<li>Growing Need for Space Sustainability, Debris Mitigation, and New Regulatory Focus</li> 
+<li>Anticipating Lunar Activity: Resource Use, Transparency, and Non-Appropriation Principle</li> 
+<li>Engaging Commercial Space Actors While Maintaining Member State Authority</li> 
+<li>Megaconstellations: Building New Norms for Responsible Behavior in Orbit</li> 
+<li>Future UNOOSA Goals: Coordinating Space Traffic, Centralizing Satellite Data Access, and Fostering Global Partnerships</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p><strong>Guests:</strong> <a href="https://www.linkedin.com/in/fjenet/" target="_blank">Fredrick (Rick) Jenet</a> and <a href="https://www.unoosa.org/" target="_blank">Aarti Holla-Maini</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Most people don't think of spaceflight when talking about the United Nations, but the UN, through its Office of Outer Space Affairs, or UNOOSA, has been pivotal in securing agreements on space poilicy and behavioral norms. This week, we speak with Aarti Holla-Maini, the director of UNOOSA, and Dr. Rick Jenet, the executive director of Expanding Frontiers and the National Space Society's representative to the UN, about the importance of this office. It's a wide-ranging discussion of the intersection of international space efforts and the intersection with commercial space as we expand activities into Earth orbit, the moon, and beyond.<br /> 
+<br /> 
+Headlines:</p><ul> 
+<li>SpaceX Crew-12 Launch Sends New Astronauts to the ISS</li> 
+<li>Vast Joins Commercial Flights to the ISS, Prepares for Private Space Stations</li> 
+<li>Axiom, Voyager, and Vast Face Off in Commercial LEO Station Race</li> 
+<li>International Collaboration Ramps Up for Future of Space Policy</li></ul> 
+<p>Main Topic: Inside UNOOSA—The United Nations Office for Outer Space Affairs</p><ul> 
+<li>Dr. Rick Janet Explains the Role of COPUOS and UNOOSA in Global Space Governance</li> 
+<li>Aarti Holla-Maini Shares Her Path to Leading UNOOSA and Her Vision for Its Future</li> 
+<li>Distinguishing UNOOSA (the office) from COPUOS (the committee)</li> 
+<li>UNOOSA's Expanding Mission: Capacity Building, Disaster Response, Space Law, and Sustainability</li> 
+<li>The Importance of Neutral Convening, Capacity Building, and Industry Input</li> 
+<li>Growing Need for Space Sustainability, Debris Mitigation, and New Regulatory Focus</li> 
+<li>Anticipating Lunar Activity: Resource Use, Transparency, and Non-Appropriation Principle</li> 
+<li>Engaging Commercial Space Actors While Maintaining Member State Authority</li> 
+<li>Megaconstellations: Building New Norms for Responsible Behavior in Orbit</li> 
+<li>Future UNOOSA Goals: Coordinating Space Traffic, Centralizing Satellite Data Access, and Fostering Global Partnerships</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p><strong>Guests:</strong> <a href="https://www.linkedin.com/in/fjenet/" target="_blank">Fredrick (Rick) Jenet</a> and <a href="https://www.unoosa.org/" target="_blank">Aarti Holla-Maini</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Most people don't think of spaceflight when talking about the United Nations, but the UN, through its Office of Outer Space Affairs, or UNOOSA, has been pivotal in securing agreements on space poilicy and behavioral norms. This week, we speak with Aarti Holla-Maini, the director of UNOOSA, and Dr. Rick Jenet, the executive director of Expanding Frontiers and the National Space Society's representative to the UN, about the importance of this office. It's a wide-ranging discussion of the intersection of international space efforts and the intersection with commercial space as we expand activities into Earth orbit, the moon, and beyond.<br /> 
+<br /> 
+Headlines:</p><ul> 
+<li>SpaceX Crew-12 Launch Sends New Astronauts to the ISS</li> 
+<li>Vast Joins Commercial Flights to the ISS, Prepares for Private Space Stations</li> 
+<li>Axiom, Voyager, and Vast Face Off in Commercial LEO Station Race</li> 
+<li>International Collaboration Ramps Up for Future of Space Policy</li></ul> 
+<p>Main Topic: Inside UNOOSA—The United Nations Office for Outer Space Affairs</p><ul> 
+<li>Dr. Rick Janet Explains the Role of COPUOS and UNOOSA in Global Space Governance</li> 
+<li>Aarti Holla-Maini Shares Her Path to Leading UNOOSA and Her Vision for Its Future</li> 
+<li>Distinguishing UNOOSA (the office) from COPUOS (the committee)</li> 
+<li>UNOOSA's Expanding Mission: Capacity Building, Disaster Response, Space Law, and Sustainability</li> 
+<li>The Importance of Neutral Convening, Capacity Building, and Industry Input</li> 
+<li>Growing Need for Space Sustainability, Debris Mitigation, and New Regulatory Focus</li> 
+<li>Anticipating Lunar Activity: Resource Use, Transparency, and Non-Appropriation Principle</li> 
+<li>Engaging Commercial Space Actors While Maintaining Member State Authority</li> 
+<li>Megaconstellations: Building New Norms for Responsible Behavior in Orbit</li> 
+<li>Future UNOOSA Goals: Coordinating Space Traffic, Centralizing Satellite Data Access, and Fostering Global Partnerships</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p><strong>Guests:</strong> <a href="https://www.linkedin.com/in/fjenet/" target="_blank">Fredrick (Rick) Jenet</a> and <a href="https://www.unoosa.org/" target="_blank">Aarti Holla-Maini</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860130/hero/TWIS0197_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0197/twis0197_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>58:52</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0197/twis0197_h264m_1920x1080.mp4" length="1045698578" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0197/twis0197_h264m_1920x1080.mp4" fileSize="1045698578" type="video/mp4" medium="video">
+				<media:title type="plain">TWiS 197: Inside UNOOSA - The UN and Space</media:title>
+				<media:description type="plain">The UN and Space</media:description>
+				<media:keywords>space news, space podcast, rod pyle, tariq malik, This Week in Space, SpaceX Crew-12 launch, International Space Station, VAST commercial flight, unoosa, Aarti Holla-Maini, Dr. Rick Janet, Committee on the Peaceful Uses of Outer Space</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860130/hero/TWIS0197_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Science">IAB15</media:category>
+				<media:credit role="host">Rod Pyle</media:credit>
+				<media:credit role="host">Tariq Malik</media:credit>
+				<media:credit role="guest">Fredrick (Rick) Jenet</media:credit>
+				<media:credit role="guest">Aarti Holla-Maini</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/rod-pyle" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/822413/pictures/rp_athlete_2022.jpg">Rod Pyle</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/tariq-malik" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/822480/pictures/tariq-malik.jpg">Tariq Malik</podcast:person>
+				<podcast:person role="guest" href="https://www.linkedin.com/in/fjenet/">Fredrick (Rick) Jenet</podcast:person>
+				<podcast:person role="guest" href="https://www.unoosa.org/">Aarti Holla-Maini</podcast:person>
+		</item>
+		<item>
+			<title>TWiS 196: Becoming Martian! - How Will Human Beings Evolve on Mars?</title>
+			<itunes:title>Becoming Martian! - How Will Human Beings Evolve on Mars?</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Fri, 06 Feb 2026 15:00:00 PST</pubDate>
+			<itunes:episode>196</itunes:episode>
+			<podcast:episode>196</podcast:episode>
+			<link>https://twit.tv/shows/this-week-in-space/episodes/196</link>
+			<comments>https://twit.tv/shows/this-week-in-space/episodes/196</comments>
+			<category>News</category>
+			<category>Space</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>How Will Human Beings Evolve on Mars?</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/week-space-196-transcript" type="text/html" />
+			<itunes:keywords>space news, space podcast, rod pyle, tariq malik, This Week in Space, Artemis 2 launch delay, Perseverance Mars rover AI, human evolution in space, Martian colonization, Dr. Scott Solomon, Becoming Martian, space reproduction, moon base, mars base</itunes:keywords>
+			<description><![CDATA[
+<p>It is widely accepted that over time, humanity will need to expand its presence into the solar system. What are the challenges? Well, space and our nearby worlds have proved to be a much greater challenge than we had long thought. While the rigors of zero-g have been well researched on the International Space Station, the challenges of living in lower gravity, such as that found on the moon and Mars, has not yet been explored. And human reproduction in space, along with genetic challenges, is a complete unknown. Rice Univeristy professor and researcher Scott Solomon joins us to explore these topics in depth, and to posit possible solutions. <br /> 
+<br /> 
+Headlines:</p><ul> 
+<li>Artemis 2 Moon Launch Faces More Delays Due to Hydrogen Leaks</li> 
+<li>Perseverance Rover on Mars Completes First Fully AI-Driven Journey</li> 
+<li>Study Warns of Urgent Need to Research Human Reproduction in Space</li></ul> 
+<p>Main Topic: Becoming Martian – What It Would Take for Humans to Thrive on Mars</p><ul> 
+<li>Biological impacts of space and Martian environments on the human body</li> 
+<li>Gaps in research about human reproduction, growth, and development in space and partial gravity</li> 
+<li>Ethical, social, and medical challenges of having children beyond Earth</li> 
+<li>The complexities of transplanting Earth's ecosystems, microbiomes, and the risk of disruptive species</li> 
+<li>Evolutionary changes and the likely divergence of human populations living long-term off-Earth</li> 
+<li>Considerations around modifying humans versus modifying extraterrestrial environments</li> 
+<li>Infectious disease threats and dwindling biological immunity for space settlers</li> 
+<li>Psychological, cultural, and population dynamics for future interplanetary communities</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p><strong>Guest:</strong> <a href="https://profiles.rice.edu/faculty/scott-solomon" target="_blank">Dr. Scott Solomon</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://helixsleep.com/space" target="_blank" rel="sponsored">helixsleep.com/space</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>It is widely accepted that over time, humanity will need to expand its presence into the solar system. What are the challenges? Well, space and our nearby worlds have proved to be a much greater challenge than we had long thought. While the rigors of zero-g have been well researched on the International Space Station, the challenges of living in lower gravity, such as that found on the moon and Mars, has not yet been explored. And human reproduction in space, along with genetic challenges, is a complete unknown. Rice Univeristy professor and researcher Scott Solomon joins us to explore these topics in depth, and to posit possible solutions. <br /> 
+<br /> 
+Headlines:</p><ul> 
+<li>Artemis 2 Moon Launch Faces More Delays Due to Hydrogen Leaks</li> 
+<li>Perseverance Rover on Mars Completes First Fully AI-Driven Journey</li> 
+<li>Study Warns of Urgent Need to Research Human Reproduction in Space</li></ul> 
+<p>Main Topic: Becoming Martian – What It Would Take for Humans to Thrive on Mars</p><ul> 
+<li>Biological impacts of space and Martian environments on the human body</li> 
+<li>Gaps in research about human reproduction, growth, and development in space and partial gravity</li> 
+<li>Ethical, social, and medical challenges of having children beyond Earth</li> 
+<li>The complexities of transplanting Earth's ecosystems, microbiomes, and the risk of disruptive species</li> 
+<li>Evolutionary changes and the likely divergence of human populations living long-term off-Earth</li> 
+<li>Considerations around modifying humans versus modifying extraterrestrial environments</li> 
+<li>Infectious disease threats and dwindling biological immunity for space settlers</li> 
+<li>Psychological, cultural, and population dynamics for future interplanetary communities</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p><strong>Guest:</strong> <a href="https://profiles.rice.edu/faculty/scott-solomon" target="_blank">Dr. Scott Solomon</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://helixsleep.com/space" target="_blank" rel="sponsored">helixsleep.com/space</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>It is widely accepted that over time, humanity will need to expand its presence into the solar system. What are the challenges? Well, space and our nearby worlds have proved to be a much greater challenge than we had long thought. While the rigors of zero-g have been well researched on the International Space Station, the challenges of living in lower gravity, such as that found on the moon and Mars, has not yet been explored. And human reproduction in space, along with genetic challenges, is a complete unknown. Rice Univeristy professor and researcher Scott Solomon joins us to explore these topics in depth, and to posit possible solutions. <br /> 
+<br /> 
+Headlines:</p><ul> 
+<li>Artemis 2 Moon Launch Faces More Delays Due to Hydrogen Leaks</li> 
+<li>Perseverance Rover on Mars Completes First Fully AI-Driven Journey</li> 
+<li>Study Warns of Urgent Need to Research Human Reproduction in Space</li></ul> 
+<p>Main Topic: Becoming Martian – What It Would Take for Humans to Thrive on Mars</p><ul> 
+<li>Biological impacts of space and Martian environments on the human body</li> 
+<li>Gaps in research about human reproduction, growth, and development in space and partial gravity</li> 
+<li>Ethical, social, and medical challenges of having children beyond Earth</li> 
+<li>The complexities of transplanting Earth's ecosystems, microbiomes, and the risk of disruptive species</li> 
+<li>Evolutionary changes and the likely divergence of human populations living long-term off-Earth</li> 
+<li>Considerations around modifying humans versus modifying extraterrestrial environments</li> 
+<li>Infectious disease threats and dwindling biological immunity for space settlers</li> 
+<li>Psychological, cultural, and population dynamics for future interplanetary communities</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p><strong>Guest:</strong> <a href="https://profiles.rice.edu/faculty/scott-solomon" target="_blank">Dr. Scott Solomon</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://helixsleep.com/space" target="_blank" rel="sponsored">helixsleep.com/space</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860050/hero/TWIS0196_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0196/twis0196_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:03:41</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0196/twis0196_h264m_1920x1080.mp4" length="1128028215" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0196/twis0196_h264m_1920x1080.mp4" fileSize="1128028215" type="video/mp4" medium="video">
+				<media:title type="plain">TWiS 196: Becoming Martian! - How Will Human Beings Evolve on Mars?</media:title>
+				<media:description type="plain">How Will Human Beings Evolve on Mars?</media:description>
+				<media:keywords>space news, space podcast, rod pyle, tariq malik, This Week in Space, Artemis 2 launch delay, Perseverance Mars rover AI, human evolution in space, Martian colonization, Dr. Scott Solomon, Becoming Martian, space reproduction, moon base, mars base</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860050/hero/TWIS0196_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Science">IAB15</media:category>
+				<media:credit role="host">Rod Pyle</media:credit>
+				<media:credit role="host">Tariq Malik</media:credit>
+				<media:credit role="guest">Dr. Scott Solomon</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/rod-pyle" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/822413/pictures/rp_athlete_2022.jpg">Rod Pyle</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/tariq-malik" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/822480/pictures/tariq-malik.jpg">Tariq Malik</podcast:person>
+				<podcast:person role="guest" href="https://profiles.rice.edu/faculty/scott-solomon">Dr. Scott Solomon</podcast:person>
+		</item>
+		<item>
+			<title>TWiS 195: Remembering Apollo 1, Challenger, and Columbia - NASA&#039;s Week of Remembrance with Gerry Griffin</title>
+			<itunes:title>Remembering Apollo 1, Challenger, and Columbia - NASA&#039;s Week of Remembrance with Gerry Griffin</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Fri, 30 Jan 2026 15:10:00 PST</pubDate>
+			<itunes:episode>195</itunes:episode>
+			<podcast:episode>195</podcast:episode>
+			<link>https://twit.tv/shows/this-week-in-space/episodes/195</link>
+			<comments>https://twit.tv/shows/this-week-in-space/episodes/195</comments>
+			<category>News</category>
+			<category>Space</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>NASA&#039;s Week of Remembrance with Gerry Griffin</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/week-space-195-transcript" type="text/html" />
+			<itunes:keywords>space news, space podcast, rod pyle, tariq malik, This Week in Space, NASA Artemis 2 mission, Artemis 2 delay, Apollo 1 fire, Challenger accident, Columbia disaster, Jerry Griffin, NASA flight director, space shuttle, space safety, launch window</itunes:keywords>
+			<description><![CDATA[
+<p>This month marks a bitter annual anniversary for NASA. On February 1, 1967, the crew of Apollo 1 was killed in a horrific fire on the pad in Florida. Years later, as the space shuttle Challenger ascended on February 28, 1986, it was destroyed mid-flight with a loss of seven crewmembers. Finally, on February 1, 2003, the shuttle Columbia was lost during reentry, again with a crew of seven. This episode is a remembrance of these tragic events with Gerry Griffin, former Apollo Flight Director and Director of the Johnson Space Center among his many other roles with NASA and beyond. Gerry brings a personal touch to these events, describing the experiences first-hand and lessons learned. Please join us for this very special episode.<br /> 
+<br /> 
+Headlines:</p><ul> 
+<li>NASA Artemis 2 Testing and Launch Delayed by Cold Weather</li> 
+<li>Crew 12 Launch Schedule Impacted by Artemis II Slip</li> 
+<li>New Artemis Launch Windows and Associated Challenges</li> 
+<li>Countdown to NASA's Next Moonshot: Updated Flight Timelines</li></ul> 
+<p>Main Topic: Remembering NASA's Worst Tragedies and Lessons Learned</p><ul> 
+<li>Apollo 1 Fire: Causes, Team Reaction, and Aftermath</li> 
+<li>Transition from Gemini to Apollo: Organizational and Technical Shifts</li> 
+<li>Challenger Disaster: Technical Failures, Team Dynamics, and Impact</li> 
+<li>Shuttle Safety Evolution and Lessons from Columbia</li> 
+<li>The Resolve and Spirit of NASA Teams After Tragedy</li> 
+<li>Evolving Risk Management and Decision-Making in Human Spaceflight</li> 
+<li>Reflections and Advice for Today's Flight Directors as Artemis II Flight Approaches</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.nasa.gov/people/gerald-d-griffin/" target="_blank">Gerry Griffin</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>This month marks a bitter annual anniversary for NASA. On February 1, 1967, the crew of Apollo 1 was killed in a horrific fire on the pad in Florida. Years later, as the space shuttle Challenger ascended on February 28, 1986, it was destroyed mid-flight with a loss of seven crewmembers. Finally, on February 1, 2003, the shuttle Columbia was lost during reentry, again with a crew of seven. This episode is a remembrance of these tragic events with Gerry Griffin, former Apollo Flight Director and Director of the Johnson Space Center among his many other roles with NASA and beyond. Gerry brings a personal touch to these events, describing the experiences first-hand and lessons learned. Please join us for this very special episode.<br /> 
+<br /> 
+Headlines:</p><ul> 
+<li>NASA Artemis 2 Testing and Launch Delayed by Cold Weather</li> 
+<li>Crew 12 Launch Schedule Impacted by Artemis II Slip</li> 
+<li>New Artemis Launch Windows and Associated Challenges</li> 
+<li>Countdown to NASA's Next Moonshot: Updated Flight Timelines</li></ul> 
+<p>Main Topic: Remembering NASA's Worst Tragedies and Lessons Learned</p><ul> 
+<li>Apollo 1 Fire: Causes, Team Reaction, and Aftermath</li> 
+<li>Transition from Gemini to Apollo: Organizational and Technical Shifts</li> 
+<li>Challenger Disaster: Technical Failures, Team Dynamics, and Impact</li> 
+<li>Shuttle Safety Evolution and Lessons from Columbia</li> 
+<li>The Resolve and Spirit of NASA Teams After Tragedy</li> 
+<li>Evolving Risk Management and Decision-Making in Human Spaceflight</li> 
+<li>Reflections and Advice for Today's Flight Directors as Artemis II Flight Approaches</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.nasa.gov/people/gerald-d-griffin/" target="_blank">Gerry Griffin</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>This month marks a bitter annual anniversary for NASA. On February 1, 1967, the crew of Apollo 1 was killed in a horrific fire on the pad in Florida. Years later, as the space shuttle Challenger ascended on February 28, 1986, it was destroyed mid-flight with a loss of seven crewmembers. Finally, on February 1, 2003, the shuttle Columbia was lost during reentry, again with a crew of seven. This episode is a remembrance of these tragic events with Gerry Griffin, former Apollo Flight Director and Director of the Johnson Space Center among his many other roles with NASA and beyond. Gerry brings a personal touch to these events, describing the experiences first-hand and lessons learned. Please join us for this very special episode.<br /> 
+<br /> 
+Headlines:</p><ul> 
+<li>NASA Artemis 2 Testing and Launch Delayed by Cold Weather</li> 
+<li>Crew 12 Launch Schedule Impacted by Artemis II Slip</li> 
+<li>New Artemis Launch Windows and Associated Challenges</li> 
+<li>Countdown to NASA's Next Moonshot: Updated Flight Timelines</li></ul> 
+<p>Main Topic: Remembering NASA's Worst Tragedies and Lessons Learned</p><ul> 
+<li>Apollo 1 Fire: Causes, Team Reaction, and Aftermath</li> 
+<li>Transition from Gemini to Apollo: Organizational and Technical Shifts</li> 
+<li>Challenger Disaster: Technical Failures, Team Dynamics, and Impact</li> 
+<li>Shuttle Safety Evolution and Lessons from Columbia</li> 
+<li>The Resolve and Spirit of NASA Teams After Tragedy</li> 
+<li>Evolving Risk Management and Decision-Making in Human Spaceflight</li> 
+<li>Reflections and Advice for Today's Flight Directors as Artemis II Flight Approaches</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.nasa.gov/people/gerald-d-griffin/" target="_blank">Gerry Griffin</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859951/hero/TWIS0195_thumbnail-v2.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0195/twis0195_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:14:37</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0195/twis0195_h264m_1920x1080.mp4" length="1265909911" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0195/twis0195_h264m_1920x1080.mp4" fileSize="1265909911" type="video/mp4" medium="video">
+				<media:title type="plain">TWiS 195: Remembering Apollo 1, Challenger, and Columbia - NASA&#039;s Week of Remembrance with Gerry Griffin</media:title>
+				<media:description type="plain">NASA&#039;s Week of Remembrance with Gerry Griffin</media:description>
+				<media:keywords>space news, space podcast, rod pyle, tariq malik, This Week in Space, NASA Artemis 2 mission, Artemis 2 delay, Apollo 1 fire, Challenger accident, Columbia disaster, Jerry Griffin, NASA flight director, space shuttle, space safety, launch window</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859951/hero/TWIS0195_thumbnail-v2.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Science">IAB15</media:category>
+				<media:credit role="host">Rod Pyle</media:credit>
+				<media:credit role="host">Tariq Malik</media:credit>
+				<media:credit role="guest">Gerry Griffin</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/rod-pyle" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/822413/pictures/rp_athlete_2022.jpg">Rod Pyle</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/tariq-malik" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/822480/pictures/tariq-malik.jpg">Tariq Malik</podcast:person>
+				<podcast:person role="guest" href="https://www.nasa.gov/people/gerald-d-griffin/">Gerry Griffin</podcast:person>
+		</item>
+		<item>
+			<title>TWiS 194: COPs in Space! - Is the Outer Space Treaty Ready for the New Space Race?</title>
+			<itunes:title>COPs in Space! - Is the Outer Space Treaty Ready for the New Space Race?</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Fri, 23 Jan 2026 15:20:00 PST</pubDate>
+			<itunes:episode>194</itunes:episode>
+			<podcast:episode>194</podcast:episode>
+			<link>https://twit.tv/shows/this-week-in-space/episodes/194</link>
+			<comments>https://twit.tv/shows/this-week-in-space/episodes/194</comments>
+			<category>News</category>
+			<category>Space</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Is the Outer Space Treaty Ready for the New Space Race?</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/outer-space-treaty-outdated-heres-how-expert-says-we-should-govern-space-2026" type="text/html" />
+			<itunes:keywords>space news, space podcast, rod pyle, tariq malik, This Week in Space, NASA Artemis II, moon rocket, launch pad, SLS, Outer Space Treaty, space policy, Ely Sandler, Harvard Kennedy School, space governance, conference of the parties COP, space debris</itunes:keywords>
+			<description><![CDATA[
+<p>The Outer Space Treaty of 1967, which was intended to regulate activities in space, is hard to enforce and woefully out of date. New nations and private actors are entering the spaceflight arena, and an updated mechanism with a bit more teeth is needed. Our guest, Ely Sandler, a Fellow at the Harvard Kennedy School, has put forward the idea of using COPs—not the kind in uniform, but a Conference of Parties—as a less-formal gathering of spacefaring (and space-ambitious) entities, to discuss future treaties, agreements, and enforcement mechanisms, eventually leading to new treaties. These would be similar to the annual climate COP that has provided useful discourse on climate change. A space COP would address responsibility for and control of orbital assets, land and resource use on the Moon, Mars, and asteroids; and possibly limits to the militarization of space. Join us for a fascinating discussion!</p> 
+<p>Headlines:</p><ul> 
+<li>Artemis II Moon Rocket Rolls Out for Launch Preparations</li> 
+<li>Crew-11 Astronauts Speak on Space Station Medical Evacuation</li> 
+<li>Earth Faces Strongest Solar Radiation Storm in 20 Years</li> 
+<li>Auroras Sparked Across Unusual Latitudes</li></ul> 
+<p>Main Topic: Is the Outer Space Treaty Obsolete? Examining the Future of Space Governance with Ely Sandler</p><ul> 
+<li>Outer Space Treaty's Vagueness and Limits for Modern Space Activity</li> 
+<li>Why New Space Policy Models Are Needed for Orbital Debris, Spacecraft Ownership, and Liability</li> 
+<li>"Conference of the Parties" (COP) Model Proposed for Space Law Updates</li> 
+<li>Challenges of Property Rights, Exclusion Zones, and International Consensus on the Moon</li> 
+<li>How Commercial Space and Military Concerns Intersect Under Outdated Treaties</li> 
+<li>Space Solar Power's Potential and Regulatory Hurdles for Energy Beaming</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.belfercenter.org/person/ely-sandler" target="_blank">Ely Sandler</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>The Outer Space Treaty of 1967, which was intended to regulate activities in space, is hard to enforce and woefully out of date. New nations and private actors are entering the spaceflight arena, and an updated mechanism with a bit more teeth is needed. Our guest, Ely Sandler, a Fellow at the Harvard Kennedy School, has put forward the idea of using COPs—not the kind in uniform, but a Conference of Parties—as a less-formal gathering of spacefaring (and space-ambitious) entities, to discuss future treaties, agreements, and enforcement mechanisms, eventually leading to new treaties. These would be similar to the annual climate COP that has provided useful discourse on climate change. A space COP would address responsibility for and control of orbital assets, land and resource use on the Moon, Mars, and asteroids; and possibly limits to the militarization of space. Join us for a fascinating discussion!</p> 
+<p>Headlines:</p><ul> 
+<li>Artemis II Moon Rocket Rolls Out for Launch Preparations</li> 
+<li>Crew-11 Astronauts Speak on Space Station Medical Evacuation</li> 
+<li>Earth Faces Strongest Solar Radiation Storm in 20 Years</li> 
+<li>Auroras Sparked Across Unusual Latitudes</li></ul> 
+<p>Main Topic: Is the Outer Space Treaty Obsolete? Examining the Future of Space Governance with Ely Sandler</p><ul> 
+<li>Outer Space Treaty's Vagueness and Limits for Modern Space Activity</li> 
+<li>Why New Space Policy Models Are Needed for Orbital Debris, Spacecraft Ownership, and Liability</li> 
+<li>"Conference of the Parties" (COP) Model Proposed for Space Law Updates</li> 
+<li>Challenges of Property Rights, Exclusion Zones, and International Consensus on the Moon</li> 
+<li>How Commercial Space and Military Concerns Intersect Under Outdated Treaties</li> 
+<li>Space Solar Power's Potential and Regulatory Hurdles for Energy Beaming</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.belfercenter.org/person/ely-sandler" target="_blank">Ely Sandler</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>The Outer Space Treaty of 1967, which was intended to regulate activities in space, is hard to enforce and woefully out of date. New nations and private actors are entering the spaceflight arena, and an updated mechanism with a bit more teeth is needed. Our guest, Ely Sandler, a Fellow at the Harvard Kennedy School, has put forward the idea of using COPs—not the kind in uniform, but a Conference of Parties—as a less-formal gathering of spacefaring (and space-ambitious) entities, to discuss future treaties, agreements, and enforcement mechanisms, eventually leading to new treaties. These would be similar to the annual climate COP that has provided useful discourse on climate change. A space COP would address responsibility for and control of orbital assets, land and resource use on the Moon, Mars, and asteroids; and possibly limits to the militarization of space. Join us for a fascinating discussion!</p> 
+<p>Headlines:</p><ul> 
+<li>Artemis II Moon Rocket Rolls Out for Launch Preparations</li> 
+<li>Crew-11 Astronauts Speak on Space Station Medical Evacuation</li> 
+<li>Earth Faces Strongest Solar Radiation Storm in 20 Years</li> 
+<li>Auroras Sparked Across Unusual Latitudes</li></ul> 
+<p>Main Topic: Is the Outer Space Treaty Obsolete? Examining the Future of Space Governance with Ely Sandler</p><ul> 
+<li>Outer Space Treaty's Vagueness and Limits for Modern Space Activity</li> 
+<li>Why New Space Policy Models Are Needed for Orbital Debris, Spacecraft Ownership, and Liability</li> 
+<li>"Conference of the Parties" (COP) Model Proposed for Space Law Updates</li> 
+<li>Challenges of Property Rights, Exclusion Zones, and International Consensus on the Moon</li> 
+<li>How Commercial Space and Military Concerns Intersect Under Outdated Treaties</li> 
+<li>Space Solar Power's Potential and Regulatory Hurdles for Energy Beaming</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.belfercenter.org/person/ely-sandler" target="_blank">Ely Sandler</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859863/hero/TWIS0194_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0194/twis0194_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:03:15</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0194/twis0194_h264m_1920x1080.mp4" length="1425197043" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0194/twis0194_h264m_1920x1080.mp4" fileSize="1425197043" type="video/mp4" medium="video">
+				<media:title type="plain">TWiS 194: COPs in Space! - Is the Outer Space Treaty Ready for the New Space Race?</media:title>
+				<media:description type="plain">Is the Outer Space Treaty Ready for the New Space Race?</media:description>
+				<media:keywords>space news, space podcast, rod pyle, tariq malik, This Week in Space, NASA Artemis II, moon rocket, launch pad, SLS, Outer Space Treaty, space policy, Ely Sandler, Harvard Kennedy School, space governance, conference of the parties COP, space debris</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859863/hero/TWIS0194_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Science">IAB15</media:category>
+				<media:credit role="host">Rod Pyle</media:credit>
+				<media:credit role="host">Tariq Malik</media:credit>
+				<media:credit role="guest">Ely Sandler</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/rod-pyle" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/822413/pictures/rp_athlete_2022.jpg">Rod Pyle</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/tariq-malik" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/822480/pictures/tariq-malik.jpg">Tariq Malik</podcast:person>
+				<podcast:person role="guest" href="https://www.belfercenter.org/person/ely-sandler">Ely Sandler</podcast:person>
+		</item>
+		<item>
+			<title>TWiS 193: A History of Tomorrow - A Conversation with Former NASA Chief Historian, Dr. Roger Launius</title>
+			<itunes:title>A History of Tomorrow - A Conversation with Former NASA Chief Historian, Dr. Roger Launius</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Fri, 16 Jan 2026 16:30:00 PST</pubDate>
+			<itunes:episode>193</itunes:episode>
+			<podcast:episode>193</podcast:episode>
+			<link>https://twit.tv/shows/this-week-in-space/episodes/193</link>
+			<comments>https://twit.tv/shows/this-week-in-space/episodes/193</comments>
+			<category>News</category>
+			<category>Space</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>A Conversation with Former NASA Chief Historian, Dr. Roger Launius</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/how-nasa-preserves-space-history" type="text/html" />
+			<itunes:keywords>space news, space podcast, rod pyle, tariq malik, This Week in Space, NASA medical evacuation, International Space Station, Artemis 2, Space Launch System, orion, moon mission, Dr. Roger Launius, NASA Chief Historian, smithsonian, space history</itunes:keywords>
+			<description><![CDATA[
+<p>NASA's history is a long and fascinating story, and we decided we'd invite former NASA Chief Historian Dr. Roger Launius onto the show to tell us about how NASA tracks its history, the public's perceptions of spaceflight, and how our understanding of the past might inform our future in space. Also the Crew 11 return, Artemis II rollout, and MAVEN, phone home! Join us for this engaging conversation!<br /> 
+<br /> 
+Headlines: </p><ul> 
+<li>NASA Completes First-Ever Medical Evacuation From the ISS</li> 
+<li>Artemis 2 Megarocket Rolls Out to the Launch Pad Amid Tight Schedule</li> 
+<li>NASA Attempts to Revive MAVEN Spacecraft Around Mars</li></ul> 
+<p>Main Topic: Chronicling the Space Age — With Dr. Roger Launius</p><ul> 
+<li>How NASA's First Chief Historian Got Hooked on Space</li> 
+<li>The Role and Daily Work of a NASA Chief Historian</li> 
+<li>Transitioning From NASA to Smithsonian: Culture, Audience, and Mission</li> 
+<li>Is This a "Second Space Age"? Commercial Players and Evolving Space Policy</li> 
+<li>Public Attitudes Toward Space: Then and Now—Separating Myth From Reality</li> 
+<li>Historical Parallels Between Apollo and Artemis and the Notion of a New Space Race</li> 
+<li>Challenges of Public Engagement and NASA's Struggle to Stay In the Spotlight</li> 
+<li>Media Fragmentation, Social Media, and Changing Consumption of Space News</li> 
+<li>The Rise of Moon Landing Conspiracies Amid Information Abundance</li> 
+<li>The Vital Importance of Documenting Accidents and Hard Lessons in Space History</li> 
+<li>Preserving Space History in the Digital Era—From Paper to Tweets</li> 
+<li>Dr. Roger Launius' Upcoming Book: NASA History in 100 Objects</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.linkedin.com/in/rogerlaunius/" target="_blank">Roger Launius</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://helixsleep.com/space" target="_blank" rel="sponsored">helixsleep.com/space</a></li>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>NASA's history is a long and fascinating story, and we decided we'd invite former NASA Chief Historian Dr. Roger Launius onto the show to tell us about how NASA tracks its history, the public's perceptions of spaceflight, and how our understanding of the past might inform our future in space. Also the Crew 11 return, Artemis II rollout, and MAVEN, phone home! Join us for this engaging conversation!<br /> 
+<br /> 
+Headlines: </p><ul> 
+<li>NASA Completes First-Ever Medical Evacuation From the ISS</li> 
+<li>Artemis 2 Megarocket Rolls Out to the Launch Pad Amid Tight Schedule</li> 
+<li>NASA Attempts to Revive MAVEN Spacecraft Around Mars</li></ul> 
+<p>Main Topic: Chronicling the Space Age — With Dr. Roger Launius</p><ul> 
+<li>How NASA's First Chief Historian Got Hooked on Space</li> 
+<li>The Role and Daily Work of a NASA Chief Historian</li> 
+<li>Transitioning From NASA to Smithsonian: Culture, Audience, and Mission</li> 
+<li>Is This a "Second Space Age"? Commercial Players and Evolving Space Policy</li> 
+<li>Public Attitudes Toward Space: Then and Now—Separating Myth From Reality</li> 
+<li>Historical Parallels Between Apollo and Artemis and the Notion of a New Space Race</li> 
+<li>Challenges of Public Engagement and NASA's Struggle to Stay In the Spotlight</li> 
+<li>Media Fragmentation, Social Media, and Changing Consumption of Space News</li> 
+<li>The Rise of Moon Landing Conspiracies Amid Information Abundance</li> 
+<li>The Vital Importance of Documenting Accidents and Hard Lessons in Space History</li> 
+<li>Preserving Space History in the Digital Era—From Paper to Tweets</li> 
+<li>Dr. Roger Launius' Upcoming Book: NASA History in 100 Objects</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.linkedin.com/in/rogerlaunius/" target="_blank">Roger Launius</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://helixsleep.com/space" target="_blank" rel="sponsored">helixsleep.com/space</a></li>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>NASA's history is a long and fascinating story, and we decided we'd invite former NASA Chief Historian Dr. Roger Launius onto the show to tell us about how NASA tracks its history, the public's perceptions of spaceflight, and how our understanding of the past might inform our future in space. Also the Crew 11 return, Artemis II rollout, and MAVEN, phone home! Join us for this engaging conversation!<br /> 
+<br /> 
+Headlines: </p><ul> 
+<li>NASA Completes First-Ever Medical Evacuation From the ISS</li> 
+<li>Artemis 2 Megarocket Rolls Out to the Launch Pad Amid Tight Schedule</li> 
+<li>NASA Attempts to Revive MAVEN Spacecraft Around Mars</li></ul> 
+<p>Main Topic: Chronicling the Space Age — With Dr. Roger Launius</p><ul> 
+<li>How NASA's First Chief Historian Got Hooked on Space</li> 
+<li>The Role and Daily Work of a NASA Chief Historian</li> 
+<li>Transitioning From NASA to Smithsonian: Culture, Audience, and Mission</li> 
+<li>Is This a "Second Space Age"? Commercial Players and Evolving Space Policy</li> 
+<li>Public Attitudes Toward Space: Then and Now—Separating Myth From Reality</li> 
+<li>Historical Parallels Between Apollo and Artemis and the Notion of a New Space Race</li> 
+<li>Challenges of Public Engagement and NASA's Struggle to Stay In the Spotlight</li> 
+<li>Media Fragmentation, Social Media, and Changing Consumption of Space News</li> 
+<li>The Rise of Moon Landing Conspiracies Amid Information Abundance</li> 
+<li>The Vital Importance of Documenting Accidents and Hard Lessons in Space History</li> 
+<li>Preserving Space History in the Digital Era—From Paper to Tweets</li> 
+<li>Dr. Roger Launius' Upcoming Book: NASA History in 100 Objects</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.linkedin.com/in/rogerlaunius/" target="_blank">Roger Launius</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://helixsleep.com/space" target="_blank" rel="sponsored">helixsleep.com/space</a></li>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859772/hero/TWIS0193_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0193/twis0193_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>57:09</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0193/twis0193_h264m_1920x1080.mp4" length="970169473" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0193/twis0193_h264m_1920x1080.mp4" fileSize="970169473" type="video/mp4" medium="video">
+				<media:title type="plain">TWiS 193: A History of Tomorrow - A Conversation with Former NASA Chief Historian, Dr. Roger Launius</media:title>
+				<media:description type="plain">A Conversation with Former NASA Chief Historian, Dr. Roger Launius</media:description>
+				<media:keywords>space news, space podcast, rod pyle, tariq malik, This Week in Space, NASA medical evacuation, International Space Station, Artemis 2, Space Launch System, orion, moon mission, Dr. Roger Launius, NASA Chief Historian, smithsonian, space history</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859772/hero/TWIS0193_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Science">IAB15</media:category>
+				<media:credit role="host">Rod Pyle</media:credit>
+				<media:credit role="host">Tariq Malik</media:credit>
+				<media:credit role="guest">Roger Launius</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/rod-pyle" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/822413/pictures/rp_athlete_2022.jpg">Rod Pyle</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/tariq-malik" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/822480/pictures/tariq-malik.jpg">Tariq Malik</podcast:person>
+				<podcast:person role="guest" href="https://www.linkedin.com/in/rogerlaunius/">Roger Launius</podcast:person>
+		</item>
+		<item>
+			<title>TWiS 192: Space, 2026! - What&#039;s Coming in Spaceflight This Year</title>
+			<itunes:title>Space, 2026! - What&#039;s Coming in Spaceflight This Year</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Fri, 09 Jan 2026 14:00:00 PST</pubDate>
+			<itunes:episode>192</itunes:episode>
+			<podcast:episode>192</podcast:episode>
+			<link>https://twit.tv/shows/this-week-in-space/episodes/192</link>
+			<comments>https://twit.tv/shows/this-week-in-space/episodes/192</comments>
+			<category>News</category>
+			<category>Space</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>What&#039;s Coming in Spaceflight This Year</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/week-space-192-transcript" type="text/html" />
+			<itunes:keywords>space news, space podcast, rod pyle, tariq malik, This Week in Space, Artemis 2 launch date, NASA lunar mission 2026, Orion heat shield safety, ISS medical evacuation, NASA 2026 budget, human moon flyby, Jared Isaacman NASA chief, SLS rocket Artemis 2</itunes:keywords>
+			<description><![CDATA[
+<p>2026 promises to be the most exciting year in the new space age yet! Shining bright is the prospect of an Artemis II launch to send astronauts around the moon for the first time since 1972, as early as February. We've already seen news about a medical incident on the International Space Station that will force a crew to return to Earth early, but NASA says this won't affect the Artemis launch. On other news, NASA's budget seems on track to be passed at near 2025 levels, China is preparing to send a robot to the south lunar pole, SpaceX plans robust tests of Starship this year—and hopefully refinement of their lander for Artemis III, Boeing will fly Starliner again (uncrewed), Mars Sample Return is poised to be scuttled, and all this under the leadership of a new—and apparently quite capable—NASA administrator, Jared Isaacman. Join us for an in-depth look at what's coming in 2026!<br /> 
+<br /> 
+Headlines:</p><ul> 
+<li>Medical evacuation planned for ISS astronauts due to health concerns</li> 
+<li>NASA Chief Jared Isaacman leads first big press conference amid ISS medical incident</li> 
+<li>Artemis 2 lunar mission remains on track for February launch</li> 
+<li>Orion spacecraft heat shield faces scrutiny ahead of crewed flight</li> 
+<li>NASA budget nearly secured—Congress backs full funding for 2026</li> 
+<li>Mars Sample Return project faces likely cancellation</li> 
+<li>SpaceX Starship gears up for crucial orbital and refueling tests</li> 
+<li>Blue Origin's Blue Moon lunar lander launch delayed, competition heats up</li> 
+<li>China's lunar, asteroid, and orbital missions ramp up for 2026</li> 
+<li>Boeing Starliner and Sierra Space Dream Chaser schedule ISS cargo missions</li> 
+<li>New moon landers, asteroid missions, and global crewed capsule tests coming in 2026</li> 
+<li>NASA's Roman Space Telescope possibly launching this year</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>2026 promises to be the most exciting year in the new space age yet! Shining bright is the prospect of an Artemis II launch to send astronauts around the moon for the first time since 1972, as early as February. We've already seen news about a medical incident on the International Space Station that will force a crew to return to Earth early, but NASA says this won't affect the Artemis launch. On other news, NASA's budget seems on track to be passed at near 2025 levels, China is preparing to send a robot to the south lunar pole, SpaceX plans robust tests of Starship this year—and hopefully refinement of their lander for Artemis III, Boeing will fly Starliner again (uncrewed), Mars Sample Return is poised to be scuttled, and all this under the leadership of a new—and apparently quite capable—NASA administrator, Jared Isaacman. Join us for an in-depth look at what's coming in 2026!<br /> 
+<br /> 
+Headlines:</p><ul> 
+<li>Medical evacuation planned for ISS astronauts due to health concerns</li> 
+<li>NASA Chief Jared Isaacman leads first big press conference amid ISS medical incident</li> 
+<li>Artemis 2 lunar mission remains on track for February launch</li> 
+<li>Orion spacecraft heat shield faces scrutiny ahead of crewed flight</li> 
+<li>NASA budget nearly secured—Congress backs full funding for 2026</li> 
+<li>Mars Sample Return project faces likely cancellation</li> 
+<li>SpaceX Starship gears up for crucial orbital and refueling tests</li> 
+<li>Blue Origin's Blue Moon lunar lander launch delayed, competition heats up</li> 
+<li>China's lunar, asteroid, and orbital missions ramp up for 2026</li> 
+<li>Boeing Starliner and Sierra Space Dream Chaser schedule ISS cargo missions</li> 
+<li>New moon landers, asteroid missions, and global crewed capsule tests coming in 2026</li> 
+<li>NASA's Roman Space Telescope possibly launching this year</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>2026 promises to be the most exciting year in the new space age yet! Shining bright is the prospect of an Artemis II launch to send astronauts around the moon for the first time since 1972, as early as February. We've already seen news about a medical incident on the International Space Station that will force a crew to return to Earth early, but NASA says this won't affect the Artemis launch. On other news, NASA's budget seems on track to be passed at near 2025 levels, China is preparing to send a robot to the south lunar pole, SpaceX plans robust tests of Starship this year—and hopefully refinement of their lander for Artemis III, Boeing will fly Starliner again (uncrewed), Mars Sample Return is poised to be scuttled, and all this under the leadership of a new—and apparently quite capable—NASA administrator, Jared Isaacman. Join us for an in-depth look at what's coming in 2026!<br /> 
+<br /> 
+Headlines:</p><ul> 
+<li>Medical evacuation planned for ISS astronauts due to health concerns</li> 
+<li>NASA Chief Jared Isaacman leads first big press conference amid ISS medical incident</li> 
+<li>Artemis 2 lunar mission remains on track for February launch</li> 
+<li>Orion spacecraft heat shield faces scrutiny ahead of crewed flight</li> 
+<li>NASA budget nearly secured—Congress backs full funding for 2026</li> 
+<li>Mars Sample Return project faces likely cancellation</li> 
+<li>SpaceX Starship gears up for crucial orbital and refueling tests</li> 
+<li>Blue Origin's Blue Moon lunar lander launch delayed, competition heats up</li> 
+<li>China's lunar, asteroid, and orbital missions ramp up for 2026</li> 
+<li>Boeing Starliner and Sierra Space Dream Chaser schedule ISS cargo missions</li> 
+<li>New moon landers, asteroid missions, and global crewed capsule tests coming in 2026</li> 
+<li>NASA's Roman Space Telescope possibly launching this year</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859681/hero/TWIS0192_thumbnail-v2.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0192/twis0192_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>59:11</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0192/twis0192_h264m_1920x1080.mp4" length="1004221428" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0192/twis0192_h264m_1920x1080.mp4" fileSize="1004221428" type="video/mp4" medium="video">
+				<media:title type="plain">TWiS 192: Space, 2026! - What&#039;s Coming in Spaceflight This Year</media:title>
+				<media:description type="plain">What&#039;s Coming in Spaceflight This Year</media:description>
+				<media:keywords>space news, space podcast, rod pyle, tariq malik, This Week in Space, Artemis 2 launch date, NASA lunar mission 2026, Orion heat shield safety, ISS medical evacuation, NASA 2026 budget, human moon flyby, Jared Isaacman NASA chief, SLS rocket Artemis 2</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859681/hero/TWIS0192_thumbnail-v2.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Science">IAB15</media:category>
+				<media:credit role="host">Rod Pyle</media:credit>
+				<media:credit role="host">Tariq Malik</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/rod-pyle" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/822413/pictures/rp_athlete_2022.jpg">Rod Pyle</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/tariq-malik" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/822480/pictures/tariq-malik.jpg">Tariq Malik</podcast:person>
+		</item>
+		<item>
+			<title>TWiS 191: Mars Throwback - The Pioneering Work of Dr. Robert Zubrin</title>
+			<itunes:title>Mars Throwback - The Pioneering Work of Dr. Robert Zubrin</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 28 Dec 2025 09:30:00 PST</pubDate>
+			<itunes:episode>191</itunes:episode>
+			<podcast:episode>191</podcast:episode>
+			<link>https://twit.tv/shows/this-week-in-space/episodes/191</link>
+			<comments>https://twit.tv/shows/this-week-in-space/episodes/191</comments>
+			<category>News</category>
+			<category>Space</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>The Pioneering Work of Dr. Robert Zubrin</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/week-space-191-transcript" type="text/html" />
+			<itunes:keywords>space news, space podcast, rod pyle, tariq malik, This Week in Space, Mars exploration, Robert Zubrin, Mars Society, Mars Direct, nasa, spacex, Starship, Starboat, planetary protection, space policy, human Mars mission, in-situ resource utilization</itunes:keywords>
+			<description><![CDATA[
+<p>One of our favorite interviews of 2025 was with Dr. Robert Zubrin, founder of the Mars Society and the mind behind Mars Direct, a streamlined approach to reaching the Red Planet with human beings that was later largely adopted by NASA in their mission designs. It's a fascinating story about a man who continually swam upstream against strong currents of the aerospace establishment. His seminal book, "The Case for Mars," has enjoyed multiple reprints and influenced millions. Join us for this encore of an informative and forward-looking episode!</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>One of our favorite interviews of 2025 was with Dr. Robert Zubrin, founder of the Mars Society and the mind behind Mars Direct, a streamlined approach to reaching the Red Planet with human beings that was later largely adopted by NASA in their mission designs. It's a fascinating story about a man who continually swam upstream against strong currents of the aerospace establishment. His seminal book, "The Case for Mars," has enjoyed multiple reprints and influenced millions. Join us for this encore of an informative and forward-looking episode!</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>One of our favorite interviews of 2025 was with Dr. Robert Zubrin, founder of the Mars Society and the mind behind Mars Direct, a streamlined approach to reaching the Red Planet with human beings that was later largely adopted by NASA in their mission designs. It's a fascinating story about a man who continually swam upstream against strong currents of the aerospace establishment. His seminal book, "The Case for Mars," has enjoyed multiple reprints and influenced millions. Join us for this encore of an informative and forward-looking episode!</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
+<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2025/12/859473/hero/TWIS0191-bestof_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0191/twis0191_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>53:36</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0191/twis0191_h264m_1920x1080.mp4" length="909424401" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0191/twis0191_h264m_1920x1080.mp4" fileSize="909424401" type="video/mp4" medium="video">
+				<media:title type="plain">TWiS 191: Mars Throwback - The Pioneering Work of Dr. Robert Zubrin</media:title>
+				<media:description type="plain">The Pioneering Work of Dr. Robert Zubrin</media:description>
+				<media:keywords>space news, space podcast, rod pyle, tariq malik, This Week in Space, Mars exploration, Robert Zubrin, Mars Society, Mars Direct, nasa, spacex, Starship, Starboat, planetary protection, space policy, human Mars mission, in-situ resource utilization</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2025/12/859473/hero/TWIS0191-bestof_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Science">IAB15</media:category>
+				<media:credit role="host">Rod Pyle</media:credit>
+				<media:credit role="host">Tariq Malik</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/rod-pyle" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/822413/pictures/rp_athlete_2022.jpg">Rod Pyle</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/tariq-malik" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/822480/pictures/tariq-malik.jpg">Tariq Malik</podcast:person>
+		</item>
+	</channel>
+</rss>

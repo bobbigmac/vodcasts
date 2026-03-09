@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/" xmlns:podcast="https://podcastindex.org/namespace/1.0" version="2.0">
+	<channel>
+		<title>Hands-On Tech (Video)</title>
+		<itunes:author>TWiT</itunes:author>
+		<link>https://twit.tv/shows/hands-on-tech</link>
+		<generator>TWiT Feed Generator v4.10</generator>
+		<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+		<language>en-US</language>
+		<copyright>This work is licensed under a Creative Commons License - Attribution-NonCommercial-NoDerivatives 4.0 International - http://creativecommons.org/licenses/by-nc-nd/4.0/</copyright>
+		<creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+		<managingEditor>feedmail@twit.tv (TWiT Editors)</managingEditor>
+		<webMaster>feedmail@twit.tv (TWiT Engineering)</webMaster>
+		<ttl>360</ttl>
+		<sy:updatePeriod>weekly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+		<lastBuildDate>Sun, 08 Mar 2026 14:55:18 PDT</lastBuildDate>
+		<pubDate>Sun, 08 Mar 2026 14:55:18 PDT</pubDate>
+		<rawvoice:frequency>weekly</rawvoice:frequency>
+		<rawvoice:location>Petaluma, CA</rawvoice:location>
+		<itunes:type>episodic</itunes:type>
+		<itunes:subtitle>Hands-On Tech turns tech troubles into tech triumphs. Each episode zooms in on a specific theme with easy-to-follow advice.</itunes:subtitle>
+		<itunes:summary>Welcome to Hands-On Tech, where host Mikah Sargent turns tech troubles into tech triumphs. Each episode zooms in on a specific theme, unpacking listener questions with expert analysis and easy-to-follow advice. From decoding the latest gadgets to simplifying everyday tech, Mikah's got you covered. Submit your tech queries through email at HOT@twit.tv or via TWiT's social media. You might hear your question answered on air! Whether you're puzzled by privacy settings or curious about cutting-edge innovations, Hands-On Tech is your weekly dose of tech insight and inspiration. Join Mikah every Sunday to hear the show that turns tech confusion into tech confidence! You can join Club TWiT for $10 per month and get ad-free audio and video feeds for all our shows plus everything else the club offers...or get just this podcast ad-free for $5 per month.
+
+New episodes every Sunday.</itunes:summary>
+		<description>Welcome to Hands-On Tech, where host Mikah Sargent turns tech troubles into tech triumphs. Each episode zooms in on a specific theme, unpacking listener questions with expert analysis and easy-to-follow advice. From decoding the latest gadgets to simplifying everyday tech, Mikah's got you covered. Submit your tech queries through email at HOT@twit.tv or via TWiT's social media. You might hear your question answered on air! Whether you're puzzled by privacy settings or curious about cutting-edge innovations, Hands-On Tech is your weekly dose of tech insight and inspiration. Join Mikah every Sunday to hear the show that turns tech confusion into tech confidence! You can join Club TWiT for $10 per month and get ad-free audio and video feeds for all our shows plus everything else the club offers...or get just this podcast ad-free for $5 per month.
+
+New episodes every Sunday.</description>
+		<itunes:keywords>TWiT, Technology, Tech, gadgets, product reviews</itunes:keywords>
+		<rawvoice:rating tv="tv-g">tv-g</rawvoice:rating>
+		<itunes:explicit>no</itunes:explicit>
+		<itunes:block>no</itunes:block>
+		<googleplay:block>No</googleplay:block>
+		<podcast:funding url="https://twit.tv/clubtwit">Become a Club TWiT member!</podcast:funding>
+		<itunes:owner>
+			<itunes:name>Leo Laporte</itunes:name>
+			<itunes:email>feedmail@twit.tv</itunes:email>
+		</itunes:owner>
+		<itunes:category text="Technology" />
+		<category>Technology</category>
+		<category>Reviews</category>
+		<image>
+			<title>Hands-On Tech (Video)</title>
+			<url>https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/Hands-On%20Tech/album_art/hd/HOT_albumart_standard_video.jpg</url>
+			<link>https://twit.tv/shows/hands-on-tech</link>
+		</image>
+		<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/Hands-On%20Tech/album_art/hd/HOT_albumart_standard_video.jpg" />
+		<itunes:new-feed-url>https://feeds.twit.tv/hot_video_hd.xml</itunes:new-feed-url>
+		<rawvoice:subscribe feed="https://feeds.twit.tv/hot_video_hd.xml" itunes="https://podcasts.apple.com/us/podcast/hands-on-tech-video/id1451461955" html="https://twit.tv/shows/hands-on-tech"></rawvoice:subscribe>
+		<atom:link href="https://feeds.twit.tv/hot_video_hd.xml" type="application/rss+xml" rel="self"/>
+		<item>
+			<title>HOT 257: Transfer iPhone Photos &amp; Videos to Windows PC - Moving iPhone Images &amp; Videos to Windows</title>
+			<itunes:title>Transfer iPhone Photos &amp; Videos to Windows PC - Moving iPhone Images &amp; Videos to Windows</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 08 Mar 2026 14:50:00 PDT</pubDate>
+			<itunes:season>3</itunes:season>
+			<podcast:season>3</podcast:season>
+			<itunes:episode>257</itunes:episode>
+			<podcast:episode>257</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-tech/episodes/257</link>
+			<comments>https://twit.tv/shows/hands-on-tech/episodes/257</comments>
+			<category>Help &amp; How To</category>
+			<category>Technology</category>
+			<category>Reviews</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Moving iPhone Images &amp; Videos to Windows</itunes:subtitle>
+			<itunes:keywords>TWiT, Mikah Sargent, Ask The Tech Guys, ATG, iPhone photo transfer, windows pc, HEIF, heic, HEVC, jpeg, MOV, microsoft photos app, icloud for windows, google photos, iMazing, file compatibility, photo metadata, live photos, USB photo backup</itunes:keywords>
+			<description><![CDATA[
+<p>On this week's episode of Hands-On Tech, Mikah helps Wayne understand why iPhone photos appear invisible or fail to copy when transferred to a Windows PC, and walks through the best methods to fix it.</p> 
+<p>Don't forget to send in your questions for Mikah to answer during the show! hot@twit.tv</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>On this week's episode of Hands-On Tech, Mikah helps Wayne understand why iPhone photos appear invisible or fail to copy when transferred to a Windows PC, and walks through the best methods to fix it.</p> 
+<p>Don't forget to send in your questions for Mikah to answer during the show! hot@twit.tv</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>On this week's episode of Hands-On Tech, Mikah helps Wayne understand why iPhone photos appear invisible or fail to copy when transferred to a Windows PC, and walks through the best methods to fix it.</p> 
+<p>Don't forget to send in your questions for Mikah to answer during the show! hot@twit.tv</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860413/hero/HOT0257_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0257/hot0257_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>15:41</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0257/hot0257_h264m_1920x1080.mp4" length="277882467" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0257/hot0257_h264m_1920x1080.mp4" fileSize="277882467" type="video/mp4" medium="video">
+				<media:title type="plain">HOT 257: Transfer iPhone Photos &amp; Videos to Windows PC - Moving iPhone Images &amp; Videos to Windows</media:title>
+				<media:description type="plain">Moving iPhone Images &amp; Videos to Windows</media:description>
+				<media:keywords>TWiT, Mikah Sargent, Ask The Tech Guys, ATG, iPhone photo transfer, windows pc, HEIF, heic, HEVC, jpeg, MOV, microsoft photos app, icloud for windows, google photos, iMazing, file compatibility, photo metadata, live photos, USB photo backup</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/03/860413/hero/HOT0257_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>HOT 256: Android Auto &amp; Google Assistant Driving Mode - Text Messages &amp; Android Auto</title>
+			<itunes:title>Android Auto &amp; Google Assistant Driving Mode - Text Messages &amp; Android Auto</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 01 Mar 2026 14:00:00 PST</pubDate>
+			<itunes:season>3</itunes:season>
+			<podcast:season>3</podcast:season>
+			<itunes:episode>256</itunes:episode>
+			<podcast:episode>256</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-tech/episodes/256</link>
+			<comments>https://twit.tv/shows/hands-on-tech/episodes/256</comments>
+			<category>Help &amp; How To</category>
+			<category>Technology</category>
+			<category>Reviews</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Text Messages &amp; Android Auto</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/using-android-auto-and-google-assistant-driving-mode-hands-free-texts" type="text/html" />
+			<itunes:keywords>TWiT, Mikah Sargent, Ask The Tech Guys, ATG, Android Auto, Google Assistant driving mode, hands-free text messages, Android device, Google Maps, infotainment system, text message reading, voice reply, AI-powered decisions, NetSuite by Oracle</itunes:keywords>
+			<description><![CDATA[
+<p>On this week's episode of <em>Hands-On Tech</em>, Mikah helps out Mike with how he can have Google read his text messages aloud while using Google Maps and how to allow hands-free replies while driving.</p> 
+<p>Don't forget to send in your questions for Mikah to answer during the show! <a href="mailto:hot@twit.tv" target="_blank">hot@twit.tv</a></p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://netsuite.com/hot" target="_blank" rel="sponsored">NetSuite.com/hot</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>On this week's episode of <em>Hands-On Tech</em>, Mikah helps out Mike with how he can have Google read his text messages aloud while using Google Maps and how to allow hands-free replies while driving.</p> 
+<p>Don't forget to send in your questions for Mikah to answer during the show! <a href="mailto:hot@twit.tv" target="_blank">hot@twit.tv</a></p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://netsuite.com/hot" target="_blank" rel="sponsored">NetSuite.com/hot</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>On this week's episode of <em>Hands-On Tech</em>, Mikah helps out Mike with how he can have Google read his text messages aloud while using Google Maps and how to allow hands-free replies while driving.</p> 
+<p>Don't forget to send in your questions for Mikah to answer during the show! <a href="mailto:hot@twit.tv" target="_blank">hot@twit.tv</a></p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://netsuite.com/hot" target="_blank" rel="sponsored">NetSuite.com/hot</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860325/hero/HOT0256_thumbV2.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0256/hot0256_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>10:27</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0256/hot0256_h264m_1920x1080.mp4" length="183668700" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0256/hot0256_h264m_1920x1080.mp4" fileSize="183668700" type="video/mp4" medium="video">
+				<media:title type="plain">HOT 256: Android Auto &amp; Google Assistant Driving Mode - Text Messages &amp; Android Auto</media:title>
+				<media:description type="plain">Text Messages &amp; Android Auto</media:description>
+				<media:keywords>TWiT, Mikah Sargent, Ask The Tech Guys, ATG, Android Auto, Google Assistant driving mode, hands-free text messages, Android device, Google Maps, infotainment system, text message reading, voice reply, AI-powered decisions, NetSuite by Oracle</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/03/860325/hero/HOT0256_thumbV2.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>HOT 255: Bulk Recipe Imports - Converting Recipe Cards Digitally</title>
+			<itunes:title>Bulk Recipe Imports - Converting Recipe Cards Digitally</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 22 Feb 2026 14:00:00 PST</pubDate>
+			<itunes:season>3</itunes:season>
+			<podcast:season>3</podcast:season>
+			<itunes:episode>255</itunes:episode>
+			<podcast:episode>255</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-tech/episodes/255</link>
+			<comments>https://twit.tv/shows/hands-on-tech/episodes/255</comments>
+			<category>Help &amp; How To</category>
+			<category>Technology</category>
+			<category>Reviews</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Converting Recipe Cards Digitally</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/how-bulk-digitize-your-recipes" type="text/html" />
+			<itunes:keywords>TWiT, Mikah Sargent, Ask The Tech Guys, ATG, bulk import recipes, Mela recipe manager, scan recipe cards, OCR, PDF conversion, Claude projects, openAI, Google's Gemini, JSON file format, automation, mac shortcuts, Python script, Hazel app</itunes:keywords>
+			<description><![CDATA[
+<p>On <em>Hands-On Tech</em>, Mikah guides Bob with some ways to streamline his process of scanning his physical recipe cards into importable files for his recipe manager app.</p> 
+<p>Don't forget to send in your questions for Mikah to answer during the show! <a href="mailto:hot@twit.tv" target="_blank">hot@twit.tv</a></p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://shopify.com/hot" target="_blank" rel="sponsored">shopify.com/hot</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>On <em>Hands-On Tech</em>, Mikah guides Bob with some ways to streamline his process of scanning his physical recipe cards into importable files for his recipe manager app.</p> 
+<p>Don't forget to send in your questions for Mikah to answer during the show! <a href="mailto:hot@twit.tv" target="_blank">hot@twit.tv</a></p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://shopify.com/hot" target="_blank" rel="sponsored">shopify.com/hot</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>On <em>Hands-On Tech</em>, Mikah guides Bob with some ways to streamline his process of scanning his physical recipe cards into importable files for his recipe manager app.</p> 
+<p>Don't forget to send in your questions for Mikah to answer during the show! <a href="mailto:hot@twit.tv" target="_blank">hot@twit.tv</a></p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://shopify.com/hot" target="_blank" rel="sponsored">shopify.com/hot</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860193/hero/HOT0255_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0255/hot0255_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>19:22</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0255/hot0255_h264m_1920x1080.mp4" length="340398367" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0255/hot0255_h264m_1920x1080.mp4" fileSize="340398367" type="video/mp4" medium="video">
+				<media:title type="plain">HOT 255: Bulk Recipe Imports - Converting Recipe Cards Digitally</media:title>
+				<media:description type="plain">Converting Recipe Cards Digitally</media:description>
+				<media:keywords>TWiT, Mikah Sargent, Ask The Tech Guys, ATG, bulk import recipes, Mela recipe manager, scan recipe cards, OCR, PDF conversion, Claude projects, openAI, Google's Gemini, JSON file format, automation, mac shortcuts, Python script, Hazel app</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860193/hero/HOT0255_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>HOT 254: Mac Mini Home Theater - Setting Up a Mac Mini As the Ideal Home Theater PC</title>
+			<itunes:title>Mac Mini Home Theater - Setting Up a Mac Mini As the Ideal Home Theater PC</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 15 Feb 2026 14:15:00 PST</pubDate>
+			<itunes:season>3</itunes:season>
+			<podcast:season>3</podcast:season>
+			<itunes:episode>254</itunes:episode>
+			<podcast:episode>254</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-tech/episodes/254</link>
+			<comments>https://twit.tv/shows/hands-on-tech/episodes/254</comments>
+			<category>Help &amp; How To</category>
+			<category>Technology</category>
+			<category>Reviews</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Setting Up a Mac Mini As the Ideal Home Theater PC</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/how-set-mac-mini-your-home-theater-system" type="text/html" />
+			<itunes:keywords>TWiT, Mikah Sargent, Ask The Tech Guys, ATG, Mac Mini, home theater pc, mac mini home theater pc, home theater setup, hdmi, projector setup, hdmi audio extractor, optical audio, logitech k44, Plex, infuse, kodi, vlc, media server, Apple TV, dvr channels, </itunes:keywords>
+			<description><![CDATA[
+<p>On Hands-On Tech, Mikah Sargent answers listener Don's questions on how to set up a Mac mini as a home theater system.</p> 
+<p>Send in your questions to Mikah at hot@twit.tv!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>On Hands-On Tech, Mikah Sargent answers listener Don's questions on how to set up a Mac mini as a home theater system.</p> 
+<p>Send in your questions to Mikah at hot@twit.tv!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>On Hands-On Tech, Mikah Sargent answers listener Don's questions on how to set up a Mac mini as a home theater system.</p> 
+<p>Send in your questions to Mikah at hot@twit.tv!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860144/hero/HOT0254_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0254/hot0254_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>20:11</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0254/hot0254_h264m_1920x1080.mp4" length="354670868" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0254/hot0254_h264m_1920x1080.mp4" fileSize="354670868" type="video/mp4" medium="video">
+				<media:title type="plain">HOT 254: Mac Mini Home Theater - Setting Up a Mac Mini As the Ideal Home Theater PC</media:title>
+				<media:description type="plain">Setting Up a Mac Mini As the Ideal Home Theater PC</media:description>
+				<media:keywords>TWiT, Mikah Sargent, Ask The Tech Guys, ATG, Mac Mini, home theater pc, mac mini home theater pc, home theater setup, hdmi, projector setup, hdmi audio extractor, optical audio, logitech k44, Plex, infuse, kodi, vlc, media server, Apple TV, dvr channels, </media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860144/hero/HOT0254_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>HOT 253: Backing Up a Large Photo Library - Effortlessly Back Up Your Large Photo Libraries</title>
+			<itunes:title>Backing Up a Large Photo Library - Effortlessly Back Up Your Large Photo Libraries</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 08 Feb 2026 14:00:00 PST</pubDate>
+			<itunes:season>3</itunes:season>
+			<podcast:season>3</podcast:season>
+			<itunes:episode>253</itunes:episode>
+			<podcast:episode>253</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-tech/episodes/253</link>
+			<comments>https://twit.tv/shows/hands-on-tech/episodes/253</comments>
+			<category>Help &amp; How To</category>
+			<category>Technology</category>
+			<category>Reviews</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Effortlessly Back Up Your Large Photo Libraries</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/backing-large-icloud-photo-library" type="text/html" />
+			<itunes:keywords>TWiT, Mikah Sargent, Ask The Tech Guys, ATG, large photo library backup, icloud photo library, Synology NAS, Time Machine backups, external SSD, cloud to cloud backup, iDrive, Synology Photos service, Folder Sync service, google photos, amazon photos</itunes:keywords>
+			<description><![CDATA[
+<p>On <em>Hands-On Tech</em>, Mikah offers Scott some suggestions for managing a large photo library for his wife that are simple enough for her to handle and can be automated as well.</p> 
+<p>Don't forget to send in your questions for Mikah to answer during the show! <a href="mailto:hot@twit.tv" target="_blank">hot@twit.tv</a></p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://shopify.com/hot" target="_blank" rel="sponsored">shopify.com/hot</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>On <em>Hands-On Tech</em>, Mikah offers Scott some suggestions for managing a large photo library for his wife that are simple enough for her to handle and can be automated as well.</p> 
+<p>Don't forget to send in your questions for Mikah to answer during the show! <a href="mailto:hot@twit.tv" target="_blank">hot@twit.tv</a></p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://shopify.com/hot" target="_blank" rel="sponsored">shopify.com/hot</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>On <em>Hands-On Tech</em>, Mikah offers Scott some suggestions for managing a large photo library for his wife that are simple enough for her to handle and can be automated as well.</p> 
+<p>Don't forget to send in your questions for Mikah to answer during the show! <a href="mailto:hot@twit.tv" target="_blank">hot@twit.tv</a></p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://shopify.com/hot" target="_blank" rel="sponsored">shopify.com/hot</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860010/hero/HOT0253_thumbnail-v3.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0253/hot0253_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>15:28</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0253/hot0253_h264m_1920x1080.mp4" length="276736619" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0253/hot0253_h264m_1920x1080.mp4" fileSize="276736619" type="video/mp4" medium="video">
+				<media:title type="plain">HOT 253: Backing Up a Large Photo Library - Effortlessly Back Up Your Large Photo Libraries</media:title>
+				<media:description type="plain">Effortlessly Back Up Your Large Photo Libraries</media:description>
+				<media:keywords>TWiT, Mikah Sargent, Ask The Tech Guys, ATG, large photo library backup, icloud photo library, Synology NAS, Time Machine backups, external SSD, cloud to cloud backup, iDrive, Synology Photos service, Folder Sync service, google photos, amazon photos</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860010/hero/HOT0253_thumbnail-v3.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>HOT 252: Stopping Spam Callers - Silencing the Robocallers</title>
+			<itunes:title>Stopping Spam Callers - Silencing the Robocallers</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 01 Feb 2026 14:00:00 PST</pubDate>
+			<itunes:season>3</itunes:season>
+			<podcast:season>3</podcast:season>
+			<itunes:episode>252</itunes:episode>
+			<podcast:episode>252</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-tech/episodes/252</link>
+			<comments>https://twit.tv/shows/hands-on-tech/episodes/252</comments>
+			<category>Help &amp; How To</category>
+			<category>Technology</category>
+			<category>Reviews</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Silencing the Robocallers</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/how-effectively-block-spam-calls-iphone" type="text/html" />
+			<itunes:keywords>TWiT, Mikah Sargent, Ask The Tech Guys, ATG, spam calls, scam calls, block spam callers, silence unknown callers, iphone call filtering, android call blocking, carrier call filter, verizon call filter, at&amp;t active armor, t-mobile scam shield</itunes:keywords>
+			<description><![CDATA[
+<p>On this week's episode of Hands-On Tech, Mikah helps Omar with ways to reduce the number of scam callers he receives daily.</p> 
+<p>Send in your questions for Mikah to answer on the show at hot@twit.tv</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://netsuite.com/hot" target="_blank" rel="sponsored">NetSuite.com/hot</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>On this week's episode of Hands-On Tech, Mikah helps Omar with ways to reduce the number of scam callers he receives daily.</p> 
+<p>Send in your questions for Mikah to answer on the show at hot@twit.tv</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://netsuite.com/hot" target="_blank" rel="sponsored">NetSuite.com/hot</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>On this week's episode of Hands-On Tech, Mikah helps Omar with ways to reduce the number of scam callers he receives daily.</p> 
+<p>Send in your questions for Mikah to answer on the show at hot@twit.tv</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://netsuite.com/hot" target="_blank" rel="sponsored">NetSuite.com/hot</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/859967/hero/HOT0252_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0252/hot0252_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>14:02</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0252/hot0252_h264m_1920x1080.mp4" length="238088994" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0252/hot0252_h264m_1920x1080.mp4" fileSize="238088994" type="video/mp4" medium="video">
+				<media:title type="plain">HOT 252: Stopping Spam Callers - Silencing the Robocallers</media:title>
+				<media:description type="plain">Silencing the Robocallers</media:description>
+				<media:keywords>TWiT, Mikah Sargent, Ask The Tech Guys, ATG, spam calls, scam calls, block spam callers, silence unknown callers, iphone call filtering, android call blocking, carrier call filter, verizon call filter, at&amp;t active armor, t-mobile scam shield</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/859967/hero/HOT0252_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>HOT 251: Accessing Drobo Files - Recovering Files From Obsolete NAS Devices</title>
+			<itunes:title>Accessing Drobo Files - Recovering Files From Obsolete NAS Devices</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 25 Jan 2026 13:30:00 PST</pubDate>
+			<itunes:season>3</itunes:season>
+			<podcast:season>3</podcast:season>
+			<itunes:episode>251</itunes:episode>
+			<podcast:episode>251</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-tech/episodes/251</link>
+			<comments>https://twit.tv/shows/hands-on-tech/episodes/251</comments>
+			<category>Help &amp; How To</category>
+			<category>Technology</category>
+			<category>Reviews</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Recovering Files From Obsolete NAS Devices</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/recovering-your-data-dead-drobo-drive" type="text/html" />
+			<itunes:keywords>TWiT, Mikah Sargent, Ask The Tech Guys, ATG, drobo recovery, proprietary file format, beyond raid, data recovery options, drobo encryption, drobo power supply, drobo community, ufs explorer, rstudio, professional data recovery, ontrack, drivesavers</itunes:keywords>
+			<description><![CDATA[
+<p>On this week's episode of Hands-On Tech, Jeff emails Mikah about trying to recover files from an old, obsolete Drobo NAS.<br /> 
+<br /> 
+Don't forget to send in your questions for Mikah to answer during the show! hot@twit.tv</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>On this week's episode of Hands-On Tech, Jeff emails Mikah about trying to recover files from an old, obsolete Drobo NAS.<br /> 
+<br /> 
+Don't forget to send in your questions for Mikah to answer during the show! hot@twit.tv</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>On this week's episode of Hands-On Tech, Jeff emails Mikah about trying to recover files from an old, obsolete Drobo NAS.<br /> 
+<br /> 
+Don't forget to send in your questions for Mikah to answer during the show! hot@twit.tv</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859829/hero/HOT0251_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0251/hot0251_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>15:24</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0251/hot0251_h264m_1920x1080.mp4" length="261251898" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0251/hot0251_h264m_1920x1080.mp4" fileSize="261251898" type="video/mp4" medium="video">
+				<media:title type="plain">HOT 251: Accessing Drobo Files - Recovering Files From Obsolete NAS Devices</media:title>
+				<media:description type="plain">Recovering Files From Obsolete NAS Devices</media:description>
+				<media:keywords>TWiT, Mikah Sargent, Ask The Tech Guys, ATG, drobo recovery, proprietary file format, beyond raid, data recovery options, drobo encryption, drobo power supply, drobo community, ufs explorer, rstudio, professional data recovery, ontrack, drivesavers</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859829/hero/HOT0251_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>HOT 250: Syncing Cloud Photos - Cross-Application Photo Libraries?</title>
+			<itunes:title>Syncing Cloud Photos - Cross-Application Photo Libraries?</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 18 Jan 2026 13:00:00 PST</pubDate>
+			<itunes:season>3</itunes:season>
+			<podcast:season>3</podcast:season>
+			<itunes:episode>250</itunes:episode>
+			<podcast:episode>250</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-tech/episodes/250</link>
+			<comments>https://twit.tv/shows/hands-on-tech/episodes/250</comments>
+			<category>Help &amp; How To</category>
+			<category>Technology</category>
+			<category>Reviews</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Cross-Application Photo Libraries?</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/can-you-sync-your-photos-between-icloud-and-google-photos" type="text/html" />
+			<itunes:keywords>TWiT, Mikah Sargent, Ask The Tech Guys, ATG, syncing photos, photo libraries, icloud, icloud photo, google photos, data portability, backup and sync, ios photo syncing, third party desktop tools, photosync, Mylio, cross-platform photo management</itunes:keywords>
+			<description><![CDATA[
+<p>On this week's episode of Hands-On Tech, George asks whether he can sync his iCloud and Google Photos photo libraries together.</p> 
+<p>Don't forget to send in your questions for Mikah to answer during the show, or if there are any products you'd like him to review. hot@twit.tv</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>On this week's episode of Hands-On Tech, George asks whether he can sync his iCloud and Google Photos photo libraries together.</p> 
+<p>Don't forget to send in your questions for Mikah to answer during the show, or if there are any products you'd like him to review. hot@twit.tv</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>On this week's episode of Hands-On Tech, George asks whether he can sync his iCloud and Google Photos photo libraries together.</p> 
+<p>Don't forget to send in your questions for Mikah to answer during the show, or if there are any products you'd like him to review. hot@twit.tv</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859727/hero/HOT0250_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0250/hot0250_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>18:43</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0250/hot0250_h264m_1920x1080.mp4" length="317348854" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0250/hot0250_h264m_1920x1080.mp4" fileSize="317348854" type="video/mp4" medium="video">
+				<media:title type="plain">HOT 250: Syncing Cloud Photos - Cross-Application Photo Libraries?</media:title>
+				<media:description type="plain">Cross-Application Photo Libraries?</media:description>
+				<media:keywords>TWiT, Mikah Sargent, Ask The Tech Guys, ATG, syncing photos, photo libraries, icloud, icloud photo, google photos, data portability, backup and sync, ios photo syncing, third party desktop tools, photosync, Mylio, cross-platform photo management</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859727/hero/HOT0250_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>HOT 249: A Broken Apple Watch Streak - Can You Fix Broken Apple Watch Streaks?</title>
+			<itunes:title>A Broken Apple Watch Streak - Can You Fix Broken Apple Watch Streaks?</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 11 Jan 2026 14:00:00 PST</pubDate>
+			<itunes:season>3</itunes:season>
+			<podcast:season>3</podcast:season>
+			<itunes:episode>249</itunes:episode>
+			<podcast:episode>249</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-tech/episodes/249</link>
+			<comments>https://twit.tv/shows/hands-on-tech/episodes/249</comments>
+			<category>Help &amp; How To</category>
+			<category>Technology</category>
+			<category>Reviews</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Can You Fix Broken Apple Watch Streaks?</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/hands-tech-249-transcript" type="text/html" />
+			<itunes:keywords>TWiT, Mikah Sargent, Ask The Tech Guys, ATG, Apple Watch streak, fix broken streak, Apple Watch activity rings, move ring, exercise ring, stand ring, restore Apple Watch streak, display bug, activity tracker, fitness app, close rings, Apple Support</itunes:keywords>
+			<description><![CDATA[
+<p>On this week's episode of Hands-On Tech, Mikah answers one of the more common problems that plagues Apple Watch users: how can you fix an Apple Watch streak that was broken?</p> 
+<p>Don't forget to send in your questions for Mikah to answer during the show! hot@twit.tv</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>On this week's episode of Hands-On Tech, Mikah answers one of the more common problems that plagues Apple Watch users: how can you fix an Apple Watch streak that was broken?</p> 
+<p>Don't forget to send in your questions for Mikah to answer during the show! hot@twit.tv</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>On this week's episode of Hands-On Tech, Mikah answers one of the more common problems that plagues Apple Watch users: how can you fix an Apple Watch streak that was broken?</p> 
+<p>Don't forget to send in your questions for Mikah to answer during the show! hot@twit.tv</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859651/hero/HOT0249_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0249/hot0249_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>22:08</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0249/hot0249_h264m_1920x1080.mp4" length="375584755" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0249/hot0249_h264m_1920x1080.mp4" fileSize="375584755" type="video/mp4" medium="video">
+				<media:title type="plain">HOT 249: A Broken Apple Watch Streak - Can You Fix Broken Apple Watch Streaks?</media:title>
+				<media:description type="plain">Can You Fix Broken Apple Watch Streaks?</media:description>
+				<media:keywords>TWiT, Mikah Sargent, Ask The Tech Guys, ATG, Apple Watch streak, fix broken streak, Apple Watch activity rings, move ring, exercise ring, stand ring, restore Apple Watch streak, display bug, activity tracker, fitness app, close rings, Apple Support</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859651/hero/HOT0249_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>HOT 248: Home Theater PC Replacement - Alternatives to HTPC&#039;s</title>
+			<itunes:title>Home Theater PC Replacement - Alternatives to HTPC&#039;s</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 04 Jan 2026 14:00:00 PST</pubDate>
+			<itunes:season>3</itunes:season>
+			<podcast:season>3</podcast:season>
+			<itunes:episode>248</itunes:episode>
+			<podcast:episode>248</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-tech/episodes/248</link>
+			<comments>https://twit.tv/shows/hands-on-tech/episodes/248</comments>
+			<category>Help &amp; How To</category>
+			<category>Technology</category>
+			<category>Reviews</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Alternatives to HTPC&#039;s</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/replacing-your-home-theater-pc-best-devices-playing-ripped-dvds-and-isos" type="text/html" />
+			<itunes:keywords>TWiT, Mikah Sargent, Ask The Tech Guys, ATG, HTPC replacement, Home Theater PC alternatives, nvidia shield tv pro, kodi, vlc, Amazon Fire TV Stick 4K Max, Amazon Fire TV Cube, DVD ISO playback, digital media streaming, plex server, Jellyfin server</itunes:keywords>
+			<description><![CDATA[
+<p>On the first episode of <em>Hands-On Tech</em> for 2026, Mikah helps Andrew out with some recommendations to replace his home theater PC (HTPC) so that his family can watch old home movies easily!</p> 
+<p>Send in your questions for Mikah to answer during the show to <a href="mailto:hot@twit.tv" target="_blank">hot@twit.tv</a>.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://netsuite.com/hot" target="_blank" rel="sponsored">NetSuite.com/hot</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>On the first episode of <em>Hands-On Tech</em> for 2026, Mikah helps Andrew out with some recommendations to replace his home theater PC (HTPC) so that his family can watch old home movies easily!</p> 
+<p>Send in your questions for Mikah to answer during the show to <a href="mailto:hot@twit.tv" target="_blank">hot@twit.tv</a>.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://netsuite.com/hot" target="_blank" rel="sponsored">NetSuite.com/hot</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>On the first episode of <em>Hands-On Tech</em> for 2026, Mikah helps Andrew out with some recommendations to replace his home theater PC (HTPC) so that his family can watch old home movies easily!</p> 
+<p>Send in your questions for Mikah to answer during the show to <a href="mailto:hot@twit.tv" target="_blank">hot@twit.tv</a>.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Tech</em> at <a href="https://twit.tv/shows/hands-on-tech">https://twit.tv/shows/hands-on-tech</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://netsuite.com/hot" target="_blank" rel="sponsored">NetSuite.com/hot</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859603/hero/HOT0248_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0248/hot0248_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>14:07</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0248/hot0248_h264m_1920x1080.mp4" length="239468408" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hot/hot0248/hot0248_h264m_1920x1080.mp4" fileSize="239468408" type="video/mp4" medium="video">
+				<media:title type="plain">HOT 248: Home Theater PC Replacement - Alternatives to HTPC&#039;s</media:title>
+				<media:description type="plain">Alternatives to HTPC&#039;s</media:description>
+				<media:keywords>TWiT, Mikah Sargent, Ask The Tech Guys, ATG, HTPC replacement, Home Theater PC alternatives, nvidia shield tv pro, kodi, vlc, Amazon Fire TV Stick 4K Max, Amazon Fire TV Cube, DVD ISO playback, digital media streaming, plex server, Jellyfin server</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859603/hero/HOT0248_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+	</channel>
+</rss>

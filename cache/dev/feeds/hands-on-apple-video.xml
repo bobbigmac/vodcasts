@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/" xmlns:podcast="https://podcastindex.org/namespace/1.0" version="2.0">
+	<channel>
+		<title>Hands-On Apple (Video)</title>
+		<itunes:author>TWiT</itunes:author>
+		<link>https://twit.tv/shows/hands-on-apple</link>
+		<generator>TWiT Feed Generator v4.10</generator>
+		<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+		<language>en-US</language>
+		<copyright>This work is licensed under a Creative Commons License - Attribution-NonCommercial-NoDerivatives 4.0 International - http://creativecommons.org/licenses/by-nc-nd/4.0/</copyright>
+		<creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+		<managingEditor>feedmail@twit.tv (TWiT Editors)</managingEditor>
+		<webMaster>feedmail@twit.tv (TWiT Engineering)</webMaster>
+		<ttl>720</ttl>
+		<sy:updatePeriod>weekly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+		<lastBuildDate>Thu, 05 Mar 2026 15:52:17 PST</lastBuildDate>
+		<pubDate>Thu, 05 Mar 2026 15:52:17 PST</pubDate>
+		<rawvoice:frequency>weekly</rawvoice:frequency>
+		<rawvoice:location>Petaluma, CA</rawvoice:location>
+		<itunes:type>episodic</itunes:type>
+		<itunes:subtitle>Mikah Sargent shares helpful tips, great apps, and awesome accessories for your Mac, iPad and iPhone.</itunes:subtitle>
+		<itunes:summary>Hands-On Apple explores and explains the Mac — and beyond! From clever Terminal commands to little-known iOS settings, Mikah Sargent shares all the best tips and tricks for your Mac, iPad, iPhone, and Apple Watch. You'll get all the details on Apple's apps and the best apps in the App Store, you'll learn about awesome accessories for your Apple devices, and you'll explore updates to Apple's operating systems — including iOS, macOS, iPadOS, and watchOS. Hands-On Apple is your one-stop shop for Apple know-how. You can join Club TWiT for $10 per month and get ad-free audio and video feeds for all our shows plus everything else the club offers...or get just this podcast ad-free for $5 per month.
+
+New episodes every Thursday.</itunes:summary>
+		<description>Hands-On Apple explores and explains the Mac — and beyond! From clever Terminal commands to little-known iOS settings, Mikah Sargent shares all the best tips and tricks for your Mac, iPad, iPhone, and Apple Watch. You'll get all the details on Apple's apps and the best apps in the App Store, you'll learn about awesome accessories for your Apple devices, and you'll explore updates to Apple's operating systems — including iOS, macOS, iPadOS, and watchOS. Hands-On Apple is your one-stop shop for Apple know-how. You can join Club TWiT for $10 per month and get ad-free audio and video feeds for all our shows plus everything else the club offers...or get just this podcast ad-free for $5 per month.
+
+New episodes every Thursday.</description>
+		<itunes:keywords>TWiT, HOA, Mikah Sargent, Hands-On Apple, MacBook, iMac, Apple tips, iPhone tips, MacOS tips, iOS tips, iPad tips, best Mac apps, best iPad apps, best iPhone apps</itunes:keywords>
+		<rawvoice:rating tv="tv-g">tv-g</rawvoice:rating>
+		<itunes:explicit>no</itunes:explicit>
+		<itunes:block>no</itunes:block>
+		<googleplay:block>No</googleplay:block>
+		<podcast:funding url="https://twit.tv/clubtwit">Become a Club TWiT member!</podcast:funding>
+		<itunes:owner>
+			<itunes:name>Leo Laporte</itunes:name>
+			<itunes:email>feedmail@twit.tv</itunes:email>
+		</itunes:owner>
+		<itunes:category text="Technology" />
+		<category>Macintosh</category>
+		<image>
+			<title>Hands-On Apple (Video)</title>
+			<url>https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/Hands-On%20Apple/album_art/hd/HOA_3000_video.jpg</url>
+			<link>https://twit.tv/shows/hands-on-apple</link>
+		</image>
+		<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/Hands-On%20Apple/album_art/hd/HOA_3000_video.jpg" />
+		<itunes:new-feed-url>https://feeds.twit.tv/hom_video_hd.xml</itunes:new-feed-url>
+		<rawvoice:subscribe feed="https://feeds.twit.tv/hom_video_hd.xml" itunes="https://podcasts.apple.com/us/podcast/hands-on-apple-video/id1502320530" html="https://twit.tv/shows/hands-on-apple"></rawvoice:subscribe>
+		<atom:link href="https://feeds.twit.tv/hom_video_hd.xml" type="application/rss+xml" rel="self"/>
+		<item>
+			<title>HOA 221: Privacy &amp; Security Settings</title>
+			<itunes:title>Privacy &amp; Security Settings</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 05 Mar 2026 14:41:43 PST</pubDate>
+			<itunes:season>2</itunes:season>
+			<podcast:season>2</podcast:season>
+			<itunes:episode>221</itunes:episode>
+			<podcast:episode>221</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-apple/episodes/221</link>
+			<comments>https://twit.tv/shows/hands-on-apple/episodes/221</comments>
+			<category>Help &amp; How To</category>
+			<category>Macintosh</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>iOS Permissions You Need to Check Now</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/hands-apple-221-transcript" type="text/html" />
+			<itunes:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, iOS privacy and security settings, iPadOS, macOS Sonoma, app permissions, location services, tracking prevention, calendar access, contacts privacy</itunes:keywords>
+			<description><![CDATA[
+<p>Ready for an iPhone security audit? This episode is your personal walkthrough to reclaiming control, explaining not just what each privacy setting does but why changing them actually matters. Discover how hidden iOS settings let you outsmart sneaky trackers that follow you across apps, home networks, and even your own calendar.</p><ul> 
+<li>App permissions: location, tracking, calendars, contacts, health, photos</li> 
+<li>Restricting calendar and photo access for better privacy</li> 
+<li>App access to files, folders, focus modes, and health data</li> 
+<li>Managing smart home and Apple Music permissions</li> 
+<li>Third-party browser passkeys and selective photo sharing</li> 
+<li>Apps controlling reminders and using Apple Wallet features</li> 
+<li>Peripheral and Bluetooth permissions to limit device profiling</li> 
+<li>Camera, microphone, and local network access by apps</li> 
+<li>Motion, fitness, and nearby device tracking permissions</li> 
+<li>Research and sensor data sharing for studies and health</li> 
+<li>Speech recognition and journaling suggestions using device activity</li> 
+<li>Viewing and managing blocked contacts and sharing via Safety Check</li> 
+<li>Safety Check's emergency resets and granular access control</li> 
+<li>Sensitive content warnings for nudity in photos or videos</li> 
+<li>Sharing analytics with Apple and app developers (opt-in controls)</li> 
+<li>Reviewing app transparency logs and network activity reports</li> 
+<li>Accessory connection permissions and security update automation</li> 
+<li>Stolen Device Protection and Lockdown Mode explained</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Ready for an iPhone security audit? This episode is your personal walkthrough to reclaiming control, explaining not just what each privacy setting does but why changing them actually matters. Discover how hidden iOS settings let you outsmart sneaky trackers that follow you across apps, home networks, and even your own calendar.</p><ul> 
+<li>App permissions: location, tracking, calendars, contacts, health, photos</li> 
+<li>Restricting calendar and photo access for better privacy</li> 
+<li>App access to files, folders, focus modes, and health data</li> 
+<li>Managing smart home and Apple Music permissions</li> 
+<li>Third-party browser passkeys and selective photo sharing</li> 
+<li>Apps controlling reminders and using Apple Wallet features</li> 
+<li>Peripheral and Bluetooth permissions to limit device profiling</li> 
+<li>Camera, microphone, and local network access by apps</li> 
+<li>Motion, fitness, and nearby device tracking permissions</li> 
+<li>Research and sensor data sharing for studies and health</li> 
+<li>Speech recognition and journaling suggestions using device activity</li> 
+<li>Viewing and managing blocked contacts and sharing via Safety Check</li> 
+<li>Safety Check's emergency resets and granular access control</li> 
+<li>Sensitive content warnings for nudity in photos or videos</li> 
+<li>Sharing analytics with Apple and app developers (opt-in controls)</li> 
+<li>Reviewing app transparency logs and network activity reports</li> 
+<li>Accessory connection permissions and security update automation</li> 
+<li>Stolen Device Protection and Lockdown Mode explained</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Ready for an iPhone security audit? This episode is your personal walkthrough to reclaiming control, explaining not just what each privacy setting does but why changing them actually matters. Discover how hidden iOS settings let you outsmart sneaky trackers that follow you across apps, home networks, and even your own calendar.</p><ul> 
+<li>App permissions: location, tracking, calendars, contacts, health, photos</li> 
+<li>Restricting calendar and photo access for better privacy</li> 
+<li>App access to files, folders, focus modes, and health data</li> 
+<li>Managing smart home and Apple Music permissions</li> 
+<li>Third-party browser passkeys and selective photo sharing</li> 
+<li>Apps controlling reminders and using Apple Wallet features</li> 
+<li>Peripheral and Bluetooth permissions to limit device profiling</li> 
+<li>Camera, microphone, and local network access by apps</li> 
+<li>Motion, fitness, and nearby device tracking permissions</li> 
+<li>Research and sensor data sharing for studies and health</li> 
+<li>Speech recognition and journaling suggestions using device activity</li> 
+<li>Viewing and managing blocked contacts and sharing via Safety Check</li> 
+<li>Safety Check's emergency resets and granular access control</li> 
+<li>Sensitive content warnings for nudity in photos or videos</li> 
+<li>Sharing analytics with Apple and app developers (opt-in controls)</li> 
+<li>Reviewing app transparency logs and network activity reports</li> 
+<li>Accessory connection permissions and security update automation</li> 
+<li>Stolen Device Protection and Lockdown Mode explained</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860380/hero/HOA0221_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0221/hom0221_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>28:50</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0221/hom0221_h264m_1920x1080.mp4" length="534657906" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0221/hom0221_h264m_1920x1080.mp4" fileSize="534657906" type="video/mp4" medium="video">
+				<media:title type="plain">HOA 221: Privacy &amp; Security Settings</media:title>
+				<media:description type="plain">iOS Permissions You Need to Check Now</media:description>
+				<media:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, iOS privacy and security settings, iPadOS, macOS Sonoma, app permissions, location services, tracking prevention, calendar access, contacts privacy</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/03/860380/hero/HOA0221_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>HOA 220: Managing Browser Tabs Across Apple Devices</title>
+			<itunes:title>Managing Browser Tabs Across Apple Devices</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 26 Feb 2026 14:31:39 PST</pubDate>
+			<itunes:season>2</itunes:season>
+			<podcast:season>2</podcast:season>
+			<itunes:episode>220</itunes:episode>
+			<podcast:episode>220</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-apple/episodes/220</link>
+			<comments>https://twit.tv/shows/hands-on-apple/episodes/220</comments>
+			<category>Help &amp; How To</category>
+			<category>Macintosh</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Tab Groups &amp; iCloud Tabs</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/hands-apple-220-transcript" type="text/html" />
+			<itunes:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, Safari tab syncing, iCloud Tabs, tab groups, syncing tabs across devices, macOS Safari, iPadOS Safari, iPhone Safari, iCloud account, Safari settings</itunes:keywords>
+			<description><![CDATA[
+<p>Tired of losing your place online when moving between Apple devices? <em>Hands-On Apple</em> shows you how syncing Safari tabs can keep your workflow as smooth as your tech. Juggle dozens of tabs across Mac, iPhone, and iPad without missing a beat!</p><ul> 
+<li>Setting up "Saved to iCloud" across Apple devices</li> 
+<li>Using Safari Tab Groups for task-specific browsing synchronization</li> 
+<li>Accessing and managing open Safari tabs with iCloud Tabs</li> 
+<li>Troubleshooting iCloud Tabs sync issues and solutions</li> 
+<li>Quick tips for customizing the Safari start page for cross-device workflow</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Tired of losing your place online when moving between Apple devices? <em>Hands-On Apple</em> shows you how syncing Safari tabs can keep your workflow as smooth as your tech. Juggle dozens of tabs across Mac, iPhone, and iPad without missing a beat!</p><ul> 
+<li>Setting up "Saved to iCloud" across Apple devices</li> 
+<li>Using Safari Tab Groups for task-specific browsing synchronization</li> 
+<li>Accessing and managing open Safari tabs with iCloud Tabs</li> 
+<li>Troubleshooting iCloud Tabs sync issues and solutions</li> 
+<li>Quick tips for customizing the Safari start page for cross-device workflow</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Tired of losing your place online when moving between Apple devices? <em>Hands-On Apple</em> shows you how syncing Safari tabs can keep your workflow as smooth as your tech. Juggle dozens of tabs across Mac, iPhone, and iPad without missing a beat!</p><ul> 
+<li>Setting up "Saved to iCloud" across Apple devices</li> 
+<li>Using Safari Tab Groups for task-specific browsing synchronization</li> 
+<li>Accessing and managing open Safari tabs with iCloud Tabs</li> 
+<li>Troubleshooting iCloud Tabs sync issues and solutions</li> 
+<li>Quick tips for customizing the Safari start page for cross-device workflow</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860293/hero/HOA0220_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0220/hom0220_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>10:58</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0220/hom0220_h264m_1920x1080.mp4" length="196785919" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0220/hom0220_h264m_1920x1080.mp4" fileSize="196785919" type="video/mp4" medium="video">
+				<media:title type="plain">HOA 220: Managing Browser Tabs Across Apple Devices</media:title>
+				<media:description type="plain">Tab Groups &amp; iCloud Tabs</media:description>
+				<media:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, Safari tab syncing, iCloud Tabs, tab groups, syncing tabs across devices, macOS Safari, iPadOS Safari, iPhone Safari, iCloud account, Safari settings</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860293/hero/HOA0220_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>HOA 219: Archiving &amp; Exporting Webpages in Safari</title>
+			<itunes:title>Archiving &amp; Exporting Webpages in Safari</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 19 Feb 2026 13:55:27 PST</pubDate>
+			<itunes:season>2</itunes:season>
+			<podcast:season>2</podcast:season>
+			<itunes:episode>219</itunes:episode>
+			<podcast:episode>219</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-apple/episodes/219</link>
+			<comments>https://twit.tv/shows/hands-on-apple/episodes/219</comments>
+			<category>Help &amp; How To</category>
+			<category>Macintosh</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>PDFs, PNGs, Page Source, &amp; Web Archive</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/hands-apple-219-transcript" type="text/html" />
+			<itunes:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, save webpage Safari macOS, export as PDF, print webpage, Save As PNG, HTML page source, Web Archive, Safari proprietary format, Quick Look</itunes:keywords>
+			<description><![CDATA[
+<p>Think saving webpages is just about hitting Print? Before you waste time on clunky printouts, learn how Safari's built-in options can actually preserve entire sites!</p><ul> 
+<li>Export as PDF versus Print dialog</li> 
+<li>Saving web pages as images, HTML, or Safari web archive files</li> 
+<li>When to use PDF, HTML, PNG, or Web Archive for web page storage</li> 
+<li>File size differences and optimal formats for offline web saving</li> 
+<li>The best ways to keep web content on macOS</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Think saving webpages is just about hitting Print? Before you waste time on clunky printouts, learn how Safari's built-in options can actually preserve entire sites!</p><ul> 
+<li>Export as PDF versus Print dialog</li> 
+<li>Saving web pages as images, HTML, or Safari web archive files</li> 
+<li>When to use PDF, HTML, PNG, or Web Archive for web page storage</li> 
+<li>File size differences and optimal formats for offline web saving</li> 
+<li>The best ways to keep web content on macOS</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Think saving webpages is just about hitting Print? Before you waste time on clunky printouts, learn how Safari's built-in options can actually preserve entire sites!</p><ul> 
+<li>Export as PDF versus Print dialog</li> 
+<li>Saving web pages as images, HTML, or Safari web archive files</li> 
+<li>When to use PDF, HTML, PNG, or Web Archive for web page storage</li> 
+<li>File size differences and optimal formats for offline web saving</li> 
+<li>The best ways to keep web content on macOS</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860205/hero/HOA0219_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0219/hom0219_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>11:04</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0219/hom0219_h264m_1920x1080.mp4" length="198033668" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0219/hom0219_h264m_1920x1080.mp4" fileSize="198033668" type="video/mp4" medium="video">
+				<media:title type="plain">HOA 219: Archiving &amp; Exporting Webpages in Safari</media:title>
+				<media:description type="plain">PDFs, PNGs, Page Source, &amp; Web Archive</media:description>
+				<media:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, save webpage Safari macOS, export as PDF, print webpage, Save As PNG, HTML page source, Web Archive, Safari proprietary format, Quick Look</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860205/hero/HOA0219_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>HOA 218: Critical HomeKit Update</title>
+			<itunes:title>Critical HomeKit Update</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 12 Feb 2026 14:35:36 PST</pubDate>
+			<itunes:season>2</itunes:season>
+			<podcast:season>2</podcast:season>
+			<itunes:episode>218</itunes:episode>
+			<podcast:episode>218</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-apple/episodes/218</link>
+			<comments>https://twit.tv/shows/hands-on-apple/episodes/218</comments>
+			<category>Help &amp; How To</category>
+			<category>Macintosh</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Don't Lose Support for Your Smart Devices!</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/hands-apple-218-transcript" type="text/html" />
+			<itunes:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, Apple Home, Homekit, Home app update, Matter compatibility, smart home, HomePod, Apple TV, smart light bulb, Home architecture change, guest access</itunes:keywords>
+			<description><![CDATA[
+<p>The Home app just got a major overhaul, thanks to Matter compatibility and fresh features that are quietly transforming how Apple users control their homes. Mikah Sargent breaks down what you need to do, and why this update is bigger than you may think.</p><ul> 
+<li>Why updating to the latest Apple Home version is required</li> 
+<li>How to prepare your devices and household for the update</li> 
+<li>Steps to manually update the Apple Home system</li> 
+<li>Overview of post-update Home app features and settings</li> 
+<li>Walkthrough of new Home app controls: activity, energy, hubs, security, and more</li> 
+<li>Matter accessories and updated connected services explained</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>The Home app just got a major overhaul, thanks to Matter compatibility and fresh features that are quietly transforming how Apple users control their homes. Mikah Sargent breaks down what you need to do, and why this update is bigger than you may think.</p><ul> 
+<li>Why updating to the latest Apple Home version is required</li> 
+<li>How to prepare your devices and household for the update</li> 
+<li>Steps to manually update the Apple Home system</li> 
+<li>Overview of post-update Home app features and settings</li> 
+<li>Walkthrough of new Home app controls: activity, energy, hubs, security, and more</li> 
+<li>Matter accessories and updated connected services explained</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>The Home app just got a major overhaul, thanks to Matter compatibility and fresh features that are quietly transforming how Apple users control their homes. Mikah Sargent breaks down what you need to do, and why this update is bigger than you may think.</p><ul> 
+<li>Why updating to the latest Apple Home version is required</li> 
+<li>How to prepare your devices and household for the update</li> 
+<li>Steps to manually update the Apple Home system</li> 
+<li>Overview of post-update Home app features and settings</li> 
+<li>Walkthrough of new Home app controls: activity, energy, hubs, security, and more</li> 
+<li>Matter accessories and updated connected services explained</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860111/hero/HOA0218_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0218/hom0218_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>8:43</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0218/hom0218_h264m_1920x1080.mp4" length="161467548" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0218/hom0218_h264m_1920x1080.mp4" fileSize="161467548" type="video/mp4" medium="video">
+				<media:title type="plain">HOA 218: Critical HomeKit Update</media:title>
+				<media:description type="plain">Don't Lose Support for Your Smart Devices!</media:description>
+				<media:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, Apple Home, Homekit, Home app update, Matter compatibility, smart home, HomePod, Apple TV, smart light bulb, Home architecture change, guest access</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860111/hero/HOA0218_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>HOA 217: Multitasking &amp; Gestures on iPad</title>
+			<itunes:title>Multitasking &amp; Gestures on iPad</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 05 Feb 2026 13:59:17 PST</pubDate>
+			<itunes:season>2</itunes:season>
+			<podcast:season>2</podcast:season>
+			<itunes:episode>217</itunes:episode>
+			<podcast:episode>217</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-apple/episodes/217</link>
+			<comments>https://twit.tv/shows/hands-on-apple/episodes/217</comments>
+			<category>Help &amp; How To</category>
+			<category>Macintosh</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Full Screen, Windowed Apps, &amp; Stage Manager</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/hands-apple-217-transcript" type="text/html" />
+			<itunes:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, multitasking on iPad, ipad gestures, iPadOS multitasking settings, full screen apps iPad, windowed apps iPad, Stage Manager iPad</itunes:keywords>
+			<description><![CDATA[
+<p>Your iPad can do a lot more than you think. Full Screen, Windowed, or Stage Manager—which multitasking style actually fits your workflow? Mikah Sargent breaks down the pros and cons so you can finally decide which iPad experience wins.</p><ul> 
+<li>How to customize multitasking modes on your iPad</li> 
+<li>Using gestures for multitasking and productivity</li> 
+<li>Four/five-finger gestures: switch apps, go home, open app switcher</li> 
+<li>Three-finger gestures: undo, redo, copy, paste, quick notes, screenshots</li> 
+<li>Windowed apps explained: resizing, moving, multi-window setup</li> 
+<li>Stage Manager basics and how it differs from other modes</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Your iPad can do a lot more than you think. Full Screen, Windowed, or Stage Manager—which multitasking style actually fits your workflow? Mikah Sargent breaks down the pros and cons so you can finally decide which iPad experience wins.</p><ul> 
+<li>How to customize multitasking modes on your iPad</li> 
+<li>Using gestures for multitasking and productivity</li> 
+<li>Four/five-finger gestures: switch apps, go home, open app switcher</li> 
+<li>Three-finger gestures: undo, redo, copy, paste, quick notes, screenshots</li> 
+<li>Windowed apps explained: resizing, moving, multi-window setup</li> 
+<li>Stage Manager basics and how it differs from other modes</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Your iPad can do a lot more than you think. Full Screen, Windowed, or Stage Manager—which multitasking style actually fits your workflow? Mikah Sargent breaks down the pros and cons so you can finally decide which iPad experience wins.</p><ul> 
+<li>How to customize multitasking modes on your iPad</li> 
+<li>Using gestures for multitasking and productivity</li> 
+<li>Four/five-finger gestures: switch apps, go home, open app switcher</li> 
+<li>Three-finger gestures: undo, redo, copy, paste, quick notes, screenshots</li> 
+<li>Windowed apps explained: resizing, moving, multi-window setup</li> 
+<li>Stage Manager basics and how it differs from other modes</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860029/hero/HOA0217_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0217/hom0217_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>6:42</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0217/hom0217_h264m_1920x1080.mp4" length="119586297" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0217/hom0217_h264m_1920x1080.mp4" fileSize="119586297" type="video/mp4" medium="video">
+				<media:title type="plain">HOA 217: Multitasking &amp; Gestures on iPad</media:title>
+				<media:description type="plain">Full Screen, Windowed Apps, &amp; Stage Manager</media:description>
+				<media:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, multitasking on iPad, ipad gestures, iPadOS multitasking settings, full screen apps iPad, windowed apps iPad, Stage Manager iPad</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860029/hero/HOA0217_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>HOA 216: Audit Your Health Data Privacy</title>
+			<itunes:title>Audit Your Health Data Privacy</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 29 Jan 2026 14:54:30 PST</pubDate>
+			<itunes:season>2</itunes:season>
+			<podcast:season>2</podcast:season>
+			<itunes:episode>216</itunes:episode>
+			<podcast:episode>216</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-apple/episodes/216</link>
+			<comments>https://twit.tv/shows/hands-on-apple/episodes/216</comments>
+			<category>Help &amp; How To</category>
+			<category>Macintosh</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>What&#039;s Your Fitness Tracker Really Tracking?</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/hands-apple-216-transcript" type="text/html" />
+			<itunes:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, Apple health data privacy, health app iOS, audit app permissions, third-party health apps, Data sharing, iphone privacy, iPad health settings</itunes:keywords>
+			<description><![CDATA[
+<p>With ChatGPT now tapping into Apple Health, sharing your personal metrics is easier (and riskier) than ever. Find out how to quickly spot and stop unnecessary data sharing before your most sensitive info lands in unexpected hands.</p><ul> 
+<li>Auditing apps accessing your Apple health data on iOS</li> 
+<li>Managing health data sharing with Apple's Fitness app</li> 
+<li>Customizing third-party app access to health info</li> 
+<li>Reviewing and limiting individual health data categories for third-party apps</li> 
+<li>Checking what data third-party apps have written to the Health app</li> 
+<li>Identifying and managing health data from uninstalled apps</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>With ChatGPT now tapping into Apple Health, sharing your personal metrics is easier (and riskier) than ever. Find out how to quickly spot and stop unnecessary data sharing before your most sensitive info lands in unexpected hands.</p><ul> 
+<li>Auditing apps accessing your Apple health data on iOS</li> 
+<li>Managing health data sharing with Apple's Fitness app</li> 
+<li>Customizing third-party app access to health info</li> 
+<li>Reviewing and limiting individual health data categories for third-party apps</li> 
+<li>Checking what data third-party apps have written to the Health app</li> 
+<li>Identifying and managing health data from uninstalled apps</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>With ChatGPT now tapping into Apple Health, sharing your personal metrics is easier (and riskier) than ever. Find out how to quickly spot and stop unnecessary data sharing before your most sensitive info lands in unexpected hands.</p><ul> 
+<li>Auditing apps accessing your Apple health data on iOS</li> 
+<li>Managing health data sharing with Apple's Fitness app</li> 
+<li>Customizing third-party app access to health info</li> 
+<li>Reviewing and limiting individual health data categories for third-party apps</li> 
+<li>Checking what data third-party apps have written to the Health app</li> 
+<li>Identifying and managing health data from uninstalled apps</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859927/hero/HOA0216_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0216/hom0216_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>10:47</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0216/hom0216_h264m_1920x1080.mp4" length="192746495" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0216/hom0216_h264m_1920x1080.mp4" fileSize="192746495" type="video/mp4" medium="video">
+				<media:title type="plain">HOA 216: Audit Your Health Data Privacy</media:title>
+				<media:description type="plain">What&#039;s Your Fitness Tracker Really Tracking?</media:description>
+				<media:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, Apple health data privacy, health app iOS, audit app permissions, third-party health apps, Data sharing, iphone privacy, iPad health settings</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859927/hero/HOA0216_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>HOA 215: Custom Pages Templates</title>
+			<itunes:title>Custom Pages Templates</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 22 Jan 2026 09:45:00 PST</pubDate>
+			<itunes:season>2</itunes:season>
+			<podcast:season>2</podcast:season>
+			<itunes:episode>215</itunes:episode>
+			<podcast:episode>215</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-apple/episodes/215</link>
+			<comments>https://twit.tv/shows/hands-on-apple/episodes/215</comments>
+			<category>Help &amp; How To</category>
+			<category>Macintosh</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Building Personalized Document Designs</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/how-create-custom-templates-apple-pages" type="text/html" />
+			<itunes:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, creating custom templates in Pages, Pages app for macOS, document templates, save as template, template chooser, sharing templates in Pages</itunes:keywords>
+			<description><![CDATA[
+<p>Turns out, making slick, professional-looking Pages templates is way easier than you think. Find out the productivity trick Mikah Sargent wishes more Mac users knew.</p><ul> 
+<li>Creating custom Pages templates for faster document design</li> 
+<li>Modifying existing Pages templates and saving personalized versions</li> 
+<li>Step-by-step guide to building a Pages template from scratch</li> 
+<li>Using placeholder text and media placeholders for flexible layouts</li> 
+<li>Managing, sharing, and deleting custom templates in Pages</li> 
+<li>Practical uses for templates—recipe cards, newsletters, business cards</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Turns out, making slick, professional-looking Pages templates is way easier than you think. Find out the productivity trick Mikah Sargent wishes more Mac users knew.</p><ul> 
+<li>Creating custom Pages templates for faster document design</li> 
+<li>Modifying existing Pages templates and saving personalized versions</li> 
+<li>Step-by-step guide to building a Pages template from scratch</li> 
+<li>Using placeholder text and media placeholders for flexible layouts</li> 
+<li>Managing, sharing, and deleting custom templates in Pages</li> 
+<li>Practical uses for templates—recipe cards, newsletters, business cards</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Turns out, making slick, professional-looking Pages templates is way easier than you think. Find out the productivity trick Mikah Sargent wishes more Mac users knew.</p><ul> 
+<li>Creating custom Pages templates for faster document design</li> 
+<li>Modifying existing Pages templates and saving personalized versions</li> 
+<li>Step-by-step guide to building a Pages template from scratch</li> 
+<li>Using placeholder text and media placeholders for flexible layouts</li> 
+<li>Managing, sharing, and deleting custom templates in Pages</li> 
+<li>Practical uses for templates—recipe cards, newsletters, business cards</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859843/hero/HOA0215_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0215/hom0215_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>16:27</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0215/hom0215_h264m_1920x1080.mp4" length="293920487" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0215/hom0215_h264m_1920x1080.mp4" fileSize="293920487" type="video/mp4" medium="video">
+				<media:title type="plain">HOA 215: Custom Pages Templates</media:title>
+				<media:description type="plain">Building Personalized Document Designs</media:description>
+				<media:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, creating custom templates in Pages, Pages app for macOS, document templates, save as template, template chooser, sharing templates in Pages</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859843/hero/HOA0215_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>HOA 214: Continuity Features You May Have Missed</title>
+			<itunes:title>Continuity Features You May Have Missed</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 15 Jan 2026 14:13:59 PST</pubDate>
+			<itunes:season>2</itunes:season>
+			<podcast:season>2</podcast:season>
+			<itunes:episode>214</itunes:episode>
+			<podcast:episode>214</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-apple/episodes/214</link>
+			<comments>https://twit.tv/shows/hands-on-apple/episodes/214</comments>
+			<category>Help &amp; How To</category>
+			<category>Macintosh</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Continuity Camera, Sketch, &amp; Markup</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/hands-apple-214-transcript" type="text/html" />
+			<itunes:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, continuity features, continuity sketch, continuity markup, continuity camera, continuity on macOS, import from iPad, import from iPhone</itunes:keywords>
+			<description><![CDATA[
+<p>Ever wished your iPad or iPhone could just "talk" to your Mac the way you want? Mikah Sargent uncovers lesser-known Continuity tricks that could change how you work between your Mac, iPad, or iPhone.<br /> 
+• Requirements for Continuity: Accounts, Proximity, WiFi, and Bluetooth<br /> 
+• How to Use "Import from iPad/iPhone" on macOS<br /> 
+• Taking Photos on iPad and Instantly Importing to Mac<br /> 
+• Scanning Documents on iPad to Create PDFs on Mac<br /> 
+• Adding Sketches from iPad Directly into Mac Documents<br /> 
+• Using Apple Pencil or Touch for Sketches and Edits<br /> 
+• Live Document Editing from iPad/iPhone on Mac<br /> 
+• Real-Time Edits and Markup Sync Between iPad and Mac<br /> 
+• Using iPhone as a Mac Webcam and Importing Media Across Devices</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Ever wished your iPad or iPhone could just "talk" to your Mac the way you want? Mikah Sargent uncovers lesser-known Continuity tricks that could change how you work between your Mac, iPad, or iPhone.<br /> 
+• Requirements for Continuity: Accounts, Proximity, WiFi, and Bluetooth<br /> 
+• How to Use "Import from iPad/iPhone" on macOS<br /> 
+• Taking Photos on iPad and Instantly Importing to Mac<br /> 
+• Scanning Documents on iPad to Create PDFs on Mac<br /> 
+• Adding Sketches from iPad Directly into Mac Documents<br /> 
+• Using Apple Pencil or Touch for Sketches and Edits<br /> 
+• Live Document Editing from iPad/iPhone on Mac<br /> 
+• Real-Time Edits and Markup Sync Between iPad and Mac<br /> 
+• Using iPhone as a Mac Webcam and Importing Media Across Devices</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Ever wished your iPad or iPhone could just "talk" to your Mac the way you want? Mikah Sargent uncovers lesser-known Continuity tricks that could change how you work between your Mac, iPad, or iPhone.<br /> 
+• Requirements for Continuity: Accounts, Proximity, WiFi, and Bluetooth<br /> 
+• How to Use "Import from iPad/iPhone" on macOS<br /> 
+• Taking Photos on iPad and Instantly Importing to Mac<br /> 
+• Scanning Documents on iPad to Create PDFs on Mac<br /> 
+• Adding Sketches from iPad Directly into Mac Documents<br /> 
+• Using Apple Pencil or Touch for Sketches and Edits<br /> 
+• Live Document Editing from iPad/iPhone on Mac<br /> 
+• Real-Time Edits and Markup Sync Between iPad and Mac<br /> 
+• Using iPhone as a Mac Webcam and Importing Media Across Devices</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859743/hero/HOA0214_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0214/hom0214_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>10:40</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0214/hom0214_h264m_1920x1080.mp4" length="189937805" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0214/hom0214_h264m_1920x1080.mp4" fileSize="189937805" type="video/mp4" medium="video">
+				<media:title type="plain">HOA 214: Continuity Features You May Have Missed</media:title>
+				<media:description type="plain">Continuity Camera, Sketch, &amp; Markup</media:description>
+				<media:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, continuity features, continuity sketch, continuity markup, continuity camera, continuity on macOS, import from iPad, import from iPhone</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859743/hero/HOA0214_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>HOA 213: Apple Health Checkup!</title>
+			<itunes:title>Apple Health Checkup!</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 08 Jan 2026 15:08:05 PST</pubDate>
+			<itunes:season>2</itunes:season>
+			<podcast:season>2</podcast:season>
+			<itunes:episode>213</itunes:episode>
+			<podcast:episode>213</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-apple/episodes/213</link>
+			<comments>https://twit.tv/shows/hands-on-apple/episodes/213</comments>
+			<category>Help &amp; How To</category>
+			<category>Macintosh</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Stay on Top of All the Vital Features</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/hands-apple-213-transcript" type="text/html" />
+			<itunes:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, apple health app, health notifications, Emergency SOS, Medical ID, Crash Detection, fall detection, Walking Steadiness, high heart rate notifications</itunes:keywords>
+			<description><![CDATA[
+<p>Think you know the Health app? Think again. This episode unpacks Apple's quiet rollout of powerful and important features, from crash detection to real-time medication reminders, that are quietly transforming the way you can track your wellbeing.</p><ul> 
+<li>Dive into emergency SOS, medical ID, and safety alerts</li> 
+<li>Apple Watch-exclusive notifications: heart rate, crash, fall, and walking steadiness</li> 
+<li>Hypertension and blood pressure notifications arrive for Apple Watch users</li> 
+<li>Cardio fitness, ECG, and irregular rhythm alerts explained</li> 
+<li>Court drama and a workaround for Apple's blood oxygen feature</li> 
+<li>Monitoring vitals, hearing safety, and sleep apnea detection</li> 
+<li>AFib history versus irregular rhythm notifications</li> 
+<li>Health data trends and fresh health records notifications</li> 
+<li>Sleep tracking, wind down routines, and schedule-based alerts</li> 
+<li>Medication reminders with smart time zone adjustments</li> 
+<li>Mental wellbeing tracking with state-of-mind check-ins and depression/anxiety quizzes</li> 
+<li>Walking steadiness notifications and quick access to the checklist</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Think you know the Health app? Think again. This episode unpacks Apple's quiet rollout of powerful and important features, from crash detection to real-time medication reminders, that are quietly transforming the way you can track your wellbeing.</p><ul> 
+<li>Dive into emergency SOS, medical ID, and safety alerts</li> 
+<li>Apple Watch-exclusive notifications: heart rate, crash, fall, and walking steadiness</li> 
+<li>Hypertension and blood pressure notifications arrive for Apple Watch users</li> 
+<li>Cardio fitness, ECG, and irregular rhythm alerts explained</li> 
+<li>Court drama and a workaround for Apple's blood oxygen feature</li> 
+<li>Monitoring vitals, hearing safety, and sleep apnea detection</li> 
+<li>AFib history versus irregular rhythm notifications</li> 
+<li>Health data trends and fresh health records notifications</li> 
+<li>Sleep tracking, wind down routines, and schedule-based alerts</li> 
+<li>Medication reminders with smart time zone adjustments</li> 
+<li>Mental wellbeing tracking with state-of-mind check-ins and depression/anxiety quizzes</li> 
+<li>Walking steadiness notifications and quick access to the checklist</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Think you know the Health app? Think again. This episode unpacks Apple's quiet rollout of powerful and important features, from crash detection to real-time medication reminders, that are quietly transforming the way you can track your wellbeing.</p><ul> 
+<li>Dive into emergency SOS, medical ID, and safety alerts</li> 
+<li>Apple Watch-exclusive notifications: heart rate, crash, fall, and walking steadiness</li> 
+<li>Hypertension and blood pressure notifications arrive for Apple Watch users</li> 
+<li>Cardio fitness, ECG, and irregular rhythm alerts explained</li> 
+<li>Court drama and a workaround for Apple's blood oxygen feature</li> 
+<li>Monitoring vitals, hearing safety, and sleep apnea detection</li> 
+<li>AFib history versus irregular rhythm notifications</li> 
+<li>Health data trends and fresh health records notifications</li> 
+<li>Sleep tracking, wind down routines, and schedule-based alerts</li> 
+<li>Medication reminders with smart time zone adjustments</li> 
+<li>Mental wellbeing tracking with state-of-mind check-ins and depression/anxiety quizzes</li> 
+<li>Walking steadiness notifications and quick access to the checklist</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859664/hero/HOA0213_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0213/hom0213_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>15:28</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0213/hom0213_h264m_1920x1080.mp4" length="287288816" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0213/hom0213_h264m_1920x1080.mp4" fileSize="287288816" type="video/mp4" medium="video">
+				<media:title type="plain">HOA 213: Apple Health Checkup!</media:title>
+				<media:description type="plain">Stay on Top of All the Vital Features</media:description>
+				<media:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, apple health app, health notifications, Emergency SOS, Medical ID, Crash Detection, fall detection, Walking Steadiness, high heart rate notifications</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859664/hero/HOA0213_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>HOA 212: iPad's Quick Notes: Time-Saver or Annoying Distraction?</title>
+			<itunes:title>iPad's Quick Notes: Time-Saver or Annoying Distraction?</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 18 Dec 2025 15:21:56 PST</pubDate>
+			<itunes:season>2</itunes:season>
+			<podcast:season>2</podcast:season>
+			<itunes:episode>212</itunes:episode>
+			<podcast:episode>212</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-apple/episodes/212</link>
+			<comments>https://twit.tv/shows/hands-on-apple/episodes/212</comments>
+			<category>Help &amp; How To</category>
+			<category>Macintosh</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Why This Feature Pops Up</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/take-charge-quick-notes-and-screenshot-gestures-your-ipad" type="text/html" />
+			<itunes:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, iPadOS, Quick Notes, swiping from corners, ipad gestures, apple pencil, multitasking and gestures settings, screenshot shortcut, Notes app</itunes:keywords>
+			<description><![CDATA[
+<p>Ever wonder why your iPad keeps popping up surprise notes every time you swipe from the corner? This episode breaks down the Quick Notes feature, why it keeps tripping up users, and the simple settings that put you back in control.</p><ul> 
+<li>Activating Quick Notes with swipe gestures from screen corners</li> 
+<li>Quick Notes interface walkthrough: markup, multiple notes, screenshots, sharing</li> 
+<li>Using Quick Notes while multitasking—making fast notes during other activities</li> 
+<li>Quick Notes storage and organization in the Notes app</li> 
+<li>Apple Pencil integration with Quick Notes</li> 
+<li>How to disable or customize corner swipe gestures in iPadOS settings</li> 
+<li>Assigning screenshot function to corner swipes instead of Quick Notes</li> 
+<li>Universal app support for customized corner swipe gestures</li> 
+<li>Recurring accidental Quick Note activation and practical troubleshooting</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Ever wonder why your iPad keeps popping up surprise notes every time you swipe from the corner? This episode breaks down the Quick Notes feature, why it keeps tripping up users, and the simple settings that put you back in control.</p><ul> 
+<li>Activating Quick Notes with swipe gestures from screen corners</li> 
+<li>Quick Notes interface walkthrough: markup, multiple notes, screenshots, sharing</li> 
+<li>Using Quick Notes while multitasking—making fast notes during other activities</li> 
+<li>Quick Notes storage and organization in the Notes app</li> 
+<li>Apple Pencil integration with Quick Notes</li> 
+<li>How to disable or customize corner swipe gestures in iPadOS settings</li> 
+<li>Assigning screenshot function to corner swipes instead of Quick Notes</li> 
+<li>Universal app support for customized corner swipe gestures</li> 
+<li>Recurring accidental Quick Note activation and practical troubleshooting</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Ever wonder why your iPad keeps popping up surprise notes every time you swipe from the corner? This episode breaks down the Quick Notes feature, why it keeps tripping up users, and the simple settings that put you back in control.</p><ul> 
+<li>Activating Quick Notes with swipe gestures from screen corners</li> 
+<li>Quick Notes interface walkthrough: markup, multiple notes, screenshots, sharing</li> 
+<li>Using Quick Notes while multitasking—making fast notes during other activities</li> 
+<li>Quick Notes storage and organization in the Notes app</li> 
+<li>Apple Pencil integration with Quick Notes</li> 
+<li>How to disable or customize corner swipe gestures in iPadOS settings</li> 
+<li>Assigning screenshot function to corner swipes instead of Quick Notes</li> 
+<li>Universal app support for customized corner swipe gestures</li> 
+<li>Recurring accidental Quick Note activation and practical troubleshooting</li></ul> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2025/12/859442/hero/HOA0212_thumb.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0212/hom0212_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>8:32</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0212/hom0212_h264m_1920x1080.mp4" length="153247927" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0212/hom0212_h264m_1920x1080.mp4" fileSize="153247927" type="video/mp4" medium="video">
+				<media:title type="plain">HOA 212: iPad's Quick Notes: Time-Saver or Annoying Distraction?</media:title>
+				<media:description type="plain">Why This Feature Pops Up</media:description>
+				<media:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, iPadOS, Quick Notes, swiping from corners, ipad gestures, apple pencil, multitasking and gestures settings, screenshot shortcut, Notes app</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2025/12/859442/hero/HOA0212_thumb.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+	</channel>
+</rss>

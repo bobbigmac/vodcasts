@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/" xmlns:podcast="https://podcastindex.org/namespace/1.0" version="2.0">
+	<channel>
+		<title>Home Theater Geeks (Video)</title>
+		<itunes:author>TWiT</itunes:author>
+		<link>https://twit.tv/shows/home-theater-geeks</link>
+		<generator>TWiT Feed Generator v4.10</generator>
+		<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+		<language>en-US</language>
+		<copyright>This work is licensed under a Creative Commons License - Attribution-NonCommercial-NoDerivatives 4.0 International - http://creativecommons.org/licenses/by-nc-nd/4.0/</copyright>
+		<creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+		<managingEditor>feedmail@twit.tv (TWiT Editors)</managingEditor>
+		<webMaster>feedmail@twit.tv (TWiT Engineering)</webMaster>
+		<ttl>720</ttl>
+		<sy:updatePeriod>weekly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+		<lastBuildDate>Thu, 05 Mar 2026 15:53:59 PST</lastBuildDate>
+		<pubDate>Thu, 05 Mar 2026 15:53:59 PST</pubDate>
+		<rawvoice:frequency>weekly</rawvoice:frequency>
+		<rawvoice:location>Petaluma, CA</rawvoice:location>
+		<itunes:type>episodic</itunes:type>
+		<itunes:subtitle>Get the best picture on your screen, improve your sound, and supercharge your home theater experience.</itunes:subtitle>
+		<itunes:summary>Get the most out of your home theater with the latest advances, product reviews, and all things audio and video. Every Thursday, Scott Wilkinson shares his expertise, energy, and enthusiasm about how to make your A/V system sound and look its best. In this short-format podcast, Scott brings you news, reviews, interviews, and commentary, and answers your questions. Submit your home theater queries through email at HTG@twit.tv or via TWiT's social media. You might hear your question answered on the show! You can join Club TWiT for $10 per month and get ad-free audio and video feeds for all our shows plus everything else the club offers...or get just this podcast ad-free for $5 per month.
+
+New episodes every Thursday.</itunes:summary>
+		<description>Get the most out of your home theater with the latest advances, product reviews, and all things audio and video. Every Thursday, Scott Wilkinson shares his expertise, energy, and enthusiasm about how to make your A/V system sound and look its best. In this short-format podcast, Scott brings you news, reviews, interviews, and commentary, and answers your questions. Submit your home theater queries through email at HTG@twit.tv or via TWiT's social media. You might hear your question answered on the show! You can join Club TWiT for $10 per month and get ad-free audio and video feeds for all our shows plus everything else the club offers...or get just this podcast ad-free for $5 per month.
+
+New episodes every Thursday.</description>
+		<itunes:keywords>TWiT, Technology, Home Theater, TV, LCD TV, Plasma TV, Surround Sound</itunes:keywords>
+		<rawvoice:rating tv="tv-g">tv-g</rawvoice:rating>
+		<itunes:explicit>no</itunes:explicit>
+		<itunes:block>no</itunes:block>
+		<googleplay:block>No</googleplay:block>
+		<podcast:funding url="https://twit.tv/clubtwit">Become a Club TWiT member!</podcast:funding>
+		<itunes:owner>
+			<itunes:name>Leo Laporte</itunes:name>
+			<itunes:email>feedmail@twit.tv</itunes:email>
+		</itunes:owner>
+		<itunes:category text="Technology" />
+		<category>Technology</category>
+		<image>
+			<title>Home Theater Geeks (Video)</title>
+			<url>https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/Home%20Theater%20Geeks/album_art/hd/HTG_albumart_standard_video.jpg</url>
+			<link>https://twit.tv/shows/home-theater-geeks</link>
+		</image>
+		<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/Home%20Theater%20Geeks/album_art/hd/HTG_albumart_standard_video.jpg" />
+		<itunes:new-feed-url>https://feeds.twit.tv/htg_video_hd.xml</itunes:new-feed-url>
+		<rawvoice:subscribe feed="https://feeds.twit.tv/htg_video_hd.xml" itunes="https://podcasts.apple.com/us/podcast/home-theater-geeks-video/id593052654" html="https://twit.tv/shows/home-theater-geeks"></rawvoice:subscribe>
+		<atom:link href="https://feeds.twit.tv/htg_video_hd.xml" type="application/rss+xml" rel="self"/>
+		<item>
+			<title>HTG 521: Texas Triumph - Home Theater of the Month Interview!</title>
+			<itunes:title>Texas Triumph</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 05 Mar 2026 13:00:00 PST</pubDate>
+			<itunes:season>2</itunes:season>
+			<podcast:season>2</podcast:season>
+			<itunes:episode>521</itunes:episode>
+			<podcast:episode>521</podcast:episode>
+			<link>https://twit.tv/shows/home-theater-geeks/episodes/521</link>
+			<comments>https://twit.tv/shows/home-theater-geeks/episodes/521</comments>
+			<category>Reviews</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Home Theater of the Month Interview!</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/home-theater-geeks-521-transcript" type="text/html" />
+			<itunes:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</itunes:keywords>
+			<description><![CDATA[
+<p>Kurt Dorsey built a stunning home theater, literally from the ground up, almost entirely with his own hands. It's a real testament to what can be done DIY, especially when you design and <a href="https://www.avsforum.com/threads/theater-on-the-comal.3241089/">build the room from scratch.</a></p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.avsforum.com/threads/theater-on-the-comal.3241089/" target="_blank">Kurt Dorsey</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://helixsleep.com/theater" target="_blank" rel="sponsored">helixsleep.com/theater</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Kurt Dorsey built a stunning home theater, literally from the ground up, almost entirely with his own hands. It's a real testament to what can be done DIY, especially when you design and <a href="https://www.avsforum.com/threads/theater-on-the-comal.3241089/">build the room from scratch.</a></p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.avsforum.com/threads/theater-on-the-comal.3241089/" target="_blank">Kurt Dorsey</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://helixsleep.com/theater" target="_blank" rel="sponsored">helixsleep.com/theater</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Kurt Dorsey built a stunning home theater, literally from the ground up, almost entirely with his own hands. It's a real testament to what can be done DIY, especially when you design and <a href="https://www.avsforum.com/threads/theater-on-the-comal.3241089/">build the room from scratch.</a></p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.avsforum.com/threads/theater-on-the-comal.3241089/" target="_blank">Kurt Dorsey</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://helixsleep.com/theater" target="_blank" rel="sponsored">helixsleep.com/theater</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860336/hero/HTG0521_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0521/htg0521_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>54:56</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0521/htg0521_h264m_1920x1080.mp4" length="961369685" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0521/htg0521_h264m_1920x1080.mp4" fileSize="961369685" type="video/mp4" medium="video">
+				<media:title type="plain">HTG 521: Texas Triumph - Home Theater of the Month Interview!</media:title>
+				<media:description type="plain">Home Theater of the Month Interview!</media:description>
+				<media:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/03/860336/hero/HTG0521_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Scott Wilkinson</media:credit>
+				<media:credit role="guest">Kurt Dorsey</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/scott-wilkinson" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/52/pictures/scottwilkinson1600-fez.jpg">Scott Wilkinson</podcast:person>
+				<podcast:person role="guest" href="https://www.avsforum.com/threads/theater-on-the-comal.3241089/">Kurt Dorsey</podcast:person>
+		</item>
+		<item>
+			<title>HTG 520: A/V Career Advice - Breaking Into the Field in an Age of AI &amp; Automation</title>
+			<itunes:title>A/V Career Advice</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 26 Feb 2026 11:00:00 PST</pubDate>
+			<itunes:season>2</itunes:season>
+			<podcast:season>2</podcast:season>
+			<itunes:episode>520</itunes:episode>
+			<podcast:episode>520</podcast:episode>
+			<link>https://twit.tv/shows/home-theater-geeks/episodes/520</link>
+			<comments>https://twit.tv/shows/home-theater-geeks/episodes/520</comments>
+			<category>Reviews</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Breaking Into the Field in an Age of AI &amp; Automation</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/how-start-career-home-theater-installation-and-integration" type="text/html" />
+			<itunes:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</itunes:keywords>
+			<description><![CDATA[
+<p>Mason Parker is considering a career move into AV installation/integration. He wonders how Scott Wilkinson got into the industry and what advice Scott might give to further a career in home theater. There are plenty of things to talk about here!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Mason Parker is considering a career move into AV installation/integration. He wonders how Scott Wilkinson got into the industry and what advice Scott might give to further a career in home theater. There are plenty of things to talk about here!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Mason Parker is considering a career move into AV installation/integration. He wonders how Scott Wilkinson got into the industry and what advice Scott might give to further a career in home theater. There are plenty of things to talk about here!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860257/hero/HTG0520_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0520/htg0520_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>13:38</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0520/htg0520_h264m_1920x1080.mp4" length="241743766" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0520/htg0520_h264m_1920x1080.mp4" fileSize="241743766" type="video/mp4" medium="video">
+				<media:title type="plain">HTG 520: A/V Career Advice - Breaking Into the Field in an Age of AI &amp; Automation</media:title>
+				<media:description type="plain">Breaking Into the Field in an Age of AI &amp; Automation</media:description>
+				<media:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860257/hero/HTG0520_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Scott Wilkinson</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/scott-wilkinson" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/52/pictures/scottwilkinson1600-fez.jpg">Scott Wilkinson</podcast:person>
+		</item>
+		<item>
+			<title>HTG 519: ISF Dark vs Filmmaker Mode - Are These Settings Any Different?</title>
+			<itunes:title>ISF Dark vs Filmmaker Mode</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 19 Feb 2026 16:00:00 PST</pubDate>
+			<itunes:season>2</itunes:season>
+			<podcast:season>2</podcast:season>
+			<itunes:episode>519</itunes:episode>
+			<podcast:episode>519</podcast:episode>
+			<link>https://twit.tv/shows/home-theater-geeks/episodes/519</link>
+			<comments>https://twit.tv/shows/home-theater-geeks/episodes/519</comments>
+			<category>Reviews</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Are These Settings Any Different?</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/home-theater-geeks-519-transcript" type="text/html" />
+			<itunes:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</itunes:keywords>
+			<description><![CDATA[
+<p>Christopher Patrick asks about the difference between ISF Dark and Filmmaker picture modes, especially when the TV is used in a mostly dark room. Scott Wilkinson has the answer.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Christopher Patrick asks about the difference between ISF Dark and Filmmaker picture modes, especially when the TV is used in a mostly dark room. Scott Wilkinson has the answer.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Christopher Patrick asks about the difference between ISF Dark and Filmmaker picture modes, especially when the TV is used in a mostly dark room. Scott Wilkinson has the answer.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860159/hero/HTG0519_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0519/htg0519_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>9:05</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0519/htg0519_h264m_1920x1080.mp4" length="160893387" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0519/htg0519_h264m_1920x1080.mp4" fileSize="160893387" type="video/mp4" medium="video">
+				<media:title type="plain">HTG 519: ISF Dark vs Filmmaker Mode - Are These Settings Any Different?</media:title>
+				<media:description type="plain">Are These Settings Any Different?</media:description>
+				<media:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860159/hero/HTG0519_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Scott Wilkinson</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/scott-wilkinson" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/52/pictures/scottwilkinson1600-fez.jpg">Scott Wilkinson</podcast:person>
+		</item>
+		<item>
+			<title>HTG 518: MEMS Speaker Technology - A Different Type of Speaker Driver</title>
+			<itunes:title>MEMS Speaker Technology</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 12 Feb 2026 16:00:00 PST</pubDate>
+			<itunes:season>2</itunes:season>
+			<podcast:season>2</podcast:season>
+			<itunes:episode>518</itunes:episode>
+			<podcast:episode>518</podcast:episode>
+			<link>https://twit.tv/shows/home-theater-geeks/episodes/518</link>
+			<comments>https://twit.tv/shows/home-theater-geeks/episodes/518</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>A Different Type of Speaker Driver</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/home-theater-geeks-518-transcript" type="text/html" />
+			<itunes:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</itunes:keywords>
+			<description><![CDATA[
+<p>Speaker drivers haven't changed much in the last 100 years, but they have certain drawbacks, especially in small form factors such as earbuds. A company called <a href="https://sonicedge.io/" target="_blank">SonicEdge </a>is developing a new type of driver that takes a completely different approach. CEO and co-founder Moti Margalit talks about his company's innovations with Scott Wilkinson.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p><strong>Guest:</strong> <a href="https://sonicedge.io/" target="_blank">Moti Margalit</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Speaker drivers haven't changed much in the last 100 years, but they have certain drawbacks, especially in small form factors such as earbuds. A company called <a href="https://sonicedge.io/" target="_blank">SonicEdge </a>is developing a new type of driver that takes a completely different approach. CEO and co-founder Moti Margalit talks about his company's innovations with Scott Wilkinson.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p><strong>Guest:</strong> <a href="https://sonicedge.io/" target="_blank">Moti Margalit</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Speaker drivers haven't changed much in the last 100 years, but they have certain drawbacks, especially in small form factors such as earbuds. A company called <a href="https://sonicedge.io/" target="_blank">SonicEdge </a>is developing a new type of driver that takes a completely different approach. CEO and co-founder Moti Margalit talks about his company's innovations with Scott Wilkinson.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p><strong>Guest:</strong> <a href="https://sonicedge.io/" target="_blank">Moti Margalit</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860071/hero/HTG0518_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0518/htg0518_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>57:58</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0518/htg0518_h264m_1920x1080.mp4" length="983255208" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0518/htg0518_h264m_1920x1080.mp4" fileSize="983255208" type="video/mp4" medium="video">
+				<media:title type="plain">HTG 518: MEMS Speaker Technology - A Different Type of Speaker Driver</media:title>
+				<media:description type="plain">A Different Type of Speaker Driver</media:description>
+				<media:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860071/hero/HTG0518_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Scott Wilkinson</media:credit>
+				<media:credit role="guest">Moti Margalit</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/scott-wilkinson" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/52/pictures/scottwilkinson1600-fez.jpg">Scott Wilkinson</podcast:person>
+				<podcast:person role="guest" href="https://sonicedge.io/">Moti Margalit</podcast:person>
+		</item>
+		<item>
+			<title>HTG 517: Sacramento Sanctuary - Home Theater of the Month Interview!</title>
+			<itunes:title>Sacramento Sanctuary</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 05 Feb 2026 16:00:00 PST</pubDate>
+			<itunes:season>2</itunes:season>
+			<podcast:season>2</podcast:season>
+			<itunes:episode>517</itunes:episode>
+			<podcast:episode>517</podcast:episode>
+			<link>https://twit.tv/shows/home-theater-geeks/episodes/517</link>
+			<comments>https://twit.tv/shows/home-theater-geeks/episodes/517</comments>
+			<category>Reviews</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Home Theater of the Month Interview!</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/turning-spare-room-luxury-home-cinema" type="text/html" />
+			<itunes:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</itunes:keywords>
+			<description><![CDATA[
+<p>Home-theater owner Joe Klusnick joins Scott Wilkinson to talk about his home theater. He talks about the process of remodeling a room in his Sacramento home as a dedicated theater, and we get a video tour of the finished project—well, as finished as any home theater is; there's always future upgrades!</p> 
+<p> </p> 
+<p>Joe's Build Thread - <a href="https://www.avsforum.com/threads/what-would-you-do-starting-over-with-a-19x21x9-dedicated-room.2110346/" target="_blank">https://www.avsforum.com/threads/what-would-you-do-starting-over-with-a-19x21x9-dedicated-room.2110346/</a> </p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.avsforum.com/threads/what-would-you-do-starting-over-with-a-19x21x9-dedicated-room.2110346/" target="_blank">Joe Klusnick</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://helixsleep.com/theater" target="_blank" rel="sponsored">helixsleep.com/theater</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Home-theater owner Joe Klusnick joins Scott Wilkinson to talk about his home theater. He talks about the process of remodeling a room in his Sacramento home as a dedicated theater, and we get a video tour of the finished project—well, as finished as any home theater is; there's always future upgrades!</p> 
+<p> </p> 
+<p>Joe's Build Thread - <a href="https://www.avsforum.com/threads/what-would-you-do-starting-over-with-a-19x21x9-dedicated-room.2110346/" target="_blank">https://www.avsforum.com/threads/what-would-you-do-starting-over-with-a-19x21x9-dedicated-room.2110346/</a> </p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.avsforum.com/threads/what-would-you-do-starting-over-with-a-19x21x9-dedicated-room.2110346/" target="_blank">Joe Klusnick</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://helixsleep.com/theater" target="_blank" rel="sponsored">helixsleep.com/theater</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Home-theater owner Joe Klusnick joins Scott Wilkinson to talk about his home theater. He talks about the process of remodeling a room in his Sacramento home as a dedicated theater, and we get a video tour of the finished project—well, as finished as any home theater is; there's always future upgrades!</p> 
+<p> </p> 
+<p>Joe's Build Thread - <a href="https://www.avsforum.com/threads/what-would-you-do-starting-over-with-a-19x21x9-dedicated-room.2110346/" target="_blank">https://www.avsforum.com/threads/what-would-you-do-starting-over-with-a-19x21x9-dedicated-room.2110346/</a> </p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p><strong>Guest:</strong> <a href="https://www.avsforum.com/threads/what-would-you-do-starting-over-with-a-19x21x9-dedicated-room.2110346/" target="_blank">Joe Klusnick</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://helixsleep.com/theater" target="_blank" rel="sponsored">helixsleep.com/theater</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/859978/hero/HTG0517_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0517/htg0517_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>48:12</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0517/htg0517_h264m_1920x1080.mp4" length="855158678" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0517/htg0517_h264m_1920x1080.mp4" fileSize="855158678" type="video/mp4" medium="video">
+				<media:title type="plain">HTG 517: Sacramento Sanctuary - Home Theater of the Month Interview!</media:title>
+				<media:description type="plain">Home Theater of the Month Interview!</media:description>
+				<media:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/859978/hero/HTG0517_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Scott Wilkinson</media:credit>
+				<media:credit role="guest">Joe Klusnick</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/scott-wilkinson" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/52/pictures/scottwilkinson1600-fez.jpg">Scott Wilkinson</podcast:person>
+				<podcast:person role="guest" href="https://www.avsforum.com/threads/what-would-you-do-starting-over-with-a-19x21x9-dedicated-room.2110346/">Joe Klusnick</podcast:person>
+		</item>
+		<item>
+			<title>HTG 516: CES 2026 Part 3 - Audio Products You Need to HEAR About</title>
+			<itunes:title>CES 2026 Part 3</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 29 Jan 2026 14:00:00 PST</pubDate>
+			<itunes:season>2</itunes:season>
+			<podcast:season>2</podcast:season>
+			<itunes:episode>516</itunes:episode>
+			<podcast:episode>516</podcast:episode>
+			<link>https://twit.tv/shows/home-theater-geeks/episodes/516</link>
+			<comments>https://twit.tv/shows/home-theater-geeks/episodes/516</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Audio Products You Need to HEAR About</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/best-new-soundbars-wireless-audio-systems-ces-2026" type="text/html" />
+			<itunes:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</itunes:keywords>
+			<description><![CDATA[
+<p>In addition to video products, there was no shortage of audio electronics being introduced at CES 2026. With great notes from Mike Heiss, Scott Wilkinson talks about a few of the audio announcements.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>In addition to video products, there was no shortage of audio electronics being introduced at CES 2026. With great notes from Mike Heiss, Scott Wilkinson talks about a few of the audio announcements.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>In addition to video products, there was no shortage of audio electronics being introduced at CES 2026. With great notes from Mike Heiss, Scott Wilkinson talks about a few of the audio announcements.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859901/hero/HTG0516_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0516/htg0516_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>15:32</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0516/htg0516_h264m_1920x1080.mp4" length="277542280" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0516/htg0516_h264m_1920x1080.mp4" fileSize="277542280" type="video/mp4" medium="video">
+				<media:title type="plain">HTG 516: CES 2026 Part 3 - Audio Products You Need to HEAR About</media:title>
+				<media:description type="plain">Audio Products You Need to HEAR About</media:description>
+				<media:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859901/hero/HTG0516_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Scott Wilkinson</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/scott-wilkinson" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/52/pictures/scottwilkinson1600-fez.jpg">Scott Wilkinson</podcast:person>
+		</item>
+		<item>
+			<title>HTG 515: CES 2026 Part 2 - New TVs From TCL, LG, Samsung, Sharp, &amp; More!</title>
+			<itunes:title>CES 2026 Part 2</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 22 Jan 2026 10:15:00 PST</pubDate>
+			<itunes:season>2</itunes:season>
+			<podcast:season>2</podcast:season>
+			<itunes:episode>515</itunes:episode>
+			<podcast:episode>515</podcast:episode>
+			<link>https://twit.tv/shows/home-theater-geeks/episodes/515</link>
+			<comments>https://twit.tv/shows/home-theater-geeks/episodes/515</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>New TVs From TCL, LG, Samsung, Sharp, &amp; More!</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/tcl-x11l-sq-mini-led-tv-brightness-color-performance-explained" type="text/html" />
+			<itunes:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</itunes:keywords>
+			<description><![CDATA[
+<p>At CES 2026, RGB mini and micro LED backlights were the big TV story, but that doesn't mean there weren't plenty of other video products being introduced. Scott Wilkinson talks about what Michael Heiss saw on the show floor.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>At CES 2026, RGB mini and micro LED backlights were the big TV story, but that doesn't mean there weren't plenty of other video products being introduced. Scott Wilkinson talks about what Michael Heiss saw on the show floor.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>At CES 2026, RGB mini and micro LED backlights were the big TV story, but that doesn't mean there weren't plenty of other video products being introduced. Scott Wilkinson talks about what Michael Heiss saw on the show floor.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859796/hero/HTG0515_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0515/htg0515_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>24:14</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0515/htg0515_h264m_1920x1080.mp4" length="411220972" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0515/htg0515_h264m_1920x1080.mp4" fileSize="411220972" type="video/mp4" medium="video">
+				<media:title type="plain">HTG 515: CES 2026 Part 2 - New TVs From TCL, LG, Samsung, Sharp, &amp; More!</media:title>
+				<media:description type="plain">New TVs From TCL, LG, Samsung, Sharp, &amp; More!</media:description>
+				<media:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859796/hero/HTG0515_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Scott Wilkinson</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/scott-wilkinson" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/52/pictures/scottwilkinson1600-fez.jpg">Scott Wilkinson</podcast:person>
+		</item>
+		<item>
+			<title>HTG 514: CES 2026 Part 1 - RGB LED</title>
+			<itunes:title>CES 2026 Part 1</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 15 Jan 2026 13:30:00 PST</pubDate>
+			<itunes:season>2</itunes:season>
+			<podcast:season>2</podcast:season>
+			<itunes:episode>514</itunes:episode>
+			<podcast:episode>514</podcast:episode>
+			<link>https://twit.tv/shows/home-theater-geeks/episodes/514</link>
+			<comments>https://twit.tv/shows/home-theater-geeks/episodes/514</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>RGB LED</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/rgb-mini-led-vs-traditional-led-tvs" type="text/html" />
+			<itunes:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</itunes:keywords>
+			<description><![CDATA[
+<p>The big TV news at CES 2026 was the explosion of RGB mini and micro LED backlights in LCD TVs. All the major manufacturers had examples in their booths. Scott Wilkinson talks with Michael Heiss, who braved the crowds to catch a glimpse at the new display technology.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p><strong>Guest:</strong> <a href="http://michaelheiss.com" target="_blank">Michael Heiss</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://helixsleep.com/theater" target="_blank" rel="sponsored">helixsleep.com/theater</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>The big TV news at CES 2026 was the explosion of RGB mini and micro LED backlights in LCD TVs. All the major manufacturers had examples in their booths. Scott Wilkinson talks with Michael Heiss, who braved the crowds to catch a glimpse at the new display technology.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p><strong>Guest:</strong> <a href="http://michaelheiss.com" target="_blank">Michael Heiss</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://helixsleep.com/theater" target="_blank" rel="sponsored">helixsleep.com/theater</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>The big TV news at CES 2026 was the explosion of RGB mini and micro LED backlights in LCD TVs. All the major manufacturers had examples in their booths. Scott Wilkinson talks with Michael Heiss, who braved the crowds to catch a glimpse at the new display technology.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p><strong>Guest:</strong> <a href="http://michaelheiss.com" target="_blank">Michael Heiss</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://helixsleep.com/theater" target="_blank" rel="sponsored">helixsleep.com/theater</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859739/hero/HTG0514_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0514/htg0514_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>40:42</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0514/htg0514_h264m_1920x1080.mp4" length="690450848" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0514/htg0514_h264m_1920x1080.mp4" fileSize="690450848" type="video/mp4" medium="video">
+				<media:title type="plain">HTG 514: CES 2026 Part 1 - RGB LED</media:title>
+				<media:description type="plain">RGB LED</media:description>
+				<media:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859739/hero/HTG0514_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Scott Wilkinson</media:credit>
+				<media:credit role="guest">Michael Heiss</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/scott-wilkinson" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/52/pictures/scottwilkinson1600-fez.jpg">Scott Wilkinson</podcast:person>
+				<podcast:person role="guest" href="http://michaelheiss.com">Michael Heiss</podcast:person>
+		</item>
+		<item>
+			<title>HTG 513: ATSC 3.0 - The Next Generation of OTA TV</title>
+			<itunes:title>ATSC 3.0</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 08 Jan 2026 15:00:00 PST</pubDate>
+			<itunes:season>2</itunes:season>
+			<podcast:season>2</podcast:season>
+			<itunes:episode>513</itunes:episode>
+			<podcast:episode>513</podcast:episode>
+			<link>https://twit.tv/shows/home-theater-geeks/episodes/513</link>
+			<comments>https://twit.tv/shows/home-theater-geeks/episodes/513</comments>
+			<category>Reviews</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>The Next Generation of OTA TV</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/home-theater-geeks-513-transcript" type="text/html" />
+			<itunes:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</itunes:keywords>
+			<description><![CDATA[
+<p>The next generation of over-the-air TV is ATSC 3.0, also known as NextGen TV. Michael Heiss talks with Scott Wilkinson about what it is, how it works, how you can get it, and why it's important.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p><strong>Guest:</strong> <a href="http://michaelheiss.com" target="_blank">Michael Heiss</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>The next generation of over-the-air TV is ATSC 3.0, also known as NextGen TV. Michael Heiss talks with Scott Wilkinson about what it is, how it works, how you can get it, and why it's important.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p><strong>Guest:</strong> <a href="http://michaelheiss.com" target="_blank">Michael Heiss</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>The next generation of over-the-air TV is ATSC 3.0, also known as NextGen TV. Michael Heiss talks with Scott Wilkinson about what it is, how it works, how you can get it, and why it's important.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p><strong>Guest:</strong> <a href="http://michaelheiss.com" target="_blank">Michael Heiss</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859622/hero/HTG0513_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0513/htg0513_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>43:01</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0513/htg0513_h264m_1920x1080.mp4" length="729689990" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0513/htg0513_h264m_1920x1080.mp4" fileSize="729689990" type="video/mp4" medium="video">
+				<media:title type="plain">HTG 513: ATSC 3.0 - The Next Generation of OTA TV</media:title>
+				<media:description type="plain">The Next Generation of OTA TV</media:description>
+				<media:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859622/hero/HTG0513_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Scott Wilkinson</media:credit>
+				<media:credit role="guest">Michael Heiss</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/scott-wilkinson" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/52/pictures/scottwilkinson1600-fez.jpg">Scott Wilkinson</podcast:person>
+				<podcast:person role="guest" href="http://michaelheiss.com">Michael Heiss</podcast:person>
+		</item>
+		<item>
+			<title>HTG 512: OTA TV - Over-The-Air Television Is Still a Thing!</title>
+			<itunes:title>OTA TV</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 18 Dec 2025 12:00:00 PST</pubDate>
+			<itunes:season>2</itunes:season>
+			<podcast:season>2</podcast:season>
+			<itunes:episode>512</itunes:episode>
+			<podcast:episode>512</podcast:episode>
+			<link>https://twit.tv/shows/home-theater-geeks/episodes/512</link>
+			<comments>https://twit.tv/shows/home-theater-geeks/episodes/512</comments>
+			<category>Reviews</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Over-The-Air Television Is Still a Thing!</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/stop-missing-out-why-you-should-add-over-air-tv-your-home-setup" type="text/html" />
+			<itunes:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</itunes:keywords>
+			<description><![CDATA[
+<p>Over-the-air (OTA) TV delivers a lot of programming to homes for free. It works when the internet goes down, it's better than cable or streaming in terms of resolution and clarity with no harsh compression, it's immune to corporate disputes that result in blackouts—and did we mention it's FREE? Michael Heiss talks with Scott Wilkinson about the benefits of OTA and how to get it in your home.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p><strong>Guest:</strong> <a href="http://michaelheiss.com" target="_blank">Michael Heiss</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Over-the-air (OTA) TV delivers a lot of programming to homes for free. It works when the internet goes down, it's better than cable or streaming in terms of resolution and clarity with no harsh compression, it's immune to corporate disputes that result in blackouts—and did we mention it's FREE? Michael Heiss talks with Scott Wilkinson about the benefits of OTA and how to get it in your home.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p><strong>Guest:</strong> <a href="http://michaelheiss.com" target="_blank">Michael Heiss</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Over-the-air (OTA) TV delivers a lot of programming to homes for free. It works when the internet goes down, it's better than cable or streaming in terms of resolution and clarity with no harsh compression, it's immune to corporate disputes that result in blackouts—and did we mention it's FREE? Michael Heiss talks with Scott Wilkinson about the benefits of OTA and how to get it in your home.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p><strong>Guest:</strong> <a href="http://michaelheiss.com" target="_blank">Michael Heiss</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2025/12/859401/hero/HTG0512_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0512/htg0512_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>32:22</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0512/htg0512_h264m_1920x1080.mp4" length="572329721" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0512/htg0512_h264m_1920x1080.mp4" fileSize="572329721" type="video/mp4" medium="video">
+				<media:title type="plain">HTG 512: OTA TV - Over-The-Air Television Is Still a Thing!</media:title>
+				<media:description type="plain">Over-The-Air Television Is Still a Thing!</media:description>
+				<media:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2025/12/859401/hero/HTG0512_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Scott Wilkinson</media:credit>
+				<media:credit role="guest">Michael Heiss</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/scott-wilkinson" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/52/pictures/scottwilkinson1600-fez.jpg">Scott Wilkinson</podcast:person>
+				<podcast:person role="guest" href="http://michaelheiss.com">Michael Heiss</podcast:person>
+		</item>
+	</channel>
+</rss>

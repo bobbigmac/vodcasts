@@ -1,0 +1,1664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
+xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
+>
+<channel>
+	<title>NutritionFacts.org Video Podcast</title>
+	<atom:link href="https://nutritionfacts.org/videos/feed/podcast/" rel="self" type="application/rss+xml" />
+	<link>https://nutritionfacts.org/videos/</link>
+	<description>Michael Greger, M.D. FACLM, founder of NutritionFacts.org and New York Times best-selling author of How Not to Die, How Not to Diet, and the just-released How Not to Age, brings you the latest in evidence-based nutrition research, delivered in easy to understand video segments. NutritionFacts.org is a non-profit and non-commercial public health organization, and more than 2,000 videos on virtually every aspect of healthy eating are available on our website. New videos and blogs are uploaded every day–always without any sponsors, ads, brand partnerships, or paid subscriptions.</description>
+	<lastBuildDate>Mon, 09 Mar 2026 05:31:17 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
+	<!-- podcast_generator="Blubrry PowerPress/7.5.4" mode="advanced" posttype="video" feedslug="podcast" Blubrry PowerPress Podcasting plugin for WordPress (https://www.blubrry.com/powerpress/) -->
+	<itunes:summary><![CDATA[Michael Greger, M.D. FACLM, founder of NutritionFacts.org and New York Times best-selling author of How Not to Die, How Not to Diet, and the just-released How Not to Age, brings you the latest in evidence-based nutrition research, delivered in easy to understand video segments.<br />
+<br />
+NutritionFacts.org is a non-profit and non-commercial public health organization, and more than 2,000 videos on virtually every aspect of healthy eating are available on our website. New videos and blogs are uploaded every day–always without any sponsors, ads, brand partnerships, or paid subscriptions.<br />]]></itunes:summary>
+	<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+	<itunes:explicit>clean</itunes:explicit>
+	<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+	<itunes:type>episodic</itunes:type>
+	<itunes:owner>
+		<itunes:name>Michael Greger, M.D. FACLM</itunes:name>
+		<itunes:email>michaelgregermd@gmail.com</itunes:email>
+	</itunes:owner>
+	<managingEditor>michaelgregermd@gmail.com (Michael Greger, M.D. FACLM)</managingEditor>
+	<copyright>NutritionFacts.org - All Rights Reserved</copyright>
+	<itunes:subtitle>NutritionFacts.org Video Podcast</itunes:subtitle>
+	<image>
+		<title>NutritionFacts.org Video Podcast</title>
+		<url>https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg</url>
+		<link>https://nutritionfacts.org/videos/</link>
+	</image>
+	<itunes:category text="Health &amp; Fitness">
+	</itunes:category>
+	<itunes:category text="Health &amp; Fitness">
+		<itunes:category text="Nutrition"></itunes:category>
+	</itunes:category>
+	<itunes:category text="Health &amp; Fitness">
+		<itunes:category text="Alternative Health"></itunes:category>
+	</itunes:category>
+	<googleplay:email>drgreger@gmail.com</googleplay:email>
+	<googleplay:description>Michael Greger, M.D. FACLM, founder of NutritionFacts.org and New York Times best-selling author of How Not to Die, How Not to Diet, and the just-released How Not to Age, brings you the latest in evidence-based nutrition research, delivered in easy to understand video segments.
+
+NutritionFacts.org is a non-profit and non-commercial public health organization, and more than 2,000 videos on virtually every aspect of healthy eating are available on our website. New videos and blogs are uploaded every day–always without any sponsors, ads, brand partnerships, or paid subscriptions.
+</googleplay:description>
+	<googleplay:category text="Health" />
+	<googleplay:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+	<rawvoice:rating>TV-G</rawvoice:rating>
+	<rawvoice:frequency>Tri-Weekly</rawvoice:frequency>
+	<rawvoice:donate href="https://nutritionfacts.org/donate/">Donate to NutritionFacts.org</rawvoice:donate>
+	<rawvoice:subscribe feed="https://nutritionfacts.org/videos/feed/podcast/" itunes="https://itunes.apple.com/us/podcast/nutritionfacts-org-video-podcast/id1210294497"></rawvoice:subscribe>
+	<item>
+		<title>Friday Favorites: Do Garlic, Beer, Bananas, and B Vitamins Really Repel Mosquitoes?</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-do-garlic-beer-bananas-and-b-vitamins-really-repel-mosquitoes/</link>
+		<pubDate>Fri, 06 Mar 2026 12:50:53 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116701</guid>
+		<description>Garlic, beer, bananas, and B vitamins are put to the test as repellents for mosquitoes and ticks.</description>
+		<content:encoded><![CDATA[Garlic, beer, bananas, and B vitamins are put to the test as repellents for mosquitoes and ticks.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/03/1-_Does-Eating-Garlic-Work-as-a-Mosquito-Repellent_-Are-Beer-Bananas-and-B-Vitamins-Mosquito-Repellents_-62-12-13.mp4" length="520486668" type="video/mp4" />
+		<itunes:subtitle>Garlic, beer, bananas, and B vitamins are put to the test as repellents for mosquitoes and ticks.</itunes:subtitle>
+		<itunes:summary><![CDATA[Garlic, beer, bananas, and B vitamins are put to the test as repellents for mosquitoes and ticks.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>11:01</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116701-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>The Best Source and Dose of Plant Sterols for Lowering Cholesterol</title>
+		<link>https://nutritionfacts.org/video/the-best-source-and-dose-of-plant-sterols-for-lowering-cholesterol/</link>
+		<pubDate>Wed, 04 Mar 2026 12:50:39 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=118197</guid>
+		<description>Lower LDL cholesterol with 2 to 3 grams a day of phytosterols taken with meals from healthy, fortified foods or safe supplements.</description>
+		<content:encoded><![CDATA[Lower LDL cholesterol with 2 to 3 grams a day of phytosterols taken with meals from healthy, fortified foods or safe supplements.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/01/72-06-Portfolio-H-V02-YouTube.mp4" length="302125971" type="video/mp4" />
+		<itunes:subtitle>Lower LDL cholesterol with 2 to 3 grams a day of phytosterols taken with meals from healthy, fortified foods or safe supplements.</itunes:subtitle>
+		<itunes:summary><![CDATA[Lower LDL cholesterol with 2 to 3 grams a day of phytosterols taken with meals from healthy, fortified foods or safe supplements.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>6:34</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=118197-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Are Plant Sterols Safe for Lowering Cholesterol?</title>
+		<link>https://nutritionfacts.org/video/are-plant-sterols-safe-for-lowering-cholesterol/</link>
+		<pubDate>Mon, 02 Mar 2026 12:50:25 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=118190</guid>
+		<description>Safety concerns regarding phytosterolemia, red blood cell fragility, oxysterols, and the absorption of fat-soluble nutrients are addressed.</description>
+		<content:encoded><![CDATA[Safety concerns regarding phytosterolemia, red blood cell fragility, oxysterols, and the absorption of fat-soluble nutrients are addressed.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/01/72-05-Portfolio-G-V02-YouTube.mp4" length="350150373" type="video/mp4" />
+		<itunes:subtitle>Safety concerns regarding phytosterolemia, red blood cell fragility, oxysterols, and the absorption of fat-soluble nutrients are addressed.</itunes:subtitle>
+		<itunes:summary><![CDATA[Safety concerns regarding phytosterolemia, red blood cell fragility, oxysterols, and the absorption of fat-soluble nutrients are addressed.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>5:52</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=118190-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: Dietary Approach to Naturally Treating Menopause Symptoms</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-dietary-approach-to-naturally-treating-menopause-symptoms/</link>
+		<pubDate>Fri, 27 Feb 2026 12:50:41 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116699</guid>
+		<description>Specific foods have been shown in randomized controlled trials to improve symptoms like hot flashes.</description>
+		<content:encoded><![CDATA[Specific foods have been shown in randomized controlled trials to improve symptoms like hot flashes.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/02/4-Dietary-Approach-to-Naturally-Treating-Menopause-Symptoms-59-20.mp4" length="252188107" type="video/mp4" />
+		<itunes:subtitle>Specific foods have been shown in randomized controlled trials to improve symptoms like hot flashes.</itunes:subtitle>
+		<itunes:summary><![CDATA[Specific foods have been shown in randomized controlled trials to improve symptoms like hot flashes.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:39</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116699-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Are Plant Sterols Effective for Lowering Cholesterol?</title>
+		<link>https://nutritionfacts.org/video/are-plant-sterols-effective-for-lowering-cholesterol/</link>
+		<pubDate>Wed, 25 Feb 2026 12:50:28 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=118161</guid>
+		<description>Even if we eat little or no cholesterol, phytosterols can block the reabsorption of the excess cholesterol our liver dumps into our intestines.</description>
+		<content:encoded><![CDATA[Even if we eat little or no cholesterol, phytosterols can block the reabsorption of the excess cholesterol our liver dumps into our intestines.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/01/72-04-Portfolio-F-V02-YouTube.mp4" length="208972296" type="video/mp4" />
+		<itunes:subtitle>Even if we eat little or no cholesterol, phytosterols can block the reabsorption of the excess cholesterol our liver dumps into our intestines.</itunes:subtitle>
+		<itunes:summary><![CDATA[Even if we eat little or no cholesterol, phytosterols can block the reabsorption of the excess cholesterol our liver dumps into our intestines.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:02</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=118161-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>How to Lower Cholesterol with the Portfolio Diet</title>
+		<link>https://nutritionfacts.org/video/how-to-lower-cholesterol-with-the-portfolio-diet/</link>
+		<pubDate>Mon, 23 Feb 2026 12:50:52 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=118153</guid>
+		<description>Can a plant-based Portfolio Diet lower LDL cholesterol as effectively as statin drugs?</description>
+		<content:encoded><![CDATA[Can a plant-based Portfolio Diet lower LDL cholesterol as effectively as statin drugs?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/01/72-03-Port-E-V02-YouTube-with-live-intro.mp4" length="345477712" type="video/mp4" />
+		<itunes:subtitle>Can a plant-based Portfolio Diet lower LDL cholesterol as effectively as statin drugs?</itunes:subtitle>
+		<itunes:summary><![CDATA[Can a plant-based Portfolio Diet lower LDL cholesterol as effectively as statin drugs?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>6:22</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=118153-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: The Role of Endotoxins in Alzheimer’s and Dementia</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-the-role-of-endotoxins-in-alzheimers-and-dementia/</link>
+		<pubDate>Fri, 20 Feb 2026 12:50:54 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116697</guid>
+		<description>Why can a single meal high in saturated fat impair cognition?</description>
+		<content:encoded><![CDATA[Why can a single meal high in saturated fat impair cognition?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/02/3-_The-Role-of-Endotoxins-in-Alzheimers-and-Dementia-61-01.mp4" length="324919940" type="video/mp4" />
+		<itunes:subtitle>Why can a single meal high in saturated fat impair cognition?</itunes:subtitle>
+		<itunes:summary><![CDATA[Why can a single meal high in saturated fat impair cognition?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>6:19</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116697-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>How Not to Die Documentary</title>
+		<link>https://nutritionfacts.org/video/how-not-to-die-documentary/</link>
+		<pubDate>Wed, 18 Feb 2026 12:50:00 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=118138</guid>
+		<description>In celebration of the 10th anniversary of the publication of How Not to Die, a documentary about my life and work.</description>
+		<content:encoded><![CDATA[In celebration of the 10th anniversary of the publication of How Not to Die, a documentary about my life and work.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/01/HNTD-documentary.mp4" length="11935803748" type="video/mp4" />
+		<itunes:subtitle>In celebration of the 10th anniversary of the publication of How Not to Die, a documentary about my life and work.</itunes:subtitle>
+		<itunes:summary><![CDATA[In celebration of the 10th anniversary of the publication of How Not to Die, a documentary about my life and work.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>1:18:56</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=118138-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>The Benefits of Turmeric Curcumin for Arthritis, Blood Sugar, Cholesterol, and Body Weight</title>
+		<link>https://nutritionfacts.org/video/the-benefits-of-turmeric-curcumin-for-arthritis-blood-sugar-cholesterol-and-body-weight/</link>
+		<pubDate>Mon, 16 Feb 2026 12:50:29 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=118061</guid>
+		<description>Dozens of human trials reveal where turmeric delivers—and where it doesn’t.</description>
+		<content:encoded><![CDATA[Dozens of human trials reveal where turmeric delivers—and where it doesn’t.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/01/72-02-V02-YouTube.mp4" length="203123090" type="video/mp4" />
+		<itunes:subtitle>Dozens of human trials reveal where turmeric delivers—and where it doesn’t.</itunes:subtitle>
+		<itunes:summary><![CDATA[Dozens of human trials reveal where turmeric delivers—and where it doesn’t.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:32</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=118061-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: The Harms Associated with Eating More Southern-Style Food</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-the-harms-associated-with-eating-more-southern-style-food/</link>
+		<pubDate>Fri, 13 Feb 2026 12:50:08 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116695</guid>
+		<description>Diet appears to mediate the majority of the racial health gap.</description>
+		<content:encoded><![CDATA[Diet appears to mediate the majority of the racial health gap.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/02/2-The-Harms-Associated-with-Eating-More-Southern-Style-Food-60-12.mp4" length="607709628" type="video/mp4" />
+		<itunes:subtitle>Diet appears to mediate the majority of the racial health gap.</itunes:subtitle>
+		<itunes:summary><![CDATA[Diet appears to mediate the majority of the racial health gap.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>5:22</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116695-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>The Role of Accountability in Weight Loss</title>
+		<link>https://nutritionfacts.org/video/the-role-of-accountability-in-weight-loss/</link>
+		<pubDate>Wed, 11 Feb 2026 12:50:56 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=118051</guid>
+		<description>One of the most effective weight-loss programs ever was free. Why was it so powerful?</description>
+		<content:encoded><![CDATA[One of the most effective weight-loss programs ever was free. Why was it so powerful?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/01/72-01-V04-YouTube.mp4" length="396176644" type="video/mp4" />
+		<itunes:subtitle>One of the most effective weight-loss programs ever was free. Why was it so powerful?</itunes:subtitle>
+		<itunes:summary><![CDATA[One of the most effective weight-loss programs ever was free. Why was it so powerful?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>7:00</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=118051-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>The Best Diet for Optimal Thyroid Function (webinar recording)</title>
+		<link>https://nutritionfacts.org/video/the-best-diet-for-optimal-thyroid-function-webinar-recording/</link>
+		<pubDate>Mon, 09 Feb 2026 12:50:53 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=118047</guid>
+		<description>Are there natural treatments for hypothyroidism?</description>
+		<content:encoded><![CDATA[Are there natural treatments for hypothyroidism?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/01/best-diet-for-optimal-thyroid-function-webinar.mp4" length="8655746003" type="video/mp4" />
+		<itunes:subtitle>Are there natural treatments for hypothyroidism?</itunes:subtitle>
+		<itunes:summary><![CDATA[Are there natural treatments for hypothyroidism?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>1:02:17</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=118047-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: What Is Creatine? Its Sarcopenia Benefits and Potential Side Effects?</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-what-is-creatine-its-sarcopenia-benefits-and-potential-side-effects/</link>
+		<pubDate>Fri, 06 Feb 2026 12:50:55 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116692</guid>
+		<description>When accompanied by a progressive strength-training regimen, 3 grams of creatine a day may improve muscle performance in older adults. A misinterpretation of lab tests may explain concerns over kidney safety with creatine supplementation.</description>
+		<content:encoded><![CDATA[When accompanied by a progressive strength-training regimen, 3 grams of creatine a day may improve muscle performance in older adults. A misinterpretation of lab tests may explain concerns over kidney safety with creatine supplementation.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/02/1-What-Is-Creatine_-Can-It-Treat-Sarcopenia-Muscle-Loss-with-Age_-Are-There-Any-Side-Effects-to-Taking-Creatine_-63-6-7.mp4" length="483601109" type="video/mp4" />
+		<itunes:subtitle>When accompanied by a progressive strength-training regimen, 3 grams of creatine a day may improve muscle performance in older adults. A misinterpretation of lab tests may explain concerns over kidney safety with creatine supplementation.</itunes:subtitle>
+		<itunes:summary><![CDATA[When accompanied by a progressive strength-training regimen, 3 grams of creatine a day may improve muscle performance in older adults. A misinterpretation of lab tests may explain concerns over kidney safety with creatine supplementation.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>8:31</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116692-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Do the Health Impacts of Ultra-Processed Foods Apply to Plant-Based Meat Alternatives?</title>
+		<link>https://nutritionfacts.org/video/do-the-health-impacts-of-ultra-processed-foods-apply-to-plant-based-meat-alternatives/</link>
+		<pubDate>Wed, 04 Feb 2026 12:50:01 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=117983</guid>
+		<description>If the only ultra-processed food that appears to be killing people is meat, then plant-based meats may be the solution to the ultra-processed foods problem.</description>
+		<content:encoded><![CDATA[If the only ultra-processed food that appears to be killing people is meat, then plant-based meats may be the solution to the ultra-processed foods problem.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/01/71-26-V06-YouTube.mp4" length="268608007" type="video/mp4" />
+		<itunes:subtitle>If the only ultra-processed food that appears to be killing people is meat, then plant-based meats may be the solution to the ultra-processed foods problem.</itunes:subtitle>
+		<itunes:summary><![CDATA[If the only ultra-processed food that appears to be killing people is meat, then plant-based meats may be the solution to the ultra-processed foods problem.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>6:47</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=117983-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Which Ultra-Processed Foods Are the Worst in Driving the Association with Death and Disease?</title>
+		<link>https://nutritionfacts.org/video/which-ultra-processed-foods-are-the-worst-in-driving-the-association-with-death-and-disease/</link>
+		<pubDate>Mon, 02 Feb 2026 12:50:38 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=117974</guid>
+		<description>Only two categories of ultra-processed foods have been associated with premature death.</description>
+		<content:encoded><![CDATA[Only two categories of ultra-processed foods have been associated with premature death.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/01/71-25-V02-YouTube.mp4" length="292171104" type="video/mp4" />
+		<itunes:subtitle>Only two categories of ultra-processed foods have been associated with premature death.</itunes:subtitle>
+		<itunes:summary><![CDATA[Only two categories of ultra-processed foods have been associated with premature death.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>5:00</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=117974-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: The Benefits of Gum Chewing for Halitosis (Bad Breath)</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-the-benefits-of-gum-chewing-for-halitosis-bad-breath/</link>
+		<pubDate>Fri, 30 Jan 2026 12:50:29 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116690</guid>
+		<description>Are any gum flavors better than others?</description>
+		<content:encoded><![CDATA[Are any gum flavors better than others?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/01/5-The-Benefits-of-Chewing-Gum-for-Halitosis-Bad-Breath-62-09.mp4" length="181914904" type="video/mp4" />
+		<itunes:subtitle>Are any gum flavors better than others?</itunes:subtitle>
+		<itunes:summary><![CDATA[Are any gum flavors better than others?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>3:42</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116690-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>How Bad Are Ultra-Processed Foods?</title>
+		<link>https://nutritionfacts.org/video/how-bad-are-ultra-processed-foods/</link>
+		<pubDate>Wed, 28 Jan 2026 12:50:35 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=117966</guid>
+		<description>Are there aspects of ultra-processed foods beyond their nutrient profile that contribute to their deleterious effects?</description>
+		<content:encoded><![CDATA[Are there aspects of ultra-processed foods beyond their nutrient profile that contribute to their deleterious effects?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/01/71-24-V03-YouTube.mp4" length="380665859" type="video/mp4" />
+		<itunes:subtitle>Are there aspects of ultra-processed foods beyond their nutrient profile that contribute to their deleterious effects?</itunes:subtitle>
+		<itunes:summary><![CDATA[Are there aspects of ultra-processed foods beyond their nutrient profile that contribute to their deleterious effects?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>9:02</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=117966-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>What Are Ultra-Processed Foods?</title>
+		<link>https://nutritionfacts.org/video/what-are-ultra-processed-foods/</link>
+		<pubDate>Mon, 26 Jan 2026 12:50:38 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=117959</guid>
+		<description>How exactly is “ultra-processed” defined?</description>
+		<content:encoded><![CDATA[How exactly is “ultra-processed” defined?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/01/71-23-V02-YouTube.mp4" length="410495637" type="video/mp4" />
+		<itunes:subtitle>How exactly is “ultra-processed” defined?</itunes:subtitle>
+		<itunes:summary><![CDATA[How exactly is “ultra-processed” defined?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>6:18</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=117959-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: Do Alkaline Diets Help Athletic Performance?</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-do-alkaline-diets-help-athletic-performance/</link>
+		<pubDate>Fri, 23 Jan 2026 12:50:41 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116688</guid>
+		<description>Can reducing acid-forming foods and boosting alkaline-forming foods replicate the performance-enhancing effects of sodium bicarbonate without the adverse effects?</description>
+		<content:encoded><![CDATA[Can reducing acid-forming foods and boosting alkaline-forming foods replicate the performance-enhancing effects of sodium bicarbonate without the adverse effects?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/01/4-Do-Alkaline-Diets-Help-Athletic-Performance_-60-04.mp4" length="313184987" type="video/mp4" />
+		<itunes:subtitle>Can reducing acid-forming foods and boosting alkaline-forming foods replicate the performance-enhancing effects of sodium bicarbonate without the adverse effects?</itunes:subtitle>
+		<itunes:summary><![CDATA[Can reducing acid-forming foods and boosting alkaline-forming foods replicate the performance-enhancing effects of sodium bicarbonate without the adverse effects?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>5:16</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116688-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Is Shrimp Bad for Cholesterol and Heart Disease?</title>
+		<link>https://nutritionfacts.org/video/is-shrimp-bad-for-cholesterol-and-heart-disease/</link>
+		<pubDate>Wed, 21 Jan 2026 12:50:49 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=117795</guid>
+		<description>Might asymptomatic food sensitivities to gluten, milk, peanuts, eggs, or shrimp increase the risk of premature death for those who eat these foods?</description>
+		<content:encoded><![CDATA[Might asymptomatic food sensitivities to gluten, milk, peanuts, eggs, or shrimp increase the risk of premature death for those who eat these foods?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/12/71-22-formerly-71-14-V02-YouTube.mp4" length="242610932" type="video/mp4" />
+		<itunes:subtitle>Might asymptomatic food sensitivities to gluten, milk, peanuts, eggs, or shrimp increase the risk of premature death for those who eat these foods?</itunes:subtitle>
+		<itunes:summary><![CDATA[Might asymptomatic food sensitivities to gluten, milk, peanuts, eggs, or shrimp increase the risk of premature death for those who eat these foods?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>5:28</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=117795-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>One of the Most Effective Single Pieces of Advice for Weight Loss</title>
+		<link>https://nutritionfacts.org/video/one-of-the-most-effective-single-pieces-of-advice-for-weight-loss/</link>
+		<pubDate>Mon, 19 Jan 2026 12:50:14 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=117787</guid>
+		<description>Complicated weight-loss programs can work, but what if we only had to focus on a single dietary change to get the same benefits?</description>
+		<content:encoded><![CDATA[Complicated weight-loss programs can work, but what if we only had to focus on a single dietary change to get the same benefits?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/12/71-21-V03-YouTube.mp4" length="261309122" type="video/mp4" />
+		<itunes:subtitle>Complicated weight-loss programs can work, but what if we only had to focus on a single dietary change to get the same benefits?</itunes:subtitle>
+		<itunes:summary><![CDATA[Complicated weight-loss programs can work, but what if we only had to focus on a single dietary change to get the same benefits?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>5:58</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=117787-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: The Best Time to Exercise for Weight Loss</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-the-best-time-to-exercise-for-weight-loss/</link>
+		<pubDate>Fri, 16 Jan 2026 12:50:42 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=117653</guid>
+		<description>Burn off significantly more body fat exercising before meals, rather than after them.</description>
+		<content:encoded><![CDATA[Burn off significantly more body fat exercising before meals, rather than after them.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/01/3The-Best-Time-to-Workout-for-Weight-Loss-62-02.mp4" length="306114049" type="video/mp4" />
+		<itunes:subtitle>Burn off significantly more body fat exercising before meals, rather than after them.</itunes:subtitle>
+		<itunes:summary><![CDATA[Burn off significantly more body fat exercising before meals, rather than after them.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>6:43</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=117653-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>How to Boost Fat Burning by 25%</title>
+		<link>https://nutritionfacts.org/video/how-to-boost-fat-burning-by-25/</link>
+		<pubDate>Wed, 14 Jan 2026 12:50:40 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=117780</guid>
+		<description>A single dietary change can increase our resting metabolic rate.</description>
+		<content:encoded><![CDATA[A single dietary change can increase our resting metabolic rate.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/12/71-20-formerly-71-21-V02-YouTube.mp4" length="238333618" type="video/mp4" />
+		<itunes:subtitle>A single dietary change can increase our resting metabolic rate.</itunes:subtitle>
+		<itunes:summary><![CDATA[A single dietary change can increase our resting metabolic rate.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:02</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=117780-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>How to Suppress Your Appetite and Naturally Boost GLP-1</title>
+		<link>https://nutritionfacts.org/video/how-to-suppress-your-appetite-and-naturally-boost-glp-1/</link>
+		<pubDate>Mon, 12 Jan 2026 12:50:27 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=117772</guid>
+		<description>Can eating more fiber result in eating fewer calories?</description>
+		<content:encoded><![CDATA[Can eating more fiber result in eating fewer calories?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/12/71-19-formerly-71-20-V03-YouTube.mp4" length="303193036" type="video/mp4" />
+		<itunes:subtitle>Can eating more fiber result in eating fewer calories?</itunes:subtitle>
+		<itunes:summary><![CDATA[Can eating more fiber result in eating fewer calories?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:49</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=117772-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: Caffeine Shampoo and Rosemary Oil for Hair Growth</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-caffeine-shampoo-and-rosemary-oil-for-hair-growth/</link>
+		<pubDate>Fri, 09 Jan 2026 12:50:01 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116684</guid>
+		<description>I cover natural topical treatments for hair growth, including pumpkin seed oil, caffeine, green tea, pyrithione zinc, ginger, Chinese knotweed, and rosemary.</description>
+		<content:encoded><![CDATA[I cover natural topical treatments for hair growth, including pumpkin seed oil, caffeine, green tea, pyrithione zinc, ginger, Chinese knotweed, and rosemary.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/01/2-Caffeine-Shampoo-and-Rosemary-Oil-for-Hair-Growth-63-15.mp4" length="190873703" type="video/mp4" />
+		<itunes:subtitle>I cover natural topical treatments for hair growth, including pumpkin seed oil, caffeine, green tea, pyrithione zinc, ginger, Chinese knotweed, and rosemary.</itunes:subtitle>
+		<itunes:summary><![CDATA[I cover natural topical treatments for hair growth, including pumpkin seed oil, caffeine, green tea, pyrithione zinc, ginger, Chinese knotweed, and rosemary.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>3:40</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116684-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Plant-Based Diets Could Save Millions of Lives and Trillions of Dollars a Year</title>
+		<link>https://nutritionfacts.org/video/plant-based-diets-could-save-millions-of-lives-and-trillions-of-dollars-a-year/</link>
+		<pubDate>Wed, 07 Jan 2026 12:50:19 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=117761</guid>
+		<description>How many lives would be saved if everyone ate vegetarian or vegan?</description>
+		<content:encoded><![CDATA[How many lives would be saved if everyone ate vegetarian or vegan?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/12/71-18-formerly-71-19-V02-YouTube.mp4" length="283210733" type="video/mp4" />
+		<itunes:subtitle>How many lives would be saved if everyone ate vegetarian or vegan?</itunes:subtitle>
+		<itunes:summary><![CDATA[How many lives would be saved if everyone ate vegetarian or vegan?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>6:35</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=117761-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>The Negative Effects of Cold Plunges for Building Muscle</title>
+		<link>https://nutritionfacts.org/video/the-negative-effects-of-cold-plunges-for-building-muscle/</link>
+		<pubDate>Mon, 05 Jan 2026 12:50:48 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=117754</guid>
+		<description>Cold plunges following strength training are discouraged since they substantially attenuate long-term gains in muscle mass.</description>
+		<content:encoded><![CDATA[Cold plunges following strength training are discouraged since they substantially attenuate long-term gains in muscle mass.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/12/71-17-Cold-C-V02-YouTube.mp4" length="275209538" type="video/mp4" />
+		<itunes:subtitle>Cold plunges following strength training are discouraged since they substantially attenuate long-term gains in muscle mass.</itunes:subtitle>
+		<itunes:summary><![CDATA[Cold plunges following strength training are discouraged since they substantially attenuate long-term gains in muscle mass.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:53</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=117754-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: Repelling Mosquitoes &#8211; Is DEET the Best? What About Natural Alternatives?</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-repelling-mosquitoes-is-deet-the-best-what-about-natural-alternatives/</link>
+		<pubDate>Fri, 02 Jan 2026 12:50:25 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116682</guid>
+		<description>What are the pros and cons of DEET mosquito repellent? Also, picaridin, citronella, and lemon eucalyptus are put to the test.</description>
+		<content:encoded><![CDATA[What are the pros and cons of DEET mosquito repellent? Also, picaridin, citronella, and lemon eucalyptus are put to the test.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/01/1-_Is-DEET-the-Best-Mosquito-Repellent_-Natural-Alternatives-to-DEET-Mosquito-Repellent-61-18-19.mp4" length="432200157" type="video/mp4" />
+		<itunes:subtitle>What are the pros and cons of DEET mosquito repellent? Also, picaridin, citronella, and lemon eucalyptus are put to the test.</itunes:subtitle>
+		<itunes:summary><![CDATA[What are the pros and cons of DEET mosquito repellent? Also, picaridin, citronella, and lemon eucalyptus are put to the test.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>8:10</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116682-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Are Potassium Chloride Salt Substitutes Safe and Effective?</title>
+		<link>https://nutritionfacts.org/video/are-potassium-chloride-salt-substitutes-safe-and-effective/</link>
+		<pubDate>Wed, 31 Dec 2025 12:52:02 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=117588</guid>
+		<description>Swapping even half your salt for potassium chloride may make you more than a decade younger when it comes to premature death</description>
+		<content:encoded><![CDATA[Swapping even half your salt for potassium chloride may make you more than a decade younger when it comes to premature death]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/11/Potassium-Salt-Webinar-for-YT.mp4" length="1621129469" type="video/mp4" />
+		<itunes:subtitle>Swapping even half your salt for potassium chloride may make you more than a decade younger when it comes to premature death</itunes:subtitle>
+		<itunes:summary><![CDATA[Swapping even half your salt for potassium chloride may make you more than a decade younger when it comes to premature death]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>55:30</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=117588-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Are the Benefits of Cold Plunges and Cryotherapy Just a Placebo Effect?</title>
+		<link>https://nutritionfacts.org/video/are-the-benefits-of-cold-plunges-and-cryotherapy-just-a-placebo-effect/</link>
+		<pubDate>Mon, 29 Dec 2025 12:50:46 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=117515</guid>
+		<description>There have been five placebo-controlled studies on cold water immersion. What did they find?</description>
+		<content:encoded><![CDATA[There have been five placebo-controlled studies on cold water immersion. What did they find?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/11/71-16-Cold-B-V04-YouTube.mp4" length="361132241" type="video/mp4" />
+		<itunes:subtitle>There have been five placebo-controlled studies on cold water immersion. What did they find?</itunes:subtitle>
+		<itunes:summary><![CDATA[There have been five placebo-controlled studies on cold water immersion. What did they find?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>8:30</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=117515-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: Is Six Hours of Sleep Enough?</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-is-six-hours-of-sleep-enough/</link>
+		<pubDate>Fri, 26 Dec 2025 12:50:11 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115709</guid>
+		<description>Just because we don’t have evidence that there is a growing epidemic of sleep deprivation doesn’t necessarily mean we are getting enough sleep.</description>
+		<content:encoded><![CDATA[Just because we don’t have evidence that there is a growing epidemic of sleep deprivation doesn’t necessarily mean we are getting enough sleep.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/12/Is-Six-Hours-of-Sleep-Enough_.mp4" length="339421606" type="video/mp4" />
+		<itunes:subtitle>Just because we don’t have evidence that there is a growing epidemic of sleep deprivation doesn’t necessarily mean we are getting enough sleep.</itunes:subtitle>
+		<itunes:summary><![CDATA[Just because we don’t have evidence that there is a growing epidemic of sleep deprivation doesn’t necessarily mean we are getting enough sleep.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>5:01</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115709-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Healthy, Easy Recipes: Black Bean Stew, Kale Salad, and Molasses Cookies</title>
+		<link>https://nutritionfacts.org/video/healthy-easy-recipes-black-bean-stew-kale-salad-and-molasses-cookies/</link>
+		<pubDate>Wed, 24 Dec 2025 12:50:58 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=117580</guid>
+		<description>Recipes from my new How Not to Age cookbook</description>
+		<content:encoded><![CDATA[Recipes from my new How Not to Age cookbook]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/11/Healthy-Easy-Recipes.mp4" length="1659233998" type="video/mp4" />
+		<itunes:subtitle>Recipes from my new How Not to Age cookbook</itunes:subtitle>
+		<itunes:summary><![CDATA[Recipes from my new How Not to Age cookbook]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>3:11</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=117580-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Best Temperature, Timing, and Duration for Cold Plunges for Athletic Performance Recovery</title>
+		<link>https://nutritionfacts.org/video/best-temperature-timing-and-duration-for-cold-plunges-for-athletic-performance-recovery/</link>
+		<pubDate>Mon, 22 Dec 2025 12:50:33 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=117507</guid>
+		<description>What are the effects of cold water immersion on the recovery of physical performance compared to active recovery and doing nothing?</description>
+		<content:encoded><![CDATA[What are the effects of cold water immersion on the recovery of physical performance compared to active recovery and doing nothing?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/11/71-15-Cold-A-V03-YouTube.mp4" length="262844625" type="video/mp4" />
+		<itunes:subtitle>What are the effects of cold water immersion on the recovery of physical performance compared to active recovery and doing nothing?</itunes:subtitle>
+		<itunes:summary><![CDATA[What are the effects of cold water immersion on the recovery of physical performance compared to active recovery and doing nothing?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>7:06</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=117507-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: The Side Effects of Burning Incense</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-the-side-effects-of-burning-incense/</link>
+		<pubDate>Fri, 19 Dec 2025 12:50:38 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115707</guid>
+		<description>Burning incense has been found to generate about four times the particulate matter as burning cigarettes.</description>
+		<content:encoded><![CDATA[Burning incense has been found to generate about four times the particulate matter as burning cigarettes.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/12/The-Side-Effects-of-Burning-Incense.mp4" length="366199897" type="video/mp4" />
+		<itunes:subtitle>Burning incense has been found to generate about four times the particulate matter as burning cigarettes.</itunes:subtitle>
+		<itunes:summary><![CDATA[Burning incense has been found to generate about four times the particulate matter as burning cigarettes.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>5:59</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115707-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Can You Reverse Type 2 Diabetes with a Whole Food, Plant-Based Diet?</title>
+		<link>https://nutritionfacts.org/video/can-you-reverse-type-2-diabetes-with-a-whole-food-plant-based-diet/</link>
+		<pubDate>Wed, 17 Dec 2025 12:51:17 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=117499</guid>
+		<description>Weight loss isn’t necessarily required for type 2 diabetes remission, but what is?</description>
+		<content:encoded><![CDATA[Weight loss isn’t necessarily required for type 2 diabetes remission, but what is?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/11/71-14-formerly-71-15-V03-YouTube.mp4" length="196162598" type="video/mp4" />
+		<itunes:subtitle>Weight loss isn’t necessarily required for type 2 diabetes remission, but what is?</itunes:subtitle>
+		<itunes:summary><![CDATA[Weight loss isn’t necessarily required for type 2 diabetes remission, but what is?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:54</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=117499-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>What Is the Best Statin Cholesterol-Lowering Drug?</title>
+		<link>https://nutritionfacts.org/video/what-is-the-best-statin-cholesterol-lowering-drug/</link>
+		<pubDate>Mon, 15 Dec 2025 12:50:42 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=117189</guid>
+		<description>Which is the safest and most effective statin?</description>
+		<content:encoded><![CDATA[Which is the safest and most effective statin?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/11/71-13-Portfolio-D-V02-YouTube.mp4" length="504091148" type="video/mp4" />
+		<itunes:subtitle>Which is the safest and most effective statin?</itunes:subtitle>
+		<itunes:summary><![CDATA[Which is the safest and most effective statin?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:45</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=117189-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: Soul Food That’s Good for the Soul</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-soul-food-thats-good-for-the-soul/</link>
+		<pubDate>Fri, 12 Dec 2025 12:50:39 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115705</guid>
+		<description>The best of soul food’s origins are tied to the plant-centric West African diet.</description>
+		<content:encoded><![CDATA[The best of soul food’s origins are tied to the plant-centric West African diet.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/12/Soul-Food-Thats-Good-for-the-Soul.mp4" length="897949652" type="video/mp4" />
+		<itunes:subtitle>The best of soul food’s origins are tied to the plant-centric West African diet.</itunes:subtitle>
+		<itunes:summary><![CDATA[The best of soul food’s origins are tied to the plant-centric West African diet.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>6:25</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115705-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>The Side Effects of Statins: Are They Worth It?</title>
+		<link>https://nutritionfacts.org/video/the-side-effects-of-statins-are-they-worth-it/</link>
+		<pubDate>Wed, 10 Dec 2025 12:50:56 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=117179</guid>
+		<description>When statin-“intolerant” patients are challenged blindly, how many are really suffering muscle side effects?</description>
+		<content:encoded><![CDATA[When statin-“intolerant” patients are challenged blindly, how many are really suffering muscle side effects?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/11/71-12-Portfolio-C-V02-YouTube.mp4" length="342390788" type="video/mp4" />
+		<itunes:subtitle>When statin-“intolerant” patients are challenged blindly, how many are really suffering muscle side effects?</itunes:subtitle>
+		<itunes:summary><![CDATA[When statin-“intolerant” patients are challenged blindly, how many are really suffering muscle side effects?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>8:03</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=117179-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>How Effective Are Statins?</title>
+		<link>https://nutritionfacts.org/video/how-effective-are-statins/</link>
+		<pubDate>Mon, 08 Dec 2025 12:50:15 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=117172</guid>
+		<description>How many people would die if we were told the truth about statins?</description>
+		<content:encoded><![CDATA[How many people would die if we were told the truth about statins?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/11/71-11-Portfolio-B-V02-YouTube.mp4" length="269997560" type="video/mp4" />
+		<itunes:subtitle>How many people would die if we were told the truth about statins?</itunes:subtitle>
+		<itunes:summary><![CDATA[How many people would die if we were told the truth about statins?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>7:12</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=117172-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: Can Velvet Beans or Fava Beans Help Treat Parkinson’s Disease?</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-can-velvet-beans-or-fava-beans-help-treat-parkinsons-disease/</link>
+		<pubDate>Fri, 05 Dec 2025 12:50:06 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115703</guid>
+		<description>Since Parkinson’s is caused by a dopamine deficiency in the brain, what if we ate foods rich in the dopamine precursor levodopa?</description>
+		<content:encoded><![CDATA[Since Parkinson’s is caused by a dopamine deficiency in the brain, what if we ate foods rich in the dopamine precursor levodopa?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/12/Can-Velvet-Beans-or-Fava-Beans-Help-Treat-Parkinsons-Disease_.mp4" length="839631115" type="video/mp4" />
+		<itunes:subtitle>Since Parkinson’s is caused by a dopamine deficiency in the brain, what if we ate foods rich in the dopamine precursor levodopa?</itunes:subtitle>
+		<itunes:summary><![CDATA[Since Parkinson’s is caused by a dopamine deficiency in the brain, what if we ate foods rich in the dopamine precursor levodopa?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>12:54</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115703-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Why Isn&#8217;t Everyone on Cholesterol-Lowering Statin Drugs?</title>
+		<link>https://nutritionfacts.org/video/why-isnt-everyone-on-cholesterol-lowering-statin-drugs/</link>
+		<pubDate>Wed, 03 Dec 2025 12:50:30 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=117165</guid>
+		<description>Since there is benefit to getting our LDL cholesterol as low as possible, why aren’t statins prescribed for everyone even if we start out with optimal levels?</description>
+		<content:encoded><![CDATA[Since there is benefit to getting our LDL cholesterol as low as possible, why aren’t statins prescribed for everyone even if we start out with optimal levels?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/11/71-10-Portfolio-A-V03-YouTube-with-Live-Intro.mp4" length="276279383" type="video/mp4" />
+		<itunes:subtitle>Since there is benefit to getting our LDL cholesterol as low as possible, why aren’t statins prescribed for everyone even if we start out with optimal levels?</itunes:subtitle>
+		<itunes:summary><![CDATA[Since there is benefit to getting our LDL cholesterol as low as possible, why aren’t statins prescribed for everyone even if we start out with optimal levels?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>6:38</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=117165-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Are the Pollutant Levels in Fish High Enough to Be Harmful?</title>
+		<link>https://nutritionfacts.org/video/are-the-pollutant-levels-in-fish-high-enough-to-be-harmful/</link>
+		<pubDate>Mon, 01 Dec 2025 12:50:04 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116992</guid>
+		<description>The tolerable daily toxin safety limits are based on single chemicals. What if “safe” levels of chemicals in seafood are combined and tested together?</description>
+		<content:encoded><![CDATA[The tolerable daily toxin safety limits are based on single chemicals. What if “safe” levels of chemicals in seafood are combined and tested together?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/10/71-09-V02-YouTube.mp4" length="227374659" type="video/mp4" />
+		<itunes:subtitle>The tolerable daily toxin safety limits are based on single chemicals. What if “safe” levels of chemicals in seafood are combined and tested together?</itunes:subtitle>
+		<itunes:summary><![CDATA[The tolerable daily toxin safety limits are based on single chemicals. What if “safe” levels of chemicals in seafood are combined and tested together?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:47</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116992-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: Is Soy Milk the Most Nutritious Non-Dairy Milk?</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-is-soy-milk-the-most-nutritious-non-dairy-milk/</link>
+		<pubDate>Fri, 28 Nov 2025 12:50:55 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116707</guid>
+		<description>Soy milk is compared to other plant-based milks, as well as dairy milk.</description>
+		<content:encoded><![CDATA[Soy milk is compared to other plant-based milks, as well as dairy milk.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/11/4-Is-Soy-Milk-the-Most-Nutritious-Non-Dairy-Milk_-62-19.mp4" length="361637615" type="video/mp4" />
+		<itunes:subtitle>Soy milk is compared to other plant-based milks, as well as dairy milk.</itunes:subtitle>
+		<itunes:summary><![CDATA[Soy milk is compared to other plant-based milks, as well as dairy milk.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>8:02</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116707-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Are Large Weekly Doses of Vitamin B12 Safe?</title>
+		<link>https://nutritionfacts.org/video/are-large-weekly-doses-of-vitamin-b12-safe/</link>
+		<pubDate>Wed, 26 Nov 2025 12:50:38 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116982</guid>
+		<description>Should we be concerned about getting too much B12?</description>
+		<content:encoded><![CDATA[Should we be concerned about getting too much B12?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/10/71-08-V02-YouTube.mp4" length="318992274" type="video/mp4" />
+		<itunes:subtitle>Should we be concerned about getting too much B12?</itunes:subtitle>
+		<itunes:summary><![CDATA[Should we be concerned about getting too much B12?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>6:26</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116982-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>How Much Vitamin B12 Do We Need Each Day?</title>
+		<link>https://nutritionfacts.org/video/how-much-vitamin-b12-do-we-need-each-day/</link>
+		<pubDate>Mon, 24 Nov 2025 12:50:04 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116944</guid>
+		<description>How are the recommended daily and weekly doses of vitamin B12 derived?</description>
+		<content:encoded><![CDATA[How are the recommended daily and weekly doses of vitamin B12 derived?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/10/71-07-V03-YouTube.mp4" length="171193111" type="video/mp4" />
+		<itunes:subtitle>How are the recommended daily and weekly doses of vitamin B12 derived?</itunes:subtitle>
+		<itunes:summary><![CDATA[How are the recommended daily and weekly doses of vitamin B12 derived?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:31</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116944-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: Low-Protein Diets for Parkinson’s Disease</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-low-protein-diets-for-parkinsons-disease/</link>
+		<pubDate>Fri, 21 Nov 2025 12:50:51 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115699</guid>
+		<description>How might we maximize the therapeutic efficiency of levodopa?</description>
+		<content:encoded><![CDATA[How might we maximize the therapeutic efficiency of levodopa?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/11/Low-Protein-Diets-for-Parkinsons-Disease.mp4" length="256426479" type="video/mp4" />
+		<itunes:subtitle>How might we maximize the therapeutic efficiency of levodopa?</itunes:subtitle>
+		<itunes:summary><![CDATA[How might we maximize the therapeutic efficiency of levodopa?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>5:09</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115699-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>The Best Source of Vitamin B12: Supplements, Shots, or Fortified Foods?</title>
+		<link>https://nutritionfacts.org/video/the-best-source-of-vitamin-b12-supplements-shots-or-fortified-foods/</link>
+		<pubDate>Wed, 19 Nov 2025 12:50:25 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116936</guid>
+		<description>Is it true we can actually absorb some B12 from our own microbiome?</description>
+		<content:encoded><![CDATA[Is it true we can actually absorb some B12 from our own microbiome?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/10/71-06-V02-YouTube.mp4" length="259739167" type="video/mp4" />
+		<itunes:subtitle>Is it true we can actually absorb some B12 from our own microbiome?</itunes:subtitle>
+		<itunes:summary><![CDATA[Is it true we can actually absorb some B12 from our own microbiome?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:47</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116936-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>The Best Way to Test for Vitamin B12 Deficiency</title>
+		<link>https://nutritionfacts.org/video/the-best-way-to-test-for-vitamin-b12-deficiency/</link>
+		<pubDate>Mon, 17 Nov 2025 12:50:58 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116928</guid>
+		<description>A diagnosis of B12 deficiency should not be dismissed based solely on a single measurement of B12 levels in the blood.</description>
+		<content:encoded><![CDATA[A diagnosis of B12 deficiency should not be dismissed based solely on a single measurement of B12 levels in the blood.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/10/71-05-V02-YouTube.mp4" length="254121820" type="video/mp4" />
+		<itunes:subtitle>A diagnosis of B12 deficiency should not be dismissed based solely on a single measurement of B12 levels in the blood.</itunes:subtitle>
+		<itunes:summary><![CDATA[A diagnosis of B12 deficiency should not be dismissed based solely on a single measurement of B12 levels in the blood.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>5:01</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116928-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: Fat-Blocking Benefits of Hibiscus Tea</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-fat-blocking-benefits-of-hibiscus-tea/</link>
+		<pubDate>Fri, 14 Nov 2025 12:50:15 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115697</guid>
+		<description>What did a randomized, double-blind, placebo-controlled trial of hibiscus tea for weight loss find?</description>
+		<content:encoded><![CDATA[What did a randomized, double-blind, placebo-controlled trial of hibiscus tea for weight loss find?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/11/Fat-Blocking-Benefits-of-Hibiscus-Tea.mp4" length="286791652" type="video/mp4" />
+		<itunes:subtitle>What did a randomized, double-blind, placebo-controlled trial of hibiscus tea for weight loss find?</itunes:subtitle>
+		<itunes:summary><![CDATA[What did a randomized, double-blind, placebo-controlled trial of hibiscus tea for weight loss find?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:41</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115697-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>How Long Does It Take to Become Vitamin B12-Deficient and What Are the Symptoms?</title>
+		<link>https://nutritionfacts.org/video/how-long-does-it-take-to-become-vitamin-b12-deficient-and-what-are-the-symptoms/</link>
+		<pubDate>Wed, 12 Nov 2025 12:50:24 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116584</guid>
+		<description>For those eating plant-based diets, encouragement of vitamin B12 supplementation cannot be overemphasized.</description>
+		<content:encoded><![CDATA[For those eating plant-based diets, encouragement of vitamin B12 supplementation cannot be overemphasized. ]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/09/71-04-V02-YouTube-with-Live-Intro.mp4" length="265899525" type="video/mp4" />
+		<itunes:subtitle>For those eating plant-based diets, encouragement of vitamin B12 supplementation cannot be overemphasized.</itunes:subtitle>
+		<itunes:summary><![CDATA[For those eating plant-based diets, encouragement of vitamin B12 supplementation cannot be overemphasized.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:47</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116584-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Ultra-Processed Foods: Concerns, Controversies, and Exceptions</title>
+		<link>https://nutritionfacts.org/video/ultra-processed-foods-concerns-controversies-and-exceptions/</link>
+		<pubDate>Mon, 10 Nov 2025 12:50:07 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116952</guid>
+		<description>What is the role of ultra-processed plant-based products in the diet?</description>
+		<content:encoded><![CDATA[What is the role of ultra-processed plant-based products in the diet?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/10/ultraprocessed.mp4" length="3892898111" type="video/mp4" />
+		<itunes:subtitle>What is the role of ultra-processed plant-based products in the diet?</itunes:subtitle>
+		<itunes:summary><![CDATA[What is the role of ultra-processed plant-based products in the diet?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>1:02:12</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116952-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: Bone Density, Fracture Rates, and Vitamin D in Vegans</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-bone-density-fracture-rates-and-vitamin-d-in-vegans/</link>
+		<pubDate>Fri, 07 Nov 2025 12:50:24 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115695</guid>
+		<description>What are the bone fracture rates of omnivores vs. vegetarians vs. vegans? Low calcium intake plus low vitamin D exposure may explain higher bone fracture rates in British vegans.</description>
+		<content:encoded><![CDATA[What are the bone fracture rates of omnivores vs. vegetarians vs. vegans? Low calcium intake plus low vitamin D exposure may explain higher bone fracture rates in British vegans.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/11/Bone-Density-Fracture-Rates-and-Vitamin-D-in-Vegans.mp4" length="619301238" type="video/mp4" />
+		<itunes:subtitle>What are the bone fracture rates of omnivores vs. vegetarians vs. vegans? Low calcium intake plus low vitamin D exposure may explain higher bone fracture rates in British vegans.</itunes:subtitle>
+		<itunes:summary><![CDATA[What are the bone fracture rates of omnivores vs. vegetarians vs. vegans? Low calcium intake plus low vitamin D exposure may explain higher bone fracture rates in British vegans.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>12:00</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115695-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Like Beet Juice, Taurine Supplementation May Only Be Safe in the Context of a Plant-Based Diet</title>
+		<link>https://nutritionfacts.org/video/like-beet-juice-taurine-supplementation-may-only-be-safe-in-the-context-of-a-plant-based-diet/</link>
+		<pubDate>Wed, 05 Nov 2025 12:50:23 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116576</guid>
+		<description>The adverse effects of taurine on our microbiome and hydrogen sulfide production may be ameliorated by diets high in fiber and low in saturated fats.</description>
+		<content:encoded><![CDATA[The adverse effects of taurine on our microbiome and hydrogen sulfide production may be ameliorated by diets high in fiber and low in saturated fats.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/09/71-03-Taurine-g-V03-YOUTUBE.mp4" length="224572507" type="video/mp4" />
+		<itunes:subtitle>The adverse effects of taurine on our microbiome and hydrogen sulfide production may be ameliorated by diets high in fiber and low in saturated fats.</itunes:subtitle>
+		<itunes:summary><![CDATA[The adverse effects of taurine on our microbiome and hydrogen sulfide production may be ameliorated by diets high in fiber and low in saturated fats.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>6:39</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116576-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Where to Find Taurine and the Best Source</title>
+		<link>https://nutritionfacts.org/video/where-to-find-taurine-and-the-best-source/</link>
+		<pubDate>Mon, 03 Nov 2025 12:50:44 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116569</guid>
+		<description>I compare the cost, convenience, and safety of various plant, animal, and supplement sources of taurine.</description>
+		<content:encoded><![CDATA[I compare the cost, convenience, and safety of various plant, animal, and supplement sources of taurine.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/09/71-02-Taurine-f-V02-YOUTUBE.mp4" length="258787849" type="video/mp4" />
+		<itunes:subtitle>I compare the cost, convenience, and safety of various plant, animal, and supplement sources of taurine.</itunes:subtitle>
+		<itunes:summary><![CDATA[I compare the cost, convenience, and safety of various plant, animal, and supplement sources of taurine.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>8:11</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116569-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: How to Naturally Reduce Wrinkles with Food</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-how-to-naturally-reduce-wrinkles-with-food/</link>
+		<pubDate>Fri, 31 Oct 2025 11:50:41 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115693</guid>
+		<description>Almonds are put to the test in a ​​randomized controlled trial for facial wrinkles.</description>
+		<content:encoded><![CDATA[Almonds are put to the test in a ​​randomized controlled trial for facial wrinkles.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/10/How-to-Naturally-Reduce-Wrinkles-with-Food.mp4" length="209920659" type="video/mp4" />
+		<itunes:subtitle>Almonds are put to the test in a ​​randomized controlled trial for facial wrinkles.</itunes:subtitle>
+		<itunes:summary><![CDATA[Almonds are put to the test in a ​​randomized controlled trial for facial wrinkles.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:19</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115693-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>The Best Daily Dose of Taurine</title>
+		<link>https://nutritionfacts.org/video/the-best-daily-dose-of-taurine/</link>
+		<pubDate>Wed, 29 Oct 2025 11:50:16 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116546</guid>
+		<description>Even researchers from the pro-taurine anti-aging study recommend against experimenting with taurine, but if you want to give it a try, what daily dose might be best?</description>
+		<content:encoded><![CDATA[Even researchers from the pro-taurine anti-aging study recommend against experimenting with taurine, but if you want to give it a try, what daily dose might be best?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/10/71-01-Taurine-e-V02-YOUTUBE.mp4" length="127965891" type="video/mp4" />
+		<itunes:subtitle>Even researchers from the pro-taurine anti-aging study recommend against experimenting with taurine, but if you want to give it a try, what daily dose might be best?</itunes:subtitle>
+		<itunes:summary><![CDATA[Even researchers from the pro-taurine anti-aging study recommend against experimenting with taurine, but if you want to give it a try, what daily dose might be best?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:20</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116546-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Caveats and Side Effects of Taurine Supplements</title>
+		<link>https://nutritionfacts.org/video/caveats-and-side-effects-of-taurine-supplements/</link>
+		<pubDate>Mon, 27 Oct 2025 11:50:05 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116510</guid>
+		<description>What are the downsides of taurine supplementation?</description>
+		<content:encoded><![CDATA[What are the downsides of taurine supplementation?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/09/70-26-Taurine-d-V02-YOUTUBE.mp4" length="206134087" type="video/mp4" />
+		<itunes:subtitle>What are the downsides of taurine supplementation?</itunes:subtitle>
+		<itunes:summary><![CDATA[What are the downsides of taurine supplementation?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>5:05</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116510-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: Can Stress Cause Halitosis (Bad Breath)?</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-can-stress-cause-halitosis-bad-breath/</link>
+		<pubDate>Fri, 24 Oct 2025 11:50:07 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115691</guid>
+		<description>How can stress and menstrual cycles affect the smell of our breath?</description>
+		<content:encoded><![CDATA[How can stress and menstrual cycles affect the smell of our breath?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/10/Can-Stress-Cause-Halitosis-Bad-Breath.mp4" length="179887744" type="video/mp4" />
+		<itunes:subtitle>How can stress and menstrual cycles affect the smell of our breath?</itunes:subtitle>
+		<itunes:summary><![CDATA[How can stress and menstrual cycles affect the smell of our breath?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>3:52</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115691-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Randomized Controlled Trials of Taurine Supplementation in Humans</title>
+		<link>https://nutritionfacts.org/video/randomized-controlled-trials-of-taurine-supplementation-in-humans/</link>
+		<pubDate>Wed, 22 Oct 2025 11:48:59 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116503</guid>
+		<description>Cautionary tales from carnitine and arginine complicate the taurine supplementation question.</description>
+		<content:encoded><![CDATA[Cautionary tales from carnitine and arginine complicate the taurine supplementation question.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/09/70-25-Taurine-c-V03-YouTube.mp4" length="232239722" type="video/mp4" />
+		<itunes:subtitle>Cautionary tales from carnitine and arginine complicate the taurine supplementation question.</itunes:subtitle>
+		<itunes:summary><![CDATA[Cautionary tales from carnitine and arginine complicate the taurine supplementation question.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>6:56</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116503-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Taurine Supplementation Increases Lifespan and Healthspan in Animals</title>
+		<link>https://nutritionfacts.org/video/taurine-supplementation-increases-lifespan-and-healthspan-in-animals/</link>
+		<pubDate>Mon, 20 Oct 2025 11:50:33 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116253</guid>
+		<description>The level of taurine in our bodies declines with age, dropping by nearly 80 percent. Would consuming  extra improve lifespan or healthspan?</description>
+		<content:encoded><![CDATA[The level of taurine in our bodies declines with age, dropping by nearly 80 percent. Would consuming  extra improve lifespan or healthspan?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/09/70-24-Taurine-b-V03-YouTube.mp4" length="153914263" type="video/mp4" />
+		<itunes:subtitle>The level of taurine in our bodies declines with age, dropping by nearly 80 percent. Would consuming  extra improve lifespan or healthspan?</itunes:subtitle>
+		<itunes:summary><![CDATA[The level of taurine in our bodies declines with age, dropping by nearly 80 percent. Would consuming  extra improve lifespan or healthspan?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>5:13</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116253-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: How to Treat Body Odor with Diet</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-how-to-treat-body-odor-with-diet/</link>
+		<pubDate>Fri, 17 Oct 2025 11:50:52 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116686</guid>
+		<description>Deodorize from the inside out with food.</description>
+		<content:encoded><![CDATA[Deodorize from the inside out with food.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/10/3-How-to-Treat-Body-Odor-with-Diet-62-04.mp4" length="248838737" type="video/mp4" />
+		<itunes:subtitle>Deodorize from the inside out with food.</itunes:subtitle>
+		<itunes:summary><![CDATA[Deodorize from the inside out with food.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>6:02</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116686-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>What Is Taurine in Energy Drinks? Does It Benefit Cognitive or Athletic Performance?</title>
+		<link>https://nutritionfacts.org/video/what-is-taurine-in-energy-drinks-does-it-benefit-cognitive-or-athletic-performance/</link>
+		<pubDate>Wed, 15 Oct 2025 11:50:00 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116245</guid>
+		<description>We have at least five pathways to make taurine in our body from scratch, but does taking more offer a benefit?</description>
+		<content:encoded><![CDATA[We have at least five pathways to make taurine in our body from scratch, but does taking more offer a benefit?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/09/70-23-Taurine-a-V03-YouTube.mp4" length="194794833" type="video/mp4" />
+		<itunes:subtitle>We have at least five pathways to make taurine in our body from scratch, but does taking more offer a benefit?</itunes:subtitle>
+		<itunes:summary><![CDATA[We have at least five pathways to make taurine in our body from scratch, but does taking more offer a benefit?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:42</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116245-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Can Goitrogens in Soy and Cruciferous Vegetables Interfere with Thyroid Function?</title>
+		<link>https://nutritionfacts.org/video/can-goitrogens-in-soy-and-cruciferous-vegetables-interfere-with-thyroid-function/</link>
+		<pubDate>Mon, 13 Oct 2025 11:50:57 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116199</guid>
+		<description>What is the controversy over soy food consumption in those with subclinical hypothyroidism?</description>
+		<content:encoded><![CDATA[What is the controversy over soy food consumption in those with subclinical hypothyroidism?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/08/70-22-V02-YouTube.mp4" length="259943967" type="video/mp4" />
+		<itunes:subtitle>What is the controversy over soy food consumption in those with subclinical hypothyroidism?</itunes:subtitle>
+		<itunes:summary><![CDATA[What is the controversy over soy food consumption in those with subclinical hypothyroidism?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:55</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116199-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: Is Swimming Good for Weight Loss?</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-is-swimming-good-for-weight-loss/</link>
+		<pubDate>Fri, 10 Oct 2025 11:50:43 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115687</guid>
+		<description>Exercising in cool water or under cool conditions on land can lead to an increase in post-workout calorie intake.</description>
+		<content:encoded><![CDATA[Exercising in cool water or under cool conditions on land can lead to an increase in post-workout calorie intake.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/10/Is-Swimming-Good-for-Weight-Loss_.mp4" length="275816806" type="video/mp4" />
+		<itunes:subtitle>Exercising in cool water or under cool conditions on land can lead to an increase in post-workout calorie intake.</itunes:subtitle>
+		<itunes:summary><![CDATA[Exercising in cool water or under cool conditions on land can lead to an increase in post-workout calorie intake.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:49</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115687-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>The Safety and Efficacy of Ketogenic, Low-Carb Diets for Diabetes Remission</title>
+		<link>https://nutritionfacts.org/video/the-safety-and-efficacy-of-ketogenic-low-carb-diets-for-diabetes-remission/</link>
+		<pubDate>Wed, 08 Oct 2025 11:50:02 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116192</guid>
+		<description>A meta-analysis of low-carb diets for diabetes remission found little to no effect at 12 months, clinically important harms to quality of life, and the deal-killer––an increase in LDL cholesterol.</description>
+		<content:encoded><![CDATA[A meta-analysis of low-carb diets for diabetes remission found little to no effect at 12 months, clinically important harms to quality of life, and the deal-killer––an increase in LDL cholesterol.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/08/70-21-V04-YouTube.mp4" length="233999465" type="video/mp4" />
+		<itunes:subtitle>A meta-analysis of low-carb diets for diabetes remission found little to no effect at 12 months, clinically important harms to quality of life, and the deal-killer––an increase in LDL cholesterol.</itunes:subtitle>
+		<itunes:summary><![CDATA[A meta-analysis of low-carb diets for diabetes remission found little to no effect at 12 months, clinically important harms to quality of life, and the deal-killer––an increase in LDL cholesterol.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>5:10</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116192-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>The Benefits of Black and Green Teas for Brain Waves</title>
+		<link>https://nutritionfacts.org/video/the-benefits-of-black-and-green-teas-for-brain-waves/</link>
+		<pubDate>Mon, 06 Oct 2025 11:50:55 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116184</guid>
+		<description>Of all the plants in the world, why has the tea plant become the most popular beverage in the world?</description>
+		<content:encoded><![CDATA[Of all the plants in the world, why has the tea plant become the most popular beverage in the world?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/08/70-20-V02-YouTube.mp4" length="119232941" type="video/mp4" />
+		<itunes:subtitle>Of all the plants in the world, why has the tea plant become the most popular beverage in the world?</itunes:subtitle>
+		<itunes:summary><![CDATA[Of all the plants in the world, why has the tea plant become the most popular beverage in the world?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>3:23</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116184-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: Does the Sweetener Allulose Have Side Effects? Is It a Healthy Sweetener?</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-does-the-sweetener-allulose-have-side-effects-is-it-a-healthy-sweetener/</link>
+		<pubDate>Fri, 03 Oct 2025 11:50:26 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115685</guid>
+		<description>How safe are fourth-generation sweeteners, such as the rare sugar allulose? Are they healthy alternatives to traditional sweeteners?</description>
+		<content:encoded><![CDATA[How safe are fourth-generation sweeteners, such as the rare sugar allulose? Are they healthy alternatives to traditional sweeteners?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/10/Does-the-Sweetener-Allulose-Have-Side-Effects_-Is-It-a-Healthy-Sweetener_.mp4" length="694616064" type="video/mp4" />
+		<itunes:subtitle>How safe are fourth-generation sweeteners, such as the rare sugar allulose? Are they healthy alternatives to traditional sweeteners?</itunes:subtitle>
+		<itunes:summary><![CDATA[How safe are fourth-generation sweeteners, such as the rare sugar allulose? Are they healthy alternatives to traditional sweeteners?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>14:09</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115685-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Don’t Eat Raw Alfalfa Sprouts</title>
+		<link>https://nutritionfacts.org/video/dont-eat-raw-alfalfa-sprouts/</link>
+		<pubDate>Wed, 01 Oct 2025 11:50:25 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115847</guid>
+		<description>Broccoli sprouts don’t have the food safety risks of alfalfa sprouts.</description>
+		<content:encoded><![CDATA[Broccoli sprouts don’t have the food safety risks of alfalfa sprouts.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/08/70-19-V02-YouTube.mp4" length="162765372" type="video/mp4" />
+		<itunes:subtitle>Broccoli sprouts don’t have the food safety risks of alfalfa sprouts.</itunes:subtitle>
+		<itunes:summary><![CDATA[Broccoli sprouts don’t have the food safety risks of alfalfa sprouts.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>3:42</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115847-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>What Are Hot Dogs and Burgers Made Of?</title>
+		<link>https://nutritionfacts.org/video/what-are-hot-dogs-and-burgers-made-of/</link>
+		<pubDate>Mon, 29 Sep 2025 11:50:20 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115837</guid>
+		<description>How much of hot dogs and burgers is actual muscle meat?</description>
+		<content:encoded><![CDATA[How much of hot dogs and burgers is actual muscle meat?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/08/70-18-V03-YouTube.mp4" length="235064843" type="video/mp4" />
+		<itunes:subtitle>How much of hot dogs and burgers is actual muscle meat?</itunes:subtitle>
+		<itunes:summary><![CDATA[How much of hot dogs and burgers is actual muscle meat?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>5:20</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115837-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: Natural Dietary Remedy for Insomnia</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-natural-dietary-remedy-for-insomnia/</link>
+		<pubDate>Fri, 26 Sep 2025 11:50:32 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=114475</guid>
+		<description>Lactucin, the hypnotic component of lettuce, is put to the test in a randomized, double-blind, placebo-controlled trial of lettuce seeds.</description>
+		<content:encoded><![CDATA[Lactucin, the hypnotic component of lettuce, is put to the test in a randomized, double-blind, placebo-controlled trial of lettuce seeds.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/09/4-Natural-Dietary-Remedy-for-Insomnia.mp4" length="315592332" type="video/mp4" />
+		<itunes:subtitle>Lactucin, the hypnotic component of lettuce, is put to the test in a randomized, double-blind, placebo-controlled trial of lettuce seeds.</itunes:subtitle>
+		<itunes:summary><![CDATA[Lactucin, the hypnotic component of lettuce, is put to the test in a randomized, double-blind, placebo-controlled trial of lettuce seeds.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>5:50</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=114475-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Yerba Mate and Cancer: Do Its Benefits Outweigh Its Risks?</title>
+		<link>https://nutritionfacts.org/video/yerba-mate-and-cancer-do-its-benefits-outweigh-its-risks/</link>
+		<pubDate>Wed, 24 Sep 2025 11:50:49 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115829</guid>
+		<description>Carcinogens like benzopyrene in cigarette smoke, grilled chicken, and yerba mate tea may explain higher rates of certain cancers in consumers.</description>
+		<content:encoded><![CDATA[Carcinogens like benzopyrene in cigarette smoke, grilled chicken, and yerba mate tea may explain higher rates of certain cancers in consumers.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/08/70-17-V02-YouTube.mp4" length="116151501" type="video/mp4" />
+		<itunes:subtitle>Carcinogens like benzopyrene in cigarette smoke, grilled chicken, and yerba mate tea may explain higher rates of certain cancers in consumers.</itunes:subtitle>
+		<itunes:summary><![CDATA[Carcinogens like benzopyrene in cigarette smoke, grilled chicken, and yerba mate tea may explain higher rates of certain cancers in consumers.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>2:18</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115829-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>The Side Effects of the Hormones in Milk</title>
+		<link>https://nutritionfacts.org/video/the-side-effects-of-the-hormones-in-milk/</link>
+		<pubDate>Mon, 22 Sep 2025 11:50:47 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115822</guid>
+		<description>Within an hour of drinking dairy milk, blood levels of the estrogen estrone in men go up and testosterone goes down.</description>
+		<content:encoded><![CDATA[Within an hour of drinking dairy milk, blood levels of the estrogen estrone in men go up and testosterone goes down.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/08/70-16-V02-YouTube.mp4" length="196122771" type="video/mp4" />
+		<itunes:subtitle>Within an hour of drinking dairy milk, blood levels of the estrogen estrone in men go up and testosterone goes down.</itunes:subtitle>
+		<itunes:summary><![CDATA[Within an hour of drinking dairy milk, blood levels of the estrogen estrone in men go up and testosterone goes down.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>5:04</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115822-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: Fenugreek Benefits for Sexual Function, Painful Periods, and Milk Production</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-fenugreek-benefits-for-sexual-function-painful-periods-and-milk-production/</link>
+		<pubDate>Fri, 19 Sep 2025 11:50:31 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=114473</guid>
+		<description>The hormonal benefits of fenugreek extend beyond the muscle-bulking testosterone boost.</description>
+		<content:encoded><![CDATA[The hormonal benefits of fenugreek extend beyond the muscle-bulking testosterone boost.
+]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/09/3-Fenugreek-Benefits-for-Sexual-Function-Painful-Periods-and-Milk-Production.mp4" length="208432484" type="video/mp4" />
+		<itunes:subtitle>The hormonal benefits of fenugreek extend beyond the muscle-bulking testosterone boost.</itunes:subtitle>
+		<itunes:summary><![CDATA[The hormonal benefits of fenugreek extend beyond the muscle-bulking testosterone boost.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:07</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=114473-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>The Best Way to Cook Vegetables</title>
+		<link>https://nutritionfacts.org/video/the-best-way-to-cook-vegetables/</link>
+		<pubDate>Wed, 17 Sep 2025 11:50:22 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115807</guid>
+		<description>Which method of cooking vegetables preserves the most antioxidants?</description>
+		<content:encoded><![CDATA[Which method of cooking vegetables preserves the most antioxidants?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/08/70-15-V02-YouTube.mp4" length="133086858" type="video/mp4" />
+		<itunes:subtitle>Which method of cooking vegetables preserves the most antioxidants?</itunes:subtitle>
+		<itunes:summary><![CDATA[Which method of cooking vegetables preserves the most antioxidants?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>3:57</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115807-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Carbadox, the Carcinogenic Drug Fed to U.S. Pigs but Banned in Other Countries</title>
+		<link>https://nutritionfacts.org/video/carbadox-the-carcinogenic-drug-fed-to-u-s-pigs-but-banned-in-other-countries/</link>
+		<pubDate>Mon, 15 Sep 2025 11:50:59 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115651</guid>
+		<description>Carbadox, with its 97.9 percent likelihood of causing cancer in humans, is still being fed to pigs bound for the supermarket in the United States.</description>
+		<content:encoded><![CDATA[Carbadox, with its 97.9 percent likelihood of causing cancer in humans, is still being fed to pigs bound for the supermarket in the United States.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/08/70-14-V02-YouTube.mp4" length="170190309" type="video/mp4" />
+		<itunes:subtitle>Carbadox, with its 97.9 percent likelihood of causing cancer in humans, is still being fed to pigs bound for the supermarket in the United States.</itunes:subtitle>
+		<itunes:summary><![CDATA[Carbadox, with its 97.9 percent likelihood of causing cancer in humans, is still being fed to pigs bound for the supermarket in the United States.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>3:11</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115651-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: Fasting to Reverse Diabetes</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-fasting-to-reverse-diabetes/</link>
+		<pubDate>Fri, 12 Sep 2025 11:50:30 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=114471</guid>
+		<description>By losing 15 percent of their body weight, nearly 90 percent of individuals with type 2 diabetes for less than four years may achieve remission.</description>
+		<content:encoded><![CDATA[By losing 15 percent of their body weight, nearly 90 percent of individuals with type 2 diabetes for less than four years may achieve remission.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/09/2-Fasting-to-Reverse-Diabetes.mp4" length="1016837285" type="video/mp4" />
+		<itunes:subtitle>By losing 15 percent of their body weight, nearly 90 percent of individuals with type 2 diabetes for less than four years may achieve remission.</itunes:subtitle>
+		<itunes:summary><![CDATA[By losing 15 percent of their body weight, nearly 90 percent of individuals with type 2 diabetes for less than four years may achieve remission.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>7:02</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=114471-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>How to Prevent and Treat Age-Related Hearing Loss</title>
+		<link>https://nutritionfacts.org/video/how-to-prevent-and-treat-age-related-hearing-loss/</link>
+		<pubDate>Wed, 10 Sep 2025 11:50:01 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115814</guid>
+		<description>The diet and supplements that have been put to the test to prevent and even reverse hearing loss.</description>
+		<content:encoded><![CDATA[The diet and supplements that have been put to the test to prevent and even reverse hearing loss.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/08/hearing-loss-webinar.mp4" length="3095196500" type="video/mp4" />
+		<itunes:subtitle>The diet and supplements that have been put to the test to prevent and even reverse hearing loss.</itunes:subtitle>
+		<itunes:summary><![CDATA[The diet and supplements that have been put to the test to prevent and even reverse hearing loss.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>56:04</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115814-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Who Should Avoid Coffee?</title>
+		<link>https://nutritionfacts.org/video/who-should-avoid-coffee/</link>
+		<pubDate>Mon, 08 Sep 2025 11:50:23 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115641</guid>
+		<description>There are certain medical conditions that are worsened by coffee intake.</description>
+		<content:encoded><![CDATA[There are certain medical conditions that are worsened by coffee intake.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/08/70-13-V02-YouTube.mp4" length="243982170" type="video/mp4" />
+		<itunes:subtitle>There are certain medical conditions that are worsened by coffee intake.</itunes:subtitle>
+		<itunes:summary><![CDATA[There are certain medical conditions that are worsened by coffee intake.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>3:40</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115641-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: The Role of Kimchi and H. Pylori in Stomach Cancer and How to Treat H. Pylori Naturally with Diet</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-the-role-of-kimchi-and-h-pylori-in-stomach-cancer-and-how-to-treat-h-pylori-naturally-with-diet/</link>
+		<pubDate>Fri, 05 Sep 2025 11:50:27 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=114469</guid>
+		<description>What explains the Achilles’ heel in certain Asian diets?</description>
+		<content:encoded><![CDATA[What explains the Achilles’ heel in certain Asian diets?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/09/1-The-Role-of-Kimchi-and-H.-Pylori-in-Stomach-Cancer-and-How-to-Treat-H.-Pylori-Naturally-with-Diet.mp4" length="710431901" type="video/mp4" />
+		<itunes:subtitle>What explains the Achilles’ heel in certain Asian diets?</itunes:subtitle>
+		<itunes:summary><![CDATA[What explains the Achilles’ heel in certain Asian diets?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>12:05</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=114469-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>The Healthiest Way to Drink Coffee</title>
+		<link>https://nutritionfacts.org/video/the-healthiest-way-to-drink-coffee/</link>
+		<pubDate>Wed, 03 Sep 2025 11:50:35 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115634</guid>
+		<description>Why do those who drink filtered coffee tend to live longer than those who drink unfiltered coffee?</description>
+		<content:encoded><![CDATA[Why do those who drink filtered coffee tend to live longer than those who drink unfiltered coffee?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/08/70-12-V02-YouTube.mp4" length="186555343" type="video/mp4" />
+		<itunes:subtitle>Why do those who drink filtered coffee tend to live longer than those who drink unfiltered coffee?</itunes:subtitle>
+		<itunes:summary><![CDATA[Why do those who drink filtered coffee tend to live longer than those who drink unfiltered coffee?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>3:57</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115634-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Does Coffee Help Boost Autophagy and Lifespan?</title>
+		<link>https://nutritionfacts.org/video/does-coffee-help-boost-autophagy-and-lifespan/</link>
+		<pubDate>Mon, 01 Sep 2025 11:50:41 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115471</guid>
+		<description>In terms of longevity, three cups of decaf coffee appeared to be just as protective as three cups of regular coffee.</description>
+		<content:encoded><![CDATA[In terms of longevity, three cups of decaf coffee appeared to be just as protective as three cups of regular coffee.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/07/70-11-V02-YouTube.mp4" length="323023969" type="video/mp4" />
+		<itunes:subtitle>In terms of longevity, three cups of decaf coffee appeared to be just as protective as three cups of regular coffee.</itunes:subtitle>
+		<itunes:summary><![CDATA[In terms of longevity, three cups of decaf coffee appeared to be just as protective as three cups of regular coffee.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>5:14</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115471-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: How to Keep Your Microbiome Healthy with Prebiotic Foods</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-how-to-keep-your-microbiome-healthy-with-prebiotic-foods/</link>
+		<pubDate>Fri, 29 Aug 2025 11:50:26 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=114467</guid>
+		<description>We co-evolved a symbiosis with our good gut bacteria, but we are not holding up our end of the bargain.</description>
+		<content:encoded><![CDATA[We co-evolved a symbiosis with our good gut bacteria, but we are not holding up our end of the bargain.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/08/5-How-to-Keep-Your-Microbiome-Healthy-with-Prebiotic-Foods.mp4" length="189324963" type="video/mp4" />
+		<itunes:subtitle>We co-evolved a symbiosis with our good gut bacteria, but we are not holding up our end of the bargain.</itunes:subtitle>
+		<itunes:summary><![CDATA[We co-evolved a symbiosis with our good gut bacteria, but we are not holding up our end of the bargain.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>3:37</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=114467-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Preventing and Treating Sarcoidosis</title>
+		<link>https://nutritionfacts.org/video/preventing-and-treating-sarcoidosis/</link>
+		<pubDate>Wed, 27 Aug 2025 11:50:37 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115463</guid>
+		<description>The cause of sarcoidosis is unknown, but new research indicates that mycobacteria, like MAP bacteria found in dairy and meat products, are likely involved in some sarcoidosis cases.</description>
+		<content:encoded><![CDATA[The cause of sarcoidosis is unknown, but new research indicates that mycobacteria, like MAP bacteria found in dairy and meat products, are likely involved in some sarcoidosis cases. ]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/07/70-10-V02-YouTube.mp4" length="274444822" type="video/mp4" />
+		<itunes:subtitle>The cause of sarcoidosis is unknown, but new research indicates that mycobacteria, like MAP bacteria found in dairy and meat products, are likely involved in some sarcoidosis cases.</itunes:subtitle>
+		<itunes:summary><![CDATA[The cause of sarcoidosis is unknown, but new research indicates that mycobacteria, like MAP bacteria found in dairy and meat products, are likely involved in some sarcoidosis cases.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>5:20</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115463-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Reversing Early-Stage Prostate Cancer Progression with a Plant-Based Diet and Lifestyle Program</title>
+		<link>https://nutritionfacts.org/video/reversing-early-stage-prostate-cancer-progression-with-a-plant-based-diet-and-lifestyle-program/</link>
+		<pubDate>Mon, 25 Aug 2025 11:50:34 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115455</guid>
+		<description>A plant-based lifestyle is put to the test against early and late-stage cancer</description>
+		<content:encoded><![CDATA[A plant-based lifestyle is put to the test against early and late-stage cancer]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/07/70-09-V02-YouTube.mp4" length="331880998" type="video/mp4" />
+		<itunes:subtitle>A plant-based lifestyle is put to the test against early and late-stage cancer</itunes:subtitle>
+		<itunes:summary><![CDATA[A plant-based lifestyle is put to the test against early and late-stage cancer]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>6:37</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115455-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: Why Don’t Health Insurers Encourage Healthier Eating?</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-why-dont-health-insurers-encourage-healthier-eating/</link>
+		<pubDate>Fri, 22 Aug 2025 11:50:24 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=114465</guid>
+		<description>Why don’t more big payors in healthcare embrace plant-based eating?</description>
+		<content:encoded><![CDATA[Why don’t more big payors in healthcare embrace plant-based eating?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/08/4-Why-Dont-Health-Insurers-Encourage-Healthier-Eating_.mp4" length="274700550" type="video/mp4" />
+		<itunes:subtitle>Why don’t more big payors in healthcare embrace plant-based eating?</itunes:subtitle>
+		<itunes:summary><![CDATA[Why don’t more big payors in healthcare embrace plant-based eating?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:39</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=114465-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Turmeric Supplements and Liver Toxicity</title>
+		<link>https://nutritionfacts.org/video/turmeric-supplements-and-liver-toxicity/</link>
+		<pubDate>Wed, 20 Aug 2025 11:50:40 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115108</guid>
+		<description>An increasing number of case reports have linked turmeric extract supplements to liver injury.</description>
+		<content:encoded><![CDATA[An increasing number of case reports have linked turmeric extract supplements to liver injury.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/07/70-08-V03-YouTube.mp4" length="267734180" type="video/mp4" />
+		<itunes:subtitle>An increasing number of case reports have linked turmeric extract supplements to liver injury.</itunes:subtitle>
+		<itunes:summary><![CDATA[An increasing number of case reports have linked turmeric extract supplements to liver injury.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>5:09</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115108-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Are Environmental Toxins Lower in Wild-Caught or Farmed Fish?</title>
+		<link>https://nutritionfacts.org/video/are-environmental-toxins-lower-in-wild-caught-or-farmed-fish/</link>
+		<pubDate>Mon, 18 Aug 2025 11:50:55 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115101</guid>
+		<description>The adverse effects of industrial pollutants in seafood may counteract the benefits of nutrients in fish.</description>
+		<content:encoded><![CDATA[The adverse effects of industrial pollutants in seafood may counteract the benefits of nutrients in fish.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/07/70-07-V03-YouTube.mp4" length="210300575" type="video/mp4" />
+		<itunes:subtitle>The adverse effects of industrial pollutants in seafood may counteract the benefits of nutrients in fish.</itunes:subtitle>
+		<itunes:summary><![CDATA[The adverse effects of industrial pollutants in seafood may counteract the benefits of nutrients in fish.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:46</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115101-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: Do Vitamin C Supplements Help with Anxiety?</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-do-vitamin-c-supplements-help-with-anxiety/</link>
+		<pubDate>Fri, 15 Aug 2025 11:50:24 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=114463</guid>
+		<description>What are the risks and benefits of using vitamin C for depression and anxiety?</description>
+		<content:encoded><![CDATA[What are the risks and benefits of using vitamin C for depression and anxiety?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/08/3-Do-Vitamin-C-Supplements-Help-with-Anxiety_.mp4" length="230420617" type="video/mp4" />
+		<itunes:subtitle>What are the risks and benefits of using vitamin C for depression and anxiety?</itunes:subtitle>
+		<itunes:summary><![CDATA[What are the risks and benefits of using vitamin C for depression and anxiety?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>3:39</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=114463-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>The Benefits and Side Effects of Celery</title>
+		<link>https://nutritionfacts.org/video/the-benefits-and-side-effects-of-celery/</link>
+		<pubDate>Wed, 13 Aug 2025 11:50:43 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115093</guid>
+		<description>Can celery, a vegetable relatively high in sodium, lower blood pressure?</description>
+		<content:encoded><![CDATA[Can celery, a vegetable relatively high in sodium, lower blood pressure?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/07/70-06-V03-YouTube.mp4" length="252623856" type="video/mp4" />
+		<itunes:subtitle>Can celery, a vegetable relatively high in sodium, lower blood pressure?</itunes:subtitle>
+		<itunes:summary><![CDATA[Can celery, a vegetable relatively high in sodium, lower blood pressure?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:26</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115093-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Can a Plant-Based Diet Reverse Type 2 Diabetes?</title>
+		<link>https://nutritionfacts.org/video/can-a-plant-based-diet-reverse-type-2-diabetes/</link>
+		<pubDate>Mon, 11 Aug 2025 11:50:18 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115085</guid>
+		<description>Diet as a primary intervention for type 2 diabetes is the most effective in achieving remission when emphasizing whole, plant-based foods with minimal consumption of animal products.</description>
+		<content:encoded><![CDATA[Diet as a primary intervention for type 2 diabetes is the most effective in achieving remission when emphasizing whole, plant-based foods with minimal consumption of animal products.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/07/70-05-V04-YouTube.mp4" length="207623922" type="video/mp4" />
+		<itunes:subtitle>Diet as a primary intervention for type 2 diabetes is the most effective in achieving remission when emphasizing whole, plant-based foods with minimal consumption of animal products.</itunes:subtitle>
+		<itunes:summary><![CDATA[Diet as a primary intervention for type 2 diabetes is the most effective in achieving remission when emphasizing whole, plant-based foods with minimal consumption of animal products.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>5:18</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115085-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: The Best Poop Position for Constipation</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-the-best-poop-position-for-constipation/</link>
+		<pubDate>Fri, 08 Aug 2025 11:50:18 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=114461</guid>
+		<description>The Squatty Potty is put to the test.</description>
+		<content:encoded><![CDATA[The Squatty Potty is put to the test.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/08/2-The-Best-Poop-Position-for-Constipation.mp4" length="252666410" type="video/mp4" />
+		<itunes:subtitle>The Squatty Potty is put to the test.</itunes:subtitle>
+		<itunes:summary><![CDATA[The Squatty Potty is put to the test.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:32</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=114461-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Cancer from Benzene from the Preservative Sodium Benzoate in Beverages?</title>
+		<link>https://nutritionfacts.org/video/cancer-from-benzene-from-the-preservative-sodium-benzoate-in-beverages/</link>
+		<pubDate>Wed, 06 Aug 2025 11:50:04 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115069</guid>
+		<description>Certain soft drinks and bottled (heated) carrot juice may contain carcinogenic levels above safety standards.</description>
+		<content:encoded><![CDATA[Certain soft drinks and bottled (heated) carrot juice may contain carcinogenic levels above safety standards.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/07/70-04-V02-YouTube.mp4" length="123171151" type="video/mp4" />
+		<itunes:subtitle>Certain soft drinks and bottled (heated) carrot juice may contain carcinogenic levels above safety standards.</itunes:subtitle>
+		<itunes:summary><![CDATA[Certain soft drinks and bottled (heated) carrot juice may contain carcinogenic levels above safety standards.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>2:38</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115069-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>The Growth and Nutrient Intakes of Children Raised on Plant-Based Diets</title>
+		<link>https://nutritionfacts.org/video/the-growth-and-nutrient-intakes-of-children-raised-on-plant-based-diets/</link>
+		<pubDate>Mon, 04 Aug 2025 11:50:59 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115058</guid>
+		<description>How can we plan well-balanced plant-based diets for infants and kids?</description>
+		<content:encoded><![CDATA[How can we plan well-balanced plant-based diets for infants and kids?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/07/70-03-V03-YouTube.mp4" length="373003204" type="video/mp4" />
+		<itunes:subtitle>How can we plan well-balanced plant-based diets for infants and kids?</itunes:subtitle>
+		<itunes:summary><![CDATA[How can we plan well-balanced plant-based diets for infants and kids?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>7:16</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115058-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: How Effective Is Chemotherapy? And How Much Does It Improve Survival?</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-how-effective-is-chemotherapy-and-how-much-does-it-improve-survival/</link>
+		<pubDate>Fri, 01 Aug 2025 11:50:17 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=114459</guid>
+		<description>Most chemo drugs are approved by the U.S. Food and Drug Administration without evidence of benefit on survival or quality of life. If you put together all the new chemo drugs that had been approved over a dozen years, the average overall survival benefit is only 2.1 months.</description>
+		<content:encoded><![CDATA[ Most chemo drugs are approved by the U.S. Food and Drug Administration without evidence of benefit on survival or quality of life. If you put together all the new chemo drugs that had been approved over a dozen years, the average overall survival benefit is only 2.1 months.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/08/1-How-Effective-Is-Chemotherapy_-And-How-Much-Does-It-Improve-Survival_.mp4" length="1838026827" type="video/mp4" />
+		<itunes:subtitle>Most chemo drugs are approved by the U.S. Food and Drug Administration without evidence of benefit on survival or quality of life. If you put together all the new chemo drugs that had been approved over a dozen years,</itunes:subtitle>
+		<itunes:summary><![CDATA[Most chemo drugs are approved by the U.S. Food and Drug Administration without evidence of benefit on survival or quality of life. If you put together all the new chemo drugs that had been approved over a dozen years, the average overall survival benefit is only 2.1 months.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>12:18</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=114459-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Preventing Gestational Diabetes During Pregnancy with Diet</title>
+		<link>https://nutritionfacts.org/video/preventing-gestational-diabetes-during-pregnancy-with-diet/</link>
+		<pubDate>Wed, 30 Jul 2025 11:50:00 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115049</guid>
+		<description>Eating well-balanced plant-based diets during pregnancy can reduce risks of gestational diabetes and hypertensive disorders like preeclampsia.</description>
+		<content:encoded><![CDATA[Eating well-balanced plant-based diets during pregnancy can reduce risks of gestational diabetes and hypertensive disorders like preeclampsia.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/07/70-02-V03-YouTube.mp4" length="256863076" type="video/mp4" />
+		<itunes:subtitle>Eating well-balanced plant-based diets during pregnancy can reduce risks of gestational diabetes and hypertensive disorders like preeclampsia.</itunes:subtitle>
+		<itunes:summary><![CDATA[Eating well-balanced plant-based diets during pregnancy can reduce risks of gestational diabetes and hypertensive disorders like preeclampsia.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>5:17</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115049-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Do Not Eat Pawpaws</title>
+		<link>https://nutritionfacts.org/video/do-not-eat-pawpaws/</link>
+		<pubDate>Mon, 28 Jul 2025 11:50:19 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=115043</guid>
+		<description>Pawpaw fruits, like soursop, guanabana, sweetsop, sugar apple, cherimoya, and custard apple, contain neurotoxins that may cause a neurodegenerative disease.</description>
+		<content:encoded><![CDATA[Pawpaw fruits, like soursop, guanabana, sweetsop, sugar apple, cherimoya, and custard apple, contain neurotoxins that may cause a neurodegenerative disease.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/07/70-01-V02-YouTube.mp4" length="309857092" type="video/mp4" />
+		<itunes:subtitle>Pawpaw fruits, like soursop, guanabana, sweetsop, sugar apple, cherimoya, and custard apple, contain neurotoxins that may cause a neurodegenerative disease.</itunes:subtitle>
+		<itunes:summary><![CDATA[Pawpaw fruits, like soursop, guanabana, sweetsop, sugar apple, cherimoya, and custard apple, contain neurotoxins that may cause a neurodegenerative disease.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>5:29</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=115043-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: Micromorts &#8211; How Risky Is It to Go Under Anesthesia?</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-micromorts-how-risky-is-it-to-go-under-anesthesia/</link>
+		<pubDate>Fri, 25 Jul 2025 11:50:15 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=114457</guid>
+		<description>A micromort as a unit of comparing and communicating risk to patients equivalent to a one-in-a-million chance of dying.</description>
+		<content:encoded><![CDATA[A micromort as a unit of comparing and communicating risk to patients equivalent to a one-in-a-million chance of dying.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/07/4-Micromorts-How-Risky-Is-It-to-Go-Under-Anesthesia_.mp4" length="156398324" type="video/mp4" />
+		<itunes:subtitle>A micromort as a unit of comparing and communicating risk to patients equivalent to a one-in-a-million chance of dying.</itunes:subtitle>
+		<itunes:summary><![CDATA[A micromort as a unit of comparing and communicating risk to patients equivalent to a one-in-a-million chance of dying.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>5:01</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=114457-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>The Benefits of Purslane for Treating Oral Lichen Planus</title>
+		<link>https://nutritionfacts.org/video/the-benefits-of-purslane-for-treating-oral-lichen-planus/</link>
+		<pubDate>Wed, 23 Jul 2025 11:50:25 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=114830</guid>
+		<description>The weed purslane appears to not only be the safest treatment available for the autoimmune disease lichen planus, but the most effective, too.</description>
+		<content:encoded><![CDATA[The weed purslane appears to not only be the safest treatment available for the autoimmune disease lichen planus, but the most effective, too.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/06/69-26-The-Benefits-of-Purslane-for-Treating-Oral-Lichen-Planus.mp4" length="167194221" type="video/mp4" />
+		<itunes:subtitle>The weed purslane appears to not only be the safest treatment available for the autoimmune disease lichen planus, but the most effective, too.</itunes:subtitle>
+		<itunes:summary><![CDATA[The weed purslane appears to not only be the safest treatment available for the autoimmune disease lichen planus, but the most effective, too.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>2:44</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=114830-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Are the IQs of Vegetarian Children Higher?</title>
+		<link>https://nutritionfacts.org/video/are-the-iqs-of-vegetarian-children-higher/</link>
+		<pubDate>Mon, 21 Jul 2025 11:50:15 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=114821</guid>
+		<description>Are the higher IQs found in vegetarian children the result of confounding factors or reverse causation?</description>
+		<content:encoded><![CDATA[Are the higher IQs found in vegetarian children the result of confounding factors or reverse causation?]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/06/69-25-Do-Vegetarian-Children-Have-Higher-IQs_.mp4" length="153242729" type="video/mp4" />
+		<itunes:subtitle>Are the higher IQs found in vegetarian children the result of confounding factors or reverse causation?</itunes:subtitle>
+		<itunes:summary><![CDATA[Are the higher IQs found in vegetarian children the result of confounding factors or reverse causation?]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>2:32</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=114821-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+	<item>
+		<title>Friday Favorites: Mixed Nuts Put to the Test for Erectile Dysfunction</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-mixed-nuts-put-to-the-test-for-erectile-dysfunction/</link>
+		<pubDate>Fri, 18 Jul 2025 11:50:14 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=114455</guid>
+		<description>Walnuts, almonds, and hazelnuts are put to the test for erectile dysfunction, sexual function, sperm count, and semen quality.</description>
+		<content:encoded><![CDATA[Walnuts, almonds, and hazelnuts are put to the test for erectile dysfunction, sexual function, sperm count, and semen quality.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/07/3-Mixed-Nuts-Put-to-the-Test-for-Erectile-Dysfunction.mp4" length="233796028" type="video/mp4" />
+		<itunes:subtitle>Walnuts, almonds, and hazelnuts are put to the test for erectile dysfunction, sexual function, sperm count, and semen quality.</itunes:subtitle>
+		<itunes:summary><![CDATA[Walnuts, almonds, and hazelnuts are put to the test for erectile dysfunction, sexual function, sperm count, and semen quality.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:59</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=114455-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
+</channel>
+</rss>

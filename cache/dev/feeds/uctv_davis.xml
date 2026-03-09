@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:fmp="http://www.filemaker.com/fmpxmlresult" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:podcast="https://podcastindex.org/namespace/1.0" version="2.0">
+  <channel>
+    <title>UC Davis (Video)</title>
+    <ttl>60</ttl>
+    <podcast:locked owner="uctv@ucsd.edu">yes</podcast:locked>
+    <itunes:explicit>false</itunes:explicit>
+    <link>https://www.uctv.tv</link>
+    <language>en-us</language>
+    <copyright>Copyright 2024 Regents of the University of California</copyright>
+    <itunes:subtitle>University of California Television</itunes:subtitle>
+    <itunes:author>UCTV</itunes:author>
+    <itunes:summary>Programs from the University of California, Davis.</itunes:summary>
+    <description>Programs from the University of California, Davis.</description>
+    <itunes:owner>
+      <itunes:name>UCTV</itunes:name>
+      <itunes:email>uctv@ucsd.edu</itunes:email>
+    </itunes:owner>
+    <itunes:image href="https://www.uctv.tv/images/podcastart/uc-davis.jpg"/>
+    <itunes:category text="Education">
+      <itunes:category text=""/>
+    </itunes:category>
+    <atom:link href="http://podcast.uctv.tv/UCTV_campus_davis_video.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Sustainably UC Davis Episode 4: Zero Waste</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>What does it really mean to go zero waste? At UC Davis, the answer is both innovative and inspiring.
+
+Episode 4 of ‘Sustainably UC Davis’ explores how the university is moving toward a zero-waste future—from converting campus food scraps into renewable energy, to phasing out single-use plastics in food service. Featured in the episode are Joseph Yonkoski, Facilities Management superintendent of thermal infrastructure and former READ facility supervisor, Kelli O’Day, UC Davis Sustainability Assessment Program Manager, and Zero Waste Student Coordinators Grae Mordhorst and Sophie Fayet-Faber. Series: "UC Davis News" [Public Affairs] [Science] [Show ID: 41059]</itunes:summary>
+      <description>What does it really mean to go zero waste? At UC Davis, the answer is both innovative and inspiring.
+
+Episode 4 of ‘Sustainably UC Davis’ explores how the university is moving toward a zero-waste future—from converting campus food scraps into renewable energy, to phasing out single-use plastics in food service. Featured in the episode are Joseph Yonkoski, Facilities Management superintendent of thermal infrastructure and former READ facility supervisor, Kelli O’Day, UC Davis Sustainability Assessment Program Manager, and Zero Waste Student Coordinators Grae Mordhorst and Sophie Fayet-Faber. Series: "UC Davis News" [Public Affairs] [Science] [Show ID: 41059]</description>
+      <category>Science</category>
+      <category>Sustainability and Public Policy</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/41059.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/41059.mp4" length="211744504" type="video/mp4"/>
+      <guid isPermaLink="false">41059sustainably-uc-davis-episode-4-zero-waste</guid>
+      <pubDate>Mon, 3 Nov 2025 13:00:00 PST</pubDate>
+      <itunes:duration>00:11:50</itunes:duration>
+      <itunes:keywords>UC Davis, Davis, College, University, California, Sustainable, Sustainability, waste, zero-waste, food, energy, environment, Sustainability and Public Policy, Science of Sustainability, 41059, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/41059</link>
+    </item>
+    <item>
+      <title>That May Be the Chancellor - Episode 12</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>Wine down with Chancellor May as he meets up with some of the students, staff and faculty from the Department of Viticulture and Enology — recognized as one of the best programs in the world. Chancellor May tours the winery and vineyard, learns about the winery's cutting-edge technology and sustainability practices, and even helps crush grapes before sampling the final product with his "partner in wine." Series: "UC Davis News" [Public Affairs] [Science] [Show ID: 41062]</itunes:summary>
+      <description>Wine down with Chancellor May as he meets up with some of the students, staff and faculty from the Department of Viticulture and Enology — recognized as one of the best programs in the world. Chancellor May tours the winery and vineyard, learns about the winery's cutting-edge technology and sustainability practices, and even helps crush grapes before sampling the final product with his "partner in wine." Series: "UC Davis News" [Public Affairs] [Science] [Show ID: 41062]</description>
+      <category>Science</category>
+      <category>Sustainability and Public Policy</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/41062.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/41062.mp4" length="178658195" type="video/mp4"/>
+      <guid isPermaLink="false">41062that-may-be-the-chancellor---episode-12</guid>
+      <pubDate>Mon, 3 Nov 2025 13:00:00 PST</pubDate>
+      <itunes:duration>00:09:59</itunes:duration>
+      <itunes:keywords>UC Davis, Davis, College, University, California, Wine, Winery, vineyard, chancellor, viticulture, enology, Sustainability and Public Policy, Agricultural Sciences, Science and Society, 41062, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/41062</link>
+    </item>
+    <item>
+      <title>That May Be The Chancellor: Episode 13</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>In this episode of That May Be the Chancellor, Chancellor Gary S. May explores some of the reasons UC Davis is such a great place to launch an idea. First; an interview with Joe DiNunzio, Executive Director of the Mike and Renee Child Institute for Innovation and Entrepreneurship; next, a tour of the Diane Bryant Engineering Student Design Center; and finally, a conversation with two outstanding student entrepreneurs. Series: "UC Davis News" [Business] [Show ID: 41063]</itunes:summary>
+      <description>In this episode of That May Be the Chancellor, Chancellor Gary S. May explores some of the reasons UC Davis is such a great place to launch an idea. First; an interview with Joe DiNunzio, Executive Director of the Mike and Renee Child Institute for Innovation and Entrepreneurship; next, a tour of the Diane Bryant Engineering Student Design Center; and finally, a conversation with two outstanding student entrepreneurs. Series: "UC Davis News" [Business] [Show ID: 41063]</description>
+      <category>Business</category>
+      <category>Entrepreneurship / Start-ups</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/41063.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/41063.mp4" length="136670166" type="video/mp4"/>
+      <guid isPermaLink="false">41063that-may-be-the-chancellor-episode-13</guid>
+      <pubDate>Mon, 3 Nov 2025 13:00:00 PST</pubDate>
+      <itunes:duration>00:07:36</itunes:duration>
+      <itunes:keywords>UC Davis, Davis, College, University, California, Chancellor, Entrepreneurship, entrepreneur, innovation, students, Entrepreneurship / Start-ups, New and Emerging Technologies, 41063, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/41063</link>
+    </item>
+    <item>
+      <title>That May Be The Chancellor: Episode 14</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>Join Chancellor May as he meets a couple of UC Davis researchers and the people who have been impacted by their positive work on the UC Davis Health campus. 
+
+Joseph Tuscano, M.D., oncologist at the UC Davis Comprehensive Cancer Center, receives federal funding to look for less toxic therapies for treating cancer such as immunotherapy. And Christine Nordahl, director of the Autism Phenome Project at the UC Davis MIND Institute, focuses on understanding how the brain develops during early childhood in children with neurodevelopmental conditions such as autism. Both researchers rely on federal funding to continue their life-saving and vital work. Series: "UC Davis News" [Health and Medicine] [Show ID: 41064]</itunes:summary>
+      <description>Join Chancellor May as he meets a couple of UC Davis researchers and the people who have been impacted by their positive work on the UC Davis Health campus. 
+
+Joseph Tuscano, M.D., oncologist at the UC Davis Comprehensive Cancer Center, receives federal funding to look for less toxic therapies for treating cancer such as immunotherapy. And Christine Nordahl, director of the Autism Phenome Project at the UC Davis MIND Institute, focuses on understanding how the brain develops during early childhood in children with neurodevelopmental conditions such as autism. Both researchers rely on federal funding to continue their life-saving and vital work. Series: "UC Davis News" [Health and Medicine] [Show ID: 41064]</description>
+      <category>Health and Medicine</category>
+      <category>Autism</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/41064.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/41064.mp4" length="203125234" type="video/mp4"/>
+      <guid isPermaLink="false">41064that-may-be-the-chancellor-episode-14</guid>
+      <pubDate>Mon, 3 Nov 2025 13:00:00 PST</pubDate>
+      <itunes:duration>00:11:21</itunes:duration>
+      <itunes:keywords>UC Davis, Davis, California, College, University, Research, Health, Science, Medicine, Chancellor, Cancer, Autism, Autism, Cancer and Oncology, General Health, Public Health, 41064, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/41064</link>
+    </item>
+    <item>
+      <title>Inspiring Young People To Get Out in Nature</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>What’s the best way to get college students interested in nature? By getting them outside and teaching them valuable skills in wildlife conservation and habitat restoration. Associate Professor Laci Gerhart’s popular “Wild Davis” course does just that, and students who complete the course can earn California Naturalist Certification. Series: "UC Davis News" [Science] [Show ID: 41070]</itunes:summary>
+      <description>What’s the best way to get college students interested in nature? By getting them outside and teaching them valuable skills in wildlife conservation and habitat restoration. Associate Professor Laci Gerhart’s popular “Wild Davis” course does just that, and students who complete the course can earn California Naturalist Certification. Series: "UC Davis News" [Science] [Show ID: 41070]</description>
+      <category>Science</category>
+      <category>Artificial Intelligence</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/41070.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/41070.mp4" length="72134641" type="video/mp4"/>
+      <guid isPermaLink="false">41070inspiring-young-people-to-get-out-in-nature</guid>
+      <pubDate>Thu, 25 Sep 2025 13:00:00 PST</pubDate>
+      <itunes:duration>00:03:58</itunes:duration>
+      <itunes:keywords>UC Davis, Davis, California, College, University, Nature, Outdoors, Natural, Wildlife, conservation, environment, environmental,, Artificial Intelligence, Ecology, the Environment, Conservation, 41070, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/41070</link>
+    </item>
+    <item>
+      <title>Scientists Find the BEST Lighting Color for Emotional Well-Being</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>Why does amber light ease stress and anxiety? One theory is that it’s similar to the natural orange light experienced in nature, like sunsets and campfires. Thanks to interest and funding in color psychology research, discoveries like this will improve emotional and mental health for everyone, especially those who need it most like hospital patients and those in elder care housing. Series: "UC Davis News" [Health and Medicine] [Science] [Show ID: 41054]</itunes:summary>
+      <description>Why does amber light ease stress and anxiety? One theory is that it’s similar to the natural orange light experienced in nature, like sunsets and campfires. Thanks to interest and funding in color psychology research, discoveries like this will improve emotional and mental health for everyone, especially those who need it most like hospital patients and those in elder care housing. Series: "UC Davis News" [Health and Medicine] [Science] [Show ID: 41054]</description>
+      <category>Health and Medicine</category>
+      <category>Mental Health / Psychiatry</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/41054.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/41054.mp4" length="65399605" type="video/mp4"/>
+      <guid isPermaLink="false">41054scientists-find-the-best-lighting-color-for-emotional-well-being</guid>
+      <pubDate>Mon, 22 Sep 2025 13:00:00 PST</pubDate>
+      <itunes:duration>00:03:36</itunes:duration>
+      <itunes:keywords>UC Davis, College, University, Research, Health, Mental Health, Color, Lighting, Stress, Anxiety, Science, Mental Health / Psychiatry, Mind Body Connection, Behavioral, Human Development, and Cognitive Sciences, 41054, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/41054</link>
+    </item>
+    <item>
+      <title>Sustainably UC Davis Episode 2: The Student Farm</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>At the UC Davis Student Farm, students bring sustainable food systems to life.
+
+In Episode 2 of 'Sustainably UC Davis', we explore student-led efforts in sustainable agriculture. Environmental and social sustainability remain central to the Student Farm’s mission, from organic practices to food justice. Hear about these topics and more from Colin Dixon, Director of the Student Farm, as well as staff and student leads from the Market Garden, Fresh Focus, and Green Fellowship programs. Series: "UC Davis News" [Public Affairs] [Science] [Agriculture] [Show ID: 41057]</itunes:summary>
+      <description>At the UC Davis Student Farm, students bring sustainable food systems to life.
+
+In Episode 2 of 'Sustainably UC Davis', we explore student-led efforts in sustainable agriculture. Environmental and social sustainability remain central to the Student Farm’s mission, from organic practices to food justice. Hear about these topics and more from Colin Dixon, Director of the Student Farm, as well as staff and student leads from the Market Garden, Fresh Focus, and Green Fellowship programs. Series: "UC Davis News" [Public Affairs] [Science] [Agriculture] [Show ID: 41057]</description>
+      <category>Science</category>
+      <category>Farming</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/41057.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/41057.mp4" length="156728746" type="video/mp4"/>
+      <guid isPermaLink="false">41057sustainably-uc-davis-episode-2-the-student-farm</guid>
+      <pubDate>Mon, 22 Sep 2025 13:00:00 PST</pubDate>
+      <itunes:duration>00:08:45</itunes:duration>
+      <itunes:keywords>UC Davis, California, College, University, Sustainability, Science, Environment, Farm, Student Farm, Food Systems, Organic, Agriculture, Farming, Sustainability and Public Policy, Agricultural Sciences, Science of Sustainability, 41057, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/41057</link>
+    </item>
+    <item>
+      <title>Enzymes Are Everywhere: Here’s How Our Students Design Them</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>UC Davis students from multiple disciplines are learning to design enzymes that address challenges in food, energy and health. Through the Design2Data program, they gain hands-on experience in enzyme engineering, preparing for careers in science and research that make a real-world impact. See how our students contribute to solving important human needs. Series: "UC Davis News" [Science] [Show ID: 41052]</itunes:summary>
+      <description>UC Davis students from multiple disciplines are learning to design enzymes that address challenges in food, energy and health. Through the Design2Data program, they gain hands-on experience in enzyme engineering, preparing for careers in science and research that make a real-world impact. See how our students contribute to solving important human needs. Series: "UC Davis News" [Science] [Show ID: 41052]</description>
+      <category>Science</category>
+      <category>Bioscience</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/41052.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/41052.mp4" length="67878322" type="video/mp4"/>
+      <guid isPermaLink="false">41052enzymes-are-everywhere-heres-how-our-students-design-them</guid>
+      <pubDate>Sun, 21 Sep 2025 13:00:00 PST</pubDate>
+      <itunes:duration>00:03:44</itunes:duration>
+      <itunes:keywords>biochemistry, UC Davis, Enzymes, science, health, food, biotechnology, college, california, Bioscience, Biotechnology, 41052, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/41052</link>
+    </item>
+    <item>
+      <title>From Labs to Lives: How Research Funding Solves Real-World Problems</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>UC Davis is a powerhouse for breakthroughs and impact. Our interdisciplinary research plays a vital role in building the region’s economy. Our research improves the quality of life of residents and contributes to America’s global leadership in technology and innovation. Through collaboration between our top-ranked hospital and veterinary school, as well as our science and engineering discoveries, our research directly improves American lives. Series: "UC Davis News" [Science] [Show ID: 41053]</itunes:summary>
+      <description>UC Davis is a powerhouse for breakthroughs and impact. Our interdisciplinary research plays a vital role in building the region’s economy. Our research improves the quality of life of residents and contributes to America’s global leadership in technology and innovation. Through collaboration between our top-ranked hospital and veterinary school, as well as our science and engineering discoveries, our research directly improves American lives. Series: "UC Davis News" [Science] [Show ID: 41053]</description>
+      <category>Science</category>
+      <category>Science and Society</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/41053.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/41053.mp4" length="37862121" type="video/mp4"/>
+      <guid isPermaLink="false">41053from-labs-to-lives-how-research-funding-solves-real-world-problems</guid>
+      <pubDate>Tue, 16 Sep 2025 13:00:00 PST</pubDate>
+      <itunes:duration>00:02:02</itunes:duration>
+      <itunes:keywords>UC Davis, Research, College, University, Science, Hospital, Lab, Science and Society, 41053, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/41053</link>
+    </item>
+    <item>
+      <title>Sustainably UC Davis Episode 3: Food and Dining</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>From sourcing ingredients to sorting waste, sustainability is baked into every part of campus dining.
+
+Episode 3 of ‘Sustainably UC Davis’ highlights how Student Housing and Dining Services (SHDS) makes on-campus dining more sustainable—from procurement, to waste audits, to educational programming. Featured in the episode are Chamayo Yniguez, Director of Dining Operations; Samuel Orellana, Sustainability Specialist; and April Engelmeier, Sustainability Peer Educator. Series: "UC Davis News" [Public Affairs] [Science] [Show ID: 41058]</itunes:summary>
+      <description>From sourcing ingredients to sorting waste, sustainability is baked into every part of campus dining.
+
+Episode 3 of ‘Sustainably UC Davis’ highlights how Student Housing and Dining Services (SHDS) makes on-campus dining more sustainable—from procurement, to waste audits, to educational programming. Featured in the episode are Chamayo Yniguez, Director of Dining Operations; Samuel Orellana, Sustainability Specialist; and April Engelmeier, Sustainability Peer Educator. Series: "UC Davis News" [Public Affairs] [Science] [Show ID: 41058]</description>
+      <category>Science</category>
+      <category>Sustainability and Public Policy</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/41058.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/41058.mp4" length="114248932" type="video/mp4"/>
+      <guid isPermaLink="false">41058sustainably-uc-davis-episode-3-food-and-dining</guid>
+      <pubDate>Mon, 15 Sep 2025 13:00:00 PST</pubDate>
+      <itunes:duration>00:06:21</itunes:duration>
+      <itunes:keywords>UC Davis, Davis, California, College, University, Sustainability, Sustainable, Food, Dining, Sustainability and Public Policy, Science of Sustainability, 41058, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/41058</link>
+    </item>
+    <item>
+      <title>Day in the Life of a Professional Photographer</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>Join Greg, UC Davis staff photographer, as he embarks on an 8 a.m. (or rather, 5 a.m.) photoshoot! Get a behind-the-scenes look at being a university photographer, capturing moments around campus and waking up at ungodly hours to get the perfect shot. With a whistle and a witty joke, Greg explains what it means to take professional photos. Series: "UC Davis News" [Arts and Music] [Show ID: 41051]</itunes:summary>
+      <description>Join Greg, UC Davis staff photographer, as he embarks on an 8 a.m. (or rather, 5 a.m.) photoshoot! Get a behind-the-scenes look at being a university photographer, capturing moments around campus and waking up at ungodly hours to get the perfect shot. With a whistle and a witty joke, Greg explains what it means to take professional photos. Series: "UC Davis News" [Arts and Music] [Show ID: 41051]</description>
+      <category>Arts and Music</category>
+      <category>Artist Profiles</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/41051.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/41051.mp4" length="66613030" type="video/mp4"/>
+      <guid isPermaLink="false">41051day-in-the-life-of-a-professional-photographer</guid>
+      <pubDate>Wed, 3 Sep 2025 13:00:00 PST</pubDate>
+      <itunes:duration>00:03:40</itunes:duration>
+      <itunes:keywords>uc davis, davis, photography, photographer, bts, behind-the-scenes, photo, art, visual art, college, campus, camera, Artist Profiles, Media Arts and New Media, 41051, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/41051</link>
+    </item>
+    <item>
+      <title>Insider's View on the Evolution of Impact Investing</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>Career Channel</itunes:subtitle>
+      <itunes:summary>What is impact investing? Silicon Valley venture capitalist Nancy Pfund talks about her career in finance and what shaped her life. In this spirited conversation with Stephen Morris, the San Francisco Bureau Chief of The Financial Times, Pfund spoke about the influence of her parents—her father, a patent attorney, and her mother, a political activist. She said the exposure to the worlds of inventions and community outreach were influential in her journey.  Series: "Career Channel" [Business] [Show ID: 40390]</itunes:summary>
+      <description>What is impact investing? Silicon Valley venture capitalist Nancy Pfund talks about her career in finance and what shaped her life. In this spirited conversation with Stephen Morris, the San Francisco Bureau Chief of The Financial Times, Pfund spoke about the influence of her parents—her father, a patent attorney, and her mother, a political activist. She said the exposure to the worlds of inventions and community outreach were influential in her journey.  Series: "Career Channel" [Business] [Show ID: 40390]</description>
+      <category>Business</category>
+      <category>Financing</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/40390.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/40390.mp4" length="738441618" type="video/mp4"/>
+      <guid isPermaLink="false">40390insiders-view-on-the-evolution-of-impact-investing</guid>
+      <pubDate>Mon, 10 Feb 2025 13:00:00 PST</pubDate>
+      <itunes:duration>00:59:03</itunes:duration>
+      <itunes:keywords>money, finance, market, capital, venture, capitalist, financial times, nancy pfund, investment, elon musk, Financing, Leadership Profiles, 40390, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/40390</link>
+    </item>
+    <item>
+      <title>A Day in the Life of Marine Science Student Researchers</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>In the Bodega Marine Laboratory, UC Davis’ esteemed faculty and passionate undergraduate students are uncovering the secrets of the marine world.
+
+Through our summer research programs, students get the unique opportunity to conduct independent research and make new discoveries alongside a community of environmental and marine scientists. 
+
+Follow students through a day of marine research and witness how evolution and ecology intertwine beneath the waves. Learn about the significant student research projects taking place under the guidance of professors at Bodega Marine Lab and the role of marine science in understanding our world's changing marine ecosystems. Series: "UC Davis News" [Science] [Show ID: 40180]</itunes:summary>
+      <description>In the Bodega Marine Laboratory, UC Davis’ esteemed faculty and passionate undergraduate students are uncovering the secrets of the marine world.
+
+Through our summer research programs, students get the unique opportunity to conduct independent research and make new discoveries alongside a community of environmental and marine scientists. 
+
+Follow students through a day of marine research and witness how evolution and ecology intertwine beneath the waves. Learn about the significant student research projects taking place under the guidance of professors at Bodega Marine Lab and the role of marine science in understanding our world's changing marine ecosystems. Series: "UC Davis News" [Science] [Show ID: 40180]</description>
+      <category>Science</category>
+      <category>Oceanography, Marine Science, Marine Bioscience</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/40180.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/40180.mp4" length="93003432" type="video/mp4"/>
+      <guid isPermaLink="false">40180a-day-in-the-life-of-marine-science-student-researchers</guid>
+      <pubDate>Wed, 25 Dec 2024 13:00:00 PST</pubDate>
+      <itunes:duration>00:05:08</itunes:duration>
+      <itunes:keywords>marine science, research, ecosystem, environmental science, uc davis, science, Oceanography, Marine Science, Marine Bioscience, 40180, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/40180</link>
+    </item>
+    <item>
+      <title>Is This America’s Oldest Chinese Restaurant?</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>Step into the historic Chicago Cafe in Woodland, California, a culinary landmark that could potentially be the oldest Chinese restaurant in the U.S. Anchored by the Fong family for over a century, their resilience echoes through the decades of the Chinese Exclusion Act and societal adversity. The cafe offers more than traditional Chinese food. It's a living chapter of Chinese-American history and a beacon of cultural endurance. Series: "UC Davis News" [Humanities] [Show ID: 40176]</itunes:summary>
+      <description>Step into the historic Chicago Cafe in Woodland, California, a culinary landmark that could potentially be the oldest Chinese restaurant in the U.S. Anchored by the Fong family for over a century, their resilience echoes through the decades of the Chinese Exclusion Act and societal adversity. The cafe offers more than traditional Chinese food. It's a living chapter of Chinese-American history and a beacon of cultural endurance. Series: "UC Davis News" [Humanities] [Show ID: 40176]</description>
+      <category>Humanities</category>
+      <category>Ethnic Studies</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/40176.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/40176.mp4" length="69888951" type="video/mp4"/>
+      <guid isPermaLink="false">40176is-this-americas-oldest-chinese-restaurant</guid>
+      <pubDate>Mon, 28 Oct 2024 13:00:00 PST</pubDate>
+      <itunes:duration>00:03:50</itunes:duration>
+      <itunes:keywords>history, chinese, chinese food, food, chinese-american, restaurant, UC Davis, Ethnic Studies, 40176, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/40176</link>
+    </item>
+    <item>
+      <title>The Problem with Flood Insurance: Can Community Insurance Help?</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>Witness the resilience of Isleton, California, as they pioneer a groundbreaking, community-based flood insurance program aimed at fostering recovery and climate resilience. This initiative, led by UC Davis researchers, could revolutionize disaster preparedness, offering fast, flexible support post-flood and investing in long-term sustainability. Series: "UC Davis News" [Public Affairs] [Science] [Show ID: 40177]</itunes:summary>
+      <description>Witness the resilience of Isleton, California, as they pioneer a groundbreaking, community-based flood insurance program aimed at fostering recovery and climate resilience. This initiative, led by UC Davis researchers, could revolutionize disaster preparedness, offering fast, flexible support post-flood and investing in long-term sustainability. Series: "UC Davis News" [Public Affairs] [Science] [Show ID: 40177]</description>
+      <category>Public Affairs</category>
+      <category>Climate Solutions</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/40177.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/40177.mp4" length="63701602" type="video/mp4"/>
+      <guid isPermaLink="false">40177the-problem-with-flood-insurance-can-community-insurance-help</guid>
+      <pubDate>Mon, 7 Oct 2024 13:00:00 PST</pubDate>
+      <itunes:duration>00:03:28</itunes:duration>
+      <itunes:keywords>insurance, flood, flood insurance, climate, sustainability, uc davis, community, Climate Solutions, Climate Solutions, 40177, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/40177</link>
+    </item>
+    <item>
+      <title>Love Bugs? Become an Insect Scholar at UC Davis</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>UC Davis undergraduate student researchers are making exciting discoveries in the world of insects through the Insect Scholars program. From studying monarch butterflies to honey bees, these students gain hands-on experience in entomology, developing crucial lab and field skills. Learn about their journeys, the research they conduct and how they contribute to conservation efforts. Series: "UC Davis News" [Science] [Show ID: 40178]</itunes:summary>
+      <description>UC Davis undergraduate student researchers are making exciting discoveries in the world of insects through the Insect Scholars program. From studying monarch butterflies to honey bees, these students gain hands-on experience in entomology, developing crucial lab and field skills. Learn about their journeys, the research they conduct and how they contribute to conservation efforts. Series: "UC Davis News" [Science] [Show ID: 40178]</description>
+      <category>Science</category>
+      <category>California Issues</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/40178.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/40178.mp4" length="73418425" type="video/mp4"/>
+      <guid isPermaLink="false">40178love-bugs-become-an-insect-scholar-at-uc-davis</guid>
+      <pubDate>Mon, 7 Oct 2024 13:00:00 PST</pubDate>
+      <itunes:duration>00:04:03</itunes:duration>
+      <itunes:keywords>insects, bugs, research, entomology, conservation, uc davis, California Issues, Ecology, the Environment, Conservation, 40178, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/40178</link>
+    </item>
+    <item>
+      <title>Want To Age in Place? This New Tech Is Improving Elder Care</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>UC Davis researchers are developing innovative technology ​​to help older adults maintain independence while staying connected with loved ones. The new I-Care platform combines task management tools with advanced sensor technology to address challenges like cognitive decline and social isolation while also reducing caregiver burnout. Watch as our experts improve the future of senior care. Series: "UC Davis News" [Health and Medicine] [Science] [Show ID: 40175]</itunes:summary>
+      <description>UC Davis researchers are developing innovative technology ​​to help older adults maintain independence while staying connected with loved ones. The new I-Care platform combines task management tools with advanced sensor technology to address challenges like cognitive decline and social isolation while also reducing caregiver burnout. Watch as our experts improve the future of senior care. Series: "UC Davis News" [Health and Medicine] [Science] [Show ID: 40175]</description>
+      <category>Health and Medicine</category>
+      <category>Aging and Senior Health</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/40175.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/40175.mp4" length="50645932" type="video/mp4"/>
+      <guid isPermaLink="false">40175want-to-age-in-place-this-new-tech-is-improving-elder-care</guid>
+      <pubDate>Fri, 4 Oct 2024 13:00:00 PST</pubDate>
+      <itunes:duration>00:02:45</itunes:duration>
+      <itunes:keywords>aging, elder care, senior care, elderly, uc davis, technology, Aging and Senior Health, 40175, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/40175</link>
+    </item>
+    <item>
+      <title>UC Landmarks: Welcome to UC Davis</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Landmarks</itunes:subtitle>
+      <itunes:summary>Enjoy an aerial tour of the UC Davis campus. Series: "UC Landmarks" [Education] [Show ID: 40147]</itunes:summary>
+      <description>Enjoy an aerial tour of the UC Davis campus. Series: "UC Landmarks" [Education] [Show ID: 40147]</description>
+      <category>Education Issues</category>
+      <category>Higher Education / Academic Research</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/40147.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/40147.mp4" length="11112735" type="video/mp4"/>
+      <guid isPermaLink="false">40147uc-landmarks-welcome-to-uc-davis</guid>
+      <pubDate>Tue, 1 Oct 2024 13:00:00 PST</pubDate>
+      <itunes:duration>00:00:30</itunes:duration>
+      <itunes:keywords>uc davis, drone, aerial, campus, tour, Higher Education / Academic Research, 40147, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/40147</link>
+    </item>
+    <item>
+      <title>Unexpected Legends: Arneson Eggheads and Arts at UC Davis - Part 1</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>UC Davis is commemorating the 30th anniversary of the campus' iconic Egghead sculptures in 2024. As part of the celebration, this documentary tells the tale of the UC Davis art department — from its founding artists to the present faculty and students who follow in the founders' footsteps. The first-generation artists built their community in the ceramics building known as TB 9, or Temporary Building 9, and ignited an art revolution. 
+
+Part one of the three-part series looks at the cultural upheaval pervading the U.S. in the 1970s and its influence on the art faculty and students. Stay tuned for part two about founding artist Robert Arneson's legendary legacy and his distinctive Egghead sculptures — the beloved symbols of UC Davis. Series: "UC Davis News" [Humanities] [Arts and Music] [Show ID: 40182]</itunes:summary>
+      <description>UC Davis is commemorating the 30th anniversary of the campus' iconic Egghead sculptures in 2024. As part of the celebration, this documentary tells the tale of the UC Davis art department — from its founding artists to the present faculty and students who follow in the founders' footsteps. The first-generation artists built their community in the ceramics building known as TB 9, or Temporary Building 9, and ignited an art revolution. 
+
+Part one of the three-part series looks at the cultural upheaval pervading the U.S. in the 1970s and its influence on the art faculty and students. Stay tuned for part two about founding artist Robert Arneson's legendary legacy and his distinctive Egghead sculptures — the beloved symbols of UC Davis. Series: "UC Davis News" [Humanities] [Arts and Music] [Show ID: 40182]</description>
+      <category>Arts and Music</category>
+      <category>Arts Education</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/40182.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/40182.mp4" length="157618855" type="video/mp4"/>
+      <guid isPermaLink="false">40182unexpected-legends-arneson-eggheads-and-arts-at-uc-davis---part-1</guid>
+      <pubDate>Tue, 1 Oct 2024 13:00:00 PST</pubDate>
+      <itunes:duration>00:08:46</itunes:duration>
+      <itunes:keywords>art, arneson, eggheads, uc davis, egghead, Arts Education, Painting and Sculpture, History, 40182, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/40182</link>
+    </item>
+    <item>
+      <title>Will Dam Removal Save Salmon on the Klamath River?</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>UC Davis researchers are exploring the effects of Klamath River dam removal on salmon populations and habitat restoration. Watch as we uncover the journey of salmon regaining access to 400 miles of historical spawning grounds. This study not only highlights the ecological benefits of river dam removal but also the cultural significance to Indigenous tribes.
+ Series: "UC Davis News" [Science] [Show ID: 40179]</itunes:summary>
+      <description>UC Davis researchers are exploring the effects of Klamath River dam removal on salmon populations and habitat restoration. Watch as we uncover the journey of salmon regaining access to 400 miles of historical spawning grounds. This study not only highlights the ecological benefits of river dam removal but also the cultural significance to Indigenous tribes.
+ Series: "UC Davis News" [Science] [Show ID: 40179]</description>
+      <category>Science</category>
+      <category>Ecology, the Environment, Conservation</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/40179.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/40179.mp4" length="100808666" type="video/mp4"/>
+      <guid isPermaLink="false">40179will-dam-removal-save-salmon-on-the-klamath-river</guid>
+      <pubDate>Mon, 30 Sep 2024 13:00:00 PST</pubDate>
+      <itunes:duration>00:05:34</itunes:duration>
+      <itunes:keywords>klamath river, dam, salmon, river, indigenous, ecology, uc davis, Ecology, the Environment, Conservation, Oceanography, Marine Science, Marine Bioscience, 40179, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/40179</link>
+    </item>
+    <item>
+      <title>Can Science Save California Tomatoes From Invasive Weeds?</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>UC Davis researchers are using innovative techniques, including drone data collection, to battle an invasive species of weed that is threatening California's tomato industry.
+
+Orobanche ramosa isn’t just menacing to tomatoes. It puts various other crops at risk too. With our commitment to sustainable agriculture and advanced agricultural practices, our esteemed faculty and devoted students are on a mission to find robust solutions, ensuring the thriving future of farming and preventing plant diseases.
+
+Stay connected to unravel the profound impacts of our continuous research. By protecting crops, we are ensuring food security while also contributing to innovative, eco-friendly agricultural practices. Subscribe to keep learning how UC Davis’ research is improving our world. Series: "UC Davis News" [Science] [Agriculture] [Show ID: 40181]</itunes:summary>
+      <description>UC Davis researchers are using innovative techniques, including drone data collection, to battle an invasive species of weed that is threatening California's tomato industry.
+
+Orobanche ramosa isn’t just menacing to tomatoes. It puts various other crops at risk too. With our commitment to sustainable agriculture and advanced agricultural practices, our esteemed faculty and devoted students are on a mission to find robust solutions, ensuring the thriving future of farming and preventing plant diseases.
+
+Stay connected to unravel the profound impacts of our continuous research. By protecting crops, we are ensuring food security while also contributing to innovative, eco-friendly agricultural practices. Subscribe to keep learning how UC Davis’ research is improving our world. Series: "UC Davis News" [Science] [Agriculture] [Show ID: 40181]</description>
+      <category>Agriculture and Natural Resources</category>
+      <category>Farming</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/40181.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/40181.mp4" length="49946461" type="video/mp4"/>
+      <guid isPermaLink="false">40181can-science-save-california-tomatoes-from-invasive-weeds</guid>
+      <pubDate>Mon, 23 Sep 2024 13:00:00 PST</pubDate>
+      <itunes:duration>00:02:42</itunes:duration>
+      <itunes:keywords>tomatoes, agriculture, farming, crops, uc davis, Farming, Plant Biology, Public Health, Agricultural Sciences, 40181, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/40181</link>
+    </item>
+    <item>
+      <title>CEO Marcie Frost on Money and Retirement</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis Graduate School of Management's Executive Speakers and Special Events</itunes:subtitle>
+      <itunes:summary>The nation's largest public pension firm is the California Public Employee's Retirement System, known as CalPERS.  Its CEO, Marcie Frost, speaks with the Financial Times' U.S. Managing Editor Peter Spiegel about managing the mission-driven retirement fund for California's public employees as part of the UC Davis-Financial Times Biz Quiz 2023. Series: "UC Davis Graduate School of Management's Executive Speakers and Special Events" [Business] [Show ID: 39564]</itunes:summary>
+      <description>The nation's largest public pension firm is the California Public Employee's Retirement System, known as CalPERS.  Its CEO, Marcie Frost, speaks with the Financial Times' U.S. Managing Editor Peter Spiegel about managing the mission-driven retirement fund for California's public employees as part of the UC Davis-Financial Times Biz Quiz 2023. Series: "UC Davis Graduate School of Management's Executive Speakers and Special Events" [Business] [Show ID: 39564]</description>
+      <category>Business</category>
+      <category>Financing</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/39564.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/39564.mp4" length="650378839" type="video/mp4"/>
+      <guid isPermaLink="false">39564ceo-marcie-frost-on-money-and-retirement</guid>
+      <pubDate>Tue, 5 Mar 2024 13:00:00 PST</pubDate>
+      <itunes:duration>00:52:00</itunes:duration>
+      <itunes:keywords>CalPERS, Financial Times, UC Davis, business, finance, money, retirement, retire, fund, investment, worker, California, marcie frost, peter spiegel, Financing, 39564, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/39564</link>
+    </item>
+    <item>
+      <title>How Mexican Ranchers Tackle Sustainability Issues in Beef Production</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle/>
+      <itunes:summary>UC Davis Professor, Dr. Frank Mitloehner, and CLEAR Center members took to Mexico to attend the Congress Internationale de la Carne in León, Guanajuato, Mexico, where they met and discussed sustainability efforts with the Minister of Agriculture. In addition to meeting with beef cattle producers and others in the livestock industry to share research coming from the UC Davis CLEAR Center, we got to tour feedlots and discuss sustainable practices that are currently being implemented. For example, rotational grazing can improve forage quality and soil carbon sequestration while implementing shade for cattle can improve efficiencies in production, and promote animal welfare. [Public Affairs] [Science] [Show ID: 39161]</itunes:summary>
+      <description>UC Davis Professor, Dr. Frank Mitloehner, and CLEAR Center members took to Mexico to attend the Congress Internationale de la Carne in León, Guanajuato, Mexico, where they met and discussed sustainability efforts with the Minister of Agriculture. In addition to meeting with beef cattle producers and others in the livestock industry to share research coming from the UC Davis CLEAR Center, we got to tour feedlots and discuss sustainable practices that are currently being implemented. For example, rotational grazing can improve forage quality and soil carbon sequestration while implementing shade for cattle can improve efficiencies in production, and promote animal welfare. [Public Affairs] [Science] [Show ID: 39161]</description>
+      <category>Public Affairs</category>
+      <category>Sustainability and Public Policy</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/39161.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/39161.mp4" length="59055173" type="video/mp4"/>
+      <guid isPermaLink="false">39161how-mexican-ranchers-tackle-sustainability-issues-in-beef-production</guid>
+      <pubDate>Sun, 8 Oct 2023 13:00:00 PST</pubDate>
+      <itunes:duration>00:03:20</itunes:duration>
+      <itunes:keywords>beef cattle, sustainability, agriculture, uc davis, Sustainability and Public Policy, Climate Solutions, 39161, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/39161</link>
+    </item>
+    <item>
+      <title>UC Davis Discoveries - Cars to Wine</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>Explore UC Davis discoveries that have improved modern life in unexpected ways. Series: "UCTV Prime" [Science] [Show ID: 39211]</itunes:summary>
+      <description>Explore UC Davis discoveries that have improved modern life in unexpected ways. Series: "UCTV Prime" [Science] [Show ID: 39211]</description>
+      <category>Science</category>
+      <category>Documentaries and Specials</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/39211.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/39211.mp4" length="69174226" type="video/mp4"/>
+      <guid isPermaLink="false">39211uc-davis-discoveries---cars-to-wine</guid>
+      <pubDate>Wed, 20 Sep 2023 13:00:00 PST</pubDate>
+      <itunes:duration>00:03:49</itunes:duration>
+      <itunes:keywords>UC Davis, invention, discovery, Documentaries and Specials, 39211, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/39211</link>
+    </item>
+    <item>
+      <title>Growing Minibrains In a Dish</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>A team of UC Davis researchers is making advances in a field that could eventually allow brain surgeons to offer replacement parts to injured patients.
+ Series: "UCTV Prime" [Health and Medicine] [Show ID: 39213]</itunes:summary>
+      <description>A team of UC Davis researchers is making advances in a field that could eventually allow brain surgeons to offer replacement parts to injured patients.
+ Series: "UCTV Prime" [Health and Medicine] [Show ID: 39213]</description>
+      <category>Health and Medicine</category>
+      <category>Regenerative Health</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/39213.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/39213.mp4" length="39672441" type="video/mp4"/>
+      <guid isPermaLink="false">39213growing-minibrains-in-a-dish</guid>
+      <pubDate>Thu, 24 Aug 2023 13:00:00 PST</pubDate>
+      <itunes:duration>00:02:09</itunes:duration>
+      <itunes:keywords>UC Davis, brain, organoid, Regenerative Health, 39213, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/39213</link>
+    </item>
+    <item>
+      <title>How UC Davis is Growing a Tree Canopy for Tomorrow's Climate</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>Combating destructive effects of climate change, the Arboretum and Public Garden staff and Learning by Leading™ students plant test trees to cultivate a resilient and diverse urban tree canopy for the UC Davis community. Emily Griswold, Director of GATEways Horticulture and Teaching Gardens, outlines the tireless research and work of tending to mature trees and planting saplings. 
+ Series: "UCTV Prime" [Science] [Show ID: 39214]</itunes:summary>
+      <description>Combating destructive effects of climate change, the Arboretum and Public Garden staff and Learning by Leading™ students plant test trees to cultivate a resilient and diverse urban tree canopy for the UC Davis community. Emily Griswold, Director of GATEways Horticulture and Teaching Gardens, outlines the tireless research and work of tending to mature trees and planting saplings. 
+ Series: "UCTV Prime" [Science] [Show ID: 39214]</description>
+      <category>Science</category>
+      <category>Climate Solutions</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/39214.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/39214.mp4" length="37652472" type="video/mp4"/>
+      <guid isPermaLink="false">39214how-uc-davis-is-growing-a-tree-canopy-for-tomorrows-climate</guid>
+      <pubDate>Thu, 24 Aug 2023 13:00:00 PST</pubDate>
+      <itunes:duration>00:02:55</itunes:duration>
+      <itunes:keywords>UC Davis, trees, climate, GATEways Horticulture and Teaching Gardens, Climate Solutions, 39214, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/39214</link>
+    </item>
+    <item>
+      <title>Advancing Prosthetics in the Hospital at UC Davis Health</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>Surgeons and prosthetists-orthotists at UC Davis Health are working with amputee patients to improve the functionality of their prosthetic devices through surgical techniques and new technology. They've also teamed up with a multidisciplinary team at UC Davis in an overall effort to make prostheses more intuitive and prevent prosthetic abandonment.
+ Series: "UCTV Prime" [Health and Medicine] [Show ID: 39207]</itunes:summary>
+      <description>Surgeons and prosthetists-orthotists at UC Davis Health are working with amputee patients to improve the functionality of their prosthetic devices through surgical techniques and new technology. They've also teamed up with a multidisciplinary team at UC Davis in an overall effort to make prostheses more intuitive and prevent prosthetic abandonment.
+ Series: "UCTV Prime" [Health and Medicine] [Show ID: 39207]</description>
+      <category>Health and Medicine</category>
+      <category>General Health</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/39207.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/39207.mp4" length="34594257" type="video/mp4"/>
+      <guid isPermaLink="false">39207advancing-prosthetics-in-the-hospital-at-uc-davis-health</guid>
+      <pubDate>Wed, 23 Aug 2023 13:00:00 PST</pubDate>
+      <itunes:duration>00:02:40</itunes:duration>
+      <itunes:keywords>UC Davis, prosthetic, amputee, General Health, 39207, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/39207</link>
+    </item>
+    <item>
+      <title>Advancing Prosthetics in the Lab at UC Davis</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>UC Davis engineers and neuroscientists are exploring how robots and artificial intelligence can improve prosthetic devices and make them more intuitive for their users. They've also teamed up with a multidisciplinary team at UC Davis Health in Sacramento in an overall effort to improve prostheses for amputees and prevent prosthetic abandonment. 
+ Series: "UCTV Prime" [Health and Medicine] [Show ID: 39208]</itunes:summary>
+      <description>UC Davis engineers and neuroscientists are exploring how robots and artificial intelligence can improve prosthetic devices and make them more intuitive for their users. They've also teamed up with a multidisciplinary team at UC Davis Health in Sacramento in an overall effort to improve prostheses for amputees and prevent prosthetic abandonment. 
+ Series: "UCTV Prime" [Health and Medicine] [Show ID: 39208]</description>
+      <category>Health and Medicine</category>
+      <category>General Health</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/39208.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/39208.mp4" length="42608031" type="video/mp4"/>
+      <guid isPermaLink="false">39208advancing-prosthetics-in-the-lab-at-uc-davis</guid>
+      <pubDate>Wed, 23 Aug 2023 13:00:00 PST</pubDate>
+      <itunes:duration>00:03:19</itunes:duration>
+      <itunes:keywords>UC Davis, prosthetic devices, amputee, General Health, 39208, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/39208</link>
+    </item>
+    <item>
+      <title>Behind the Scenes at the UC Davis Bohart Museum of Entomology</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>From the beautiful to the strange, the UC Davis Bohart Museum of Entomology has one of the largest insect collections in North America. Take a tour through the collections and its highlights with director Lynn Kimsey in this behind-the-scenes video. The museum is free and open to UC Davis students, staff and faculty, as well as the public.  Series: "UCTV Prime" [Science] [Show ID: 39209]</itunes:summary>
+      <description>From the beautiful to the strange, the UC Davis Bohart Museum of Entomology has one of the largest insect collections in North America. Take a tour through the collections and its highlights with director Lynn Kimsey in this behind-the-scenes video. The museum is free and open to UC Davis students, staff and faculty, as well as the public.  Series: "UCTV Prime" [Science] [Show ID: 39209]</description>
+      <category>Science</category>
+      <category>Documentaries and Specials</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/39209.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/39209.mp4" length="27532685" type="video/mp4"/>
+      <guid isPermaLink="false">39209behind-the-scenes-at-the-uc-davis-bohart-museum-of-entomology</guid>
+      <pubDate>Wed, 23 Aug 2023 13:00:00 PST</pubDate>
+      <itunes:duration>00:02:06</itunes:duration>
+      <itunes:keywords>UC Davis Bohart Museum of Entomology, insects, Lynn Kimsey, Documentaries and Specials, 39209, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/39209</link>
+    </item>
+    <item>
+      <title>The Basement Gallery at UC Davis</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>The Basement Gallery is a student-run organization located in the basement of the UC Davis art department and holds shows featuring student artwork. Learn more about the organization and some of the participating artists.  Series: "UCTV Prime" [Arts and Music] [Show ID: 39216]</itunes:summary>
+      <description>The Basement Gallery is a student-run organization located in the basement of the UC Davis art department and holds shows featuring student artwork. Learn more about the organization and some of the participating artists.  Series: "UCTV Prime" [Arts and Music] [Show ID: 39216]</description>
+      <category>Arts and Music</category>
+      <category>Public Art and Installations</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/39216.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/39216.mp4" length="38685879" type="video/mp4"/>
+      <guid isPermaLink="false">39216the-basement-gallery-at-uc-davis</guid>
+      <pubDate>Wed, 23 Aug 2023 13:00:00 PST</pubDate>
+      <itunes:duration>00:03:00</itunes:duration>
+      <itunes:keywords>UC Davis, art, gallery, Basement Gallery, Public Art and Installations, 39216, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/39216</link>
+    </item>
+    <item>
+      <title>A Sustainable Solution: Compostable Wind Turbine Blades</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>Wind turbine blades are a major source of environmental pollution and waste. Learn how UC Davis is creating an ecologically sound solution for their disposal. Students, faculty and researchers in the Advanced Composites Research, Engineering and Science (ACRES) lab in the UC Davis College of Engineering are building compostable wind turbine blades from bamboo and mycelium, the root structure of mushrooms. While the researchers are currently focused on building a wind turbine blade prototype, incorporating mycelium into building materials could have larger implications for sustainable structures. Series: "UCTV Prime" [Science] [Show ID: 39206]</itunes:summary>
+      <description>Wind turbine blades are a major source of environmental pollution and waste. Learn how UC Davis is creating an ecologically sound solution for their disposal. Students, faculty and researchers in the Advanced Composites Research, Engineering and Science (ACRES) lab in the UC Davis College of Engineering are building compostable wind turbine blades from bamboo and mycelium, the root structure of mushrooms. While the researchers are currently focused on building a wind turbine blade prototype, incorporating mycelium into building materials could have larger implications for sustainable structures. Series: "UCTV Prime" [Science] [Show ID: 39206]</description>
+      <category>Science</category>
+      <category>Aerospace Science</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/39206.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/39206.mp4" length="29410969" type="video/mp4"/>
+      <guid isPermaLink="false">39206a-sustainable-solution-compostable-wind-turbine-blades</guid>
+      <pubDate>Tue, 22 Aug 2023 13:00:00 PST</pubDate>
+      <itunes:duration>00:02:15</itunes:duration>
+      <itunes:keywords>UC Davis, wind power, wind turbines, sustainability, Aerospace Science, 39206, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/39206</link>
+    </item>
+    <item>
+      <title>UC Davis Discoveries - Art to Food</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>Explore UC Davis discoveries that have improved modern life in unexpected ways. Series: "UCTV Prime" [Science] [Show ID: 39210]</itunes:summary>
+      <description>Explore UC Davis discoveries that have improved modern life in unexpected ways. Series: "UCTV Prime" [Science] [Show ID: 39210]</description>
+      <category>Science</category>
+      <category>Documentaries and Specials</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/39210.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/39210.mp4" length="57601479" type="video/mp4"/>
+      <guid isPermaLink="false">39210uc-davis-discoveries---art-to-food</guid>
+      <pubDate>Tue, 22 Aug 2023 13:00:00 PST</pubDate>
+      <itunes:duration>00:03:10</itunes:duration>
+      <itunes:keywords>UC Davis, invention, discovery, Documentaries and Specials, 39210, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/39210</link>
+    </item>
+    <item>
+      <title>Growing Crops with Less Groundwater</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>Learn about UC Davis’ innovative approach to growing crops with less groundwater in drought-prone regions like California. The UC Davis Agricultural Water Center is working with farmers in California and the Southwest to find solutions that address groundwater overdraft so they can farm sustainably for a better future.
+ Series: "UCTV Prime" [Agriculture] [Show ID: 39212]</itunes:summary>
+      <description>Learn about UC Davis’ innovative approach to growing crops with less groundwater in drought-prone regions like California. The UC Davis Agricultural Water Center is working with farmers in California and the Southwest to find solutions that address groundwater overdraft so they can farm sustainably for a better future.
+ Series: "UCTV Prime" [Agriculture] [Show ID: 39212]</description>
+      <category>Agriculture and Natural Resources</category>
+      <category>Farming</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/39212.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/39212.mp4" length="46829327" type="video/mp4"/>
+      <guid isPermaLink="false">39212growing-crops-with-less-groundwater</guid>
+      <pubDate>Tue, 22 Aug 2023 13:00:00 PST</pubDate>
+      <itunes:duration>00:03:40</itunes:duration>
+      <itunes:keywords>UC Davis, crops groundwater, irrigation, sustainability, Farming, 39212, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/39212</link>
+    </item>
+    <item>
+      <title>Measuring Meals: The Impact of Food Security Programs at UC Davis</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>Research on food security programs at UC Davis is showing the positive impact that access to healthy foods has on students' nutrition and mental health as well as identifying the need for more food access resources on college campuses. Marcela Radtke from the Nutritional Biology Graduate Group utilized tools like the veggie meter to measure students' fruit and vegetable intake and then looked at how that changed when they used campus resources such as The Pantry.  Series: "UCTV Prime" [Health and Medicine] [Show ID: 39215]</itunes:summary>
+      <description>Research on food security programs at UC Davis is showing the positive impact that access to healthy foods has on students' nutrition and mental health as well as identifying the need for more food access resources on college campuses. Marcela Radtke from the Nutritional Biology Graduate Group utilized tools like the veggie meter to measure students' fruit and vegetable intake and then looked at how that changed when they used campus resources such as The Pantry.  Series: "UCTV Prime" [Health and Medicine] [Show ID: 39215]</description>
+      <category>Health and Medicine</category>
+      <category>Health Promotion and Marketing</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/39215.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/39215.mp4" length="34875356" type="video/mp4"/>
+      <guid isPermaLink="false">39215measuring-meals-the-impact-of-food-security-programs-at-uc-davis</guid>
+      <pubDate>Tue, 22 Aug 2023 13:00:00 PST</pubDate>
+      <itunes:duration>00:01:52</itunes:duration>
+      <itunes:keywords>UC Davis, food, diet, food insecurity, nutrition, Health Promotion and Marketing, 39215, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/39215</link>
+    </item>
+    <item>
+      <title>Vineyard to Bottle: The Journey of Student Winemakers</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>Welcome to our wine processing course — a hands-on journey into the art and science of winemaking. Get a behind-the-scenes look at how students learn to taste, blend, age, fine, filter and package their own wines, all under the guidance of industry professionals and seasoned faculty. Our students’ coursework transforms into practical skills needed in the wine industry. The course, a part of the university’s viticulture and enology program, is held in our Teaching and Research Winery, the most advanced and sustainable winery in the world. Sustainability is a recurring theme, with students exploring every opportunity to make their process greener. Stay tuned for the opportunity to taste the fruits of our students’ hard work and innovation. With new state legislation that recently passed, UC Davis will soon be able to sell student-made wine, bringing the vineyard to your table. Series: "UCTV Prime" [Science] [Show ID: 39217]</itunes:summary>
+      <description>Welcome to our wine processing course — a hands-on journey into the art and science of winemaking. Get a behind-the-scenes look at how students learn to taste, blend, age, fine, filter and package their own wines, all under the guidance of industry professionals and seasoned faculty. Our students’ coursework transforms into practical skills needed in the wine industry. The course, a part of the university’s viticulture and enology program, is held in our Teaching and Research Winery, the most advanced and sustainable winery in the world. Sustainability is a recurring theme, with students exploring every opportunity to make their process greener. Stay tuned for the opportunity to taste the fruits of our students’ hard work and innovation. With new state legislation that recently passed, UC Davis will soon be able to sell student-made wine, bringing the vineyard to your table. Series: "UCTV Prime" [Science] [Show ID: 39217]</description>
+      <category>Science</category>
+      <category>Agricultural Sciences</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/39217.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/39217.mp4" length="28553239" type="video/mp4"/>
+      <guid isPermaLink="false">39217vineyard-to-bottle-the-journey-of-student-winemakers</guid>
+      <pubDate>Tue, 22 Aug 2023 13:00:00 PST</pubDate>
+      <itunes:duration>00:01:30</itunes:duration>
+      <itunes:keywords>UC Davis, wine, wine making, vinyard, Agricultural Sciences, 39217, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/39217</link>
+    </item>
+    <item>
+      <title>Conversation with CEO Jenny Johnson on the World of Finance </title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis Graduate School of Management's Executive Speakers and Special Events</itunes:subtitle>
+      <itunes:summary>As CEO and president of Franklin Templeton, a global investment firm with more than $1.5 trillion of assets under management, Jenny Johnson is one of the few top women in the world of finance. She talks with Peter Spiegel, the U.S. managing editor of the Financial Times, about what it's like to be a leader in business today and where she thinks finances and investments are headed. Series: "UC Davis Graduate School of Management's Executive Speakers and Special Events" [Humanities] [Business] [Show ID: 38619]</itunes:summary>
+      <description>As CEO and president of Franklin Templeton, a global investment firm with more than $1.5 trillion of assets under management, Jenny Johnson is one of the few top women in the world of finance. She talks with Peter Spiegel, the U.S. managing editor of the Financial Times, about what it's like to be a leader in business today and where she thinks finances and investments are headed. Series: "UC Davis Graduate School of Management's Executive Speakers and Special Events" [Humanities] [Business] [Show ID: 38619]</description>
+      <category>Business</category>
+      <category>Careers</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/38619.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/38619.mp4" length="743312384" type="video/mp4"/>
+      <guid isPermaLink="false">38619conversation-with-ceo-jenny-johnson-on-the-world-of-finance-</guid>
+      <pubDate>Mon, 6 Feb 2023 13:00:00 PST</pubDate>
+      <itunes:duration>00:59:27</itunes:duration>
+      <itunes:keywords>business, investing, economics, personal finance, global, markets, investment, asset, franklin templeton, jenny johnson, finance, financial times, peter spiegel, acquisition, merger, customer, investor, portfolio, risk, money, Careers, Economics, Financ</itunes:keywords>
+      <link>https://www.uctv.tv/shows/38619</link>
+    </item>
+    <item>
+      <title>2022 UC Davis-Financial Times Biz Quiz Finals</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis Graduate School of Management's Executive Speakers and Special Events</itunes:subtitle>
+      <itunes:summary>Get your "Jeopardy!" hat on... for the final round of the UC Davis Graduate School of Management's Biz Quiz. Teams from UC Davis, UCLA and UC San Diego compete to answer questions on global current affairs and financial knowledge in this nail-biter competition. Series: "UC Davis Graduate School of Management's Executive Speakers and Special Events" [Business] [Show ID: 38622]</itunes:summary>
+      <description>Get your "Jeopardy!" hat on... for the final round of the UC Davis Graduate School of Management's Biz Quiz. Teams from UC Davis, UCLA and UC San Diego compete to answer questions on global current affairs and financial knowledge in this nail-biter competition. Series: "UC Davis Graduate School of Management's Executive Speakers and Special Events" [Business] [Show ID: 38622]</description>
+      <category>Business</category>
+      <category>Economics</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/38622.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/38622.mp4" length="285135547" type="video/mp4"/>
+      <guid isPermaLink="false">386222022-uc-davis-financial-times-biz-quiz-finals</guid>
+      <pubDate>Thu, 19 Jan 2023 13:00:00 PST</pubDate>
+      <itunes:duration>00:22:48</itunes:duration>
+      <itunes:keywords>business, quiz, UC Davis, business student, graduate school, Economics, Financing, 38622, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/38622</link>
+    </item>
+    <item>
+      <title>Engineering on Tap: The Future of Engineering Education</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle/>
+      <itunes:summary>What's the future of engineering education look like? This discussion by three engineers from UC Davis - Chancellor Gary May, Dean Richard Corsi, and Vice Provost Jean-Pierre Delplanque - focuses on the latest in educating the next generation of engineers. [Science] [Education] [Show ID: 38000]</itunes:summary>
+      <description>What's the future of engineering education look like? This discussion by three engineers from UC Davis - Chancellor Gary May, Dean Richard Corsi, and Vice Provost Jean-Pierre Delplanque - focuses on the latest in educating the next generation of engineers. [Science] [Education] [Show ID: 38000]</description>
+      <category>Science</category>
+      <category>Higher Education / Academic Research</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/38000.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/38000.mp4" length="629670626" type="video/mp4"/>
+      <guid isPermaLink="false">38000engineering-on-tap-the-future-of-engineering-education</guid>
+      <pubDate>Thu, 23 Jun 2022 13:00:00 PST</pubDate>
+      <itunes:duration>00:51:28</itunes:duration>
+      <itunes:keywords>uc davis, engineering, education, UC Davis, Gary May, Richard Corsi, Jean-Pierre Delplanque, Higher Education / Academic Research, Engineering, 38000, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/38000</link>
+    </item>
+    <item>
+      <title>Pandemic Engineering: Tools for Lowering Risk and Spread of Infection</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle/>
+      <itunes:summary>UC Davis's dean of engineering, Richard L. Corsi, Ph.D., P.E., is an internationally recognized expert in the field of indoor air quality, with a specific interest in physical and chemical interactions between pollutants and indoor materials. Corsi discusses "pandemic engineering" and approaches to disrupt transmission by reducing the inhaled dose of respiratory aerosols, including the highly effective and relatively low-cost do-it-yourself air cleaner for respiratory aerosols that has become known as the "Corsi-Rosenthal box." [Health and Medicine] [Science] [Show ID: 37997]</itunes:summary>
+      <description>UC Davis's dean of engineering, Richard L. Corsi, Ph.D., P.E., is an internationally recognized expert in the field of indoor air quality, with a specific interest in physical and chemical interactions between pollutants and indoor materials. Corsi discusses "pandemic engineering" and approaches to disrupt transmission by reducing the inhaled dose of respiratory aerosols, including the highly effective and relatively low-cost do-it-yourself air cleaner for respiratory aerosols that has become known as the "Corsi-Rosenthal box." [Health and Medicine] [Science] [Show ID: 37997]</description>
+      <category>Health and Medicine</category>
+      <category>Infectious Disease</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/37997.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/37997.mp4" length="693857995" type="video/mp4"/>
+      <guid isPermaLink="false">37997pandemic-engineering-tools-for-lowering-risk-and-spread-of-infection</guid>
+      <pubDate>Mon, 2 May 2022 13:00:00 PST</pubDate>
+      <itunes:duration>00:58:19</itunes:duration>
+      <itunes:keywords>pandemic, engineering, disease, Richard Corsi, air quality, pollution, aerosol, respiratory, covid 19, Infectious Disease, Engineering, 37997, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/37997</link>
+    </item>
+    <item>
+      <title>How Agricultural Innovations Help Feed the Future In Cambodia</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>Farmers in Cambodia have started to grow more vegetables to meet rising consumer demand, supported by innovations from a team led by UC Davis researchers. With help from Cambodia’s Royal University of Agriculture, farmers adopted "nethouses" to protect crops from pests without the use of chemical pesticides and packinghouses to better care for their crops after harvest. Series: "UCTV Prime" [Agriculture] [Show ID: 37826]</itunes:summary>
+      <description>Farmers in Cambodia have started to grow more vegetables to meet rising consumer demand, supported by innovations from a team led by UC Davis researchers. With help from Cambodia’s Royal University of Agriculture, farmers adopted "nethouses" to protect crops from pests without the use of chemical pesticides and packinghouses to better care for their crops after harvest. Series: "UCTV Prime" [Agriculture] [Show ID: 37826]</description>
+      <category>Agriculture and Natural Resources</category>
+      <category>Farming</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/37826.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/37826.mp4" length="88823808" type="video/mp4"/>
+      <guid isPermaLink="false">37826how-agricultural-innovations-help-feed-the-future-in-cambodia</guid>
+      <pubDate>Fri, 4 Mar 2022 13:00:00 PST</pubDate>
+      <itunes:duration>00:05:00</itunes:duration>
+      <itunes:keywords>UC Davis, Cambodia, nethouse, pesticide, crop, agriculture , Farming, 37826, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/37826</link>
+    </item>
+    <item>
+      <title>Saving Small Birds From Big Oil</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>Responders with the UC Davis Oiled Wildlife Care Network traveled to Southern California to wash and release oiled birds, including federally threatened snowy plovers, after an oil spill near Huntington Beach in 2021. Series: "UCTV Prime" [Agriculture] [Show ID: 37812]</itunes:summary>
+      <description>Responders with the UC Davis Oiled Wildlife Care Network traveled to Southern California to wash and release oiled birds, including federally threatened snowy plovers, after an oil spill near Huntington Beach in 2021. Series: "UCTV Prime" [Agriculture] [Show ID: 37812]</description>
+      <category>Agriculture and Natural Resources</category>
+      <category>Animal Science</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/37812.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/37812.mp4" length="81139146" type="video/mp4"/>
+      <guid isPermaLink="false">37812saving-small-birds-from-big-oil</guid>
+      <pubDate>Tue, 22 Feb 2022 13:00:00 PST</pubDate>
+      <itunes:duration>00:04:34</itunes:duration>
+      <itunes:keywords>UC Davis, snowy plover, oil spill, UC Davis Oiled Wildlife Care Network , Animal Science, 37812, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/37812</link>
+    </item>
+    <item>
+      <title>Knights Landing - Community Garden</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>Knights Landing is a small, rural community just north of Davis, CA.  With little access to a local grocery store, volunteers from UC Davis helped complete a community garden so they can grow their own fresh produce. Series: "UCTV Prime" [Agriculture] [Show ID: 37405]</itunes:summary>
+      <description>Knights Landing is a small, rural community just north of Davis, CA.  With little access to a local grocery store, volunteers from UC Davis helped complete a community garden so they can grow their own fresh produce. Series: "UCTV Prime" [Agriculture] [Show ID: 37405]</description>
+      <category>Agriculture and Natural Resources</category>
+      <category>Farming</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/37405.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/37405.mp4" length="29800997" type="video/mp4"/>
+      <guid isPermaLink="false">37405knights-landing---community-garden</guid>
+      <pubDate>Thu, 30 Sep 2021 13:00:00 PST</pubDate>
+      <itunes:duration>00:02:16</itunes:duration>
+      <itunes:keywords>community garden, nutrition, grocery, research, Farming, 37405, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/37405</link>
+    </item>
+    <item>
+      <title>Photographing Sunflower Fields with UC Davis Student Emily</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>Join UC Davis Strategic Communications intern and student, Emily Choi, for a quick trip down I-80 to photograph nearby sunflower fields. Series: "UCTV Prime" [Arts and Music] [Show ID: 37403]</itunes:summary>
+      <description>Join UC Davis Strategic Communications intern and student, Emily Choi, for a quick trip down I-80 to photograph nearby sunflower fields. Series: "UCTV Prime" [Arts and Music] [Show ID: 37403]</description>
+      <category>Arts and Music</category>
+      <category>Media Arts and New Media</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/37403.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/37403.mp4" length="28413627" type="video/mp4"/>
+      <guid isPermaLink="false">37403photographing-sunflower-fields-with-uc-davis-student-emily</guid>
+      <pubDate>Thu, 9 Sep 2021 13:00:00 PST</pubDate>
+      <itunes:duration>00:02:11</itunes:duration>
+      <itunes:keywords>sunflowers, photography, uc davis, Media Arts and New Media, 37403, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/37403</link>
+    </item>
+    <item>
+      <title>Engineering Wildfire Resilient Houses</title>
+      <itunes:author>UCTV: UC Davis</itunes:author>
+      <itunes:subtitle>UC Davis News</itunes:subtitle>
+      <itunes:summary>UC Davis professor Michele Barbato and his students are engineering earth blocks that can withstand natural disasters such as wildfires, which are a continual threat across California and the Western U.S. Series: "UCTV Prime" [Science] [Show ID: 37404]</itunes:summary>
+      <description>UC Davis professor Michele Barbato and his students are engineering earth blocks that can withstand natural disasters such as wildfires, which are a continual threat across California and the Western U.S. Series: "UCTV Prime" [Science] [Show ID: 37404]</description>
+      <category>Science</category>
+      <category/>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/37404.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/37404.mp4" length="21891158" type="video/mp4"/>
+      <guid isPermaLink="false">37404engineering-wildfire-resilient-houses</guid>
+      <pubDate>Wed, 8 Sep 2021 13:00:00 PST</pubDate>
+      <itunes:duration>00:01:38</itunes:duration>
+      <itunes:keywords>wildfires, fire prevention, earth blocks, Engineering, 37404, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/37404</link>
+    </item>
+  </channel>
+</rss>

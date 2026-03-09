@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/" xmlns:podcast="https://podcastindex.org/namespace/1.0" version="2.0">
+	<channel>
+		<title>Untitled Linux Show (Video)</title>
+		<itunes:author>TWiT</itunes:author>
+		<link>https://twit.tv/shows/untitled-linux-show</link>
+		<generator>TWiT Feed Generator v4.10</generator>
+		<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+		<language>en-US</language>
+		<copyright>This work is licensed under a Creative Commons License - Attribution-NonCommercial-NoDerivatives 4.0 International - http://creativecommons.org/licenses/by-nc-nd/4.0/</copyright>
+		<creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+		<managingEditor>feedmail@twit.tv (TWiT Editors)</managingEditor>
+		<webMaster>feedmail@twit.tv (TWiT Engineering)</webMaster>
+		<ttl>720</ttl>
+		<sy:updatePeriod>weekly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+		<lastBuildDate>Sun, 08 Mar 2026 16:05:02 PDT</lastBuildDate>
+		<pubDate>Sun, 08 Mar 2026 16:05:02 PDT</pubDate>
+		<rawvoice:frequency>weekly</rawvoice:frequency>
+		<rawvoice:location>Petaluma, CA</rawvoice:location>
+		<itunes:type>episodic</itunes:type>
+		<itunes:subtitle>The week's hottest Linux news for desktop, gaming, and enterprise.</itunes:subtitle>
+		<itunes:summary>The Untitled Linux Show covers the week's hottest Linux news for desktop, gaming, and even enterprise. ULS is the weekly update you don't want to miss, from the latest kernel development to the updates on your favorite apps! Each episode finishes with a killer command line tip from each host. You can join Club TWiT for $10 per month and get ad-free audio and video feeds for all our shows plus everything else the club offers...or get just this podcast ad-free for $5 per month.
+
+New episodes are recorded live every Saturday in the Club TWiT Discord.</itunes:summary>
+		<description>The Untitled Linux Show covers the week's hottest Linux news for desktop, gaming, and even enterprise. ULS is the weekly update you don't want to miss, from the latest kernel development to the updates on your favorite apps! Each episode finishes with a killer command line tip from each host. You can join Club TWiT for $10 per month and get ad-free audio and video feeds for all our shows plus everything else the club offers...or get just this podcast ad-free for $5 per month.
+
+New episodes are recorded live every Saturday in the Club TWiT Discord.</description>
+		<itunes:keywords>Linux, desktop, gaming, enterprise, TWiT, open source software</itunes:keywords>
+		<rawvoice:rating tv="tv-g">tv-g</rawvoice:rating>
+		<itunes:explicit>no</itunes:explicit>
+		<itunes:block>no</itunes:block>
+		<googleplay:block>No</googleplay:block>
+		<podcast:funding url="https://twit.tv/clubtwit">Become a Club TWiT member!</podcast:funding>
+		<itunes:owner>
+			<itunes:name>Leo Laporte</itunes:name>
+			<itunes:email>feedmail@twit.tv</itunes:email>
+		</itunes:owner>
+		<itunes:category text="Technology" />
+		<category>Linux</category>
+		<category>Technology</category>
+		<image>
+			<title>Untitled Linux Show (Video)</title>
+			<url>https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/Untitled%20Linux%20Show/album_art/hd/ULS_albumart_standard_video.jpg</url>
+			<link>https://twit.tv/shows/untitled-linux-show</link>
+		</image>
+		<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/Untitled%20Linux%20Show/album_art/hd/ULS_albumart_standard_video.jpg" />
+		<itunes:new-feed-url>https://feeds.twit.tv/uls_video_hd.xml</itunes:new-feed-url>
+		<rawvoice:subscribe feed="https://feeds.twit.tv/uls_video_hd.xml" itunes="https://podcasts.apple.com/us/podcast/untitled-linux-show-video/id1681014993" html="https://twit.tv/shows/untitled-linux-show"></rawvoice:subscribe>
+		<atom:link href="https://feeds.twit.tv/uls_video_hd.xml" type="application/rss+xml" rel="self"/>
+		<item>
+			<title>ULS 245: Not a Supernova - Firefox Nova, Gnome 40, &amp; Age Verification Fallout</title>
+			<itunes:title>Not a Supernova - Firefox Nova, Gnome 40, &amp; Age Verification Fallout</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 08 Mar 2026 15:04:27 PDT</pubDate>
+			<itunes:episode>245</itunes:episode>
+			<podcast:episode>245</podcast:episode>
+			<link>https://twit.tv/shows/untitled-linux-show/episodes/245</link>
+			<comments>https://twit.tv/shows/untitled-linux-show/episodes/245</comments>
+			<category>News</category>
+			<category>Linux</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Firefox Nova, Gnome 40, &amp; Age Verification Fallout</itunes:subtitle>
+			<itunes:keywords>Linux, command line, Linux, age verification laws, California law, anti-cheat for Linux, EA Javelin, ubuntu, System76, Fedora, MidnightBSD, GNOME 50, wayland, Mutter, KDE, Wine 11.4, debian, Debian diversity, AI in open source, ARM boards, Armbian 26.2</itunes:keywords>
+			<description><![CDATA[
+<p>This week, there's more age verification fallout, everybody hates Ubuntu, and Wine releases 11.4. Linux From Scratch goes SystemD, Gnome is testing version 50, and Debian released a community update. Armbian releases 26.2, EA teases Linux Anti-Cheat for Linux, and Firefox Nova leaks as the visual Firefox refresh. For tips, we have Waydroid for Android on Linux, --follow for journalctl parsing, MusicBrainz Picard for managing tagging, and then a quick primer on Block and Character devices. You can see the show notes at <a href="https://bit.ly/4rZmDWd" target="_blank">https://bit.ly/4rZmDWd</a> and have a great week!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> <a href="https://twitter.com/69Beep" target="_blank">Jeff Massie</a>, Ken McDonald, and <a href="http://robertpcampbell.com/" target="_blank">Rob Campbell</a></p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>This week, there's more age verification fallout, everybody hates Ubuntu, and Wine releases 11.4. Linux From Scratch goes SystemD, Gnome is testing version 50, and Debian released a community update. Armbian releases 26.2, EA teases Linux Anti-Cheat for Linux, and Firefox Nova leaks as the visual Firefox refresh. For tips, we have Waydroid for Android on Linux, --follow for journalctl parsing, MusicBrainz Picard for managing tagging, and then a quick primer on Block and Character devices. You can see the show notes at <a href="https://bit.ly/4rZmDWd" target="_blank">https://bit.ly/4rZmDWd</a> and have a great week!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> <a href="https://twitter.com/69Beep" target="_blank">Jeff Massie</a>, Ken McDonald, and <a href="http://robertpcampbell.com/" target="_blank">Rob Campbell</a></p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>This week, there's more age verification fallout, everybody hates Ubuntu, and Wine releases 11.4. Linux From Scratch goes SystemD, Gnome is testing version 50, and Debian released a community update. Armbian releases 26.2, EA teases Linux Anti-Cheat for Linux, and Firefox Nova leaks as the visual Firefox refresh. For tips, we have Waydroid for Android on Linux, --follow for journalctl parsing, MusicBrainz Picard for managing tagging, and then a quick primer on Block and Character devices. You can see the show notes at <a href="https://bit.ly/4rZmDWd" target="_blank">https://bit.ly/4rZmDWd</a> and have a great week!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> <a href="https://twitter.com/69Beep" target="_blank">Jeff Massie</a>, Ken McDonald, and <a href="http://robertpcampbell.com/" target="_blank">Rob Campbell</a></p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860417/hero/ULS0245_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0245/uls0245_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>0:00</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0245/uls0245_h264m_1920x1080.mp4" length="1636245440" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0245/uls0245_h264m_1920x1080.mp4" fileSize="1636245440" type="video/mp4" medium="video">
+				<media:title type="plain">ULS 245: Not a Supernova - Firefox Nova, Gnome 40, &amp; Age Verification Fallout</media:title>
+				<media:description type="plain">Firefox Nova, Gnome 40, &amp; Age Verification Fallout</media:description>
+				<media:keywords>Linux, command line, Linux, age verification laws, California law, anti-cheat for Linux, EA Javelin, ubuntu, System76, Fedora, MidnightBSD, GNOME 50, wayland, Mutter, KDE, Wine 11.4, debian, Debian diversity, AI in open source, ARM boards, Armbian 26.2</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/03/860417/hero/ULS0245_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Jonathan Bennett</media:credit>
+				<media:credit role="co-host">Jeff Massie</media:credit>
+				<media:credit role="co-host">Ken McDonald</media:credit>
+				<media:credit role="co-host">Rob Campbell</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/jonathan-bennett" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/91661/pictures/jonathan_bennett.jpg">Jonathan Bennett</podcast:person>
+				<podcast:person role="co-host" href="https://twitter.com/69Beep" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832832/pictures/jeffmassie.jpg">Jeff Massie</podcast:person>
+				<podcast:person role="co-host" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832833/pictures/kenmcdonald.jpg">Ken McDonald</podcast:person>
+				<podcast:person role="co-host" href="http://robertpcampbell.com/" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832831/pictures/robcampbell.jpg">Rob Campbell</podcast:person>
+		</item>
+		<item>
+			<title>ULS 244: Torture the Metaphor - Age Verification, Git Redirects, &amp; Security Changes</title>
+			<itunes:title>Torture the Metaphor - Age Verification, Git Redirects, &amp; Security Changes</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 01 Mar 2026 10:13:22 PST</pubDate>
+			<itunes:episode>244</itunes:episode>
+			<podcast:episode>244</podcast:episode>
+			<link>https://twit.tv/shows/untitled-linux-show/episodes/244</link>
+			<comments>https://twit.tv/shows/untitled-linux-show/episodes/244</comments>
+			<category>News</category>
+			<category>Linux</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Age Verification, Git Redirects, &amp; Security Changes</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/untitled-linux-show-244-transcript" type="text/html" />
+			<itunes:keywords>Linux, command line, Lenovo Legion Tab 3 review, android tablet, Termux, Android apocalypse, age verification legislation, sudo rs, rust, asterisk password feedback, Collabora Office, LibreOffice Online, open source UI design, laptop benchmarking</itunes:keywords>
+			<description><![CDATA[
+<p>This show starts with an Android review, looking at Jonathan's newest tablet. It also covers the coming Android apocalypse, the age verification legislation, and the sudo-rs asterisk fight. Mesa is grappling with AI, Ardour has a couple of point releases, and Gnome is redirecting traffic to GitHub. Fedora has a new mobile experiment in PocketBlue, and the 0 A.D. game has a stable release. For tips we have PyNetscan for IP scanning, snapper for BTRFS snapshots, mediainfo for media file investigations, and espanso for automatic text expansion. Find the show notes at <a href="https://bit.ly/3N9X3ys" target="_blank">https://bit.ly/3N9X3ys</a> and enjoy!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> Ken McDonald, <a href="http://robertpcampbell.com/" target="_blank">Rob Campbell</a>, and <a href="https://twitter.com/69Beep" target="_blank">Jeff Massie</a></p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>This show starts with an Android review, looking at Jonathan's newest tablet. It also covers the coming Android apocalypse, the age verification legislation, and the sudo-rs asterisk fight. Mesa is grappling with AI, Ardour has a couple of point releases, and Gnome is redirecting traffic to GitHub. Fedora has a new mobile experiment in PocketBlue, and the 0 A.D. game has a stable release. For tips we have PyNetscan for IP scanning, snapper for BTRFS snapshots, mediainfo for media file investigations, and espanso for automatic text expansion. Find the show notes at <a href="https://bit.ly/3N9X3ys" target="_blank">https://bit.ly/3N9X3ys</a> and enjoy!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> Ken McDonald, <a href="http://robertpcampbell.com/" target="_blank">Rob Campbell</a>, and <a href="https://twitter.com/69Beep" target="_blank">Jeff Massie</a></p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>This show starts with an Android review, looking at Jonathan's newest tablet. It also covers the coming Android apocalypse, the age verification legislation, and the sudo-rs asterisk fight. Mesa is grappling with AI, Ardour has a couple of point releases, and Gnome is redirecting traffic to GitHub. Fedora has a new mobile experiment in PocketBlue, and the 0 A.D. game has a stable release. For tips we have PyNetscan for IP scanning, snapper for BTRFS snapshots, mediainfo for media file investigations, and espanso for automatic text expansion. Find the show notes at <a href="https://bit.ly/3N9X3ys" target="_blank">https://bit.ly/3N9X3ys</a> and enjoy!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> Ken McDonald, <a href="http://robertpcampbell.com/" target="_blank">Rob Campbell</a>, and <a href="https://twitter.com/69Beep" target="_blank">Jeff Massie</a></p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860321/hero/ULS0244_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0244/uls0244_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:09:52</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0244/uls0244_h264m_1920x1080.mp4" length="2293115239" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0244/uls0244_h264m_1920x1080.mp4" fileSize="2293115239" type="video/mp4" medium="video">
+				<media:title type="plain">ULS 244: Torture the Metaphor - Age Verification, Git Redirects, &amp; Security Changes</media:title>
+				<media:description type="plain">Age Verification, Git Redirects, &amp; Security Changes</media:description>
+				<media:keywords>Linux, command line, Lenovo Legion Tab 3 review, android tablet, Termux, Android apocalypse, age verification legislation, sudo rs, rust, asterisk password feedback, Collabora Office, LibreOffice Online, open source UI design, laptop benchmarking</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/03/860321/hero/ULS0244_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Jonathan Bennett</media:credit>
+				<media:credit role="co-host">Ken McDonald</media:credit>
+				<media:credit role="co-host">Rob Campbell</media:credit>
+				<media:credit role="co-host">Jeff Massie</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/jonathan-bennett" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/91661/pictures/jonathan_bennett.jpg">Jonathan Bennett</podcast:person>
+				<podcast:person role="co-host" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832833/pictures/kenmcdonald.jpg">Ken McDonald</podcast:person>
+				<podcast:person role="co-host" href="http://robertpcampbell.com/" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832831/pictures/robcampbell.jpg">Rob Campbell</podcast:person>
+				<podcast:person role="co-host" href="https://twitter.com/69Beep" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832832/pictures/jeffmassie.jpg">Jeff Massie</podcast:person>
+		</item>
+		<item>
+			<title>ULS 243: Only a Few Things Crashed - Intel is Back, Matrix is Out, and AI is Speeding up the Kernel</title>
+			<itunes:title>Only a Few Things Crashed - Intel is Back, Matrix is Out, and AI is Speeding up the Kernel</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 22 Feb 2026 14:25:00 PST</pubDate>
+			<itunes:episode>243</itunes:episode>
+			<podcast:episode>243</podcast:episode>
+			<link>https://twit.tv/shows/untitled-linux-show/episodes/243</link>
+			<comments>https://twit.tv/shows/untitled-linux-show/episodes/243</comments>
+			<category>News</category>
+			<category>Linux</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Intel is Back, Matrix is Out, and AI is Speeding up the Kernel</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/untitled-linux-show-243-transcript" type="text/html" />
+			<itunes:keywords>immutable Gentoo, MatrixOS, digital sovereignty, Red Hat Digital Sovereignty Readiness Assessment, KDE Plasma 6.6, live KDE upgrade, Blender 5.1, hardware ray tracing, Pipewire 1.6, Linux kernel 6.19.3, Clear Linux, Intel Linux jobs</itunes:keywords>
+			<description><![CDATA[
+<p>This week we cover an Immutable Gentoo-derived distro, the release of KDE 6.6, Blender 5.1 and PipeWire 1.6. Then Intel hires more Linux developers, with a very specific gaming-centric experience wishlist, and the kernel 6.19.3 minor update is out, fixing some serious issues. For tips we have whosthere for network device discovery, rate-mirrors for exploring update mirror speeds, system-ac-power for detecting power and battery state, and unzip for .zip handling. You can find the show notes at <a href="https://bit.ly/4rCL0ZK" target="_blank">https://bit.ly/4rCL0ZK</a> and enjoy!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> <a href="https://twitter.com/69Beep" target="_blank">Jeff Massie</a>, <a href="http://robertpcampbell.com/" target="_blank">Rob Campbell</a>, and Ken McDonald</p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>This week we cover an Immutable Gentoo-derived distro, the release of KDE 6.6, Blender 5.1 and PipeWire 1.6. Then Intel hires more Linux developers, with a very specific gaming-centric experience wishlist, and the kernel 6.19.3 minor update is out, fixing some serious issues. For tips we have whosthere for network device discovery, rate-mirrors for exploring update mirror speeds, system-ac-power for detecting power and battery state, and unzip for .zip handling. You can find the show notes at <a href="https://bit.ly/4rCL0ZK" target="_blank">https://bit.ly/4rCL0ZK</a> and enjoy!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> <a href="https://twitter.com/69Beep" target="_blank">Jeff Massie</a>, <a href="http://robertpcampbell.com/" target="_blank">Rob Campbell</a>, and Ken McDonald</p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>This week we cover an Immutable Gentoo-derived distro, the release of KDE 6.6, Blender 5.1 and PipeWire 1.6. Then Intel hires more Linux developers, with a very specific gaming-centric experience wishlist, and the kernel 6.19.3 minor update is out, fixing some serious issues. For tips we have whosthere for network device discovery, rate-mirrors for exploring update mirror speeds, system-ac-power for detecting power and battery state, and unzip for .zip handling. You can find the show notes at <a href="https://bit.ly/4rCL0ZK" target="_blank">https://bit.ly/4rCL0ZK</a> and enjoy!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> <a href="https://twitter.com/69Beep" target="_blank">Jeff Massie</a>, <a href="http://robertpcampbell.com/" target="_blank">Rob Campbell</a>, and Ken McDonald</p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860246/hero/ULS0243_thumbnail_v2.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0243/uls0243_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:39:57</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0243/uls0243_h264m_1920x1080.mp4" length="1767737718" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0243/uls0243_h264m_1920x1080.mp4" fileSize="1767737718" type="video/mp4" medium="video">
+				<media:title type="plain">ULS 243: Only a Few Things Crashed - Intel is Back, Matrix is Out, and AI is Speeding up the Kernel</media:title>
+				<media:description type="plain">Intel is Back, Matrix is Out, and AI is Speeding up the Kernel</media:description>
+				<media:keywords>immutable Gentoo, MatrixOS, digital sovereignty, Red Hat Digital Sovereignty Readiness Assessment, KDE Plasma 6.6, live KDE upgrade, Blender 5.1, hardware ray tracing, Pipewire 1.6, Linux kernel 6.19.3, Clear Linux, Intel Linux jobs</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860246/hero/ULS0243_thumbnail_v2.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Jonathan Bennett</media:credit>
+				<media:credit role="co-host">Jeff Massie</media:credit>
+				<media:credit role="co-host">Rob Campbell</media:credit>
+				<media:credit role="co-host">Ken McDonald</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/jonathan-bennett" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/91661/pictures/jonathan_bennett.jpg">Jonathan Bennett</podcast:person>
+				<podcast:person role="co-host" href="https://twitter.com/69Beep" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832832/pictures/jeffmassie.jpg">Jeff Massie</podcast:person>
+				<podcast:person role="co-host" href="http://robertpcampbell.com/" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832831/pictures/robcampbell.jpg">Rob Campbell</podcast:person>
+				<podcast:person role="co-host" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832833/pictures/kenmcdonald.jpg">Ken McDonald</podcast:person>
+		</item>
+		<item>
+			<title>ULS 242: Syntactical Sugar - Sustainable Distros, New Kernels, &amp; Wayland Vim?</title>
+			<itunes:title>Syntactical Sugar - Sustainable Distros, New Kernels, &amp; Wayland Vim?</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 15 Feb 2026 13:34:09 PST</pubDate>
+			<itunes:episode>242</itunes:episode>
+			<podcast:episode>242</podcast:episode>
+			<link>https://twit.tv/shows/untitled-linux-show/episodes/242</link>
+			<comments>https://twit.tv/shows/untitled-linux-show/episodes/242</comments>
+			<category>News</category>
+			<category>Linux</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Sustainable Distros, New Kernels, &amp; Wayland Vim?</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/untitled-linux-show-242-transcript" type="text/html" />
+			<itunes:keywords>Linux, command line, Linux Mint, pearOS, wayland, modular window managers, River Project, Linux kernel 6.19, Linux kernel 7.0, Mesa 26, cinnamon desktop, KDE, GNOME, Ubuntu 24.04 LTS, Rust in Linux kernel, IPFire DBL, domain block list, command line tips,</itunes:keywords>
+			<description><![CDATA[
+<p>The Linux Kernel 6.19 is out, the Rust experiment is over, and it's time to talk about 7.0. Vim 9.2 is out, with a bit of a weird new feature in its changelogs, and IPFire is an intriguing, community-driven security domain block list. PearOS has a new release for those seeking an Apple-inspired Linux experience, and Linux Mint is adjusting its release schedule to better manage developer and tester schedules. River is a new project trying to do Wayland support with a modular Desktop stack, and Mesa 26.0 is out with impressive performance gains. For tips, we have cull for finding and deleting big files, a systemd program for detecting if the OS is running virtualized, preload for caching applications in ram, and new_script for a script-writing tool that *doesn't* feature an LLM. You can find the show notes at <a href="https://bit.ly/3ZCNcEc" target="_blank">https://bit.ly/3ZCNcEc</a> and happy Linux'ing!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> <a href="http://robertpcampbell.com/" target="_blank">Rob Campbell</a>, Ken McDonald, and <a href="https://twitter.com/69Beep" target="_blank">Jeff Massie</a></p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>The Linux Kernel 6.19 is out, the Rust experiment is over, and it's time to talk about 7.0. Vim 9.2 is out, with a bit of a weird new feature in its changelogs, and IPFire is an intriguing, community-driven security domain block list. PearOS has a new release for those seeking an Apple-inspired Linux experience, and Linux Mint is adjusting its release schedule to better manage developer and tester schedules. River is a new project trying to do Wayland support with a modular Desktop stack, and Mesa 26.0 is out with impressive performance gains. For tips, we have cull for finding and deleting big files, a systemd program for detecting if the OS is running virtualized, preload for caching applications in ram, and new_script for a script-writing tool that *doesn't* feature an LLM. You can find the show notes at <a href="https://bit.ly/3ZCNcEc" target="_blank">https://bit.ly/3ZCNcEc</a> and happy Linux'ing!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> <a href="http://robertpcampbell.com/" target="_blank">Rob Campbell</a>, Ken McDonald, and <a href="https://twitter.com/69Beep" target="_blank">Jeff Massie</a></p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>The Linux Kernel 6.19 is out, the Rust experiment is over, and it's time to talk about 7.0. Vim 9.2 is out, with a bit of a weird new feature in its changelogs, and IPFire is an intriguing, community-driven security domain block list. PearOS has a new release for those seeking an Apple-inspired Linux experience, and Linux Mint is adjusting its release schedule to better manage developer and tester schedules. River is a new project trying to do Wayland support with a modular Desktop stack, and Mesa 26.0 is out with impressive performance gains. For tips, we have cull for finding and deleting big files, a systemd program for detecting if the OS is running virtualized, preload for caching applications in ram, and new_script for a script-writing tool that *doesn't* feature an LLM. You can find the show notes at <a href="https://bit.ly/3ZCNcEc" target="_blank">https://bit.ly/3ZCNcEc</a> and happy Linux'ing!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> <a href="http://robertpcampbell.com/" target="_blank">Rob Campbell</a>, Ken McDonald, and <a href="https://twitter.com/69Beep" target="_blank">Jeff Massie</a></p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860140/hero/ULS0242_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0242/uls0242_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:23:45</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0242/uls0242_h264m_1920x1080.mp4" length="1486024771" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0242/uls0242_h264m_1920x1080.mp4" fileSize="1486024771" type="video/mp4" medium="video">
+				<media:title type="plain">ULS 242: Syntactical Sugar - Sustainable Distros, New Kernels, &amp; Wayland Vim?</media:title>
+				<media:description type="plain">Sustainable Distros, New Kernels, &amp; Wayland Vim?</media:description>
+				<media:keywords>Linux, command line, Linux Mint, pearOS, wayland, modular window managers, River Project, Linux kernel 6.19, Linux kernel 7.0, Mesa 26, cinnamon desktop, KDE, GNOME, Ubuntu 24.04 LTS, Rust in Linux kernel, IPFire DBL, domain block list, command line tips,</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860140/hero/ULS0242_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Jonathan Bennett</media:credit>
+				<media:credit role="co-host">Rob Campbell</media:credit>
+				<media:credit role="co-host">Ken McDonald</media:credit>
+				<media:credit role="co-host">Jeff Massie</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/jonathan-bennett" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/91661/pictures/jonathan_bennett.jpg">Jonathan Bennett</podcast:person>
+				<podcast:person role="co-host" href="http://robertpcampbell.com/" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832831/pictures/robcampbell.jpg">Rob Campbell</podcast:person>
+				<podcast:person role="co-host" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832833/pictures/kenmcdonald.jpg">Ken McDonald</podcast:person>
+				<podcast:person role="co-host" href="https://twitter.com/69Beep" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832832/pictures/jeffmassie.jpg">Jeff Massie</podcast:person>
+		</item>
+		<item>
+			<title>ULS 241: A Very Hot Sandwich - A Smorgasbord of New Releases</title>
+			<itunes:title>A Very Hot Sandwich - A Smorgasbord of New Releases</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 08 Feb 2026 13:49:27 PST</pubDate>
+			<itunes:episode>241</itunes:episode>
+			<podcast:episode>241</podcast:episode>
+			<link>https://twit.tv/shows/untitled-linux-show/episodes/241</link>
+			<comments>https://twit.tv/shows/untitled-linux-show/episodes/241</comments>
+			<category>News</category>
+			<category>Linux</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>A Smorgasbord of New Releases</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/untitled-linux-show-241-transcript" type="text/html" />
+			<itunes:keywords>Linux, command line, LibreOffice 26.2, GIMP 3.2, Krita 6, Raspberry Pi price increase, dual RAM Raspberry Pi 4, Argon One laptop, open source office suite, GNU Coreutils 9.10, AI contributions, Bug Bounty, TLDraw, Debian community, LLM scrapers</itunes:keywords>
+			<description><![CDATA[
+<p>This week, we start by talking about the Raspberry Pi memory price increases and bemoan that it's a tough time to be an enthusiast. Then we help ourselves feel better by covering all the new Betas and releases of our favorite software. There's a new LibreOffice, a look ahead at GIMP 3.2, and the Krita 6 Beta. Toyota has announced Flourite, a new game engine written in Flutter and Dart. And Ardour 9 and Shotcut 26.1 are out. We talk Debian, and spend some time looking at how AI has changed the Open Source landscape. For tips, there's another look at systemd-analyze and then a quick intro to gpioget for reading gpio lines. You can find the show notes at <a href="https://bit.ly/4r3PmZn" target="_blank">https://bit.ly/4r3PmZn</a> and have a great week!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Host:</strong> Ken McDonald</p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>This week, we start by talking about the Raspberry Pi memory price increases and bemoan that it's a tough time to be an enthusiast. Then we help ourselves feel better by covering all the new Betas and releases of our favorite software. There's a new LibreOffice, a look ahead at GIMP 3.2, and the Krita 6 Beta. Toyota has announced Flourite, a new game engine written in Flutter and Dart. And Ardour 9 and Shotcut 26.1 are out. We talk Debian, and spend some time looking at how AI has changed the Open Source landscape. For tips, there's another look at systemd-analyze and then a quick intro to gpioget for reading gpio lines. You can find the show notes at <a href="https://bit.ly/4r3PmZn" target="_blank">https://bit.ly/4r3PmZn</a> and have a great week!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Host:</strong> Ken McDonald</p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>This week, we start by talking about the Raspberry Pi memory price increases and bemoan that it's a tough time to be an enthusiast. Then we help ourselves feel better by covering all the new Betas and releases of our favorite software. There's a new LibreOffice, a look ahead at GIMP 3.2, and the Krita 6 Beta. Toyota has announced Flourite, a new game engine written in Flutter and Dart. And Ardour 9 and Shotcut 26.1 are out. We talk Debian, and spend some time looking at how AI has changed the Open Source landscape. For tips, there's another look at systemd-analyze and then a quick intro to gpioget for reading gpio lines. You can find the show notes at <a href="https://bit.ly/4r3PmZn" target="_blank">https://bit.ly/4r3PmZn</a> and have a great week!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Host:</strong> Ken McDonald</p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860061/hero/ULS0241_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0241/uls0241_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:21:44</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0241/uls0241_h264m_1920x1080.mp4" length="1449847601" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0241/uls0241_h264m_1920x1080.mp4" fileSize="1449847601" type="video/mp4" medium="video">
+				<media:title type="plain">ULS 241: A Very Hot Sandwich - A Smorgasbord of New Releases</media:title>
+				<media:description type="plain">A Smorgasbord of New Releases</media:description>
+				<media:keywords>Linux, command line, LibreOffice 26.2, GIMP 3.2, Krita 6, Raspberry Pi price increase, dual RAM Raspberry Pi 4, Argon One laptop, open source office suite, GNU Coreutils 9.10, AI contributions, Bug Bounty, TLDraw, Debian community, LLM scrapers</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860061/hero/ULS0241_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Jonathan Bennett</media:credit>
+				<media:credit role="co-host">Ken McDonald</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/jonathan-bennett" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/91661/pictures/jonathan_bennett.jpg">Jonathan Bennett</podcast:person>
+				<podcast:person role="co-host" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832833/pictures/kenmcdonald.jpg">Ken McDonald</podcast:person>
+		</item>
+		<item>
+			<title>ULS 240: I Like the Frosting - We Review, We Work, &amp; We Game</title>
+			<itunes:title>I Like the Frosting - We Review, We Work, &amp; We Game</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 01 Feb 2026 13:18:13 PST</pubDate>
+			<itunes:episode>240</itunes:episode>
+			<podcast:episode>240</podcast:episode>
+			<link>https://twit.tv/shows/untitled-linux-show/episodes/240</link>
+			<comments>https://twit.tv/shows/untitled-linux-show/episodes/240</comments>
+			<category>News</category>
+			<category>Linux</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>We Review, We Work, &amp; We Game</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/untitled-linux-show-240-transcript" type="text/html" />
+			<itunes:keywords>Linux, command line, Argon 40 one up, Raspberry Pi CM5 laptop, Calibre ebook reader, GParted, AMD EPYC CPU, Intel Xeon Granite Rapids, GeForce Now Linux, KDE desktop, KDE VR mode, Plasma 6.7 Air theme, Cosmic desktop environment, XFCE Wayland compositor, </itunes:keywords>
+			<description><![CDATA[
+<p>This week starts with a quick review of the Argon40 One Up, the Laptop shell made for the Raspberry Pi CM5. Then we talk about the Calibre e-book reader, a shoot-out between AMD Epyc and Intel Xeon, and talk about the latest in desktop environments. Gparted ships an update, Proton and GeForce Now brings the Linux gaming, and the Raspberry Pi Display module is just begging to be rack mounted. For tips we have Libcaca for graphics in the terminal, A candy hack for pacman, and Sheelbeats for terminal music listening. You can find the show notes at <a href="https://bit.ly/4a8jVWD" target="_blank">https://bit.ly/4a8jVWD</a> and enjoy!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> Ken McDonald and <a href="https://twitter.com/69Beep" target="_blank">Jeff Massie</a></p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>This week starts with a quick review of the Argon40 One Up, the Laptop shell made for the Raspberry Pi CM5. Then we talk about the Calibre e-book reader, a shoot-out between AMD Epyc and Intel Xeon, and talk about the latest in desktop environments. Gparted ships an update, Proton and GeForce Now brings the Linux gaming, and the Raspberry Pi Display module is just begging to be rack mounted. For tips we have Libcaca for graphics in the terminal, A candy hack for pacman, and Sheelbeats for terminal music listening. You can find the show notes at <a href="https://bit.ly/4a8jVWD" target="_blank">https://bit.ly/4a8jVWD</a> and enjoy!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> Ken McDonald and <a href="https://twitter.com/69Beep" target="_blank">Jeff Massie</a></p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>This week starts with a quick review of the Argon40 One Up, the Laptop shell made for the Raspberry Pi CM5. Then we talk about the Calibre e-book reader, a shoot-out between AMD Epyc and Intel Xeon, and talk about the latest in desktop environments. Gparted ships an update, Proton and GeForce Now brings the Linux gaming, and the Raspberry Pi Display module is just begging to be rack mounted. For tips we have Libcaca for graphics in the terminal, A candy hack for pacman, and Sheelbeats for terminal music listening. You can find the show notes at <a href="https://bit.ly/4a8jVWD" target="_blank">https://bit.ly/4a8jVWD</a> and enjoy!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> Ken McDonald and <a href="https://twitter.com/69Beep" target="_blank">Jeff Massie</a></p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/859963/hero/ULS0240_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0240/uls0240_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:22:00</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0240/uls0240_h264m_1920x1080.mp4" length="1452273400" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0240/uls0240_h264m_1920x1080.mp4" fileSize="1452273400" type="video/mp4" medium="video">
+				<media:title type="plain">ULS 240: I Like the Frosting - We Review, We Work, &amp; We Game</media:title>
+				<media:description type="plain">We Review, We Work, &amp; We Game</media:description>
+				<media:keywords>Linux, command line, Argon 40 one up, Raspberry Pi CM5 laptop, Calibre ebook reader, GParted, AMD EPYC CPU, Intel Xeon Granite Rapids, GeForce Now Linux, KDE desktop, KDE VR mode, Plasma 6.7 Air theme, Cosmic desktop environment, XFCE Wayland compositor, </media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/859963/hero/ULS0240_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Jonathan Bennett</media:credit>
+				<media:credit role="co-host">Ken McDonald</media:credit>
+				<media:credit role="co-host">Jeff Massie</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/jonathan-bennett" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/91661/pictures/jonathan_bennett.jpg">Jonathan Bennett</podcast:person>
+				<podcast:person role="co-host" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832833/pictures/kenmcdonald.jpg">Ken McDonald</podcast:person>
+				<podcast:person role="co-host" href="https://twitter.com/69Beep" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832832/pictures/jeffmassie.jpg">Jeff Massie</podcast:person>
+		</item>
+		<item>
+			<title>ULS 239: Terrible at Metaphors - Photoshop, Linux Phones, &amp; NVMe</title>
+			<itunes:title>Terrible at Metaphors - Photoshop, Linux Phones, &amp; NVMe</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 25 Jan 2026 16:56:07 PST</pubDate>
+			<itunes:episode>239</itunes:episode>
+			<podcast:episode>239</podcast:episode>
+			<link>https://twit.tv/shows/untitled-linux-show/episodes/239</link>
+			<comments>https://twit.tv/shows/untitled-linux-show/episodes/239</comments>
+			<category>News</category>
+			<category>Linux</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Photoshop, Linux Phones, &amp; NVMe</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/untitled-linux-show-239-transcript" type="text/html" />
+			<itunes:keywords>Linux, command line, Photoshop on Linux, Adobe Creative Cloud installer, WINE patches, NVMe Linux performance, kernel patch, OpenSUSE Merlin package manager, Graphite 2D editor, Linux phones, Next Phone, convergence phone, Android Linux Windows dual boot,</itunes:keywords>
+			<description><![CDATA[
+<p>Adobe Photoshop finally makes big progress on Linux, and the team unpacks what this means for creative pros, open-source rivals, and anyone dreaming of ditching Windows for good. Canonical's Snaps are under fire as scammers take malware tactics to a new level, hijacking trusted developer accounts and exposing a major risk for anyone installing crypto wallet apps on Linux. Find the show notes at <a href="https://bit.ly/4sZbOEk" target="_blank">https://bit.ly/4sZbOEk</a> and have a great week!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> Ken McDonald, <a href="https://twitter.com/69Beep" target="_blank">Jeff Massie</a>, and <a href="http://robertpcampbell.com/" target="_blank">Rob Campbell</a></p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Adobe Photoshop finally makes big progress on Linux, and the team unpacks what this means for creative pros, open-source rivals, and anyone dreaming of ditching Windows for good. Canonical's Snaps are under fire as scammers take malware tactics to a new level, hijacking trusted developer accounts and exposing a major risk for anyone installing crypto wallet apps on Linux. Find the show notes at <a href="https://bit.ly/4sZbOEk" target="_blank">https://bit.ly/4sZbOEk</a> and have a great week!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> Ken McDonald, <a href="https://twitter.com/69Beep" target="_blank">Jeff Massie</a>, and <a href="http://robertpcampbell.com/" target="_blank">Rob Campbell</a></p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Adobe Photoshop finally makes big progress on Linux, and the team unpacks what this means for creative pros, open-source rivals, and anyone dreaming of ditching Windows for good. Canonical's Snaps are under fire as scammers take malware tactics to a new level, hijacking trusted developer accounts and exposing a major risk for anyone installing crypto wallet apps on Linux. Find the show notes at <a href="https://bit.ly/4sZbOEk" target="_blank">https://bit.ly/4sZbOEk</a> and have a great week!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> Ken McDonald, <a href="https://twitter.com/69Beep" target="_blank">Jeff Massie</a>, and <a href="http://robertpcampbell.com/" target="_blank">Rob Campbell</a></p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859870/hero/ULS0239_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0239/uls0239_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:30:25</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0239/uls0239_h264m_1920x1080.mp4" length="1599997386" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0239/uls0239_h264m_1920x1080.mp4" fileSize="1599997386" type="video/mp4" medium="video">
+				<media:title type="plain">ULS 239: Terrible at Metaphors - Photoshop, Linux Phones, &amp; NVMe</media:title>
+				<media:description type="plain">Photoshop, Linux Phones, &amp; NVMe</media:description>
+				<media:keywords>Linux, command line, Photoshop on Linux, Adobe Creative Cloud installer, WINE patches, NVMe Linux performance, kernel patch, OpenSUSE Merlin package manager, Graphite 2D editor, Linux phones, Next Phone, convergence phone, Android Linux Windows dual boot,</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859870/hero/ULS0239_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Jonathan Bennett</media:credit>
+				<media:credit role="co-host">Ken McDonald</media:credit>
+				<media:credit role="co-host">Jeff Massie</media:credit>
+				<media:credit role="co-host">Rob Campbell</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/jonathan-bennett" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/91661/pictures/jonathan_bennett.jpg">Jonathan Bennett</podcast:person>
+				<podcast:person role="co-host" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832833/pictures/kenmcdonald.jpg">Ken McDonald</podcast:person>
+				<podcast:person role="co-host" href="https://twitter.com/69Beep" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832832/pictures/jeffmassie.jpg">Jeff Massie</podcast:person>
+				<podcast:person role="co-host" href="http://robertpcampbell.com/" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832831/pictures/robcampbell.jpg">Rob Campbell</podcast:person>
+		</item>
+		<item>
+			<title>ULS 238: More Time to Bake - Pi AI, Wine 11, &amp; IP Certs</title>
+			<itunes:title>More Time to Bake - Pi AI, Wine 11, &amp; IP Certs</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 18 Jan 2026 14:47:46 PST</pubDate>
+			<itunes:episode>238</itunes:episode>
+			<podcast:episode>238</podcast:episode>
+			<link>https://twit.tv/shows/untitled-linux-show/episodes/238</link>
+			<comments>https://twit.tv/shows/untitled-linux-show/episodes/238</comments>
+			<category>News</category>
+			<category>Linux</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Pi AI, Wine 11, &amp; IP Certs</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/untitled-linux-show-238-transcript" type="text/html" />
+			<itunes:keywords>Linux, command line, AI in Linux kernel, Linus Torvalds, Wine 11, Hangover 11, ARM64 Linux, Raspberry Pi AI Hat 2, PipeWire 1.4.10, OBS Studio 32 beta, wayland migration, Budgie desktop, Fedora Games Lab, EndeavourOS Ganymede Neo, Nvidia drivers Linux</itunes:keywords>
+			<description><![CDATA[
+<p>This week we're talking about Torvalds vibe coding, the newest Pi AI hat, and what's new with PipeWire and OBS Studio. Then there's some great news in Wine 11 and Hangover 11, Fedora's Games Spin is moving to KDE, and we talk about LetsEncrypt and their new IP certificates. For tips we have csvi for editing comma-separated-values files on the command line, espeak-ng for giving your Linux machine a voice, and the hidden support for Screen Savers in KDE. You can find the show notes at <a href="https://bit.ly/4jKwHyV" target="_blank">https://bit.ly/4jKwHyV</a> and have a great week!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> Ken McDonald and <a href="http://robertpcampbell.com/" target="_blank">Rob Campbell</a></p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>This week we're talking about Torvalds vibe coding, the newest Pi AI hat, and what's new with PipeWire and OBS Studio. Then there's some great news in Wine 11 and Hangover 11, Fedora's Games Spin is moving to KDE, and we talk about LetsEncrypt and their new IP certificates. For tips we have csvi for editing comma-separated-values files on the command line, espeak-ng for giving your Linux machine a voice, and the hidden support for Screen Savers in KDE. You can find the show notes at <a href="https://bit.ly/4jKwHyV" target="_blank">https://bit.ly/4jKwHyV</a> and have a great week!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> Ken McDonald and <a href="http://robertpcampbell.com/" target="_blank">Rob Campbell</a></p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>This week we're talking about Torvalds vibe coding, the newest Pi AI hat, and what's new with PipeWire and OBS Studio. Then there's some great news in Wine 11 and Hangover 11, Fedora's Games Spin is moving to KDE, and we talk about LetsEncrypt and their new IP certificates. For tips we have csvi for editing comma-separated-values files on the command line, espeak-ng for giving your Linux machine a voice, and the hidden support for Screen Savers in KDE. You can find the show notes at <a href="https://bit.ly/4jKwHyV" target="_blank">https://bit.ly/4jKwHyV</a> and have a great week!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> Ken McDonald and <a href="http://robertpcampbell.com/" target="_blank">Rob Campbell</a></p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859782/hero/ULS0238_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0238/uls0238_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:12:15</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0238/uls0238_h264m_1920x1080.mp4" length="1225597611" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0238/uls0238_h264m_1920x1080.mp4" fileSize="1225597611" type="video/mp4" medium="video">
+				<media:title type="plain">ULS 238: More Time to Bake - Pi AI, Wine 11, &amp; IP Certs</media:title>
+				<media:description type="plain">Pi AI, Wine 11, &amp; IP Certs</media:description>
+				<media:keywords>Linux, command line, AI in Linux kernel, Linus Torvalds, Wine 11, Hangover 11, ARM64 Linux, Raspberry Pi AI Hat 2, PipeWire 1.4.10, OBS Studio 32 beta, wayland migration, Budgie desktop, Fedora Games Lab, EndeavourOS Ganymede Neo, Nvidia drivers Linux</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859782/hero/ULS0238_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Jonathan Bennett</media:credit>
+				<media:credit role="co-host">Ken McDonald</media:credit>
+				<media:credit role="co-host">Rob Campbell</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/jonathan-bennett" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/91661/pictures/jonathan_bennett.jpg">Jonathan Bennett</podcast:person>
+				<podcast:person role="co-host" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832833/pictures/kenmcdonald.jpg">Ken McDonald</podcast:person>
+				<podcast:person role="co-host" href="http://robertpcampbell.com/" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832831/pictures/robcampbell.jpg">Rob Campbell</podcast:person>
+		</item>
+		<item>
+			<title>ULS 237: Get Better Mice - AI, Arm, &amp; Liquorix</title>
+			<itunes:title>Get Better Mice - AI, Arm, &amp; Liquorix</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 11 Jan 2026 16:53:42 PST</pubDate>
+			<itunes:episode>237</itunes:episode>
+			<podcast:episode>237</podcast:episode>
+			<link>https://twit.tv/shows/untitled-linux-show/episodes/237</link>
+			<comments>https://twit.tv/shows/untitled-linux-show/episodes/237</comments>
+			<category>News</category>
+			<category>Linux</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>AI, Arm, &amp; Liquorix</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/untitled-linux-show-237-transcript" type="text/html" />
+			<itunes:keywords>Linux, command line, Linus Torvalds AI rant, Linux Foundation finances, kernel bug tracking, Budgie 10.10 Wayland migration, Unreal Engine 5 ray tracing, RADV driver update, Steam on ARM64, FEX emulator, Cosmic desktop, System76, Pop!_OS</itunes:keywords>
+			<description><![CDATA[
+<p>The kernel is ground zero for AI coding wars, and Torvalds is ranting about it. The Linux foundation made good use of their funds last year, and the average kernel bug has a surprisingly long life. Then we talk about the possible death of the middle-click, Steam and ARM64, and the liquorix kernel. There's a budgie release and big Raytracing performance uplift! For tips we have the fresh text editor, alsa-info, and clear! You can find the show notes at <a href="https://bit.ly/3N79tHc" target="_blank">https://bit.ly/3N79tHc</a> and Happy linuxing!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> Ken McDonald and <a href="https://twitter.com/69Beep" target="_blank">Jeff Massie</a></p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>The kernel is ground zero for AI coding wars, and Torvalds is ranting about it. The Linux foundation made good use of their funds last year, and the average kernel bug has a surprisingly long life. Then we talk about the possible death of the middle-click, Steam and ARM64, and the liquorix kernel. There's a budgie release and big Raytracing performance uplift! For tips we have the fresh text editor, alsa-info, and clear! You can find the show notes at <a href="https://bit.ly/3N79tHc" target="_blank">https://bit.ly/3N79tHc</a> and Happy linuxing!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> Ken McDonald and <a href="https://twitter.com/69Beep" target="_blank">Jeff Massie</a></p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>The kernel is ground zero for AI coding wars, and Torvalds is ranting about it. The Linux foundation made good use of their funds last year, and the average kernel bug has a surprisingly long life. Then we talk about the possible death of the middle-click, Steam and ARM64, and the liquorix kernel. There's a budgie release and big Raytracing performance uplift! For tips we have the fresh text editor, alsa-info, and clear! You can find the show notes at <a href="https://bit.ly/3N79tHc" target="_blank">https://bit.ly/3N79tHc</a> and Happy linuxing!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> Ken McDonald and <a href="https://twitter.com/69Beep" target="_blank">Jeff Massie</a></p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859690/hero/ULS0237_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0237/uls0237_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:31:47</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0237/uls0237_h264m_1920x1080.mp4" length="1556900092" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0237/uls0237_h264m_1920x1080.mp4" fileSize="1556900092" type="video/mp4" medium="video">
+				<media:title type="plain">ULS 237: Get Better Mice - AI, Arm, &amp; Liquorix</media:title>
+				<media:description type="plain">AI, Arm, &amp; Liquorix</media:description>
+				<media:keywords>Linux, command line, Linus Torvalds AI rant, Linux Foundation finances, kernel bug tracking, Budgie 10.10 Wayland migration, Unreal Engine 5 ray tracing, RADV driver update, Steam on ARM64, FEX emulator, Cosmic desktop, System76, Pop!_OS</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859690/hero/ULS0237_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Jonathan Bennett</media:credit>
+				<media:credit role="co-host">Ken McDonald</media:credit>
+				<media:credit role="co-host">Jeff Massie</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/jonathan-bennett" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/91661/pictures/jonathan_bennett.jpg">Jonathan Bennett</podcast:person>
+				<podcast:person role="co-host" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832833/pictures/kenmcdonald.jpg">Ken McDonald</podcast:person>
+				<podcast:person role="co-host" href="https://twitter.com/69Beep" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832832/pictures/jeffmassie.jpg">Jeff Massie</podcast:person>
+		</item>
+		<item>
+			<title>ULS 236: Still Waking Up - Accounting, Court Cases, &amp; Space</title>
+			<itunes:title>Still Waking Up - Accounting, Court Cases, &amp; Space</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Sun, 04 Jan 2026 15:28:05 PST</pubDate>
+			<itunes:episode>236</itunes:episode>
+			<podcast:episode>236</podcast:episode>
+			<link>https://twit.tv/shows/untitled-linux-show/episodes/236</link>
+			<comments>https://twit.tv/shows/untitled-linux-show/episodes/236</comments>
+			<category>News</category>
+			<category>Linux</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Accounting, Court Cases, &amp; Space</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/untitled-linux-show-236-transcript" type="text/html" />
+			<itunes:keywords>Linux, command line, Linux accounting software, GnuCash 5.14, open source finance tools, QEMU virtualization, linux gaming, Steam survey Linux share, arch linux, Linux Mint, Ubuntu Core Snap, Vizio GPL lawsuit, Software Freedom Conservancy</itunes:keywords>
+			<description><![CDATA[
+<p>This week, we're talking accounting... while not giving any financial advice. Then we talk QEMU and virtualization, the Linux Steam Survey, and the CachyOS server. Then, Torvalds isn't super happy with the SFC lawsuit, Linux is headed to space, and Phoenix attempts to resurrect the ashes of X Server. You can find the show notes at <a href="https://bit.ly/49qpcbN" target="_blank">https://bit.ly/49qpcbN</a> and happy new year!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> Ken McDonald and <a href="http://robertpcampbell.com/" target="_blank">Rob Campbell</a></p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>This week, we're talking accounting... while not giving any financial advice. Then we talk QEMU and virtualization, the Linux Steam Survey, and the CachyOS server. Then, Torvalds isn't super happy with the SFC lawsuit, Linux is headed to space, and Phoenix attempts to resurrect the ashes of X Server. You can find the show notes at <a href="https://bit.ly/49qpcbN" target="_blank">https://bit.ly/49qpcbN</a> and happy new year!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> Ken McDonald and <a href="http://robertpcampbell.com/" target="_blank">Rob Campbell</a></p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>This week, we're talking accounting... while not giving any financial advice. Then we talk QEMU and virtualization, the Linux Steam Survey, and the CachyOS server. Then, Torvalds isn't super happy with the SFC lawsuit, Linux is headed to space, and Phoenix attempts to resurrect the ashes of X Server. You can find the show notes at <a href="https://bit.ly/49qpcbN" target="_blank">https://bit.ly/49qpcbN</a> and happy new year!</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
+<p><strong>Co-Hosts:</strong> Ken McDonald and <a href="http://robertpcampbell.com/" target="_blank">Rob Campbell</a></p> 
+<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859608/hero/ULS0236_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0236/uls0236_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>1:16:20</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0236/uls0236_h264m_1920x1080.mp4" length="1295033778" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0236/uls0236_h264m_1920x1080.mp4" fileSize="1295033778" type="video/mp4" medium="video">
+				<media:title type="plain">ULS 236: Still Waking Up - Accounting, Court Cases, &amp; Space</media:title>
+				<media:description type="plain">Accounting, Court Cases, &amp; Space</media:description>
+				<media:keywords>Linux, command line, Linux accounting software, GnuCash 5.14, open source finance tools, QEMU virtualization, linux gaming, Steam survey Linux share, arch linux, Linux Mint, Ubuntu Core Snap, Vizio GPL lawsuit, Software Freedom Conservancy</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859608/hero/ULS0236_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Jonathan Bennett</media:credit>
+				<media:credit role="co-host">Ken McDonald</media:credit>
+				<media:credit role="co-host">Rob Campbell</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/jonathan-bennett" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/91661/pictures/jonathan_bennett.jpg">Jonathan Bennett</podcast:person>
+				<podcast:person role="co-host" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832833/pictures/kenmcdonald.jpg">Ken McDonald</podcast:person>
+				<podcast:person role="co-host" href="http://robertpcampbell.com/" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832831/pictures/robcampbell.jpg">Rob Campbell</podcast:person>
+		</item>
+	</channel>
+</rss>

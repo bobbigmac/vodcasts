@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/" xmlns:podcast="https://podcastindex.org/namespace/1.0" version="2.0">
+	<channel>
+		<title>Hands-On Windows (Video)</title>
+		<itunes:author>TWiT</itunes:author>
+		<link>https://twit.tv/shows/hands-on-windows</link>
+		<generator>TWiT Feed Generator v4.10</generator>
+		<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+		<language>en-US</language>
+		<copyright>This work is licensed under a Creative Commons License - Attribution-NonCommercial-NoDerivatives 4.0 International - http://creativecommons.org/licenses/by-nc-nd/4.0/</copyright>
+		<creativeCommons:license>http://creativecommons.org/licenses/by-nc-nd/4.0/</creativeCommons:license>
+		<managingEditor>feedmail@twit.tv (TWiT Editors)</managingEditor>
+		<webMaster>feedmail@twit.tv (TWiT Engineering)</webMaster>
+		<ttl>720</ttl>
+		<sy:updatePeriod>weekly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+		<lastBuildDate>Thu, 05 Mar 2026 15:54:03 PST</lastBuildDate>
+		<pubDate>Thu, 05 Mar 2026 15:54:03 PST</pubDate>
+		<rawvoice:frequency>weekly</rawvoice:frequency>
+		<rawvoice:location>Petaluma, CA</rawvoice:location>
+		<itunes:type>episodic</itunes:type>
+		<itunes:subtitle>Handy tips, helpful advice, and everything new in Windows 11.</itunes:subtitle>
+		<itunes:summary>Hands-On Windows, featuring Paul Thurrott, will help you adapt to the changes made in Windows 11. From visual tweaks to performance boosts Hands-On Windows will show you how to get the most out of your Windows 11 PC. You can join Club TWiT for $10 per month and get ad-free audio and video feeds for all our shows plus everything else the club offers...or get just this podcast ad-free for $5 per month.
+
+New episodes every Thursday.</itunes:summary>
+		<description>Hands-On Windows, featuring Paul Thurrott, will help you adapt to the changes made in Windows 11. From visual tweaks to performance boosts Hands-On Windows will show you how to get the most out of your Windows 11 PC. You can join Club TWiT for $10 per month and get ad-free audio and video feeds for all our shows plus everything else the club offers...or get just this podcast ad-free for $5 per month.
+
+New episodes every Thursday.</description>
+		<itunes:keywords>Microsoft Windows, Windows 11, windows11, w11, Windows tips, Windows tricks, Windows shortcuts, Paul Thurrott, Windows how-to, Windows macros</itunes:keywords>
+		<rawvoice:rating tv="tv-g">tv-g</rawvoice:rating>
+		<itunes:explicit>no</itunes:explicit>
+		<itunes:block>no</itunes:block>
+		<googleplay:block>No</googleplay:block>
+		<podcast:funding url="https://twit.tv/clubtwit">Become a Club TWiT member!</podcast:funding>
+		<itunes:owner>
+			<itunes:name>Leo Laporte</itunes:name>
+			<itunes:email>feedmail@twit.tv</itunes:email>
+		</itunes:owner>
+		<itunes:category text="Technology" />
+		<category>Windows</category>
+		<image>
+			<title>Hands-On Windows (Video)</title>
+			<url>https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/Hands-On%20Windows/album_art/hd/HOW_albumart_standard_video.jpg</url>
+			<link>https://twit.tv/shows/hands-on-windows</link>
+		</image>
+		<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_2048x2048/public/images/shows/Hands-On%20Windows/album_art/hd/HOW_albumart_standard_video.jpg" />
+		<itunes:new-feed-url>https://feeds.twit.tv/howin_video_hd.xml</itunes:new-feed-url>
+		<rawvoice:subscribe feed="https://feeds.twit.tv/howin_video_hd.xml" itunes="https://podcasts.apple.com/us/podcast/hands-on-windows-video/id1634849913" html="https://twit.tv/shows/hands-on-windows"></rawvoice:subscribe>
+		<atom:link href="https://feeds.twit.tv/howin_video_hd.xml" type="application/rss+xml" rel="self"/>
+		<item>
+			<title>HOW 179: Surviving OneDrive Sync - The Hidden Drama of Windows Folder Sync</title>
+			<itunes:title>Surviving OneDrive Sync - The Hidden Drama of Windows Folder Sync</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 05 Mar 2026 15:07:20 PST</pubDate>
+			<itunes:episode>179</itunes:episode>
+			<podcast:episode>179</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-windows/episodes/179</link>
+			<comments>https://twit.tv/shows/hands-on-windows/episodes/179</comments>
+			<category>Help &amp; How To</category>
+			<category>Windows</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>The Hidden Drama of Windows Folder Sync</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/hands-windows-179-transcript" type="text/html" />
+			<itunes:keywords>OneDrive Folder Backup, windows 11, onedrive sync, manage backup, local folders vs cloud, OneDrive Personal, file explorer, Desktop/Documents/Pictures folders, Windows 11 Home and Pro, file commingling, SSD storage, Microsoft file syncing</itunes:keywords>
+			<description><![CDATA[
+<p>OneDrive's automatic folder backup in Windows 11 has frustrated millions, but this episode reveals new changes that finally let users opt out—if you act fast. Find out how Microsoft's latest update could solve, or complicate, your cloud storage headaches.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>OneDrive's automatic folder backup in Windows 11 has frustrated millions, but this episode reveals new changes that finally let users opt out—if you act fast. Find out how Microsoft's latest update could solve, or complicate, your cloud storage headaches.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>OneDrive's automatic folder backup in Windows 11 has frustrated millions, but this episode reveals new changes that finally let users opt out—if you act fast. Find out how Microsoft's latest update could solve, or complicate, your cloud storage headaches.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860388/hero/HOW0179_thumbnail3.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0179/howin0179_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>18:35</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0179/howin0179_h264m_1920x1080.mp4" length="316619774" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0179/howin0179_h264m_1920x1080.mp4" fileSize="316619774" type="video/mp4" medium="video">
+				<media:title type="plain">HOW 179: Surviving OneDrive Sync - The Hidden Drama of Windows Folder Sync</media:title>
+				<media:description type="plain">The Hidden Drama of Windows Folder Sync</media:description>
+				<media:keywords>OneDrive Folder Backup, windows 11, onedrive sync, manage backup, local folders vs cloud, OneDrive Personal, file explorer, Desktop/Documents/Pictures folders, Windows 11 Home and Pro, file commingling, SSD storage, Microsoft file syncing</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/03/860388/hero/HOW0179_thumbnail3.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Paul Thurrott</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
+		</item>
+		<item>
+			<title>HOW 178: Microsoft's Password Manager - Why Edge Isn't Enough for True Security</title>
+			<itunes:title>Microsoft's Password Manager - Why Edge Isn't Enough for True Security</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 26 Feb 2026 14:40:30 PST</pubDate>
+			<itunes:episode>178</itunes:episode>
+			<podcast:episode>178</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-windows/episodes/178</link>
+			<comments>https://twit.tv/shows/hands-on-windows/episodes/178</comments>
+			<category>Help &amp; How To</category>
+			<category>Windows</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Why Edge Isn't Enough for True Security</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/how-secure-microsofts-built-password-manager-windows-11" type="text/html" />
+			<itunes:keywords>Microsoft Password Manager, Windows 11 password management, Edge browser passwords, third-party password managers, password autofill, passkey management, password security, BitWarden, proton pass, password generator, weak passwords, password change link, </itunes:keywords>
+			<description><![CDATA[
+<p>Think Microsoft's password manager in Windows 11 is enough? Paul Thurrott breaks down why even devoted Edge users might want to look elsewhere for true password security.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://canary.tools/twit" target="_blank" rel="sponsored">canary.tools/twit - use code: TWIT</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Think Microsoft's password manager in Windows 11 is enough? Paul Thurrott breaks down why even devoted Edge users might want to look elsewhere for true password security.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://canary.tools/twit" target="_blank" rel="sponsored">canary.tools/twit - use code: TWIT</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Think Microsoft's password manager in Windows 11 is enough? Paul Thurrott breaks down why even devoted Edge users might want to look elsewhere for true password security.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://canary.tools/twit" target="_blank" rel="sponsored">canary.tools/twit - use code: TWIT</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860297/hero/HOW0178_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0178/howin0178_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>13:28</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0178/howin0178_h264m_1920x1080.mp4" length="228037994" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0178/howin0178_h264m_1920x1080.mp4" fileSize="228037994" type="video/mp4" medium="video">
+				<media:title type="plain">HOW 178: Microsoft's Password Manager - Why Edge Isn't Enough for True Security</media:title>
+				<media:description type="plain">Why Edge Isn't Enough for True Security</media:description>
+				<media:keywords>Microsoft Password Manager, Windows 11 password management, Edge browser passwords, third-party password managers, password autofill, passkey management, password security, BitWarden, proton pass, password generator, weak passwords, password change link, </media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860297/hero/HOW0178_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Paul Thurrott</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
+		</item>
+		<item>
+			<title>HOW 177: Password Managers and Windows 11 - The Key to Your Online Security</title>
+			<itunes:title>Password Managers and Windows 11 - The Key to Your Online Security</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 19 Feb 2026 14:27:21 PST</pubDate>
+			<itunes:episode>177</itunes:episode>
+			<podcast:episode>177</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-windows/episodes/177</link>
+			<comments>https://twit.tv/shows/hands-on-windows/episodes/177</comments>
+			<category>Help &amp; How To</category>
+			<category>Windows</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>The Key to Your Online Security</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/how-safely-manage-passwords-windows-11-tips-experts" type="text/html" />
+			<itunes:keywords>password managers, windows 11, BitWarden, protonpass, 1password, dashlane, google password manager, Microsoft Password Manager, edge, chrome, online account security, passkeys, two-factor authentication, autofill, biometric security, importing passwords, </itunes:keywords>
+			<description><![CDATA[
+<p>From generating passkeys and payment autofill to dark web monitoring, today's password managers aren't what you remember. Paul Thurrott breaks down the must-have features and surprising pitfalls for anyone using Windows 11.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>From generating passkeys and payment autofill to dark web monitoring, today's password managers aren't what you remember. Paul Thurrott breaks down the must-have features and surprising pitfalls for anyone using Windows 11.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>From generating passkeys and payment autofill to dark web monitoring, today's password managers aren't what you remember. Paul Thurrott breaks down the must-have features and surprising pitfalls for anyone using Windows 11.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860215/hero/HOW0177_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0177/howin0177_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>19:56</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0177/howin0177_h264m_1920x1080.mp4" length="337796901" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0177/howin0177_h264m_1920x1080.mp4" fileSize="337796901" type="video/mp4" medium="video">
+				<media:title type="plain">HOW 177: Password Managers and Windows 11 - The Key to Your Online Security</media:title>
+				<media:description type="plain">The Key to Your Online Security</media:description>
+				<media:keywords>password managers, windows 11, BitWarden, protonpass, 1password, dashlane, google password manager, Microsoft Password Manager, edge, chrome, online account security, passkeys, two-factor authentication, autofill, biometric security, importing passwords, </media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860215/hero/HOW0177_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Paul Thurrott</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
+		</item>
+		<item>
+			<title>HOW 176: A Practical Guide to Secure, Passwordless Logins - A Smarter Passkey Setup</title>
+			<itunes:title>A Practical Guide to Secure, Passwordless Logins - A Smarter Passkey Setup</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 12 Feb 2026 14:42:03 PST</pubDate>
+			<itunes:episode>176</itunes:episode>
+			<podcast:episode>176</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-windows/episodes/176</link>
+			<comments>https://twit.tv/shows/hands-on-windows/episodes/176</comments>
+			<category>Help &amp; How To</category>
+			<category>Windows</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>A Smarter Passkey Setup</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/passkeys-vs-built-passwords-best-way-secure-your-windows-11-accounts" type="text/html" />
+			<itunes:keywords>passkeys, windows 11, Microsoft Password Manager, third-party password manager, protonpass, 1password, BitWarden, dashlane, passkey integration, password autofill, web browser extension, edge, chrome, Brave, authentication, Windows Hello, Device Security,</itunes:keywords>
+			<description><![CDATA[
+<p>Forget the built-in Windows tools—Paul shares why third-party password managers are the secret to making passkeys smarter, more powerful, and truly universal across all your devices.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://canary.tools/twit" target="_blank" rel="sponsored">canary.tools/twit - use code: TWIT</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Forget the built-in Windows tools—Paul shares why third-party password managers are the secret to making passkeys smarter, more powerful, and truly universal across all your devices.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://canary.tools/twit" target="_blank" rel="sponsored">canary.tools/twit - use code: TWIT</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Forget the built-in Windows tools—Paul shares why third-party password managers are the secret to making passkeys smarter, more powerful, and truly universal across all your devices.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://canary.tools/twit" target="_blank" rel="sponsored">canary.tools/twit - use code: TWIT</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860116/hero/HOW0176_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0176/howin0176_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>15:53</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0176/howin0176_h264m_1920x1080.mp4" length="270614221" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0176/howin0176_h264m_1920x1080.mp4" fileSize="270614221" type="video/mp4" medium="video">
+				<media:title type="plain">HOW 176: A Practical Guide to Secure, Passwordless Logins - A Smarter Passkey Setup</media:title>
+				<media:description type="plain">A Smarter Passkey Setup</media:description>
+				<media:keywords>passkeys, windows 11, Microsoft Password Manager, third-party password manager, protonpass, 1password, BitWarden, dashlane, passkey integration, password autofill, web browser extension, edge, chrome, Brave, authentication, Windows Hello, Device Security,</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860116/hero/HOW0176_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Paul Thurrott</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
+		</item>
+		<item>
+			<title>HOW 175: Passkeys in 25h2 - Moving Beyond Passwords</title>
+			<itunes:title>Passkeys in 25h2 - Moving Beyond Passwords</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 05 Feb 2026 14:17:10 PST</pubDate>
+			<itunes:episode>175</itunes:episode>
+			<podcast:episode>175</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-windows/episodes/175</link>
+			<comments>https://twit.tv/shows/hands-on-windows/episodes/175</comments>
+			<category>Help &amp; How To</category>
+			<category>Windows</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Moving Beyond Passwords</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/windows-11-passkey-setup-guide-unlock-modern-portable-authentication" type="text/html" />
+			<itunes:keywords>passkeys, Windows 11 25H2, multi factor authentication, two factor authentication, phishing resistance, device bound passkey, portable passkey, Microsoft Password Manager, Microsoft edge, third party password manager, 1password, BitWarden, Windows Hello, </itunes:keywords>
+			<description><![CDATA[
+<p>Curious about the reality behind Microsoft's passkey promise? Find out how Windows 11's latest update makes your logins both safer and simpler across all your devices, and why Paul Thurrott thinks you shouldn't rely on the default options.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Curious about the reality behind Microsoft's passkey promise? Find out how Windows 11's latest update makes your logins both safer and simpler across all your devices, and why Paul Thurrott thinks you shouldn't rely on the default options.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Curious about the reality behind Microsoft's passkey promise? Find out how Windows 11's latest update makes your logins both safer and simpler across all your devices, and why Paul Thurrott thinks you shouldn't rely on the default options.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860033/hero/HOW0175_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0175/howin0175_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>18:20</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0175/howin0175_h264m_1920x1080.mp4" length="312211951" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0175/howin0175_h264m_1920x1080.mp4" fileSize="312211951" type="video/mp4" medium="video">
+				<media:title type="plain">HOW 175: Passkeys in 25h2 - Moving Beyond Passwords</media:title>
+				<media:description type="plain">Moving Beyond Passwords</media:description>
+				<media:keywords>passkeys, Windows 11 25H2, multi factor authentication, two factor authentication, phishing resistance, device bound passkey, portable passkey, Microsoft Password Manager, Microsoft edge, third party password manager, 1password, BitWarden, Windows Hello, </media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860033/hero/HOW0175_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Paul Thurrott</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
+		</item>
+		<item>
+			<title>HOW 174: 2026 Security Checkup - Master Your Microsoft Account Security</title>
+			<itunes:title>2026 Security Checkup - Master Your Microsoft Account Security</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 29 Jan 2026 15:00:48 PST</pubDate>
+			<itunes:episode>174</itunes:episode>
+			<podcast:episode>174</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-windows/episodes/174</link>
+			<comments>https://twit.tv/shows/hands-on-windows/episodes/174</comments>
+			<category>Help &amp; How To</category>
+			<category>Windows</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Master Your Microsoft Account Security</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/how-secure-your-microsoft-account-and-windows-11-step-step-guide" type="text/html" />
+			<itunes:keywords>Windows 11 security checkup, Microsoft account security, two-factor authentication, multi-factor authentication, authenticator apps, Microsoft Authenticator, google authenticator, proton authenticator, passkeys, passwordless sign-in, password manager</itunes:keywords>
+			<description><![CDATA[
+<p>Ready to purge old passwords and shore up your Microsoft account? Paul Thurrott breaks down the tactics hackers hope you'll ignore—and the must-have steps to keep your digital life safe this year.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Ready to purge old passwords and shore up your Microsoft account? Paul Thurrott breaks down the tactics hackers hope you'll ignore—and the must-have steps to keep your digital life safe this year.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Ready to purge old passwords and shore up your Microsoft account? Paul Thurrott breaks down the tactics hackers hope you'll ignore—and the must-have steps to keep your digital life safe this year.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859933/hero/HOW0174_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0174/howin0174_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>15:53</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0174/howin0174_h264m_1920x1080.mp4" length="244213621" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0174/howin0174_h264m_1920x1080.mp4" fileSize="244213621" type="video/mp4" medium="video">
+				<media:title type="plain">HOW 174: 2026 Security Checkup - Master Your Microsoft Account Security</media:title>
+				<media:description type="plain">Master Your Microsoft Account Security</media:description>
+				<media:keywords>Windows 11 security checkup, Microsoft account security, two-factor authentication, multi-factor authentication, authenticator apps, Microsoft Authenticator, google authenticator, proton authenticator, passkeys, passwordless sign-in, password manager</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859933/hero/HOW0174_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Paul Thurrott</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
+		</item>
+		<item>
+			<title>HOW 173: Keyboard Shortcuts in 2026 - Hotkeys Power Users Swear By Every Day</title>
+			<itunes:title>Keyboard Shortcuts in 2026 - Hotkeys Power Users Swear By Every Day</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 22 Jan 2026 10:00:00 PST</pubDate>
+			<itunes:episode>173</itunes:episode>
+			<podcast:episode>173</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-windows/episodes/173</link>
+			<comments>https://twit.tv/shows/hands-on-windows/episodes/173</comments>
+			<category>Help &amp; How To</category>
+			<category>Windows</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Hotkeys Power Users Swear By Every Day</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/hands-windows-173-transcript" type="text/html" />
+			<itunes:keywords>microsoft windows, windows 11, windows11, w11, Windows tips, Windows tricks, Windows shortcuts, Paul Thurrott, Windows how-to, Windows macros</itunes:keywords>
+			<description><![CDATA[
+<p>Think you know Windows shortcuts? Paul digs up the most efficient keys almost nobody uses, uncovering tricks Microsoft added—and quietly changed—since your last settings update.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Think you know Windows shortcuts? Paul digs up the most efficient keys almost nobody uses, uncovering tricks Microsoft added—and quietly changed—since your last settings update.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Think you know Windows shortcuts? Paul digs up the most efficient keys almost nobody uses, uncovering tricks Microsoft added—and quietly changed—since your last settings update.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859848/hero/HOW0173_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0173/howin0173_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>25:41</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0173/howin0173_h264m_1920x1080.mp4" length="437230780" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0173/howin0173_h264m_1920x1080.mp4" fileSize="437230780" type="video/mp4" medium="video">
+				<media:title type="plain">HOW 173: Keyboard Shortcuts in 2026 - Hotkeys Power Users Swear By Every Day</media:title>
+				<media:description type="plain">Hotkeys Power Users Swear By Every Day</media:description>
+				<media:keywords>microsoft windows, windows 11, windows11, w11, Windows tips, Windows tricks, Windows shortcuts, Paul Thurrott, Windows how-to, Windows macros</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859848/hero/HOW0173_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Paul Thurrott</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
+		</item>
+		<item>
+			<title>HOW 172: Native Apps to Keep or Delete - Which Windows 11 Apps Deserve a Spot on Your PC</title>
+			<itunes:title>Native Apps to Keep or Delete - Which Windows 11 Apps Deserve a Spot on Your PC</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 15 Jan 2026 14:23:12 PST</pubDate>
+			<itunes:episode>172</itunes:episode>
+			<podcast:episode>172</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-windows/episodes/172</link>
+			<comments>https://twit.tv/shows/hands-on-windows/episodes/172</comments>
+			<category>Help &amp; How To</category>
+			<category>Windows</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Which Windows 11 Apps Deserve a Spot on Your PC</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/hands-windows-172-transcript" type="text/html" />
+			<itunes:keywords>Windows 11 built-in apps, best Windows 11 apps, Windows 11 bloatware, removing Windows apps, essential Windows utilities, windows 11 notepad, Clipchamp video editor, microsoft store, winget package manager, Microsoft Edge alternatives, Xbox app Windows</itunes:keywords>
+			<description><![CDATA[
+<p>Is Windows 11 full of apps you never use—or ones you shouldn't ignore? Paul Thurrott sorts the must-haves from the major annoyances, sharing candid takes on which programs he trusts, deletes, or wishes would finally disappear.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://canary.tools/twit" target="_blank" rel="sponsored">canary.tools/twit - use code: TWIT</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Is Windows 11 full of apps you never use—or ones you shouldn't ignore? Paul Thurrott sorts the must-haves from the major annoyances, sharing candid takes on which programs he trusts, deletes, or wishes would finally disappear.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://canary.tools/twit" target="_blank" rel="sponsored">canary.tools/twit - use code: TWIT</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Is Windows 11 full of apps you never use—or ones you shouldn't ignore? Paul Thurrott sorts the must-haves from the major annoyances, sharing candid takes on which programs he trusts, deletes, or wishes would finally disappear.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://canary.tools/twit" target="_blank" rel="sponsored">canary.tools/twit - use code: TWIT</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859747/hero/HOW0172_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0172/howin0172_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>18:01</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0172/howin0172_h264m_1920x1080.mp4" length="306875064" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0172/howin0172_h264m_1920x1080.mp4" fileSize="306875064" type="video/mp4" medium="video">
+				<media:title type="plain">HOW 172: Native Apps to Keep or Delete - Which Windows 11 Apps Deserve a Spot on Your PC</media:title>
+				<media:description type="plain">Which Windows 11 Apps Deserve a Spot on Your PC</media:description>
+				<media:keywords>Windows 11 built-in apps, best Windows 11 apps, Windows 11 bloatware, removing Windows apps, essential Windows utilities, windows 11 notepad, Clipchamp video editor, microsoft store, winget package manager, Microsoft Edge alternatives, Xbox app Windows</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859747/hero/HOW0172_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Paul Thurrott</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
+		</item>
+		<item>
+			<title>HOW 171: 5 New Features Coming in 2026 - What's New in Windows 11 for Power Users This Year</title>
+			<itunes:title>5 New Features Coming in 2026 - What's New in Windows 11 for Power Users This Year</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 08 Jan 2026 15:23:31 PST</pubDate>
+			<itunes:episode>171</itunes:episode>
+			<podcast:episode>171</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-windows/episodes/171</link>
+			<comments>https://twit.tv/shows/hands-on-windows/episodes/171</comments>
+			<category>Help &amp; How To</category>
+			<category>Windows</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>What's New in Windows 11 for Power Users This Year</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/hands-windows-171-transcript" type="text/html" />
+			<itunes:keywords>windows 11 features, Drag Tray, Share dialog, dark mode File Explorer, Copilot Plus PC, app actions, widgets, Discover feed, advanced settings, Dev Drive, resilient file system, End Task, Windows Terminal, Sudo, developer mode, mobile device settings</itunes:keywords>
+			<description><![CDATA[
+<p>Windows is gearing up for a transformational year, with smarter Copilot actions, streamlined widgets, and the groundwork for running background AI agents. Discover what these changes could mean for your productivity and privacy.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Windows is gearing up for a transformational year, with smarter Copilot actions, streamlined widgets, and the groundwork for running background AI agents. Discover what these changes could mean for your productivity and privacy.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Windows is gearing up for a transformational year, with smarter Copilot actions, streamlined widgets, and the groundwork for running background AI agents. Discover what these changes could mean for your productivity and privacy.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/01/859668/hero/HOW0171_thumbnail2.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0171/howin0171_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>20:17</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0171/howin0171_h264m_1920x1080.mp4" length="345374843" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0171/howin0171_h264m_1920x1080.mp4" fileSize="345374843" type="video/mp4" medium="video">
+				<media:title type="plain">HOW 171: 5 New Features Coming in 2026 - What's New in Windows 11 for Power Users This Year</media:title>
+				<media:description type="plain">What's New in Windows 11 for Power Users This Year</media:description>
+				<media:keywords>windows 11 features, Drag Tray, Share dialog, dark mode File Explorer, Copilot Plus PC, app actions, widgets, Discover feed, advanced settings, Dev Drive, resilient file system, End Task, Windows Terminal, Sudo, developer mode, mobile device settings</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859668/hero/HOW0171_thumbnail2.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Paul Thurrott</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
+		</item>
+		<item>
+			<title>HOW 170: Best Windows 11 Features of 2025 - What Changed For Power Users This Year?</title>
+			<itunes:title>Best Windows 11 Features of 2025 - What Changed For Power Users This Year?</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 18 Dec 2025 15:43:34 PST</pubDate>
+			<itunes:episode>170</itunes:episode>
+			<podcast:episode>170</podcast:episode>
+			<link>https://twit.tv/shows/hands-on-windows/episodes/170</link>
+			<comments>https://twit.tv/shows/hands-on-windows/episodes/170</comments>
+			<category>Help &amp; How To</category>
+			<category>Windows</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>What Changed For Power Users This Year?</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/top-windows-11-features-2025-explained" type="text/html" />
+			<itunes:keywords>Windows 11 new features, AI PCs, Copilot Plus PCs, semantic search, Snapdragon X ARM, security improvements, Windows Update, quick machine recovery, passkey support, third-party password managers, administrative protection, AI in Settings</itunes:keywords>
+			<description><![CDATA[
+<p>Windows 11 quietly shifted the way we manage apps, protect data, and interact with our devices in 2025. This episode reveals the must-try upgrades tech insiders are buzzing about.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Windows 11 quietly shifted the way we manage apps, protect data, and interact with our devices in 2025. This episode reveals the must-try upgrades tech insiders are buzzing about.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Windows 11 quietly shifted the way we manage apps, protect data, and interact with our devices in 2025. This episode reveals the must-try upgrades tech insiders are buzzing about.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2025/12/859446/hero/HOW0170_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0170/howin0170_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>24:48</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0170/howin0170_h264m_1920x1080.mp4" length="422700671" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0170/howin0170_h264m_1920x1080.mp4" fileSize="422700671" type="video/mp4" medium="video">
+				<media:title type="plain">HOW 170: Best Windows 11 Features of 2025 - What Changed For Power Users This Year?</media:title>
+				<media:description type="plain">What Changed For Power Users This Year?</media:description>
+				<media:keywords>Windows 11 new features, AI PCs, Copilot Plus PCs, semantic search, Snapdragon X ARM, security improvements, Windows Update, quick machine recovery, passkey support, third-party password managers, administrative protection, AI in Settings</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2025/12/859446/hero/HOW0170_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Paul Thurrott</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
+		</item>
+	</channel>
+</rss>
