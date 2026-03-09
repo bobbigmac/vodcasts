@@ -16,12 +16,12 @@ export async function loadChaptersForEpisode({ env, episode, fetchText }) {
 
     // Also try the shared chapters cache folder:
     //   assets/transcripts/<feed>/<episode>.vtt -> assets/chapters/<feed>/<episode>.chapters.json
-    const m = url.match(/^(.*?)(assets\\/transcripts\\/)([^/]+)\\/([^/]+)$/i);
+    const m = url.match(/^(.*?)(assets\/transcripts\/)([^/]+)\/([^/]+)$/i);
     if (m) {
       const prefix = m[1] || "";
       const feed = m[3] || "";
       const file = m[4] || "";
-      const base = file.replace(/\\.(vtt|srt)$/i, "");
+      const base = file.replace(/\.(vtt|srt)$/i, "");
       if (feed && base) out.unshift(`${prefix}assets/chapters/${feed}/${base}.chapters.json`);
     }
 
