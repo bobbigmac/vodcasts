@@ -13,3 +13,4 @@ scripts/audio-to-transcripts/.venv/
 .vodcasts-env
 tmp/
 podcast-transcripts/
+podcastindex-feeds/
