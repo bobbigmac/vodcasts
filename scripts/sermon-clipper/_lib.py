@@ -1,8 +1,10 @@
 """Shared utilities for sermon-clipper scripts."""
 from __future__ import annotations
 
+import hashlib
 import json
 import os
+import re
 import sys
 from pathlib import Path
 
@@ -13,6 +15,56 @@ if str(_REPO_ROOT) not in sys.path:
 
 from scripts.feed_manifest import parse_feed_for_manifest
 from scripts.sources import load_sources_config
+
+
+def _slugify_query(q: str) -> str:
+    """Safe filename from query string."""
+    s = re.sub(r"[^a-z0-9]+", "-", (q or "").lower().strip()).strip("-")
+    return s[:64] if s else "query"
+
+
+def search_segments_cached(
+    cache_dir: Path,
+    db_path: Path,
+    q: str,
+    limit: int = 400,
+    candidates: int = 400,
+    include_noncontent: bool = False,
+    no_cache: bool = False,
+):
+    """Call search_segments, caching the raw payload by theme to avoid repeated queries."""
+    from answer_engine_lib import search_segments
+
+    key = hashlib.sha256(
+        f"{q}|{limit}|{candidates}|{include_noncontent}".encode("utf-8")
+    ).hexdigest()[:16]
+    slug = _slugify_query(q)
+    cache_subdir = cache_dir / "sermon-clipper" / "query-cache"
+    cache_path = cache_subdir / f"{slug}-{key}.json"
+
+    if not no_cache and cache_path.exists():
+        try:
+            data = json.loads(cache_path.read_text(encoding="utf-8"))
+            return data
+        except Exception:
+            pass
+
+    payload = search_segments(
+        db_path=db_path,
+        q=q,
+        limit=limit,
+        candidates=candidates,
+        include_noncontent=include_noncontent,
+    )
+
+    if not payload.get("error"):
+        cache_subdir.mkdir(parents=True, exist_ok=True)
+        try:
+            cache_path.write_text(json.dumps(payload, ensure_ascii=False, indent=0), encoding="utf-8")
+        except Exception:
+            pass
+
+    return payload
 
 
 def default_env() -> str:
@@ -29,6 +81,17 @@ def default_cache_dir(env: str | None = None) -> Path:
     return _REPO_ROOT / "cache" / (env or default_env())
 
 
+def default_content_cache_dir(env: str | None = None) -> Path:
+    """Project-local shared cache for downloaded source videos. Clear occasionally in production."""
+    return default_cache_dir(env) / "sermon-clipper" / "content"
+
+
+def get_source_path(content_cache: Path, feed: str, episode_slug: str) -> Path:
+    """Path for cached source video. Episode slug sanitized for filesystem."""
+    safe = re.sub(r"[^\w\-.]", "_", (episode_slug or "").strip())[:120]
+    return content_cache / f"{feed}_{safe}.mp4"
+
+
 def default_db_path(cache_dir: Path) -> Path:
     return cache_dir / "answer-engine" / "answer_engine.sqlite"
 
@@ -39,6 +102,12 @@ def default_transcripts_root() -> Path:
 
 def get_episode_media_url(cache_dir: Path, feed_slug: str, episode_slug: str) -> str | None:
     """Resolve media URL for feed/episode from cached feed XML."""
+    info = get_episode_media_info(cache_dir, feed_slug, episode_slug)
+    return info.get("url") if info else None
+
+
+def get_episode_media_info(cache_dir: Path, feed_slug: str, episode_slug: str) -> dict | None:
+    """Resolve media URL and video flag from cached feed XML. Use pickedIsVideo to skip audio-only."""
     feed_path = cache_dir / "feeds" / f"{feed_slug}.xml"
     if not feed_path.exists():
         return None
@@ -55,7 +124,10 @@ def get_episode_media_url(cache_dir: Path, feed_slug: str, episode_slug: str) ->
                 continue
             media = ep.get("media")
             if isinstance(media, dict) and media.get("url"):
-                return str(media["url"]).strip()
+                return {
+                    "url": str(media["url"]).strip(),
+                    "pickedIsVideo": bool(media.get("pickedIsVideo")),
+                }
             return None
     except Exception:
         pass

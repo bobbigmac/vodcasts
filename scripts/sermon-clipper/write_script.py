@@ -12,8 +12,7 @@ for p in (_REPO_ROOT, _AE_ROOT, Path(__file__).resolve().parent):
     if str(p) not in sys.path:
         sys.path.insert(0, str(p))
 
-from _lib import clip_id, default_env, get_feed_title, load_clips_json, load_used_clips
-from answer_engine_lib import search_segments
+from _lib import clip_id, default_env, get_feed_title, load_clips_json, load_used_clips, search_segments_cached
 
 
 def _parse_args() -> argparse.Namespace:
@@ -28,6 +27,7 @@ def _parse_args() -> argparse.Namespace:
     p.add_argument("--outro", default="", help="Outro text (or use default).")
     p.add_argument("--target-minutes", type=int, default=15, help="Target video length in minutes (default: 15).")
     p.add_argument("--exclude-used", default="", help="Path to used-clips.json to exclude (when running search internally).")
+    p.add_argument("--no-cache", action="store_true", help="Bypass query cache when running search internally.")
     return p.parse_args()
 
 
@@ -73,12 +73,14 @@ def main() -> None:
             print(f"[write_script] DB not found. Run: ae.sh analyze && ae.sh index", file=sys.stderr)
             sys.exit(1)
         used_ids = load_used_clips(Path(args.exclude_used)) if args.exclude_used else set()
-        payload = search_segments(
+        payload = search_segments_cached(
+            cache_dir=cache_dir,
             db_path=db_path,
             q=args.theme,
             limit=400,
             candidates=400,
             include_noncontent=False,
+            no_cache=bool(args.no_cache),
         )
         if payload.get("error"):
             print(f"[write_script] {payload['error']}", file=sys.stderr)

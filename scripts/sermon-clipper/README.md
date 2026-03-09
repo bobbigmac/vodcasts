@@ -9,6 +9,20 @@ Generate YouTube-style video essays from church feed content: search the transcr
 3. **make_title_cards** — Generate title card images for intro/outro and commentary sections.
 4. **render_video** — Download source videos, extract clips by timestamp, concatenate with title cards.
 
+## Requirements (design notes)
+
+- **Query cache** — Answer-engine queries cost money. Cache responses by theme so the same video/root-query reuses cached results instead of rerunning analyze/query. Use `--no-cache` to bypass.
+- **Content cache** — Don't duplicate source videos. Use a shared project-local content cache that can be cleared later. During dev the retrieval set is small; project-local is fine. In production, clean up occasionally.
+- **Audio and subtitles** — Final videos must have sound and subtitles. Clip audio must not be lost along the way.
+
+## Query cache
+
+Search results are cached at `cache/<env>/sermon-clipper/query-cache/` by theme. Re-running the same theme reuses the cache instead of querying again. Use `--no-cache` to force a fresh search.
+
+## Content cache
+
+Source videos are stored in a shared project-local cache at `cache/<env>/sermon-clipper/content/`. No duplication across outputs; clear the folder occasionally in production. Override with `--content-cache`.
+
 ## Rules
 
 - **One clip per feed** — no repeated sources in a single video

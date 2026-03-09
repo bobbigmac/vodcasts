@@ -5,7 +5,6 @@ import argparse
 import re
 import subprocess
 import sys
-import tempfile
 from pathlib import Path
 
 _REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -15,10 +14,12 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from _lib import (
     clip_id,
     clip_transcript_to_vtt,
+    default_content_cache_dir,
     default_env,
     default_transcripts_root,
-    get_episode_media_url,
+    get_episode_media_info,
     get_feed_title,
+    get_source_path,
     get_transcript_path,
     save_used_clips,
 )
@@ -30,14 +31,16 @@ def _parse_args() -> argparse.Namespace:
     p.add_argument("--output", "-o", required=True, help="Output video path.")
     p.add_argument("--title-cards", default="", help="Directory with title card images (from make_title_cards).")
     p.add_argument("--env", default="", help="Cache env.")
-    p.add_argument("--work-dir", default="", help="Working directory for downloads (default: temp).")
+    p.add_argument("--work-dir", default="", help="Working directory for clips/cards (default: <output_dir>/work).")
+    p.add_argument("--content-cache", default="", help="Shared source video cache (default: cache/<env>/sermon-clipper/content).")
     p.add_argument("--card-duration", type=float, default=4.0, help="Seconds per title card (default: 4).")
-    p.add_argument("--no-download", action="store_true", help="Skip download; assume sources already in work-dir.")
+    p.add_argument("--no-download", action="store_true", help="Skip download; use existing sources in work-dir (for re-renders).")
     p.add_argument("--trim-silence", action="store_true", help="Trim leading/trailing silence from clips (ffmpeg silenceremove).")
     p.add_argument("--transition-duration", type=float, default=3.0, help="Seconds per transition card (default: 3).")
     p.add_argument("--register", default="", help="Path to used-clips.json to register clips after render.")
     p.add_argument("--transcripts", default="", help="Transcripts root (default: site/assets/transcripts).")
     p.add_argument("--no-subs", action="store_true", help="Skip embedding subtitles from transcripts.")
+    p.add_argument("--no-overlay", action="store_true", help="Skip source overlay on clips (use if drawtext fails on your system).")
     return p.parse_args()
 
 
@@ -138,9 +141,25 @@ def _download_url(url: str, out_path: Path) -> bool:
         return False
 
 
+def _source_has_audio(path: Path) -> bool:
+    """Probe media file for audio stream. Concat requires all segments to have audio."""
+    try:
+        r = subprocess.run(
+            ["ffprobe", "-v", "error", "-select_streams", "a:0", "-show_entries", "stream=codec_type", "-of", "csv=p=0", str(path)],
+            capture_output=True,
+            timeout=10,
+        )
+        return r.returncode == 0 and b"audio" in (r.stdout or b"")
+    except Exception:
+        return False
+
+
 def _escape_drawtext(s: str) -> str:
-    """Escape special chars for ffmpeg drawtext."""
-    return (s or "").replace("\\", "\\\\").replace("'", "\\'").replace(":", "\\:")
+    """Escape special chars for ffmpeg drawtext. Use ASCII to avoid encoding issues."""
+    s = (s or "").replace("\\", "\\\\").replace("'", "\\'").replace(":", "\\:")
+    # Replace Unicode chars that can break drawtext
+    s = s.replace("\u2014", "-").replace("\u2013", "-").replace("\u2018", "'").replace("\u2019", "'")
+    return s.encode("ascii", "replace").decode("ascii")
 
 
 # Output format: 1080p30, yuv420p, AAC — ensures concat demuxer works correctly
@@ -163,6 +182,7 @@ def _ffmpeg_extract_clip(
     trim_silence: bool = False,
     overlay_text: str | None = None,
     subtitles_path: Path | None = None,
+    has_audio: bool = True,
 ) -> bool:
     """Extract segment with ffmpeg. Always re-encode to _OUT_Wx_OUT_H, _OUT_FPS for concat compatibility."""
     dur = end - start
@@ -175,23 +195,61 @@ def _ffmpeg_extract_clip(
     # Normalize to fixed format so concat produces correct duration (avoids 4x etc from frame rate/timebase mismatch)
     vf_parts = [f"scale={_OUT_W}:{_OUT_H}:force_original_aspect_ratio=decrease,pad={_OUT_W}:{_OUT_H}:(ow-iw)/2:(oh-ih)/2,fps={_OUT_FPS}"]
     if overlay_text:
+        # Windows: fontconfig often fails; use explicit fontfile. Escape colon: C: -> C\:
+        font_candidates = [
+            Path("C:/Windows/Fonts/arial.ttf"),
+            Path("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"),
+        ]
+        fontfile = next((str(p) for p in font_candidates if p.exists()), "")
+        font_esc = fontfile.replace(":", "\\:") if fontfile else ""
+        font_opt = f":fontfile='{font_esc}'" if font_esc else ""
         vf_parts.append(
-            f"drawtext=text='{_escape_drawtext(overlay_text)}':fontsize=28:fontcolor=white:"
+            f"drawtext=text='{_escape_drawtext(overlay_text)}':fontsize=28:fontcolor=white{font_opt}:"
             "x=(w-text_w)-30:y=h-50:shadowcolor=black:shadowx=2:shadowy=2"
         )
     if subtitles_path and subtitles_path.exists():
         sub_esc = _ffmpeg_subtitles_path(subtitles_path)
         vf_parts.append(f"subtitles=filename='{sub_esc}':force_style='FontSize=24,PrimaryColour=&HFFFFFF&,OutlineColour=&H000000&,Outline=2'")
+    af = []
     if trim_silence:
-        cmd.extend([
-            "-af", "silenceremove=start_periods=1:start_duration=0.5:start_threshold=-50dB:detection=peak,silenceremove=stop_periods=1:stop_duration=0.5:stop_threshold=-50dB:detection=peak",
-        ])
-    cmd.extend(["-vf", ",".join(vf_parts), "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", str(_OUT_FPS)])
-    cmd.extend(["-c:a", "aac", "-ar", "48000", "-ac", "1"])
+        af.append("silenceremove=start_periods=1:start_duration=0.5:start_threshold=-50dB:detection=peak,silenceremove=stop_periods=1:stop_duration=0.5:stop_threshold=-50dB:detection=peak")
+    if not has_audio:
+        cmd.extend(["-f", "lavfi", "-i", "anullsrc=r=48000:cl=mono"])
+    cmd.extend(["-vf", ",".join(vf_parts), "-c:v", "libx264", "-preset", "fast", "-pix_fmt", "yuv420p", "-r", str(_OUT_FPS)])
+    if has_audio:
+        if af:
+            cmd.extend(["-af", ",".join(af)])
+        cmd.extend(["-c:a", "aac", "-ar", "48000", "-ac", "1"])
+    else:
+        cmd.extend(["-map", "0:v", "-map", "1:a", "-c:a", "aac", "-ar", "48000", "-ac", "1", "-shortest"])
     cmd.extend(["-f", "mp4", "-movflags", "+faststart", str(out)])
     try:
-        subprocess.run(cmd, capture_output=True, check=True, timeout=120)
+        # 90s max: clip encode should complete in ~1–2x realtime; fail fast if stuck
+        subprocess.run(cmd, capture_output=True, check=True, timeout=90)
         return True
+    except subprocess.CalledProcessError:
+        if has_audio:
+            # Fallback: source audio may have failed, use anullsrc
+            cmd_alt = [
+                "ffmpeg", "-y",
+                "-ss", str(start),
+                "-i", str(src),
+                "-f", "lavfi", "-i", "anullsrc=r=48000:cl=mono",
+                "-t", str(dur),
+                "-vf", ",".join(vf_parts),
+                "-map", "0:v", "-map", "1:a",
+                "-c:v", "libx264", "-preset", "fast", "-pix_fmt", "yuv420p", "-r", str(_OUT_FPS),
+                "-c:a", "aac", "-ar", "48000", "-ac", "1",
+                "-shortest",
+                "-f", "mp4", "-movflags", "+faststart", str(out),
+            ]
+            try:
+                subprocess.run(cmd_alt, capture_output=True, check=True, timeout=90)
+                return True
+            except Exception as e:
+                print(f"[render] ffmpeg extract failed: {e}", file=sys.stderr)
+                return False
+        raise
     except Exception as e:
         print(f"[render] ffmpeg extract failed: {e}", file=sys.stderr)
         return False
@@ -220,7 +278,8 @@ def _ffmpeg_image_to_video(img: Path, duration: float, out: Path, width: int = 1
         str(out),
     ]
     try:
-        subprocess.run(cmd, capture_output=True, check=True, timeout=30)
+        # 15s max: image→video is trivial; fail fast if hung
+        subprocess.run(cmd, capture_output=True, check=True, timeout=15)
         return True
     except Exception as e:
         print(f"[render] ffmpeg image-to-video failed: {e}", file=sys.stderr)
@@ -242,7 +301,7 @@ def _ffmpeg_concat(files: list[Path], out: Path) -> bool:
         str(out),
     ]
     try:
-        subprocess.run(cmd, capture_output=True, check=True, timeout=300)
+        subprocess.run(cmd, capture_output=True, check=True, timeout=60)
         return True
     except Exception as e:
         print(f"[render] ffmpeg concat failed: {e}", file=sys.stderr)
@@ -258,8 +317,11 @@ def main() -> None:
 
     env = (args.env or "").strip() or default_env()
     cache_dir = _REPO_ROOT / "cache" / env
+    content_cache = Path(args.content_cache).resolve() if args.content_cache else default_content_cache_dir(env)
+    content_cache.mkdir(parents=True, exist_ok=True)
     transcripts_root = Path(args.transcripts).resolve() if args.transcripts else default_transcripts_root()
-    work_dir = Path(args.work_dir) if args.work_dir else Path(tempfile.mkdtemp(prefix="sermon-clipper-"))
+    out_path = Path(args.output)
+    work_dir = Path(args.work_dir) if args.work_dir else (out_path.parent / "work")
     work_dir.mkdir(parents=True, exist_ok=True)
     title_cards_dir = Path(args.title_cards) if args.title_cards else script_path.parent / "title-cards"
     embed_subs = not bool(args.no_subs)
@@ -292,32 +354,41 @@ def main() -> None:
             episode_title = item.get("episode_title") or ""
             overlay = feed_title
             if episode_title:
-                overlay = f"{feed_title} — {episode_title}" if feed_title else episode_title
+                overlay = f"{feed_title} - {episode_title}" if feed_title else episode_title
             if not feed or not episode:
                 continue
-            media_url = get_episode_media_url(cache_dir, feed, episode)
-            if not media_url:
+            media_info = get_episode_media_info(cache_dir, feed, episode)
+            if not media_info or not media_info.get("url"):
                 print(f"[render] No media URL for {feed}/{episode}", file=sys.stderr)
                 continue
-            src_path = work_dir / "sources" / f"{feed}_{episode}.mp4"
-            if not args.no_download and not src_path.exists():
+            if not media_info.get("pickedIsVideo"):
+                print(f"[render] Skipping {feed}/{episode}: audio-only enclosure (video required)", file=sys.stderr)
+                continue
+            media_url = media_info["url"]
+            src_path = get_source_path(content_cache, feed, episode)
+            if not src_path.exists():
+                if args.no_download:
+                    continue
                 if not _download_url(media_url, src_path):
                     continue
             clip_path = work_dir / f"clip_{i}.mp4"
+            use_overlay = not bool(args.no_overlay)
             subs_path: Path | None = None
             if embed_subs:
                 transcript_path = get_transcript_path(transcripts_root, feed, episode)
                 if transcript_path:
                     subs_path = work_dir / f"clip_{i}_subs.vtt"
-                    if clip_transcript_to_vtt(transcript_path, start, end, subs_path):
-                        pass  # subs_path is set
-                    else:
+                    if not clip_transcript_to_vtt(transcript_path, start, end, subs_path):
                         subs_path = None
+                else:
+                    print(f"[render] No transcript for {feed}/{episode} (checked {transcripts_root / feed})", file=sys.stderr)
+            has_audio = _source_has_audio(src_path)
             if _ffmpeg_extract_clip(
                 src_path, start, end, clip_path,
                 trim_silence=bool(args.trim_silence),
-                overlay_text=overlay[:80] if overlay else None,
+                overlay_text=overlay[:80] if (overlay and use_overlay) else None,
                 subtitles_path=subs_path,
+                has_audio=has_audio,
             ):
                 clip_files.append(clip_path)
                 rendered_clip_ids.append(clip_id(feed, episode, start))
@@ -326,7 +397,6 @@ def main() -> None:
         print("[render] No clips to concatenate", file=sys.stderr)
         sys.exit(3)
 
-    out_path = Path(args.output)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     if _ffmpeg_concat(clip_files, out_path):
         print(f"[render] wrote {out_path}", file=sys.stderr)

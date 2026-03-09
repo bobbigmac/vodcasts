@@ -87,12 +87,16 @@ text: [Closing thought or call to action]
 4. **render_video** — Download, extract clips, add source overlays, concatenate
 5. **Register clips** — Append to `used-clips.json` so future videos don’t reuse them
 
+## Shorts experiment
+
+See `shorts-experiment/AGENTS.md` for vertical shorts. TODO: OpenCV face smart-crop for variable layouts (see shorts AGENTS.md). (2–4 clips, 10–25s each, split-screen layout). Same index, tuned for quick iteration.
+
 ## Files
 
 - `search_clips.py` — Query index, one-per-feed, duration rules, exclude-used
 - `write_script.py` — Skeleton from clips; LLM enriches intro/transitions/outro
 - `make_title_cards.py` — PNG title cards from script
-- `render_video.py` — ffmpeg: download, extract, overlay source (feed + episode title), concat
+- `render_video.py` — ffmpeg: download to shared content cache, extract, overlay source (feed + episode title), concat
 - `_lib.py` — clip_id, used-clips registry, get_feed_title
 
 ## Example workflow

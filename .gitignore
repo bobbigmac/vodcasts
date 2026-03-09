@@ -2,7 +2,10 @@ node_modules/
 dist/
 dist-news/
 dist-bonus/
+out/
 cache/
+*.mp4
+*.mp3
 cache.*
 .env
 .env.*
