@@ -234,12 +234,28 @@ class WhisperXService:
         vtt_buf = io.StringIO()
         srt_writer.write_result(result, srt_buf, writer_opts)
         vtt_writer.write_result(result, vtt_buf, writer_opts)
+        srt_text = srt_buf.getvalue()
+        vtt_text = vtt_buf.getvalue()
+        if not (srt_text.strip() or vtt_text.strip()):
+            segments = result.get("segments") or []
+            audio_sz = audio_path.stat().st_size if audio_path.exists() else 0
+            diag = (
+                f"WHISPERX_EMPTY_DIAG: audio_path={audio_path} audio_bytes={audio_sz} "
+                f"segments_count={len(segments)} language={result.get('language')} "
+                f"result_keys={list(result.keys())}"
+            )
+            if segments:
+                diag += f" first_segment={segments[0]!r}"
+            else:
+                diag += " (segments empty - check VAD/chunk_size or model output)"
+            print(f"[whisperx-worker] {diag}", flush=True)
+            raise ValueError(f"whisperx produced empty transcript - {diag}")
         return {
             "ok": True,
             "language": result.get("language") or language,
             "segments": len(result.get("segments") or []),
-            "srt_text": srt_buf.getvalue(),
-            "vtt_text": vtt_buf.getvalue(),
+            "srt_text": srt_text,
+            "vtt_text": vtt_text,
         }
 
 

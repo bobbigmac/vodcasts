@@ -592,7 +592,7 @@ class PodcastIndexMiner:
         completed = 0
         transcript_feeds = 0
         transcript_files = 0
-        max_inflight = self.workers * 4
+        max_inflight = self.workers
         inflight: set[concurrent.futures.Future[FeedOutcome]] = set()
         candidates = self.iter_candidates()
 
@@ -644,7 +644,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--db-path", default=str(DEFAULT_DB_PATH), help="Path to the local PodcastIndex SQLite database.")
     parser.add_argument("--out-dir", default=str(DEFAULT_OUT_DIR), help="Transcript output root.")
     parser.add_argument("--state-db", default=str(DEFAULT_STATE_DB), help="Path to miner state SQLite DB.")
-    parser.add_argument("--workers", type=int, default=64, help="Global worker pool size.")
+    parser.add_argument("--workers", type=int, default=24, help="Global worker pool size.")
     parser.add_argument("--per-host", type=int, default=2, help="Max concurrent HTTP requests per host.")
     parser.add_argument("--limit-feeds", type=int, default=0, help="Limit number of candidate feeds scanned (0 = no limit).")
     parser.add_argument("--min-popularity", type=int, default=0, help="Minimum popularityScore from the PodcastIndex DB.")

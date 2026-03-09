@@ -367,6 +367,7 @@ def _move_failed_to_review(
     spot_mp3_path: Path | None,
     *,
     execute: bool,
+    cache_feed_dir: Path | None = None,
 ) -> None:
     """Move failed VTT and spot MP3 to review-transcripts/feed_id/ for manual inspection."""
     if not execute:
@@ -374,13 +375,19 @@ def _move_failed_to_review(
     review_feed = _REVIEW_TRANSCRIPTS_DIR / feed_id
     review_feed.mkdir(parents=True, exist_ok=True)
     vtt_dest = review_feed / f"{ep_slug}.vtt"
-    if vtt_text:
-        vtt_dest.write_text(vtt_text, encoding="utf-8")
-        print(f"[review] {feed_id}/{ep_slug}: vtt -> {vtt_dest.relative_to(VODCASTS_ROOT)}")
+    vtt_dest.write_text(vtt_text or "", encoding="utf-8")
+    print(f"[review] {feed_id}/{ep_slug}: vtt -> {vtt_dest.relative_to(VODCASTS_ROOT)}")
     if spot_mp3_path and spot_mp3_path.exists():
         mp3_dest = review_feed / f"{ep_slug}.spotcheck.mp3"
         shutil.move(str(spot_mp3_path), str(mp3_dest))
         print(f"[review] {feed_id}/{ep_slug}: spotcheck -> {mp3_dest.relative_to(VODCASTS_ROOT)}")
+    if cache_feed_dir and cache_feed_dir.exists():
+        try:
+            if not any(cache_feed_dir.iterdir()):
+                cache_feed_dir.rmdir()
+                print(f"[review] removed empty {cache_feed_dir.relative_to(VODCASTS_ROOT)}")
+        except OSError:
+            pass
 
 
 _SRT_TS_RE = re.compile(r"^\d{2}:\d{2}:\d{2}[,.]\d{3}\s+-->\s+\d{2}:\d{2}:\d{2}[,.]\d{3}")
@@ -775,6 +782,13 @@ def _worker_payload_for_options(
     return payload
 
 
+def _ensure_non_empty_transcript(srt_text: str, vtt_text: str) -> None:
+    """Raise if the effective VTT would be empty (WhisperX produced no speech)."""
+    effective = (vtt_text or "").strip() or (_srt_to_vtt(srt_text or "").strip() if (srt_text or "").strip() else "")
+    if not effective:
+        raise ValueError("whisperx produced empty transcript (no speech detected or VAD filtered all)")
+
+
 def _generate_with_whisperx(
     *,
     media_url: str,
@@ -792,7 +806,7 @@ def _generate_with_whisperx(
     execute: bool,
 ) -> tuple[str, str]:
     """
-    Returns (srt_text, vtt_text).
+    Returns (srt_text, vtt_text). Never returns empty; raises if no speech detected.
     """
     if not execute:
         # dry-run placeholder
@@ -928,6 +942,7 @@ def _generate_with_whisperx(
                 srt_text = str(res.get("srt_text") or "")
                 vtt_text = str(res.get("vtt_text") or "")
                 if srt_text or vtt_text:
+                    _ensure_non_empty_transcript(srt_text, vtt_text)
                     return srt_text, vtt_text
 
         cmd = [
@@ -962,19 +977,34 @@ def _generate_with_whisperx(
         vtt_path = out_dir / f"{base}.vtt"
         if srt_path.exists():
             srt_text = srt_path.read_text(encoding="utf-8", errors="replace")
+            _ensure_non_empty_transcript(srt_text, _srt_to_vtt(srt_text))
             return srt_text, _srt_to_vtt(srt_text)
         if vtt_path.exists():
             vtt_text = vtt_path.read_text(encoding="utf-8", errors="replace")
-            # best-effort: also return an SRT-ish variant
-            return "", vtt_text
+            if vtt_text.strip():
+                _ensure_non_empty_transcript("", vtt_text)
+                return "", vtt_text
 
         # Fallback: take any .srt produced.
         any_srt = next(iter(out_dir.glob("*.srt")), None)
         if any_srt and any_srt.exists():
             srt_text = any_srt.read_text(encoding="utf-8", errors="replace")
+            _ensure_non_empty_transcript(srt_text, _srt_to_vtt(srt_text))
             return srt_text, _srt_to_vtt(srt_text)
 
-        raise ValueError(f"whisperx produced no .srt/.vtt in {out_dir}")
+        # No usable output - log what WhisperX actually produced for diagnosis
+        out_files = [(p.name, p.stat().st_size) for p in out_dir.iterdir() if p.is_file()]
+        wav_sz = wav_path.stat().st_size if wav_path.exists() else 0
+        diag = (
+            f"WHISPERX_EMPTY_DIAG: wav_bytes={wav_sz} out_dir={out_dir} "
+            f"out_files={out_files} srt_path.exists={srt_path.exists()} vtt_path.exists={vtt_path.exists()}"
+        )
+        if srt_path.exists():
+            diag += f" srt_bytes={srt_path.stat().st_size}"
+        if vtt_path.exists():
+            diag += f" vtt_bytes={vtt_path.stat().st_size}"
+        print(f"[whisperx] {diag}", flush=True)
+        raise ValueError(f"whisperx produced no .srt/.vtt in {out_dir} - {diag}")
 
 
 def _process_work_item(
@@ -1008,9 +1038,6 @@ def _process_work_item(
     feed_out = out_dir / item.src.id
     final_vtt = feed_out / f"{ep_slug}.vtt"
     cand = _pick_best_transcript_candidate(ep)
-
-    if execute:
-        feed_out.mkdir(parents=True, exist_ok=True)
 
     chosen = ""
     provided_count = 0
@@ -1084,7 +1111,7 @@ def _process_work_item(
                 vtt_out = vtt_text or (_srt_to_vtt(srt_text) if srt_text else "")
                 vtt_out = _normalize_vtt_timestamp_commas(vtt_out)
                 if not _vtt_seems_complete(vtt_out, min_chars=_EXISTING_VTT_MIN_CHARS, min_words=_EXISTING_VTT_MIN_WORDS):
-                    _move_failed_to_review(item.src.id, ep_slug, vtt_out, spot_mp3, execute=bool(execute))
+                    _move_failed_to_review(item.src.id, ep_slug, vtt_out, spot_mp3, execute=bool(execute), cache_feed_dir=feed_out)
                     _append_sanity_failure(item.src.id, ep_slug, "generated subtitles failed transcript sanity")
                     raise RuntimeError("generated subtitles failed transcript sanity")
                 with _timed("write_vtt"):
@@ -1114,7 +1141,7 @@ def _process_work_item(
             if item.action == "generate":
                 orphan_spot = feed_out / f"{ep_slug}.spotcheck.mp3"
                 if orphan_spot.exists():
-                    _move_failed_to_review(item.src.id, ep_slug, "", orphan_spot, execute=bool(execute))
+                    _move_failed_to_review(item.src.id, ep_slug, "", orphan_spot, execute=bool(execute), cache_feed_dir=feed_out)
 
         if item.action == "download" and bool(generate_missing) and media_url:
             if (item.src.id, ep_slug) in sanity_failures:
@@ -1147,7 +1174,7 @@ def _process_work_item(
                     vtt_out = vtt_text or (_srt_to_vtt(srt_text) if srt_text else "")
                     vtt_out = _normalize_vtt_timestamp_commas(vtt_out)
                     if not _vtt_seems_complete(vtt_out, min_chars=_EXISTING_VTT_MIN_CHARS, min_words=_EXISTING_VTT_MIN_WORDS):
-                        _move_failed_to_review(item.src.id, ep_slug, vtt_out, spot_mp3, execute=bool(execute))
+                        _move_failed_to_review(item.src.id, ep_slug, vtt_out, spot_mp3, execute=bool(execute), cache_feed_dir=feed_out)
                         _append_sanity_failure(item.src.id, ep_slug, "fallback generated subtitles failed transcript sanity")
                         raise RuntimeError("fallback generated subtitles failed transcript sanity")
                     with _timed("write_vtt"):
@@ -1166,7 +1193,7 @@ def _process_work_item(
                     # Move any orphan spotcheck to review-transcripts
                     orphan_spot = feed_out / f"{ep_slug}.spotcheck.mp3"
                     if orphan_spot.exists():
-                        _move_failed_to_review(item.src.id, ep_slug, "", orphan_spot, execute=bool(execute))
+                        _move_failed_to_review(item.src.id, ep_slug, "", orphan_spot, execute=bool(execute), cache_feed_dir=feed_out)
 
     return WorkOutcome(
         src_id=item.src.id,
@@ -1532,6 +1559,18 @@ def main() -> None:
                 progress.stop()
             except Exception:
                 pass
+
+    if bool(args.execute) and out_dir.exists():
+        removed = 0
+        for d in sorted(out_dir.iterdir()):
+            if d.is_dir() and not any(d.iterdir()):
+                try:
+                    d.rmdir()
+                    removed += 1
+                except OSError:
+                    pass
+        if removed:
+            print(f"[cleanup] removed {removed} empty feed dir(s) from {out_dir.relative_to(VODCASTS_ROOT)}")
 
     print(
         "[done] "
