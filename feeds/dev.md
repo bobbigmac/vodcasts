@@ -11,7 +11,7 @@
 - min_hours_between_checks: 0
 - request_timeout_seconds: 25
 - user_agent: actual-plays/vodcasts (+https://github.com/)
-- include: news.md
+- include: news.md, tech.md
 
 # Feeds
 
