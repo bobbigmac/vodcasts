@@ -26,6 +26,7 @@ This folder is intended to be movable as its own project. Keep imports and scrip
 - `dist/video-sources.json` — normalized sources from feeds markdown, with computed `features` and resolved `feed_url`.
 - `dist/shows-config.json` — per-feed “shows” (derived from `feeds/shows/<slug>.json` + feed content) used by Browse UIs.
 - `dist/feed-manifest.json` — compact episode metadata used for client-side preload.
+- `dist/newest.xml` — RSS of 50 most recent episodes; links to site (no enclosures). Base subscription feed. Exclude feeds via `NEWEST_RSS_EXCLUDE_FEEDS` in `build_site.py`.
 - `dist/data/feeds/` — shipped RSS cache used by `video-sources.json` when available.
 - `dist/feed/<slug>/index.html` — per-feed landing pages.
 - `dist/browse/index.html` — browse-all entrypoint (route `/browse/`).

@@ -939,6 +939,78 @@ def main() -> None:
         except Exception:
             pass
 
+    # newest.xml — blog-style RSS of 50 most recent episodes; links to site (no source enclosures).
+    NEWEST_RSS_LIMIT = 50
+    NEWEST_RSS_EXCLUDE_FEEDS: tuple[str, ...] = ()  # Add slugs to exclude from curated newest feed.
+    _log("build newest.xml…")
+    t_newest = time.perf_counter()
+    site_url = (cfg.site.url or os.environ.get("VOD_SITE_URL") or "").strip().rstrip("/")
+    if not site_url:
+        _log("  skip: no site url (set site.url in feeds or VOD_SITE_URL)")
+    else:
+        all_eps: list[tuple[dict[str, Any], str, str]] = []
+        for mf in manifest_feeds:
+            fid = mf["id"]
+            if fid in NEWEST_RSS_EXCLUDE_FEEDS:
+                continue
+            feed_title = mf.get("title") or fid
+            for ep in mf.get("episodes") or []:
+                ep_slug = ep.get("slug") or ep.get("id")
+                if not ep_slug:
+                    continue
+                all_eps.append((ep, fid, feed_title))
+        all_eps.sort(key=lambda x: (x[0].get("dateText") or ""), reverse=True)
+        newest_eps = all_eps[:NEWEST_RSS_LIMIT]
+
+        def _date_to_rfc2822(dt: str) -> str:
+            if not dt or len(dt) < 10:
+                return ""
+            try:
+                from datetime import datetime
+
+                parsed = datetime.strptime(dt[:10], "%Y-%m-%d")
+                return parsed.strftime("%a, %d %b %Y 00:00:00 +0000")
+            except Exception:
+                return dt
+
+        def _escape_xml_newest(s: str) -> str:
+            return (s or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+
+        items_xml = []
+        for ep, fid, feed_title in newest_eps:
+            ep_slug = ep.get("slug") or ep.get("id")
+            link_path = f"{base_path}feed/{fid}/{ep_slug}/"
+            link_url = f"{site_url}{link_path}" if site_url.startswith("http") else f"https://{site_url}{link_path}"
+            title = _escape_xml_newest(str(ep.get("title") or "Untitled"))
+            desc = _escape_xml_newest(str(ep.get("descriptionShort") or "")[:500])
+            pub_date = _date_to_rfc2822(str(ep.get("dateText") or ""))
+            guid = _escape_xml_newest(f"{fid}/{ep_slug}")
+            items_xml.append(f"""  <item>
+    <title>{title}</title>
+    <link>{link_url}</link>
+    <description>{desc}</description>
+    <pubDate>{pub_date}</pubDate>
+    <guid isPermaLink="true">{link_url}</guid>
+  </item>""")
+
+        channel_title = _escape_xml_newest(cfg.site.title or "VODcasts")
+        channel_desc = _escape_xml_newest(cfg.site.description or "Latest video episodes")
+        channel_link = f"{site_url}{base_path}" if site_url.startswith("http") else f"https://{site_url}{base_path}"
+        rss_body = "\n".join(items_xml)
+        newest_rss = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>{channel_title} — Newest</title>
+    <link>{channel_link}</link>
+    <description>{channel_desc}</description>
+    <language>en</language>
+{rss_body}
+  </channel>
+</rss>
+"""
+        (out_dir / "newest.xml").write_text(newest_rss, encoding="utf-8")
+        _log(f"  done ({len(newest_eps)} items, {time.perf_counter() - t_newest:.1f}s)")
+
     # video-sources.json (client consumption). Fill features from manifest parse (single pass).
     _log("build video-sources…")
     t = time.perf_counter()
