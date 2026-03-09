@@ -22,6 +22,22 @@
     </itunes:category>
     <atom:link href="http://podcast.uctv.tv/UCTV_Video_science.rss" rel="self" type="application/rss+xml"/>
     <item>
+      <title>CARTA: Neanderthalizing Brain Organoids with Alysson Muotri</title>
+      <itunes:author>UCTV: UC San Diego</itunes:author>
+      <itunes:subtitle>CARTA - The Idea Organ</itunes:subtitle>
+      <itunes:summary>Humans live in a world of ideas—born in the brain, shared through language, accumulated in culture across generations, and made reality. Professor Alysson Muotri, UC San Diego Departments of Pediatrics and Cellular and Molecular Medicine, examines how human brain evolution reflects the interplay between genetic innovation and environmental pressures, focusing on Neuro-oncological ventral antigen 1 (NOVA1), an evolutionarily conserved splicing regulator essential for neural development with a protein-coding substitution unique to modern humans compared with Neanderthals and Denisovans. By reintroducing the archaic NOVA1 allele into human induced pluripotent stem cells and studying cortical organoids, the work finds accelerated maturation, increased surface complexity, altered synaptic marker expression, and changes in electrophysiological properties. Muotri also analyzes long-term lead exposure using fossilized teeth from multiple hominid species spanning over two million years, revealing pervasive exposure across extinct and extant hominids. Lead exposure selectively disrupted FOXP2 expression in cortical and thalamic organoids carrying the archaic NOVA1 variant, and findings were independently validated in NOVA1 humanized mouse models with altered vocalization. Together, these results suggest gene–environment interactions may have influenced neural circuit development, social behavior, and complex language capacity. Series: "CARTA - Center for Academic Research and Training in Anthropogeny" [Science] [Show ID: 41297]</itunes:summary>
+      <description>Humans live in a world of ideas—born in the brain, shared through language, accumulated in culture across generations, and made reality. Professor Alysson Muotri, UC San Diego Departments of Pediatrics and Cellular and Molecular Medicine, examines how human brain evolution reflects the interplay between genetic innovation and environmental pressures, focusing on Neuro-oncological ventral antigen 1 (NOVA1), an evolutionarily conserved splicing regulator essential for neural development with a protein-coding substitution unique to modern humans compared with Neanderthals and Denisovans. By reintroducing the archaic NOVA1 allele into human induced pluripotent stem cells and studying cortical organoids, the work finds accelerated maturation, increased surface complexity, altered synaptic marker expression, and changes in electrophysiological properties. Muotri also analyzes long-term lead exposure using fossilized teeth from multiple hominid species spanning over two million years, revealing pervasive exposure across extinct and extant hominids. Lead exposure selectively disrupted FOXP2 expression in cortical and thalamic organoids carrying the archaic NOVA1 variant, and findings were independently validated in NOVA1 humanized mouse models with altered vocalization. Together, these results suggest gene–environment interactions may have influenced neural circuit development, social behavior, and complex language capacity. Series: "CARTA - Center for Academic Research and Training in Anthropogeny" [Science] [Show ID: 41297]</description>
+      <category>Science</category>
+      <category>Anthropology and Archaeology</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/41297.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/41297.mp4" length="213307124" type="video/mp4"/>
+      <guid isPermaLink="false">41297carta-neanderthalizing-brain-organoids-with-alysson-muotri</guid>
+      <pubDate>Mon, 2 Mar 2026 13:00:00 PST</pubDate>
+      <itunes:duration>00:22:11</itunes:duration>
+      <itunes:keywords>NOVA1, brain, evoluation,, human, stem cell, organoids, Neanderthals, Denisovans, lead exposure, gene, Alysson Muotri, CARTA, Anthropology and Archaeology, Neuroscience, 41297, </itunes:keywords>
+      <link>https://www.uctv.tv/shows/41297</link>
+    </item>
+    <item>
       <title>Science and Seafood: Understanding and Protecting a Precious Natural Resource</title>
       <itunes:author>UCTV: UC San Diego</itunes:author>
       <itunes:subtitle>Jeffrey B. Graham Perspectives on Ocean Science Lecture Series</itunes:subtitle>
@@ -1668,22 +1684,6 @@ explore academic publishing in stem cell research, focusing on reproducibility, 
       <itunes:duration>01:05:42</itunes:duration>
       <itunes:keywords>disability, autism, deaf, deafness, hearing impairment, blind, blindness, visual impairment, speech impairment, language impairment, traumatic brain injury, developmental delay, orthopedic impairment, dwarfism, cerebral palsy, muscular dystrophy, multip</itunes:keywords>
       <link>https://www.uctv.tv/shows/40241</link>
-    </item>
-    <item>
-      <title>Reaching for the Sky: Materials in Extreme Environments</title>
-      <itunes:author>UCTV: UC Santa Barbara</itunes:author>
-      <itunes:subtitle>GRIT Talks</itunes:subtitle>
-      <itunes:summary>Aircraft, spacecraft and rockets connect people and goods across vast distances, enable global satellite communication, facilitate fundamental scientific discoveries and empower exploration of the solar system and beyond. The operating environments of these advanced systems require materials that can tolerate extremes of temperature, loading and surrounding chemical environment. Designing materials to survive in these environments has traditionally been a slow, expensive process that requires understanding and control down to the atomic level. In this program, Tresa Pollock, the Alcoa Distinguished Professor of Materials at UC, Santa Barbara, discusses new tools and approaches that accelerate this process and aid in materials discovery will be presented. Series: "GRIT Talks" [Science] [Show ID: 40129]</itunes:summary>
-      <description>Aircraft, spacecraft and rockets connect people and goods across vast distances, enable global satellite communication, facilitate fundamental scientific discoveries and empower exploration of the solar system and beyond. The operating environments of these advanced systems require materials that can tolerate extremes of temperature, loading and surrounding chemical environment. Designing materials to survive in these environments has traditionally been a slow, expensive process that requires understanding and control down to the atomic level. In this program, Tresa Pollock, the Alcoa Distinguished Professor of Materials at UC, Santa Barbara, discusses new tools and approaches that accelerate this process and aid in materials discovery will be presented. Series: "GRIT Talks" [Science] [Show ID: 40129]</description>
-      <category>Science</category>
-      <category>Aerospace Science</category>
-      <media:thumbnail url="https://www.uctv.tv/images/widescreen/40129.jpg" height="450" width="800"/>
-      <enclosure url="https://podcast.uctv.tv/vod/40129.mp4" length="379483457" type="video/mp4"/>
-      <guid isPermaLink="false">40129reaching-for-the-sky-materials-in-extreme-environments</guid>
-      <pubDate>Mon, 6 Jan 2025 13:00:00 PST</pubDate>
-      <itunes:duration>00:30:55</itunes:duration>
-      <itunes:keywords>space, travel, exploration, ISS, aircraft, airplane, spacecraft, rocket, satellite, communication, science, discovery, solar system, material, material science, research, design, environment, extreme, heat, temperature, chemical uc santa barbara, Tresa </itunes:keywords>
-      <link>https://www.uctv.tv/shows/40129</link>
     </item>
   </channel>
 </rss>

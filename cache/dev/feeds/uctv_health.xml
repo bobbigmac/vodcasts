@@ -22,6 +22,22 @@
     </itunes:category>
     <atom:link href="http://podcast.uctv.tv/UCTV_Video_health.rss" rel="self" type="application/rss+xml"/>
     <item>
+      <title>Aging Blood Stem Cells and the Roots of Cancer</title>
+      <itunes:author>UCTV: UC San Diego</itunes:author>
+      <itunes:subtitle>Sanford Stem Cell Institute Symposium 2025</itunes:subtitle>
+      <itunes:summary>Aging is the leading risk factor for cancer, Alzheimer’s, diabetes, and heart disease, and Robert A.J. Signer, Ph.D., studies how aging stem cells shape pre-cancer and healthspan. As deputy director of the Sanford Stem Cell Discovery Center, Signer focuses on rare blood-forming stem cells that self-renew, generate all blood and immune cells, and normally sustain more than 35 trillion blood cells, including about 2 million new red blood cells every second. His group finds that these “Zen” stem cells slow protein production to limit damaging “trash,” but aging stresses overwhelm these defenses. Stress response programs such as HSF1 then help both healthy and mutant stem cells, fueling clonal hematopoiesis, a common, untreated pre-cancerous condition linked to cardiovascular disease, inflammation, cancer, and increased mortality. Series: "Stem Cell Channel" [Health and Medicine] [Show ID: 41253]</itunes:summary>
+      <description>Aging is the leading risk factor for cancer, Alzheimer’s, diabetes, and heart disease, and Robert A.J. Signer, Ph.D., studies how aging stem cells shape pre-cancer and healthspan. As deputy director of the Sanford Stem Cell Discovery Center, Signer focuses on rare blood-forming stem cells that self-renew, generate all blood and immune cells, and normally sustain more than 35 trillion blood cells, including about 2 million new red blood cells every second. His group finds that these “Zen” stem cells slow protein production to limit damaging “trash,” but aging stresses overwhelm these defenses. Stress response programs such as HSF1 then help both healthy and mutant stem cells, fueling clonal hematopoiesis, a common, untreated pre-cancerous condition linked to cardiovascular disease, inflammation, cancer, and increased mortality. Series: "Stem Cell Channel" [Health and Medicine] [Show ID: 41253]</description>
+      <category>Health and Medicine</category>
+      <category>Cancer and Oncology</category>
+      <media:thumbnail url="https://www.uctv.tv/images/widescreen/41253.jpg" height="450" width="800"/>
+      <enclosure url="https://podcast.uctv.tv/vod/41253.mp4" length="126464541" type="video/mp4"/>
+      <guid isPermaLink="false">41253aging-blood-stem-cells-and-the-roots-of-cancer</guid>
+      <pubDate>Fri, 6 Mar 2026 13:00:00 PST</pubDate>
+      <itunes:duration>00:10:20</itunes:duration>
+      <itunes:keywords>aging blood stem cells, pre cancer risk, Robert A.J. Signer PhD, UC San Diego stem cell research, clonal hematopoiesis, pre cancerous blood condition, heart disease risk, inflammation and aging, cancer risk in older adults, stem cell stress responses, H</itunes:keywords>
+      <link>https://www.uctv.tv/shows/41253</link>
+    </item>
+    <item>
       <title>Tai Chi for Mind–Body Balance: What an East–West Medicine Doctor Wants You to Know</title>
       <itunes:author>UCTV: UC San Francisco</itunes:author>
       <itunes:subtitle>UCSF Honoring Origins of Mindfulness Series</itunes:subtitle>
@@ -1608,24 +1624,6 @@ Terri Hancharick and Jack Jadach talk about a collaborative approach to enhancin
       <itunes:duration>00:12:52</itunes:duration>
       <itunes:keywords>prostate, cancer, screening, treatment, diagnosis, biomarkers, MRI, PSA, surveillance, disparities, race, Black, men, care, personalized, UCSF, overdiagnosis, overtreatment, primary, healthcare, Cancer and Oncology, Men’s Health, 40796, </itunes:keywords>
       <link>https://www.uctv.tv/shows/40796</link>
-    </item>
-    <item>
-      <title>MotherToBaby</title>
-      <itunes:author>UCTV: UC San Diego</itunes:author>
-      <itunes:subtitle>UC San Diego Women's Health Symposium</itunes:subtitle>
-      <itunes:summary>Gretchen Bandoli, Ph.D., highlights four major research initiatives within her division focused on maternal and child health. The Center for Better Beginnings studies medication and vaccine safety during pregnancy and lactation through ongoing cohort studies. The Mommy’s Milk Human Milk Research Biorepository collects breast milk samples to investigate postnatal exposures. The SOMI study links medical records and geolocated data for over 7 million California births to examine maternal-child health outcomes. Bandoli also leads a site for the Healthy Brain and Child Development Study, a national project following 7,500 mother-child pairs over the first ten years of life with neurodevelopmental assessments and biological sampling. All projects welcome collaboration and emphasize long-term outcomes.
- Series: "Motherhood Channel" [Health and Medicine] [Show ID: 40772]</itunes:summary>
-      <description>Gretchen Bandoli, Ph.D., highlights four major research initiatives within her division focused on maternal and child health. The Center for Better Beginnings studies medication and vaccine safety during pregnancy and lactation through ongoing cohort studies. The Mommy’s Milk Human Milk Research Biorepository collects breast milk samples to investigate postnatal exposures. The SOMI study links medical records and geolocated data for over 7 million California births to examine maternal-child health outcomes. Bandoli also leads a site for the Healthy Brain and Child Development Study, a national project following 7,500 mother-child pairs over the first ten years of life with neurodevelopmental assessments and biological sampling. All projects welcome collaboration and emphasize long-term outcomes.
- Series: "Motherhood Channel" [Health and Medicine] [Show ID: 40772]</description>
-      <category>Health and Medicine</category>
-      <category>Pediatrics / Family Medicine / Child Development</category>
-      <media:thumbnail url="https://www.uctv.tv/images/widescreen/40772.jpg" height="450" width="800"/>
-      <enclosure url="https://podcast.uctv.tv/vod/40772.mp4" length="44950826" type="video/mp4"/>
-      <guid isPermaLink="false">40772mothertobaby</guid>
-      <pubDate>Mon, 14 Jul 2025 13:00:00 PST</pubDate>
-      <itunes:duration>00:04:22</itunes:duration>
-      <itunes:keywords>pregnancy, lactation, breast milk, maternal health, child development, neurodevelopment, birth outcomes, vaccine safety, medication safety, infant growth, neuroimaging, EEG, autism, cerebral palsy, hospital records, cohort study, exposure data, fetal de</itunes:keywords>
-      <link>https://www.uctv.tv/shows/40772</link>
     </item>
     <item>
       <title>Prostate Cancer: The ABCs of Androgen Deprivation Therapy</title>
