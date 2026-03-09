@@ -42,7 +42,7 @@ function Ensure-Venv {
   }
 
   if ($needsCudaTorch) {
-    Write-Host "[answer-engine] installing CUDA torch (cu128) ... (large download)"
+    Write-Host "[chapter-generation] installing CUDA torch (cu128) ... (large download)"
     & $Py -m pip install --index-url $TorchIndex $TorchSpec
   }
 }
@@ -50,46 +50,28 @@ function Ensure-Venv {
 switch ($Cmd) {
   "help" {
     Write-Output @"
-Answer-engine helper.
+Chapter-generation helper.
 
 Usage:
-  powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 analyze [analyze.py args...]
-  powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 index [build_index.py args...]
-  powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 serve-llm [serve_llm.py args...]
-  powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 query [query.py args...]
-  powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 pip [pip args...]
+  powershell -ExecutionPolicy Bypass -File scripts/chapter-generation/cg.ps1 chapters [make_chapters.py args...]
+  powershell -ExecutionPolicy Bypass -File scripts/chapter-generation/cg.ps1 serve-llm [serve_llm.py args...]
+  powershell -ExecutionPolicy Bypass -File scripts/chapter-generation/cg.ps1 pip [pip args...]
 
 Examples:
-  powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 analyze
-  powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 analyze --transcript bridgetown/2026-03-02-the-good-news-about-our-bodies-chronic-illness-disability-10g2du.vtt
-  powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 index
-  powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 serve-llm --warmup
-  powershell -ExecutionPolicy Bypass -File scripts/answer-engine/ae.ps1 query search --q "forgiveness" --limit 10
+  powershell -ExecutionPolicy Bypass -File scripts/chapter-generation/cg.ps1 chapters
+  powershell -ExecutionPolicy Bypass -File scripts/chapter-generation/cg.ps1 chapters --transcript feed/episode.vtt --print
+  powershell -ExecutionPolicy Bypass -File scripts/chapter-generation/cg.ps1 serve-llm --warmup
 "@
     exit 0
   }
-  "analyze" {
-    Ensure-Venv
-    & $Py (Join-Path $Root "analyze.py") @Args
-    exit $LASTEXITCODE
-  }
-  "index" {
-    Ensure-Venv
-    & $Py (Join-Path $Root "build_index.py") @Args
-    exit $LASTEXITCODE
-  }
   "chapters" {
-    Write-Error "The chapters command moved to: powershell -ExecutionPolicy Bypass -File scripts/chapter-generation/cg.ps1 chapters"
-    exit 2
+    Ensure-Venv
+    & $Py (Join-Path $Root "make_chapters.py") @Args
+    exit $LASTEXITCODE
   }
   "serve-llm" {
     Ensure-Venv
     & $Py (Join-Path $Root "serve_llm.py") @Args
-    exit $LASTEXITCODE
-  }
-  "query" {
-    Ensure-Venv
-    & $Py (Join-Path $Root "query.py") @Args
     exit $LASTEXITCODE
   }
   "pip" {

@@ -7,7 +7,7 @@ from answer_engine_lib import analyze_transcripts, parse_common_args, resolve_pa
 
 
 def _parse_args() -> argparse.Namespace:
-    p = argparse.ArgumentParser(description="Parse transcripts into cached segments for answer search and chapters.")
+    p = argparse.ArgumentParser(description="Parse transcripts into cached segments for answer search.")
     parse_common_args(p)
     p.add_argument(
         "--transcript",

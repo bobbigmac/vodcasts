@@ -1,4 +1,4 @@
-# Required dependencies for transcript parsing and answer search.
+# Required dependencies for transcript parsing and chapter generation.
 stop-words
 snowballstemmer
 webvtt-py

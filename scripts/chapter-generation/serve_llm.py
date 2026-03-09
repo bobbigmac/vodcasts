@@ -1,0 +1,127 @@
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import sys
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from threading import Lock
+from typing import Any
+
+
+def _parse_args() -> argparse.Namespace:
+    p = argparse.ArgumentParser(description="Run a persistent local LLM service for chapter generation.")
+    p.add_argument("--host", default="127.0.0.1", help="Bind host (default: 127.0.0.1).")
+    p.add_argument("--port", type=int, default=8765, help="Bind port (default: 127.0.0.1:8765).")
+    p.add_argument("--provider", choices=("local", "openai"), default="", help="Optional provider override for this server process.")
+    p.add_argument("--model", default="", help="Optional model override for this server process.")
+    p.add_argument("--openai-model", default="", help="Optional OpenAI model override when provider=openai.")
+    p.add_argument("--device", default="", help="Optional device override, e.g. cuda or cpu.")
+    p.add_argument("--warmup", action="store_true", help="Load the tokenizer/model before accepting requests.")
+    return p.parse_args()
+
+
+def main() -> None:
+    args = _parse_args()
+    if args.provider:
+        os.environ["VOD_CHAPTER_LLM_PROVIDER"] = str(args.provider)
+    if args.model:
+        os.environ["VOD_CHAPTER_LLM_MODEL"] = str(args.model)
+    if args.openai_model:
+        os.environ["VOD_CHAPTER_OPENAI_MODEL"] = str(args.openai_model)
+    if args.device:
+        os.environ["VOD_CHAPTER_LLM_DEVICE"] = str(args.device)
+    os.environ["VOD_CHAPTER_LLM_SERVER"] = "1"
+
+    from chapter_generation_llm import model_info, refine_chapter_metadata, review_boundary, warmup_model  # type: ignore
+
+    gpu_lock = Lock()
+
+    class Handler(BaseHTTPRequestHandler):
+        server_version = "vodcasts-chapter-generation-llm/1"
+
+        def _send_json(self, code: int, payload: dict[str, Any]) -> None:
+            raw = json.dumps(payload, ensure_ascii=True).encode("utf-8")
+            self.send_response(code)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Content-Length", str(len(raw)))
+            self.end_headers()
+            self.wfile.write(raw)
+
+        def _read_json(self) -> dict[str, Any]:
+            length = int(self.headers.get("Content-Length") or "0")
+            raw = self.rfile.read(length) if length > 0 else b"{}"
+            body = json.loads(raw.decode("utf-8", errors="replace"))
+            return body if isinstance(body, dict) else {}
+
+        def log_message(self, fmt: str, *args: Any) -> None:
+            sys.stderr.write("[chapter-generation] " + (fmt % args) + "\n")
+
+        def do_GET(self) -> None:
+            if self.path == "/health":
+                self._send_json(200, {"ok": True, **model_info()})
+                return
+            self._send_json(404, {"ok": False, "error": "not_found"})
+
+        def do_POST(self) -> None:
+            try:
+                body = self._read_json()
+            except Exception as exc:
+                self._send_json(400, {"ok": False, "error": f"invalid_json: {exc}"})
+                return
+            try:
+                if self.path == "/review-boundary":
+                    with gpu_lock:
+                        decision = review_boundary(
+                            before_text=str(body.get("before_text") or ""),
+                            after_text=str(body.get("after_text") or ""),
+                            title_hint=str(body.get("title_hint") or ""),
+                        )
+                    payload = (
+                        {"keep": decision.keep, "kind": decision.kind, "title": decision.title, "tags": decision.tags}
+                        if decision
+                        else {}
+                    )
+                    self._send_json(200, payload)
+                    return
+                if self.path == "/refine-chapter":
+                    with gpu_lock:
+                        meta = refine_chapter_metadata(
+                            kind_hint=str(body.get("kind_hint") or ""),
+                            title_hint=str(body.get("title_hint") or ""),
+                            chapter_text=str(body.get("chapter_text") or ""),
+                            prev_title=str(body.get("prev_title") or ""),
+                            next_title=str(body.get("next_title") or ""),
+                        )
+                    payload = {"kind": meta.kind, "title": meta.title, "tags": meta.tags} if meta else {}
+                    self._send_json(200, payload)
+                    return
+                self._send_json(404, {"ok": False, "error": "not_found"})
+            except Exception as exc:
+                self._send_json(500, {"ok": False, "error": str(exc)})
+
+    if args.warmup:
+        info = warmup_model()
+        print(
+            f"[chapter-generation] warmed LLM model={info.get('model')} device={info.get('device')} dtype={info.get('dtype')}",
+            flush=True,
+        )
+    else:
+        info = model_info()
+        print(
+            f"[chapter-generation] starting lazy LLM server model={info.get('model')} device={info.get('device')}",
+            flush=True,
+        )
+
+    server = ThreadingHTTPServer((str(args.host), int(args.port)), Handler)
+    print(f"[chapter-generation] listening on http://{args.host}:{args.port}", flush=True)
+    try:
+        server.serve_forever()
+    except KeyboardInterrupt:
+        print("[chapter-generation] shutting down LLM server", flush=True)
+    finally:
+        server.server_close()
+
+
+if __name__ == "__main__":
+    main()

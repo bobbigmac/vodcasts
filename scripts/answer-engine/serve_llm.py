@@ -10,7 +10,7 @@ from typing import Any
 
 
 def _parse_args() -> argparse.Namespace:
-    p = argparse.ArgumentParser(description="Run a persistent local LLM service for answer-engine chaptering.")
+    p = argparse.ArgumentParser(description="Run a persistent local LLM service for answer-engine query helpers.")
     p.add_argument("--host", default="127.0.0.1", help="Bind host (default: 127.0.0.1).")
     p.add_argument("--port", type=int, default=8765, help="Bind port (default: 8765).")
     p.add_argument("--provider", choices=("local", "openai"), default="", help="Optional provider override for this server process.")
@@ -36,10 +36,8 @@ def main() -> None:
     from answer_engine_llm import (  # type: ignore
         model_info,
         plan_query,
-        refine_chapter_metadata,
         summarize_answer_candidate,
         review_answer_candidate,
-        review_boundary,
         warmup_model,
     )
 
@@ -78,32 +76,6 @@ def main() -> None:
                 self._send_json(400, {"ok": False, "error": f"invalid_json: {exc}"})
                 return
             try:
-                if self.path == "/review-boundary":
-                    with gpu_lock:
-                        decision = review_boundary(
-                            before_text=str(body.get("before_text") or ""),
-                            after_text=str(body.get("after_text") or ""),
-                            title_hint=str(body.get("title_hint") or ""),
-                        )
-                    payload = (
-                        {"keep": decision.keep, "kind": decision.kind, "title": decision.title, "tags": decision.tags}
-                        if decision
-                        else {}
-                    )
-                    self._send_json(200, payload)
-                    return
-                if self.path == "/refine-chapter":
-                    with gpu_lock:
-                        meta = refine_chapter_metadata(
-                            kind_hint=str(body.get("kind_hint") or ""),
-                            title_hint=str(body.get("title_hint") or ""),
-                            chapter_text=str(body.get("chapter_text") or ""),
-                            prev_title=str(body.get("prev_title") or ""),
-                            next_title=str(body.get("next_title") or ""),
-                        )
-                    payload = {"kind": meta.kind, "title": meta.title, "tags": meta.tags} if meta else {}
-                    self._send_json(200, payload)
-                    return
                 if self.path == "/plan-query":
                     with gpu_lock:
                         plan = plan_query(question=str(body.get("question") or ""))

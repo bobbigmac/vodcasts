@@ -45,7 +45,6 @@ Answer-engine helper.
 Usage:
   bash scripts/answer-engine/ae.sh analyze [analyze.py args...]
   bash scripts/answer-engine/ae.sh index [build_index.py args...]
-  bash scripts/answer-engine/ae.sh chapters [make_chapters.py args...]
   bash scripts/answer-engine/ae.sh serve-llm [serve_llm.py args...]
   bash scripts/answer-engine/ae.sh query [query.py args...]
   bash scripts/answer-engine/ae.sh pip [pip args...]
@@ -54,7 +53,6 @@ Examples:
   bash scripts/answer-engine/ae.sh analyze
   bash scripts/answer-engine/ae.sh analyze --transcript bridgetown/2026-03-02-the-good-news-about-our-bodies-chronic-illness-disability-10g2du.vtt
   bash scripts/answer-engine/ae.sh index
-  bash scripts/answer-engine/ae.sh chapters --transcript calvary-chapel-anne-arundel/2026-01-04-ephesians-1-7-10-848zvp.vtt --print
   bash scripts/answer-engine/ae.sh serve-llm --warmup
   bash scripts/answer-engine/ae.sh query search --q "forgiveness" --limit 10
 EOF
@@ -69,8 +67,8 @@ EOF
     exec env PYTHONUNBUFFERED=1 "${PY}" "${ROOT}/build_index.py" "$@"
     ;;
   chapters)
-    ensure_venv
-    exec env PYTHONUNBUFFERED=1 "${PY}" "${ROOT}/make_chapters.py" "$@"
+    echo "The chapters command moved to: bash scripts/chapter-generation/cg.sh chapters" >&2
+    exit 2
     ;;
   serve-llm)
     ensure_venv

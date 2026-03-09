@@ -38,8 +38,13 @@ Typical flow:
 - Analyze transcripts into cached segments: `bash scripts/answer-engine/ae.sh analyze`
 - Build/update search index: `bash scripts/answer-engine/ae.sh index`
 - Query: `bash scripts/answer-engine/ae.sh query search --q "How can I handle stress better?"`
-- Generate auto-chapters JSON into `site/assets/chapters/`: `bash scripts/answer-engine/ae.sh chapters`
-- Fast dev spot-check (single file): `bash scripts/answer-engine/ae.sh chapters --transcript <feed>/<episode>.vtt --force --print`
+
+## Chapter Generation
+
+Chapter generation now lives in `scripts/chapter-generation/` and works directly from transcript files instead of the Answer Engine index.
+
+- Generate auto-chapters JSON into `site/assets/chapters/`: `bash scripts/chapter-generation/cg.sh chapters`
+- Fast dev spot-check (single file): `bash scripts/chapter-generation/cg.sh chapters --transcript <feed>/<episode>.vtt --force --print`
 
 ## Analytics (optional)
 
