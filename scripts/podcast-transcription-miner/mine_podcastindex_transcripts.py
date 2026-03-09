@@ -5,6 +5,7 @@ import argparse
 import concurrent.futures
 import datetime as dt
 import json
+import math
 import sqlite3
 import threading
 import time
@@ -32,6 +33,36 @@ ROOT = Path(__file__).resolve().parents[2]
 DEFAULT_OUT_DIR = ROOT / "podcast-transcripts"
 DEFAULT_DB_PATH = ROOT / "podcastindex-feeds" / "podcastindex_feeds.db"
 DEFAULT_STATE_DB = ROOT / "podcast-transcripts" / "podcastindex-miner-state.sqlite"
+
+
+def format_bytes(num_bytes: float) -> str:
+    value = float(max(0.0, num_bytes))
+    units = ["B", "KB", "MB", "GB", "TB"]
+    for unit in units:
+        if value < 1024.0 or unit == units[-1]:
+            if unit == "B":
+                return f"{int(value)} {unit}"
+            return f"{value:.1f} {unit}"
+        value /= 1024.0
+    return f"{value:.1f} PB"
+
+
+def format_duration(seconds: float) -> str:
+    if not math.isfinite(seconds) or seconds < 0:
+        return "unknown"
+    total = int(round(seconds))
+    days, rem = divmod(total, 86400)
+    hours, rem = divmod(rem, 3600)
+    minutes, secs = divmod(rem, 60)
+    parts: list[str] = []
+    if days:
+        parts.append(f"{days}d")
+    if hours or parts:
+        parts.append(f"{hours}h")
+    if minutes or parts:
+        parts.append(f"{minutes}m")
+    parts.append(f"{secs}s")
+    return " ".join(parts)
 
 
 @dataclass
@@ -127,6 +158,9 @@ class PodcastIndexMiner:
         hosts: list[str],
         feed_timeout: int,
         transcript_timeout: int,
+        progress_every: int,
+        progress_log: Path | None,
+        status_json: Path | None,
     ) -> None:
         self.db_path = db_path.resolve()
         self.out_dir = out_dir.resolve()
@@ -139,11 +173,113 @@ class PodcastIndexMiner:
         self.hosts = [host.strip().lower() for host in hosts if host.strip()]
         self.feed_timeout = max(5, feed_timeout)
         self.transcript_timeout = max(5, transcript_timeout)
+        self.progress_every = max(5, progress_every)
+        self.progress_log = progress_log.resolve() if progress_log else None
+        self.status_json = status_json.resolve() if status_json else None
         self.sessions = ThreadLocalSessions()
         self.host_limiter = HostLimiter(self.per_host)
         self.manifest_path = self.out_dir / "podcastindex-manifest.json"
         self.report_path = self.out_dir / "PODCASTINDEX_REPORT.md"
         self.retryable_statuses = {408, 425, 429, 500, 502, 503, 504}
+
+    def emit_lines(self, lines: list[str]) -> None:
+        if self.progress_log:
+            self.progress_log.parent.mkdir(parents=True, exist_ok=True)
+            with self.progress_log.open("a", encoding="utf-8") as handle:
+                for line in lines:
+                    handle.write(line + "\n")
+        for line in lines:
+            print(line, flush=True)
+
+    def write_status_json(self, payload: dict[str, Any]) -> None:
+        if not self.status_json:
+            return
+        self.status_json.parent.mkdir(parents=True, exist_ok=True)
+        self.status_json.write_text(
+            json.dumps(payload, indent=2, ensure_ascii=False) + "\n",
+            encoding="utf-8",
+        )
+
+    def emit_initializing(self, message: str) -> None:
+        self.emit_lines([f"[init] {message}", ""])
+        self.write_status_json(
+            {
+                "phase": "initializing",
+                "message": message,
+                "generated_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "workers": self.workers,
+                "per_host": self.per_host,
+            }
+        )
+
+    def candidate_where_parts(self) -> tuple[list[str], list[object]]:
+        where_parts = [
+            "dead = 0",
+            "lastHttpStatus = 200",
+            "episodeCount > 0",
+            "contentType like '%xml%'",
+            "url <> ''",
+        ]
+        params: list[object] = []
+        if self.min_popularity > 0:
+            where_parts.append("popularityScore >= ?")
+            params.append(self.min_popularity)
+        if self.hosts:
+            host_params = ",".join("?" for _ in self.hosts)
+            where_parts.append(f"lower(host) in ({host_params})")
+            params.extend(self.hosts)
+        return where_parts, params
+
+    def candidate_subquery_sql(self) -> tuple[str, list[object]]:
+        where_parts, params = self.candidate_where_parts()
+        limit_clause = f" limit {self.limit_feeds}" if self.limit_feeds > 0 else ""
+        sql = (
+            "select id "
+            "from podcasts "
+            f"where {' and '.join(where_parts)} "
+            "order by popularityScore desc, episodeCount desc, newestItemPubdate desc, id asc"
+            f"{limit_clause}"
+        )
+        return sql, params
+
+    def count_total_candidates(self) -> int:
+        sql, params = self.candidate_subquery_sql()
+        conn = sqlite3.connect(f"file:{self.db_path}?mode=ro", uri=True)
+        try:
+            return int(conn.execute(f"select count(*) from ({sql})", params).fetchone()[0])
+        finally:
+            conn.close()
+
+    def count_checked_candidates(self, conn: sqlite3.Connection) -> int:
+        sql, params = self.candidate_subquery_sql()
+        pi_conn = sqlite3.connect(f"file:{self.db_path}?mode=ro", uri=True)
+        try:
+            state_db_sql = str(self.state_db).replace("'", "''")
+            pi_conn.execute(f"attach database '{state_db_sql}' as state")
+            return int(
+                pi_conn.execute(
+                    f"select count(*) from state.feed_checks where feed_id in ({sql})",
+                    params,
+                ).fetchone()[0]
+            )
+        finally:
+            pi_conn.close()
+
+    def estimate_existing_bytes(self, conn: sqlite3.Connection) -> int:
+        total_bytes = 0
+        for (local_path,) in conn.execute("select local_path from transcript_files"):
+            path = ROOT / str(local_path)
+            if path.exists():
+                total_bytes += path.stat().st_size
+        for (show_slug,) in conn.execute(
+            "select distinct show_slug from feed_checks where transcript_support = 1"
+        ):
+            show_dir = self.out_dir / str(show_slug)
+            for name in ("podcastindex-feed.xml", "podcastindex-podcast-meta.json"):
+                path = show_dir / name
+                if path.exists():
+                    total_bytes += path.stat().st_size
+        return total_bytes
 
     def init_state_db(self) -> sqlite3.Connection:
         self.state_db.parent.mkdir(parents=True, exist_ok=True)
@@ -170,7 +306,7 @@ class PodcastIndexMiner:
         conn.execute(
             """
             create table if not exists transcript_files (
-                source_url text primary key,
+                local_path text primary key,
                 feed_id integer not null,
                 feed_url text not null,
                 show_slug text not null,
@@ -178,17 +314,81 @@ class PodcastIndexMiner:
                 episode_title text not null,
                 episode_guid text not null,
                 published_date text not null,
+                source_url text not null,
                 source_type text not null,
                 language text not null,
-                local_path text not null
+                local_path_shadow text not null
             )
             """
         )
         conn.execute(
             "create index if not exists idx_transcript_files_show_slug on transcript_files(show_slug)"
         )
+        self.migrate_transcript_table(conn)
         conn.commit()
         return conn
+
+    def migrate_transcript_table(self, conn: sqlite3.Connection) -> None:
+        columns = {
+            row[1]: row
+            for row in conn.execute("pragma table_info(transcript_files)").fetchall()
+        }
+        local_path_col = columns.get("local_path")
+        source_url_col = columns.get("source_url")
+        if local_path_col and int(local_path_col[5]) == 1 and source_url_col and "local_path_shadow" in columns:
+            return
+
+        conn.execute(
+            """
+            create table if not exists transcript_files_v2 (
+                local_path text primary key,
+                feed_id integer not null,
+                feed_url text not null,
+                show_slug text not null,
+                show_title text not null,
+                episode_title text not null,
+                episode_guid text not null,
+                published_date text not null,
+                source_url text not null,
+                source_type text not null,
+                language text not null,
+                local_path_shadow text not null
+            )
+            """
+        )
+        conn.execute("delete from transcript_files_v2")
+        conn.execute(
+            """
+            insert or replace into transcript_files_v2 (
+                local_path, feed_id, feed_url, show_slug, show_title, episode_title,
+                episode_guid, published_date, source_url, source_type, language, local_path_shadow
+            )
+            select
+                local_path,
+                feed_id,
+                feed_url,
+                show_slug,
+                show_title,
+                episode_title,
+                episode_guid,
+                published_date,
+                coalesce(source_url, ''),
+                coalesce(source_type, ''),
+                coalesce(language, ''),
+                local_path
+            from transcript_files
+            where coalesce(local_path, '') <> ''
+            order by
+                case when coalesce(source_url, '') = '' or coalesce(source_type, '') = 'existing' then 0 else 1 end,
+                rowid
+            """
+        )
+        conn.execute("drop table transcript_files")
+        conn.execute("alter table transcript_files_v2 rename to transcript_files")
+        conn.execute(
+            "create index if not exists idx_transcript_files_show_slug on transcript_files(show_slug)"
+        )
+        conn.commit()
 
     def load_checked_ids(self, conn: sqlite3.Connection) -> set[int]:
         cursor = conn.execute("select feed_id from feed_checks")
@@ -198,21 +398,7 @@ class PodcastIndexMiner:
         conn = sqlite3.connect(f"file:{self.db_path}?mode=ro", uri=True)
         conn.row_factory = sqlite3.Row
 
-        where_parts = [
-            "dead = 0",
-            "lastHttpStatus = 200",
-            "episodeCount > 0",
-            "contentType like '%xml%'",
-            "url <> ''",
-        ]
-        params: list[object] = []
-        if self.min_popularity > 0:
-            where_parts.append("popularityScore >= ?")
-            params.append(self.min_popularity)
-        if self.hosts:
-            host_params = ",".join("?" for _ in self.hosts)
-            where_parts.append(f"lower(host) in ({host_params})")
-            params.extend(self.hosts)
+        where_parts, params = self.candidate_where_parts()
         limit_clause = f" limit {self.limit_feeds}" if self.limit_feeds > 0 else ""
         sql = (
             "select * "
@@ -458,14 +644,13 @@ class PodcastIndexMiner:
             ),
         )
         for record in outcome.transcript_files:
-            key = record.source_url or record.local_path
             conn.execute(
                 """
                 insert into transcript_files (
-                    source_url, feed_id, feed_url, show_slug, show_title, episode_title,
-                    episode_guid, published_date, source_type, language, local_path
-                ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                on conflict(source_url) do update set
+                    local_path, feed_id, feed_url, show_slug, show_title, episode_title,
+                    episode_guid, published_date, source_url, source_type, language, local_path_shadow
+                ) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                on conflict(local_path) do update set
                     feed_id = excluded.feed_id,
                     feed_url = excluded.feed_url,
                     show_slug = excluded.show_slug,
@@ -473,12 +658,16 @@ class PodcastIndexMiner:
                     episode_title = excluded.episode_title,
                     episode_guid = excluded.episode_guid,
                     published_date = excluded.published_date,
+                    source_url = case
+                        when excluded.source_url <> '' then excluded.source_url
+                        else transcript_files.source_url
+                    end,
                     source_type = excluded.source_type,
                     language = excluded.language,
-                    local_path = excluded.local_path
+                    local_path_shadow = excluded.local_path_shadow
                 """,
                 (
-                    key,
+                    record.local_path,
                     record.feed_id,
                     record.feed_url,
                     record.show_slug,
@@ -486,6 +675,7 @@ class PodcastIndexMiner:
                     record.episode_title,
                     record.episode_guid,
                     record.published_date,
+                    record.source_url,
                     record.source_type,
                     record.language,
                     record.local_path,
@@ -558,7 +748,7 @@ class PodcastIndexMiner:
         summary_cursor = conn.execute(
             """
             select f.show_slug, f.show_title, f.feed_url, f.host,
-                   count(t.source_url) as transcript_count,
+                   count(t.local_path) as transcript_count,
                    max(f.checked_at) as last_checked
             from feed_checks f
             left join transcript_files t on t.feed_id = f.feed_id
@@ -584,17 +774,157 @@ class PodcastIndexMiner:
             lines.append("")
         self.report_path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
 
+    def outcome_disk_bytes(self, outcome: FeedOutcome) -> int:
+        total_bytes = 0
+        seen_paths: set[str] = set()
+        for record in outcome.transcript_files:
+            if record.local_path in seen_paths:
+                continue
+            seen_paths.add(record.local_path)
+            path = ROOT / record.local_path
+            if path.exists():
+                total_bytes += path.stat().st_size
+        if outcome.transcript_support:
+            show_dir = self.out_dir / outcome.show_slug
+            for name in ("podcastindex-feed.xml", "podcastindex-podcast-meta.json"):
+                path = show_dir / name
+                if path.exists():
+                    total_bytes += path.stat().st_size
+        return total_bytes
+
+    def print_progress(
+        self,
+        *,
+        start_time: float,
+        total_candidates: int,
+        baseline_checked: int,
+        baseline_transcript_feeds: int,
+        baseline_transcript_files: int,
+        baseline_disk_bytes: int,
+        completed: int,
+        submitted: int,
+        transcript_feeds_found: int,
+        transcript_files_found: int,
+        added_disk_bytes: int,
+        inflight: int,
+        force: bool = False,
+    ) -> None:
+        now_ts = time.time()
+        checked_total = baseline_checked + completed
+        transcript_feeds_total = baseline_transcript_feeds + transcript_feeds_found
+        transcript_files_total = baseline_transcript_files + transcript_files_found
+        disk_total_bytes = baseline_disk_bytes + added_disk_bytes
+        elapsed = max(0.001, now_ts - start_time)
+        feed_rate = completed / elapsed
+        transcript_file_rate = transcript_files_found / elapsed
+        progress_ratio = (checked_total / total_candidates) if total_candidates > 0 else 0.0
+        remaining = max(0, total_candidates - checked_total)
+        eta_seconds = (remaining / feed_rate) if feed_rate > 0 else math.inf
+        transcript_feed_hit_rate = (transcript_feeds_total / checked_total) if checked_total > 0 else 0.0
+        transcript_file_yield = (transcript_files_total / checked_total) if checked_total > 0 else 0.0
+        projected_transcript_files = int(round(transcript_file_yield * total_candidates)) if total_candidates > 0 else transcript_files_total
+        avg_bytes_per_file = (disk_total_bytes / transcript_files_total) if transcript_files_total > 0 else 0.0
+        projected_disk_bytes = int(round(avg_bytes_per_file * projected_transcript_files)) if transcript_files_total > 0 else 0
+        lines = [
+            "[progress] "
+            f"feeds={checked_total:,}/{total_candidates:,} ({progress_ratio:.2%}) "
+            f"remaining={remaining:,} inflight={inflight} submitted={submitted:,} "
+            f"rate={feed_rate:.2f} feeds/s eta={format_duration(eta_seconds)}"
+        ,
+            "[yield] "
+            f"transcript_feeds={transcript_feeds_total:,} ({transcript_feed_hit_rate:.2%} of checked) "
+            f"transcript_files={transcript_files_total:,} "
+            f"recent_file_rate={transcript_file_rate:.2f}/s "
+            f"projected_files~={projected_transcript_files:,}"
+        ,
+            "[disk] "
+            f"current={format_bytes(disk_total_bytes)} "
+            f"avg_per_transcript={format_bytes(avg_bytes_per_file)} "
+            f"projected_if_yield_holds~={format_bytes(projected_disk_bytes)}"
+        ]
+        if force:
+            lines.append("")
+        self.emit_lines(lines)
+        self.write_status_json(
+            {
+                "generated_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "total_candidates": total_candidates,
+                "checked_total": checked_total,
+                "progress_ratio": progress_ratio,
+                "remaining_candidates": remaining,
+                "inflight": inflight,
+                "submitted_this_run": submitted,
+                "completed_this_run": completed,
+                "elapsed_seconds": elapsed,
+                "feed_rate_per_second": feed_rate,
+                "eta_seconds": eta_seconds if math.isfinite(eta_seconds) else None,
+                "transcript_feeds_total": transcript_feeds_total,
+                "transcript_files_total": transcript_files_total,
+                "transcript_feed_hit_rate": transcript_feed_hit_rate,
+                "transcript_file_rate_per_second": transcript_file_rate,
+                "projected_transcript_files": projected_transcript_files,
+                "disk_bytes_total": disk_total_bytes,
+                "avg_bytes_per_transcript": avg_bytes_per_file,
+                "projected_disk_bytes": projected_disk_bytes,
+                "workers": self.workers,
+                "per_host": self.per_host,
+                "started_at": dt.datetime.fromtimestamp(start_time, tz=dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "updated_at_epoch": now_ts,
+            }
+        )
+
     def run(self) -> None:
         self.out_dir.mkdir(parents=True, exist_ok=True)
+        start_time = time.time()
+        self.emit_initializing("opening state database and loading prior crawl state")
         state_conn = self.init_state_db()
         checked_ids = set() if self.refresh else self.load_checked_ids(state_conn)
+        self.emit_initializing("counting candidate feeds from PodcastIndex inventory")
+        total_candidates = self.count_total_candidates()
+        self.emit_initializing("matching already-checked feeds against the current candidate set")
+        baseline_checked = 0 if self.refresh else self.count_checked_candidates(state_conn)
+        baseline_transcript_feeds = 0 if self.refresh else int(
+            state_conn.execute("select count(*) from feed_checks where transcript_support = 1").fetchone()[0]
+        )
+        baseline_transcript_files = 0 if self.refresh else int(
+            state_conn.execute("select count(*) from transcript_files").fetchone()[0]
+        )
+        self.emit_initializing("estimating existing on-disk size for previously downloaded transcript artifacts")
+        baseline_disk_bytes = 0 if self.refresh else self.estimate_existing_bytes(state_conn)
         submitted = 0
         completed = 0
         transcript_feeds = 0
         transcript_files = 0
+        added_disk_bytes = 0
         max_inflight = self.workers
         inflight: set[concurrent.futures.Future[FeedOutcome]] = set()
         candidates = self.iter_candidates()
+        last_progress_at = 0.0
+        self.emit_lines([
+            "[start] "
+            f"candidate_feeds={total_candidates:,} "
+            f"already_checked={baseline_checked:,} "
+            f"transcript_feeds={baseline_transcript_feeds:,} "
+            f"transcript_files={baseline_transcript_files:,} "
+            f"disk={format_bytes(baseline_disk_bytes)} "
+            f"workers={self.workers} per_host={self.per_host}",
+            "",
+        ])
+        self.print_progress(
+            start_time=start_time,
+            total_candidates=total_candidates,
+            baseline_checked=baseline_checked,
+            baseline_transcript_feeds=baseline_transcript_feeds,
+            baseline_transcript_files=baseline_transcript_files,
+            baseline_disk_bytes=baseline_disk_bytes,
+            completed=completed,
+            submitted=submitted,
+            transcript_feeds_found=transcript_feeds,
+            transcript_files_found=transcript_files,
+            added_disk_bytes=added_disk_bytes,
+            inflight=len(inflight),
+            force=True,
+        )
 
         with concurrent.futures.ThreadPoolExecutor(max_workers=self.workers) as executor:
             exhausted = False
@@ -613,6 +943,7 @@ class PodcastIndexMiner:
                     continue
                 done, inflight = concurrent.futures.wait(
                     inflight,
+                    timeout=5,
                     return_when=concurrent.futures.FIRST_COMPLETED,
                 )
                 for future in done:
@@ -624,19 +955,49 @@ class PodcastIndexMiner:
                     if outcome.transcript_support:
                         transcript_feeds += 1
                         transcript_files += len(outcome.transcript_files)
+                        added_disk_bytes += self.outcome_disk_bytes(outcome)
                     if completed % 50 == 0:
                         self.write_manifest_and_report(state_conn)
-                        print(
-                            f"[checkpoint] checked={completed} submitted={submitted} "
-                            f"transcript_feeds={transcript_feeds} transcript_files={transcript_files}"
-                        )
+                now = time.time()
+                if now - last_progress_at >= self.progress_every:
+                    self.print_progress(
+                        start_time=start_time,
+                        total_candidates=total_candidates,
+                        baseline_checked=baseline_checked,
+                        baseline_transcript_feeds=baseline_transcript_feeds,
+                        baseline_transcript_files=baseline_transcript_files,
+                        baseline_disk_bytes=baseline_disk_bytes,
+                        completed=completed,
+                        submitted=submitted,
+                        transcript_feeds_found=transcript_feeds,
+                        transcript_files_found=transcript_files,
+                        added_disk_bytes=added_disk_bytes,
+                        inflight=len(inflight),
+                        force=True,
+                    )
+                    last_progress_at = now
         self.write_manifest_and_report(state_conn)
+        self.print_progress(
+            start_time=start_time,
+            total_candidates=total_candidates,
+            baseline_checked=baseline_checked,
+            baseline_transcript_feeds=baseline_transcript_feeds,
+            baseline_transcript_files=baseline_transcript_files,
+            baseline_disk_bytes=baseline_disk_bytes,
+            completed=completed,
+            submitted=submitted,
+            transcript_feeds_found=transcript_feeds,
+            transcript_files_found=transcript_files,
+            added_disk_bytes=added_disk_bytes,
+            inflight=0,
+            force=True,
+        )
         state_conn.close()
-        print(
+        self.emit_lines([
             f"[done] checked={completed} submitted={submitted} "
             f"transcript_feeds={transcript_feeds} transcript_files={transcript_files} "
             f"out={self.out_dir}"
-        )
+        ])
 
 
 def parse_args() -> argparse.Namespace:
@@ -644,13 +1005,16 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--db-path", default=str(DEFAULT_DB_PATH), help="Path to the local PodcastIndex SQLite database.")
     parser.add_argument("--out-dir", default=str(DEFAULT_OUT_DIR), help="Transcript output root.")
     parser.add_argument("--state-db", default=str(DEFAULT_STATE_DB), help="Path to miner state SQLite DB.")
-    parser.add_argument("--workers", type=int, default=24, help="Global worker pool size.")
+    parser.add_argument("--workers", type=int, default=16, help="Global worker pool size.")
     parser.add_argument("--per-host", type=int, default=2, help="Max concurrent HTTP requests per host.")
     parser.add_argument("--limit-feeds", type=int, default=0, help="Limit number of candidate feeds scanned (0 = no limit).")
     parser.add_argument("--min-popularity", type=int, default=0, help="Minimum popularityScore from the PodcastIndex DB.")
     parser.add_argument("--host", action="append", default=[], help="Restrict scanning to specific host(s). Repeatable.")
     parser.add_argument("--feed-timeout", type=int, default=30, help="Timeout in seconds for feed fetches.")
     parser.add_argument("--transcript-timeout", type=int, default=30, help="Timeout in seconds for transcript fetches.")
+    parser.add_argument("--progress-every", type=int, default=15, help="Emit live progress every N seconds.")
+    parser.add_argument("--progress-log", default=str(ROOT / "tmp" / "podcastindex-miner.progress.log"), help="Append human-readable progress lines to this log file.")
+    parser.add_argument("--status-json", default=str(ROOT / "tmp" / "podcastindex-miner.status.json"), help="Write the latest progress snapshot to this JSON file.")
     parser.add_argument("--refresh", action="store_true", help="Recheck feeds already present in the miner state DB.")
     return parser.parse_args()
 
@@ -669,6 +1033,9 @@ def main() -> None:
         hosts=list(args.host or []),
         feed_timeout=int(args.feed_timeout),
         transcript_timeout=int(args.transcript_timeout),
+        progress_every=int(args.progress_every),
+        progress_log=Path(args.progress_log) if args.progress_log else None,
+        status_json=Path(args.status_json) if args.status_json else None,
     )
     miner.run()
 

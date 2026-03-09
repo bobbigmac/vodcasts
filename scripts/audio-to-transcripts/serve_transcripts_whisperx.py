@@ -8,6 +8,7 @@ import queue
 import sys
 import threading
 from dataclasses import dataclass, field
+from datetime import datetime
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any
@@ -19,6 +20,7 @@ from whisperx.utils import WriteSRT, WriteVTT
 from whisperx_worker_common import WorkerWhisperxOptions, parse_worker_extra_args
 
 _TRANSCRIBE_WORKER_POOL = 2
+_WHISPERX_EMPTY_DIAG_LOG = Path(__file__).resolve().parents[2] / "whisperx-empty-diag.log"
 
 
 def _parse_args() -> argparse.Namespace:
@@ -239,16 +241,23 @@ class WhisperXService:
         if not (srt_text.strip() or vtt_text.strip()):
             segments = result.get("segments") or []
             audio_sz = audio_path.stat().st_size if audio_path.exists() else 0
-            diag = (
-                f"WHISPERX_EMPTY_DIAG: audio_path={audio_path} audio_bytes={audio_sz} "
-                f"segments_count={len(segments)} language={result.get('language')} "
-                f"result_keys={list(result.keys())}"
-            )
+            diag_lines = [
+                "",
+                f"=== {datetime.utcnow().isoformat()}Z worker_empty ===",
+                f"audio_path={audio_path} audio_bytes={audio_sz}",
+                f"segments_count={len(segments)} language={result.get('language')}",
+                f"result_keys={list(result.keys())}",
+            ]
             if segments:
-                diag += f" first_segment={segments[0]!r}"
+                diag_lines.append(f"first_segment={segments[0]!r}")
             else:
-                diag += " (segments empty - check VAD/chunk_size or model output)"
-            print(f"[whisperx-worker] {diag}", flush=True)
+                diag_lines.append("(segments empty - check VAD/chunk_size or model output)")
+            try:
+                with open(_WHISPERX_EMPTY_DIAG_LOG, "a", encoding="utf-8") as f:
+                    f.write("\n".join(diag_lines) + "\n")
+            except Exception as e:
+                print(f"[whisperx-worker] failed to write diag log: {e}", flush=True)
+            diag = " ".join(diag_lines[2:])
             raise ValueError(f"whisperx produced empty transcript - {diag}")
         return {
             "ok": True,

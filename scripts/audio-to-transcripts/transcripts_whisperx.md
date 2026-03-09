@@ -12,8 +12,8 @@ It is **not wired into** `yarn build`.
   - Otherwise (missing/unusable), generates subtitles using **WhisperX**
 - Writes a folder per feed slug:
   - `cache/<env>/transcripts/<feed-slug>/<episode-slug>.vtt`
-  - Optionally, a spot-check audio clip (generation only):
-    - `cache/<env>/transcripts/<feed-slug>/<episode-slug>.spotcheck.mp3` (first 10 minutes)
+  - On failed generated transcripts only, a review clip is moved to:
+    - `review-transcripts/<feed-slug>/<episode-slug>.spotcheck.mp3`
 
 ## Prereqs (Windows)
 
@@ -58,7 +58,7 @@ The worker accepts concurrent HTTP requests safely and services them with a fixe
 yarn transcripts
 ```
 
-This processes the **currently-selected env** (`yarn use dev|church|tech|complete`), limiting to **church/sermons** sources and **10 episodes per feed** by default (20 for high-value feeds), with periodic MP3 spot-checks enabled.
+This processes the **currently-selected env** (`yarn use dev|church|tech|complete`), limiting to **church/sermons** sources and **10 episodes per feed** by default (20 for high-value feeds).
 
 Other presets:
 
@@ -93,7 +93,7 @@ This prints what it *would* download/generate, without writing files.
 - When `-GenerateMissing` is enabled, generation uses `--whisperx-device cuda` and **fails fast** unless you pass `-AllowCpu`.
 - Provided `podcast:transcript` links are preferred **only if** they validate as usable VTT/SRT subtitles (non-subtitles payloads like HTML are rejected).
 - If you want to test on a tiny sample, pass `-MaxEpisodesPerFeed 3` or set `--max-episodes-total` in the Python CLI.
-- Spot-check MP3 sampling is disabled by default. Enable via `-SpotCheckEvery` / `-SpotCheckSeconds`.
+- Normal runs do not keep spot-check MP3s. Failed generated transcripts can still write a short review clip into `review-transcripts/`.
 - Temp working files use the `Q:` RAM disk (and `-Execute` refuses to run if it can't find it).
 - Unless overridden via `-WhisperxExtraArgs`, generation defaults to `--vad_method silero` to avoid pyannote/torchcodec issues.
 - Runs are restartable: a previously-written `.vtt` that looks complete is never re-downloaded/regenerated (unless `-Refresh`).
@@ -102,7 +102,7 @@ This prints what it *would* download/generate, without writing files.
 ## Housekeeping
 
 - **Sanity failures retry**: Entries in `transcript-sanity-failures.md` may pass after the MM:SS timestamp fix. Remove an entry and re-run to retry.
-- **Orphan spotcheck MP3s**: Failed runs can leave `.spotcheck.mp3` files in feed folders without a matching `.vtt`. These are debug artifacts; safe to delete if no companion VTT exists.
+- **Review spotcheck MP3s**: Failure debug clips should now only live under `review-transcripts/`.
 - **High-value feeds**: Feeds in `HIGH_VALUE_FEEDS` get 20 episodes (vs default 10). See `transcripts_whisperx.py` for the list.
 
 ## Speed vs quality (WhisperX)

@@ -46,6 +46,33 @@ max_episodes_per_feed = 12
 
 _TRANSCRIPT_SANITY_FAILURES_PATH = VODCASTS_ROOT / "transcript-sanity-failures.md"
 _REVIEW_TRANSCRIPTS_DIR = VODCASTS_ROOT / "review-transcripts"
+_WHISPERX_EMPTY_DIAG_LOG = VODCASTS_ROOT / "whisperx-empty-diag.log"
+
+
+def _log_whisperx_empty_diag(
+    *,
+    feed_id: str = "",
+    ep_slug: str = "",
+    media_url: str = "",
+    source: str = "",
+    **kwargs: Any,
+) -> None:
+    """Append diagnostic info to log file when WhisperX returns empty. Never loses the reason."""
+    from datetime import datetime
+
+    lines = [
+        "",
+        f"=== {datetime.utcnow().isoformat()}Z {source} ===",
+        f"feed_id={feed_id} ep_slug={ep_slug}",
+        f"media_url={media_url}",
+    ]
+    for k, v in kwargs.items():
+        lines.append(f"{k}={v}")
+    try:
+        with open(_WHISPERX_EMPTY_DIAG_LOG, "a", encoding="utf-8") as f:
+            f.write("\n".join(lines) + "\n")
+    except Exception as e:
+        print(f"[warn] failed to write whisperx-empty-diag.log: {e}", flush=True)
 
 # Feeds with high advice/support density for answer engine (practical, pastoral, how-to).
 # Tuned from transcript sampling across 35+ feeds (titles + content).
@@ -273,10 +300,10 @@ def _parse_args() -> argparse.Namespace:
         help="Allow CPU execution for WhisperX generation (default: disabled; generation requires CUDA).",
     )
 
-    # Spot-check: keep a short MP3 for occasional manual review (generation only).
-    p.add_argument("--spot-check-every", type=int, default=0, help="Keep ~1 in N generated MP3 spot-checks (default: 0 disables).")
-    p.add_argument("--spot-check-seconds", type=int, default=600, help="Spot-check MP3 length in seconds (default: 600 = 10 minutes).")
-    p.add_argument("--spot-check-bitrate", default="96k", help="Spot-check MP3 bitrate (default: 96k).")
+    # Failure review clips: kept only when generated transcripts fail sanity / generation.
+    p.add_argument("--spot-check-every", type=int, default=0, help="Deprecated compatibility flag; normal runs no longer sample successful spot-check MP3s.")
+    p.add_argument("--spot-check-seconds", type=int, default=600, help="Failure review MP3 length in seconds (default: 600 = 10 minutes).")
+    p.add_argument("--spot-check-bitrate", default="96k", help="Failure review MP3 bitrate (default: 96k).")
 
     # Acceptance heuristics for provided transcripts
     p.add_argument("--min-text-chars", type=int, default=200, help="Minimum extracted text chars to accept (default: 200).")
@@ -388,6 +415,47 @@ def _move_failed_to_review(
                 print(f"[review] removed empty {cache_feed_dir.relative_to(VODCASTS_ROOT)}")
         except OSError:
             pass
+
+
+def _capture_failure_spotcheck(
+    *,
+    media_url: str,
+    ffmpeg_cmd: str,
+    spot_mp3_path: Path,
+    spot_seconds: int,
+    spot_bitrate: str,
+    execute: bool,
+) -> Path | None:
+    """Capture a short debug clip only for failed episodes."""
+    if not execute or not media_url:
+        return None
+    try:
+        spot_mp3_path.parent.mkdir(parents=True, exist_ok=True)
+        _run(
+            [
+                ffmpeg_cmd,
+                "-hide_banner",
+                "-loglevel",
+                "error",
+                "-y",
+                "-i",
+                str(media_url),
+                "-t",
+                str(max(1, int(spot_seconds or 0))),
+                "-vn",
+                "-acodec",
+                "libmp3lame",
+                "-b:a",
+                str(spot_bitrate or "96k"),
+                str(spot_mp3_path),
+            ],
+            execute=True,
+        )
+        if spot_mp3_path.exists():
+            return spot_mp3_path
+    except Exception as e:
+        print(f"[warn] failed to capture review spotcheck: {e}")
+    return None
 
 
 _SRT_TS_RE = re.compile(r"^\d{2}:\d{2}:\d{2}[,.]\d{3}\s+-->\s+\d{2}:\d{2}:\d{2}[,.]\d{3}")
@@ -701,21 +769,21 @@ def _download_bytes(url: str, *, timeout_seconds: int, user_agent: str, execute:
 
 
 def _write_text(path: Path, text: str, *, execute: bool) -> None:
-    print(f"[write] {path}")
     if not execute:
         return
     path.parent.mkdir(parents=True, exist_ok=True)
     tmp = path.with_name(path.name + ".tmp")
     tmp.write_text(text, encoding="utf-8")
     tmp.replace(path)
+    print(f"[write] {path}")
 
 
 def _write_bytes(path: Path, data: bytes, *, execute: bool) -> None:
-    print(f"[write] {path} ({len(data)} bytes)")
     if not execute:
         return
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_bytes(data)
+    print(f"[write] {path} ({len(data)} bytes)")
 
 
 def _maybe_normalize_existing_vtt(path: Path, *, execute: bool) -> None:
@@ -996,14 +1064,13 @@ def _generate_with_whisperx(
         out_files = [(p.name, p.stat().st_size) for p in out_dir.iterdir() if p.is_file()]
         wav_sz = wav_path.stat().st_size if wav_path.exists() else 0
         diag = (
-            f"WHISPERX_EMPTY_DIAG: wav_bytes={wav_sz} out_dir={out_dir} "
+            f"wav_bytes={wav_sz} out_dir={out_dir} "
             f"out_files={out_files} srt_path.exists={srt_path.exists()} vtt_path.exists={vtt_path.exists()}"
         )
         if srt_path.exists():
             diag += f" srt_bytes={srt_path.stat().st_size}"
         if vtt_path.exists():
             diag += f" vtt_bytes={vtt_path.stat().st_size}"
-        print(f"[whisperx] {diag}", flush=True)
         raise ValueError(f"whisperx produced no .srt/.vtt in {out_dir} - {diag}")
 
 
@@ -1029,7 +1096,6 @@ def _process_work_item(
     whisperx_worker_url: str,
     spot_check_seconds: int,
     spot_check_bitrate: str,
-    should_spot_check: bool,
     sanity_failures: set[tuple[str, str]],
 ) -> WorkOutcome:
     ep = item.ep
@@ -1086,9 +1152,6 @@ def _process_work_item(
                     print("[gpu] require_cuda=1 device=cuda (no cpu fallback)")
                 print(f"[gen] {item.src.id}/{ep_slug}: whisperx from media {media_url}")
 
-                if bool(execute) and bool(should_spot_check):
-                    spot_mp3 = feed_out / f"{ep_slug}.spotcheck.mp3"
-
                 srt_text, vtt_text = _generate_with_whisperx(
                     media_url=media_url,
                     ffmpeg_cmd=str(ffmpeg_cmd),
@@ -1099,18 +1162,25 @@ def _process_work_item(
                     whisperx_compute_type=str(whisperx_compute_type),
                     whisperx_extra_args=str(whisperx_extra_args),
                     whisperx_worker_url=str(whisperx_worker_url),
-                    spot_mp3_path=spot_mp3 if bool(execute) else None,
+                    spot_mp3_path=None,
                     spot_seconds=int(spot_check_seconds or 600),
                     spot_bitrate=str(spot_check_bitrate or "96k"),
                     execute=bool(execute),
                 )
 
-                if spot_mp3 is not None:
-                    spotcheck_count += 1
-
                 vtt_out = vtt_text or (_srt_to_vtt(srt_text) if srt_text else "")
                 vtt_out = _normalize_vtt_timestamp_commas(vtt_out)
                 if not _vtt_seems_complete(vtt_out, min_chars=_EXISTING_VTT_MIN_CHARS, min_words=_EXISTING_VTT_MIN_WORDS):
+                    spot_mp3 = _capture_failure_spotcheck(
+                        media_url=media_url,
+                        ffmpeg_cmd=str(ffmpeg_cmd),
+                        spot_mp3_path=feed_out / f"{ep_slug}.spotcheck.mp3",
+                        spot_seconds=int(spot_check_seconds or 600),
+                        spot_bitrate=str(spot_check_bitrate or "96k"),
+                        execute=bool(execute),
+                    )
+                    if spot_mp3 is not None:
+                        spotcheck_count += 1
                     _move_failed_to_review(item.src.id, ep_slug, vtt_out, spot_mp3, execute=bool(execute), cache_feed_dir=feed_out)
                     _append_sanity_failure(item.src.id, ep_slug, "generated subtitles failed transcript sanity")
                     raise RuntimeError("generated subtitles failed transcript sanity")
@@ -1137,11 +1207,26 @@ def _process_work_item(
             errors += 1
             print(f"[error] {item.src.id}/{ep_slug}: {e}")
             chosen = "error"
-            # Move any orphan spotcheck to review-transcripts (generation failed before sanity check)
             if item.action == "generate":
-                orphan_spot = feed_out / f"{ep_slug}.spotcheck.mp3"
-                if orphan_spot.exists():
-                    _move_failed_to_review(item.src.id, ep_slug, "", orphan_spot, execute=bool(execute), cache_feed_dir=feed_out)
+                _log_whisperx_empty_diag(
+                    feed_id=item.src.id,
+                    ep_slug=ep_slug,
+                    media_url=media_url or "",
+                    source="generate_failed",
+                    error=str(e),
+                    exc_type=type(e).__name__,
+                )
+                spot_mp3 = _capture_failure_spotcheck(
+                    media_url=media_url,
+                    ffmpeg_cmd=str(ffmpeg_cmd),
+                    spot_mp3_path=feed_out / f"{ep_slug}.spotcheck.mp3",
+                    spot_seconds=int(spot_check_seconds or 600),
+                    spot_bitrate=str(spot_check_bitrate or "96k"),
+                    execute=bool(execute),
+                )
+                if spot_mp3 is not None:
+                    spotcheck_count += 1
+                    _move_failed_to_review(item.src.id, ep_slug, "", spot_mp3, execute=bool(execute), cache_feed_dir=feed_out)
 
         if item.action == "download" and bool(generate_missing) and media_url:
             if (item.src.id, ep_slug) in sanity_failures:
@@ -1152,8 +1237,6 @@ def _process_work_item(
                 why = "rejected" if is_reject else "download failed"
                 print(f"[fallback] {item.src.id}/{ep_slug}: generating because provided transcript {why}")
                 try:
-                    if bool(execute) and bool(should_spot_check):
-                        spot_mp3 = feed_out / f"{ep_slug}.spotcheck.mp3"
                     srt_text, vtt_text = _generate_with_whisperx(
                         media_url=media_url,
                         ffmpeg_cmd=str(ffmpeg_cmd),
@@ -1164,16 +1247,24 @@ def _process_work_item(
                         whisperx_compute_type=str(whisperx_compute_type),
                         whisperx_extra_args=str(whisperx_extra_args),
                         whisperx_worker_url=str(whisperx_worker_url),
-                        spot_mp3_path=spot_mp3 if bool(execute) else None,
+                        spot_mp3_path=None,
                         spot_seconds=int(spot_check_seconds or 600),
                         spot_bitrate=str(spot_check_bitrate or "96k"),
                         execute=bool(execute),
                     )
-                    if spot_mp3 is not None:
-                        spotcheck_count += 1
                     vtt_out = vtt_text or (_srt_to_vtt(srt_text) if srt_text else "")
                     vtt_out = _normalize_vtt_timestamp_commas(vtt_out)
                     if not _vtt_seems_complete(vtt_out, min_chars=_EXISTING_VTT_MIN_CHARS, min_words=_EXISTING_VTT_MIN_WORDS):
+                        spot_mp3 = _capture_failure_spotcheck(
+                            media_url=media_url,
+                            ffmpeg_cmd=str(ffmpeg_cmd),
+                            spot_mp3_path=feed_out / f"{ep_slug}.spotcheck.mp3",
+                            spot_seconds=int(spot_check_seconds or 600),
+                            spot_bitrate=str(spot_check_bitrate or "96k"),
+                            execute=bool(execute),
+                        )
+                        if spot_mp3 is not None:
+                            spotcheck_count += 1
                         _move_failed_to_review(item.src.id, ep_slug, vtt_out, spot_mp3, execute=bool(execute), cache_feed_dir=feed_out)
                         _append_sanity_failure(item.src.id, ep_slug, "fallback generated subtitles failed transcript sanity")
                         raise RuntimeError("fallback generated subtitles failed transcript sanity")
@@ -1190,10 +1281,25 @@ def _process_work_item(
                     errors += 1
                     chosen = "error"
                     print(f"[error] {item.src.id}/{ep_slug}: fallback generation failed: {e2}")
-                    # Move any orphan spotcheck to review-transcripts
-                    orphan_spot = feed_out / f"{ep_slug}.spotcheck.mp3"
-                    if orphan_spot.exists():
-                        _move_failed_to_review(item.src.id, ep_slug, "", orphan_spot, execute=bool(execute), cache_feed_dir=feed_out)
+                    _log_whisperx_empty_diag(
+                        feed_id=item.src.id,
+                        ep_slug=ep_slug,
+                        media_url=media_url or "",
+                        source="fallback_generate_failed",
+                        error=str(e2),
+                        exc_type=type(e2).__name__,
+                    )
+                    spot_mp3 = _capture_failure_spotcheck(
+                        media_url=media_url,
+                        ffmpeg_cmd=str(ffmpeg_cmd),
+                        spot_mp3_path=feed_out / f"{ep_slug}.spotcheck.mp3",
+                        spot_seconds=int(spot_check_seconds or 600),
+                        spot_bitrate=str(spot_check_bitrate or "96k"),
+                        execute=bool(execute),
+                    )
+                    if spot_mp3 is not None:
+                        spotcheck_count += 1
+                        _move_failed_to_review(item.src.id, ep_slug, "", spot_mp3, execute=bool(execute), cache_feed_dir=feed_out)
 
     return WorkOutcome(
         src_id=item.src.id,
@@ -1297,19 +1403,6 @@ def main() -> None:
 
     # Note: we only enforce CUDA availability after planning, and only if we actually need generation.
 
-    def _fnv1a32(s: str) -> int:
-        h = 0x811C9DC5
-        for ch in str(s or ""):
-            h ^= ord(ch)
-            h = (h * 0x01000193) & 0xFFFFFFFF
-        return h
-
-    def _should_spot_check(src_id: str, ep_slug: str) -> bool:
-        every = int(args.spot_check_every or 0)
-        if every <= 0:
-            return False
-        return (_fnv1a32(f"{src_id}/{ep_slug}") % every) == 0
-
     max_total = int(args.max_episodes_total or 0)
 
     sanity_failures = _load_sanity_failures()
@@ -1351,7 +1444,7 @@ def main() -> None:
             if not ep_slug:
                 continue
 
-            final_vtt = feed_out / f"{ep_slug}.vtt"
+            final_vtt = (feed_out / f"{ep_slug}.vtt").resolve()
 
             media_url = _norm((ep.get("media") or {}).get("url") if isinstance(ep.get("media"), dict) else "")
             cand = _pick_best_transcript_candidate(ep)
@@ -1375,10 +1468,26 @@ def main() -> None:
 
             if not bool(args.refresh) and required and all(p.exists() for p in required):
                 # Restartable runs: treat an existing valid VTT as complete and never regenerate it.
+                # Fast path: substantial file (>1KB) = assume complete, never duplicate work
+                try:
+                    sz = final_vtt.stat().st_size
+                    if sz > 1024:
+                        _maybe_normalize_existing_vtt(final_vtt, execute=bool(args.execute))
+                        skipped_existing += 1
+                        continue
+                except OSError:
+                    pass
                 if _vtt_file_seems_complete(final_vtt, min_chars=_EXISTING_VTT_MIN_CHARS, min_words=_EXISTING_VTT_MIN_WORDS):
                     _maybe_normalize_existing_vtt(final_vtt, execute=bool(args.execute))
                     skipped_existing += 1
                     continue
+                # File exists but failed completeness - would regenerate; log why
+                try:
+                    txt = final_vtt.read_text(encoding="utf-8", errors="replace")
+                    ts = _count_vtt_timestamps(txt)
+                    print(f"[plan] {src.id}/{ep_slug}: existing file incomplete (timestamps={ts} size={final_vtt.stat().st_size}) - will regenerate")
+                except Exception:
+                    print(f"[plan] {src.id}/{ep_slug}: existing file unreadable - will regenerate")
 
             work.append(WorkItem(src=src, channel_title=channel_title, ep=ep, action=action))
             if action == "download":
@@ -1526,7 +1635,6 @@ def main() -> None:
                         whisperx_worker_url=str(args.whisperx_worker_url),
                         spot_check_seconds=int(args.spot_check_seconds or 600),
                         spot_check_bitrate=str(args.spot_check_bitrate or "96k"),
-                        should_spot_check=_should_spot_check(item.src.id, _norm(item.ep.get("slug") or "")),
                         sanity_failures=sanity_failures,
                     )
                     future_to_item[fut] = item

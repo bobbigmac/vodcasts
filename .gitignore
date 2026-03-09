@@ -12,5 +12,6 @@ __pycache__/
 scripts/audio-to-transcripts/.venv/
 .vodcasts-env
 tmp/
+whisperx-empty-diag.log
 podcast-transcripts/
 podcastindex-feeds/
