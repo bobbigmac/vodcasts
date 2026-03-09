@@ -1,0 +1,15 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from Foothills Church (Video)",
+  "leftovers_description": "Episodes outside the main Foothills Church video feed.",
+  "shows": [
+    {
+      "id": "foothills-church-messages",
+      "title": "Foothills Church Messages",
+      "title_full": "Foothills Church Messages from Foothills Church (Video)",
+      "description": "Sermons and teaching messages from Foothills Church.",
+      "categories": ["sermons"],
+      "filter": { "type": "all" }
+    }
+  ]
+}

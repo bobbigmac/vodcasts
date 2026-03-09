@@ -1,0 +1,15 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from Oak Hills Church",
+  "leftovers_description": "Episodes outside the main Oak Hills weekend messages feed.",
+  "shows": [
+    {
+      "id": "oak-hills-messages",
+      "title": "Oak Hills Messages",
+      "title_full": "Oak Hills Messages from Oak Hills Church",
+      "description": "Weekend sermons and teaching messages from Oak Hills Church.",
+      "categories": ["sermons"],
+      "filter": { "type": "all" }
+    }
+  ]
+}

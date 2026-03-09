@@ -1,0 +1,47 @@
+{
+  "leftovers_title": "Other Sermons",
+  "leftovers_title_full": "Other sermons from Mark Gungor Video",
+  "leftovers_description": "Episodes outside the main recurring Mark Gungor series in the cache.",
+  "shows": [
+    {
+      "id": "book-of-acts",
+      "title": "Book of Acts",
+      "title_full": "Book of Acts from Mark Gungor Video",
+      "description": "Messages from the Book of Acts series.",
+      "categories": ["sermons", "bible-study"],
+      "filter": { "type": "title_prefix", "value": "Book of Acts" }
+    },
+    {
+      "id": "message-of-jesus",
+      "title": "The Message of Jesus",
+      "title_full": "The Message of Jesus from Mark Gungor Video",
+      "description": "Messages from The Message of Jesus series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "The Message of Jesus," }
+    },
+    {
+      "id": "significant-events-old-testament",
+      "title": "Significant Events of the Old Testament",
+      "title_full": "Significant Events of the Old Testament from Mark Gungor Video",
+      "description": "Messages from the Significant Events of the Old Testament series.",
+      "categories": ["sermons", "bible-study"],
+      "filter": { "type": "title_prefix", "value": "Significant Events of the Old Testament" }
+    },
+    {
+      "id": "guest-speaker",
+      "title": "Guest Speaker",
+      "title_full": "Guest Speaker from Mark Gungor Video",
+      "description": "Guest speaker messages preserved in the archive.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Guest Speaker" }
+    },
+    {
+      "id": "study-of-2-kings",
+      "title": "Study of 2 Kings",
+      "title_full": "Study of 2 Kings from Mark Gungor Video",
+      "description": "Messages from the Study of 2 Kings series.",
+      "categories": ["sermons", "bible-study"],
+      "filter": { "type": "title_prefix", "value": "Study of 2 Kings," }
+    }
+  ]
+}

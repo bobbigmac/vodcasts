@@ -1,0 +1,15 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from Look at the Book",
+  "leftovers_description": "Episodes outside the main Look at the Book show.",
+  "shows": [
+    {
+      "id": "look-at-the-book",
+      "title": "Look at the Book",
+      "title_full": "Look at the Book from Desiring God",
+      "description": "John Piper's visual Bible exposition series.",
+      "categories": ["bible-study", "sermons"],
+      "filter": { "type": "all" }
+    }
+  ]
+}

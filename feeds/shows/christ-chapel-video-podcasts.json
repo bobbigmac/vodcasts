@@ -1,0 +1,15 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from Christ Chapel Video Podcasts",
+  "leftovers_description": "Episodes outside the main Christ Chapel sermon archive.",
+  "shows": [
+    {
+      "id": "christ-chapel-sermons",
+      "title": "Christ Chapel Sermons",
+      "title_full": "Christ Chapel Sermons from Christ Chapel Video Podcasts",
+      "description": "Video sermons and teaching archives from Christ Chapel.",
+      "categories": ["sermons"],
+      "filter": { "type": "all" }
+    }
+  ]
+}

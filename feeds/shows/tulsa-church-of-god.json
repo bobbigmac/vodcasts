@@ -1,0 +1,47 @@
+{
+  "leftovers_title": "Other Sermons",
+  "leftovers_title_full": "Other sermons from Tulsa Church of God",
+  "leftovers_description": "Episodes outside the main recurring Tulsa Church of God series in the cache.",
+  "shows": [
+    {
+      "id": "ethics-of-faith",
+      "title": "The Ethics of Faith",
+      "title_full": "The Ethics of Faith from Tulsa Church of God",
+      "description": "Messages from The Ethics of Faith series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "The Ethics of Faith" }
+    },
+    {
+      "id": "first-peter",
+      "title": "1 Peter",
+      "title_full": "1 Peter from Tulsa Church of God",
+      "description": "Bible study messages from the 1 Peter series.",
+      "categories": ["bible-study", "sermons"],
+      "filter": { "type": "title_prefix", "value": "1 Peter" }
+    },
+    {
+      "id": "james-bible-study",
+      "title": "James Bible Study",
+      "title_full": "James Bible Study from Tulsa Church of God",
+      "description": "Bible study messages from the James series.",
+      "categories": ["bible-study", "sermons"],
+      "filter": { "type": "title_prefix", "value": "James Bible Study" }
+    },
+    {
+      "id": "pentecost",
+      "title": "Pentecost",
+      "title_full": "Pentecost from Tulsa Church of God",
+      "description": "Messages from the Pentecost series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Pentecost" }
+    },
+    {
+      "id": "trumpets",
+      "title": "Trumpets",
+      "title_full": "Trumpets from Tulsa Church of God",
+      "description": "Messages from the Trumpets series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Trumpets" }
+    }
+  ]
+}

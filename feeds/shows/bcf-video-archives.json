@@ -1,0 +1,15 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from BCF Video Archives",
+  "leftovers_description": "Episodes outside the main BCF archive feed.",
+  "shows": [
+    {
+      "id": "bcf-archive-sermons",
+      "title": "BCF Archive Sermons",
+      "title_full": "BCF Archive Sermons from BCF Video Archives",
+      "description": "Archived sermons and conference messages from BCF.",
+      "categories": ["sermons"],
+      "filter": { "type": "all" }
+    }
+  ]
+}

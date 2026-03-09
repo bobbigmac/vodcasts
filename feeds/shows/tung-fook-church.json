@@ -1,0 +1,47 @@
+{
+  "leftovers_title": "其他講道",
+  "leftovers_title_full": "其他講道 - Tung Fook Church",
+  "leftovers_description": "未歸入主要系列的同福堂講道重溫。",
+  "shows": [
+    {
+      "id": "chudai-san-hai-kol",
+      "title": "初代山系KOL",
+      "title_full": "初代山系KOL - Tung Fook Church",
+      "description": "以「初代山系KOL」為題的一組講道。",
+      "categories": ["sermons"],
+      "filter": { "type": "title_contains", "value": "初代山系KOL" }
+    },
+    {
+      "id": "the-last-dance",
+      "title": "The Last Dance",
+      "title_full": "The Last Dance - Tung Fook Church",
+      "description": "以「The Last Dance」為題的一組講道。",
+      "categories": ["sermons"],
+      "filter": { "type": "title_contains", "value": "The Last Dance" }
+    },
+    {
+      "id": "salt-and-light",
+      "title": "Salt and Light",
+      "title_full": "Salt and Light - Tung Fook Church",
+      "description": "以「Salt and Light」為題的一組講道。",
+      "categories": ["sermons"],
+      "filter": { "type": "title_contains", "value": "Salt and Light" }
+    },
+    {
+      "id": "missional-life",
+      "title": "Missional Life",
+      "title_full": "Missional Life - Tung Fook Church",
+      "description": "以「Missional Life」為題的一組講道。",
+      "categories": ["sermons"],
+      "filter": { "type": "title_contains", "value": "Missional Life" }
+    },
+    {
+      "id": "use-what-i-have",
+      "title": "用我尚有換我沒有",
+      "title_full": "用我尚有換我沒有 - Tung Fook Church",
+      "description": "以「用我尚有換我沒有」為題的一組講道。",
+      "categories": ["sermons"],
+      "filter": { "type": "title_contains", "value": "用我尚有換我沒有" }
+    }
+  ]
+}

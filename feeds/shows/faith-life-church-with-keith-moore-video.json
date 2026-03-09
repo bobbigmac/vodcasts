@@ -1,0 +1,47 @@
+{
+  "leftovers_title": "Other Sermons",
+  "leftovers_title_full": "Other sermons from Faith Life Church with Keith Moore",
+  "leftovers_description": "Episodes outside the largest recurring Keith Moore series in the cache.",
+  "shows": [
+    {
+      "id": "redeemed-from-the-curse-of-the-law",
+      "title": "Redeemed From The Curse Of The Law",
+      "title_full": "Redeemed From The Curse Of The Law from Faith Life Church with Keith Moore",
+      "description": "Messages from the Redeemed From The Curse Of The Law series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Redeemed From The Curse Of The Law" }
+    },
+    {
+      "id": "no-place-for-the-devil",
+      "title": "No Place For The Devil",
+      "title_full": "No Place For The Devil from Faith Life Church with Keith Moore",
+      "description": "Messages from the No Place For The Devil series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "No Place For The Devil" }
+    },
+    {
+      "id": "gods-will-to-heal",
+      "title": "God's Will To Heal",
+      "title_full": "God's Will To Heal from Faith Life Church with Keith Moore",
+      "description": "Messages from the God's Will To Heal series.",
+      "categories": ["sermons", "healing"],
+      "filter": { "type": "title_prefix", "value": "God's Will To Heal" }
+    },
+    {
+      "id": "fighting-the-good-faith-fight",
+      "title": "Fighting The Good Faith Fight",
+      "title_full": "Fighting The Good Faith Fight from Faith Life Church with Keith Moore",
+      "description": "Messages from the Fighting The Good Faith Fight series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Fighting The Good Faith Fight" }
+    },
+    {
+      "id": "the-perfect-will-of-god",
+      "title": "The Perfect Will Of God",
+      "title_full": "The Perfect Will Of God from Faith Life Church with Keith Moore",
+      "description": "Messages from The Perfect Will Of God series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "The Perfect Will Of God" }
+    }
+  ]
+}

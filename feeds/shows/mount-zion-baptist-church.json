@@ -1,0 +1,42 @@
+{
+  "leftovers_title": "Other Services",
+  "leftovers_title_full": "Other services from Mount Zion Baptist Church",
+  "leftovers_description": "Episodes outside the recurring service labels found in the Mount Zion cache.",
+  "shows": [
+    {
+      "id": "online-worship",
+      "title": "Online Worship",
+      "title_full": "Online Worship from Mount Zion Baptist Church",
+      "description": "Main worship services labeled as online worship.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_contains", "value": "ONLINE WORSHIP" }
+    },
+    {
+      "id": "church-school",
+      "title": "Church School",
+      "title_full": "Church School from Mount Zion Baptist Church",
+      "description": "Church School recordings from Mount Zion.",
+      "categories": ["teaching"],
+      "filter": { "type": "title_suffix", "value": "Church School" }
+    },
+    {
+      "id": "young-adult-study-prayer",
+      "title": "Young Adult Study & Prayer",
+      "title_full": "Young Adult Study & Prayer from Mount Zion Baptist Church",
+      "description": "Cornerstone and Mount Zion young adult study and prayer sessions.",
+      "categories": ["ministry"],
+      "filter": {
+        "type": "title_contains_any",
+        "values": ["Young Adult", "Young Adults"]
+      }
+    },
+    {
+      "id": "monday-night-biblical-studies",
+      "title": "Monday Night Biblical Studies",
+      "title_full": "Monday Night Biblical Studies from Mount Zion Baptist Church",
+      "description": "Monday night biblical studies episodes from the Mount Zion cache.",
+      "categories": ["bible-study"],
+      "filter": { "type": "title_contains", "value": "BIBLICAL STUDIES" }
+    }
+  ]
+}

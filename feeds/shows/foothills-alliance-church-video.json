@@ -1,0 +1,15 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from Foothills Alliance Church",
+  "leftovers_description": "Episodes outside the main Foothills Alliance sermon feed.",
+  "shows": [
+    {
+      "id": "foothills-alliance-sermons",
+      "title": "Foothills Alliance Sermons",
+      "title_full": "Foothills Alliance Sermons from Foothills Alliance Church",
+      "description": "Weekly sermon videos from Foothills Alliance Church.",
+      "categories": ["sermons"],
+      "filter": { "type": "all" }
+    }
+  ]
+}

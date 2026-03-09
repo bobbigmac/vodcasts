@@ -1,0 +1,39 @@
+{
+  "leftovers_title": "Other Services",
+  "leftovers_title_full": "Other services from LOH Church Archive",
+  "leftovers_description": "Archive items outside the named recurring LOH programs.",
+  "shows": [
+    {
+      "id": "midweek-supercharged",
+      "title": "Midweek SuperCharged",
+      "title_full": "Midweek SuperCharged from LOH Church Archive",
+      "description": "Midweek teaching services from Lord of Hosts Church.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Midweek SuperCharged" }
+    },
+    {
+      "id": "midweek-recharge",
+      "title": "Midweek Recharge",
+      "title_full": "Midweek Recharge from LOH Church Archive",
+      "description": "Recurring midweek recharge services.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Midweek Recharge" }
+    },
+    {
+      "id": "flashpoint-next-level",
+      "title": "FlashPoint Next Level",
+      "title_full": "FlashPoint Next Level from LOH Church Archive",
+      "description": "FlashPoint Next Level services carried in the archive.",
+      "categories": ["ministry"],
+      "filter": { "type": "title_prefix", "value": "FlashPoint Next Level" }
+    },
+    {
+      "id": "from-our-home-to-yours",
+      "title": "From Our Home to Yours",
+      "title_full": "From Our Home to Yours from LOH Church Archive",
+      "description": "Home-based church broadcasts preserved in the archive.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_suffix", "value": "From Our Home to Yours" }
+    }
+  ]
+}

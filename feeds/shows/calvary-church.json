@@ -1,0 +1,55 @@
+{
+  "leftovers_title": "Other Sermons",
+  "leftovers_title_full": "Other sermons from Calvary Church",
+  "leftovers_description": "Episodes outside the main recurring Calvary Church series in the cache.",
+  "shows": [
+    {
+      "id": "living-by-faith",
+      "title": "Living By Faith",
+      "title_full": "Living By Faith from Calvary Church",
+      "description": "Messages from the Living By Faith series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "LIVING BY FAITH" }
+    },
+    {
+      "id": "courage-to-obey",
+      "title": "Courage To Obey",
+      "title_full": "Courage To Obey from Calvary Church",
+      "description": "Messages from the Courage To Obey series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "COURAGE TO OBEY" }
+    },
+    {
+      "id": "divine-reconstruction",
+      "title": "Divine Reconstruction",
+      "title_full": "Divine Reconstruction from Calvary Church",
+      "description": "Messages from the Divine Reconstruction series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Divine Reconstruction" }
+    },
+    {
+      "id": "abundance",
+      "title": "Abundance",
+      "title_full": "Abundance from Calvary Church",
+      "description": "Messages from the Abundance series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Abundance" }
+    },
+    {
+      "id": "a-godly-life",
+      "title": "A Godly Life",
+      "title_full": "A Godly Life from Calvary Church",
+      "description": "Messages from the A Godly Life series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "A Godly Life" }
+    },
+    {
+      "id": "every-step-counts",
+      "title": "Every Step Counts",
+      "title_full": "Every Step Counts from Calvary Church",
+      "description": "Messages from the Every Step Counts series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_regex", "value": "^Every Step Counts|^EVERY STEP COUNTS" }
+    }
+  ]
+}

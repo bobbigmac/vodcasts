@@ -1,0 +1,15 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from Canopy Roads Baptist Church",
+  "leftovers_description": "Episodes outside the main Canopy Roads Baptist Church sermon feed.",
+  "shows": [
+    {
+      "id": "canopy-roads-sermons",
+      "title": "Canopy Roads Sermons",
+      "title_full": "Canopy Roads Sermons from Canopy Roads Baptist Church",
+      "description": "Sermons and church messages from Canopy Roads Baptist Church.",
+      "categories": ["sermons"],
+      "filter": { "type": "all" }
+    }
+  ]
+}

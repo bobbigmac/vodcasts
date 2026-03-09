@@ -1,0 +1,18 @@
+{
+  "leftovers_title": "Other Teachings",
+  "leftovers_title_full": "Other teachings from Jerusalem Channel",
+  "leftovers_description": "Episodes outside the recurring Bible Prophecy Update titles.",
+  "shows": [
+    {
+      "id": "bible-prophecy-update",
+      "title": "Bible Prophecy Update",
+      "title_full": "Bible Prophecy Update from Jerusalem Channel",
+      "description": "Recurring prophecy update episodes from Jerusalem Channel.",
+      "categories": ["sermons", "teaching"],
+      "filter": {
+        "type": "title_contains_any",
+        "values": ["Bible Prophecy Update", "Prophecy Update"]
+      }
+    }
+  ]
+}

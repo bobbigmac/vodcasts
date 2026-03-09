@@ -1,0 +1,15 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from PIJN News",
+  "leftovers_description": "Episodes outside the main Pray In Jesus Name news stream.",
+  "shows": [
+    {
+      "id": "pijn-news",
+      "title": "PIJN News",
+      "title_full": "PIJN News from Pray In Jesus Name",
+      "description": "Christian news and interviews from Pray In Jesus Name.",
+      "categories": ["news"],
+      "filter": { "type": "all" }
+    }
+  ]
+}

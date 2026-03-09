@@ -1,0 +1,55 @@
+{
+  "leftovers_title": "Other Series",
+  "leftovers_title_full": "Other series from Crossroads Videos",
+  "leftovers_description": "Episodes outside the main recurring Crossroads title groupings in the cache.",
+  "shows": [
+    {
+      "id": "spark-talks",
+      "title": "Spark Talks",
+      "title_full": "Spark Talks from Crossroads Videos",
+      "description": "Episodes labeled as Spark Talks in the Crossroads feed.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_contains", "value": "Spark Talks" }
+    },
+    {
+      "id": "the-adventurous-life",
+      "title": "The Adventurous Life",
+      "title_full": "The Adventurous Life from Crossroads Videos",
+      "description": "Episodes from The Adventurous Life series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_contains", "value": "The Adventurous Life" }
+    },
+    {
+      "id": "last-wednesday",
+      "title": "Last Wednesday",
+      "title_full": "Last Wednesday from Crossroads Videos",
+      "description": "Episodes from the Last Wednesday series.",
+      "categories": ["ministry"],
+      "filter": { "type": "title_prefix", "value": "Last Wednesday" }
+    },
+    {
+      "id": "people-skills",
+      "title": "People Skills",
+      "title_full": "People Skills from Crossroads Videos",
+      "description": "Episodes from the People Skills series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "People Skills" }
+    },
+    {
+      "id": "empires",
+      "title": "Empires",
+      "title_full": "Empires from Crossroads Videos",
+      "description": "Episodes from the Empires series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Empires" }
+    },
+    {
+      "id": "play-and-purpose-journey",
+      "title": "Play & Purpose Journey",
+      "title_full": "Play & Purpose Journey from Crossroads Videos",
+      "description": "Episodes from the Play & Purpose Journey series.",
+      "categories": ["ministry"],
+      "filter": { "type": "title_prefix", "value": "Play & Purpose Journey" }
+    }
+  ]
+}

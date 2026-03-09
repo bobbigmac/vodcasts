@@ -1,0 +1,47 @@
+{
+  "leftovers_title": "Other Sermons",
+  "leftovers_title_full": "Other sermons from Legacy Church with Pastor Steve",
+  "leftovers_description": "Episodes outside the main recurring Legacy Church series in the cache.",
+  "shows": [
+    {
+      "id": "the-good-book",
+      "title": "The Good Book",
+      "title_full": "The Good Book from Legacy Church with Pastor Steve",
+      "description": "Messages from The Good Book series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "The Good Book" }
+    },
+    {
+      "id": "consider-the-old-ways",
+      "title": "Consider The Old Ways",
+      "title_full": "Consider The Old Ways from Legacy Church with Pastor Steve",
+      "description": "Messages from the Consider The Old Ways series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Consider The Old Ways" }
+    },
+    {
+      "id": "battle-ready",
+      "title": "Battle Ready",
+      "title_full": "Battle Ready from Legacy Church with Pastor Steve",
+      "description": "Messages from the Battle Ready series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Battle Ready" }
+    },
+    {
+      "id": "out-of-nowhere",
+      "title": "Out Of Nowhere",
+      "title_full": "Out Of Nowhere from Legacy Church with Pastor Steve",
+      "description": "Messages from the Out Of Nowhere series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_regex", "value": "^Out [Oo]f Nowhere" }
+    },
+    {
+      "id": "bible-versus-culture",
+      "title": "Bible Versus Culture",
+      "title_full": "Bible Versus Culture from Legacy Church with Pastor Steve",
+      "description": "Messages from the Bible Versus Culture series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Bible Versus Culture" }
+    }
+  ]
+}

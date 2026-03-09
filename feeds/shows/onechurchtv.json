@@ -1,0 +1,15 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from oneChurch.tv",
+  "leftovers_description": "Episodes outside the main oneChurch.tv message feed.",
+  "shows": [
+    {
+      "id": "onechurchtv-messages",
+      "title": "oneChurch.tv Messages",
+      "title_full": "oneChurch.tv Messages",
+      "description": "Sermons and message series from oneChurch.tv.",
+      "categories": ["sermons"],
+      "filter": { "type": "all" }
+    }
+  ]
+}

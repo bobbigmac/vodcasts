@@ -1,0 +1,71 @@
+{
+  "leftovers_title": "Other Sermons",
+  "leftovers_title_full": "Other sermons from River Valley Church (Video)",
+  "leftovers_description": "Episodes outside the main recurring River Valley Church series in the cache.",
+  "shows": [
+    {
+      "id": "kingdom-culture",
+      "title": "Kingdom Culture",
+      "title_full": "Kingdom Culture from River Valley Church",
+      "description": "Messages from the Kingdom Culture series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Kingdom Culture" }
+    },
+    {
+      "id": "sparkle",
+      "title": "Sparkle",
+      "title_full": "Sparkle from River Valley Church",
+      "description": "Messages from the Sparkle series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Sparkle" }
+    },
+    {
+      "id": "dangerous-prayers",
+      "title": "Dangerous Prayers",
+      "title_full": "Dangerous Prayers from River Valley Church",
+      "description": "Messages from the Dangerous Prayers series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Dangerous Prayers" }
+    },
+    {
+      "id": "follow-the-prompt",
+      "title": "Follow The Prompt",
+      "title_full": "Follow The Prompt from River Valley Church",
+      "description": "Messages from the Follow The Prompt series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Follow The Prompt" }
+    },
+    {
+      "id": "who-do-you-say-i-am",
+      "title": "Who Do You Say I Am",
+      "title_full": "Who Do You Say I Am from River Valley Church",
+      "description": "Messages from the Who Do You Say I Am series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Who Do You Say I Am" }
+    },
+    {
+      "id": "suit-up",
+      "title": "Suit Up",
+      "title_full": "Suit Up from River Valley Church",
+      "description": "Messages from the Suit Up series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Suit Up" }
+    },
+    {
+      "id": "anchor-verses",
+      "title": "Anchor Verses",
+      "title_full": "Anchor Verses from River Valley Church",
+      "description": "Messages from the Anchor Verses series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Anchor Verses" }
+    },
+    {
+      "id": "money-talks",
+      "title": "Money Talks",
+      "title_full": "Money Talks from River Valley Church",
+      "description": "Messages from the Money Talks series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Money Talks" }
+    }
+  ]
+}

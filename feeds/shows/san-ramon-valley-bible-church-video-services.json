@@ -1,0 +1,47 @@
+{
+  "leftovers_title": "Other Sermons",
+  "leftovers_title_full": "Other sermons from San Ramon Valley Bible Church",
+  "leftovers_description": "Episodes outside the main recurring sermon series in the cache.",
+  "shows": [
+    {
+      "id": "lessons-from-the-life-of-david",
+      "title": "Lessons From The Life Of David",
+      "title_full": "Lessons From The Life Of David from San Ramon Valley Bible Church",
+      "description": "Messages from the Lessons From The Life Of David series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Lessons From The Life Of David" }
+    },
+    {
+      "id": "life-of-ruth",
+      "title": "The Life Of Ruth",
+      "title_full": "The Life Of Ruth from San Ramon Valley Bible Church",
+      "description": "Messages from The Life Of Ruth series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "The Life Of Ruth" }
+    },
+    {
+      "id": "life-of-jonathan",
+      "title": "Lessons From The Life Of Jonathan",
+      "title_full": "Lessons From The Life Of Jonathan from San Ramon Valley Bible Church",
+      "description": "Messages from the Lessons From The Life Of Jonathan series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Lessons From The Life Of Jonathan" }
+    },
+    {
+      "id": "life-of-gideon",
+      "title": "Lessons From The Life Of Gideon",
+      "title_full": "Lessons From The Life Of Gideon from San Ramon Valley Bible Church",
+      "description": "Messages from the Lessons From The Life Of Gideon series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Lessons From The Life Of Gideon" }
+    },
+    {
+      "id": "nehemiah",
+      "title": "Nehemiah",
+      "title_full": "Nehemiah from San Ramon Valley Bible Church",
+      "description": "Messages from the Nehemiah series.",
+      "categories": ["sermons", "bible-study"],
+      "filter": { "type": "title_prefix", "value": "Nehemiah" }
+    }
+  ]
+}

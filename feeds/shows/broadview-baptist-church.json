@@ -1,0 +1,31 @@
+{
+  "leftovers_title": "Other Services",
+  "leftovers_title_full": "Other services from Broadview Baptist Church",
+  "leftovers_description": "Episodes outside the recurring service labels found in the cache.",
+  "shows": [
+    {
+      "id": "contemporary-service",
+      "title": "Contemporary Service",
+      "title_full": "Contemporary Service from Broadview Baptist Church",
+      "description": "Contemporary service recordings from Broadview Baptist Church.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Contemporary Service" }
+    },
+    {
+      "id": "traditional-service",
+      "title": "Traditional Service",
+      "title_full": "Traditional Service from Broadview Baptist Church",
+      "description": "Traditional service recordings from Broadview Baptist Church.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Traditional Service" }
+    },
+    {
+      "id": "at-home-service",
+      "title": "At Home Service",
+      "title_full": "At Home Service from Broadview Baptist Church",
+      "description": "Home-era service recordings labeled At Home Service.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "\"At Home Service\"" }
+    }
+  ]
+}

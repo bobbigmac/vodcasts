@@ -1,0 +1,50 @@
+{
+  "leftovers_title": "Other Sermons",
+  "leftovers_title_full": "Other sermons from Central Baptist Church - Central Campus",
+  "leftovers_description": "Messages outside the main recurring Central Baptist series in the cache.",
+  "shows": [
+    {
+      "id": "jesus-builds-his-church",
+      "title": "Jesus Builds His Church",
+      "title_full": "Jesus Builds His Church from Central Baptist Church - Central Campus",
+      "description": "Messages from the Jesus Builds His Church series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Jesus Builds His Church" }
+    },
+    {
+      "id": "holy",
+      "title": "Holy",
+      "title_full": "Holy from Central Baptist Church - Central Campus",
+      "description": "Messages from the Holy series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Holy" }
+    },
+    {
+      "id": "live-this-life",
+      "title": "Live This Life",
+      "title_full": "Live This Life from Central Baptist Church - Central Campus",
+      "description": "Messages from the Live This Life series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Live This Life" }
+    },
+    {
+      "id": "the-end",
+      "title": "The End",
+      "title_full": "The End from Central Baptist Church - Central Campus",
+      "description": "End-times themed messages grouped under The End titles.",
+      "categories": ["sermons"],
+      "filter": {
+        "type": "title_contains_any",
+        "values": ["The End", "The End Times"]
+      }
+    },
+    {
+      "id": "light-of-the-world",
+      "title": "The Light Of The World",
+      "title_full": "The Light Of The World from Central Baptist Church - Central Campus",
+      "description": "Messages from The Light Of The World series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "The Light Of The World" }
+    }
+  ]
+}

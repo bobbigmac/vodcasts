@@ -1,0 +1,15 @@
+{
+  "leftovers_title": "Other",
+  "leftovers_title_full": "Other from Oxford Bible Church - Living in the Last Days",
+  "leftovers_description": "Episodes outside the main Oxford Bible Church teaching archive.",
+  "shows": [
+    {
+      "id": "oxford-bible-church-teachings",
+      "title": "Oxford Bible Church Teachings",
+      "title_full": "Oxford Bible Church Teachings from Living in the Last Days",
+      "description": "Bible teaching and prophecy messages from Oxford Bible Church.",
+      "categories": ["sermons", "teaching"],
+      "filter": { "type": "all" }
+    }
+  ]
+}

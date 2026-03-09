@@ -1,0 +1,55 @@
+{
+  "leftovers_title": "Other Sermons",
+  "leftovers_title_full": "Other sermons from Boulder Church Video Podcast",
+  "leftovers_description": "Episodes outside the main recurring Boulder Church series in the cache.",
+  "shows": [
+    {
+      "id": "narratives-imagination-experiencing-god",
+      "title": "Narratives, Imagination & Experiencing God",
+      "title_full": "Narratives, Imagination & Experiencing God from Boulder Church",
+      "description": "Messages from the Narratives, Imagination & Experiencing God series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Narratives, Imagination & Experiencing God" }
+    },
+    {
+      "id": "wisdom-that-works",
+      "title": "Wisdom That Works",
+      "title_full": "Wisdom That Works from Boulder Church",
+      "description": "Messages from the Wisdom That Works series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Wisdom That Works" }
+    },
+    {
+      "id": "prophets-and-kings",
+      "title": "Prophets and Kings",
+      "title_full": "Prophets and Kings from Boulder Church",
+      "description": "Messages from the Prophets and Kings series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Prophets and Kings" }
+    },
+    {
+      "id": "jesus-manifesto",
+      "title": "Jesus Manifesto",
+      "title_full": "Jesus Manifesto from Boulder Church",
+      "description": "Messages from the Jesus Manifesto series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Jesus Manifesto" }
+    },
+    {
+      "id": "justice-mercy-humility",
+      "title": "Justice, Mercy, & Humility",
+      "title_full": "Justice, Mercy, & Humility from Boulder Church",
+      "description": "Messages from the Justice, Mercy, & Humility series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Justice, Mercy, & Humility" }
+    },
+    {
+      "id": "habits-of-jesus",
+      "title": "Habits of Jesus",
+      "title_full": "Habits of Jesus from Boulder Church",
+      "description": "Messages from the Habits of Jesus series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Habits of Jesus" }
+    }
+  ]
+}

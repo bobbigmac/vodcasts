@@ -1,0 +1,55 @@
+{
+  "leftovers_title": "Other Sermons",
+  "leftovers_title_full": "Other sermons from Cornerstone Chapel - Video Podcast",
+  "leftovers_description": "Episodes outside the main recurring Cornerstone Chapel series in the cache.",
+  "shows": [
+    {
+      "id": "guest-speaker",
+      "title": "Guest Speaker",
+      "title_full": "Guest Speaker from Cornerstone Chapel",
+      "description": "Guest speaker messages from Cornerstone Chapel.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Guest Speaker" }
+    },
+    {
+      "id": "proverbs",
+      "title": "Proverbs",
+      "title_full": "Proverbs from Cornerstone Chapel",
+      "description": "Messages from the Proverbs series.",
+      "categories": ["sermons", "bible-study"],
+      "filter": { "type": "title_prefix", "value": "Proverbs" }
+    },
+    {
+      "id": "blessings-and-benefits-of-the-bible",
+      "title": "The Blessings And Benefits Of The Bible",
+      "title_full": "The Blessings And Benefits Of The Bible from Cornerstone Chapel",
+      "description": "Messages from The Blessings And Benefits Of The Bible series.",
+      "categories": ["sermons", "bible-study"],
+      "filter": { "type": "title_prefix", "value": "The Blessings And Benefits Of The Bible" }
+    },
+    {
+      "id": "examining-our-gates",
+      "title": "Examining Our Gates",
+      "title_full": "Examining Our Gates from Cornerstone Chapel",
+      "description": "Messages from the Examining Our Gates series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Examining Our Gates" }
+    },
+    {
+      "id": "character-studies",
+      "title": "Character Studies",
+      "title_full": "Character Studies from Cornerstone Chapel",
+      "description": "Messages from the Character Studies series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Character Studies" }
+    },
+    {
+      "id": "faith-lessons",
+      "title": "Faith Lessons",
+      "title_full": "Faith Lessons from Cornerstone Chapel",
+      "description": "Messages from the Faith Lessons series.",
+      "categories": ["sermons"],
+      "filter": { "type": "title_prefix", "value": "Faith Lessons" }
+    }
+  ]
+}
