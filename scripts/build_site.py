@@ -1512,11 +1512,6 @@ def main() -> None:
 
     _log(f"build complete ({time.perf_counter() - t0:.1f}s total)")
 
-    # Copy placeholder old JSON config for convenience when diffing/porting.
-    src_sources_json = VODCASTS_ROOT / "feeds" / "video-sources.json"
-    if src_sources_json.exists():
-        shutil.copy2(src_sources_json, out_dir / "video-sources.original.json")
-
 
 if __name__ == "__main__":
     main()
