@@ -12,7 +12,7 @@
 - min_hours_between_checks: 2
 - request_timeout_seconds: 25
 - user_agent: actual-plays/vodcasts (+https://github.com/)
-- include: church-audio-only.md, news.md, bonus.md
+- include: church-audio-only.md, news.md, bonus.md, church-podcastindex-validated-video.md
 
 # Feeds
 
