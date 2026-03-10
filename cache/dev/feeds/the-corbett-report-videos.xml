@@ -18,6 +18,19 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
 	<atom:link href="https://www.corbettreport.com/videorss.xml" rel="self" type="application/rss+xml" />
 
 	<item>
+		<title>Meet The Ellisons: Zionists, Technocrats, Moguls</title>
+		<itunes:author>The Corbett Report</itunes:author>
+		<description>Who are the Ellisons? Where does their immense fortune come from? And how do they plan to use that fortune? By the end of today's episode, you're going to know more about the Ellison family, Zionists, technocrats, media moguls, and how they are using their power to shape your future.</description>
+		<enclosure
+			url="https://www.corbettreport.com/mp4/ep494-ellison.mp4"
+ 			length="167669952"
+			type="video/mpeg"/>
+		<guid>https://www.corbettreport.com/mp4/ep494-ellison.mp4</guid>
+		<pubDate>Tue, 10 Mar 2026 15:25:00 +0900</pubDate>
+		<itunes:duration>59:36</itunes:duration>
+	</item>
+
+	<item>
 		<title>Begun, the Drone War Has! (#NWNW 621)</title>
 		<itunes:author>The Corbett Report</itunes:author>
 		<description>This week on New World Next Week: the Iran war gives us insight into the future of warfare; assessing the aftermath of the Mexican drug cartel strike; and Morrissey is the last rock rebel.</description>
