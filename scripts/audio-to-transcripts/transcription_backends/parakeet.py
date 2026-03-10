@@ -2,13 +2,14 @@
 from __future__ import annotations
 
 import sys
+import threading
 from pathlib import Path
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
     from parakeet_stream import Parakeet
 
-from .subtitle_utils import estimate_audio_duration_seconds, segments_from_word_timestamps, segments_to_srt, srt_to_vtt
+from .subtitle_utils import coerce_subtitle_output, estimate_audio_duration_seconds, segments_from_word_timestamps, segments_to_srt, srt_to_vtt
 
 
 def _ensure_utf8_stdio() -> None:
@@ -36,6 +37,7 @@ class ParakeetBackend:
         self.config = str(config or "balanced").strip() or "balanced"
         self.model_name = str(model_name or "nvidia/parakeet-tdt-0.6b-v3").strip() or "nvidia/parakeet-tdt-0.6b-v3"
         self._model: Parakeet | None = None
+        self._lock = threading.Lock()
 
     def _get_model(self) -> Any:
         if self._model is not None:
@@ -61,16 +63,17 @@ class ParakeetBackend:
         if not audio_path.exists():
             raise FileNotFoundError(f"audio not found: {audio_path}")
 
-        result = self._get_model().transcribe(str(audio_path), timestamps=True, _quiet=True)
-        text = (getattr(result, "text", None) or "").strip()
-        if not text:
-            raise ValueError("parakeet produced empty transcript")
+        with self._lock:
+            result = self._get_model().transcribe(str(audio_path), timestamps=True, _quiet=True)
+            text = (getattr(result, "text", None) or "").strip()
+            if not text:
+                raise ValueError("parakeet produced empty transcript")
 
-        segments = segments_from_word_timestamps(list(getattr(result, "timestamps", None) or []))
-        if not segments:
-            duration = float(getattr(result, "duration", 0.0) or 0.0) or estimate_audio_duration_seconds(audio_path)
-            segments = [(0.0, max(1.0, duration), text)]
+            segments = segments_from_word_timestamps(list(getattr(result, "timestamps", None) or []))
+            if not segments:
+                duration = float(getattr(result, "duration", 0.0) or 0.0) or estimate_audio_duration_seconds(audio_path)
+                segments = [(0.0, max(1.0, duration), text)]
 
-        srt = segments_to_srt(segments)
-        vtt = srt_to_vtt(srt)
-        return srt, vtt
+            srt = segments_to_srt(segments)
+            vtt = srt_to_vtt(srt)
+            return coerce_subtitle_output(srt, vtt)

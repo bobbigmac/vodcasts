@@ -30,6 +30,7 @@ from scripts.feed_manifest import parse_feed_for_manifest
 from scripts.shared import VODCASTS_ROOT, fetch_url
 from scripts.sources import Source, load_sources_config
 from transcription_backends import get_backend
+from transcription_backends.subtitle_utils import SubtitleValidationError, coerce_subtitle_output
 
 
 _PLAYABLE_TYPES = {"text/vtt", "application/x-subrip", "application/srt"}
@@ -676,6 +677,10 @@ class ProvidedTranscriptRejected(ValueError):
     pass
 
 
+class GeneratedTranscriptRejected(RuntimeError):
+    pass
+
+
 def _count_srt_timestamps(text: str) -> int:
     return sum(1 for ln in (text or "").splitlines() if _SRT_TS_RE.match(ln.strip()))
 
@@ -1030,6 +1035,7 @@ def _generate_transcript(
 
         with _timed("transcribe"):
             srt_text, vtt_text = backend.transcribe(wav_path, language)
+        srt_text, vtt_text = coerce_subtitle_output(srt_text, vtt_text)
         _ensure_non_empty_transcript(srt_text, vtt_text)
         return srt_text, vtt_text or _srt_to_vtt(srt_text)
 
@@ -1133,7 +1139,7 @@ def _process_work_item(
                         spotcheck_count += 1
                     _move_failed_to_review(item.src.id, ep_slug, vtt_out, spot_mp3, execute=bool(execute), cache_feed_dir=feed_out)
                     _append_sanity_failure(item.src.id, ep_slug, "generated subtitles failed transcript sanity")
-                    raise RuntimeError("generated subtitles failed transcript sanity")
+                    raise GeneratedTranscriptRejected("generated subtitles failed transcript sanity")
                 with _timed("write_vtt"):
                     _write_text(final_vtt, vtt_out, execute=bool(execute))
                 chosen = "generated"
@@ -1149,10 +1155,16 @@ def _process_work_item(
 
     except Exception as e:
         is_reject = isinstance(e, ProvidedTranscriptRejected)
+        is_generated_reject = isinstance(e, GeneratedTranscriptRejected)
+        is_validation_error = isinstance(e, SubtitleValidationError)
         if is_reject:
             rejected_provided += 1
             print(f"[reject] {item.src.id}/{ep_slug}: {e}")
             chosen = "rejected"
+        elif is_generated_reject:
+            errors += 1
+            print(f"[error] {item.src.id}/{ep_slug}: {e}")
+            chosen = "error"
         else:
             errors += 1
             print(f"[error] {item.src.id}/{ep_slug}: {e}")
@@ -1176,7 +1188,10 @@ def _process_work_item(
                 )
                 if spot_mp3 is not None:
                     spotcheck_count += 1
-                    _move_failed_to_review(item.src.id, ep_slug, "", spot_mp3, execute=bool(execute), cache_feed_dir=feed_out)
+                review_vtt = e.vtt_text if is_validation_error else ""
+                _move_failed_to_review(item.src.id, ep_slug, review_vtt, spot_mp3, execute=bool(execute), cache_feed_dir=feed_out)
+                if is_validation_error:
+                    _append_sanity_failure(item.src.id, ep_slug, "generated subtitles failed VTT validation")
 
         if item.action == "download" and bool(generate_missing) and media_url:
             if (item.src.id, ep_slug) in sanity_failures:
@@ -1212,7 +1227,7 @@ def _process_work_item(
                             spotcheck_count += 1
                         _move_failed_to_review(item.src.id, ep_slug, vtt_out, spot_mp3, execute=bool(execute), cache_feed_dir=feed_out)
                         _append_sanity_failure(item.src.id, ep_slug, "fallback generated subtitles failed transcript sanity")
-                        raise RuntimeError("fallback generated subtitles failed transcript sanity")
+                        raise GeneratedTranscriptRejected("fallback generated subtitles failed transcript sanity")
                     with _timed("write_vtt"):
                         _write_text(final_vtt, vtt_out, execute=bool(execute))
                     chosen = "generated"
@@ -1226,6 +1241,8 @@ def _process_work_item(
                     errors += 1
                     chosen = "error"
                     print(f"[error] {item.src.id}/{ep_slug}: fallback generation failed: {e2}")
+                    is_generated_reject_2 = isinstance(e2, GeneratedTranscriptRejected)
+                    is_validation_error_2 = isinstance(e2, SubtitleValidationError)
                     _log_whisperx_empty_diag(
                         feed_id=item.src.id,
                         ep_slug=ep_slug,
@@ -1234,17 +1251,21 @@ def _process_work_item(
                         error=str(e2),
                         exc_type=type(e2).__name__,
                     )
-                    spot_mp3 = _capture_failure_spotcheck(
-                        media_url=media_url,
-                        ffmpeg_cmd=str(ffmpeg_cmd),
-                        spot_mp3_path=feed_out / f"{ep_slug}.spotcheck.mp3",
-                        spot_seconds=int(spot_check_seconds or 600),
-                        spot_bitrate=str(spot_check_bitrate or "96k"),
-                        execute=bool(execute),
-                    )
-                    if spot_mp3 is not None:
-                        spotcheck_count += 1
-                        _move_failed_to_review(item.src.id, ep_slug, "", spot_mp3, execute=bool(execute), cache_feed_dir=feed_out)
+                    if not is_generated_reject_2:
+                        spot_mp3 = _capture_failure_spotcheck(
+                            media_url=media_url,
+                            ffmpeg_cmd=str(ffmpeg_cmd),
+                            spot_mp3_path=feed_out / f"{ep_slug}.spotcheck.mp3",
+                            spot_seconds=int(spot_check_seconds or 600),
+                            spot_bitrate=str(spot_check_bitrate or "96k"),
+                            execute=bool(execute),
+                        )
+                        if spot_mp3 is not None:
+                            spotcheck_count += 1
+                        review_vtt = e2.vtt_text if is_validation_error_2 else ""
+                        _move_failed_to_review(item.src.id, ep_slug, review_vtt, spot_mp3, execute=bool(execute), cache_feed_dir=feed_out)
+                        if is_validation_error_2:
+                            _append_sanity_failure(item.src.id, ep_slug, "fallback generated subtitles failed VTT validation")
 
     return WorkOutcome(
         src_id=item.src.id,
