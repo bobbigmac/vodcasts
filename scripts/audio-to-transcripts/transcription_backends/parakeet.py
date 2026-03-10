@@ -1,87 +1,76 @@
-"""Parakeet TDT backend via parakeet-stream (phrase-level timestamps from stream)."""
+"""Parakeet TDT backend via parakeet-stream."""
 from __future__ import annotations
 
+import sys
 from pathlib import Path
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
-    pass
+    from parakeet_stream import Parakeet
+
+from .subtitle_utils import estimate_audio_duration_seconds, segments_from_word_timestamps, segments_to_srt, srt_to_vtt
 
 
-def _ts(sec: float) -> str:
-    """Format seconds as HH:MM:SS,mmm."""
-    h = int(sec // 3600)
-    m = int((sec % 3600) // 60)
-    s = sec % 60
-    return f"{h:02d}:{m:02d}:{int(s):02d},{int(s % 1 * 1000):03d}"
-
-
-def _segments_to_srt(segments: list[tuple[float, float, str]]) -> str:
-    out = []
-    for i, (start, end, text) in enumerate(segments, 1):
-        if not (text or "").strip():
+def _ensure_utf8_stdio() -> None:
+    for stream_name in ("stdout", "stderr"):
+        stream = getattr(sys, stream_name, None)
+        if stream is None or not hasattr(stream, "reconfigure"):
             continue
-        out.append(f"{i}\n{_ts(start)} --> {_ts(end)}\n{text.strip()}\n")
-    return "\n".join(out) + "\n" if out else ""
-
-
-def _srt_to_vtt(srt: str) -> str:
-    if not (srt or "").strip():
-        return ""
-    out: list[str] = ["WEBVTT", ""]
-    for raw in (srt or "").splitlines():
-        line = raw.rstrip("\n")
-        if line.strip().isdigit():
-            continue
-        if "-->" in line and "," in line:
-            line = line.replace(",", ".")
-        out.append(line)
-    return "\n".join(out).rstrip() + "\n"
+        try:
+            stream.reconfigure(encoding="utf-8")
+        except Exception:
+            pass
 
 
 class ParakeetBackend:
-    """Parakeet TDT via parakeet-stream. Uses stream() for phrase-level timestamps."""
+    """Parakeet TDT via parakeet-stream."""
 
     def __init__(
         self,
         *,
         device: str = "cuda",
         config: str = "balanced",
+        model_name: str = "nvidia/parakeet-tdt-0.6b-v3",
     ) -> None:
         self.device = str(device or "cuda").strip() or "cuda"
         self.config = str(config or "balanced").strip() or "balanced"
+        self.model_name = str(model_name or "nvidia/parakeet-tdt-0.6b-v3").strip() or "nvidia/parakeet-tdt-0.6b-v3"
+        self._model: Parakeet | None = None
+
+    def _get_model(self) -> Any:
+        if self._model is not None:
+            return self._model
+        _ensure_utf8_stdio()
+        try:
+            from parakeet_stream import Parakeet
+        except ImportError as exc:
+            raise RuntimeError(
+                "Parakeet backend requires `parakeet-stream`. Run scripts/audio-to-transcripts/setup-venv.ps1."
+            ) from exc
+        self._model = Parakeet(
+            model_name=self.model_name,
+            device=self.device,
+            config=self.config,
+            lazy=True,
+        )
+        return self._model
 
     def transcribe(self, audio_path: Path, language: str) -> tuple[str, str]:
         """Transcribe WAV to (srt, vtt). Raises if empty."""
-        from parakeet_stream import Parakeet
-
         audio_path = Path(audio_path)
         if not audio_path.exists():
             raise FileNotFoundError(f"audio not found: {audio_path}")
 
-        pk = Parakeet(device=self.device, config=self.config)
-        raw_segments: list[tuple[float, str]] = []
+        result = self._get_model().transcribe(str(audio_path), timestamps=True, _quiet=True)
+        text = (getattr(result, "text", None) or "").strip()
+        if not text:
+            raise ValueError("parakeet produced empty transcript")
 
-        for chunk in pk.stream(str(audio_path)):
-            if not chunk.is_final or not (chunk.text or "").strip():
-                continue
-            start = float(getattr(chunk, "timestamp_start", 0) or 0)
-            text = (chunk.text or "").strip()
-            raw_segments.append((start, text))
-
-        segments: list[tuple[float, float, str]] = []
-        for i, (start, text) in enumerate(raw_segments):
-            end = raw_segments[i + 1][0] if i + 1 < len(raw_segments) else start + 5.0
-            segments.append((start, end, text))
-
+        segments = segments_from_word_timestamps(list(getattr(result, "timestamps", None) or []))
         if not segments:
-            # Fallback: transcribe without stream (no timestamps)
-            result = pk.transcribe(str(audio_path))
-            text = (getattr(result, "text", None) or str(result) or "").strip()
-            if not text:
-                raise ValueError("parakeet produced empty transcript")
-            segments = [(0.0, 5.0, text)]
+            duration = float(getattr(result, "duration", 0.0) or 0.0) or estimate_audio_duration_seconds(audio_path)
+            segments = [(0.0, max(1.0, duration), text)]
 
-        srt = _segments_to_srt(segments)
-        vtt = _srt_to_vtt(srt)
+        srt = segments_to_srt(segments)
+        vtt = srt_to_vtt(srt)
         return srt, vtt

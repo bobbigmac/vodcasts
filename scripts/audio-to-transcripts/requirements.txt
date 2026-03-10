@@ -1,2 +1,5 @@
 rich>=13.7.0
 whisperx
+parakeet-stream
+moonshine-voice
+jiwer>=3.1.0

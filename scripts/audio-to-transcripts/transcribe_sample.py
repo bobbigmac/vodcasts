@@ -18,6 +18,7 @@ if str(_SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(_SCRIPT_DIR))
 
 from transcription_backends import get_backend, list_backends
+from transcription_backends.subtitle_utils import srt_to_vtt
 
 
 def _ensure_16k_wav(input_path: Path, ffmpeg_cmd: str = "ffmpeg") -> Path:
@@ -105,38 +106,29 @@ def main() -> None:
             backend = get_backend(args.backend)
 
         srt, vtt = backend.transcribe(wav_path, args.language)
-        vtt = vtt or _srt_to_vtt(srt)
+        vtt = vtt or srt_to_vtt(srt)
 
         if args.out_srt:
-            Path(args.out_srt).write_text(srt, encoding="utf-8")
+            out_srt = Path(args.out_srt)
+            out_srt.parent.mkdir(parents=True, exist_ok=True)
+            out_srt.write_text(srt, encoding="utf-8")
             print(f"[write] {args.out_srt}")
         else:
             print(srt)
 
         if args.out_vtt:
-            Path(args.out_vtt).write_text(vtt, encoding="utf-8")
+            out_vtt = Path(args.out_vtt)
+            out_vtt.parent.mkdir(parents=True, exist_ok=True)
+            out_vtt.write_text(vtt, encoding="utf-8")
             print(f"[write] {args.out_vtt}")
         elif args.out_srt:
             vtt_path = Path(args.out_srt).with_suffix(".vtt")
+            vtt_path.parent.mkdir(parents=True, exist_ok=True)
             vtt_path.write_text(vtt, encoding="utf-8")
             print(f"[write] {vtt_path}")
     finally:
         if wav_path and wav_path.exists():
             wav_path.unlink(missing_ok=True)
-
-
-def _srt_to_vtt(srt: str) -> str:
-    if not (srt or "").strip():
-        return ""
-    out: list[str] = ["WEBVTT", ""]
-    for raw in (srt or "").splitlines():
-        line = raw.rstrip("\n")
-        if line.strip().isdigit():
-            continue
-        if "-->" in line and "," in line:
-            line = line.replace(",", ".")
-        out.append(line)
-    return "\n".join(out).rstrip() + "\n"
 
 
 if __name__ == "__main__":
