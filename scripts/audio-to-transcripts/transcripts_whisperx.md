@@ -90,7 +90,7 @@ This prints what it *would* download/generate, without writing files.
 
 ## Notes
 
-- When `-GenerateMissing` is enabled, generation uses `--whisperx-device cuda` and **fails fast** unless you pass `-AllowCpu`.
+- When `-GenerateMissing` is enabled, generation requires CUDA/GPU; no CPU fallback.
 - Provided `podcast:transcript` links are preferred **only if** they validate as usable VTT/SRT subtitles (non-subtitles payloads like HTML are rejected).
 - If you want to test on a tiny sample, pass `-MaxEpisodesPerFeed 3` or set `--max-episodes-total` in the Python CLI.
 - Normal runs do not keep spot-check MP3s. Failed generated transcripts can still write a short review clip into `review-transcripts/`.
@@ -117,6 +117,24 @@ Useful tuning knobs (passed through to `whisperx` via `-WhisperxExtraArgs`):
 
 - `--batch_size N` (bigger = faster if VRAM allows)
 - `--compute_type int8` (faster, sometimes slightly worse)
+
+## Alternative backends (Parakeet, Moonshine)
+
+The pipeline supports `whisperx` (default), `parakeet`, and `moonshine` via `--backend`. Parakeet and Moonshine run in-process (no worker). All backends require CUDA/GPU.
+
+```powershell
+.\scripts\audio-to-transcripts\run-transcripts-whisperx.ps1 -Execute -GenerateMissing -Backend parakeet
+.\scripts\audio-to-transcripts\run-transcripts-whisperx.ps1 -Execute -GenerateMissing -Backend moonshine
+```
+
+## Sample transcription (single file)
+
+Transcribe one audio file with any backend; outputs SRT/VTT:
+
+```powershell
+python scripts/audio-to-transcripts/transcribe_sample.py audio.wav --backend whisperx --out-srt sample.srt
+python scripts/audio-to-transcripts/transcribe_sample.py audio.wav --backend parakeet --out-srt sample.srt
+```
 
 ## Single-episode test
 

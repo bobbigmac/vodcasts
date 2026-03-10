@@ -14,8 +14,6 @@ import shlex
 import html
 import signal
 import atexit
-import urllib.error
-import urllib.request
 from concurrent.futures import FIRST_COMPLETED, Future, ThreadPoolExecutor, wait
 from contextlib import contextmanager
 from dataclasses import dataclass
@@ -31,18 +29,21 @@ if str(_REPO_ROOT) not in sys.path:
 from scripts.feed_manifest import parse_feed_for_manifest
 from scripts.shared import VODCASTS_ROOT, fetch_url
 from scripts.sources import Source, load_sources_config
-from whisperx_worker_common import WorkerWhisperxOptions, parse_worker_extra_args
+from transcription_backends import get_backend
 
 
 _PLAYABLE_TYPES = {"text/vtt", "application/x-subrip", "application/srt"}
 
 _MEDIA_CONNECT_TIMEOUT_SECONDS = 5
 _MEDIA_PROBE_MAX_TIME_SECONDS = 10
+_MEDIA_RESOLVE_TIMEOUT_SECONDS = 45
 
 _EXISTING_VTT_MIN_CHARS = 80
 _EXISTING_VTT_MIN_WORDS = 10
 _TRANSCRIPTION_CONCURRENCY = 2
 max_episodes_per_feed = 12
+# Episodes under this duration (sec) count as "short" and can fill bonus slots up to double the per-feed limit.
+_SHORT_EPISODE_THRESHOLD_SEC = 1500  # 25 min
 
 _TRANSCRIPT_SANITY_FAILURES_PATH = VODCASTS_ROOT / "transcript-sanity-failures.md"
 _REVIEW_TRANSCRIPTS_DIR = VODCASTS_ROOT / "review-transcripts"
@@ -102,7 +103,6 @@ HIGH_VALUE_FEEDS = frozenset({
     "cbcaiken-sermons",
     "buford-road-baptist",
     "antioch-church",
-    "first-love-church-uk",
 })
 
 # Feeds with lower advice density for answer engine (liturgical, narrative, institutional, bilingual).
@@ -123,9 +123,63 @@ WEAKER_FEEDS = frozenset({
     "elevation-steven-furtick",
 })
 
+# Excluded from the local transcription workflow entirely.
+EXCLUDED_TRANSCRIPT_SOURCE_IDS = frozenset({
+    "first-love-church-uk",
+    "life-church-video",
+    "boulder-church-video-podcast",
+})
+
 
 class MediaDownloadError(RuntimeError):
     pass
+
+
+def _looks_like_direct_media_url(url: str) -> bool:
+    u = str(url or "").strip().lower()
+    if not u:
+        return False
+    if ".m3u8" in u:
+        return True
+    return any(ext in u for ext in (".mp3", ".m4a", ".wav", ".mp4", ".m4v", ".mov", ".webm"))
+
+
+def _resolve_media_url(url: str, *, execute: bool) -> str:
+    raw = str(url or "").strip()
+    if not raw or not raw.lower().startswith(("http://", "https://")):
+        return raw
+    if _looks_like_direct_media_url(raw):
+        return raw
+
+    # Some feeds publish landing/admin pages instead of enclosures. Try to resolve them to a
+    # concrete media URL via yt-dlp when available.
+    cmd = ["yt-dlp", "--no-warnings", "--no-playlist", "-g", raw]
+    pretty = " ".join(json.dumps(x) for x in cmd)
+    print(f"[cmd] {pretty}")
+    if not execute:
+        return raw
+    try:
+        res = subprocess.run(
+            cmd,
+            check=True,
+            capture_output=True,
+            text=True,
+            timeout=int(_MEDIA_RESOLVE_TIMEOUT_SECONDS),
+        )
+    except Exception as e:
+        # Vimeo "manage/videos" URLs are admin pages, not public media pages.
+        if "vimeo.com/manage/videos/" in raw.lower():
+            raise MediaDownloadError(f"unresolvable vimeo manage url: {raw}") from e
+        return raw
+
+    lines = [ln.strip() for ln in (res.stdout or "").splitlines() if ln.strip()]
+    resolved = next((ln for ln in lines if ln.lower().startswith(("http://", "https://"))), "")
+    if not resolved:
+        if "vimeo.com/manage/videos/" in raw.lower():
+            raise MediaDownloadError(f"unresolvable vimeo manage url: {raw}")
+        return raw
+    print(f"[media] resolved url={resolved}")
+    return resolved
 
 
 def _pick_fast_temp_root() -> Path | None:
@@ -245,6 +299,11 @@ def _parse_args() -> argparse.Namespace:
         help="Max parallel workers for generation (0 = use default: 2 when execute, 1 when dry-run).",
     )
     p.add_argument(
+        "--prefer-shorter",
+        action="store_true",
+        help="Prefer shorter known-duration episodes first; episodes without known duration are queued later.",
+    )
+    p.add_argument(
         "--download-provided",
         action="store_true",
         help="Download provided podcast:transcript assets when present (default).",
@@ -283,7 +342,7 @@ def _parse_args() -> argparse.Namespace:
     p.add_argument(
         "--whisperx-device",
         default="cuda",
-        help="WhisperX device (default: cuda). Use --allow-cpu to permit cpu fallback.",
+        help="Device for transcription (default: cuda). GPU required.",
     )
     p.add_argument(
         "--whisperx-compute-type",
@@ -301,9 +360,10 @@ def _parse_args() -> argparse.Namespace:
         help="Optional local WhisperX worker URL (for persistent model reuse). Example: http://127.0.0.1:8776",
     )
     p.add_argument(
-        "--allow-cpu",
-        action="store_true",
-        help="Allow CPU execution for WhisperX generation (default: disabled; generation requires CUDA).",
+        "--backend",
+        default="whisperx",
+        choices=["whisperx", "parakeet", "moonshine"],
+        help="Transcription backend (default: whisperx). parakeet/moonshine run in-process, no worker.",
     )
 
     # Failure review clips: kept only when generated transcripts fail sanity / generation.
@@ -319,6 +379,36 @@ def _parse_args() -> argparse.Namespace:
 
 def _norm(s: str) -> str:
     return str(s or "").strip()
+
+
+def _duration_key(ep: dict[str, Any]) -> tuple[int, int]:
+    raw = ep.get("durationSec")
+    try:
+        dur = int(raw)
+    except Exception:
+        dur = 0
+    if dur > 0:
+        return (0, dur)
+    return (1, 10**9)
+
+
+def _is_short_episode(ep: dict[str, Any], threshold_sec: int = _SHORT_EPISODE_THRESHOLD_SEC) -> bool:
+    raw = ep.get("durationSec")
+    try:
+        dur = int(raw)
+        return 0 < dur <= threshold_sec
+    except Exception:
+        return False
+
+
+def _recency_key(ep: dict[str, Any]) -> int:
+    raw = re.sub(r"[^0-9]", "", _norm(ep.get("dateText") or ""))
+    if len(raw) >= 8:
+        try:
+            return -int(raw[:8])
+        except Exception:
+            pass
+    return 0
 
 
 def _split_tags(v: str) -> list[str]:
@@ -436,6 +526,7 @@ def _capture_failure_spotcheck(
     if not execute or not media_url:
         return None
     try:
+        media_input = _resolve_media_url(media_url, execute=execute)
         spot_mp3_path.parent.mkdir(parents=True, exist_ok=True)
         _run(
             [
@@ -445,7 +536,7 @@ def _capture_failure_spotcheck(
                 "error",
                 "-y",
                 "-i",
-                str(media_url),
+                str(media_input),
                 "-t",
                 str(max(1, int(spot_seconds or 0))),
                 "-vn",
@@ -806,56 +897,6 @@ def _maybe_normalize_existing_vtt(path: Path, *, execute: bool) -> None:
         pass
 
 
-def _post_json(url: str, payload: dict[str, Any], *, timeout_seconds: int) -> dict[str, Any]:
-    raw = json.dumps(payload, ensure_ascii=True).encode("utf-8")
-    req = urllib.request.Request(
-        url,
-        data=raw,
-        headers={"Content-Type": "application/json; charset=utf-8"},
-        method="POST",
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=max(1, int(timeout_seconds))) as resp:
-            body = resp.read()
-    except urllib.error.HTTPError as e:
-        detail = e.read().decode("utf-8", errors="replace")
-        raise RuntimeError(f"worker http {e.code}: {detail}") from e
-    except urllib.error.URLError as e:
-        raise RuntimeError(f"worker unavailable: {e}") from e
-    try:
-        obj = json.loads(body.decode("utf-8", errors="replace"))
-    except Exception as e:
-        raise RuntimeError(f"worker returned invalid json: {e}") from e
-    if not isinstance(obj, dict):
-        raise RuntimeError("worker returned non-object json")
-    if obj.get("ok") is False:
-        raise RuntimeError(str(obj.get("error") or "worker_error"))
-    return obj
-
-
-def _worker_payload_for_options(
-    *,
-    wav_path: Path,
-    whisperx_model: str,
-    language: str,
-    whisperx_device: str,
-    whisperx_compute_type: str,
-    options: WorkerWhisperxOptions,
-) -> dict[str, Any]:
-    payload = options.to_payload()
-    payload.update(
-        {
-            "audio_path": str(wav_path),
-            "model": str(whisperx_model or ""),
-            "language": str(language or ""),
-            "device": str(whisperx_device or ""),
-            "compute_type": str(whisperx_compute_type or ""),
-            "vad_method": str(options.vad_method or "silero"),
-        }
-    )
-    return payload
-
-
 def _ensure_non_empty_transcript(srt_text: str, vtt_text: str) -> None:
     """Raise if the effective VTT would be empty (WhisperX produced no speech)."""
     effective = (vtt_text or "").strip() or (_srt_to_vtt(srt_text or "").strip() if (srt_text or "").strip() else "")
@@ -863,17 +904,12 @@ def _ensure_non_empty_transcript(srt_text: str, vtt_text: str) -> None:
         raise ValueError("whisperx produced empty transcript (no speech detected or VAD filtered all)")
 
 
-def _generate_with_whisperx(
+def _generate_transcript(
     *,
+    backend: Any,
     media_url: str,
     ffmpeg_cmd: str,
-    whisperx_cmd: str,
-    whisperx_model: str,
     language: str,
-    whisperx_device: str,
-    whisperx_compute_type: str,
-    whisperx_extra_args: str,
-    whisperx_worker_url: str,
     spot_mp3_path: Path | None,
     spot_seconds: int,
     spot_bitrate: str,
@@ -886,19 +922,14 @@ def _generate_with_whisperx(
         # dry-run placeholder
         return "", ""
 
-    worker_options, worker_unsupported = parse_worker_extra_args(whisperx_extra_args)
-
-    with tempfile.TemporaryDirectory(prefix="vodcasts.whisperx.") as td:
+    with tempfile.TemporaryDirectory(prefix="vodcasts.transcribe.") as td:
         tmp = Path(td)
         wav_path = tmp / "audio.wav"
-        out_dir = tmp / "out"
-        out_dir.mkdir(parents=True, exist_ok=True)
 
-        media_input: str = media_url
+        media_input: str = _resolve_media_url(media_url, execute=execute)
         u = media_url.lower()
-        should_prefetch = u.startswith(("http://", "https://")) and ".m3u8" not in u and any(
-            ext in u for ext in (".mp3", ".m4a", ".wav", ".mp4", ".m4v", ".mov", ".webm")
-        )
+        resolved_u = media_input.lower()
+        should_prefetch = resolved_u.startswith(("http://", "https://")) and ".m3u8" not in resolved_u and _looks_like_direct_media_url(resolved_u)
         if should_prefetch:
             media_path = tmp / "media"
             try:
@@ -922,7 +953,7 @@ def _generate_with_whisperx(
                             str(probe_path),
                             "--range",
                             "0-0",
-                            media_url,
+                            media_input,
                         ],
                         execute=True,
                     )
@@ -939,7 +970,7 @@ def _generate_with_whisperx(
                             "vodcasts-transcripts/1.0",
                             "-o",
                             str(media_path),
-                            media_url,
+                            media_input,
                         ],
                         execute=True,
                     )
@@ -950,7 +981,7 @@ def _generate_with_whisperx(
             sz = int(media_path.stat().st_size)
             if sz <= 0:
                 raise MediaDownloadError("media download produced empty file")
-            print(f"[media] bytes={sz} url={media_url}")
+            print(f"[media] bytes={sz} url={media_input}")
             media_input = str(media_path)
 
         ffmpeg_label = "ffmpeg_decode" if media_input != media_url else "ffmpeg_fetch_decode"
@@ -997,93 +1028,17 @@ def _generate_with_whisperx(
                 execute=True,
             )
 
-        worker_url = str(whisperx_worker_url or "").strip().rstrip("/")
-        if worker_url:
-            if worker_unsupported:
-                unsupported = " ".join(worker_unsupported)
-                print(f"[warn] worker unsupported extra args ({unsupported}); falling back to whisperx CLI")
-            else:
-                payload = _worker_payload_for_options(
-                    wav_path=wav_path,
-                    whisperx_model=whisperx_model,
-                    language=language,
-                    whisperx_device=whisperx_device,
-                    whisperx_compute_type=whisperx_compute_type,
-                    options=worker_options,
-                )
-                with _timed("whisperx_worker"):
-                    res = _post_json(f"{worker_url}/transcribe", payload, timeout_seconds=max(600, int(30 + spot_seconds)))
-                srt_text = str(res.get("srt_text") or "")
-                vtt_text = str(res.get("vtt_text") or "")
-                if srt_text or vtt_text:
-                    _ensure_non_empty_transcript(srt_text, vtt_text)
-                    return srt_text, vtt_text
-
-        cmd = [
-            whisperx_cmd,
-            str(wav_path),
-            "--model",
-            whisperx_model,
-            "--language",
-            language,
-            "--device",
-            whisperx_device,
-            "--compute_type",
-            whisperx_compute_type,
-            "--output_dir",
-            str(out_dir),
-            "--output_format",
-            "srt",
-            "--verbose",
-            "False",
-        ]
-        extra = (whisperx_extra_args or "").strip()
-        if not extra:
-            # Avoid pyannote/torchcodec dependency issues (and speed up) unless explicitly overridden.
-            extra = "--vad_method silero"
-        cmd += shlex.split(extra)
-        with _timed("whisperx"):
-            _run(cmd, execute=True)
-
-        # WhisperX typically writes <stem>.srt (and often json/txt) into output_dir.
-        base = wav_path.stem
-        srt_path = out_dir / f"{base}.srt"
-        vtt_path = out_dir / f"{base}.vtt"
-        if srt_path.exists():
-            srt_text = srt_path.read_text(encoding="utf-8", errors="replace")
-            _ensure_non_empty_transcript(srt_text, _srt_to_vtt(srt_text))
-            return srt_text, _srt_to_vtt(srt_text)
-        if vtt_path.exists():
-            vtt_text = vtt_path.read_text(encoding="utf-8", errors="replace")
-            if vtt_text.strip():
-                _ensure_non_empty_transcript("", vtt_text)
-                return "", vtt_text
-
-        # Fallback: take any .srt produced.
-        any_srt = next(iter(out_dir.glob("*.srt")), None)
-        if any_srt and any_srt.exists():
-            srt_text = any_srt.read_text(encoding="utf-8", errors="replace")
-            _ensure_non_empty_transcript(srt_text, _srt_to_vtt(srt_text))
-            return srt_text, _srt_to_vtt(srt_text)
-
-        # No usable output - log what WhisperX actually produced for diagnosis
-        out_files = [(p.name, p.stat().st_size) for p in out_dir.iterdir() if p.is_file()]
-        wav_sz = wav_path.stat().st_size if wav_path.exists() else 0
-        diag = (
-            f"wav_bytes={wav_sz} out_dir={out_dir} "
-            f"out_files={out_files} srt_path.exists={srt_path.exists()} vtt_path.exists={vtt_path.exists()}"
-        )
-        if srt_path.exists():
-            diag += f" srt_bytes={srt_path.stat().st_size}"
-        if vtt_path.exists():
-            diag += f" vtt_bytes={vtt_path.stat().st_size}"
-        raise ValueError(f"whisperx produced no .srt/.vtt in {out_dir} - {diag}")
+        with _timed("transcribe"):
+            srt_text, vtt_text = backend.transcribe(wav_path, language)
+        _ensure_non_empty_transcript(srt_text, vtt_text)
+        return srt_text, vtt_text or _srt_to_vtt(srt_text)
 
 
 def _process_work_item(
     *,
     item: WorkItem,
     out_dir: Path,
+    backend: Any,
     require_cuda: bool,
     download_provided: bool,
     execute: bool,
@@ -1093,13 +1048,7 @@ def _process_work_item(
     min_text_chars: int,
     min_words: int,
     ffmpeg_cmd: str,
-    whisperx_cmd: str,
-    whisperx_model: str,
     language: str,
-    whisperx_device: str,
-    whisperx_compute_type: str,
-    whisperx_extra_args: str,
-    whisperx_worker_url: str,
     spot_check_seconds: int,
     spot_check_bitrate: str,
     sanity_failures: set[tuple[str, str]],
@@ -1158,16 +1107,11 @@ def _process_work_item(
                     print("[gpu] require_cuda=1 device=cuda (no cpu fallback)")
                 print(f"[gen] {item.src.id}/{ep_slug}: whisperx from media {media_url}")
 
-                srt_text, vtt_text = _generate_with_whisperx(
+                srt_text, vtt_text = _generate_transcript(
+                    backend=backend,
                     media_url=media_url,
                     ffmpeg_cmd=str(ffmpeg_cmd),
-                    whisperx_cmd=str(whisperx_cmd),
-                    whisperx_model=str(whisperx_model),
                     language=str(language),
-                    whisperx_device=str(whisperx_device),
-                    whisperx_compute_type=str(whisperx_compute_type),
-                    whisperx_extra_args=str(whisperx_extra_args),
-                    whisperx_worker_url=str(whisperx_worker_url),
                     spot_mp3_path=None,
                     spot_seconds=int(spot_check_seconds or 600),
                     spot_bitrate=str(spot_check_bitrate or "96k"),
@@ -1243,16 +1187,11 @@ def _process_work_item(
                 why = "rejected" if is_reject else "download failed"
                 print(f"[fallback] {item.src.id}/{ep_slug}: generating because provided transcript {why}")
                 try:
-                    srt_text, vtt_text = _generate_with_whisperx(
+                    srt_text, vtt_text = _generate_transcript(
+                        backend=backend,
                         media_url=media_url,
                         ffmpeg_cmd=str(ffmpeg_cmd),
-                        whisperx_cmd=str(whisperx_cmd),
-                        whisperx_model=str(whisperx_model),
                         language=str(language),
-                        whisperx_device=str(whisperx_device),
-                        whisperx_compute_type=str(whisperx_compute_type),
-                        whisperx_extra_args=str(whisperx_extra_args),
-                        whisperx_worker_url=str(whisperx_worker_url),
                         spot_mp3_path=None,
                         spot_seconds=int(spot_check_seconds or 600),
                         spot_bitrate=str(spot_check_bitrate or "96k"),
@@ -1383,7 +1322,7 @@ def main() -> None:
         sources = [s for s in sources if s.id == only_source_id]
     elif not args.all_sources and tag:
         sources = [s for s in sources if _matches_any_tag(s, tag)]
-    sources = [s for s in sources if s.id != "life-church-video"]  # excluded: always fails transcript generation
+    sources = [s for s in sources if s.id not in EXCLUDED_TRANSCRIPT_SOURCE_IDS]
 
     # Focus tagged sources first without excluding others when --all-sources is set.
     if args.all_sources and tag:
@@ -1400,17 +1339,18 @@ def main() -> None:
     print(
         "[plan] "
         + f"sources={len(sources)} download_provided={bool(args.download_provided)} "
-        + f"generate_missing={bool(args.generate_missing)} execute={bool(args.execute)}"
+        + f"generate_missing={bool(args.generate_missing)} execute={bool(args.execute)} "
+        + f"prefer_shorter={bool(args.prefer_shorter)}"
     )
     if only_source_id:
         print(f"[plan] filter: source_id={only_source_id}")
     if only_episode_slug:
         print(f"[plan] filter: episode_slug={only_episode_slug}")
 
-    require_cuda = bool(args.generate_missing) and not bool(args.allow_cpu)
+    require_cuda = bool(args.generate_missing)
     whisperx_device = _norm(args.whisperx_device or "cuda").lower()
     if require_cuda and whisperx_device != "cuda":
-        raise ValueError("CUDA is required (generation is enabled and --allow-cpu is not set), but --whisperx-device is not 'cuda'.")
+        raise ValueError("CUDA is required for generation; --whisperx-device must be 'cuda'.")
 
     # Note: we only enforce CUDA availability after planning, and only if we actually need generation.
 
@@ -1419,6 +1359,25 @@ def main() -> None:
     sanity_failures = _load_sanity_failures()
     if sanity_failures:
         print(f"[plan] transcript_sanity_failures={len(sanity_failures)} (skip listed until removed from {_TRANSCRIPT_SANITY_FAILURES_PATH.name})")
+
+    backend_name = str(args.backend or "whisperx").strip().lower()
+    if backend_name == "whisperx":
+        backend = get_backend(
+            "whisperx",
+            worker_url=str(args.whisperx_worker_url or ""),
+            whisperx_cmd=str(args.whisperx),
+            model=str(args.whisperx_model),
+            device=str(args.whisperx_device),
+            compute_type=str(args.whisperx_compute_type),
+            extra_args=str(args.whisperx_extra_args),
+        )
+    elif backend_name == "parakeet":
+        backend = get_backend("parakeet", device="cuda", config="balanced")
+    elif backend_name == "moonshine":
+        backend = get_backend("moonshine", language=str(args.language))
+    else:
+        raise ValueError(f"unknown backend: {backend_name!r}")
+    print(f"[plan] backend={backend_name}")
 
     missing_feed = 0
     skipped_existing = 0
@@ -1442,12 +1401,21 @@ def main() -> None:
         # Prefer more recent entries when a feed's ordering is ambiguous.
         eps.sort(key=lambda e: _norm(e.get("dateText") or ""), reverse=True)
         max_per_feed = int(max_episodes_per_feed or 0)
-        max_per_feed_double = int(max_episodes_per_feed or 0) * 2
         if max_per_feed > 0:
-            limit = max_per_feed_double if src.id in HIGH_VALUE_FEEDS else max_per_feed
-            eps = eps[:limit]
+            base_limit = max_per_feed * 2 if src.id in HIGH_VALUE_FEEDS else max_per_feed
+            first_batch = eps[:base_limit]
+            remainder = eps[base_limit:]
+            short_bonus = [e for e in remainder if _is_short_episode(e)][:base_limit]
+            eps = first_batch + short_bonus
         if only_episode_slug:
             eps = [e for e in eps if isinstance(e, dict) and _norm(e.get("slug") or "") == only_episode_slug]
+        elif bool(args.prefer_shorter):
+            eps.sort(
+                key=lambda e: (
+                    _duration_key(e),
+                    _recency_key(e),
+                )
+            )
 
         feed_out = (out_dir / src.id).resolve()
         for ep in eps:
@@ -1529,6 +1497,16 @@ def main() -> None:
         if max_total and len(work) >= max_total:
             break
 
+    if bool(args.prefer_shorter):
+        work.sort(
+            key=lambda item: (
+                _duration_key(item.ep),
+                _recency_key(item.ep),
+                item.src.id,
+                _norm(item.ep.get("slug") or ""),
+            )
+        )
+
     print(
         "[plan] "
         + f"episodes_to_process={len(work)} download={planned_download} generate={planned_generate} "
@@ -1536,8 +1514,8 @@ def main() -> None:
         + f"missing_feed={missing_feed} missed_no_action={planned_missed}"
     )
 
-    # Generation can also happen as a fallback when a provided transcript is rejected,
-    # so require CUDA when generation is enabled and could plausibly occur.
+    # Generation can also happen as a fallback when a provided transcript is rejected.
+    # All backends require CUDA/GPU; no CPU fallback.
     if require_cuda and bool(args.execute) and (planned_generate > 0 or planned_download_with_media_for_fallback > 0):
         try:
             import torch  # type: ignore
@@ -1592,6 +1570,10 @@ def main() -> None:
             total = max(1, len(work))
             print(f"[{done}/{total}] {desc}")
 
+    def _set_status(desc: str) -> None:
+        if use_rich and progress is not None and task is not None:
+            progress.update(task, description=desc)
+
     interrupted = False
     try:
         concurrency = int(args.concurrency or 0)
@@ -1643,11 +1625,13 @@ def main() -> None:
                     item = _pop_next_runnable()
                     if item is None:
                         break
+                    _set_status(f"{item.action}: {item.src.id}/{_norm(item.ep.get('slug') or '')}")
                     active_feeds.add(item.src.id)
                     fut = pool.submit(
                         _process_work_item,
                         item=item,
                         out_dir=out_dir,
+                        backend=backend,
                         require_cuda=require_cuda,
                         download_provided=bool(args.download_provided),
                         execute=bool(args.execute),
@@ -1657,13 +1641,7 @@ def main() -> None:
                         min_text_chars=int(args.min_text_chars),
                         min_words=int(args.min_words),
                         ffmpeg_cmd=str(args.ffmpeg),
-                        whisperx_cmd=str(args.whisperx),
-                        whisperx_model=str(args.whisperx_model),
                         language=str(args.language),
-                        whisperx_device=str(args.whisperx_device),
-                        whisperx_compute_type=str(args.whisperx_compute_type),
-                        whisperx_extra_args=str(args.whisperx_extra_args),
-                        whisperx_worker_url=str(args.whisperx_worker_url),
                         spot_check_seconds=int(args.spot_check_seconds or 600),
                         spot_check_bitrate=str(args.spot_check_bitrate or "96k"),
                         sanity_failures=sanity_failures,

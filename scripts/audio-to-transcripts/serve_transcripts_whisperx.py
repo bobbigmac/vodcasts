@@ -19,7 +19,10 @@ from whisperx.utils import WriteSRT, WriteVTT
 
 from whisperx_worker_common import WorkerWhisperxOptions, parse_worker_extra_args
 
-_TRANSCRIBE_WORKER_POOL = 2
+# Keep the persistent WhisperX service single-job on CUDA. Client-side concurrency can still
+# overlap media download/ffmpeg decode, but parallel transcribes were dropping the worker
+# connection under load on Windows/GPU.
+_TRANSCRIBE_WORKER_POOL = 1
 _WHISPERX_EMPTY_DIAG_LOG = Path(__file__).resolve().parents[2] / "whisperx-empty-diag.log"
 
 

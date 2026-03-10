@@ -8,9 +8,9 @@ Param(
   [string]$EpisodeSlug = "",
   [int]$MaxEpisodesPerFeed = 10,
   [int]$Concurrency = 0,
+  [switch]$PreferShorter,
   [switch]$NoDownloadProvided,
   [switch]$GenerateMissing,
-  [switch]$AllowCpu,
   [int]$SpotCheckEvery = 0,
   [int]$SpotCheckSeconds = 600,
   [string]$SpotCheckBitrate = "96k",
@@ -24,6 +24,7 @@ Param(
   [string]$WhisperxComputeType = "float16",
   [string]$WhisperxExtraArgs = "",
   [string]$WhisperxWorkerUrl = "",
+  [string]$Backend = "whisperx",
   [switch]$NoWorker,
   [switch]$ServeWorker,
   [string]$WorkerHost = "127.0.0.1",
@@ -107,9 +108,9 @@ if ($AllSources) { $argsList += @("--all-sources") }
 if ($SourceId -ne "") { $argsList += @("--source-id", $SourceId) }
 if ($EpisodeSlug -ne "") { $argsList += @("--episode-slug", $EpisodeSlug) }
 if ($Concurrency -gt 0) { $argsList += @("--concurrency", "$Concurrency") }
+if ($PreferShorter) { $argsList += @("--prefer-shorter") }
 if ($NoDownloadProvided) { $argsList += @("--no-download-provided") }
 if ($GenerateMissing) { $argsList += @("--generate-missing") }
-if ($AllowCpu) { $argsList += @("--allow-cpu") }
 if ($SpotCheckEvery -gt 0) {
   $argsList += @("--spot-check-every", "$SpotCheckEvery")
   if ($SpotCheckSeconds -gt 0) { $argsList += @("--spot-check-seconds", "$SpotCheckSeconds") }
@@ -122,8 +123,11 @@ if ($WhisperxDevice -ne "") { $argsList += @("--whisperx-device", $WhisperxDevic
 if ($WhisperxComputeType -ne "") { $argsList += @("--whisperx-compute-type", $WhisperxComputeType) }
 $workerProc = $null
 
+# Parakeet and Moonshine run in-process; no worker needed.
+$useWorker = -not $NoWorker -and ($Backend -eq "whisperx")
+
 try {
-  if ($GenerateMissing -and $Execute -and -not $NoWorker -and $WhisperxWorkerUrl -eq "") {
+  if ($GenerateMissing -and $Execute -and $useWorker -and $WhisperxWorkerUrl -eq "") {
     $autoPort = if ($WorkerPort -gt 0) { $WorkerPort } else { Get-FreeTcpPort }
     $WhisperxWorkerUrl = "http://$WorkerHost`:$autoPort"
     $existing = Get-WorkerHealth -BaseUrl $WhisperxWorkerUrl
@@ -163,6 +167,7 @@ try {
   }
 
   if ($WhisperxWorkerUrl -ne "") { $argsList += @("--whisperx-worker-url", $WhisperxWorkerUrl) }
+if ($Backend -ne "") { $argsList += @("--backend", $Backend) }
 
   & $python @argsList
   exit $LASTEXITCODE
@@ -179,4 +184,3 @@ finally {
     }
   }
 }
-
