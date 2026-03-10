@@ -14,7 +14,7 @@ The Rest Is Politics Plus: Join with a FREE TRIAL at therestispolitics.com for e
 
 For more Goalhanger Podcasts, head to www.goalhanger.com.</description>
     <image>
-      <url>https://megaphone.imgix.net/podcasts/ebd5041a-2425-11ee-9505-bbe771b4af3b/image/3f50b7a1b1632c03b74bec14bb7de2a0.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress</url>
+      <url>https://megaphone.imgix.net/podcasts/ebd5041a-2425-11ee-9505-bbe771b4af3b/image/f16189eb4e860f90c52e73daa75e5be7.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress</url>
       <title>The Rest Is Politics</title>
       <link>http://therestispolitics.com/</link>
     </image>
@@ -34,9 +34,9 @@ For more Goalhanger Podcasts, head to www.goalhanger.com.</itunes:summary>
     </content:encoded>
     <itunes:owner>
       <itunes:name>Goalhanger</itunes:name>
-      <itunes:email>tom@goalhangerpodcasts.com</itunes:email>
+      <itunes:email>therestispolitics@goalhanger.com</itunes:email>
     </itunes:owner>
-    <itunes:image href="https://megaphone.imgix.net/podcasts/ebd5041a-2425-11ee-9505-bbe771b4af3b/image/3f50b7a1b1632c03b74bec14bb7de2a0.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress"/>
+    <itunes:image href="https://megaphone.imgix.net/podcasts/ebd5041a-2425-11ee-9505-bbe771b4af3b/image/f16189eb4e860f90c52e73daa75e5be7.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress"/>
     <itunes:category text="News">
       <itunes:category text="Politics"/>
     </itunes:category>
