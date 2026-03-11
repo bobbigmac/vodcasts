@@ -32,7 +32,9 @@ function Ensure-Venv {
     & $Py -m pip install -r $req
     Set-Content -Path $stamp -Value $hash -NoNewline
   }
+}
 
+function Ensure-CudaTorch {
   $needsCudaTorch = $true
   try {
     & $Py -c "import torch; import sys; sys.exit(0 if (torch.version.cuda and torch.cuda.is_available()) else 1)"
@@ -84,6 +86,7 @@ Examples:
   }
   "serve-llm" {
     Ensure-Venv
+    Ensure-CudaTorch
     & $Py (Join-Path $Root "serve_llm.py") @Args
     exit $LASTEXITCODE
   }
