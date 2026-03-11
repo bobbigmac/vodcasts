@@ -9,7 +9,9 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import time
 import uuid
+from collections import defaultdict
 from pathlib import Path
 
 _REPO_ROOT = Path(__file__).resolve().parents[3]
@@ -62,6 +64,19 @@ _AUTOCROP_REPO_DIR: Path | None = None
 _SILENCE_LEAD_RE = re.compile(r"silence_start:\s*([0-9.]+)")
 _SILENCE_END_RE = re.compile(r"silence_end:\s*([0-9.]+)")
 _NAME_SPLIT_RE = re.compile(r"\s*(?:\||//|-)\s*")
+
+
+def _fmt_elapsed(seconds: float) -> str:
+    seconds = max(0.0, float(seconds))
+    if seconds < 60:
+        return f"{seconds:.1f}s"
+    minutes = int(seconds // 60)
+    rem = seconds - minutes * 60
+    return f"{minutes}m{rem:04.1f}s"
+
+
+def _log_timing(message: str) -> None:
+    print(f"[render_short] {message}", file=sys.stderr)
 
 
 def _run_logged_command(cmd: list[str], timeout: int, label: str) -> None:
@@ -781,6 +796,7 @@ def _build_keep_ranges_for_clip(raw_clip_path: Path, compress: bool) -> list[tup
 
 
 def main() -> None:
+    run_started = time.perf_counter()
     args = _parse_args()
     global _SHORT_W, _SHORT_H, _OUT_FPS, _ENC_PRESET, _ENC_THREADS, _AUTOCROP_REPO_DIR
     script_path = Path(args.script)
@@ -841,14 +857,24 @@ def main() -> None:
     used_static_crop_fallback = False
     transition_sec = 0.0
     output_cursor = 0.0
+    phase_totals: defaultdict[str, float] = defaultdict(float)
+    clip_summaries: list[dict[str, object]] = []
+    _log_timing(
+        f"start render output={out_path.name} clips={len(clip_items)} size={_SHORT_W}x{_SHORT_H} fps={_OUT_FPS} preset={_ENC_PRESET}"
+    )
     try:
         for index, item in enumerate(clip_items, start=1):
+            clip_started = time.perf_counter()
             feed = item.get("feed")
             episode = item.get("episode")
             start = float(item.get("start_sec") or 0)
             end = float(item.get("end_sec") or start)
             if not feed or not episode or end <= start:
                 continue
+            clip_label = f"[{index}/{len(clip_items)}] {feed}/{episode}"
+            _log_timing(f"{clip_label} start source={start:.3f}-{end:.3f}s")
+
+            clip_phase_times: dict[str, float] = {}
 
             media_info = get_episode_media_info(cache_dir, feed, episode)
             if not media_info or not media_info.get("url"):
@@ -863,27 +889,39 @@ def main() -> None:
                 if args.no_download:
                     print(f"[render_short] Missing cached source for {feed}/{episode}", file=sys.stderr)
                     continue
+                t0 = time.perf_counter()
                 if not _download_url(str(media_info["url"]), src_path):
                     continue
+                clip_phase_times["download"] = time.perf_counter() - t0
+                phase_totals["download"] += clip_phase_times["download"]
             if not _source_has_video(src_path):
                 print(f"[render_short] Skipping {feed}/{episode}: no video stream", file=sys.stderr)
                 continue
 
             has_audio = _source_has_audio(src_path)
+            trim_probe_started = time.perf_counter()
             trim_start, trim_end = (
                 _detect_av_trim_bounds(src_path, start, end, has_audio)
                 if args.trim_silence
                 else (start, end)
             )
+            clip_phase_times["trim_detect"] = time.perf_counter() - trim_probe_started
+            phase_totals["trim_detect"] += clip_phase_times["trim_detect"]
             raw_duration = max(0.0, trim_end - trim_start)
             if raw_duration <= 0.0:
                 continue
 
             raw_clip_path = work_dir / f"clip_{index:02d}_raw.mp4"
+            extract_started = time.perf_counter()
             if not _ffmpeg_extract_raw_clip(src_path, trim_start, trim_end, raw_clip_path):
                 continue
+            clip_phase_times["extract_raw"] = time.perf_counter() - extract_started
+            phase_totals["extract_raw"] += clip_phase_times["extract_raw"]
 
+            compress_analysis_started = time.perf_counter()
             keep_ranges = _build_keep_ranges_for_clip(raw_clip_path, compress=not bool(args.no_compress))
+            clip_phase_times["compress_analysis"] = time.perf_counter() - compress_analysis_started
+            phase_totals["compress_analysis"] += clip_phase_times["compress_analysis"]
             compressed_duration = sum(end_sec - start_sec for start_sec, end_sec in keep_ranges)
             if compressed_duration <= 0.0:
                 continue
@@ -893,14 +931,18 @@ def main() -> None:
                 transcript_path = get_transcript_path(transcripts_root, feed, episode)
                 if transcript_path:
                     clip_vtt_path = work_dir / f"clip_{index:02d}.vtt"
+                    subtitle_started = time.perf_counter()
                     if clip_transcript_to_vtt(transcript_path, trim_start, trim_end, clip_vtt_path):
                         cues = _load_vtt_cues(clip_vtt_path)
+                    clip_phase_times["subtitle_extract"] = time.perf_counter() - subtitle_started
+                    phase_totals["subtitle_extract"] += clip_phase_times["subtitle_extract"]
                 else:
                     print(f"[render_short] No transcript for {feed}/{episode}", file=sys.stderr)
             remapped_cues = _remap_cues_to_keep_ranges(cues, keep_ranges) if cues else []
 
             prepared_path = public_job_dir / f"clip_{index:02d}.mp4"
             compressed_path = work_dir / f"clip_{index:02d}_compressed.mp4"
+            compress_started = time.perf_counter()
             if not _apply_keep_ranges(
                 raw_clip_path,
                 keep_ranges,
@@ -909,30 +951,52 @@ def main() -> None:
                 apply_static_crop=bool(args.no_autocrop),
             ):
                 continue
+            clip_phase_times["compress_render"] = time.perf_counter() - compress_started
+            phase_totals["compress_render"] += clip_phase_times["compress_render"]
             if args.no_autocrop:
+                crop_started = time.perf_counter()
                 compressed_path.replace(prepared_path)
+                clip_phase_times["crop"] = time.perf_counter() - crop_started
+                phase_totals["crop"] += clip_phase_times["crop"]
             else:
-                clip_label = f"clip_{index:02d} {feed}/{episode}"
                 autocrop_log_path = failure_log_dir / f"clip_{index:02d}.log"
-                if not _run_autocrop_vertical(
+                crop_started = time.perf_counter()
+                used_autocrop = _run_autocrop_vertical(
                     compressed_path,
                     prepared_path,
                     log_path=autocrop_log_path,
-                    clip_label=clip_label,
-                ):
+                    clip_label=f"clip_{index:02d} {feed}/{episode}",
+                )
+                clip_phase_times["autocrop"] = time.perf_counter() - crop_started
+                phase_totals["autocrop"] += clip_phase_times["autocrop"]
+                crop_mode = "autocrop"
+                if not used_autocrop:
                     used_static_crop_fallback = True
                     print(
-                        f"[render_short] Falling back to static crop for {clip_label}.",
+                        f"[render_short] Falling back to static crop for clip_{index:02d} {feed}/{episode}.",
                         file=sys.stderr,
                     )
+                    fallback_started = time.perf_counter()
                     if not _apply_static_vertical_crop(compressed_path, prepared_path, has_audio=has_audio):
                         continue
+                    clip_phase_times["static_crop_fallback"] = time.perf_counter() - fallback_started
+                    phase_totals["static_crop_fallback"] += clip_phase_times["static_crop_fallback"]
+                    crop_mode = "static-fallback"
+                clip_phase_times["crop"] = clip_phase_times.get("autocrop", 0.0) + clip_phase_times.get("static_crop_fallback", 0.0)
+                phase_totals["crop"] += clip_phase_times.get("static_crop_fallback", 0.0)
+            if args.no_autocrop:
+                crop_mode = "static-only"
             if has_audio and not args.no_audio_normalize:
-                _normalize_clip_audio(
+                normalize_started = time.perf_counter()
+                normalized = _normalize_clip_audio(
                     prepared_path,
                     target_lufs=float(args.audio_target_lufs),
                     target_peak=float(args.audio_target_peak),
                 )
+                clip_phase_times["audio_normalize"] = time.perf_counter() - normalize_started
+                phase_totals["audio_normalize"] += clip_phase_times["audio_normalize"]
+                if not normalized:
+                    print(f"[render_short] Continuing without normalized audio for {clip_label}.", file=sys.stderr)
 
             episode_title = str(item.get("episode_title") or episode).strip()
             feed_title = str(item.get("feed_title") or feed).strip()
@@ -961,6 +1025,35 @@ def main() -> None:
             if index < len(clip_items):
                 output_cursor += transition_sec
             rendered_clip_ids.append(clip_id(feed, episode, start))
+            clip_elapsed = time.perf_counter() - clip_started
+            phase_totals["clip_total"] += clip_elapsed
+            clip_summary = {
+                "label": clip_label,
+                "elapsed": clip_elapsed,
+                "raw_duration": raw_duration,
+                "final_duration": compressed_duration,
+                "crop_mode": crop_mode,
+                "phases": clip_phase_times,
+            }
+            clip_summaries.append(clip_summary)
+            phase_bits = []
+            for phase_name in (
+                "download",
+                "trim_detect",
+                "extract_raw",
+                "compress_analysis",
+                "subtitle_extract",
+                "compress_render",
+                "autocrop",
+                "static_crop_fallback",
+                "audio_normalize",
+            ):
+                if clip_phase_times.get(phase_name):
+                    phase_bits.append(f"{phase_name}={_fmt_elapsed(clip_phase_times[phase_name])}")
+            _log_timing(
+                f"{clip_label} done total={_fmt_elapsed(clip_elapsed)} raw={raw_duration:.2f}s final={compressed_duration:.2f}s crop={crop_mode}"
+                + (f" | {'; '.join(phase_bits)}" if phase_bits else "")
+            )
 
         if len(manifest_clips) < max(2, int(args.min_clips)):
             print(
@@ -990,18 +1083,51 @@ def main() -> None:
         manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
 
         out_path.parent.mkdir(parents=True, exist_ok=True)
+        remotion_started = time.perf_counter()
         _render_with_remotion(manifest, out_path)
+        phase_totals["remotion_render"] += time.perf_counter() - remotion_started
 
         if not args.no_subs and final_subtitle_cues:
             final_sub_path = out_path.with_suffix(".srt")
+            subtitle_write_started = time.perf_counter()
             _write_srt(_merge_cues(final_subtitle_cues), final_sub_path)
+            phase_totals["subtitle_write"] += time.perf_counter() - subtitle_write_started
+            subtitle_mux_started = time.perf_counter()
             _mux_subtitle_track(out_path, final_sub_path)
+            phase_totals["subtitle_mux"] += time.perf_counter() - subtitle_mux_started
     except Exception as exc:
         print(f"[render_short] {exc}", file=sys.stderr)
         print(f"[render_short] staged assets kept at {public_job_dir}", file=sys.stderr)
         sys.exit(4)
 
     print(f"[render_short] wrote {out_path}", file=sys.stderr)
+    total_elapsed = time.perf_counter() - run_started
+    _log_timing(f"timing total={_fmt_elapsed(total_elapsed)} prepared={len(manifest_clips)}/{len(clip_items)} clips")
+    summary_order = [
+        "download",
+        "trim_detect",
+        "extract_raw",
+        "compress_analysis",
+        "subtitle_extract",
+        "compress_render",
+        "autocrop",
+        "static_crop_fallback",
+        "audio_normalize",
+        "remotion_render",
+        "subtitle_write",
+        "subtitle_mux",
+    ]
+    summary_bits = [f"{name}={_fmt_elapsed(phase_totals[name])}" for name in summary_order if phase_totals.get(name)]
+    if summary_bits:
+        _log_timing("phase totals " + " | ".join(summary_bits))
+    if clip_summaries:
+        slowest = sorted(clip_summaries, key=lambda item: float(item["elapsed"]), reverse=True)[:3]
+        slow_bits = []
+        for item in slowest:
+            slow_bits.append(
+                f"{item['label']}={_fmt_elapsed(float(item['elapsed']))} crop={item['crop_mode']} final={float(item['final_duration']):.2f}s"
+            )
+        _log_timing("slowest clips " + " | ".join(slow_bits))
     if used_static_crop_fallback:
         print(f"[render_short] kept AutoCrop failure logs at {failure_log_dir}", file=sys.stderr)
     if args.register and rendered_clip_ids:

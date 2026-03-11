@@ -70,5 +70,5 @@ short.ps1 clean --path out/shorts
 - Context text should label the idea, not restate the quote.
 - The draft script does not need to read like a perfect essay, but it should try to carry one meaningful thread or answer a real-life question rather than feeling listy.
 - Start and end cards should carry some editorial values or considerations, not just generic wrapping text.
-- The reflection prompt should invite thought or recognition, not ask for likes, comments, or subscriptions directly.
+- The reflection prompt should invite thought or recognition, not ask for likes, comments, or subscriptions directly but should raise thoughts in the viewer that might encourage them to share in our comments.
 - Vary the structure and editorial framing across shorts when the material allows it; do not make every short open and close the same way.
