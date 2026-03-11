@@ -137,6 +137,17 @@ _EDITORIAL_VARIANTS = [
     },
 ]
 
+_STYLE_OPTIONS = [
+    "ember",
+    "harbor",
+    "linen",
+    "nocturne",
+    "moss",
+    "oxide",
+    "iris",
+    "cobalt",
+]
+
 
 def _parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Write short script (markdown) from clips.")
@@ -294,19 +305,19 @@ def _build_intro(theme: str, payload: dict, clips: list[dict]) -> str:
         target = hope_terms[0] if hope_terms else "rest"
         if target == "strength":
             target = "received strength"
-        return f"When everything leans on our own strength, these clips keep pulling toward {target}."
+        return f"When everything leans on our own strength, the deeper invitation is toward {target}."
     if problem_terms and hope_terms:
-        return f"When {problem_terms[0]} starts to feel normal, these clips keep moving toward {hope_terms[0]}."
+        return f"When {problem_terms[0]} starts to feel normal, the better way keeps moving toward {hope_terms[0]}."
     if hope_terms:
         target = hope_terms[0]
         if target in _theme_words(theme):
             target = f"received {target}"
-        return f"These clips keep pushing {theme.lower()} away from self-reliance and toward {target}."
+        return f"{theme.lower().capitalize()} moves out of self-reliance and toward {target}."
     if len(top_terms) >= 2:
-        return f"These clips pull one real-life thread: from {top_terms[0]} toward {top_terms[1]}."
+        return f"Real life often moves from {top_terms[0]} toward {top_terms[1]} one decision at a time."
     if top_terms:
-        return f"These clips stay on one real-life thread: {top_terms[0]}."
-    return f"These clips stay practical about {theme.lower()}."
+        return f"One real-life thread keeps surfacing here: {top_terms[0]}."
+    return f"{theme.lower().capitalize()} gets practical when it reaches ordinary life."
 
 
 def _build_outro(theme: str, payload: dict, clips: list[dict]) -> str:
@@ -315,13 +326,13 @@ def _build_outro(theme: str, payload: dict, clips: list[dict]) -> str:
         target = hope_terms[0] if hope_terms else "received strength"
         if target == "strength":
             target = "received strength"
-        return f"Taken together, they point away from carrying this alone and back toward {target}."
+        return f"The way forward is not carrying this alone, but receiving {target}."
     if hope_terms:
         target = hope_terms[0]
         if target in _theme_words(theme):
             target = f"received {target}"
-        return f"Taken together, they point away from carrying this alone and back toward {target}."
-    return f"Taken together, they push against carrying {theme.lower()} alone."
+        return f"The way forward turns away from carrying this alone and back toward {target}."
+    return f"There is another way besides carrying {theme.lower()} alone."
 
 
 def _editorial_terms(theme: str, payload: dict, clips: list[dict]) -> tuple[str, str]:
@@ -359,8 +370,10 @@ def _format_reflection_prompt(template: str, problem: str, hope: str) -> str:
 def _build_editorial(theme: str, payload: dict, clips: list[dict]) -> dict[str, str]:
     variant = _select_editorial_variant(theme, clips)
     problem, hope = _editorial_terms(theme, payload, clips)
+    style = _STYLE_OPTIONS[(_theme_hash(theme) + len(clips) * 11) % len(_STYLE_OPTIONS)]
     return {
         "structure": str(variant["id"]),
+        "style": style,
         "opening_kicker": str(variant["opening_kicker"]),
         "opening_context": str(variant["opening_context"]),
         "closing_label": str(variant["closing_label"]),
@@ -412,6 +425,7 @@ def main() -> None:
         "selection: multi-feed practical arc",
         f"clips: {len(clips)}",
         f"structure: {editorial['structure']}",
+        f"style: {editorial['style']}",
         f"opening_kicker: {editorial['opening_kicker']}",
         f"opening_context: {editorial['opening_context']}",
         f"closing_label: {editorial['closing_label']}",

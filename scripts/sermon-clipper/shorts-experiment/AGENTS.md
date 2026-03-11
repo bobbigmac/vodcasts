@@ -10,6 +10,7 @@ This folder produces vertical sermon shorts from the same church transcript inde
 - Search defaults to clips that are actually renderable: video enclosure present and transcript present.
 - `write_short_script.py` produces a usable draft with a concise practical hook, short context labels, richer opening/closing editorial metadata, and an outro.
 - `render_short.py` uses ffmpeg to prep trimmed clips/captions, then Remotion composes the final vertical short.
+- Shorts support multiple dark, accessible visual style families; vary color palette and UI treatment from video to video instead of treating style as a static house skin.
 - Remotion props should be passed via JSON file on Windows, not inline JSON, to avoid `cmd.exe` quoting problems.
 - `cleanup_outputs.py` from the parent folder cleans old `work*` directories, concat files, pycache, and internal scratch.
 
@@ -24,6 +25,7 @@ format: curated thought-bites
 selection: multi-feed practical arc
 clips: 10
 structure: reframe
+style: nocturne
 opening_kicker: A Better Frame
 opening_context: One short editorial line that gives the arc a little context.
 closing_label: Sit With This
@@ -74,3 +76,6 @@ short.ps1 clean --path out/shorts
 - Start and end cards should carry some editorial values or considerations, not just generic wrapping text, have something to say about the theme, content, message or teaching/lesson/etc, help the viewer contextualise or expand their view or otherwise promote thought and engagement on the issues raised and their value to the viewer.
 - The reflection prompt should invite thought or recognition, not ask for likes, comments, or subscriptions directly but should raise thoughts in the viewer that might encourage them to share in our comments.
 - Vary the structure and editorial framing across shorts when the material allows it; do not make every short open and close the same way.
+- Vary the visual treatment too: palette, rails, frames, pills, and panel feel should not all land in the same family from short to short.
+- Keep visual palettes night-friendly and readable; avoid harsh whites, blown-out accent colors, or UI chrome that competes with the footage.
+- If a source clip has to be replaced during production, prefer another semantically strong source from a different episode or feed before falling back to a familiar warm-cache substitute.
