@@ -5,6 +5,7 @@ dist-bonus/
 out/
 cache/
 *.mp4
+.work/
 *.mp3
 cache.*
 .env
