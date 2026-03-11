@@ -1,0 +1,91 @@
+{
+  "theme": "forgiveness",
+  "intro": "8 lines that turn forgiveness from an idea into a move.",
+  "outro": "These sermons keep pushing the same way: grace received becomes forgiveness practiced.",
+  "width": 720,
+  "height": 1280,
+  "fps": 24,
+  "transition_sec": 0.35,
+  "clips": [
+    {
+      "path": "sermon-shorts/forgiveness-takes-a-step-b349e7a7/clip_01.mp4",
+      "duration_sec": 6.737,
+      "quote": "\"I'm asking you to forgive me of my sins, my mistakes.\"",
+      "context": "Ask for forgiveness",
+      "decorators": "sins, surrender",
+      "feed_title": "Church of the Highlands — Weekend Service",
+      "episode_title": "Jesus Calls",
+      "speaker_label": "Jesus Calls"
+    },
+    {
+      "path": "sermon-shorts/forgiveness-takes-a-step-b349e7a7/clip_02.mp4",
+      "duration_sec": 4.705,
+      "quote": "\"Maybe this is a moment of repentance for you.\"",
+      "context": "Repent now",
+      "decorators": "repentance, turn",
+      "feed_title": "Church of the Highlands — Weekend Service",
+      "episode_title": "Jesus Calls",
+      "speaker_label": "Jesus Calls"
+    },
+    {
+      "path": "sermon-shorts/forgiveness-takes-a-step-b349e7a7/clip_03.mp4",
+      "duration_sec": 6.542,
+      "quote": "\"His mercy, God, thank you for your grace, your mercy that you forgive us.\"",
+      "context": "Mercy and grace",
+      "decorators": "mercy, grace",
+      "feed_title": "Church of the Highlands — Weekend Service",
+      "episode_title": "Jesus Calls",
+      "speaker_label": "Jesus Calls"
+    },
+    {
+      "path": "sermon-shorts/forgiveness-takes-a-step-b349e7a7/clip_04.mp4",
+      "duration_sec": 3.27,
+      "quote": "\"The grace of God means you don't deserve it, but God gave it to you anyway.\"",
+      "context": "Grace is undeserved",
+      "decorators": "grace, gift",
+      "feed_title": "Calvary Chapel Fort Lauderdale",
+      "episode_title": "Give them the Keys",
+      "speaker_label": "Calvary Chapel Fort Lauderdale"
+    },
+    {
+      "path": "sermon-shorts/forgiveness-takes-a-step-b349e7a7/clip_05.mp4",
+      "duration_sec": 2.97,
+      "quote": "\"We are people who have received a great mercy from God.\"",
+      "context": "We received mercy",
+      "decorators": "mercy, identity",
+      "feed_title": "Calvary Chapel Fort Lauderdale",
+      "episode_title": "Give them the Keys",
+      "speaker_label": "Calvary Chapel Fort Lauderdale"
+    },
+    {
+      "path": "sermon-shorts/forgiveness-takes-a-step-b349e7a7/clip_06.mp4",
+      "duration_sec": 2.97,
+      "quote": "\"They can be saved, forgiven, and free.\"",
+      "context": "Forgiven and free",
+      "decorators": "freedom, salvation",
+      "feed_title": "Calvary Chapel Fort Lauderdale",
+      "episode_title": "Give them the Keys",
+      "speaker_label": "Calvary Chapel Fort Lauderdale"
+    },
+    {
+      "path": "sermon-shorts/forgiveness-takes-a-step-b349e7a7/clip_07.mp4",
+      "duration_sec": 5.853,
+      "quote": "\"Where faith doesn't get you there, God's mercy will.\"",
+      "context": "Mercy carries you",
+      "decorators": "mercy, faith",
+      "feed_title": "Exceed Life Church",
+      "episode_title": "Kingdom Powers Part 3",
+      "speaker_label": "Kingdom Powers Part 3"
+    },
+    {
+      "path": "sermon-shorts/forgiveness-takes-a-step-b349e7a7/clip_08.mp4",
+      "duration_sec": 4.988,
+      "quote": "\"That man was the smartest man there because he understood grace.\"",
+      "context": "Understand grace",
+      "decorators": "grace, wisdom",
+      "feed_title": "Exceed Life Church",
+      "episode_title": "Kingdom Powers Part 3",
+      "speaker_label": "Kingdom Powers Part 3"
+    }
+  ]
+}

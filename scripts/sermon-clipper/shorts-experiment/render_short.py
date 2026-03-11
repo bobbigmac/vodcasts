@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import importlib.util
 import json
 import re
 import subprocess
@@ -16,6 +17,7 @@ _THIS = Path(__file__).resolve().parent
 _REMOTION_ENTRY = _THIS / "remotion" / "index.jsx"
 _REMOTION_PUBLIC = _REPO_ROOT / "public"
 _REMOTION_COMPOSITION = "SermonShort"
+_MVE_LIB_PATH = _REPO_ROOT / "scripts" / "markdown-video-editor" / "_lib.py"
 sys.path.insert(0, str(_REPO_ROOT))
 sys.path.insert(0, str(_PARENT))
 
@@ -37,6 +39,17 @@ from _lib import (
 )
 
 
+def _load_mve_lib():
+    spec = importlib.util.spec_from_file_location("markdown_video_editor_lib", _MVE_LIB_PATH)
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"Cannot load markdown-video-editor helpers from {_MVE_LIB_PATH}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+_MVE = _load_mve_lib()
+
 _SHORT_W = 1080
 _SHORT_H = 1920
 _OUT_FPS = 30
@@ -44,6 +57,7 @@ _ENC_PRESET = "fast"
 _ENC_THREADS = 0
 _SILENCE_LEAD_RE = re.compile(r"silence_start:\s*([0-9.]+)")
 _SILENCE_END_RE = re.compile(r"silence_end:\s*([0-9.]+)")
+_NAME_SPLIT_RE = re.compile(r"\s*(?:\||//|-)\s*")
 
 
 def _run_logged_command(cmd: list[str], timeout: int, label: str) -> None:
@@ -77,7 +91,7 @@ def _run_logged_command(cmd: list[str], timeout: int, label: str) -> None:
         detail = ""
         try:
             lines = log_path.read_text(encoding="utf-8", errors="replace").splitlines()
-            detail = " | ".join(line.strip() for line in lines[-8:] if line.strip())[:800]
+            detail = " | ".join(line.strip() for line in lines[-8:] if line.strip())[:1000]
         except Exception:
             pass
         raise RuntimeError(f"{label}: {detail or exc}") from exc
@@ -100,15 +114,14 @@ def _parse_args() -> argparse.Namespace:
     p.add_argument("--content-cache", default="", help="Shared source video cache (default: cache/<env>/sermon-clipper/content).")
     p.add_argument("--no-download", action="store_true", help="Skip downloads and use only files already present in the shared content cache.")
     p.add_argument("--transcripts", default="", help="Transcripts root.")
-    p.add_argument("--no-subs", action="store_true", help="Skip subtitles/captions.")
+    p.add_argument("--no-subs", action="store_true", help="Skip subtitle extraction and subtitle-track muxing.")
     p.add_argument("--trim-silence", action="store_true", help="Trim leading/trailing silence from clips.")
+    p.add_argument("--no-compress", action="store_true", help="Disable interior gap compression.")
     p.add_argument("--width", type=int, default=1080, help="Output width (default: 1080).")
     p.add_argument("--height", type=int, default=1920, help="Output height (default: 1920).")
     p.add_argument("--fps", type=int, default=30, help="Output fps (default: 30).")
     p.add_argument("--preset", default="fast", help="ffmpeg preset for prepared clips (default: fast).")
     p.add_argument("--threads", type=int, default=0, help="ffmpeg thread override; also used as Remotion concurrency when set.")
-    p.add_argument("--context-top", action="store_true", help=argparse.SUPPRESS)
-    p.add_argument("--context-bottom", action="store_true", help=argparse.SUPPRESS)
     p.add_argument("--register", default="", help="Path to used-clips.json to register.")
     p.add_argument("--min-clips", type=int, default=7, help="Require at least this many rendered clips before publishing output (default: 7).")
     p.add_argument("--keep-work", action="store_true", help="Keep scratch work directory and staged Remotion assets after a successful render.")
@@ -180,7 +193,6 @@ def _detect_av_trim_bounds(
     min_silence: float = 0.25,
     noise_db: int = -45,
 ) -> tuple[float, float]:
-    """Detect leading/trailing silence and trim both audio/video by adjusting bounds."""
     if not has_audio:
         return start, end
     clip_dur = max(0.0, end - start)
@@ -250,75 +262,111 @@ def _detect_av_trim_bounds(
     return new_start, new_end
 
 
-def _ffmpeg_prepare_short_clip(
-    src: Path,
-    start: float,
-    end: float,
-    out: Path,
-    has_audio: bool = True,
-) -> bool:
+def _ffmpeg_extract_raw_clip(src: Path, start: float, end: float, out: Path) -> bool:
     dur = max(0.0, end - start)
-    if dur <= 0.0:
+    if dur <= 0:
         return False
-    out.parent.mkdir(parents=True, exist_ok=True)
-    vf = f"fps={_OUT_FPS},scale='min({_SHORT_W},iw)':-2:flags=lanczos,format=yuv420p"
-    common = [
+    cmd = [
+        "ffmpeg",
+        "-y",
+        "-ss",
+        str(start),
+        "-i",
+        str(src),
+        "-t",
+        str(dur),
         "-c:v",
         "libx264",
         "-preset",
         _ENC_PRESET,
         "-crf",
-        "20",
+        "18",
+        "-c:a",
+        "aac",
+        "-ar",
+        "48000",
+        "-ac",
+        "2",
         "-movflags",
         "+faststart",
         str(out),
     ]
-    if has_audio:
-        cmd = [
-            "ffmpeg",
-            "-y",
-            "-ss",
-            str(start),
-            "-i",
-            str(src),
-            "-t",
-            str(dur),
-            "-map",
-            "0:v:0",
-            "-map",
-            "0:a?",
-            "-vf",
-            vf,
-            "-c:a",
-            "aac",
-            "-ar",
-            "48000",
-            "-ac",
-            "2",
-        ] + common
-    else:
-        cmd = [
-            "ffmpeg",
-            "-y",
-            "-ss",
-            str(start),
-            "-i",
-            str(src),
-            "-t",
-            str(dur),
-            "-map",
-            "0:v:0",
-            "-vf",
-            vf,
-            "-an",
-        ] + common
-
     try:
-        _run_logged_command(cmd, timeout=max(120, int(dur * 8)), label="clip preparation failed")
+        _run_logged_command(cmd, timeout=max(120, int(dur * 8)), label="raw clip extraction failed")
         return True
     except Exception as exc:
-        print(f"[render_short] clip preparation failed: {exc}", file=sys.stderr)
+        print(f"[render_short] raw clip extraction failed: {exc}", file=sys.stderr)
         return False
+
+
+def _crop_filter() -> str:
+    crop_w = "min(iw\\,ih*9/16)"
+    crop_h = "min(ih\\,iw*16/9)"
+    crop_x = f"(iw-{crop_w})/2"
+    crop_y = f"max(0\\,(ih-{crop_h})*0.12)"
+    return (
+        f"crop=w='{crop_w}':h='{crop_h}':x='{crop_x}':y='{crop_y}',"
+        f"scale={_SHORT_W}:{_SHORT_H}:flags=lanczos,fps={_OUT_FPS},format=yuv420p"
+    )
+
+
+def _build_keep_filter_complex(keep_ranges: list[tuple[float, float]], has_audio: bool) -> str:
+    parts: list[str] = []
+    for index, (start, end) in enumerate(keep_ranges):
+        parts.append(f"[0:v]trim=start={start:.6f}:end={end:.6f},setpts=PTS-STARTPTS[v{index}]")
+        if has_audio:
+            parts.append(f"[0:a]atrim=start={start:.6f}:end={end:.6f},asetpts=PTS-STARTPTS[a{index}]")
+    if has_audio:
+        concat_inputs = "".join(f"[v{index}][a{index}]" for index in range(len(keep_ranges)))
+        parts.append(f"{concat_inputs}concat=n={len(keep_ranges)}:v=1:a=1[vcat][acat]")
+        parts.append(f"[vcat]{_crop_filter()}[vout]")
+    else:
+        concat_inputs = "".join(f"[v{index}]" for index in range(len(keep_ranges)))
+        parts.append(f"{concat_inputs}concat=n={len(keep_ranges)}:v=1:a=0[vcat]")
+        parts.append(f"[vcat]{_crop_filter()}[vout]")
+    return ";\n".join(parts) + "\n"
+
+
+def _apply_keep_ranges(src: Path, keep_ranges: list[tuple[float, float]], out: Path, has_audio: bool) -> bool:
+    if not keep_ranges:
+        return False
+    filter_script = out.with_suffix(".filter.txt")
+    filter_script.write_text(_build_keep_filter_complex(keep_ranges, has_audio), encoding="utf-8")
+    cmd = [
+        "ffmpeg",
+        "-y",
+        "-i",
+        str(src),
+        "-filter_complex_script",
+        str(filter_script),
+        "-map",
+        "[vout]",
+    ]
+    if has_audio:
+        cmd.extend(["-map", "[acat]", "-c:a", "aac", "-ar", "48000", "-ac", "2"])
+    else:
+        cmd.append("-an")
+    cmd.extend(
+        [
+            "-c:v",
+            "libx264",
+            "-preset",
+            _ENC_PRESET,
+            "-crf",
+            "20",
+            "-movflags",
+            "+faststart",
+            str(out),
+        ]
+    )
+    try:
+        _run_logged_command(cmd, timeout=300, label="clip compression failed")
+        return True
+    except Exception as exc:
+        print(f"[render_short] clip compression failed: {exc}", file=sys.stderr)
+        return False
+    finally:
+        remove_path(filter_script)
 
 
 def _parse_vtt_timestamp(raw: str) -> float:
@@ -355,6 +403,71 @@ def _load_vtt_cues(vtt_path: Path) -> list[dict[str, float | str]]:
     return cues
 
 
+def _merge_cues(cues: list[dict[str, float | str]]) -> list[dict[str, float | str]]:
+    merged: list[dict[str, float | str]] = []
+    for cue in sorted(cues, key=lambda item: (float(item["start_sec"]), float(item["end_sec"]))):
+        if not merged:
+            merged.append(cue)
+            continue
+        prev = merged[-1]
+        if str(prev["text"]) == str(cue["text"]) and abs(float(cue["start_sec"]) - float(prev["end_sec"])) <= 0.04:
+            prev["end_sec"] = cue["end_sec"]
+            continue
+        merged.append(cue)
+    return merged
+
+
+def _remap_cues_to_keep_ranges(
+    cues: list[dict[str, float | str]],
+    keep_ranges: list[tuple[float, float]],
+) -> list[dict[str, float | str]]:
+    remapped: list[dict[str, float | str]] = []
+    output_cursor = 0.0
+    for keep_start, keep_end in keep_ranges:
+        for cue in cues:
+            overlap_start = max(float(cue["start_sec"]), keep_start)
+            overlap_end = min(float(cue["end_sec"]), keep_end)
+            if overlap_end - overlap_start < 0.04:
+                continue
+            remapped.append(
+                {
+                    "start_sec": output_cursor + (overlap_start - keep_start),
+                    "end_sec": output_cursor + (overlap_end - keep_start),
+                    "text": str(cue["text"]),
+                }
+            )
+        output_cursor += keep_end - keep_start
+    return _merge_cues(remapped)
+
+
+def _sec_to_srt(sec: float) -> str:
+    sec = max(0.0, float(sec))
+    hh = int(sec // 3600)
+    mm = int((sec % 3600) // 60)
+    ss = int(sec % 60)
+    ms = int(round((sec - int(sec)) * 1000))
+    if ms >= 1000:
+        ss += 1
+        ms -= 1000
+    if ss >= 60:
+        mm += 1
+        ss -= 60
+    if mm >= 60:
+        hh += 1
+        mm -= 60
+    return f"{hh:02d}:{mm:02d}:{ss:02d},{ms:03d}"
+
+
+def _write_srt(cues: list[dict[str, float | str]], path: Path) -> None:
+    lines: list[str] = []
+    for index, cue in enumerate(cues, start=1):
+        lines.append(str(index))
+        lines.append(f"{_sec_to_srt(float(cue['start_sec']))} --> {_sec_to_srt(float(cue['end_sec']))}")
+        lines.append(str(cue["text"]))
+        lines.append("")
+    path.write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+
+
 def _slugify(value: str) -> str:
     slug = re.sub(r"[^a-z0-9]+", "-", str(value or "").lower()).strip("-")
     return slug or "short"
@@ -389,6 +502,81 @@ def _render_with_remotion(manifest: dict, out_path: Path) -> None:
         timeout=max(900, int(max(30.0, total_duration) * 40)),
         label="Remotion render failed",
     )
+
+
+def _mux_subtitle_track(video_path: Path, subtitle_path: Path) -> None:
+    muxed_path = video_path.with_name(f"{video_path.stem}.muxed{video_path.suffix}")
+    cmd = [
+        "ffmpeg",
+        "-y",
+        "-i",
+        str(video_path),
+        "-i",
+        str(subtitle_path),
+        "-map",
+        "0:v:0",
+        "-map",
+        "0:a?",
+        "-map",
+        "1:0",
+        "-c:v",
+        "copy",
+        "-c:a",
+        "copy",
+        "-c:s",
+        "mov_text",
+        "-metadata:s:s:0",
+        "language=eng",
+        "-disposition:s:0",
+        "default",
+        "-movflags",
+        "+faststart",
+        str(muxed_path),
+    ]
+    _run_logged_command(cmd, timeout=300, label="subtitle mux failed")
+    remove_path(video_path)
+    muxed_path.replace(video_path)
+
+
+def _looks_like_name(part: str) -> bool:
+    words = [w for w in re.findall(r"[A-Za-z']+", part) if w]
+    if not (2 <= len(words) <= 4):
+        return False
+    return all(word[:1].isupper() for word in words if word and word[0].isalpha())
+
+
+def _speaker_label(episode_title: str, feed_title: str) -> str:
+    for candidate in _NAME_SPLIT_RE.split(episode_title or ""):
+        candidate = candidate.strip()
+        if _looks_like_name(candidate):
+            return candidate
+    for candidate in _NAME_SPLIT_RE.split(feed_title or ""):
+        candidate = candidate.strip()
+        if _looks_like_name(candidate):
+            return candidate
+    return ""
+
+
+def _build_keep_ranges_for_clip(raw_clip_path: Path, compress: bool) -> list[tuple[float, float]]:
+    media = _MVE.probe_media(raw_clip_path)
+    duration_sec = float(media.get("duration_sec") or 0.0)
+    if duration_sec <= 0:
+        return []
+    if not compress or not media.get("has_audio"):
+        return [(0.0, duration_sec)]
+    silences = _MVE.detect_silences(raw_clip_path, threshold_db=-34.0, min_silence_sec=0.22)
+    audible_ranges = _MVE.invert_ranges(silences, duration_sec=duration_sec)
+    if not audible_ranges:
+        audible_ranges = [(0.0, duration_sec)]
+    keep_ranges = _MVE.build_keep_ranges(
+        audible_ranges=audible_ranges,
+        duration_sec=duration_sec,
+        trim_edges=True,
+        compress_gaps=True,
+        edge_pad_sec=0.05,
+        interior_gap_sec=0.04,
+    )
+    return keep_ranges or [(0.0, duration_sec)]
 
 
 def main() -> None:
@@ -445,6 +633,9 @@ def main() -> None:
 
     rendered_clip_ids: list[str] = []
     manifest_clips: list[dict] = []
+    final_subtitle_cues: list[dict[str, float | str]] = []
+    transition_sec = 0.35
+    output_cursor = 0.0
     try:
         for index, item in enumerate(clip_items, start=1):
             feed = item.get("feed")
@@ -479,42 +670,60 @@ def main() -> None:
                 if args.trim_silence
                 else (start, end)
             )
-            duration_sec = max(0.0, trim_end - trim_start)
-            if duration_sec <= 0.0:
+            raw_duration = max(0.0, trim_end - trim_start)
+            if raw_duration <= 0.0:
                 continue
 
-            captions: list[dict[str, float | str]] = []
+            raw_clip_path = work_dir / f"clip_{index:02d}_raw.mp4"
+            if not _ffmpeg_extract_raw_clip(src_path, trim_start, trim_end, raw_clip_path):
+                continue
+
+            keep_ranges = _build_keep_ranges_for_clip(raw_clip_path, compress=not bool(args.no_compress))
+            compressed_duration = sum(end_sec - start_sec for start_sec, end_sec in keep_ranges)
+            if compressed_duration <= 0.0:
+                continue
+
+            cues: list[dict[str, float | str]] = []
             if not args.no_subs:
                 transcript_path = get_transcript_path(transcripts_root, feed, episode)
                 if transcript_path:
-                    subs_path = work_dir / f"clip_{index:02d}.vtt"
-                    if clip_transcript_to_vtt(transcript_path, trim_start, trim_end, subs_path):
-                        captions = _load_vtt_cues(subs_path)
+                    clip_vtt_path = work_dir / f"clip_{index:02d}.vtt"
+                    if clip_transcript_to_vtt(transcript_path, trim_start, trim_end, clip_vtt_path):
+                        cues = _load_vtt_cues(clip_vtt_path)
                 else:
                     print(f"[render_short] No transcript for {feed}/{episode}", file=sys.stderr)
+            remapped_cues = _remap_cues_to_keep_ranges(cues, keep_ranges) if cues else []
 
             prepared_path = public_job_dir / f"clip_{index:02d}.mp4"
-            if not _ffmpeg_prepare_short_clip(
-                src=src_path,
-                start=trim_start,
-                end=trim_end,
-                out=prepared_path,
-                has_audio=has_audio,
-            ):
+            if not _apply_keep_ranges(raw_clip_path, keep_ranges, prepared_path, has_audio=has_audio):
                 continue
 
+            episode_title = str(item.get("episode_title") or episode).strip()
+            feed_title = str(item.get("feed_title") or feed).strip()
+            speaker_label = _speaker_label(episode_title, feed_title)
             manifest_clips.append(
                 {
                     "path": _public_rel(prepared_path),
-                    "duration_sec": round(duration_sec, 3),
+                    "duration_sec": round(compressed_duration, 3),
                     "quote": str(item.get("quote") or "").strip(),
                     "context": str(item.get("context") or "").strip(),
                     "decorators": str(item.get("decorators") or "").strip(),
-                    "feed_title": str(item.get("feed_title") or feed).strip(),
-                    "episode_title": str(item.get("episode_title") or episode).strip(),
-                    "captions": captions,
+                    "feed_title": feed_title,
+                    "episode_title": episode_title,
+                    "speaker_label": speaker_label,
                 }
             )
+            for cue in remapped_cues:
+                final_subtitle_cues.append(
+                    {
+                        "start_sec": output_cursor + float(cue["start_sec"]),
+                        "end_sec": output_cursor + float(cue["end_sec"]),
+                        "text": str(cue["text"]),
+                    }
+                )
+            output_cursor += compressed_duration
+            if index < len(clip_items):
+                output_cursor += transition_sec
             rendered_clip_ids.append(clip_id(feed, episode, start))
 
         if len(manifest_clips) < max(2, int(args.min_clips)):
@@ -531,6 +740,7 @@ def main() -> None:
             "width": _SHORT_W,
             "height": _SHORT_H,
             "fps": _OUT_FPS,
+            "transition_sec": transition_sec,
             "clips": manifest_clips,
         }
         manifest_path = work_dir / "remotion_manifest.json"
@@ -538,6 +748,11 @@ def main() -> None:
 
         out_path.parent.mkdir(parents=True, exist_ok=True)
         _render_with_remotion(manifest, out_path)
+
+        if not args.no_subs and final_subtitle_cues:
+            final_sub_path = out_path.with_suffix(".srt")
+            _write_srt(_merge_cues(final_subtitle_cues), final_sub_path)
+            _mux_subtitle_track(out_path, final_sub_path)
     except Exception as exc:
         print(f"[render_short] {exc}", file=sys.stderr)
         print(f"[render_short] staged assets kept at {public_job_dir}", file=sys.stderr)

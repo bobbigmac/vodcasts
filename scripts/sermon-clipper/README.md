@@ -81,3 +81,8 @@ Safe to clean and regenerate:
 ## Goal
 
 The intended operator experience is: ask for a long or short video on a topic/question, let the LLM assemble the right sources and markdown control sheet, render from that source of truth, inspect the result, then rerender or clean without losing the expensive cached source material. For shorts, ffmpeg now handles source prep while Remotion handles the final look and sequencing.
+
+
+## TODO: 
+
+ if you can find some nice libs or components for Remotion (I don't know much about how it works) I want each video to have its own character and style, so either use some available extensions for really nice video polish, or just work in more style, offsets, patterns, themes, skins, etc. I want a broad variety of video layout options, so we can experiement, while still having our current base version that works well enough (additive, componentised, flavour, not destructive). TikTokers are very sensitive to jank or weirdness, and appreciate slick presentation, so let's try and make sure every video we produce is just awesome by default, even tho it's basically just videos of mostly guys talking, we're trying to reall ymake the rest of the video really deliver on its promise of meaningful and slick videos. (A big ask perhaps, but we have all the parts we need to make that happen, but it just takes work to get everything right, is the theory )
