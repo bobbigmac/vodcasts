@@ -15,7 +15,7 @@ xmlns:rawvoice="https://blubrry.com/developer/rawvoice-rss/"
 	<atom:link href="https://ericrobertsfitness.com/feed/podcast" rel="self" type="application/rss+xml" />
 	<link>https://ericrobertsfitness.com/</link>
 	<description>Online Fitness Coaching</description>
-	<lastBuildDate>Mon, 09 Mar 2026 11:00:00 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 11 Mar 2026 10:00:00 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -42,6 +42,34 @@ xmlns:rawvoice="https://blubrry.com/developer/rawvoice-rss/"
 	<podcast:podping usesPodping="true" />
 	<podcast:guid>a9191b09-02b4-5c01-a7da-a136ad1ba72e</podcast:guid>
 	<rawvoice:subscribe feed="https://ericrobertsfitness.com/feed/podcast" itunes="https://podcasts.apple.com/us/podcast/eric-roberts-fitness/id1473838608" blubrry="https://blubrry.com/eric_roberts_fitness_podcast/" spotify="https://open.spotify.com/show/2gSP16i6mmEu6kzzbCUXel"></rawvoice:subscribe>
+	<item>
+		<title>ERF 974:  Why Group Classes Are Keeping You Stuck</title>
+		<link>https://ericrobertsfitness.com/erf-974-why-group-classes-are-keeping-you-stuck/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=erf-974-why-group-classes-are-keeping-you-stuck</link>
+		<pubDate>Wed, 11 Mar 2026 10:00:00 +0000</pubDate>
+		<guid isPermaLink="false">https://ericrobertsfitness.com/?p=8585</guid>
+		<comments>https://ericrobertsfitness.com/erf-974-why-group-classes-are-keeping-you-stuck/#respond</comments>
+		<wfw:commentRss>https://ericrobertsfitness.com/erf-974-why-group-classes-are-keeping-you-stuck/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<category><![CDATA[Podcast]]></category>
+		<description>Join my Clubhouse App - https://ericrobertsfitness.com/clubhouse-page.html
+
+On today&#039;s episode, I&#039;m breaking down exactly why group classes like Orange Theory, Peloton, and F45 are not designed to build the body you want — even if you&#039;re working your ass off. I&#039;m covering six specific reasons why these workouts fall short when it comes to building muscle and changing your physique, from lack of progressive overload to what these classes are actually doing to your cortisol, your sleep, and your hunger. If you&#039;ve ever felt like you&#039;re doing everything right but your body just won&#039;t change, this episode is going to tell you why — and exactly what to do instead.
+
+Work With Me 1:1 Coaching - https://ericrobertsfitness.com/erf-1on1.html
+
+Free Calorie Calculator https://ericrobertsfitness.com/free-calorie-calculator/
+
+20% Off Legion Athletic Supplements Code “ERIC” HERE https://legionathletics.rfrl.co/qj2dy
+
+Youtube Channel https://www.youtube.com/@ericrobertsfitness
+
+Video Podcast: https://www.youtube.com/@EricRobertsFitnessPodcast</description>
+		<enclosure url="https://media.blubrry.com/eric_roberts_fitness_podcast/ericrobertsfitness.com/wp-content/uploads/2026/03/riverside_eric_magic-episode-_-mar-06-2026_eric_solo-pods.mp3" length="19197301" type="audio/mpeg" />
+		<itunes:author>Eric Roberts Fitness</itunes:author>
+		<itunes:episodeType>full</itunes:episodeType>
+		<itunes:explicit>false</itunes:explicit>
+		<itunes:duration>40:00</itunes:duration>
+	</item>
 	<item>
 		<title>ERF 973: Injuries, Mental Battles, and 40 Pounds Lost: Grant&#8217;s Story</title>
 		<link>https://ericrobertsfitness.com/erf-973-injuries-mental-battles-and-40-pounds-lost-grants-journey/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=erf-973-injuries-mental-battles-and-40-pounds-lost-grants-journey</link>
@@ -28828,179 +28856,6 @@ Let me know what you think, and which you think will help you the best!</descrip
 		<itunes:author>Eric Roberts Fitness</itunes:author>
 		<itunes:episodeType>full</itunes:episodeType>
 		<itunes:duration>4:37</itunes:duration>
-	</item>
-	<item>
-		<title>ERF 007: Beauty in the Basics</title>
-		<link>https://ericrobertsfitness.com/erf-007-beauty-in-the-basics/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=erf-007-beauty-in-the-basics</link>
-		<pubDate>Sat, 24 Aug 2019 23:58:25 +0000</pubDate>
-		<guid isPermaLink="false">https://ericrobertsfitness.com/?p=343</guid>
-		<comments>https://ericrobertsfitness.com/erf-007-beauty-in-the-basics/#respond</comments>
-		<wfw:commentRss>https://ericrobertsfitness.com/erf-007-beauty-in-the-basics/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		<category><![CDATA[Podcast]]></category>
-		<category><![CDATA[ab workout]]></category>
-		<category><![CDATA[bench press]]></category>
-		<category><![CDATA[bent over row]]></category>
-		<category><![CDATA[core workout]]></category>
-		<category><![CDATA[deadlift]]></category>
-		<category><![CDATA[fat loss training]]></category>
-		<category><![CDATA[full body workout]]></category>
-		<category><![CDATA[lunge]]></category>
-		<category><![CDATA[squat]]></category>
-		<category><![CDATA[strength training]]></category>
-		<description>Your favorite Instagram celebrity has their SWIPE AND TRY MY WORKOUT!!
-
-You scroll through the internet looking for the latest and greatest HIIT workout with your favorite bosu ball and cable machine.
-
-You spend all your time searching for the coolest most unique workout you can find so you “don’t get bored”, yet you have yet to master a basic squat.
-
-You have yet to master learning how to properly set your shoulder blades when you do a push up so you don’t get a paid in the front of your shoulder or your wrists.
-
-In a world where everything has to be new and unique, finding the beauty in the basics is what I am bringing to the light.
-
-
-Mastering the Basics
-Whether you are just getting into exercising, or been here for a while, you have probably pulled out your phone and searched what exercises to do.
-
-10 best leg exercies, exercises that burn the most fat, ways to build your chest, whatever the case may be.
-
-You probably saw “squats are the best builder for your legs, bench press is the #1 upper body builder, deadlifts are great for the whole body!”.
-
-You probably then thought “ yea yea squats and deadlifts jeez I’ve seen these everywhere, what else is there, what other exercises can I do?”
-
-That is where I am coming in to strike a conversation.
-
-There is a reason you have seen that squats are the best for your legs, because squats are generally the best for your legs.
-
-Obviously with some caveat, and there are plenty of unique variations that come into place from person to person.
-
-But in some way shape or form, a squat pattern should be a staple in your training, because you will get exceptional results from them, *if performed correctly.
-
-I preface that because that is what I want to talk about.
-
-Instead of people talking the time to truly master a squat pattern, properly bracing your core, externally rotating your hips, activating your glutes, ripping the ground apart with your feet/knees/hips, having your knees track over your toes, and sitting down and back to complete the squat, they just look for a new exercise to do every week.
-
-Now if you are reading this you may have been like, “wtf is that english?”, or you may have been like “I don&#039;t really care about those things I just wanna be in shape and do it correctly”.
-
-And while I understand both sides, I urge you to care.
-
-I urge you to want to learn these movements, to do them over and over and over again to master them.
-
-To spend time learning how your body moves in space when you perform the exercise.
-
-Do you feel your knees cave in? Is your core braced? How does your low back feel when you perform the exercise?
-
-All of these things will be found out over time from reps and reps and reps.
-
-But, if you do not do the reps because you keep looking for new exercise after new exercise every time you do a workout, you will not learn these things.
-
-You will not reap the benefits from the exercise because you cannot perform it correctly.
-
-That “best exercise” will lead to just okay results because you have put in the reps to master it to see the best results possible.
-
-There is a reason these basic movement pattern exercies, squats, lunges, deadlifts, overhead presses, etc, have been around for a while.
-
-They work.
-
-Period.
-
-But if you spend every workout looking for new things to do because you are “bored”, then you will not learn anything about the movement nor your body, and you will be a cat chasing its tail.
-
-I challenge you to learn the movements.
-
-Learn what I was speaking on earlier, how to brace your core for a squat, how to set your shoulder blades in the right position for a chest press, how to ensure your hips are properly moving in a deadlift.
-
-Make this your focus that drives your thoughts. You will not be bored when you are constantly trying to perfect your squat. You will always find one thing here or there you can improve on.
-
-Trust me I know from experience.
-Basic Movement Patterns You NEED To Learn
-Those are about the eight main movement patterns that you need to focus on mastering, mastering before you go look anywhere else.
-
-And honestly, I would rather you just stick within those movement patterns. Once you get the movement pattern down, then you can kind of have some fun in between there about what exercise you can do, and what variations you want to do.
-
-But once you get the main basic movement pattern down, you can then branch off from there because you&#039;re going to learn that skill. Your body is going to know that skill. Your central nervous system is going to have that skill so you can be able to do these different variations if you would like to choose to.
-
-SQUAT- This is a total body movement pattern you must master, no if ands or butts ( I said butts!).
-
-There are so many variations to this simple movement pattern that can be used for so many individuals.
-
-Barbell back squat, barbell front squat, dumbbell/kettlebell goblet squat, dumbbell/kettlebell front racked squat, single leg squat, Bulgarian split squat, just to name a few.
-
-My point is, there is no excuse to not do a squat pattern, learn it and master it. If you need videos or tips on any of these feel free to reach out and let me know.
-
-DEADLIFT- This is another total body movement pattern you need to know and master. I mean picking up your kids is a deadlift for f sake.
-
-Examples could be barbell conventional deadlift, sumo deadlift, still leg deadlift, trap bar deadlift, kettlebell deadlift.
-
-HIP HINGE- These are similar to deadlifts because they mainly move through the hip jont, but some may be less total body taxing.
-
-Examples range anywhere from cable pull through, glute bridge, hip thrusters.
-
-As much as I hate the Pittsburgh steelers, James Harrison when he does those hip thrusters in insane. If you look that up you’ll be humbled very quickly.
-
-VERTICAL PUSH- Anything pushing overhead is generally considered vertical push.
-
-Examples are barbell over head press, machine shoulder press, incline dumbbell/barbell press, single arm overhead press.
-
-VERTICAL PULL- This would be the opposite, so anything pulling from above your head down.
-
-Examples can be pull up, lat pull down, single arm lat pulldown, chin up.
-
-HORIZONTAL PUSH- These are anything where you are pushing something horizontally away from your body (shocker!).
-
-Examples include barbell bench press, dumbbell bench press, push up, single arm bench press.
-
-HORIZONTAL PULL- These mainly make up your rows, so pulling things horizontally towards your body.
-
-All rows really, barbell row, 1 arm dumbbell row, chest support dumbbell row, cable row.
-
-TRUNK- This is anything vernally involving your “core”, which is always up for debate, but it is much more than your 6 pack muscles, bro.
-
-One note on these before exercises, if you see a workout that says “6 BEST SHREDDING AB EXERCISES TO SHRED YOU UP”, chances are it is not going to give you a 6 pack and the exercises are actually not useful.
-
-First off, no asshole, caloric deficit.
-
-Second, your trunk is meant to stabilize you. Meant to protect you from injury and be liken the guy wires for towers.
-
-Doing a million sit ups or crunches is not what trains your core to the most effective nature.
-
-Examples of useful core exercises can be planks, side planks, deadbugs, birdogs, farmers carry, some leg left variations, some Russian twist variations.
-
-And before you’re like “Oh Eric I can hold a plank for 60 seconds already that’s too easy!”
-
-Haha, like I said, beauty in the basics.
-
-Do you actually do it correctly? Do you know how to keep your ribcage down? Do you know how to tuck your pelvis, how to squeeze your glutes, how to extend your shoulder blades pushing away from the ground, brace your core while breathing.
-
-Bet you never thought of any of things while doing a plank… it’s time to start. This is why I am here.
-Wrap Up
-I hope I sparked some curiosity in your head. I hope I sparked a thought of putting more attention to detail into your training.
-
-Give yourself time to learn the movements. 
-
-Allow your body to get used to the movements, put the reps in week after week to learn and grow.
-
-See if you have less knee pain when you squat a certain way, or if you have less shoulder ache when you push up a different angle.
-
-Your body is one of one and it is yours, so take the time to learn it.
-
-You do that by, quite frankly doing the same thing over and over again week by week.
-
-I am not saying changing things up and adding some “fun” stuff here and there is bad because it isn’t and it is needed for most people to adhere to training.
-
-What I am saying though is find certain variations of the movements listed above, and spend some time on them.
-
-Spend time learning your one and only body through space. Do the reps week after week.
-
-And rather than looking for the next best exercise every week, look for ways you can continue to try and perfect the moves you are doing now, and tell me what results you get.
-
-I have a feeling they will be top notch.
-
-If you read this and want anything covered more in depth, feel free to reach out via email, coacheric@ericrobertsfitness.com, or dm me on instagram or facebook.</description>
-		<enclosure url="https://media.blubrry.com/eric_roberts_fitness_podcast/content.blubrry.com/eric_roberts_fitness_podcast/Beauty-in-the-basics-podcast-w-music.mp3" length="24151022" type="audio/mpeg" />
-		<itunes:author>Eric Roberts Fitness</itunes:author>
-		<itunes:episodeType>full</itunes:episodeType>
-		<itunes:duration>24:03</itunes:duration>
 	</item>
 </channel>
 </rss>
