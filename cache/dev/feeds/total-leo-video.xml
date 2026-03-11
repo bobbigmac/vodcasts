@@ -14,8 +14,8 @@
 		<ttl>120</ttl>
 		<sy:updatePeriod>hourly</sy:updatePeriod>
 		<sy:updateFrequency>2</sy:updateFrequency>
-		<lastBuildDate>Tue, 10 Mar 2026 19:30:11 PDT</lastBuildDate>
-		<pubDate>Tue, 10 Mar 2026 19:30:11 PDT</pubDate>
+		<lastBuildDate>Wed, 11 Mar 2026 14:30:15 PDT</lastBuildDate>
+		<pubDate>Wed, 11 Mar 2026 14:30:15 PDT</pubDate>
 		<rawvoice:frequency>hourly</rawvoice:frequency>
 		<rawvoice:location>Petaluma, CA</rawvoice:location>
 		<itunes:type>episodic</itunes:type>
@@ -62,6 +62,7 @@
 			<category>Security</category>
 			<itunes:explicit>no</itunes:explicit>
 			<itunes:subtitle>Was Your Smart TV a Stealth Proxy?</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/can-ai-make-your-browser-safer-inside-groundbreaking-llm-vulnerability-hunt-firefox" type="text/html" />
 			<itunes:keywords>Security Now, TWiT, steve gibson, Leo Laporte, mozilla, claude, OpenClaw, LLMs, AI security, Anthropic, Firefox vulnerabilities, zero-day vulnerabilities, code security, Ubuntu sudo, rcs encryption, TikTok encrypted messaging, Bright Data proxy</itunes:keywords>
 			<description><![CDATA[
 <p>Think your online alias keeps you safe? This episode reveals how advanced language models are making it trivial to de-anonymize users at scale, challenging everything we thought we knew about internet privacy.</p><ul> 
@@ -144,7 +145,7 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860447/hero/SN1069_thumbnail.jpg"/>
 			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/sn/sn1069/sn1069_h264m_1920x1080.mp4</guid>
 			<rawvoice:isHd>yes</rawvoice:isHd>
-			<itunes:duration>0:00</itunes:duration>
+			<itunes:duration>2:43:34</itunes:duration>
 			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/sn/sn1069/sn1069_h264m_1920x1080.mp4" length="2777496836" type="video/mp4"/>
 			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/sn/sn1069/sn1069_h264m_1920x1080.mp4" fileSize="2777496836" type="video/mp4" medium="video">
 				<media:title type="plain">Security Now 1069: You can't hide from LLMs</media:title>
@@ -174,7 +175,7 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 			<category>Mac</category>
 			<itunes:explicit>no</itunes:explicit>
 			<itunes:subtitle>The MacBook Neo</itunes:subtitle>
-			<podcast:transcript url="http://twit.tv/posts/transcripts/macbreak-weekly-1015-transcript" type="text/html" />
+			<podcast:transcript url="http://twit.tv/posts/tech/new-macbook-neo-worth-it" type="text/html" />
 			<itunes:keywords>MacBreak Weekly, Leo Laporte, Jason Snell, Andy Ihnatko, Christina Warren, Apple, macbook, macbook neo, macbook neo colors, apple tiktok ads, tiktok, finder guy, apple leadership, apple corporate, iPhone, iphone fold, iphone fold design leak</itunes:keywords>
 			<description><![CDATA[
 <p>Apple unveiled the MacBook Neo, the company's foray into a low-cost laptop. The iPhone Fold's supposed design has leaked through 3D CAD rendering files. And a toolkit for hacking iPhones has leaked.</p><ul> 
@@ -457,7 +458,7 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 			<category>Security</category>
 			<itunes:explicit>no</itunes:explicit>
 			<itunes:subtitle>Live From Zero Trust World 2026</itunes:subtitle>
-			<podcast:transcript url="http://twit.tv/posts/transcripts/security-now-1068-transcript-0" type="text/html" />
+			<podcast:transcript url="http://twit.tv/posts/transcripts/security-now-1068-transcript" type="text/html" />
 			<itunes:keywords>Security Now, TWiT, steve gibson, Leo Laporte, zero trust, internal threats, ThreatLocker, enterprise security, network perimeter, authentication failures, ransomware, Social Engineering, least privilege, packet filtering, whitelisting apps</itunes:keywords>
 			<description><![CDATA[
 <p>Steve Gibson and Leo Laporte host a special episode of Security Now live from ThreatLocker's Zero Trust World 2026 in Orlando, Florida.</p> 

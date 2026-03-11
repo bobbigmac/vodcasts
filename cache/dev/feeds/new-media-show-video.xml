@@ -15,11 +15,11 @@ xmlns:rawvoice="https://blubrry.com/developer/rawvoice-rss/"
 	<atom:link href="https://newmediashow.com/feed/podcast/" rel="self" type="application/rss+xml" />
 	<link>https://newmediashow.com</link>
 	<description>New Media Show with Host Rob Greenlee formerly co-hosted with Todd Cochrane RIP discussing the new media and podcasting space with new weekly guest co-hosts.</description>
-	<lastBuildDate>Fri, 06 Mar 2026 20:40:59 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 11 Mar 2026 20:12:37 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
-		<generator>https://wordpress.org/?v=6.9.1</generator>
+		<generator>https://wordpress.org/?v=6.9.4</generator>
 
 <image>
 	<url>https://newmediashow.com/wp-content/uploads/2025/11/cropped-NMS-Icon-32x32.png</url>
