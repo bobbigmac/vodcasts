@@ -19,6 +19,7 @@ _REMOTION_ENTRY = _THIS / "remotion" / "index.jsx"
 _REMOTION_PUBLIC = _REPO_ROOT / "public"
 _REMOTION_COMPOSITION = "SermonShort"
 _MVE_LIB_PATH = _REPO_ROOT / "scripts" / "markdown-video-editor" / "_lib.py"
+_AUTOCROP_RUNNER = _THIS / "autocrop_vertical_runner.py"
 sys.path.insert(0, str(_REPO_ROOT))
 sys.path.insert(0, str(_PARENT))
 
@@ -56,6 +57,8 @@ _SHORT_H = 1920
 _OUT_FPS = 30
 _ENC_PRESET = "fast"
 _ENC_THREADS = 0
+_AUTOCROP_REPO_URL = "https://github.com/kamilstanuch/Autocrop-vertical.git"
+_AUTOCROP_REPO_DIR: Path | None = None
 _SILENCE_LEAD_RE = re.compile(r"silence_start:\s*([0-9.]+)")
 _SILENCE_END_RE = re.compile(r"silence_end:\s*([0-9.]+)")
 _NAME_SPLIT_RE = re.compile(r"\s*(?:\||//|-)\s*")
@@ -123,6 +126,7 @@ def _parse_args() -> argparse.Namespace:
     p.add_argument("--fps", type=int, default=30, help="Output fps (default: 30).")
     p.add_argument("--preset", default="fast", help="ffmpeg preset for prepared clips (default: fast).")
     p.add_argument("--threads", type=int, default=0, help="ffmpeg thread override; also used as Remotion concurrency when set.")
+    p.add_argument("--no-autocrop", action="store_true", help="Disable AutoCrop-Vertical and fall back to the legacy static crop.")
     p.add_argument("--register", default="", help="Path to used-clips.json to register.")
     p.add_argument("--min-clips", type=int, default=8, help="Require at least this many rendered clips before publishing output (default: 8).")
     p.add_argument("--keep-work", action="store_true", help="Keep scratch work directory and staged Remotion assets after a successful render.")
@@ -311,7 +315,12 @@ def _crop_filter() -> str:
     )
 
 
-def _build_keep_filter_complex(keep_ranges: list[tuple[float, float]], has_audio: bool) -> str:
+def _build_keep_filter_complex(
+    keep_ranges: list[tuple[float, float]],
+    has_audio: bool,
+    *,
+    apply_static_crop: bool,
+) -> str:
     parts: list[str] = []
     for index, (start, end) in enumerate(keep_ranges):
         parts.append(f"[0:v]trim=start={start:.6f}:end={end:.6f},setpts=PTS-STARTPTS[v{index}]")
@@ -320,19 +329,33 @@ def _build_keep_filter_complex(keep_ranges: list[tuple[float, float]], has_audio
     if has_audio:
         concat_inputs = "".join(f"[v{index}][a{index}]" for index in range(len(keep_ranges)))
         parts.append(f"{concat_inputs}concat=n={len(keep_ranges)}:v=1:a=1[vcat][acat]")
-        parts.append(f"[vcat]{_crop_filter()}[vout]")
+        if apply_static_crop:
+            parts.append(f"[vcat]{_crop_filter()}[vout]")
     else:
         concat_inputs = "".join(f"[v{index}]" for index in range(len(keep_ranges)))
         parts.append(f"{concat_inputs}concat=n={len(keep_ranges)}:v=1:a=0[vcat]")
-        parts.append(f"[vcat]{_crop_filter()}[vout]")
+        if apply_static_crop:
+            parts.append(f"[vcat]{_crop_filter()}[vout]")
+    if not apply_static_crop:
+        parts.append("[vcat]null[vout]")
     return ";\n".join(parts) + "\n"
 
 
-def _apply_keep_ranges(src: Path, keep_ranges: list[tuple[float, float]], out: Path, has_audio: bool) -> bool:
+def _apply_keep_ranges(
+    src: Path,
+    keep_ranges: list[tuple[float, float]],
+    out: Path,
+    has_audio: bool,
+    *,
+    apply_static_crop: bool,
+) -> bool:
     if not keep_ranges:
         return False
     filter_script = out.with_suffix(".filter.txt")
-    filter_script.write_text(_build_keep_filter_complex(keep_ranges, has_audio), encoding="utf-8")
+    filter_script.write_text(
+        _build_keep_filter_complex(keep_ranges, has_audio, apply_static_crop=apply_static_crop),
+        encoding="utf-8",
+    )
     cmd = [
         "ffmpeg",
         "-y",
@@ -347,6 +370,7 @@ def _apply_keep_ranges(src: Path, keep_ranges: list[tuple[float, float]], out: P
         cmd.extend(["-map", "[acat]", "-c:a", "aac", "-ar", "48000", "-ac", "2"])
     else:
         cmd.append("-an")
+    video_crf = "20" if apply_static_crop else "18"
     cmd.extend(
         [
             "-c:v",
@@ -354,7 +378,7 @@ def _apply_keep_ranges(src: Path, keep_ranges: list[tuple[float, float]], out: P
             "-preset",
             _ENC_PRESET,
             "-crf",
-            "20",
+            video_crf,
             "-movflags",
             "+faststart",
             str(out),
@@ -478,6 +502,71 @@ def _public_rel(path: Path) -> str:
     return path.relative_to(_REMOTION_PUBLIC).as_posix()
 
 
+def _autocrop_quality_from_preset(preset: str) -> str:
+    raw = str(preset or "").strip().lower()
+    if raw in {"ultrafast", "superfast", "veryfast", "faster"}:
+        return "fast"
+    if raw in {"slow", "slower", "veryslow"}:
+        return "high"
+    return "balanced"
+
+
+def _ensure_autocrop_repo() -> Path:
+    repo_dir = _AUTOCROP_REPO_DIR
+    if repo_dir is None:
+        raise RuntimeError("AutoCrop-Vertical cache directory is not configured.")
+    main_py = repo_dir / "main.py"
+    if main_py.exists():
+        return repo_dir
+    git_bin = shutil.which("git")
+    if not git_bin:
+        raise RuntimeError("AutoCrop-Vertical requires git in PATH for first-time checkout.")
+    repo_dir.parent.mkdir(parents=True, exist_ok=True)
+    clone_cmd = [git_bin, "clone", "--depth", "1", _AUTOCROP_REPO_URL, str(repo_dir)]
+    _run_logged_command(clone_cmd, timeout=900, label="AutoCrop-Vertical checkout failed")
+    if not main_py.exists():
+        raise RuntimeError(f"AutoCrop-Vertical checkout is missing {main_py}")
+    return repo_dir
+
+
+def _media_duration_sec(path: Path) -> float:
+    try:
+        media = _MVE.probe_media(path)
+        return float(media.get("duration_sec") or 0.0)
+    except Exception:
+        return 0.0
+
+
+def _run_autocrop_vertical(src: Path, out: Path) -> bool:
+    try:
+        autocrop_repo = _ensure_autocrop_repo()
+        quality = _autocrop_quality_from_preset(_ENC_PRESET)
+        duration_sec = max(1.0, _media_duration_sec(src))
+        cmd = [
+            sys.executable,
+            str(_AUTOCROP_RUNNER),
+            "--repo-dir",
+            str(autocrop_repo),
+            "-i",
+            str(src),
+            "-o",
+            str(out),
+            "--ratio",
+            "9:16",
+            "--quality",
+            quality,
+        ]
+        _run_logged_command(
+            cmd,
+            timeout=max(900, int(duration_sec * 90)),
+            label="AutoCrop-Vertical failed",
+        )
+        return True
+    except Exception as exc:
+        print(f"[render_short] AutoCrop-Vertical failed: {exc}", file=sys.stderr)
+        return False
+
+
 def _remotion_bin() -> list[str]:
     local_bin = _REPO_ROOT / "node_modules" / ".bin" / "remotion"
     local_bin_cmd = _REPO_ROOT / "node_modules" / ".bin" / "remotion.cmd"
@@ -591,7 +680,7 @@ def _build_keep_ranges_for_clip(raw_clip_path: Path, compress: bool) -> list[tup
 
 def main() -> None:
     args = _parse_args()
-    global _SHORT_W, _SHORT_H, _OUT_FPS, _ENC_PRESET, _ENC_THREADS
+    global _SHORT_W, _SHORT_H, _OUT_FPS, _ENC_PRESET, _ENC_THREADS, _AUTOCROP_REPO_DIR
     script_path = Path(args.script)
     if not script_path.exists():
         print(f"[render_short] Script not found: {script_path}", file=sys.stderr)
@@ -607,6 +696,7 @@ def main() -> None:
     _ENC_PRESET = str(args.preset or "fast").strip() or "fast"
     _ENC_THREADS = max(0, int(args.threads))
     cache_dir = default_cache_dir(env)
+    _AUTOCROP_REPO_DIR = cache_dir / "sermon-clipper" / "tools" / "autocrop-vertical"
     content_cache = Path(args.content_cache).resolve() if args.content_cache else default_content_cache_dir(env)
     content_cache.mkdir(parents=True, exist_ok=True)
     transcripts_root = Path(args.transcripts).resolve() if args.transcripts else default_transcripts_root()
@@ -705,8 +795,20 @@ def main() -> None:
             remapped_cues = _remap_cues_to_keep_ranges(cues, keep_ranges) if cues else []
 
             prepared_path = public_job_dir / f"clip_{index:02d}.mp4"
-            if not _apply_keep_ranges(raw_clip_path, keep_ranges, prepared_path, has_audio=has_audio):
+            compressed_path = work_dir / f"clip_{index:02d}_compressed.mp4"
+            if not _apply_keep_ranges(
+                raw_clip_path,
+                keep_ranges,
+                compressed_path,
+                has_audio=has_audio,
+                apply_static_crop=bool(args.no_autocrop),
+            ):
                 continue
+            if args.no_autocrop:
+                compressed_path.replace(prepared_path)
+            else:
+                if not _run_autocrop_vertical(compressed_path, prepared_path):
+                    continue
 
             episode_title = str(item.get("episode_title") or episode).strip()
             feed_title = str(item.get("feed_title") or feed).strip()

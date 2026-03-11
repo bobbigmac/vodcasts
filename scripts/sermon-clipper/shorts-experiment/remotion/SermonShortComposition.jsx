@@ -69,6 +69,10 @@ const stylePackForTheme = (manifest) => {
   return styles[hashTheme(manifest?.theme) % styles.length];
 };
 
+const baseScaleForFrame = (width, height) => Math.max(0.5, Math.min(width / 1080, height / 1920));
+
+const px = (value, scale, min = 0) => Math.max(min, Math.round(value * scale));
+
 export const calculateShortMetadata = ({props}) => {
   const manifest = props?.manifest ?? {};
   const fps = fpsOrDefault(manifest);
@@ -82,19 +86,19 @@ export const calculateShortMetadata = ({props}) => {
   };
 };
 
-const ThemePill = ({theme, color, pack}) => (
+const ThemePill = ({theme, color, pack, scale}) => (
   <div
     style={{
       alignSelf: 'flex-start',
       background: 'rgba(8,12,22,0.72)',
-      border: `2px solid ${color}`,
+      border: `${Math.max(1, px(2, scale))}px solid ${color}`,
       borderRadius: 999,
       color: '#f8fafc',
       fontFamily: pack.labelFont,
-      fontSize: 26,
+      fontSize: px(26, scale, 14),
       fontWeight: 800,
-      letterSpacing: 1.6,
-      padding: '12px 20px',
+      letterSpacing: px(1.6, scale),
+      padding: `${px(12, scale, 6)}px ${px(20, scale, 10)}px`,
       textTransform: 'uppercase',
       boxShadow: `0 0 40px ${color}24`,
       backdropFilter: 'blur(16px)',
@@ -104,13 +108,13 @@ const ThemePill = ({theme, color, pack}) => (
   </div>
 );
 
-const ProgressRail = ({index, total, color}) => (
-  <div style={{display: 'flex', gap: 10, marginTop: 18}}>
+const ProgressRail = ({index, total, color, scale}) => (
+  <div style={{display: 'flex', gap: px(10, scale, 5), marginTop: px(18, scale, 10)}}>
     {Array.from({length: total}).map((_, itemIndex) => (
       <div
         key={itemIndex}
         style={{
-          height: 8,
+          height: px(8, scale, 4),
           flex: 1,
           borderRadius: 999,
           background: itemIndex <= index ? color : 'rgba(226,232,240,0.16)',
@@ -121,31 +125,31 @@ const ProgressRail = ({index, total, color}) => (
   </div>
 );
 
-const CornerFrame = ({color}) => (
+const CornerFrame = ({color, scale}) => (
   <>
     <div
       style={{
         position: 'absolute',
-        top: 42,
-        right: 34,
-        width: 180,
-        height: 180,
-        borderTop: `4px solid ${color}`,
-        borderRight: `4px solid ${color}`,
-        borderRadius: 28,
+        top: px(42, scale, 20),
+        right: px(34, scale, 16),
+        width: px(180, scale, 90),
+        height: px(180, scale, 90),
+        borderTop: `${Math.max(1, px(4, scale))}px solid ${color}`,
+        borderRight: `${Math.max(1, px(4, scale))}px solid ${color}`,
+        borderRadius: px(28, scale, 14),
         opacity: 0.34,
       }}
     />
     <div
       style={{
         position: 'absolute',
-        bottom: 42,
-        left: 34,
-        width: 180,
-        height: 180,
-        borderBottom: `4px solid ${color}`,
-        borderLeft: `4px solid ${color}`,
-        borderRadius: 28,
+        bottom: px(42, scale, 20),
+        left: px(34, scale, 16),
+        width: px(180, scale, 90),
+        height: px(180, scale, 90),
+        borderBottom: `${Math.max(1, px(4, scale))}px solid ${color}`,
+        borderLeft: `${Math.max(1, px(4, scale))}px solid ${color}`,
+        borderRadius: px(28, scale, 14),
         opacity: 0.34,
       }}
     />
@@ -154,7 +158,8 @@ const CornerFrame = ({color}) => (
 
 const ClipCard = ({clip, theme, index, totalClips, intro, pack}) => {
   const frame = useCurrentFrame();
-  const {durationInFrames, fps} = useVideoConfig();
+  const {durationInFrames, fps, width, height} = useVideoConfig();
+  const scale = baseScaleForFrame(width, height);
   const color = pack.colors[index % pack.colors.length];
   const lift = spring({fps, frame, config: {damping: 180}});
   const introOpacity = interpolate(frame, [0, 10, 28, 44], [0, 1, 1, 0], {
@@ -199,24 +204,30 @@ const ClipCard = ({clip, theme, index, totalClips, intro, pack}) => {
       />
       <div style={{position: 'absolute', inset: 0, background: pack.topGradient}} />
       <div style={{position: 'absolute', inset: 0, background: pack.accentGlow}} />
-      <CornerFrame color={color} />
+      <CornerFrame color={color} scale={scale} />
 
-      <AbsoluteFill style={{padding: '58px 54px 78px 54px', display: 'flex', flexDirection: 'column'}}>
-        <ThemePill theme={theme} color={color} pack={pack} />
-        <ProgressRail index={index} total={totalClips} color={color} />
+      <AbsoluteFill
+        style={{
+          padding: `${px(58, scale, 28)}px ${px(54, scale, 26)}px ${px(78, scale, 38)}px ${px(54, scale, 26)}px`,
+          display: 'flex',
+          flexDirection: 'column',
+        }}
+      >
+        <ThemePill theme={theme} color={color} pack={pack} scale={scale} />
+        <ProgressRail index={index} total={totalClips} color={color} scale={scale} />
 
         <div
           style={{
             display: 'flex',
             justifyContent: 'space-between',
-            marginTop: 16,
+            marginTop: px(16, scale, 8),
             color: '#dbeafe',
             fontFamily: pack.labelFont,
-            fontSize: 22,
+            fontSize: px(22, scale, 12),
             fontWeight: 700,
-            letterSpacing: 1.1,
+            letterSpacing: px(1.1, scale),
             textTransform: 'uppercase',
-            gap: 20,
+            gap: px(20, scale, 10),
           }}
         >
           <div>{clip.feed_title}</div>
@@ -228,13 +239,13 @@ const ClipCard = ({clip, theme, index, totalClips, intro, pack}) => {
         {intro ? (
           <div
             style={{
-              marginTop: 26,
+              marginTop: px(26, scale, 12),
               maxWidth: '82%',
               alignSelf: 'flex-start',
               background: 'rgba(8,12,22,0.72)',
-              borderRadius: 30,
-              padding: '18px 24px',
-              border: `2px solid ${color}`,
+              borderRadius: px(30, scale, 16),
+              padding: `${px(18, scale, 10)}px ${px(24, scale, 12)}px`,
+              border: `${Math.max(1, px(2, scale))}px solid ${color}`,
               boxShadow: '0 22px 60px rgba(0,0,0,0.28)',
               opacity: introOpacity,
             }}
@@ -243,7 +254,7 @@ const ClipCard = ({clip, theme, index, totalClips, intro, pack}) => {
               style={{
                 color: '#f8fafc',
                 fontFamily: pack.labelFont,
-                fontSize: 46,
+                fontSize: px(46, scale, 22),
                 fontWeight: 800,
                 lineHeight: 1.02,
               }}
@@ -257,16 +268,16 @@ const ClipCard = ({clip, theme, index, totalClips, intro, pack}) => {
 
         <div
           style={{
-            transform: `translateY(${Math.round((1 - lift) * 34)}px)`,
+            transform: `translateY(${Math.round((1 - lift) * px(34, scale, 16))}px)`,
             opacity: lift,
           }}
         >
           <div
             style={{
               background: pack.panel,
-              borderRadius: 36,
-              padding: '28px 30px',
-              border: `1px solid ${pack.panelBorder}`,
+              borderRadius: px(36, scale, 18),
+              padding: `${px(28, scale, 14)}px ${px(30, scale, 15)}px`,
+              border: `${Math.max(1, px(1, scale))}px solid ${pack.panelBorder}`,
               boxShadow: '0 22px 80px rgba(0,0,0,0.42)',
               backdropFilter: 'blur(20px)',
             }}
@@ -276,10 +287,10 @@ const ClipCard = ({clip, theme, index, totalClips, intro, pack}) => {
                 style={{
                   color: color,
                   fontFamily: pack.labelFont,
-                  fontSize: 24,
+                  fontSize: px(24, scale, 13),
                   fontWeight: 900,
-                  letterSpacing: 1.2,
-                  marginBottom: 12,
+                  letterSpacing: px(1.2, scale),
+                  marginBottom: px(12, scale, 6),
                   textTransform: 'uppercase',
                 }}
               >
@@ -290,7 +301,7 @@ const ClipCard = ({clip, theme, index, totalClips, intro, pack}) => {
               style={{
                 color: '#f8fafc',
                 fontFamily: pack.quoteFont,
-                fontSize: 56,
+                fontSize: px(56, scale, 26),
                 lineHeight: 1.01,
                 fontWeight: 700,
                 textWrap: 'balance',
@@ -302,8 +313,8 @@ const ClipCard = ({clip, theme, index, totalClips, intro, pack}) => {
               style={{
                 display: 'flex',
                 flexWrap: 'wrap',
-                gap: 14,
-                marginTop: 18,
+                gap: px(14, scale, 7),
+                marginTop: px(18, scale, 10),
                 alignItems: 'center',
               }}
             >
@@ -313,11 +324,11 @@ const ClipCard = ({clip, theme, index, totalClips, intro, pack}) => {
                     background: color,
                     color: '#0f172a',
                     borderRadius: 999,
-                    padding: '8px 14px',
+                    padding: `${px(8, scale, 4)}px ${px(14, scale, 8)}px`,
                     fontFamily: pack.labelFont,
-                    fontSize: 20,
+                    fontSize: px(20, scale, 11),
                     fontWeight: 900,
-                    letterSpacing: 0.7,
+                    letterSpacing: px(0.7, scale),
                     textTransform: 'uppercase',
                   }}
                 >
@@ -331,11 +342,11 @@ const ClipCard = ({clip, theme, index, totalClips, intro, pack}) => {
                     background: 'rgba(226,232,240,0.12)',
                     color: '#e2e8f0',
                     borderRadius: 999,
-                    padding: '8px 14px',
+                    padding: `${px(8, scale, 4)}px ${px(14, scale, 8)}px`,
                     fontFamily: pack.labelFont,
-                    fontSize: 20,
+                    fontSize: px(20, scale, 11),
                     fontWeight: 800,
-                    letterSpacing: 0.7,
+                    letterSpacing: px(0.7, scale),
                     textTransform: 'uppercase',
                   }}
                 >
@@ -346,10 +357,10 @@ const ClipCard = ({clip, theme, index, totalClips, intro, pack}) => {
             {clip.episode_title ? (
               <div
                 style={{
-                  marginTop: 16,
+                  marginTop: px(16, scale, 8),
                   color: '#cbd5e1',
                   fontFamily: pack.labelFont,
-                  fontSize: 22,
+                  fontSize: px(22, scale, 12),
                   fontWeight: 600,
                   lineHeight: 1.2,
                 }}
@@ -366,21 +377,22 @@ const ClipCard = ({clip, theme, index, totalClips, intro, pack}) => {
 
 const OutroCard = ({theme, outro, pack}) => {
   const frame = useCurrentFrame();
-  const {fps} = useVideoConfig();
+  const {fps, width, height} = useVideoConfig();
+  const scale = baseScaleForFrame(width, height);
   const enter = spring({fps, frame, config: {damping: 170}});
   const accent = pack.colors[1];
   return (
     <AbsoluteFill
       style={{
         background: `${pack.accentGlow}, linear-gradient(180deg, #020617 0%, #0f172a 100%)`,
-        padding: '100px 68px',
+        padding: `${px(100, scale, 42)}px ${px(68, scale, 28)}px`,
         justifyContent: 'space-between',
       }}
     >
-      <ThemePill theme={theme} color={accent} pack={pack} />
+      <ThemePill theme={theme} color={accent} pack={pack} scale={scale} />
       <div
         style={{
-          transform: `translateY(${Math.round((1 - enter) * 48)}px)`,
+          transform: `translateY(${Math.round((1 - enter) * px(48, scale, 20))}px)`,
           opacity: enter,
         }}
       >
@@ -388,7 +400,7 @@ const OutroCard = ({theme, outro, pack}) => {
           style={{
             color: '#f8fafc',
             fontFamily: pack.quoteFont,
-            fontSize: 84,
+            fontSize: px(84, scale, 38),
             lineHeight: 0.98,
             fontWeight: 700,
             textWrap: 'balance',
@@ -398,12 +410,12 @@ const OutroCard = ({theme, outro, pack}) => {
         </div>
         <div
           style={{
-            marginTop: 26,
+            marginTop: px(26, scale, 12),
             color: accent,
             fontFamily: pack.labelFont,
-            fontSize: 28,
+            fontSize: px(28, scale, 14),
             fontWeight: 700,
-            letterSpacing: 1.1,
+            letterSpacing: px(1.1, scale),
             textTransform: 'uppercase',
           }}
         >
