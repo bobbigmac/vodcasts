@@ -106,6 +106,37 @@ _DISPLAY_TERM_FIXUPS = {
     "own strength": "our own strength",
 }
 
+_EDITORIAL_VARIANTS = [
+    {
+        "id": "reframe",
+        "opening_kicker": "A Better Frame",
+        "opening_context": "Different voices keep challenging the same old instinct.",
+        "closing_label": "Carry This Today",
+        "reflection_prompt": "Notice where {problem} starts to loosen when {hope} is allowed to lead.",
+    },
+    {
+        "id": "pressure",
+        "opening_kicker": "What Keeps Showing Up",
+        "opening_context": "This is less one sermon point and more a recurring pressure in real life.",
+        "closing_label": "Sit With This",
+        "reflection_prompt": "Pay attention to how {problem} disguises itself as wisdom, urgency, or self-protection.",
+    },
+    {
+        "id": "invitation",
+        "opening_kicker": "A Small Turn",
+        "opening_context": "The thread here is not intensity but direction.",
+        "closing_label": "For The Rest Of The Day",
+        "reflection_prompt": "Let one small move toward {hope} stay ordinary enough to become real.",
+    },
+    {
+        "id": "diagnosis",
+        "opening_kicker": "Name The Drift",
+        "opening_context": "Across different churches, the same drift keeps getting named from different angles.",
+        "closing_label": "Keep Watch For This",
+        "reflection_prompt": "Where has {problem} been forming your reflexes more than you realized?",
+    },
+]
+
 
 def _parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Write short script (markdown) from clips.")
@@ -144,6 +175,10 @@ def _load_payload(path: Path) -> dict:
     if isinstance(raw, dict):
         return raw
     return {"clips": []}
+
+
+def _theme_hash(value: str) -> int:
+    return sum(ord(char) for char in str(value or ""))
 
 
 def _theme_words(theme: str) -> set[str]:
@@ -289,6 +324,50 @@ def _build_outro(theme: str, payload: dict, clips: list[dict]) -> str:
     return f"Taken together, they push against carrying {theme.lower()} alone."
 
 
+def _editorial_terms(theme: str, payload: dict, clips: list[dict]) -> tuple[str, str]:
+    problem_terms = _role_terms(clips, "problem", limit=2)
+    hope_terms = _role_terms(clips, "hope", limit=2) or _role_terms(clips, "advice", limit=2)
+    top_terms = _top_terms(theme, payload, clips, limit=3)
+    problem = _display_term(problem_terms[0]) if problem_terms else ""
+    hope = _display_term(hope_terms[0]) if hope_terms else ""
+    if not problem and top_terms:
+        problem = _display_term(top_terms[0])
+    if not hope:
+        if len(top_terms) >= 2:
+            hope = _display_term(top_terms[1])
+        elif top_terms:
+            hope = _display_term(top_terms[0])
+    if not problem:
+        problem = _display_term(theme) or "this pattern"
+    if not hope:
+        hope = _display_term(theme) or "a steadier way"
+    return problem, hope
+
+
+def _select_editorial_variant(theme: str, clips: list[dict]) -> dict:
+    seed = _theme_hash(theme) + len(clips) * 17
+    return _EDITORIAL_VARIANTS[seed % len(_EDITORIAL_VARIANTS)]
+
+
+def _format_reflection_prompt(template: str, problem: str, hope: str) -> str:
+    return template.format(
+        problem=_display_term(problem) or "the pressure",
+        hope=_display_term(hope) or "a steadier way",
+    )
+
+
+def _build_editorial(theme: str, payload: dict, clips: list[dict]) -> dict[str, str]:
+    variant = _select_editorial_variant(theme, clips)
+    problem, hope = _editorial_terms(theme, payload, clips)
+    return {
+        "structure": str(variant["id"]),
+        "opening_kicker": str(variant["opening_kicker"]),
+        "opening_context": str(variant["opening_context"]),
+        "closing_label": str(variant["closing_label"]),
+        "reflection_prompt": _format_reflection_prompt(str(variant["reflection_prompt"]), problem, hope),
+    }
+
+
 def _build_context(clip: dict) -> str:
     motifs = [_title_term(term) for term in _preferred_terms("", clip, limit=2) if _title_term(term)]
     if len(motifs) >= 2:
@@ -322,6 +401,7 @@ def main() -> None:
 
     intro = args.intro or _build_intro(args.theme, payload, clips)
     outro = args.outro or _build_outro(args.theme, payload, clips)
+    editorial = _build_editorial(args.theme, payload, clips)
 
     lines = [
         f"# Short: {args.theme.title()}",
@@ -331,6 +411,11 @@ def main() -> None:
         "format: curated thought-bites",
         "selection: multi-feed practical arc",
         f"clips: {len(clips)}",
+        f"structure: {editorial['structure']}",
+        f"opening_kicker: {editorial['opening_kicker']}",
+        f"opening_context: {editorial['opening_context']}",
+        f"closing_label: {editorial['closing_label']}",
+        f"reflection_prompt: {editorial['reflection_prompt']}",
         "",
         "## intro",
         _clean_text(intro, max_chars=120),

@@ -133,6 +133,9 @@ def _parse_args() -> argparse.Namespace:
     p.add_argument("--register", default="", help="Path to used-clips.json to register.")
     p.add_argument("--min-clips", type=int, default=8, help="Require at least this many rendered clips before publishing output (default: 8).")
     p.add_argument("--keep-work", action="store_true", help="Keep scratch work directory and staged Remotion assets after a successful render.")
+    p.add_argument("--no-audio-normalize", action="store_true", help="Skip per-clip loudness normalization after clip prep.")
+    p.add_argument("--audio-target-lufs", type=float, default=-16.0, help="Integrated loudness target for per-clip normalization (default: -16 LUFS).")
+    p.add_argument("--audio-target-peak", type=float, default=-1.5, help="True-peak limit for per-clip normalization (default: -1.5 dBTP).")
     return p.parse_args()
 
 
@@ -423,6 +426,45 @@ def _apply_static_vertical_crop(src: Path, out: Path, has_audio: bool) -> bool:
         return True
     except Exception as exc:
         print(f"[render_short] static crop fallback failed: {exc}", file=sys.stderr)
+        return False
+
+
+def _normalize_clip_audio(path: Path, *, target_lufs: float, target_peak: float) -> bool:
+    if not _source_has_audio(path):
+        return True
+    normalized_path = path.with_name(f"{path.stem}.normalized{path.suffix}")
+    cmd = [
+        "ffmpeg",
+        "-y",
+        "-i",
+        str(path),
+        "-map",
+        "0:v:0",
+        "-map",
+        "0:a:0",
+        "-c:v",
+        "copy",
+        "-af",
+        f"loudnorm=I={target_lufs}:LRA=7:TP={target_peak}:linear=true",
+        "-c:a",
+        "aac",
+        "-ar",
+        "48000",
+        "-ac",
+        "2",
+        "-movflags",
+        "+faststart",
+        str(normalized_path),
+    ]
+    try:
+        duration_sec = max(1.0, _media_duration_sec(path))
+        _run_logged_command(cmd, timeout=max(180, int(duration_sec * 30)), label="audio normalization failed")
+        remove_path(path)
+        normalized_path.replace(path)
+        return True
+    except Exception as exc:
+        remove_path(normalized_path)
+        print(f"[render_short] audio normalization failed for {path.name}: {exc}", file=sys.stderr)
         return False
 
 
@@ -761,6 +803,8 @@ def main() -> None:
     content_cache.mkdir(parents=True, exist_ok=True)
     transcripts_root = Path(args.transcripts).resolve() if args.transcripts else default_transcripts_root()
     out_path = Path(args.output).resolve()
+    failure_log_dir = out_path.parent / ".autocrop-logs" / out_path.stem
+    remove_path(failure_log_dir)
     work_dir, auto_work_dir = resolve_work_dir("shorts", out_path, args.work_dir)
     if auto_work_dir:
         reset_directory(work_dir)
@@ -794,6 +838,7 @@ def main() -> None:
     rendered_clip_ids: list[str] = []
     manifest_clips: list[dict] = []
     final_subtitle_cues: list[dict[str, float | str]] = []
+    used_static_crop_fallback = False
     transition_sec = 0.0
     output_cursor = 0.0
     try:
@@ -868,19 +913,26 @@ def main() -> None:
                 compressed_path.replace(prepared_path)
             else:
                 clip_label = f"clip_{index:02d} {feed}/{episode}"
-                autocrop_log_path = work_dir / f"clip_{index:02d}_autocrop.log"
+                autocrop_log_path = failure_log_dir / f"clip_{index:02d}.log"
                 if not _run_autocrop_vertical(
                     compressed_path,
                     prepared_path,
                     log_path=autocrop_log_path,
                     clip_label=clip_label,
                 ):
+                    used_static_crop_fallback = True
                     print(
                         f"[render_short] Falling back to static crop for {clip_label}.",
                         file=sys.stderr,
                     )
                     if not _apply_static_vertical_crop(compressed_path, prepared_path, has_audio=has_audio):
                         continue
+            if has_audio and not args.no_audio_normalize:
+                _normalize_clip_audio(
+                    prepared_path,
+                    target_lufs=float(args.audio_target_lufs),
+                    target_peak=float(args.audio_target_peak),
+                )
 
             episode_title = str(item.get("episode_title") or episode).strip()
             feed_title = str(item.get("feed_title") or feed).strip()
@@ -921,6 +973,13 @@ def main() -> None:
             "theme": theme,
             "intro": intro_text,
             "outro": outro_text,
+            "metadata": metadata,
+            "structure": str(metadata.get("structure") or "").strip(),
+            "opening_kicker": str(metadata.get("opening_kicker") or "").strip(),
+            "opening_context": str(metadata.get("opening_context") or "").strip(),
+            "closing_label": str(metadata.get("closing_label") or "").strip(),
+            "reflection_prompt": str(metadata.get("reflection_prompt") or "").strip(),
+            "style": str(metadata.get("style") or "").strip(),
             "width": _SHORT_W,
             "height": _SHORT_H,
             "fps": _OUT_FPS,
@@ -943,11 +1002,15 @@ def main() -> None:
         sys.exit(4)
 
     print(f"[render_short] wrote {out_path}", file=sys.stderr)
+    if used_static_crop_fallback:
+        print(f"[render_short] kept AutoCrop failure logs at {failure_log_dir}", file=sys.stderr)
     if args.register and rendered_clip_ids:
         reg_path = Path(args.register)
         save_used_clips(reg_path, set(rendered_clip_ids), video_title=out_path.stem)
         print(f"[render_short] registered {len(rendered_clip_ids)} clips", file=sys.stderr)
 
+    if not used_static_crop_fallback:
+        remove_path(failure_log_dir)
     if not args.keep_work:
         remove_path(public_job_dir)
     if auto_work_dir and not args.keep_work:

@@ -54,6 +54,15 @@ const decoratorList = (decorators) =>
     .filter(Boolean)
     .slice(0, 3);
 
+const startCardFrames = (manifest) => {
+  const intro = String(manifest?.intro || '').trim();
+  const context = String(manifest?.opening_context || manifest?.metadata?.opening_context || '').trim();
+  if (!intro && !context) {
+    return 0;
+  }
+  return Math.max(34, Math.round(fpsOrDefault(manifest) * 1.45));
+};
+
 const endCardFrames = (manifest) => Math.max(36, Math.round(fpsOrDefault(manifest) * 1.35));
 
 const hashTheme = (theme) =>
@@ -82,7 +91,7 @@ export const calculateShortMetadata = ({props}) => {
     fps,
     width: Math.max(360, Number(manifest.width) || 1080),
     height: Math.max(640, Number(manifest.height) || 1920),
-    durationInFrames: Math.max(clipFrames + endCardFrames(manifest), fps * 4),
+    durationInFrames: Math.max(startCardFrames(manifest) + clipFrames + endCardFrames(manifest), fps * 4),
   };
 };
 
@@ -156,16 +165,95 @@ const CornerFrame = ({color, scale}) => (
   </>
 );
 
-const ClipCard = ({clip, theme, index, totalClips, intro, pack}) => {
+const IntroCard = ({theme, intro, openingKicker, openingContext, structure, pack}) => {
+  const frame = useCurrentFrame();
+  const {fps, width, height} = useVideoConfig();
+  const scale = baseScaleForFrame(width, height);
+  const enter = spring({fps, frame, config: {damping: 180}});
+  const accent = pack.colors[0];
+  const structureLabel = String(structure || '').replace(/-/g, ' ');
+
+  return (
+    <AbsoluteFill
+      style={{
+        background: `${pack.accentGlow}, linear-gradient(180deg, #020617 0%, #0f172a 100%)`,
+        padding: `${px(94, scale, 40)}px ${px(66, scale, 28)}px`,
+        justifyContent: 'space-between',
+      }}
+    >
+      <div style={{display: 'flex', flexDirection: 'column', gap: px(16, scale, 8)}}>
+        <ThemePill theme={theme} color={accent} pack={pack} scale={scale} />
+        {openingKicker ? (
+          <div
+            style={{
+              color: accent,
+              fontFamily: pack.labelFont,
+              fontSize: px(28, scale, 14),
+              fontWeight: 900,
+              letterSpacing: px(1.4, scale),
+              textTransform: 'uppercase',
+            }}
+          >
+            {openingKicker}
+          </div>
+        ) : null}
+      </div>
+      <div
+        style={{
+          transform: `translateY(${Math.round((1 - enter) * px(42, scale, 18))}px)`,
+          opacity: enter,
+        }}
+      >
+        <div
+          style={{
+            color: '#f8fafc',
+            fontFamily: pack.quoteFont,
+            fontSize: px(86, scale, 38),
+            lineHeight: 0.96,
+            fontWeight: 700,
+            textWrap: 'balance',
+          }}
+        >
+          {intro}
+        </div>
+        {openingContext ? (
+          <div
+            style={{
+              marginTop: px(22, scale, 10),
+              maxWidth: '88%',
+              color: '#dbeafe',
+              fontFamily: pack.labelFont,
+              fontSize: px(30, scale, 15),
+              lineHeight: 1.18,
+              fontWeight: 600,
+            }}
+          >
+            {openingContext}
+          </div>
+        ) : null}
+      </div>
+      <div
+        style={{
+          color: 'rgba(226,232,240,0.78)',
+          fontFamily: pack.labelFont,
+          fontSize: px(20, scale, 11),
+          fontWeight: 800,
+          letterSpacing: px(1.2, scale),
+          textTransform: 'uppercase',
+        }}
+      >
+        {structureLabel || 'curated reflection'}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+const ClipCard = ({clip, theme, index, totalClips, pack}) => {
   const frame = useCurrentFrame();
   const {durationInFrames, fps, width, height} = useVideoConfig();
   const scale = baseScaleForFrame(width, height);
   const color = pack.colors[index % pack.colors.length];
   const lift = spring({fps, frame, config: {damping: 180}});
-  const introOpacity = interpolate(frame, [0, 10, 28, 44], [0, 1, 1, 0], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
   const fadeOut = interpolate(frame, [durationInFrames - 7, durationInFrames], [1, 0], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
@@ -235,34 +323,6 @@ const ClipCard = ({clip, theme, index, totalClips, intro, pack}) => {
             {index + 1}/{totalClips}
           </div>
         </div>
-
-        {intro ? (
-          <div
-            style={{
-              marginTop: px(26, scale, 12),
-              maxWidth: '82%',
-              alignSelf: 'flex-start',
-              background: 'rgba(8,12,22,0.72)',
-              borderRadius: px(30, scale, 16),
-              padding: `${px(18, scale, 10)}px ${px(24, scale, 12)}px`,
-              border: `${Math.max(1, px(2, scale))}px solid ${color}`,
-              boxShadow: '0 22px 60px rgba(0,0,0,0.28)',
-              opacity: introOpacity,
-            }}
-          >
-            <div
-              style={{
-                color: '#f8fafc',
-                fontFamily: pack.labelFont,
-                fontSize: px(46, scale, 22),
-                fontWeight: 800,
-                lineHeight: 1.02,
-              }}
-            >
-              {intro}
-            </div>
-          </div>
-        ) : null}
 
         <div style={{flex: 1}} />
 
@@ -375,7 +435,7 @@ const ClipCard = ({clip, theme, index, totalClips, intro, pack}) => {
   );
 };
 
-const OutroCard = ({theme, outro, pack}) => {
+const OutroCard = ({theme, outro, closingLabel, reflectionPrompt, pack}) => {
   const frame = useCurrentFrame();
   const {fps, width, height} = useVideoConfig();
   const scale = baseScaleForFrame(width, height);
@@ -408,6 +468,21 @@ const OutroCard = ({theme, outro, pack}) => {
         >
           {outro}
         </div>
+        {reflectionPrompt ? (
+          <div
+            style={{
+              marginTop: px(24, scale, 12),
+              maxWidth: '88%',
+              color: '#dbeafe',
+              fontFamily: pack.labelFont,
+              fontSize: px(28, scale, 14),
+              lineHeight: 1.16,
+              fontWeight: 600,
+            }}
+          >
+            {reflectionPrompt}
+          </div>
+        ) : null}
         <div
           style={{
             marginTop: px(26, scale, 12),
@@ -419,7 +494,7 @@ const OutroCard = ({theme, outro, pack}) => {
             textTransform: 'uppercase',
           }}
         >
-          prays.be
+          {closingLabel || 'prays.be'}
         </div>
       </div>
     </AbsoluteFill>
@@ -430,27 +505,44 @@ export const SermonShortComposition = ({manifest}) => {
   const clips = manifest?.clips ?? [];
   const theme = String(manifest?.theme || 'sermon short');
   const outro = String(manifest?.outro || 'Full sermons hold the longer context.');
+  const intro = String(manifest?.intro || '');
+  const openingKicker = String(manifest?.opening_kicker || manifest?.metadata?.opening_kicker || '');
+  const openingContext = String(manifest?.opening_context || manifest?.metadata?.opening_context || '');
+  const closingLabel = String(manifest?.closing_label || manifest?.metadata?.closing_label || 'prays.be');
+  const reflectionPrompt = String(manifest?.reflection_prompt || manifest?.metadata?.reflection_prompt || '');
+  const structure = String(manifest?.structure || manifest?.metadata?.structure || '');
   const pack = stylePackForTheme(manifest);
   return (
     <AbsoluteFill style={{backgroundColor: '#020617'}}>
       <Series>
+        {startCardFrames(manifest) > 0 ? (
+          <Series.Sequence durationInFrames={startCardFrames(manifest)}>
+            <IntroCard
+              theme={theme}
+              intro={intro}
+              openingKicker={openingKicker}
+              openingContext={openingContext}
+              structure={structure}
+              pack={pack}
+            />
+          </Series.Sequence>
+        ) : null}
         {clips.map((clip, index) => (
           <Series.Sequence
             key={`${clip.path}-${index}`}
             durationInFrames={frameCount(clip.duration_sec, fpsOrDefault(manifest))}
           >
-            <ClipCard
-              clip={clip}
-              theme={theme}
-              index={index}
-              totalClips={clips.length}
-              intro={index === 0 ? String(manifest?.intro || '') : ''}
-              pack={pack}
-            />
+            <ClipCard clip={clip} theme={theme} index={index} totalClips={clips.length} pack={pack} />
           </Series.Sequence>
         ))}
         <Series.Sequence durationInFrames={endCardFrames(manifest)}>
-          <OutroCard theme={theme} outro={outro} pack={pack} />
+          <OutroCard
+            theme={theme}
+            outro={outro}
+            closingLabel={closingLabel}
+            reflectionPrompt={reflectionPrompt}
+            pack={pack}
+          />
         </Series.Sequence>
       </Series>
     </AbsoluteFill>
