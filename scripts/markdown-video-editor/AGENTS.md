@@ -14,6 +14,17 @@ Spacetime compression is one feature of this tool, not the whole tool.
 - Keep each feature callable on its own.
 - Keep the markdown plan as the source of truth.
 - Leave room for other plan-driven features such as reframing or AutoCrop-Vertical integration.
+- Preserve paired audio/video keep-range behavior in spacetime compression unless you have explicitly revalidated timing/sync behavior end to end.
+
+## Sync caution
+
+There is an active timing/sync investigation around silence-boundary decisions and downstream transitions.
+
+Do not:
+
+- replace paired trim logic with audio-only silence filters
+- collapse the feature into a simpler but behaviorally different gap-removal pass
+- remove markers or keep-range metadata that help explain why cuts were made
 
 ## Current plan format
 

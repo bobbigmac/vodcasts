@@ -2,8 +2,10 @@
 from __future__ import annotations
 
 import argparse
+import re
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
 _REPO_ROOT = Path(__file__).resolve().parents[3]
@@ -35,6 +37,55 @@ _SHORT_W = 1080
 _SHORT_H = 1920
 _PANEL_H = 960
 _OUT_FPS = 30
+_ENC_PRESET = "fast"
+_ENC_THREADS = 0
+_SILENCE_LEAD_RE = re.compile(r"silence_start:\s*([0-9.]+)")
+_SILENCE_END_RE = re.compile(r"silence_end:\s*([0-9.]+)")
+
+
+def _run_media_command(cmd: list[str], timeout: int, label: str) -> None:
+    run_cmd = cmd
+    if cmd and cmd[0] == "ffmpeg" and "-loglevel" not in cmd:
+        run_cmd = [cmd[0], "-hide_banner", "-loglevel", "error", "-nostats"]
+        if _ENC_THREADS > 0:
+            run_cmd.extend(
+                [
+                    "-threads",
+                    str(_ENC_THREADS),
+                    "-filter_threads",
+                    str(_ENC_THREADS),
+                    "-filter_complex_threads",
+                    str(_ENC_THREADS),
+                ]
+            )
+        run_cmd.extend(cmd[1:])
+    with tempfile.NamedTemporaryFile(prefix="sermon-clipper-", suffix=".log", delete=False) as handle:
+        log_path = Path(handle.name)
+    try:
+        with log_path.open("wb") as log_handle:
+            subprocess.run(
+                run_cmd,
+                stdout=log_handle,
+                stderr=subprocess.STDOUT,
+                check=True,
+                timeout=timeout,
+            )
+    except Exception as exc:
+        detail = ""
+        try:
+            lines = log_path.read_text(encoding="utf-8", errors="replace").splitlines()
+            detail = " | ".join(line.strip() for line in lines[-4:] if line.strip())[:400]
+        except Exception:
+            pass
+        raise RuntimeError(f"{label}: {detail or exc}") from exc
+    finally:
+        remove_path(log_path)
+
+
+def _maybe_add_threads(cmd: list[str]) -> list[str]:
+    if _ENC_THREADS > 0 and cmd and cmd[0] != "ffmpeg" and "-threads" not in cmd:
+        cmd.extend(["-threads", str(_ENC_THREADS)])
+    return cmd
 
 
 def _parse_args() -> argparse.Namespace:
@@ -50,6 +101,11 @@ def _parse_args() -> argparse.Namespace:
     p.add_argument("--transcripts", default="", help="Transcripts root.")
     p.add_argument("--no-subs", action="store_true", help="Skip subtitles.")
     p.add_argument("--trim-silence", action="store_true", help="Trim leading/trailing silence from clips.")
+    p.add_argument("--width", type=int, default=1080, help="Output width (default: 1080).")
+    p.add_argument("--height", type=int, default=1920, help="Output height (default: 1920).")
+    p.add_argument("--fps", type=int, default=30, help="Output fps (default: 30).")
+    p.add_argument("--preset", default="fast", help="x264 preset (default: fast).")
+    p.add_argument("--threads", type=int, default=0, help="ffmpeg encoder threads override (default: auto).")
     p.add_argument("--context-top", action="store_true", default=True, help="Context panel on top (default).")
     p.add_argument("--context-bottom", action="store_false", dest="context_top", help="Context panel on bottom.")
     p.add_argument("--register", default="", help="Path to used-clips.json to register.")
@@ -62,7 +118,7 @@ def _download_url(url: str, out_path: Path) -> bool:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     cmd = ["ffmpeg", "-y", "-i", url, "-c", "copy", "-movflags", "+faststart", str(out_path)]
     try:
-        subprocess.run(cmd, capture_output=True, check=True, timeout=600)
+        _run_media_command(cmd, timeout=600, label="download failed")
         return True
     except Exception as exc:
         print(f"[render_short] download failed: {exc}", file=sys.stderr)
@@ -120,6 +176,85 @@ def _ffmpeg_subtitles_path(vtt_path: Path) -> str:
     return s.replace(":", "\\:")
 
 
+def _detect_av_trim_bounds(
+    src: Path,
+    start: float,
+    end: float,
+    has_audio: bool,
+    min_silence: float = 0.25,
+    noise_db: int = -45,
+) -> tuple[float, float]:
+    """Detect leading/trailing silence and trim both audio/video by adjusting bounds."""
+    if not has_audio:
+        return start, end
+    clip_dur = max(0.0, end - start)
+    if clip_dur <= 1.0:
+        return start, end
+
+    cmd = [
+        "ffmpeg",
+        "-hide_banner",
+        "-nostats",
+        "-threads",
+        "1",
+        "-ss",
+        str(start),
+        "-t",
+        str(clip_dur),
+        "-i",
+        str(src),
+        "-vn",
+        "-af",
+        f"silencedetect=n={noise_db}dB:d={min_silence}",
+        "-f",
+        "null",
+        "-",
+    ]
+    try:
+        probe = subprocess.run(
+            cmd,
+            capture_output=True,
+            text=True,
+            timeout=min(120, max(15, int(clip_dur * 2))),
+            check=False,
+        )
+    except Exception:
+        return start, end
+
+    log_text = (probe.stderr or "") + "\n" + (probe.stdout or "")
+    leading_end: float | None = None
+    trailing_start: float | None = None
+    last_start: float | None = None
+    last_end: float | None = None
+
+    for raw_line in log_text.splitlines():
+        line = raw_line.strip()
+        m_start = _SILENCE_LEAD_RE.search(line)
+        if m_start:
+            last_start = float(m_start.group(1))
+            continue
+        m_end = _SILENCE_END_RE.search(line)
+        if m_end:
+            last_end = float(m_end.group(1))
+            if last_start is not None and last_start <= 0.05 and leading_end is None:
+                leading_end = last_end
+
+    if last_start is not None:
+        if last_end is None or last_end >= clip_dur - 0.05:
+            trailing_start = last_start
+
+    trim_lead = min(max(leading_end or 0.0, 0.0), clip_dur * 0.2)
+    trim_trail = 0.0
+    if trailing_start is not None:
+        trim_trail = min(max(clip_dur - trailing_start, 0.0), clip_dur * 0.2)
+
+    new_start = start + trim_lead
+    new_end = end - trim_trail
+    if new_end - new_start < max(1.5, clip_dur * 0.5):
+        return start, end
+    return new_start, new_end
+
+
 def _ffmpeg_text_card(duration: float, out: Path, card_img_path: Path) -> bool:
     if not card_img_path.exists():
         return False
@@ -141,7 +276,7 @@ def _ffmpeg_text_card(duration: float, out: Path, card_img_path: Path) -> bool:
         "-c:v",
         "libx264",
         "-preset",
-        "fast",
+        _ENC_PRESET,
         "-crf",
         "20",
         "-pix_fmt",
@@ -162,7 +297,7 @@ def _ffmpeg_text_card(duration: float, out: Path, card_img_path: Path) -> bool:
         str(out),
     ]
     try:
-        subprocess.run(cmd, capture_output=True, check=True, timeout=60)
+        _run_media_command(_maybe_add_threads(cmd), timeout=60, label="text card failed")
         return True
     except Exception as exc:
         print(f"[render_short] text card failed: {exc}", file=sys.stderr)
@@ -181,7 +316,10 @@ def _ffmpeg_extract_short_clip(
     has_audio: bool = True,
 ) -> bool:
     """Extract clip and compose vertical: speaker half + context panel."""
-    dur = end - start
+    trim_start, trim_end = _detect_av_trim_bounds(src, start, end, has_audio) if trim_silence else (start, end)
+    dur = trim_end - trim_start
+    if dur <= 0:
+        return False
     if context_top:
         filter_complex = (
             f"[1:v]scale={_SHORT_W}:{_PANEL_H},fps={_OUT_FPS}[ctx];"
@@ -202,19 +340,11 @@ def _ffmpeg_extract_short_clip(
         filter_complex += f";[stack]subtitles=filename='{sub_esc}':force_style='{sub_style}'[out]"
     else:
         filter_complex += ";[stack]format=yuv420p[out]"
-
-    af = []
-    if trim_silence:
-        af.append(
-            "silenceremove=start_periods=1:start_duration=0.5:start_threshold=-50dB:detection=peak,"
-            "silenceremove=stop_periods=1:stop_duration=0.5:stop_threshold=-50dB:detection=peak"
-        )
-
     common = [
         "-c:v",
         "libx264",
         "-preset",
-        "fast",
+        _ENC_PRESET,
         "-crf",
         "22",
         "-pix_fmt",
@@ -239,7 +369,7 @@ def _ffmpeg_extract_short_clip(
             "ffmpeg",
             "-y",
             "-ss",
-            str(start),
+            str(trim_start),
             "-i",
             str(src),
             "-loop",
@@ -254,13 +384,13 @@ def _ffmpeg_extract_short_clip(
             "[out]",
             "-map",
             "0:a?",
-        ] + (["-af", ",".join(af)] if af else []) + common
+        ] + common
     else:
         cmd = [
             "ffmpeg",
             "-y",
             "-ss",
-            str(start),
+            str(trim_start),
             "-i",
             str(src),
             "-loop",
@@ -283,9 +413,9 @@ def _ffmpeg_extract_short_clip(
         ] + common
 
     try:
-        subprocess.run(cmd, capture_output=True, check=True, timeout=300)
+        _run_media_command(_maybe_add_threads(cmd), timeout=300, label="extract failed")
         return True
-    except subprocess.CalledProcessError:
+    except RuntimeError:
         if has_audio:
             cmd_alt = [
                 "ffmpeg",
@@ -313,7 +443,7 @@ def _ffmpeg_extract_short_clip(
                 "-shortest",
             ] + common
             try:
-                subprocess.run(cmd_alt, capture_output=True, check=True, timeout=300)
+                _run_media_command(_maybe_add_threads(cmd_alt), timeout=300, label="extract failed")
                 return True
             except Exception as exc:
                 print(f"[render_short] extract failed: {exc}", file=sys.stderr)
@@ -338,8 +468,22 @@ def _ffmpeg_concat(files: list[Path], out: Path, list_path: Path) -> bool:
         "0",
         "-i",
         str(list_path),
-        "-c",
-        "copy",
+        "-c:v",
+        "libx264",
+        "-preset",
+        _ENC_PRESET,
+        "-crf",
+        "20",
+        "-pix_fmt",
+        "yuv420p",
+        "-r",
+        str(_OUT_FPS),
+        "-c:a",
+        "aac",
+        "-ar",
+        "48000",
+        "-ac",
+        "1",
         "-f",
         "mp4",
         "-movflags",
@@ -347,7 +491,7 @@ def _ffmpeg_concat(files: list[Path], out: Path, list_path: Path) -> bool:
         str(out),
     ]
     try:
-        subprocess.run(cmd, capture_output=True, check=True, timeout=120)
+        _run_media_command(_maybe_add_threads(cmd), timeout=120, label="concat failed")
         return True
     except Exception as exc:
         print(f"[render_short] concat failed: {exc}", file=sys.stderr)
@@ -356,12 +500,19 @@ def _ffmpeg_concat(files: list[Path], out: Path, list_path: Path) -> bool:
 
 def main() -> None:
     args = _parse_args()
+    global _SHORT_W, _SHORT_H, _PANEL_H, _OUT_FPS, _ENC_PRESET, _ENC_THREADS
     script_path = Path(args.script)
     if not script_path.exists():
         print(f"[render_short] Script not found: {script_path}", file=sys.stderr)
         sys.exit(1)
 
     env = (args.env or "").strip() or default_env()
+    _SHORT_W = max(240, int(args.width))
+    _SHORT_H = max(426, int(args.height))
+    _PANEL_H = max(120, _SHORT_H // 2)
+    _OUT_FPS = max(12, int(args.fps))
+    _ENC_PRESET = str(args.preset or "fast").strip() or "fast"
+    _ENC_THREADS = max(0, int(args.threads))
     cache_dir = default_cache_dir(env)
     content_cache = Path(args.content_cache).resolve() if args.content_cache else default_content_cache_dir(env)
     content_cache.mkdir(parents=True, exist_ok=True)

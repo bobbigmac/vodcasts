@@ -32,6 +32,10 @@ def _parse_args() -> argparse.Namespace:
 def _build_filter_complex(keep_ranges: list[tuple[float, float]]) -> str:
     parts: list[str] = []
     for index, (start, end) in enumerate(keep_ranges):
+        # Important: audio and video are trimmed from the same keep ranges on purpose.
+        # Do not replace this with audio-only silence removal or independent retiming.
+        # There is an open timing/sync investigation around silence-boundary decisions,
+        # but the paired trim/asetpts + trim/setpts behavior itself is required.
         parts.append(f"[0:v]trim=start={start:.6f}:end={end:.6f},setpts=PTS-STARTPTS[v{index}]")
         parts.append(f"[0:a]atrim=start={start:.6f}:end={end:.6f},asetpts=PTS-STARTPTS[a{index}]")
     concat_inputs = "".join(f"[v{index}][a{index}]" for index in range(len(keep_ranges)))

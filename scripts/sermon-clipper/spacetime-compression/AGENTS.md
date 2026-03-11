@@ -41,3 +41,14 @@ bash scripts/markdown-video-editor/mve.sh apply --plan out/source.edit.md --outp
 - Keep the source untouched.
 - Make the plan readable enough to edit by hand.
 - Prefer deterministic cut logic over hidden heuristics.
+- Preserve paired audio/video keep-range behavior unless timing/sync has been explicitly revalidated.
+
+## Sync caution
+
+There is an active timing/sync investigation around silence-boundary decisions.
+
+Do not simplify spacetime compression into:
+
+- audio-only silence trimming
+- independent audio and video retiming
+- hidden heuristic gap removal that erases the inspectable plan semantics

@@ -32,3 +32,15 @@ bash scripts/markdown-video-editor/mve.sh apply --plan out/source.edit.md --outp
 - optional advisory audio-change markers
 
 The markdown plan remains the render source of truth.
+
+## Timing and sync note
+
+There is an open timing/sync investigation around silence-boundary choices and transition behavior.
+
+Important constraint:
+
+- the apply step intentionally trims audio and video from the same `keep` ranges
+- do not "optimize" this into audio-only silence removal
+- do not replace paired trim logic with independent audio/video retiming unless the feature behavior is revalidated
+
+The current design is intentionally conservative because preserving feature semantics is more important than drive-by simplification.

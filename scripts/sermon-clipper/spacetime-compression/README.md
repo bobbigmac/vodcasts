@@ -115,3 +115,13 @@ reason: audio_program_change
 - This currently expects local media files.
 - The source file is never edited in place.
 - The apply step writes an ffmpeg filter script into its scratch directory so the generated edit graph stays inspectable.
+
+## Timing and sync investigation
+
+There is an active timing/sync investigation related to silence-boundary choices and downstream presentation workflows.
+
+Important:
+
+- the canonical apply path preserves sync by trimming audio and video from the same `keep` actions
+- that paired behavior is intentional and should not be removed casually
+- if you change silence detection, padding, or boundary heuristics, revalidate the output behavior end to end

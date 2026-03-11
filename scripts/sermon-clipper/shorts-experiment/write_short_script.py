@@ -117,26 +117,31 @@ def _terms(theme: str, text: str, limit: int = 3) -> list[str]:
 
 
 def _build_intro(theme: str, clips: list[dict]) -> str:
+    count = len(clips)
     lead_terms = _terms(theme, " ".join(str(c.get("snippet") or "") for c in clips), limit=2)
+    if count >= 6:
+        if len(lead_terms) >= 2:
+            return f"{count} quick takes on {theme.lower()}, moving through {lead_terms[0]} and {lead_terms[1]}."
+        return f"{count} quick takes on {theme.lower()}."
     if lead_terms:
-        return f"{theme.title()} gets clearer when it moves through {lead_terms[0]} and {lead_terms[1]}."
-    return f"{theme.title()} gets clearer when it finally touches real life."
+        return f"{theme.title()} in quick hits through {lead_terms[0]} and {lead_terms[1]}."
+    return f"Quick hits on {theme.lower()}."
 
 
 def _build_outro(theme: str) -> str:
-    return f"Watch the full sermons if you want the slower, fuller context behind these {theme.lower()} clips."
+    return f"Full sermons carry the longer context behind these {theme.lower()} takes."
 
 
 def _build_context(theme: str, clip: dict) -> str:
     terms = _terms(theme, str(clip.get("snippet") or ""), limit=2)
     if len(terms) >= 2:
-        return f"A brief angle on {theme.lower()} through {terms[0]} and {terms[1]}."
+        return f"{terms[0]}. {terms[1]}."
     if len(terms) == 1:
-        return f"A brief angle on {theme.lower()} through {terms[0]}."
+        return f"{terms[0]}."
     episode_title = _clean_text(str(clip.get("episode_title") or ""), max_chars=50)
     if episode_title:
-        return f"A concise pastoral angle on {theme.lower()} from {episode_title}."
-    return f"A concise pastoral angle on {theme.lower()}."
+        return f"From {episode_title}."
+    return f"{theme.title()}."
 
 
 def _build_decorators(theme: str, clip: dict) -> str:
