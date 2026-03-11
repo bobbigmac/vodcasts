@@ -55,7 +55,7 @@ _MVE = _load_mve_lib()
 _SHORT_W = 1080
 _SHORT_H = 1920
 _OUT_FPS = 30
-_ENC_PRESET = "fast"
+_ENC_PRESET = "medium"
 _ENC_THREADS = 0
 _AUTOCROP_REPO_URL = "https://github.com/kamilstanuch/Autocrop-vertical.git"
 _AUTOCROP_REPO_DIR: Path | None = None
@@ -100,7 +100,10 @@ def _run_logged_command(cmd: list[str], timeout: int, label: str) -> None:
             pass
         raise RuntimeError(f"{label}: {detail or exc}") from exc
     finally:
-        remove_path(log_path)
+        try:
+            remove_path(log_path)
+        except Exception:
+            pass
 
 
 def _maybe_add_threads(cmd: list[str]) -> list[str]:
@@ -124,7 +127,7 @@ def _parse_args() -> argparse.Namespace:
     p.add_argument("--width", type=int, default=1080, help="Output width (default: 1080).")
     p.add_argument("--height", type=int, default=1920, help="Output height (default: 1920).")
     p.add_argument("--fps", type=int, default=30, help="Output fps (default: 30).")
-    p.add_argument("--preset", default="fast", help="ffmpeg preset for prepared clips (default: fast).")
+    p.add_argument("--preset", default="medium", help="ffmpeg preset for prepared clips (default: medium).")
     p.add_argument("--threads", type=int, default=0, help="ffmpeg thread override; also used as Remotion concurrency when set.")
     p.add_argument("--no-autocrop", action="store_true", help="Disable AutoCrop-Vertical and fall back to the legacy static crop.")
     p.add_argument("--register", default="", help="Path to used-clips.json to register.")
@@ -370,7 +373,7 @@ def _apply_keep_ranges(
         cmd.extend(["-map", "[acat]", "-c:a", "aac", "-ar", "48000", "-ac", "2"])
     else:
         cmd.append("-an")
-    video_crf = "20" if apply_static_crop else "18"
+    video_crf = "18"
     cmd.extend(
         [
             "-c:v",
@@ -392,6 +395,35 @@ def _apply_keep_ranges(
         return False
     finally:
         remove_path(filter_script)
+
+
+def _apply_static_vertical_crop(src: Path, out: Path, has_audio: bool) -> bool:
+    cmd = [
+        "ffmpeg",
+        "-y",
+        "-i",
+        str(src),
+        "-vf",
+        _crop_filter(),
+        "-c:v",
+        "libx264",
+        "-preset",
+        _ENC_PRESET,
+        "-crf",
+        "18",
+    ]
+    if has_audio:
+        cmd.extend(["-c:a", "copy"])
+    else:
+        cmd.append("-an")
+    cmd.extend(["-movflags", "+faststart", str(out)])
+    try:
+        duration_sec = max(1.0, _media_duration_sec(src))
+        _run_logged_command(cmd, timeout=max(180, int(duration_sec * 30)), label="static crop fallback failed")
+        return True
+    except Exception as exc:
+        print(f"[render_short] static crop fallback failed: {exc}", file=sys.stderr)
+        return False
 
 
 def _parse_vtt_timestamp(raw: str) -> float:
@@ -537,7 +569,7 @@ def _media_duration_sec(path: Path) -> float:
         return 0.0
 
 
-def _run_autocrop_vertical(src: Path, out: Path) -> bool:
+def _run_autocrop_vertical(src: Path, out: Path, *, log_path: Path | None = None, clip_label: str = "") -> bool:
     try:
         autocrop_repo = _ensure_autocrop_repo()
         quality = _autocrop_quality_from_preset(_ENC_PRESET)
@@ -556,14 +588,42 @@ def _run_autocrop_vertical(src: Path, out: Path) -> bool:
             "--quality",
             quality,
         ]
-        _run_logged_command(
-            cmd,
-            timeout=max(900, int(duration_sec * 90)),
-            label="AutoCrop-Vertical failed",
-        )
+        keep_log = log_path is not None
+        if log_path is None:
+            with tempfile.NamedTemporaryFile(
+                prefix="sermon-clipper-autocrop-",
+                suffix=".log",
+                delete=False,
+            ) as handle:
+                log_path = Path(handle.name)
+        assert log_path is not None
+        log_path.parent.mkdir(parents=True, exist_ok=True)
+        try:
+            with log_path.open("wb") as log_handle:
+                subprocess.run(
+                    cmd,
+                    stdout=log_handle,
+                    stderr=subprocess.STDOUT,
+                    check=True,
+                    timeout=max(900, int(duration_sec * 90)),
+                )
+        except Exception as exc:
+            detail = ""
+            try:
+                lines = log_path.read_text(encoding="utf-8", errors="replace").splitlines()
+                detail = " | ".join(line.strip() for line in lines[-12:] if line.strip())[:1500]
+            except Exception:
+                pass
+            label = clip_label or src.name
+            print(f"[render_short] AutoCrop-Vertical failed for {label}: {detail or exc}", file=sys.stderr)
+            print(f"[render_short] full AutoCrop log: {log_path}", file=sys.stderr)
+            return False
+        if not keep_log:
+            remove_path(log_path)
         return True
     except Exception as exc:
-        print(f"[render_short] AutoCrop-Vertical failed: {exc}", file=sys.stderr)
+        label = clip_label or src.name
+        print(f"[render_short] AutoCrop-Vertical setup failed for {label}: {exc}", file=sys.stderr)
         return False
 
 
@@ -693,7 +753,7 @@ def main() -> None:
     _SHORT_W = max(240, int(args.width))
     _SHORT_H = max(426, int(args.height))
     _OUT_FPS = max(12, int(args.fps))
-    _ENC_PRESET = str(args.preset or "fast").strip() or "fast"
+    _ENC_PRESET = str(args.preset or "medium").strip() or "medium"
     _ENC_THREADS = max(0, int(args.threads))
     cache_dir = default_cache_dir(env)
     _AUTOCROP_REPO_DIR = cache_dir / "sermon-clipper" / "tools" / "autocrop-vertical"
@@ -807,8 +867,20 @@ def main() -> None:
             if args.no_autocrop:
                 compressed_path.replace(prepared_path)
             else:
-                if not _run_autocrop_vertical(compressed_path, prepared_path):
-                    continue
+                clip_label = f"clip_{index:02d} {feed}/{episode}"
+                autocrop_log_path = work_dir / f"clip_{index:02d}_autocrop.log"
+                if not _run_autocrop_vertical(
+                    compressed_path,
+                    prepared_path,
+                    log_path=autocrop_log_path,
+                    clip_label=clip_label,
+                ):
+                    print(
+                        f"[render_short] Falling back to static crop for {clip_label}.",
+                        file=sys.stderr,
+                    )
+                    if not _apply_static_vertical_crop(compressed_path, prepared_path, has_audio=has_audio):
+                        continue
 
             episode_title = str(item.get("episode_title") or episode).strip()
             feed_title = str(item.get("feed_title") or feed).strip()
