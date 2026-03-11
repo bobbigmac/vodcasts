@@ -10,7 +10,38 @@ import {
   useVideoConfig,
 } from 'remotion';
 
-const palette = ['#f97316', '#14b8a6', '#38bdf8', '#facc15', '#fb7185', '#4ade80'];
+const STYLE_PACKS = [
+  {
+    name: 'ember',
+    colors: ['#f97316', '#fb7185', '#facc15'],
+    panel: 'rgba(15, 23, 42, 0.76)',
+    panelBorder: 'rgba(251, 113, 133, 0.26)',
+    topGradient: 'linear-gradient(180deg, rgba(12,16,30,0.20) 0%, rgba(12,16,30,0.06) 22%, rgba(12,16,30,0.66) 66%, rgba(12,16,30,0.96) 100%)',
+    accentGlow: 'radial-gradient(circle at 14% 12%, rgba(249,115,22,0.34) 0%, transparent 32%)',
+    quoteFont: '"Georgia", "Palatino Linotype", serif',
+    labelFont: '"Trebuchet MS", "Segoe UI", sans-serif',
+  },
+  {
+    name: 'harbor',
+    colors: ['#38bdf8', '#14b8a6', '#a3e635'],
+    panel: 'rgba(3, 15, 24, 0.76)',
+    panelBorder: 'rgba(56, 189, 248, 0.22)',
+    topGradient: 'linear-gradient(180deg, rgba(3,15,24,0.24) 0%, rgba(3,15,24,0.10) 20%, rgba(3,15,24,0.64) 68%, rgba(3,15,24,0.95) 100%)',
+    accentGlow: 'radial-gradient(circle at 82% 14%, rgba(20,184,166,0.28) 0%, transparent 30%)',
+    quoteFont: '"Book Antiqua", "Georgia", serif',
+    labelFont: '"Franklin Gothic Medium", "Trebuchet MS", sans-serif',
+  },
+  {
+    name: 'linen',
+    colors: ['#f59e0b', '#eab308', '#f87171'],
+    panel: 'rgba(28, 18, 8, 0.72)',
+    panelBorder: 'rgba(245, 158, 11, 0.24)',
+    topGradient: 'linear-gradient(180deg, rgba(24,18,10,0.12) 0%, rgba(24,18,10,0.04) 16%, rgba(24,18,10,0.58) 62%, rgba(24,18,10,0.93) 100%)',
+    accentGlow: 'radial-gradient(circle at 16% 80%, rgba(234,179,8,0.24) 0%, transparent 28%)',
+    quoteFont: '"Cambria", "Georgia", serif',
+    labelFont: '"Gill Sans", "Trebuchet MS", sans-serif',
+  },
+];
 
 const fpsOrDefault = (manifest) => Math.max(12, Number(manifest?.fps) || 30);
 
@@ -23,38 +54,49 @@ const decoratorList = (decorators) =>
     .filter(Boolean)
     .slice(0, 3);
 
-const transitionFrames = (manifest) => frameCount(Number(manifest?.transition_sec) || 0.35, fpsOrDefault(manifest));
+const endCardFrames = (manifest) => Math.max(36, Math.round(fpsOrDefault(manifest) * 1.35));
 
-const endCardFrames = (manifest) => Math.max(30, Math.round(fpsOrDefault(manifest) * 1.25));
+const hashTheme = (theme) =>
+  Array.from(String(theme || 'sermon short')).reduce((sum, char) => sum + char.charCodeAt(0), 0);
+
+const stylePackForTheme = (manifest) => {
+  const styles = STYLE_PACKS;
+  const explicit = String(manifest?.style || '').trim().toLowerCase();
+  const explicitPack = styles.find((item) => item.name === explicit);
+  if (explicitPack) {
+    return explicitPack;
+  }
+  return styles[hashTheme(manifest?.theme) % styles.length];
+};
 
 export const calculateShortMetadata = ({props}) => {
   const manifest = props?.manifest ?? {};
   const fps = fpsOrDefault(manifest);
   const clips = manifest.clips || [];
   const clipFrames = clips.reduce((sum, clip) => sum + frameCount(clip.duration_sec, fps), 0);
-  const transitionTotal = Math.max(0, clips.length - 1) * transitionFrames(manifest);
   return {
     fps,
     width: Math.max(360, Number(manifest.width) || 1080),
     height: Math.max(640, Number(manifest.height) || 1920),
-    durationInFrames: Math.max(clipFrames + transitionTotal + endCardFrames(manifest), fps * 4),
+    durationInFrames: Math.max(clipFrames + endCardFrames(manifest), fps * 4),
   };
 };
 
-const ThemePill = ({theme, color}) => (
+const ThemePill = ({theme, color, pack}) => (
   <div
     style={{
       alignSelf: 'flex-start',
-      background: 'rgba(8,12,22,0.74)',
+      background: 'rgba(8,12,22,0.72)',
       border: `2px solid ${color}`,
       borderRadius: 999,
       color: '#f8fafc',
-      fontSize: 28,
+      fontFamily: pack.labelFont,
+      fontSize: 26,
       fontWeight: 800,
-      letterSpacing: 1.4,
+      letterSpacing: 1.6,
       padding: '12px 20px',
       textTransform: 'uppercase',
-      boxShadow: `0 0 40px ${color}30`,
+      boxShadow: `0 0 40px ${color}24`,
       backdropFilter: 'blur(16px)',
     }}
   >
@@ -63,7 +105,7 @@ const ThemePill = ({theme, color}) => (
 );
 
 const ProgressRail = ({index, total, color}) => (
-  <div style={{display: 'flex', gap: 10, marginTop: 20}}>
+  <div style={{display: 'flex', gap: 10, marginTop: 18}}>
     {Array.from({length: total}).map((_, itemIndex) => (
       <div
         key={itemIndex}
@@ -79,20 +121,51 @@ const ProgressRail = ({index, total, color}) => (
   </div>
 );
 
-const ClipCard = ({clip, theme, index, totalClips, intro}) => {
+const CornerFrame = ({color}) => (
+  <>
+    <div
+      style={{
+        position: 'absolute',
+        top: 42,
+        right: 34,
+        width: 180,
+        height: 180,
+        borderTop: `4px solid ${color}`,
+        borderRight: `4px solid ${color}`,
+        borderRadius: 28,
+        opacity: 0.34,
+      }}
+    />
+    <div
+      style={{
+        position: 'absolute',
+        bottom: 42,
+        left: 34,
+        width: 180,
+        height: 180,
+        borderBottom: `4px solid ${color}`,
+        borderLeft: `4px solid ${color}`,
+        borderRadius: 28,
+        opacity: 0.34,
+      }}
+    />
+  </>
+);
+
+const ClipCard = ({clip, theme, index, totalClips, intro, pack}) => {
   const frame = useCurrentFrame();
   const {durationInFrames, fps} = useVideoConfig();
-  const color = palette[index % palette.length];
-  const lift = spring({fps, frame, config: {damping: 200}});
-  const introOpacity = interpolate(frame, [0, 8, 24, 40], [0, 1, 1, 0], {
+  const color = pack.colors[index % pack.colors.length];
+  const lift = spring({fps, frame, config: {damping: 180}});
+  const introOpacity = interpolate(frame, [0, 10, 28, 44], [0, 1, 1, 0], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });
-  const fadeOut = interpolate(frame, [durationInFrames - 8, durationInFrames], [1, 0], {
+  const fadeOut = interpolate(frame, [durationInFrames - 7, durationInFrames], [1, 0], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });
-  const videoScale = interpolate(frame, [0, durationInFrames], [1.05, 1.0], {
+  const videoScale = interpolate(frame, [0, durationInFrames], [1.045, 1.0], {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });
@@ -108,8 +181,8 @@ const ClipCard = ({clip, theme, index, totalClips, intro}) => {
           width: '100%',
           height: '100%',
           objectFit: 'cover',
-          filter: 'blur(46px) saturate(0.85) brightness(0.42)',
-          transform: 'scale(1.18)',
+          filter: 'blur(48px) saturate(0.88) brightness(0.42)',
+          transform: 'scale(1.16)',
           opacity: 0.78,
         }}
       />
@@ -124,32 +197,21 @@ const ClipCard = ({clip, theme, index, totalClips, intro}) => {
           transform: `scale(${videoScale})`,
         }}
       />
-      <div
-        style={{
-          position: 'absolute',
-          inset: 0,
-          background:
-            'linear-gradient(180deg, rgba(2,6,23,0.24) 0%, rgba(2,6,23,0.10) 18%, rgba(2,6,23,0.50) 58%, rgba(2,6,23,0.92) 100%)',
-        }}
-      />
-      <div
-        style={{
-          position: 'absolute',
-          inset: 0,
-          background: `radial-gradient(circle at 18% 14%, ${color}22 0%, transparent 28%)`,
-        }}
-      />
+      <div style={{position: 'absolute', inset: 0, background: pack.topGradient}} />
+      <div style={{position: 'absolute', inset: 0, background: pack.accentGlow}} />
+      <CornerFrame color={color} />
 
-      <AbsoluteFill style={{padding: '58px 54px 80px 54px', display: 'flex', flexDirection: 'column'}}>
-        <ThemePill theme={theme} color={color} />
+      <AbsoluteFill style={{padding: '58px 54px 78px 54px', display: 'flex', flexDirection: 'column'}}>
+        <ThemePill theme={theme} color={color} pack={pack} />
         <ProgressRail index={index} total={totalClips} color={color} />
 
         <div
           style={{
             display: 'flex',
             justifyContent: 'space-between',
-            marginTop: 18,
-            color: '#cbd5e1',
+            marginTop: 16,
+            color: '#dbeafe',
+            fontFamily: pack.labelFont,
             fontSize: 22,
             fontWeight: 700,
             letterSpacing: 1.1,
@@ -166,10 +228,10 @@ const ClipCard = ({clip, theme, index, totalClips, intro}) => {
         {intro ? (
           <div
             style={{
-              marginTop: 28,
-              maxWidth: '86%',
+              marginTop: 26,
+              maxWidth: '82%',
               alignSelf: 'flex-start',
-              background: 'rgba(8,12,22,0.74)',
+              background: 'rgba(8,12,22,0.72)',
               borderRadius: 30,
               padding: '18px 24px',
               border: `2px solid ${color}`,
@@ -177,7 +239,17 @@ const ClipCard = ({clip, theme, index, totalClips, intro}) => {
               opacity: introOpacity,
             }}
           >
-            <div style={{color: '#f8fafc', fontSize: 48, fontWeight: 900, lineHeight: 1.02}}>{intro}</div>
+            <div
+              style={{
+                color: '#f8fafc',
+                fontFamily: pack.labelFont,
+                fontSize: 46,
+                fontWeight: 800,
+                lineHeight: 1.02,
+              }}
+            >
+              {intro}
+            </div>
           </div>
         ) : null}
 
@@ -185,23 +257,25 @@ const ClipCard = ({clip, theme, index, totalClips, intro}) => {
 
         <div
           style={{
-            transform: `translateY(${Math.round((1 - lift) * 40)}px)`,
+            transform: `translateY(${Math.round((1 - lift) * 34)}px)`,
             opacity: lift,
           }}
         >
           <div
             style={{
-              background: 'rgba(8,12,22,0.76)',
+              background: pack.panel,
               borderRadius: 36,
               padding: '28px 30px',
-              border: '1px solid rgba(255,255,255,0.08)',
-              boxShadow: '0 22px 80px rgba(0,0,0,0.4)',
+              border: `1px solid ${pack.panelBorder}`,
+              boxShadow: '0 22px 80px rgba(0,0,0,0.42)',
+              backdropFilter: 'blur(20px)',
             }}
           >
             {clip.context ? (
               <div
                 style={{
                   color: color,
+                  fontFamily: pack.labelFont,
                   fontSize: 24,
                   fontWeight: 900,
                   letterSpacing: 1.2,
@@ -215,9 +289,10 @@ const ClipCard = ({clip, theme, index, totalClips, intro}) => {
             <div
               style={{
                 color: '#f8fafc',
-                fontSize: 58,
-                lineHeight: 1.02,
-                fontWeight: 950,
+                fontFamily: pack.quoteFont,
+                fontSize: 56,
+                lineHeight: 1.01,
+                fontWeight: 700,
                 textWrap: 'balance',
               }}
             >
@@ -236,9 +311,10 @@ const ClipCard = ({clip, theme, index, totalClips, intro}) => {
                 <div
                   style={{
                     background: color,
-                    color: '#111827',
+                    color: '#0f172a',
                     borderRadius: 999,
                     padding: '8px 14px',
+                    fontFamily: pack.labelFont,
                     fontSize: 20,
                     fontWeight: 900,
                     letterSpacing: 0.7,
@@ -252,12 +328,13 @@ const ClipCard = ({clip, theme, index, totalClips, intro}) => {
                 <div
                   key={`${decorator}-${decoratorIndex}`}
                   style={{
-                    background: 'rgba(148,163,184,0.16)',
+                    background: 'rgba(226,232,240,0.12)',
                     color: '#e2e8f0',
                     borderRadius: 999,
                     padding: '8px 14px',
+                    fontFamily: pack.labelFont,
                     fontSize: 20,
-                    fontWeight: 900,
+                    fontWeight: 800,
                     letterSpacing: 0.7,
                     textTransform: 'uppercase',
                   }}
@@ -271,6 +348,7 @@ const ClipCard = ({clip, theme, index, totalClips, intro}) => {
                 style={{
                   marginTop: 16,
                   color: '#cbd5e1',
+                  fontFamily: pack.labelFont,
                   fontSize: 22,
                   fontWeight: 600,
                   lineHeight: 1.2,
@@ -286,88 +364,49 @@ const ClipCard = ({clip, theme, index, totalClips, intro}) => {
   );
 };
 
-const TransitionCard = ({theme, index, clip}) => {
-  const frame = useCurrentFrame();
-  const {durationInFrames} = useVideoConfig();
-  const color = palette[index % palette.length];
-  const opacity = interpolate(frame, [0, 3, durationInFrames - 3, durationInFrames], [0, 1, 1, 0], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
-  const shift = interpolate(frame, [0, durationInFrames], [32, -20], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
-  const decorator = decoratorList(clip.decorators)[0] || clip.context || theme;
-  return (
-    <AbsoluteFill
-      style={{
-        opacity,
-        background:
-          `radial-gradient(circle at 20% 20%, ${color}40 0%, transparent 26%), linear-gradient(180deg, #020617 0%, #0f172a 100%)`,
-        justifyContent: 'center',
-        padding: '0 70px',
-      }}
-    >
-      <div
-        style={{
-          transform: `translateY(${Math.round(shift)}px)`,
-          display: 'flex',
-          flexDirection: 'column',
-          gap: 18,
-        }}
-      >
-        <div
-          style={{
-            color: color,
-            fontSize: 26,
-            fontWeight: 900,
-            letterSpacing: 1.3,
-            textTransform: 'uppercase',
-          }}
-        >
-          {theme}
-        </div>
-        <div
-          style={{
-            color: '#f8fafc',
-            fontSize: 74,
-            fontWeight: 950,
-            lineHeight: 0.94,
-            textWrap: 'balance',
-          }}
-        >
-          {decorator}
-        </div>
-      </div>
-    </AbsoluteFill>
-  );
-};
-
-const OutroCard = ({theme, outro}) => {
+const OutroCard = ({theme, outro, pack}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const enter = spring({fps, frame, config: {damping: 170}});
+  const accent = pack.colors[1];
   return (
     <AbsoluteFill
       style={{
-        background:
-          'radial-gradient(circle at 75% 12%, rgba(56,189,248,0.22), transparent 30%), linear-gradient(180deg, #020617 0%, #0f172a 100%)',
+        background: `${pack.accentGlow}, linear-gradient(180deg, #020617 0%, #0f172a 100%)`,
         padding: '100px 68px',
         justifyContent: 'space-between',
       }}
     >
-      <ThemePill theme={theme} color="#38bdf8" />
+      <ThemePill theme={theme} color={accent} pack={pack} />
       <div
         style={{
           transform: `translateY(${Math.round((1 - enter) * 48)}px)`,
           opacity: enter,
         }}
       >
-        <div style={{color: '#f8fafc', fontSize: 88, lineHeight: 0.98, fontWeight: 950, textWrap: 'balance'}}>
+        <div
+          style={{
+            color: '#f8fafc',
+            fontFamily: pack.quoteFont,
+            fontSize: 84,
+            lineHeight: 0.98,
+            fontWeight: 700,
+            textWrap: 'balance',
+          }}
+        >
           {outro}
         </div>
-        <div style={{marginTop: 26, color: '#7dd3fc', fontSize: 28, fontWeight: 700}}>
+        <div
+          style={{
+            marginTop: 26,
+            color: accent,
+            fontFamily: pack.labelFont,
+            fontSize: 28,
+            fontWeight: 700,
+            letterSpacing: 1.1,
+            textTransform: 'uppercase',
+          }}
+        >
           prays.be
         </div>
       </div>
@@ -379,30 +418,27 @@ export const SermonShortComposition = ({manifest}) => {
   const clips = manifest?.clips ?? [];
   const theme = String(manifest?.theme || 'sermon short');
   const outro = String(manifest?.outro || 'Full sermons hold the longer context.');
-  const bumperFrames = transitionFrames(manifest);
+  const pack = stylePackForTheme(manifest);
   return (
     <AbsoluteFill style={{backgroundColor: '#020617'}}>
       <Series>
         {clips.map((clip, index) => (
-          <React.Fragment key={`${clip.path}-${index}`}>
-            <Series.Sequence durationInFrames={frameCount(clip.duration_sec, fpsOrDefault(manifest))}>
-              <ClipCard
-                clip={clip}
-                theme={theme}
-                index={index}
-                totalClips={clips.length}
-                intro={index === 0 ? String(manifest?.intro || '') : ''}
-              />
-            </Series.Sequence>
-            {index < clips.length - 1 ? (
-              <Series.Sequence durationInFrames={bumperFrames}>
-                <TransitionCard theme={theme} index={index + 1} clip={clip} />
-              </Series.Sequence>
-            ) : null}
-          </React.Fragment>
+          <Series.Sequence
+            key={`${clip.path}-${index}`}
+            durationInFrames={frameCount(clip.duration_sec, fpsOrDefault(manifest))}
+          >
+            <ClipCard
+              clip={clip}
+              theme={theme}
+              index={index}
+              totalClips={clips.length}
+              intro={index === 0 ? String(manifest?.intro || '') : ''}
+              pack={pack}
+            />
+          </Series.Sequence>
         ))}
         <Series.Sequence durationInFrames={endCardFrames(manifest)}>
-          <OutroCard theme={theme} outro={outro} />
+          <OutroCard theme={theme} outro={outro} pack={pack} />
         </Series.Sequence>
       </Series>
     </AbsoluteFill>

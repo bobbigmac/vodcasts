@@ -5,6 +5,7 @@ import argparse
 import importlib.util
 import json
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -123,7 +124,7 @@ def _parse_args() -> argparse.Namespace:
     p.add_argument("--preset", default="fast", help="ffmpeg preset for prepared clips (default: fast).")
     p.add_argument("--threads", type=int, default=0, help="ffmpeg thread override; also used as Remotion concurrency when set.")
     p.add_argument("--register", default="", help="Path to used-clips.json to register.")
-    p.add_argument("--min-clips", type=int, default=7, help="Require at least this many rendered clips before publishing output (default: 7).")
+    p.add_argument("--min-clips", type=int, default=8, help="Require at least this many rendered clips before publishing output (default: 8).")
     p.add_argument("--keep-work", action="store_true", help="Keep scratch work directory and staged Remotion assets after a successful render.")
     return p.parse_args()
 
@@ -480,28 +481,37 @@ def _public_rel(path: Path) -> str:
 def _remotion_bin() -> list[str]:
     local_bin = _REPO_ROOT / "node_modules" / ".bin" / "remotion"
     local_bin_cmd = _REPO_ROOT / "node_modules" / ".bin" / "remotion.cmd"
+    if sys.platform.startswith("win") and local_bin_cmd.exists():
+        return [str(local_bin_cmd)]
     if local_bin.exists():
         return [str(local_bin)]
     if local_bin_cmd.exists():
         return [str(local_bin_cmd)]
+    if shutil.which("yarn"):
+        return ["yarn", "remotion"]
     return ["npx", "remotion"]
 
 
 def _render_with_remotion(manifest: dict, out_path: Path) -> None:
-    props_json = json.dumps({"manifest": manifest}, ensure_ascii=False, separators=(",", ":"))
+    with tempfile.NamedTemporaryFile(prefix="sermon-clipper-props-", suffix=".json", delete=False, mode="w", encoding="utf-8") as handle:
+        props_path = Path(handle.name)
+        json.dump({"manifest": manifest}, handle, ensure_ascii=False, separators=(",", ":"))
     total_duration = sum(float(clip.get("duration_sec") or 0) for clip in manifest.get("clips") or [])
-    cmd = _remotion_bin() + [
-        "render",
-        str(_REMOTION_ENTRY),
-        _REMOTION_COMPOSITION,
-        str(out_path),
-        f"--props={props_json}",
-    ]
-    _run_logged_command(
-        _maybe_add_threads(cmd),
-        timeout=max(900, int(max(30.0, total_duration) * 40)),
-        label="Remotion render failed",
-    )
+    try:
+        cmd = _remotion_bin() + [
+            "render",
+            str(_REMOTION_ENTRY),
+            _REMOTION_COMPOSITION,
+            str(out_path),
+            f"--props={props_path}",
+        ]
+        _run_logged_command(
+            _maybe_add_threads(cmd),
+            timeout=max(900, int(max(30.0, total_duration) * 40)),
+            label="Remotion render failed",
+        )
+    finally:
+        remove_path(props_path)
 
 
 def _mux_subtitle_track(video_path: Path, subtitle_path: Path) -> None:
@@ -634,7 +644,7 @@ def main() -> None:
     rendered_clip_ids: list[str] = []
     manifest_clips: list[dict] = []
     final_subtitle_cues: list[dict[str, float | str]] = []
-    transition_sec = 0.35
+    transition_sec = 0.0
     output_cursor = 0.0
     try:
         for index, item in enumerate(clip_items, start=1):
