@@ -4,7 +4,11 @@
   "type": "module",
   "dependencies": {},
   "devDependencies": {
+    "@remotion/cli": "^4.0.434",
     "dotenv": "^17.3.1",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "remotion": "^4.0.434",
     "vite": "^5.4.0"
   },
   "scripts": {

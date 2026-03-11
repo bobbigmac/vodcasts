@@ -1,88 +1,164 @@
 # Sermon Clipper Agent Guide
 
-This folder produces long-form commentary videos from church feed transcripts.
+This folder is the video-production surface for transcript-driven sermon/church source material.
 
-## What the tools do now
+## Scope
 
-- `search_clips.py` searches the answer-engine index and, by default, filters to clips that are actually renderable: video enclosure present, transcript present, one clip per feed, duration bounds respected, used clips excluded.
-- `write_script.py` writes a usable first-draft markdown script from those clips. It now fills intro, transitions, outro, and title-card copy automatically instead of leaving bracket placeholders everywhere.
-- `make_title_cards.py` renders PNG cards from `title_card` and `transition` sections.
-- `render_video.py` downloads source media into the shared content cache, extracts clips, adds optional overlays and subtitles, concatenates the result, and refuses to publish if too few clips survive render.
-- `cleanup_outputs.py` removes `__pycache__`, internal `.work/`, output-side `work*` directories, and stray `concat_list.txt` files.
+Use this folder when the task is:
+
+- find source clips from repo-local transcript/index tooling
+- draft a long-form or short-form video render sheet
+- render or rerender a video from markdown source of truth
+- clean scratch state while preserving the shared content cache
+
+Use `scripts/markdown-video-editor/` for feature-specific edit/manipulation plans such as spacetime compression. The `spacetime-compression/` folder here is compatibility surface only.
+
+## Folder shape
+
+- `search_clips.py`
+  Long-form source discovery from answer-engine results.
+- `write_script.py`
+  Draft long-form markdown render sheets.
+- `make_title_cards.py`
+  Render title-card PNGs for long-form productions.
+- `render_video.py`
+  Compose long-form outputs from the markdown sheet plus optional cards/subtitles/overlays.
+- `cleanup_outputs.py`
+  Remove internal scratch, pycache, output-side `work*` dirs, and stray concat manifests.
+- `shorts-experiment/`
+  Short-form vertical workflow with its own search/write/render scripts and markdown contract.
+- `spacetime-compression/`
+  Compatibility wrappers that forward to `scripts/markdown-video-editor/`.
+- `_lib.py`
+  Shared sermon-clipper helpers: cache/env resolution, transcript extraction, script parsing, shared content-cache paths, etc.
+
+## External dependencies this folder expects
+
+- `scripts/answer-engine/.venv/`
+  Used by `search_clips.py`, `write_script.py`, and the shorts search/write tools.
+- `ffmpeg` / `ffprobe`
+  Required for render, download, clip prep, silence trimming, and media probing.
+- `node_modules/remotion` and `@remotion/cli`
+  Required for the short-form final composition pass.
+- `site/assets/transcripts/`
+  Used for clipped subtitle generation when transcripts exist locally.
+- `cache/<env>/feeds/`
+  Used to resolve enclosure URLs and renderability.
+- `scripts/markdown-video-editor/`
+  Owns edit-plan-driven manipulation features.
 
 ## Caches and scratch
 
 - Query cache: `cache/<env>/sermon-clipper/query-cache/`
 - Shared content cache: `cache/<env>/sermon-clipper/content/`
-- Scratch render dir: `scripts/sermon-clipper/.work/`
-- Default scratch dirs are removed after a successful render unless `--keep-work` is passed.
+- Internal scratch: `scripts/sermon-clipper/.work/`
 
-## Script contract
+Cleanup policy:
 
-The markdown script remains the render source of truth:
+- preserve final outputs
+- preserve markdown render sheets
+- preserve shared content cache unless explicitly asked otherwise
+- remove scratch/work artifacts freely once outputs are accepted
 
-```markdown
-# Video: When Forgiveness Gets Real
+## Long-form contract
 
-## metadata
-theme: forgiveness
-target_duration_minutes: 15
+Canonical flow:
 
-## intro
-2-3 sentences that frame the issue.
+1. `search_clips.py`
+2. `write_script.py`
+3. `make_title_cards.py`
+4. `render_video.py`
+5. `cleanup_outputs.py` as needed
 
-## title_card
-id: intro
-text: One sentence that sets up the journey.
+Long-form render source of truth is the markdown script consumed by `render_video.py`.
 
-## clip
-feed: ...
-episode: ...
-start_sec: ...
-end_sec: ...
-quote: "..."
-episode_title: ...
-feed_title: ...
+Supported sections:
 
-## transition
-1-3 sentences connecting the previous clip to the next.
+- `## metadata`
+- `## intro`
+- `## title_card`
+- repeated `## clip`
+- repeated `## transition`
+- `## outro`
 
-## outro
-Brief wrap-up that points viewers to the fuller context.
+Important fields in each `clip` block:
 
-## title_card
-id: outro
-text: Full episodes and full context at prays.be
-```
+- `feed`
+- `episode`
+- `start_sec`
+- `end_sec`
+- `quote`
+- `episode_title`
+- `feed_title`
 
-`render_video.py` treats `transition` sections as title cards named `transition_1`, `transition_2`, and so on.
+Notes:
 
-## Workflow
+- `transition` sections are rendered as title cards
+- subtitles are clipped from local `.vtt` / `.srt` files when available
+- rendered output is normalized to a consistent MP4 target
 
-```powershell
-# Search renderable clips
-sc.ps1 search --theme "when forgiveness feels impossible" --output out/sermon-clips-examples/forgiveness-clips.json --exclude-used out/sermon-clips-examples/used-clips.json
+## Short-form contract
 
-# Write first draft script
-sc.ps1 write --theme "when forgiveness feels impossible" --clips out/sermon-clips-examples/forgiveness-clips.json --output out/sermon-clips-examples/forgiveness-video.md
+Canonical flow:
 
-# Generate cards
-sc.ps1 cards --script out/sermon-clips-examples/forgiveness-video.md --output out/sermon-clips-examples/forgiveness-cards
+1. `shorts-experiment/search_shorts.py`
+2. `shorts-experiment/write_short_script.py`
+3. `shorts-experiment/render_short.py`
 
-# Render
-sc.ps1 render --script out/sermon-clips-examples/forgiveness-video.md --output out/sermon-clips-examples/forgiveness.mp4 --title-cards out/sermon-clips-examples/forgiveness-cards --register out/sermon-clips-examples/used-clips.json
+Short-form render source of truth is the markdown script consumed by `render_short.py`.
 
-# Clean leftovers from older runs if needed
-sc.ps1 clean --path out/sermon-clips-examples
-```
+Supported sections:
 
-## Useful flags
+- `## metadata`
+- `## intro`
+- repeated `## clip`
+- `## outro`
 
-- `search_clips.py`: `--allow-audio`, `--allow-missing-transcript`, `--exclude-used`, `--no-cache`
-- `render_video.py`: `--no-download`, `--trim-silence`, `--no-subs`, `--no-overlay`, `--min-clips`, `--keep-work`
+Clip-specific fields:
 
-## Quality bar
+- `feed`
+- `episode`
+- `start_sec`
+- `end_sec`
+- `quote`
+- `episode_title`
+- `feed_title`
+- `context`
+- `decorators`
 
-- Do not accept card-only or one-clip long-form renders.
-- Prefer clips that can render cleanly before writing scripts.
-- Keep commentary substantive. Short excerpts plus framing, not clip dumping.
+Quality rules:
+
+- do not accept under-filled shorts unless the user explicitly asks for that tradeoff
+- prefer renderable video sources with local transcripts
+- context text should label the idea, not restate the quote
+- default short target is 7-10 short thought-bites, not 2-4 long clips
+
+## Edit/manipulation features
+
+Current state:
+
+- sermon-clipper owns long-form and short-form render-sheet workflows
+- markdown-video-editor owns edit-plan workflows
+- the two are related but not yet unified into one universal sheet format
+
+When asked to apply temporal edits or clip-manipulation features, prefer the canonical scripts in `scripts/markdown-video-editor/`:
+
+- `analyze_spacetime_plan.py`
+- `apply_edit_plan.py`
+
+## Operator intent
+
+Assume the user may ask for:
+
+- a long-form video on a topic/question
+- a short-form video on a topic/question
+- a rerender with different production properties
+- a feature pass that manipulates already-selected media
+
+The LLM/operator should be able to:
+
+- query for source material
+- draft the markdown control sheet
+- render from it
+- inspect and revise it
+- clean scratch state without deleting the expensive shared source cache

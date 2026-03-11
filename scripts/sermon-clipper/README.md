@@ -1,114 +1,96 @@
 # Sermon Clipper
 
-Generate long-form commentary videos from church feed content: search the transcript index for themed clips, write a usable first-draft script, generate title cards, and render a composed video with ffmpeg.
+Smart, mostly automated video composition tooling for sermon and church-feed source material in this repo.
 
-## What is implemented
+This folder is where you come to make videos from transcript-indexed source material:
 
-1. `search_clips` queries the answer-engine index and, by default, only returns clips that already have a local transcript and a video enclosure.
-2. `write_script` turns those clips into a usable markdown draft with intro, transitions, outro, and title-card copy.
-3. `make_title_cards` renders PNG cards from the script.
-4. `render_video` downloads source videos into the shared content cache, cuts the clips, burns in optional source overlays and clipped subtitles, concatenates everything, and can register used clips.
-5. `clean` removes clipper scratch state plus obvious leftover render junk such as `work*` directories and `concat_list.txt`.
+- long-form commentary / compilation videos
+- short-form vertical videos
+- repeatable rerenders from markdown source-of-truth files
+- cache-aware workflows that reuse search results, source media, and scratch outputs until you deliberately clean them
 
-## Requirements and defaults
+## What lives here
 
-- Query cache: `cache/<env>/sermon-clipper/query-cache/`
-- Shared content cache: `cache/<env>/sermon-clipper/content/`
-- Scratch work dir: auto-created under `scripts/sermon-clipper/.work/` and removed after a successful render unless you pass `--keep-work`
-- Audio and subtitles: renders preserve audio; subtitles are embedded when a matching transcript exists
+- `search_clips.py` / `write_script.py`: find long-form source clips from the answer-engine index and draft a long-form render sheet
+- `render_video.py` / `make_title_cards.py`: render long-form videos from that sheet
+- `shorts-experiment/`: short-form search, draft, and Remotion render flow for vertical outputs
+- `cleanup_outputs.py`: remove scratch state and obvious temp leftovers without touching deliberate outputs or the shared source cache
+- `spacetime-compression/`: compatibility entrypoints for the markdown-video-editor feature set; the canonical home is `scripts/markdown-video-editor/`
 
-## Usage
+## Working model
 
-Use the answer-engine venv for `search` and `write`. Use system Python for `cards`, `render`, and `clean`.
+There are currently two markdown source-of-truth layers:
 
-```powershell
-# 1. Search renderable clips
-sc.ps1 search --theme "when forgiveness feels impossible" --output out/sermon-clips-examples/forgiveness-clips.json --exclude-used out/sermon-clips-examples/used-clips.json
+- long-form / short-form render sheets in this folder
+- feature-specific edit plans in `scripts/markdown-video-editor/`
 
-# 2. Write a first draft script
-sc.ps1 write --theme "when forgiveness feels impossible" --clips out/sermon-clips-examples/forgiveness-clips.json --output out/sermon-clips-examples/forgiveness-video.md
+That means the system is already rerenderable and inspectable, but it is not yet a single universal edit-sheet format. When asked to make a video, the normal pattern is:
 
-# 3. Generate cards
-sc.ps1 cards --script out/sermon-clips-examples/forgiveness-video.md --output out/sermon-clips-examples/forgiveness-cards
+1. Find candidate source clips from the transcript/index tooling.
+2. Draft the markdown render sheet that describes the production.
+3. Render, review, and rerender from that same markdown file.
+4. Clean scratch state when the output is confirmed good, while keeping the shared content cache for future runs.
 
-# 4. Render and register
-sc.ps1 render --script out/sermon-clips-examples/forgiveness-video.md --output out/sermon-clips-examples/forgiveness.mp4 --title-cards out/sermon-clips-examples/forgiveness-cards --register out/sermon-clips-examples/used-clips.json
+## Main entrypoints
 
-# 5. Clean output-side leftovers if you used old work dirs
-sc.ps1 clean --path out/sermon-clips-examples
-```
+Long-form:
 
-Direct Python usage:
-
-```powershell
-scripts/answer-engine/.venv/Scripts/python.exe scripts/sermon-clipper/search_clips.py --theme forgiveness --output out/clips.json
-scripts/answer-engine/.venv/Scripts/python.exe scripts/sermon-clipper/write_script.py --theme forgiveness --clips out/clips.json --output out/video.md
+```bash
+bash scripts/sermon-clipper/sc.sh search --theme "forgiveness" --output out/clips.json
+bash scripts/sermon-clipper/sc.sh write --theme "forgiveness" --clips out/clips.json --output out/video.md
 python scripts/sermon-clipper/make_title_cards.py --script out/video.md --output out/title-cards
 python scripts/sermon-clipper/render_video.py --script out/video.md --output out/video.mp4 --title-cards out/title-cards
-python scripts/sermon-clipper/cleanup_outputs.py --path out
 ```
 
-## Search behavior
+Short-form:
 
-Default search rules:
-
-- one clip per feed
-- favor clips under 2 minutes
-- require video enclosures
-- require local transcripts
-- skip clips already registered in `used-clips.json`
-
-Relax the defaults only when needed:
-
-- `--allow-audio`
-- `--allow-missing-transcript`
-- `--no-cache`
-
-## Script format
-
-The markdown script is the render source of truth.
-
-```markdown
-# Video: When Forgiveness Gets Real
-
-## metadata
-theme: forgiveness
-target_duration_minutes: 15
-
-## intro
-Two sentences that frame the question and set expectation.
-
-## title_card
-id: intro
-text: One sentence for the opening card.
-
-## clip
-feed: antioch-church
-episode: 2023-08-20-full-bloom-93yx2
-start_sec: 1827.761
-end_sec: 1948.69
-quote: "The quote text..."
-episode_title: Full Bloom
-feed_title: Antioch Church
-
-## transition
-One to three sentences that connect the previous clip to the next one.
-
-## outro
-Wrap up the thread and point to full context.
-
-## title_card
-id: outro
-text: Full episodes and full context at prays.be
+```bash
+python scripts/sermon-clipper/shorts-experiment/search_shorts.py --theme "forgiveness" --output out/shorts/clips.json
+python scripts/sermon-clipper/shorts-experiment/write_short_script.py --theme "forgiveness" --clips out/shorts/clips.json --output out/shorts/video.md
+python scripts/sermon-clipper/shorts-experiment/render_short.py --script out/shorts/video.md --output out/shorts/video.mp4 --trim-silence
 ```
 
-## Render notes
+Edit/manipulation feature tooling:
 
-- Output format is normalized to `1080p / 30fps / yuv420p / AAC 48kHz mono`.
-- Subtitle clips are cut from `site/assets/transcripts/<feed>/<episode>.vtt` or `.srt`.
-- `--no-download` means "use the shared content cache only"; it does not look in old output work folders.
-- `--min-clips` prevents accidental card-only or single-clip renders.
+```bash
+python scripts/markdown-video-editor/analyze_spacetime_plan.py --input in/source.mp4 --output out/source.edit.md
+python scripts/markdown-video-editor/apply_edit_plan.py --plan out/source.edit.md --output out/source.out.mp4
+```
 
-## Fair use
+Cleanup:
 
-Keep the transformation obvious: short excerpts, clear attribution, and real commentary between clips.
+```bash
+python scripts/sermon-clipper/cleanup_outputs.py --path out --path out/shorts
+```
+
+## Cache and cleanup rule
+
+Keep:
+
+- final markdown sheets
+- final renders
+- shared source media cache under `cache/<env>/sermon-clipper/content/`
+
+Safe to clean and regenerate:
+
+- internal scratch under `scripts/sermon-clipper/.work/`
+- output-side `work*` directories
+- concat manifests
+- pycache
+
+## Goal
+
+The intended operator experience is: ask for a long or short video on a topic/question, let the LLM assemble the right sources and markdown control sheet, render from that source of truth, inspect the result, then rerender or clean without losing the expensive cached source material. For shorts, ffmpeg now handles source prep while Remotion handles the final look and sequencing.
+
+
+## TODOs: 
+
+A better search/curation approach may not be to try and decide on a query before asking our index for answers (slow, expensive) but should look at our index to see what gets a lot of mentions, and try to weave together threads of complemenary material. Look at the fulltext and see if we can sensibly test parts of our index or our transcripts via free/console search, to build up a better selection of quotes/snippets for each presentation, that make more sense when played back.
+
+these output shorts are almst perfect, with the exception that the title card between (before each) clips (or its transition) makes for an awkward break between clips, instead of a smooth transition. I dont think individual clips need title cards, or at least not isolated ones that interrupt the flow. Also the snippet selector shouldn't include videos from the same feed multiple times in a single video. If there is a particularly suitable follow-up to be made, it should be made as a later snippet, not immediately after the current one, i.e. a little set-up and call-back implied just through selection. You can stop trying to render on this machine now, it's too slow to be useful, but it has proven the concept that this does work. Implement the fixes for this chat, but don't continue rebuilding here (and kill the current build), I'm pretty happy with where we're headed but will have to actually test the final versions on a different computer.
+
+Not one feed per video, all videos must come from different feeds. 
+
+Since our selector is pretty good at finding lines, let's actually target 8-12 snippets (we have plenty of sources) so we can lose one or two during processing (missing files say) and it's still fine. Clarify in the instructions that prepared scripts don't have to be perfect, and shouldn't focus on their 'listiness' but should 'try' and carry some kind of message or answer questions meaninguflly, things that people want answers to, practical and interesting, useful, not just theological or simple concepts, but our videos want to address questions people have in real life, by curating these selections of wisdom, advice, answers, even trying to find a question-based snippet to place among the advice, a subsconscious prompt, not a literaly one.
+
+ if you can find some nice libs or components for Remotion (I don't know much about how it works) I want each video to have its own character and style, so either use some available extensions for really nice video polish, or just work in more style, offsets, patterns, themes, skins, etc. I want a broad variety of video layout options, so we can experiement, while still having our current base version that works well enough (additive, componentised, flavour, not destructive). TikTokers are very sensitive to jank or weirdness, and appreciate slick presentation, so let's try and make sure every video we produce is just awesome by default, even tho it's basically just videos of mostly guys talking, we're trying to reall ymake the rest of the video really deliver on its promise of meaningful and slick videos. (A big ask perhaps, but we have all the parts we need to make that happen, but it just takes work to get everything right, is the theory )

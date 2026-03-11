@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
 _REPO_ROOT = Path(__file__).resolve().parents[2]
@@ -45,6 +46,11 @@ def _parse_args() -> argparse.Namespace:
     p.add_argument("--transcripts", default="", help="Transcripts root (default: site/assets/transcripts).")
     p.add_argument("--no-subs", action="store_true", help="Skip embedding subtitles from transcripts.")
     p.add_argument("--no-overlay", action="store_true", help="Skip source overlay on clips (use if drawtext fails on your system).")
+    p.add_argument("--width", type=int, default=1920, help="Output width (default: 1920).")
+    p.add_argument("--height", type=int, default=1080, help="Output height (default: 1080).")
+    p.add_argument("--fps", type=int, default=30, help="Output fps (default: 30).")
+    p.add_argument("--preset", default="fast", help="x264 preset (default: fast).")
+    p.add_argument("--threads", type=int, default=0, help="ffmpeg encoder threads override (default: auto).")
     p.add_argument("--min-clips", type=int, default=2, help="Require at least this many rendered clips before publishing output (default: 2).")
     p.add_argument("--keep-work", action="store_true", help="Keep scratch work directory after a successful render.")
     return p.parse_args()
@@ -65,14 +71,10 @@ def _download_url(url: str, out_path: Path) -> bool:
         str(out_path),
     ]
     try:
-        subprocess.run(cmd, capture_output=True, check=True, timeout=600)
+        _run_media_command(cmd, timeout=600, label="ffmpeg download failed")
         return True
-    except subprocess.CalledProcessError as exc:
-        detail = exc.stderr.decode(errors="replace")[:240] if exc.stderr else str(exc)
-        print(f"[render] ffmpeg download failed: {detail}", file=sys.stderr)
-        return False
     except Exception as exc:
-        print(f"[render] download failed: {exc}", file=sys.stderr)
+        print(f"[render] ffmpeg download failed: {exc}", file=sys.stderr)
         return False
 
 
@@ -115,6 +117,53 @@ def _escape_drawtext(value: str) -> str:
 _OUT_FPS = 30
 _OUT_W = 1920
 _OUT_H = 1080
+_ENC_PRESET = "fast"
+_ENC_THREADS = 0
+
+
+def _run_media_command(cmd: list[str], timeout: int, label: str) -> None:
+    run_cmd = cmd
+    if cmd and cmd[0] == "ffmpeg" and "-loglevel" not in cmd:
+        run_cmd = [cmd[0], "-hide_banner", "-loglevel", "error", "-nostats"]
+        if _ENC_THREADS > 0:
+            run_cmd.extend(
+                [
+                    "-threads",
+                    str(_ENC_THREADS),
+                    "-filter_threads",
+                    str(_ENC_THREADS),
+                    "-filter_complex_threads",
+                    str(_ENC_THREADS),
+                ]
+            )
+        run_cmd.extend(cmd[1:])
+    with tempfile.NamedTemporaryFile(prefix="sermon-clipper-", suffix=".log", delete=False) as handle:
+        log_path = Path(handle.name)
+    try:
+        with log_path.open("wb") as log_handle:
+            subprocess.run(
+                run_cmd,
+                stdout=log_handle,
+                stderr=subprocess.STDOUT,
+                check=True,
+                timeout=timeout,
+            )
+    except Exception as exc:
+        detail = ""
+        try:
+            lines = log_path.read_text(encoding="utf-8", errors="replace").splitlines()
+            detail = " | ".join(line.strip() for line in lines[-4:] if line.strip())[:400]
+        except Exception:
+            pass
+        raise RuntimeError(f"{label}: {detail or exc}") from exc
+    finally:
+        remove_path(log_path)
+
+
+def _maybe_add_threads(cmd: list[str]) -> list[str]:
+    if _ENC_THREADS > 0 and cmd and cmd[0] != "ffmpeg" and "-threads" not in cmd:
+        cmd.extend(["-threads", str(_ENC_THREADS)])
+    return cmd
 
 
 def _ffmpeg_subtitles_path(vtt_path: Path) -> str:
@@ -165,7 +214,7 @@ def _ffmpeg_extract_clip(
             )
         return ",".join(vf_parts)
 
-    def _run(include_overlay: bool, use_silent_audio: bool) -> subprocess.CompletedProcess:
+    def _run(include_overlay: bool, use_silent_audio: bool) -> None:
         cmd = ["ffmpeg", "-y", "-ss", str(start), "-i", str(src), "-t", str(dur)]
         if use_silent_audio:
             cmd.extend(["-f", "lavfi", "-i", "anullsrc=r=48000:cl=mono"])
@@ -176,7 +225,7 @@ def _ffmpeg_extract_clip(
                 "-c:v",
                 "libx264",
                 "-preset",
-                "fast",
+                _ENC_PRESET,
                 "-crf",
                 "22",
                 "-pix_fmt",
@@ -206,7 +255,7 @@ def _ffmpeg_extract_clip(
                 ]
             )
         cmd.extend(["-f", "mp4", "-movflags", "+faststart", str(out)])
-        return subprocess.run(cmd, capture_output=True, check=True, timeout=180)
+        _run_media_command(_maybe_add_threads(cmd), timeout=180, label="ffmpeg extract failed")
 
     attempts = []
     if overlay_text:
@@ -252,7 +301,7 @@ def _ffmpeg_image_to_video(img: Path, duration: float, out: Path, width: int = 1
         "-c:v",
         "libx264",
         "-preset",
-        "fast",
+        _ENC_PRESET,
         "-crf",
         "20",
         "-pix_fmt",
@@ -273,7 +322,7 @@ def _ffmpeg_image_to_video(img: Path, duration: float, out: Path, width: int = 1
         str(out),
     ]
     try:
-        subprocess.run(cmd, capture_output=True, check=True, timeout=30)
+        _run_media_command(_maybe_add_threads(cmd), timeout=30, label="ffmpeg image-to-video failed")
         return True
     except Exception as exc:
         print(f"[render] ffmpeg image-to-video failed: {exc}", file=sys.stderr)
@@ -303,7 +352,7 @@ def _ffmpeg_concat(files: list[Path], out: Path, list_path: Path) -> bool:
         str(out),
     ]
     try:
-        subprocess.run(cmd, capture_output=True, check=True, timeout=120)
+        _run_media_command(_maybe_add_threads(cmd), timeout=120, label="ffmpeg concat failed")
         return True
     except Exception as exc:
         print(f"[render] ffmpeg concat failed: {exc}", file=sys.stderr)
@@ -312,12 +361,18 @@ def _ffmpeg_concat(files: list[Path], out: Path, list_path: Path) -> bool:
 
 def main() -> None:
     args = _parse_args()
+    global _OUT_W, _OUT_H, _OUT_FPS, _ENC_PRESET, _ENC_THREADS
     script_path = Path(args.script)
     if not script_path.exists():
         print(f"[render] Script not found: {script_path}", file=sys.stderr)
         sys.exit(1)
 
     env = (args.env or "").strip() or default_env()
+    _OUT_W = max(426, int(args.width))
+    _OUT_H = max(240, int(args.height))
+    _OUT_FPS = max(12, int(args.fps))
+    _ENC_PRESET = str(args.preset or "fast").strip() or "fast"
+    _ENC_THREADS = max(0, int(args.threads))
     cache_dir = default_cache_dir(env)
     content_cache = Path(args.content_cache).resolve() if args.content_cache else default_content_cache_dir(env)
     content_cache.mkdir(parents=True, exist_ok=True)

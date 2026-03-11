@@ -24,7 +24,9 @@ ensure_venv() {
     "${PY}" -m pip install -r "${ROOT}/requirements.txt"
     echo "${req_hash}" > "${stamp}"
   fi
+}
 
+ensure_cuda_torch() {
   # Ensure we have a CUDA-capable torch build that can actually see the GPU.
   # sentence-transformers may pull in a CPU wheel first, which is not acceptable
   # for the semantic chapter path on CUDA-capable systems.
@@ -72,6 +74,7 @@ EOF
     ;;
   serve-llm)
     ensure_venv
+    ensure_cuda_torch
     exec env PYTHONUNBUFFERED=1 "${PY}" "${ROOT}/serve_llm.py" "$@"
     ;;
   query)

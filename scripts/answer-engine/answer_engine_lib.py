@@ -19,14 +19,11 @@ _REPO_ROOT = Path(__file__).resolve().parents[2]
 if str(_REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(_REPO_ROOT))
 
-from scripts.feed_manifest import parse_feed_for_manifest
 from scripts.shared import VODCASTS_ROOT, normalize_ws, strip_html
-from scripts.sources import load_sources_config
 
 import pysrt  # type: ignore
 import snowballstemmer  # type: ignore
 import webvtt  # type: ignore
-import yake  # type: ignore
 from stop_words import get_stop_words  # type: ignore
 
 
@@ -336,6 +333,8 @@ def default_transcripts_root() -> Path:
 
 @lru_cache(maxsize=8)
 def _load_sources_lookup(env: str) -> dict[str, dict[str, Any]]:
+    from scripts.sources import load_sources_config
+
     env_name = _canon_env(str(env or "").strip()) or active_env()
     cfg_path = VODCASTS_ROOT / "feeds" / f"{env_name}.md"
     if not cfg_path.exists():
@@ -477,6 +476,7 @@ def _tokenize(text: str) -> list[str]:
     return toks
 
 
+@lru_cache(maxsize=131072)
 def _norm_token(t: str) -> str:
     t = (t or "").strip().lower()
     if not t:
@@ -1145,6 +1145,90 @@ class Segment:
     answer: float
 
 
+_SEGMENT_SENTENCE_END_RE = re.compile(r"[.!?]\s*$")
+_SEGMENT_HARD_BOUNDARY_RE = re.compile(
+    r"\b("
+    r"let('| )s\s+pray|let\s+us\s+pray|join\s+me\s+in\s+prayer|bow\s+your\s+heads?|"
+    r"let('| )s\s+sing|stand\s+to\s+your\s+feet|worship\s+together|"
+    r"in\s+the\s+name\s+of\s+the\s+father|our\s+father\s+who\s+(art|is)|"
+    r"open\s+(your|the)\s+bibles?|reading\s+from|the\s+word\s+of\s+the\s+lord|"
+    r"tithes?|offerings?|text\s+to\s+give|online\s+giving|"
+    r"this\s+(episode|video)\s+is\s+sponsored|promo\s+code|brought\s+to\s+you\s+by|"
+    r"announcements?|we('?| a)ll\s+be\s+right\s+back|after\s+the\s+break|when\s+we\s+return|"
+    r"go\s+in\s+peace|the\s+lord\s+bless\s+you\s+and\s+keep\s+you|"
+    r"here('?s| is)\s+(pastor|father|fr\\.?|reverend)"
+    r")\b",
+    flags=re.I,
+)
+
+
+def cues_to_search_segments(
+    cues: list[Cue],
+    *,
+    target_words: int = 140,
+    overlap_words: int = 45,
+    max_words: int = 220,
+    max_duration_sec: float = 120.0,
+) -> list[Segment]:
+    """
+    Cheap search-oriented chunking.
+
+    For answer retrieval we only need reasonably-sized, overlapping windows that
+    preserve timestamps and enough local context for FTS and follow-up review.
+    """
+    if not cues:
+        return []
+
+    cue_word_counts = [max(1, len(_tokenize(c.text))) for c in cues]
+    out: list[Segment] = []
+    total_n = len(cues)
+    start_idx = 0
+
+    while start_idx < total_n:
+        words = 0
+        end_idx = start_idx
+        window_start = float(cues[start_idx].start)
+
+        while end_idx < total_n:
+            words += cue_word_counts[end_idx]
+            window_end = float(cues[end_idx].end)
+            end_idx += 1
+
+            if words >= int(max_words):
+                break
+            if window_end - window_start >= float(max_duration_sec):
+                break
+            if words >= int(target_words) and _SEGMENT_SENTENCE_END_RE.search(cues[end_idx - 1].text or ""):
+                break
+
+        window = cues[start_idx:end_idx]
+        txt = normalize_ws(" ".join(c.text for c in window))
+        if txt:
+            out.append(
+                Segment(
+                    start=float(window[0].start),
+                    end=float(window[-1].end),
+                    text=txt,
+                    kind="content",
+                    kind_conf=1.0,
+                    theme=0.0,
+                    answer=0.0,
+                )
+            )
+
+        if end_idx >= total_n:
+            break
+
+        next_start = end_idx
+        overlap = 0
+        while next_start > start_idx + 1 and overlap < int(overlap_words):
+            next_start -= 1
+            overlap += cue_word_counts[next_start]
+        start_idx = max(start_idx + 1, next_start)
+
+    return out
+
+
 def cues_to_segments(
     cues: list[Cue],
     *,
@@ -1159,11 +1243,12 @@ def cues_to_segments(
     out: list[Segment] = []
 
     buf_text: list[str] = []
+    buf_word_count = 0
     start = cues[0].start
     end = cues[0].end
 
     def flush():
-        nonlocal buf_text, start, end
+        nonlocal buf_text, buf_word_count, start, end
         txt = normalize_ws(" ".join(buf_text))
         if txt:
             kind, conf = classify_segment_v2(txt, start_sec=start, end_sec=end, total_sec=total_sec)
@@ -1179,9 +1264,10 @@ def cues_to_segments(
                 )
             )
         buf_text = []
+        buf_word_count = 0
 
     def word_count() -> int:
-        return len(_filter_tokens(_tokenize(" ".join(buf_text))))
+        return buf_word_count
 
     prev_end = cues[0].end
     for c in cues:
@@ -1191,23 +1277,7 @@ def cues_to_segments(
         # Hard boundaries help keep structured sections from being mixed
         # into the first "big segment", which makes both classification and titles worse.
         if buf_text:
-            boundary = bool(
-                re.search(
-                    r"\b("
-                    r"let('| )s\s+pray|let\s+us\s+pray|join\s+me\s+in\s+prayer|bow\s+your\s+heads?|"
-                    r"let('| )s\s+sing|stand\s+to\s+your\s+feet|worship\s+together|"
-                    r"in\s+the\s+name\s+of\s+the\s+father|our\s+father\s+who\s+(art|is)|"
-                    r"open\s+(your|the)\s+bibles?|reading\s+from|the\s+word\s+of\s+the\s+lord|"
-                    r"tithes?|offerings?|text\s+to\s+give|online\s+giving|"
-                    r"this\s+(episode|video)\s+is\s+sponsored|promo\s+code|brought\s+to\s+you\s+by|"
-                    r"announcements?|we('?| a)ll\s+be\s+right\s+back|after\s+the\s+break|when\s+we\s+return|"
-                    r"go\s+in\s+peace|the\s+lord\s+bless\s+you\s+and\s+keep\s+you|"
-                    r"here('?s| is)\s+(pastor|father|fr\\.?|reverend)"
-                    r")\b",
-                    c.text or "",
-                    flags=re.I,
-                )
-            )
+            boundary = bool(_SEGMENT_HARD_BOUNDARY_RE.search(c.text or ""))
             if boundary:
                 wc = word_count()
                 dur = float(c.start - start)
@@ -1219,7 +1289,7 @@ def cues_to_segments(
         if buf_text:
             dur = float(c.end - start)
             wc = word_count()
-            ends_sentence = bool(re.search(r"[.!?]\s*$", buf_text[-1] if buf_text else ""))
+            ends_sentence = bool(_SEGMENT_SENTENCE_END_RE.search(buf_text[-1] if buf_text else ""))
             if gap >= max_gap_sec and wc >= max(40, int(target_words * 0.45)):
                 flush()
                 start = c.start
@@ -1237,9 +1307,10 @@ def cues_to_segments(
             start = c.start
         end = c.end
         buf_text.append(c.text)
+        buf_word_count += len(_filter_tokens(_tokenize(c.text)))
 
         # Friendly boundary: if we’ve reached target words and the current cue ends a sentence.
-        if word_count() >= target_words and re.search(r"[.!?]\s*$", c.text):
+        if word_count() >= target_words and _SEGMENT_SENTENCE_END_RE.search(c.text):
             flush()
             start = c.end
             end = c.end
@@ -1260,6 +1331,8 @@ def _iter_transcript_files(root: Path) -> Iterable[Path]:
 
 
 def _load_episode_meta_for_feed(cache_dir: Path, feed_slug: str) -> dict[str, dict[str, Any]]:
+    from scripts.feed_manifest import parse_feed_for_manifest
+
     feed_path = cache_dir / "feeds" / f"{feed_slug}.xml"
     if not feed_path.exists():
         return {}
@@ -1282,6 +1355,7 @@ def _load_episode_meta_for_feed(cache_dir: Path, feed_slug: str) -> dict[str, di
 def _ensure_schema(con: sqlite3.Connection) -> None:
     con.execute("PRAGMA journal_mode=WAL;")
     con.execute("PRAGMA synchronous=NORMAL;")
+    con.execute("PRAGMA temp_store=MEMORY;")
     con.execute(
         """
         CREATE TABLE IF NOT EXISTS meta (
@@ -1370,6 +1444,15 @@ def _file_row_is_current(path: Path, row: sqlite3.Row | None) -> bool:
     return int(row["mtime_ns"]) == sig_m and int(row["size"]) == sig_s
 
 
+def _format_elapsed_brief(seconds: float) -> str:
+    total = max(0, int(seconds))
+    mins, sec = divmod(total, 60)
+    hrs, mins = divmod(mins, 60)
+    if hrs > 0:
+        return f"{hrs:d}:{mins:02d}:{sec:02d}"
+    return f"{mins:02d}:{sec:02d}"
+
+
 def _segment_from_row(row: sqlite3.Row) -> Segment:
     return Segment(
         start=float(row["start_sec"] or 0.0),
@@ -1413,12 +1496,12 @@ def analyze_transcripts(
 
     started = time.time()
     now = int(started)
-    tokenizer_version = 6
+    tokenizer_version = 7
     tok_info = {
         "version": int(tokenizer_version),
         "stemmer": "snowball",
         "stopwords": "stop-words",
-        "segment_classifier": "human-structure-v3",
+        "segment_classifier": "search-windows-v1",
     }
     prev_info = _meta_get(con, "tokenizer_info", None)
     if prev_info != tok_info:
@@ -1452,8 +1535,10 @@ def analyze_transcripts(
 
     touched = 0
     skipped = 0
+    written_segments = 0
     total_n = len(files)
     fts_cleared = False
+    last_progress = started
     try:
         for idx, p in enumerate(files, 1):
             rel = _relpath_under_root(p)
@@ -1480,38 +1565,37 @@ def analyze_transcripts(
             ep_title = normalize_ws(str(ep_meta.get("title") or episode_slug))
             ep_date = normalize_ws(str(ep_meta.get("dateText") or ep_meta.get("date") or ""))
 
+            cues = parse_transcript_file(p)
+            segs = cues_to_search_segments(cues)
+            seg_rows = [
+                (
+                    rel,
+                    feed,
+                    episode_slug,
+                    ep_title,
+                    ep_date,
+                    float(s.start),
+                    float(s.end),
+                    str(s.kind),
+                    float(s.kind_conf),
+                    float(s.theme),
+                    float(s.answer),
+                    s.text,
+                    index_text(s.text),
+                )
+                for s in segs
+            ]
             with con:
                 con.execute("DELETE FROM segments WHERE file_path=?", (rel,))
-
-            cues = parse_transcript_file(p)
-            segs = cues_to_segments(cues)
-            with con:
-                for s in segs:
-                    txt = s.text
-                    txt_idx = index_text(txt)
-                    con.execute(
-                        """
-                        INSERT INTO segments(
-                          file_path, feed, episode_slug, episode_title, episode_date,
-                          start_sec, end_sec, kind, kind_conf, theme, answer, text, text_index
-                        ) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                        """,
-                        (
-                            rel,
-                            feed,
-                            episode_slug,
-                            ep_title,
-                            ep_date,
-                            float(s.start),
-                            float(s.end),
-                            str(s.kind),
-                            float(s.kind_conf),
-                            float(s.theme),
-                            float(s.answer),
-                            txt,
-                            txt_idx,
-                        ),
-                    )
+                con.executemany(
+                    """
+                    INSERT INTO segments(
+                      file_path, feed, episode_slug, episode_title, episode_date,
+                      start_sec, end_sec, kind, kind_conf, theme, answer, text, text_index
+                    ) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    seg_rows,
+                )
 
                 con.execute(
                     """
@@ -1530,11 +1614,23 @@ def analyze_transcripts(
                 )
 
             touched += 1
+            written_segments += len(segs)
             log(f"[answer-engine] [{idx}/{total_n}] update {rel} cues={len(cues)} segs={len(segs)}")
-            if not quiet and (touched + skipped) % 25 == 0:
+            if not quiet:
                 elapsed = max(0.001, time.time() - started)
-                rate = (touched + skipped) / elapsed
-                log(f"[answer-engine] progress: updated={touched} skipped={skipped} rate={rate:.1f} files/s")
+                processed = touched + skipped
+                if processed == total_n or (processed % 25 == 0) or ((time.time() - last_progress) >= 5.0):
+                    rate = processed / elapsed
+                    remaining = max(0, total_n - processed)
+                    eta = (remaining / rate) if rate > 0 else 0.0
+                    pct = (processed / total_n * 100.0) if total_n > 0 else 100.0
+                    log(
+                        "[answer-engine] progress: "
+                        f"{processed}/{total_n} files ({pct:.1f}%) "
+                        f"updated={touched} skipped={skipped} segs={written_segments} "
+                        f"rate={rate:.2f} files/s eta={_format_elapsed_brief(eta)}"
+                    )
+                    last_progress = time.time()
 
         if touched > 0:
             _meta_set(con, "fts_dirty", True)
@@ -2970,6 +3066,8 @@ def top_keywords(text: str, *, k: int = 6, n: int = 2) -> list[str]:
 
 @lru_cache(maxsize=4)
 def _yake_extractor(n: int) -> Any:
+    import yake  # type: ignore
+
     # n=2 allows short phrases without requiring full NLP models.
     # Provide an explicit stopword list so scoring is stable across environments.
     sw = list(get_stop_words("en") or [])
