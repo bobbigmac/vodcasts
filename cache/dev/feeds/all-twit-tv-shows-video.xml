@@ -14,8 +14,8 @@
 		<ttl>40</ttl>
 		<sy:updatePeriod>hourly</sy:updatePeriod>
 		<sy:updateFrequency>1</sy:updateFrequency>
-		<lastBuildDate>Sun, 08 Mar 2026 21:46:30 PDT</lastBuildDate>
-		<pubDate>Sun, 08 Mar 2026 21:46:30 PDT</pubDate>
+		<lastBuildDate>Tue, 10 Mar 2026 19:30:01 PDT</lastBuildDate>
+		<pubDate>Tue, 10 Mar 2026 19:30:01 PDT</pubDate>
 		<rawvoice:frequency>hourly</rawvoice:frequency>
 		<rawvoice:location>Petaluma, CA</rawvoice:location>
 		<itunes:type>episodic</itunes:type>
@@ -53,6 +53,246 @@
 		<rawvoice:subscribe feed="https://feeds.twit.tv/brickhouse_video_hd.xml" itunes="https://podcasts.apple.com/us/podcast/all-twit-tv-shows-video/id868397885" html="https://twit.tv/shows/all-twittv-shows"></rawvoice:subscribe>
 		<atom:link href="https://feeds.twit.tv/brickhouse_video_hd.xml" type="application/rss+xml" rel="self"/>
 		<item>
+			<title>Security Now 1069: You can't hide from LLMs</title>
+			<itunes:title>Security Now 1069: You can't hide from LLMs</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Tue, 10 Mar 2026 19:09:36 PDT</pubDate>
+			<link>https://twit.tv/shows/security-now/episodes/1069</link>
+			<comments>https://twit.tv/shows/security-now/episodes/1069</comments>
+			<category>Help &amp; How To</category>
+			<category>Technology</category>
+			<category>Security</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Was Your Smart TV a Stealth Proxy?</itunes:subtitle>
+			<itunes:keywords>Security Now, TWiT, steve gibson, Leo Laporte, mozilla, claude, OpenClaw, LLMs, AI security, Anthropic, Firefox vulnerabilities, zero-day vulnerabilities, code security, Ubuntu sudo, rcs encryption, TikTok encrypted messaging, Bright Data proxy</itunes:keywords>
+			<description><![CDATA[
+<p>Think your online alias keeps you safe? This episode reveals how advanced language models are making it trivial to de-anonymize users at scale, challenging everything we thought we knew about internet privacy.</p><ul> 
+<li>Anthropic &amp; Mozilla improve Firefox's security.</li> 
+<li>Apple &amp; Google begin testing cross-platform RCS encryption.</li> 
+<li>Ubuntu's SUDO starts echoing asterisks.</li> 
+<li>Inviting a web proxy into your home.</li> 
+<li>Apple devices cleared by Germany for NATO's use.</li> 
+<li>A serious remote takeover of OpenClaw.</li> 
+<li>TokTok won't encrypt messaging for visibility.</li> 
+<li>Microsoft bans the term "Microslop" on Discord.</li> 
+<li>Lot's of great listener feedback.</li> 
+<li>LLMs could make Orwell's 1984 seem optimistic.</li></ul> 
+<p>Show Notes - <a href="https://www.grc.com/sn/SN-1069-Notes.pdf">https://www.grc.com/sn/SN-1069-Notes.pdf</a></p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/steve-gibson">Steve Gibson</a> and <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p>Download or subscribe to <em>Security Now</em> at <a href="https://twit.tv/shows/security-now">https://twit.tv/shows/security-now</a>.</p> 
+<p>You can submit a question to <em>Security Now</em> at the <a href="https://www.grc.com/feedback.htm" target="_blank">GRC Feedback Page</a>.</p> 
+<p>For 16kbps versions, transcripts, and notes (including fixes), visit Steve's site: <a href="https://www.grc.com/securitynow.htm" target="_blank">grc.com</a>, also the home of the best disk maintenance and recovery utility ever written <a href="https://www.grc.com/sr/spinrite.htm" target="_blank">Spinrite 6</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+<li><a href="http://guardsquare.com" target="_blank" rel="sponsored">guardsquare.com</a></li>
+<li><a href="http://hoxhunt.com/securitynow" target="_blank" rel="sponsored">hoxhunt.com/securitynow</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Think your online alias keeps you safe? This episode reveals how advanced language models are making it trivial to de-anonymize users at scale, challenging everything we thought we knew about internet privacy.</p><ul> 
+<li>Anthropic &amp; Mozilla improve Firefox's security.</li> 
+<li>Apple &amp; Google begin testing cross-platform RCS encryption.</li> 
+<li>Ubuntu's SUDO starts echoing asterisks.</li> 
+<li>Inviting a web proxy into your home.</li> 
+<li>Apple devices cleared by Germany for NATO's use.</li> 
+<li>A serious remote takeover of OpenClaw.</li> 
+<li>TokTok won't encrypt messaging for visibility.</li> 
+<li>Microsoft bans the term "Microslop" on Discord.</li> 
+<li>Lot's of great listener feedback.</li> 
+<li>LLMs could make Orwell's 1984 seem optimistic.</li></ul> 
+<p>Show Notes - <a href="https://www.grc.com/sn/SN-1069-Notes.pdf">https://www.grc.com/sn/SN-1069-Notes.pdf</a></p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/steve-gibson">Steve Gibson</a> and <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p>Download or subscribe to <em>Security Now</em> at <a href="https://twit.tv/shows/security-now">https://twit.tv/shows/security-now</a>.</p> 
+<p>You can submit a question to <em>Security Now</em> at the <a href="https://www.grc.com/feedback.htm" target="_blank">GRC Feedback Page</a>.</p> 
+<p>For 16kbps versions, transcripts, and notes (including fixes), visit Steve's site: <a href="https://www.grc.com/securitynow.htm" target="_blank">grc.com</a>, also the home of the best disk maintenance and recovery utility ever written <a href="https://www.grc.com/sr/spinrite.htm" target="_blank">Spinrite 6</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+<li><a href="http://guardsquare.com" target="_blank" rel="sponsored">guardsquare.com</a></li>
+<li><a href="http://hoxhunt.com/securitynow" target="_blank" rel="sponsored">hoxhunt.com/securitynow</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Think your online alias keeps you safe? This episode reveals how advanced language models are making it trivial to de-anonymize users at scale, challenging everything we thought we knew about internet privacy.</p><ul> 
+<li>Anthropic &amp; Mozilla improve Firefox's security.</li> 
+<li>Apple &amp; Google begin testing cross-platform RCS encryption.</li> 
+<li>Ubuntu's SUDO starts echoing asterisks.</li> 
+<li>Inviting a web proxy into your home.</li> 
+<li>Apple devices cleared by Germany for NATO's use.</li> 
+<li>A serious remote takeover of OpenClaw.</li> 
+<li>TokTok won't encrypt messaging for visibility.</li> 
+<li>Microsoft bans the term "Microslop" on Discord.</li> 
+<li>Lot's of great listener feedback.</li> 
+<li>LLMs could make Orwell's 1984 seem optimistic.</li></ul> 
+<p>Show Notes - <a href="https://www.grc.com/sn/SN-1069-Notes.pdf">https://www.grc.com/sn/SN-1069-Notes.pdf</a></p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/steve-gibson">Steve Gibson</a> and <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a></p> 
+<p>Download or subscribe to <em>Security Now</em> at <a href="https://twit.tv/shows/security-now">https://twit.tv/shows/security-now</a>.</p> 
+<p>You can submit a question to <em>Security Now</em> at the <a href="https://www.grc.com/feedback.htm" target="_blank">GRC Feedback Page</a>.</p> 
+<p>For 16kbps versions, transcripts, and notes (including fixes), visit Steve's site: <a href="https://www.grc.com/securitynow.htm" target="_blank">grc.com</a>, also the home of the best disk maintenance and recovery utility ever written <a href="https://www.grc.com/sr/spinrite.htm" target="_blank">Spinrite 6</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+<li><a href="http://guardsquare.com" target="_blank" rel="sponsored">guardsquare.com</a></li>
+<li><a href="http://hoxhunt.com/securitynow" target="_blank" rel="sponsored">hoxhunt.com/securitynow</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860447/hero/SN1069_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/sn/sn1069/sn1069_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>0:00</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/sn/sn1069/sn1069_h264m_1920x1080.mp4" length="2777496836" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/sn/sn1069/sn1069_h264m_1920x1080.mp4" fileSize="2777496836" type="video/mp4" medium="video">
+				<media:title type="plain">Security Now 1069: You can't hide from LLMs</media:title>
+				<media:description type="plain">Was Your Smart TV a Stealth Proxy?</media:description>
+				<media:keywords>Security Now, TWiT, steve gibson, Leo Laporte, mozilla, claude, OpenClaw, LLMs, AI security, Anthropic, Firefox vulnerabilities, zero-day vulnerabilities, code security, Ubuntu sudo, rcs encryption, TikTok encrypted messaging, Bright Data proxy</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/03/860447/hero/SN1069_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Steve Gibson</media:credit>
+				<media:credit role="host">Leo Laporte</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/steve-gibson" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/34/pictures/Steve_v1.jpg">Steve Gibson</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+		</item>
+		<item>
+			<title>MacBreak Weekly 1015: Who Shot Apple Intelligence?</title>
+			<itunes:title>MacBreak Weekly 1015: Who Shot Apple Intelligence?</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Tue, 10 Mar 2026 17:44:30 PDT</pubDate>
+			<link>https://twit.tv/shows/macbreak-weekly/episodes/1015</link>
+			<comments>https://twit.tv/shows/macbreak-weekly/episodes/1015</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Apple</category>
+			<category>Mac</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>The MacBook Neo</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/macbreak-weekly-1015-transcript" type="text/html" />
+			<itunes:keywords>MacBreak Weekly, Leo Laporte, Jason Snell, Andy Ihnatko, Christina Warren, Apple, macbook, macbook neo, macbook neo colors, apple tiktok ads, tiktok, finder guy, apple leadership, apple corporate, iPhone, iphone fold, iphone fold design leak</itunes:keywords>
+			<description><![CDATA[
+<p>Apple unveiled the MacBook Neo, the company's foray into a low-cost laptop. The iPhone Fold's supposed design has leaked through 3D CAD rendering files. And a toolkit for hacking iPhones has leaked.</p><ul> 
+<li>18 years later, Apple ships a $599 computer.</li> 
+<li>Apple's TikTok ads for the MacBook Neo are the right kind of weird.</li> 
+<li>Apple creates adorable little Finder guy to promote its adorable little Mac.</li> 
+<li>The new Apple begins to emerge.</li> 
+<li>Apple 'Ultra' products expansion is up next after MacBook Neo launch.</li> 
+<li>iPhone Fold design leaks in purported 3D CAD rendering files.</li> 
+<li>Apple's 'HomePad' gets launch timing update via leaker.</li> 
+<li>Apple's 512GB Mac Studio vanishes, a quiet acknowledgment of the RAM shortage.</li> 
+<li>Apple Music to add Transparency Tags to distinguish AI music, says report.</li> 
+<li>Apple ran a test on the App Store to see if AI could improve search result rankings.</li> 
+<li>Apple geoblocking downloads of ByteDance-owned apps in the US.</li> 
+<li>A toolkit for hacking iPhones, possibly created for the U.S. Government, has leaked.</li> 
+<li>F1: The Stream - how the launch leveraged Apple's entire ecosystem.</li> 
+<li>'Apple' Review: Reinvention Incorporated.</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Christina's Pick: What's Your JND Game</li> 
+<li>Andy's Pick: <em>Kids, Wait Till You Hear This</em></li> 
+<li>Jason's Pick: Cloth Pro Max</li> 
+<li>Leo's Pick: Art Bits from HyperCard</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, <a href="https://twit.tv/people/jason-snell">Jason Snell</a>, and <a href="https://bsky.app/profile/filmgirl.bsky.social" target="_blank">Christina Warren</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://hipebl.ai" target="_blank" rel="sponsored">hipebl.ai</a></li>
+<li><a href="http://helixsleep.com/macbreak" target="_blank" rel="sponsored">helixsleep.com/macbreak</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Apple unveiled the MacBook Neo, the company's foray into a low-cost laptop. The iPhone Fold's supposed design has leaked through 3D CAD rendering files. And a toolkit for hacking iPhones has leaked.</p><ul> 
+<li>18 years later, Apple ships a $599 computer.</li> 
+<li>Apple's TikTok ads for the MacBook Neo are the right kind of weird.</li> 
+<li>Apple creates adorable little Finder guy to promote its adorable little Mac.</li> 
+<li>The new Apple begins to emerge.</li> 
+<li>Apple 'Ultra' products expansion is up next after MacBook Neo launch.</li> 
+<li>iPhone Fold design leaks in purported 3D CAD rendering files.</li> 
+<li>Apple's 'HomePad' gets launch timing update via leaker.</li> 
+<li>Apple's 512GB Mac Studio vanishes, a quiet acknowledgment of the RAM shortage.</li> 
+<li>Apple Music to add Transparency Tags to distinguish AI music, says report.</li> 
+<li>Apple ran a test on the App Store to see if AI could improve search result rankings.</li> 
+<li>Apple geoblocking downloads of ByteDance-owned apps in the US.</li> 
+<li>A toolkit for hacking iPhones, possibly created for the U.S. Government, has leaked.</li> 
+<li>F1: The Stream - how the launch leveraged Apple's entire ecosystem.</li> 
+<li>'Apple' Review: Reinvention Incorporated.</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Christina's Pick: What's Your JND Game</li> 
+<li>Andy's Pick: <em>Kids, Wait Till You Hear This</em></li> 
+<li>Jason's Pick: Cloth Pro Max</li> 
+<li>Leo's Pick: Art Bits from HyperCard</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, <a href="https://twit.tv/people/jason-snell">Jason Snell</a>, and <a href="https://bsky.app/profile/filmgirl.bsky.social" target="_blank">Christina Warren</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://hipebl.ai" target="_blank" rel="sponsored">hipebl.ai</a></li>
+<li><a href="http://helixsleep.com/macbreak" target="_blank" rel="sponsored">helixsleep.com/macbreak</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Apple unveiled the MacBook Neo, the company's foray into a low-cost laptop. The iPhone Fold's supposed design has leaked through 3D CAD rendering files. And a toolkit for hacking iPhones has leaked.</p><ul> 
+<li>18 years later, Apple ships a $599 computer.</li> 
+<li>Apple's TikTok ads for the MacBook Neo are the right kind of weird.</li> 
+<li>Apple creates adorable little Finder guy to promote its adorable little Mac.</li> 
+<li>The new Apple begins to emerge.</li> 
+<li>Apple 'Ultra' products expansion is up next after MacBook Neo launch.</li> 
+<li>iPhone Fold design leaks in purported 3D CAD rendering files.</li> 
+<li>Apple's 'HomePad' gets launch timing update via leaker.</li> 
+<li>Apple's 512GB Mac Studio vanishes, a quiet acknowledgment of the RAM shortage.</li> 
+<li>Apple Music to add Transparency Tags to distinguish AI music, says report.</li> 
+<li>Apple ran a test on the App Store to see if AI could improve search result rankings.</li> 
+<li>Apple geoblocking downloads of ByteDance-owned apps in the US.</li> 
+<li>A toolkit for hacking iPhones, possibly created for the U.S. Government, has leaked.</li> 
+<li>F1: The Stream - how the launch leveraged Apple's entire ecosystem.</li> 
+<li>'Apple' Review: Reinvention Incorporated.</li></ul> 
+<p>Picks of the Week</p><ul> 
+<li>Christina's Pick: What's Your JND Game</li> 
+<li>Andy's Pick: <em>Kids, Wait Till You Hear This</em></li> 
+<li>Jason's Pick: Cloth Pro Max</li> 
+<li>Leo's Pick: Art Bits from HyperCard</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/andy-ihnatko">Andy Ihnatko</a>, <a href="https://twit.tv/people/jason-snell">Jason Snell</a>, and <a href="https://bsky.app/profile/filmgirl.bsky.social" target="_blank">Christina Warren</a></p> 
+<p>Download or subscribe to <em>MacBreak Weekly</em> at <a href="https://twit.tv/shows/macbreak-weekly">https://twit.tv/shows/macbreak-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://hipebl.ai" target="_blank" rel="sponsored">hipebl.ai</a></li>
+<li><a href="http://helixsleep.com/macbreak" target="_blank" rel="sponsored">helixsleep.com/macbreak</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860441/hero/MBW1015_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1015/mbw1015_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:29:23</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1015/mbw1015_h264m_1920x1080.mp4" length="2630256173" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/mbw/mbw1015/mbw1015_h264m_1920x1080.mp4" fileSize="2630256173" type="video/mp4" medium="video">
+				<media:title type="plain">MacBreak Weekly 1015: Who Shot Apple Intelligence?</media:title>
+				<media:description type="plain">The MacBook Neo</media:description>
+				<media:keywords>MacBreak Weekly, Leo Laporte, Jason Snell, Andy Ihnatko, Christina Warren, Apple, macbook, macbook neo, macbook neo colors, apple tiktok ads, tiktok, finder guy, apple leadership, apple corporate, iPhone, iphone fold, iphone fold design leak</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/03/860441/hero/MBW1015_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Andy Ihnatko</media:credit>
+				<media:credit role="host">Jason Snell</media:credit>
+				<media:credit role="host">Christina Warren</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/andy-ihnatko" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/30/pictures/andyatmetopera.jpg">Andy Ihnatko</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/jason-snell" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/73/pictures/jason-snell.png">Jason Snell</podcast:person>
+				<podcast:person role="host" href="https://bsky.app/profile/filmgirl.bsky.social" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/50093/pictures/christina-warren.png">Christina Warren</podcast:person>
+		</item>
+		<item>
 			<title>This Week in Tech 1074: Chicken Mating Harnesses</title>
 			<itunes:title>This Week in Tech 1074: Chicken Mating Harnesses</itunes:title>
 			<itunes:episodeType>full</itunes:episodeType>
@@ -64,6 +304,7 @@
 			<category>Tech News</category>
 			<itunes:explicit>no</itunes:explicit>
 			<itunes:subtitle>Supreme Court Rules AI Art Not Copyrightable</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/week-tech-episode-1074-transcript" type="text/html" />
 			<itunes:keywords>Technology, ai ethics, Cory Doctorow, Joey de Villa, Anthropic, openAI, sam altman, department of defense, autonomous weapons, supply chain risk, AI surveillance, privacy, copyright AI art, Open Source Software, large language models, enshittification</itunes:keywords>
 			<description><![CDATA[
 <p>Between copyright-free AI art, government blacklists, and data brokers run amok, this episode spotlights the fierce new battles for privacy, agency, and control in our digital lives. Plus, hear Cory Doctorow break down why the AI gold rush may be headed for a colossal crash.</p><ul> 
@@ -4817,281 +5058,6 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 				<media:credit role="host">Mikah Sargent</media:credit>
 			</media:content>
 				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
-		</item>
-		<item>
-			<title>iOS Today 789: Our Favorite Safari Extensions</title>
-			<itunes:title>iOS Today 789: Our Favorite Safari Extensions</itunes:title>
-			<itunes:episodeType>full</itunes:episodeType>
-			<itunes:author>TWiT</itunes:author>
-			<pubDate>Thu, 12 Feb 2026 13:59:30 PST</pubDate>
-			<link>https://twit.tv/shows/ios-today/episodes/789</link>
-			<comments>https://twit.tv/shows/ios-today/episodes/789</comments>
-			<category>Reviews</category>
-			<category>Technology</category>
-			<category>iOS</category>
-			<itunes:explicit>no</itunes:explicit>
-			<itunes:subtitle>Maximize Your Browser Power!</itunes:subtitle>
-			<podcast:transcript url="http://twit.tv/posts/transcripts/ios-today-789-transcript" type="text/html" />
-			<itunes:keywords>iOS, safari extensions, iPadOS, watchOS, HomePodOS, ad blocker, Wipr2, OneBlocker, noir, Dark Mode, stop the madness, Keyword Search, amplosion, Achoo, christian selig, picture-in-picture, pipifier, privacy, app store, full-screen timer</itunes:keywords>
-			<description><![CDATA[
-<p>If you thought Safari extensions were just for desktop power users, this episode demonstrates the game-changing tools and side hustles available right on your iPhone!</p><ul> 
-<li>Managing Safari extensions on iOS: Settings, permissions, and cross-device syncing</li> 
-<li>Efficiently disabling and enabling Safari extensions using the webpage menu</li> 
-<li>Privacy concerns when installing Safari extensions and reviewing permissions</li> 
-<li>Favorite Safari extensions: Wipr 2 for ad blocking</li> 
-<li>Noir extension for customizable dark mode and theme creation in Safari</li> 
-<li>StopTheMadness Pro fixes annoying web behaviors and context menu issues</li> 
-<li>Keyword Search adds custom search shortcuts for Amazon, Apple Support, Google Drive</li> 
-<li>Amplosion redirects Google AMP pages to original sources; Achoo inspects page HTML</li> 
-<li>Pipifier makes web video picture-in-picture; reliability compared to other solutions</li> 
-<li>App Caps: Picks include Xteink X4 e-ink reader and Fullscreen Clock for timers</li></ul> 
-<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://dmoren.com/" target="_blank">Dan Moren</a></p> 
-<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
-<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
-<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
-<p><strong>Sponsor:</strong><ul>
-<li><a href="http://shopify.com/ios" target="_blank" rel="sponsored">shopify.com/ios</a></li>
-</ul></p>
-]]></description>
-			<itunes:summary><![CDATA[
-<p>If you thought Safari extensions were just for desktop power users, this episode demonstrates the game-changing tools and side hustles available right on your iPhone!</p><ul> 
-<li>Managing Safari extensions on iOS: Settings, permissions, and cross-device syncing</li> 
-<li>Efficiently disabling and enabling Safari extensions using the webpage menu</li> 
-<li>Privacy concerns when installing Safari extensions and reviewing permissions</li> 
-<li>Favorite Safari extensions: Wipr 2 for ad blocking</li> 
-<li>Noir extension for customizable dark mode and theme creation in Safari</li> 
-<li>StopTheMadness Pro fixes annoying web behaviors and context menu issues</li> 
-<li>Keyword Search adds custom search shortcuts for Amazon, Apple Support, Google Drive</li> 
-<li>Amplosion redirects Google AMP pages to original sources; Achoo inspects page HTML</li> 
-<li>Pipifier makes web video picture-in-picture; reliability compared to other solutions</li> 
-<li>App Caps: Picks include Xteink X4 e-ink reader and Fullscreen Clock for timers</li></ul> 
-<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://dmoren.com/" target="_blank">Dan Moren</a></p> 
-<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
-<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
-<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
-<p><strong>Sponsor:</strong><ul>
-<li><a href="http://shopify.com/ios" target="_blank" rel="sponsored">shopify.com/ios</a></li>
-</ul></p>
-]]></itunes:summary>
-			<content:encoded><![CDATA[
-<p>If you thought Safari extensions were just for desktop power users, this episode demonstrates the game-changing tools and side hustles available right on your iPhone!</p><ul> 
-<li>Managing Safari extensions on iOS: Settings, permissions, and cross-device syncing</li> 
-<li>Efficiently disabling and enabling Safari extensions using the webpage menu</li> 
-<li>Privacy concerns when installing Safari extensions and reviewing permissions</li> 
-<li>Favorite Safari extensions: Wipr 2 for ad blocking</li> 
-<li>Noir extension for customizable dark mode and theme creation in Safari</li> 
-<li>StopTheMadness Pro fixes annoying web behaviors and context menu issues</li> 
-<li>Keyword Search adds custom search shortcuts for Amazon, Apple Support, Google Drive</li> 
-<li>Amplosion redirects Google AMP pages to original sources; Achoo inspects page HTML</li> 
-<li>Pipifier makes web video picture-in-picture; reliability compared to other solutions</li> 
-<li>App Caps: Picks include Xteink X4 e-ink reader and Fullscreen Clock for timers</li></ul> 
-<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://dmoren.com/" target="_blank">Dan Moren</a></p> 
-<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
-<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
-<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
-<p><strong>Sponsor:</strong><ul>
-<li><a href="http://shopify.com/ios" target="_blank" rel="sponsored">shopify.com/ios</a></li>
-</ul></p>
-]]></content:encoded>
-			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860083/hero/IOS0789_thumbnail.jpg"/>
-			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0789/ipad0789_h264m_1920x1080.mp4</guid>
-			<rawvoice:isHd>yes</rawvoice:isHd>
-			<itunes:duration>45:33</itunes:duration>
-			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0789/ipad0789_h264m_1920x1080.mp4" length="802066507" type="video/mp4"/>
-			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0789/ipad0789_h264m_1920x1080.mp4" fileSize="802066507" type="video/mp4" medium="video">
-				<media:title type="plain">iOS Today 789: Our Favorite Safari Extensions</media:title>
-				<media:description type="plain">Maximize Your Browser Power!</media:description>
-				<media:keywords>iOS, safari extensions, iPadOS, watchOS, HomePodOS, ad blocker, Wipr2, OneBlocker, noir, Dark Mode, stop the madness, Keyword Search, amplosion, Achoo, christian selig, picture-in-picture, pipifier, privacy, app store, full-screen timer</media:keywords>
-				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860083/hero/IOS0789_thumbnail.jpg" width="400" height="225" />
-				<media:rating scheme="urn:simple">nonadult</media:rating>
-				<media:rating scheme="urn:v-chip">tv-g</media:rating>
-				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
-				<media:credit role="host">Mikah Sargent</media:credit>
-				<media:credit role="host">Dan Moren</media:credit>
-			</media:content>
-				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
-				<podcast:person role="host" href="https://dmoren.com/" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/713041/pictures/dan.jpg">Dan Moren</podcast:person>
-		</item>
-		<item>
-			<title>Intelligent Machines 857: Taskrabbit Arbitrage</title>
-			<itunes:title>Intelligent Machines 857: Taskrabbit Arbitrage</itunes:title>
-			<itunes:episodeType>full</itunes:episodeType>
-			<itunes:author>TWiT</itunes:author>
-			<pubDate>Wed, 11 Feb 2026 19:22:47 PST</pubDate>
-			<link>https://twit.tv/shows/intelligent-machines/episodes/857</link>
-			<comments>https://twit.tv/shows/intelligent-machines/episodes/857</comments>
-			<category>News</category>
-			<category>Technology</category>
-			<category>AI</category>
-			<category>Artificial Intelligence</category>
-			<itunes:explicit>no</itunes:explicit>
-			<itunes:subtitle>Disposable Code and Automation</itunes:subtitle>
-			<podcast:transcript url="http://twit.tv/posts/tech/claude-code-opus-46-next-big-shift-ai" type="text/html" />
-			<itunes:keywords>TWiT, Intelligent Machines, Leo Laporte, Jeff Jarvis, Paris Martineau, Claude Code, Opus 4.6, AI acceleration, white-collar job automation, TaskRabbit arbitrage, Anthropic, openAI, chatgpt, gemini, coding tools, large language models, AI benchmarks</itunes:keywords>
-			<description><![CDATA[
-<p>Leo Laporte and Paris Martineau go head-to-head over whether today's AI breakthroughs are truly unprecedented or history repeating itself. Hear what happens when the show's hosts use cutting-edge tools to challenge each other's optimism, skepticism, and predictions for the future of work.</p><ul> 
-<li>Something Big Is Happening</li> 
-<li>Building a C compiler with a team of parallel Claudes</li> 
-<li>Amazon's $8 billion Anthropic investment balloons to $61 billion</li> 
-<li>Google is going for the jugular — by doubling capex and outspending the rest of Big Tech</li> 
-<li>Google's Gemini app has surpassed 750M monthly active users</li> 
-<li>OpenAI's Meta makeover</li> 
-<li>ChatGPT's deep research tool adds a built-in document viewer so you can read its reports</li> 
-<li>Alexa+, Amazon's AI assistant, is now available to everyone in the U.S.</li> 
-<li>Amazon Plans To Use AI To Speed Up TV and Film Production</li> 
-<li>AI didn't kill customer support. It's rebuilding it</li> 
-<li>Worried about AI taking jobs? Ex-Microsoft exec tells parents what kind of education matters <br /> 
-most for their kids.</li> 
-<li>A new bill in New York would require disclaimers on AI-generated news content</li> 
-<li>AI Bots Are Now a Signifigant Source of Web Traffic</li> 
-<li>Crypto.com places $70M bet on AI.com domain ahead of Super Bowl</li> 
-<li>Frontier AI agents violate ethical constraints 30–50% of time, pressured by KPIs</li> 
-<li>How To Think About AI: Is It The Tool, Or Are You?</li> 
-<li>LEO! Reliability of LLMs as medical assistants for the general public: a randomized preregistered study</li> 
-<li>HBR: AI Doesn't Reduce Work—It Intensifies It</li> 
-<li>As AI enters the operating room, reports arise of botched surgeries and misidentified body parts</li> 
-<li>Waymo Exec Admits Remote Operators in Philippines Help Guide US Robotaxis</li> 
-<li>Medicare's new pilot program taps AI to review claims. Here's why it's risky</li> 
-<li>Section 230 Turns 30; Both Parties Want It Gone—For Contradictory Reasons</li> 
-<li>Meet Gizmo: A TikTok for interactive, vibe-coded mini apps</li> 
-<li>The Evolution of Bengt Betjänt</li> 
-<li>Uber Eats adds AI assistant to help with grocery shopping</li> 
-<li>Is having AI ghostwrite your Valentine's Day messages a good idea?</li> 
-<li>As Saudi Arabia's 100-Mile Skyscraper Crumbles, They're Replacing It With the Most Desperate Thing Imaginable</li> 
-<li>YouTube Argues It Isn't Social Media in Landmark Tech Addiction Trial</li> 
-<li>'Man down:' Watch Amazon delivery drone crash in North Texas</li> 
-<li>Understanding Neural Network, Visually</li> 
-<li>Leo's AI Journey</li> 
-<li>The TIMELINE</li> 
-<li>TWiT x 2 in Super Bowl commercials</li></ul> 
-<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a></p> 
-<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
-<p><strong>Sponsors:</strong><ul>
-<li><a href="http://preview.modulate.ai" target="_blank" rel="sponsored">preview.modulate.ai</a></li>
-<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
-<li><a href="http://spaceship.com/twit" target="_blank" rel="sponsored">spaceship.com/twit</a></li>
-</ul></p>
-]]></description>
-			<itunes:summary><![CDATA[
-<p>Leo Laporte and Paris Martineau go head-to-head over whether today's AI breakthroughs are truly unprecedented or history repeating itself. Hear what happens when the show's hosts use cutting-edge tools to challenge each other's optimism, skepticism, and predictions for the future of work.</p><ul> 
-<li>Something Big Is Happening</li> 
-<li>Building a C compiler with a team of parallel Claudes</li> 
-<li>Amazon's $8 billion Anthropic investment balloons to $61 billion</li> 
-<li>Google is going for the jugular — by doubling capex and outspending the rest of Big Tech</li> 
-<li>Google's Gemini app has surpassed 750M monthly active users</li> 
-<li>OpenAI's Meta makeover</li> 
-<li>ChatGPT's deep research tool adds a built-in document viewer so you can read its reports</li> 
-<li>Alexa+, Amazon's AI assistant, is now available to everyone in the U.S.</li> 
-<li>Amazon Plans To Use AI To Speed Up TV and Film Production</li> 
-<li>AI didn't kill customer support. It's rebuilding it</li> 
-<li>Worried about AI taking jobs? Ex-Microsoft exec tells parents what kind of education matters <br /> 
-most for their kids.</li> 
-<li>A new bill in New York would require disclaimers on AI-generated news content</li> 
-<li>AI Bots Are Now a Signifigant Source of Web Traffic</li> 
-<li>Crypto.com places $70M bet on AI.com domain ahead of Super Bowl</li> 
-<li>Frontier AI agents violate ethical constraints 30–50% of time, pressured by KPIs</li> 
-<li>How To Think About AI: Is It The Tool, Or Are You?</li> 
-<li>LEO! Reliability of LLMs as medical assistants for the general public: a randomized preregistered study</li> 
-<li>HBR: AI Doesn't Reduce Work—It Intensifies It</li> 
-<li>As AI enters the operating room, reports arise of botched surgeries and misidentified body parts</li> 
-<li>Waymo Exec Admits Remote Operators in Philippines Help Guide US Robotaxis</li> 
-<li>Medicare's new pilot program taps AI to review claims. Here's why it's risky</li> 
-<li>Section 230 Turns 30; Both Parties Want It Gone—For Contradictory Reasons</li> 
-<li>Meet Gizmo: A TikTok for interactive, vibe-coded mini apps</li> 
-<li>The Evolution of Bengt Betjänt</li> 
-<li>Uber Eats adds AI assistant to help with grocery shopping</li> 
-<li>Is having AI ghostwrite your Valentine's Day messages a good idea?</li> 
-<li>As Saudi Arabia's 100-Mile Skyscraper Crumbles, They're Replacing It With the Most Desperate Thing Imaginable</li> 
-<li>YouTube Argues It Isn't Social Media in Landmark Tech Addiction Trial</li> 
-<li>'Man down:' Watch Amazon delivery drone crash in North Texas</li> 
-<li>Understanding Neural Network, Visually</li> 
-<li>Leo's AI Journey</li> 
-<li>The TIMELINE</li> 
-<li>TWiT x 2 in Super Bowl commercials</li></ul> 
-<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a></p> 
-<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
-<p><strong>Sponsors:</strong><ul>
-<li><a href="http://preview.modulate.ai" target="_blank" rel="sponsored">preview.modulate.ai</a></li>
-<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
-<li><a href="http://spaceship.com/twit" target="_blank" rel="sponsored">spaceship.com/twit</a></li>
-</ul></p>
-]]></itunes:summary>
-			<content:encoded><![CDATA[
-<p>Leo Laporte and Paris Martineau go head-to-head over whether today's AI breakthroughs are truly unprecedented or history repeating itself. Hear what happens when the show's hosts use cutting-edge tools to challenge each other's optimism, skepticism, and predictions for the future of work.</p><ul> 
-<li>Something Big Is Happening</li> 
-<li>Building a C compiler with a team of parallel Claudes</li> 
-<li>Amazon's $8 billion Anthropic investment balloons to $61 billion</li> 
-<li>Google is going for the jugular — by doubling capex and outspending the rest of Big Tech</li> 
-<li>Google's Gemini app has surpassed 750M monthly active users</li> 
-<li>OpenAI's Meta makeover</li> 
-<li>ChatGPT's deep research tool adds a built-in document viewer so you can read its reports</li> 
-<li>Alexa+, Amazon's AI assistant, is now available to everyone in the U.S.</li> 
-<li>Amazon Plans To Use AI To Speed Up TV and Film Production</li> 
-<li>AI didn't kill customer support. It's rebuilding it</li> 
-<li>Worried about AI taking jobs? Ex-Microsoft exec tells parents what kind of education matters <br /> 
-most for their kids.</li> 
-<li>A new bill in New York would require disclaimers on AI-generated news content</li> 
-<li>AI Bots Are Now a Signifigant Source of Web Traffic</li> 
-<li>Crypto.com places $70M bet on AI.com domain ahead of Super Bowl</li> 
-<li>Frontier AI agents violate ethical constraints 30–50% of time, pressured by KPIs</li> 
-<li>How To Think About AI: Is It The Tool, Or Are You?</li> 
-<li>LEO! Reliability of LLMs as medical assistants for the general public: a randomized preregistered study</li> 
-<li>HBR: AI Doesn't Reduce Work—It Intensifies It</li> 
-<li>As AI enters the operating room, reports arise of botched surgeries and misidentified body parts</li> 
-<li>Waymo Exec Admits Remote Operators in Philippines Help Guide US Robotaxis</li> 
-<li>Medicare's new pilot program taps AI to review claims. Here's why it's risky</li> 
-<li>Section 230 Turns 30; Both Parties Want It Gone—For Contradictory Reasons</li> 
-<li>Meet Gizmo: A TikTok for interactive, vibe-coded mini apps</li> 
-<li>The Evolution of Bengt Betjänt</li> 
-<li>Uber Eats adds AI assistant to help with grocery shopping</li> 
-<li>Is having AI ghostwrite your Valentine's Day messages a good idea?</li> 
-<li>As Saudi Arabia's 100-Mile Skyscraper Crumbles, They're Replacing It With the Most Desperate Thing Imaginable</li> 
-<li>YouTube Argues It Isn't Social Media in Landmark Tech Addiction Trial</li> 
-<li>'Man down:' Watch Amazon delivery drone crash in North Texas</li> 
-<li>Understanding Neural Network, Visually</li> 
-<li>Leo's AI Journey</li> 
-<li>The TIMELINE</li> 
-<li>TWiT x 2 in Super Bowl commercials</li></ul> 
-<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/jeff-jarvis">Jeff Jarvis</a>, and <a href="https://twit.tv/people/paris-martineau">Paris Martineau</a></p> 
-<p>Download or subscribe to <em>Intelligent Machines</em> at <a href="https://twit.tv/shows/intelligent-machines">https://twit.tv/shows/intelligent-machines</a>.</p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
-<p><strong>Sponsors:</strong><ul>
-<li><a href="http://preview.modulate.ai" target="_blank" rel="sponsored">preview.modulate.ai</a></li>
-<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
-<li><a href="http://spaceship.com/twit" target="_blank" rel="sponsored">spaceship.com/twit</a></li>
-</ul></p>
-]]></content:encoded>
-			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860101/hero/IM0857_Thumbnail.jpg"/>
-			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0857/twig0857_h264m_1920x1080.mp4</guid>
-			<rawvoice:isHd>yes</rawvoice:isHd>
-			<itunes:duration>2:46:16</itunes:duration>
-			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0857/twig0857_h264m_1920x1080.mp4" length="2823409884" type="video/mp4"/>
-			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0857/twig0857_h264m_1920x1080.mp4" fileSize="2823409884" type="video/mp4" medium="video">
-				<media:title type="plain">Intelligent Machines 857: Taskrabbit Arbitrage</media:title>
-				<media:description type="plain">Disposable Code and Automation</media:description>
-				<media:keywords>TWiT, Intelligent Machines, Leo Laporte, Jeff Jarvis, Paris Martineau, Claude Code, Opus 4.6, AI acceleration, white-collar job automation, TaskRabbit arbitrage, Anthropic, openAI, chatgpt, gemini, coding tools, large language models, AI benchmarks</media:keywords>
-				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860101/hero/IM0857_Thumbnail.jpg" width="400" height="225" />
-				<media:rating scheme="urn:simple">nonadult</media:rating>
-				<media:rating scheme="urn:v-chip">tv-g</media:rating>
-				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
-				<media:credit role="host">Leo Laporte</media:credit>
-				<media:credit role="host">Jeff Jarvis</media:credit>
-				<media:credit role="host">Paris Martineau</media:credit>
-			</media:content>
-				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
-				<podcast:person role="host" href="https://twit.tv/people/jeff-jarvis" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/29/pictures/jeff-jarvis_0.png">Jeff Jarvis</podcast:person>
-				<podcast:person role="host" href="https://twit.tv/people/paris-martineau" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/663891/pictures/profpic-keyb.jpg">Paris Martineau</podcast:person>
 		</item>
 	</channel>
 </rss>
