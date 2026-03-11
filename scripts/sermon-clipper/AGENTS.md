@@ -37,7 +37,9 @@ Use `scripts/markdown-video-editor/` for feature-specific edit/manipulation plan
 - `scripts/answer-engine/.venv/`
   Used by `search_clips.py`, `write_script.py`, and the shorts search/write tools.
 - `ffmpeg` / `ffprobe`
-  Required for render, download, concat, and media probing.
+  Required for render, download, clip prep, silence trimming, and media probing.
+- `node_modules/remotion` and `@remotion/cli`
+  Required for the short-form final composition pass.
 - `site/assets/transcripts/`
   Used for clipped subtitle generation when transcripts exist locally.
 - `cache/<env>/feeds/`
@@ -126,9 +128,10 @@ Clip-specific fields:
 
 Quality rules:
 
-- do not accept single-clip shorts
+- do not accept under-filled shorts unless the user explicitly asks for that tradeoff
 - prefer renderable video sources with local transcripts
-- context text should explain the clip, not restate it
+- context text should label the idea, not restate the quote
+- default short target is 7-10 short thought-bites, not 2-4 long clips
 
 ## Edit/manipulation features
 

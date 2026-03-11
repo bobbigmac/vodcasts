@@ -1,4 +1,4 @@
-"""Search for 10-25 second clips suitable for vertical shorts. Output JSON."""
+"""Search for short, snappy sermon thought-bites suitable for vertical shorts."""
 from __future__ import annotations
 
 import argparse
@@ -69,14 +69,32 @@ def _read_cues(transcript_path: Path) -> list[dict]:
 
 def _snippet_score(theme_terms: set[str], text: str, dur: float, base_score: float) -> float:
     lowered = (text or "").lower()
+    words = re.findall(r"[a-z0-9']+", lowered)
+    word_count = len(words)
+    sentence_count = max(1, len([part for part in re.split(r"(?<=[.!?])\s+", lowered) if part.strip()]))
     term_hits = sum(1 for term in theme_terms if term in lowered)
-    duration_center = 5.5
-    duration_bonus = max(0.0, 2.0 - abs(dur - duration_center) * 0.35)
-    punctuation_bonus = 0.8 if lowered.rstrip().endswith(("?", "!", ".")) else 0.0
+    duration_center = 4.2
+    duration_bonus = max(0.0, 2.4 - abs(dur - duration_center) * 0.55)
+    punctuation_bonus = 1.0 if sentence_count == 1 and lowered.rstrip().endswith(("?", "!", ".")) else 0.0
     filler_penalty = sum(0.5 for filler in _FILLER_PATTERNS if filler in lowered)
+    sentence_bonus = 2.2 if sentence_count == 1 else max(-2.0, 0.5 - (sentence_count - 1) * 1.2)
+    brevity_bonus = 1.8 if 6 <= word_count <= 18 else (0.6 if word_count <= 22 else -1.0)
+    clause_penalty = max(0, lowered.count(",") - 1) * 0.4 + lowered.count(";") * 0.6 + lowered.count(":") * 0.4
     text_len = len(lowered)
-    length_bonus = 1.0 if 35 <= text_len <= 130 else 0.0
-    return base_score * 0.2 + term_hits * 2.5 + duration_bonus + punctuation_bonus + length_bonus - filler_penalty
+    length_bonus = 0.9 if 25 <= text_len <= 110 else (-0.6 if text_len > 145 else 0.0)
+    lead_bonus = 0.8 if lowered.startswith(("god ", "you ", "when ", "if ", "stop ", "start ", "dont ", "don't ")) else 0.0
+    return (
+        base_score * 0.15
+        + term_hits * 2.8
+        + duration_bonus
+        + punctuation_bonus
+        + sentence_bonus
+        + brevity_bonus
+        + length_bonus
+        + lead_bonus
+        - filler_penalty
+        - clause_penalty
+    )
 
 
 def _window_to_snippets(
@@ -118,11 +136,13 @@ def _window_to_snippets(
         bucket_words = 0
 
     for cue in overlapping:
+        if bucket and cue["start"] - bucket[-1]["end"] > 0.85:
+            flush()
         bucket.append(cue)
         bucket_words += len(re.findall(r"[a-z0-9']+", cue["text"].lower()))
         bucket_dur = bucket[-1]["end"] - bucket[0]["start"]
-        end_punct = cue["text"].rstrip().endswith((".", "!", "?"))
-        if bucket_dur >= max_duration or bucket_words >= 20 or (end_punct and bucket_dur >= min_duration):
+        end_punct = bool(re.search(r"[.!?][\"']?$", cue["text"].strip()))
+        if bucket_dur >= max_duration or bucket_words >= 18 or (end_punct and bucket_dur >= min_duration) or (bucket_dur >= min_duration and bucket_words >= 14):
             flush()
 
     flush()
@@ -130,21 +150,21 @@ def _window_to_snippets(
 
 
 def _parse_args() -> argparse.Namespace:
-    p = argparse.ArgumentParser(description="Search for short clips/snippets for vertical shorts.")
+    p = argparse.ArgumentParser(description="Search for short sermon thought-bites for vertical shorts.")
     p.add_argument("--theme", required=True, help="Search query (e.g. forgiveness, prayer).")
     p.add_argument("--env", default="", help="Cache env (default: from .vodcasts-env).")
     p.add_argument("--cache", default="", help="Cache dir override.")
-    p.add_argument("--limit", type=int, default=8, help="Max clips (default: 8).")
-    p.add_argument("--min-clips", type=int, default=6, help="Minimum clips required (default: 6).")
-    p.add_argument("--candidates", type=int, default=400, help="FTS candidates for rerank (default: 400).")
+    p.add_argument("--limit", type=int, default=9, help="Max clips (default: 9).")
+    p.add_argument("--min-clips", type=int, default=7, help="Minimum clips required (default: 7).")
+    p.add_argument("--candidates", type=int, default=450, help="FTS candidates for rerank (default: 450).")
     p.add_argument("--include-noncontent", action="store_true", help="Allow intro/ad/outro segments.")
     p.add_argument("--output", "-o", default="", help="Write JSON to file (default: stdout).")
     p.add_argument("--exclude-used", default="", help="Path to used-clips.json to exclude.")
-    p.add_argument("--min-duration", type=float, default=2.5, help="Minimum snippet seconds (default: 2.5).")
-    p.add_argument("--max-duration", type=float, default=8.5, help="Max snippet seconds (default: 8.5).")
-    p.add_argument("--max-total-duration", type=float, default=52.0, help="Max total seconds across all snippets (default: 52).")
+    p.add_argument("--min-duration", type=float, default=2.0, help="Minimum snippet seconds (default: 2.0).")
+    p.add_argument("--max-duration", type=float, default=6.5, help="Max snippet seconds (default: 6.5).")
+    p.add_argument("--max-total-duration", type=float, default=58.0, help="Max total seconds across all snippets (default: 58).")
     p.add_argument("--feeds", default="", help="Comma-separated feed slugs to restrict (e.g. church-of-the-highlands-weekend-video).")
-    p.add_argument("--max-per-feed", type=int, default=2, help="Maximum snippets per feed (default: 2).")
+    p.add_argument("--max-per-feed", type=int, default=3, help="Maximum snippets per feed (default: 3).")
     p.add_argument("--max-per-episode", type=int, default=2, help="Maximum snippets per episode (default: 2).")
     p.add_argument("--allow-audio", action="store_true", help="Allow audio-only enclosures in search results.")
     p.add_argument("--allow-missing-transcript", action="store_true", help="Allow clips without local transcript files.")

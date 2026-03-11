@@ -4,10 +4,10 @@ This folder produces vertical sermon shorts from the same church transcript inde
 
 ## Current contract
 
-- `search_shorts.py` is tuned for 10-18 second clips, 2-4 clips total, one clip per feed, and under ~55 seconds total.
-- Search now defaults to clips that are actually renderable: video enclosure present and transcript present.
-- `write_short_script.py` produces a usable draft with intro, clip context, and outro.
-- `render_short.py` renders a vertical split-screen short with context panel, subtitles, preserved audio, and shared source caching.
+- `search_shorts.py` is tuned for 2-6.5 second thought-bites, 7-9 clips total, and under ~58 seconds total.
+- Search defaults to clips that are actually renderable: video enclosure present and transcript present.
+- `write_short_script.py` produces a usable draft with a concise hook, short context labels, and outro.
+- `render_short.py` uses ffmpeg to prep trimmed clips/captions, then Remotion composes the final vertical short.
 - `cleanup_outputs.py` from the parent folder cleans old `work*` directories, concat files, pycache, and internal scratch.
 
 ## Script contract
@@ -17,7 +17,8 @@ This folder produces vertical sermon shorts from the same church transcript inde
 
 ## metadata
 theme: grace
-clips: 3
+format: thought-bites
+clips: 8
 
 ## intro
 One short hook sentence.
@@ -30,14 +31,14 @@ end_sec: ...
 quote: "..."
 episode_title: ...
 feed_title: ...
-context: Why the clip matters.
+context: Short label for why the clip lands.
 decorators: Optional keywords for the panel.
 
 ## outro
 One short closing line.
 ```
 
-Single-clip shorts are never acceptable.
+Under-filled shorts are not acceptable.
 
 ## Workflow
 
@@ -55,6 +56,6 @@ short.ps1 clean --path out/shorts
 
 ## Quality bar
 
-- Keep the clip count at 2 or more.
+- Keep the clip count in the 7-10 range unless the user explicitly asks otherwise.
 - Do not rely on sources that will fail render later.
-- Context text should explain the clip, not just repeat it.
+- Context text should label the idea, not restate the quote.

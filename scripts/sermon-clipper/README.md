@@ -13,7 +13,7 @@ This folder is where you come to make videos from transcript-indexed source mate
 
 - `search_clips.py` / `write_script.py`: find long-form source clips from the answer-engine index and draft a long-form render sheet
 - `render_video.py` / `make_title_cards.py`: render long-form videos from that sheet
-- `shorts-experiment/`: short-form search, draft, and render flow for vertical outputs
+- `shorts-experiment/`: short-form search, draft, and Remotion render flow for vertical outputs
 - `cleanup_outputs.py`: remove scratch state and obvious temp leftovers without touching deliberate outputs or the shared source cache
 - `spacetime-compression/`: compatibility entrypoints for the markdown-video-editor feature set; the canonical home is `scripts/markdown-video-editor/`
 
@@ -47,7 +47,7 @@ Short-form:
 ```bash
 python scripts/sermon-clipper/shorts-experiment/search_shorts.py --theme "forgiveness" --output out/shorts/clips.json
 python scripts/sermon-clipper/shorts-experiment/write_short_script.py --theme "forgiveness" --clips out/shorts/clips.json --output out/shorts/video.md
-python scripts/sermon-clipper/shorts-experiment/render_short.py --script out/shorts/video.md --output out/shorts/video.mp4
+python scripts/sermon-clipper/shorts-experiment/render_short.py --script out/shorts/video.md --output out/shorts/video.mp4 --trim-silence
 ```
 
 Edit/manipulation feature tooling:
@@ -80,4 +80,4 @@ Safe to clean and regenerate:
 
 ## Goal
 
-The intended operator experience is: ask for a long or short video on a topic/question, let the LLM assemble the right sources and markdown control sheet, render from that source of truth, inspect the result, then rerender or clean without losing the expensive cached source material.
+The intended operator experience is: ask for a long or short video on a topic/question, let the LLM assemble the right sources and markdown control sheet, render from that source of truth, inspect the result, then rerender or clean without losing the expensive cached source material. For shorts, ffmpeg now handles source prep while Remotion handles the final look and sequencing.
