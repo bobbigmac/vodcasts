@@ -15,7 +15,7 @@ xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
 	<atom:link href="https://nutritionfacts.org/videos/feed/podcast/" rel="self" type="application/rss+xml" />
 	<link>https://nutritionfacts.org/videos/</link>
 	<description>Michael Greger, M.D. FACLM, founder of NutritionFacts.org and New York Times best-selling author of How Not to Die, How Not to Diet, and the just-released How Not to Age, brings you the latest in evidence-based nutrition research, delivered in easy to understand video segments. NutritionFacts.org is a non-profit and non-commercial public health organization, and more than 2,000 videos on virtually every aspect of healthy eating are available on our website. New videos and blogs are uploaded every day–always without any sponsors, ads, brand partnerships, or paid subscriptions.</description>
-	<lastBuildDate>Wed, 11 Mar 2026 05:31:24 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 11 Mar 2026 12:04:46 +0000</lastBuildDate>
 	<language>en</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -59,6 +59,22 @@ NutritionFacts.org is a non-profit and non-commercial public health organization
 	<rawvoice:frequency>Tri-Weekly</rawvoice:frequency>
 	<rawvoice:donate href="https://nutritionfacts.org/donate/">Donate to NutritionFacts.org</rawvoice:donate>
 	<rawvoice:subscribe feed="https://nutritionfacts.org/videos/feed/podcast/" itunes="https://itunes.apple.com/us/podcast/nutritionfacts-org-video-podcast/id1210294497"></rawvoice:subscribe>
+	<item>
+		<title>Are the Lower Iron Stores in Vegetarians a Risk or a Benefit?</title>
+		<link>https://nutritionfacts.org/video/are-the-lower-iron-stores-in-vegetarians-a-risk-or-a-benefit/</link>
+		<pubDate>Wed, 11 Mar 2026 11:50:27 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=118327</guid>
+		<description>Having high iron stores can increase cancer risk such that those randomized to donate blood experience a dramatic reduction in cancer death rates.</description>
+		<content:encoded><![CDATA[Having high iron stores can increase cancer risk such that those randomized to donate blood experience a dramatic reduction in cancer death rates.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/02/72-08-V02-YouTube-with-live-intro.mp4" length="294311492" type="video/mp4" />
+		<itunes:subtitle>Having high iron stores can increase cancer risk such that those randomized to donate blood experience a dramatic reduction in cancer death rates.</itunes:subtitle>
+		<itunes:summary><![CDATA[Having high iron stores can increase cancer risk such that those randomized to donate blood experience a dramatic reduction in cancer death rates.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>5:54</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=118327-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
 	<item>
 		<title>The Best Milk Alternative: Oat vs. Soy Milk</title>
 		<link>https://nutritionfacts.org/video/the-best-milk-alternative-oat-vs-soy-milk/</link>
@@ -1643,22 +1659,6 @@ NutritionFacts.org is a non-profit and non-commercial public health organization
 		<itunes:explicit>clean</itunes:explicit>
 		<itunes:duration>2:44</itunes:duration>
 		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=114830-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
-		</item>
-	<item>
-		<title>Are the IQs of Vegetarian Children Higher?</title>
-		<link>https://nutritionfacts.org/video/are-the-iqs-of-vegetarian-children-higher/</link>
-		<pubDate>Mon, 21 Jul 2025 11:50:15 +0000</pubDate>
-		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=114821</guid>
-		<description>Are the higher IQs found in vegetarian children the result of confounding factors or reverse causation?</description>
-		<content:encoded><![CDATA[Are the higher IQs found in vegetarian children the result of confounding factors or reverse causation?]]></content:encoded>
-		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/06/69-25-Do-Vegetarian-Children-Have-Higher-IQs_.mp4" length="153242729" type="video/mp4" />
-		<itunes:subtitle>Are the higher IQs found in vegetarian children the result of confounding factors or reverse causation?</itunes:subtitle>
-		<itunes:summary><![CDATA[Are the higher IQs found in vegetarian children the result of confounding factors or reverse causation?]]></itunes:summary>
-		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
-		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
-		<itunes:explicit>clean</itunes:explicit>
-		<itunes:duration>2:32</itunes:duration>
-		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=114821-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
 		</item>
 </channel>
 </rss>
