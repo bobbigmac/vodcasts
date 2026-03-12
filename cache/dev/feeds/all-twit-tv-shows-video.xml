@@ -14,8 +14,8 @@
 		<ttl>40</ttl>
 		<sy:updatePeriod>hourly</sy:updatePeriod>
 		<sy:updateFrequency>1</sy:updateFrequency>
-		<lastBuildDate>Wed, 11 Mar 2026 14:30:02 PDT</lastBuildDate>
-		<pubDate>Wed, 11 Mar 2026 14:30:02 PDT</pubDate>
+		<lastBuildDate>Wed, 11 Mar 2026 18:16:56 PDT</lastBuildDate>
+		<pubDate>Wed, 11 Mar 2026 18:16:56 PDT</pubDate>
 		<rawvoice:frequency>hourly</rawvoice:frequency>
 		<rawvoice:location>Petaluma, CA</rawvoice:location>
 		<itunes:type>episodic</itunes:type>
@@ -52,6 +52,148 @@
 		<itunes:new-feed-url>https://feeds.twit.tv/brickhouse_video_hd.xml</itunes:new-feed-url>
 		<rawvoice:subscribe feed="https://feeds.twit.tv/brickhouse_video_hd.xml" itunes="https://podcasts.apple.com/us/podcast/all-twit-tv-shows-video/id868397885" html="https://twit.tv/shows/all-twittv-shows"></rawvoice:subscribe>
 		<atom:link href="https://feeds.twit.tv/brickhouse_video_hd.xml" type="application/rss+xml" rel="self"/>
+		<item>
+			<title>Windows Weekly 974: DIY Crocs</title>
+			<itunes:title>Windows Weekly 974: DIY Crocs</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Wed, 11 Mar 2026 11:58:47 PDT</pubDate>
+			<link>https://twit.tv/shows/windows-weekly/episodes/974</link>
+			<comments>https://twit.tv/shows/windows-weekly/episodes/974</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Project Helix Details From GDC 2026</itunes:subtitle>
+			<itunes:keywords>Microsoft, Windows, xbox, windows 11, patch tuesday, administrative protection, windows insider, ai development, copilot, gemini, Anthropic Claude, google workspace, file explorer, Visual Studio Code, .NET 11, gaming, Project Helix, amd CPU</itunes:keywords>
+			<description><![CDATA[
+<p>From bug-busting AI that's transforming Firefox to personal coding breakthroughs, the team breaks down how practical applications are cutting through skepticism and reshaping developer workflows. Plus, hear why lighter Patch Tuesdays are refreshing from time to time!</p> 
+<p>Windows 11</p><ul> 
+<li>Patch Tuesday's familiar list of updates: Network speed test, Camera tilt and pan controls, sysmon, RSAT improvements, Quick Machine Recovery improvements, WEBP support for desktop wallpaper, Emoji 16.0, etc.</li> 
+<li>It's been a light year so far for Patch Tuesday features - that's a good thing</li> 
+<li>New builds for Canary, Dev, and Beta late last week. Canary is nothing, Dev/Beta get Administrator Protection, Drag Tray refinements, File Explorer improvements, and fixes</li> 
+<li>Android 16 QPR3 brings Desktop Mode to Android devices - and a hands-on with Pixel phones and tablets shows the way forward for Android-based laptops later this year</li> 
+<li>Intel has new gaming processors for creators and gamers and they look excellent and are inexpensive</li></ul> 
+<p>AI and dev</p><ul> 
+<li>Copilot Cowork is literally Claude Cowork in Microsoft 365 - "Wave 3" for Microsoft 365 Copilot begins with a lot of agentic features, in private preview at first</li> 
+<li>Google Docs, Sheets, Slides, and Drive get big Gemini updates for consumers and Workspace customers</li> 
+<li>Mozilla partners with Anthropic to use AI to find bugs, and it's paying off nicely</li> 
+<li>Visual Studio Code moves to a weekly update schedule </li> 
+<li>The .NET 11 Preview 2 is here</li></ul> 
+<p>Xbox and gaming</p><ul> 
+<li>Microsoft starts talking up next Xbox console! It's called Project Helix and, yes, it will run Windows games</li> 
+<li>New Xbox Mode is on the way</li> 
+<li>Project Helix dev kits to game makers in 2027</li> 
+<li>Satya Nadella explains why he/Microsoft are "long" on gaming</li> 
+<li>Gaming is a core identity for Microsoft alongside platforms, developers, and knowledge workers</li></ul> 
+<p>Tips and picks</p><ul> 
+<li>Tip of the week: Nostalgia with a purpose</li> 
+<li>App pick of the week: Stardock Clairvoyance</li> 
+<li>RunAs Radio this week: SQL Server in 2026 with Bob Ward</li> 
+<li>Brown liquor pick of the week: Canadian Centennial Rye Whisky</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://helixsleep.com/windows" target="_blank" rel="sponsored">helixsleep.com/windows</a></li>
+<li><a href="https://cachefly.com/twit" target="_blank" rel="sponsored">cachefly.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>From bug-busting AI that's transforming Firefox to personal coding breakthroughs, the team breaks down how practical applications are cutting through skepticism and reshaping developer workflows. Plus, hear why lighter Patch Tuesdays are refreshing from time to time!</p> 
+<p>Windows 11</p><ul> 
+<li>Patch Tuesday's familiar list of updates: Network speed test, Camera tilt and pan controls, sysmon, RSAT improvements, Quick Machine Recovery improvements, WEBP support for desktop wallpaper, Emoji 16.0, etc.</li> 
+<li>It's been a light year so far for Patch Tuesday features - that's a good thing</li> 
+<li>New builds for Canary, Dev, and Beta late last week. Canary is nothing, Dev/Beta get Administrator Protection, Drag Tray refinements, File Explorer improvements, and fixes</li> 
+<li>Android 16 QPR3 brings Desktop Mode to Android devices - and a hands-on with Pixel phones and tablets shows the way forward for Android-based laptops later this year</li> 
+<li>Intel has new gaming processors for creators and gamers and they look excellent and are inexpensive</li></ul> 
+<p>AI and dev</p><ul> 
+<li>Copilot Cowork is literally Claude Cowork in Microsoft 365 - "Wave 3" for Microsoft 365 Copilot begins with a lot of agentic features, in private preview at first</li> 
+<li>Google Docs, Sheets, Slides, and Drive get big Gemini updates for consumers and Workspace customers</li> 
+<li>Mozilla partners with Anthropic to use AI to find bugs, and it's paying off nicely</li> 
+<li>Visual Studio Code moves to a weekly update schedule </li> 
+<li>The .NET 11 Preview 2 is here</li></ul> 
+<p>Xbox and gaming</p><ul> 
+<li>Microsoft starts talking up next Xbox console! It's called Project Helix and, yes, it will run Windows games</li> 
+<li>New Xbox Mode is on the way</li> 
+<li>Project Helix dev kits to game makers in 2027</li> 
+<li>Satya Nadella explains why he/Microsoft are "long" on gaming</li> 
+<li>Gaming is a core identity for Microsoft alongside platforms, developers, and knowledge workers</li></ul> 
+<p>Tips and picks</p><ul> 
+<li>Tip of the week: Nostalgia with a purpose</li> 
+<li>App pick of the week: Stardock Clairvoyance</li> 
+<li>RunAs Radio this week: SQL Server in 2026 with Bob Ward</li> 
+<li>Brown liquor pick of the week: Canadian Centennial Rye Whisky</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://helixsleep.com/windows" target="_blank" rel="sponsored">helixsleep.com/windows</a></li>
+<li><a href="https://cachefly.com/twit" target="_blank" rel="sponsored">cachefly.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>From bug-busting AI that's transforming Firefox to personal coding breakthroughs, the team breaks down how practical applications are cutting through skepticism and reshaping developer workflows. Plus, hear why lighter Patch Tuesdays are refreshing from time to time!</p> 
+<p>Windows 11</p><ul> 
+<li>Patch Tuesday's familiar list of updates: Network speed test, Camera tilt and pan controls, sysmon, RSAT improvements, Quick Machine Recovery improvements, WEBP support for desktop wallpaper, Emoji 16.0, etc.</li> 
+<li>It's been a light year so far for Patch Tuesday features - that's a good thing</li> 
+<li>New builds for Canary, Dev, and Beta late last week. Canary is nothing, Dev/Beta get Administrator Protection, Drag Tray refinements, File Explorer improvements, and fixes</li> 
+<li>Android 16 QPR3 brings Desktop Mode to Android devices - and a hands-on with Pixel phones and tablets shows the way forward for Android-based laptops later this year</li> 
+<li>Intel has new gaming processors for creators and gamers and they look excellent and are inexpensive</li></ul> 
+<p>AI and dev</p><ul> 
+<li>Copilot Cowork is literally Claude Cowork in Microsoft 365 - "Wave 3" for Microsoft 365 Copilot begins with a lot of agentic features, in private preview at first</li> 
+<li>Google Docs, Sheets, Slides, and Drive get big Gemini updates for consumers and Workspace customers</li> 
+<li>Mozilla partners with Anthropic to use AI to find bugs, and it's paying off nicely</li> 
+<li>Visual Studio Code moves to a weekly update schedule </li> 
+<li>The .NET 11 Preview 2 is here</li></ul> 
+<p>Xbox and gaming</p><ul> 
+<li>Microsoft starts talking up next Xbox console! It's called Project Helix and, yes, it will run Windows games</li> 
+<li>New Xbox Mode is on the way</li> 
+<li>Project Helix dev kits to game makers in 2027</li> 
+<li>Satya Nadella explains why he/Microsoft are "long" on gaming</li> 
+<li>Gaming is a core identity for Microsoft alongside platforms, developers, and knowledge workers</li></ul> 
+<p>Tips and picks</p><ul> 
+<li>Tip of the week: Nostalgia with a purpose</li> 
+<li>App pick of the week: Stardock Clairvoyance</li> 
+<li>RunAs Radio this week: SQL Server in 2026 with Bob Ward</li> 
+<li>Brown liquor pick of the week: Canadian Centennial Rye Whisky</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://helixsleep.com/windows" target="_blank" rel="sponsored">helixsleep.com/windows</a></li>
+<li><a href="https://cachefly.com/twit" target="_blank" rel="sponsored">cachefly.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860452/hero/WW0974_thumbnailV2.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0974/ww0974_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>2:46:57</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0974/ww0974_h264m_1920x1080.mp4" length="2941109852" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0974/ww0974_h264m_1920x1080.mp4" fileSize="2941109852" type="video/mp4" medium="video">
+				<media:title type="plain">Windows Weekly 974: DIY Crocs</media:title>
+				<media:description type="plain">Project Helix Details From GDC 2026</media:description>
+				<media:keywords>Microsoft, Windows, xbox, windows 11, patch tuesday, administrative protection, windows insider, ai development, copilot, gemini, Anthropic Claude, google workspace, file explorer, Visual Studio Code, .NET 11, gaming, Project Helix, amd CPU</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/03/860452/hero/WW0974_thumbnailV2.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Paul Thurrott</media:credit>
+				<media:credit role="host">Richard Campbell</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/richard-campbell" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/114471/pictures/rc_headshot_1600.jpg">Richard Campbell</podcast:person>
+		</item>
 		<item>
 			<title>Security Now 1069: You can't hide from LLMs</title>
 			<itunes:title>Security Now 1069: You can't hide from LLMs</itunes:title>
@@ -4989,76 +5131,6 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 				<media:credit role="host">Paul Thurrott</media:credit>
 			</media:content>
 				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
-		</item>
-		<item>
-			<title>Hands-On Apple 218: Critical HomeKit Update</title>
-			<itunes:title>Hands-On Apple 218: Critical HomeKit Update</itunes:title>
-			<itunes:episodeType>full</itunes:episodeType>
-			<itunes:author>TWiT</itunes:author>
-			<pubDate>Thu, 12 Feb 2026 14:35:06 PST</pubDate>
-			<link>https://twit.tv/shows/hands-on-apple/episodes/218</link>
-			<comments>https://twit.tv/shows/hands-on-apple/episodes/218</comments>
-			<category>Help &amp; How To</category>
-			<category>Macintosh</category>
-			<itunes:explicit>no</itunes:explicit>
-			<itunes:subtitle>Don't Lose Support for Your Smart Devices!</itunes:subtitle>
-			<podcast:transcript url="http://twit.tv/posts/transcripts/hands-apple-218-transcript" type="text/html" />
-			<itunes:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, Apple Home, Homekit, Home app update, Matter compatibility, smart home, HomePod, Apple TV, smart light bulb, Home architecture change, guest access</itunes:keywords>
-			<description><![CDATA[
-<p>The Home app just got a major overhaul, thanks to Matter compatibility and fresh features that are quietly transforming how Apple users control their homes. Mikah Sargent breaks down what you need to do, and why this update is bigger than you may think.</p><ul> 
-<li>Why updating to the latest Apple Home version is required</li> 
-<li>How to prepare your devices and household for the update</li> 
-<li>Steps to manually update the Apple Home system</li> 
-<li>Overview of post-update Home app features and settings</li> 
-<li>Walkthrough of new Home app controls: activity, energy, hubs, security, and more</li> 
-<li>Matter accessories and updated connected services explained</li></ul> 
-<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
-<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
-<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
-<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
-]]></description>
-			<itunes:summary><![CDATA[
-<p>The Home app just got a major overhaul, thanks to Matter compatibility and fresh features that are quietly transforming how Apple users control their homes. Mikah Sargent breaks down what you need to do, and why this update is bigger than you may think.</p><ul> 
-<li>Why updating to the latest Apple Home version is required</li> 
-<li>How to prepare your devices and household for the update</li> 
-<li>Steps to manually update the Apple Home system</li> 
-<li>Overview of post-update Home app features and settings</li> 
-<li>Walkthrough of new Home app controls: activity, energy, hubs, security, and more</li> 
-<li>Matter accessories and updated connected services explained</li></ul> 
-<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
-<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
-<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
-<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
-]]></itunes:summary>
-			<content:encoded><![CDATA[
-<p>The Home app just got a major overhaul, thanks to Matter compatibility and fresh features that are quietly transforming how Apple users control their homes. Mikah Sargent breaks down what you need to do, and why this update is bigger than you may think.</p><ul> 
-<li>Why updating to the latest Apple Home version is required</li> 
-<li>How to prepare your devices and household for the update</li> 
-<li>Steps to manually update the Apple Home system</li> 
-<li>Overview of post-update Home app features and settings</li> 
-<li>Walkthrough of new Home app controls: activity, energy, hubs, security, and more</li> 
-<li>Matter accessories and updated connected services explained</li></ul> 
-<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
-<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
-<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
-<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
-]]></content:encoded>
-			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860111/hero/HOA0218_thumbnail.jpg"/>
-			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0218/hom0218_h264m_1920x1080.mp4</guid>
-			<rawvoice:isHd>yes</rawvoice:isHd>
-			<itunes:duration>8:43</itunes:duration>
-			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0218/hom0218_h264m_1920x1080.mp4" length="161467548" type="video/mp4"/>
-			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0218/hom0218_h264m_1920x1080.mp4" fileSize="161467548" type="video/mp4" medium="video">
-				<media:title type="plain">Hands-On Apple 218: Critical HomeKit Update</media:title>
-				<media:description type="plain">Don't Lose Support for Your Smart Devices!</media:description>
-				<media:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, Apple Home, Homekit, Home app update, Matter compatibility, smart home, HomePod, Apple TV, smart light bulb, Home architecture change, guest access</media:keywords>
-				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860111/hero/HOA0218_thumbnail.jpg" width="400" height="225" />
-				<media:rating scheme="urn:simple">nonadult</media:rating>
-				<media:rating scheme="urn:v-chip">tv-g</media:rating>
-				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
-				<media:credit role="host">Mikah Sargent</media:credit>
-			</media:content>
-				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
 		</item>
 	</channel>
 </rss>

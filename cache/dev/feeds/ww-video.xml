@@ -14,8 +14,8 @@
 		<ttl>720</ttl>
 		<sy:updatePeriod>weekly</sy:updatePeriod>
 		<sy:updateFrequency>1</sy:updateFrequency>
-		<lastBuildDate>Thu, 05 Mar 2026 15:54:07 PST</lastBuildDate>
-		<pubDate>Thu, 05 Mar 2026 15:54:07 PST</pubDate>
+		<lastBuildDate>Wed, 11 Mar 2026 18:15:03 PDT</lastBuildDate>
+		<pubDate>Wed, 11 Mar 2026 18:15:03 PDT</pubDate>
 		<rawvoice:frequency>weekly</rawvoice:frequency>
 		<rawvoice:location>Petaluma, CA</rawvoice:location>
 		<itunes:type>episodic</itunes:type>
@@ -50,6 +50,150 @@ Records live every Wednesday at 2:00pm Eastern / 11:00am Pacific / 19:00 UTC.</d
 		<itunes:new-feed-url>https://feeds.twit.tv/ww_video_hd.xml</itunes:new-feed-url>
 		<rawvoice:subscribe feed="https://feeds.twit.tv/ww_video_hd.xml" itunes="https://podcasts.apple.com/us/podcast/windows-weekly-video/id593054580" html="https://twit.tv/shows/windows-weekly"></rawvoice:subscribe>
 		<atom:link href="https://feeds.twit.tv/ww_video_hd.xml" type="application/rss+xml" rel="self"/>
+		<item>
+			<title>WW 974: DIY Crocs - Project Helix Details From GDC 2026</title>
+			<itunes:title>DIY Crocs - Project Helix Details From GDC 2026</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Wed, 11 Mar 2026 11:59:17 PDT</pubDate>
+			<itunes:episode>974</itunes:episode>
+			<podcast:episode>974</podcast:episode>
+			<link>https://twit.tv/shows/windows-weekly/episodes/974</link>
+			<comments>https://twit.tv/shows/windows-weekly/episodes/974</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Project Helix Details From GDC 2026</itunes:subtitle>
+			<itunes:keywords>Microsoft, Windows, xbox, windows 11, patch tuesday, administrative protection, windows insider, ai development, copilot, gemini, Anthropic Claude, google workspace, file explorer, Visual Studio Code, .NET 11, gaming, Project Helix, amd CPU</itunes:keywords>
+			<description><![CDATA[
+<p>From bug-busting AI that's transforming Firefox to personal coding breakthroughs, the team breaks down how practical applications are cutting through skepticism and reshaping developer workflows. Plus, hear why lighter Patch Tuesdays are refreshing from time to time!</p> 
+<p>Windows 11</p><ul> 
+<li>Patch Tuesday's familiar list of updates: Network speed test, Camera tilt and pan controls, sysmon, RSAT improvements, Quick Machine Recovery improvements, WEBP support for desktop wallpaper, Emoji 16.0, etc.</li> 
+<li>It's been a light year so far for Patch Tuesday features - that's a good thing</li> 
+<li>New builds for Canary, Dev, and Beta late last week. Canary is nothing, Dev/Beta get Administrator Protection, Drag Tray refinements, File Explorer improvements, and fixes</li> 
+<li>Android 16 QPR3 brings Desktop Mode to Android devices - and a hands-on with Pixel phones and tablets shows the way forward for Android-based laptops later this year</li> 
+<li>Intel has new gaming processors for creators and gamers and they look excellent and are inexpensive</li></ul> 
+<p>AI and dev</p><ul> 
+<li>Copilot Cowork is literally Claude Cowork in Microsoft 365 - "Wave 3" for Microsoft 365 Copilot begins with a lot of agentic features, in private preview at first</li> 
+<li>Google Docs, Sheets, Slides, and Drive get big Gemini updates for consumers and Workspace customers</li> 
+<li>Mozilla partners with Anthropic to use AI to find bugs, and it's paying off nicely</li> 
+<li>Visual Studio Code moves to a weekly update schedule </li> 
+<li>The .NET 11 Preview 2 is here</li></ul> 
+<p>Xbox and gaming</p><ul> 
+<li>Microsoft starts talking up next Xbox console! It's called Project Helix and, yes, it will run Windows games</li> 
+<li>New Xbox Mode is on the way</li> 
+<li>Project Helix dev kits to game makers in 2027</li> 
+<li>Satya Nadella explains why he/Microsoft are "long" on gaming</li> 
+<li>Gaming is a core identity for Microsoft alongside platforms, developers, and knowledge workers</li></ul> 
+<p>Tips and picks</p><ul> 
+<li>Tip of the week: Nostalgia with a purpose</li> 
+<li>App pick of the week: Stardock Clairvoyance</li> 
+<li>RunAs Radio this week: SQL Server in 2026 with Bob Ward</li> 
+<li>Brown liquor pick of the week: Canadian Centennial Rye Whisky</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://helixsleep.com/windows" target="_blank" rel="sponsored">helixsleep.com/windows</a></li>
+<li><a href="https://cachefly.com/twit" target="_blank" rel="sponsored">cachefly.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>From bug-busting AI that's transforming Firefox to personal coding breakthroughs, the team breaks down how practical applications are cutting through skepticism and reshaping developer workflows. Plus, hear why lighter Patch Tuesdays are refreshing from time to time!</p> 
+<p>Windows 11</p><ul> 
+<li>Patch Tuesday's familiar list of updates: Network speed test, Camera tilt and pan controls, sysmon, RSAT improvements, Quick Machine Recovery improvements, WEBP support for desktop wallpaper, Emoji 16.0, etc.</li> 
+<li>It's been a light year so far for Patch Tuesday features - that's a good thing</li> 
+<li>New builds for Canary, Dev, and Beta late last week. Canary is nothing, Dev/Beta get Administrator Protection, Drag Tray refinements, File Explorer improvements, and fixes</li> 
+<li>Android 16 QPR3 brings Desktop Mode to Android devices - and a hands-on with Pixel phones and tablets shows the way forward for Android-based laptops later this year</li> 
+<li>Intel has new gaming processors for creators and gamers and they look excellent and are inexpensive</li></ul> 
+<p>AI and dev</p><ul> 
+<li>Copilot Cowork is literally Claude Cowork in Microsoft 365 - "Wave 3" for Microsoft 365 Copilot begins with a lot of agentic features, in private preview at first</li> 
+<li>Google Docs, Sheets, Slides, and Drive get big Gemini updates for consumers and Workspace customers</li> 
+<li>Mozilla partners with Anthropic to use AI to find bugs, and it's paying off nicely</li> 
+<li>Visual Studio Code moves to a weekly update schedule </li> 
+<li>The .NET 11 Preview 2 is here</li></ul> 
+<p>Xbox and gaming</p><ul> 
+<li>Microsoft starts talking up next Xbox console! It's called Project Helix and, yes, it will run Windows games</li> 
+<li>New Xbox Mode is on the way</li> 
+<li>Project Helix dev kits to game makers in 2027</li> 
+<li>Satya Nadella explains why he/Microsoft are "long" on gaming</li> 
+<li>Gaming is a core identity for Microsoft alongside platforms, developers, and knowledge workers</li></ul> 
+<p>Tips and picks</p><ul> 
+<li>Tip of the week: Nostalgia with a purpose</li> 
+<li>App pick of the week: Stardock Clairvoyance</li> 
+<li>RunAs Radio this week: SQL Server in 2026 with Bob Ward</li> 
+<li>Brown liquor pick of the week: Canadian Centennial Rye Whisky</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://helixsleep.com/windows" target="_blank" rel="sponsored">helixsleep.com/windows</a></li>
+<li><a href="https://cachefly.com/twit" target="_blank" rel="sponsored">cachefly.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>From bug-busting AI that's transforming Firefox to personal coding breakthroughs, the team breaks down how practical applications are cutting through skepticism and reshaping developer workflows. Plus, hear why lighter Patch Tuesdays are refreshing from time to time!</p> 
+<p>Windows 11</p><ul> 
+<li>Patch Tuesday's familiar list of updates: Network speed test, Camera tilt and pan controls, sysmon, RSAT improvements, Quick Machine Recovery improvements, WEBP support for desktop wallpaper, Emoji 16.0, etc.</li> 
+<li>It's been a light year so far for Patch Tuesday features - that's a good thing</li> 
+<li>New builds for Canary, Dev, and Beta late last week. Canary is nothing, Dev/Beta get Administrator Protection, Drag Tray refinements, File Explorer improvements, and fixes</li> 
+<li>Android 16 QPR3 brings Desktop Mode to Android devices - and a hands-on with Pixel phones and tablets shows the way forward for Android-based laptops later this year</li> 
+<li>Intel has new gaming processors for creators and gamers and they look excellent and are inexpensive</li></ul> 
+<p>AI and dev</p><ul> 
+<li>Copilot Cowork is literally Claude Cowork in Microsoft 365 - "Wave 3" for Microsoft 365 Copilot begins with a lot of agentic features, in private preview at first</li> 
+<li>Google Docs, Sheets, Slides, and Drive get big Gemini updates for consumers and Workspace customers</li> 
+<li>Mozilla partners with Anthropic to use AI to find bugs, and it's paying off nicely</li> 
+<li>Visual Studio Code moves to a weekly update schedule </li> 
+<li>The .NET 11 Preview 2 is here</li></ul> 
+<p>Xbox and gaming</p><ul> 
+<li>Microsoft starts talking up next Xbox console! It's called Project Helix and, yes, it will run Windows games</li> 
+<li>New Xbox Mode is on the way</li> 
+<li>Project Helix dev kits to game makers in 2027</li> 
+<li>Satya Nadella explains why he/Microsoft are "long" on gaming</li> 
+<li>Gaming is a core identity for Microsoft alongside platforms, developers, and knowledge workers</li></ul> 
+<p>Tips and picks</p><ul> 
+<li>Tip of the week: Nostalgia with a purpose</li> 
+<li>App pick of the week: Stardock Clairvoyance</li> 
+<li>RunAs Radio this week: SQL Server in 2026 with Bob Ward</li> 
+<li>Brown liquor pick of the week: Canadian Centennial Rye Whisky</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
+<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
+<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
+<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://helixsleep.com/windows" target="_blank" rel="sponsored">helixsleep.com/windows</a></li>
+<li><a href="https://cachefly.com/twit" target="_blank" rel="sponsored">cachefly.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860452/hero/WW0974_thumbnailV2.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0974/ww0974_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>0:00</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0974/ww0974_h264m_1920x1080.mp4" length="2941109852" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0974/ww0974_h264m_1920x1080.mp4" fileSize="2941109852" type="video/mp4" medium="video">
+				<media:title type="plain">WW 974: DIY Crocs - Project Helix Details From GDC 2026</media:title>
+				<media:description type="plain">Project Helix Details From GDC 2026</media:description>
+				<media:keywords>Microsoft, Windows, xbox, windows 11, patch tuesday, administrative protection, windows insider, ai development, copilot, gemini, Anthropic Claude, google workspace, file explorer, Visual Studio Code, .NET 11, gaming, Project Helix, amd CPU</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/03/860452/hero/WW0974_thumbnailV2.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Leo Laporte</media:credit>
+				<media:credit role="host">Paul Thurrott</media:credit>
+				<media:credit role="host">Richard Campbell</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/richard-campbell" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/114471/pictures/rc_headshot_1600.jpg">Richard Campbell</podcast:person>
+		</item>
 		<item>
 			<title>WW 973: Bob's Rumor Store - ASUS &amp; Dell Unveil Windows 365 Cloud PC Devices</title>
 			<itunes:title>Bob's Rumor Store - ASUS &amp; Dell Unveil Windows 365 Cloud PC Devices</itunes:title>
@@ -1431,70 +1575,6 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 				<media:description type="plain">CES 2026 Laptops, Processors, AI, &amp; Robots!</media:description>
 				<media:keywords>Microsoft, Windows, xbox, CES 2026, windows 11, windows kernel, rust programming, Copilot Plus PC, intel panther lake, AMD Zen 5, Snapdragon X2, AI on local devices, AI laptops, hardware accelerated BitLocker, repairable laptops, LG Gram aromanium</media:keywords>
 				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859647/hero/WW0965_thumbnail.jpg" width="400" height="225" />
-				<media:rating scheme="urn:simple">nonadult</media:rating>
-				<media:rating scheme="urn:v-chip">tv-g</media:rating>
-				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
-				<media:credit role="host">Leo Laporte</media:credit>
-				<media:credit role="host">Paul Thurrott</media:credit>
-				<media:credit role="host">Richard Campbell</media:credit>
-			</media:content>
-				<podcast:person role="host" href="https://twit.tv/people/leo-laporte" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/21/pictures/Leo_v1.jpg">Leo Laporte</podcast:person>
-				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
-				<podcast:person role="host" href="https://twit.tv/people/richard-campbell" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/114471/pictures/rc_headshot_1600.jpg">Richard Campbell</podcast:person>
-		</item>
-		<item>
-			<title>WW 964: Happy New Year! - Paul &amp; Richard Get Toasty by the Fire</title>
-			<itunes:title>Happy New Year! - Paul &amp; Richard Get Toasty by the Fire</itunes:title>
-			<itunes:episodeType>full</itunes:episodeType>
-			<itunes:author>TWiT</itunes:author>
-			<pubDate>Sun, 28 Dec 2025 12:00:00 PST</pubDate>
-			<itunes:episode>964</itunes:episode>
-			<podcast:episode>964</podcast:episode>
-			<link>https://twit.tv/shows/windows-weekly/episodes/964</link>
-			<comments>https://twit.tv/shows/windows-weekly/episodes/964</comments>
-			<category>News</category>
-			<category>Technology</category>
-			<itunes:explicit>no</itunes:explicit>
-			<itunes:subtitle>Paul &amp; Richard Get Toasty by the Fire</itunes:subtitle>
-			<podcast:transcript url="http://twit.tv/posts/transcripts/windows-weekly-964-transcript" type="text/html" />
-			<itunes:keywords>Microsoft, Windows, xbox, Windows Weekly, Surface Studio 2, HP Omnibook 5, Snapdragon laptop, Microsoft sweaters, Old Farm Pennsylvania whiskey, technology nostalgia, intellivision, Amiga 1000, North Star Advantage, S100 bus, electronic cash register</itunes:keywords>
-			<description><![CDATA[
-<p>This isn't your usual Windows Weekly. Pour a glass and settle in as Leo Laporte, Paul Thurrott, and Richard Campbell ditch the headlines for whisky-soaked tech stories, behind-the-scenes Microsoft confessions, and the unexpected joys (and disasters) of vintage hardware. These are the tales you only hear when the mics are (almost) off.</p> 
-<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
-<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
-<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
-<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
-]]></description>
-			<itunes:summary><![CDATA[
-<p>This isn't your usual Windows Weekly. Pour a glass and settle in as Leo Laporte, Paul Thurrott, and Richard Campbell ditch the headlines for whisky-soaked tech stories, behind-the-scenes Microsoft confessions, and the unexpected joys (and disasters) of vintage hardware. These are the tales you only hear when the mics are (almost) off.</p> 
-<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
-<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
-<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
-<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
-]]></itunes:summary>
-			<content:encoded><![CDATA[
-<p>This isn't your usual Windows Weekly. Pour a glass and settle in as Leo Laporte, Paul Thurrott, and Richard Campbell ditch the headlines for whisky-soaked tech stories, behind-the-scenes Microsoft confessions, and the unexpected joys (and disasters) of vintage hardware. These are the tales you only hear when the mics are (almost) off.</p> 
-<p><strong>Hosts:</strong> <a href="https://twit.tv/people/leo-laporte">Leo Laporte</a>, <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a>, and <a href="https://twit.tv/people/richard-campbell">Richard Campbell</a></p> 
-<p>Download or subscribe to <em>Windows Weekly</em> at <a href="https://twit.tv/shows/windows-weekly">https://twit.tv/shows/windows-weekly</a></p> 
-<p>Check out Paul's blog at <a href="https://www.thurrott.com/" target="_blank">thurrott.com</a></p> 
-<p>The <em>Windows Weekly</em> theme music is courtesy of <a href="https://bsky.app/profile/carlfranklin.bsky.social" target="_blank">Carl Franklin</a>.</p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
-]]></content:encoded>
-			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2025/12/859494/hero/WW0964_thumbnail.jpg"/>
-			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0964/ww0964_h264m_1920x1080.mp4</guid>
-			<rawvoice:isHd>yes</rawvoice:isHd>
-			<itunes:duration>1:28:43</itunes:duration>
-			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0964/ww0964_h264m_1920x1080.mp4" length="1504832465" type="video/mp4"/>
-			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ww/ww0964/ww0964_h264m_1920x1080.mp4" fileSize="1504832465" type="video/mp4" medium="video">
-				<media:title type="plain">WW 964: Happy New Year! - Paul &amp; Richard Get Toasty by the Fire</media:title>
-				<media:description type="plain">Paul &amp; Richard Get Toasty by the Fire</media:description>
-				<media:keywords>Microsoft, Windows, xbox, Windows Weekly, Surface Studio 2, HP Omnibook 5, Snapdragon laptop, Microsoft sweaters, Old Farm Pennsylvania whiskey, technology nostalgia, intellivision, Amiga 1000, North Star Advantage, S100 bus, electronic cash register</media:keywords>
-				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2025/12/859494/hero/WW0964_thumbnail.jpg" width="400" height="225" />
 				<media:rating scheme="urn:simple">nonadult</media:rating>
 				<media:rating scheme="urn:v-chip">tv-g</media:rating>
 				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
