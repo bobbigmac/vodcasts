@@ -127,6 +127,15 @@ def _maybe_add_threads(cmd: list[str]) -> list[str]:
     return cmd
 
 
+def _duplicate_feeds(clip_items: list[dict]) -> dict[str, int]:
+    counts: defaultdict[str, int] = defaultdict(int)
+    for item in clip_items:
+        feed = str(item.get("feed") or "").strip()
+        if feed:
+            counts[feed] += 1
+    return {feed: count for feed, count in counts.items() if count > 1}
+
+
 def _parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description="Render vertical short from script.")
     p.add_argument("--script", required=True, help="Short script markdown path.")
@@ -145,6 +154,7 @@ def _parse_args() -> argparse.Namespace:
     p.add_argument("--preset", default="medium", help="ffmpeg preset for prepared clips (default: medium).")
     p.add_argument("--threads", type=int, default=0, help="ffmpeg thread override; also used as Remotion concurrency when set.")
     p.add_argument("--no-autocrop", action="store_true", help="Disable AutoCrop-Vertical and fall back to the legacy static crop.")
+    p.add_argument("--allow-duplicate-feeds", action="store_true", help="Allow multiple clips from the same feed in one short. Default is to reject duplicate feeds.")
     p.add_argument("--register", default="", help="Path to used-clips.json to register.")
     p.add_argument("--min-clips", type=int, default=8, help="Require at least this many rendered clips before publishing output (default: 8).")
     p.add_argument("--keep-work", action="store_true", help="Keep scratch work directory and staged Remotion assets after a successful render.")
@@ -773,22 +783,27 @@ def _speaker_label(episode_title: str, feed_title: str) -> str:
     return ""
 
 
-def _build_keep_ranges_for_clip(raw_clip_path: Path, compress: bool) -> list[tuple[float, float]]:
-    media = _MVE.probe_media(raw_clip_path)
+def _build_keep_ranges_for_clip(
+    clip_path: Path,
+    *,
+    trim_edges: bool,
+    compress: bool,
+) -> list[tuple[float, float]]:
+    media = _MVE.probe_media(clip_path)
     duration_sec = float(media.get("duration_sec") or 0.0)
     if duration_sec <= 0:
         return []
-    if not compress or not media.get("has_audio"):
+    if not media.get("has_audio"):
         return [(0.0, duration_sec)]
-    silences = _MVE.detect_silences(raw_clip_path, threshold_db=-34.0, min_silence_sec=0.22)
+    silences = _MVE.detect_silences(clip_path, threshold_db=-34.0, min_silence_sec=0.22)
     audible_ranges = _MVE.invert_ranges(silences, duration_sec=duration_sec)
     if not audible_ranges:
         audible_ranges = [(0.0, duration_sec)]
     keep_ranges = _MVE.build_keep_ranges(
         audible_ranges=audible_ranges,
         duration_sec=duration_sec,
-        trim_edges=True,
-        compress_gaps=True,
+        trim_edges=trim_edges,
+        compress_gaps=compress,
         edge_pad_sec=0.05,
         interior_gap_sec=0.04,
     )
@@ -838,6 +853,20 @@ def main() -> None:
             file=sys.stderr,
         )
         sys.exit(5)
+    duplicate_feeds = _duplicate_feeds(clip_items)
+    if duplicate_feeds:
+        duplicate_summary = ", ".join(f"{feed}x{count}" for feed, count in sorted(duplicate_feeds.items()))
+        if args.allow_duplicate_feeds:
+            print(
+                f"[render_short] duplicate feeds allowed for this run: {duplicate_summary}",
+                file=sys.stderr,
+            )
+        else:
+            print(
+                f"[render_short] Script reuses feeds in a single short ({duplicate_summary}). Every clip in a produced short should come from a different feed/source.",
+                file=sys.stderr,
+            )
+            sys.exit(7)
 
     intro_text = ""
     outro_text = ""
@@ -899,14 +928,8 @@ def main() -> None:
                 continue
 
             has_audio = _source_has_audio(src_path)
-            trim_probe_started = time.perf_counter()
-            trim_start, trim_end = (
-                _detect_av_trim_bounds(src_path, start, end, has_audio)
-                if args.trim_silence
-                else (start, end)
-            )
-            clip_phase_times["trim_detect"] = time.perf_counter() - trim_probe_started
-            phase_totals["trim_detect"] += clip_phase_times["trim_detect"]
+            trim_start = start
+            trim_end = end
             raw_duration = max(0.0, trim_end - trim_start)
             if raw_duration <= 0.0:
                 continue
@@ -918,8 +941,47 @@ def main() -> None:
             clip_phase_times["extract_raw"] = time.perf_counter() - extract_started
             phase_totals["extract_raw"] += clip_phase_times["extract_raw"]
 
+            timeline_source_path = raw_clip_path
+            crop_mode = "raw"
+            if args.no_autocrop:
+                crop_mode = "static-only"
+            else:
+                autocrop_log_path = failure_log_dir / f"clip_{index:02d}.log"
+                autocrop_source_path = work_dir / f"clip_{index:02d}_autocropped.mp4"
+                crop_started = time.perf_counter()
+                used_autocrop = _run_autocrop_vertical(
+                    raw_clip_path,
+                    autocrop_source_path,
+                    log_path=autocrop_log_path,
+                    clip_label=f"clip_{index:02d} {feed}/{episode}",
+                )
+                clip_phase_times["autocrop"] = time.perf_counter() - crop_started
+                phase_totals["autocrop"] += clip_phase_times["autocrop"]
+                if used_autocrop:
+                    timeline_source_path = autocrop_source_path
+                    crop_mode = "autocrop"
+                else:
+                    used_static_crop_fallback = True
+                    print(
+                        f"[render_short] Falling back to static crop for clip_{index:02d} {feed}/{episode}.",
+                        file=sys.stderr,
+                    )
+                    fallback_started = time.perf_counter()
+                    if not _apply_static_vertical_crop(raw_clip_path, autocrop_source_path, has_audio=has_audio):
+                        continue
+                    clip_phase_times["static_crop_fallback"] = time.perf_counter() - fallback_started
+                    phase_totals["static_crop_fallback"] += clip_phase_times["static_crop_fallback"]
+                    timeline_source_path = autocrop_source_path
+                    crop_mode = "static-fallback"
+                clip_phase_times["crop"] = clip_phase_times.get("autocrop", 0.0) + clip_phase_times.get("static_crop_fallback", 0.0)
+                phase_totals["crop"] += clip_phase_times.get("static_crop_fallback", 0.0)
+
             compress_analysis_started = time.perf_counter()
-            keep_ranges = _build_keep_ranges_for_clip(raw_clip_path, compress=not bool(args.no_compress))
+            keep_ranges = _build_keep_ranges_for_clip(
+                timeline_source_path,
+                trim_edges=bool(args.trim_silence),
+                compress=not bool(args.no_compress),
+            )
             clip_phase_times["compress_analysis"] = time.perf_counter() - compress_analysis_started
             phase_totals["compress_analysis"] += clip_phase_times["compress_analysis"]
             compressed_duration = sum(end_sec - start_sec for start_sec, end_sec in keep_ranges)
@@ -932,7 +994,7 @@ def main() -> None:
                 if transcript_path:
                     clip_vtt_path = work_dir / f"clip_{index:02d}.vtt"
                     subtitle_started = time.perf_counter()
-                    if clip_transcript_to_vtt(transcript_path, trim_start, trim_end, clip_vtt_path):
+                    if clip_transcript_to_vtt(transcript_path, start, end, clip_vtt_path):
                         cues = _load_vtt_cues(clip_vtt_path)
                     clip_phase_times["subtitle_extract"] = time.perf_counter() - subtitle_started
                     phase_totals["subtitle_extract"] += clip_phase_times["subtitle_extract"]
@@ -941,12 +1003,11 @@ def main() -> None:
             remapped_cues = _remap_cues_to_keep_ranges(cues, keep_ranges) if cues else []
 
             prepared_path = public_job_dir / f"clip_{index:02d}.mp4"
-            compressed_path = work_dir / f"clip_{index:02d}_compressed.mp4"
             compress_started = time.perf_counter()
             if not _apply_keep_ranges(
-                raw_clip_path,
+                timeline_source_path,
                 keep_ranges,
-                compressed_path,
+                prepared_path,
                 has_audio=has_audio,
                 apply_static_crop=bool(args.no_autocrop),
             ):
@@ -954,38 +1015,7 @@ def main() -> None:
             clip_phase_times["compress_render"] = time.perf_counter() - compress_started
             phase_totals["compress_render"] += clip_phase_times["compress_render"]
             if args.no_autocrop:
-                crop_started = time.perf_counter()
-                compressed_path.replace(prepared_path)
-                clip_phase_times["crop"] = time.perf_counter() - crop_started
-                phase_totals["crop"] += clip_phase_times["crop"]
-            else:
-                autocrop_log_path = failure_log_dir / f"clip_{index:02d}.log"
-                crop_started = time.perf_counter()
-                used_autocrop = _run_autocrop_vertical(
-                    compressed_path,
-                    prepared_path,
-                    log_path=autocrop_log_path,
-                    clip_label=f"clip_{index:02d} {feed}/{episode}",
-                )
-                clip_phase_times["autocrop"] = time.perf_counter() - crop_started
-                phase_totals["autocrop"] += clip_phase_times["autocrop"]
-                crop_mode = "autocrop"
-                if not used_autocrop:
-                    used_static_crop_fallback = True
-                    print(
-                        f"[render_short] Falling back to static crop for clip_{index:02d} {feed}/{episode}.",
-                        file=sys.stderr,
-                    )
-                    fallback_started = time.perf_counter()
-                    if not _apply_static_vertical_crop(compressed_path, prepared_path, has_audio=has_audio):
-                        continue
-                    clip_phase_times["static_crop_fallback"] = time.perf_counter() - fallback_started
-                    phase_totals["static_crop_fallback"] += clip_phase_times["static_crop_fallback"]
-                    crop_mode = "static-fallback"
-                clip_phase_times["crop"] = clip_phase_times.get("autocrop", 0.0) + clip_phase_times.get("static_crop_fallback", 0.0)
-                phase_totals["crop"] += clip_phase_times.get("static_crop_fallback", 0.0)
-            if args.no_autocrop:
-                crop_mode = "static-only"
+                clip_phase_times["crop"] = clip_phase_times.get("crop", 0.0)
             if has_audio and not args.no_audio_normalize:
                 normalize_started = time.perf_counter()
                 normalized = _normalize_clip_audio(

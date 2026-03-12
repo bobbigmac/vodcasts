@@ -80,6 +80,7 @@ One short closing line.
 ## Render notes
 
 - ffmpeg still handles source download, silence trimming, and clip extraction.
+- AutoCrop-Vertical now runs on the full extracted clip before silence-edge trimming or gap compression, which gives the tracker a stable timeline before any time-collapsing edits are applied.
 - Remotion handles the final short assembly, overlays, visual skins, and captions.
 - Visual skins now span multiple dark, accessible palette families with different rails, corner treatments, pill styles, and panel feels.
 - Inter-clip title cards are intentionally gone; pacing is now clip-to-clip without isolated bumpers.
