@@ -18,6 +18,19 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
 	<atom:link href="https://www.corbettreport.com/videorss.xml" rel="self" type="application/rss+xml" />
 
 	<item>
+		<title>Recovering From Addiction – #SolutionsWatch</title>
+		<itunes:author>The Corbett Report</itunes:author>
+		<description>The opioid epidemic is just one of the symptoms of the general deterioration of Western society. Now, more people than ever are either dealing with the ravages of drug and alcohol addiction themselves, or dealing with someone who is. What can we do about this scourge? Today on Solutions Watch, James talks to Iain Davis, a drug and alcohol addiction counselor with 20 years of experience in the field, and Derrick Broze, who has just penned a gripping new memoir about his own struggles with addiction and how he overcame them.</description>
+		<enclosure
+			url="https://www.corbettreport.com/mp4/solutionswatch-addiction.mp4"
+ 			length="131427502"
+			type="video/mpeg"/>
+		<guid>https://www.corbettreport.com/mp4/solutionswatch-addiction.mp4</guid>
+		<pubDate>Thu, 12 Mar 2026 13:12:00 +0900</pubDate>
+		<itunes:duration>46:39</itunes:duration>
+	</item>
+
+	<item>
 		<title>Meet The Ellisons: Zionists, Technocrats, Moguls</title>
 		<itunes:author>The Corbett Report</itunes:author>
 		<description>Who are the Ellisons? Where does their immense fortune come from? And how do they plan to use that fortune? By the end of today's episode, you're going to know more about the Ellison family, Zionists, technocrats, media moguls, and how they are using their power to shape your future.</description>
