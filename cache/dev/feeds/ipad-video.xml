@@ -14,8 +14,8 @@
 		<ttl>720</ttl>
 		<sy:updatePeriod>weekly</sy:updatePeriod>
 		<sy:updateFrequency>1</sy:updateFrequency>
-		<lastBuildDate>Thu, 05 Mar 2026 15:52:21 PST</lastBuildDate>
-		<pubDate>Thu, 05 Mar 2026 15:52:21 PST</pubDate>
+		<lastBuildDate>Thu, 12 Mar 2026 14:00:04 PDT</lastBuildDate>
+		<pubDate>Thu, 12 Mar 2026 14:00:04 PDT</pubDate>
 		<rawvoice:frequency>weekly</rawvoice:frequency>
 		<rawvoice:location>Petaluma, CA</rawvoice:location>
 		<itunes:type>episodic</itunes:type>
@@ -48,6 +48,101 @@ New episodes every Thursday.</description>
 		<itunes:new-feed-url>https://feeds.twit.tv/ipad_video_hd.xml</itunes:new-feed-url>
 		<rawvoice:subscribe feed="https://feeds.twit.tv/ipad_video_hd.xml" itunes="https://podcasts.apple.com/us/podcast/ios-today-video/id553611167" html="https://twit.tv/shows/ios-today"></rawvoice:subscribe>
 		<atom:link href="https://feeds.twit.tv/ipad_video_hd.xml" type="application/rss+xml" rel="self"/>
+		<item>
+			<title>iOS 793: iPad Air M4 - Efficiency, Performance, &amp; Buying Advice</title>
+			<itunes:title>iPad Air M4 - Efficiency, Performance, &amp; Buying Advice</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 12 Mar 2026 12:00:00 PDT</pubDate>
+			<itunes:episode>793</itunes:episode>
+			<podcast:episode>793</podcast:episode>
+			<link>https://twit.tv/shows/ios-today/episodes/793</link>
+			<comments>https://twit.tv/shows/ios-today/episodes/793</comments>
+			<category>Reviews</category>
+			<category>Technology</category>
+			<category>iOS</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Efficiency, Performance, &amp; Buying Advice</itunes:subtitle>
+			<itunes:keywords>iOS, Apple iPad Air M4, iPad lineup comparison, ipad pro vs ipad air, Apple Pencil Pro, M4 chip specs, iPad storage options, iPad for students, iPad for seniors, studio display, studio display xdr, Thunderbolt 5 connectivity, Apple Arcade</itunes:keywords>
+			<description><![CDATA[
+<p>Apple's new iPad Air M4 gets the spotlight as Mikah Sargent and Rosemary Orchard break down real-world performance jumps, discuss who actually needs all that power, and debate its role in the iPad family. If you're eyeing a tablet upgrade or wondering what sets the Air apart, this conversation cuts through the specs.</p> 
+<p>• Apple unveils iPad Air M4: features, pricing, and lineup placement<br /> 
+• iPad Air M4 specs, performance leap, and real-world use cases<br /> 
+• Pro vs. Air vs. standard iPad: who should buy what<br /> 
+• Apple intelligence, battery life, and new wireless connectivity in iPads<br /> 
+• Student, family, and retiree use cases: choosing the right iPad<br /> 
+• Apple Pencil Pro and Magic Keyboard elevate iPad Air versatility<br /> 
+• News: Studio Display and Studio Display XDR are Apple's new monitor announcements<br /> 
+• App Caps:<em> Power Wash Simulator </em>on Apple Arcade and a spring cleaning cable organization hack</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://shopify.com/ios" target="_blank" rel="sponsored">shopify.com/ios</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Apple's new iPad Air M4 gets the spotlight as Mikah Sargent and Rosemary Orchard break down real-world performance jumps, discuss who actually needs all that power, and debate its role in the iPad family. If you're eyeing a tablet upgrade or wondering what sets the Air apart, this conversation cuts through the specs.</p> 
+<p>• Apple unveils iPad Air M4: features, pricing, and lineup placement<br /> 
+• iPad Air M4 specs, performance leap, and real-world use cases<br /> 
+• Pro vs. Air vs. standard iPad: who should buy what<br /> 
+• Apple intelligence, battery life, and new wireless connectivity in iPads<br /> 
+• Student, family, and retiree use cases: choosing the right iPad<br /> 
+• Apple Pencil Pro and Magic Keyboard elevate iPad Air versatility<br /> 
+• News: Studio Display and Studio Display XDR are Apple's new monitor announcements<br /> 
+• App Caps:<em> Power Wash Simulator </em>on Apple Arcade and a spring cleaning cable organization hack</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://shopify.com/ios" target="_blank" rel="sponsored">shopify.com/ios</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Apple's new iPad Air M4 gets the spotlight as Mikah Sargent and Rosemary Orchard break down real-world performance jumps, discuss who actually needs all that power, and debate its role in the iPad family. If you're eyeing a tablet upgrade or wondering what sets the Air apart, this conversation cuts through the specs.</p> 
+<p>• Apple unveils iPad Air M4: features, pricing, and lineup placement<br /> 
+• iPad Air M4 specs, performance leap, and real-world use cases<br /> 
+• Pro vs. Air vs. standard iPad: who should buy what<br /> 
+• Apple intelligence, battery life, and new wireless connectivity in iPads<br /> 
+• Student, family, and retiree use cases: choosing the right iPad<br /> 
+• Apple Pencil Pro and Magic Keyboard elevate iPad Air versatility<br /> 
+• News: Studio Display and Studio Display XDR are Apple's new monitor announcements<br /> 
+• App Caps:<em> Power Wash Simulator </em>on Apple Arcade and a spring cleaning cable organization hack</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://shopify.com/ios" target="_blank" rel="sponsored">shopify.com/ios</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860437/hero/IOS0793_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0793/ipad0793_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>32:35</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0793/ipad0793_h264m_1920x1080.mp4" length="581851449" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0793/ipad0793_h264m_1920x1080.mp4" fileSize="581851449" type="video/mp4" medium="video">
+				<media:title type="plain">iOS 793: iPad Air M4 - Efficiency, Performance, &amp; Buying Advice</media:title>
+				<media:description type="plain">Efficiency, Performance, &amp; Buying Advice</media:description>
+				<media:keywords>iOS, Apple iPad Air M4, iPad lineup comparison, ipad pro vs ipad air, Apple Pencil Pro, M4 chip specs, iPad storage options, iPad for students, iPad for seniors, studio display, studio display xdr, Thunderbolt 5 connectivity, Apple Arcade</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/03/860437/hero/IOS0793_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+				<media:credit role="host">Rosemary Orchard</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/rosemary-orchard" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/771751/pictures/rosemary.jpg">Rosemary Orchard</podcast:person>
+		</item>
 		<item>
 			<title>iOS 792: iPhone 17e - Why This Soft Pink Phone Is Worth Talking About</title>
 			<itunes:title>iPhone 17e - Why This Soft Pink Phone Is Worth Talking About</itunes:title>
@@ -950,67 +1045,6 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 			</media:content>
 				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
 				<podcast:person role="host" href="https://twit.tv/people/rosemary-orchard" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/771751/pictures/rosemary.jpg">Rosemary Orchard</podcast:person>
-		</item>
-		<item>
-			<title>iOS 783: Best of 2025 - Choosing the New Models Worth Your Money</title>
-			<itunes:title>Best of 2025 - Choosing the New Models Worth Your Money</itunes:title>
-			<itunes:episodeType>full</itunes:episodeType>
-			<itunes:author>TWiT</itunes:author>
-			<pubDate>Sun, 28 Dec 2025 13:30:00 PST</pubDate>
-			<itunes:episode>783</itunes:episode>
-			<podcast:episode>783</podcast:episode>
-			<link>https://twit.tv/shows/ios-today/episodes/783</link>
-			<comments>https://twit.tv/shows/ios-today/episodes/783</comments>
-			<category>Reviews</category>
-			<category>Technology</category>
-			<category>iOS</category>
-			<itunes:explicit>no</itunes:explicit>
-			<itunes:subtitle>Choosing the New Models Worth Your Money</itunes:subtitle>
-			<podcast:transcript url="http://twit.tv/posts/transcripts/ios-today-783-transcript" type="text/html" />
-			<itunes:keywords>Apple Watch SE3, Apple Watch Series 11, apple watch ultra 3, Apple Watch comparison, iPhone 17, iphone 17 pro, iPhone 17 Pro Max, iPhone Air, iPhone pre order tips, Apple Watch features, Apple Watch battery life, Apple Watch case sizes, blood oxygen app, </itunes:keywords>
-			<description><![CDATA[
-<p>Apple shook up its device family with new models this past year, but not all the changes were obvious. If you missed these pair of episodes, find out what actually made the 2025 Apple Watch and iPhone lineup different—and why picking the wrong one could mean missing out on must-have features (or overpaying for ones you'll never use).</p> 
-<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
-<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
-<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
-<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
-]]></description>
-			<itunes:summary><![CDATA[
-<p>Apple shook up its device family with new models this past year, but not all the changes were obvious. If you missed these pair of episodes, find out what actually made the 2025 Apple Watch and iPhone lineup different—and why picking the wrong one could mean missing out on must-have features (or overpaying for ones you'll never use).</p> 
-<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
-<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
-<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
-<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
-]]></itunes:summary>
-			<content:encoded><![CDATA[
-<p>Apple shook up its device family with new models this past year, but not all the changes were obvious. If you missed these pair of episodes, find out what actually made the 2025 Apple Watch and iPhone lineup different—and why picking the wrong one could mean missing out on must-have features (or overpaying for ones you'll never use).</p> 
-<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
-<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
-<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
-<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
-]]></content:encoded>
-			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2025/12/859499/hero/IOS0783_thumbnail.jpg"/>
-			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0783/ipad0783_h264m_1920x1080.mp4</guid>
-			<rawvoice:isHd>yes</rawvoice:isHd>
-			<itunes:duration>1:06:12</itunes:duration>
-			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0783/ipad0783_h264m_1920x1080.mp4" length="1123140985" type="video/mp4"/>
-			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0783/ipad0783_h264m_1920x1080.mp4" fileSize="1123140985" type="video/mp4" medium="video">
-				<media:title type="plain">iOS 783: Best of 2025 - Choosing the New Models Worth Your Money</media:title>
-				<media:description type="plain">Choosing the New Models Worth Your Money</media:description>
-				<media:keywords>Apple Watch SE3, Apple Watch Series 11, apple watch ultra 3, Apple Watch comparison, iPhone 17, iphone 17 pro, iPhone 17 Pro Max, iPhone Air, iPhone pre order tips, Apple Watch features, Apple Watch battery life, Apple Watch case sizes, blood oxygen app, </media:keywords>
-				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2025/12/859499/hero/IOS0783_thumbnail.jpg" width="400" height="225" />
-				<media:rating scheme="urn:simple">nonadult</media:rating>
-				<media:rating scheme="urn:v-chip">tv-g</media:rating>
-				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
-				<media:credit role="host">Mikah Sargent</media:credit>
-			</media:content>
-				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
 		</item>
 	</channel>
 </rss>

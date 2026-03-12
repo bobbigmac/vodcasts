@@ -14,8 +14,8 @@
 		<ttl>720</ttl>
 		<sy:updatePeriod>weekly</sy:updatePeriod>
 		<sy:updateFrequency>1</sy:updateFrequency>
-		<lastBuildDate>Thu, 05 Mar 2026 15:53:59 PST</lastBuildDate>
-		<pubDate>Thu, 05 Mar 2026 15:53:59 PST</pubDate>
+		<lastBuildDate>Thu, 12 Mar 2026 13:55:02 PDT</lastBuildDate>
+		<pubDate>Thu, 12 Mar 2026 13:55:02 PDT</pubDate>
 		<rawvoice:frequency>weekly</rawvoice:frequency>
 		<rawvoice:location>Petaluma, CA</rawvoice:location>
 		<itunes:type>episodic</itunes:type>
@@ -47,6 +47,64 @@ New episodes every Thursday.</description>
 		<itunes:new-feed-url>https://feeds.twit.tv/htg_video_hd.xml</itunes:new-feed-url>
 		<rawvoice:subscribe feed="https://feeds.twit.tv/htg_video_hd.xml" itunes="https://podcasts.apple.com/us/podcast/home-theater-geeks-video/id593052654" html="https://twit.tv/shows/home-theater-geeks"></rawvoice:subscribe>
 		<atom:link href="https://feeds.twit.tv/htg_video_hd.xml" type="application/rss+xml" rel="self"/>
+		<item>
+			<title>HTG 522: What's Up With Vizio TVs? - What Happened After Walmart&#039;s Acquisition?</title>
+			<itunes:title>What's Up With Vizio TVs?</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 12 Mar 2026 10:00:00 PDT</pubDate>
+			<itunes:season>2</itunes:season>
+			<podcast:season>2</podcast:season>
+			<itunes:episode>522</itunes:episode>
+			<podcast:episode>522</podcast:episode>
+			<link>https://twit.tv/shows/home-theater-geeks/episodes/522</link>
+			<comments>https://twit.tv/shows/home-theater-geeks/episodes/522</comments>
+			<category>Reviews</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>What Happened After Walmart&#039;s Acquisition?</itunes:subtitle>
+			<itunes:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</itunes:keywords>
+			<description><![CDATA[
+<p>Brad Marman wonders what's up with Vizio TVs these days? Are they still around? Are they still good quality and value? Scott Wilkinson has some answers, but other answers are hard to come by.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Brad Marman wonders what's up with Vizio TVs these days? Are they still around? Are they still good quality and value? Scott Wilkinson has some answers, but other answers are hard to come by.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Brad Marman wonders what's up with Vizio TVs these days? Are they still around? Are they still good quality and value? Scott Wilkinson has some answers, but other answers are hard to come by.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860432/hero/HTG0522_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0522/htg0522_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>9:17</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0522/htg0522_h264m_1920x1080.mp4" length="164680528" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0522/htg0522_h264m_1920x1080.mp4" fileSize="164680528" type="video/mp4" medium="video">
+				<media:title type="plain">HTG 522: What's Up With Vizio TVs? - What Happened After Walmart&#039;s Acquisition?</media:title>
+				<media:description type="plain">What Happened After Walmart&#039;s Acquisition?</media:description>
+				<media:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/03/860432/hero/HTG0522_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Scott Wilkinson</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/scott-wilkinson" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/52/pictures/scottwilkinson1600-fez.jpg">Scott Wilkinson</podcast:person>
+		</item>
 		<item>
 			<title>HTG 521: Texas Triumph - Home Theater of the Month Interview!</title>
 			<itunes:title>Texas Triumph</itunes:title>
@@ -627,70 +685,6 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 				<media:description type="plain">The Next Generation of OTA TV</media:description>
 				<media:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</media:keywords>
 				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/01/859622/hero/HTG0513_thumbnail.jpg" width="400" height="225" />
-				<media:rating scheme="urn:simple">nonadult</media:rating>
-				<media:rating scheme="urn:v-chip">tv-g</media:rating>
-				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
-				<media:credit role="host">Scott Wilkinson</media:credit>
-				<media:credit role="guest">Michael Heiss</media:credit>
-			</media:content>
-				<podcast:person role="host" href="https://twit.tv/people/scott-wilkinson" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/52/pictures/scottwilkinson1600-fez.jpg">Scott Wilkinson</podcast:person>
-				<podcast:person role="guest" href="http://michaelheiss.com">Michael Heiss</podcast:person>
-		</item>
-		<item>
-			<title>HTG 512: OTA TV - Over-The-Air Television Is Still a Thing!</title>
-			<itunes:title>OTA TV</itunes:title>
-			<itunes:episodeType>full</itunes:episodeType>
-			<itunes:author>TWiT</itunes:author>
-			<pubDate>Thu, 18 Dec 2025 12:00:00 PST</pubDate>
-			<itunes:season>2</itunes:season>
-			<podcast:season>2</podcast:season>
-			<itunes:episode>512</itunes:episode>
-			<podcast:episode>512</podcast:episode>
-			<link>https://twit.tv/shows/home-theater-geeks/episodes/512</link>
-			<comments>https://twit.tv/shows/home-theater-geeks/episodes/512</comments>
-			<category>Reviews</category>
-			<category>Technology</category>
-			<itunes:explicit>no</itunes:explicit>
-			<itunes:subtitle>Over-The-Air Television Is Still a Thing!</itunes:subtitle>
-			<podcast:transcript url="http://twit.tv/posts/tech/stop-missing-out-why-you-should-add-over-air-tv-your-home-setup" type="text/html" />
-			<itunes:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</itunes:keywords>
-			<description><![CDATA[
-<p>Over-the-air (OTA) TV delivers a lot of programming to homes for free. It works when the internet goes down, it's better than cable or streaming in terms of resolution and clarity with no harsh compression, it's immune to corporate disputes that result in blackouts—and did we mention it's FREE? Michael Heiss talks with Scott Wilkinson about the benefits of OTA and how to get it in your home.</p> 
-<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
-<p><strong>Guest:</strong> <a href="http://michaelheiss.com" target="_blank">Michael Heiss</a></p> 
-<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
-<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
-]]></description>
-			<itunes:summary><![CDATA[
-<p>Over-the-air (OTA) TV delivers a lot of programming to homes for free. It works when the internet goes down, it's better than cable or streaming in terms of resolution and clarity with no harsh compression, it's immune to corporate disputes that result in blackouts—and did we mention it's FREE? Michael Heiss talks with Scott Wilkinson about the benefits of OTA and how to get it in your home.</p> 
-<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
-<p><strong>Guest:</strong> <a href="http://michaelheiss.com" target="_blank">Michael Heiss</a></p> 
-<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
-<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
-]]></itunes:summary>
-			<content:encoded><![CDATA[
-<p>Over-the-air (OTA) TV delivers a lot of programming to homes for free. It works when the internet goes down, it's better than cable or streaming in terms of resolution and clarity with no harsh compression, it's immune to corporate disputes that result in blackouts—and did we mention it's FREE? Michael Heiss talks with Scott Wilkinson about the benefits of OTA and how to get it in your home.</p> 
-<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
-<p><strong>Guest:</strong> <a href="http://michaelheiss.com" target="_blank">Michael Heiss</a></p> 
-<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
-<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
-]]></content:encoded>
-			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2025/12/859401/hero/HTG0512_thumbnail.jpg"/>
-			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0512/htg0512_h264m_1920x1080.mp4</guid>
-			<rawvoice:isHd>yes</rawvoice:isHd>
-			<itunes:duration>32:22</itunes:duration>
-			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0512/htg0512_h264m_1920x1080.mp4" length="572329721" type="video/mp4"/>
-			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0512/htg0512_h264m_1920x1080.mp4" fileSize="572329721" type="video/mp4" medium="video">
-				<media:title type="plain">HTG 512: OTA TV - Over-The-Air Television Is Still a Thing!</media:title>
-				<media:description type="plain">Over-The-Air Television Is Still a Thing!</media:description>
-				<media:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</media:keywords>
-				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2025/12/859401/hero/HTG0512_thumbnail.jpg" width="400" height="225" />
 				<media:rating scheme="urn:simple">nonadult</media:rating>
 				<media:rating scheme="urn:v-chip">tv-g</media:rating>
 				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>

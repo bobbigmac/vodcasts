@@ -14,8 +14,8 @@
 		<ttl>40</ttl>
 		<sy:updatePeriod>hourly</sy:updatePeriod>
 		<sy:updateFrequency>1</sy:updateFrequency>
-		<lastBuildDate>Wed, 11 Mar 2026 21:15:01 PDT</lastBuildDate>
-		<pubDate>Wed, 11 Mar 2026 21:15:01 PDT</pubDate>
+		<lastBuildDate>Thu, 12 Mar 2026 14:31:11 PDT</lastBuildDate>
+		<pubDate>Thu, 12 Mar 2026 14:31:11 PDT</pubDate>
 		<rawvoice:frequency>hourly</rawvoice:frequency>
 		<rawvoice:location>Petaluma, CA</rawvoice:location>
 		<itunes:type>episodic</itunes:type>
@@ -53,6 +53,309 @@
 		<rawvoice:subscribe feed="https://feeds.twit.tv/brickhouse_video_hd.xml" itunes="https://podcasts.apple.com/us/podcast/all-twit-tv-shows-video/id868397885" html="https://twit.tv/shows/all-twittv-shows"></rawvoice:subscribe>
 		<atom:link href="https://feeds.twit.tv/brickhouse_video_hd.xml" type="application/rss+xml" rel="self"/>
 		<item>
+			<title>Hands-On Windows 180: The Return of Microsoft Edit</title>
+			<itunes:title>Hands-On Windows 180: The Return of Microsoft Edit</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 12 Mar 2026 14:23:24 PDT</pubDate>
+			<link>https://twit.tv/shows/hands-on-windows/episodes/180</link>
+			<comments>https://twit.tv/shows/hands-on-windows/episodes/180</comments>
+			<category>Help &amp; How To</category>
+			<category>Windows</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Notepad, Move Over</itunes:subtitle>
+			<itunes:keywords>microsoft edit, Windows 11 text editor, Notepad controversy, markdown support, Copilot integration, command line interface, CLI app, Linux compatibility, Microsoft software, open source, GitHub download, keyboard shortcuts, word wrap, find and replace</itunes:keywords>
+			<description><![CDATA[
+<p>Microsoft Edit is stepping into the spotlight as Notepad faces backlash for its new AI-heavy features. Find out why this lightweight, command-line text editor might just be your next favorite productivity tool.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Microsoft Edit is stepping into the spotlight as Notepad faces backlash for its new AI-heavy features. Find out why this lightweight, command-line text editor might just be your next favorite productivity tool.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Microsoft Edit is stepping into the spotlight as Notepad faces backlash for its new AI-heavy features. Find out why this lightweight, command-line text editor might just be your next favorite productivity tool.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/paul-thurrott">Paul Thurrott</a></p> 
+<p>Download or subscribe to <em>Hands-On Windows</em> at <a href="https://twit.tv/shows/hands-on-windows">https://twit.tv/shows/hands-on-windows</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860484/hero/HOW0180_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0180/howin0180_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>13:30</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0180/howin0180_h264m_1920x1080.mp4" length="230063484" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/howin/howin0180/howin0180_h264m_1920x1080.mp4" fileSize="230063484" type="video/mp4" medium="video">
+				<media:title type="plain">Hands-On Windows 180: The Return of Microsoft Edit</media:title>
+				<media:description type="plain">Notepad, Move Over</media:description>
+				<media:keywords>microsoft edit, Windows 11 text editor, Notepad controversy, markdown support, Copilot integration, command line interface, CLI app, Linux compatibility, Microsoft software, open source, GitHub download, keyboard shortcuts, word wrap, find and replace</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/03/860484/hero/HOW0180_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Paul Thurrott</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/paul-thurrott" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/38/pictures/paul-headshot.jpg">Paul Thurrott</podcast:person>
+		</item>
+		<item>
+			<title>Hands-On Apple 222: Meet the Passwords App</title>
+			<itunes:title>Hands-On Apple 222: Meet the Passwords App</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 12 Mar 2026 14:05:15 PDT</pubDate>
+			<link>https://twit.tv/shows/hands-on-apple/episodes/222</link>
+			<comments>https://twit.tv/shows/hands-on-apple/episodes/222</comments>
+			<category>Help &amp; How To</category>
+			<category>Macintosh</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Sharing, Security Audits, &amp; 2FA Codes</itunes:subtitle>
+			<itunes:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, iOS privacy and security settings, iPadOS, apple passwords app, icloud keychain, password manager, Safari password autofill, macos Sequoia, iOS</itunes:keywords>
+			<description><![CDATA[
+<p>Apple's standalone Passwords app gives Keychain a proper home! Ready to clean up your secure digital life? This episode walks you through using Apple's Passwords app to spot weak logins, organize old accounts, and take control of your online security with tools already built into your devices.</p> 
+<p>• Quick history: Keychain to iCloud Keychain to Passwords app<br /> 
+• How to access the Passwords app on iPadOS, iOS, and macOS<br /> 
+• Passwords app interface tour: categories, search, and shared groups<br /> 
+• What autofill and notifications options you can enable in Passwords<br /> 
+• Exploring the main categories: All, Passkeys, Codes, Wi-Fi, Security, Deleted<br /> 
+• Viewing, editing, and sharing individual logins in the Passwords app<br /> 
+• Manually adding, updating, or deleting passwords and usernames<br /> 
+• Using search and sort to find and organize your saved logins<br /> 
+• How autofill password suggestions work in Safari and system settings<br /> 
+• Tweaking autofill and 3rd-party password manager integration<br /> 
+• Homework: review and clean up your Passwords app before next episode</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Apple's standalone Passwords app gives Keychain a proper home! Ready to clean up your secure digital life? This episode walks you through using Apple's Passwords app to spot weak logins, organize old accounts, and take control of your online security with tools already built into your devices.</p> 
+<p>• Quick history: Keychain to iCloud Keychain to Passwords app<br /> 
+• How to access the Passwords app on iPadOS, iOS, and macOS<br /> 
+• Passwords app interface tour: categories, search, and shared groups<br /> 
+• What autofill and notifications options you can enable in Passwords<br /> 
+• Exploring the main categories: All, Passkeys, Codes, Wi-Fi, Security, Deleted<br /> 
+• Viewing, editing, and sharing individual logins in the Passwords app<br /> 
+• Manually adding, updating, or deleting passwords and usernames<br /> 
+• Using search and sort to find and organize your saved logins<br /> 
+• How autofill password suggestions work in Safari and system settings<br /> 
+• Tweaking autofill and 3rd-party password manager integration<br /> 
+• Homework: review and clean up your Passwords app before next episode</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Apple's standalone Passwords app gives Keychain a proper home! Ready to clean up your secure digital life? This episode walks you through using Apple's Passwords app to spot weak logins, organize old accounts, and take control of your online security with tools already built into your devices.</p> 
+<p>• Quick history: Keychain to iCloud Keychain to Passwords app<br /> 
+• How to access the Passwords app on iPadOS, iOS, and macOS<br /> 
+• Passwords app interface tour: categories, search, and shared groups<br /> 
+• What autofill and notifications options you can enable in Passwords<br /> 
+• Exploring the main categories: All, Passkeys, Codes, Wi-Fi, Security, Deleted<br /> 
+• Viewing, editing, and sharing individual logins in the Passwords app<br /> 
+• Manually adding, updating, or deleting passwords and usernames<br /> 
+• Using search and sort to find and organize your saved logins<br /> 
+• How autofill password suggestions work in Safari and system settings<br /> 
+• Tweaking autofill and 3rd-party password manager integration<br /> 
+• Homework: review and clean up your Passwords app before next episode</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
+<p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
+<p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860478/hero/HOA0222_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0222/hom0222_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>20:31</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0222/hom0222_h264m_1920x1080.mp4" length="368579037" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0222/hom0222_h264m_1920x1080.mp4" fileSize="368579037" type="video/mp4" medium="video">
+				<media:title type="plain">Hands-On Apple 222: Meet the Passwords App</media:title>
+				<media:description type="plain">Sharing, Security Audits, &amp; 2FA Codes</media:description>
+				<media:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, iOS privacy and security settings, iPadOS, apple passwords app, icloud keychain, password manager, Safari password autofill, macos Sequoia, iOS</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/03/860478/hero/HOA0222_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+		</item>
+		<item>
+			<title>iOS Today 793: iPad Air M4</title>
+			<itunes:title>iOS Today 793: iPad Air M4</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 12 Mar 2026 11:59:30 PDT</pubDate>
+			<link>https://twit.tv/shows/ios-today/episodes/793</link>
+			<comments>https://twit.tv/shows/ios-today/episodes/793</comments>
+			<category>Reviews</category>
+			<category>Technology</category>
+			<category>iOS</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Efficiency, Performance, &amp; Buying Advice</itunes:subtitle>
+			<itunes:keywords>iOS, Apple iPad Air M4, iPad lineup comparison, ipad pro vs ipad air, Apple Pencil Pro, M4 chip specs, iPad storage options, iPad for students, iPad for seniors, studio display, studio display xdr, Thunderbolt 5 connectivity, Apple Arcade</itunes:keywords>
+			<description><![CDATA[
+<p>Apple's new iPad Air M4 gets the spotlight as Mikah Sargent and Rosemary Orchard break down real-world performance jumps, discuss who actually needs all that power, and debate its role in the iPad family. If you're eyeing a tablet upgrade or wondering what sets the Air apart, this conversation cuts through the specs.</p> 
+<p>• Apple unveils iPad Air M4: features, pricing, and lineup placement<br /> 
+• iPad Air M4 specs, performance leap, and real-world use cases<br /> 
+• Pro vs. Air vs. standard iPad: who should buy what<br /> 
+• Apple intelligence, battery life, and new wireless connectivity in iPads<br /> 
+• Student, family, and retiree use cases: choosing the right iPad<br /> 
+• Apple Pencil Pro and Magic Keyboard elevate iPad Air versatility<br /> 
+• News: Studio Display and Studio Display XDR are Apple's new monitor announcements<br /> 
+• App Caps:<em> Power Wash Simulator </em>on Apple Arcade and a spring cleaning cable organization hack</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://shopify.com/ios" target="_blank" rel="sponsored">shopify.com/ios</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Apple's new iPad Air M4 gets the spotlight as Mikah Sargent and Rosemary Orchard break down real-world performance jumps, discuss who actually needs all that power, and debate its role in the iPad family. If you're eyeing a tablet upgrade or wondering what sets the Air apart, this conversation cuts through the specs.</p> 
+<p>• Apple unveils iPad Air M4: features, pricing, and lineup placement<br /> 
+• iPad Air M4 specs, performance leap, and real-world use cases<br /> 
+• Pro vs. Air vs. standard iPad: who should buy what<br /> 
+• Apple intelligence, battery life, and new wireless connectivity in iPads<br /> 
+• Student, family, and retiree use cases: choosing the right iPad<br /> 
+• Apple Pencil Pro and Magic Keyboard elevate iPad Air versatility<br /> 
+• News: Studio Display and Studio Display XDR are Apple's new monitor announcements<br /> 
+• App Caps:<em> Power Wash Simulator </em>on Apple Arcade and a spring cleaning cable organization hack</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://shopify.com/ios" target="_blank" rel="sponsored">shopify.com/ios</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Apple's new iPad Air M4 gets the spotlight as Mikah Sargent and Rosemary Orchard break down real-world performance jumps, discuss who actually needs all that power, and debate its role in the iPad family. If you're eyeing a tablet upgrade or wondering what sets the Air apart, this conversation cuts through the specs.</p> 
+<p>• Apple unveils iPad Air M4: features, pricing, and lineup placement<br /> 
+• iPad Air M4 specs, performance leap, and real-world use cases<br /> 
+• Pro vs. Air vs. standard iPad: who should buy what<br /> 
+• Apple intelligence, battery life, and new wireless connectivity in iPads<br /> 
+• Student, family, and retiree use cases: choosing the right iPad<br /> 
+• Apple Pencil Pro and Magic Keyboard elevate iPad Air versatility<br /> 
+• News: Studio Display and Studio Display XDR are Apple's new monitor announcements<br /> 
+• App Caps:<em> Power Wash Simulator </em>on Apple Arcade and a spring cleaning cable organization hack</p> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/rosemary-orchard">Rosemary Orchard</a></p> 
+<p>Contact <em>iOS Today</em> at <a href="mailto:iOSToday@twit.tv">iOSToday@twit.tv</a>.</p> 
+<p>Download or subscribe to <em>iOS Today</em> at <a href="https://twit.tv/shows/ios-today">https://twit.tv/shows/ios-today</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://shopify.com/ios" target="_blank" rel="sponsored">shopify.com/ios</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860437/hero/IOS0793_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0793/ipad0793_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>32:35</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0793/ipad0793_h264m_1920x1080.mp4" length="581851449" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/ipad/ipad0793/ipad0793_h264m_1920x1080.mp4" fileSize="581851449" type="video/mp4" medium="video">
+				<media:title type="plain">iOS Today 793: iPad Air M4</media:title>
+				<media:description type="plain">Efficiency, Performance, &amp; Buying Advice</media:description>
+				<media:keywords>iOS, Apple iPad Air M4, iPad lineup comparison, ipad pro vs ipad air, Apple Pencil Pro, M4 chip specs, iPad storage options, iPad for students, iPad for seniors, studio display, studio display xdr, Thunderbolt 5 connectivity, Apple Arcade</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/03/860437/hero/IOS0793_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+				<media:credit role="host">Rosemary Orchard</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+				<podcast:person role="host" href="https://twit.tv/people/rosemary-orchard" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/771751/pictures/rosemary.jpg">Rosemary Orchard</podcast:person>
+		</item>
+		<item>
+			<title>Home Theater Geeks 522: What's Up With Vizio TVs?</title>
+			<itunes:title>Home Theater Geeks 522: What's Up With Vizio TVs?</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 12 Mar 2026 09:59:30 PDT</pubDate>
+			<link>https://twit.tv/shows/home-theater-geeks/episodes/522</link>
+			<comments>https://twit.tv/shows/home-theater-geeks/episodes/522</comments>
+			<category>Reviews</category>
+			<category>Technology</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>What Happened After Walmart&#039;s Acquisition?</itunes:subtitle>
+			<itunes:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</itunes:keywords>
+			<description><![CDATA[
+<p>Brad Marman wonders what's up with Vizio TVs these days? Are they still around? Are they still good quality and value? Scott Wilkinson has some answers, but other answers are hard to come by.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Brad Marman wonders what's up with Vizio TVs these days? Are they still around? Are they still good quality and value? Scott Wilkinson has some answers, but other answers are hard to come by.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Brad Marman wonders what's up with Vizio TVs these days? Are they still around? Are they still good quality and value? Scott Wilkinson has some answers, but other answers are hard to come by.</p> 
+<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
+<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
+<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860432/hero/HTG0522_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0522/htg0522_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>9:17</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0522/htg0522_h264m_1920x1080.mp4" length="164680528" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0522/htg0522_h264m_1920x1080.mp4" fileSize="164680528" type="video/mp4" medium="video">
+				<media:title type="plain">Home Theater Geeks 522: What's Up With Vizio TVs?</media:title>
+				<media:description type="plain">What Happened After Walmart&#039;s Acquisition?</media:description>
+				<media:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/03/860432/hero/HTG0522_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Scott Wilkinson</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/scott-wilkinson" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/52/pictures/scottwilkinson1600-fez.jpg">Scott Wilkinson</podcast:person>
+		</item>
+		<item>
 			<title>Intelligent Machines 861: We Have Computer At Home</title>
 			<itunes:title>Intelligent Machines 861: We Have Computer At Home</itunes:title>
 			<itunes:episodeType>full</itunes:episodeType>
@@ -66,6 +369,7 @@
 			<category>Artificial Intelligence</category>
 			<itunes:explicit>no</itunes:explicit>
 			<itunes:subtitle>Coffee and the Rise of the Machines</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/how-truly-protect-your-privacy-online-actionable-advice-apples-former-evangelist" type="text/html" />
 			<itunes:keywords>TWiT, Intelligent Machines, Leo Laporte, Jeff Jarvis, Paris Martineau, Guy Kawasaki, Signal Messenger, privacy, encryption, Apple, tim cook, Steve Jobs, metadata, end-to-end encryption, podcasting, Remarkable People, ai writing, chatgpt, KawasakiGPT</itunes:keywords>
 			<description><![CDATA[
 <p>Apple's legendary evangelist Guy Kawasaki reveals how signal messaging and open-source AI are rewriting playbooks for privacy, immortality, and activism. Hear candid stories and sharp opinions from someone who has shaped—and challenged—today's tech giants.</p><ul> 
@@ -223,7 +527,7 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860464/hero/IM0861_Thumbnail.jpg"/>
 			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0861/twig0861_h264m_1920x1080.mp4</guid>
 			<rawvoice:isHd>yes</rawvoice:isHd>
-			<itunes:duration>0:00</itunes:duration>
+			<itunes:duration>3:12:44</itunes:duration>
 			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0861/twig0861_h264m_1920x1080.mp4" length="3272831846" type="video/mp4"/>
 			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0861/twig0861_h264m_1920x1080.mp4" fileSize="3272831846" type="video/mp4" medium="video">
 				<media:title type="plain">Intelligent Machines 861: We Have Computer At Home</media:title>
@@ -4919,346 +5223,6 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 				<media:credit role="host">Mikah Sargent</media:credit>
 			</media:content>
 				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
-		</item>
-		<item>
-			<title>Untitled Linux Show 242: Syntactical Sugar</title>
-			<itunes:title>Untitled Linux Show 242: Syntactical Sugar</itunes:title>
-			<itunes:episodeType>full</itunes:episodeType>
-			<itunes:author>TWiT</itunes:author>
-			<pubDate>Sun, 15 Feb 2026 13:33:39 PST</pubDate>
-			<link>https://twit.tv/shows/untitled-linux-show/episodes/242</link>
-			<comments>https://twit.tv/shows/untitled-linux-show/episodes/242</comments>
-			<category>News</category>
-			<category>Linux</category>
-			<category>Technology</category>
-			<itunes:explicit>no</itunes:explicit>
-			<itunes:subtitle>Sustainable Distros, New Kernels, &amp; Wayland Vim?</itunes:subtitle>
-			<podcast:transcript url="http://twit.tv/posts/transcripts/untitled-linux-show-242-transcript" type="text/html" />
-			<itunes:keywords>Linux, command line, Linux Mint, pearOS, wayland, modular window managers, River Project, Linux kernel 6.19, Linux kernel 7.0, Mesa 26, cinnamon desktop, KDE, GNOME, Ubuntu 24.04 LTS, Rust in Linux kernel, IPFire DBL, domain block list, command line tips,</itunes:keywords>
-			<description><![CDATA[
-<p>The Linux Kernel 6.19 is out, the Rust experiment is over, and it's time to talk about 7.0. Vim 9.2 is out, with a bit of a weird new feature in its changelogs, and IPFire is an intriguing, community-driven security domain block list. PearOS has a new release for those seeking an Apple-inspired Linux experience, and Linux Mint is adjusting its release schedule to better manage developer and tester schedules. River is a new project trying to do Wayland support with a modular Desktop stack, and Mesa 26.0 is out with impressive performance gains. For tips, we have cull for finding and deleting big files, a systemd program for detecting if the OS is running virtualized, preload for caching applications in ram, and new_script for a script-writing tool that *doesn't* feature an LLM. You can find the show notes at <a href="https://bit.ly/3ZCNcEc" target="_blank">https://bit.ly/3ZCNcEc</a> and happy Linux'ing!</p> 
-<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
-<p><strong>Co-Hosts:</strong> <a href="http://robertpcampbell.com/" target="_blank">Rob Campbell</a>, Ken McDonald, and <a href="https://twitter.com/69Beep" target="_blank">Jeff Massie</a></p> 
-<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
-<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
-]]></description>
-			<itunes:summary><![CDATA[
-<p>The Linux Kernel 6.19 is out, the Rust experiment is over, and it's time to talk about 7.0. Vim 9.2 is out, with a bit of a weird new feature in its changelogs, and IPFire is an intriguing, community-driven security domain block list. PearOS has a new release for those seeking an Apple-inspired Linux experience, and Linux Mint is adjusting its release schedule to better manage developer and tester schedules. River is a new project trying to do Wayland support with a modular Desktop stack, and Mesa 26.0 is out with impressive performance gains. For tips, we have cull for finding and deleting big files, a systemd program for detecting if the OS is running virtualized, preload for caching applications in ram, and new_script for a script-writing tool that *doesn't* feature an LLM. You can find the show notes at <a href="https://bit.ly/3ZCNcEc" target="_blank">https://bit.ly/3ZCNcEc</a> and happy Linux'ing!</p> 
-<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
-<p><strong>Co-Hosts:</strong> <a href="http://robertpcampbell.com/" target="_blank">Rob Campbell</a>, Ken McDonald, and <a href="https://twitter.com/69Beep" target="_blank">Jeff Massie</a></p> 
-<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
-<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
-]]></itunes:summary>
-			<content:encoded><![CDATA[
-<p>The Linux Kernel 6.19 is out, the Rust experiment is over, and it's time to talk about 7.0. Vim 9.2 is out, with a bit of a weird new feature in its changelogs, and IPFire is an intriguing, community-driven security domain block list. PearOS has a new release for those seeking an Apple-inspired Linux experience, and Linux Mint is adjusting its release schedule to better manage developer and tester schedules. River is a new project trying to do Wayland support with a modular Desktop stack, and Mesa 26.0 is out with impressive performance gains. For tips, we have cull for finding and deleting big files, a systemd program for detecting if the OS is running virtualized, preload for caching applications in ram, and new_script for a script-writing tool that *doesn't* feature an LLM. You can find the show notes at <a href="https://bit.ly/3ZCNcEc" target="_blank">https://bit.ly/3ZCNcEc</a> and happy Linux'ing!</p> 
-<p><strong>Host:</strong> <a href="https://twit.tv/people/jonathan-bennett">Jonathan Bennett</a></p> 
-<p><strong>Co-Hosts:</strong> <a href="http://robertpcampbell.com/" target="_blank">Rob Campbell</a>, Ken McDonald, and <a href="https://twitter.com/69Beep" target="_blank">Jeff Massie</a></p> 
-<p>Download or subscribe to <em>Untitled Linux Show</em> at <a href="https://twit.tv/shows/untitled-linux-show">https://twit.tv/shows/untitled-linux-show</a></p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p> 
-<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
-]]></content:encoded>
-			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860140/hero/ULS0242_thumbnail.jpg"/>
-			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0242/uls0242_h264m_1920x1080.mp4</guid>
-			<rawvoice:isHd>yes</rawvoice:isHd>
-			<itunes:duration>1:23:45</itunes:duration>
-			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0242/uls0242_h264m_1920x1080.mp4" length="1486024771" type="video/mp4"/>
-			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/uls/uls0242/uls0242_h264m_1920x1080.mp4" fileSize="1486024771" type="video/mp4" medium="video">
-				<media:title type="plain">Untitled Linux Show 242: Syntactical Sugar</media:title>
-				<media:description type="plain">Sustainable Distros, New Kernels, &amp; Wayland Vim?</media:description>
-				<media:keywords>Linux, command line, Linux Mint, pearOS, wayland, modular window managers, River Project, Linux kernel 6.19, Linux kernel 7.0, Mesa 26, cinnamon desktop, KDE, GNOME, Ubuntu 24.04 LTS, Rust in Linux kernel, IPFire DBL, domain block list, command line tips,</media:keywords>
-				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860140/hero/ULS0242_thumbnail.jpg" width="400" height="225" />
-				<media:rating scheme="urn:simple">nonadult</media:rating>
-				<media:rating scheme="urn:v-chip">tv-g</media:rating>
-				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
-				<media:credit role="host">Jonathan Bennett</media:credit>
-				<media:credit role="co-host">Rob Campbell</media:credit>
-				<media:credit role="co-host">Ken McDonald</media:credit>
-				<media:credit role="co-host">Jeff Massie</media:credit>
-			</media:content>
-				<podcast:person role="host" href="https://twit.tv/people/jonathan-bennett" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/91661/pictures/jonathan_bennett.jpg">Jonathan Bennett</podcast:person>
-				<podcast:person role="co-host" href="http://robertpcampbell.com/" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832831/pictures/robcampbell.jpg">Rob Campbell</podcast:person>
-				<podcast:person role="co-host" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832833/pictures/kenmcdonald.jpg">Ken McDonald</podcast:person>
-				<podcast:person role="co-host" href="https://twitter.com/69Beep" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/832832/pictures/jeffmassie.jpg">Jeff Massie</podcast:person>
-		</item>
-		<item>
-			<title>This Week in Space 197: Inside UNOOSA</title>
-			<itunes:title>This Week in Space 197: Inside UNOOSA</itunes:title>
-			<itunes:episodeType>full</itunes:episodeType>
-			<itunes:author>TWiT</itunes:author>
-			<pubDate>Fri, 13 Feb 2026 13:59:30 PST</pubDate>
-			<link>https://twit.tv/shows/this-week-in-space/episodes/197</link>
-			<comments>https://twit.tv/shows/this-week-in-space/episodes/197</comments>
-			<category>News</category>
-			<category>Space</category>
-			<category>Technology</category>
-			<itunes:explicit>no</itunes:explicit>
-			<itunes:subtitle>The UN and Space</itunes:subtitle>
-			<podcast:transcript url="http://twit.tv/posts/transcripts/week-space-197-transcript" type="text/html" />
-			<itunes:keywords>space news, space podcast, rod pyle, tariq malik, This Week in Space, SpaceX Crew-12 launch, International Space Station, VAST commercial flight, unoosa, Aarti Holla-Maini, Dr. Rick Janet, Committee on the Peaceful Uses of Outer Space</itunes:keywords>
-			<description><![CDATA[
-<p>Most people don't think of spaceflight when talking about the United Nations, but the UN, through its Office of Outer Space Affairs, or UNOOSA, has been pivotal in securing agreements on space poilicy and behavioral norms. This week, we speak with Aarti Holla-Maini, the director of UNOOSA, and Dr. Rick Jenet, the executive director of Expanding Frontiers and the National Space Society's representative to the UN, about the importance of this office. It's a wide-ranging discussion of the intersection of international space efforts and the intersection with commercial space as we expand activities into Earth orbit, the moon, and beyond.<br /> 
-<br /> 
-Headlines:</p><ul> 
-<li>SpaceX Crew-12 Launch Sends New Astronauts to the ISS</li> 
-<li>Vast Joins Commercial Flights to the ISS, Prepares for Private Space Stations</li> 
-<li>Axiom, Voyager, and Vast Face Off in Commercial LEO Station Race</li> 
-<li>International Collaboration Ramps Up for Future of Space Policy</li></ul> 
-<p>Main Topic: Inside UNOOSA—The United Nations Office for Outer Space Affairs</p><ul> 
-<li>Dr. Rick Janet Explains the Role of COPUOS and UNOOSA in Global Space Governance</li> 
-<li>Aarti Holla-Maini Shares Her Path to Leading UNOOSA and Her Vision for Its Future</li> 
-<li>Distinguishing UNOOSA (the office) from COPUOS (the committee)</li> 
-<li>UNOOSA's Expanding Mission: Capacity Building, Disaster Response, Space Law, and Sustainability</li> 
-<li>The Importance of Neutral Convening, Capacity Building, and Industry Input</li> 
-<li>Growing Need for Space Sustainability, Debris Mitigation, and New Regulatory Focus</li> 
-<li>Anticipating Lunar Activity: Resource Use, Transparency, and Non-Appropriation Principle</li> 
-<li>Engaging Commercial Space Actors While Maintaining Member State Authority</li> 
-<li>Megaconstellations: Building New Norms for Responsible Behavior in Orbit</li> 
-<li>Future UNOOSA Goals: Coordinating Space Traffic, Centralizing Satellite Data Access, and Fostering Global Partnerships</li></ul> 
-<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
-<p><strong>Guests:</strong> <a href="https://www.linkedin.com/in/fjenet/" target="_blank">Fredrick (Rick) Jenet</a> and <a href="https://www.unoosa.org/" target="_blank">Aarti Holla-Maini</a></p> 
-<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
-<p><strong>Sponsors:</strong><ul>
-<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
-<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
-</ul></p>
-]]></description>
-			<itunes:summary><![CDATA[
-<p>Most people don't think of spaceflight when talking about the United Nations, but the UN, through its Office of Outer Space Affairs, or UNOOSA, has been pivotal in securing agreements on space poilicy and behavioral norms. This week, we speak with Aarti Holla-Maini, the director of UNOOSA, and Dr. Rick Jenet, the executive director of Expanding Frontiers and the National Space Society's representative to the UN, about the importance of this office. It's a wide-ranging discussion of the intersection of international space efforts and the intersection with commercial space as we expand activities into Earth orbit, the moon, and beyond.<br /> 
-<br /> 
-Headlines:</p><ul> 
-<li>SpaceX Crew-12 Launch Sends New Astronauts to the ISS</li> 
-<li>Vast Joins Commercial Flights to the ISS, Prepares for Private Space Stations</li> 
-<li>Axiom, Voyager, and Vast Face Off in Commercial LEO Station Race</li> 
-<li>International Collaboration Ramps Up for Future of Space Policy</li></ul> 
-<p>Main Topic: Inside UNOOSA—The United Nations Office for Outer Space Affairs</p><ul> 
-<li>Dr. Rick Janet Explains the Role of COPUOS and UNOOSA in Global Space Governance</li> 
-<li>Aarti Holla-Maini Shares Her Path to Leading UNOOSA and Her Vision for Its Future</li> 
-<li>Distinguishing UNOOSA (the office) from COPUOS (the committee)</li> 
-<li>UNOOSA's Expanding Mission: Capacity Building, Disaster Response, Space Law, and Sustainability</li> 
-<li>The Importance of Neutral Convening, Capacity Building, and Industry Input</li> 
-<li>Growing Need for Space Sustainability, Debris Mitigation, and New Regulatory Focus</li> 
-<li>Anticipating Lunar Activity: Resource Use, Transparency, and Non-Appropriation Principle</li> 
-<li>Engaging Commercial Space Actors While Maintaining Member State Authority</li> 
-<li>Megaconstellations: Building New Norms for Responsible Behavior in Orbit</li> 
-<li>Future UNOOSA Goals: Coordinating Space Traffic, Centralizing Satellite Data Access, and Fostering Global Partnerships</li></ul> 
-<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
-<p><strong>Guests:</strong> <a href="https://www.linkedin.com/in/fjenet/" target="_blank">Fredrick (Rick) Jenet</a> and <a href="https://www.unoosa.org/" target="_blank">Aarti Holla-Maini</a></p> 
-<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
-<p><strong>Sponsors:</strong><ul>
-<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
-<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
-</ul></p>
-]]></itunes:summary>
-			<content:encoded><![CDATA[
-<p>Most people don't think of spaceflight when talking about the United Nations, but the UN, through its Office of Outer Space Affairs, or UNOOSA, has been pivotal in securing agreements on space poilicy and behavioral norms. This week, we speak with Aarti Holla-Maini, the director of UNOOSA, and Dr. Rick Jenet, the executive director of Expanding Frontiers and the National Space Society's representative to the UN, about the importance of this office. It's a wide-ranging discussion of the intersection of international space efforts and the intersection with commercial space as we expand activities into Earth orbit, the moon, and beyond.<br /> 
-<br /> 
-Headlines:</p><ul> 
-<li>SpaceX Crew-12 Launch Sends New Astronauts to the ISS</li> 
-<li>Vast Joins Commercial Flights to the ISS, Prepares for Private Space Stations</li> 
-<li>Axiom, Voyager, and Vast Face Off in Commercial LEO Station Race</li> 
-<li>International Collaboration Ramps Up for Future of Space Policy</li></ul> 
-<p>Main Topic: Inside UNOOSA—The United Nations Office for Outer Space Affairs</p><ul> 
-<li>Dr. Rick Janet Explains the Role of COPUOS and UNOOSA in Global Space Governance</li> 
-<li>Aarti Holla-Maini Shares Her Path to Leading UNOOSA and Her Vision for Its Future</li> 
-<li>Distinguishing UNOOSA (the office) from COPUOS (the committee)</li> 
-<li>UNOOSA's Expanding Mission: Capacity Building, Disaster Response, Space Law, and Sustainability</li> 
-<li>The Importance of Neutral Convening, Capacity Building, and Industry Input</li> 
-<li>Growing Need for Space Sustainability, Debris Mitigation, and New Regulatory Focus</li> 
-<li>Anticipating Lunar Activity: Resource Use, Transparency, and Non-Appropriation Principle</li> 
-<li>Engaging Commercial Space Actors While Maintaining Member State Authority</li> 
-<li>Megaconstellations: Building New Norms for Responsible Behavior in Orbit</li> 
-<li>Future UNOOSA Goals: Coordinating Space Traffic, Centralizing Satellite Data Access, and Fostering Global Partnerships</li></ul> 
-<p><strong>Hosts:</strong> <a href="https://twit.tv/people/rod-pyle">Rod Pyle</a> and <a href="https://twit.tv/people/tariq-malik">Tariq Malik</a></p> 
-<p><strong>Guests:</strong> <a href="https://www.linkedin.com/in/fjenet/" target="_blank">Fredrick (Rick) Jenet</a> and <a href="https://www.unoosa.org/" target="_blank">Aarti Holla-Maini</a></p> 
-<p>Download or subscribe to <em>This Week in Space</em> at <a href="https://twit.tv/shows/this-week-in-space">https://twit.tv/shows/this-week-in-space</a>.</p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
-<p><strong>Sponsors:</strong><ul>
-<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
-<li><a href="http://threatlocker.com/twit" target="_blank" rel="sponsored">threatlocker.com/twit</a></li>
-</ul></p>
-]]></content:encoded>
-			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860130/hero/TWIS0197_thumbnail.jpg"/>
-			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0197/twis0197_h264m_1920x1080.mp4</guid>
-			<rawvoice:isHd>yes</rawvoice:isHd>
-			<itunes:duration>58:52</itunes:duration>
-			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0197/twis0197_h264m_1920x1080.mp4" length="1045698578" type="video/mp4"/>
-			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twis/twis0197/twis0197_h264m_1920x1080.mp4" fileSize="1045698578" type="video/mp4" medium="video">
-				<media:title type="plain">This Week in Space 197: Inside UNOOSA</media:title>
-				<media:description type="plain">The UN and Space</media:description>
-				<media:keywords>space news, space podcast, rod pyle, tariq malik, This Week in Space, SpaceX Crew-12 launch, International Space Station, VAST commercial flight, unoosa, Aarti Holla-Maini, Dr. Rick Janet, Committee on the Peaceful Uses of Outer Space</media:keywords>
-				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860130/hero/TWIS0197_thumbnail.jpg" width="400" height="225" />
-				<media:rating scheme="urn:simple">nonadult</media:rating>
-				<media:rating scheme="urn:v-chip">tv-g</media:rating>
-				<media:category scheme="urn:iab:categories" label="Science">IAB15</media:category>
-				<media:credit role="host">Rod Pyle</media:credit>
-				<media:credit role="host">Tariq Malik</media:credit>
-				<media:credit role="guest">Fredrick (Rick) Jenet</media:credit>
-				<media:credit role="guest">Aarti Holla-Maini</media:credit>
-			</media:content>
-				<podcast:person role="host" href="https://twit.tv/people/rod-pyle" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/822413/pictures/rp_athlete_2022.jpg">Rod Pyle</podcast:person>
-				<podcast:person role="host" href="https://twit.tv/people/tariq-malik" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/822480/pictures/tariq-malik.jpg">Tariq Malik</podcast:person>
-				<podcast:person role="guest" href="https://www.linkedin.com/in/fjenet/">Fredrick (Rick) Jenet</podcast:person>
-				<podcast:person role="guest" href="https://www.unoosa.org/">Aarti Holla-Maini</podcast:person>
-		</item>
-		<item>
-			<title>Tech News Weekly 424: Face Scans on Discord?</title>
-			<itunes:title>Tech News Weekly 424: Face Scans on Discord?</itunes:title>
-			<itunes:episodeType>full</itunes:episodeType>
-			<itunes:author>TWiT</itunes:author>
-			<pubDate>Thu, 12 Feb 2026 16:29:30 PST</pubDate>
-			<link>https://twit.tv/shows/tech-news-weekly/episodes/424</link>
-			<comments>https://twit.tv/shows/tech-news-weekly/episodes/424</comments>
-			<category>News</category>
-			<category>Technology</category>
-			<category>Tech News</category>
-			<category>News</category>
-			<itunes:explicit>no</itunes:explicit>
-			<itunes:subtitle>Discord&#039;s New Age Verification Process Sparks Privacy Concerns</itunes:subtitle>
-			<podcast:transcript url="http://twit.tv/posts/tech/discords-new-age-checks-should-you-worry-about-face-scans-and-id-uploads" type="text/html" />
-			<itunes:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, amanda silberling, techcrunch, stanford, date drop, ai matching algorithm, online dating apps, Meta, instagram, Adam Mosseri, tech addiction trial, social media lawsuits, teen safety, snap, tiktok</itunes:keywords>
-			<description><![CDATA[
-<p>Amanda Silberling of TechCrunch joins Mikah Sargent this week on Tech News Weekly! A Stanford graduate built a matchmaking algorithm that's sweeping across the Stanford campus. Is social media "clinically addictive"? Discord announced an age-verification process that sparked privacy concerns among users. And the Virtual Boy is back?</p><ul> 
-<li>Amanda talks about an AI-powered dating app that was developed by a Stanford graduate and how dating for young adults is becoming more driven by tech.</li> 
-<li>Mikah talks about the social media addiction trial and comments made by Instagram's CEO, Adam Mosseri.</li> 
-<li>Emma Roth of The Verge joins the show to talk about Discord's age verification mandate that has sparked huge user privacy concerns, especially following a data breach the company suffered last year.</li> 
-<li>And Scott Stein of CNET stops by to share his thoughts and time with Nintendo's revival of Virtual Boy as a replica accessory for the Nintendo Switch and Switch 2.</li></ul> 
-<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/amanda-silberling">Amanda Silberling</a></p> 
-<p><strong>Guests:</strong> <a href="https://x.com/emroth08" target="_blank">Emma Roth</a> and <a href="https://twitter.com/jetscott" target="_blank">Scott Stein</a></p> 
-<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
-<p><strong>Sponsors:</strong><ul>
-<li><a href="http://preview.modulate.ai" target="_blank" rel="sponsored">preview.modulate.ai</a></li>
-<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
-<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
-</ul></p>
-]]></description>
-			<itunes:summary><![CDATA[
-<p>Amanda Silberling of TechCrunch joins Mikah Sargent this week on Tech News Weekly! A Stanford graduate built a matchmaking algorithm that's sweeping across the Stanford campus. Is social media "clinically addictive"? Discord announced an age-verification process that sparked privacy concerns among users. And the Virtual Boy is back?</p><ul> 
-<li>Amanda talks about an AI-powered dating app that was developed by a Stanford graduate and how dating for young adults is becoming more driven by tech.</li> 
-<li>Mikah talks about the social media addiction trial and comments made by Instagram's CEO, Adam Mosseri.</li> 
-<li>Emma Roth of The Verge joins the show to talk about Discord's age verification mandate that has sparked huge user privacy concerns, especially following a data breach the company suffered last year.</li> 
-<li>And Scott Stein of CNET stops by to share his thoughts and time with Nintendo's revival of Virtual Boy as a replica accessory for the Nintendo Switch and Switch 2.</li></ul> 
-<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/amanda-silberling">Amanda Silberling</a></p> 
-<p><strong>Guests:</strong> <a href="https://x.com/emroth08" target="_blank">Emma Roth</a> and <a href="https://twitter.com/jetscott" target="_blank">Scott Stein</a></p> 
-<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
-<p><strong>Sponsors:</strong><ul>
-<li><a href="http://preview.modulate.ai" target="_blank" rel="sponsored">preview.modulate.ai</a></li>
-<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
-<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
-</ul></p>
-]]></itunes:summary>
-			<content:encoded><![CDATA[
-<p>Amanda Silberling of TechCrunch joins Mikah Sargent this week on Tech News Weekly! A Stanford graduate built a matchmaking algorithm that's sweeping across the Stanford campus. Is social media "clinically addictive"? Discord announced an age-verification process that sparked privacy concerns among users. And the Virtual Boy is back?</p><ul> 
-<li>Amanda talks about an AI-powered dating app that was developed by a Stanford graduate and how dating for young adults is becoming more driven by tech.</li> 
-<li>Mikah talks about the social media addiction trial and comments made by Instagram's CEO, Adam Mosseri.</li> 
-<li>Emma Roth of The Verge joins the show to talk about Discord's age verification mandate that has sparked huge user privacy concerns, especially following a data breach the company suffered last year.</li> 
-<li>And Scott Stein of CNET stops by to share his thoughts and time with Nintendo's revival of Virtual Boy as a replica accessory for the Nintendo Switch and Switch 2.</li></ul> 
-<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://twit.tv/people/amanda-silberling">Amanda Silberling</a></p> 
-<p><strong>Guests:</strong> <a href="https://x.com/emroth08" target="_blank">Emma Roth</a> and <a href="https://twitter.com/jetscott" target="_blank">Scott Stein</a></p> 
-<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
-<p><strong>Sponsors:</strong><ul>
-<li><a href="http://preview.modulate.ai" target="_blank" rel="sponsored">preview.modulate.ai</a></li>
-<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
-<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
-</ul></p>
-]]></content:encoded>
-			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860124/hero/TNW0424_thumbnail-v3.jpg"/>
-			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0424/tnw0424_h264m_1920x1080.mp4</guid>
-			<rawvoice:isHd>yes</rawvoice:isHd>
-			<itunes:duration>1:00:28</itunes:duration>
-			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0424/tnw0424_h264m_1920x1080.mp4" length="1068220844" type="video/mp4"/>
-			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0424/tnw0424_h264m_1920x1080.mp4" fileSize="1068220844" type="video/mp4" medium="video">
-				<media:title type="plain">Tech News Weekly 424: Face Scans on Discord?</media:title>
-				<media:description type="plain">Discord&#039;s New Age Verification Process Sparks Privacy Concerns</media:description>
-				<media:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, amanda silberling, techcrunch, stanford, date drop, ai matching algorithm, online dating apps, Meta, instagram, Adam Mosseri, tech addiction trial, social media lawsuits, teen safety, snap, tiktok</media:keywords>
-				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860124/hero/TNW0424_thumbnail-v3.jpg" width="400" height="225" />
-				<media:rating scheme="urn:simple">nonadult</media:rating>
-				<media:rating scheme="urn:v-chip">tv-g</media:rating>
-				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
-				<media:credit role="host">Mikah Sargent</media:credit>
-				<media:credit role="host">Amanda Silberling</media:credit>
-				<media:credit role="guest">Emma Roth</media:credit>
-				<media:credit role="guest">Scott Stein</media:credit>
-			</media:content>
-				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
-				<podcast:person role="host" href="https://twit.tv/people/amanda-silberling" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/834271/pictures/amanda-silberling.jpg">Amanda Silberling</podcast:person>
-				<podcast:person role="guest" href="https://x.com/emroth08">Emma Roth</podcast:person>
-				<podcast:person role="guest" href="https://twitter.com/jetscott">Scott Stein</podcast:person>
-		</item>
-		<item>
-			<title>Home Theater Geeks 518: MEMS Speaker Technology</title>
-			<itunes:title>Home Theater Geeks 518: MEMS Speaker Technology</itunes:title>
-			<itunes:episodeType>full</itunes:episodeType>
-			<itunes:author>TWiT</itunes:author>
-			<pubDate>Thu, 12 Feb 2026 15:59:30 PST</pubDate>
-			<link>https://twit.tv/shows/home-theater-geeks/episodes/518</link>
-			<comments>https://twit.tv/shows/home-theater-geeks/episodes/518</comments>
-			<category>News</category>
-			<category>Technology</category>
-			<itunes:explicit>no</itunes:explicit>
-			<itunes:subtitle>A Different Type of Speaker Driver</itunes:subtitle>
-			<podcast:transcript url="http://twit.tv/posts/transcripts/home-theater-geeks-518-transcript" type="text/html" />
-			<itunes:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</itunes:keywords>
-			<description><![CDATA[
-<p>Speaker drivers haven't changed much in the last 100 years, but they have certain drawbacks, especially in small form factors such as earbuds. A company called <a href="https://sonicedge.io/" target="_blank">SonicEdge </a>is developing a new type of driver that takes a completely different approach. CEO and co-founder Moti Margalit talks about his company's innovations with Scott Wilkinson.</p> 
-<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
-<p><strong>Guest:</strong> <a href="https://sonicedge.io/" target="_blank">Moti Margalit</a></p> 
-<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
-<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
-]]></description>
-			<itunes:summary><![CDATA[
-<p>Speaker drivers haven't changed much in the last 100 years, but they have certain drawbacks, especially in small form factors such as earbuds. A company called <a href="https://sonicedge.io/" target="_blank">SonicEdge </a>is developing a new type of driver that takes a completely different approach. CEO and co-founder Moti Margalit talks about his company's innovations with Scott Wilkinson.</p> 
-<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
-<p><strong>Guest:</strong> <a href="https://sonicedge.io/" target="_blank">Moti Margalit</a></p> 
-<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
-<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
-]]></itunes:summary>
-			<content:encoded><![CDATA[
-<p>Speaker drivers haven't changed much in the last 100 years, but they have certain drawbacks, especially in small form factors such as earbuds. A company called <a href="https://sonicedge.io/" target="_blank">SonicEdge </a>is developing a new type of driver that takes a completely different approach. CEO and co-founder Moti Margalit talks about his company's innovations with Scott Wilkinson.</p> 
-<p><strong>Host:</strong> <a href="https://twit.tv/people/scott-wilkinson">Scott Wilkinson</a></p> 
-<p><strong>Guest:</strong> <a href="https://sonicedge.io/" target="_blank">Moti Margalit</a></p> 
-<p>Download or subscribe to <em>Home Theater Geeks</em> at <a href="https://twit.tv/shows/home-theater-geeks">https://twit.tv/shows/home-theater-geeks</a></p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
-<p>Club TWiT members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
-]]></content:encoded>
-			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/02/860071/hero/HTG0518_thumbnail.jpg"/>
-			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0518/htg0518_h264m_1920x1080.mp4</guid>
-			<rawvoice:isHd>yes</rawvoice:isHd>
-			<itunes:duration>57:58</itunes:duration>
-			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0518/htg0518_h264m_1920x1080.mp4" length="983255208" type="video/mp4"/>
-			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/htg/htg0518/htg0518_h264m_1920x1080.mp4" fileSize="983255208" type="video/mp4" medium="video">
-				<media:title type="plain">Home Theater Geeks 518: MEMS Speaker Technology</media:title>
-				<media:description type="plain">A Different Type of Speaker Driver</media:description>
-				<media:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</media:keywords>
-				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/02/860071/hero/HTG0518_thumbnail.jpg" width="400" height="225" />
-				<media:rating scheme="urn:simple">nonadult</media:rating>
-				<media:rating scheme="urn:v-chip">tv-g</media:rating>
-				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
-				<media:credit role="host">Scott Wilkinson</media:credit>
-				<media:credit role="guest">Moti Margalit</media:credit>
-			</media:content>
-				<podcast:person role="host" href="https://twit.tv/people/scott-wilkinson" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/52/pictures/scottwilkinson1600-fez.jpg">Scott Wilkinson</podcast:person>
-				<podcast:person role="guest" href="https://sonicedge.io/">Moti Margalit</podcast:person>
 		</item>
 	</channel>
 </rss>
