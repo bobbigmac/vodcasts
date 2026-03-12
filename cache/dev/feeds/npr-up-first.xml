@@ -5,7 +5,7 @@
     <link>https://www.npr.org/podcasts/510318/up-first</link>
     <description><![CDATA[NPR's Up First is the news you need to start your day. The three biggest stories of the day, with reporting and analysis from NPR News — in 10 minutes. Available weekdays at 6:30 a.m. ET, with hosts Leila Fadel, Steve Inskeep, Michel Martin and A Martinez. Also available on Saturdays at 9 a.m. ET, with Ayesha Rascoe and Scott Simon. On Sundays, hear a longer exploration behind the headlines with Ayesha Rascoe on "The Sunday Story," available by 8 a.m. ET. Subscribe and listen, then support your local NPR station at donate.npr.org.<br><br><em>Support NPR's reporting by subscribing to Up First+ and unlock sponsor-free listening. Learn more at plus.npr.org/upfirst</em>]]></description>
     <copyright>Copyright 2015-2026 NPR - For Personal Use Only</copyright>
-    <generator>NPR Feed Publish Service v2.3.7</generator>
+    <generator>NPR Feed Publish Service v2.3.8</generator>
     <language>en-us</language>
     <itunes:author>NPR</itunes:author>
     <itunes:block>no</itunes:block>
@@ -16,15 +16,15 @@
     <itunes:category text="News">
       <itunes:category text="Daily News"/>
     </itunes:category>
-    <media:thumbnail url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+663/resize/3000/quality/66/format/png/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe0%2F7a%2Ffe9d16a44fbf9dd2d9932ffe799b%2F510318.png" height="1688" width="3000"/>
-    <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/png/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe0%2F7a%2Ffe9d16a44fbf9dd2d9932ffe799b%2F510318.png"/>
+    <media:thumbnail url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+663/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe0%2F7a%2Ffe9d16a44fbf9dd2d9932ffe799b%2F510318.png" height="1688" width="3000"/>
+    <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe0%2F7a%2Ffe9d16a44fbf9dd2d9932ffe799b%2F510318.png"/>
     <itunes:type>episodic</itunes:type>
     <image>
-      <url>https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/png/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe0%2F7a%2Ffe9d16a44fbf9dd2d9932ffe799b%2F510318.png</url>
+      <url>https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/1400/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe0%2F7a%2Ffe9d16a44fbf9dd2d9932ffe799b%2F510318.png</url>
       <title>Up First from NPR</title>
       <link>https://www.npr.org/podcasts/510318/up-first</link>
     </image>
-    <lastBuildDate>Thu, 12 Mar 2026 09:52:15 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Mar 2026 13:52:03 +0000</lastBuildDate>
     <media:restriction type="country" relationship="allow">ad ar at au be bg bo br ca ch cl co cr cy cz de dk do ec ee es fi fr gb gr gt hn hu id ie il is it jp li lt lu lv mc mt mx my ni nl no nz pa pe pl pt py ro se sk sv th us uy za</media:restriction>
     <podcast:funding url="https://plus.npr.org/?utm_source=podcast_rss_funding_tag">Support NPR by enrolling in NPR+!</podcast:funding>
     <item>
@@ -192,7 +192,7 @@
       <itunes:block>no</itunes:block>
       <itunes:title>Bet on Anything, Everywhere, All at Once</itunes:title>
       <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F8a%2F43%2F67aae53f491f94f9ee4f44777436%2F87a7011d-773d-49ee-be5d-c88d486d4dc9.jpg"/>
-      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/8667x4875+0+0/resize/1280/quality/66/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F17%2F68%2F6ce4cbc442a995e4804dce96e8e3%2F71da0bbb-c890-4a4f-a86e-c4da73da7870.jpeg"/>
+      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/8667x4875+0+0/resize/1280/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F17%2F68%2F6ce4cbc442a995e4804dce96e8e3%2F71da0bbb-c890-4a4f-a86e-c4da73da7870.jpeg"/>
       <itunes:duration>1599</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
@@ -306,7 +306,7 @@
       <itunes:block>no</itunes:block>
       <itunes:title>Hollywood’s Love Affair with VistaVision</itunes:title>
       <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F56%2F5c%2F5d26c6b0469395523866dd6ecb9b%2Fd04a21ac-92c4-4c7e-b0d3-c082c2a24ca6.jpg"/>
-      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4500x2531+0+0/resize/1280/quality/66/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa7%2Ff3%2F0334bedc408d84d669862d438b56%2Fb49540f3-b507-4548-9f9d-c28118d30c2b.jpeg"/>
+      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4500x2531+0+0/resize/1280/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa7%2Ff3%2F0334bedc408d84d669862d438b56%2Fb49540f3-b507-4548-9f9d-c28118d30c2b.jpeg"/>
       <itunes:duration>1508</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
@@ -540,7 +540,7 @@ And immigration officials defend enforcement tactics on Capitol Hill while lawma
       <itunes:block>no</itunes:block>
       <itunes:title>How the Presidency is Making Trump Richer</itunes:title>
       <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F1d%2F0f%2Fc81eca204c8897fd4d4f3dd6b4d5%2Fd96458a9-4c5b-4740-a963-1148905298e2.jpg"/>
-      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5607x3154+0+0/resize/1280/quality/66/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F47%2F7c%2F5c4876204d3db1856810e9f89cf6%2F0c171935-8f40-44f5-ae68-3902f3bfe15b.jpeg"/>
+      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5607x3154+0+0/resize/1280/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F47%2F7c%2F5c4876204d3db1856810e9f89cf6%2F0c171935-8f40-44f5-ae68-3902f3bfe15b.jpeg"/>
       <itunes:duration>1920</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
@@ -639,8 +639,8 @@ And immigration officials defend enforcement tactics on Capitol Hill while lawma
       <link>https://www.npr.org/2026/02/01/nx-s1-5647684/women-in-skilled-trades-face-hurdles</link>
       <itunes:block>no</itunes:block>
       <itunes:title>Women in the Skilled Trades Face New Hurdles</itunes:title>
-      <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1069x1069+416+0/resize/3000/quality/66/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F50%2Fd8%2F515abd5345a292425a7ebd83597f%2F883fa7bf-4642-4a38-8766-9b85152d3c87.jpeg"/>
-      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1900x1069+0+0/resize/1280/quality/66/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F50%2Fd8%2F515abd5345a292425a7ebd83597f%2F883fa7bf-4642-4a38-8766-9b85152d3c87.jpeg"/>
+      <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1069x1069+416+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F50%2Fd8%2F515abd5345a292425a7ebd83597f%2F883fa7bf-4642-4a38-8766-9b85152d3c87.jpeg"/>
+      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1900x1069+0+0/resize/1280/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F50%2Fd8%2F515abd5345a292425a7ebd83597f%2F883fa7bf-4642-4a38-8766-9b85152d3c87.jpeg"/>
       <itunes:duration>1554</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
@@ -754,7 +754,7 @@ workforce shrink.</div><br/><br/>To manage podcast ad preferences, review the li
       <itunes:block>no</itunes:block>
       <itunes:title>Challenger at 40: Lessons from a tragedy</itunes:title>
       <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F59%2Fec%2F8069ef344958a9c54c00cc9f54ff%2Fde8c4653-ff7c-4d3e-b0e8-53b3c88eaed3.jpg"/>
-      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+0/resize/1280/quality/66/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ff3%2Fb8%2Fbfa5048344b4b63782961b28ad31%2F2c08a03e-893a-48b0-b326-28e0471a312a.jpeg"/>
+      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+0/resize/1280/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ff3%2Fb8%2Fbfa5048344b4b63782961b28ad31%2F2c08a03e-893a-48b0-b326-28e0471a312a.jpeg"/>
       <itunes:duration>3375</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
@@ -904,7 +904,7 @@ And world leaders are being asked to buy into a new U.S.-led “Board of Peace�
       <itunes:block>no</itunes:block>
       <itunes:title>Defending the Disabled</itunes:title>
       <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fbd%2F07%2F98d3b03f49db8bad7c9cb1a333a3%2F9b19674c-84b0-4035-8fca-93c87b20c682.jpg"/>
-      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4498x2530+0+0/resize/1280/quality/66/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fef%2F11%2F840259e74a5e8426b70b3ddd04c2%2Fe7912794-1c1c-411a-9910-281ac59a1e19.jpeg"/>
+      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4498x2530+0+0/resize/1280/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fef%2F11%2F840259e74a5e8426b70b3ddd04c2%2Fe7912794-1c1c-411a-9910-281ac59a1e19.jpeg"/>
       <itunes:duration>1717</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
@@ -1004,7 +1004,7 @@ And world leaders are being asked to buy into a new U.S.-led “Board of Peace�
       <itunes:block>no</itunes:block>
       <itunes:title>Why More Liberals Are Buying Guns</itunes:title>
       <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fb5%2F83%2F3fb92cd342178840fb49a0d42193%2F28676f5c-788c-40aa-8a2f-c3d8ca0bddd0.jpg"/>
-      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4862x2735+0+0/resize/1280/quality/66/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F07%2F86%2Ff9a7de934b1a93fd12d6330ed0d9%2F699715d7-c722-4da6-aa54-c74a41e0c4e3.jpeg"/>
+      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4862x2735+0+0/resize/1280/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F07%2F86%2Ff9a7de934b1a93fd12d6330ed0d9%2F699715d7-c722-4da6-aa54-c74a41e0c4e3.jpeg"/>
       <itunes:duration>1508</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
@@ -1212,7 +1212,7 @@ And a year after DOGE’s push to shrink government, agencies are smaller, spend
       <itunes:block>no</itunes:block>
       <itunes:title>A New Chapter, Later in Life</itunes:title>
       <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd8%2F02%2F0b9fb46e4336b67a0e4d83d3d40a%2F36cbc845-8266-4ae9-a2bc-05075496ee6a.jpg"/>
-      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5760x3240+0+0/resize/1280/quality/66/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F5a%2F3a%2F086817b040368e4f9d23046192e9%2Fc18cebc6-6c73-4967-9b98-af4ea8ac3df8.jpeg"/>
+      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5760x3240+0+0/resize/1280/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F5a%2F3a%2F086817b040368e4f9d23046192e9%2Fc18cebc6-6c73-4967-9b98-af4ea8ac3df8.jpeg"/>
       <itunes:duration>1498</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
@@ -1314,7 +1314,7 @@ And a year after DOGE’s push to shrink government, agencies are smaller, spend
       <itunes:block>no</itunes:block>
       <itunes:title>Where Kids Play</itunes:title>
       <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F94%2Fd8%2Fbd5ee01c439a81a92aad0e8e642a%2F986cef44-06c5-4ad3-b016-f121bd96ee14.jpg"/>
-      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+0/resize/1280/quality/66/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F9f%2F37%2F959f5c094a16a2d5d2d83829cee4%2Fdd300d53-0c7d-4b06-be02-33f13f30c534.jpeg"/>
+      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+0/resize/1280/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F9f%2F37%2F959f5c094a16a2d5d2d83829cee4%2Fdd300d53-0c7d-4b06-be02-33f13f30c534.jpeg"/>
       <itunes:duration>883</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
@@ -1414,7 +1414,7 @@ And a year after DOGE’s push to shrink government, agencies are smaller, spend
       <itunes:block>no</itunes:block>
       <itunes:title>Best Friends and Life Partners</itunes:title>
       <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fca%2F72%2Fd601ccd14ce0ac2fbcb1e864a436%2Fed0dd867-4707-43d4-9bbf-b22c8bc9ff94.jpg"/>
-      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2000x1125+0+0/resize/1280/quality/66/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F6a%2F9a%2F1d3583d14384a3783c05d250e834%2F7e370895-a0a3-42e4-9140-16b4df2c4c70.jpeg"/>
+      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2000x1125+0+0/resize/1280/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F6a%2F9a%2F1d3583d14384a3783c05d250e834%2F7e370895-a0a3-42e4-9140-16b4df2c4c70.jpeg"/>
       <itunes:duration>1466</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
@@ -1521,7 +1521,7 @@ facing immense pressure in the United States.<br/><br/>To manage podcast ad pref
       <itunes:block>no</itunes:block>
       <itunes:title>The Families Hiding from ICE</itunes:title>
       <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F07%2F22%2F185e8da848899593a5e710074443%2F62269449-8987-426c-9ffc-67d6dfd59e26.jpg"/>
-      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5333x3000+0+0/resize/1280/quality/66/format/png/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fb6%2F66%2Fd09d2264464ea1c82c1bbf9b92c8%2F4f2c0c87-130e-41c7-94ba-4b5408eb8af0.png"/>
+      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5333x3000+0+0/resize/1280/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fb6%2F66%2Fd09d2264464ea1c82c1bbf9b92c8%2F4f2c0c87-130e-41c7-94ba-4b5408eb8af0.png"/>
       <itunes:duration>1464</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
@@ -1633,8 +1633,8 @@ And new details about the Afghan man accused of shooting two National Guard sold
       <link>https://www.npr.org/2025/11/30/nx-s1-5570824/your-next-great-listen</link>
       <itunes:block>no</itunes:block>
       <itunes:title>Your Next Great Listen</itunes:title>
-      <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2025x2025+788+0/resize/3000/quality/66/format/png/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F4b%2F14%2F062476454b1782a3ba240c6b6f92%2F2237ecf4-d894-4d7f-a42a-a0c9da38febd.png"/>
-      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3600x2025+0+0/resize/1280/quality/66/format/png/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F4b%2F14%2F062476454b1782a3ba240c6b6f92%2F2237ecf4-d894-4d7f-a42a-a0c9da38febd.png"/>
+      <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2025x2025+788+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F4b%2F14%2F062476454b1782a3ba240c6b6f92%2F2237ecf4-d894-4d7f-a42a-a0c9da38febd.png"/>
+      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3600x2025+0+0/resize/1280/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F4b%2F14%2F062476454b1782a3ba240c6b6f92%2F2237ecf4-d894-4d7f-a42a-a0c9da38febd.png"/>
       <itunes:duration>814</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
@@ -1752,7 +1752,7 @@ And new details about the Afghan man accused of shooting two National Guard sold
       <itunes:block>no</itunes:block>
       <itunes:title>Higher Education’s AI Problem</itunes:title>
       <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F49%2F40%2F7550927c4f598821886ddeca9498%2Feace05e1-cbc2-428d-8564-0c1fc1b1ec32.jpg"/>
-      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+0/resize/1280/quality/66/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd9%2Fac%2Fc83d033f4ba38ad52c0b94e1a32d%2Fd9599455-db5d-4c2b-96cb-92542eb077b0.jpeg"/>
+      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+0/resize/1280/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fd9%2Fac%2Fc83d033f4ba38ad52c0b94e1a32d%2Fd9599455-db5d-4c2b-96cb-92542eb077b0.jpeg"/>
       <itunes:duration>1682</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
@@ -1982,7 +1982,7 @@ way out or would the trauma of war come to define his life?<br>Listen to Part 2 
       <itunes:block>no</itunes:block>
       <itunes:title>Carlson’s War: Part 2</itunes:title>
       <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F85%2F0e%2Fde07d3674b729825ce2bc9b5e03f%2F69759f97-56f3-405d-9b8a-13e6c08a6372.jpg"/>
-      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+0/resize/1280/quality/66/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F62%2Fb2%2Fc7a370864be898e14d3df5202f99%2Fdf01ce53-dc27-4aa2-b247-baa1aa607941.jpeg"/>
+      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+0/resize/1280/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F62%2Fb2%2Fc7a370864be898e14d3df5202f99%2Fdf01ce53-dc27-4aa2-b247-baa1aa607941.jpeg"/>
       <itunes:duration>1640</itunes:duration>
       <itunes:explicit>yes</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
@@ -2082,7 +2082,7 @@ way out or would the trauma of war come to define his life?<br>Listen to Part 2 
       <itunes:block>no</itunes:block>
       <itunes:title>How Smaller Families are Changing the World</itunes:title>
       <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fac%2Ff6%2Faaa48c3b4e04ab5e704d053cf1c0%2Fc579059c-49c0-449b-9030-4e30f02f8fcc.jpg"/>
-      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5712x3213+0+0/resize/1280/quality/66/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F99%2Ff1%2F32fbe58344018661d2b00c02ffbd%2F7f950e18-c8c2-4f32-8d9a-240241e8e99b.jpeg"/>
+      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5712x3213+0+0/resize/1280/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F99%2Ff1%2F32fbe58344018661d2b00c02ffbd%2F7f950e18-c8c2-4f32-8d9a-240241e8e99b.jpeg"/>
       <itunes:duration>1325</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
@@ -2182,7 +2182,7 @@ way out or would the trauma of war come to define his life?<br>Listen to Part 2 
       <itunes:block>no</itunes:block>
       <itunes:title>Kiwi vs. Predator</itunes:title>
       <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F44%2Fa6%2F14b41e97493c95163ae1e5508bc6%2Fab8bf08f-4dbc-4546-8fe1-d2332beb86a3.jpg"/>
-      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5514x3102+0+0/resize/1280/quality/66/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F61%2F1d%2Ff80830b74e0cbdb3ddad72125e65%2F16d56140-f70e-4975-afa0-a5640b9c81e3.jpeg"/>
+      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/5514x3102+0+0/resize/1280/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F61%2F1d%2Ff80830b74e0cbdb3ddad72125e65%2F16d56140-f70e-4975-afa0-a5640b9c81e3.jpeg"/>
       <itunes:duration>1429</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
@@ -2281,8 +2281,8 @@ way out or would the trauma of war come to define his life?<br>Listen to Part 2 
       <link>https://www.npr.org/2025/10/19/nx-s1-5551120/homeless-encampment-union-point-self-governance</link>
       <itunes:block>no</itunes:block>
       <itunes:title>A Tiny Plot to Call Home</itunes:title>
-      <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/png/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F4a%2Ffc%2F9a8617964c21816dfb1fcb94ceaf%2Fc154cbea-1182-4220-9b73-a6290828c905.png"/>
-      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/8250x4641+0+430/resize/1280/quality/66/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe4%2F2f%2F90c03ca94964b63c2755b67a3334%2F165327d0-12ef-481c-ada6-b2eaf49094d3.jpeg"/>
+      <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F4a%2Ffc%2F9a8617964c21816dfb1fcb94ceaf%2Fc154cbea-1182-4220-9b73-a6290828c905.png"/>
+      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/8250x4641+0+430/resize/1280/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe4%2F2f%2F90c03ca94964b63c2755b67a3334%2F165327d0-12ef-481c-ada6-b2eaf49094d3.jpeg"/>
       <itunes:duration>1357</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
@@ -2496,7 +2496,7 @@ way out or would the trauma of war come to define his life?<br>Listen to Part 2 
       <itunes:block>no</itunes:block>
       <itunes:title>National Security, Unlocked</itunes:title>
       <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fff%2F19%2F9a61c1774aeba213f6f74a70b280%2F647e239c-91aa-4b35-9c49-aa3874b86872.jpg"/>
-      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2803x1577+0+0/resize/1280/quality/66/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe1%2F86%2Fcc13e8ab439c888fac49edd1bddb%2F1d1418cb-92e0-442e-ad85-a09b8aa9e1dd.jpeg"/>
+      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2803x1577+0+0/resize/1280/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe1%2F86%2Fcc13e8ab439c888fac49edd1bddb%2F1d1418cb-92e0-442e-ad85-a09b8aa9e1dd.jpeg"/>
       <itunes:duration>1184</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
@@ -2610,7 +2610,7 @@ way out or would the trauma of war come to define his life?<br>Listen to Part 2 
       <itunes:block>no</itunes:block>
       <itunes:title>American Voices on Trump</itunes:title>
       <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fe7%2F38%2Fb171a5c94af3aa5a260709a61db1%2F3313ec85-dcd9-4e18-a437-849d537853f1.jpg"/>
-      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6048x3402+0+0/resize/1280/quality/66/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F51%2F15%2F2199d55c443d89962c8b67d54d5b%2F81945af0-5c09-4ecb-bc8f-b6b7828e5a80.jpeg"/>
+      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6048x3402+0+0/resize/1280/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F51%2F15%2F2199d55c443d89962c8b67d54d5b%2F81945af0-5c09-4ecb-bc8f-b6b7828e5a80.jpeg"/>
       <itunes:duration>1678</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
@@ -2930,7 +2930,7 @@ year.<br/><br/>To manage podcast ad preferences, review the links below:<br/><br
       <itunes:block>no</itunes:block>
       <itunes:title>When the Oil Runs Dry</itunes:title>
       <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F0b%2Fd0%2Fca5877194d6cac4924a0393d8a69%2F1517394c-2bef-4c1f-ae13-31e65c17b659.jpg"/>
-      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+0/resize/1280/quality/66/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F8b%2Fbf%2F5a70ae394388822ce5ae40858e38%2F93f619b2-3b46-4987-9b1e-f9bf39f25c6d.jpeg"/>
+      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+0/resize/1280/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F8b%2Fbf%2F5a70ae394388822ce5ae40858e38%2F93f619b2-3b46-4987-9b1e-f9bf39f25c6d.jpeg"/>
       <itunes:duration>1605</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
@@ -3030,7 +3030,7 @@ year.<br/><br/>To manage podcast ad preferences, review the links below:<br/><br
       <itunes:block>no</itunes:block>
       <itunes:title>A CLEAR Path to the Front of the Line</itunes:title>
       <itunes:image href="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x3000+0+0/resize/3000/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F00%2F24%2Fd7e7338544cfa0ce0897080399fc%2F28320885-5ea3-447b-a6ba-01a43c831a81.jpg"/>
-      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+0/resize/1280/quality/66/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F99%2F74%2Ffd562d8b4d54afdb484fc1b3444a%2Fbf4a0519-263e-4449-95b8-d57e4785f5e9.jpeg"/>
+      <media:thumbnail height="720" width="1280" url="https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+0/resize/1280/quality/66/format/jpg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F99%2F74%2Ffd562d8b4d54afdb484fc1b3444a%2Fbf4a0519-263e-4449-95b8-d57e4785f5e9.jpeg"/>
       <itunes:duration>1433</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
@@ -4549,7 +4549,7 @@ year.<br/><br/>To manage podcast ad preferences, review the links below:<br/><br
       <itunes:block>no</itunes:block>
       <itunes:title>The Class of 2025</itunes:title>
       <itunes:image href="https://media.npr.org/assets/img/2025/05/23/square-tss-postgrad_sq-b62f89d039c868909c3d8439269580abca5bb430.jpg?s=3000&amp;c=66&amp;f=jpg"/>
-      <media:thumbnail height="720" width="1280" url="https://media.npr.org/assets/img/2025/05/23/image_wide-3db20cae9e69e02d5358daf38063f41e396ade44.png?s=1280&amp;c=66&amp;f=png"/>
+      <media:thumbnail height="720" width="1280" url="https://media.npr.org/assets/img/2025/05/23/image_wide-3db20cae9e69e02d5358daf38063f41e396ade44.png?s=1280&amp;c=66&amp;f=jpg"/>
       <itunes:duration>1161</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
@@ -5063,7 +5063,7 @@ year.<br/><br/>To manage podcast ad preferences, review the links below:<br/><br
       <itunes:block>no</itunes:block>
       <itunes:title>The Girls Who Were Sent Away</itunes:title>
       <itunes:image href="https://media.npr.org/assets/img/2025/04/17/apple-podcast-square-7-_sq-fb1a95e20cb1af205f645b990654d6a5f3fa0d97.jpg?s=3000&amp;c=66&amp;f=jpg"/>
-      <media:thumbnail height="720" width="1280" url="https://media.npr.org/assets/img/2025/04/17/grady-hendrikx-16x9_wide-ec11360b3ec2b39923d59a5dc692117cade29490.png?s=1280&amp;c=66&amp;f=png"/>
+      <media:thumbnail height="720" width="1280" url="https://media.npr.org/assets/img/2025/04/17/grady-hendrikx-16x9_wide-ec11360b3ec2b39923d59a5dc692117cade29490.png?s=1280&amp;c=66&amp;f=jpg"/>
       <itunes:duration>1210</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
@@ -6792,8 +6792,8 @@ year.<br/><br/>To manage podcast ad preferences, review the links below:<br/><br
       <link>https://www.npr.org/2026/01/01/1198920485/the-luckiest-of-the-unlucky</link>
       <itunes:block>no</itunes:block>
       <itunes:title>The Luckiest of the Unlucky</itunes:title>
-      <itunes:image href="https://media.npr.org/assets/img/2024/12/19/image-1-_sq-428a543564091f3cf570af930a87bbb46821c3f4.png?s=3000&amp;c=66&amp;f=png"/>
-      <media:thumbnail height="720" width="1280" url="https://media.npr.org/assets/img/2024/12/19/image-1-_wide-0c4dc7c333fd0cafdc0baf2e6725697e2cfeda35.png?s=1280&amp;c=66&amp;f=png"/>
+      <itunes:image href="https://media.npr.org/assets/img/2024/12/19/image-1-_sq-428a543564091f3cf570af930a87bbb46821c3f4.png?s=3000&amp;c=66&amp;f=jpg"/>
+      <media:thumbnail height="720" width="1280" url="https://media.npr.org/assets/img/2024/12/19/image-1-_wide-0c4dc7c333fd0cafdc0baf2e6725697e2cfeda35.png?s=1280&amp;c=66&amp;f=jpg"/>
       <itunes:duration>1720</itunes:duration>
       <itunes:explicit>no</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
