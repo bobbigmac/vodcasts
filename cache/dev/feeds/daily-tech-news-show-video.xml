@@ -7,8 +7,8 @@
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <language>en</language>
         <copyright>Creative Commons</copyright>
-        <pubDate>Thu, 05 Mar 2026 15:11:50 -0800</pubDate>
-        <lastBuildDate>Thu, 05 Mar 2026 15:11:50 -0800</lastBuildDate>
+        <pubDate>Thu, 12 Mar 2026 14:56:45 -0700</pubDate>
+        <lastBuildDate>Thu, 12 Mar 2026 14:56:45 -0700</lastBuildDate>
         <itunes:author>Tom Merritt</itunes:author>
         <itunes:image href="https://i1.wp.com/dailytechnewsshow.com/wp-content/uploads/2021/06/DTNS_ACAST_Thumb_video.png"/>
         <itunes:explicit>no</itunes:explicit>
@@ -21,6 +21,24 @@
 This video feed is volunteer run. If you like the show, want to support the effort and make the show better, please visit http://www.dailytechnewsshow.com/support. &#13;
 &#13;
 The video feed status is at https://twitter.com/shwei_ and iTunes link is http://goo.gl/kAJmdi </itunes:summary><itunes:subtitle>Stay up to date with independent, authoritative and trustworthy tech news.</itunes:subtitle><itunes:category text="Technology"><itunes:category text="Tech News"/></itunes:category><itunes:owner><itunes:email>shwei@dailytechnewsshow.com</itunes:email><itunes:name>Tom Merritt</itunes:name></itunes:owner><item>
+            <title>Ray Tracing Tired, Path Tracing Wired – DTNS Live 5118</title>
+            <link>https://dailytechnewsshow.com/2026/03/12/ray-tracing-tired-path-tracing-wired-dtns-live-5118/</link>
+            <description><![CDATA[<p>Microsoft released more details about Project Helix, their next generation Xbox including the ability to play Xbox and PC games. Plus Nvidia announced new DLSS 4.5 native integration coming to 20 games. And our listeners ask us how to parse out our time between listening to news and entertainment podcasts. Finally there’s a new quiz this week that will test your knowledge of the two Ryans. Ryan Gosling and Ryan Reynolds. Who starred in what movies?</p>
+
+<p>Starring Sarah Lane, Tom Merritt, Robb Dunewood, Trisha Hershberger, Roger Chang, Joe.</p>
+
+<p>To read the show <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR4aJ9WrJhmr37IDZP44Z1Et6m_QA5NPiWJqZ5HFx88wS0DSGJ1k46tRdSVyj_Nz9XAvXqbtXnwpoFK/pubhtml?gid=1995710957&amp;single=true">notes </a>click here!</p>
+
+<p>Support the show on <a href="https://www.patreon.com/join/dtns">Patreon</a> by becoming a supporter!</p>
+]]></description>
+            <pubDate>Thu, 12 Mar 2026 14:56:14 -0700</pubDate>
+            <enclosure length="1359595790" type="video/mp4" url="https://dtns.muffincdn.com/DTNS20260312.mp4"/>
+            <guid isPermaLink="false">40DDA7CC-E5DF-414B-A17C-A2DDAF3CA747</guid>
+            <itunes:duration>4381</itunes:duration>
+            <itunes:episodeType>full</itunes:episodeType>
+            
+        <dc:creator>shwei@dailytechnewsshow.com (Tom Merritt)</dc:creator><itunes:explicit>no</itunes:explicit><itunes:subtitle>Microsoft released more details about Project Helix, their next generation Xbox including the ability to play Xbox and PC games. Plus Nvidia announced new DLSS 4.5 native integration coming to 20 games. And our listeners ask us how to parse out our time between listening to news and entertainment podcasts. Finally there’s a new quiz this week that will test your knowledge of the two Ryans. Ryan Gosling and Ryan Reynolds. Who starred in what movies? Starring Sarah Lane, Tom Merritt, Robb Dunewood, Trisha Hershberger, Roger Chang, Joe. To read the show notes click here! Support the show on Patreon by becoming a supporter!</itunes:subtitle><itunes:author>Tom Merritt</itunes:author><itunes:summary>Microsoft released more details about Project Helix, their next generation Xbox including the ability to play Xbox and PC games. Plus Nvidia announced new DLSS 4.5 native integration coming to 20 games. And our listeners ask us how to parse out our time between listening to news and entertainment podcasts. Finally there’s a new quiz this week that will test your knowledge of the two Ryans. Ryan Gosling and Ryan Reynolds. Who starred in what movies? Starring Sarah Lane, Tom Merritt, Robb Dunewood, Trisha Hershberger, Roger Chang, Joe. To read the show notes click here! Support the show on Patreon by becoming a supporter!</itunes:summary><itunes:keywords>Tech,News,Digest,Daily,Tom,Merritt,DTNS</itunes:keywords></item>
+        <item>
             <title>How You Like Them Apple Products? – DTNS Live 5117</title>
             <link>https://dailytechnewsshow.com/2026/03/05/how-you-like-them-apple-products-dtns-live-5117/</link>
             <description><![CDATA[<p>We discuss all the big announcements Apple made this week including the MacBook Nano, new M5 SoC, and iPad Air. Is Jack Dorsey right to get ahead of it and right when he says “most companies are late?” to replacing people with AI tools, or is this a mistake? And we have a new Zillow Game. Can you guess the correct price for these stunning properties before the staff do?</p>
@@ -177,18 +195,5 @@ The video feed status is at https://twitter.com/shwei_ and iTunes link is http:/
             <itunes:episodeType>full</itunes:episodeType>
             
         <dc:creator>shwei@dailytechnewsshow.com (Tom Merritt)</dc:creator><itunes:explicit>no</itunes:explicit><itunes:subtitle>FutureSense's FoodChain system helps customers understand where their food comes from and how it was handled. And it averted a national Kimchi Crisis in Korea. Support the show on Patreon by becoming a supporter!</itunes:subtitle><itunes:author>Tom Merritt</itunes:author><itunes:summary>FutureSense's FoodChain system helps customers understand where their food comes from and how it was handled. And it averted a national Kimchi Crisis in Korea. Support the show on Patreon by becoming a supporter!</itunes:summary><itunes:keywords>Tech,News,Digest,Daily,Tom,Merritt,DTNS</itunes:keywords></item>
-        <item>
-            <title>CES 2026 - Robots that Sort Recycling</title>
-            <description><![CDATA[<p>Aetech's Atron and Muli-Tron robots can sort waste for recycling at the industrial or local level making sorting recyclables more effective.</p>
-
-<p>Support the show on <a href="https://www.patreon.com/dtns">Patreon</a> by becoming a supporter!</p>
-]]></description>
-            <pubDate>Thu, 08 Jan 2026 15:32:59 -0800</pubDate>
-            <enclosure length="199174767" type="video/mp4" url="https://dtns.muffincdn.com/Aetech_CES_2026.mp4"/>
-            <guid isPermaLink="false">58C50A3D-1FD8-4E51-B1C6-E689B94F09E9</guid>
-            <itunes:duration>248</itunes:duration>
-            <itunes:episodeType>full</itunes:episodeType>
-            
-        <dc:creator>shwei@dailytechnewsshow.com (Tom Merritt)</dc:creator><itunes:explicit>no</itunes:explicit><itunes:subtitle>Aetech's Atron and Muli-Tron robots can sort waste for recycling at the industrial or local level making sorting recyclables more effective. Support the show on Patreon by becoming a supporter!</itunes:subtitle><itunes:author>Tom Merritt</itunes:author><itunes:summary>Aetech's Atron and Muli-Tron robots can sort waste for recycling at the industrial or local level making sorting recyclables more effective. Support the show on Patreon by becoming a supporter!</itunes:summary><itunes:keywords>Tech,News,Digest,Daily,Tom,Merritt,DTNS</itunes:keywords></item>
     </channel>
 </rss>

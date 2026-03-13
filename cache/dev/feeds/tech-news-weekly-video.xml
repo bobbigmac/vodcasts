@@ -14,8 +14,8 @@
 		<ttl>120</ttl>
 		<sy:updatePeriod>hourly</sy:updatePeriod>
 		<sy:updateFrequency>12</sy:updateFrequency>
-		<lastBuildDate>Thu, 05 Mar 2026 15:54:23 PST</lastBuildDate>
-		<pubDate>Thu, 05 Mar 2026 15:54:23 PST</pubDate>
+		<lastBuildDate>Thu, 12 Mar 2026 15:25:02 PDT</lastBuildDate>
+		<pubDate>Thu, 12 Mar 2026 15:25:02 PDT</pubDate>
 		<rawvoice:frequency>hourly</rawvoice:frequency>
 		<rawvoice:location>Petaluma, CA</rawvoice:location>
 		<itunes:type>episodic</itunes:type>
@@ -52,6 +52,98 @@ Records every Thursday at 2:00pm Eastern / 11:00am Pacific / 19:00 UTC.</descrip
 		<rawvoice:subscribe feed="https://feeds.twit.tv/tnw_video_hd.xml" itunes="https://podcasts.apple.com/us/podcast/tech-news-weekly-video/id548391172" html="https://twit.tv/shows/tech-news-weekly"></rawvoice:subscribe>
 		<atom:link href="https://feeds.twit.tv/tnw_video_hd.xml" type="application/rss+xml" rel="self"/>
 		<item>
+			<title>TNW 428: Live Nation Settles With the DOJ - Live Nation's Antitrust Settlement Disappointment</title>
+			<itunes:title>Live Nation Settles With the DOJ - Live Nation's Antitrust Settlement Disappointment</itunes:title>
+			<itunes:episodeType>full</itunes:episodeType>
+			<itunes:author>TWiT</itunes:author>
+			<pubDate>Thu, 12 Mar 2026 15:15:00 PDT</pubDate>
+			<itunes:episode>428</itunes:episode>
+			<podcast:episode>428</podcast:episode>
+			<link>https://twit.tv/shows/tech-news-weekly/episodes/428</link>
+			<comments>https://twit.tv/shows/tech-news-weekly/episodes/428</comments>
+			<category>News</category>
+			<category>Technology</category>
+			<category>Tech News</category>
+			<category>News</category>
+			<itunes:explicit>no</itunes:explicit>
+			<itunes:subtitle>Live Nation's Antitrust Settlement Disappointment</itunes:subtitle>
+			<itunes:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, Dan Moren, sixcolors.com, Grammarly, superhuman, grammarly expert review, grammarly lawsuit, AI legal issues, live nation, ticketmaster, doj live nation, live nation antitrust settlement</itunes:keywords>
+			<description><![CDATA[
+<p>Dan Moren of SixColors joins Mikah Sargent again on Tech News Weekly! Grammarly is facing a class action lawsuit over its AI 'Expert Review' feature. Live Nation's settlement with the DOJ does very little. A recap of Mobile World Congress in Barcelona, Spain. And China is obsessed with OpenClaw AI.</p><ul> 
+<li>Dan talks about a class-action lawsuit brought against Grammarly and its company, Superhuman, over its AI 'Expert Review' feature that offered editing suggestions as if they came from various authors and academics, without their consent.</li> 
+<li>Mikah, and many others, are perplexed at the DOJ's settlement with Live Nation Entertainment and what little Live Nation had to concede as part of the settlement.</li> 
+<li>Abrar Al-Heeti of CNET stops by to share her experience at MWC (Mobile World Congress) in Barcelona and what she and her CNET colleagues saw there.</li> 
+<li>And Mikah shares about China's obsession with the OpenClaw AI craze and how users are utilizing the AI agent.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://dmoren.com/" target="_blank">Dan Moren</a></p> 
+<p><strong>Guest:</strong> <a href="https://twit.tv/people/abrar-al-heeti">Abrar Al-Heeti</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+<li><a href="http://hipebl.ai" target="_blank" rel="sponsored">hipebl.ai</a></li>
+</ul></p>
+]]></description>
+			<itunes:summary><![CDATA[
+<p>Dan Moren of SixColors joins Mikah Sargent again on Tech News Weekly! Grammarly is facing a class action lawsuit over its AI 'Expert Review' feature. Live Nation's settlement with the DOJ does very little. A recap of Mobile World Congress in Barcelona, Spain. And China is obsessed with OpenClaw AI.</p><ul> 
+<li>Dan talks about a class-action lawsuit brought against Grammarly and its company, Superhuman, over its AI 'Expert Review' feature that offered editing suggestions as if they came from various authors and academics, without their consent.</li> 
+<li>Mikah, and many others, are perplexed at the DOJ's settlement with Live Nation Entertainment and what little Live Nation had to concede as part of the settlement.</li> 
+<li>Abrar Al-Heeti of CNET stops by to share her experience at MWC (Mobile World Congress) in Barcelona and what she and her CNET colleagues saw there.</li> 
+<li>And Mikah shares about China's obsession with the OpenClaw AI craze and how users are utilizing the AI agent.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://dmoren.com/" target="_blank">Dan Moren</a></p> 
+<p><strong>Guest:</strong> <a href="https://twit.tv/people/abrar-al-heeti">Abrar Al-Heeti</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+<li><a href="http://hipebl.ai" target="_blank" rel="sponsored">hipebl.ai</a></li>
+</ul></p>
+]]></itunes:summary>
+			<content:encoded><![CDATA[
+<p>Dan Moren of SixColors joins Mikah Sargent again on Tech News Weekly! Grammarly is facing a class action lawsuit over its AI 'Expert Review' feature. Live Nation's settlement with the DOJ does very little. A recap of Mobile World Congress in Barcelona, Spain. And China is obsessed with OpenClaw AI.</p><ul> 
+<li>Dan talks about a class-action lawsuit brought against Grammarly and its company, Superhuman, over its AI 'Expert Review' feature that offered editing suggestions as if they came from various authors and academics, without their consent.</li> 
+<li>Mikah, and many others, are perplexed at the DOJ's settlement with Live Nation Entertainment and what little Live Nation had to concede as part of the settlement.</li> 
+<li>Abrar Al-Heeti of CNET stops by to share her experience at MWC (Mobile World Congress) in Barcelona and what she and her CNET colleagues saw there.</li> 
+<li>And Mikah shares about China's obsession with the OpenClaw AI craze and how users are utilizing the AI agent.</li></ul> 
+<p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://dmoren.com/" target="_blank">Dan Moren</a></p> 
+<p><strong>Guest:</strong> <a href="https://twit.tv/people/abrar-al-heeti">Abrar Al-Heeti</a></p> 
+<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
+<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
+Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
+<p><strong>Sponsors:</strong><ul>
+<li><a href="http://bitwarden.com/twit" target="_blank" rel="sponsored">bitwarden.com/twit</a></li>
+<li><a href="http://joindeleteme.com/twit" target="_blank" rel="sponsored">joindeleteme.com/twit promo code TWIT</a></li>
+<li><a href="http://zscaler.com/security" target="_blank" rel="sponsored">zscaler.com/security</a></li>
+<li><a href="http://hipebl.ai" target="_blank" rel="sponsored">hipebl.ai</a></li>
+</ul></p>
+]]></content:encoded>
+			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860492/hero/TNW0428_thumbnail.jpg"/>
+			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0428/tnw0428_h264m_1920x1080.mp4</guid>
+			<rawvoice:isHd>yes</rawvoice:isHd>
+			<itunes:duration>58:12</itunes:duration>
+			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0428/tnw0428_h264m_1920x1080.mp4" length="1029363172" type="video/mp4"/>
+			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0428/tnw0428_h264m_1920x1080.mp4" fileSize="1029363172" type="video/mp4" medium="video">
+				<media:title type="plain">TNW 428: Live Nation Settles With the DOJ - Live Nation's Antitrust Settlement Disappointment</media:title>
+				<media:description type="plain">Live Nation's Antitrust Settlement Disappointment</media:description>
+				<media:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, Dan Moren, sixcolors.com, Grammarly, superhuman, grammarly expert review, grammarly lawsuit, AI legal issues, live nation, ticketmaster, doj live nation, live nation antitrust settlement</media:keywords>
+				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2026/03/860492/hero/TNW0428_thumbnail.jpg" width="400" height="225" />
+				<media:rating scheme="urn:simple">nonadult</media:rating>
+				<media:rating scheme="urn:v-chip">tv-g</media:rating>
+				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
+				<media:credit role="host">Mikah Sargent</media:credit>
+				<media:credit role="host">Dan Moren</media:credit>
+				<media:credit role="guest">Abrar Al-Heeti</media:credit>
+			</media:content>
+				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
+				<podcast:person role="host" href="https://dmoren.com/" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/713041/pictures/dan.jpg">Dan Moren</podcast:person>
+				<podcast:person role="guest" href="https://twit.tv/people/abrar-al-heeti" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/820960/pictures/abrar-al-heeti-headshot.jpg">Abrar Al-Heeti</podcast:person>
+		</item>
+		<item>
 			<title>TNW 427: 'We See Everything': Meta's AI Workers Speak - AI Glasses: Who&#039;s Watching?</title>
 			<itunes:title>'We See Everything': Meta's AI Workers Speak - AI Glasses: Who&#039;s Watching?</itunes:title>
 			<itunes:episodeType>full</itunes:episodeType>
@@ -67,12 +159,13 @@ Records every Thursday at 2:00pm Eastern / 11:00am Pacific / 19:00 UTC.</descrip
 			<category>News</category>
 			<itunes:explicit>no</itunes:explicit>
 			<itunes:subtitle>AI Glasses: Who&#039;s Watching?</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/transcripts/tech-news-weekly-427-transcript" type="text/html" />
 			<itunes:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, Dan Moren, sixcolors.com, Apple, apple new products, iPhone 17e, m4 ipad air, m5 macbook air, m5 pro, m5 max, m5 macbook pro, macbook neo, cheap macbook, Meta, Meta Ray-Ban smart glasses, ray-ban</itunes:keywords>
 			<description><![CDATA[
 <p>Dan Moren of SixColors joins Mikah Sargent this week on Tech News Weekly! Apple announced a whole new slew of products throughout the week, including the new MacBook Neo! A look into how Meta's Ray-Ban smart glasses collect data. And how Google's new proposed system for apps could change the App Store game.</p><ul> 
 <li>Dan and Mikah discuss the slew of new products Apple announced this week: the iPhone 17e, M4 iPad Air, M5 MacBook Air, M5 MacBook Pro, and the new MacBook Neo.</li> 
 <li>Mikah talks about Meta's Ray-Ban smart glasses and how overseas workers are reviewing the data collected from the glasses, and how these workers are being exposed to deeply private video footage.</li> 
-<li>And Leah Nylen, Antitrust Reporter for Bloomberg, joins the show to talk about Google's new proposed system for apps on its Android phones to allow easier access for rivals as a result of the settlement between Google and Epic Games.</li></ul> 
+<li>And Leah Nylen, Antitrust Reporter for Bloomberg, joins the show to talk about Google's new system for apps on its Android phones to allow easier access for rivals as a result of the settlement between Google and Epic Games and fines in the EU as a result of the Digital Markets Act.</li></ul> 
 <p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://dmoren.com/" target="_blank">Dan Moren</a></p> 
 <p><strong>Guest:</strong> <a href="https://www.bloomberg.com/authors/AVvaSJbjmc4/leah-nylen" target="_blank">Leah Nylen</a></p> 
 <p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
@@ -88,7 +181,7 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 <p>Dan Moren of SixColors joins Mikah Sargent this week on Tech News Weekly! Apple announced a whole new slew of products throughout the week, including the new MacBook Neo! A look into how Meta's Ray-Ban smart glasses collect data. And how Google's new proposed system for apps could change the App Store game.</p><ul> 
 <li>Dan and Mikah discuss the slew of new products Apple announced this week: the iPhone 17e, M4 iPad Air, M5 MacBook Air, M5 MacBook Pro, and the new MacBook Neo.</li> 
 <li>Mikah talks about Meta's Ray-Ban smart glasses and how overseas workers are reviewing the data collected from the glasses, and how these workers are being exposed to deeply private video footage.</li> 
-<li>And Leah Nylen, Antitrust Reporter for Bloomberg, joins the show to talk about Google's new proposed system for apps on its Android phones to allow easier access for rivals as a result of the settlement between Google and Epic Games.</li></ul> 
+<li>And Leah Nylen, Antitrust Reporter for Bloomberg, joins the show to talk about Google's new system for apps on its Android phones to allow easier access for rivals as a result of the settlement between Google and Epic Games and fines in the EU as a result of the Digital Markets Act.</li></ul> 
 <p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://dmoren.com/" target="_blank">Dan Moren</a></p> 
 <p><strong>Guest:</strong> <a href="https://www.bloomberg.com/authors/AVvaSJbjmc4/leah-nylen" target="_blank">Leah Nylen</a></p> 
 <p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
@@ -104,7 +197,7 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 <p>Dan Moren of SixColors joins Mikah Sargent this week on Tech News Weekly! Apple announced a whole new slew of products throughout the week, including the new MacBook Neo! A look into how Meta's Ray-Ban smart glasses collect data. And how Google's new proposed system for apps could change the App Store game.</p><ul> 
 <li>Dan and Mikah discuss the slew of new products Apple announced this week: the iPhone 17e, M4 iPad Air, M5 MacBook Air, M5 MacBook Pro, and the new MacBook Neo.</li> 
 <li>Mikah talks about Meta's Ray-Ban smart glasses and how overseas workers are reviewing the data collected from the glasses, and how these workers are being exposed to deeply private video footage.</li> 
-<li>And Leah Nylen, Antitrust Reporter for Bloomberg, joins the show to talk about Google's new proposed system for apps on its Android phones to allow easier access for rivals as a result of the settlement between Google and Epic Games.</li></ul> 
+<li>And Leah Nylen, Antitrust Reporter for Bloomberg, joins the show to talk about Google's new system for apps on its Android phones to allow easier access for rivals as a result of the settlement between Google and Epic Games and fines in the EU as a result of the Digital Markets Act.</li></ul> 
 <p><strong>Hosts:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a> and <a href="https://dmoren.com/" target="_blank">Dan Moren</a></p> 
 <p><strong>Guest:</strong> <a href="https://www.bloomberg.com/authors/AVvaSJbjmc4/leah-nylen" target="_blank">Leah Nylen</a></p> 
 <p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
@@ -819,77 +912,6 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 				<podcast:person role="host" href="https://bsky.app/profile/byjacobward.bsky.social" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/855855/pictures/JacobWard.jpg">Jacob Ward</podcast:person>
 				<podcast:person role="guest" href="https://twitter.com/stephenrobles">Stephen Robles</podcast:person>
 				<podcast:person role="guest" href="https://www.politico.com/staff/ruth-reader">Ruth Reader</podcast:person>
-		</item>
-		<item>
-			<title>TNW 418: Best of 2025 - Tech News Weekly&#039;s Favorite Interviews in 2025</title>
-			<itunes:title>Best of 2025 - Tech News Weekly&#039;s Favorite Interviews in 2025</itunes:title>
-			<itunes:episodeType>full</itunes:episodeType>
-			<itunes:author>TWiT</itunes:author>
-			<pubDate>Sun, 28 Dec 2025 13:00:00 PST</pubDate>
-			<itunes:episode>418</itunes:episode>
-			<podcast:episode>418</podcast:episode>
-			<link>https://twit.tv/shows/tech-news-weekly/episodes/418</link>
-			<comments>https://twit.tv/shows/tech-news-weekly/episodes/418</comments>
-			<category>News</category>
-			<category>Technology</category>
-			<category>Tech News</category>
-			<category>News</category>
-			<itunes:explicit>no</itunes:explicit>
-			<itunes:subtitle>Tech News Weekly&#039;s Favorite Interviews in 2025</itunes:subtitle>
-			<podcast:transcript url="http://twit.tv/posts/transcripts/tech-news-weekly-418-transcript" type="text/html" />
-			<itunes:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, eric migicovsky, pebble, new pebble watch, Bloomberg, leah nylen, doj google case, chrome browser, duckduckgo, perplexity, open ai, online search engines, leila zia, wikimedia foundation</itunes:keywords>
-			<description><![CDATA[
-<p>Take a look back at some of our favorite interviews from the past year on Tech News Weekly!</p><ul> 
-<li>Eric Migicovsky, founder of the smartwatch company Pebble, joins Mikah to talk about exciting news with Pebble.</li> 
-<li>Bloomberg antitrust reporter Leah Nylen returns to unpack the latest in the DOJ's case against Google. She explains the three proposed remedies—including a possible Chrome browser divestiture—and what testimony from tech competitors like DuckDuckGo, Perplexity, and OpenAI revealed about Google's dominance in search and AI.</li> 
-<li>Leila Zia, Head of Research at the Wikimedia Foundation, outlines their new AI roadmap, which focuses on supporting Wikipedia's volunteer editors rather than replacing them. She details how AI will assist with moderation, multilingual knowledge expansion, and mentorship—all while upholding values of transparency and human agency.</li> 
-<li>Scott Stein of CNET is staying busy as he joins the show to share his hands-on impressions of Nintendo's Switch 2 console, Mario Kart World, and its new features.</li> 
-<li>And Consumer Reports' Derek Kravitz details Instacart's AI pricing practices.</li></ul> 
-<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
-<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
-]]></description>
-			<itunes:summary><![CDATA[
-<p>Take a look back at some of our favorite interviews from the past year on Tech News Weekly!</p><ul> 
-<li>Eric Migicovsky, founder of the smartwatch company Pebble, joins Mikah to talk about exciting news with Pebble.</li> 
-<li>Bloomberg antitrust reporter Leah Nylen returns to unpack the latest in the DOJ's case against Google. She explains the three proposed remedies—including a possible Chrome browser divestiture—and what testimony from tech competitors like DuckDuckGo, Perplexity, and OpenAI revealed about Google's dominance in search and AI.</li> 
-<li>Leila Zia, Head of Research at the Wikimedia Foundation, outlines their new AI roadmap, which focuses on supporting Wikipedia's volunteer editors rather than replacing them. She details how AI will assist with moderation, multilingual knowledge expansion, and mentorship—all while upholding values of transparency and human agency.</li> 
-<li>Scott Stein of CNET is staying busy as he joins the show to share his hands-on impressions of Nintendo's Switch 2 console, Mario Kart World, and its new features.</li> 
-<li>And Consumer Reports' Derek Kravitz details Instacart's AI pricing practices.</li></ul> 
-<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
-<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
-]]></itunes:summary>
-			<content:encoded><![CDATA[
-<p>Take a look back at some of our favorite interviews from the past year on Tech News Weekly!</p><ul> 
-<li>Eric Migicovsky, founder of the smartwatch company Pebble, joins Mikah to talk about exciting news with Pebble.</li> 
-<li>Bloomberg antitrust reporter Leah Nylen returns to unpack the latest in the DOJ's case against Google. She explains the three proposed remedies—including a possible Chrome browser divestiture—and what testimony from tech competitors like DuckDuckGo, Perplexity, and OpenAI revealed about Google's dominance in search and AI.</li> 
-<li>Leila Zia, Head of Research at the Wikimedia Foundation, outlines their new AI roadmap, which focuses on supporting Wikipedia's volunteer editors rather than replacing them. She details how AI will assist with moderation, multilingual knowledge expansion, and mentorship—all while upholding values of transparency and human agency.</li> 
-<li>Scott Stein of CNET is staying busy as he joins the show to share his hands-on impressions of Nintendo's Switch 2 console, Mario Kart World, and its new features.</li> 
-<li>And Consumer Reports' Derek Kravitz details Instacart's AI pricing practices.</li></ul> 
-<p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
-<p>Download or subscribe to <em>Tech News Weekly</em> at <a href="https://twit.tv/shows/tech-news-weekly">https://twit.tv/shows/tech-news-weekly</a>.</p> 
-<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> 
-Support what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href="https://twit.tv/clubtwit" rel="payment">https://twit.tv/clubtwit</a></p>
-]]></content:encoded>
-			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2025/12/859460/hero/TNW0418_thumbnail.jpg"/>
-			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0418/tnw0418_h264m_1920x1080.mp4</guid>
-			<rawvoice:isHd>yes</rawvoice:isHd>
-			<itunes:duration>1:27:50</itunes:duration>
-			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0418/tnw0418_h264m_1920x1080.mp4" length="1490071098" type="video/mp4"/>
-			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/tnw/tnw0418/tnw0418_h264m_1920x1080.mp4" fileSize="1490071098" type="video/mp4" medium="video">
-				<media:title type="plain">TNW 418: Best of 2025 - Tech News Weekly&#039;s Favorite Interviews in 2025</media:title>
-				<media:description type="plain">Tech News Weekly&#039;s Favorite Interviews in 2025</media:description>
-				<media:keywords>Tech News Weekly, tech news today, TWiT, Mikah Sargent, eric migicovsky, pebble, new pebble watch, Bloomberg, leah nylen, doj google case, chrome browser, duckduckgo, perplexity, open ai, online search engines, leila zia, wikimedia foundation</media:keywords>
-				<media:thumbnail url="https://elroy.twit.tv/sites/default/files/styles/twit_slideshow_400x300/public/images/episodes/2025/12/859460/hero/TNW0418_thumbnail.jpg" width="400" height="225" />
-				<media:rating scheme="urn:simple">nonadult</media:rating>
-				<media:rating scheme="urn:v-chip">tv-g</media:rating>
-				<media:category scheme="urn:iab:categories" label="Technology &amp; Computing">IAB19</media:category>
-				<media:credit role="host">Mikah Sargent</media:credit>
-			</media:content>
-				<podcast:person role="host" href="https://twit.tv/people/mikah-sargent" img="https://elroy.twit.tv/sites/default/files/styles/twit_album_art_600x600/public/people/346331/pictures/img_5919.png">Mikah Sargent</podcast:person>
 		</item>
 	</channel>
 </rss>

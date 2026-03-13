@@ -14,8 +14,8 @@
 		<ttl>120</ttl>
 		<sy:updatePeriod>hourly</sy:updatePeriod>
 		<sy:updateFrequency>2</sy:updateFrequency>
-		<lastBuildDate>Wed, 11 Mar 2026 21:15:11 PDT</lastBuildDate>
-		<pubDate>Wed, 11 Mar 2026 21:15:11 PDT</pubDate>
+		<lastBuildDate>Thu, 12 Mar 2026 16:37:15 PDT</lastBuildDate>
+		<pubDate>Thu, 12 Mar 2026 16:37:15 PDT</pubDate>
 		<rawvoice:frequency>hourly</rawvoice:frequency>
 		<rawvoice:location>Petaluma, CA</rawvoice:location>
 		<itunes:type>episodic</itunes:type>
@@ -63,6 +63,7 @@
 			<category>Artificial Intelligence</category>
 			<itunes:explicit>no</itunes:explicit>
 			<itunes:subtitle>Coffee and the Rise of the Machines</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/how-truly-protect-your-privacy-online-actionable-advice-apples-former-evangelist" type="text/html" />
 			<itunes:keywords>TWiT, Intelligent Machines, Leo Laporte, Jeff Jarvis, Paris Martineau, Guy Kawasaki, Signal Messenger, privacy, encryption, Apple, tim cook, Steve Jobs, metadata, end-to-end encryption, podcasting, Remarkable People, ai writing, chatgpt, KawasakiGPT</itunes:keywords>
 			<description><![CDATA[
 <p>Apple's legendary evangelist Guy Kawasaki reveals how signal messaging and open-source AI are rewriting playbooks for privacy, immortality, and activism. Hear candid stories and sharp opinions from someone who has shaped—and challenged—today's tech giants.</p><ul> 
@@ -220,7 +221,7 @@ Support what you love and get ad-free audio <em>and</em> video feeds, a members-
 			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860464/hero/IM0861_Thumbnail.jpg"/>
 			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0861/twig0861_h264m_1920x1080.mp4</guid>
 			<rawvoice:isHd>yes</rawvoice:isHd>
-			<itunes:duration>0:00</itunes:duration>
+			<itunes:duration>3:12:44</itunes:duration>
 			<enclosure url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0861/twig0861_h264m_1920x1080.mp4" length="3272831846" type="video/mp4"/>
 			<media:content url="https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/twig/twig0861/twig0861_h264m_1920x1080.mp4" fileSize="3272831846" type="video/mp4" medium="video">
 				<media:title type="plain">Intelligent Machines 861: We Have Computer At Home</media:title>

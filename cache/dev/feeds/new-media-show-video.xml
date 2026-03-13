@@ -15,7 +15,7 @@ xmlns:rawvoice="https://blubrry.com/developer/rawvoice-rss/"
 	<atom:link href="https://newmediashow.com/feed/podcast/" rel="self" type="application/rss+xml" />
 	<link>https://newmediashow.com</link>
 	<description>New Media Show with Host Rob Greenlee formerly co-hosted with Todd Cochrane RIP discussing the new media and podcasting space with new weekly guest co-hosts.</description>
-	<lastBuildDate>Wed, 11 Mar 2026 20:12:37 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 12 Mar 2026 22:13:23 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -54,6 +54,105 @@ xmlns:rawvoice="https://blubrry.com/developer/rawvoice-rss/"
 	<podcast:guid>38aabacf-5965-53d4-b994-f9c5ce4fb79f</podcast:guid>
 	<rawvoice:subscribe feed="https://newmediashow.com/feed/podcast/" itunes="https://podcasts.apple.com/us/podcast/new-media-show-video/id392545647" blubrry="https://blubrry.com/nms/" pcindex="https://podcastindex.org/podcast/624721"></rawvoice:subscribe>
 	<item>
+		<title>Building a Very Human Media Business &#124; Erin Diehl #654</title>
+		<link>https://newmediashow.com/building-a-very-human-media-business-erin-diehl-654/</link>
+		<pubDate>Thu, 12 Mar 2026 22:10:26 +0000</pubDate>
+		<guid isPermaLink="false">https://newmediashow.com/?p=1962</guid>
+		
+						<!-- feed comments -->
+				<comments>https://newmediashow.com/building-a-very-human-media-business-erin-diehl-654/#respond</comments>
+				<wfw:commentRss>https://newmediashow.com/building-a-very-human-media-business-erin-diehl-654/feed/</wfw:commentRss>
+				<slash:comments>0</slash:comments>
+				<!-- category -->
+		    			<category><![CDATA[Podcast]]></category>
+		<category><![CDATA[AI and podcasting]]></category>
+		<category><![CDATA[audience connection]]></category>
+		<category><![CDATA[authentic content creation]]></category>
+		<category><![CDATA[community-driven content]]></category>
+		<category><![CDATA[creator brand building]]></category>
+		<category><![CDATA[creator economy]]></category>
+		<category><![CDATA[emotional intelligence]]></category>
+		<category><![CDATA[erin diehl]]></category>
+		<category><![CDATA[future of media]]></category>
+		<category><![CDATA[human media business]]></category>
+		<category><![CDATA[human-centered media]]></category>
+		<category><![CDATA[improv in business]]></category>
+		<category><![CDATA[improve it]]></category>
+		<category><![CDATA[leadership communication]]></category>
+		<category><![CDATA[New Media Show]]></category>
+		<category><![CDATA[podcasting strategy]]></category>
+		<category><![CDATA[Rob Greenlee]]></category>
+		<category><![CDATA[trust in media]]></category>
+		<category><![CDATA[video creator strategy]]></category>
+		<category><![CDATA[workday playdate]]></category>
+		    		<description><![CDATA[<p><img fetchpriority="high" decoding="async" class="alignleft size-medium wp-image-1964" src="https://newmediashow.com/wp-content/uploads/2026/03/654-New-Media-Show-Episode-Erin-300x300.jpg" alt="" width="300" height="300" srcset="https://newmediashow.com/wp-content/uploads/2026/03/654-New-Media-Show-Episode-Erin-300x300.jpg 300w, https://newmediashow.com/wp-content/uploads/2026/03/654-New-Media-Show-Episode-Erin-1024x1024.jpg 1024w, https://newmediashow.com/wp-content/uploads/2026/03/654-New-Media-Show-Episode-Erin-150x150.jpg 150w, https://newmediashow.com/wp-content/uploads/2026/03/654-New-Media-Show-Episode-Erin-768x768.jpg 768w, https://newmediashow.com/wp-content/uploads/2026/03/654-New-Media-Show-Episode-Erin-1320x1320.jpg 1320w, https://newmediashow.com/wp-content/uploads/2026/03/654-New-Media-Show-Episode-Erin.jpg 1400w" sizes="(max-width: 300px) 100vw, 300px" /><strong>As AI becomes more embedded into content creation, discovery, and distribution</strong>, <strong>one truth is becoming clearer</strong>: the <strong>long-term</strong> <strong>winners in media may not be the fastest or the most automated.</strong> They <strong>may be the <em>most</em> human.</strong></p>
+<p>That was the core idea behind this conversation with <strong>Erin Diehl of Improve It! and the host of the Workday Playdate Podcast, and New Media Show host and Podcast Hall of Fame Inductee Rob Greenlee on New Media Show Episode 654</strong>, where we explored what it really means to build a media business rooted in trust, emotional connection, authenticity, and memorable audience experiences.</p>
+<p>Erin Diehl, founder of improve it! and host of the Workday Playdate podcast, brings a distinctive perspective to this discussion.</p>
+<blockquote><p><strong><em>Her work sits at the intersection of improv, leadership, communication, and community-building. On her podcast and in her live workshops, she focuses on helping people reconnect with empathy, listening, adaptability, humor, and playfulness as practical tools for stronger communication and leadership. Erin describes those same qualities as the traits of both a great improviser and a great human, and that framing shaped this entire conversation.</em> </strong>(<a title="Erin Diehl | High-Energy Improv Comedy Keynote Speaker" href="https://www.itserindiehl.com/meet-erin?utm_source=chatgpt.com">itserindiehl.com</a>)</p></blockquote>
+<p><strong>What made this episode especially timely is that it did not treat AI as the enemy.</strong> Instead, it argued that AI is becoming part of the infrastructure of modern media, especially in discovery, distribution, workflow, and scale, while human presence remains the true differentiator. I said during the episode that creators are still in the human media business, and Erin agreed that what continues to work is the authenticity of human experience.</p>
+<p>That idea matters because audiences are increasingly surrounded by an abundance of content. When everything becomes easier to generate, the value of presence, perspective, vulnerability, and emotional resonance goes up.</p>
+<blockquote><p><strong><em>Erin argued that humanity is not becoming less important in the AI era. It is becoming more important. She pointed to empathy, trust, culture, and connection as qualities that are not going away, even as new technologies reshape jobs, workflows, and media formats.</em></strong></p></blockquote>
+<p><strong>A major theme in this conversation was the role of play in serious work.</strong> Erin’s approach is not about being frivolous. It is about using play, improv, and emotional openness to create real breakthroughs in communication. In her workshops, she guides people step by step out of their comfort zones, not to embarrass them but to help them reconnect with spontaneity, attentiveness, and confidence. She explained that many adults lose that natural instinct for play as they grow older, replacing it with judgment, self-doubt, and emotional caution. Her work is designed to reverse some of that pattern and reawaken more authentic human interaction.</p>
+<p><strong>We also talked about how this translates directly into content creation.</strong> Erin shared that her podcast has become more than just a show. It is part of a broader ecosystem that supports her workshops, speaking, community, and business growth. She uses monthly themes to shape her episodes, guest selection, social content, and offers. That strategy helps create consistency, clarity, and a stronger trust pathway between audience attention and business outcomes. It is a smart reminder that a podcast today often works best when it is part of a larger media and relationship-building system.</p>
+<p><strong>Another valuable part of this episode was Erin’s openness about team building.</strong> She made it clear that creating across podcasting, social media, video, live events, and community is difficult to sustain on one&#8217;s own. She credited her team with helping manage production, guest coordination, marketing, logistics, sales, and creative execution. That is an important lesson for professional creators and media entrepreneurs. Building a durable media business often means building systems and support around your voice, not trying to do every part of the machine alone.</p>
+<blockquote><p><em><strong>We also dug into mindset, self-expression, and the emotional reality of being a creator today. Erin spoke candidly about doubt, comparison, and the danger of code-switching or muting your true personality to fit an environment. Her advice was direct: find the people, audiences, and teams that allow you to be more fully yourself. In a media environment increasingly shaped by algorithmic incentives and imitation, that may be one of the most important strategic advantages a creator can have.</strong></em></p></blockquote>
+<p><strong>This episode is really about a bigger question facing everyone in podcasting, video, and digital media right now:</strong> if AI can help produce and distribute content at scale, what still makes a creator matter? The answer from this conversation is not just better tools or smarter systems. It is humanity. It is the ability to make people feel seen, understood, energized, and connected. That is what creates trust. That is what builds community. And that is what makes a media business more durable over time.</p>
+<h2>Brief Episode Description</h2>
+<p>In New Media Show Episode 654, Rob Greenlee talks with Erin Diehl, founder of improve it! and host of Workday Playdate, about what it takes to build a truly human media business in an AI-driven era.</p>
+<p>They explore why trust, empathy, emotional intelligence, playfulness, authenticity, and community may become even more valuable as AI expands across media creation and distribution.</p>
+<p>The conversation also looks at how improv principles can strengthen podcasting, leadership, content strategy, live events, and audience connection. Erin shares how she built her business and shows around human transformation, while Rob frames why creators still need to think of themselves as being in the human media business first.</p>
+<h2>Key Takeaways</h2>
+<p><strong>&#8211; Creators are still in the human media business</strong>, even as AI becomes more useful for discovery, workflow, and distribution.</p>
+<p><strong>&#8211; Authenticity, empathy, trust, and emotional connection are becoming more valuable</strong> as content volume increases.</p>
+<p><strong>&#8211; Improv skills like listening, adaptability, humor, and presence map directly to stronger media creation and leadership.</strong></p>
+<p><strong>&#8211; A podcast works best when it is part of a broader ecosystem that includes community, services, events, and business strategy.</strong></p>
+<p><strong>&#8211; Monthly content themes can help creators build a more focused and sustainable content engine across multiple platforms.</strong></p>
+<p><strong>&#8211; In-person human experiences still have unique power</strong> in an increasingly digital media world.</p>
+<p><strong>&#8211; A strong team can be essential for creators trying to build across audio, video, social, and live experiences.</strong></p>
+<p><strong>&#8211; The future of media may depend less on sounding polished and more on being unmistakably human.</strong></p>
+<h2>Relevant Links</h2>
+<p><strong>Host Rob Greenlee</strong><br />
+<a href="https://robgreenlee.com/">https://robgreenlee.com/</a> (<a title="Rob Greenlee | Podcast Hall of Famer and 25 year New ..." href="https://robgreenlee.com/">Rob Greenlee</a>)<br />
+<strong>New Media Show</strong><br />
+<a href="https://newmediashow.com/">https://newmediashow.com/</a> (<a title="Rob Greenlee" href="https://newmediashow.com/author/rob/">New Media Show</a>)<br />
+<strong>Rob Greenlee Live Podcasts</strong><br />
+<a href="https://robgreenlee.com/live-podcasts/">https://robgreenlee.com/live-podcasts/</a> (<a title="Rob Greenlee Podcasts" href="https://robgreenlee.com/live-podcasts/">Rob Greenlee</a>)<br />
+<strong>Rob Greenlee &amp; New Media Show YouTube</strong><br />
+<a href="https://www.youtube.com/@RobGreenlee">https://www.youtube.com/@RobGreenlee</a> (<a title="Rob Greenlee YouTube" href="https://www.youtube.com/@RobGreenlee">Rob Greenlee</a>)<br />
+<strong>Spoken Human Show &#8211; YouTube</strong><br />
+<a href="https://www.youtube.com/@spokenhuman">https://www.youtube.com/@spokenhuman</a> (<a title="Spoken Human Show - YouTube" href="https://www.youtube.com/@spokenhuman">Rob Greenlee</a>)<br />
+<strong>LinkedIn &#8211; Rob Greenlee</strong><br />
+<a href="https://www.linkedin.com/in/robgreenlee">https://www.linkedin.com/in/robgreenlee</a> (<a title="LinkedIn - Rob Greenlee" href="https://www.linkedin.com/in/robgreenlee">Rob Greenlee</a>)<br />
+<strong>Instagram &#8211; Rob Greenlee</strong><br />
+<a href="https://www.instagram.com/robwgreenlee">https://www.instagram.com/robwgreenlee</a> (<a title="Instagram - Rob Greenlee" href="https://www.instagram.com/robwgreenlee">Rob Greenlee</a>)<br />
+<strong>X.com &#8211; Rob Greenlee</strong><br />
+<a href="https://x.com/robgreenlee">https://x.com/robgreenlee</a> (<a title="Rob Greenlee X.com" href="https://x.com/robgreenlee">Rob Greenlee</a>)<br />
+<strong>Adore Podcast Network</strong><br />
+<a href="https://AdoreNetwork.com">https://AdoreNetwork.com</a> (<a title="Adore Podcast Network" href="https://AdoreNetwork.com">Rob Greenlee</a>)<br />
+<strong>Podcast Hall of Fame</strong><br />
+<a href="https://PodcastHall.com">https://PodcastHall.com</a> (<a title="Podcast Hall of Fame" href="https://PodcastHall.com">Rob Greenlee</a>)</p>
+<p><strong>Guest Erin Diehl</strong><br />
+<a href="https://www.itserindiehl.com/meet-erin">https://www.itserindiehl.com/meet-erin</a> (<a title="Erin Diehl | High-Energy Improv Comedy Keynote Speaker" href="https://www.itserindiehl.com/meet-erin">itserindiehl.com</a>)<br />
+<strong>improve it!</strong><br />
+<a href="https://www.learntoimproveit.com/">https://www.learntoimproveit.com/</a> (<a title="Professional Development, Leadership, and Team Building ..." href="https://www.learntoimproveit.com/podcast-page">learntoimproveit.com</a>)<br />
+<strong>Workday Playdate Podcast</strong><br />
+<a href="https://www.learntoimproveit.com/podcast-page">https://www.learntoimproveit.com/podcast-page</a> (<a title="Professional Development, Leadership, and Team Building ..." href="https://www.learntoimproveit.com/podcast-page">learntoimproveit.com</a>)<br />
+<strong>Workday Playdate on Apple Podcasts</strong><br />
+<a href="https://podcasts.apple.com/us/podcast/workday-playdate/id1508450538">https://podcasts.apple.com/us/podcast/workday-playdate/id1508450538</a> (<a title="Workday Playdate - Podcast" href="https://podcasts.apple.com/us/podcast/workday-playdate/id1508450538">Apple Podcasts</a>)</p><p>The post <a href="https://newmediashow.com/building-a-very-human-media-business-erin-diehl-654/">Building a Very Human Media Business | Erin Diehl #654</a> first appeared on <a href="https://newmediashow.com">New Media Show</a>.</p>]]></description>
+		    			    	<enclosure url="https://media.blubrry.com/nms/media.blubrry.com/tmts/ins.blubrry.com/tmts/Video-Final-NMS-654-Erin-Diehl-Human-Content-Business.mp4" length="3448767519" type="video/mp4" />
+			<podcast:alternateEnclosure  type="audio/mpeg">
+			<podcast:source uri="https://media.blubrry.com/nms/mc.blubrry.com/nms/Audio-654-NMS-Final-Building_a_Human_Media_Business_Erin_Diehl-Live_New_Media_Show.mp3?awCollectionId=20871&amp;aw_0_azn.pgenre=Business&amp;aw_0_1st.ri=blubrry&amp;aw_0_azn.pcountry=US&amp;aw_0_azn.planguage=en&amp;cat_exclud" contentType="audio/mpeg"/>
+		</podcast:alternateEnclosure>
+		<itunes:author>Rob Greenlee</itunes:author>
+		<itunes:image href="https://newmediashow.com/wp-content/uploads/2026/03/654-New-Media-Show-Episode-Erin-1.jpg" />
+		<itunes:episode>654</itunes:episode>
+		<podcast:episode>654</podcast:episode>
+		<itunes:title>Building a Very Human Media Business | Erin Diehl #654 (Video)</itunes:title>
+		<itunes:episodeType>full</itunes:episodeType>
+		<itunes:explicit>false</itunes:explicit>
+
+            </item>
+	<item>
 		<title>How to Build a Future Proof Show in 2026 &#124; Anika Jackson #653</title>
 		<link>https://newmediashow.com/how-to-build-a-future-proof-show-in-2026-anika-jackson-653/</link>
 		<pubDate>Fri, 06 Mar 2026 20:40:59 +0000</pubDate>
@@ -78,7 +177,7 @@ xmlns:rawvoice="https://blubrry.com/developer/rawvoice-rss/"
 		<category><![CDATA[USC Annenberg podcasting]]></category>
 		<category><![CDATA[Your Brand Amplified]]></category>
 		<category><![CDATA[YouTube podcasts]]></category>
-		    		<description><![CDATA[<p><img fetchpriority="high" decoding="async" class="alignleft size-medium wp-image-1948" src="https://newmediashow.com/wp-content/uploads/2026/03/653-New-Media-Show-Episode-Anika-Jackson-300x300.jpg" alt="" width="300" height="300" srcset="https://newmediashow.com/wp-content/uploads/2026/03/653-New-Media-Show-Episode-Anika-Jackson-300x300.jpg 300w, https://newmediashow.com/wp-content/uploads/2026/03/653-New-Media-Show-Episode-Anika-Jackson-1024x1024.jpg 1024w, https://newmediashow.com/wp-content/uploads/2026/03/653-New-Media-Show-Episode-Anika-Jackson-150x150.jpg 150w, https://newmediashow.com/wp-content/uploads/2026/03/653-New-Media-Show-Episode-Anika-Jackson-768x768.jpg 768w, https://newmediashow.com/wp-content/uploads/2026/03/653-New-Media-Show-Episode-Anika-Jackson-1320x1320.jpg 1320w, https://newmediashow.com/wp-content/uploads/2026/03/653-New-Media-Show-Episode-Anika-Jackson.jpg 1400w" sizes="(max-width: 300px) 100vw, 300px" /><strong>If you’re trying to figure out how to build a future-proof show in 2026, the answer is not a new platform or a new gimmick.</strong></p>
+		    		<description><![CDATA[<p><img decoding="async" class="alignleft size-medium wp-image-1948" src="https://newmediashow.com/wp-content/uploads/2026/03/653-New-Media-Show-Episode-Anika-Jackson-300x300.jpg" alt="" width="300" height="300" srcset="https://newmediashow.com/wp-content/uploads/2026/03/653-New-Media-Show-Episode-Anika-Jackson-300x300.jpg 300w, https://newmediashow.com/wp-content/uploads/2026/03/653-New-Media-Show-Episode-Anika-Jackson-1024x1024.jpg 1024w, https://newmediashow.com/wp-content/uploads/2026/03/653-New-Media-Show-Episode-Anika-Jackson-150x150.jpg 150w, https://newmediashow.com/wp-content/uploads/2026/03/653-New-Media-Show-Episode-Anika-Jackson-768x768.jpg 768w, https://newmediashow.com/wp-content/uploads/2026/03/653-New-Media-Show-Episode-Anika-Jackson-1320x1320.jpg 1320w, https://newmediashow.com/wp-content/uploads/2026/03/653-New-Media-Show-Episode-Anika-Jackson.jpg 1400w" sizes="(max-width: 300px) 100vw, 300px" /><strong>If you’re trying to figure out how to build a future-proof show in 2026, the answer is not a new platform or a new gimmick.</strong></p>
 <p>Podcasting is changing expectations. Audiences judge creators like brands, platforms reward shows that behave like programs, and AI is raising the baseline quality while making trust and differentiation harder to earn.</p>
 <p><strong>On this episode #653 of The New Media Show,  Rob Greenlee (Podcast Hall of Fame Chairperson, 2017 inductee), and am joined by Anika Jackson, founder of Your Brand Amplified and faculty at USC Annenberg, where she teaches podcasting and digital media management.</strong></p>
 <blockquote><p><em><strong>Anika brings a rare educator-operator perspective because she’s building in the real world while shaping how the next generation of creators thinks about content, AI personalities, human clones, business, and audience growth.</strong></em></p></blockquote>
@@ -277,7 +376,7 @@ Atypical Artists [<a href="https://www.atypicalartists.co/">https://www.atypical
 		<category><![CDATA[HTTP Live Streaming HLS]]></category>
 		<category><![CDATA[RSS video MP4 enclosure]]></category>
 		<category><![CDATA[video podcast discovery]]></category>
-		    		<description><![CDATA[<p><span style="font-weight: 400;"><img decoding="async" class="alignleft size-medium wp-image-1917" src="https://newmediashow.com/wp-content/uploads/2026/02/New-Media-Show-Episode-APPLE-VIDEO-300x300.jpg" alt="" width="300" height="300" srcset="https://newmediashow.com/wp-content/uploads/2026/02/New-Media-Show-Episode-APPLE-VIDEO-300x300.jpg 300w, https://newmediashow.com/wp-content/uploads/2026/02/New-Media-Show-Episode-APPLE-VIDEO-1024x1024.jpg 1024w, https://newmediashow.com/wp-content/uploads/2026/02/New-Media-Show-Episode-APPLE-VIDEO-150x150.jpg 150w, https://newmediashow.com/wp-content/uploads/2026/02/New-Media-Show-Episode-APPLE-VIDEO-768x768.jpg 768w, https://newmediashow.com/wp-content/uploads/2026/02/New-Media-Show-Episode-APPLE-VIDEO-1320x1320.jpg 1320w, https://newmediashow.com/wp-content/uploads/2026/02/New-Media-Show-Episode-APPLE-VIDEO.jpg 1400w" sizes="(max-width: 300px) 100vw, 300px" />On Weds, February 18th Live Episode #651 of the New Media Show, <strong>Rob Greenlee, Host, 2017 Podcast Hall of Famer and CEO of Trust Factor Lab <a href="https://RobGreenlee.com">at https://RobGreenlee.com</a></strong>, and <strong>James Cridland, Editor, <a href="https://Podnews.net">https://Podnews.net</a> and 2026 Podcast Hall of Famer</strong> discuss Apple’s announcement of a new and improved video podcast experience in the Apple Podcasts app and what it changes technically and strategically heading into 2026. </span></p>
+		    		<description><![CDATA[<p><span style="font-weight: 400;"><img loading="lazy" decoding="async" class="alignleft size-medium wp-image-1917" src="https://newmediashow.com/wp-content/uploads/2026/02/New-Media-Show-Episode-APPLE-VIDEO-300x300.jpg" alt="" width="300" height="300" srcset="https://newmediashow.com/wp-content/uploads/2026/02/New-Media-Show-Episode-APPLE-VIDEO-300x300.jpg 300w, https://newmediashow.com/wp-content/uploads/2026/02/New-Media-Show-Episode-APPLE-VIDEO-1024x1024.jpg 1024w, https://newmediashow.com/wp-content/uploads/2026/02/New-Media-Show-Episode-APPLE-VIDEO-150x150.jpg 150w, https://newmediashow.com/wp-content/uploads/2026/02/New-Media-Show-Episode-APPLE-VIDEO-768x768.jpg 768w, https://newmediashow.com/wp-content/uploads/2026/02/New-Media-Show-Episode-APPLE-VIDEO-1320x1320.jpg 1320w, https://newmediashow.com/wp-content/uploads/2026/02/New-Media-Show-Episode-APPLE-VIDEO.jpg 1400w" sizes="auto, (max-width: 300px) 100vw, 300px" />On Weds, February 18th Live Episode #651 of the New Media Show, <strong>Rob Greenlee, Host, 2017 Podcast Hall of Famer and CEO of Trust Factor Lab <a href="https://RobGreenlee.com">at https://RobGreenlee.com</a></strong>, and <strong>James Cridland, Editor, <a href="https://Podnews.net">https://Podnews.net</a> and 2026 Podcast Hall of Famer</strong> discuss Apple’s announcement of a new and improved video podcast experience in the Apple Podcasts app and what it changes technically and strategically heading into 2026. </span></p>
 <blockquote><p><em><span style="font-weight: 400;">They explain how video was previously active in Apple Podcasts but was hidden and poorly presented in the iOS apps, and how this new updated experience makes video playback front and center, with a “turn video off” option that keeps the audio track playing. </span></em></p></blockquote>
 <p><strong>The episode breaks down Apple’s preferred move to HLS-based on-demand video delivery (via a separate, proprietary API HLS video streaming pass-through submission from approved hosting partners) while still supporting legacy MP4 video via RSS. </strong></p>
 <p><span style="font-weight: 400;">They cover HLS basics (chunked delivery, adaptive quality, reduced bandwidth, and hosting costs), improved seeking/scrubbing versus progressive MP4 playback, and new measurement implications (better insight into drop-off and ad viewing). A major focus is monetization: Apple plans to enable dynamic ad insertion for HLS video and charge a per-impression fee, positioning Apple to take revenue without operating an ad business. </span></p>
@@ -8638,31 +8737,6 @@ Coldwater, Mi, 49036</p>
 <p>We will seek input from all parties and as a group try to come to a consensus. This again is a community initiative so we hope you will participate! This, not the Todd and Rob initiative. But someone has to step up and get the ball rolling.</p>
 <p>To participate send an email to with todd@blubrry.com or robg@libsyn.com and we will get you an invite to the new slack channel and put you on the invite list. If you know a Podcast App developer we hope you will kindly encourage them to participate in this coalition as well!</p><p>The post <a href="https://newmediashow.com/forming-a-coalition-to-expand-rss-267/">Forming a Coalition to Expand RSS #267</a> first appeared on <a href="https://newmediashow.com">New Media Show</a>.</p>]]></description>
 		    			    	<enclosure url="https://media.blubrry.com/nms/op3.dev/e/ins.blubrry.com/nms/NMS-2019-12-01.mp4" length="2017182936" type="video/mp4" />
-			<itunes:author>Rob Greenlee</itunes:author>
-		<itunes:episodeType>full</itunes:episodeType>
-		<itunes:explicit>false</itunes:explicit>
-
-            </item>
-	<item>
-		<title>Todd &#038; Rob Break it Down #266</title>
-		<link>https://newmediashow.com/todd-rob-break-it-down-266/</link>
-		<pubDate>Mon, 25 Nov 2019 03:39:27 +0000</pubDate>
-		<guid isPermaLink="false">https://newmediashow.com/?p=1225</guid>
-		
-						<!-- feed comments -->
-				<comments>https://newmediashow.com/todd-rob-break-it-down-266/#respond</comments>
-				<wfw:commentRss>https://newmediashow.com/todd-rob-break-it-down-266/feed/</wfw:commentRss>
-				<slash:comments>0</slash:comments>
-				<!-- category -->
-		    			<category><![CDATA[Podcast]]></category>
-		    		<description><![CDATA[<p>Todd Cochrane and Rob Greenlee talk about Digital Hollywood and apologize we are waiting for the media from our live show as we have a great episode to post from the event. Today we cover a wide range of podcasting topics today.</p>
-<p>Donate to the show and <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=ZAPTGPLQQ94N8">Support this podcast</a>.</p>
-<p>Send a Sticker Get a Sticker: Send us your show sticker and we will send you a New Media Show Sticker. Get on our sticker board for the show.</p>
-<p>New Media Productions<br />
-365 N Willowbrook Rd<br />
-Suite: C<br />
-Coldwater, Mi, 49036</p><p>The post <a href="https://newmediashow.com/todd-rob-break-it-down-266/">Todd & Rob Break it Down #266</a> first appeared on <a href="https://newmediashow.com">New Media Show</a>.</p>]]></description>
-		    			    	<enclosure url="https://media.blubrry.com/nms/op3.dev/e/ins.blubrry.com/nms/NMS-2019-11-23.mp4" length="1738837921" type="video/mp4" />
 			<itunes:author>Rob Greenlee</itunes:author>
 		<itunes:episodeType>full</itunes:episodeType>
 		<itunes:explicit>false</itunes:explicit>

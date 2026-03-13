@@ -18,6 +18,19 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
 	<atom:link href="https://www.corbettreport.com/videorss.xml" rel="self" type="application/rss+xml" />
 
 	<item>
+		<title>Iran War Oil Crunch Plunges World Into Crisis (NWNW #622)</title>
+		<itunes:author>The Corbett Report</itunes:author>
+		<description>This week on New World Next Week: the Strait of Hormuz becomes the world's energy chokepoint; authors push new human label to thwart AI; and still no prosecutions six years after the scamdemic.</description>
+		<enclosure
+			url="https://www.corbettreport.com/mp4/nwnw622.mp4"
+ 			length="58262234"
+			type="video/mpeg"/>
+		<guid>https://www.corbettreport.com/mp4/nwnw622.mp4</guid>
+		<pubDate>Fri, 13 Mar 2026 10:02:00 +0900</pubDate>
+		<itunes:duration>20:33</itunes:duration>
+	</item>
+
+	<item>
 		<title>Recovering From Addiction – #SolutionsWatch</title>
 		<itunes:author>The Corbett Report</itunes:author>
 		<description>The opioid epidemic is just one of the symptoms of the general deterioration of Western society. Now, more people than ever are either dealing with the ravages of drug and alcohol addiction themselves, or dealing with someone who is. What can we do about this scourge? Today on Solutions Watch, James talks to Iain Davis, a drug and alcohol addiction counselor with 20 years of experience in the field, and Derrick Broze, who has just penned a gripping new memoir about his own struggles with addiction and how he overcame them.</description>
