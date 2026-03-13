@@ -25,6 +25,9 @@ const STYLE_PACKS = [
     railStyle: 'segments',
     pillStyle: 'capsule',
     chipStyle: 'solid',
+    layout: 'lower-third',
+    introLayout: 'split',
+    outroLayout: 'split',
     panelRadius: 36,
     textPrimary: '#f8fafc',
     textMuted: '#cbd5e1',
@@ -44,6 +47,9 @@ const STYLE_PACKS = [
     railStyle: 'ticks',
     pillStyle: 'ghost',
     chipStyle: 'outline',
+    layout: 'sidebar-right',
+    introLayout: 'stack-left',
+    outroLayout: 'stack-left',
     panelRadius: 28,
     textPrimary: '#eff6ff',
     textMuted: '#cbd5e1',
@@ -63,6 +69,9 @@ const STYLE_PACKS = [
     railStyle: 'dots',
     pillStyle: 'slab',
     chipStyle: 'glass',
+    layout: 'center-stage',
+    introLayout: 'centered',
+    outroLayout: 'centered',
     panelRadius: 42,
     textPrimary: '#fff7ed',
     textMuted: '#fed7aa',
@@ -82,6 +91,9 @@ const STYLE_PACKS = [
     railStyle: 'dots',
     pillStyle: 'ghost',
     chipStyle: 'outline',
+    layout: 'lower-third',
+    introLayout: 'stack-left',
+    outroLayout: 'stack-left',
     panelRadius: 30,
     textPrimary: '#eef2ff',
     textMuted: '#c7d2fe',
@@ -101,6 +113,9 @@ const STYLE_PACKS = [
     railStyle: 'segments',
     pillStyle: 'capsule',
     chipStyle: 'glass',
+    layout: 'upper-deck',
+    introLayout: 'split',
+    outroLayout: 'stack-left',
     panelRadius: 32,
     textPrimary: '#ecfdf5',
     textMuted: '#bbf7d0',
@@ -120,6 +135,9 @@ const STYLE_PACKS = [
     railStyle: 'ticks',
     pillStyle: 'slab',
     chipStyle: 'solid',
+    layout: 'sidebar-left',
+    introLayout: 'stack-left',
+    outroLayout: 'stack-left',
     panelRadius: 26,
     textPrimary: '#fff1f2',
     textMuted: '#fecdd3',
@@ -139,6 +157,9 @@ const STYLE_PACKS = [
     railStyle: 'dots',
     pillStyle: 'ghost',
     chipStyle: 'glass',
+    layout: 'center-stage',
+    introLayout: 'centered',
+    outroLayout: 'centered',
     panelRadius: 40,
     textPrimary: '#f5f3ff',
     textMuted: '#ddd6fe',
@@ -158,10 +179,57 @@ const STYLE_PACKS = [
     railStyle: 'segments',
     pillStyle: 'capsule',
     chipStyle: 'outline',
+    layout: 'band',
+    introLayout: 'split',
+    outroLayout: 'centered',
     panelRadius: 24,
     textPrimary: '#ecfeff',
     textMuted: '#bae6fd',
     labelText: '#cffafe',
+  },
+  {
+    name: 'atlas',
+    colors: ['#f59e0b', '#38bdf8', '#fb7185'],
+    panel: 'rgba(13, 16, 24, 0.80)',
+    panelBorder: 'rgba(56, 189, 248, 0.24)',
+    topGradient: 'linear-gradient(180deg, rgba(7,10,18,0.18) 0%, rgba(7,10,18,0.06) 18%, rgba(7,10,18,0.60) 64%, rgba(7,10,18,0.96) 100%)',
+    accentGlow: 'radial-gradient(circle at 12% 18%, rgba(245,158,11,0.22) 0%, transparent 30%)',
+    texture: 'repeating-linear-gradient(90deg, rgba(56,189,248,0.06) 0 1px, transparent 1px 18px)',
+    quoteFont: '"Garamond", "Georgia", serif',
+    labelFont: '"Segoe UI", "Trebuchet MS", sans-serif',
+    frameStyle: 'focus',
+    railStyle: 'ticks',
+    pillStyle: 'capsule',
+    chipStyle: 'glass',
+    layout: 'sidebar-left',
+    introLayout: 'split',
+    outroLayout: 'stack-left',
+    panelRadius: 30,
+    textPrimary: '#f8fafc',
+    textMuted: '#cbd5e1',
+    labelText: '#dbeafe',
+  },
+  {
+    name: 'velvet',
+    colors: ['#f472b6', '#2dd4bf', '#facc15'],
+    panel: 'rgba(19, 8, 20, 0.80)',
+    panelBorder: 'rgba(244, 114, 182, 0.22)',
+    topGradient: 'linear-gradient(180deg, rgba(19,8,20,0.18) 0%, rgba(19,8,20,0.05) 18%, rgba(19,8,20,0.61) 66%, rgba(19,8,20,0.96) 100%)',
+    accentGlow: 'radial-gradient(circle at 80% 14%, rgba(45,212,191,0.18) 0%, transparent 34%)',
+    texture: 'repeating-linear-gradient(135deg, rgba(244,114,182,0.06) 0 2px, transparent 2px 20px)',
+    quoteFont: '"Didot", "Georgia", serif',
+    labelFont: '"Segoe UI", "Trebuchet MS", sans-serif',
+    frameStyle: 'corners',
+    railStyle: 'dots',
+    pillStyle: 'ghost',
+    chipStyle: 'outline',
+    layout: 'upper-deck',
+    introLayout: 'centered',
+    outroLayout: 'centered',
+    panelRadius: 38,
+    textPrimary: '#fdf2f8',
+    textMuted: '#fbcfe8',
+    labelText: '#ccfbf1',
   },
 ];
 
@@ -238,6 +306,12 @@ const chipStyleForPack = (pack, color, scale) => {
     color: '#08111f',
   };
 };
+
+const clipLayoutForPack = (pack) => pack.layout || 'lower-third';
+
+const introLayoutForPack = (pack) => pack.introLayout || 'split';
+
+const outroLayoutForPack = (pack) => pack.outroLayout || 'split';
 
 const BackdropTexture = ({pack}) =>
   pack.texture ? (
@@ -440,17 +514,30 @@ const IntroCard = ({theme, intro, openingKicker, openingContext, structure, pack
   const enter = spring({fps, frame, config: {damping: 180}});
   const accent = pack.colors[0];
   const structureLabel = String(structure || '').replace(/-/g, ' ');
+  const layout = introLayoutForPack(pack);
+  const centered = layout === 'centered';
+  const split = layout === 'split';
 
   return (
     <AbsoluteFill
       style={{
         background: `${pack.accentGlow}, linear-gradient(180deg, #020617 0%, #0f172a 100%)`,
         padding: `${px(94, scale, 40)}px ${px(66, scale, 28)}px`,
-        justifyContent: 'space-between',
+        justifyContent: centered ? 'center' : 'space-between',
+        alignItems: centered ? 'center' : 'stretch',
       }}
     >
       <BackdropTexture pack={pack} />
-      <div style={{display: 'flex', flexDirection: 'column', gap: px(16, scale, 8)}}>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: px(16, scale, 8),
+          alignItems: centered ? 'center' : 'flex-start',
+          textAlign: centered ? 'center' : 'left',
+          alignSelf: centered ? 'center' : 'auto',
+        }}
+      >
         <ThemePill theme={theme} color={accent} pack={pack} scale={scale} />
         {openingKicker ? (
           <div
@@ -471,6 +558,9 @@ const IntroCard = ({theme, intro, openingKicker, openingContext, structure, pack
         style={{
           transform: `translateY(${Math.round((1 - enter) * px(42, scale, 18))}px)`,
           opacity: enter,
+          textAlign: centered ? 'center' : 'left',
+          maxWidth: centered ? '84%' : split ? '70%' : '100%',
+          alignSelf: centered ? 'center' : 'auto',
         }}
       >
         <div
@@ -489,7 +579,7 @@ const IntroCard = ({theme, intro, openingKicker, openingContext, structure, pack
           <div
             style={{
               marginTop: px(22, scale, 10),
-              maxWidth: '88%',
+              maxWidth: centered ? '100%' : '88%',
               color: pack.labelText || '#dbeafe',
               fontFamily: pack.labelFont,
               fontSize: px(30, scale, 15),
@@ -509,6 +599,7 @@ const IntroCard = ({theme, intro, openingKicker, openingContext, structure, pack
           fontWeight: 800,
           letterSpacing: px(1.2, scale),
           textTransform: 'uppercase',
+          alignSelf: centered ? 'center' : 'auto',
         }}
       >
         {structureLabel || 'curated reflection'}
@@ -532,6 +623,126 @@ const ClipCard = ({clip, theme, index, totalClips, pack}) => {
     extrapolateRight: 'clamp',
   });
   const decorators = decoratorList(clip.decorators);
+  const layout = clipLayoutForPack(pack);
+  const panelCore = (
+    <>
+      {clip.context ? (
+        <div
+          style={{
+            color: color,
+            fontFamily: pack.labelFont,
+            fontSize: px(24, scale, 13),
+            fontWeight: 900,
+            letterSpacing: px(1.2, scale),
+            marginBottom: px(12, scale, 6),
+            textTransform: 'uppercase',
+            textAlign: layout === 'center-stage' || layout === 'band' ? 'center' : 'left',
+          }}
+        >
+          {clip.context}
+        </div>
+      ) : null}
+      <div
+        style={{
+          color: pack.textPrimary || '#f8fafc',
+          fontFamily: pack.quoteFont,
+          fontSize: px(layout === 'band' ? 50 : 56, scale, 24),
+          lineHeight: 1.01,
+          fontWeight: 700,
+          textWrap: 'balance',
+          textAlign: layout === 'center-stage' || layout === 'band' ? 'center' : 'left',
+        }}
+      >
+        {clip.quote}
+      </div>
+      <div
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: px(14, scale, 7),
+          marginTop: px(18, scale, 10),
+          alignItems: 'center',
+          justifyContent: layout === 'center-stage' || layout === 'band' ? 'center' : 'flex-start',
+        }}
+      >
+        {clip.speaker_label ? (
+          <div
+            style={{
+              ...chipStyleForPack(pack, color, scale),
+              borderRadius: 999,
+              padding: `${px(8, scale, 4)}px ${px(14, scale, 8)}px`,
+              fontFamily: pack.labelFont,
+              fontSize: px(20, scale, 11),
+              fontWeight: 900,
+              letterSpacing: px(0.7, scale),
+              textTransform: 'uppercase',
+            }}
+          >
+            {clip.speaker_label}
+          </div>
+        ) : null}
+        {decorators.map((decorator, decoratorIndex) => (
+          <div
+            key={`${decorator}-${decoratorIndex}`}
+            style={{
+              ...chipStyleForPack(pack, color, scale),
+              borderRadius: 999,
+              padding: `${px(8, scale, 4)}px ${px(14, scale, 8)}px`,
+              fontFamily: pack.labelFont,
+              fontSize: px(20, scale, 11),
+              fontWeight: 800,
+              letterSpacing: px(0.7, scale),
+              textTransform: 'uppercase',
+            }}
+          >
+            {decorator}
+          </div>
+        ))}
+      </div>
+      {clip.episode_title ? (
+        <div
+          style={{
+            marginTop: px(16, scale, 8),
+            color: pack.textMuted || '#cbd5e1',
+            fontFamily: pack.labelFont,
+            fontSize: px(22, scale, 12),
+            fontWeight: 600,
+            lineHeight: 1.2,
+            textAlign: layout === 'center-stage' || layout === 'band' ? 'center' : 'left',
+          }}
+        >
+          {clip.episode_title}
+        </div>
+      ) : null}
+    </>
+  );
+  const topMeta = (
+    <>
+      <ThemePill theme={theme} color={color} pack={pack} scale={scale} />
+      <ProgressRail index={index} total={totalClips} color={color} scale={scale} pack={pack} />
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: layout === 'center-stage' || layout === 'band' ? 'center' : 'space-between',
+          marginTop: px(16, scale, 8),
+          color: pack.labelText || '#dbeafe',
+          fontFamily: pack.labelFont,
+          fontSize: px(22, scale, 12),
+          fontWeight: 700,
+          letterSpacing: px(1.1, scale),
+          textTransform: 'uppercase',
+          gap: px(20, scale, 10),
+          flexWrap: 'wrap',
+          textAlign: layout === 'center-stage' || layout === 'band' ? 'center' : 'left',
+        }}
+      >
+        <div>{clip.feed_title}</div>
+        <div>
+          {index + 1}/{totalClips}
+        </div>
+      </div>
+    </>
+  );
 
   return (
     <AbsoluteFill style={{backgroundColor: '#020617', opacity: fadeOut}}>
@@ -571,133 +782,132 @@ const ClipCard = ({clip, theme, index, totalClips, pack}) => {
           flexDirection: 'column',
         }}
       >
-        <ThemePill theme={theme} color={color} pack={pack} scale={scale} />
-        <ProgressRail index={index} total={totalClips} color={color} scale={scale} pack={pack} />
-
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            marginTop: px(16, scale, 8),
-            color: pack.labelText || '#dbeafe',
-            fontFamily: pack.labelFont,
-            fontSize: px(22, scale, 12),
-            fontWeight: 700,
-            letterSpacing: px(1.1, scale),
-            textTransform: 'uppercase',
-            gap: px(20, scale, 10),
-          }}
-        >
-          <div>{clip.feed_title}</div>
-          <div>
-            {index + 1}/{totalClips}
-          </div>
-        </div>
-
-        <div style={{flex: 1}} />
-
-        <div
-          style={{
-            transform: `translateY(${Math.round((1 - lift) * px(34, scale, 16))}px)`,
-            opacity: lift,
-          }}
-        >
+        {layout === 'sidebar-right' || layout === 'sidebar-left' ? (
           <div
             style={{
-              background: pack.panel,
-              borderRadius: panelRadius(pack, scale),
-              padding: `${px(28, scale, 14)}px ${px(30, scale, 15)}px`,
-              border: `${Math.max(1, px(1, scale))}px solid ${pack.panelBorder}`,
-              boxShadow: pack.frameStyle === 'focus' ? '0 24px 90px rgba(0,0,0,0.48)' : '0 22px 80px rgba(0,0,0,0.42)',
-              backdropFilter: 'blur(20px)',
+              flex: 1,
+              display: 'flex',
+              justifyContent: layout === 'sidebar-left' ? 'flex-start' : 'flex-end',
+              alignItems: 'center',
             }}
           >
-            {clip.context ? (
-              <div
-                style={{
-                  color: color,
-                  fontFamily: pack.labelFont,
-                  fontSize: px(24, scale, 13),
-                  fontWeight: 900,
-                  letterSpacing: px(1.2, scale),
-                  marginBottom: px(12, scale, 6),
-                  textTransform: 'uppercase',
-                }}
-              >
-                {clip.context}
-              </div>
-            ) : null}
             <div
               style={{
-                color: pack.textPrimary || '#f8fafc',
-                fontFamily: pack.quoteFont,
-                fontSize: px(56, scale, 26),
-                lineHeight: 1.01,
-                fontWeight: 700,
-                textWrap: 'balance',
-              }}
-            >
-              {clip.quote}
-            </div>
-            <div
-              style={{
+                width: '46%',
+                maxWidth: px(460, scale, 240),
+                transform: `translateY(${Math.round((1 - lift) * px(34, scale, 16))}px)`,
+                opacity: lift,
+                background: pack.panel,
+                borderRadius: panelRadius(pack, scale),
+                padding: `${px(26, scale, 14)}px ${px(28, scale, 15)}px`,
+                border: `${Math.max(1, px(1, scale))}px solid ${pack.panelBorder}`,
+                boxShadow: pack.frameStyle === 'focus' ? '0 24px 90px rgba(0,0,0,0.48)' : '0 22px 80px rgba(0,0,0,0.42)',
+                backdropFilter: 'blur(20px)',
                 display: 'flex',
-                flexWrap: 'wrap',
-                gap: px(14, scale, 7),
-                marginTop: px(18, scale, 10),
-                alignItems: 'center',
+                flexDirection: 'column',
+                gap: px(12, scale, 6),
               }}
             >
-              {clip.speaker_label ? (
-                <div
-                  style={{
-                    ...chipStyleForPack(pack, color, scale),
-                    borderRadius: 999,
-                    padding: `${px(8, scale, 4)}px ${px(14, scale, 8)}px`,
-                    fontFamily: pack.labelFont,
-                    fontSize: px(20, scale, 11),
-                    fontWeight: 900,
-                    letterSpacing: px(0.7, scale),
-                    textTransform: 'uppercase',
-                  }}
-                >
-                  {clip.speaker_label}
-                </div>
-              ) : null}
-              {decorators.map((decorator, decoratorIndex) => (
-                <div
-                  key={`${decorator}-${decoratorIndex}`}
-                  style={{
-                    ...chipStyleForPack(pack, color, scale),
-                    borderRadius: 999,
-                    padding: `${px(8, scale, 4)}px ${px(14, scale, 8)}px`,
-                    fontFamily: pack.labelFont,
-                    fontSize: px(20, scale, 11),
-                    fontWeight: 800,
-                    letterSpacing: px(0.7, scale),
-                    textTransform: 'uppercase',
-                  }}
-                >
-                  {decorator}
-                </div>
-              ))}
+              {topMeta}
+              {panelCore}
             </div>
-            {clip.episode_title ? (
+          </div>
+        ) : layout === 'center-stage' ? (
+          <>
+            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+              {topMeta}
+            </div>
+            <div style={{flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
               <div
                 style={{
-                  marginTop: px(16, scale, 8),
-                  color: pack.textMuted || '#cbd5e1',
-                  fontFamily: pack.labelFont,
-                  fontSize: px(22, scale, 12),
-                  fontWeight: 600,
-                  lineHeight: 1.2,
+                  width: '82%',
+                  transform: `translateY(${Math.round((1 - lift) * px(34, scale, 16))}px)`,
+                  opacity: lift,
+                  background: pack.panel,
+                  borderRadius: panelRadius(pack, scale),
+                  padding: `${px(34, scale, 18)}px ${px(36, scale, 20)}px`,
+                  border: `${Math.max(1, px(1, scale))}px solid ${pack.panelBorder}`,
+                  boxShadow: pack.frameStyle === 'focus' ? '0 24px 90px rgba(0,0,0,0.48)' : '0 22px 80px rgba(0,0,0,0.42)',
+                  backdropFilter: 'blur(20px)',
                 }}
               >
-                {clip.episode_title}
+                {panelCore}
               </div>
-            ) : null}
-          </div>
-        </div>
+            </div>
+          </>
+        ) : layout === 'upper-deck' ? (
+          <>
+            <div
+              style={{
+                transform: `translateY(${Math.round((1 - lift) * px(34, scale, 16))}px)`,
+                opacity: lift,
+              }}
+            >
+              <div
+                style={{
+                  width: '74%',
+                  background: pack.panel,
+                  borderRadius: panelRadius(pack, scale),
+                  padding: `${px(28, scale, 14)}px ${px(30, scale, 15)}px`,
+                  border: `${Math.max(1, px(1, scale))}px solid ${pack.panelBorder}`,
+                  boxShadow: pack.frameStyle === 'focus' ? '0 24px 90px rgba(0,0,0,0.48)' : '0 22px 80px rgba(0,0,0,0.42)',
+                  backdropFilter: 'blur(20px)',
+                }}
+              >
+                {topMeta}
+                <div style={{marginTop: px(18, scale, 10)}}>{panelCore}</div>
+              </div>
+            </div>
+            <div style={{flex: 1}} />
+          </>
+        ) : layout === 'band' ? (
+          <>
+            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+              {topMeta}
+            </div>
+            <div style={{flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+              <div
+                style={{
+                  width: '90%',
+                  transform: `translateY(${Math.round((1 - lift) * px(34, scale, 16))}px)`,
+                  opacity: lift,
+                  background: pack.panel,
+                  borderRadius: panelRadius(pack, scale),
+                  padding: `${px(24, scale, 12)}px ${px(28, scale, 14)}px`,
+                  border: `${Math.max(1, px(1, scale))}px solid ${pack.panelBorder}`,
+                  boxShadow: pack.frameStyle === 'focus' ? '0 24px 90px rgba(0,0,0,0.48)' : '0 22px 80px rgba(0,0,0,0.42)',
+                  backdropFilter: 'blur(20px)',
+                }}
+              >
+                {panelCore}
+              </div>
+            </div>
+          </>
+        ) : (
+          <>
+            {topMeta}
+            <div style={{flex: 1}} />
+            <div
+              style={{
+                transform: `translateY(${Math.round((1 - lift) * px(34, scale, 16))}px)`,
+                opacity: lift,
+              }}
+            >
+              <div
+                style={{
+                  background: pack.panel,
+                  borderRadius: panelRadius(pack, scale),
+                  padding: `${px(28, scale, 14)}px ${px(30, scale, 15)}px`,
+                  border: `${Math.max(1, px(1, scale))}px solid ${pack.panelBorder}`,
+                  boxShadow: pack.frameStyle === 'focus' ? '0 24px 90px rgba(0,0,0,0.48)' : '0 22px 80px rgba(0,0,0,0.42)',
+                  backdropFilter: 'blur(20px)',
+                }}
+              >
+                {panelCore}
+              </div>
+            </div>
+          </>
+        )}
       </AbsoluteFill>
     </AbsoluteFill>
   );
@@ -709,20 +919,28 @@ const OutroCard = ({theme, outro, closingLabel, reflectionPrompt, pack}) => {
   const scale = baseScaleForFrame(width, height);
   const enter = spring({fps, frame, config: {damping: 170}});
   const accent = pack.colors[1];
+  const layout = outroLayoutForPack(pack);
+  const centered = layout === 'centered';
   return (
     <AbsoluteFill
       style={{
         background: `${pack.accentGlow}, linear-gradient(180deg, #020617 0%, #0f172a 100%)`,
         padding: `${px(100, scale, 42)}px ${px(68, scale, 28)}px`,
-        justifyContent: 'space-between',
+        justifyContent: centered ? 'center' : 'space-between',
+        alignItems: centered ? 'center' : 'stretch',
       }}
     >
       <BackdropTexture pack={pack} />
-      <ThemePill theme={theme} color={accent} pack={pack} scale={scale} />
+      <div style={{alignSelf: centered ? 'center' : 'auto'}}>
+        <ThemePill theme={theme} color={accent} pack={pack} scale={scale} />
+      </div>
       <div
         style={{
           transform: `translateY(${Math.round((1 - enter) * px(48, scale, 20))}px)`,
           opacity: enter,
+          textAlign: centered ? 'center' : 'left',
+          maxWidth: centered ? '84%' : '100%',
+          alignSelf: centered ? 'center' : 'auto',
         }}
       >
         <div
@@ -741,7 +959,7 @@ const OutroCard = ({theme, outro, closingLabel, reflectionPrompt, pack}) => {
           <div
             style={{
               marginTop: px(24, scale, 12),
-              maxWidth: '88%',
+              maxWidth: centered ? '100%' : '88%',
               color: pack.labelText || '#dbeafe',
               fontFamily: pack.labelFont,
               fontSize: px(28, scale, 14),

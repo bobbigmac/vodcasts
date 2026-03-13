@@ -146,6 +146,8 @@ _STYLE_OPTIONS = [
     "oxide",
     "iris",
     "cobalt",
+    "atlas",
+    "velvet",
 ]
 
 
