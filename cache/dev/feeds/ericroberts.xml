@@ -15,7 +15,7 @@ xmlns:rawvoice="https://blubrry.com/developer/rawvoice-rss/"
 	<atom:link href="https://ericrobertsfitness.com/feed/podcast" rel="self" type="application/rss+xml" />
 	<link>https://ericrobertsfitness.com/</link>
 	<description>Online Fitness Coaching</description>
-	<lastBuildDate>Wed, 11 Mar 2026 10:00:00 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 13 Mar 2026 10:00:00 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -42,6 +42,34 @@ xmlns:rawvoice="https://blubrry.com/developer/rawvoice-rss/"
 	<podcast:podping usesPodping="true" />
 	<podcast:guid>a9191b09-02b4-5c01-a7da-a136ad1ba72e</podcast:guid>
 	<rawvoice:subscribe feed="https://ericrobertsfitness.com/feed/podcast" itunes="https://podcasts.apple.com/us/podcast/eric-roberts-fitness/id1473838608" blubrry="https://blubrry.com/eric_roberts_fitness_podcast/" spotify="https://open.spotify.com/show/2gSP16i6mmEu6kzzbCUXel"></rawvoice:subscribe>
+	<item>
+		<title>ERF 975: Top Life Lessons I Learned NOT From School (Part Two)</title>
+		<link>https://ericrobertsfitness.com/erf-975-erf-972-top-life-lessons-i-learned-not-from-school-part-two/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=erf-975-erf-972-top-life-lessons-i-learned-not-from-school-part-two</link>
+		<pubDate>Fri, 13 Mar 2026 10:00:00 +0000</pubDate>
+		<guid isPermaLink="false">https://ericrobertsfitness.com/?p=8590</guid>
+		<comments>https://ericrobertsfitness.com/erf-975-erf-972-top-life-lessons-i-learned-not-from-school-part-two/#respond</comments>
+		<wfw:commentRss>https://ericrobertsfitness.com/erf-975-erf-972-top-life-lessons-i-learned-not-from-school-part-two/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<category><![CDATA[Podcast]]></category>
+		<description>Join my Clubhouse App - https://ericrobertsfitness.com/clubhouse-page.html
+
+On today&#039;s episode, I sit down with Sophie to wrap up part two of &quot;Lessons Learned Not From School,&quot; where we dive into why self-care looks different for everyone, how your time and priorities shape who you become, and the importance of stepping into new identities even when they feel uncomfortable. We also get into how upbringing and parental support can impact your self-belief, and why no matter what cards you&#039;ve been dealt, winners find a way to win. If you haven&#039;t listened to part one yet, make sure to go back and start there first!
+
+Work With Me 1:1 Coaching - https://ericrobertsfitness.com/erf-1on1.html
+
+Free Calorie Calculator https://ericrobertsfitness.com/free-calorie-calculator/
+
+20% Off Legion Athletic Supplements Code “ERIC” HERE https://legionathletics.rfrl.co/qj2dy
+
+Youtube Channel https://www.youtube.com/@ericrobertsfitness
+
+Video Podcast: https://www.youtube.com/@EricRobertsFitnessPodcast</description>
+		<enclosure url="https://media.blubrry.com/eric_roberts_fitness_podcast/ericrobertsfitness.com/wp-content/uploads/2026/03/riverside_lessons_learned-part-2-magic-episode-_-mar-11-20_eric__soph-pod.mp3" length="33844262" type="audio/mpeg" />
+		<itunes:author>Eric Roberts Fitness</itunes:author>
+		<itunes:episodeType>full</itunes:episodeType>
+		<itunes:explicit>false</itunes:explicit>
+		<itunes:duration>1:10:30</itunes:duration>
+	</item>
 	<item>
 		<title>ERF 974:  Why Group Classes Are Keeping You Stuck</title>
 		<link>https://ericrobertsfitness.com/erf-974-why-group-classes-are-keeping-you-stuck/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=erf-974-why-group-classes-are-keeping-you-stuck</link>
@@ -28833,29 +28861,6 @@ Talk soon, -E. </description>
 		<itunes:author>Eric Roberts Fitness</itunes:author>
 		<itunes:episodeType>full</itunes:episodeType>
 		<itunes:duration>25:17</itunes:duration>
-	</item>
-	<item>
-		<title>ERF Q&#038;A 004: 5 Actionable Tips To Stay on Track This Labor Day</title>
-		<link>https://ericrobertsfitness.com/erf-qa-004-5-actionable-tips-to-stay-on-track-this-labor-day/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=erf-qa-004-5-actionable-tips-to-stay-on-track-this-labor-day</link>
-		<pubDate>Thu, 29 Aug 2019 20:30:09 +0000</pubDate>
-		<guid isPermaLink="false">https://ericrobertsfitness.com/?p=356</guid>
-		<comments>https://ericrobertsfitness.com/erf-qa-004-5-actionable-tips-to-stay-on-track-this-labor-day/#respond</comments>
-		<wfw:commentRss>https://ericrobertsfitness.com/erf-qa-004-5-actionable-tips-to-stay-on-track-this-labor-day/feed/</wfw:commentRss>
-		<slash:comments>0</slash:comments>
-		<category><![CDATA[Podcast]]></category>
-		<description>Just because it is a holiday does not mean your progress has to suffer...
-
-And honestly, there is no way it can, because it&#039;s ONE weekend.
-
-That being said, for those who would like to be mindful / try to stay on track with your fitness goals this holiday weekend, this podcast is for you.
-
-I give you 5 very quick and actionable tips you can be mindful of when planning/attenidng your holiday parties!
-
-Let me know what you think, and which you think will help you the best!</description>
-		<enclosure url="https://media.blubrry.com/eric_roberts_fitness_podcast/content.blubrry.com/eric_roberts_fitness_podcast/QA-Labor-Day-Audio-only-w-music-2.mp3" length="4323404" type="audio/mpeg" />
-		<itunes:author>Eric Roberts Fitness</itunes:author>
-		<itunes:episodeType>full</itunes:episodeType>
-		<itunes:duration>4:37</itunes:duration>
 	</item>
 </channel>
 </rss>

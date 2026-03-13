@@ -15,7 +15,7 @@ xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
 	<atom:link href="https://nutritionfacts.org/videos/feed/podcast/" rel="self" type="application/rss+xml" />
 	<link>https://nutritionfacts.org/videos/</link>
 	<description>Michael Greger, M.D. FACLM, founder of NutritionFacts.org and New York Times best-selling author of How Not to Die, How Not to Diet, and the just-released How Not to Age, brings you the latest in evidence-based nutrition research, delivered in easy to understand video segments. NutritionFacts.org is a non-profit and non-commercial public health organization, and more than 2,000 videos on virtually every aspect of healthy eating are available on our website. New videos and blogs are uploaded every day–always without any sponsors, ads, brand partnerships, or paid subscriptions.</description>
-	<lastBuildDate>Fri, 13 Mar 2026 05:31:26 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 13 Mar 2026 11:50:36 +0000</lastBuildDate>
 	<language>en</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
@@ -59,6 +59,22 @@ NutritionFacts.org is a non-profit and non-commercial public health organization
 	<rawvoice:frequency>Tri-Weekly</rawvoice:frequency>
 	<rawvoice:donate href="https://nutritionfacts.org/donate/">Donate to NutritionFacts.org</rawvoice:donate>
 	<rawvoice:subscribe feed="https://nutritionfacts.org/videos/feed/podcast/" itunes="https://itunes.apple.com/us/podcast/nutritionfacts-org-video-podcast/id1210294497"></rawvoice:subscribe>
+	<item>
+		<title>Friday Favorites: The Benefits of Fenugreek for Preventing and Treating Diabetes</title>
+		<link>https://nutritionfacts.org/video/friday-favorites-the-benefits-of-fenugreek-for-preventing-and-treating-diabetes/</link>
+		<pubDate>Fri, 13 Mar 2026 11:50:36 +0000</pubDate>
+		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=116703</guid>
+		<description>The spice fenugreek contains 4-hydroxyisoleucine, a peculiar amino acid that may explain its benefits for controlling blood sugar.</description>
+		<content:encoded><![CDATA[The spice fenugreek contains 4-hydroxyisoleucine, a peculiar amino acid that may explain its benefits for controlling blood sugar.]]></content:encoded>
+		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2026/03/2-The-Benefits-of-Fenugreek-for-Preventing-and-Treating-Diabetes-59-14.mp4" length="182995294" type="video/mp4" />
+		<itunes:subtitle>The spice fenugreek contains 4-hydroxyisoleucine, a peculiar amino acid that may explain its benefits for controlling blood sugar.</itunes:subtitle>
+		<itunes:summary><![CDATA[The spice fenugreek contains 4-hydroxyisoleucine, a peculiar amino acid that may explain its benefits for controlling blood sugar.]]></itunes:summary>
+		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
+		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
+		<itunes:explicit>clean</itunes:explicit>
+		<itunes:duration>4:20</itunes:duration>
+		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=116703-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
+		</item>
 	<item>
 		<title>Are the Lower Iron Stores in Vegetarians a Risk or a Benefit?</title>
 		<link>https://nutritionfacts.org/video/are-the-lower-iron-stores-in-vegetarians-a-risk-or-a-benefit/</link>
@@ -1643,22 +1659,6 @@ NutritionFacts.org is a non-profit and non-commercial public health organization
 		<itunes:explicit>clean</itunes:explicit>
 		<itunes:duration>5:01</itunes:duration>
 		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=114457-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
-		</item>
-	<item>
-		<title>The Benefits of Purslane for Treating Oral Lichen Planus</title>
-		<link>https://nutritionfacts.org/video/the-benefits-of-purslane-for-treating-oral-lichen-planus/</link>
-		<pubDate>Wed, 23 Jul 2025 11:50:25 +0000</pubDate>
-		<guid isPermaLink="false">https://nutritionfacts.org/?post_type=video&#038;p=114830</guid>
-		<description>The weed purslane appears to not only be the safest treatment available for the autoimmune disease lichen planus, but the most effective, too.</description>
-		<content:encoded><![CDATA[The weed purslane appears to not only be the safest treatment available for the autoimmune disease lichen planus, but the most effective, too.]]></content:encoded>
-		<enclosure url="https://media.blubrry.com/nutritionfacts/nutritionfacts.org/app/uploads/2025/06/69-26-The-Benefits-of-Purslane-for-Treating-Oral-Lichen-Planus.mp4" length="167194221" type="video/mp4" />
-		<itunes:subtitle>The weed purslane appears to not only be the safest treatment available for the autoimmune disease lichen planus, but the most effective, too.</itunes:subtitle>
-		<itunes:summary><![CDATA[The weed purslane appears to not only be the safest treatment available for the autoimmune disease lichen planus, but the most effective, too.]]></itunes:summary>
-		<itunes:author>Michael Greger, M.D. FACLM</itunes:author>
-		<itunes:image href="https://nutritionfacts.org/app/uploads/powerpress/video-podcast-library.jpg" />
-		<itunes:explicit>clean</itunes:explicit>
-		<itunes:duration>2:44</itunes:duration>
-		<rawvoice:embed>&lt;iframe width=&quot;400&quot; height=&quot;400&quot; src=&quot;https://nutritionfacts.org/?powerpress_embed=114830-podcast&amp;amp;powerpress_player=mediaelement-video&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; webkitAllowFullScreen mozallowfullscreen allowFullScreen&gt;&lt;/iframe&gt;</rawvoice:embed>
 		</item>
 </channel>
 </rss>
