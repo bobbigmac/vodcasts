@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "date": "2026-03-14",
   "siteOrigin": "",
   "basePath": "/",
@@ -7,9 +7,9 @@
   "stats": {
     "feeds": 65,
     "series": 102,
-    "episodes": 1805,
+    "episodes": 1845,
     "pages": 1,
     "changed": 1
   },
-  "updatedAtUnix": 1773494238
+  "updatedAtUnix": 1773503153
 }
