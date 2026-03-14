@@ -188,6 +188,12 @@ export function App({ env, log, sources, showsConfig, player, history }) {
     scheduleUiIdle();
   };
 
+  const closeBrowseDrawer = () => {
+    guideOpen.value = false;
+    guideBrowseFeedId.value = null;
+    guideBrowseShowSlug.value = null;
+  };
+
   useEffect(() => {
     const cleanup = installControls();
     return () => cleanup?.();
@@ -258,7 +264,10 @@ export function App({ env, log, sources, showsConfig, player, history }) {
 
   // Clear hotswap browse when guide closes.
   useSignalEffect(() => {
-    if (!guideOpen.value) guideBrowseFeedId.value = null;
+    if (!guideOpen.value) {
+      guideBrowseFeedId.value = null;
+      guideBrowseShowSlug.value = null;
+    }
   });
 
 
@@ -638,7 +647,8 @@ export function App({ env, log, sources, showsConfig, player, history }) {
   const PANEL_IDLE_MS = 14000;
   const panelIds = ["guidePanel", "browsePanel", "browseAllPanel", "detailsPanel", "historyPanel"];
   useSignalEffect(() => {
-    const anyOpen = guideOpen.value || detailsOpen.value || historyOpen.value || browseAllOpen.value;
+    const browseDrawerOpen = guideOpen.value && (isBrowseMode || !!guideBrowseFeedId.value);
+    const anyOpen = (guideOpen.value && !browseDrawerOpen) || detailsOpen.value || historyOpen.value || browseAllOpen.value;
     if (!anyOpen) return;
     let t = setTimeout(() => {
       if (guideOpen.value) guideOpen.value = false;
@@ -1509,6 +1519,7 @@ export function App({ env, log, sources, showsConfig, player, history }) {
               guideBrowseShowSlug.value = null;
               setRouteInUrl({ feed: guideBrowseFeedId.value || env.initialFeed }, { replace: true });
             }}
+            onClose=${closeBrowseDrawer}
           />`
         : html`<${GuidePanel}
             isOpen=${guideOpen}

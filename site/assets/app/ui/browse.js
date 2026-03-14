@@ -1,7 +1,7 @@
 /**
  * Netflix-style browse panel: carousels for shows/episodes (not the guide/EPG).
  */
-import { html, useEffect } from "../runtime/vendor.js";
+import { html, useEffect, useSignal } from "../runtime/vendor.js";
 import { fallbackInitials, thumbFallbackStyle, titlePosClass, VodCarouselRow } from "./vod_carousel.js";
 import { HeadphonesIcon } from "./icons.js";
 
@@ -100,6 +100,7 @@ export function BrowsePanel({
   player,
   history,
   onBack,
+  onClose,
   onExpandShow,
 }) {
   const normBasePath = (p) => {
@@ -112,6 +113,7 @@ export function BrowsePanel({
   const curSourceId = player?.currentSourceId?.value || null;
   const curEpId = player?.currentEpisodeId?.value || null;
   const open = !!isOpen?.value;
+  const panelIdle = useSignal(false);
 
   useEffect(() => {
     if (!open) return;
@@ -133,9 +135,40 @@ export function BrowsePanel({
     }
   }, [open, feedId, initialExpandShowSlug, curSourceId, curEpId]);
 
+  useEffect(() => {
+    panelIdle.value = false;
+    if (!open) return;
+    const panel = document.getElementById("browsePanel");
+    if (!panel) return;
+    const IDLE_MS = 10000;
+    let idleTimer = null;
+
+    const bump = () => {
+      panelIdle.value = false;
+      if (idleTimer) clearTimeout(idleTimer);
+      idleTimer = setTimeout(() => {
+        panelIdle.value = true;
+      }, IDLE_MS);
+    };
+
+    const evs = ["mousemove", "mousedown", "keydown", "touchstart", "touchmove", "wheel", "pointerdown", "pointermove", "focusin"];
+    evs.forEach((ev) => panel.addEventListener(ev, bump));
+    panel.addEventListener("scroll", bump, true);
+    bump();
+
+    return () => {
+      panelIdle.value = false;
+      if (idleTimer) clearTimeout(idleTimer);
+      evs.forEach((ev) => panel.removeEventListener(ev, bump));
+      panel.removeEventListener("scroll", bump, true);
+    };
+  }, [open, feedId, initialExpandShowSlug]);
+
+  const panelClassName = "browsePanel" + (panelIdle.value ? " idle" : "");
+
   if (!shows?.length) {
     return html`
-      <div id="browsePanel" class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
+      <div id="browsePanel" class=${panelClassName} aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
         <div class="browsePanel-inner">
           <div class="browsePanel-empty">No shows for this feed.</div>
         </div>
@@ -177,6 +210,13 @@ export function BrowsePanel({
           ? html`<a class="browseTitleLink" href=${selfHref}>${showHeaderTitle}</a>`
           : html`${showHeaderTitle}`}
       </h2>
+      ${onClose
+        ? html`
+            <button class="browseCloseBtn" type="button" onClick=${onClose} aria-label="Close">
+              ×
+            </button>
+          `
+        : ""}
     </header>
   `;
 
@@ -188,7 +228,7 @@ export function BrowsePanel({
     const artSeed = `${feedId}:${focusedShow.slug || focusedShow.id}`;
 
     return html`
-      <div id="browsePanel" class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
+      <div id="browsePanel" class=${panelClassName} aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
         <div class="browsePanel-inner" data-carousel-group="browseFeed">
           ${header}
           ${focusedShow.description ? html`<p class="browseShowDesc browseShowDescTop">${focusedShow.description}</p>` : ""}
@@ -244,7 +284,7 @@ export function BrowsePanel({
   if (episodesOnly) {
     const artSeed = `${feedId}:${shows[0]?.slug || shows[0]?.id || "feed"}`;
     return html`
-      <div id="browsePanel" class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
+      <div id="browsePanel" class=${panelClassName} aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
         <div class="browsePanel-inner" data-carousel-group="browseFeed">
           ${header}
           <${VodCarouselRow} rowId=${`feed-eps-${feedId}`} title="Episodes" className="browseEpRow">
@@ -294,7 +334,7 @@ export function BrowsePanel({
 
   // Shows carousel view.
   return html`
-    <div id="browsePanel" class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
+    <div id="browsePanel" class=${panelClassName} aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
       <div class="browsePanel-inner" data-carousel-group="browseFeed">
         ${header}
         <${VodCarouselRow} rowId=${`shows-${feedId}`} title="Shows" className="browseShowsRow">

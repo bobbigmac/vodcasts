@@ -25,6 +25,9 @@
   bottom: 0;
   opacity: 1;
 }
+.browsePanel[aria-hidden="false"].idle {
+  opacity: 0.24;
+}
 .browsePanel[aria-hidden="true"] {
   bottom: -75vh;
   opacity: 0;
@@ -51,7 +54,8 @@
   gap: 10px;
 }
 
-.browseBackBtn {
+.browseBackBtn,
+.browseCloseBtn {
   flex-shrink: 0;
   width: 32px;
   height: 32px;
@@ -66,8 +70,13 @@
   align-items: center;
   justify-content: center;
 }
-.browseBackBtn:hover {
+.browseBackBtn:hover,
+.browseCloseBtn:hover {
   background: rgba(255, 255, 255, 0.12);
+}
+.browseCloseBtn {
+  font-size: 24px;
+  line-height: 1;
 }
 
 .browseTitle {
