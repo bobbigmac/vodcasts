@@ -1,7 +1,7 @@
 /**
  * Netflix-style browse panel: carousels for shows/episodes (not the guide/EPG).
  */
-import { html, useEffect, useSignal } from "../runtime/vendor.js";
+import { html, useEffect } from "../runtime/vendor.js";
 import { fallbackInitials, thumbFallbackStyle, titlePosClass, VodCarouselRow } from "./vod_carousel.js";
 import { HeadphonesIcon } from "./icons.js";
 
@@ -113,7 +113,12 @@ export function BrowsePanel({
   const curSourceId = player?.currentSourceId?.value || null;
   const curEpId = player?.currentEpisodeId?.value || null;
   const open = !!isOpen?.value;
-  const panelIdle = useSignal(false);
+
+  const playAndClose = ({ ep, showEpisodes = null, showSlug = null }) => {
+    if (!feedId || !ep?.id) return;
+    playEpisode({ player, feedId, ep, showEpisodes, showSlug });
+    onClose?.();
+  };
 
   useEffect(() => {
     if (!open) return;
@@ -136,39 +141,34 @@ export function BrowsePanel({
   }, [open, feedId, initialExpandShowSlug, curSourceId, curEpId]);
 
   useEffect(() => {
-    panelIdle.value = false;
     if (!open) return;
     const panel = document.getElementById("browsePanel");
-    if (!panel) return;
+    if (!panel || !onClose) return;
     const IDLE_MS = 10000;
     let idleTimer = null;
 
-    const bump = () => {
-      panelIdle.value = false;
+    const resetIdleClose = () => {
       if (idleTimer) clearTimeout(idleTimer);
       idleTimer = setTimeout(() => {
-        panelIdle.value = true;
+        onClose();
       }, IDLE_MS);
     };
 
     const evs = ["mousemove", "mousedown", "keydown", "touchstart", "touchmove", "wheel", "pointerdown", "pointermove", "focusin"];
-    evs.forEach((ev) => panel.addEventListener(ev, bump));
-    panel.addEventListener("scroll", bump, true);
-    bump();
+    evs.forEach((ev) => panel.addEventListener(ev, resetIdleClose));
+    panel.addEventListener("scroll", resetIdleClose, true);
+    resetIdleClose();
 
     return () => {
-      panelIdle.value = false;
       if (idleTimer) clearTimeout(idleTimer);
-      evs.forEach((ev) => panel.removeEventListener(ev, bump));
-      panel.removeEventListener("scroll", bump, true);
+      evs.forEach((ev) => panel.removeEventListener(ev, resetIdleClose));
+      panel.removeEventListener("scroll", resetIdleClose, true);
     };
-  }, [open, feedId, initialExpandShowSlug]);
-
-  const panelClassName = "browsePanel" + (panelIdle.value ? " idle" : "");
+  }, [open, feedId, initialExpandShowSlug, onClose]);
 
   if (!shows?.length) {
     return html`
-      <div id="browsePanel" class=${panelClassName} aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
+      <div id="browsePanel" class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
         <div class="browsePanel-inner">
           <div class="browsePanel-empty">No shows for this feed.</div>
         </div>
@@ -228,7 +228,7 @@ export function BrowsePanel({
     const artSeed = `${feedId}:${focusedShow.slug || focusedShow.id}`;
 
     return html`
-      <div id="browsePanel" class=${panelClassName} aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
+      <div id="browsePanel" class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
         <div class="browsePanel-inner" data-carousel-group="browseFeed">
           ${header}
           ${focusedShow.description ? html`<p class="browseShowDesc browseShowDescTop">${focusedShow.description}</p>` : ""}
@@ -247,7 +247,7 @@ export function BrowsePanel({
                       type="button"
                       data-navitem="1"
                       aria-label=${isResume ? `Resume: ${ep.title || "Episode"}` : (ep.title || "Episode")}
-                      onClick=${() => playEpisode({ player, feedId, ep, showEpisodes: eps, showSlug: focusedShow.slug || focusedShow.id })}
+                      onClick=${() => playAndClose({ ep, showEpisodes: eps, showSlug: focusedShow.slug || focusedShow.id })}
                       onFocus=${ensureFocusedThumbInView}
                     >
                       <div class="vodThumb" style=${thumbFallbackStyle(artSeed)}>
@@ -284,7 +284,7 @@ export function BrowsePanel({
   if (episodesOnly) {
     const artSeed = `${feedId}:${shows[0]?.slug || shows[0]?.id || "feed"}`;
     return html`
-      <div id="browsePanel" class=${panelClassName} aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
+      <div id="browsePanel" class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
         <div class="browsePanel-inner" data-carousel-group="browseFeed">
           ${header}
           <${VodCarouselRow} rowId=${`feed-eps-${feedId}`} title="Episodes" className="browseEpRow">
@@ -299,7 +299,7 @@ export function BrowsePanel({
                       type="button"
                       data-navitem="1"
                       aria-label=${ep.title || "Episode"}
-                      onClick=${() => playEpisode({ player, feedId, ep, showEpisodes: episodes, showSlug: shows[0]?.slug || shows[0]?.id })}
+                      onClick=${() => playAndClose({ ep, showEpisodes: episodes, showSlug: shows[0]?.slug || shows[0]?.id })}
                       onFocus=${ensureFocusedThumbInView}
                     >
                       <div class="vodThumb" style=${thumbFallbackStyle(artSeed)}>
@@ -334,7 +334,7 @@ export function BrowsePanel({
 
   // Shows carousel view.
   return html`
-    <div id="browsePanel" class=${panelClassName} aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
+    <div id="browsePanel" class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
       <div class="browsePanel-inner" data-carousel-group="browseFeed">
         ${header}
         <${VodCarouselRow} rowId=${`shows-${feedId}`} title="Shows" className="browseShowsRow">
@@ -362,7 +362,7 @@ export function BrowsePanel({
                     aria-label=${showTitle || "Show"}
                     onClick=${() => {
                       const ep = progress.resumeEpisode || eps[0];
-                      playEpisode({ player, feedId, ep, showEpisodes: eps, showSlug: show.slug || show.id });
+                      playAndClose({ ep, showEpisodes: eps, showSlug: show.slug || show.id });
                     }}
                     onFocus=${ensureFocusedThumbInView}
                   >

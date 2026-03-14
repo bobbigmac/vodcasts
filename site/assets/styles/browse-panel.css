@@ -25,9 +25,6 @@
   bottom: 0;
   opacity: 1;
 }
-.browsePanel[aria-hidden="false"].idle {
-  opacity: 0.24;
-}
 .browsePanel[aria-hidden="true"] {
   bottom: -75vh;
   opacity: 0;
