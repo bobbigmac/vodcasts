@@ -18,7 +18,7 @@ import { AudioDisplayTakeover } from "../ui/takeover/audio_display_takeover.js";
 import { getNextPluginId, getPreferredPlugin, setPreferredPlugin } from "../player/audio_viz.js";
 import { ChaptersNavSettingsTakeover, ChaptersNavTakeover } from "../ui/takeover/chapters_nav_takeover.js";
 import { ShuffleTakeover } from "../ui/takeover/shuffle_takeover.js";
-import { ExitFullscreenIcon, FullscreenIcon, MoonIcon, MuteIcon, PauseIcon, PlayIcon, ShareIcon, ShuffleIcon } from "../ui/icons.js";
+import { EpisodesIcon, ExitFullscreenIcon, FullscreenIcon, MoonIcon, MuteIcon, PauseIcon, PlayIcon, ShareIcon, ShuffleIcon } from "../ui/icons.js";
 import { useLongPress } from "../ui/long_press.js";
 import { clearMediaSessionMetadata, installControls, setMediaSessionMetadata } from "./controls.js";
 import { buildShareUrl, getRouteFromUrl, setRouteInUrl } from "./route.js";
@@ -194,6 +194,18 @@ export function App({ env, log, sources, showsConfig, player, history }) {
     guideOpen.value = false;
     guideBrowseFeedId.value = null;
     guideBrowseShowSlug.value = null;
+  };
+
+  const openBrowseDrawerForShow = (feedId, showSlug) => {
+    if (!feedId || !showSlug) return;
+    browseAllOpen.value = false;
+    historyOpen.value = false;
+    detailsOpen.value = false;
+    shareOpen.value = false;
+    guideBrowseFeedId.value = feedId;
+    guideBrowseShowSlug.value = showSlug;
+    guideOpen.value = true;
+    setRouteInUrl({ feed: feedId, show: showSlug }, { replace: false });
   };
 
   useEffect(() => {
@@ -938,6 +950,17 @@ export function App({ env, log, sources, showsConfig, player, history }) {
 
   const cur = player.current.value;
   const isAudioOnly = !!player.isAudioOnly?.value;
+  const curRoute = getRouteFromUrl();
+  const currentPlaylist = player.playlist?.value || null;
+  const currentEpisode = cur.episode || null;
+  const currentSourceId = cur.source?.id || null;
+  const currentShowFeedId =
+    (currentPlaylist?.showSlug && currentPlaylist?.feedId ? currentPlaylist.feedId : null) ||
+    (currentEpisode?.id && curRoute?.show && curRoute?.feed === currentSourceId ? curRoute.feed : null);
+  const currentShowSlug =
+    (currentPlaylist?.feedId === currentShowFeedId ? currentPlaylist?.showSlug || null : null) ||
+    (currentShowFeedId && curRoute?.feed === currentShowFeedId ? curRoute?.show || null : null);
+  const canReopenShowShelf = !!(currentEpisode?.id && currentShowFeedId && currentShowSlug);
   const pb = player.playback.value;
   const cap = player.captions.value;
   const loading = player.loading.value;
@@ -1629,6 +1652,20 @@ export function App({ env, log, sources, showsConfig, player, history }) {
           : null}
         Browse
       </button>
+      ${canReopenShowShelf
+        ? html`
+            <button
+              id="btnEpisodes"
+              class="cornerBtn cornerBtnEpisodes"
+              title="Episodes"
+              aria-label="Episodes"
+              data-navitem="1"
+              onClick=${() => openBrowseDrawerForShow(currentShowFeedId, currentShowSlug)}
+            >
+              <${EpisodesIcon} size=${18} />
+            </button>
+          `
+        : null}
       <button
         id="btnHistory"
         class="cornerBtn cornerBtnHistory"

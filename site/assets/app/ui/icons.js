@@ -154,6 +154,32 @@ export function ShareIcon({ size = 18, strokeWidth = 2, className = "" } = {}) {
   `;
 }
 
+export function EpisodesIcon({ size = 18, strokeWidth = 2, className = "" } = {}) {
+  const s = Number(size) > 0 ? Number(size) : 18;
+  const sw = Number(strokeWidth) > 0 ? Number(strokeWidth) : 2;
+  return html`
+    <svg
+      class=${className}
+      width=${s}
+      height=${s}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width=${sw}
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+      <path d="M8 9h8"></path>
+      <path d="M8 12h8"></path>
+      <path d="M8 15h5"></path>
+      <path d="M5 9.5 6.5 10.5 5 11.5Z" fill="currentColor" stroke="none"></path>
+    </svg>
+  `;
+}
+
 export function HeadphonesIcon({ size = 14, strokeWidth = 2, className = "" } = {}) {
   const s = Number(size) > 0 ? Number(size) : 14;
   const sw = Number(strokeWidth) > 0 ? Number(strokeWidth) : 2;

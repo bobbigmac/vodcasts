@@ -1,4 +1,4 @@
-Bridgetown is where I go when I want church teaching that keeps pulling faith back into ordinary habits. Prayer, desire, distraction, community, repentance. The sort of stuff that actually shapes a life.
+Bridgetown keeps pulling faith back into ordinary habits. Prayer, desire, distraction, community, repentance. The sort of stuff that actually shapes a life.
 https://prays.be/bridgetown/
 
 
@@ -14,7 +14,7 @@ Through the Bible from Athey Creek is for days when you want to stay with the te
 https://prays.be/athey-creek/shows/through-the-bible/
 
 
-The main Athey Creek archive is useful because the titles are plain and the subjects are usually plain too. Scripture, suffering, obedience, prayer, the usual things people keep needing help with.
+Athey Creek stays plain about the things people keep needing help with. Scripture, suffering, obedience, prayer, the long business of taking God seriously.
 https://prays.be/athey-creek/shows/athey-creek/
 
 
@@ -38,11 +38,11 @@ Antioch keeps landing on discipleship in a very usable way. Love God, love peopl
 https://prays.be/antioch-church/
 
 
-Knowing, Loving, Serving is the kind of series title that can sound generic until you remember most people are lopsided in at least one of those. It works because it treats all three as connected.
+Knowing, Loving, Serving is the kind of series title that can sound generic until you remember most people are lopsided in at least one of those. This one treats all three as connected.
 https://prays.be/antioch-church/shows/knowing-loving-serving/
 
 
-BTIC's message archive has that steady church instinct I still trust. Scripture, mission, faithfulness, speaking good news outward instead of folding it into private inspiration.
+BTIC keeps leaning on the old church instinct I still trust. Scripture, mission, faithfulness, speaking good news outward instead of folding it into private inspiration.
 https://prays.be/btic-podcast-video/shows/messages/
 
 
@@ -54,11 +54,11 @@ Fruit of the Spirit is such familiar church language that it can go flat, but th
 https://prays.be/calvary-chapel-fort-lauderdale/shows/fruit-of-the-spirit/
 
 
-Eagle Brook's main archive is broad in a useful way. It keeps circling the questions a lot of people are actually carrying: who Jesus is, what freedom looks like, why change is hard, what faith does under pressure.
+Eagle Brook keeps circling the questions a lot of people are actually carrying: who Jesus is, what freedom looks like, why change is hard, what faith does under pressure.
 https://prays.be/eaglebrook/
 
 
-Their Christmas page works because it keeps Christmas tied to actual need. Hope, peace, joy, yes, but not as decorations. More as things people are short on.
+Their Christmas series keeps Christmas tied to actual need. Hope, peace, joy, yes, but not as decorations. More as things people are short on.
 https://prays.be/eaglebrook/shows/christmas/
 
 
@@ -66,11 +66,11 @@ Free From is for anybody who is tired of hearing freedom talked about in vague c
 https://prays.be/eaglebrook/shows/free-from/
 
 
-Vision Weekend pages can tell you what a church thinks matters most. Eagle Brook's is worth browsing for that alone. You get mission, priorities, and what kind of future they think faith should build toward.
+Vision Weekend can tell you what a church thinks matters most. Eagle Brook's gets into mission, priorities, and the kind of future they think faith should build toward.
 https://prays.be/eaglebrook/shows/vision-weekend/
 
 
-Devoted Live is a good corner of the library if you want something that stays with devotion rather than trying to conquer ten topics at once. It keeps bringing things back to prayer, scripture, and nearness to God.
+Devoted Live stays with devotion rather than trying to conquer ten topics at once. It keeps bringing things back to prayer, scripture, and nearness to God.
 https://prays.be/athey-creek-devoted-live/shows/devoted-live/
 
 
@@ -78,11 +78,11 @@ Ironworks is not trying to flatter men or turn discipleship into swagger. It get
 https://prays.be/athey-creek-ironworks/shows/ironworks/
 
 
-Church of the Highlands is handy when you want church messages that deal in direct language. Stuckness, healing, change, purpose, relationships, the usual trouble spots.
+Church of the Highlands deals in direct language about stuckness, healing, change, purpose, relationships, the usual trouble spots.
 https://prays.be/church-of-the-highlands-weekend-video/shows/sermons/
 
 
-Fresh Life's Levi Lusko archive tends to stay personal without collapsing into self-help. Grief, family damage, hope, sin, mercy, the long aftershocks of all of it.
+Fresh Life through Levi Lusko stays personal without collapsing into self-help. Grief, family damage, hope, sin, mercy, the long aftershocks of all of it.
 https://prays.be/fresh-life-church/shows/pastor-levi-lusko/
 
 
@@ -98,7 +98,7 @@ Kingdom Culture keeps circling the question of what sort of people the kingdom i
 https://prays.be/river-valley-church-video/shows/kingdom-culture/
 
 
-Sanctus is a really solid library if you want church teaching that takes ordinary formation seriously. Family life, witness, scripture, church conflict, trust, mission.
+Sanctus takes ordinary formation seriously. Family life, witness, scripture, church conflict, trust, mission.
 https://prays.be/sanctus-church-video/
 
 
@@ -110,7 +110,7 @@ Their Book of Acts series keeps the church from becoming a nostalgic idea. Acts 
 https://prays.be/sanctus-church-video/shows/book-of-acts/
 
 
-Vision Sunday is where churches usually reveal what they think faith is for. Sanctus is worth a browse there because it says a lot about how they imagine witness, service, and life together.
+Vision Sunday is where churches usually reveal what they think faith is for. Sanctus says a lot there about how they imagine witness, service, and life together.
 https://prays.be/sanctus-church-video/shows/vision-sunday/
 
 
@@ -130,7 +130,7 @@ Heritage in Psalms is a good place to land if you need language for the inner me
 https://prays.be/heritage/shows/psalms/
 
 
-Joy Unspeakable sounds like a line people say too quickly, but the series works because it keeps joy tied to God rather than mood. That matters when life is not cooperating.
+Joy Unspeakable sounds like a line people say too quickly, but this series keeps joy tied to God rather than mood. That matters when life is not cooperating.
 https://prays.be/heritage/shows/joy-unspeakable/
 
 
@@ -146,7 +146,7 @@ Forgotten Prophets is worth opening for the title and worth staying for the remi
 https://prays.be/dungeness-community-church/shows/forgotten-prophets/
 
 
-Life.Church is useful when you want a big archive that keeps speaking in plain terms about pain, change, doubt, relationships, and the practical pressure of trying to live faithfully now.
+Life.Church keeps speaking in plain terms about pain, change, doubt, relationships, and the practical pressure of trying to live faithfully now.
 https://prays.be/life-church-video/
 
 
@@ -162,7 +162,7 @@ National Community Church keeps leaning toward faith with public edges. Prayer, 
 https://prays.be/national-community-church/
 
 
-Welcome Home works because belonging is harder than most churches admit. This series keeps home tied to grace, community, and the risk of letting yourself be known.
+Welcome Home starts from the fact that belonging is harder than most churches admit. This series keeps home tied to grace, community, and the risk of letting yourself be known.
 https://prays.be/national-community-church/shows/welcome-home/
 
 
@@ -174,7 +174,7 @@ Clutter is one of those titles that hardly needs selling. Too much noise, too mu
 https://prays.be/emmanuel-church/shows/clutter/
 
 
-The Parables from North Ridge is worth a browse because the stories still refuse to sit quietly. They keep exposing motives, half-belief, mercy, resentment, and who we think deserves grace.
+The Parables from North Ridge keeps letting the stories refuse to sit quietly. They expose motives, half-belief, mercy, resentment, and who we think deserves grace.
 https://prays.be/northridge/shows/the-parables/
 
 
@@ -182,11 +182,11 @@ Encounters has more story in it than some church series, which helps. People mee
 https://prays.be/northridge/shows/encounters/
 
 
-Christ Chapel is the sort of archive I keep around because there is always another old sermon on grief, trust, prayer, family, or hope that turns out to be useful.
+Christ Chapel keeps returning to grief, trust, prayer, family, and hope without making any of them sound easy.
 https://prays.be/christ-chapel-video-podcasts/shows/christ-chapel-sermons/
 
 
-Reality LA is good when you want Bible teaching that deals plainly with suffering, discipleship, weakness, grace, and the costly parts of following Jesus.
+Reality LA deals plainly with suffering, discipleship, weakness, grace, and the costly parts of following Jesus.
 https://prays.be/reality-la-video/shows/sermons/
 
 

@@ -62,10 +62,20 @@
 }
 
 .cornerBtn.cornerBtnHistory {
+  left: calc(var(--cornerInsetX) + var(--cornerBrowseW) + var(--cornerBtnGap) + var(--cornerBtnSize) + var(--cornerBtnGap));
+  left: calc(var(--cornerInsetX) + env(safe-area-inset-left, 0px) + var(--cornerBrowseW) + var(--cornerBtnGap) + var(--cornerBtnSize) + var(--cornerBtnGap));
+}
+.cornerBtn.cornerBtnEpisodes {
   left: calc(var(--cornerInsetX) + var(--cornerBrowseW) + var(--cornerBtnGap));
   left: calc(var(--cornerInsetX) + env(safe-area-inset-left, 0px) + var(--cornerBrowseW) + var(--cornerBtnGap));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
-.cornerBtn:where(:not(.cornerBtnLeft):not(.cornerBtnBrowse):not(.cornerBtnHistory)) {
+.cornerBtn.cornerBtnEpisodes svg {
+  display: block;
+}
+.cornerBtn:where(:not(.cornerBtnLeft):not(.cornerBtnBrowse):not(.cornerBtnEpisodes):not(.cornerBtnHistory)) {
   right: var(--cornerInsetX);
   right: calc(var(--cornerInsetX) + env(safe-area-inset-right, 0px));
 }

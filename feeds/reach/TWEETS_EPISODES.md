@@ -2,11 +2,11 @@ This Bridgetown sermon on vanity gets past the shallow version of "stop caring w
 https://prays.be/bridgetown/2026-02-09-7-deadly-sins-vanity-166n8z/
 
 
-This Bridgetown episode on evening prayer stays close to Gethsemane, which is why it works. Prayer here is tired, honest, exposed, and still turned toward God.
+This Bridgetown episode on evening prayer stays close to Gethsemane. Prayer here is tired, honest, exposed, and still turned toward God.
 https://prays.be/bridgetown/2025-11-24-a-prayer-shaped-life-evening-pray-examen-lgj7qu/
 
 
-Connexus on praying with somebody without making it weird starts in the right place. Most people are more nervous about prayer than they let on. The message works with that instead of pretending otherwise.
+Connexus on praying with somebody without making it weird starts in the right place. Most people are more nervous about prayer than they let on. The message works with that fact instead of pretending otherwise.
 https://prays.be/connexus-church/2026-03-01-how-to-pray-with-someone-without-it-being-awkward-vijay-krish-1cz24n/
 
 
@@ -42,7 +42,7 @@ This Dungeness sermon on surrendering your thinking gets at how exhausting self-
 https://prays.be/dungeness-community-church/2026-02-02-losing-to-win-surrendering-your-thinking-lance-lewis-video-gt7bm8/
 
 
-Trouble Inside from Sanctus is a good Acts sermon because it does not romanticize the church. Internal mess, conflict, strain, and still the possibility that God does not give up on his people.
+Trouble Inside from Sanctus does not romanticize the church. Internal mess, conflict, strain, and still the possibility that God does not give up on his people.
 https://prays.be/sanctus-church-video/2023-10-22-the-book-of-acts-week-5-trouble-inside-1q4fd9/
 
 
