@@ -1,15 +1,15 @@
 {
-  "version": 1,
+  "version": 2,
   "date": "2026-03-14",
   "siteOrigin": "",
-  "basePath": "/vodcasts/",
+  "basePath": "/",
   "pages": 1,
   "stats": {
     "feeds": 65,
-    "series": 70,
-    "episodes": 1994,
+    "series": 102,
+    "episodes": 1805,
     "pages": 1,
     "changed": 1
   },
-  "updatedAtUnix": 1773481851
+  "updatedAtUnix": 1773494238
 }
