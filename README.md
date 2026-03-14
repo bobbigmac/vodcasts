@@ -68,7 +68,30 @@ GitHub is forcing JavaScript actions onto Node 24 by default starting June 2, 20
 
 - This repo's workflow should stay on `actions/checkout@v6`, `actions/setup-python@v6`, and `actions/upload-pages-artifact@v4` or newer.
 - `actions/configure-pages@v5` and `actions/deploy-pages@v4` are still the latest Pages actions as of 2026-03-14 and still report `node20` in their metadata, so some warning noise may remain until GitHub ships newer majors.
+- Cloudflare Pages deploys should use `cloudflare/wrangler-action@v3` with `pages deploy ... --project-name=...`; `cloudflare/pages-action` is deprecated.
 - If you want to check compatibility early, set `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true` in the workflow/job env and run the workflow manually.
+
+### Optional Cloudflare Pages deploy
+
+The existing workflow can also upload the built site to Cloudflare Pages after the GitHub Pages deploy.
+
+GitHub repository secrets:
+
+- `CLOUDFLARE_ACCOUNT_ID`
+- `CLOUDFLARE_API_TOKEN`
+
+GitHub repository variables:
+
+- `VOD_CLOUDFLARE_PROJECT_NAME` — your Pages project name, for example `chrodcasts`
+- `VOD_CLOUDFLARE_BASE_PATH` — usually `/` for `*.pages.dev` or custom-domain root hosting
+
+Cloudflare token scope:
+
+- `Account`
+- `Cloudflare Pages`
+- `Edit`
+
+If the Pages project is Git-integrated and you want GitHub Actions to be the only deploy path, disable automatic Pages deployments on the Cloudflare side for that project. Otherwise Git pushes may still trigger Cloudflare's own build pipeline in parallel with the GitHub Action upload.
 
 ## Timed comments (optional)
 
