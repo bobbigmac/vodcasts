@@ -152,7 +152,7 @@ export function BrowsePanel({
     if (!panel || !onCloseRef.current) return;
     const IDLE_MS = 6500;
     let deadline = Date.now() + IDLE_MS;
-    let rafId = 0;
+    let tickTimer = 0;
     let closed = false;
 
     const tick = () => {
@@ -165,7 +165,7 @@ export function BrowsePanel({
         onCloseRef.current?.();
         return;
       }
-      rafId = window.requestAnimationFrame(tick);
+      tickTimer = window.setTimeout(tick, 100);
     };
 
     const resetIdleClose = () => {
@@ -182,7 +182,7 @@ export function BrowsePanel({
     return () => {
       closed = true;
       countdownPct.value = 1;
-      if (rafId) window.cancelAnimationFrame(rafId);
+      if (tickTimer) window.clearTimeout(tickTimer);
       evs.forEach((ev) => panel.removeEventListener(ev, resetIdleClose));
       panel.removeEventListener("scroll", resetIdleClose, true);
     };
@@ -190,7 +190,7 @@ export function BrowsePanel({
 
   if (!shows?.length) {
     return html`
-      <div id="browsePanel" class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
+      <div id="browsePanel" class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel" ref=${panelRef}>
         <div class="browsePanel-inner">
           <div class="browsePanel-empty">No shows for this feed.</div>
         </div>
@@ -257,7 +257,7 @@ export function BrowsePanel({
     const artSeed = `${feedId}:${focusedShow.slug || focusedShow.id}`;
 
     return html`
-      <div id="browsePanel" class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
+      <div id="browsePanel" class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel" ref=${panelRef}>
         <div class="browsePanel-inner" data-carousel-group="browseFeed">
           ${header}
           ${focusedShow.description ? html`<p class="browseShowDesc browseShowDescTop">${focusedShow.description}</p>` : ""}
@@ -313,7 +313,7 @@ export function BrowsePanel({
   if (episodesOnly) {
     const artSeed = `${feedId}:${shows[0]?.slug || shows[0]?.id || "feed"}`;
     return html`
-      <div id="browsePanel" class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
+      <div id="browsePanel" class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel" ref=${panelRef}>
         <div class="browsePanel-inner" data-carousel-group="browseFeed">
           ${header}
           <${VodCarouselRow} rowId=${`feed-eps-${feedId}`} title="Episodes" className="browseEpRow">
@@ -363,7 +363,7 @@ export function BrowsePanel({
 
   // Shows carousel view.
   return html`
-    <div id="browsePanel" class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel">
+    <div id="browsePanel" class="browsePanel" aria-hidden=${isOpen?.value ? "false" : "true"} role="panel" ref=${panelRef}>
       <div class="browsePanel-inner" data-carousel-group="browseFeed">
         ${header}
         <${VodCarouselRow} rowId=${`shows-${feedId}`} title="Shows" className="browseShowsRow">
