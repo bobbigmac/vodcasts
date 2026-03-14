@@ -62,6 +62,14 @@ Each deployment is just a different feeds file (and optionally a different cache
 - `feeds/tech.md` — tech/edu-ish pack
 - `feeds/dev.md` — tiny set for fast local dev
 
+## GitHub Actions note
+
+GitHub is forcing JavaScript actions onto Node 24 by default starting June 2, 2026.
+
+- This repo's workflow should stay on `actions/checkout@v6`, `actions/setup-python@v6`, and `actions/upload-pages-artifact@v4` or newer.
+- `actions/configure-pages@v5` and `actions/deploy-pages@v4` are still the latest Pages actions as of 2026-03-14 and still report `node20` in their metadata, so some warning noise may remain until GitHub ships newer majors.
+- If you want to check compatibility early, set `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true` in the workflow/job env and run the workflow manually.
+
 ## Timed comments (optional)
 
 Configure at build time via env vars:
