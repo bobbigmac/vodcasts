@@ -9,7 +9,9 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import time
 import uuid
+from collections import defaultdict
 from pathlib import Path
 
 _REPO_ROOT = Path(__file__).resolve().parents[3]
@@ -55,13 +57,26 @@ _MVE = _load_mve_lib()
 _SHORT_W = 1080
 _SHORT_H = 1920
 _OUT_FPS = 30
-_ENC_PRESET = "fast"
+_ENC_PRESET = "medium"
 _ENC_THREADS = 0
 _AUTOCROP_REPO_URL = "https://github.com/kamilstanuch/Autocrop-vertical.git"
 _AUTOCROP_REPO_DIR: Path | None = None
 _SILENCE_LEAD_RE = re.compile(r"silence_start:\s*([0-9.]+)")
 _SILENCE_END_RE = re.compile(r"silence_end:\s*([0-9.]+)")
 _NAME_SPLIT_RE = re.compile(r"\s*(?:\||//|-)\s*")
+
+
+def _fmt_elapsed(seconds: float) -> str:
+    seconds = max(0.0, float(seconds))
+    if seconds < 60:
+        return f"{seconds:.1f}s"
+    minutes = int(seconds // 60)
+    rem = seconds - minutes * 60
+    return f"{minutes}m{rem:04.1f}s"
+
+
+def _log_timing(message: str) -> None:
+    print(f"[render_short] {message}", file=sys.stderr)
 
 
 def _run_logged_command(cmd: list[str], timeout: int, label: str) -> None:
@@ -100,13 +115,25 @@ def _run_logged_command(cmd: list[str], timeout: int, label: str) -> None:
             pass
         raise RuntimeError(f"{label}: {detail or exc}") from exc
     finally:
-        remove_path(log_path)
+        try:
+            remove_path(log_path)
+        except Exception:
+            pass
 
 
 def _maybe_add_threads(cmd: list[str]) -> list[str]:
     if _ENC_THREADS > 0 and cmd and cmd[0] not in {"ffmpeg", "ffprobe"} and "--concurrency" not in " ".join(cmd):
         cmd.append(f"--concurrency={_ENC_THREADS}")
     return cmd
+
+
+def _duplicate_feeds(clip_items: list[dict]) -> dict[str, int]:
+    counts: defaultdict[str, int] = defaultdict(int)
+    for item in clip_items:
+        feed = str(item.get("feed") or "").strip()
+        if feed:
+            counts[feed] += 1
+    return {feed: count for feed, count in counts.items() if count > 1}
 
 
 def _parse_args() -> argparse.Namespace:
@@ -124,12 +151,16 @@ def _parse_args() -> argparse.Namespace:
     p.add_argument("--width", type=int, default=1080, help="Output width (default: 1080).")
     p.add_argument("--height", type=int, default=1920, help="Output height (default: 1920).")
     p.add_argument("--fps", type=int, default=30, help="Output fps (default: 30).")
-    p.add_argument("--preset", default="fast", help="ffmpeg preset for prepared clips (default: fast).")
+    p.add_argument("--preset", default="medium", help="ffmpeg preset for prepared clips (default: medium).")
     p.add_argument("--threads", type=int, default=0, help="ffmpeg thread override; also used as Remotion concurrency when set.")
     p.add_argument("--no-autocrop", action="store_true", help="Disable AutoCrop-Vertical and fall back to the legacy static crop.")
+    p.add_argument("--allow-duplicate-feeds", action="store_true", help="Allow multiple clips from the same feed in one short. Default is to reject duplicate feeds.")
     p.add_argument("--register", default="", help="Path to used-clips.json to register.")
     p.add_argument("--min-clips", type=int, default=8, help="Require at least this many rendered clips before publishing output (default: 8).")
     p.add_argument("--keep-work", action="store_true", help="Keep scratch work directory and staged Remotion assets after a successful render.")
+    p.add_argument("--no-audio-normalize", action="store_true", help="Skip per-clip loudness normalization after clip prep.")
+    p.add_argument("--audio-target-lufs", type=float, default=-16.0, help="Integrated loudness target for per-clip normalization (default: -16 LUFS).")
+    p.add_argument("--audio-target-peak", type=float, default=-1.5, help="True-peak limit for per-clip normalization (default: -1.5 dBTP).")
     return p.parse_args()
 
 
@@ -370,7 +401,7 @@ def _apply_keep_ranges(
         cmd.extend(["-map", "[acat]", "-c:a", "aac", "-ar", "48000", "-ac", "2"])
     else:
         cmd.append("-an")
-    video_crf = "20" if apply_static_crop else "18"
+    video_crf = "18"
     cmd.extend(
         [
             "-c:v",
@@ -392,6 +423,74 @@ def _apply_keep_ranges(
         return False
     finally:
         remove_path(filter_script)
+
+
+def _apply_static_vertical_crop(src: Path, out: Path, has_audio: bool) -> bool:
+    cmd = [
+        "ffmpeg",
+        "-y",
+        "-i",
+        str(src),
+        "-vf",
+        _crop_filter(),
+        "-c:v",
+        "libx264",
+        "-preset",
+        _ENC_PRESET,
+        "-crf",
+        "18",
+    ]
+    if has_audio:
+        cmd.extend(["-c:a", "copy"])
+    else:
+        cmd.append("-an")
+    cmd.extend(["-movflags", "+faststart", str(out)])
+    try:
+        duration_sec = max(1.0, _media_duration_sec(src))
+        _run_logged_command(cmd, timeout=max(180, int(duration_sec * 30)), label="static crop fallback failed")
+        return True
+    except Exception as exc:
+        print(f"[render_short] static crop fallback failed: {exc}", file=sys.stderr)
+        return False
+
+
+def _normalize_clip_audio(path: Path, *, target_lufs: float, target_peak: float) -> bool:
+    if not _source_has_audio(path):
+        return True
+    normalized_path = path.with_name(f"{path.stem}.normalized{path.suffix}")
+    cmd = [
+        "ffmpeg",
+        "-y",
+        "-i",
+        str(path),
+        "-map",
+        "0:v:0",
+        "-map",
+        "0:a:0",
+        "-c:v",
+        "copy",
+        "-af",
+        f"loudnorm=I={target_lufs}:LRA=7:TP={target_peak}:linear=true",
+        "-c:a",
+        "aac",
+        "-ar",
+        "48000",
+        "-ac",
+        "2",
+        "-movflags",
+        "+faststart",
+        str(normalized_path),
+    ]
+    try:
+        duration_sec = max(1.0, _media_duration_sec(path))
+        _run_logged_command(cmd, timeout=max(180, int(duration_sec * 30)), label="audio normalization failed")
+        remove_path(path)
+        normalized_path.replace(path)
+        return True
+    except Exception as exc:
+        remove_path(normalized_path)
+        print(f"[render_short] audio normalization failed for {path.name}: {exc}", file=sys.stderr)
+        return False
 
 
 def _parse_vtt_timestamp(raw: str) -> float:
@@ -537,7 +636,7 @@ def _media_duration_sec(path: Path) -> float:
         return 0.0
 
 
-def _run_autocrop_vertical(src: Path, out: Path) -> bool:
+def _run_autocrop_vertical(src: Path, out: Path, *, log_path: Path | None = None, clip_label: str = "") -> bool:
     try:
         autocrop_repo = _ensure_autocrop_repo()
         quality = _autocrop_quality_from_preset(_ENC_PRESET)
@@ -556,14 +655,42 @@ def _run_autocrop_vertical(src: Path, out: Path) -> bool:
             "--quality",
             quality,
         ]
-        _run_logged_command(
-            cmd,
-            timeout=max(900, int(duration_sec * 90)),
-            label="AutoCrop-Vertical failed",
-        )
+        keep_log = log_path is not None
+        if log_path is None:
+            with tempfile.NamedTemporaryFile(
+                prefix="sermon-clipper-autocrop-",
+                suffix=".log",
+                delete=False,
+            ) as handle:
+                log_path = Path(handle.name)
+        assert log_path is not None
+        log_path.parent.mkdir(parents=True, exist_ok=True)
+        try:
+            with log_path.open("wb") as log_handle:
+                subprocess.run(
+                    cmd,
+                    stdout=log_handle,
+                    stderr=subprocess.STDOUT,
+                    check=True,
+                    timeout=max(900, int(duration_sec * 90)),
+                )
+        except Exception as exc:
+            detail = ""
+            try:
+                lines = log_path.read_text(encoding="utf-8", errors="replace").splitlines()
+                detail = " | ".join(line.strip() for line in lines[-12:] if line.strip())[:1500]
+            except Exception:
+                pass
+            label = clip_label or src.name
+            print(f"[render_short] AutoCrop-Vertical failed for {label}: {detail or exc}", file=sys.stderr)
+            print(f"[render_short] full AutoCrop log: {log_path}", file=sys.stderr)
+            return False
+        if not keep_log:
+            remove_path(log_path)
         return True
     except Exception as exc:
-        print(f"[render_short] AutoCrop-Vertical failed: {exc}", file=sys.stderr)
+        label = clip_label or src.name
+        print(f"[render_short] AutoCrop-Vertical setup failed for {label}: {exc}", file=sys.stderr)
         return False
 
 
@@ -656,22 +783,27 @@ def _speaker_label(episode_title: str, feed_title: str) -> str:
     return ""
 
 
-def _build_keep_ranges_for_clip(raw_clip_path: Path, compress: bool) -> list[tuple[float, float]]:
-    media = _MVE.probe_media(raw_clip_path)
+def _build_keep_ranges_for_clip(
+    clip_path: Path,
+    *,
+    trim_edges: bool,
+    compress: bool,
+) -> list[tuple[float, float]]:
+    media = _MVE.probe_media(clip_path)
     duration_sec = float(media.get("duration_sec") or 0.0)
     if duration_sec <= 0:
         return []
-    if not compress or not media.get("has_audio"):
+    if not media.get("has_audio"):
         return [(0.0, duration_sec)]
-    silences = _MVE.detect_silences(raw_clip_path, threshold_db=-34.0, min_silence_sec=0.22)
+    silences = _MVE.detect_silences(clip_path, threshold_db=-34.0, min_silence_sec=0.22)
     audible_ranges = _MVE.invert_ranges(silences, duration_sec=duration_sec)
     if not audible_ranges:
         audible_ranges = [(0.0, duration_sec)]
     keep_ranges = _MVE.build_keep_ranges(
         audible_ranges=audible_ranges,
         duration_sec=duration_sec,
-        trim_edges=True,
-        compress_gaps=True,
+        trim_edges=trim_edges,
+        compress_gaps=compress,
         edge_pad_sec=0.05,
         interior_gap_sec=0.04,
     )
@@ -679,6 +811,7 @@ def _build_keep_ranges_for_clip(raw_clip_path: Path, compress: bool) -> list[tup
 
 
 def main() -> None:
+    run_started = time.perf_counter()
     args = _parse_args()
     global _SHORT_W, _SHORT_H, _OUT_FPS, _ENC_PRESET, _ENC_THREADS, _AUTOCROP_REPO_DIR
     script_path = Path(args.script)
@@ -693,7 +826,7 @@ def main() -> None:
     _SHORT_W = max(240, int(args.width))
     _SHORT_H = max(426, int(args.height))
     _OUT_FPS = max(12, int(args.fps))
-    _ENC_PRESET = str(args.preset or "fast").strip() or "fast"
+    _ENC_PRESET = str(args.preset or "medium").strip() or "medium"
     _ENC_THREADS = max(0, int(args.threads))
     cache_dir = default_cache_dir(env)
     _AUTOCROP_REPO_DIR = cache_dir / "sermon-clipper" / "tools" / "autocrop-vertical"
@@ -701,6 +834,8 @@ def main() -> None:
     content_cache.mkdir(parents=True, exist_ok=True)
     transcripts_root = Path(args.transcripts).resolve() if args.transcripts else default_transcripts_root()
     out_path = Path(args.output).resolve()
+    failure_log_dir = out_path.parent / ".autocrop-logs" / out_path.stem
+    remove_path(failure_log_dir)
     work_dir, auto_work_dir = resolve_work_dir("shorts", out_path, args.work_dir)
     if auto_work_dir:
         reset_directory(work_dir)
@@ -718,6 +853,20 @@ def main() -> None:
             file=sys.stderr,
         )
         sys.exit(5)
+    duplicate_feeds = _duplicate_feeds(clip_items)
+    if duplicate_feeds:
+        duplicate_summary = ", ".join(f"{feed}x{count}" for feed, count in sorted(duplicate_feeds.items()))
+        if args.allow_duplicate_feeds:
+            print(
+                f"[render_short] duplicate feeds allowed for this run: {duplicate_summary}",
+                file=sys.stderr,
+            )
+        else:
+            print(
+                f"[render_short] Script reuses feeds in a single short ({duplicate_summary}). Every clip in a produced short should come from a different feed/source.",
+                file=sys.stderr,
+            )
+            sys.exit(7)
 
     intro_text = ""
     outro_text = ""
@@ -734,16 +883,27 @@ def main() -> None:
     rendered_clip_ids: list[str] = []
     manifest_clips: list[dict] = []
     final_subtitle_cues: list[dict[str, float | str]] = []
+    used_static_crop_fallback = False
     transition_sec = 0.0
     output_cursor = 0.0
+    phase_totals: defaultdict[str, float] = defaultdict(float)
+    clip_summaries: list[dict[str, object]] = []
+    _log_timing(
+        f"start render output={out_path.name} clips={len(clip_items)} size={_SHORT_W}x{_SHORT_H} fps={_OUT_FPS} preset={_ENC_PRESET}"
+    )
     try:
         for index, item in enumerate(clip_items, start=1):
+            clip_started = time.perf_counter()
             feed = item.get("feed")
             episode = item.get("episode")
             start = float(item.get("start_sec") or 0)
             end = float(item.get("end_sec") or start)
             if not feed or not episode or end <= start:
                 continue
+            clip_label = f"[{index}/{len(clip_items)}] {feed}/{episode}"
+            _log_timing(f"{clip_label} start source={start:.3f}-{end:.3f}s")
+
+            clip_phase_times: dict[str, float] = {}
 
             media_info = get_episode_media_info(cache_dir, feed, episode)
             if not media_info or not media_info.get("url"):
@@ -758,27 +918,72 @@ def main() -> None:
                 if args.no_download:
                     print(f"[render_short] Missing cached source for {feed}/{episode}", file=sys.stderr)
                     continue
+                t0 = time.perf_counter()
                 if not _download_url(str(media_info["url"]), src_path):
                     continue
+                clip_phase_times["download"] = time.perf_counter() - t0
+                phase_totals["download"] += clip_phase_times["download"]
             if not _source_has_video(src_path):
                 print(f"[render_short] Skipping {feed}/{episode}: no video stream", file=sys.stderr)
                 continue
 
             has_audio = _source_has_audio(src_path)
-            trim_start, trim_end = (
-                _detect_av_trim_bounds(src_path, start, end, has_audio)
-                if args.trim_silence
-                else (start, end)
-            )
+            trim_start = start
+            trim_end = end
             raw_duration = max(0.0, trim_end - trim_start)
             if raw_duration <= 0.0:
                 continue
 
             raw_clip_path = work_dir / f"clip_{index:02d}_raw.mp4"
+            extract_started = time.perf_counter()
             if not _ffmpeg_extract_raw_clip(src_path, trim_start, trim_end, raw_clip_path):
                 continue
+            clip_phase_times["extract_raw"] = time.perf_counter() - extract_started
+            phase_totals["extract_raw"] += clip_phase_times["extract_raw"]
 
-            keep_ranges = _build_keep_ranges_for_clip(raw_clip_path, compress=not bool(args.no_compress))
+            timeline_source_path = raw_clip_path
+            crop_mode = "raw"
+            if args.no_autocrop:
+                crop_mode = "static-only"
+            else:
+                autocrop_log_path = failure_log_dir / f"clip_{index:02d}.log"
+                autocrop_source_path = work_dir / f"clip_{index:02d}_autocropped.mp4"
+                crop_started = time.perf_counter()
+                used_autocrop = _run_autocrop_vertical(
+                    raw_clip_path,
+                    autocrop_source_path,
+                    log_path=autocrop_log_path,
+                    clip_label=f"clip_{index:02d} {feed}/{episode}",
+                )
+                clip_phase_times["autocrop"] = time.perf_counter() - crop_started
+                phase_totals["autocrop"] += clip_phase_times["autocrop"]
+                if used_autocrop:
+                    timeline_source_path = autocrop_source_path
+                    crop_mode = "autocrop"
+                else:
+                    used_static_crop_fallback = True
+                    print(
+                        f"[render_short] Falling back to static crop for clip_{index:02d} {feed}/{episode}.",
+                        file=sys.stderr,
+                    )
+                    fallback_started = time.perf_counter()
+                    if not _apply_static_vertical_crop(raw_clip_path, autocrop_source_path, has_audio=has_audio):
+                        continue
+                    clip_phase_times["static_crop_fallback"] = time.perf_counter() - fallback_started
+                    phase_totals["static_crop_fallback"] += clip_phase_times["static_crop_fallback"]
+                    timeline_source_path = autocrop_source_path
+                    crop_mode = "static-fallback"
+                clip_phase_times["crop"] = clip_phase_times.get("autocrop", 0.0) + clip_phase_times.get("static_crop_fallback", 0.0)
+                phase_totals["crop"] += clip_phase_times.get("static_crop_fallback", 0.0)
+
+            compress_analysis_started = time.perf_counter()
+            keep_ranges = _build_keep_ranges_for_clip(
+                timeline_source_path,
+                trim_edges=bool(args.trim_silence),
+                compress=not bool(args.no_compress),
+            )
+            clip_phase_times["compress_analysis"] = time.perf_counter() - compress_analysis_started
+            phase_totals["compress_analysis"] += clip_phase_times["compress_analysis"]
             compressed_duration = sum(end_sec - start_sec for start_sec, end_sec in keep_ranges)
             if compressed_duration <= 0.0:
                 continue
@@ -788,27 +993,40 @@ def main() -> None:
                 transcript_path = get_transcript_path(transcripts_root, feed, episode)
                 if transcript_path:
                     clip_vtt_path = work_dir / f"clip_{index:02d}.vtt"
-                    if clip_transcript_to_vtt(transcript_path, trim_start, trim_end, clip_vtt_path):
+                    subtitle_started = time.perf_counter()
+                    if clip_transcript_to_vtt(transcript_path, start, end, clip_vtt_path):
                         cues = _load_vtt_cues(clip_vtt_path)
+                    clip_phase_times["subtitle_extract"] = time.perf_counter() - subtitle_started
+                    phase_totals["subtitle_extract"] += clip_phase_times["subtitle_extract"]
                 else:
                     print(f"[render_short] No transcript for {feed}/{episode}", file=sys.stderr)
             remapped_cues = _remap_cues_to_keep_ranges(cues, keep_ranges) if cues else []
 
             prepared_path = public_job_dir / f"clip_{index:02d}.mp4"
-            compressed_path = work_dir / f"clip_{index:02d}_compressed.mp4"
+            compress_started = time.perf_counter()
             if not _apply_keep_ranges(
-                raw_clip_path,
+                timeline_source_path,
                 keep_ranges,
-                compressed_path,
+                prepared_path,
                 has_audio=has_audio,
                 apply_static_crop=bool(args.no_autocrop),
             ):
                 continue
+            clip_phase_times["compress_render"] = time.perf_counter() - compress_started
+            phase_totals["compress_render"] += clip_phase_times["compress_render"]
             if args.no_autocrop:
-                compressed_path.replace(prepared_path)
-            else:
-                if not _run_autocrop_vertical(compressed_path, prepared_path):
-                    continue
+                clip_phase_times["crop"] = clip_phase_times.get("crop", 0.0)
+            if has_audio and not args.no_audio_normalize:
+                normalize_started = time.perf_counter()
+                normalized = _normalize_clip_audio(
+                    prepared_path,
+                    target_lufs=float(args.audio_target_lufs),
+                    target_peak=float(args.audio_target_peak),
+                )
+                clip_phase_times["audio_normalize"] = time.perf_counter() - normalize_started
+                phase_totals["audio_normalize"] += clip_phase_times["audio_normalize"]
+                if not normalized:
+                    print(f"[render_short] Continuing without normalized audio for {clip_label}.", file=sys.stderr)
 
             episode_title = str(item.get("episode_title") or episode).strip()
             feed_title = str(item.get("feed_title") or feed).strip()
@@ -837,6 +1055,35 @@ def main() -> None:
             if index < len(clip_items):
                 output_cursor += transition_sec
             rendered_clip_ids.append(clip_id(feed, episode, start))
+            clip_elapsed = time.perf_counter() - clip_started
+            phase_totals["clip_total"] += clip_elapsed
+            clip_summary = {
+                "label": clip_label,
+                "elapsed": clip_elapsed,
+                "raw_duration": raw_duration,
+                "final_duration": compressed_duration,
+                "crop_mode": crop_mode,
+                "phases": clip_phase_times,
+            }
+            clip_summaries.append(clip_summary)
+            phase_bits = []
+            for phase_name in (
+                "download",
+                "trim_detect",
+                "extract_raw",
+                "compress_analysis",
+                "subtitle_extract",
+                "compress_render",
+                "autocrop",
+                "static_crop_fallback",
+                "audio_normalize",
+            ):
+                if clip_phase_times.get(phase_name):
+                    phase_bits.append(f"{phase_name}={_fmt_elapsed(clip_phase_times[phase_name])}")
+            _log_timing(
+                f"{clip_label} done total={_fmt_elapsed(clip_elapsed)} raw={raw_duration:.2f}s final={compressed_duration:.2f}s crop={crop_mode}"
+                + (f" | {'; '.join(phase_bits)}" if phase_bits else "")
+            )
 
         if len(manifest_clips) < max(2, int(args.min_clips)):
             print(
@@ -849,6 +1096,13 @@ def main() -> None:
             "theme": theme,
             "intro": intro_text,
             "outro": outro_text,
+            "metadata": metadata,
+            "structure": str(metadata.get("structure") or "").strip(),
+            "opening_kicker": str(metadata.get("opening_kicker") or "").strip(),
+            "opening_context": str(metadata.get("opening_context") or "").strip(),
+            "closing_label": str(metadata.get("closing_label") or "").strip(),
+            "reflection_prompt": str(metadata.get("reflection_prompt") or "").strip(),
+            "style": str(metadata.get("style") or "").strip(),
             "width": _SHORT_W,
             "height": _SHORT_H,
             "fps": _OUT_FPS,
@@ -859,23 +1113,60 @@ def main() -> None:
         manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
 
         out_path.parent.mkdir(parents=True, exist_ok=True)
+        remotion_started = time.perf_counter()
         _render_with_remotion(manifest, out_path)
+        phase_totals["remotion_render"] += time.perf_counter() - remotion_started
 
         if not args.no_subs and final_subtitle_cues:
             final_sub_path = out_path.with_suffix(".srt")
+            subtitle_write_started = time.perf_counter()
             _write_srt(_merge_cues(final_subtitle_cues), final_sub_path)
+            phase_totals["subtitle_write"] += time.perf_counter() - subtitle_write_started
+            subtitle_mux_started = time.perf_counter()
             _mux_subtitle_track(out_path, final_sub_path)
+            phase_totals["subtitle_mux"] += time.perf_counter() - subtitle_mux_started
     except Exception as exc:
         print(f"[render_short] {exc}", file=sys.stderr)
         print(f"[render_short] staged assets kept at {public_job_dir}", file=sys.stderr)
         sys.exit(4)
 
     print(f"[render_short] wrote {out_path}", file=sys.stderr)
+    total_elapsed = time.perf_counter() - run_started
+    _log_timing(f"timing total={_fmt_elapsed(total_elapsed)} prepared={len(manifest_clips)}/{len(clip_items)} clips")
+    summary_order = [
+        "download",
+        "trim_detect",
+        "extract_raw",
+        "compress_analysis",
+        "subtitle_extract",
+        "compress_render",
+        "autocrop",
+        "static_crop_fallback",
+        "audio_normalize",
+        "remotion_render",
+        "subtitle_write",
+        "subtitle_mux",
+    ]
+    summary_bits = [f"{name}={_fmt_elapsed(phase_totals[name])}" for name in summary_order if phase_totals.get(name)]
+    if summary_bits:
+        _log_timing("phase totals " + " | ".join(summary_bits))
+    if clip_summaries:
+        slowest = sorted(clip_summaries, key=lambda item: float(item["elapsed"]), reverse=True)[:3]
+        slow_bits = []
+        for item in slowest:
+            slow_bits.append(
+                f"{item['label']}={_fmt_elapsed(float(item['elapsed']))} crop={item['crop_mode']} final={float(item['final_duration']):.2f}s"
+            )
+        _log_timing("slowest clips " + " | ".join(slow_bits))
+    if used_static_crop_fallback:
+        print(f"[render_short] kept AutoCrop failure logs at {failure_log_dir}", file=sys.stderr)
     if args.register and rendered_clip_ids:
         reg_path = Path(args.register)
         save_used_clips(reg_path, set(rendered_clip_ids), video_title=out_path.stem)
         print(f"[render_short] registered {len(rendered_clip_ids)} clips", file=sys.stderr)
 
+    if not used_static_crop_fallback:
+        remove_path(failure_log_dir)
     if not args.keep_work:
         remove_path(public_job_dir)
     if auto_work_dir and not args.keep_work:

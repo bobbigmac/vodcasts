@@ -52,6 +52,12 @@ theme: forgiveness
 format: curated thought-bites
 selection: multi-feed practical arc
 clips: 10
+structure: reframe
+style: nocturne
+opening_kicker: A Better Frame
+opening_context: One short editorial line that frames the thread before the first clip.
+closing_label: Sit With This
+reflection_prompt: One subtle thought-for-the-day style prompt.
 
 ## intro
 One short hook sentence that pushes toward a practical message.
@@ -74,8 +80,14 @@ One short closing line.
 ## Render notes
 
 - ffmpeg still handles source download, silence trimming, and clip extraction.
+- AutoCrop-Vertical now runs on the full extracted clip before silence-edge trimming or gap compression, which gives the tracker a stable timeline before any time-collapsing edits are applied.
 - Remotion handles the final short assembly, overlays, visual skins, and captions.
+- Visual skins now span multiple dark, accessible palette families with different rails, corner treatments, pill styles, and panel feels.
 - Inter-clip title cards are intentionally gone; pacing is now clip-to-clip without isolated bumpers.
+- The opening card now uses `intro` plus optional metadata such as `opening_kicker`, `opening_context`, and `structure`.
+- Scripts can also provide `style` to pick a specific UI family; otherwise a style is chosen deterministically from the script metadata/theme.
+- The end card can carry a subtler engagement nudge via `closing_label` and `reflection_prompt` instead of explicit CTA copy.
 - `--no-download` uses only the shared content cache.
 - `--trim-silence` trims leading and trailing silence from each clip.
 - `--min-clips` prevents accidental under-filled outputs.
+- Per-clip audio is normalized by default during prep; use `--no-audio-normalize` to disable or tune with `--audio-target-lufs` / `--audio-target-peak`.
