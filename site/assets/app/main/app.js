@@ -68,6 +68,8 @@ async function copyToClipboard(text) {
 
 export function App({ env, log, sources, showsConfig, player, history }) {
   const bp = String(env?.basePath || "/").replace(/\/?$/, "/");
+  const initialRouteRef = useRef(getRouteFromUrl());
+  const initialShowRouteHandledRef = useRef(false);
   const browseLogoUrl = String(env?.site?.browseLogoUrl || "").trim();
   const guideOpen = useSignal(false);
   const guideBrowseFeedId = useSignal(null);
@@ -746,6 +748,54 @@ export function App({ env, log, sources, showsConfig, player, history }) {
       guideOpen.value = true;
     }
   }, []);
+
+  useSignalEffect(() => {
+    if (initialShowRouteHandledRef.current) return;
+    const route = initialRouteRef.current;
+    if (!route?.feed || !route?.show || route?.ep) {
+      initialShowRouteHandledRef.current = true;
+      return;
+    }
+
+    const feedShows = showsConfig?.value?.feeds?.[route.feed];
+    if (!Array.isArray(feedShows) || !feedShows.length) return;
+
+    if (player.currentEpisodeId.value) {
+      initialShowRouteHandledRef.current = true;
+      return;
+    }
+
+    const show = feedShows.find(
+      (entry) => String(entry?.slug || entry?.id || "").toLowerCase() === String(route.show || "").toLowerCase()
+    );
+    if (!show) {
+      initialShowRouteHandledRef.current = true;
+      return;
+    }
+
+    const showEpisodes = Array.isArray(show.episodes) ? show.episodes.filter((ep) => ep?.id) : [];
+    const firstEpisodeId = showEpisodes[0]?.id || null;
+    if (!firstEpisodeId) {
+      initialShowRouteHandledRef.current = true;
+      return;
+    }
+
+    initialShowRouteHandledRef.current = true;
+    Promise.resolve()
+      .then(() =>
+        player.selectSourceAndEpisode(route.feed, firstEpisodeId, {
+          autoplay: player.initAutoplay !== false,
+          playlist: {
+            feedId: route.feed,
+            episodes: showEpisodes,
+            showSlug: show.slug || show.id,
+          },
+        })
+      )
+      .catch(() => {
+        initialShowRouteHandledRef.current = false;
+      });
+  });
 
   // Back/forward support: apply route changes from the address bar.
   useEffect(() => {

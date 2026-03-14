@@ -11,7 +11,7 @@ When writing or revising files here, prefer direct, usable output over polished 
 
 ## Core aim
 
-Promote the `prays.be` library in a way that feels like an interested person sharing things they actually watched.
+Promote the `prays.be` library in a way that feels like an interested person sharing things they enjoy and find meaning in.
 The writing should make people curious enough to click without sounding like ad copy, church PR, or AI filler.
 
 ## Voice
@@ -27,7 +27,7 @@ Write like a human with a steady, specific voice.
 
 The tone should feel approachable, observant, and lightly personal.
 It can be mildly imperfect.
-It should not sound polished for its own sake.
+It should not sound polished for its own sake. 
 
 ## Avoid
 

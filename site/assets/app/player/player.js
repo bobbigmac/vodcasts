@@ -1611,6 +1611,7 @@ export function createPlayerService({ env, log, history }) {
     currentSourceId,
     currentEpisodeId,
     isNewcomer,
+    initAutoplay,
     isAudioOnly,
     attachAudioViz,
     chapters,
