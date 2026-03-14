@@ -106,16 +106,22 @@ def _build_meta_head_html(
     canonical_path: str,
     og_type: str = "website",
     og_image_path: str | None = None,
+    site_origin: str = "",
 ) -> str:
     """
     Basic SEO/OpenGraph metadata for static pages.
 
-    Note: we typically don't know the absolute site origin during static builds,
-    so canonical/og URLs are emitted as root-relative paths.
+    Facebook and Twitter require absolute URLs for og:image. When site_origin is
+    provided (e.g. https://example.com), canonical and og:image use absolute URLs.
     """
     bp = _norm_base_path(base_path)
     canon = canonical_path if canonical_path.startswith("/") else bp + canonical_path.lstrip("/")
     og_image = og_image_path or (bp + "assets/icon-512.png")
+    origin = (site_origin or "").strip().rstrip("/")
+    if origin:
+        canon = origin + canon if canon.startswith("/") else origin + "/" + canon.lstrip("/")
+        img = og_image
+        og_image = (origin + img) if img.startswith("/") else (origin + "/" + img.lstrip("/"))
 
     title = _escape_attr(page_title or site_title)
     desc = _escape_attr(page_description or "")
@@ -141,6 +147,7 @@ def _build_meta_head_html(
             '<link rel="canonical" href="' + canon_e + '" />',
             '<meta property="og:site_name" content="' + site + '" />',
             '<meta property="og:type" content="' + og_type_e + '" />',
+            '<meta property="og:url" content="' + canon_e + '" />',
             '<meta property="og:title" content="' + title + '" />',
             '<meta property="og:description" content="' + desc + '" />',
             '<meta property="og:image" content="' + og_image_e + '" />',
@@ -767,6 +774,7 @@ def main() -> None:
 
     # site.json for the app env.
     og_image_url = _og_image_url_for_site(base_path=base_path, feeds_path=feeds_path) or None
+    site_origin = _norm_site_origin(cfg.site.url or os.environ.get("VOD_SITE_URL") or "")
     site_json = {
         "id": cfg.site.id,
         "title": cfg.site.title,
@@ -1187,6 +1195,7 @@ def main() -> None:
                     canonical_path=f"{base_path}feed/{fid}/",
                     og_type="website",
                     og_image_path=og_image_url,
+                    site_origin=site_origin,
                 ),
             },
         )
@@ -1237,6 +1246,7 @@ def main() -> None:
                         canonical_path=show_path,
                         og_type="website",
                         og_image_path=og_image_url,
+                        site_origin=site_origin,
                     ),
                 },
             )
@@ -1308,6 +1318,7 @@ def main() -> None:
                 canonical_path=base_path,
                 og_type="website",
                 og_image_path=og_image_url,
+                site_origin=site_origin,
             ),
         },
     )
@@ -1343,6 +1354,7 @@ def main() -> None:
                 canonical_path=f"{base_path}browse/",
                 og_type="website",
                 og_image_path=og_image_url,
+                site_origin=site_origin,
             ),
         },
     )
@@ -1465,6 +1477,7 @@ def main() -> None:
                         canonical_path=f"{base_path}{slug}/",
                         og_type="article",
                         og_image_path=og_image_url,
+                        site_origin=site_origin,
                     ),
                     "content_html": content_html,
                 },
@@ -1487,7 +1500,6 @@ def main() -> None:
         (out_dir / "404.html").write_text(html_404, encoding="utf-8")
 
     # robots.txt + sitemap.xml (HTML pages only; exclude RSS/XML)
-    site_origin = _norm_site_origin(cfg.site.url)
     sitemap_path = _norm_base_path(base_path) + "sitemap.xml"
     sitemap_loc = (site_origin + sitemap_path) if site_origin else sitemap_path
 
