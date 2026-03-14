@@ -306,6 +306,7 @@
 
 ## mlj-trust-sermons
 - url: https://www.mljtrust.org/sermons/podcast/
+- disabled: missing
 - title: Sermons of Dr. Martyn Lloyd-Jones
 - category: sermons
 - tags: sermons, lloyd-jones, reformed, classic

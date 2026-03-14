@@ -95,6 +95,11 @@ def _parse_args() -> argparse.Namespace:
         default="",
         help="Comma-separated feed ids to exclude from the Roku search index.",
     )
+    p.add_argument(
+        "--refresh-roku-search",
+        action="store_true",
+        help="Force regenerate the Roku search index even if today's cache snapshot already exists.",
+    )
     return p.parse_args()
 
 
@@ -1327,6 +1332,7 @@ def main() -> None:
         _log("build roku search…")
         t = time.perf_counter()
         build_roku_search(
+            cache_dir=cache_dir,
             out_dir=out_dir,
             base_path=base_path,
             site_origin=site_origin,
@@ -1335,6 +1341,7 @@ def main() -> None:
             shows_config_all=shows_config_all,
             args_limit_per_feed=args.roku_search_limit_per_feed,
             args_exclude_feeds=args.roku_search_exclude_feeds,
+            force_rebuild=bool(args.refresh_roku_search),
             log=_log,
         )
         _log(f"  done ({time.perf_counter() - t:.1f}s)")

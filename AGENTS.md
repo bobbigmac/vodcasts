@@ -34,13 +34,14 @@ This folder is intended to be movable as its own project. Keep imports and scrip
 
 Roku search feed notes:
 - Build output is regenerated into `dist/assets/search-feeds/` from the selected cache/env.
+- The Roku search build is cached per day under `cache/<env>/roku-search/<YYYY-MM-DD>/`; later builds reuse today's snapshot unless forced with `--refresh-roku-search`.
 - `site/assets/search-feeds/` may contain a manual prebaked snapshot for the repo, but it is not the source of truth for GitHub Actions builds.
 - Query/topic boosts are managed in `feeds/roku-search.json` (`queryBoosts`, episode picks, limits).
 
 Build script entrypoints:
 - `scripts/update_feeds.py` — fetch RSS into `cache/<env>/feeds/` (cooldown + ETag/Last-Modified).
 - `scripts/build_site.py` — writes the artifacts above, plus landing pages and show RSS exports.
-- `scripts/build_roku_search.py` — builds the curated Roku search feed pages from cached feeds + derived show configs.
+- `scripts/build_roku_search.py` — builds or reuses the daily cached Roku search feed pages from cached feeds + derived show configs.
 - `scripts/show_filters.py` — applies show filter rules to group episodes into shows.
 - `scripts/scan_feed_titles.py` — scans cached feeds for title patterns (useful when authoring show filters).
 - `scripts/report_show_filters.py` — helper report for missing/empty show configs and detected shows (writes to `tmp/`).

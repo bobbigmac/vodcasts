@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Any
 
 from scripts.feed_manifest import short_description
-from scripts.shared import VODCASTS_ROOT, read_json
+from scripts.shared import VODCASTS_ROOT, read_json, write_json
 
 ROKU_SEARCH_ROOT = "assets/search-feeds/roku-search.json"
 ROKU_SEARCH_DIR = "assets/search-feeds"
@@ -38,6 +38,7 @@ def cleanup_roku_search_outputs(out_dir: Path) -> None:
 
 def build_roku_search(
     *,
+    cache_dir: Path | None,
     out_dir: Path,
     base_path: str,
     site_origin: str,
@@ -46,8 +47,20 @@ def build_roku_search(
     shows_config_all: dict[str, list[dict[str, Any]]],
     args_limit_per_feed: int,
     args_exclude_feeds: str,
+    force_rebuild: bool,
     log: callable,
 ) -> dict[str, int]:
+    if cache_dir and not force_rebuild:
+        cached_stats = _restore_cached_roku_search(
+            cache_dir=cache_dir,
+            out_dir=out_dir,
+            site_origin=site_origin,
+            base_path=base_path,
+            log=log,
+        )
+        if cached_stats is not None:
+            return cached_stats
+
     cfg = _load_config()
     limit_per_feed, limit_source = _resolve_limit(args_limit_per_feed)
     exclude_feed_ids = set(_parse_csv_list(args_exclude_feeds))
@@ -192,18 +205,28 @@ def build_roku_search(
         base_path=base_path,
     )
 
-    log(
-        "  "
-        + f"{len(feeds)} feeds, {len(series_assets)} series, {len(playable_assets)} playable assets, "
-        + f"{len(pages)} pages ({limit_source}, cap={limit_per_feed}, changed={changed_files})"
-    )
-    return {
+    stats = {
         "feeds": len(feeds),
         "series": len(series_assets),
         "episodes": len(playable_assets),
         "pages": len(pages),
         "changed": changed_files,
     }
+    if cache_dir:
+        _store_cached_roku_search(
+            cache_dir=cache_dir,
+            pages=pages,
+            site_origin=site_origin,
+            base_path=base_path,
+            stats=stats,
+        )
+
+    log(
+        "  "
+        + f"{len(feeds)} feeds, {len(series_assets)} series, {len(playable_assets)} playable assets, "
+        + f"{len(pages)} pages ({limit_source}, cap={limit_per_feed}, changed={changed_files})"
+    )
+    return stats
 
 
 def _load_config() -> dict[str, Any]:
@@ -227,6 +250,117 @@ def _load_config() -> dict[str, Any]:
         raise ValueError(f"Invalid Roku search config: {path}")
     out = dict(defaults)
     out.update(doc)
+    return out
+
+
+def _today_cache_key() -> str:
+    override = str(os.getenv("VOD_ROKU_SEARCH_CACHE_DATE", "") or "").strip()
+    if override:
+        return override
+    return time.strftime("%Y-%m-%d", time.localtime())
+
+
+def _cache_day_root(cache_dir: Path) -> Path:
+    return cache_dir / "roku-search" / _today_cache_key()
+
+
+def _cache_manifest_path(cache_dir: Path) -> Path:
+    return _cache_day_root(cache_dir) / "manifest.json"
+
+
+def _restore_cached_roku_search(
+    *,
+    cache_dir: Path,
+    out_dir: Path,
+    site_origin: str,
+    base_path: str,
+    log: callable,
+) -> dict[str, int] | None:
+    manifest_path = _cache_manifest_path(cache_dir)
+    cache_root = _cache_day_root(cache_dir)
+    root_path = cache_root / ROKU_SEARCH_ROOT
+    if not manifest_path.exists() or not root_path.exists():
+        return None
+    try:
+        manifest = read_json(manifest_path)
+    except Exception:
+        return None
+    if not isinstance(manifest, dict):
+        return None
+    if str(manifest.get("siteOrigin") or "") != str(site_origin or "") or str(manifest.get("basePath") or "") != str(base_path or ""):
+        log(f"  cached roku search exists for {_today_cache_key()} but the URL context changed; rebuilding")
+        return None
+    page_count = max(1, int(manifest.get("pages") or 0))
+    for idx in range(2, page_count + 1):
+        if not (cache_root / ROKU_SEARCH_DIR / f"roku-search-{idx}.json").exists():
+            return None
+
+    cleanup_roku_search_outputs(out_dir)
+    _copy_cached_pages(src_root=cache_root, out_dir=out_dir, page_count=page_count)
+
+    stats = _coerce_stats(manifest.get("stats") or {})
+    if stats["pages"] <= 0:
+        stats["pages"] = page_count
+    log(
+        "  "
+        + f"reuse cached roku search for {_today_cache_key()} "
+        + f"({stats['pages']} pages, {stats['episodes']} playable assets)"
+    )
+    return stats
+
+
+def _store_cached_roku_search(
+    *,
+    cache_dir: Path,
+    pages: list[dict[str, Any]],
+    site_origin: str,
+    base_path: str,
+    stats: dict[str, int],
+) -> None:
+    cache_root = _cache_day_root(cache_dir)
+    cleanup_roku_search_outputs(cache_root)
+    _write_pages(
+        out_dir=cache_root,
+        pages=pages,
+        site_origin=site_origin,
+        base_path=base_path,
+    )
+    write_json(
+        _cache_manifest_path(cache_dir),
+        {
+            "version": 1,
+            "date": _today_cache_key(),
+            "siteOrigin": site_origin,
+            "basePath": base_path,
+            "pages": len(pages),
+            "stats": _coerce_stats(stats),
+            "updatedAtUnix": int(time.time()),
+        },
+    )
+
+
+def _copy_cached_pages(*, src_root: Path, out_dir: Path, page_count: int) -> None:
+    src_entry = src_root / ROKU_SEARCH_ROOT
+    dst_entry = out_dir / ROKU_SEARCH_ROOT
+    dst_entry.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(src_entry, dst_entry)
+    for idx in range(2, page_count + 1):
+        rel = Path(ROKU_SEARCH_DIR) / f"roku-search-{idx}.json"
+        src = src_root / rel
+        dst = out_dir / rel
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(src, dst)
+
+
+def _coerce_stats(raw: Any) -> dict[str, int]:
+    if not isinstance(raw, dict):
+        raw = {}
+    out: dict[str, int] = {}
+    for key in ("feeds", "series", "episodes", "pages", "changed"):
+        try:
+            out[key] = int(raw.get(key) or 0)
+        except Exception:
+            out[key] = 0
     return out
 
 
