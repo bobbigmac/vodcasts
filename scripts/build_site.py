@@ -10,6 +10,7 @@ import time
 from pathlib import Path
 from typing import Any
 
+from scripts.build_roku_search import build_roku_search, cleanup_roku_search_outputs
 from scripts.feed_manifest import parse_feed_for_manifest, short_description
 from scripts.media_probe import (
     MediaMeta,
@@ -68,6 +69,31 @@ def _parse_args() -> argparse.Namespace:
         type=int,
         default=25,
         help="Max episodes per feed to enrich when --enrich-media is enabled (default: 25).",
+    )
+    roku_g = p.add_mutually_exclusive_group()
+    roku_g.add_argument(
+        "--build-roku-search",
+        dest="build_roku_search",
+        action="store_true",
+        help="Build a Roku search index under site assets (default).",
+    )
+    roku_g.add_argument(
+        "--no-build-roku-search",
+        dest="build_roku_search",
+        action="store_false",
+        help="Skip the Roku search index step.",
+    )
+    p.set_defaults(build_roku_search=True)
+    p.add_argument(
+        "--roku-search-limit-per-feed",
+        type=int,
+        default=0,
+        help="Override per-feed episode cap for Roku search index (default: 50 locally, 100 in GitHub Actions).",
+    )
+    p.add_argument(
+        "--roku-search-exclude-feeds",
+        default="",
+        help="Comma-separated feed ids to exclude from the Roku search index.",
     )
     return p.parse_args()
 
@@ -1295,6 +1321,26 @@ def main() -> None:
         more = f" (+{len(feeds_empty_shows_cfg) - 20} more)" if len(feeds_empty_shows_cfg) > 20 else ""
         _log(f"[warn] empty shows list for {len(feeds_empty_shows_cfg)} feeds (shows file/inline config has no entries): {sample}{more}")
     _log(f"  {len(feed_landing_paths)} feed landings, {sum(len(s) for s in shows_config_all.values())} shows ({time.perf_counter() - t:.1f}s)")
+
+    # Roku search feed (curated + paginated).
+    if args.build_roku_search:
+        _log("build roku search…")
+        t = time.perf_counter()
+        build_roku_search(
+            out_dir=out_dir,
+            base_path=base_path,
+            site_origin=site_origin,
+            public_sources=public_sources,
+            manifest_feeds=manifest_feeds,
+            shows_config_all=shows_config_all,
+            args_limit_per_feed=args.roku_search_limit_per_feed,
+            args_exclude_feeds=args.roku_search_exclude_feeds,
+            log=_log,
+        )
+        _log(f"  done ({time.perf_counter() - t:.1f}s)")
+    else:
+        cleanup_roku_search_outputs(out_dir)
+        _log("skip roku search (disabled)")
 
     # index.html
     home_desc = (cfg.site.description or cfg.site.subtitle or "").strip()
