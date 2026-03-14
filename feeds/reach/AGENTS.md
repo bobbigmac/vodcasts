@@ -117,6 +117,9 @@ When writing about an episode:
 - Mention the issue, tension, or angle the episode raises.
 - Prefer specifics over praise words.
 - Make it sound like a short review or reaction, not a catalog entry.
+- Talk about the content of the sermon, event, set, or conversation.
+- Do not review the video itself or sell the production.
+- Avoid lines that amount to "this video is great" or "I like this clip."
 
 Do not just paraphrase the title.
 

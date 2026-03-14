@@ -1,7 +1,7 @@
 /**
  * Netflix-style browse panel: carousels for shows/episodes (not the guide/EPG).
  */
-import { html, useEffect } from "../runtime/vendor.js";
+import { html, useEffect, useRef, useSignal } from "../runtime/vendor.js";
 import { fallbackInitials, thumbFallbackStyle, titlePosClass, VodCarouselRow } from "./vod_carousel.js";
 import { HeadphonesIcon } from "./icons.js";
 
@@ -113,16 +113,21 @@ export function BrowsePanel({
   const curSourceId = player?.currentSourceId?.value || null;
   const curEpId = player?.currentEpisodeId?.value || null;
   const open = !!isOpen?.value;
+  const panelRef = useRef(null);
+  const onCloseRef = useRef(onClose);
+  const countdownPct = useSignal(1);
+
+  onCloseRef.current = onClose;
 
   const playAndClose = ({ ep, showEpisodes = null, showSlug = null }) => {
     if (!feedId || !ep?.id) return;
     playEpisode({ player, feedId, ep, showEpisodes, showSlug });
-    onClose?.();
+    onCloseRef.current?.();
   };
 
   useEffect(() => {
     if (!open) return;
-    const panel = document.getElementById("browsePanel");
+    const panel = panelRef.current;
     if (!panel) return;
     // If the user already focused something inside, don't steal it.
     const a = document.activeElement;
@@ -141,30 +146,47 @@ export function BrowsePanel({
   }, [open, feedId, initialExpandShowSlug, curSourceId, curEpId]);
 
   useEffect(() => {
+    countdownPct.value = 1;
     if (!open) return;
-    const panel = document.getElementById("browsePanel");
-    if (!panel || !onClose) return;
-    const IDLE_MS = 10000;
-    let idleTimer = null;
+    const panel = panelRef.current;
+    if (!panel || !onCloseRef.current) return;
+    const IDLE_MS = 6500;
+    let deadline = Date.now() + IDLE_MS;
+    let rafId = 0;
+    let closed = false;
+
+    const tick = () => {
+      if (closed) return;
+      const remaining = Math.max(0, deadline - Date.now());
+      countdownPct.value = remaining / IDLE_MS;
+      if (remaining <= 0) {
+        closed = true;
+        countdownPct.value = 0;
+        onCloseRef.current?.();
+        return;
+      }
+      rafId = window.requestAnimationFrame(tick);
+    };
 
     const resetIdleClose = () => {
-      if (idleTimer) clearTimeout(idleTimer);
-      idleTimer = setTimeout(() => {
-        onClose();
-      }, IDLE_MS);
+      if (closed) return;
+      deadline = Date.now() + IDLE_MS;
+      countdownPct.value = 1;
     };
 
     const evs = ["mousemove", "mousedown", "keydown", "touchstart", "touchmove", "wheel", "pointerdown", "pointermove", "focusin"];
-    evs.forEach((ev) => panel.addEventListener(ev, resetIdleClose));
+    evs.forEach((ev) => panel.addEventListener(ev, resetIdleClose, { passive: true }));
     panel.addEventListener("scroll", resetIdleClose, true);
-    resetIdleClose();
+    tick();
 
     return () => {
-      if (idleTimer) clearTimeout(idleTimer);
+      closed = true;
+      countdownPct.value = 1;
+      if (rafId) window.cancelAnimationFrame(rafId);
       evs.forEach((ev) => panel.removeEventListener(ev, resetIdleClose));
       panel.removeEventListener("scroll", resetIdleClose, true);
     };
-  }, [open, feedId, initialExpandShowSlug, onClose]);
+  }, [open, feedId, initialExpandShowSlug]);
 
   if (!shows?.length) {
     return html`
@@ -212,9 +234,16 @@ export function BrowsePanel({
       </h2>
       ${onClose
         ? html`
-            <button class="browseCloseBtn" type="button" onClick=${onClose} aria-label="Close">
-              ×
-            </button>
+            <div class="browseHeaderActions">
+              <span class="browseAutoClose" aria-hidden="true">
+                <span class="browseAutoCloseTrack">
+                  <span class="browseAutoCloseFill" style=${{ transform: `scaleX(${countdownPct.value})` }}></span>
+                </span>
+              </span>
+              <button class="browseCloseBtn" type="button" onClick=${onClose} aria-label="Close">
+                ×
+              </button>
+            </div>
           `
         : ""}
     </header>
