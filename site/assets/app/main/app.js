@@ -1585,8 +1585,7 @@ export function App({ env, log, sources, showsConfig, player, history }) {
               }
             } : undefined}
             onExpandShow=${(feedId, showSlug) => {
-              guideBrowseShowSlug.value = showSlug;
-              setRouteInUrl({ feed: feedId, show: showSlug }, { replace: false });
+              openBrowseDrawerForShow(feedId, showSlug);
             }}
             onCollapseShow=${() => {
               guideBrowseShowSlug.value = null;
