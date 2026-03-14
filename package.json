@@ -18,6 +18,7 @@
     "dev": "node scripts/vod.cjs dev",
     "find-feeds": "node scripts/find-feeds.js",
     "answer-ui": "node scripts/answer-engine/run_query_ui.mjs",
+    "tweets:show-urls": "python3 -u scripts/add_show_urls_to_markdown.py --write TWEETS.md",
     "podcast-transcripts:mine": "python -u scripts/podcast-transcription-miner/mine_podcastindex_transcripts.py --selection-profile curated --workers 16 --per-host 2 --progress-every 15",
     "church-candidates:validate": "python -u scripts/podcast-transcription-miner/validate_church_candidates.py --workers 12 --progress-every 20",
     "transcripts": "powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/setup-venv.ps1 && powershell -ExecutionPolicy Bypass -File scripts/audio-to-transcripts/run-transcripts-whisperx.ps1 -GenerateMissing -Execute",

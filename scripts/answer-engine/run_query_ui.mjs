@@ -1,3 +1,4 @@
+import "dotenv/config";
 import { existsSync } from "node:fs";
 import { join } from "node:path";
 import { spawn } from "node:child_process";
