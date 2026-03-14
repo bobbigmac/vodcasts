@@ -24,7 +24,8 @@ from scripts.shared import VODCASTS_ROOT, read_json, write_json
 ROKU_SEARCH_ROOT = "assets/search-feeds/roku-search.json"
 ROKU_SEARCH_DIR = "assets/search-feeds"
 DEFAULT_CONFIG_PATH = VODCASTS_ROOT / "feeds" / "roku-search.json"
-ROKU_SEARCH_CACHE_VERSION = 2
+# Bump this to force a rebuild of the daily Roku cache snapshot on the next deploy.
+ROKU_SEARCH_CACHE_VERSION = 3
 DEFAULT_FALLBACK_IMAGE_PATH = "assets/images/og-based-promo.png"
 DEFAULT_MEDIA_PROBE_TIMEOUT_SECONDS = 6
 DEFAULT_MEDIA_PROBE_USER_AGENT = "vodcasts-roku-search/1.0 (+https://prays.be)"
