@@ -14,8 +14,8 @@
 		<ttl>720</ttl>
 		<sy:updatePeriod>weekly</sy:updatePeriod>
 		<sy:updateFrequency>1</sy:updateFrequency>
-		<lastBuildDate>Thu, 12 Mar 2026 14:30:04 PDT</lastBuildDate>
-		<pubDate>Thu, 12 Mar 2026 14:30:04 PDT</pubDate>
+		<lastBuildDate>Fri, 13 Mar 2026 18:17:45 PDT</lastBuildDate>
+		<pubDate>Fri, 13 Mar 2026 18:17:45 PDT</pubDate>
 		<rawvoice:frequency>weekly</rawvoice:frequency>
 		<rawvoice:location>Petaluma, CA</rawvoice:location>
 		<itunes:type>episodic</itunes:type>
@@ -61,6 +61,7 @@ New episodes every Thursday.</description>
 			<category>Windows</category>
 			<itunes:explicit>no</itunes:explicit>
 			<itunes:subtitle>Notepad, Move Over</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/how-use-microsoft-edit-free-lightweight-text-editor-windows-11-and-linux" type="text/html" />
 			<itunes:keywords>microsoft edit, Windows 11 text editor, Notepad controversy, markdown support, Copilot integration, command line interface, CLI app, Linux compatibility, Microsoft software, open source, GitHub download, keyboard shortcuts, word wrap, find and replace</itunes:keywords>
 			<description><![CDATA[
 <p>Microsoft Edit is stepping into the spotlight as Notepad faces backlash for its new AI-heavy features. Find out why this lightweight, command-line text editor might just be your next favorite productivity tool.</p> 

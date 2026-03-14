@@ -14,8 +14,8 @@
 		<ttl>720</ttl>
 		<sy:updatePeriod>weekly</sy:updatePeriod>
 		<sy:updateFrequency>1</sy:updateFrequency>
-		<lastBuildDate>Thu, 12 Mar 2026 13:55:02 PDT</lastBuildDate>
-		<pubDate>Thu, 12 Mar 2026 13:55:02 PDT</pubDate>
+		<lastBuildDate>Fri, 13 Mar 2026 18:17:48 PDT</lastBuildDate>
+		<pubDate>Fri, 13 Mar 2026 18:17:48 PDT</pubDate>
 		<rawvoice:frequency>weekly</rawvoice:frequency>
 		<rawvoice:location>Petaluma, CA</rawvoice:location>
 		<itunes:type>episodic</itunes:type>
@@ -59,10 +59,11 @@ New episodes every Thursday.</description>
 			<podcast:episode>522</podcast:episode>
 			<link>https://twit.tv/shows/home-theater-geeks/episodes/522</link>
 			<comments>https://twit.tv/shows/home-theater-geeks/episodes/522</comments>
-			<category>Reviews</category>
+			<category>Help &amp; How To</category>
 			<category>Technology</category>
 			<itunes:explicit>no</itunes:explicit>
 			<itunes:subtitle>What Happened After Walmart&#039;s Acquisition?</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/should-you-choose-vizio-tcl-or-hisense-your-next-budget-4k-tv" type="text/html" />
 			<itunes:keywords>Home theater podcast, home theater geeks, scott wilkinson, home theater setup, Home cinema, Home theater design, surround sound, av receivers, Home theater speakers, Soundproofing, Movie room design, Home theater installation, projectors, 4K TVs</itunes:keywords>
 			<description><![CDATA[
 <p>Brad Marman wonders what's up with Vizio TVs these days? Are they still around? Are they still good quality and value? Scott Wilkinson has some answers, but other answers are hard to come by.</p> 

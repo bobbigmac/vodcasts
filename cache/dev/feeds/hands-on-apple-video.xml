@@ -14,8 +14,8 @@
 		<ttl>720</ttl>
 		<sy:updatePeriod>weekly</sy:updatePeriod>
 		<sy:updateFrequency>1</sy:updateFrequency>
-		<lastBuildDate>Thu, 12 Mar 2026 14:10:03 PDT</lastBuildDate>
-		<pubDate>Thu, 12 Mar 2026 14:10:03 PDT</pubDate>
+		<lastBuildDate>Fri, 13 Mar 2026 18:17:39 PDT</lastBuildDate>
+		<pubDate>Fri, 13 Mar 2026 18:17:39 PDT</pubDate>
 		<rawvoice:frequency>weekly</rawvoice:frequency>
 		<rawvoice:location>Petaluma, CA</rawvoice:location>
 		<itunes:type>episodic</itunes:type>
@@ -63,60 +63,70 @@ New episodes every Thursday.</description>
 			<category>Macintosh</category>
 			<itunes:explicit>no</itunes:explicit>
 			<itunes:subtitle>Sharing, Security Audits, &amp; 2FA Codes</itunes:subtitle>
+			<podcast:transcript url="http://twit.tv/posts/tech/how-use-apples-modern-passwords-app-effortless-login-management" type="text/html" />
 			<itunes:keywords>TWiT, HOM, Mikah Sargent, Hands On Mac, macbook, imac, Apple tips, iphone tips, macos tips, ios tips, iOS privacy and security settings, iPadOS, apple passwords app, icloud keychain, password manager, Safari password autofill, macos Sequoia, iOS</itunes:keywords>
 			<description><![CDATA[
-<p>Apple's standalone Passwords app gives Keychain a proper home! Ready to clean up your secure digital life? This episode walks you through using Apple's Passwords app to spot weak logins, organize old accounts, and take control of your online security with tools already built into your devices.</p> 
-<p>• Quick history: Keychain to iCloud Keychain to Passwords app<br /> 
-• How to access the Passwords app on iPadOS, iOS, and macOS<br /> 
-• Passwords app interface tour: categories, search, and shared groups<br /> 
-• What autofill and notifications options you can enable in Passwords<br /> 
-• Exploring the main categories: All, Passkeys, Codes, Wi-Fi, Security, Deleted<br /> 
-• Viewing, editing, and sharing individual logins in the Passwords app<br /> 
-• Manually adding, updating, or deleting passwords and usernames<br /> 
-• Using search and sort to find and organize your saved logins<br /> 
-• How autofill password suggestions work in Safari and system settings<br /> 
-• Tweaking autofill and 3rd-party password manager integration<br /> 
-• Homework: review and clean up your Passwords app before next episode</p> 
+<p>Apple's standalone Passwords app gives Keychain a proper home! Ready to clean up your secure digital life? This episode walks you through using Apple's Passwords app to spot weak logins, organize old accounts, and take control of your online security with tools already built into your devices.</p><ul> 
+<li>Quick history: Keychain to iCloud Keychain to Passwords app</li> 
+<li>How to access the Passwords app on iPadOS, iOS, and macOS</li> 
+<li>Passwords app interface tour: categories, search, and shared groups</li> 
+<li>What autofill and notifications options you can enable in Passwords</li> 
+<li>Exploring the main categories: All, Passkeys, Codes, Wi-Fi, Security, Deleted</li> 
+<li>Viewing, editing, and sharing individual logins in the Passwords app</li> 
+<li>Manually adding, updating, or deleting passwords and usernames</li> 
+<li>Using search and sort to find and organize your saved logins</li> 
+<li>How autofill password suggestions work in Safari and system settings</li> 
+<li>Tweaking autofill and 3rd-party password manager integration</li> 
+<li>Homework: review and clean up your Passwords app before next episode</li></ul> 
 <p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
 <p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
 <p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
 <p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+</ul></p>
 ]]></description>
 			<itunes:summary><![CDATA[
-<p>Apple's standalone Passwords app gives Keychain a proper home! Ready to clean up your secure digital life? This episode walks you through using Apple's Passwords app to spot weak logins, organize old accounts, and take control of your online security with tools already built into your devices.</p> 
-<p>• Quick history: Keychain to iCloud Keychain to Passwords app<br /> 
-• How to access the Passwords app on iPadOS, iOS, and macOS<br /> 
-• Passwords app interface tour: categories, search, and shared groups<br /> 
-• What autofill and notifications options you can enable in Passwords<br /> 
-• Exploring the main categories: All, Passkeys, Codes, Wi-Fi, Security, Deleted<br /> 
-• Viewing, editing, and sharing individual logins in the Passwords app<br /> 
-• Manually adding, updating, or deleting passwords and usernames<br /> 
-• Using search and sort to find and organize your saved logins<br /> 
-• How autofill password suggestions work in Safari and system settings<br /> 
-• Tweaking autofill and 3rd-party password manager integration<br /> 
-• Homework: review and clean up your Passwords app before next episode</p> 
+<p>Apple's standalone Passwords app gives Keychain a proper home! Ready to clean up your secure digital life? This episode walks you through using Apple's Passwords app to spot weak logins, organize old accounts, and take control of your online security with tools already built into your devices.</p><ul> 
+<li>Quick history: Keychain to iCloud Keychain to Passwords app</li> 
+<li>How to access the Passwords app on iPadOS, iOS, and macOS</li> 
+<li>Passwords app interface tour: categories, search, and shared groups</li> 
+<li>What autofill and notifications options you can enable in Passwords</li> 
+<li>Exploring the main categories: All, Passkeys, Codes, Wi-Fi, Security, Deleted</li> 
+<li>Viewing, editing, and sharing individual logins in the Passwords app</li> 
+<li>Manually adding, updating, or deleting passwords and usernames</li> 
+<li>Using search and sort to find and organize your saved logins</li> 
+<li>How autofill password suggestions work in Safari and system settings</li> 
+<li>Tweaking autofill and 3rd-party password manager integration</li> 
+<li>Homework: review and clean up your Passwords app before next episode</li></ul> 
 <p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
 <p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
 <p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
 <p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+</ul></p>
 ]]></itunes:summary>
 			<content:encoded><![CDATA[
-<p>Apple's standalone Passwords app gives Keychain a proper home! Ready to clean up your secure digital life? This episode walks you through using Apple's Passwords app to spot weak logins, organize old accounts, and take control of your online security with tools already built into your devices.</p> 
-<p>• Quick history: Keychain to iCloud Keychain to Passwords app<br /> 
-• How to access the Passwords app on iPadOS, iOS, and macOS<br /> 
-• Passwords app interface tour: categories, search, and shared groups<br /> 
-• What autofill and notifications options you can enable in Passwords<br /> 
-• Exploring the main categories: All, Passkeys, Codes, Wi-Fi, Security, Deleted<br /> 
-• Viewing, editing, and sharing individual logins in the Passwords app<br /> 
-• Manually adding, updating, or deleting passwords and usernames<br /> 
-• Using search and sort to find and organize your saved logins<br /> 
-• How autofill password suggestions work in Safari and system settings<br /> 
-• Tweaking autofill and 3rd-party password manager integration<br /> 
-• Homework: review and clean up your Passwords app before next episode</p> 
+<p>Apple's standalone Passwords app gives Keychain a proper home! Ready to clean up your secure digital life? This episode walks you through using Apple's Passwords app to spot weak logins, organize old accounts, and take control of your online security with tools already built into your devices.</p><ul> 
+<li>Quick history: Keychain to iCloud Keychain to Passwords app</li> 
+<li>How to access the Passwords app on iPadOS, iOS, and macOS</li> 
+<li>Passwords app interface tour: categories, search, and shared groups</li> 
+<li>What autofill and notifications options you can enable in Passwords</li> 
+<li>Exploring the main categories: All, Passkeys, Codes, Wi-Fi, Security, Deleted</li> 
+<li>Viewing, editing, and sharing individual logins in the Passwords app</li> 
+<li>Manually adding, updating, or deleting passwords and usernames</li> 
+<li>Using search and sort to find and organize your saved logins</li> 
+<li>How autofill password suggestions work in Safari and system settings</li> 
+<li>Tweaking autofill and 3rd-party password manager integration</li> 
+<li>Homework: review and clean up your Passwords app before next episode</li></ul> 
 <p><strong>Host:</strong> <a href="https://twit.tv/people/mikah-sargent">Mikah Sargent</a></p> 
 <p>Download or subscribe to <em>Hands-On Apple</em> at <a href="https://twit.tv/shows/hands-on-apple">https://twit.tv/shows/hands-on-apple</a></p> 
 <p>Want access to the ad-free audio <em>and</em> video and exclusive features? <strong>Become a member of Club TWiT today!</strong> <a href="https://twit.tv/clubtwit">https://twit.tv/clubtwit</a></p> 
 <p><a href="https://twit.tv/clubtwit">Club TWiT</a> members can discuss this episode and leave feedback in the <a href="https://twit.memberful.com/account/discord/authorize">Club TWiT Discord</a>.</p>
+<p><strong>Sponsor:</strong><ul>
+<li><a href="http://Melissa.com/twit" target="_blank" rel="sponsored">Melissa.com/twit</a></li>
+</ul></p>
 ]]></content:encoded>
 			<itunes:image href="https://elroy.twit.tv/sites/default/files/styles/twit_thumb_720x405/public/images/episodes/2026/03/860478/hero/HOA0222_thumbnail.jpg"/>
 			<guid isPermaLink="false">https://pscrb.fm/rss/p/mgln.ai/e/294/cdn.twit.tv/video/hom/hom0222/hom0222_h264m_1920x1080.mp4</guid>
