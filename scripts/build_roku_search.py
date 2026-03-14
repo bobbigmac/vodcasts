@@ -10,11 +10,24 @@ from pathlib import Path
 from typing import Any
 
 from scripts.feed_manifest import short_description
+from scripts.media_probe import (
+    MediaMeta,
+    get_cached_meta,
+    hls_duration_seconds,
+    load_media_meta_cache,
+    mp4_duration_seconds,
+    put_cached_meta,
+    save_media_meta_cache,
+)
 from scripts.shared import VODCASTS_ROOT, read_json, write_json
 
 ROKU_SEARCH_ROOT = "assets/search-feeds/roku-search.json"
 ROKU_SEARCH_DIR = "assets/search-feeds"
 DEFAULT_CONFIG_PATH = VODCASTS_ROOT / "feeds" / "roku-search.json"
+ROKU_SEARCH_CACHE_VERSION = 2
+DEFAULT_FALLBACK_IMAGE_PATH = "assets/images/og-based-promo.png"
+DEFAULT_MEDIA_PROBE_TIMEOUT_SECONDS = 6
+DEFAULT_MEDIA_PROBE_USER_AGENT = "vodcasts-roku-search/1.0 (+https://prays.be)"
 
 _HTTP_URL_RE = re.compile(r"^https?://", re.IGNORECASE)
 _GENERIC_TITLE_RE = re.compile(
@@ -22,6 +35,8 @@ _GENERIC_TITLE_RE = re.compile(
     re.IGNORECASE,
 )
 _ONLY_DATE_RE = re.compile(r"^\d{4}[-/]\d{2}[-/]\d{2}$")
+_ISO_DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+_DATE_TOKEN_RE = re.compile(r"\b(20\d{2}|19\d{2})[-_/](\d{2})[-_/](\d{2})\b")
 
 
 def cleanup_roku_search_outputs(out_dir: Path) -> None:
@@ -73,6 +88,24 @@ def build_roku_search(
     audio_episodes_per_feed = max(0, min(limit_per_feed, int(cfg.get("audioEpisodesPerFeed") or 1)))
     short_form_max_duration = max(60, int(cfg.get("shortFormMaxDurationSeconds") or 900))
     page_bytes = max(250_000, int(cfg.get("pageBytes") or 4_000_000))
+    countries_raw = cfg.get("countries") or ["US"]
+    if isinstance(countries_raw, str):
+        countries_raw = [part.strip() for part in countries_raw.split(",")]
+    countries = [str(part).strip().upper() for part in countries_raw if str(part).strip()] or ["US"]
+    ratings_raw = cfg.get("advisoryRatings") or ["TV-G"]
+    if isinstance(ratings_raw, str):
+        ratings_raw = [part.strip() for part in ratings_raw.split(",")]
+    advisory_ratings = [str(part).strip() for part in ratings_raw if str(part).strip()] or ["TV-G"]
+    fallback_image_url = _fallback_image_url(
+        site_origin=site_origin,
+        base_path=base_path,
+        rel_path=str(cfg.get("fallbackImagePath") or DEFAULT_FALLBACK_IMAGE_PATH),
+    )
+    max_duration_probes = max(0, int(cfg.get("maxDurationProbes") or 40))
+    media_meta_doc = load_media_meta_cache(cache_dir) if cache_dir else {"version": 1, "updated_at_unix": 0, "by_url": {}}
+    media_probe_timeout = max(5, int(os.getenv("VOD_ROKU_SEARCH_MEDIA_TIMEOUT_SECONDS", "") or DEFAULT_MEDIA_PROBE_TIMEOUT_SECONDS))
+    media_probe_user_agent = str(os.getenv("VOD_ROKU_SEARCH_MEDIA_USER_AGENT", "") or DEFAULT_MEDIA_PROBE_USER_AGENT).strip()
+    probe_state = {"remaining": max_duration_probes}
 
     manifest_by_id = {str(feed.get("id") or ""): feed for feed in manifest_feeds}
     episode_picks = _normalize_episode_picks(cfg.get("episodePicks") or [])
@@ -153,23 +186,66 @@ def build_roku_search(
         log(msg)
 
     series_assets: list[dict[str, Any]] = []
-    selected_series_ids: set[str] = set()
     episode_to_series: dict[tuple[str, str], tuple[str, int | None]] = {}
 
     for feed in feeds:
         fid = feed["id"]
         for show in selected_series_by_feed.get(fid) or []:
             series_id = _series_asset_id(fid, str(show.get("slug") or ""))
-            selected_series_ids.add(series_id)
-            series_assets.append(_build_series_asset(feed=feed, show=show, series_id=series_id))
+            series_assets.append(
+                _build_series_asset(
+                    feed=feed,
+                    show=show,
+                    series_id=series_id,
+                    advisory_ratings=advisory_ratings,
+                    fallback_image_url=fallback_image_url,
+                )
+            )
             for key, episode_number in _episode_numbers_for_show(show).items():
                 episode_to_series[(fid, key)] = (series_id, episode_number)
+
+    fallback_series_ids: set[str] = set()
+    fallback_episode_numbers: dict[str, int] = {}
+    for entry in selected_playables:
+        feed = entry["feed"]
+        ep = entry["episode"]
+        fid = feed["id"]
+        if _episode_series_ref(fid, ep, episode_to_series) is not None:
+            continue
+        fallback_show = _build_fallback_series_show(feed=feed, ep=ep)
+        series_id = _series_asset_id(fid, str(fallback_show.get("slug") or "feed"))
+        if series_id not in fallback_series_ids:
+            fallback_series_ids.add(series_id)
+            series_assets.append(
+                _build_series_asset(
+                    feed=feed,
+                    show=fallback_show,
+                    series_id=series_id,
+                    advisory_ratings=advisory_ratings,
+                    fallback_image_url=fallback_image_url,
+                )
+            )
+        fallback_episode_numbers[fid] = fallback_episode_numbers.get(fid, 0) + 1
+        ep_number = fallback_episode_numbers[fid]
+        key = _episode_key(ep)
+        if key:
+            episode_to_series[(fid, key)] = (series_id, ep_number)
+        slug = str(ep.get("slug") or "").strip()
+        if slug:
+            episode_to_series[(fid, slug)] = (series_id, ep_number)
 
     playable_assets: list[dict[str, Any]] = []
     seen_asset_ids: set[str] = set()
     for entry in selected_playables:
         feed = entry["feed"]
-        ep = entry["episode"]
+        ep = _backfill_episode_metadata(
+            feed=feed,
+            ep=entry["episode"],
+            media_meta_doc=media_meta_doc,
+            timeout_seconds=media_probe_timeout,
+            user_agent=media_probe_user_agent,
+            probe_state=probe_state,
+        )
         asset_id = _episode_asset_id(feed["id"], ep)
         if asset_id in seen_asset_ids:
             continue
@@ -182,8 +258,12 @@ def build_roku_search(
                 asset_id=asset_id,
                 series_ref=series_ref,
                 short_form_max_duration=short_form_max_duration,
+                countries=countries,
+                advisory_ratings=advisory_ratings,
+                fallback_image_url=fallback_image_url,
             )
         )
+    playable_assets = [asset for asset in playable_assets if asset is not None]
 
     all_assets = series_assets + playable_assets
     all_assets.sort(key=_asset_sort_key, reverse=True)
@@ -213,6 +293,7 @@ def build_roku_search(
         "changed": changed_files,
     }
     if cache_dir:
+        save_media_meta_cache(cache_dir, media_meta_doc)
         _store_cached_roku_search(
             cache_dir=cache_dir,
             pages=pages,
@@ -240,6 +321,10 @@ def _load_config() -> dict[str, Any]:
         "audioEpisodesPerFeed": 1,
         "shortFormMaxDurationSeconds": 900,
         "pageBytes": 2_000_000,
+        "countries": ["US"],
+        "advisoryRatings": ["TV-G"],
+        "fallbackImagePath": DEFAULT_FALLBACK_IMAGE_PATH,
+        "maxDurationProbes": 40,
         "episodePicks": [],
         "queryBoosts": [],
     }
@@ -287,6 +372,8 @@ def _restore_cached_roku_search(
         return None
     if not isinstance(manifest, dict):
         return None
+    if int(manifest.get("version") or 0) != ROKU_SEARCH_CACHE_VERSION:
+        return None
     if str(manifest.get("siteOrigin") or "") != str(site_origin or "") or str(manifest.get("basePath") or "") != str(base_path or ""):
         log(f"  cached roku search exists for {_today_cache_key()} but the URL context changed; rebuilding")
         return None
@@ -328,7 +415,7 @@ def _store_cached_roku_search(
     write_json(
         _cache_manifest_path(cache_dir),
         {
-            "version": 1,
+            "version": ROKU_SEARCH_CACHE_VERSION,
             "date": _today_cache_key(),
             "siteOrigin": site_origin,
             "basePath": base_path,
@@ -707,18 +794,39 @@ def _episode_series_ref(feed_id: str, ep: dict[str, Any], series_map: dict[tuple
     return None
 
 
-def _build_series_asset(*, feed: dict[str, Any], show: dict[str, Any], series_id: str) -> dict[str, Any]:
+def _build_fallback_series_show(*, feed: dict[str, Any], ep: dict[str, Any]) -> dict[str, Any]:
+    feed_title = str(feed["source"].get("title") or feed["id"]).strip() or feed["id"]
+    return {
+        "slug": "feed",
+        "title": feed_title,
+        "title_full": feed_title,
+        "description": f"Episodes from {feed_title}.",
+        "categories": list(feed["source"].get("tags") or []),
+        "episodes": [ep] if ep else [],
+    }
+
+
+def _build_series_asset(
+    *,
+    feed: dict[str, Any],
+    show: dict[str, Any],
+    series_id: str,
+    advisory_ratings: list[str],
+    fallback_image_url: str | None,
+) -> dict[str, Any]:
     feed_title = str(feed["source"].get("title") or feed["id"])
     title = str(show.get("title_full") or show.get("title") or feed_title).strip() or feed_title
     desc = str(show.get("description") or "").strip()
-    image_url = _first_http_url(show.get("artworkUrl"), feed["manifest"].get("channelImageUrl"))
+    image_url = _pick_asset_image_url(show.get("artworkUrl"), feed["manifest"].get("channelImageUrl"), fallback_image_url=fallback_image_url)
     newest_ep = _episodes_recent_first(list(show.get("episodes") or []))[:1]
-    newest_date = str((newest_ep[0].get("dateText") if newest_ep else "") or "").strip()
+    newest_date = _infer_release_date(newest_ep[0] if newest_ep else {})
+    short_desc, long_desc = _description_values(desc, desc, fallback=f"Episodes from {title}.")
     asset: dict[str, Any] = {
         "id": series_id,
         "type": "series",
         "titles": [{"value": title[:200]}],
         "tags": [feed["id"], str(feed["source"].get("category") or "other")],
+        "advisoryRatings": list(advisory_ratings),
     }
     if newest_date:
         asset["releaseDate"] = newest_date[:10]
@@ -727,9 +835,10 @@ def _build_series_asset(*, feed: dict[str, Any], show: dict[str, Any], series_id
     genres = _map_genres(feed_category=str(feed["source"].get("category") or ""), extra_terms=list(show.get("categories") or []))
     if genres:
         asset["genres"] = genres
-    if desc:
-        asset["shortDescriptions"] = [{"value": short_description(desc, max_chars=200)}]
-        asset["longDescriptions"] = [{"value": short_description(desc, max_chars=500)}]
+    if short_desc:
+        asset["shortDescriptions"] = [{"value": short_desc}]
+    if long_desc:
+        asset["longDescriptions"] = [{"value": long_desc}]
     if image_url:
         asset["images"] = [{"type": "main", "url": image_url}]
     return asset
@@ -742,15 +851,28 @@ def _build_playable_asset(
     asset_id: str,
     series_ref: tuple[str, int | None] | None,
     short_form_max_duration: int,
-) -> dict[str, Any]:
+    countries: list[str],
+    advisory_ratings: list[str],
+    fallback_image_url: str | None,
+) -> dict[str, Any] | None:
     media = ep.get("media") if isinstance(ep.get("media"), dict) else {}
     title = str(ep.get("title") or "Untitled").strip() or "Untitled"
-    date_text = str(ep.get("dateText") or "").strip()
+    date_text = _infer_release_date(ep)
     desc_short = str(ep.get("descriptionShort") or "").strip()
     desc_long = short_description(str(ep.get("descriptionHtml") or desc_short), max_chars=500) if ep.get("descriptionHtml") else desc_short
     duration_sec = int(ep.get("durationSec") or 0) or None
-    image_url = _first_http_url(ep.get("imageUrl"), feed["manifest"].get("channelImageUrl"))
+    image_url = _pick_asset_image_url(ep.get("imageUrl"), feed["manifest"].get("channelImageUrl"), fallback_image_url=fallback_image_url)
     is_video = bool(media.get("pickedIsVideo") or media.get("hasVideoInFeed"))
+    short_desc_value, long_desc_value = _description_values(
+        desc_short,
+        desc_long,
+        fallback=f"{title} from {str(feed['source'].get('title') or feed['id'])}.",
+    )
+
+    if not date_text:
+        return None
+    if not duration_sec or duration_sec < 60:
+        return None
 
     if series_ref is not None:
         asset_type = "episode"
@@ -769,15 +891,17 @@ def _build_playable_asset(
                     "license": "free",
                     "quality": "hd" if is_video else "sd",
                     "playId": _build_play_id(feed["id"], ep),
+                    "availability": {"countries": list(countries)},
                 }
             ]
         },
         "tags": [feed["id"], str(feed["source"].get("category") or "other")],
+        "advisoryRatings": list(advisory_ratings),
     }
-    if desc_short:
-        asset["shortDescriptions"] = [{"value": short_description(desc_short, max_chars=200)}]
-    if desc_long:
-        asset["longDescriptions"] = [{"value": short_description(desc_long, max_chars=500)}]
+    if short_desc_value:
+        asset["shortDescriptions"] = [{"value": short_desc_value}]
+    if long_desc_value:
+        asset["longDescriptions"] = [{"value": long_desc_value}]
     if date_text:
         asset["releaseDate"] = date_text[:10]
         if len(date_text) >= 4 and date_text[:4].isdigit():
@@ -791,7 +915,7 @@ def _build_playable_asset(
         asset["genres"] = genres
     if series_ref is not None:
         series_id, episode_number = series_ref
-        ep_info: dict[str, Any] = {"seriesId": series_id, "episodeNumber": int(episode_number or 1)}
+        ep_info: dict[str, Any] = {"seriesId": series_id, "seasonNumber": 1, "episodeNumber": int(episode_number or 1)}
         asset["episodeInfo"] = ep_info
     return asset
 
@@ -830,6 +954,8 @@ def _map_genres(*, feed_category: str, extra_terms: list[str]) -> list[str]:
     for genre, needles in mapping:
         if any(token in terms for token in needles) and genre not in out:
             out.append(genre)
+    if not out:
+        out.append("educational")
     return out[:3]
 
 
@@ -839,6 +965,109 @@ def _first_http_url(*values: Any) -> str | None:
         if s and _HTTP_URL_RE.match(s):
             return s
     return None
+
+
+def _fallback_image_url(*, site_origin: str, base_path: str, rel_path: str) -> str | None:
+    origin = str(site_origin or "").strip().rstrip("/")
+    rel = str(rel_path or "").strip().lstrip("/")
+    if not origin or not rel:
+        return None
+    bp = str(base_path or "/").strip() or "/"
+    if not bp.startswith("/"):
+        bp = "/" + bp
+    if not bp.endswith("/"):
+        bp += "/"
+    return f"{origin}{bp}{rel}"
+
+
+def _pick_asset_image_url(*values: Any, fallback_image_url: str | None) -> str | None:
+    for value in values:
+        s = str(value or "").strip()
+        if s.lower().startswith("https://"):
+            return s
+    if fallback_image_url:
+        return fallback_image_url
+    for value in values:
+        s = str(value or "").strip()
+        if s.lower().startswith("http://"):
+            return "https://" + s[7:]
+    return None
+
+
+def _description_values(short_text: str, long_text: str, *, fallback: str) -> tuple[str, str | None]:
+    short_value = short_description(short_text or fallback, max_chars=200)
+    long_value = short_description(long_text or short_text or fallback, max_chars=500)
+    if _norm_text(short_value) == _norm_text(long_value):
+        long_value = None
+    return short_value, long_value
+
+
+def _infer_release_date(ep: dict[str, Any]) -> str:
+    direct = str(ep.get("dateText") or "").strip()
+    if _ISO_DATE_RE.match(direct[:10]):
+        return direct[:10]
+    for raw in (
+        str(ep.get("slug") or ""),
+        str(ep.get("id") or ""),
+        str(ep.get("title") or ""),
+        str(ep.get("link") or ""),
+    ):
+        m = _DATE_TOKEN_RE.search(raw)
+        if not m:
+            continue
+        year, month, day = m.groups()
+        return f"{year}-{month}-{day}"
+    return ""
+
+
+def _backfill_episode_metadata(
+    *,
+    feed: dict[str, Any],
+    ep: dict[str, Any],
+    media_meta_doc: dict[str, Any],
+    timeout_seconds: int,
+    user_agent: str,
+    probe_state: dict[str, int] | None = None,
+) -> dict[str, Any]:
+    out = dict(ep or {})
+    if not out.get("dateText"):
+        inferred = _infer_release_date(out)
+        if inferred:
+            out["dateText"] = inferred
+
+    if isinstance(out.get("durationSec"), int) and int(out.get("durationSec") or 0) > 0:
+        return out
+
+    media = out.get("media") if isinstance(out.get("media"), dict) else {}
+    url = str(media.get("url") or "").strip()
+    if not url:
+        return out
+
+    cached = get_cached_meta(media_meta_doc, url)
+    if cached and isinstance(cached.duration_sec, int) and cached.duration_sec > 0:
+        out["durationSec"] = int(cached.duration_sec)
+        return out
+
+    if probe_state is not None and int(probe_state.get("remaining") or 0) <= 0:
+        return out
+    duration_sec = hls_duration_seconds(url, timeout_seconds=timeout_seconds, user_agent=user_agent)
+    if not duration_sec:
+        duration_sec = mp4_duration_seconds(url, timeout_seconds=timeout_seconds, user_agent=user_agent)
+    if isinstance(duration_sec, int) and duration_sec > 0:
+        out["durationSec"] = int(duration_sec)
+        if probe_state is not None:
+            probe_state["remaining"] = max(0, int(probe_state.get("remaining") or 0) - 1)
+        put_cached_meta(
+            media_meta_doc,
+            url,
+            MediaMeta(
+                bytes=int(media.get("bytes")) if isinstance(media.get("bytes"), int) and int(media.get("bytes")) > 0 else None,
+                duration_sec=int(duration_sec),
+            ),
+        )
+    elif probe_state is not None:
+        probe_state["remaining"] = max(0, int(probe_state.get("remaining") or 0) - 1)
+    return out
 
 
 def _paginate_assets(

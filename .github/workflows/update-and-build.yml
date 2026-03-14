@@ -8,25 +8,19 @@ on:
 permissions:
   contents: write
   deployments: write
-  pages: write
-  id-token: write
 
 concurrency:
-  group: "pages"
+  group: "cloudflare-pages"
   cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     env:
       VOD_FEEDS: ${{ vars.VOD_FEEDS }}
       VOD_CACHE_BRANCH: ${{ vars.VOD_CACHE_BRANCH }}
       VOD_BASE_PATH: ${{ vars.VOD_BASE_PATH }}
       VOD_CLOUDFLARE_PROJECT_NAME: ${{ vars.VOD_CLOUDFLARE_PROJECT_NAME }}
-      VOD_CLOUDFLARE_BASE_PATH: ${{ vars.VOD_CLOUDFLARE_BASE_PATH }}
       VOD_SUPABASE_URL: ${{ secrets.VOD_SUPABASE_URL }}
       VOD_SUPABASE_ANON_KEY: ${{ secrets.VOD_SUPABASE_ANON_KEY }}
       VOD_HCAPTCHA_SITEKEY: ${{ secrets.VOD_HCAPTCHA_SITEKEY }}
@@ -73,12 +67,6 @@ jobs:
           set -euo pipefail
           python -m scripts.build_site --feeds "$VOD_FEEDS" --cache "$VOD_CACHE" --out dist --base-path "${VOD_BASE_PATH:-/}"
 
-      - name: Build Cloudflare Pages site
-        if: ${{ env.VOD_CLOUDFLARE_PROJECT_NAME != '' }}
-        run: |
-          set -euo pipefail
-          python -m scripts.build_site --feeds "$VOD_FEEDS" --cache "$VOD_CACHE" --out dist-cloudflare --base-path "${VOD_CLOUDFLARE_BASE_PATH:-/}"
-
       - name: Persist cache state (cache branch)
         run: |
           set -euo pipefail
@@ -106,18 +94,6 @@ jobs:
             git push origin "HEAD:$CACHE_BRANCH"
           fi
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: dist
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-
       - name: Deploy to Cloudflare Pages
         if: ${{ env.VOD_CLOUDFLARE_PROJECT_NAME != '' && env.CLOUDFLARE_ACCOUNT_ID != '' && env.CLOUDFLARE_API_TOKEN != '' }}
         uses: cloudflare/wrangler-action@v3
@@ -125,4 +101,4 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          command: pages deploy dist-cloudflare --project-name=${{ env.VOD_CLOUDFLARE_PROJECT_NAME }}
+          command: pages deploy dist --project-name=${{ env.VOD_CLOUDFLARE_PROJECT_NAME }}
